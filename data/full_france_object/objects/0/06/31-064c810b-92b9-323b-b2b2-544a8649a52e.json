@@ -1,0 +1,2160 @@
+{
+  "@id": "https://data.datatourisme.fr/31/064c810b-92b9-323b-b2b2-544a8649a52e",
+  "dc:identifier": "TFO339501699437",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CollectiveAccommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "StopOverOrGroupLodge"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Die Pilger Elodie und Jean-Marie heißen Sie herzlich in ihrer Unterkunft willkommen, die sich im Zentrum des Dorfes auf dem Jakobsweg (GR65) befindet. Die Unterkunft verfügt über einen großen, farbenfrohen Garten mit Liegestühlen, in dem Sie sich entspannen können."
+    ],
+    "en": [
+      "Elodie and Jean-Marie, pilgrim, welcome you in a family lodge, in the town, near to the shops and on the GR65"
+    ],
+    "it": [
+      "Elodie e Jean-Marie, pellegrini, vi danno un caloroso benvenuto nel loro gîte situato nel centro del villaggio, sul cammino di Santiago de Compostela (GR65). L'alloggio dispone di un ampio giardino colorato con sedie a sdraio per il vostro relax."
+    ],
+    "fr": [
+      "Elodie et Jean-Marie, pèlerins, vous accueillent chaleureusement dans leur gîte situé au centre du village, sur le chemin de St Jacques de Compostelle (GR65). Le gîte dispose d'un grand jardin coloré avec transat pour votre détente."
+    ],
+    "es": [
+      "Elodie y Jean-Marie, peregrinos, le dan la bienvenida en su alojamiento familial, en el centro del pueblo, cerca de los negocios y en el GR65"
+    ],
+    "nl": [
+      "Elodie en Jean-Marie, pelgrims, heten u van harte welkom in hun gîte gelegen in het centrum van het dorp, op de route naar Santiago de Compostela (GR65). De gîte heeft een grote kleurrijke tuin met ligstoelen voor uw ontspanning."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "A chacun son chemin"
+    ]
+  },
+  "allowedPersons": 14,
+  "availableLanguage": [
+    "en",
+    "fr"
+  ],
+  "hasAudience": [
+    {
+      "@id": "kb:CycleTourist",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radtouristen"
+        ],
+        "pt": [
+          "Cicloturistas"
+        ],
+        "en": [
+          "Cycle tourist"
+        ],
+        "it": [
+          "Cicloturisti"
+        ],
+        "fr": [
+          "Cyclotouristes"
+        ],
+        "nl": [
+          "Fietstoeristen"
+        ],
+        "es": [
+          "Cicloturistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Cyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radfahrer"
+        ],
+        "pt": [
+          "Ciclistas"
+        ],
+        "en": [
+          "Cyclists"
+        ],
+        "it": [
+          "Ciclisti"
+        ],
+        "fr": [
+          "Cyclistes"
+        ],
+        "nl": [
+          "Wielrenners"
+        ],
+        "es": [
+          "Ciclistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/db224e7a-611f-379d-b03d-1cb615389a8d",
+    "schema:legalName": "HIT Aveyron (ADAT Aveyron)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/66be3cfa-8d5c-34e7-87b1-87e1705c3fc4",
+      "schema:email": [
+        "webmaster@tourisme-aveyron.com"
+      ],
+      "schema:legalName": "ADT Aveyron",
+      "schema:telephone": [
+        "+33 5 65 75 40 12"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-aveyron.com/"
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:CycleTourist",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radtouristen"
+        ],
+        "pt": [
+          "Cicloturistas"
+        ],
+        "en": [
+          "Cycle tourist"
+        ],
+        "it": [
+          "Cicloturisti"
+        ],
+        "fr": [
+          "Cyclotouristes"
+        ],
+        "nl": [
+          "Fietstoeristen"
+        ],
+        "es": [
+          "Cicloturistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Cyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radfahrer"
+        ],
+        "pt": [
+          "Ciclistas"
+        ],
+        "en": [
+          "Cyclists"
+        ],
+        "it": [
+          "Ciclisti"
+        ],
+        "fr": [
+          "Cyclistes"
+        ],
+        "nl": [
+          "Wielrenners"
+        ],
+        "es": [
+          "Ciclistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/3d151a02-25aa-33eb-aa67-548997e4dab9",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/87bcc836-1a3d-335a-b6c4-99609228939a",
+          "schema:addressLocality": "Livinhac-le-Haut",
+          "schema:postalCode": "12300",
+          "schema:streetAddress": [
+            "30 impasse Panassié"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12130",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Livinhac-le-Haut"
+              ],
+              "pt": [
+                "Livinhac-le-Haut"
+              ],
+              "en": [
+                "Livinhac-le-Haut"
+              ],
+              "it": [
+                "Livinhac-le-Haut"
+              ],
+              "fr": [
+                "Livinhac-le-Haut"
+              ],
+              "nl": [
+                "Livinhac-le-Haut"
+              ],
+              "es": [
+                "Livinhac-le-Haut"
+              ]
+            },
+            "insee": "12130",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "jm.bonnici@laposte.net"
+      ],
+      "schema:legalName": "gite A chacun son chemin",
+      "schema:telephone": [
+        "+33 6 46 89 36 41"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://gite-achacunsonchemin.com/"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9948f20d-f1d9-3adf-bc46-f51c5d0f5d60",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/800180a9-37f8-33e5-8ac3-b9ffc85f8617",
+          "schema:addressLocality": "Livinhac-le-Haut",
+          "schema:postalCode": "12300",
+          "schema:streetAddress": [
+            "30 impasse Pannassié"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12130",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Livinhac-le-Haut"
+              ],
+              "pt": [
+                "Livinhac-le-Haut"
+              ],
+              "en": [
+                "Livinhac-le-Haut"
+              ],
+              "it": [
+                "Livinhac-le-Haut"
+              ],
+              "fr": [
+                "Livinhac-le-Haut"
+              ],
+              "nl": [
+                "Livinhac-le-Haut"
+              ],
+              "es": [
+                "Livinhac-le-Haut"
+              ]
+            },
+            "insee": "12130",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "jm.bonnici@laposte.net"
+      ],
+      "schema:familyName": [
+        "CARNEY"
+      ],
+      "schema:givenName": [
+        "Elodie"
+      ],
+      "schema:legalName": "gite A chacun son chemin",
+      "schema:telephone": [
+        "+33 6 46 89 36 41"
+      ],
+      "@type": [
+        "schema:Organization",
+        "schema:Person",
+        "foaf:Agent",
+        "foaf:Person",
+        "Agent",
+        "Person"
+      ],
+      "foaf:title": [
+        "Madame"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/4dfdb0b6-887f-3cf1-a8ba-31113fc8c89a",
+      "dc:description": {
+        "de": [
+          "Für Ihre Entspannung steht Ihnen ein Garten mit einer Liegeecke und einem Lesebereich zur Verfügung.\nFür Ihren Komfort verfügt unser Ferienhaus über 3 Schlafzimmer, einen Mini-Schlafsaal sowie 3 Badezimmer mit Toiletten\nJe nach Jahreszeit wird das Abendessen auf der Terrasse serviert\nBettwäsche und Decken sind in den Preisen für die Zimmer inbegriffen\nEs besteht die Möglichkeit, die Pilger bei Schwierigkeiten abzuholen\nkostenloses Wifi/Internet\nautoparkplatz und Fahrradgarage\nbahnhof in der Nähe"
+        ],
+        "en": [
+          "3 bathrooms, 4 wc and 1 kitchen fuly equiped. Sheets and blankets are included. "
+        ],
+        "it": [
+          "Per il vostro relax, è a vostra disposizione un giardino con sdraio e zona lettura.\nPer il vostro comfort, la nostra casa dispone di 3 camere da letto, un mini dormitorio e 3 bagni con doccia e servizi igienici\nA seconda della stagione, i pasti serali vengono serviti sulla terrazza\nLenzuola e coperte sono incluse nel prezzo della camera\nI pellegrini possono essere prelevati in caso di difficoltà\nwifi/internet gratuito\nparcheggio auto e garage per biciclette\nstazione ferroviaria nelle vicinanze"
+        ],
+        "fr": [
+          "Pour votre détente, un jardin avec un coin transat et espace lecture sont à votre disposition.\nPour votre confort, notre gite dispose de 3 chambres, un mini dortoir ainsi que 3 salles d'eau avec toilettes\nSelon la saison, le repas du soir est servi sur la terrasse\nLes draps et couvertures sont inclus dans les tarifs pour les chambres\nPossibilité d'aller chercher les pèlerins en cas de difficultés\nwifi/internet gratuit\nparking voiture et garage à vélo \ngare à proximité"
+        ],
+        "nl": [
+          "Voor je ontspanning staat er een tuin met ligstoel en leeshoek tot je beschikking.\nVoor je comfort beschikt onze gîte over 3 slaapkamers, een mini slaapzaal en 3 doucheruimtes met toilet\nAfhankelijk van het seizoen worden de avondmaaltijden op het terras geserveerd\nLakens en dekens zijn inbegrepen in de kamerprijs\nPelgrims kunnen worden opgehaald in geval van moeilijkheden\ngratis wifi/internet\nparkeerplaats en fietsenstalling\ntreinstation vlakbij"
+        ],
+        "es": [
+          "Jardin  (verano como invierno). Este alojamiento tiene 3 habitaciones, 3 cuartos de baños y une cocina totalmente equipada. Sabanas y mantas incluidas. Possibilidad de ir a buscar los peregrinos"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/15dab23e-1a79-341a-ae3d-80fdefd79ab5",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/87c80a5e-0a72-3714-a4e4-d2c29fab4c49",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a818565d-d767-3c88-8162-a93da97aef25",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d5d1a8fb-2888-34be-bc03-c6f73be9f8b1",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e3689165-b12f-3ac0-8427-f04acbdc4391",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f92cd3ba-7e84-316d-9dbd-ce672438fd42",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Die Pilger Elodie und Jean-Marie heißen Sie herzlich in ihrer Unterkunft willkommen, die sich im Zentrum des Dorfes auf dem Jakobsweg (GR65) befindet. Die Unterkunft verfügt über einen großen, farbenfrohen Garten mit Liegestühlen, in dem Sie sich entspannen können."
+        ],
+        "en": [
+          "Elodie and Jean-Marie, pilgrim, welcome you in a family lodge, in the town, near to the shops and on the GR65"
+        ],
+        "it": [
+          "Elodie e Jean-Marie, pellegrini, vi danno un caloroso benvenuto nel loro gîte situato nel centro del villaggio, sul cammino di Santiago de Compostela (GR65). L'alloggio dispone di un ampio giardino colorato con sedie a sdraio per il vostro relax."
+        ],
+        "fr": [
+          "Elodie et Jean-Marie, pèlerins, vous accueillent chaleureusement dans leur gîte situé au centre du village, sur le chemin de St Jacques de Compostelle (GR65). Le gîte dispose d'un grand jardin coloré avec transat pour votre détente."
+        ],
+        "es": [
+          "Elodie y Jean-Marie, peregrinos, le dan la bienvenida en su alojamiento familial, en el centro del pueblo, cerca de los negocios y en el GR65"
+        ],
+        "nl": [
+          "Elodie en Jean-Marie, pelgrims, heten u van harte welkom in hun gîte gelegen in het centrum van het dorp, op de route naar Santiago de Compostela (GR65). De gîte heeft een grote kleurrijke tuin met ligstoelen voor uw ontspanning."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/034e6cd0-13ba-3807-b45f-6a22654ffc74",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:SheetsAndTowels",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bettwäsche und Handtücher"
+            ],
+            "pt": [
+              "Lençóis e toalhas"
+            ],
+            "en": [
+              "Sheets and towels"
+            ],
+            "it": [
+              "Lenzuola e biancheria"
+            ],
+            "fr": [
+              "Draps et linges"
+            ],
+            "es": [
+              "Sábanas y ropa de cama"
+            ],
+            "nl": [
+              "Beddengoed en handdoeken"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/1273fac5-4497-32e2-9d3c-909e8d7647ef",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Valet",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wagenmeister"
+            ],
+            "pt": [
+              "Arrumador de carros"
+            ],
+            "en": [
+              "Valet"
+            ],
+            "it": [
+              "Addetto al parcheggio"
+            ],
+            "fr": [
+              "Voiturier"
+            ],
+            "nl": [
+              "Valetparking"
+            ],
+            "es": [
+              "Aparcacoches"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2297bf32-ff85-381a-bd67-fe3c3d663abc",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Garden",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Garten"
+            ],
+            "pt": [
+              "Jardim"
+            ],
+            "en": [
+              "Garden"
+            ],
+            "it": [
+              "Giardino"
+            ],
+            "fr": [
+              "Jardin"
+            ],
+            "nl": [
+              "Tuin"
+            ],
+            "es": [
+              "Jardín"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2e92add4-bb45-3e06-934d-82d44b7d732c",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:CarPark",
+          "@type": [
+            "CommonAmenity",
+            "GeneralPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Parkplatz"
+            ],
+            "pt": [
+              "Estacionamento"
+            ],
+            "en": [
+              "Car park"
+            ],
+            "it": [
+              "Parcheggio"
+            ],
+            "fr": [
+              "Parking"
+            ],
+            "nl": [
+              "Parkeerplaats"
+            ],
+            "es": [
+              "Aparcamiento"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/42aa53a7-b05b-3a8f-9b1c-9631ded80981",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5410b7c3-e0c0-344f-9ba4-65b3b92fb26e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:TakeawayFoodOrMeals",
+          "@type": [
+            "CateringAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Essen zum Mitnehmen"
+            ],
+            "pt": [
+              "Venda de refeições para fora"
+            ],
+            "en": [
+              "Takeaway food or meals"
+            ],
+            "it": [
+              "Vendita di piatti da asporto"
+            ],
+            "fr": [
+              "Vente de plats à emporter"
+            ],
+            "nl": [
+              "Verkoop van afhaalmaaltijden"
+            ],
+            "es": [
+              "Venta de platos para llevar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/586b2477-7f93-3ffb-a4ed-85eec6d234ec",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:LockedStorageRoom",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschlossener Lagerraum"
+            ],
+            "pt": [
+              "Local fechado para equipamentos"
+            ],
+            "en": [
+              "Locked storage room"
+            ],
+            "it": [
+              "Locale attrezzature chiuso"
+            ],
+            "fr": [
+              "Local matériel fermé"
+            ],
+            "es": [
+              "Sala de equipos cerrada"
+            ],
+            "nl": [
+              "Afgesloten materiaalberging"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/674bc3ab-e707-31f6-8b76-ed2906ce8753",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ee0518bb-dd35-34ec-806c-371f267e4e62",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:SharedDryer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gemeinschaftlich genutzter Wäschetrockner"
+            ],
+            "pt": [
+              "Secador de roupa coletivo"
+            ],
+            "en": [
+              "Shared dryer"
+            ],
+            "it": [
+              "Asciugatrice comune"
+            ],
+            "fr": [
+              "Sèche linge collectif"
+            ],
+            "es": [
+              "Secadoras colectivas"
+            ],
+            "nl": [
+              "Gemeenschappelijke droger"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fc0bc025-becb-3e99-bc11-03d3f175876b",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        },
+        {
+          "@id": "kb:SharedWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gemeinschaftlich genutzte Waschmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar roupa coletiva"
+            ],
+            "en": [
+              "Shared washer"
+            ],
+            "it": [
+              "Lavatrice comune"
+            ],
+            "fr": [
+              "Lave linge collectif"
+            ],
+            "es": [
+              "Lavadoras colectivas"
+            ],
+            "nl": [
+              "Gemeenschappelijke wasmachine"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/6472ee98-e92d-3059-bee1-c24d4284b420",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/539878ec-ff76-3298-8986-bbb0f64ba3d7",
+          "ebucore:comments": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/86e54638-2569-3531-8e5f-aad3f2dbf6bd",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/20048/images/303250_2be3df25-b0b0-4825-9828-08a807ae20ec/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasNeighborhood": [
+    {
+      "@id": "kb:Downtown",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Im Stadtzentrum"
+        ],
+        "pt": [
+          "No centro da cidade"
+        ],
+        "en": [
+          "Downtown"
+        ],
+        "it": [
+          "In centro città"
+        ],
+        "fr": [
+          "En centre ville"
+        ],
+        "nl": [
+          "In het centrum van de stad"
+        ],
+        "es": [
+          "En el centro de la ciudad"
+        ]
+      }
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/360fc370-31e8-312a-845a-a0a74b2e3228",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/d7330617-70a6-3dbe-83b2-4bcc540f9022",
+          "ebucore:comments": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "A chacun son chemin"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/4c8696ce-ad38-3b54-aa6c-38da352ca0c2",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/20048/images/303253_2b0f589a-cc4f-4fb9-b0b5-bc995d684102/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6472ee98-e92d-3059-bee1-c24d4284b420",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/539878ec-ff76-3298-8986-bbb0f64ba3d7",
+          "ebucore:comments": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/86e54638-2569-3531-8e5f-aad3f2dbf6bd",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/20048/images/303250_2be3df25-b0b0-4825-9828-08a807ae20ec/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/abfac18c-987c-3446-956a-d12ee8937a1a",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/d7330617-70a6-3dbe-83b2-4bcc540f9022",
+          "ebucore:comments": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "A chacun son chemin"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/e39b2d9b-cf4c-3c32-8288-0c56aa649ebd",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/20048/images/303251_5408036f-8cb3-4d9b-9591-a580a19f0b17/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/baa2d113-ac8b-3036-850b-554361bc5066",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/d7330617-70a6-3dbe-83b2-4bcc540f9022",
+          "ebucore:comments": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "A chacun son chemin"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/9cf10b4f-48dc-3701-84ad-1155c093bad7",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/20048/images/303252_2de6b9c4-a8dc-4750-bb96-a468c5b782d2/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e0b9c537-a605-3798-b497-0ac0a14d06b9",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/d7330617-70a6-3dbe-83b2-4bcc540f9022",
+          "ebucore:comments": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "A chacun son chemin"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/6ae48c6f-1561-313f-87c6-1ffcfe2b5d8d",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/20048/images/303254_47ddcd66-5f97-4d1c-83dc-8c15d82f1426/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e94f8422-336a-3113-aac4-bbf736c6011f",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/d7330617-70a6-3dbe-83b2-4bcc540f9022",
+          "ebucore:comments": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "A chacun son chemin"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "A chacun son chemin"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/660fadf6-cf09-3fd9-9985-daab8d8a5d27",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/20048/images/303255_dbda60f6-005b-4ea4-a1a3-7858afbd1f6d/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/bdafe76d-9afa-3fb1-b315-f9a9365fc769",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_AccueilVelo",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Accueil Vélo"
+          ],
+          "pt": [
+            "Accueil Vélo"
+          ],
+          "en": [
+            "Accueil Vélo"
+          ],
+          "it": [
+            "Accueil Vélo"
+          ],
+          "fr": [
+            "Accueil Vélo"
+          ],
+          "nl": [
+            "Accueil Vélo"
+          ],
+          "es": [
+            "Accueil Vélo"
+          ]
+        },
+        "isCompliantWith": [
+          "PlaceOfInterest"
+        ]
+      },
+      "reviewDeliveryDate": "2025-01-01"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d9d8a8f6-a1e9-3474-9958-183ab1cd0b97",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_AccueilCompostelle",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Startseite Compostela-Wege in Frankreich"
+          ],
+          "pt": [
+            "Início Rotas de Compostela em França"
+          ],
+          "en": [
+            "Home Compostela routes in France"
+          ],
+          "it": [
+            "Home Itinerari Compostela in Francia"
+          ],
+          "fr": [
+            "Accueil chemins de Compostelle en France"
+          ],
+          "es": [
+            "Home Rutas de Compostela en Francia"
+          ],
+          "nl": [
+            "Home Compostela routes in Frankrijk"
+          ]
+        },
+        "isCompliantWith": [
+          "PlaceOfInterest"
+        ]
+      }
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:Downtown",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Im Stadtzentrum"
+        ],
+        "pt": [
+          "No centro da cidade"
+        ],
+        "en": [
+          "Downtown"
+        ],
+        "it": [
+          "In centro città"
+        ],
+        "fr": [
+          "En centre ville"
+        ],
+        "nl": [
+          "In het centrum van de stad"
+        ],
+        "es": [
+          "En el centro de la ciudad"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/0b28719e-d748-3770-9477-1c3e8ea92ed4",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/11294bd6-b746-30ab-b4e3-5bdf4705408a",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6a44cccb-565e-38dc-8cd0-bcd7518adbd2",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/17e642a7-7785-33c7-8332-551ff89c82ef",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/87bcc836-1a3d-335a-b6c4-99609228939a",
+          "schema:addressLocality": "Livinhac-le-Haut",
+          "schema:postalCode": "12300",
+          "schema:streetAddress": [
+            "30 impasse Panassié"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12130",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Livinhac-le-Haut"
+              ],
+              "pt": [
+                "Livinhac-le-Haut"
+              ],
+              "en": [
+                "Livinhac-le-Haut"
+              ],
+              "it": [
+                "Livinhac-le-Haut"
+              ],
+              "fr": [
+                "Livinhac-le-Haut"
+              ],
+              "nl": [
+                "Livinhac-le-Haut"
+              ],
+              "es": [
+                "Livinhac-le-Haut"
+              ]
+            },
+            "insee": "12130",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/c64d7f1d-ef68-325d-b34a-9dd6cf758cea",
+        "schema:latitude": "44.5914",
+        "schema:longitude": "2.23462917",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-05-06",
+  "lastUpdateDatatourisme": "2025-05-07T12:20:20.036Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/02d02986-dff9-3c5e-88fb-683a623dbba5",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

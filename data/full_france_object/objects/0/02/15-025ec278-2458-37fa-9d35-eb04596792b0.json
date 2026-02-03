@@ -1,0 +1,910 @@
+{
+  "@id": "https://data.datatourisme.fr/15/025ec278-2458-37fa-9d35-eb04596792b0",
+  "dc:identifier": "ACCCEN03600036",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CamperVanArea",
+    "CampingAndCaravanning",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Euro-Relais-Wohnmobilanlegestelle im Zentrum der Ortschaft."
+    ],
+    "en": [
+      "Euro Relais campervan pitch in the village centre."
+    ],
+    "it": [
+      "Terminal per camper Euro-relay situato nel centro della città."
+    ],
+    "fr": [
+      "Borne de camping-cars Euro-relais située dans le centre bourg."
+    ],
+    "es": [
+      "Terminal de autocaravanas Euro-relay situada en el centro de la ciudad."
+    ],
+    "nl": [
+      "Euro-relay camper terminal gelegen in het centrum van de stad."
+    ]
+  },
+  "rdfs:label": {
+    "en": [
+      "Campervan pitch"
+    ],
+    "fr": [
+      "Borne de camping-car d'Oulches"
+    ]
+  },
+  "allowedPersons": 1,
+  "creationDate": "2009-06-15",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/15/258a22d9-ec6b-3b0c-a6ec-d65a0d1fe1ba",
+    "dc:identifier": "bb582899-e37d-4142-9722-9641c244049e",
+    "schema:legalName": "Destination Brenne",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/bba35b4d-022c-3fa7-90a3-07eba818e3a5",
+      "schema:legalName": "SIT Centre-Val de Loire",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/01ade5ba-4a1d-3c68-bae3-733ef99c396f",
+      "schema:email": [
+        "oulches-mairie@wanadoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 2 54 37 95 10"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/7fbb6e59-2a9e-3f9f-a1a7-0684d0aac1c3",
+      "dc:description": {
+        "de": [
+          "Euro-Relais-Wohnmobilterminal im Zentrum des Ortes, in der Nähe des Festsaals."
+        ],
+        "en": [
+          "Euro-relay motorhome terminal located in the centre of town, near the village hall."
+        ],
+        "it": [
+          "Terminal per camper Euro-relay situato nel centro della città, vicino al municipio."
+        ],
+        "fr": [
+          "Borne de camping-cars Euro-relais située dans le centre bourg, près de la salle des fêtes."
+        ],
+        "es": [
+          "Terminal de autocaravanas Euro-relay situada en el centro del pueblo, cerca del ayuntamiento."
+        ],
+        "nl": [
+          "Euro-relay camper terminal gelegen in het centrum van de stad, vlakbij het dorpshuis."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "shortDescription": {
+        "de": [
+          "Euro-Relais-Wohnmobilanlegestelle im Zentrum der Ortschaft."
+        ],
+        "en": [
+          "Euro Relais campervan pitch in the village centre."
+        ],
+        "it": [
+          "Terminal per camper Euro-relay situato nel centro della città."
+        ],
+        "fr": [
+          "Borne de camping-cars Euro-relais située dans le centre bourg."
+        ],
+        "es": [
+          "Terminal de autocaravanas Euro-relay situada en el centro de la ciudad."
+        ],
+        "nl": [
+          "Euro-relay camper terminal gelegen in het centrum van de stad."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/23182d7c-edb5-39ab-8d9d-95981b5ab34f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CamperPitch",
+          "@type": [
+            "AccommodationPricingOffer",
+            "CampingAndCaravanningAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Stellplatz Wohnmobil"
+            ],
+            "pt": [
+              "Alvéolo para autocaravana"
+            ],
+            "en": [
+              "Motorhome pitch"
+            ],
+            "it": [
+              "Piazzola per camper"
+            ],
+            "fr": [
+              "Emplacement camping car"
+            ],
+            "es": [
+              "Espacio para autocaravanas"
+            ],
+            "nl": [
+              "Camperstaanplaats"
+            ]
+          }
+        },
+        {
+          "@id": "kb:CamperServicePoint",
+          "@type": [
+            "AccommodationPricingOffer",
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Servicestation für Wohnmobile"
+            ],
+            "pt": [
+              "Terminal de serviços para autocaravanas"
+            ],
+            "en": [
+              "Camper service point"
+            ],
+            "it": [
+              "Stazione di servizio per camper"
+            ],
+            "fr": [
+              "Borne de service camping car"
+            ],
+            "nl": [
+              "Servicepunt voor camper"
+            ],
+            "es": [
+              "Estación de servicio para autocaravanas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:ChemicalToiletEmptying",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Entleerung chemischer Toiletten"
+            ],
+            "pt": [
+              "Despejo das sanitas químicas"
+            ],
+            "en": [
+              "Chemical toilets emptying"
+            ],
+            "it": [
+              "Svuotamento di bagni chimici"
+            ],
+            "fr": [
+              "Vidange toilettes chimiques"
+            ],
+            "es": [
+              "Vaciado de inodoros químicos"
+            ],
+            "nl": [
+              "Loospunt chemische toiletten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:ElectricalConnections",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Elektrische Schaltung"
+            ],
+            "pt": [
+              "Ligações elétricas"
+            ],
+            "en": [
+              "Electrical connections"
+            ],
+            "it": [
+              "Collegamenti elettrici"
+            ],
+            "fr": [
+              "Branchements électriques"
+            ],
+            "nl": [
+              "Elektrische aansluitingen"
+            ],
+            "es": [
+              "Conexiones eléctricas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Washrooms",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Toiletteneinrichtungen"
+            ],
+            "pt": [
+              "Sanitários"
+            ],
+            "en": [
+              "Washrooms"
+            ],
+            "it": [
+              "Sanitari"
+            ],
+            "fr": [
+              "Sanitaires"
+            ],
+            "es": [
+              "Sanitarios"
+            ],
+            "nl": [
+              "Sanitair"
+            ]
+          }
+        },
+        {
+          "@id": "kb:WastwaterEvacuation",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Entleerung von Abwasser"
+            ],
+            "pt": [
+              "Despejo de águas sujas"
+            ],
+            "en": [
+              "Wastwater evacuation"
+            ],
+            "it": [
+              "Svuotamento delle acque reflue"
+            ],
+            "fr": [
+              "Vidange des eaux usées"
+            ],
+            "es": [
+              "Vaciado de aguas residuales"
+            ],
+            "nl": [
+              "Afvalwaterpunt"
+            ]
+          }
+        },
+        {
+          "@id": "kb:WaterConnections",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wasseranschlüsse"
+            ],
+            "pt": [
+              "Ligações de água"
+            ],
+            "en": [
+              "Water connections"
+            ],
+            "it": [
+              "Collegamenti idrici"
+            ],
+            "fr": [
+              "Branchements d'eau"
+            ],
+            "nl": [
+              "Wateraansluitingen"
+            ],
+            "es": [
+              "Conexiones de agua"
+            ]
+          }
+        }
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/a786af0c-47d8-3739-94b7-1156e92526d7",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/d06e183f-9792-3454-902c-d9cfeedda0a4",
+          "ebucore:title": {
+            "fr": [
+              "Borne camping car Oulches"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "ADTI - Charles Guilloteau"
+          ],
+          "rightsEndDate": "2050-12-31"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/d10b781b-02cf-3421-a6d3-4b72b23ed5a6",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/CC-Oulches-12-CG.JPG"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasNeighborhood": [
+    {
+      "@id": "kb:InTheVillage",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Im Dorf"
+        ],
+        "pt": [
+          "Na aldeia"
+        ],
+        "en": [
+          "In the village"
+        ],
+        "it": [
+          "Nel villaggio"
+        ],
+        "fr": [
+          "Dans le village"
+        ],
+        "nl": [
+          "In het dorp"
+        ],
+        "es": [
+          "En el pueblo"
+        ]
+      }
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/a786af0c-47d8-3739-94b7-1156e92526d7",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/d06e183f-9792-3454-902c-d9cfeedda0a4",
+          "ebucore:title": {
+            "fr": [
+              "Borne camping car Oulches"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "ADTI - Charles Guilloteau"
+          ],
+          "rightsEndDate": "2050-12-31"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/d10b781b-02cf-3421-a6d3-4b72b23ed5a6",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/CC-Oulches-12-CG.JPG"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:InTheVillage",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Im Dorf"
+        ],
+        "pt": [
+          "Na aldeia"
+        ],
+        "en": [
+          "In the village"
+        ],
+        "it": [
+          "Nel villaggio"
+        ],
+        "fr": [
+          "Dans le village"
+        ],
+        "nl": [
+          "In het dorp"
+        ],
+        "es": [
+          "En el pueblo"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/af14bdbc-fc59-37d5-bb95-148a5b17ccdb",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/9d37b14a-6af1-3b4c-9552-14524771e813",
+          "schema:addressLocality": "Oulches",
+          "schema:postalCode": "36800",
+          "schema:streetAddress": [
+            "Impasse de l'Etang"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:36148",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Oulches"
+              ],
+              "pt": [
+                "Oulches"
+              ],
+              "en": [
+                "Oulches"
+              ],
+              "it": [
+                "Oulches"
+              ],
+              "fr": [
+                "Oulches"
+              ],
+              "nl": [
+                "Oulches"
+              ],
+              "es": [
+                "Oulches"
+              ]
+            },
+            "insee": "36148",
+            "isPartOfDepartment": {
+              "@id": "kb:France2436",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Indre"
+                ],
+                "pt": [
+                  "Indre"
+                ],
+                "en": [
+                  "Indre"
+                ],
+                "it": [
+                  "Indre"
+                ],
+                "fr": [
+                  "Indre"
+                ],
+                "nl": [
+                  "Indre"
+                ],
+                "es": [
+                  "Indre"
+                ]
+              },
+              "insee": "36",
+              "isPartOfRegion": {
+                "@id": "kb:France24",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Centre-Val de Loire"
+                  ],
+                  "pt": [
+                    "Centre-Val de Loire"
+                  ],
+                  "en": [
+                    "Centre-Val de Loire"
+                  ],
+                  "it": [
+                    "Centre-Val de Loire"
+                  ],
+                  "fr": [
+                    "Centre-Val de Loire"
+                  ],
+                  "nl": [
+                    "Centre-Val de Loire"
+                  ],
+                  "es": [
+                    "Centre-Val de Loire"
+                  ]
+                },
+                "insee": "24",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/5fb85bdc-9c46-3197-b501-6e4a84c5fc8c",
+        "schema:latitude": "46.61303",
+        "schema:longitude": "1.29525",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2025-02-27",
+  "lastUpdateDatatourisme": "2025-02-28T04:16:47.157Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/2729328c-830d-35f0-9180-9dc1a573acd5",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/7023e12c-1d6f-3722-b74f-742bc3a0ced9",
+          "schema:minPrice": [
+            "2"
+          ],
+          "schema:price": "2",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "tokens (siehe Kiosk für Kaufort)"
+            ],
+            "en": [
+              "tokens (see terminal for place of purchase)"
+            ],
+            "it": [
+              "gettoni (vedi terminale per il luogo di acquisto)"
+            ],
+            "fr": [
+              "jetons (voir borne pour lieu d'achat)"
+            ],
+            "nl": [
+              "penningen (zie terminal voor plaats van aankoop)"
+            ],
+            "es": [
+              "fichas (véase el terminal para el lugar de compra)"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/169583c0-521b-3f5c-bb53-2e0432606aec",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/37495db3-98dc-3a6e-8e94-dc889e9a492c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/3e38dd4e-0bab-3481-aa0e-beadea2ad88c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/5be7d0c2-a8a5-3a4f-b761-5fbfbaf615d2",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/5bf8cb5f-bebd-3a8b-b6a2-1e9216465de1",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

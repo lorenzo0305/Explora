@@ -1,0 +1,571 @@
+{
+  "@id": "https://data.datatourisme.fr/10/052682f1-c36a-3b25-b7a6-8295d12c1dfa",
+  "dc:identifier": "855145933",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Appartement les beaux jardins"
+    ]
+  },
+  "allowedPersons": 4,
+  "availableLanguage": [
+    "en"
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/10/addfa9b7-e234-354d-a6e9-c7f2af1005cb",
+    "dc:identifier": "855",
+    "schema:legalName": "MOSELLE ATTRACTIVITE",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/5f0b0fd6-acc5-3334-9f88-93ce81933081",
+      "schema:email": [
+        "contact@sitlorpro.com"
+      ],
+      "schema:legalName": "Système d’information touristique Lorrain",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.sitlorpro.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/35dfeeed-a77f-3bc1-82ac-6865f5fe4de5",
+      "schema:email": [
+        "mclmoselle@yahoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 79 48 22 32"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/2a5d4577-922e-b49b-b760-c27c4233a767",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "36X4X4MFD4JM",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/87fc13f8-a24f-3396-aaf1-21ee08e1a3e5",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:DVDPlayer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "DVD-Player"
+            ],
+            "pt": [
+              "Leitor de DVD"
+            ],
+            "en": [
+              "Dvd player"
+            ],
+            "it": [
+              "Lettore DVD"
+            ],
+            "fr": [
+              "Lecteur dvd"
+            ],
+            "es": [
+              "Lector de DVD"
+            ],
+            "nl": [
+              "Dvd-speler"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Freezer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gefriergerät"
+            ],
+            "pt": [
+              "Congelador"
+            ],
+            "en": [
+              "Freezer"
+            ],
+            "it": [
+              "Congelatore"
+            ],
+            "fr": [
+              "Congélateur"
+            ],
+            "nl": [
+              "Diepvriezer"
+            ],
+            "es": [
+              "Congelador"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Heating",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Heizen"
+            ],
+            "pt": [
+              "Aquecimento"
+            ],
+            "en": [
+              "Heating"
+            ],
+            "it": [
+              "Riscaldamento"
+            ],
+            "fr": [
+              "Chauffage"
+            ],
+            "nl": [
+              "Verwarming"
+            ],
+            "es": [
+              "Climatización"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Oven",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Ofen"
+            ],
+            "pt": [
+              "Forno"
+            ],
+            "en": [
+              "Oven"
+            ],
+            "it": [
+              "Forno"
+            ],
+            "fr": [
+              "Four"
+            ],
+            "nl": [
+              "Oven"
+            ],
+            "es": [
+              "Horno"
+            ]
+          }
+        },
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Television",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Fernsehen"
+            ],
+            "pt": [
+              "Televisão"
+            ],
+            "en": [
+              "Television"
+            ],
+            "it": [
+              "Televisione"
+            ],
+            "fr": [
+              "Télévision"
+            ],
+            "nl": [
+              "Televisie"
+            ],
+            "es": [
+              "Televisión"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "petsAllowed": false
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/85a52a48-aec2-3788-a54e-6ce07653dc48",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/b5771d91-6e65-35e0-b7a3-694ced829107",
+          "schema:addressLocality": "Volstroff",
+          "schema:postalCode": "57940",
+          "schema:streetAddress": [
+            "1 rue des jardins"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:57733",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Volstroff"
+              ],
+              "pt": [
+                "Volstroff"
+              ],
+              "en": [
+                "Volstroff"
+              ],
+              "it": [
+                "Volstroff"
+              ],
+              "fr": [
+                "Volstroff"
+              ],
+              "nl": [
+                "Volstroff"
+              ],
+              "es": [
+                "Volstroff"
+              ]
+            },
+            "insee": "57733",
+            "isPartOfDepartment": {
+              "@id": "kb:France4457",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Moselle"
+                ],
+                "pt": [
+                  "Moselle"
+                ],
+                "en": [
+                  "Moselle"
+                ],
+                "it": [
+                  "Moselle"
+                ],
+                "fr": [
+                  "Moselle"
+                ],
+                "nl": [
+                  "Moselle"
+                ],
+                "es": [
+                  "Moselle"
+                ]
+              },
+              "insee": "57",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/a829bd8c-b3e2-3591-bfbd-d19cdb3b342a",
+        "schema:latitude": "49.3090042",
+        "schema:longitude": "6.2600278",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-30",
+  "lastUpdateDatatourisme": "2025-07-31T05:10:51.791Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/4db0f123-3439-3e87-b42d-85486a3618db",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "reducedMobilityAccess": false
+}

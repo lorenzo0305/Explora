@@ -1,0 +1,984 @@
+{
+  "@id": "https://data.datatourisme.fr/38/0e963b35-f93a-3c5a-9cf9-1e31590c666e",
+  "dc:identifier": "VILBRE029FS0001J",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "ClubOrHolidayVillage",
+    "CollectiveAccommodation",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "en": [
+      "Village Vacances Ker-Ar-Mor"
+    ],
+    "fr": [
+      "Village Vacances Ker-Ar-Mor"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/3be8ff4f-e15a-3cb9-9a15-c9a135e38f89",
+    "schema:legalName": "Finistère 360° - Direction",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/cbc8f135-bec8-365b-8b02-ea7abf78dfa7",
+      "schema:legalName": "SIT Breton",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/c97ee242-b262-3002-8839-56a7864ede93",
+      "schema:telephone": [
+        "+33 2 98 39 94 04"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.ker-ar-mor.com/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/b0894b51-8d9d-3b6c-beaa-efb731b42515",
+      "dc:description": {
+        "de": [
+          "Feriendörfer / Jugendherbergen"
+        ],
+        "en": [
+          "Villages Vacances / Auberges de Jeunesse"
+        ],
+        "it": [
+          "Villaggi vacanze / Ostelli della gioventù"
+        ],
+        "fr": [
+          "Villages Vacances / Auberges de Jeunesse"
+        ],
+        "nl": [
+          "Vakantiedorpen / Jeugdherbergen"
+        ],
+        "es": [
+          "Ciudades de vacaciones / Albergues juveniles"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/031567fe-90a3-36ea-a477-9961aa07f266",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/49d2b65d-321d-3c85-b13b-7a6a681cc5ad",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6cfb2fe2-15df-3393-989d-bb943ea7b334",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/8086e9a6-c83e-3fdf-93f8-0d50af91e907",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/02e73278-b94a-f9ba-549f-27721d63a623",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "BWAP7J7JWRDV",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/36718161-e3b4-86b4-6c28-f9b9988c2894",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "KVV8NEYBKPSR",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/447ce2db-7770-d3c6-ca62-0c57ffa9ed00",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "RRX4YB52RXHA",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/465ab517-d0dd-4f51-20f4-f94a0fea9700",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "SF615BEAYPQT",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/73c618f6-7f76-bdca-2f22-cb103b781fe8",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "34T3CJ5RGBBH",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7c90dab5-0c22-592d-c3a2-e2cc9a53c053",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "3F3J3AFTF9AT",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/96cd547f-59d1-6812-c3b1-06c1ebab3d5f",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "WE5WWCZ6AC4F",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/de6060ca-5efe-d473-7c92-d1015a7b7ef9",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "67YPCBYGZN8D",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f1059a8a-1161-4c5d-e45e-869c236af663",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "8X245AEYCRTB",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f95eab27-0321-8a13-871e-2caca8428005",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "9217F3NRF5AQ",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fc227609-7b58-d72e-8819-e1470229f398",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "W1F2DF5Z7XSQ",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/a549d30d-6da3-3820-881d-076e413cd43c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/83376c81-8eee-3a81-8e04-bcf1b93c423c",
+          "schema:addressLocality": "Clohars-Carnoët",
+          "schema:postalCode": "29360",
+          "schema:streetAddress": [
+            "6 boulevard des Plages",
+            "Le Pouldu"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:29031",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Clohars-Carnoët"
+              ],
+              "pt": [
+                "Clohars-Carnoët"
+              ],
+              "en": [
+                "Clohars-Carnoët"
+              ],
+              "it": [
+                "Clohars-Carnoët"
+              ],
+              "fr": [
+                "Clohars-Carnoët"
+              ],
+              "nl": [
+                "Clohars-Carnoët"
+              ],
+              "es": [
+                "Clohars-Carnoët"
+              ]
+            },
+            "insee": "29031",
+            "isPartOfDepartment": {
+              "@id": "kb:France5329",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Finistère"
+                ],
+                "pt": [
+                  "Finistère"
+                ],
+                "en": [
+                  "Finistère"
+                ],
+                "it": [
+                  "Finistère"
+                ],
+                "fr": [
+                  "Finistère"
+                ],
+                "nl": [
+                  "Finistère"
+                ],
+                "es": [
+                  "Finistère"
+                ]
+              },
+              "insee": "29",
+              "isPartOfRegion": {
+                "@id": "kb:France53",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bretagne"
+                  ],
+                  "pt": [
+                    "Bretagne"
+                  ],
+                  "en": [
+                    "Bretagne"
+                  ],
+                  "it": [
+                    "Bretagne"
+                  ],
+                  "fr": [
+                    "Bretagne"
+                  ],
+                  "nl": [
+                    "Bretagne"
+                  ],
+                  "es": [
+                    "Bretagne"
+                  ]
+                },
+                "insee": "53",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/d153b51d-7129-398d-887a-d516f2b52837",
+        "schema:latitude": "47.766758",
+        "schema:longitude": "-3.5533248",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-01-02",
+  "lastUpdateDatatourisme": "2025-01-07T02:19:10.762Z"
+}

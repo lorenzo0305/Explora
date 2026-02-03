@@ -1,0 +1,633 @@
+{
+  "@id": "https://data.datatourisme.fr/15/01ba0b87-c2ee-377a-ba6f-2733b30d2835",
+  "dc:identifier": "ACCCEN028V504PGG",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CamperVanArea",
+    "CampingAndCaravanning",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Wohnmobilstellplatz auf dem Campingplatz \"La Goguerie\"."
+    ],
+    "en": [
+      "Campervan site at the “La Goguerie” campground."
+    ],
+    "it": [
+      "Area camper del campeggio \"La Goguerie\"."
+    ],
+    "fr": [
+      "Aire de camping car sur le camping de \"La Goguerie\"."
+    ],
+    "es": [
+      "Zona de camping car en el camping \"La Goguerie\"."
+    ],
+    "nl": [
+      "Camperplaats op de camping \"La Goguerie\"."
+    ]
+  },
+  "rdfs:label": {
+    "en": [
+      "Camping car area of the Goguerie"
+    ],
+    "fr": [
+      "Aire de camping-car de la Goguerie"
+    ]
+  },
+  "allowedPersons": 50,
+  "creationDate": "2018-06-01",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/15/7489a26d-5717-3fdd-9ef6-45fc091411d3",
+    "dc:identifier": "48d1431e-72ef-42d1-b1b8-7597f1730772",
+    "schema:legalName": "OTs DU PERCHE",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/bba35b4d-022c-3fa7-90a3-07eba818e3a5",
+      "schema:legalName": "SIT Centre-Val de Loire",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/4e7d1184-8822-3bb5-9597-5c21a0d991d0",
+      "schema:email": [
+        "mairie.authonduperche@wanadoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 2 37 49 03 41"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/87314ee5-8cc1-34d5-9f2b-0677389c096c",
+      "@type": [
+        "Description"
+      ],
+      "shortDescription": {
+        "de": [
+          "Wohnmobilstellplatz auf dem Campingplatz \"La Goguerie\"."
+        ],
+        "en": [
+          "Campervan site at the “La Goguerie” campground."
+        ],
+        "it": [
+          "Area camper del campeggio \"La Goguerie\"."
+        ],
+        "fr": [
+          "Aire de camping car sur le camping de \"La Goguerie\"."
+        ],
+        "es": [
+          "Zona de camping car en el camping \"La Goguerie\"."
+        ],
+        "nl": [
+          "Camperplaats op de camping \"La Goguerie\"."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/738683b5-b51f-3b7a-a38c-003596a63db7",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CamperPitch",
+          "@type": [
+            "AccommodationPricingOffer",
+            "CampingAndCaravanningAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Stellplatz Wohnmobil"
+            ],
+            "pt": [
+              "Alvéolo para autocaravana"
+            ],
+            "en": [
+              "Motorhome pitch"
+            ],
+            "it": [
+              "Piazzola per camper"
+            ],
+            "fr": [
+              "Emplacement camping car"
+            ],
+            "es": [
+              "Espacio para autocaravanas"
+            ],
+            "nl": [
+              "Camperstaanplaats"
+            ]
+          }
+        },
+        {
+          "@id": "kb:ChemicalToiletEmptying",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Entleerung chemischer Toiletten"
+            ],
+            "pt": [
+              "Despejo das sanitas químicas"
+            ],
+            "en": [
+              "Chemical toilets emptying"
+            ],
+            "it": [
+              "Svuotamento di bagni chimici"
+            ],
+            "fr": [
+              "Vidange toilettes chimiques"
+            ],
+            "es": [
+              "Vaciado de inodoros químicos"
+            ],
+            "nl": [
+              "Loospunt chemische toiletten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:ElectricalConnections",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Elektrische Schaltung"
+            ],
+            "pt": [
+              "Ligações elétricas"
+            ],
+            "en": [
+              "Electrical connections"
+            ],
+            "it": [
+              "Collegamenti elettrici"
+            ],
+            "fr": [
+              "Branchements électriques"
+            ],
+            "nl": [
+              "Elektrische aansluitingen"
+            ],
+            "es": [
+              "Conexiones eléctricas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Washrooms",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Toiletteneinrichtungen"
+            ],
+            "pt": [
+              "Sanitários"
+            ],
+            "en": [
+              "Washrooms"
+            ],
+            "it": [
+              "Sanitari"
+            ],
+            "fr": [
+              "Sanitaires"
+            ],
+            "es": [
+              "Sanitarios"
+            ],
+            "nl": [
+              "Sanitair"
+            ]
+          }
+        },
+        {
+          "@id": "kb:WastwaterEvacuation",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Entleerung von Abwasser"
+            ],
+            "pt": [
+              "Despejo de águas sujas"
+            ],
+            "en": [
+              "Wastwater evacuation"
+            ],
+            "it": [
+              "Svuotamento delle acque reflue"
+            ],
+            "fr": [
+              "Vidange des eaux usées"
+            ],
+            "es": [
+              "Vaciado de aguas residuales"
+            ],
+            "nl": [
+              "Afvalwaterpunt"
+            ]
+          }
+        },
+        {
+          "@id": "kb:WaterConnections",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wasseranschlüsse"
+            ],
+            "pt": [
+              "Ligações de água"
+            ],
+            "en": [
+              "Water connections"
+            ],
+            "it": [
+              "Collegamenti idrici"
+            ],
+            "fr": [
+              "Branchements d'eau"
+            ],
+            "nl": [
+              "Wateraansluitingen"
+            ],
+            "es": [
+              "Conexiones de agua"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/eba3c258-b1cb-3a6c-b05d-c57eddfecb63",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/175d182f-ce7d-39ea-b06f-096ae74faabb",
+          "ebucore:title": {
+            "fr": [
+              "Aire de camping-cars"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "Eure-et-Loir Tourisme"
+          ],
+          "rightsEndDate": "2035-12-31"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/72770734-159e-30d5-af82-486409009c31",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/Aire-de-camping-cars.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/eba3c258-b1cb-3a6c-b05d-c57eddfecb63",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/175d182f-ce7d-39ea-b06f-096ae74faabb",
+          "ebucore:title": {
+            "fr": [
+              "Aire de camping-cars"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "Eure-et-Loir Tourisme"
+          ],
+          "rightsEndDate": "2035-12-31"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/72770734-159e-30d5-af82-486409009c31",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/Aire-de-camping-cars.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/1a53bd60-fd12-329f-ba06-22539311d43c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/ad8a0760-1d74-39a7-bc8c-aeb3b8a173fb",
+          "schema:addressLocality": "Authon-du-Perche",
+          "schema:postalCode": "28330",
+          "schema:streetAddress": [
+            "Camping de la Goguerie",
+            "La Goguerie"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:28018",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Authon-du-Perche"
+              ],
+              "pt": [
+                "Authon-du-Perche"
+              ],
+              "en": [
+                "Authon-du-Perche"
+              ],
+              "it": [
+                "Authon-du-Perche"
+              ],
+              "fr": [
+                "Authon-du-Perche"
+              ],
+              "nl": [
+                "Authon-du-Perche"
+              ],
+              "es": [
+                "Authon-du-Perche"
+              ]
+            },
+            "insee": "28018",
+            "isPartOfDepartment": {
+              "@id": "kb:France2428",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Eure-et-Loir"
+                ],
+                "pt": [
+                  "Eure-et-Loir"
+                ],
+                "en": [
+                  "Eure-et-Loir"
+                ],
+                "it": [
+                  "Eure-et-Loir"
+                ],
+                "fr": [
+                  "Eure-et-Loir"
+                ],
+                "nl": [
+                  "Eure-et-Loir"
+                ],
+                "es": [
+                  "Eure-et-Loir"
+                ]
+              },
+              "insee": "28",
+              "isPartOfRegion": {
+                "@id": "kb:France24",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Centre-Val de Loire"
+                  ],
+                  "pt": [
+                    "Centre-Val de Loire"
+                  ],
+                  "en": [
+                    "Centre-Val de Loire"
+                  ],
+                  "it": [
+                    "Centre-Val de Loire"
+                  ],
+                  "fr": [
+                    "Centre-Val de Loire"
+                  ],
+                  "nl": [
+                    "Centre-Val de Loire"
+                  ],
+                  "es": [
+                    "Centre-Val de Loire"
+                  ]
+                },
+                "insee": "24",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/208233f3-ed41-3ec6-9d53-d871e4f5a3a3",
+        "schema:latitude": "48.2024677",
+        "schema:longitude": "0.8827352",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-02-19",
+  "lastUpdateDatatourisme": "2025-02-20T04:12:53.52Z"
+}

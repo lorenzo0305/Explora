@@ -1,0 +1,991 @@
+{
+  "@id": "https://data.datatourisme.fr/23/08e487b3-4ee9-3995-955f-99e7b6b3cf54",
+  "dc:identifier": "FMAAQU019V5003YK",
+  "schema:endDate": [
+    "2025-08-31"
+  ],
+  "schema:startDate": [
+    "2025-08-02"
+  ],
+  "@type": [
+    "schema:Event",
+    "schema:ExhibitionEvent",
+    "schema:SocialEvent",
+    "CulturalEvent",
+    "EntertainmentAndEvent",
+    "Exhibition",
+    "LocalAnimation",
+    "PointOfInterest",
+    "SocialEvent",
+    "TraditionalCelebration"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Exposition : Les artistes de Gimel"
+    ],
+    "en": [
+      "Exposition : Les artistes de Gimel"
+    ],
+    "fr": [
+      "Exposition : Les artistes de Gimel"
+    ],
+    "nl": [
+      "Exposition : Les artistes de Gimel"
+    ],
+    "es": [
+      "Exposition : Les artistes de Gimel"
+    ]
+  },
+  "creationDate": "2023-02-20",
+  "hasAudience": [
+    {
+      "@id": "kb:BetweenFriends",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Unter Freunden"
+        ],
+        "pt": [
+          "Entre amigos"
+        ],
+        "en": [
+          "Between friends"
+        ],
+        "it": [
+          "Tra amici"
+        ],
+        "fr": [
+          "Entre amis"
+        ],
+        "nl": [
+          "Met vrienden"
+        ],
+        "es": [
+          "Entre amigos"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Couples",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Paare"
+        ],
+        "pt": [
+          "Casais"
+        ],
+        "en": [
+          "Couples"
+        ],
+        "it": [
+          "Coppie"
+        ],
+        "fr": [
+          "Couples"
+        ],
+        "es": [
+          "Parejas"
+        ],
+        "nl": [
+          "Koppels"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Departmental",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Des Départements"
+        ],
+        "pt": [
+          "Departamental"
+        ],
+        "en": [
+          "Departmental"
+        ],
+        "it": [
+          "Dipartimentale"
+        ],
+        "fr": [
+          "Départementale"
+        ],
+        "nl": [
+          "Departementaal"
+        ],
+        "es": [
+          "Departamental"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/23/523cf526-4c0f-345e-b953-92dacf3111b8",
+    "dc:identifier": "125fa90f-7119-47e8-9715-0d1f5cc49f2c",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/ca567e33-7086-348c-8f71-d9f590877776",
+        "schema:addressLocality": "Tulle",
+        "schema:postalCode": "19000",
+        "schema:streetAddress": [
+          "14 Place Gambetta"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:19272",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Tulle"
+            ],
+            "pt": [
+              "Tulle"
+            ],
+            "en": [
+              "Tulle"
+            ],
+            "it": [
+              "Tulle"
+            ],
+            "fr": [
+              "Tulle"
+            ],
+            "nl": [
+              "Tulle"
+            ],
+            "es": [
+              "Tulle"
+            ]
+          },
+          "insee": "19272",
+          "isPartOfDepartment": {
+            "@id": "kb:France7519",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Corrèze"
+              ],
+              "pt": [
+                "Corrèze"
+              ],
+              "en": [
+                "Corrèze"
+              ],
+              "it": [
+                "Corrèze"
+              ],
+              "fr": [
+                "Corrèze"
+              ],
+              "nl": [
+                "Corrèze"
+              ],
+              "es": [
+                "Corrèze"
+              ]
+            },
+            "insee": "19",
+            "isPartOfRegion": {
+              "@id": "kb:France75",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "pt": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "en": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "it": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "fr": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "nl": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "es": [
+                  "Nouvelle-Aquitaine"
+                ]
+              },
+              "insee": "75",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "tourisme@tulle-en-correze.com"
+    ],
+    "schema:legalName": "Office de Tourisme de Tulle en Corrèze",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/05dc9cb8-2fa5-383d-b87b-497de06649a2",
+      "schema:email": [
+        "sirtaqui@na-tourisme.com"
+      ],
+      "schema:legalName": "SIRTAQUI Nouvelle-Aquitaine",
+      "schema:logo": "http://aquitaine.media.tourinsoft.eu/upload/Logo-Sirtaqui-1280x405.jpg",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "rdfs:comment": {
+        "de": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "en": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "it": [
+          "L'obiettivo di SIRTAQUI, il Sistema Regionale di Informazione Turistica della Nuova Aquitania, è quello di raccogliere, mettere in comune e diffondere il più possibile informazioni complete e di qualità a beneficio dei nostri residenti e visitatori. Il sistema è realizzato congiuntamente dal Comité Régional de Tourisme de Nouvelle-Aquitaine, dai servizi turistici di Corrèze, Creuse, Dordogne, Gironde, Landes, Lot-et-Garonne, Pyrénées-Atlantiques, Deux-Sèvres, Vienne e Haute-Vienne, in collaborazione con gli Uffici del Turismo e con il sostegno finanziario dell'Europa e del Conseil Régional."
+        ],
+        "fr": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "nl": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "es": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ]
+      },
+      "foaf:homepage": [
+        "http://www.sirtaqui-aquitaine.com/"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/eef27e75-4a23-313e-a6ee-797e7b64a1cd",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "rdfs:comment"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/8bbb5896-7bda-3f02-9dbf-93b6e1efed50",
+      "schema:email": [
+        "henriette.v19@gmail.com"
+      ],
+      "schema:legalName": "Les Amis de Gimel",
+      "schema:telephone": [
+        "+33 6 89 93 68 74"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:BetweenFriends",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Unter Freunden"
+        ],
+        "pt": [
+          "Entre amigos"
+        ],
+        "en": [
+          "Between friends"
+        ],
+        "it": [
+          "Tra amici"
+        ],
+        "fr": [
+          "Entre amis"
+        ],
+        "nl": [
+          "Met vrienden"
+        ],
+        "es": [
+          "Entre amigos"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Couples",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Paare"
+        ],
+        "pt": [
+          "Casais"
+        ],
+        "en": [
+          "Couples"
+        ],
+        "it": [
+          "Coppie"
+        ],
+        "fr": [
+          "Couples"
+        ],
+        "es": [
+          "Parejas"
+        ],
+        "nl": [
+          "Koppels"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/8bbb5896-7bda-3f02-9dbf-93b6e1efed50",
+      "schema:email": [
+        "henriette.v19@gmail.com"
+      ],
+      "schema:legalName": "Les Amis de Gimel",
+      "schema:telephone": [
+        "+33 6 89 93 68 74"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/28f48b15-a50b-3cc3-a1bd-d32a93664d2d",
+      "dc:description": {
+        "de": [
+          "Ausstellung lokaler Künstler (Aquarelle, Pastelle, Acrylfarben, Zeichnungen, Töpferwaren...) - -"
+        ],
+        "en": [
+          "Exhibition of local artists (watercolors, pastels, acrylics, drawings, pottery...) -"
+        ],
+        "it": [
+          "Esposizione di dipinti (acquerelli, olii, pastelli, disegni), perline, ceramiche, ecc."
+        ],
+        "fr": [
+          "Exposition de tableaux (aquarelles, huiles, pastels, dessin) perles, poteries etc..."
+        ],
+        "nl": [
+          "Tentoonstelling van plaatselijke kunstenaars (aquarel, pastel, acryl, tekeningen, aardewerk...) - De tentoonstelling is in het teken van de plaatselijke kunstenaars"
+        ],
+        "es": [
+          "Exposición de artistas locales (acuarelas, pasteles, acrílicos, dibujos, cerámica...) -"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/8fdb8c66-ce06-3de1-b64a-b7910c39e509",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/a7caff4b-14c3-3da5-98ca-cdd61b3543b2",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "petsAllowed": false
+    }
+  ],
+  "hasGeographicReach": [
+    {
+      "@id": "kb:Departmental",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Des Départements"
+        ],
+        "pt": [
+          "Departamental"
+        ],
+        "en": [
+          "Departmental"
+        ],
+        "it": [
+          "Dipartimentale"
+        ],
+        "fr": [
+          "Départementale"
+        ],
+        "nl": [
+          "Departementaal"
+        ],
+        "es": [
+          "Departamental"
+        ]
+      }
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/cc71ec93-172b-3b80-8646-d8cc8bd2db28",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/129719bf-c53f-341e-9cc4-6de0df56b45a",
+          "ebucore:isCoveredBy": "By-NC-ND 4.0",
+          "ebucore:title": {
+            "fr": [
+              "CC0 Creative Commons_1"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Amis de Gimel"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/658b53df-d7fa-3e19-b9ac-f6bb8d24a556",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt64.media.tourinsoft.eu/upload/161010228-4.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/cc71ec93-172b-3b80-8646-d8cc8bd2db28",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/129719bf-c53f-341e-9cc4-6de0df56b45a",
+          "ebucore:isCoveredBy": "By-NC-ND 4.0",
+          "ebucore:title": {
+            "fr": [
+              "CC0 Creative Commons_1"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Amis de Gimel"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/658b53df-d7fa-3e19-b9ac-f6bb8d24a556",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt64.media.tourinsoft.eu/upload/161010228-4.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/1b95d907-ec45-3eab-8967-e11b98b841cd",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/c1183598-7da1-341c-af23-a7418bf28bb7",
+          "schema:addressLocality": "Gimel-les-Cascades",
+          "schema:postalCode": "19800",
+          "schema:streetAddress": [
+            "Salle des expositions",
+            "le bourg"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:19085",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Gimel-les-Cascades"
+              ],
+              "pt": [
+                "Gimel-les-Cascades"
+              ],
+              "en": [
+                "Gimel-les-Cascades"
+              ],
+              "it": [
+                "Gimel-les-Cascades"
+              ],
+              "fr": [
+                "Gimel-les-Cascades"
+              ],
+              "nl": [
+                "Gimel-les-Cascades"
+              ],
+              "es": [
+                "Gimel-les-Cascades"
+              ]
+            },
+            "insee": "19085",
+            "isPartOfDepartment": {
+              "@id": "kb:France7519",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Corrèze"
+                ],
+                "pt": [
+                  "Corrèze"
+                ],
+                "en": [
+                  "Corrèze"
+                ],
+                "it": [
+                  "Corrèze"
+                ],
+                "fr": [
+                  "Corrèze"
+                ],
+                "nl": [
+                  "Corrèze"
+                ],
+                "es": [
+                  "Corrèze"
+                ]
+              },
+              "insee": "19",
+              "isPartOfRegion": {
+                "@id": "kb:France75",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "pt": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "en": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "it": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "fr": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "nl": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "es": [
+                    "Nouvelle-Aquitaine"
+                  ]
+                },
+                "insee": "75",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/a8ac217d-6205-3eec-b9a4-ef395bad4f9e",
+        "schema:latitude": "45.2990122",
+        "schema:longitude": "1.8512769",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "altInsee": [
+        "GIMEL-LES-CASCADES"
+      ],
+      "petsAllowed": false
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8bbb5896-7bda-3f02-9dbf-93b6e1efed50",
+      "schema:email": [
+        "henriette.v19@gmail.com"
+      ],
+      "schema:legalName": "Les Amis de Gimel",
+      "schema:telephone": [
+        "+33 6 89 93 68 74"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-03-27",
+  "lastUpdateDatatourisme": "2025-07-08T14:09:26.382Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/48f14a8d-6f61-39c7-b8f8-0f5d0e4b511e",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/de06e86a-ccf7-3c9f-b31c-a435bc0616c1",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:Free",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Kostenlos"
+                ],
+                "pt": [
+                  "Gratuito"
+                ],
+                "en": [
+                  "Free"
+                ],
+                "it": [
+                  "Gratuito"
+                ],
+                "fr": [
+                  "Gratuit"
+                ],
+                "es": [
+                  "Gratuito"
+                ],
+                "nl": [
+                  "Gratis"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "reducedMobilityAccess": true,
+  "takesPlaceAt": [
+    {
+      "@id": "https://data.datatourisme.fr/1d0a9096-bc19-327d-8bda-1d058513768e",
+      "@type": [
+        "Period"
+      ],
+      "endDate": "2025-08-31",
+      "startDate": "2025-08-02"
+    }
+  ]
+}

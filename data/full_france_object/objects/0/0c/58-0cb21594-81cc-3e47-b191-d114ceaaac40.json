@@ -1,0 +1,752 @@
+{
+  "@id": "https://data.datatourisme.fr/58/0cb21594-81cc-3e47-b191-d114ceaaac40",
+  "dc:identifier": "5481117",
+  "schema:endDate": [
+    "2020-12-31"
+  ],
+  "schema:startDate": [
+    "2019-01-01"
+  ],
+  "@type": [
+    "schema:Event",
+    "schema:SaleEvent",
+    "EntertainmentAndEvent",
+    "Market",
+    "PointOfInterest",
+    "SaleEvent"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Finden Sie den Markt jeden Donnerstag auf dem Parkplatz von La Poste wieder"
+    ],
+    "en": [
+      "Find the market every Thursday in the car park of La Poste"
+    ],
+    "it": [
+      "Visita il mercato ogni giovedì nel parcheggio de La Poste"
+    ],
+    "fr": [
+      "Retrouvez le marché tous les jeudis sur le parking de La Poste"
+    ],
+    "es": [
+      "Visite el mercado todos los jueves en el aparcamiento de La Poste"
+    ],
+    "nl": [
+      "Bezoek de markt elke donderdag op de parkeerplaats van La Poste"
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Marché de Roquefort la Bédoule"
+    ]
+  },
+  "hasAudience": [
+    {
+      "@id": "kb:Local",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Lokal"
+        ],
+        "pt": [
+          "Local"
+        ],
+        "en": [
+          "Local"
+        ],
+        "it": [
+          "Locale"
+        ],
+        "fr": [
+          "Locale"
+        ],
+        "nl": [
+          "Lokaal"
+        ],
+        "es": [
+          "Local"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/58/de03beff-eed9-3a5f-b639-a621bcab5dd4",
+    "dc:identifier": "1947",
+    "schema:email": [
+      "abartorello@myprovence.fr",
+      "apidae@myprovence.fr",
+      "ccombrie@myprovence.fr",
+      "fguechaichia@myprovence.fr",
+      "grolland@myprovence.fr",
+      "ngueritaine@myprovence.fr"
+    ],
+    "schema:legalName": "Provence Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.myprovence.fr/",
+      "https://www.myprovence.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/7b595f89-8d9c-355f-bfb9-255b68622934",
+      "schema:legalName": "Provence Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/905b79ee-64b9-3dc9-afd4-2e38b221c58b",
+      "schema:email": [
+        "accueil@roquefort-labedoule.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 42 73 21 12"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/2f33622e-beaf-3a43-b4a2-2dc06a7f0f5d",
+      "dc:description": {
+        "de": [
+          "Lebensmittelmarkt."
+        ],
+        "en": [
+          "Food market."
+        ],
+        "it": [
+          "Mercato alimentare."
+        ],
+        "fr": [
+          "Marché alimentaire."
+        ],
+        "nl": [
+          "Voedselmarkt."
+        ],
+        "es": [
+          "Mercado de alimentos."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/07a4f899-c855-317d-834e-1b5d5392abcb",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/51458a1c-4b9d-3759-9820-542c95b0fc5d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/52d168ff-cd76-3dbd-8845-41b40b5c2faf",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/71288cd2-2c38-3f12-ab38-3ec8bf82bbf7",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/738b2ae8-c202-3d21-b171-b2bec718aedd",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/92a44185-d687-34f8-9e9b-d9ffced9f5d2",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/97745904-ef82-3069-8625-f18b2b300b60",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a0245f64-a664-32b2-8f47-87c7374ad0f9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/c21bf518-88f8-3484-90fc-52b8895c7d28",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e2f4fbfb-facf-397e-8d04-5c72eb5e497f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Finden Sie den Markt jeden Donnerstag auf dem Parkplatz von La Poste wieder"
+        ],
+        "en": [
+          "Find the market every Thursday in the car park of La Poste"
+        ],
+        "it": [
+          "Visita il mercato ogni giovedì nel parcheggio de La Poste"
+        ],
+        "fr": [
+          "Retrouvez le marché tous les jeudis sur le parking de La Poste"
+        ],
+        "es": [
+          "Visite el mercado todos los jueves en el aparcamiento de La Poste"
+        ],
+        "nl": [
+          "Bezoek de markt elke donderdag op de parkeerplaats van La Poste"
+        ]
+      }
+    }
+  ],
+  "hasGeographicReach": [
+    {
+      "@id": "kb:Local",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Lokal"
+        ],
+        "pt": [
+          "Local"
+        ],
+        "en": [
+          "Local"
+        ],
+        "it": [
+          "Locale"
+        ],
+        "fr": [
+          "Locale"
+        ],
+        "nl": [
+          "Lokaal"
+        ],
+        "es": [
+          "Local"
+        ]
+      }
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/b21fbdfd-c2b5-34d1-9989-13508fc0a94f",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/873214b8-db5d-3622-bccb-34020f0edd88",
+          "ebucore:title": {
+            "fr": [
+              "13EV019692_1_WEB.jpg"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "A. BARROIL"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/957439bd-a176-3b0a-b3a4-8710da33d498",
+          "ebucore:fileSize": [
+            "48011"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "300",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/9/125/8355081.jpg"
+          ],
+          "ebucore:width": "400",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/3d2dac5a-c781-387c-855a-ae4edd4a3e41",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/607cde76-17c8-378a-8824-d51258f315ec",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bc8ac504-aabf-3d0f-b0bf-a3f998e7d9cb",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/efb6759a-27da-3509-ad44-881e573e9e12",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f2b4f629-ea61-3319-a25d-e12f66a5fad7",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/0d512ccc-ef15-3e1c-9f9a-b931df3b7bf4",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/53c91c78-9c4c-3f3b-8a03-53f9928cfb66",
+          "schema:addressLocality": "Roquefort-la-Bédoule",
+          "schema:postalCode": "13830",
+          "schema:streetAddress": [
+            "Parking de La Poste",
+            "Parking de la Poste"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:13085",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Roquefort-la-Bédoule"
+              ],
+              "pt": [
+                "Roquefort-la-Bédoule"
+              ],
+              "en": [
+                "Roquefort-la-Bédoule"
+              ],
+              "it": [
+                "Roquefort-la-Bédoule"
+              ],
+              "fr": [
+                "Roquefort-la-Bédoule"
+              ],
+              "nl": [
+                "Roquefort-la-Bédoule"
+              ],
+              "es": [
+                "Roquefort-la-Bédoule"
+              ]
+            },
+            "insee": "13085",
+            "isPartOfDepartment": {
+              "@id": "kb:France9313",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bouches-du-Rhône"
+                ],
+                "pt": [
+                  "Bouches-du-Rhône"
+                ],
+                "en": [
+                  "Bouches-du-Rhône"
+                ],
+                "it": [
+                  "Bouches-du-Rhône"
+                ],
+                "fr": [
+                  "Bouches-du-Rhône"
+                ],
+                "nl": [
+                  "Bouches-du-Rhône"
+                ],
+                "es": [
+                  "Bouches-du-Rhône"
+                ]
+              },
+              "insee": "13",
+              "isPartOfRegion": {
+                "@id": "kb:France93",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "pt": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "en": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "it": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "fr": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "nl": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "es": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ]
+                },
+                "insee": "93",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/039b47f4-9a12-326b-8778-3adddeeb21e9",
+        "schema:latitude": "43.247997",
+        "schema:longitude": "5.589383",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/e822be18-d446-310b-9a3c-17dc28f1b66e",
+          "schema:validFrom": "2019-01-01T00:00:00",
+          "schema:validThrough": "2020-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "internetAccess": false,
+      "petsAllowed": false,
+      "textOpeningHoursSpecification": {
+        "fr": [
+          "Toute l'année, tous les jeudis."
+        ]
+      }
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/1d65e7b5-3d9f-384b-a326-da1afb79a75a",
+      "schema:email": [
+        "abartorello@myprovence.fr",
+        "ccombrie@myprovence.fr",
+        "fguechaichia@myprovence.fr",
+        "grolland@myprovence.fr",
+        "ngueritaine@myprovence.fr"
+      ],
+      "schema:legalName": "Provence Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.myprovence.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2021-06-03",
+  "lastUpdateDatatourisme": "2025-03-14T05:15:04.106Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/b07c32d0-190f-3a4b-b7f4-63f23643792c",
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ],
+      "textPriceSpecification": {
+        "fr": [
+          "Gratuit."
+        ]
+      }
+    }
+  ],
+  "reducedMobilityAccess": false,
+  "takesPlaceAt": [
+    {
+      "@id": "https://data.datatourisme.fr/7e0aef0e-ba57-3383-9a85-c20858594e09",
+      "@type": [
+        "Period",
+        "RecurrentPeriod"
+      ],
+      "appliesOnDay": [
+        {
+          "@id": "schema:Thursday",
+          "@type": [
+            "schema:DayOfWeek"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Donnerstag"
+            ],
+            "pt": [
+              "Quinta-feira"
+            ],
+            "en": [
+              "Thursday"
+            ],
+            "it": [
+              "Giovedì"
+            ],
+            "fr": [
+              "Jeudi"
+            ],
+            "es": [
+              "Jueves"
+            ],
+            "nl": [
+              "Donderdag"
+            ]
+          }
+        }
+      ],
+      "endDate": "2020-12-31",
+      "startDate": "2019-01-01"
+    }
+  ]
+}

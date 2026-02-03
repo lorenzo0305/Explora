@@ -1,0 +1,454 @@
+{
+  "@id": "https://data.datatourisme.fr/15/0f8c1330-20fa-3030-9573-4fd6e3b93ff5",
+  "dc:identifier": "ASCCEN037V50GB1T",
+  "@type": [
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "SportsAndLeisurePlace"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Kanu und Kajak Chenonceaux Canoe Rental"
+    ],
+    "en": [
+      "Canoe Kayak Chenonceaux - Canoe Rental"
+    ],
+    "it": [
+      "Canoa Kayak Chenonceaux Noleggio canoe"
+    ],
+    "fr": [
+      "Canoë Kayak Chenonceaux Canoe Rental"
+    ],
+    "nl": [
+      "Kano-kajak Chenonceaux Kanoverhuur"
+    ],
+    "es": [
+      "Canoë Kayak Chenonceaux Alquiler de canoas"
+    ]
+  },
+  "availableLanguage": [
+    "en",
+    "fr"
+  ],
+  "creationDate": "2019-02-22",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/15/08214b2e-dcda-34a1-9c71-d51b6076ac9e",
+    "dc:identifier": "6eb4d5de-2b98-493a-ac45-95aa1095a14a",
+    "schema:legalName": "OFFICE DE TOURISME AUTOUR DE CHENONCEAUX, VALLEE DU CHER",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/bba35b4d-022c-3fa7-90a3-07eba818e3a5",
+      "schema:legalName": "SIT Centre-Val de Loire",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/5bfce045-6900-352e-90c3-103c25afb873",
+      "schema:email": [
+        "canoechenonceaux@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 7 68 55 58 07"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.canoekayakchenonceaux.sitew.fr/"
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/a38a5085-8397-3265-87a2-51e46ec97897",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CarPark",
+          "@type": [
+            "CommonAmenity",
+            "GeneralPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Parkplatz"
+            ],
+            "pt": [
+              "Estacionamento"
+            ],
+            "en": [
+              "Car park"
+            ],
+            "it": [
+              "Parcheggio"
+            ],
+            "fr": [
+              "Parking"
+            ],
+            "nl": [
+              "Parkeerplaats"
+            ],
+            "es": [
+              "Aparcamiento"
+            ]
+          }
+        },
+        {
+          "@id": "kb:PicnicArea",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Picknickplatz"
+            ],
+            "pt": [
+              "Área de piquenique"
+            ],
+            "en": [
+              "Picnic area"
+            ],
+            "it": [
+              "Area pic-nic"
+            ],
+            "fr": [
+              "Aire de pique-nique"
+            ],
+            "es": [
+              "Zona de pícnic"
+            ],
+            "nl": [
+              "Picknickplaats"
+            ]
+          }
+        }
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:CanoeingKayaking",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kanu-Kajakfahren"
+        ],
+        "pt": [
+          "Canoa caiaque"
+        ],
+        "en": [
+          "Canoeing-kayaking"
+        ],
+        "it": [
+          "Canoismo"
+        ],
+        "fr": [
+          "Canoé kayak"
+        ],
+        "es": [
+          "Piraguas y kayak"
+        ],
+        "nl": [
+          "Kano/kajak"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/7c2a3f18-09df-3a5a-930b-3d25d609e109",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/6283fb5f-5c3a-30da-a6a7-86925ff3cee5",
+          "schema:addressLocality": "Chisseaux",
+          "schema:postalCode": "37150",
+          "schema:streetAddress": [
+            "Pont Francueil"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:37073",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Chisseaux"
+              ],
+              "pt": [
+                "Chisseaux"
+              ],
+              "en": [
+                "Chisseaux"
+              ],
+              "it": [
+                "Chisseaux"
+              ],
+              "fr": [
+                "Chisseaux"
+              ],
+              "nl": [
+                "Chisseaux"
+              ],
+              "es": [
+                "Chisseaux"
+              ]
+            },
+            "insee": "37073",
+            "isPartOfDepartment": {
+              "@id": "kb:France2437",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Indre-et-Loire"
+                ],
+                "pt": [
+                  "Indre-et-Loire"
+                ],
+                "en": [
+                  "Indre-et-Loire"
+                ],
+                "it": [
+                  "Indre-et-Loire"
+                ],
+                "fr": [
+                  "Indre-et-Loire"
+                ],
+                "nl": [
+                  "Indre-et-Loire"
+                ],
+                "es": [
+                  "Indre-et-Loire"
+                ]
+              },
+              "insee": "37",
+              "isPartOfRegion": {
+                "@id": "kb:France24",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Centre-Val de Loire"
+                  ],
+                  "pt": [
+                    "Centre-Val de Loire"
+                  ],
+                  "en": [
+                    "Centre-Val de Loire"
+                  ],
+                  "it": [
+                    "Centre-Val de Loire"
+                  ],
+                  "fr": [
+                    "Centre-Val de Loire"
+                  ],
+                  "nl": [
+                    "Centre-Val de Loire"
+                  ],
+                  "es": [
+                    "Centre-Val de Loire"
+                  ]
+                },
+                "insee": "24",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/b598201f-5980-3b61-8407-60fbaafed471",
+        "schema:latitude": "47.329808",
+        "schema:longitude": "1.090866",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2025-04-11",
+  "lastUpdateDatatourisme": "2025-04-11T22:12:27.053Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/0ee43632-e8a4-35c8-ac81-b1ed8da1ef9e",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/21578891-6f0b-3b9b-ac95-c211b30bd45f",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:ChildRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Kindertarif"
+                ],
+                "pt": [
+                  "Preço por criança"
+                ],
+                "en": [
+                  "Child rate"
+                ],
+                "it": [
+                  "Tariffa per bambini"
+                ],
+                "fr": [
+                  "Tarif enfant"
+                ],
+                "es": [
+                  "Tarifa infantil"
+                ],
+                "nl": [
+                  "Kindertarief"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/8549ac61-7be9-3f03-8131-7d3a3b83475e",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:BaseRateFullRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Basistarif – voller Tarif"
+                ],
+                "pt": [
+                  "Preço de base — preço total"
+                ],
+                "en": [
+                  "Base rate - full rate"
+                ],
+                "it": [
+                  "Tariffa di base — tariffa intera"
+                ],
+                "fr": [
+                  "Tarif de base - plein tarif"
+                ],
+                "es": [
+                  "Tarifa básica - tarifa completa"
+                ],
+                "nl": [
+                  "Basistarief - vol tarief"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "reducedMobilityAccess": false
+}

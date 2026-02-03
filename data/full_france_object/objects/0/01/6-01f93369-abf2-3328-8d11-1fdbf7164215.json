@@ -1,0 +1,982 @@
+{
+  "@id": "https://data.datatourisme.fr/6/01f93369-abf2-3328-8d11-1fdbf7164215",
+  "dc:identifier": "HLOBFC000V52LQG3",
+  "@type": [
+    "schema:Accommodation",
+    "schema:BedAndBreakfast",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "Guesthouse",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Charmantes kleines Haus auf einer Ebene im Herzen des Dorfes Villiers-les-Hauts in der Nähe der Kirche."
+    ],
+    "en": [
+      "Charming single-storey house in the heart of the village of Villiers-les-Hauts, close to the church."
+    ],
+    "it": [
+      "Incantevole casetta a un piano nel cuore del villaggio di Villiers-les-Hauts, vicino alla chiesa."
+    ],
+    "fr": [
+      "Charmante petite maison de plain-pied au coeur du village de Villiers-les-Hauts à proximité l’église."
+    ],
+    "es": [
+      "Encantadora casita de una sola planta en el corazón del pueblo de Villiers-les-Hauts, cerca de la iglesia."
+    ],
+    "nl": [
+      "Charmant huisje van één verdieping in het hart van het dorp Villiers-les-Hauts, vlakbij de kerk."
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "La Clé des Champs"
+    ],
+    "en": [
+      "La Clé des Champs"
+    ],
+    "fr": [
+      "La Clé des Champs"
+    ]
+  },
+  "allowedPersons": 4,
+  "availableLanguage": [
+    "fr"
+  ],
+  "creationDate": "2024-01-31",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/ccd6cf45-1094-3ed6-9510-a7b0d6b3d374",
+    "dc:identifier": "51b530b1-4a7e-4050-b1d7-c67b31e7867c",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/cc2855d7-37b0-3fe9-a784-237a2ccb2e46",
+        "schema:addressLocality": "Dijon",
+        "schema:postalCode": "21000",
+        "schema:streetAddress": [
+          "5 avenue Garibaldi"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:21231",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Dijon"
+            ],
+            "pt": [
+              "Dijon"
+            ],
+            "en": [
+              "Dijon"
+            ],
+            "it": [
+              "Dijon"
+            ],
+            "fr": [
+              "Dijon"
+            ],
+            "nl": [
+              "Dijon"
+            ],
+            "es": [
+              "Dijon"
+            ]
+          },
+          "insee": "21231",
+          "isPartOfDepartment": {
+            "@id": "kb:France2721",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Côte-d'Or"
+              ],
+              "pt": [
+                "Côte-d'Or"
+              ],
+              "en": [
+                "Côte-d'Or"
+              ],
+              "it": [
+                "Côte-d'Or"
+              ],
+              "fr": [
+                "Côte-d'Or"
+              ],
+              "nl": [
+                "Côte-d'Or"
+              ],
+              "es": [
+                "Côte-d'Or"
+              ]
+            },
+            "insee": "21",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "info@bfctourisme.com"
+    ],
+    "schema:legalName": "Bourgogne-Franche-Comté Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/2bd70681-ca30-365c-9934-ff4e89a22ee8",
+      "schema:email": [
+        "lacledeschamps89@wanadoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 3 86 75 13 58",
+        "+33 6 45 07 64 67"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.lacledeschamps89.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/2bd70681-ca30-365c-9934-ff4e89a22ee8",
+      "schema:email": [
+        "lacledeschamps89@wanadoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 3 86 75 13 58",
+        "+33 6 45 07 64 67"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.lacledeschamps89.com/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/086a6421-8c38-312e-9f1c-01b9209abbdc",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/26e31e93-bbaf-368b-8084-2d8d9d546f55",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/515bdbde-ece7-34f3-8138-068a1fe9413c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5488d0b6-480c-3e21-b2f1-678864c3eca9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Charmantes kleines Haus auf einer Ebene im Herzen des Dorfes Villiers-les-Hauts in der Nähe der Kirche."
+        ],
+        "en": [
+          "Charming single-storey house in the heart of the village of Villiers-les-Hauts, close to the church."
+        ],
+        "it": [
+          "Incantevole casetta a un piano nel cuore del villaggio di Villiers-les-Hauts, vicino alla chiesa."
+        ],
+        "fr": [
+          "Charmante petite maison de plain-pied au coeur du village de Villiers-les-Hauts à proximité l’église."
+        ],
+        "es": [
+          "Encantadora casita de una sola planta en el corazón del pueblo de Villiers-les-Hauts, cerca de la iglesia."
+        ],
+        "nl": [
+          "Charmant huisje van één verdieping in het hart van het dorp Villiers-les-Hauts, vlakbij de kerk."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/0786a6d0-c0fb-3160-80a1-a90e25d28ae1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Barbecue",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Grill"
+            ],
+            "pt": [
+              "Churrasco"
+            ],
+            "en": [
+              "Barbecue"
+            ],
+            "it": [
+              "Barbecue"
+            ],
+            "fr": [
+              "Barbecue"
+            ],
+            "nl": [
+              "Barbecue"
+            ],
+            "es": [
+              "Barbacoa"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/68a14e24-77ce-388e-a9a6-88a6cb4f5a1e",
+      "schema:value": "1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef2d7794-2aa6-3c88-a672-d20e3cc76cc7",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SheetsAndTowels",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bettwäsche und Handtücher"
+            ],
+            "pt": [
+              "Lençóis e toalhas"
+            ],
+            "en": [
+              "Sheets and towels"
+            ],
+            "it": [
+              "Lenzuola e biancheria"
+            ],
+            "fr": [
+              "Draps et linges"
+            ],
+            "es": [
+              "Sábanas y ropa de cama"
+            ],
+            "nl": [
+              "Beddengoed en handdoeken"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/6bae0f65-b292-3413-aa73-5ad68a0cd26f",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/959e70eb-dc58-3c36-ac10-d074f21a7838",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b56d3d45-51e5-3826-ab3d-38069d7d9c72",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/7224f0fa-92e7-3b81-9673-c1eb97b0441c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/b5810c31-7e21-3428-8cb9-a73c1b7c2620",
+          "schema:addressLocality": "Villiers-les-Hauts",
+          "schema:postalCode": "89160",
+          "schema:streetAddress": [
+            "35 rue basse"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:89470",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Villiers-les-Hauts"
+              ],
+              "pt": [
+                "Villiers-les-Hauts"
+              ],
+              "en": [
+                "Villiers-les-Hauts"
+              ],
+              "it": [
+                "Villiers-les-Hauts"
+              ],
+              "fr": [
+                "Villiers-les-Hauts"
+              ],
+              "nl": [
+                "Villiers-les-Hauts"
+              ],
+              "es": [
+                "Villiers-les-Hauts"
+              ]
+            },
+            "insee": "89470",
+            "isPartOfDepartment": {
+              "@id": "kb:France2789",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Yonne"
+                ],
+                "pt": [
+                  "Yonne"
+                ],
+                "en": [
+                  "Yonne"
+                ],
+                "it": [
+                  "Yonne"
+                ],
+                "fr": [
+                  "Yonne"
+                ],
+                "nl": [
+                  "Yonne"
+                ],
+                "es": [
+                  "Yonne"
+                ]
+              },
+              "insee": "89",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/a0b31096-d353-325e-afb1-7b40d7cc75a9",
+        "schema:latitude": "47.72664",
+        "schema:longitude": "4.148232",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/8688fd22-20dc-3504-b911-91c87c07daab",
+          "schema:validFrom": "2025-01-01T00:00:00",
+          "schema:validThrough": "2025-12-31T00:00:00",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-03-12",
+  "lastUpdateDatatourisme": "2025-04-22T23:40:15.235Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/9b20657b-84a4-377f-9e34-df6c35f1632e",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/a77db9b6-83cb-3d99-ae17-7eefa4de426f",
+          "schema:minPrice": [
+            "420"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "hasPricingMode": [
+            {
+              "@id": "kb:PerWeek",
+              "@type": [
+                "PricingMode"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pro Woche"
+                ],
+                "pt": [
+                  "Por semana"
+                ],
+                "en": [
+                  "Per week"
+                ],
+                "it": [
+                  "Alla settimana"
+                ],
+                "fr": [
+                  "A la semaine"
+                ],
+                "es": [
+                  "Por semana"
+                ],
+                "nl": [
+                  "Per week"
+                ]
+              }
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:TouristFurnishedRental",
+              "@type": [
+                "AccommodationPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Vermietung möblierter Touristenunterkünfte"
+                ],
+                "pt": [
+                  "Aluguer de alojamento turístico mobilado"
+                ],
+                "en": [
+                  "Tourist furnished rental"
+                ],
+                "it": [
+                  "Affitto turistico ammobiliato"
+                ],
+                "fr": [
+                  "Location meublé touristique"
+                ],
+                "nl": [
+                  "Gemeubileerde huuraccommodatie"
+                ],
+                "es": [
+                  "Alquiler de alojamiento turístico"
+                ]
+              }
+            }
+          ],
+          "name": {
+            "de": [
+              "Eine Woche"
+            ],
+            "en": [
+              "Week (appartment)"
+            ],
+            "fr": [
+              "Semaine (meublé)"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/bcfc9b7d-e404-32b0-b6d8-6e157d02908d",
+          "schema:minPrice": [
+            "61"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:BaseRateFullRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Basistarif – voller Tarif"
+                ],
+                "pt": [
+                  "Preço de base — preço total"
+                ],
+                "en": [
+                  "Base rate - full rate"
+                ],
+                "it": [
+                  "Tariffa di base — tariffa intera"
+                ],
+                "fr": [
+                  "Tarif de base - plein tarif"
+                ],
+                "es": [
+                  "Tarifa básica - tarifa completa"
+                ],
+                "nl": [
+                  "Basistarief - vol tarief"
+                ]
+              }
+            }
+          ],
+          "hasPricingMode": [
+            {
+              "@id": "kb:Overnight",
+              "@type": [
+                "PricingMode"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pro Übernachtung"
+                ],
+                "pt": [
+                  "Por noite"
+                ],
+                "en": [
+                  "Overnight"
+                ],
+                "it": [
+                  "Per notte"
+                ],
+                "fr": [
+                  "Par nuitée"
+                ],
+                "es": [
+                  "Por noche"
+                ],
+                "nl": [
+                  "Per nacht"
+                ]
+              }
+            },
+            {
+              "@id": "kb:PerPerson",
+              "@type": [
+                "PricingMode"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pro Person"
+                ],
+                "pt": [
+                  "Por pessoa"
+                ],
+                "en": [
+                  "Per person"
+                ],
+                "it": [
+                  "Per persona"
+                ],
+                "fr": [
+                  "Par personne"
+                ],
+                "es": [
+                  "Por persona"
+                ],
+                "nl": [
+                  "Per persoon"
+                ]
+              }
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:Bedroom",
+              "@type": [
+                "AccommodationAmenity",
+                "AccommodationPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Zimmer"
+                ],
+                "pt": [
+                  "Quarto"
+                ],
+                "en": [
+                  "Bedroom"
+                ],
+                "it": [
+                  "Camera"
+                ],
+                "fr": [
+                  "Chambre"
+                ],
+                "nl": [
+                  "Kamer"
+                ],
+                "es": [
+                  "Habitación"
+                ]
+              }
+            }
+          ],
+          "name": {
+            "de": [
+              "Übernachtung (1 Person)"
+            ],
+            "en": [
+              "One person (Chambres d'hôtes)"
+            ],
+            "fr": [
+              "1 pers. (Chambres d'hôtes)"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

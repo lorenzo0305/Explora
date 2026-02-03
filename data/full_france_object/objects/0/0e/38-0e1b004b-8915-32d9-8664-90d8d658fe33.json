@@ -1,0 +1,246 @@
+{
+  "@id": "https://data.datatourisme.fr/38/0e1b004b-8915-32d9-8664-90d8d658fe33",
+  "dc:identifier": "ASCBRE035V52LTSS",
+  "@type": [
+    "schema:Product",
+    "CulturalSite",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product"
+  ],
+  "rdfs:label": {
+    "en": [
+      "Natation entre 2 caps"
+    ],
+    "fr": [
+      "Natation entre 2 caps"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/f35a8df1-4dff-3ba2-b08a-5982ec42eb7e",
+    "schema:legalName": "Dinard Côte D'Émeraude Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/cbc8f135-bec8-365b-8b02-ea7abf78dfa7",
+      "schema:legalName": "SIT Breton",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/6f3b4ba4-379c-37b8-818b-967d9466d108",
+      "schema:telephone": [
+        "+33 6 45 12 41 01"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:Swimming",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Schwimmen"
+        ],
+        "pt": [
+          "Natação"
+        ],
+        "en": [
+          "Swimming"
+        ],
+        "it": [
+          "Nuoto"
+        ],
+        "fr": [
+          "Natation"
+        ],
+        "nl": [
+          "Zwemmen"
+        ],
+        "es": [
+          "Natación"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/e65ba079-d6f6-353d-8e98-604721887953",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/ca6b83ac-2b97-3c4c-8730-ec1eebf23c2b",
+          "schema:addressLocality": "Dinard",
+          "schema:postalCode": "35800",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:35093",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Dinard"
+              ],
+              "pt": [
+                "Dinard"
+              ],
+              "en": [
+                "Dinard"
+              ],
+              "it": [
+                "Dinard"
+              ],
+              "fr": [
+                "Dinard"
+              ],
+              "nl": [
+                "Dinard"
+              ],
+              "es": [
+                "Dinard"
+              ]
+            },
+            "insee": "35093",
+            "isPartOfDepartment": {
+              "@id": "kb:France5335",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Ille-et-Vilaine"
+                ],
+                "pt": [
+                  "Ille-et-Vilaine"
+                ],
+                "en": [
+                  "Ille-et-Vilaine"
+                ],
+                "it": [
+                  "Ille-et-Vilaine"
+                ],
+                "fr": [
+                  "Ille-et-Vilaine"
+                ],
+                "nl": [
+                  "Ille-et-Vilaine"
+                ],
+                "es": [
+                  "Ille-et-Vilaine"
+                ]
+              },
+              "insee": "35",
+              "isPartOfRegion": {
+                "@id": "kb:France53",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bretagne"
+                  ],
+                  "pt": [
+                    "Bretagne"
+                  ],
+                  "en": [
+                    "Bretagne"
+                  ],
+                  "it": [
+                    "Bretagne"
+                  ],
+                  "fr": [
+                    "Bretagne"
+                  ],
+                  "nl": [
+                    "Bretagne"
+                  ],
+                  "es": [
+                    "Bretagne"
+                  ]
+                },
+                "insee": "53",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/dc94531d-789f-3551-9a08-ae8488e7de54",
+        "schema:latitude": "48.63518",
+        "schema:longitude": "-2.05315",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/8adb81f6-ad35-306f-b076-f1ed7a4e8f95",
+          "schema:validFrom": "2025-07-14T00:00:00",
+          "schema:validThrough": "2025-08-15T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-03",
+  "lastUpdateDatatourisme": "2025-07-04T04:02:01.832Z"
+}

@@ -1,0 +1,311 @@
+{
+  "@id": "https://data.datatourisme.fr/13/0839b3e7-a27b-3143-be3a-ca04dad79fbe",
+  "dc:identifier": "5849403",
+  "@type": [
+    "olo:OrderedList",
+    "CyclingTour",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "SportsAndLeisurePlace",
+    "Tour"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Circuit \"La forêt de Marigny\""
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/3d779cae-2d46-3f6a-8a99-a35ba4167977",
+    "dc:identifier": "1336",
+    "schema:email": [
+      "office-moulins@allier-tourisme.net",
+      "p.forichon@moulins-tourisme.com"
+    ],
+    "schema:legalName": "Office du tourisme de Moulins & sa région",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.moulins-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/c55300f9-494b-38ba-adff-d663c77ad33a",
+      "schema:legalName": "ALLIER BOURBONNAIS ATTRACTIVITÉ - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/b1f148b0-9a4b-30fb-b2f1-d74107afe9e6",
+      "schema:email": [
+        "bienvenue@moulins-tourisme.com"
+      ],
+      "schema:telephone": [
+        "+33 4 70 44 14 14"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.moulins-tourisme.com/"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:ATV",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "MTB"
+        ],
+        "pt": [
+          "Bicicleta-todo-o-terreno (BTT)"
+        ],
+        "en": [
+          "Atv"
+        ],
+        "it": [
+          "Mountain bike"
+        ],
+        "fr": [
+          "Vtt"
+        ],
+        "nl": [
+          "Mountainbike"
+        ],
+        "es": [
+          "BTT"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Bike",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Fahrrad"
+        ],
+        "pt": [
+          "Bicicleta"
+        ],
+        "en": [
+          "Bike"
+        ],
+        "it": [
+          "Bicicletta"
+        ],
+        "fr": [
+          "Vélo"
+        ],
+        "nl": [
+          "Fiets"
+        ],
+        "es": [
+          "Bicicleta"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/96ea9cd5-1aa0-3979-9dea-df088eba9dc6",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/8a86b851-467a-37a8-bf91-b109c6693e97",
+          "schema:addressLocality": "Montilly",
+          "schema:postalCode": "03000",
+          "schema:streetAddress": [
+            "Le Bourg"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:03184",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Montilly"
+              ],
+              "pt": [
+                "Montilly"
+              ],
+              "en": [
+                "Montilly"
+              ],
+              "it": [
+                "Montilly"
+              ],
+              "fr": [
+                "Montilly"
+              ],
+              "nl": [
+                "Montilly"
+              ],
+              "es": [
+                "Montilly"
+              ]
+            },
+            "insee": "03184",
+            "isPartOfDepartment": {
+              "@id": "kb:France8403",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Allier"
+                ],
+                "pt": [
+                  "Allier"
+                ],
+                "en": [
+                  "Allier"
+                ],
+                "it": [
+                  "Allier"
+                ],
+                "fr": [
+                  "Allier"
+                ],
+                "nl": [
+                  "Allier"
+                ],
+                "es": [
+                  "Allier"
+                ]
+              },
+              "insee": "03",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/cbf807a1-5274-3e6d-bfcf-6d7500ba9005",
+        "schema:latitude": "46.611139",
+        "schema:longitude": "3.249634",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/63ba550e-9978-3f5b-847b-00c809fab527",
+          "schema:validFrom": "2025-01-01T00:00:00",
+          "schema:validThrough": "2025-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/88c77baf-badc-3a87-9305-38cb34e1ee31",
+      "schema:email": [
+        "office-moulins@allier-tourisme.net",
+        "p.forichon@moulins-tourisme.com"
+      ],
+      "schema:legalName": "Office du tourisme de Moulins & sa région",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.moulins-tourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-06-05",
+  "lastUpdateDatatourisme": "2025-01-15T07:35:54.408Z"
+}

@@ -1,0 +1,1384 @@
+{
+  "@id": "https://data.datatourisme.fr/23/098ea3df-3973-380f-ab4a-584be7610e2b",
+  "dc:identifier": "ITIAQU087V50049F",
+  "@type": [
+    "olo:OrderedList",
+    "CyclingTour",
+    "PointOfInterest",
+    "Tour"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Boucle cyclotouristique \"Musée Cécile Sabourdy\""
+    ],
+    "en": [
+      "Boucle cyclotouristique \"Musée Cécile Sabourdy\""
+    ],
+    "fr": [
+      "Boucle cyclotouristique \"Musée Cécile Sabourdy\""
+    ],
+    "nl": [
+      "Boucle cyclotouristique \"Musée Cécile Sabourdy\""
+    ],
+    "es": [
+      "Boucle cyclotouristique \"Musée Cécile Sabourdy\""
+    ]
+  },
+  "creationDate": "2022-09-06",
+  "hasAudience": [
+    {
+      "@id": "kb:BetweenFriends",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Unter Freunden"
+        ],
+        "pt": [
+          "Entre amigos"
+        ],
+        "en": [
+          "Between friends"
+        ],
+        "it": [
+          "Tra amici"
+        ],
+        "fr": [
+          "Entre amis"
+        ],
+        "nl": [
+          "Met vrienden"
+        ],
+        "es": [
+          "Entre amigos"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Couples",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Paare"
+        ],
+        "pt": [
+          "Casais"
+        ],
+        "en": [
+          "Couples"
+        ],
+        "it": [
+          "Coppie"
+        ],
+        "fr": [
+          "Couples"
+        ],
+        "es": [
+          "Parejas"
+        ],
+        "nl": [
+          "Koppels"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/23/c55b72cf-5595-367d-9c4b-4abf9191932e",
+    "dc:identifier": "97087255-804d-42a1-af84-43125c632fd5",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/37606ae4-fcb7-33f3-a081-3e6b71af61d9",
+        "schema:addressLocality": "Magnac-Bourg",
+        "schema:postalCode": "87380",
+        "schema:streetAddress": [
+          "2 Place de la bascule"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:87088",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Magnac-Bourg"
+            ],
+            "pt": [
+              "Magnac-Bourg"
+            ],
+            "en": [
+              "Magnac-Bourg"
+            ],
+            "it": [
+              "Magnac-Bourg"
+            ],
+            "fr": [
+              "Magnac-Bourg"
+            ],
+            "nl": [
+              "Magnac-Bourg"
+            ],
+            "es": [
+              "Magnac-Bourg"
+            ]
+          },
+          "insee": "87088",
+          "isPartOfDepartment": {
+            "@id": "kb:France7587",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Haute-Vienne"
+              ],
+              "pt": [
+                "Haute-Vienne"
+              ],
+              "en": [
+                "Haute-Vienne"
+              ],
+              "it": [
+                "Haute-Vienne"
+              ],
+              "fr": [
+                "Haute-Vienne"
+              ],
+              "nl": [
+                "Haute-Vienne"
+              ],
+              "es": [
+                "Haute-Vienne"
+              ]
+            },
+            "insee": "87",
+            "isPartOfRegion": {
+              "@id": "kb:France75",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "pt": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "en": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "it": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "fr": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "nl": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "es": [
+                  "Nouvelle-Aquitaine"
+                ]
+              },
+              "insee": "75",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "ot.briancesudhautevienne@gmail.com"
+    ],
+    "schema:legalName": "OT Briance Sud Haute-Vienne",
+    "schema:telephone": [
+      "+33 5 55 00 89 91"
+    ],
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/05dc9cb8-2fa5-383d-b87b-497de06649a2",
+      "schema:email": [
+        "sirtaqui@na-tourisme.com"
+      ],
+      "schema:legalName": "SIRTAQUI Nouvelle-Aquitaine",
+      "schema:logo": "http://aquitaine.media.tourinsoft.eu/upload/Logo-Sirtaqui-1280x405.jpg",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "rdfs:comment": {
+        "de": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "en": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "it": [
+          "L'obiettivo di SIRTAQUI, il Sistema Regionale di Informazione Turistica della Nuova Aquitania, è quello di raccogliere, mettere in comune e diffondere il più possibile informazioni complete e di qualità a beneficio dei nostri residenti e visitatori. Il sistema è realizzato congiuntamente dal Comité Régional de Tourisme de Nouvelle-Aquitaine, dai servizi turistici di Corrèze, Creuse, Dordogne, Gironde, Landes, Lot-et-Garonne, Pyrénées-Atlantiques, Deux-Sèvres, Vienne e Haute-Vienne, in collaborazione con gli Uffici del Turismo e con il sostegno finanziario dell'Europa e del Conseil Régional."
+        ],
+        "fr": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "nl": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "es": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ]
+      },
+      "foaf:homepage": [
+        "http://www.sirtaqui-aquitaine.com/"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/eef27e75-4a23-313e-a6ee-797e7b64a1cd",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "rdfs:comment"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:BetweenFriends",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Unter Freunden"
+        ],
+        "pt": [
+          "Entre amigos"
+        ],
+        "en": [
+          "Between friends"
+        ],
+        "it": [
+          "Tra amici"
+        ],
+        "fr": [
+          "Entre amis"
+        ],
+        "nl": [
+          "Met vrienden"
+        ],
+        "es": [
+          "Entre amigos"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Couples",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Paare"
+        ],
+        "pt": [
+          "Casais"
+        ],
+        "en": [
+          "Couples"
+        ],
+        "it": [
+          "Coppie"
+        ],
+        "fr": [
+          "Couples"
+        ],
+        "es": [
+          "Parejas"
+        ],
+        "nl": [
+          "Koppels"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/51c41f18-330f-3890-8db1-c1dea991548d",
+      "schema:email": [
+        "ot.briancesudhautevienne@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 5 55 00 89 91"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-briancesudhautevienne@gmail.com/",
+        "https://rando-briancesudhautevienne.loopi-velo.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/c790b9f4-f196-30c3-97a3-8faca7f13d6b",
+      "dc:description": {
+        "de": [
+          "Radwanderweg, der von Magnac-Bourg zum Museum & Gärten Cécile Sabourdy in Vicq-sur-Breuilh führt."
+        ],
+        "en": [
+          "Cycle touring loop allowing to go from Magnac-Bourg to the Cécile Sabourdy Museum & Gardens in Vicq-sur-Breuilh."
+        ],
+        "it": [
+          "Escursione in bicicletta da Magnac-Bourg al Museo e Giardini Cécile Sabourdy di Vicq-sur-Breuilh."
+        ],
+        "fr": [
+          "Boucle cyclotouristique permettant d'aller de Magnac-Bourg au Musée & jardins Cécile Sabourdy à Vicq-sur-Breuilh."
+        ],
+        "nl": [
+          "Fietstocht van Magnac-Bourg naar het museum en de tuinen van Cécile Sabourdy in Vicq-sur-Breuilh."
+        ],
+        "es": [
+          "Excursión en bicicleta desde Magnac-Bourg hasta el Museo y Jardines Cécile Sabourdy en Vicq-sur-Breuilh."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0bee6f41-5d0b-332b-a10d-73b8dee67e1b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "isDedicatedTo": [
+        {
+          "@id": "kb:BetweenFriends",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Unter Freunden"
+            ],
+            "pt": [
+              "Entre amigos"
+            ],
+            "en": [
+              "Between friends"
+            ],
+            "it": [
+              "Tra amici"
+            ],
+            "fr": [
+              "Entre amis"
+            ],
+            "nl": [
+              "Met vrienden"
+            ],
+            "es": [
+              "Entre amigos"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Couples",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Paare"
+            ],
+            "pt": [
+              "Casais"
+            ],
+            "en": [
+              "Couples"
+            ],
+            "it": [
+              "Coppie"
+            ],
+            "fr": [
+              "Couples"
+            ],
+            "es": [
+              "Parejas"
+            ],
+            "nl": [
+              "Koppels"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Families",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Familien"
+            ],
+            "pt": [
+              "Famílias"
+            ],
+            "en": [
+              "Families"
+            ],
+            "it": [
+              "Famiglie"
+            ],
+            "fr": [
+              "Familles"
+            ],
+            "nl": [
+              "Families"
+            ],
+            "es": [
+              "Familias"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/aa6be0fc-f3ec-33f5-a724-3b9f67ef9e94",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/5c2ede4a-77ef-3e58-af2f-9130435699e5",
+          "ebucore:isCoveredBy": "By-NC-ND 4.0",
+          "ebucore:title": {
+            "fr": [
+              "Boucle cyclotouristique \"Musée Cécile Sabourdy\"_1"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "musée"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/eee0790b-e54a-3a7c-a9d4-ba30664bcf37",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt64.media.tourinsoft.eu/upload/202001173-8.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasPracticeCondition": [
+    {
+      "@id": "https://data.datatourisme.fr/1d9994ca-456a-354d-a9d1-50c3ade7e7db",
+      "@type": [
+        "PracticeCondition"
+      ],
+      "hasDifficultyLevel": [
+        {
+          "@id": "kb:MediumDifficultyTour",
+          "@type": [
+            "DifficultyLevel"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mittlere Schwierigkeit"
+            ],
+            "pt": [
+              "Dificuldade média"
+            ],
+            "en": [
+              "Medium difficulty"
+            ],
+            "it": [
+              "Difficoltà media"
+            ],
+            "fr": [
+              "Difficulté moyenne"
+            ],
+            "nl": [
+              "Gemiddelde moeilijkheidsgraad"
+            ],
+            "es": [
+              "Dificultad media"
+            ]
+          }
+        }
+      ],
+      "hasLocomotionMode": [
+        {
+          "@id": "kb:RoadbikeMode",
+          "@type": [
+            "BicycleLocomotionMode"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Rennrad"
+            ],
+            "pt": [
+              "Ciclismo rodoviário"
+            ],
+            "en": [
+              "With road bike"
+            ],
+            "it": [
+              "Ciclismo su strada"
+            ],
+            "fr": [
+              "Vélo de route"
+            ],
+            "nl": [
+              "Fietsen op de weg"
+            ],
+            "es": [
+              "Ciclismo de carretera"
+            ]
+          }
+        }
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/065074c2-100f-3189-91d3-dbb9a01bfa32",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "practicalTips"
+          ]
+        }
+      ],
+      "practicalTips": {
+        "de": [
+          "Durée: 1 h"
+        ],
+        "en": [
+          "Durée: 1 h"
+        ],
+        "it": [
+          "Durata: 1 ora"
+        ],
+        "fr": [
+          "Durée: 1 h"
+        ],
+        "nl": [
+          "Durée: 1 h"
+        ],
+        "es": [
+          "Durée: 1 h"
+        ]
+      }
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/391c1cbe-b190-37a2-960d-92995895807d",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/4e6ea70e-668d-3306-aa13-9887f8aaf5af",
+          "ebucore:isCoveredBy": "By-NC-ND 4.0",
+          "ebucore:title": {
+            "fr": [
+              "Boucle cyclotouristique \"Musée Cécile Sabourdy\"_4"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "ot bshv"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/4af126ca-b1fa-33f0-aa8e-7daffd63253c",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt64.media.tourinsoft.eu/upload/202001173-4.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/71d51b5e-d1ac-3933-b93a-367c52b8c9b4",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/6a5b005a-e06f-37c2-ac99-0fb7cfbc9018",
+          "ebucore:isCoveredBy": "By-NC-ND 4.0",
+          "ebucore:title": {
+            "fr": [
+              "Boucle cyclotouristique \"Musée Cécile Sabourdy\"_2"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "ot bshv"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/8ccb91f6-2967-3b57-bebb-c7b322cd5afd",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt64.media.tourinsoft.eu/upload/202001173-6.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/aa6be0fc-f3ec-33f5-a724-3b9f67ef9e94",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/5c2ede4a-77ef-3e58-af2f-9130435699e5",
+          "ebucore:isCoveredBy": "By-NC-ND 4.0",
+          "ebucore:title": {
+            "fr": [
+              "Boucle cyclotouristique \"Musée Cécile Sabourdy\"_1"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "musée"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/eee0790b-e54a-3a7c-a9d4-ba30664bcf37",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt64.media.tourinsoft.eu/upload/202001173-8.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bb083b07-c14a-3bc4-b0b7-cf85c4daac4b",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/a2515d2e-da7a-37a5-bed5-079e02f00676",
+          "ebucore:isCoveredBy": "By-NC-ND 4.0",
+          "ebucore:title": {
+            "fr": [
+              "Boucle cyclotouristique \"Musée Cécile Sabourdy\"_3"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "ot bshv"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/47c599f5-983d-3d45-8e71-d443229d763d",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt64.media.tourinsoft.eu/upload/202001173-7.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:FaunaFlora",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Fauna – Flora"
+        ],
+        "pt": [
+          "Fauna — flora"
+        ],
+        "en": [
+          "Fauna - flora"
+        ],
+        "it": [
+          "Fauna - Flora"
+        ],
+        "fr": [
+          "Faune - flore"
+        ],
+        "nl": [
+          "Fauna - flora"
+        ],
+        "es": [
+          "Fauna - flora"
+        ]
+      }
+    },
+    {
+      "@id": "kb:NatureAndEnvironment",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Umwelt und Natur"
+        ],
+        "pt": [
+          "Ambiente e natureza"
+        ],
+        "en": [
+          "Nature and environment"
+        ],
+        "it": [
+          "Ambiente e natura"
+        ],
+        "fr": [
+          "Environnement et nature"
+        ],
+        "nl": [
+          "Milieu en natuur"
+        ],
+        "es": [
+          "Medioambiente y naturaleza"
+        ]
+      }
+    },
+    {
+      "@id": "kb:PlantsAndFlower",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Pflanze und Blume"
+        ],
+        "pt": [
+          "Plantas e flores"
+        ],
+        "en": [
+          "Plants and flower"
+        ],
+        "it": [
+          "Pianta e fiore"
+        ],
+        "fr": [
+          "Plante et fleur"
+        ],
+        "es": [
+          "Plantas y flores"
+        ],
+        "nl": [
+          "Bloemen en planten"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/3a6e3dd1-a1f5-3107-99db-dfe7a3867834",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/9f13ec3d-2d85-3326-a5b0-0b6ec9ed3168",
+          "schema:addressLocality": "Magnac-Bourg",
+          "schema:postalCode": "87380",
+          "schema:streetAddress": [
+            "2 Place de la Bascule"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:87088",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Magnac-Bourg"
+              ],
+              "pt": [
+                "Magnac-Bourg"
+              ],
+              "en": [
+                "Magnac-Bourg"
+              ],
+              "it": [
+                "Magnac-Bourg"
+              ],
+              "fr": [
+                "Magnac-Bourg"
+              ],
+              "nl": [
+                "Magnac-Bourg"
+              ],
+              "es": [
+                "Magnac-Bourg"
+              ]
+            },
+            "insee": "87088",
+            "isPartOfDepartment": {
+              "@id": "kb:France7587",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Vienne"
+                ],
+                "pt": [
+                  "Haute-Vienne"
+                ],
+                "en": [
+                  "Haute-Vienne"
+                ],
+                "it": [
+                  "Haute-Vienne"
+                ],
+                "fr": [
+                  "Haute-Vienne"
+                ],
+                "nl": [
+                  "Haute-Vienne"
+                ],
+                "es": [
+                  "Haute-Vienne"
+                ]
+              },
+              "insee": "87",
+              "isPartOfRegion": {
+                "@id": "kb:France75",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "pt": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "en": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "it": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "fr": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "nl": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "es": [
+                    "Nouvelle-Aquitaine"
+                  ]
+                },
+                "insee": "75",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/18130b60-40c5-3333-8a10-b672e5cf4d26",
+        "schema:latitude": "45.6170428",
+        "schema:longitude": "1.43303964",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "altInsee": [
+        "MAGNAC-BOURG"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/51c41f18-330f-3890-8db1-c1dea991548d",
+      "schema:email": [
+        "ot.briancesudhautevienne@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 5 55 00 89 91"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-briancesudhautevienne@gmail.com/",
+        "https://rando-briancesudhautevienne.loopi-velo.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-12-12",
+  "lastUpdateDatatourisme": "2025-07-15T08:18:55.334Z",
+  "positiveCumulDifference": "449.0",
+  "tourDistance": "14140.0"
+}

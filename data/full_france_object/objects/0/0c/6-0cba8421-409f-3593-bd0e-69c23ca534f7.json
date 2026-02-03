@@ -1,0 +1,795 @@
+{
+  "@id": "https://data.datatourisme.fr/6/0cba8421-409f-3593-bd0e-69c23ca534f7",
+  "dc:identifier": "HLOBFC000V52RWG5",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Das Ferienhaus L'écusson ist ein Familienhaus mit 3 Schlafzimmern, die somit 6 Personen beherbergen können, einem Bürobereich und einem großen Gart..."
+    ],
+    "en": [
+      "The L'écusson gîte is a family home with 3 bedrooms for 6 people, an office area and a large garden."
+    ],
+    "it": [
+      "Il gîte L'écusson è una casa familiare con 3 camere da letto per 6 persone, una zona ufficio e un ampio giardino."
+    ],
+    "fr": [
+      "Le gîte L’écusson est une maison familiale qui dispose de 3 chambres, pouvant ainsi accueillir 6 personnes, d’un espace bureau et d'un grand jardin."
+    ],
+    "es": [
+      "La casa rural L'écusson es una casa familiar con 3 habitaciones para 6 personas, un despacho y un gran jardín."
+    ],
+    "nl": [
+      "De gîte L?écusson is een gezinswoning met 3 slaapkamers voor 6 personen, een kantoorruimte en een grote tuin."
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "L'écusson"
+    ],
+    "en": [
+      "L'écusson"
+    ],
+    "fr": [
+      "L'écusson"
+    ]
+  },
+  "allowedPersons": 6,
+  "creationDate": "2024-05-30",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/dad8dbd1-a667-31d8-ad54-20fbdc026336",
+    "dc:identifier": "718d22be-55ff-4804-aef4-9d3b28d1d729",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/da9c0c83-9865-3962-9305-dec20c6a0f23",
+        "schema:addressLocality": "Arnay-le-Duc",
+        "schema:postalCode": "21320",
+        "schema:streetAddress": [
+          "6 place Bonaventure des Périers"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:21023",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Arnay-le-Duc"
+            ],
+            "pt": [
+              "Arnay-le-Duc"
+            ],
+            "en": [
+              "Arnay-le-Duc"
+            ],
+            "it": [
+              "Arnay-le-Duc"
+            ],
+            "fr": [
+              "Arnay-le-Duc"
+            ],
+            "nl": [
+              "Arnay-le-Duc"
+            ],
+            "es": [
+              "Arnay-le-Duc"
+            ]
+          },
+          "insee": "21023",
+          "isPartOfDepartment": {
+            "@id": "kb:France2721",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Côte-d'Or"
+              ],
+              "pt": [
+                "Côte-d'Or"
+              ],
+              "en": [
+                "Côte-d'Or"
+              ],
+              "it": [
+                "Côte-d'Or"
+              ],
+              "fr": [
+                "Côte-d'Or"
+              ],
+              "nl": [
+                "Côte-d'Or"
+              ],
+              "es": [
+                "Côte-d'Or"
+              ]
+            },
+            "insee": "21",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "ot.arnayleduc@gmail.com"
+    ],
+    "schema:legalName": "OT Pays Arnay-Liernais",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.tourisme-arnayliernais.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/c9532279-dfde-3b40-9c3e-45d5d97f43ff",
+      "schema:email": [
+        "p.g.jeannin@orange.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 84 86 65 25"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://fr.airbnb.ca/rooms/913668623611333690?source_impression_id=p3_1706706176_AdWykd8kL%2Bsw2pH8"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/c9532279-dfde-3b40-9c3e-45d5d97f43ff",
+      "schema:email": [
+        "p.g.jeannin@orange.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 84 86 65 25"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://fr.airbnb.ca/rooms/913668623611333690?source_impression_id=p3_1706706176_AdWykd8kL%2Bsw2pH8"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/fc31e08e-53a5-33d6-95b3-27392c473f2e",
+      "dc:description": {
+        "de": [
+          "Die Unterkunft L'écusson ist ein Familienhaus im Stadtzentrum von Arnay-le-Duc, einer charmanten Gemeinde in der Côte d'Or an der Grenze zum Departement Saône-et-Loire. \n\nDas Haus verfügt über 3 Schlafzimmer, die somit 6 Personen beherbergen können, einen Bürobereich mit WLAN für Telearbeit und einen sehr großen Garten."
+        ],
+        "en": [
+          "The L'écusson gîte is a family home located in the centre of Arnay-le-Duc, a charming Côte d'Or commune on the border with Saône-et-Loire. \n\nThe house has 3 bedrooms, sleeping 6, an office area with Wi-Fi for teleworking and a very large garden."
+        ],
+        "it": [
+          "L'alloggio L'écusson è una casa familiare situata nel centro di Arnay-le-Duc, un incantevole comune della Côte d'Or al confine con Saône-et-Loire.\n\nLa casa dispone di 3 camere da letto per 6 persone, una zona ufficio con Wi-Fi per il telelavoro e un ampio giardino."
+        ],
+        "fr": [
+          "Le gîte L’écusson est une maison familiale située au centre-ville d’Arnay-le-Duc, charmante commune de Côte d’Or à la frontière avec la Saône-et-Loire. \n\nCette maison dispose de 3 chambres, pouvant ainsi accueillir 6 personnes, d’un espace bureau avec Wifi pour le télétravail et d’un très grand jardin."
+        ],
+        "es": [
+          "La casa rural L'écusson es una casa familiar situada en el centro de Arnay-le-Duc, un encantador municipio de Côte d'Or en la frontera con Saône-et-Loire.\n\nLa casa dispone de 3 habitaciones para 6 personas, una zona de oficina con Wi-Fi para teletrabajar y un jardín muy grande."
+        ],
+        "nl": [
+          "De gîte L?écusson is een familiehuis in het centrum van Arnay-le-Duc, een charmante gemeente aan de Côte d'Or op de grens met Saône-et-Loire.\n\nHet huis heeft 3 slaapkamers voor 6 personen, een kantoorruimte met Wi-Fi voor telewerken en een zeer grote tuin."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/2266c0b7-8137-382c-9876-7105edd4defc",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/37e64fee-9e46-31ef-9cc3-a876a1b1fc89",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9514e727-830e-3bf5-a3ae-eef7d5efbeb5",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9db04126-2eb7-34b7-8690-bb5518f4e29a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/df367e71-0968-3964-a8cf-6316d2bfb98d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f2d22568-a084-3554-b7d9-1c5810a67b6b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Das Ferienhaus L'écusson ist ein Familienhaus mit 3 Schlafzimmern, die somit 6 Personen beherbergen können, einem Bürobereich und einem großen Gart..."
+        ],
+        "en": [
+          "The L'écusson gîte is a family home with 3 bedrooms for 6 people, an office area and a large garden."
+        ],
+        "it": [
+          "Il gîte L'écusson è una casa familiare con 3 camere da letto per 6 persone, una zona ufficio e un ampio giardino."
+        ],
+        "fr": [
+          "Le gîte L’écusson est une maison familiale qui dispose de 3 chambres, pouvant ainsi accueillir 6 personnes, d’un espace bureau et d'un grand jardin."
+        ],
+        "es": [
+          "La casa rural L'écusson es una casa familiar con 3 habitaciones para 6 personas, un despacho y un gran jardín."
+        ],
+        "nl": [
+          "De gîte L?écusson is een gezinswoning met 3 slaapkamers voor 6 personen, een kantoorruimte en een grote tuin."
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/e525db73-2adc-f28b-249c-d1e00924b5db",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "C4GGNC83YPYJ",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/291b3921-3d00-326b-8ed7-258e60a01e7d",
+      "schema:value": "3",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/39622c81-d525-36fd-b9d2-75d9a2412ac8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef2d7794-2aa6-3c88-a672-d20e3cc76cc7",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SheetsAndTowels",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bettwäsche und Handtücher"
+            ],
+            "pt": [
+              "Lençóis e toalhas"
+            ],
+            "en": [
+              "Sheets and towels"
+            ],
+            "it": [
+              "Lenzuola e biancheria"
+            ],
+            "fr": [
+              "Draps et linges"
+            ],
+            "es": [
+              "Sábanas y ropa de cama"
+            ],
+            "nl": [
+              "Beddengoed en handdoeken"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/01200ccf-362d-34af-862d-a6be0830282e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/815a6b9c-5a4d-3ea2-97cd-23508bd616a9",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b831f10c-9432-3fe4-9e03-8d951bc643b8",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/1756d04d-367c-3b85-ac49-1b2c4c5dd6f7",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/c3aeb8f5-3e3e-3de3-b856-426a90632166",
+          "schema:addressLocality": "Arnay-le-Duc",
+          "schema:postalCode": "21230",
+          "schema:streetAddress": [
+            "Rue du Collège"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:21023",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Arnay-le-Duc"
+              ],
+              "pt": [
+                "Arnay-le-Duc"
+              ],
+              "en": [
+                "Arnay-le-Duc"
+              ],
+              "it": [
+                "Arnay-le-Duc"
+              ],
+              "fr": [
+                "Arnay-le-Duc"
+              ],
+              "nl": [
+                "Arnay-le-Duc"
+              ],
+              "es": [
+                "Arnay-le-Duc"
+              ]
+            },
+            "insee": "21023",
+            "isPartOfDepartment": {
+              "@id": "kb:France2721",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Côte-d'Or"
+                ],
+                "pt": [
+                  "Côte-d'Or"
+                ],
+                "en": [
+                  "Côte-d'Or"
+                ],
+                "it": [
+                  "Côte-d'Or"
+                ],
+                "fr": [
+                  "Côte-d'Or"
+                ],
+                "nl": [
+                  "Côte-d'Or"
+                ],
+                "es": [
+                  "Côte-d'Or"
+                ]
+              },
+              "insee": "21",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/3e733247-29f5-376a-a654-705ddf0ab664",
+        "schema:latitude": "47.1306387",
+        "schema:longitude": "4.48743284",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-06-17",
+  "lastUpdateDatatourisme": "2025-06-18T23:39:26.517Z"
+}

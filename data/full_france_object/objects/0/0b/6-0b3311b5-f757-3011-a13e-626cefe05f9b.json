@@ -1,0 +1,965 @@
+{
+  "@id": "https://data.datatourisme.fr/6/0b3311b5-f757-3011-a13e-626cefe05f9b",
+  "dc:identifier": "HLOBOU000V50S5Q3",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "de": [
+      "La Petite Maison"
+    ],
+    "en": [
+      "La Petite Maison"
+    ],
+    "fr": [
+      "La Petite Maison"
+    ]
+  },
+  "allowedPersons": 3,
+  "creationDate": "2024-12-06",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/82578c73-08c7-342e-8845-dc63b20d54a8",
+    "dc:identifier": "6012fdba-d499-4734-b015-373e96f99808",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/264b87c4-2c8b-383e-bc71-d437efb5644d",
+        "schema:addressLocality": "Mâcon",
+        "schema:postalCode": "71000",
+        "schema:streetAddress": [
+          "Maison de la Saône-et-Loire"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:71270",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mâcon"
+            ],
+            "pt": [
+              "Mâcon"
+            ],
+            "en": [
+              "Mâcon"
+            ],
+            "it": [
+              "Mâcon"
+            ],
+            "fr": [
+              "Mâcon"
+            ],
+            "nl": [
+              "Mâcon"
+            ],
+            "es": [
+              "Mâcon"
+            ]
+          },
+          "insee": "71270",
+          "isPartOfDepartment": {
+            "@id": "kb:France2771",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saône-et-Loire"
+              ],
+              "pt": [
+                "Saône-et-Loire"
+              ],
+              "en": [
+                "Saône-et-Loire"
+              ],
+              "it": [
+                "Saône-et-Loire"
+              ],
+              "fr": [
+                "Saône-et-Loire"
+              ],
+              "nl": [
+                "Saône-et-Loire"
+              ],
+              "es": [
+                "Saône-et-Loire"
+              ]
+            },
+            "insee": "71",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "missiontourisme@saoneetloire71.fr"
+    ],
+    "schema:legalName": "Mission Tourisme - Département 71",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://route71.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/ff1a89e8-d384-3f8f-a49f-7da097d1db8e",
+      "schema:email": [
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=3263&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/ff1a89e8-d384-3f8f-a49f-7da097d1db8e",
+      "schema:email": [
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=3263&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/8962bef8-4190-39a4-ae0d-86983441177c",
+      "dc:description": {
+        "de": [
+          "Noëlle und Axel (Geschichtsliebhaber und Autor eines lokalen Buches) öffnen Ihnen die Türen eines reizenden authentischen landwirtschaftlichen Nebengebäudes aus dem frühen 19. Jahrhundert, das sorgfältig und kunstvoll restauriert wurde und sich am Rande einer Gasse gegenüber der eleganten romanischen Kirche des Dorfes (12. Jahrhundert) befindet. Ruhe und Stille, eingebettet im Herzen der Stadtinmitten eines friedlichen, malerischen und perfekt erhaltenen kleinen Dorfes in der süßen Umgebung von Cluny (das aufgrund seiner reichen Fauna und Flora als \"Natura 2000\"-Gebiet eingestuft und geschützt ist), das auf einem Hügel inmitten einer wunderschönen hügeligen Landschaft mit Wiesen und Weiden liegt, die von kleinen Flüssen und Teichen durchzogen sind, unter den bewaldeten Bergrücken des riesigen Staatswaldes von Trois Monts (die buchstäbliche \"grüne Lunge\" der Region, die Sie auf erholsamen Spaziergängen oder Mountainbike-Touren durchstreifen können). Sehr komfortable Unterkunft unter dem Dach (große Räume). Gemütlicher Landhaus-Chic, gediegen und raffiniert, im Dialog mit den reichen Spuren der ursprünglichen Bausubstanz (Steinmauern und Holzstürze). Viel Charme und Charakter. Gemütliche, kuschelige und kokonartige Atmosphäre. Großer Kieshof mit Terrasse, dominiert von einem \"erhöhten\" kleinen Garten. Zugang zum großen und sehr angenehmen geschlossenen Garten (3000m²) der Eigentümer, der sorgfältig angelegt wurde (Rasen, Pflanzen und Bäume) und einen schönen beheizten Pool (4x12m) zur gemeinsamen Nutzung beherbergt, der durch eine überdachte Terrasse ergänzt wird.\nZusammensetzung: Ferienhaus, das an das Wohnhaus der Eigentümer angrenzt (völlige Unabhängigkeit ohne Gegenüber). Wifi (Glasfaser). Zentralheizung aus Holz. Hochparterre (3 Stufen): Küche-Wohn- und Esszimmer (Schlafsofa 1 P. 120x190cm), 1 Schlafzimmer (2 Einzelbetten 80x200cm, die zu einem Doppelbett 160x200cm zusammengestellt werden können), Badezimmer (Dusche), separates WC. Private Kiesterrasse + kleiner Garten. Geschlossener Garten (3000m²) mit beheiztem Pool (4x12m) zur gemeinsamen Nutzung mit den Eigentümern. Abstellraum für Fahrräder. Einfacher öffentlicher Parkplatz vor Ort. Supermarkt und kleine Geschäfte 12 km. Alle Einkaufsmöglichkeiten, darunter Supermärkte 17 km."
+        ],
+        "en": [
+          "Noëlle & Axel (passionate about history, author of a local book), open the doors of a charming authentic agricultural outbuilding dating from the early 19th century, carefully restored according to the rules of the art, nestled on the edge of a lane opposite the very elegant Romanesque church of the town built in the 12th century. Calm & tranquility, nestled in the heart of a peaceful & picturesque little village perfectly preserved in the gentle Clunisoise countryside (classified & protected in \"Natura 2000 Zone\" for its fauna & flora riches) perched on the hillside in the hollow of a magnificent landscaped setting undulating with hedged meadows dotted with bucolic small rivers & ponds, under the wooded ridges of the vast state forest of Trois Monts (literally \"green lung\" of the territory to explore during relaxing walks or mountain bike rides). Very comfortable cottage nestled \"under the roofs\" (beautiful volumes). Warm \"country chic\" spirit, opulent & refined, dialoguing with the rich traces of the original building (stone walls & wooden lintels). Lots of charm & character. Cozy, cocooning & cozy atmosphere. Large gravel courtyard with a terrace area, dominated by a \"raised\" garden. Access to the vast & very pleasant enclosed garden (3000m²) of the owners carefully landscaped (grassed, planted & wooded) housing a beautiful heated swimming pool (4x12m) in common, decorated with a covered terrace.\nComposition: Gite adjoining the owners' home (total independence without vis-à-vis). Wifi (fiber). Wood central heating. Raised ground floor (3 steps): kitchen-living room-lounge (single sofa bed 120x190cm), 1 bedroom (2 single beds 80x200cm which can be twinned into a double bed 160x200cm), bathroom (shower), separate toilet. Private gravel terrace + small garden. Enclosed garden (3000m²) with heated swimming pool (4x12m) shared with owners. Bicycle storage. Easy public parking on site. Mini-market & small shops 12 km. All amenities including supermarkets 17 km."
+        ],
+        "it": [
+          "Noëlle e Axel (appassionati di storia e autori di un libro locale), ci aprono le porte di un delizioso edificio agricolo autentico risalente all'inizio del XIX secolo, accuratamente restaurato secondo i più alti standard, situato ai margini di un vicolo di fronte all'elegante chiesa romanica del XII secolo del villaggio. Pace e tranquillità, immerso nel cuore di un tranquillo?cuore di un tranquillo e pittoresco paesino perfettamente preservato dalla dolce campagna di Clunis (classificata e protetta come \"Zona Natura 2000\" per la sua ricchezza di flora e fauna) arroccato su una collina nel cuore di un magnifico paesaggio di prati ondulati punteggiati da bucolici fiumiciattoli e stagni, sotto le creste boscose della vasta foresta nazionale dei Trois Monts (letteralmente il \"polmone verde\" della regione, ideale per rilassanti passeggiate a piedi o in mountain bike). Gîte molto confortevole, annidato sotto i tetti (alloggio spazioso). Stile \"country chic\" accogliente e raffinato, in armonia con le ricche tracce dell'edificio originale (muri in pietra e architravi in legno). Tanto fascino e carattere. Atmosfera accogliente e avvolgente. Ampio cortile in ghiaia con terrazza, dominato da un giardino \"rialzato\". Accesso al vasto e piacevolissimo giardino recintato dei proprietari (3000m²), curato nei minimi dettagli (erboso, piantumato e alberato) e dotato di una bella piscina comune riscaldata (4x12m) e di una terrazza coperta.\nComposizione: Gîte adiacente alla casa dei proprietari (completamente indipendente senza vicini). Wifi (fibra). Riscaldamento centrale a legna. Piano terra rialzato (3 gradini): cucina-soggiorno-salotto (divano letto 1 p. 120x190cm), 1 camera da letto (2 letti 1 p. 80x200cm gemellabili in un letto 2 p. 160x200cm), bagno (doccia), WC separato. Terrazza privata in ghiaia e piccolo giardino. Giardino recintato (3000m²) con piscina riscaldata (4x12m) in comune con i proprietari. Capanno per biciclette. Facile parcheggio pubblico in loco. Supermercato e piccoli negozi a 12 km. Tutti i servizi, compresi i supermercati, a 17 km."
+        ],
+        "fr": [
+          "Noëlle & Axel (passionné d‘histoire, auteur d'un ouvrage local), vous ouvrent les portes d'une ravissante authentique dépendance agricole datant du début XIXe, soigneusement restaurée dans les règles de l'art, nichée en bordure de ruelle face à la très élégante église romane du bourg édifiée au XIIe. Calme & tranquillité, blotti en plein cœur d'un paisible & pittoresque petit village parfaitement sauvegardé de la douce compagne clunisoise (classée & protégé en \"Zone Natura 2000\" pour ses richesses faunistiques & floristiques) perché à flanc de colline au creux d'un magnifique écrin paysagé vallonné de prairies bocagères parsemées de bucoliques petites rivières & étangs, sous les crêtes boisées de la vaste forêt domaniale des Trois Monts (littéral \"poumon vert\" du territoire à parcourir lors de reposantes balades à pied ou VTT). Gîte de très bon confort lové \"sous les toits\" (beaux volumes). Chaleureux cachet d'esprit \"campagne chic\", cossu & raffiné, dialoguant avec les riches traces du bâti d'origine (murs en pierre & linteaux en bois). Beaucoup de charme & de caractère. Ambiance cosy, cocooning & douillette. Large cour en gravier dotée d'un espace terrasse, dominée par un jardinet \"surélevé\". Accès au vaste & très agréable jardin clos (3000m²) des propriétaires soigneusement paysagé (engazonné, végétalisé & arboré) abritant une belle piscine chauffée (4x12m) en commun, agrémentée d'une terrasse couverte.\nComposition : Gîte mitoyen à l'habitation des propriétaires (totale indépendance sans vis-à-vis). Wifi (fibre). Chauffage central bois. Rdc surélévé (3 marches) : cuisine-séjour-salon (canapé convertible 1 p. 120x190cm), 1 chambre (2 lits 1 p. 80x200cm jumelables en lit 2 p. 160x200cm), salle d'eau (douche), Wc indépendant. Terrasse gravier + jardinet privés. Jardin clos (3000m²) avec piscine chauffée (4x12m) en commun avec propriétaires. Local vélos. Parking public aisé sur place. Supérette & petits commerces 12 km. Toutes commodités dont supermarchés 17 km."
+        ],
+        "es": [
+          "Noëlle y Axel (aficionados a la historia y autores de un libro local) le abren las puertas de una auténtica granja de principios del siglo XIX, cuidadosamente restaurada con las mejores calidades, situada al borde de una callejuela frente a la elegante iglesia románica del siglo XII del pueblo. Paz y tranquilidad, enclavado en el corazón de un?corazón de un tranquilo y pintoresco pueblecito perfectamente preservado de la apacible campiña de Clunis (clasificada y protegida como \"Zona Natura 2000\" por su riqueza en flora y fauna) encaramado en una ladera en el corazón de un magnífico paisaje de onduladas praderas salpicadas de bucólicos riachuelos y estanques, bajo las crestas boscosas del inmenso bosque nacional de Trois Monts (literalmente, el \"pulmón verde\" de la región, ideal para relajantes paseos a pie o en bicicleta de montaña). Casa rural muy confortable enclavada bajo los tejados (alojamiento espacioso). Estilo \"country chic\" acogedor y refinado, en armonía con los ricos vestigios del edificio original (muros de piedra y dinteles de madera). Mucho encanto y carácter. Ambiente acogedor. Gran patio de grava con terraza, dominado por un jardín \"elevado\". Acceso al amplio y muy agradable jardín cerrado de los propietarios (3000 m²), cuidadosamente ajardinado (césped, plantas y árboles) y con una bonita piscina climatizada compartida (4x12m) y terraza cubierta.\nComposición: Casa rural contigua a la casa de los propietarios (totalmente independiente sin vecinos). Wifi (fibra). Calefacción central de leña. Planta baja elevada (3 escalones): cocina-salón-sala de estar (sofá cama 1 p. 120x190cm), 1 habitación (2 camas 1 p. 80x200cm que se pueden hermanar en una cama 2 p. 160x200cm), cuarto de baño (ducha), WC separado. Terraza privada de grava y pequeño jardín. Jardín cerrado (3000m²) con piscina climatizada (4x12m) compartida con los propietarios. Cobertizo para bicicletas. Fácil aparcamiento público in situ. Supermercado y pequeños comercios a 12 km. Todos los servicios y supermercados a 17 km."
+        ],
+        "nl": [
+          "Noëlle & Axel (geschiedenisfanaten, auteur van een lokaal boek), openen de deuren van een prachtig authentiek boerderijgebouw uit het begin van de 19e eeuw, zorgvuldig gerestaureerd volgens de hoogste normen, genesteld aan de rand van een laantje tegenover de elegante 12e-eeuwse Romaanse kerk van het dorp. Rust en stilte, genesteld in het hart van een vredig?in het hart van een vredig en pittoresk dorpje, perfect bewaard gebleven van het glooiende platteland van Clunis (geclassificeerd en beschermd als een \"Natura 2000-gebied\" voor zijn rijkdom aan flora en fauna), gelegen op een heuvel in het hart van een prachtig landschap van glooiende weiden bezaaid met bucolische riviertjes en vijvers, onder de beboste bergkammen van het uitgestrekte nationale bos van Trois Monts (letterlijk de \"groene long\" van de regio, ideaal voor ontspannende wandelingen of mountainbiketochten). Zeer comfortabele gîte genesteld onder de daken (ruime accommodatie). Gezellige en verfijnde \"country chic\" stijl, in harmonie met de rijke sporen van het oorspronkelijke gebouw (stenen muren en houten lateien). Veel charme en karakter. Gezellige, cocooning & knusse sfeer. Grote binnenplaats met grind en terras, gedomineerd door een \"verhoogde\" tuin. Toegang tot de grote en zeer aangename omheinde tuin van de eigenaars (3000m²), met zorg aangelegd (gras, beplanting & bomen) en met een mooi gemeenschappelijk verwarmd zwembad (4x12m) en overdekt terras.\nIndeling: Gîte grenzend aan het huis van de eigenaren (volledig onafhankelijk zonder buren). Wifi (glasvezel). Centrale verwarming op hout. Verhoogde begane grond (3 treden): keuken-woonkamer-living (slaapbank 1 p. 120x190cm), 1 slaapkamer (2 bedden 1 p. 80x200cm die kunnen worden samengevoegd tot een bed 2 p. 160x200cm), doucheruimte (douche), aparte WC. Privé-terras in fijne kiezel en kleine tuin. Omheinde tuin (3000m²) met verwarmd zwembad (4x12m) gedeeld met de eigenaren. Fietsenstalling. Gemakkelijk openbaar parkeren op het terrein. Supermarkt en kleine winkels op 12 km. Alle voorzieningen inclusief supermarkten op 17 km."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/2c09d00e-1bca-382a-94ae-eead92f93b94",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/60578af7-1acd-36b3-9879-9f5edf716fc6",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/62ae7426-d638-38aa-93c4-2fd89120c281",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7edf31cf-b2c2-31f1-a454-c1b2fe015cb8",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/1884ddb4-6fe7-3412-be0e-950606e6a64b",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Accommodation",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Unterbringung"
+            ],
+            "pt": [
+              "Alojamento"
+            ],
+            "en": [
+              "Accommodation"
+            ],
+            "it": [
+              "Alloggio"
+            ],
+            "fr": [
+              "Logement"
+            ],
+            "nl": [
+              "Logies"
+            ],
+            "es": [
+              "Alojamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/7fe6774c-faa7-3d32-b8ac-98a2e4065fb1",
+        "schema:unitText": [
+          "m²"
+        ],
+        "schema:value": "38",
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/39622c81-d525-36fd-b9d2-75d9a2412ac8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4f533e68-e395-38ec-84c8-63df3537c904",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SwimmingPool",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Pool"
+            ],
+            "pt": [
+              "Piscina"
+            ],
+            "en": [
+              "Swimming pool"
+            ],
+            "it": [
+              "Piscina"
+            ],
+            "fr": [
+              "Piscine"
+            ],
+            "nl": [
+              "Zwembad"
+            ],
+            "es": [
+              "Piscina"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/68a14e24-77ce-388e-a9a6-88a6cb4f5a1e",
+      "schema:value": "1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8fcb0e73-e6cb-328e-8238-d0a08c9a5036",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bfff4488-8625-3579-ae4c-479a61aecaaf",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Freezer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gefriergerät"
+            ],
+            "pt": [
+              "Congelador"
+            ],
+            "en": [
+              "Freezer"
+            ],
+            "it": [
+              "Congelatore"
+            ],
+            "fr": [
+              "Congélateur"
+            ],
+            "nl": [
+              "Diepvriezer"
+            ],
+            "es": [
+              "Congelador"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef987579-32be-36f7-a54d-805aacd16d8e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/2be01c8a-de7b-393b-b059-2d32a7089289",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3epis",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Ähren/Komfort"
+          ],
+          "pt": [
+            "3 espigas / conforto"
+          ],
+          "en": [
+            "3 ears of corn / Confort level"
+          ],
+          "it": [
+            "3 spighe / Comfort"
+          ],
+          "fr": [
+            "3 épis / Confort"
+          ],
+          "es": [
+            "3 espigas/Confort"
+          ],
+          "nl": [
+            "3 aren / Comfort"
+          ]
+        },
+        "isCompliantWith": [
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f8884d70-4a02-376b-a0b0-3171c508b279",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_GitesDeFrance",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Gîtes de France"
+          ],
+          "pt": [
+            "Gîtes de France"
+          ],
+          "en": [
+            "Gîtes de France"
+          ],
+          "it": [
+            "Gîtes de France"
+          ],
+          "fr": [
+            "Gîtes de France"
+          ],
+          "nl": [
+            "Gîtes de France"
+          ],
+          "es": [
+            "Gîtes de France"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/d1e64a46-d2e9-36c8-b5d5-7951c5336b8e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/11f8dbed-a1a4-34ad-a634-40bcee21f0d6",
+          "schema:addressLocality": "Buffières",
+          "schema:postalCode": "71250",
+          "schema:streetAddress": [
+            "709 Rue du Bourg"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:71065",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Buffières"
+              ],
+              "pt": [
+                "Buffières"
+              ],
+              "en": [
+                "Buffières"
+              ],
+              "it": [
+                "Buffières"
+              ],
+              "fr": [
+                "Buffières"
+              ],
+              "nl": [
+                "Buffières"
+              ],
+              "es": [
+                "Buffières"
+              ]
+            },
+            "insee": "71065",
+            "isPartOfDepartment": {
+              "@id": "kb:France2771",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Saône-et-Loire"
+                ],
+                "pt": [
+                  "Saône-et-Loire"
+                ],
+                "en": [
+                  "Saône-et-Loire"
+                ],
+                "it": [
+                  "Saône-et-Loire"
+                ],
+                "fr": [
+                  "Saône-et-Loire"
+                ],
+                "nl": [
+                  "Saône-et-Loire"
+                ],
+                "es": [
+                  "Saône-et-Loire"
+                ]
+              },
+              "insee": "71",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/95394f91-d867-3e8f-896b-2fa096467042",
+        "schema:latitude": "46.42891",
+        "schema:longitude": "4.53642",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-31",
+  "lastUpdateDatatourisme": "2025-08-01T00:10:05.566Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/544257e2-2d59-3f0e-8d8b-e429d849f774",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

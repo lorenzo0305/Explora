@@ -1,0 +1,282 @@
+{
+  "@id": "https://data.datatourisme.fr/49/099c3e8a-5419-3714-b774-095e90f5c403",
+  "dc:identifier": "RESPDL085V50NP1Q",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Restaurant",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Au P'tit Resto'"
+    ]
+  },
+  "creationDate": "2017-04-04",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/43b18da3-8ac7-3a3d-96c7-3d9192c8c8db",
+    "schema:email": [
+      "contact@destination-vendeegrandlittoral.com"
+    ],
+    "schema:legalName": "Office de Tourisme Destination Vendée Grand Littoral",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/620096f7-797e-361c-9005-c4196b5837bb",
+      "schema:email": [
+        "m.belouard@vendee-expansion.fr"
+      ],
+      "schema:legalName": "Vendée Expansion",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://tourisme.vendee-expansion.fr/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/df336635-83d3-3a56-8f43-5911322e0e66",
+      "schema:email": [
+        "sandrinedelhomme@orange.fr"
+      ],
+      "schema:telephone": [
+        "+33 2 51 20 63 13",
+        "+33 6 67 21 95 97"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/ca4a9ef5-2409-3a66-9450-b8a8a108529e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/851b89bb-b7b0-3e80-89e0-8f9cd7d574d5",
+          "schema:addressLocality": "Longeville-sur-Mer",
+          "schema:postalCode": "85560",
+          "schema:streetAddress": [
+            "16/18 rue de l'Océan"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:85127",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Longeville-sur-Mer"
+              ],
+              "pt": [
+                "Longeville-sur-Mer"
+              ],
+              "en": [
+                "Longeville-sur-Mer"
+              ],
+              "it": [
+                "Longeville-sur-Mer"
+              ],
+              "fr": [
+                "Longeville-sur-Mer"
+              ],
+              "nl": [
+                "Longeville-sur-Mer"
+              ],
+              "es": [
+                "Longeville-sur-Mer"
+              ]
+            },
+            "insee": "85127",
+            "isPartOfDepartment": {
+              "@id": "kb:France5285",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Vendée"
+                ],
+                "pt": [
+                  "Vendée"
+                ],
+                "en": [
+                  "Vendée"
+                ],
+                "it": [
+                  "Vendée"
+                ],
+                "fr": [
+                  "Vendée"
+                ],
+                "nl": [
+                  "Vendée"
+                ],
+                "es": [
+                  "Vendée"
+                ]
+              },
+              "insee": "85",
+              "isPartOfRegion": {
+                "@id": "kb:France52",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Pays de la Loire"
+                  ],
+                  "pt": [
+                    "Pays de la Loire"
+                  ],
+                  "en": [
+                    "Pays de la Loire"
+                  ],
+                  "it": [
+                    "Pays de la Loire"
+                  ],
+                  "fr": [
+                    "Pays de la Loire"
+                  ],
+                  "nl": [
+                    "Pays de la Loire"
+                  ],
+                  "es": [
+                    "Pays de la Loire"
+                  ]
+                },
+                "insee": "52",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/7c395c77-0f28-315c-a626-aab148810e41",
+        "schema:latitude": "46.4242049",
+        "schema:longitude": "-1.4909671",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-05-05",
+  "lastUpdateDatatourisme": "2025-05-06T04:08:23.419Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ]
+}

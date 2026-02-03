@@ -1,0 +1,3249 @@
+{
+  "@id": "https://data.datatourisme.fr/31/09df7efa-1390-3d7d-8bee-2f5795547232",
+  "dc:identifier": "TFO18772597355",
+  "@type": [
+    "ArcheologicalSite",
+    "Castle",
+    "CulturalSite",
+    "DefenceSite",
+    "FortifiedCastle",
+    "FortifiedSet",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RemarkableBuilding",
+    "Ruins"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Die Burg von Calmont d'Olt überragt von ihrem Gipfel aus die Stadt Espalion und das Tal des Lot. Neben zahlreichen mittelalterlichen Spielen und einer freien Besichtigung bietet die Burg auch Animationen und Aufführungen, die für Groß und Klein geeignet sind!"
+    ],
+    "en": [
+      "Perched above the town of Espalion, the castle of Calmont d'Olt is a historic monument which dominates the Lot valley. Daily shows and live demonstrations with siege machines everyday during the summer holidays."
+    ],
+    "it": [
+      "Il castello di Calmont d'Olt domina dalla sua cima la città di Espalion e la valle del Lot. Oltre ai numerosi giochi medievali e alla visita gratuita, il castello offre animazioni e spettacoli adatti a bambini e adulti!"
+    ],
+    "fr": [
+      "Le château fort de Calmont d'Olt domine de son sommet la ville d'Espalion et la vallée du Lot. En plus des nombreux jeux médiévaux et de la visite libre, le château propose des animations et spectacles adaptés aux petits comme aux grands !"
+    ],
+    "nl": [
+      "Het kasteel van Calmont d'Olt domineert vanaf zijn top de stad Espalion en de vallei van de Lot. Naast de vele middeleeuwse spelen en het gratis bezoek, biedt het kasteel animaties en voorstellingen aangepast aan kinderen en volwassenen!"
+    ],
+    "es": [
+      "El castillo de Calmont d'Olt, monumento histórico, domina la cuidad de Espalion y el valle del Lot. Descubre animaciones con traje de época, el arte de la guerra durante la Edad Media así como la vida diaria en tiempo de paz."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Château de Calmont d'Olt"
+    ]
+  },
+  "allowedPersons": 400,
+  "availableLanguage": [
+    "en",
+    "es",
+    "fr"
+  ],
+  "hasAudience": [
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:School",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Schule"
+        ],
+        "pt": [
+          "Estudantes"
+        ],
+        "en": [
+          "School"
+        ],
+        "it": [
+          "Scuola"
+        ],
+        "fr": [
+          "Scolaires"
+        ],
+        "nl": [
+          "School"
+        ],
+        "es": [
+          "Escolares"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/db224e7a-611f-379d-b03d-1cb615389a8d",
+    "schema:legalName": "HIT Aveyron (ADAT Aveyron)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/66be3cfa-8d5c-34e7-87b1-87e1705c3fc4",
+      "schema:email": [
+        "webmaster@tourisme-aveyron.com"
+      ],
+      "schema:legalName": "ADT Aveyron",
+      "schema:telephone": [
+        "+33 5 65 75 40 12"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-aveyron.com/"
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:School",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Schule"
+        ],
+        "pt": [
+          "Estudantes"
+        ],
+        "en": [
+          "School"
+        ],
+        "it": [
+          "Scuola"
+        ],
+        "fr": [
+          "Scolaires"
+        ],
+        "nl": [
+          "School"
+        ],
+        "es": [
+          "Escolares"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/39738892-7818-375f-b613-fab80b6f9b9d",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/23b1a09f-0d26-3c39-8235-eb8ecc097bad",
+          "schema:addressLocality": "Espalion",
+          "schema:postalCode": "12500",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12096",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Espalion"
+              ],
+              "pt": [
+                "Espalion"
+              ],
+              "en": [
+                "Espalion"
+              ],
+              "it": [
+                "Espalion"
+              ],
+              "fr": [
+                "Espalion"
+              ],
+              "nl": [
+                "Espalion"
+              ],
+              "es": [
+                "Espalion"
+              ]
+            },
+            "insee": "12096",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "info@chateaucalmont.org"
+      ],
+      "schema:legalName": "Château de Calmont d'Olt",
+      "schema:telephone": [
+        "+33 7 75 75 09 71"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.chateaucalmont.org/",
+        "https://www.facebook.com/pages/Ch%C3%A2teau-de-Calmont-dOlt/414188605264811"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/f1d57d64-7d22-381c-b8dc-78d1f1fdf6df",
+      "dc:description": {
+        "de": [
+          "Burg mit freier oder animierter Besichtigung zum Thema Krieg im Mittelalter. Jeden Tag katapultiert eine Präzisionswaage seine Projektile, die Kanonen donnern, bewaffnete Männer präsentieren Degen, mittelalterliche Bögen, Armbrüste und Kettenhemden. Den Kindern wird am Ende eines „Entdeckungsspiels“ mit 14 Prüfungen ein Ritterdiplom ausgehändigt. Animationen, außergewöhnliches Panorama, archäologische Ausstellung, Geschichte, Geschäft."
+        ],
+        "en": [
+          "A fortified castle is the perfect example of Middle Age defenses. Guided and unguided tours on the theme of war in the Middle Ages. Live shooting of the trebuchet and cannons along with shooting of long-bows and cross-bows. Children are given knights' certificates at the end of the \"Discovery Game\". An exceptional view of Espalion and the Aubrac from the top of the keep which houses an archaeological exhibition."
+        ],
+        "it": [
+          "Lo Château de Calmont d'Olt è una tappa obbligata, con un tour che spiega l'architettura e la storia del sito. Un viaggio nel Medioevo con visite guidate, animazioni e spettacoli: spari di trabucco e cannoni, dimostrazioni di tiro con l'arco e laboratori sulla vita quotidiana.\nPer i bambini sono disponibili giochi medievali e il \"percorso del cavaliere\" permette loro di visitare il sito in modo diverso e di vincere un diploma con il loro nome in calligrafia.\nLungi dall'essere un monumento statico, questo castello è stato in costante evoluzione negli ultimi 30 anni, grazie ai lavori di stabilizzazione e agli scavi archeologici. Un'esposizione archeologica di armature ed equipaggiamenti dei cavalieri e un panorama unico sulle valli dell'Aubrac e del Lot completeranno la vostra giornata al castello."
+        ],
+        "fr": [
+          "Le château de Calmont d'Olt propose une visite incontournable grâce à un parcours expliquant l'architecture et l'histoire des lieux. Offrez-vous une excursion en plein Moyen Âge grâce aux visites guidées, aux animations et aux spectacles : tirs de trébuchet, de canon, démonstration d'archerie et atelier sur la vie quotidienne. \nPour les enfants, des jeux médiévaux sont en libre accès et \"le parcours du chevalier\" leur permet de visiter autrement et de gagner un diplôme calligraphié à leur nom.\nLoin du statisme des monuments, ce château est en constante évolution depuis 30 ans, grâce aux travaux de stabilisation et des chantiers archéologiques. Une exposition archéologique d'armures et équipements de chevaliers ainsi qu'un panorama unique sur l'Aubrac et la vallée du Lot viendront compléter votre journée au château."
+        ],
+        "nl": [
+          "Het Château de Calmont d'Olt is een must-see, met een rondleiding die de architectuur en geschiedenis van de plek uitlegt. Ga terug naar de Middeleeuwen met rondleidingen, entertainment en shows: trebuchet- en kanonschoten, boogschietdemonstraties en workshops over het dagelijks leven.\nVoor kinderen zijn er gratis middeleeuwse spelletjes en met het \"ridderpad\" kunnen ze op een andere manier een bezoek brengen en een diploma met hun naam in kalligrafie winnen.\nDit kasteel is geen statisch monument, maar is de afgelopen 30 jaar voortdurend in ontwikkeling geweest dankzij stabilisatiewerkzaamheden en archeologische opgravingen. Een archeologische tentoonstelling van ridderharnassen en -uitrustingen en een uniek panorama over de valleien van de Aubrac en de Lot ronden je dag in het kasteel af."
+        ],
+        "es": [
+          "El castillo se descubre a través de une visita libre o guíada sobre la arquitectura y la historia del sitio. Todos los días, un fundíbulo lanza proyectiles, los cañones truenan, hombres armados presentan arcos medievales, ballestas y cotas de malla. Un diploma de caballero será entregado a los niños tras un ‘juego de descubrimiento' en 14 pruebas. Animaciones, panorama excepcional, exposición arqueológica, historia, boutique."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/3eb77216-3db3-3c0a-8980-5860f7de46f8",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/44b8e5ac-4f68-30f2-b976-c4440bd30de0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5b4d9683-d8b9-3f6d-a995-a9cea69617ef",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/78152489-2170-3829-b34e-a10b989b98df",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a65b8b0f-e631-3eeb-b799-1b88d047e4b2",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Die Burg von Calmont d'Olt überragt von ihrem Gipfel aus die Stadt Espalion und das Tal des Lot. Neben zahlreichen mittelalterlichen Spielen und einer freien Besichtigung bietet die Burg auch Animationen und Aufführungen, die für Groß und Klein geeignet sind!"
+        ],
+        "en": [
+          "Perched above the town of Espalion, the castle of Calmont d'Olt is a historic monument which dominates the Lot valley. Daily shows and live demonstrations with siege machines everyday during the summer holidays."
+        ],
+        "it": [
+          "Il castello di Calmont d'Olt domina dalla sua cima la città di Espalion e la valle del Lot. Oltre ai numerosi giochi medievali e alla visita gratuita, il castello offre animazioni e spettacoli adatti a bambini e adulti!"
+        ],
+        "fr": [
+          "Le château fort de Calmont d'Olt domine de son sommet la ville d'Espalion et la vallée du Lot. En plus des nombreux jeux médiévaux et de la visite libre, le château propose des animations et spectacles adaptés aux petits comme aux grands !"
+        ],
+        "nl": [
+          "Het kasteel van Calmont d'Olt domineert vanaf zijn top de stad Espalion en de vallei van de Lot. Naast de vele middeleeuwse spelen en het gratis bezoek, biedt het kasteel animaties en voorstellingen aangepast aan kinderen en volwassenen!"
+        ],
+        "es": [
+          "El castillo de Calmont d'Olt, monumento histórico, domina la cuidad de Espalion y el valle del Lot. Descubre animaciones con traje de época, el arte de la guerra durante la Edad Media así como la vida diaria en tiempo de paz."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/0e9faf0e-cbca-3a1a-a9a7-c0ee80651f45",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "petsAllowed": true
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2e92add4-bb45-3e06-934d-82d44b7d732c",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:CarPark",
+          "@type": [
+            "CommonAmenity",
+            "GeneralPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Parkplatz"
+            ],
+            "pt": [
+              "Estacionamento"
+            ],
+            "en": [
+              "Car park"
+            ],
+            "it": [
+              "Parcheggio"
+            ],
+            "fr": [
+              "Parking"
+            ],
+            "nl": [
+              "Parkeerplaats"
+            ],
+            "es": [
+              "Aparcamiento"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/358e108a-a377-3222-9a5d-2a47e3b23cb0",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Bar",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bar"
+            ],
+            "pt": [
+              "Bar"
+            ],
+            "en": [
+              "Bar"
+            ],
+            "it": [
+              "Bar"
+            ],
+            "fr": [
+              "Bar"
+            ],
+            "nl": [
+              "Bar"
+            ],
+            "es": [
+              "Bar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/674bc3ab-e707-31f6-8b76-ed2906ce8753",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8ddd2ff4-2684-32ee-ae43-82c003958326",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Toilet",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Toiletten"
+            ],
+            "pt": [
+              "Sanitários"
+            ],
+            "en": [
+              "Toilets"
+            ],
+            "it": [
+              "Servizi igienici"
+            ],
+            "fr": [
+              "Toilettes"
+            ],
+            "nl": [
+              "Toiletten"
+            ],
+            "es": [
+              "Aseos"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/936c2406-8651-33ce-85eb-b9b23fabaaa5",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a87c1c6a-0b08-3323-a710-61e4bbda1f8d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:QuickDropOffArea",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Haltebereich zum schnellen Aussteigen"
+            ],
+            "pt": [
+              "Área de largada rápida"
+            ],
+            "en": [
+              "Quick drop-off area"
+            ],
+            "it": [
+              "Area kiss & fly"
+            ],
+            "fr": [
+              "Aire de dépose rapide"
+            ],
+            "es": [
+              "Zona de entrega rápida"
+            ],
+            "nl": [
+              "Kiss & Ride"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b79eae21-0eee-36f6-aef8-de7aa3c50d41",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:CoachParking",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Busparkplatz"
+            ],
+            "pt": [
+              "Estacionamento para autocarros"
+            ],
+            "en": [
+              "Coach parking"
+            ],
+            "it": [
+              "Parcheggio per pullman"
+            ],
+            "fr": [
+              "Parking autocar"
+            ],
+            "nl": [
+              "Busparking"
+            ],
+            "es": [
+              "Aparcamiento para autocares"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bc0d150d-dc8f-36c4-8d0d-be7b05251e54",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:PicnicArea",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Picknickplatz"
+            ],
+            "pt": [
+              "Área de piquenique"
+            ],
+            "en": [
+              "Picnic area"
+            ],
+            "it": [
+              "Area pic-nic"
+            ],
+            "fr": [
+              "Aire de pique-nique"
+            ],
+            "es": [
+              "Zona de pícnic"
+            ],
+            "nl": [
+              "Picknickplaats"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c9655b3f-7abb-3148-9b65-35b3b0c61a53",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Shop",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Laden"
+            ],
+            "pt": [
+              "Loja"
+            ],
+            "en": [
+              "Shop"
+            ],
+            "it": [
+              "Negozio"
+            ],
+            "fr": [
+              "Boutique"
+            ],
+            "nl": [
+              "Winkel"
+            ],
+            "es": [
+              "Tienda"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ecb6b364-7f01-3500-8488-e99c7a766c21",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:DrinkingWaterFaucet",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Trinkwasserquelle"
+            ],
+            "pt": [
+              "Ponto de água potável"
+            ],
+            "en": [
+              "Drinking water faucet"
+            ],
+            "it": [
+              "Punto d'acqua potabile"
+            ],
+            "fr": [
+              "Point d'eau potable"
+            ],
+            "es": [
+              "Punto de agua potable"
+            ],
+            "nl": [
+              "Drinkwaterpunt"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/5763e465-f662-3362-9719-32dcc8204ada",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/7a2c7dd9-34ae-3845-8177-eae025f6f52f",
+          "ebucore:comments": {
+            "fr": [
+              "Château de Calmont d'Olt"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Château de Calmont d'Olt"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Château de Calmont d'Olt"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/541e9c9a-6557-35f7-ab51-233d79ea4d08",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/images/300220_8565d206-81a8-44d8-a7db-ad0a2fb4ee28/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasNeighborhood": [
+    {
+      "@id": "kb:CityOutskirts",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Peripherie der Stadt"
+        ],
+        "pt": [
+          "Periferia da cidade"
+        ],
+        "en": [
+          "City outskirts"
+        ],
+        "it": [
+          "Periferia della città"
+        ],
+        "fr": [
+          "Périphérie de la ville"
+        ],
+        "es": [
+          "Periferia de la ciudad"
+        ],
+        "nl": [
+          "Buitenwijken"
+        ]
+      }
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/04dedeb5-af9a-3211-9345-6479da09047e",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/164031ef-17c4-3083-95b6-b69e172e5de7",
+          "ebucore:comments": {
+            "fr": [
+              "Exposition archéologique, Château de Calmont d'Olt"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Exposition archéologique, Château de Calmont d'Olt"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "(c) nicomphoto"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/a9dc6bd7-86d6-3bf4-bd98-4840bb2c56c2",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/images/300230_45d90d15-cef1-40a8-a434-c244ad2862f7/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/23ab8519-f8b7-3237-8960-f0e277bba8a7",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/b6e37934-9dcb-385b-9300-10f294f74cbc",
+          "ebucore:comments": {
+            "fr": [
+              "Hommes d'armes, Château de Calmont d'Olt"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Hommes d'armes, Château de Calmont d'Olt"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "©Nicomphoto"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/c6c181b7-bc83-321d-999a-cfae09f2c495",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/images/300228_f9ce64b3-13c2-439d-acf4-24fe63bb9199/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5763e465-f662-3362-9719-32dcc8204ada",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/7a2c7dd9-34ae-3845-8177-eae025f6f52f",
+          "ebucore:comments": {
+            "fr": [
+              "Château de Calmont d'Olt"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Château de Calmont d'Olt"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Château de Calmont d'Olt"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/541e9c9a-6557-35f7-ab51-233d79ea4d08",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/images/300220_8565d206-81a8-44d8-a7db-ad0a2fb4ee28/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5b336798-b4ac-37a7-b250-fa12ed1bb9fd",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/4d8a6f67-23cd-3404-84d0-2972a09878b0",
+          "ebucore:comments": {
+            "fr": [
+              "Flyer général"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Flyer général"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "OT Terres d'Aveyron"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/466d3fe5-0ce9-3423-b3c5-9d5a144b465e",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:PDF",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "PDF-Datei"
+                ],
+                "pt": [
+                  "Ficheiro PDF"
+                ],
+                "en": [
+                  "PDF file"
+                ],
+                "it": [
+                  "File PDF"
+                ],
+                "fr": [
+                  "Adobe Portable Document Format"
+                ],
+                "nl": [
+                  "Pdf-bestand"
+                ],
+                "es": [
+                  "Archivo PDF"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "application/pdf"
+                ],
+                "pt": [
+                  "application/pdf"
+                ],
+                "en": [
+                  "application/pdf"
+                ],
+                "it": [
+                  "application/pdf"
+                ],
+                "fr": [
+                  "application/pdf"
+                ],
+                "nl": [
+                  "application/pdf"
+                ],
+                "es": [
+                  "application/pdf"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/documents/ca560649-3c15-4e5e-8f85-bfa8d5c95af9.pdf"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/66759447-5a8d-3f40-98c8-55dc05f9d443",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/4c3d1f72-0312-30ff-9429-377894ec1e58",
+          "ebucore:comments": {
+            "fr": [
+              "Fenêtre geminée, Château de Calmont d'Olt"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Fenêtre geminée, Château de Calmont d'Olt"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "© Nicolas Peeters"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/289d243b-69ea-36cf-977c-563d491d5241",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/images/300223_ad6ffb52-446c-447f-80e0-8aedbf0caf44/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8ba32660-ec36-3315-9a54-9c15f37a5c6b",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/cc4f19f5-2ff0-3034-80f9-910d03e7009b",
+          "ebucore:comments": {
+            "fr": [
+              "Jeux en bois, Château de Calmont d'Olt"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Jeux en bois, Château de Calmont d'Olt"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "© Nicomphoto"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/32617aee-aa5c-3042-bf2d-2f46f0f907bf",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/images/300229_9c98d1bc-cbdc-45a4-b5c6-933a29109287/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/96ef7dc0-9c42-34f4-8da8-da41b3ddbff7",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/0f2cf098-a505-3839-94e2-55a1ae7f844d",
+          "ebucore:comments": {
+            "fr": [
+              "Château de Calmont d'Olt"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Château de Calmont d'Olt"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "©Château de Calmont d'Olt"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/647298bb-b94c-3bb8-ad42-38c4c3d45245",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/images/300222_d6cc74a5-72ed-4b31-9de0-947153757ddd/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b82e2c8e-c278-316f-9940-6749785942ab",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/a2150ffd-35b9-3738-943d-6dc2ecc561af",
+          "ebucore:comments": {
+            "fr": [
+              "Château de Calmont d'Olt"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Château de Calmont d'Olt"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "David MORIN"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/b5efd623-d9fc-3892-9243-33da5246652b",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/images/300231_4a42eda7-e992-4213-acc4-74c49fca808b/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c48bb2a7-cc4d-3693-99e5-894a00e4e4f4",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/73975a46-a961-3cf9-935e-490b03e5098d",
+          "ebucore:comments": {
+            "fr": [
+              "Entre la vallée du Lot et l'Aubrac, Calmont d'Olt"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Entre la vallée du Lot et l'Aubrac, Calmont d'Olt"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "(c) nicomphoto"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/239d03b8-6d37-3c18-a7fa-5a3834cc2650",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/images/300221_6919c468-da79-4e52-b30f-d1331acdd0cb/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c76f934b-0ba6-3b1b-a6f9-207c6b071722",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/51f6165a-7f46-389f-a7fd-4fa090214f12",
+          "ebucore:comments": {
+            "fr": [
+              "Feu de la Saint Jean, Calmont d'Olt"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Feu de la Saint Jean, Calmont d'Olt"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "© nicomphoto"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/d2696ced-6455-38dd-b44f-f0785a7d3d41",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/images/300225_5998e32c-eeaa-487d-85c2-6b04db8c9829/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d8fefc6e-52ab-3ba9-8712-07b7ffa90bc4",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/3ef4f2c4-b30b-3c46-95f7-41ab89c01613",
+          "ebucore:comments": {
+            "fr": [
+              "Tir du trébuchet, Château de Calmont d'Olt"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Tir du trébuchet, Château de Calmont d'Olt"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "© Château de Calmont d'Olt"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/ec22a2a8-ab3c-3c34-9569-725ae956699f",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/images/300226_863ffd47-b952-4a10-a85f-c66b1b3e8faa/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d92f073d-318f-3429-b818-1651bad7282a",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/46ecb7ee-08c0-3625-b2bd-4c2ef5dc1565",
+          "ebucore:comments": {
+            "fr": [
+              "Chantiers de bénévoles, Château de Calmont d'Olt"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chantiers de bénévoles, Château de Calmont d'Olt"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "© Château de Calmont d'Olt"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/da748b4f-5681-306c-981d-ea38c7680353",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/images/300227_b97e50d5-3c7f-4aa7-9431-2164706c5bf1/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f43a2b8b-5687-3808-83ae-adb60dc8e49d",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/21d5e566-778c-3bf6-9826-c172406a9c67",
+          "ebucore:comments": {
+            "fr": [
+              "Tournoi d'archerie, Château de Calmont d'Olt"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Tournoi d'archerie, Château de Calmont d'Olt"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "© Château de Calmont d'Olt"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/e6ad280e-dc2c-3571-a2d4-b3f6372117c8",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19997/images/300224_e2060390-ccc0-4f39-84b1-fa72cb7b8923/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:Archeology",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Archäologie"
+        ],
+        "pt": [
+          "Arqueologia"
+        ],
+        "en": [
+          "Archeology"
+        ],
+        "it": [
+          "Archeologia"
+        ],
+        "fr": [
+          "Archéologie"
+        ],
+        "es": [
+          "Arqueología"
+        ],
+        "nl": [
+          "Archeologie"
+        ]
+      }
+    },
+    {
+      "@id": "kb:CityOutskirts",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Peripherie der Stadt"
+        ],
+        "pt": [
+          "Periferia da cidade"
+        ],
+        "en": [
+          "City outskirts"
+        ],
+        "it": [
+          "Periferia della città"
+        ],
+        "fr": [
+          "Périphérie de la ville"
+        ],
+        "es": [
+          "Periferia de la ciudad"
+        ],
+        "nl": [
+          "Buitenwijken"
+        ]
+      }
+    },
+    {
+      "@id": "kb:History",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Geschichte"
+        ],
+        "pt": [
+          "História"
+        ],
+        "en": [
+          "History"
+        ],
+        "it": [
+          "Storia"
+        ],
+        "fr": [
+          "Histoire"
+        ],
+        "es": [
+          "Historia"
+        ],
+        "nl": [
+          "Geschiedenis"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Medieval",
+      "@type": [
+        "ArchitecturalStyle",
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Mittelalterlich"
+        ],
+        "pt": [
+          "Medieval"
+        ],
+        "en": [
+          "Medieval"
+        ],
+        "it": [
+          "Medievale"
+        ],
+        "fr": [
+          "Médiéval"
+        ],
+        "nl": [
+          "Middeleeuws"
+        ],
+        "es": [
+          "Medieval"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/235cdc47-7893-31c1-980d-a7cd07fe12fb",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8269efb3-f9cb-3c40-8e63-73a0ef8e02d2",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fe907007-79c4-37e2-a749-23a6c1dadc26",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/d5b26e7f-e467-32d4-84cd-91fabcd3ce86",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/23b1a09f-0d26-3c39-8235-eb8ecc097bad",
+          "schema:addressLocality": "Espalion",
+          "schema:postalCode": "12500",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12096",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Espalion"
+              ],
+              "pt": [
+                "Espalion"
+              ],
+              "en": [
+                "Espalion"
+              ],
+              "it": [
+                "Espalion"
+              ],
+              "fr": [
+                "Espalion"
+              ],
+              "nl": [
+                "Espalion"
+              ],
+              "es": [
+                "Espalion"
+              ]
+            },
+            "insee": "12096",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/5a60115c-c864-3dea-bc07-207752fb0665",
+        "schema:latitude": "44.5174",
+        "schema:longitude": "2.7527",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/1af87fa0-2a14-3ff7-b982-9e0056190b8a",
+          "schema:validFrom": "2025-07-05T00:00:00",
+          "schema:validThrough": "2025-08-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2726064a-4d88-310c-95bb-16195861a1d1",
+          "schema:validFrom": "2025-09-01T00:00:00",
+          "schema:validThrough": "2025-09-30T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2eee6a5a-fbfc-37e2-915c-dd700c041165",
+          "schema:validFrom": "2025-10-01T00:00:00",
+          "schema:validThrough": "2025-10-17T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/3bfe23b3-1194-3e9e-8ad5-65bd67c1befd",
+          "schema:validFrom": "2025-04-05T00:00:00",
+          "schema:validThrough": "2025-05-04T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6673e226-d119-326d-8c0a-3cf4688d48cc",
+          "schema:validFrom": "2025-10-18T00:00:00",
+          "schema:validThrough": "2025-11-02T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/713fe1cb-b87c-3677-8d0c-0b8fcfcee990",
+          "schema:validFrom": "2025-05-05T00:00:00",
+          "schema:validThrough": "2025-07-04T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2025-03-18",
+  "lastUpdateDatatourisme": "2025-05-07T12:20:20.084Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/688c6d31-71ed-3027-9946-a9bc4600eb0b",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:AmericanExpress",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "American Express"
+            ],
+            "pt": [
+              "American Express"
+            ],
+            "en": [
+              "American express"
+            ],
+            "it": [
+              "American Express"
+            ],
+            "fr": [
+              "American express"
+            ],
+            "nl": [
+              "American Express"
+            ],
+            "es": [
+              "American Express"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:CreditCards",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bankkarten"
+            ],
+            "pt": [
+              "Cartões bancários"
+            ],
+            "en": [
+              "Credit Cards"
+            ],
+            "it": [
+              "Carte bancarie"
+            ],
+            "fr": [
+              "Cartes bancaires"
+            ],
+            "es": [
+              "Tarjetas bancarias"
+            ],
+            "nl": [
+              "Bankkaarten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/1b8dc14f-2315-3f5c-8d15-3b2816a8899f",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "additionalInformation": {
+            "fr": [
+              "Gratuit"
+            ]
+          },
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:BaseRateFullRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Basistarif – voller Tarif"
+                ],
+                "pt": [
+                  "Preço de base — preço total"
+                ],
+                "en": [
+                  "Base rate - full rate"
+                ],
+                "it": [
+                  "Tariffa di base — tariffa intera"
+                ],
+                "fr": [
+                  "Tarif de base - plein tarif"
+                ],
+                "es": [
+                  "Tarifa básica - tarifa completa"
+                ],
+                "nl": [
+                  "Basistarief - vol tarief"
+                ]
+              }
+            }
+          ],
+          "name": {
+            "fr": [
+              "Ambassadeurs de l'Aveyron"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/35347425-9121-3724-8ab6-b4d99e66443c",
+          "schema:maxPrice": [
+            "30"
+          ],
+          "schema:minPrice": [
+            "20"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "2 Erwachsene und 2 Kinder"
+            ],
+            "en": [
+              "2 adults and 2 children"
+            ],
+            "it": [
+              "2 adulti e 2 bambini"
+            ],
+            "fr": [
+              "2 adultes et 2 enfants"
+            ],
+            "nl": [
+              "2 volwassenen en 2 kinderen"
+            ],
+            "es": [
+              "2 adultos y 2 niños"
+            ]
+          },
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:Group",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Gruppentarif"
+                ],
+                "pt": [
+                  "Preço para Grupos"
+                ],
+                "en": [
+                  "Group rate"
+                ],
+                "it": [
+                  "Tariffa per gruppi"
+                ],
+                "fr": [
+                  "Tarif Groupe"
+                ],
+                "es": [
+                  "Tarifa de grupo"
+                ],
+                "nl": [
+                  "Groepstarief"
+                ]
+              }
+            }
+          ],
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/133baab6-055e-377c-a813-e2e797fccd9e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/158cb7a1-7a05-3fe0-bcf9-c9ce1479e733",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/187e0543-3502-32ac-abf6-0d3051bbd83e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/7c514477-baca-3978-8fa1-d620188afe4a",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/c52f5f02-d97f-30b9-97c7-78a35bac3789",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Pass famille"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b17021ae-06ca-3dd1-99a8-34db505b9469",
+          "schema:maxPrice": [
+            "7.5"
+          ],
+          "schema:minPrice": [
+            "5"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Kind (5 bis 15 Jahre), Student, Arbeitssuchender"
+            ],
+            "en": [
+              "Children (5 to 15 years old), students, job seekers"
+            ],
+            "it": [
+              "Bambini (da 5 a 15 anni), studenti, persone in cerca di lavoro"
+            ],
+            "fr": [
+              "Enfant (5 à 15 ans), étudiant, demandeur d'emploi"
+            ],
+            "es": [
+              "Niños (de 5 a 15 años), estudiantes, solicitantes de empleo"
+            ],
+            "nl": [
+              "Kinderen (5 tot 15 jaar), studenten, werkzoekenden"
+            ]
+          },
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:ChildRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Kindertarif"
+                ],
+                "pt": [
+                  "Preço por criança"
+                ],
+                "en": [
+                  "Child rate"
+                ],
+                "it": [
+                  "Tariffa per bambini"
+                ],
+                "fr": [
+                  "Tarif enfant"
+                ],
+                "es": [
+                  "Tarifa infantil"
+                ],
+                "nl": [
+                  "Kindertarief"
+                ]
+              }
+            }
+          ],
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/08428345-08e6-322a-86ed-50ce46983bd4",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/64023d30-510c-38be-9a7d-8d2a000041c6",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/b04db0a9-ad66-3940-afc7-3e671a3e64b3",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e3b1af1d-aead-3b03-b926-4325aa9a7550",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/fdfb5167-35d7-3869-84f8-f4d29bbe45fa",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Tarif réduit"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ca974385-1d5f-3665-8583-4f080f5204e3",
+          "schema:maxPrice": [
+            "9.5"
+          ],
+          "schema:minPrice": [
+            "6"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "ab 16 Jahren"
+            ],
+            "en": [
+              "from 16 years old"
+            ],
+            "it": [
+              "da 16 anni"
+            ],
+            "fr": [
+              "à partir de 16 ans"
+            ],
+            "nl": [
+              "vanaf 16 jaar"
+            ],
+            "es": [
+              "a partir de 16 años"
+            ]
+          },
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:BaseRateFullRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Basistarif – voller Tarif"
+                ],
+                "pt": [
+                  "Preço de base — preço total"
+                ],
+                "en": [
+                  "Base rate - full rate"
+                ],
+                "it": [
+                  "Tariffa di base — tariffa intera"
+                ],
+                "fr": [
+                  "Tarif de base - plein tarif"
+                ],
+                "es": [
+                  "Tarifa básica - tarifa completa"
+                ],
+                "nl": [
+                  "Basistarief - vol tarief"
+                ]
+              }
+            }
+          ],
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/2e346caa-3725-3fc1-8653-659d12990ffc",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/3d9ab377-968d-3dd5-9959-298401bcdce0",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/602f99f8-8445-31c4-8878-12940d413c9a",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/c9d3ab88-7707-3dff-863a-ae0a9bf63d00",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e24dcc36-5d7e-3ad7-bbfb-75b7de8722f3",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Plein tarif"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ec2a88d0-3236-30c2-869f-9b48d5011ee4",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Person mit Behinderung + 1 Begleitperson, Presse und Kind unter 5 Jahren"
+            ],
+            "en": [
+              "Disabled person + 1 accompanying person, press and child under 5 years old"
+            ],
+            "it": [
+              "Persona disabile + 1 accompagnatore, stampa e bambino fino a 5 anni di età"
+            ],
+            "fr": [
+              "Personne en situation de handicap + 1 accompagnant, presse et enfant de moins de 5 ans"
+            ],
+            "nl": [
+              "Gehandicapte persoon + 1 begeleider, pers en kind jonger dan 5 jaar"
+            ],
+            "es": [
+              "Discapacitado + 1 acompañante, prensa y niño menor de 5 años"
+            ]
+          },
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:Free",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Kostenlos"
+                ],
+                "pt": [
+                  "Gratuito"
+                ],
+                "en": [
+                  "Free"
+                ],
+                "it": [
+                  "Gratuito"
+                ],
+                "fr": [
+                  "Gratuit"
+                ],
+                "es": [
+                  "Gratuito"
+                ],
+                "nl": [
+                  "Gratis"
+                ]
+              }
+            }
+          ],
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/03e38790-c999-33c3-9e68-308a35a030ea",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/535d7f23-f7d1-3aee-a408-ed9a7e6fa61d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/696fb1fb-2908-3cdd-8b04-5165edac28eb",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/776d72bd-305a-3026-9226-a9179038ddee",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e92a7f0b-dde4-322e-bd31-a4ae2aba704e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

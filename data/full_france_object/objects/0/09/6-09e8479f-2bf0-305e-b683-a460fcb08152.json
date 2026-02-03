@@ -1,0 +1,823 @@
+{
+  "@id": "https://data.datatourisme.fr/6/09e8479f-2bf0-305e-b683-a460fcb08152",
+  "dc:identifier": "HLOBOU021V503K5R",
+  "@type": [
+    "schema:Accommodation",
+    "schema:BedAndBreakfast",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "Guesthouse",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Le Prieuré du Val des Dames"
+    ],
+    "en": [
+      "Le Prieuré du Val des Dames"
+    ],
+    "fr": [
+      "Le Prieuré du Val des Dames"
+    ]
+  },
+  "allowedPersons": 10,
+  "availableLanguage": [
+    "fr"
+  ],
+  "creationDate": "2018-10-26",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/841990b4-1c62-31ca-93a4-f584fed7dd21",
+    "dc:identifier": "0dcdc797-fe13-4f8f-9542-ba80ac8a81fa",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/a5b12a51-5e66-30a9-9469-4d0ba0ff7e0b",
+        "schema:addressLocality": "Dijon",
+        "schema:postalCode": "21000",
+        "schema:streetAddress": [
+          "19 rue Ferdinand de Lesseps"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:21231",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Dijon"
+            ],
+            "pt": [
+              "Dijon"
+            ],
+            "en": [
+              "Dijon"
+            ],
+            "it": [
+              "Dijon"
+            ],
+            "fr": [
+              "Dijon"
+            ],
+            "nl": [
+              "Dijon"
+            ],
+            "es": [
+              "Dijon"
+            ]
+          },
+          "insee": "21231",
+          "isPartOfDepartment": {
+            "@id": "kb:France2721",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Côte-d'Or"
+              ],
+              "pt": [
+                "Côte-d'Or"
+              ],
+              "en": [
+                "Côte-d'Or"
+              ],
+              "it": [
+                "Côte-d'Or"
+              ],
+              "fr": [
+                "Côte-d'Or"
+              ],
+              "nl": [
+                "Côte-d'Or"
+              ],
+              "es": [
+                "Côte-d'Or"
+              ]
+            },
+            "insee": "21",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "contact@lacotedorjadore.com"
+    ],
+    "schema:legalName": "La Côte-d'Or J'adore",
+    "schema:telephone": [
+      "+33 3 80 63 69 49"
+    ],
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.lacotedorjadore.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/e17d70db-44d4-35a6-873c-3366e800171c",
+      "schema:email": [
+        "valdesdames@hotmail.fr"
+      ],
+      "schema:telephone": [
+        "+33 9 67 39 25 32"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/e17d70db-44d4-35a6-873c-3366e800171c",
+      "schema:email": [
+        "valdesdames@hotmail.fr"
+      ],
+      "schema:telephone": [
+        "+33 9 67 39 25 32"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/0549aded-eddd-3f78-b3a8-167dff75d6c5",
+      "dc:description": {
+        "de": [
+          "Le Val des Dames, ein ehemaliges Priorat, empfängt Sie in einer außergewöhnlichen Umgebung inmitten der Natur, die früher ein Pilgerort war.\nJedes der 4 Zimmer besteht aus einem 160 cm breiten Bett, einem Kleiderschrank, einem Tisch und zwei Stühlen und verfügt über ein eigenes Badezimmer. Wer möchte, kann auch zu Abend essen."
+        ],
+        "en": [
+          "The Val des Dames, a former priory, welcomes you in an exceptional setting in the middle of nature which was once a place of pilgrimage.\nEach of the 4 bedrooms is composed of a bed of 160, a wardrobe, a table and two chairs with its shower room. Those who wish can have dinner."
+        ],
+        "it": [
+          "La Val des Dames, un ex priorato, vi accoglie in un ambiente naturale eccezionale, un tempo luogo di pellegrinaggio.\nOgnuna delle 4 camere dispone di un letto di 160 cm, un armadio, un tavolo e due sedie e un bagno privato. La cena è disponibile per chi lo desidera."
+        ],
+        "fr": [
+          "Le Val des Dames, ancien prieuré, vous accueille dans un cadre exceptionnel de pleine nature qui fut autrefois un lieu de pélerinage.\nChacune des 4 chambres se compose d'un lit de 160, une penderie, une table et deux chaises avec sa salle d'eau. Ceux qui le souhaitent peuvent dîner."
+        ],
+        "nl": [
+          "Le Val des Dames, een voormalige priorij, ontvangt u in een uitzonderlijke natuurlijke omgeving die ooit een bedevaartsoord was.\nElk van de 4 kamers heeft een bed van 160 cm, een kledingkast, een tafel en twee stoelen en een eigen badkamer. Diner is beschikbaar voor degenen die dat wensen."
+        ],
+        "es": [
+          "El Val des Dames, antiguo priorato, le da la bienvenida en un entorno natural excepcional que en su día fue lugar de peregrinación.\nCada una de las 4 habitaciones tiene una cama de 160 cm, un armario, una mesa y dos sillas con su propio baño. La cena está disponible para aquellos que lo deseen."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/a0c2887d-52e7-35b4-886d-ee9779b417e1",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b50db892-ac61-3cd7-b283-03da0926f9e2",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/dcf8dd48-7004-38b9-9c0f-e8685f2ee9d0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/36c04316-d09f-3b4f-a90b-7b5c0446ebf3",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:GuestTable",
+          "@type": [
+            "CateringAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gästetisch"
+            ],
+            "pt": [
+              "Mesa de jantar"
+            ],
+            "en": [
+              "Guest Table"
+            ],
+            "it": [
+              "Tavola d'albergo"
+            ],
+            "fr": [
+              "Table d'hôte"
+            ],
+            "es": [
+              "Mesa de huéspedes"
+            ],
+            "nl": [
+              "Gastentafel"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/39622c81-d525-36fd-b9d2-75d9a2412ac8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/60881a78-15b5-3640-8883-24551dd98000",
+      "schema:value": "4",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b13c77c6-c16b-39a7-81a1-0649f83f9811",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Fireplace",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Kamin, Öfen"
+            ],
+            "pt": [
+              "Chaminé, salamandra"
+            ],
+            "en": [
+              "Fireplace, stove"
+            ],
+            "it": [
+              "Camino, stufa"
+            ],
+            "fr": [
+              "Cheminée, poële"
+            ],
+            "nl": [
+              "Schoorsteen, kachel"
+            ],
+            "es": [
+              "Chimenea, estufa"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e8e7119a-e6f4-369d-a244-4bb5ba4f336b",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Heating",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Heizen"
+            ],
+            "pt": [
+              "Aquecimento"
+            ],
+            "en": [
+              "Heating"
+            ],
+            "it": [
+              "Riscaldamento"
+            ],
+            "fr": [
+              "Chauffage"
+            ],
+            "nl": [
+              "Verwarming"
+            ],
+            "es": [
+              "Climatización"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef2d7794-2aa6-3c88-a672-d20e3cc76cc7",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SheetsAndTowels",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bettwäsche und Handtücher"
+            ],
+            "pt": [
+              "Lençóis e toalhas"
+            ],
+            "en": [
+              "Sheets and towels"
+            ],
+            "it": [
+              "Lenzuola e biancheria"
+            ],
+            "fr": [
+              "Draps et linges"
+            ],
+            "es": [
+              "Sábanas y ropa de cama"
+            ],
+            "nl": [
+              "Beddengoed en handdoeken"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/8d5ef235-d18b-3ec5-9b5f-e717f6b9c0b9",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/f390cfc1-03e0-3493-af31-04dd9350b986",
+          "schema:addressLocality": "Grancey-sur-Ource",
+          "schema:postalCode": "21570",
+          "schema:streetAddress": [
+            "Val des Dames"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:21305",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Grancey-sur-Ource"
+              ],
+              "pt": [
+                "Grancey-sur-Ource"
+              ],
+              "en": [
+                "Grancey-sur-Ource"
+              ],
+              "it": [
+                "Grancey-sur-Ource"
+              ],
+              "fr": [
+                "Grancey-sur-Ource"
+              ],
+              "nl": [
+                "Grancey-sur-Ource"
+              ],
+              "es": [
+                "Grancey-sur-Ource"
+              ]
+            },
+            "insee": "21305",
+            "isPartOfDepartment": {
+              "@id": "kb:France2721",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Côte-d'Or"
+                ],
+                "pt": [
+                  "Côte-d'Or"
+                ],
+                "en": [
+                  "Côte-d'Or"
+                ],
+                "it": [
+                  "Côte-d'Or"
+                ],
+                "fr": [
+                  "Côte-d'Or"
+                ],
+                "nl": [
+                  "Côte-d'Or"
+                ],
+                "es": [
+                  "Côte-d'Or"
+                ]
+              },
+              "insee": "21",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/c3bb2039-af1d-3da9-9a09-cf29861004dd",
+        "schema:latitude": "48.0074273",
+        "schema:longitude": "4.5840586",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2023-01-01",
+  "lastUpdateDatatourisme": "2025-02-07T00:28:25.529Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/02d02986-dff9-3c5e-88fb-683a623dbba5",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

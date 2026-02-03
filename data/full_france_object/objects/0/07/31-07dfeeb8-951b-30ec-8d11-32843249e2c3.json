@@ -1,0 +1,2953 @@
+{
+  "@id": "https://data.datatourisme.fr/31/07dfeeb8-951b-30ec-8d11-32843249e2c3",
+  "dc:identifier": "TFO431540522518",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "\"Chez Swany\" Meublé de tourisme für 6 Personen in einem mittelalterlichen Weiler zwischen Gabriac und Bozouls. Architektenhaus, das Traditionelles und Zeitgenössisches verbindet."
+    ],
+    "en": [
+      "\"Chez Swany\" Meublé de tourisme for 6 people located in a medieval hamlet between Gabriac and Bozouls. Architect-designed house combining traditional and contemporary features."
+    ],
+    "it": [
+      "\"Chez Swany\" Bed and breakfast per 6 persone in un borgo medievale tra Gabriac e Bozouls. Casa progettata dall'architetto che combina elementi tradizionali e contemporanei."
+    ],
+    "fr": [
+      "\"Chez Swany\" Meublé de tourisme pour 6 personnes situé dans un hameau médiéval entre Gabriac et Bozouls. Maison d'architecte alliant traditionnel et contemporain."
+    ],
+    "nl": [
+      "\"Chez Swany\" Bed and breakfast voor 6 personen in een middeleeuws gehucht tussen Gabriac en Bozouls. Door architect ontworpen huis dat traditionele en hedendaagse kenmerken combineert."
+    ],
+    "es": [
+      "\"Chez Swany\" Alojamiento y desayuno para 6 personas en una aldea medieval entre Gabriac y Bozouls. Casa de arquitecto que combina elementos tradicionales y contemporáneos."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Chez Swany"
+    ]
+  },
+  "allowedPersons": 6,
+  "availableLanguage": [
+    "en",
+    "fr"
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/db224e7a-611f-379d-b03d-1cb615389a8d",
+    "schema:legalName": "HIT Aveyron (ADAT Aveyron)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/66be3cfa-8d5c-34e7-87b1-87e1705c3fc4",
+      "schema:email": [
+        "webmaster@tourisme-aveyron.com"
+      ],
+      "schema:legalName": "ADT Aveyron",
+      "schema:telephone": [
+        "+33 5 65 75 40 12"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-aveyron.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/f311a28e-142d-3894-8e27-4e0c91c47ea2",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/f2556c3b-9924-398a-a2b9-db65325bbecf",
+          "schema:addressLocality": "Gabriac",
+          "schema:postalCode": "12340",
+          "schema:streetAddress": [
+            "80 rue du Puech",
+            "Tholet"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12106",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Gabriac"
+              ],
+              "pt": [
+                "Gabriac"
+              ],
+              "en": [
+                "Gabriac"
+              ],
+              "it": [
+                "Gabriac"
+              ],
+              "fr": [
+                "Gabriac"
+              ],
+              "nl": [
+                "Gabriac"
+              ],
+              "es": [
+                "Gabriac"
+              ]
+            },
+            "insee": "12106",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "caroline.delance@outlook.fr"
+      ],
+      "schema:familyName": [
+        "DELANCE"
+      ],
+      "schema:givenName": [
+        "Caroline"
+      ],
+      "schema:legalName": "Chez Swany - Maison Delance",
+      "schema:telephone": [
+        "+33 6 24 94 34 99",
+        "+33 6 25 28 48 36"
+      ],
+      "@type": [
+        "schema:Organization",
+        "schema:Person",
+        "foaf:Agent",
+        "foaf:Person",
+        "Agent",
+        "Person"
+      ],
+      "foaf:homepage": [
+        "https://www.facebook.com/Chez-Swany-107021068373647"
+      ],
+      "foaf:title": [
+        "Madame"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/475755eb-fcc3-33c0-89ba-eced3520895e",
+      "dc:description": {
+        "de": [
+          "Wir bieten unser Haus zur Vermietung an. Es befindet sich zwischen Gabriac und Bozouls in einem charmanten mittelalterlichen Weiler. Entdecken Sie das Schloss, den bemerkenswerten Brunnen und die zahlreichen Wanderwege?\nDas Haus ist ebenerdig zugänglich und bietet im Erdgeschoss ein Schlafzimmer mit einem 160 x 200 cm breiten Bett, ein gemeinsames Badezimmer, eine separate Toilette, ein Entspannungszimmer mit einem Schreibtisch (Spiele, Bücher, Bildschirm zum Ansehen von DVDs, Filmen über das Internet und Videospielkonsolen), dann einen großen Raum mit einer Küche, einem Esszimmer und einem Wohnzimmer mit einem Schlafsofa. Im Obergeschoss befinden sich zwei Schlafzimmer, eines mit einem 140 x 190 cm großen Bett und das andere mit zwei 90 x 190 cm großen Betten.\nDie Terrasse / der Patio ist nicht vis-à-vis und blickt auf eine weite Landschaft.\nEs gibt zwei Gärten: der kleinere hat Blick auf das Schloss, der größere bietet einen Grill, eine Essecke im Schutz einer Laube und einen Spielbereich mit Rutsche, Schaukel, Fußballtor?\nEs kann das ganze Jahr über für eine Woche oder ein Wochenende (in der Nebensaison) gemietet werden.\nReinigung durch Sie oder Reinigungspauschale 50 ?\nBettwäsche und Handtücher inbegriffen."
+        ],
+        "en": [
+          "We offer our house for rent. It's located between Gabriac and Bozouls, in a charming medieval hamlet. You'll discover its castle, its remarkable fountain and numerous hiking trails?\nAccessible on one level, the house offers, on the first floor, a bedroom with a 160 x 200 bed, a shared shower room, a separate toilet, a \"relaxation\" living room with a desk (games, books, screen for DVD viewing, films via Internet, and video game consoles), then a large room with a kitchen, a dining room and a living room with a sofa bed. Upstairs are two bedrooms, one with a 140 x 190 bed and the other with two 90 x 190 beds.\nThe unoverlooked terrace/patio overlooks a wide landscape.\nThere are two gardens: the smaller one overlooks the château, while the larger one features a barbecue, a dining area sheltered by an arbour, and a play area with a slide, a swing, a soccer pitch?\nIt is available to rent by the week or WE (in low season) all year round.\nSelf-catering or 50€ cleaning package.\nSheets and towels included."
+        ],
+        "it": [
+          "Offriamo la nostra casa in affitto. Si trova tra Gabriac e Bozouls, in un affascinante borgo medievale. Qui troverete un castello, una notevole fontana e numerosi sentieri escursionistici\nAccessibile su un unico livello, la casa offre, al piano terra, una camera da letto con un letto 160 x 200, un bagno con doccia in comune, una toilette separata, una sala \"relax\" con una scrivania, (giochi, libri, schermo per guardare DVD, film via internet e console per videogiochi), poi una grande sala con una cucina, una sala da pranzo e un salotto con un divano letto. Al piano superiore si trovano due camere da letto, una con un letto da 140 x 190 e l'altra con due letti da 90 x 190.\nLa terrazza/patio è libera e si affaccia su un ampio paesaggio.\nCi sono due giardini: il più piccolo ha una vista sul castello, mentre il più grande ha un barbecue, una zona pranzo riparata da un pergolato e un'area giochi con scivolo, altalena e campo da calcio\nÈ disponibile per l'affitto a settimana o a fine settimana (in bassa stagione) tutto l'anno.\nPossibilità di cucinare in autonomia o di pagare 50 € per le pulizie.\nLenzuola e asciugamani inclusi."
+        ],
+        "fr": [
+          "Nous proposons notre maison à la location. Elle se situe entre Gabriac et Bozouls dans un charmant hameau médiéval. Vous y découvrirez son château, sa fontaine remarquable et de nombreux sentiers de randonnées…\nAccessible de plain-pied, la maison propose, en rez-de-chaussée, une chambre avec un lit en 160 x 200, une salle d'eau commune, un toilette indépendant, un salon «détente » avec un bureau, (jeux, livres, écran pour visionnage DVD, films via internet, et consoles jeux vidéos), puis une grande pièce avec une cuisine, une salle à manger et un salon avec un canapé lit. A l'étage se trouvent deux chambres l'une avec un lit en 140 x 190 et l'autre avec deux lits en 90 x 190.\nLa terrasse / patio est sans vis-à-vis et donne sur un large paysage.\nIl y a deux jardins : le plus petit a vue sur le château, le grand propose un barbecue, un coin repas à l'abri d'une tonnelle et un espace jeux avec un toboggan, une balançoire, une cage de foot…\nElle est disponible en location à la semaine ou au WE (en saison basse) toute l'année.\nMénage fait par vos soins ou forfait ménage 50 €.\nDraps et linges compris."
+        ],
+        "nl": [
+          "Wij bieden ons huis te huur aan. Het ligt tussen Gabriac en Bozouls in een charmant middeleeuws gehucht. Hier vind je een kasteel, een opmerkelijke fontein en talloze wandelpaden\nHet huis is gelijkvloers en biedt op de begane grond een slaapkamer met een bed van 160 x 200, een gedeelde doucheruimte, een apart toilet, een \"ontspannings\" lounge met een bureau, (spelletjes, boeken, scherm voor het bekijken van dvd's, films via internet, en videogame consoles), dan een grote kamer met een keuken, een eetkamer en een lounge met een slaapbank. Boven zijn twee slaapkamers, een met een bed van 140 x 190 en de andere met twee bedden van 90 x 190.\nHet terras/patio is vrij en kijkt uit over een weids landschap.\nEr zijn twee tuinen: de kleinere heeft uitzicht op het kasteel, terwijl de grotere een barbecue, een eethoek beschut door een prieel en een speeltuin met een glijbaan, een schommel en een voetbalveldje heeft\nHet is het hele jaar door te huur per week of per weekend (in het laagseizoen).\nZelf koken of 50€ schoonmaakpakket.\nLakens en handdoeken inbegrepen."
+        ],
+        "es": [
+          "Ofrecemos nuestra casa en alquiler. Se encuentra entre Gabriac y Bozouls, en una encantadora aldea medieval. Aquí encontrará un castillo, una fuente notable y numerosas rutas de senderismo\nAccesible en una sola planta, la casa ofrece, en la planta baja, un dormitorio con una cama de 160 x 200, un cuarto de ducha compartido, un aseo separado, un salón de \"relajación\" con un escritorio, (juegos, libros, pantalla para ver DVD, películas a través de Internet, y consolas de videojuegos), a continuación, una gran sala con una cocina, un comedor y un salón con un sofá cama. Arriba hay dos dormitorios, uno con una cama de 140 x 190 y el otro con dos camas de 90 x 190.\nLa terraza/patio no tiene vistas y da a un amplio paisaje.\nHay dos jardines: el más pequeño tiene vistas al castillo, mientras que el más grande tiene una barbacoa, una zona de comedor protegida por un cenador y una zona de juegos con un tobogán, un columpio y un campo de fútbol\nSe alquila por semanas o fines de semana (en temporada baja) durante todo el año.\nSin comidas o paquete de limpieza de 50 euros.\nSábanas y toallas incluidas."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0534e55f-7f2a-3f81-bcae-eec398d4b802",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/18dac0a4-8229-3f51-9c56-a7fabd5520da",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/498be7d4-d877-37ee-92d6-686a8559261a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4a7c5738-6371-305b-affe-eee0682242bc",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/57fed831-86b5-31c6-a308-24ff13eb4ca3",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6aee4518-4637-3d41-ba64-6a2cb9d34b79",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/8444ff40-6c31-3249-9cc4-f54a5750972b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/99778dc7-9100-32c0-a120-e337cfac6b62",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9c222f8c-33f6-38a8-9edb-71372916f37c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/bc976a85-97eb-34b6-acbc-1b88b0ea7415",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "\"Chez Swany\" Meublé de tourisme für 6 Personen in einem mittelalterlichen Weiler zwischen Gabriac und Bozouls. Architektenhaus, das Traditionelles und Zeitgenössisches verbindet."
+        ],
+        "en": [
+          "\"Chez Swany\" Meublé de tourisme for 6 people located in a medieval hamlet between Gabriac and Bozouls. Architect-designed house combining traditional and contemporary features."
+        ],
+        "it": [
+          "\"Chez Swany\" Bed and breakfast per 6 persone in un borgo medievale tra Gabriac e Bozouls. Casa progettata dall'architetto che combina elementi tradizionali e contemporanei."
+        ],
+        "fr": [
+          "\"Chez Swany\" Meublé de tourisme pour 6 personnes situé dans un hameau médiéval entre Gabriac et Bozouls. Maison d'architecte alliant traditionnel et contemporain."
+        ],
+        "nl": [
+          "\"Chez Swany\" Bed and breakfast voor 6 personen in een middeleeuws gehucht tussen Gabriac en Bozouls. Door architect ontworpen huis dat traditionele en hedendaagse kenmerken combineert."
+        ],
+        "es": [
+          "\"Chez Swany\" Alojamiento y desayuno para 6 personas en una aldea medieval entre Gabriac y Bozouls. Casa de arquitecto que combina elementos tradicionales y contemporáneos."
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/ac0679ba-a532-b3cd-068b-8a0aae3fc8ea",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "GW39621KX73W",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/034e6cd0-13ba-3807-b45f-6a22654ffc74",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:SheetsAndTowels",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bettwäsche und Handtücher"
+            ],
+            "pt": [
+              "Lençóis e toalhas"
+            ],
+            "en": [
+              "Sheets and towels"
+            ],
+            "it": [
+              "Lenzuola e biancheria"
+            ],
+            "fr": [
+              "Draps et linges"
+            ],
+            "es": [
+              "Sábanas y ropa de cama"
+            ],
+            "nl": [
+              "Beddengoed en handdoeken"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2297bf32-ff85-381a-bd67-fe3c3d663abc",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Garden",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Garten"
+            ],
+            "pt": [
+              "Jardim"
+            ],
+            "en": [
+              "Garden"
+            ],
+            "it": [
+              "Giardino"
+            ],
+            "fr": [
+              "Jardin"
+            ],
+            "nl": [
+              "Tuin"
+            ],
+            "es": [
+              "Jardín"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/42aa53a7-b05b-3a8f-9b1c-9631ded80981",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4cba7bb6-a09a-3fb8-9fc1-38935866d515",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Playground",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Spielplatz, Außenspielplatz"
+            ],
+            "pt": [
+              "Parque infantil, parque de jogos exterior"
+            ],
+            "en": [
+              "Playground"
+            ],
+            "it": [
+              "Parco giochi, parco giochi all'aperto"
+            ],
+            "fr": [
+              "Aire de jeux, terrain de jeux extérieurs"
+            ],
+            "nl": [
+              "Speelplaats, buitenspeelplaats"
+            ],
+            "es": [
+              "Parque infantil, zona de juegos al aire libre"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/61749a82-9e66-3a81-9a5a-5057d9c53134",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true,
+      "features": [
+        {
+          "@id": "kb:FinalHousekeeping",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Endreinigung"
+            ],
+            "pt": [
+              "Limpeza no fim da estadia"
+            ],
+            "en": [
+              "Final housekeeping"
+            ],
+            "it": [
+              "Pulizia alla fine del soggiorno"
+            ],
+            "fr": [
+              "Ménage en fin de séjour"
+            ],
+            "es": [
+              "Tareas de limpieza al final del día"
+            ],
+            "nl": [
+              "Eindschoonmaak"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/674bc3ab-e707-31f6-8b76-ed2906ce8753",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false
+    },
+    {
+      "@id": "https://data.datatourisme.fr/772737ee-b898-3d0f-962d-81946bd94336",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:PrivateParking",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Parkplatz"
+            ],
+            "pt": [
+              "Parque de estacionamento privativo"
+            ],
+            "en": [
+              "Private parking"
+            ],
+            "it": [
+              "Parcheggio privato"
+            ],
+            "fr": [
+              "Parking privé"
+            ],
+            "nl": [
+              "Privéparking"
+            ],
+            "es": [
+              "Aparcamiento privado"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9c419e26-aeb9-3669-824b-6b4f11bdd62d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Barbecue",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Grill"
+            ],
+            "pt": [
+              "Churrasco"
+            ],
+            "en": [
+              "Barbecue"
+            ],
+            "it": [
+              "Barbecue"
+            ],
+            "fr": [
+              "Barbecue"
+            ],
+            "nl": [
+              "Barbecue"
+            ],
+            "es": [
+              "Barbacoa"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9cc1e7e7-9cfe-372f-8d91-41e821010259",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:BabyChair",
+          "@type": [
+            "CateringAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Hochstuhl"
+            ],
+            "pt": [
+              "Cadeira de bebé"
+            ],
+            "en": [
+              "Baby chair"
+            ],
+            "it": [
+              "Sedia per bambini"
+            ],
+            "fr": [
+              "Chaise bébé"
+            ],
+            "es": [
+              "Silla de bebé"
+            ],
+            "nl": [
+              "Kinderstoel"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/dc47845c-9a17-3d29-9ad7-ef0d299d6927",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:BabyEquipment",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Baby-, Kindermaterial"
+            ],
+            "pt": [
+              "Material para bebés e crianças"
+            ],
+            "en": [
+              "Baby or child equipment"
+            ],
+            "it": [
+              "Dotazioni per neonati e bambini"
+            ],
+            "fr": [
+              "Matériel bébé, enfant"
+            ],
+            "es": [
+              "Material para bebés y niños pequeños"
+            ],
+            "nl": [
+              "Baby- en kinderuitrusting"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cot",
+          "@type": [
+            "AccommodationPricingOffer",
+            "TypeOfBed"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Babybett"
+            ],
+            "pt": [
+              "Berço"
+            ],
+            "en": [
+              "Cot"
+            ],
+            "it": [
+              "Lettino per bambini"
+            ],
+            "fr": [
+              "Lit bébé"
+            ],
+            "es": [
+              "Cuna"
+            ],
+            "nl": [
+              "Babybed"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/843d1ec7-dbba-37e8-b7d7-327e53917ef0",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/e2d378ca-89d7-3d60-88ee-91ccfbae8fee",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248895_e803b56d-ac4f-4879-b156-2f9d795822a5/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/272945ce-e5f2-37e2-8d3b-b5cfa5a8c304",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/68b37839-6104-35a1-a6b4-4a7f706db016",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248897_557c16b1-63f4-44ca-bdbe-b52a55611c90/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/29b169d6-d972-3c57-85db-3563eecc6812",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/363cdcd1-a632-3849-b732-2af2f4152015",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248906_9e708458-f5e2-41fb-8c75-7c4e964e884a/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/366e1868-4cb4-395b-94cd-1cb19cadb43d",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/b863a9b9-7005-30d8-9001-85532c402ff8",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248907_5ef229d5-1d86-48f6-8fb9-d6db2b0ce597/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/396d2b3d-1265-3de2-bade-ff2f9a4475dd",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/bd323dac-8459-3223-8073-5209287b5a65",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248899_e2dacb36-b95b-431c-9b36-7ebb89679a39/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/3bab1c5d-610a-33d1-86cb-683a4eb4ff9b",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/b5fc7f7d-2706-392f-b49c-5ed9873237fe",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248900_c784315c-4276-4f3a-b669-38621464df51/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/43a6875d-2525-300a-a2f9-bae29396cd42",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/18eda2bb-97e3-32ed-9634-afdee496da3c",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248903_a00dbd43-97d2-44bf-850f-6f5f0f525206/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4db319f3-6ea1-3e2d-863a-b97b6373554b",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/782e9325-96b3-3ab2-a3b7-41a8d645619d",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248901_2bb50dca-596b-44b3-9127-96e650485aa2/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/82987286-982b-39ff-9a28-042b1e5a1116",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/4b920e88-c798-334e-8151-389d9468e30b",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248898_a3349d0c-b528-4a3e-8dd1-df9d3de86e1b/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/843d1ec7-dbba-37e8-b7d7-327e53917ef0",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/e2d378ca-89d7-3d60-88ee-91ccfbae8fee",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248895_e803b56d-ac4f-4879-b156-2f9d795822a5/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9b92f3cf-c4ee-3086-a972-48b3c6d98c3d",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/9498ac5b-29b6-3a5f-ab49-41090b62e3ed",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248896_ab04bfbd-1fd7-4b87-b2a0-d91a59311a57/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a5f06010-6f8f-32bf-abfe-176a9c066343",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/8a78e4e1-0ebd-31a9-b0a4-7e148a245297",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248909_d60141ab-0dfa-45a1-9bcf-dbd680e12676/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b627e844-bd1f-3e7d-b870-e60563accce6",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/8e326403-1826-31ea-a621-8623d464a829",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248904_638363e2-788d-4f8b-960b-62be6379708a/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c260753b-fe6a-3e69-b1fe-a6999a3132b6",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/6375eceb-c623-3117-b9de-7bf89d466be0",
+          "ebucore:comments": {
+            "fr": [
+              "Patio"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Patio"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/3cafc9b3-bd0d-30b1-a396-85399fd57e48",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/534695_7fc401c5-ee5b-408f-b09c-cd0620617f6e/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cb2d2330-561a-3282-a384-65a08dcc5550",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/2aa2c410-1911-3b49-828d-143ebc561c40",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248905_37e1e2bc-eede-47d3-aab4-ac754ac953f7/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/de6717c6-0d30-39c9-9665-cc50bb60b772",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/a37643c6-51d8-3b4b-879b-62d7e884eabf",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248902_787081cd-57be-4bcd-8b01-8ea81361f31a/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e6456cdb-ce89-3ab7-b414-c289db085895",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f3e025b4-0312-3324-884b-c4bd968c402b",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Swany"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Caroline DELANCE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/51a56507-c5f2-30d3-b4ae-48c03cc5d07f",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/18291/images/248908_234d4ad4-71ba-45d2-858a-11595a55c0e0/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/6a507f2f-d898-3c37-851e-f250007e3259",
+      "@type": [
+        "Review"
+      ],
+      "reviewDeliveryDate": "2021-08-30"
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/29fa4167-61dc-315e-b9d3-8190f0390da7",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/3e75b955-1413-3c13-b52f-8900962844df",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4c6a8f39-1657-3c45-beef-1385517aa08b",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5397a1f7-db59-37c6-ba56-e544ebf5ff96",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e3650d2e-b08a-334e-9a3a-f4b082759933",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/4b9ce25b-25b7-3406-a581-07acd753cb14",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/f2556c3b-9924-398a-a2b9-db65325bbecf",
+          "schema:addressLocality": "Gabriac",
+          "schema:postalCode": "12340",
+          "schema:streetAddress": [
+            "80 rue du Puech",
+            "Tholet"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12106",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Gabriac"
+              ],
+              "pt": [
+                "Gabriac"
+              ],
+              "en": [
+                "Gabriac"
+              ],
+              "it": [
+                "Gabriac"
+              ],
+              "fr": [
+                "Gabriac"
+              ],
+              "nl": [
+                "Gabriac"
+              ],
+              "es": [
+                "Gabriac"
+              ]
+            },
+            "insee": "12106",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/6bdbb850-2521-37ce-bdc0-768a1280970b",
+        "schema:latitude": "44.4522",
+        "schema:longitude": "2.7791",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/63ba550e-9978-3f5b-847b-00c809fab527",
+          "schema:validFrom": "2025-01-01T00:00:00",
+          "schema:validThrough": "2025-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-01-10",
+  "lastUpdateDatatourisme": "2025-05-07T12:20:20.079Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/6f2a0b5e-7ccd-3914-b955-501265039cca",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Paypal",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Paypal"
+            ],
+            "pt": [
+              "PayPal"
+            ],
+            "en": [
+              "Paypal"
+            ],
+            "it": [
+              "Paypal"
+            ],
+            "fr": [
+              "Paypal"
+            ],
+            "nl": [
+              "Paypal"
+            ],
+            "es": [
+              "PayPal"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/f0e42a4f-c11e-346c-a34c-be670038879b",
+          "schema:maxPrice": [
+            "115"
+          ],
+          "schema:minPrice": [
+            "75"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Geschätzter Preis für 2 Personen pro Nacht -\n10? pro zusätzliche Person / Nacht"
+            ],
+            "en": [
+              "Estimated price for 2 people per night -\n10 ? per additional person / night"
+            ],
+            "it": [
+              "Prezzo stimato per 2 persone a notte -\n10 ? per persona aggiuntiva / notte"
+            ],
+            "fr": [
+              "Prix estimé pour 2 personnes par nuitée -\n10 € par personne supplémentaire / nuitée"
+            ],
+            "es": [
+              "Precio estimado para 2 personas por noche -\n10€ por persona adicional / noche"
+            ],
+            "nl": [
+              "Geschatte prijs voor 2 personen per nacht -\n10 per extra persoon / nacht"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/4230c840-173f-3985-86a6-006e31973afd",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/5b43c024-99c1-3f8a-be18-2d7c7b851796",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/5c99f7bb-0d32-3631-b3ce-13b73054002f",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/6005b768-372c-3a86-8083-003aca1a1b39",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f67b78ea-cab4-34c8-a63a-2f59f6de8ed1",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

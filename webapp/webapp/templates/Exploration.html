@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WishAdventure — Exploration</title>
+
+  <link rel="stylesheet" href="/static/styles/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#190028;
+      --accent:#FF6000;
+      --text:#F9F0F7;
+      --text-dim:rgba(249,240,247,.80);
+      --card:#1e1e1e;
+      --nav-h:64px;
+      --content-max: 1100px;
+      --page-pad: clamp(12px, 3vw, 24px);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
+      min-height:100vh;
+    }
+
+    .app{
+      width:100vw; min-height:100vh;
+      padding: clamp(40px,6vh,56px) var(--page-pad) calc(var(--nav-h) + env(safe-area-inset-bottom) + var(--page-pad));
+      display:flex; flex-direction:column; align-items:center; gap:clamp(12px,2.5vh,20px);
+      overflow:hidden; border-radius:20px;
+      background:#190028;
+    }
+
+    /* Barre de statut + en-tête "Découvrir" */
+    .statusbar{
+      width:100%; max-width:var(--content-max);
+      display:flex; flex-direction:column; align-items:center; gap:clamp(12px,2vh,16px);
+    }
+    .status-row{
+      width:100%;
+      display:flex; justify-content:space-between; align-items:center;
+      padding:10px 22px 0 22px;
+    }
+    .time{ font:600 clamp(15px,1.7vw,17px)/40px Inter,Poppins,sans-serif; color:#F9F0F7; letter-spacing:.35px }
+    .status{
+      width:78px; height:12px; display:flex; align-items:flex-end; gap:2px;
+    }
+    .status div{ width:3px; border-radius:1px; background:#F9F0F7 }
+    .status div:nth-child(1){ height:5px }
+    .status div:nth-child(2){ height:7px }
+    .status div:nth-child(3){ height:9px }
+    .status div:nth-child(4){ height:12px }
+
+    .discover-row{
+      width:100%; max-width:var(--content-max);
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      padding: 0 var(--page-pad);
+    }
+    .discover-left{ display:flex; align-items:center; gap:12px }
+    .logo-dot{ width:25px; height:25px; background:var(--accent); border-radius:4px }
+    .discover-title{ font-size: clamp(22px,4.5vw,32px); font-weight:600; text-transform:capitalize }
+
+    /* Recherche + mini actions (panier + favoris) */
+    .search-area{
+      width:min(820px, 100%);
+      position:relative;
+      padding: 0 var(--page-pad);
+      display:flex; align-items:center; gap:10px; justify-content:space-between;
+    }
+    .search-wrap{
+      flex:1;
+      background:#F9F0F7; border-radius:10px; padding:7px 11px;
+      display:flex; align-items:center; gap:7px;
+    }
+    .search-icon{ width:25px; height:25px; background:#190028; border-radius:4px; flex:0 0 25px }
+    #search{
+      flex:1; border:none; outline:none; background:transparent;
+      font-size:15px; color:#190028;
+    }
+
+    .actions{ position:relative; display:flex; flex-direction:column; gap:8px; align-items:flex-end; }
+    
+    /* Panier */
+    .basket-btn{
+      background:rgba(255,255,255,.08); color:#fff; border:none;
+      padding:6px 10px; border-radius:8px; font-weight:600; font-size:12px; line-height:1;
+      cursor:pointer; display:flex; align-items:center; gap:6px;
+    }
+    #basketCount{
+      font-size:11px; background:var(--accent); color:#190028; border-radius:999px; padding:2px 6px; font-weight:800;
+    }
+    #floatingBasket{
+      position:absolute; top: calc(100% + 8px); right:0;
+      width: min(420px, 80vw);
+      max-height: min(60vh, 520px);
+      overflow:auto;
+      background:var(--card); border-radius:12px; padding:10px; display:none; z-index:20;
+      box-shadow:0 16px 36px rgba(0,0,0,.45);
+    }
+    #floatingBasket h4{ margin:6px 0 8px; font-size:14px; opacity:.9 }
+    .basket-empty{ color:var(--text-dim); font-size:13px; margin:6px 0; }
+    .basket-item{
+      display:flex; align-items:center; gap:8px; padding:6px; border-radius:8px;
+      background:rgba(255,255,255,.04); margin-bottom:6px;
+    }
+    .basket-item img{ width:36px; height:36px; border-radius:6px; object-fit:cover }
+    .basket-item .bi-name{ font-size:13px; font-weight:600 }
+    .basket-item .bi-meta{ font-size:11px; opacity:.75 }
+    .basket-item .bi-remove{
+      margin-left:auto; background:rgba(255,255,255,.08); color:#fff; border:none;
+      padding:4px 8px; border-radius:6px; font-size:11px; cursor:pointer;
+    }
+    .basket-footer{ display:flex; gap:8px; justify-content:flex-end; margin-top:8px; }
+    .basket-footer a, .basket-footer button{
+      background:var(--accent); color:#190028; border:none; border-radius:8px; padding:6px 10px; font-weight:800; cursor:pointer;
+    }
+
+    /* --- Styles pour les Favoris (Cœur) --- */
+    .like-btn {
+      background: rgba(255, 255, 255, .08); color: #fff; border: none;
+      padding: 6px 10px; border-radius: 8px; font-weight: 600; font-size: 12px; line-height: 1;
+      cursor: pointer; display: flex; align-items: center; gap: 6px;
+    }
+    .like-btn.active { color: #ff4081; }
+    #likesCount {
+      font-size: 11px; background: #ff4081; color: #fff; border-radius: 999px; padding: 2px 6px; font-weight: 800;
+    }
+    #floatingLikes {
+      position: absolute; top: calc(100% + 8px); right: 0;
+      width: min(420px, 80vw); max-height: min(60vh, 520px); overflow: auto;
+      background: var(--card); border-radius: 12px; padding: 10px; display: none; z-index: 20;
+      box-shadow: 0 16px 36px rgba(0,0,0,.45);
+    }
+    #floatingLikes h4 { margin: 6px 0 8px; font-size: 14px; opacity: .9; }
+    .likes-empty { color: var(--text-dim); font-size: 13px; margin: 6px 0; }
+    .bi-like-remove {
+      margin-left: auto; background: transparent; color: #ff4081; border: 1px solid rgba(255,255,255,0.1);
+      padding: 4px 8px; border-radius: 6px; font-size: 14px; cursor: pointer;
+    }
+    /* Bouton coeur individuel */
+    .fav-action {
+      background: rgba(255,255,255,0.1); border:none; border-radius:50%;
+      width: 28px; height: 28px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      font-size: 14px; color: #ccc; transition: all 0.2s;
+    }
+    .fav-action.active { color: #ff4081; background: rgba(255, 64, 129, 0.15); transform: scale(1.1); }
+    .fav-action:hover { background: rgba(255,255,255,0.2); }
+
+
+    /* Résultats recherche */
+    .results{
+      position:absolute; top: calc(100% + 6px); left: 0; right: 0;
+      display:none;
+      background:#0f0a18; border:1px solid rgba(255,255,255,.12);
+      border-radius:10px; overflow:auto;
+      max-height:min(60vh, 520px);
+      z-index: 10;
+    }
+    .result-item{
+      display:flex; align-items:center; gap:10px; padding:10px 12px;
+      background:#fdfeff; color:#000; cursor:pointer; justify-content:space-between;
+    }
+    .result-left{ display:flex; align-items:center; gap:10px; min-width:0; }
+    .result-item + .result-item{ border-top:1px solid #e9ecef }
+    .result-item:hover{ background:#e9ecef }
+    .result-thumb{
+      width:60px; height:60px; border-radius:8px; object-fit:cover; flex:0 0 60px;
+    }
+    .result-name{ font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:46vw; }
+    .no-res{ padding:10px 12px; background:#fdfeff; color:#000 }
+    
+    .result-add-btn{
+      flex:0 0 auto;
+      background:#0f5132; color:#fff; border:none; padding:8px 10px;
+      border-radius:8px; font-weight:700; font-size:12px;
+      cursor:pointer;
+    }
+    .result-add-btn:active{ transform:translateY(1px) }
+    .results-loader, .results-end{
+      padding:10px 12px; background:#fdfeff; color:#000; text-align:center; font-size:13px;
+      border-top:1px solid #e9ecef;
+    }
+
+    /* Sections */
+    .section{
+      width:100%; max-width:var(--content-max);
+      display:flex; flex-direction:column; align-items:center; gap:16px;
+      margin-top:16px; padding: 0 var(--page-pad);
+    }
+    .section h2{
+      margin:0; font-size: clamp(18px,3.3vw,22px); font-weight:600; text-align:center;
+    }
+
+    /* Grille responsive pour les cartes */
+    .cards-grid{
+      width:100%;
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap:14px;
+    }
+    .card-box{
+      height: clamp(80px, 18vw, 120px);
+      padding:5px 5px 5px 10px;
+      border-radius:10px; display:flex; align-items:center; justify-content:flex-end; gap:20px;
+      position:relative; overflow:hidden;
+      transition: transform .15s ease, box-shadow .15s ease;
+      background: linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.06);
+      cursor:pointer;
+    }
+    .card-box:hover{ transform: translateY(-2px); box-shadow:0 6px 18px rgba(0,0,0,.18) }
+    .card-box.disabled{ opacity:.5; cursor:not-allowed; }
+    .card-box.disabled:hover{ transform:none; box-shadow:none; }
+
+    /* Titre CENTRÉ dans la carte */
+    .card-name{
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform: translate(-50%,-50%);
+      font-size: clamp(16px, 3.2vw, 20px);
+      font-weight:600;
+      color:#F9F0F7;
+      pointer-events:none;
+      opacity:.95;
+      white-space:nowrap;
+      text-align:center;
+    }
+    .card-thumb{
+      width: clamp(60px, 9vw, 80px); height: clamp(60px, 9vw, 80px);
+      border-radius:5px; background:rgba(44,17,37,.10); flex:0 0 auto;
+      background-size: cover; background-position: center;
+    }
+
+    /* Bottom nav */
+    nav.bottom-nav{
+      position: fixed;
+      left:0; right:0; bottom:0;
+      height:var(--nav-h);
+      display:flex; gap:8px; padding:10px;
+      background:rgba(0,0,0,.25); backdrop-filter:blur(6px);
+      border-top:1px solid rgba(255,255,255,.06);
+    }
+    .boutonNav{
+      flex:1; border:none; border-radius:12px; padding:10px 8px;
+      background:rgba(255,255,255,.06); color:#fff; font-weight:600; cursor:pointer;
+      display:flex; align-items:center; justify-content:center; gap:6px;
+    }
+    .boutonNav.active{ background:var(--accent); color:#190028 }
+    .nav-icon{ width:18px; height:18px; vertical-align:-3px; fill:#fff; }
+
+    /* Tweaks breakpoints */
+    @media (min-width: 640px){
+      .logo-dot{ width:28px; height:28px }
+      .search-icon{ width:28px; height:28px }
+    }
+    @media (min-width: 1024px){
+      .cards-grid{ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+      .result-name{ max-width:60vw; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app">
+    <div class="statusbar">
+      <div class="status-row">
+        <div class="time" id="clock">--:--</div>
+        <div class="status"><div></div><div></div><div></div><div></div></div>
+      </div>
+
+      <div class="discover-row">
+        <div class="discover-left">
+          <div class="logo-dot"></div>
+          <div class="discover-title">Découvrir</div>
+        </div>
+        <div aria-hidden="true" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="#FF6000">
+            <path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="#FF6000" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="search-area">
+        <div class="search-wrap">
+          <div class="search-icon" aria-hidden="true"></div>
+          <input id="search" type="text" placeholder="Recherchez une activité..." autocomplete="off" />
+        </div>
+
+        <div class="actions">
+          <button id="likesIcon" class="like-btn" type="button" title="Mes Favoris">
+            ❤️ <span id="likesCount" hidden>0</span>
+          </button>
+          <div id="floatingLikes" aria-live="polite"></div>
+
+          <button id="basketIcon" class="basket-btn" type="button" title="Panier">
+            🧺 <span id="basketCount" hidden>0</span>
+          </button>
+          <div id="floatingBasket" aria-live="polite"></div>
+        </div>
+
+        <div id="results" class="results" role="listbox" aria-label="Résultats de recherche"></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Choisissez une région</h2>
+      <div class="cards-grid" id="regions-grid"></div>
+    </div>
+
+    <div class="section">
+      <h2>Votre mode de vacances ?</h2>
+      <div class="cards-grid" id="modes-grid"></div>
+    </div>
+
+    <div class="section">
+      <h2>Découvrez une nouvelle ville ?</h2>
+      <div class="cards-grid" id="cities-grid"></div>
+    </div>
+  </div>
+
+  <nav class="bottom-nav">
+    <a href="/accueil" class="bouton">
+      <button class="boutonNav">
+        <svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z"/></svg>
+        Accueil
+      </button>
+    </a>
+    <a href="/exploration" class="bouton">
+      <button class="boutonNav active">
+        <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6"></circle>
+          <path d="M20 20l-3.5-3.5" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </svg>
+        Exploration
+      </button>
+    </a>
+    <a href="/carnet" class="bouton">
+      <button class="boutonNav">
+        <svg class="nav-icon" viewBox="0 0 24 24">
+          <path d="M5 4h11a2 2 0 0 1 2 2v12H7a2 2 0 0 1-2-2V4z"/>
+          <rect x="3" y="6" width="2" height="12" rx="1" ry="1"/>
+          <path d="M8 8h7M8 11h7M8 14h5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg>
+        Carnet
+      </button>
+    </a>
+    <a href="/creation" class="bouton">
+      <button class="boutonNav">
+        <svg class="nav-icon" viewBox="0 0 24 24">
+          <path d="M12 2a6 6 0 0 0-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 0 0-6-6zm0 8.5A2.5 2.5 0 1 1 12 5.5a2.5 2.5 0 0 1 0 5z"/>
+          <path d="M15.2 14.2l3.2 3.2-2.3 0.5-1.4 1.4-0.5-2.3 1-1z"/>
+        </svg>
+        Création
+      </button>
+    </a>
+  </nav>
+
+  <script>
+    /* ================================
+     * MODE DIAG
+     * ================================ */
+    const DEBUG = new URLSearchParams(location.search).has('debug')
+               || localStorage.getItem('wish_debug') === '1';
+    const NO_IMG = '/static/img/no-image.jpg';
+    function dbg(...args){ if (DEBUG) console.log('[EXP-Debug]', ...args); }
+
+    /* Horloge */
+    (function clock(){
+      const el = document.getElementById('clock');
+      const tick = ()=>{ const d=new Date(); el.textContent = d.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}); };
+      tick(); setInterval(tick, 15000);
+    })();
+
+    /* ---------------- Helpers ---------------- */
+    function firstString(){
+      for (let i=0; i<arguments.length; i++){
+        const v = arguments[i];
+        if (!v) continue;
+        if (typeof v === 'string' && v.trim()) return v.trim();
+        if (Array.isArray(v)){
+          for (const e of v){
+            if (typeof e === 'string' && e.trim()) return e.trim();
+            if (e && typeof e === 'object'){
+              const s = e['@value'] || e.value || e.url || e['@id'];
+              if (typeof s === 'string' && s.trim()) return s.trim();
+            }
+          }
+        }
+        if (typeof v === 'object'){
+          const s = v['@value'] || v.value || v.url || v['@id'];
+          if (typeof s === 'string' && s.trim()) return s.trim();
+        }
+      }
+      return '';
+    }
+    function anyToArray(x){ return !x ? [] : (Array.isArray(x) ? x : [x]); }
+
+    /* -------- Résolution d'image -------- */
+    function _resolveBestImage(obj){
+      if (!obj || typeof obj !== 'object') return { url:NO_IMG, how:'none', key:null, note:'obj invalide' };
+      const flatKey = ['image','photo','thumbnail','picture','cover','https://schema.org/image','image_url','media','thumb']
+        .find(k => {
+          const v = firstString(obj[k]);
+          return v && /^https?:\/\//i.test(v);
+        });
+      if (flatKey) return { url:firstString(obj[flatKey]), how:'flat', key:flatKey, note:'' };
+
+      // Autres heuristiques omises pour brièveté (conserver la logique d'origine si besoin)
+      // On garde une version simplifiée fonctionnelle ici
+      for (const [k,val] of Object.entries(obj || {})){
+        const arr = anyToArray(val);
+        for (const it of arr){
+          if (it && typeof it === 'object'){
+            const u = firstString(it.contentUrl, it.url, it['@id']);
+            if (u && /^https?:\/\/.+\.(jpg|jpeg|png|webp|gif)(\?|#|$)/i.test(u)) return { url:u, how:'nested', key:k, note:'' };
+          }
+        }
+      }
+      return { url:NO_IMG, how:'none', key:null, note:'aucune correspondance' };
+    }
+    function getBestImage(obj){
+      const r = _resolveBestImage(obj);
+      return r.url || NO_IMG;
+    }
+    function attachImgFallback(img){
+      img.addEventListener('error', ()=>{
+        if (img.dataset.fbk) return;
+        img.dataset.fbk = '1';
+        img.src = NO_IMG;
+      }, { once:true });
+    }
+
+    /* -------- Fetch debug -------- */
+    async function fetchJSONDebug(url, opts = {}){
+      try{
+        const r = await fetch(url, opts);
+        const txt = await r.text();
+        let data = null;
+        try { data = JSON.parse(txt); } catch(_){}
+        return { ok:r.ok, status:r.status, json:data };
+      }catch(e){
+        if (e && e.name === 'AbortError') return { ok:false, aborted:true };
+        return { ok:false, status:0, error:e };
+      }
+    }
+    // (Upgrades d'images omis pour clarté, à conserver si besoin)
+    function scheduleUpgrade(img, item){} // Stub
+
+    function debounce(fn, wait=350){
+      let t; return (...args)=>{ clearTimeout(t); t=setTimeout(()=>fn(...args), wait); };
+    }
+
+    /* ---------------- FAVORIS (LIKES) ---------------- */
+    const LIKES_KEY = 'wish_likes_v1';
+    const likesIcon = document.getElementById('likesIcon');
+    const likesCount = document.getElementById('likesCount');
+    const floatingLikes = document.getElementById('floatingLikes');
+
+    function loadLikes(){
+      try{ const raw = localStorage.getItem(LIKES_KEY); return raw ? JSON.parse(raw) : []; }catch(e){ return []; }
+    }
+    function saveLikes(items){
+      localStorage.setItem(LIKES_KEY, JSON.stringify(items));
+      updateLikesCount();
+      renderLikesPanel();
+      // Update visible hearts
+      document.querySelectorAll('.fav-action').forEach(btn => {
+        const id = btn.dataset.id;
+        if(id){
+           if(isLiked(id)) btn.classList.add('active');
+           else btn.classList.remove('active');
+        }
+      });
+    }
+    function updateLikesCount(){
+      const n = loadLikes().length;
+      likesCount.textContent = n; likesCount.hidden = n === 0;
+    }
+    function isLiked(id){
+      return loadLikes().some(x => String(x.id) === String(id));
+    }
+    function toggleLike(item){
+      let items = loadLikes();
+      const idStr = String(item.id);
+      if (items.some(x => String(x.id) === idStr)){
+        items = items.filter(x => String(x.id) !== idStr);
+      } else {
+        const img = (item.image && item.image !== NO_IMG) ? item.image : getBestImage(item);
+        items.push({ id:item.id, name:item.name, image:img, types:item.types||[] });
+      }
+      saveLikes(items);
+      return isLiked(item.id);
+    }
+    function renderLikesPanel(){
+      const items = loadLikes();
+      if (!items.length){
+        floatingLikes.innerHTML = '<h4>Mes Favoris</h4><p class="likes-empty">Aucun coup de cœur pour l’instant.</p>';
+        return;
+      }
+      const list = items.map(x => (
+        `<div class="basket-item">
+          <img src="${x.image || NO_IMG}" alt="">
+          <div>
+            <div class="bi-name">${x.name || 'Sans nom'}</div>
+            <div class="bi-meta">${(x.types && x.types[0]) ? x.types[0] : ''}</div>
+          </div>
+          <button class="bi-like-remove" onclick="event.stopPropagation(); toggleLike({id:'${x.id}'})">💔</button>
+        </div>`
+      )).join('');
+      floatingLikes.innerHTML = '<h4>Mes Favoris</h4>' + list;
+    }
+    likesIcon.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      const visible = floatingLikes.style.display === 'block';
+      if(floatingBasket) floatingBasket.style.display='none'; // fermer panier
+      floatingLikes.style.display = visible ? 'none' : 'block';
+      if (!visible) renderLikesPanel();
+    });
+    document.addEventListener('click', (e)=>{
+      if (!floatingLikes.contains(e.target) && e.target !== likesIcon) floatingLikes.style.display = 'none';
+    });
+    updateLikesCount();
+
+    /* ---------------- Panier ---------------- */
+    const BASKET_KEY = 'wish_basket_v1';
+    const basketIcon = document.getElementById('basketIcon');
+    const basketCount = document.getElementById('basketCount');
+    const floatingBasket = document.getElementById('floatingBasket');
+
+    function loadBasket(){
+      try{ const raw = localStorage.getItem(BASKET_KEY); return raw ? JSON.parse(raw) : []; }catch(e){ return []; }
+    }
+    function saveBasket(items){
+      localStorage.setItem(BASKET_KEY, JSON.stringify(items));
+      updateBasketCount(); renderBasketPanel();
+    }
+    function updateBasketCount(){
+      const n = loadBasket().length;
+      basketCount.textContent = n; basketCount.hidden = n === 0;
+    }
+    function addToBasket(item){
+      const items = loadBasket();
+      if (!items.some(x => String(x.id) === String(item.id))){
+        const img = (item.image && item.image !== NO_IMG) ? item.image : getBestImage(item);
+        items.push({ id:item.id, name:item.name, image:img, types:item.types||[] });
+        saveBasket(items);
+      }
+    }
+    function removeFromBasket(id){
+      const items = loadBasket().filter(x => String(x.id) !== String(id));
+      saveBasket(items);
+    }
+    function renderBasketPanel(){
+      const items = loadBasket();
+      if (!items.length){
+        floatingBasket.innerHTML = '<h4>Votre panier</h4><p class="basket-empty">Aucun élément pour l’instant.</p><div class="basket-footer"><a href="/creation">Aller à la création</a></div>';
+        return;
+      }
+      const list = items.map(x => (
+        `<div class="basket-item">
+          <img src="${x.image || NO_IMG}" alt="">
+          <div>
+            <div class="bi-name">${x.name || 'Sans nom'}</div>
+            <div class="bi-meta">${(x.types && x.types[0]) ? x.types[0] : ''}</div>
+          </div>
+          <button class="bi-remove" data-id="${x.id}">Retirer</button>
+        </div>`
+      )).join('');
+      floatingBasket.innerHTML = '<h4>Votre panier</h4>' + list + '<div class="basket-footer"><a href="/creation">Aller à la création</a></div>';
+      floatingBasket.querySelectorAll('.bi-remove').forEach(btn=>{
+        btn.addEventListener('click', (e)=>{ e.stopPropagation(); removeFromBasket(btn.getAttribute('data-id')); });
+      });
+    }
+    basketIcon.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      const visible = floatingBasket.style.display === 'block';
+      if(floatingLikes) floatingLikes.style.display='none'; // fermer likes
+      floatingBasket.style.display = visible ? 'none' : 'block';
+      if (!visible) renderBasketPanel();
+    });
+    document.addEventListener('click', (e)=>{
+      if (!floatingBasket.contains(e.target) && e.target !== basketIcon) floatingBasket.style.display = 'none';
+    });
+    updateBasketCount();
+
+    /* -------------- Recherche -------------- */
+    const resultsBox  = document.getElementById('results');
+    const searchInput = document.getElementById('search');
+
+    const S = { q:'', loading:false, offset:0, limit:30, reachedEnd:false, next:null, ctrl:null, token:0 };
+
+    function clearResults(){
+      resultsBox.innerHTML = ''; resultsBox.style.display = 'none';
+      S.loading = false; S.offset = 0; S.reachedEnd = false; S.next = null;
+    }
+    function appendLoader(){
+      const d = document.createElement('div'); d.className = 'results-loader'; d.textContent = 'Chargement...';
+      resultsBox.appendChild(d);
+    }
+    function removeLoader(){
+      const l = resultsBox.querySelector('.results-loader'); if (l) l.remove();
+    }
+    function showEnd(){
+      const e = document.createElement('div'); e.className = 'results-end'; e.textContent = 'Fin des résultats';
+      resultsBox.appendChild(e);
+    }
+
+    function renderResults(items, append=false){
+      if (!append) resultsBox.innerHTML = '';
+      if (!items || !items.length){
+        if (!append) resultsBox.innerHTML = '<div class="no-res">Aucun résultat</div>';
+        else showEnd();
+      } else {
+        const seen = new Set(Array.from(resultsBox.querySelectorAll('.result-item')).map(r => r.getAttribute('data-id')));
+        items.forEach(item=>{
+          const id = item.id || item._id || item.identifier || item['@id'] || item.url || '';
+          if (!id || seen.has(String(id))) return;
+
+          const row = document.createElement('div');
+          row.className = 'result-item';
+          row.setAttribute('data-id', id);
+          row.addEventListener('click', ()=>{ location.href = `/object/${encodeURIComponent(id)}`; });
+
+          const left = document.createElement('div'); left.className = 'result-left';
+          const img = document.createElement('img'); img.className = 'result-thumb';
+          const resolved = getBestImage(item);
+          img.src = resolved || NO_IMG;
+          img.alt = item.name || 'Résultat';
+          attachImgFallback(img);
+
+          const meta = document.createElement('div');
+          const name = document.createElement('div'); name.className='result-name'; name.textContent = item.name || 'Sans nom';
+          const type = document.createElement('div'); type.style.fontSize='12px'; type.style.opacity='.75'; type.textContent = item.locality || item.region || '';
+          meta.appendChild(name); meta.appendChild(type);
+          left.appendChild(img); left.appendChild(meta);
+
+          // Conteneur Actions (Coeur + Panier)
+          const actionsDiv = document.createElement('div');
+          actionsDiv.style.display = 'flex'; actionsDiv.style.gap = '8px'; actionsDiv.style.alignItems = 'center';
+
+          // 1. Coeur
+          const heartBtn = document.createElement('button');
+          heartBtn.className = isLiked(id) ? 'fav-action active' : 'fav-action';
+          heartBtn.textContent = '❤';
+          heartBtn.dataset.id = id;
+          heartBtn.title = "Liker";
+          heartBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const liked = toggleLike({ ...item, id, image: resolved });
+            heartBtn.className = liked ? 'fav-action active' : 'fav-action';
+          });
+
+          // 2. Ajout
+          const addBtn = document.createElement('button');
+          addBtn.className = 'result-add-btn';
+          addBtn.textContent = 'Ajouter';
+          addBtn.addEventListener('click', (e)=>{ e.stopPropagation(); addToBasket({ ...item, id, image: resolved }); });
+
+          actionsDiv.appendChild(heartBtn);
+          actionsDiv.appendChild(addBtn);
+
+          row.appendChild(left);
+          row.appendChild(actionsDiv);
+          resultsBox.appendChild(row);
+
+          if (!resolved || resolved === NO_IMG) scheduleUpgrade(img, item);
+        });
+      }
+      resultsBox.style.display = 'block';
+    }
+
+    async function fetchMore(myToken = S.token){
+      if (S.loading || S.reachedEnd || !S.q) return;
+      S.loading = true; appendLoader();
+      try{
+        const url = S.next ? S.next : `/search?query=${encodeURIComponent(S.q)}&offset=${S.offset}&limit=${S.limit}`;
+        const resp = await fetchJSONDebug(url, { signal: S.ctrl ? S.ctrl.signal : undefined });
+        if (resp.aborted || myToken !== S.token) return;
+        if (!resp.ok){ removeLoader(); return; }
+
+        let batch = [];
+        if (Array.isArray(resp.json)){
+          batch = resp.json; S.offset += batch.length; if (batch.length < S.limit) S.reachedEnd = true;
+        } else if (resp.json && Array.isArray(resp.json.items)){
+          batch = resp.json.items;
+          if (typeof resp.json.next_offset === 'number') S.offset = resp.json.next_offset;
+          else if (batch.length < S.limit) S.reachedEnd = true; else S.offset += batch.length;
+        } else {
+          S.reachedEnd = true;
+        }
+        removeLoader();
+        renderResults(batch, true);
+        if (S.reachedEnd) showEnd();
+      } finally {
+        S.loading = false;
+      }
+    }
+
+    async function startSearch(q){
+      const val = (q||'').trim();
+      if (val.length < 2){
+        if (S.ctrl) S.ctrl.abort();
+        clearResults(); S.q=''; return;
+      }
+      if (S.ctrl) S.ctrl.abort();
+      S.ctrl = new AbortController();
+      S.token++; const myToken = S.token;
+      S.q = val; S.offset = 0; S.reachedEnd = false; S.next = null;
+      resultsBox.innerHTML = ''; resultsBox.style.display = 'block';
+      await fetchMore(myToken);
+    }
+
+    resultsBox.addEventListener('scroll', () => {
+      const nearBottom = resultsBox.scrollTop + resultsBox.clientHeight >= resultsBox.scrollHeight - 80;
+      if (nearBottom) fetchMore(S.token);
+    });
+
+    const handleInput = debounce(e => startSearch(e.target.value), 350);
+    searchInput.addEventListener('input', handleInput);
+
+    /* -------------- Sections statiques -------------- */
+    function createRegionCard({name, href, active, bg}){
+      const cardBox = document.createElement('div');
+      cardBox.className = 'card-box' + (active ? '' : ' disabled');
+      if (bg) cardBox.style.background = bg;
+
+      const cardName = document.createElement('span');
+      cardName.className = 'card-name';
+      cardName.textContent = name;
+
+      const cardThumb = document.createElement('div');
+      cardThumb.className = 'card-thumb';
+
+      cardBox.appendChild(cardName);
+      cardBox.appendChild(cardThumb);
+
+      if (active && href){
+        cardBox.addEventListener('click', ()=> location.href = href);
+      }
+      return cardBox;
+    }
+    function renderRegionsGrid(){
+      const grid = document.getElementById('regions-grid');
+      if (!grid) return;
+      grid.innerHTML = '';
+      const regions = [
+        { name:'Hauts-de-France', href:'/region/Hauts-de-France', active:true, bg:'linear-gradient(160deg,#239BB9,#104553)' },
+        { name:'Auvergne-Rhône-Alpes', href:'/region/Auvergne-Rhône-Alpes', active:true, bg:'linear-gradient(160deg,#7BC6CC,#264653)' },
+        { name:'Bientôt…', active:false },
+        { name:'Bientôt…', active:false },
+      ];
+      regions.forEach(r => grid.appendChild(createRegionCard(r)));
+    }
+    function renderPlaceholders(id, n=4){
+      const grid = document.getElementById(id);
+      if (!grid) return;
+      grid.innerHTML = '';
+      for (let i=0;i<n;i++){
+        const el = document.createElement('div');
+        el.className = 'card-box disabled';
+        const name = document.createElement('span'); name.className = 'card-name'; name.textContent = 'Bientôt…';
+        const th = document.createElement('div'); th.className = 'card-thumb';
+        el.append(name, th);
+        grid.appendChild(el);
+      }
+    }
+
+    /* -------------- Boot -------------- */
+    document.addEventListener('DOMContentLoaded', () => {
+      renderRegionsGrid();
+      renderPlaceholders('modes-grid', 4);
+      renderPlaceholders('cities-grid', 4);
+      const params = new URLSearchParams(location.search);
+      const initialQ = params.get('q') || '';
+      if (initialQ){
+        searchInput.value = initialQ;
+        startSearch(initialQ);
+      }
+    });
+  </script>
+</body>
+</html>

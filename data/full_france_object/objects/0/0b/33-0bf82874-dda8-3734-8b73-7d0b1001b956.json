@@ -1,0 +1,260 @@
+{
+  "@id": "https://data.datatourisme.fr/33/0bf82874-dda8-3734-8b73-7d0b1001b956",
+  "dc:identifier": "HLOMID031V50VTG0",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "APPARTEMENT MIDI"
+    ]
+  },
+  "allowedPersons": 10,
+  "availableLanguage": [
+    "en"
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/603b11b8-9a04-3ce4-ad2d-edd22cda9eb3",
+    "schema:legalName": "COMITE DEPARTEMENTAL DU TOURISME DE LA HAUTE-GARONNE",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/603b11b8-9a04-3ce4-ad2d-edd22cda9eb3",
+      "schema:legalName": "COMITE DEPARTEMENTAL DU TOURISME DE LA HAUTE-GARONNE",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/9ac95f2a-f988-3d8e-9884-48f3f2ae02ff",
+      "schema:email": [
+        "guillot.yann@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 6 80 03 03 98"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/8e561a6f-f691-3d28-9e36-c150c31b5fbb",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_4etoiles",
+        "schema:ratingValue": "4.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "4 Sterne"
+          ],
+          "pt": [
+            "4 estrelas"
+          ],
+          "en": [
+            "4 Stars"
+          ],
+          "it": [
+            "4 stelle"
+          ],
+          "fr": [
+            "4 étoiles"
+          ],
+          "nl": [
+            "4 sterren"
+          ],
+          "es": [
+            "4 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/069f2544-0242-3350-a3f5-c37a6f8ec1e8",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/b6f200d3-269f-35c4-80a2-dda9626e0df3",
+          "schema:addressLocality": "Toulouse",
+          "schema:postalCode": "31400",
+          "schema:streetAddress": [
+            "40 Rue du Midi"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:31555",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Toulouse"
+              ],
+              "pt": [
+                "Toulouse"
+              ],
+              "en": [
+                "Toulouse"
+              ],
+              "it": [
+                "Toulouse"
+              ],
+              "fr": [
+                "Toulouse"
+              ],
+              "nl": [
+                "Toulouse"
+              ],
+              "es": [
+                "Toulouse"
+              ]
+            },
+            "insee": "31555",
+            "isPartOfDepartment": {
+              "@id": "kb:France7631",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Garonne"
+                ],
+                "pt": [
+                  "Haute-Garonne"
+                ],
+                "en": [
+                  "Haute-Garonne"
+                ],
+                "it": [
+                  "Haute-Garonne"
+                ],
+                "fr": [
+                  "Haute-Garonne"
+                ],
+                "nl": [
+                  "Haute-Garonne"
+                ],
+                "es": [
+                  "Haute-Garonne"
+                ]
+              },
+              "insee": "31",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/c0c31029-e657-3a2b-a74b-ceb9cbd2c6a9",
+        "schema:latitude": "43.58287",
+        "schema:longitude": "1.45793",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": false
+    }
+  ],
+  "lastUpdate": "2025-02-24",
+  "lastUpdateDatatourisme": "2025-02-24T22:01:05.809Z"
+}

@@ -1,0 +1,959 @@
+{
+  "@id": "https://data.datatourisme.fr/6/01480732-a103-3dcb-b58f-bcbd6f68a7d3",
+  "dc:identifier": "HLOBOU071V506U7I",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "de": [
+      "La Bulle 1"
+    ],
+    "en": [
+      "La Bulle 1"
+    ],
+    "fr": [
+      "La Bulle 1"
+    ]
+  },
+  "allowedPersons": 4,
+  "creationDate": "2018-07-16",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/82578c73-08c7-342e-8845-dc63b20d54a8",
+    "dc:identifier": "6012fdba-d499-4734-b015-373e96f99808",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/264b87c4-2c8b-383e-bc71-d437efb5644d",
+        "schema:addressLocality": "Mâcon",
+        "schema:postalCode": "71000",
+        "schema:streetAddress": [
+          "Maison de la Saône-et-Loire"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:71270",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mâcon"
+            ],
+            "pt": [
+              "Mâcon"
+            ],
+            "en": [
+              "Mâcon"
+            ],
+            "it": [
+              "Mâcon"
+            ],
+            "fr": [
+              "Mâcon"
+            ],
+            "nl": [
+              "Mâcon"
+            ],
+            "es": [
+              "Mâcon"
+            ]
+          },
+          "insee": "71270",
+          "isPartOfDepartment": {
+            "@id": "kb:France2771",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saône-et-Loire"
+              ],
+              "pt": [
+                "Saône-et-Loire"
+              ],
+              "en": [
+                "Saône-et-Loire"
+              ],
+              "it": [
+                "Saône-et-Loire"
+              ],
+              "fr": [
+                "Saône-et-Loire"
+              ],
+              "nl": [
+                "Saône-et-Loire"
+              ],
+              "es": [
+                "Saône-et-Loire"
+              ]
+            },
+            "insee": "71",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "missiontourisme@saoneetloire71.fr"
+    ],
+    "schema:legalName": "Mission Tourisme - Département 71",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://route71.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/578d9491-fa60-3604-acec-ca29398091c7",
+      "schema:email": [
+        "contact@labulledechapaize.fr",
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60",
+        "+33 3 85 40 01 48",
+        "+33 6 16 05 77 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=1856&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&",
+        "https://labulledechapaize.fr/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/578d9491-fa60-3604-acec-ca29398091c7",
+      "schema:email": [
+        "contact@labulledechapaize.fr",
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60",
+        "+33 3 85 40 01 48",
+        "+33 6 16 05 77 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=1856&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&",
+        "https://labulledechapaize.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/992698bb-3918-3a19-ad60-d55dc29d9d69",
+      "dc:description": {
+        "de": [
+          "Fabienne & Cyril, beide leidenschaftliche Natur- und Umweltliebhaber, begrüßen Sie in einem geschichtsträchtigen, authentischen, traditionellen Bauernhaus aus dem 18. Jahrhundert, das aus mehreren rehabilitierten \"Flügeln\" besteht und auf einem 12 Hektar großen Naturgrundstück liegt, das nach den Prinzipien der Permakultur unter Berücksichtigung der lokalen Biodiversität gepflegt wird. Völlige Ruhe und Stille, eingebettet in ein außergewöhnlich ländliches und naturbelassenes Umfeld aus Feldern und Wiesen, das an einen großen Staatswald angrenzt. Eine buchstäblich bezaubernde Umgebung und Landschaft, die völlig beruhigend, entspannend und erholsam ist (Möglichkeit, die Wildtiere vor Ort zu beobachten), nur wenige Schritte vom Zentrum des charmanten, typischen Dorfes Chapaize und seinem reichen Kulturerbe entfernt (eine seltene Gemeinde, die u. a. über zwei denkmalgeschützte romanische Kirchen aus dem 11. Jahrhundert verfügt, darunter eine der ältesten \"Turmlaternen\" Burgunds, sowie über eine wunderschöne, perfekt restaurierte Ziegelei aus dem 13.) Unterkunft mit sehr gutem Komfort. Gemütliches ländliches Flair mit zeitgenössischen Akzenten, das durch eine sorgfältige Restaurierung des Kulturerbes (Originalsteine, Decken, Steinmauern) veredelt wird. Sanfte Atmosphäre, Zen & Cosy. Sehr viel Charme. Große, exponierte und schattige Terrasse, die an einen angenehmen, privaten Naturgarten ohne Gegenüber grenzt, der auf das Anwesen und einen bukolischen Obstgarten hinausgeht. Wunderschöner freier Blick auf die umliegende Landschaft. Zusammensetzung: Reihenhaus neben dem Wohnhaus der Eigentümer und 2 weiteren Unterkünften (völlige Unabhängigkeit). Wifi. Elektrische Heizung. Ofen (Holz inbegriffen). Gemeinsame Waschküche (Waschmaschine). Hochparterre (2 Stufen): Wohnraum/Küche/Wohnzimmer (Schlafsofa \"Rapido\" 2 P. 140x190cm), Badezimmer (Dusche/WC). Stock (3 Einzelbetten 80x190cm, von denen 2 zu einem Doppelbett 160x190cm umgebaut werden können) mit offenem Bad (Eckbadewanne). Geschützter Balkon-Terrasse + Terrasse + Privatgarten. Gemeinsames Grundstück von 12 ha (Tischtennisplatte). Privater Parkplatz. Geschäfte und Dienstleistungen 5 km entfernt."
+        ],
+        "en": [
+          "Charming authentic traditional farmhouse from the 18th century, carefully restored, located in the countryside on an old and vast agricultural property steeped in history of 12 ha. Residential hamlet nestled in the hollow of a superb unspoiled setting of nature & greenery - within a space classified and protected as a \"Natura 2000 Zone\" for the quality of its remarkable flora and fauna ecosystem - bordering the small typical village of Chapaize and its renowned 11th century Romanesque church (one of the oldest lantern towers in Burgundy). Magnificent rural setting on the edge of fields, meadows and forests. Absolute calm and tranquility. Very comfortable cottage. Warm character of a country house combining contemporary spirit and careful heritage renovation (conservation of stones, ceilings, original stones). Zen and cozy atmosphere. Very charming. Large intimate terrace exposed & shaded (to choose from), without vis-à-vis, opening onto a pleasant private natural garden bordering a bucolic and soothing orchard. Beautiful open view over the surrounding countryside. Superb panorama & landscapes.\nComposition: Terraced house next to the owners' home and another gîte (total independence). Wireless. Electric heating. Wood stove (wood included). Raised ground floor (2 steps): living room-kitchen-lounge (convertible \"rapido\" system 2 p. 140x190cm), bathroom (shower / wc). Mezzanine bedroom on the 1st floor (3 single beds 80x190cm, 2 of which can be converted into a double bed 160x190cm) with open bathroom (corner bath). Common laundry room (washing machine). Sheltered balcony-terrace + private terrace + garden. Private parking. Shops-services & greenway 5 km. TGV stations: Creusot 38 km, Mâcon Loché 39 km."
+        ],
+        "it": [
+          "Fabienne e Cyril, entrambi appassionati di natura e ambiente, vi accolgono in una deliziosa casa colonica autentica del XVIII secolo, ricca di carattere e di storia - composta da diverse \"ali\" restaurate - immersa in una vasta tenuta naturale di 12 ettari, mantenuta secondo i principi della permacultura e nel rispetto della biodiversità locale. Pace e tranquillità totali, in un contesto naturale eccezionale e incontaminato di campi e prati, confinante con una vasta foresta nazionale. L'ambiente e il parco paesaggistico sono letteralmente incantevoli, totalmente rilassanti, rilassanti e rigeneranti (con la possibilità di osservare la fauna selvatica in loco), a pochi passi dal centro dell'incantevole e tipico villaggio di Chapaize e dal suo ricchissimo patrimonio (un comune raro che vanta, tra l'altro, 2 chiese romaniche dell'XI secolo tutelate, tra cui una delle più antiche \"torri lanterne\" della Borgogna, e una superba tileria del XIII secolo perfettamente restaurata). Alloggio molto confortevole. Caldo fascino di campagna con un tocco di contemporaneità, esaltato dall'attento restauro della muratura, dei soffitti e delle pietre originali. Atmosfera soft, zen e accogliente. Molto fascino. Ampia terrazza esposta e ombreggiata adiacente a un piacevole giardino privato e naturale che si affaccia sulla tenuta e su un frutteto bucolico. Magnifica vista senza ostacoli sulla campagna circostante.\nComposizione: Casa bifamiliare adiacente alla casa dei proprietari e ad altre 2 gîtes (completamente indipendenti). Accesso internet Wifi. Riscaldamento elettrico. Stufa (legna inclusa). Lavanderia in comune (lavatrice). Piano terra rialzato (2 gradini): soggiorno/cucina (divano letto \"rapido\" per 2 persone 140x190 cm), bagno con doccia (doccia/wc). Camera da letto-mezzanino al 1° piano (3 letti singoli 80x190cm, di cui 2 trasformabili in letto matrimoniale 160x190cm) con bagno aperto (vasca ad angolo). Balcone privato riparato, terrazza e giardino. Terreno in comune di 12 ettari (ping-pong). Parcheggio privato. Negozi e servizi a 5 km."
+        ],
+        "fr": [
+          "Tous deux passionnés de nature et d'environnement, Fabienne & Cyril vous accueillent au sein d'un ravissant authentique corps de ferme traditionnel de caractère du 18ème siècle chargé d'histoire - composé de plusieurs « ailes » réhabilitées - niché sur une vaste propriété naturelle de 12 ha entretenue selon les principes de la permaculture respectant la biodiversité locale. Calme et tranquillité totale, blotti au creux d'un exceptionnel écrin champêtre & naturel préservé de champs & prairies, jouxtant une vaste forêt domaniale. Cadre et site paysagé littéralement enchanteurs, totalement apaisant, relaxant et ressourçant (possibilité d'observer la faune sauvage sur place), à deux pas du centre du charmant village typique de Chapaize & son très riche patrimoine (rare commune disposant entre autres de 2 églises romanes du XIe siècle classées, dont une des plus anciennes « tour-lanterne » de Bourgogne, et d'une superbe tuilerie du XIIIe siècle parfaitement restaurée). Gîte de très bon confort. Chaleureux cachet campagnard aux accents contemporains sublimé par une restauration patrimoniale soignée (pierres, plafonds, empierrements d'origine). Ambiance douce, zen & cosy. Beaucoup de charme. Large terrasse exposée & ombragée jouxtant un agréable jardin naturel privatif sans vis-à-vis, ouverts sur le domaine & un bucolique verger. Magnifique vue dégagée sur la campagne environnante.\nComposition : Maison mitoyenne voisinant l'habitation des propriétaires et 2 autres gîtes (indépendance totale). Wifi. Chauffage électrique. Poêle (bois inclus). Buanderie commune (lave-linge). Rdc surélevé (2 marches) : séjour-cuisine-salon (canapé convertible « rapido » 2 p. 140x190cm), salle d'eau (douche/wc). Chambre-mezzanine au 1er étage (3 lits 1 p. 80x190cm dont 2 modulables en lit 2 p. 160x190cm) avec salle de bain ouverte (baignoire d'angle). Balcon-terrasse abrité + terrasse + jardin privatifs. Terrain de 12 ha en commun (table ping-pong). Parking privé. Commerces & services à 5 km."
+        ],
+        "es": [
+          "Fabienne y Cyril, dos apasionados de la naturaleza y el medio ambiente, le dan la bienvenida a una auténtica granja del siglo XVIII llena de carácter e historia, formada por varias \"alas\" restauradas, enclavada en una vasta finca natural de 12 hectáreas mantenida según los principios de la permacultura y respetando la biodiversidad local. Tranquilidad total, en un marco natural excepcional y virgen de campos y prados, junto a un inmenso bosque nacional. El entorno y el paisaje son literalmente encantadores, totalmente relajantes y rejuvenecedores (con la posibilidad de observar la fauna in situ), a un tiro de piedra del centro del encantador pueblo típico de Chapaize y de su riquísimo patrimonio (un municipio poco común que cuenta, entre otras cosas, con 2 iglesias románicas del siglo XI protegidas, incluida una de las \"torres linterna\" más antiguas de Borgoña, y una magnífica techumbre del siglo XIII perfectamente restaurada). Casa rural muy confortable. Cálido encanto campestre con un toque contemporáneo, realzado por la cuidadosa restauración de la mampostería, los techos y la cantería originales. Ambiente suave, zen y acogedor. Mucho encanto. Amplia terraza expuesta y sombreada, contigua a un agradable jardín privado y natural que domina la finca y un bucólico huerto. Magníficas vistas despejadas sobre la campiña circundante.\nComposición: Casa adosada contigua a la vivienda de los propietarios y a otras 2 casas rurales (totalmente independientes). Acceso Wifi a Internet. Calefacción eléctrica. Estufa (leña incluida). Lavandería común (lavadora). Planta baja elevada (2 escalones): salón-cocina (sofá-cama \"rapido\" 2 personas 140x190cm), cuarto de ducha (ducha/wc). Habitación-mezzanina en el 1er piso (3 camas individuales 80x190cm, 2 de las cuales convertibles en cama doble 160x190cm) con cuarto de baño abierto (bañera de esquina). Balcón protegido, terraza y jardín privados. Parcela común de 12 hectáreas (tenis de mesa). Parking privado. Comercios y servicios a 5 km."
+        ],
+        "nl": [
+          "Fabienne & Cyril zijn beiden gepassioneerd door de natuur en het milieu, en heten je welkom in een prachtige authentieke 18e-eeuwse boerderij vol karakter en geschiedenis - bestaande uit verschillende gerestaureerde \"vleugels\" - genesteld in een uitgestrekt natuurlandgoed van 12 hectare onderhouden volgens permacultuurprincipes en met respect voor de lokale biodiversiteit. Totale rust en stilte, genesteld in een uitzonderlijke, ongerepte natuurlijke omgeving van velden en weiden, grenzend aan een uitgestrekt nationaal bos. De omgeving en het aangelegde terrein zijn letterlijk betoverend, totaal rustgevend, ontspannend en verjongend (met de mogelijkheid om wilde dieren ter plaatse te observeren), op een steenworp van het centrum van het charmante, typische dorpje Chapaize en zijn zeer rijke erfgoed (een zeldzame gemeente met onder andere 2 geklasseerde Romaanse kerken uit de 11e eeuw, waaronder een van de oudste 'lantaarntorens' in Bourgondië, en een prachtige, perfect gerestaureerde 13e-eeuwse pannenbakkerij). Zeer comfortabele gîte. Warme landelijke charme met een hedendaags tintje, versterkt door de zorgvuldige restauratie van het originele steenwerk, de plafonds en de stenen. Zachte, zen en gezellige sfeer. Veel charme. Groot, open, schaduwrijk terras grenzend aan een aangename, onoverdekte, privé, natuurlijke tuin met uitzicht op het landgoed en een bucolische boomgaard. Prachtig vrij uitzicht over het omliggende landschap.\nIndeling: Halfvrijstaande woning grenzend aan de woning van de eigenaren en 2 andere gîtes (volledig onafhankelijk). Wifi internettoegang. Elektrische verwarming. Kachel (hout inbegrepen). Gemeenschappelijke wasruimte (wasmachine). Verhoogde benedenverdieping (2 treden): woonkamer/keuken (2-persoons \"rapido\" slaapbank 140x190cm), doucheruimte (douche/wc). Slaapkamer-mezzanine op 1e verdieping (3 eenpersoonsbedden 80x190cm, waarvan 2 kunnen worden veranderd in een tweepersoonsbed 160x190cm) met open badkamer (hoekbad). Beschut privébalkon, terras en tuin. Gemeenschappelijk terrein van 12 hectare (tafeltennis). Privé parkeerplaats. Winkels en faciliteiten op 5 km."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/42353b2e-f8a5-37ad-98c0-57c983003080",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a73f7532-d4e9-3fb6-9f79-0e84c1f567ab",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e835c82d-f2f7-3445-a49a-903d7c8e1a82",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/39622c81-d525-36fd-b9d2-75d9a2412ac8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/68a14e24-77ce-388e-a9a6-88a6cb4f5a1e",
+      "schema:value": "1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6ba8f528-0629-3188-b35a-c0ca502d09b5",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Accommodation",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Unterbringung"
+            ],
+            "pt": [
+              "Alojamento"
+            ],
+            "en": [
+              "Accommodation"
+            ],
+            "it": [
+              "Alloggio"
+            ],
+            "fr": [
+              "Logement"
+            ],
+            "nl": [
+              "Logies"
+            ],
+            "es": [
+              "Alojamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/c64b7c83-e024-3cf1-a1bb-1abc7356bafe",
+        "schema:unitText": [
+          "m²"
+        ],
+        "schema:value": "53",
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7792b588-1b79-3692-8311-bce2e001819c",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:DVDPlayer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "DVD-Player"
+            ],
+            "pt": [
+              "Leitor de DVD"
+            ],
+            "en": [
+              "Dvd player"
+            ],
+            "it": [
+              "Lettore DVD"
+            ],
+            "fr": [
+              "Lecteur dvd"
+            ],
+            "es": [
+              "Lector de DVD"
+            ],
+            "nl": [
+              "Dvd-speler"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8fcb0e73-e6cb-328e-8238-d0a08c9a5036",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bfff4488-8625-3579-ae4c-479a61aecaaf",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Freezer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gefriergerät"
+            ],
+            "pt": [
+              "Congelador"
+            ],
+            "en": [
+              "Freezer"
+            ],
+            "it": [
+              "Congelatore"
+            ],
+            "fr": [
+              "Congélateur"
+            ],
+            "nl": [
+              "Diepvriezer"
+            ],
+            "es": [
+              "Congelador"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef987579-32be-36f7-a54d-805aacd16d8e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/2be01c8a-de7b-393b-b059-2d32a7089289",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3epis",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Ähren/Komfort"
+          ],
+          "pt": [
+            "3 espigas / conforto"
+          ],
+          "en": [
+            "3 ears of corn / Confort level"
+          ],
+          "it": [
+            "3 spighe / Comfort"
+          ],
+          "fr": [
+            "3 épis / Confort"
+          ],
+          "es": [
+            "3 espigas/Confort"
+          ],
+          "nl": [
+            "3 aren / Comfort"
+          ]
+        },
+        "isCompliantWith": [
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f8884d70-4a02-376b-a0b0-3171c508b279",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_GitesDeFrance",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Gîtes de France"
+          ],
+          "pt": [
+            "Gîtes de France"
+          ],
+          "en": [
+            "Gîtes de France"
+          ],
+          "it": [
+            "Gîtes de France"
+          ],
+          "fr": [
+            "Gîtes de France"
+          ],
+          "nl": [
+            "Gîtes de France"
+          ],
+          "es": [
+            "Gîtes de France"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/087a0090-cb5a-3b6a-bdf9-7537435e3bc8",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/c2b36443-17f0-31f2-ac53-807717ce37b5",
+          "schema:addressLocality": "Chapaize",
+          "schema:postalCode": "71460",
+          "schema:streetAddress": [
+            "12 Chemin de la Chaume"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:71087",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Chapaize"
+              ],
+              "pt": [
+                "Chapaize"
+              ],
+              "en": [
+                "Chapaize"
+              ],
+              "it": [
+                "Chapaize"
+              ],
+              "fr": [
+                "Chapaize"
+              ],
+              "nl": [
+                "Chapaize"
+              ],
+              "es": [
+                "Chapaize"
+              ]
+            },
+            "insee": "71087",
+            "isPartOfDepartment": {
+              "@id": "kb:France2771",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Saône-et-Loire"
+                ],
+                "pt": [
+                  "Saône-et-Loire"
+                ],
+                "en": [
+                  "Saône-et-Loire"
+                ],
+                "it": [
+                  "Saône-et-Loire"
+                ],
+                "fr": [
+                  "Saône-et-Loire"
+                ],
+                "nl": [
+                  "Saône-et-Loire"
+                ],
+                "es": [
+                  "Saône-et-Loire"
+                ]
+              },
+              "insee": "71",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/27b8b04e-c9ab-3ad2-bd3b-86b36332ec41",
+        "schema:latitude": "46.560067",
+        "schema:longitude": "4.727316",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-28",
+  "lastUpdateDatatourisme": "2025-07-28T23:57:21.657Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/544257e2-2d59-3f0e-8d8b-e429d849f774",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

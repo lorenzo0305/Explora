@@ -1,0 +1,2855 @@
+{
+  "@id": "https://data.datatourisme.fr/31/0eafd4f9-b9d6-34f8-99ff-95a17b2839f6",
+  "dc:identifier": "TFO17250291523",
+  "@type": [
+    "schema:Accommodation",
+    "schema:FoodEstablishment",
+    "schema:Hotel",
+    "schema:LodgingBusiness",
+    "schema:Restaurant",
+    "Accommodation",
+    "FoodEstablishment",
+    "Hotel",
+    "HotelRestaurant",
+    "HotelTrade",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Im Herzen des Aveyron, 6 km von Najac entfernt, genießen Sie einen Aufenthalt auf dem Land im L'Instant Mont le Viaur."
+    ],
+    "en": [
+      "At the heart of the Aveyron, 6 km from Najac, you will appreciate a stay in the country at the Instant Mont le Viaur."
+    ],
+    "it": [
+      "Nel cuore dell'Aveyron, a 6 km da Najac, godetevi un soggiorno in campagna presso l'Instant Mont le Viaur."
+    ],
+    "fr": [
+      "Au cœur de l'Aveyron, à 6 km de Najac, appréciez un séjour à la campagne à l'Instant Mont le Viaur."
+    ],
+    "nl": [
+      "Geniet in het hart van de Aveyron, op 6 km van Najac, van een verblijf op het platteland bij l'Instant Mont le Viaur."
+    ],
+    "es": [
+      "En el corazón del Aveyron, a 6 km de Najac, disfrutaréis de una estancia en el campo en el Instant Mont le Viaur."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "L'Instant Mont le Viaur"
+    ]
+  },
+  "allowedPersons": 15,
+  "availableLanguage": [
+    "en",
+    "es",
+    "fr"
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/db224e7a-611f-379d-b03d-1cb615389a8d",
+    "schema:legalName": "HIT Aveyron (ADAT Aveyron)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/66be3cfa-8d5c-34e7-87b1-87e1705c3fc4",
+      "schema:email": [
+        "webmaster@tourisme-aveyron.com"
+      ],
+      "schema:legalName": "ADT Aveyron",
+      "schema:telephone": [
+        "+33 5 65 75 40 12"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-aveyron.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/03f8b58e-1a48-3d18-942c-4b3d6cbfc3bc",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/ca8a40ff-d0d1-387a-922d-c26d093ae0c8",
+          "schema:addressLocality": "Saint-André-de-Najac",
+          "schema:postalCode": "12270",
+          "schema:streetAddress": [
+            "41 route de l'Occitanie"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12210",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-André-de-Najac"
+              ],
+              "pt": [
+                "Saint-André-de-Najac"
+              ],
+              "en": [
+                "Saint-André-de-Najac"
+              ],
+              "it": [
+                "Saint-André-de-Najac"
+              ],
+              "fr": [
+                "Saint-André-de-Najac"
+              ],
+              "nl": [
+                "Saint-André-de-Najac"
+              ],
+              "es": [
+                "Saint-André-de-Najac"
+              ]
+            },
+            "insee": "12210",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "linstantmv@gmail.com"
+      ],
+      "schema:familyName": [
+        "Miet"
+      ],
+      "schema:givenName": [
+        "Mickaël et Kora"
+      ],
+      "schema:legalName": "L'Instant Mont le Viaur",
+      "schema:telephone": [
+        "+33 5 65 65 08 68"
+      ],
+      "@type": [
+        "schema:Organization",
+        "schema:Person",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.linstantmv.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/c068f114-5d73-365f-b327-5842764f915c",
+      "dc:description": {
+        "de": [
+          "In dem charmanten kleinen Dorf Saint André de Najac lädt Sie das L'Instant Mont Le Viaur dazu ein, das Aveyron in aller Ruhe zu genießen. Kora und Mickaël empfangen Sie das ganze Jahr über in ihrem großen Familienhaus aus Stein, 6 km von Najac entfernt, inmitten der schönen Landschaft des Südwestens. Das charmante Hotel-Restaurant eröffnet Ihnen Horizonte für Feinschmecker, Entspannung und Natur."
+        ],
+        "en": [
+          "Character auberge in the walls of a former coaching inn entirely in stone. Cosy well equipped simple rooms. Table based on local produce supplemented by a few modern touches."
+        ],
+        "it": [
+          "Nell'incantevole paesino di Saint André de Najac, l'Instant Mont Le Viaur vi invita a godervi l'Aveyron in tutta tranquillità. Kora e Mickaël vi accolgono tutto l'anno nella loro grande casa familiare in pietra a 6 km da Najac, nel cuore della splendida campagna del Sud-Ovest. L'affascinante hotel-ristorante apre nuovi orizzonti in termini di cibo, relax e natura."
+        ],
+        "fr": [
+          "Dans le charmant petit village de Saint André de Najac, l'Instant Mont Le Viaur vous invite à savourer l'Aveyron en toute quiétude. Kora et Mickaël vous accueillent toute l'année dans leur grande maison familiale en pierre à 6km de Najac au cœur de la belle campagne du Sud-Ouest. L'hôtel-restaurant de charme vous ouvre des horizons gourmands, détente et nature."
+        ],
+        "es": [
+          "Mesón con carácter instalado en una antigua casa de postas toda de piedra. Habitaciones cómodas y calentitas, sencillas pero con todos los servicios. Buena mesa, bien arraigada en la tradición pero con toques innovadores."
+        ],
+        "nl": [
+          "In het charmante dorpje Saint André de Najac nodigt l'Instant Mont Le Viaur je uit om in alle rust te genieten van de Aveyron. Kora en Mickaël heten u het hele jaar door welkom in hun grote stenen familiehuis op 6 km van Najac, in het hart van het prachtige zuidwestelijke platteland. Het charmante hotel-restaurant opent nieuwe horizonten op het gebied van eten, ontspanning en natuur."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0ee31583-f182-384a-9710-17b286a10bbf",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/20b32ac4-cb68-3e87-bbd7-0a5c63148d0a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/35a4a08c-6b26-3cc6-8f57-394893f48a54",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/577f8e48-4eed-3f49-af5d-3613e29ea846",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/db2e9539-10ff-3892-b087-7b6faf5b4777",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/fbf69765-2ded-3e71-8dc4-be4ed7e1b034",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Im Herzen des Aveyron, 6 km von Najac entfernt, genießen Sie einen Aufenthalt auf dem Land im L'Instant Mont le Viaur."
+        ],
+        "en": [
+          "At the heart of the Aveyron, 6 km from Najac, you will appreciate a stay in the country at the Instant Mont le Viaur."
+        ],
+        "it": [
+          "Nel cuore dell'Aveyron, a 6 km da Najac, godetevi un soggiorno in campagna presso l'Instant Mont le Viaur."
+        ],
+        "fr": [
+          "Au cœur de l'Aveyron, à 6 km de Najac, appréciez un séjour à la campagne à l'Instant Mont le Viaur."
+        ],
+        "nl": [
+          "Geniet in het hart van de Aveyron, op 6 km van Najac, van een verblijf op het platteland bij l'Instant Mont le Viaur."
+        ],
+        "es": [
+          "En el corazón del Aveyron, a 6 km de Najac, disfrutaréis de una estancia en el campo en el Instant Mont le Viaur."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/0adbd0d7-d75b-3a3a-a7b4-0d4b850e75a3",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:HairDryer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Haartrockner"
+            ],
+            "pt": [
+              "Secador de cabelo"
+            ],
+            "en": [
+              "Hair dryer"
+            ],
+            "it": [
+              "Asciugacapelli"
+            ],
+            "fr": [
+              "Sèche cheveux"
+            ],
+            "es": [
+              "Secador de pelo"
+            ],
+            "nl": [
+              "Haardroger"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/0e9faf0e-cbca-3a1a-a9a7-c0ee80651f45",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "petsAllowed": true
+    },
+    {
+      "@id": "https://data.datatourisme.fr/1b5e40e9-c00a-3299-b555-a7af2c4a5a5a",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:CableSatellite",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Kabel – Satellit"
+            ],
+            "pt": [
+              "Cabo, satélite"
+            ],
+            "en": [
+              "Cable - satellite"
+            ],
+            "it": [
+              "Cavo - satellite"
+            ],
+            "fr": [
+              "Câble - satellite"
+            ],
+            "es": [
+              "Televisión por cable, satélite"
+            ],
+            "nl": [
+              "Kabel - satelliet"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/1c3f77ed-ea24-3077-9ca1-d1b98ed27fff",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:FacilitiesForDisabled",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Einrichtungen für Behinderte"
+            ],
+            "pt": [
+              "Instalações para pessoas com deficiência"
+            ],
+            "en": [
+              "Facilities for disabled"
+            ],
+            "it": [
+              "Strutture per i disabili"
+            ],
+            "fr": [
+              "Installations pour handicapés"
+            ],
+            "nl": [
+              "Voorzieningen voor gehandicapten"
+            ],
+            "es": [
+              "Instalaciones para personas con diversidad funcional"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/20a9e41b-ed49-3d5d-93f9-ac858c0ac441",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Terrace",
+          "@type": [
+            "CommonAmenity",
+            "ParkAndGardenTheme"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Terrasse"
+            ],
+            "pt": [
+              "Terraço"
+            ],
+            "en": [
+              "Terrace"
+            ],
+            "it": [
+              "Terrazzo"
+            ],
+            "fr": [
+              "Terrasse"
+            ],
+            "es": [
+              "Terraza"
+            ],
+            "nl": [
+              "Terras"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2297bf32-ff85-381a-bd67-fe3c3d663abc",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Garden",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Garten"
+            ],
+            "pt": [
+              "Jardim"
+            ],
+            "en": [
+              "Garden"
+            ],
+            "it": [
+              "Giardino"
+            ],
+            "fr": [
+              "Jardin"
+            ],
+            "nl": [
+              "Tuin"
+            ],
+            "es": [
+              "Jardín"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2e92add4-bb45-3e06-934d-82d44b7d732c",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:CarPark",
+          "@type": [
+            "CommonAmenity",
+            "GeneralPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Parkplatz"
+            ],
+            "pt": [
+              "Estacionamento"
+            ],
+            "en": [
+              "Car park"
+            ],
+            "it": [
+              "Parcheggio"
+            ],
+            "fr": [
+              "Parking"
+            ],
+            "nl": [
+              "Parkeerplaats"
+            ],
+            "es": [
+              "Aparcamiento"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/337daa48-7f66-3ae3-9c19-fce9fccc3340",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Beach",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Strand"
+            ],
+            "pt": [
+              "Praia"
+            ],
+            "en": [
+              "Beach"
+            ],
+            "it": [
+              "Spiaggia"
+            ],
+            "fr": [
+              "Plage"
+            ],
+            "nl": [
+              "Strand"
+            ],
+            "es": [
+              "Playa"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/358e108a-a377-3222-9a5d-2a47e3b23cb0",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Bar",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bar"
+            ],
+            "pt": [
+              "Bar"
+            ],
+            "en": [
+              "Bar"
+            ],
+            "it": [
+              "Bar"
+            ],
+            "fr": [
+              "Bar"
+            ],
+            "nl": [
+              "Bar"
+            ],
+            "es": [
+              "Bar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/42aa53a7-b05b-3a8f-9b1c-9631ded80981",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/47b6c5ae-cf8c-34ec-b5b5-1bfcf66dd71a",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:ShopsFirstNeed",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschäfte für den Grundbedarf"
+            ],
+            "pt": [
+              "Comércio de primeira necessidade"
+            ],
+            "en": [
+              "Shops first need"
+            ],
+            "it": [
+              "Negozi prima necessità"
+            ],
+            "fr": [
+              "Commerces 1ère nécessité"
+            ],
+            "nl": [
+              "Winkels voor eerste levensbehoeften"
+            ],
+            "es": [
+              "Comercio de primera necesidad"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5b5e02b5-eafe-324b-8755-e47b70ed8f16",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Restaurant",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Restaurant"
+            ],
+            "pt": [
+              "Restaurante"
+            ],
+            "en": [
+              "Restaurant"
+            ],
+            "it": [
+              "Ristorante"
+            ],
+            "fr": [
+              "Restaurant"
+            ],
+            "es": [
+              "Restaurante"
+            ],
+            "nl": [
+              "Restaurant"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/674bc3ab-e707-31f6-8b76-ed2906ce8753",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6fa56eb3-b2c0-325e-bd2d-a218d82aface",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Garage",
+          "@type": [
+            "CommonAmenity",
+            "GeneralPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Garage"
+            ],
+            "pt": [
+              "Garagem"
+            ],
+            "en": [
+              "Garage"
+            ],
+            "it": [
+              "Garage"
+            ],
+            "fr": [
+              "Garage"
+            ],
+            "es": [
+              "Garaje"
+            ],
+            "nl": [
+              "Garage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/772737ee-b898-3d0f-962d-81946bd94336",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:PrivateParking",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Parkplatz"
+            ],
+            "pt": [
+              "Parque de estacionamento privativo"
+            ],
+            "en": [
+              "Private parking"
+            ],
+            "it": [
+              "Parcheggio privato"
+            ],
+            "fr": [
+              "Parking privé"
+            ],
+            "nl": [
+              "Privéparking"
+            ],
+            "es": [
+              "Aparcamiento privado"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/905ec412-e045-3dc1-a1f8-ec443d40b3da",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:SeminarRoom",
+          "@type": [
+            "RoomAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Sitzungsraum"
+            ],
+            "pt": [
+              "Sala de seminários"
+            ],
+            "en": [
+              "Seminar room"
+            ],
+            "it": [
+              "Sala seminari"
+            ],
+            "fr": [
+              "Salle de séminaire"
+            ],
+            "es": [
+              "Sala de seminarios"
+            ],
+            "nl": [
+              "Congreszaal"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/972080b8-3a91-31cc-aa2a-b818e4fffcd4",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Television",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Fernsehen"
+            ],
+            "pt": [
+              "Televisão"
+            ],
+            "en": [
+              "Television"
+            ],
+            "it": [
+              "Televisione"
+            ],
+            "fr": [
+              "Télévision"
+            ],
+            "nl": [
+              "Televisie"
+            ],
+            "es": [
+              "Televisión"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b79eae21-0eee-36f6-aef8-de7aa3c50d41",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:CoachParking",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Busparkplatz"
+            ],
+            "pt": [
+              "Estacionamento para autocarros"
+            ],
+            "en": [
+              "Coach parking"
+            ],
+            "it": [
+              "Parcheggio per pullman"
+            ],
+            "fr": [
+              "Parking autocar"
+            ],
+            "nl": [
+              "Busparking"
+            ],
+            "es": [
+              "Aparcamiento para autocares"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cdc71f72-6de8-3cee-83d4-94b59c99d456",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:MeetingRoom",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Sitzungsraum"
+            ],
+            "pt": [
+              "Sala de reuniões"
+            ],
+            "en": [
+              "Meeting room"
+            ],
+            "it": [
+              "Sala riunioni"
+            ],
+            "fr": [
+              "Salle de réunion"
+            ],
+            "nl": [
+              "Vergaderzaal"
+            ],
+            "es": [
+              "Sala de reuniones"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e2eadb38-bd27-357e-8f87-821c2ea263f1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true,
+      "features": [
+        {
+          "@id": "kb:OutdoorPool",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Freibad"
+            ],
+            "pt": [
+              "Piscina ao ar livre"
+            ],
+            "en": [
+              "Outdoor pool"
+            ],
+            "it": [
+              "Piscina all'aperto"
+            ],
+            "fr": [
+              "Piscine plein air"
+            ],
+            "es": [
+              "Piscina de exterior"
+            ],
+            "nl": [
+              "Openluchtzwembad"
+            ]
+          }
+        },
+        {
+          "@id": "kb:SwimmingPool",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Pool"
+            ],
+            "pt": [
+              "Piscina"
+            ],
+            "en": [
+              "Swimming pool"
+            ],
+            "it": [
+              "Piscina"
+            ],
+            "fr": [
+              "Piscine"
+            ],
+            "nl": [
+              "Zwembad"
+            ],
+            "es": [
+              "Piscina"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e3936d90-c25e-3f19-b66f-572ed365d9a2",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:RoomService",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmerservice"
+            ],
+            "pt": [
+              "Serviço de quartos"
+            ],
+            "en": [
+              "Room service"
+            ],
+            "it": [
+              "Servizio in camera"
+            ],
+            "fr": [
+              "Room service"
+            ],
+            "es": [
+              "Servicio de habitaciones"
+            ],
+            "nl": [
+              "Roomservice"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e98187ca-a244-3a2d-b782-d85d08bc2c84",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:AirConditioner",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Klimaanlage"
+            ],
+            "pt": [
+              "Sistema de ar condicionado"
+            ],
+            "en": [
+              "Air conditioner"
+            ],
+            "it": [
+              "Aria condizionata"
+            ],
+            "fr": [
+              "Climatisation"
+            ],
+            "es": [
+              "Sistema de aire acondicionado"
+            ],
+            "nl": [
+              "Klimaatbeheersing"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/9c7797ac-bf31-36da-a6c2-b062dc60ae5f",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/76256c72-9fae-3bb3-a415-6513b8f0984a",
+          "ebucore:comments": {
+            "fr": [
+              "SARL MONT LE VIAUR"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "SARL MONT LE VIAUR"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "OFFICE DE TOURISME DE NAJAC"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/c63f2bdb-5840-356a-83c0-821bd020fb75",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19604/images/287963_d058b2dd-bb75-47f3-b5d0-0e0a34cd4fc5/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/3eb7bca7-2e30-35f5-9a94-b353af4151bd",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/24780f40-6811-3af7-8484-95269713b4be",
+          "ebucore:comments": {
+            "fr": [
+              "restaurant"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "restaurant"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Le Relais Mont le Viaur"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/f5e9e9e1-dd5e-3763-a15e-8d57d9849e8a",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19604/images/287970_aec4daa2-f233-4a57-bf6d-720b8b8734e1/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/736b4de8-748e-3b72-92b0-a05625880c7a",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/507a7b37-fcc4-34a1-915f-c7f15562cbd7",
+          "ebucore:comments": {
+            "fr": [
+              "chambre"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "chambre"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Le Relais Mont le Viaur"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/dcc53bc9-364e-30cd-9711-044fb2122e63",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19604/images/287964_cfabaa33-dd8f-4e50-812d-5ac1c272104f/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8cef472b-601b-3925-a6d3-685eb9ae9cb9",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/24780f40-6811-3af7-8484-95269713b4be",
+          "ebucore:comments": {
+            "fr": [
+              "restaurant"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "restaurant"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Le Relais Mont le Viaur"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/5aaef846-c9c5-3dc1-ae1b-d9254bf5f7eb",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19604/images/287969_3f0918c2-f7fd-459e-a3d3-d55f2f50c8ea/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9c7797ac-bf31-36da-a6c2-b062dc60ae5f",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/76256c72-9fae-3bb3-a415-6513b8f0984a",
+          "ebucore:comments": {
+            "fr": [
+              "SARL MONT LE VIAUR"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "SARL MONT LE VIAUR"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "OFFICE DE TOURISME DE NAJAC"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/c63f2bdb-5840-356a-83c0-821bd020fb75",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19604/images/287963_d058b2dd-bb75-47f3-b5d0-0e0a34cd4fc5/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a66e0e50-e379-3354-ab4f-51e3dbcf09dc",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/d2231098-804e-3342-8581-5c3d07233be8",
+          "ebucore:comments": {
+            "fr": [
+              "extérieur"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "extérieur"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Le Relais Mont le Viaur"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/43110883-137b-3fb0-9d6a-a2e67f597996",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19604/images/287967_305c7401-efa8-438d-a0ad-ad2b24b6530c/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/baa60661-4592-3b21-8851-1a76725e6998",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/ca7a73c7-45d7-32c1-9272-c54d624ae1db",
+          "ebucore:comments": {
+            "fr": [
+              "hôtel"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "hôtel"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Le Relais Mont le Viaur"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/b769034d-3e68-3ff6-aa32-4eaf331eb132",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19604/images/287968_7fee3c9c-1a0d-4c8f-8fae-bb4ffa9e64dd/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c4b336b3-1f1a-3b15-8cc1-c7ce7d1f056a",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/ca7a73c7-45d7-32c1-9272-c54d624ae1db",
+          "ebucore:comments": {
+            "fr": [
+              "hôtel"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "hôtel"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Le Relais Mont le Viaur"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/d9dba525-f243-34c9-a9a3-d15540d48a8f",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19604/images/287966_4c9f0c30-9bf3-480f-95f1-86d37ea0f604/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cdd2c59c-993e-3b31-84ec-200d7bd703d6",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/507a7b37-fcc4-34a1-915f-c7f15562cbd7",
+          "ebucore:comments": {
+            "fr": [
+              "chambre"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "chambre"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Le Relais Mont le Viaur"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/b047cebb-ba87-31ea-b7a8-611accf201ff",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19604/images/287965_11c2c9fe-f070-4029-9d54-7baf2231c8b0/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/5959eeb6-7a2a-3c1c-b24f-f84ad36e9331",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_HotelCosy",
+        "schema:ratingValue": "2.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Hôtel Cosy"
+          ],
+          "pt": [
+            "Hôtel Cosy"
+          ],
+          "en": [
+            "Hotel Cosy"
+          ],
+          "it": [
+            "Hôtel Cosy"
+          ],
+          "fr": [
+            "Hôtel Cosy"
+          ],
+          "nl": [
+            "Hôtel Cosy"
+          ],
+          "es": [
+            "Hôtel Cosy"
+          ]
+        },
+        "isCompliantWith": [
+          "Hotel"
+        ]
+      },
+      "reviewDeliveryDate": "2024-01-01"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7daa1014-1edc-3443-a9ac-e08106a76722",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3etoiles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Sterne"
+          ],
+          "pt": [
+            "3 estrelas"
+          ],
+          "en": [
+            "3 Stars"
+          ],
+          "it": [
+            "3 stelle"
+          ],
+          "fr": [
+            "3 étoiles"
+          ],
+          "nl": [
+            "3 sterren"
+          ],
+          "es": [
+            "3 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      },
+      "reviewDeliveryDate": "2023-09-29"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ae3c87ba-948a-3652-b5d9-7afbfd272c69",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_LogisRestaurantGourmand",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Restaurant Gourmand"
+          ],
+          "pt": [
+            "Restaurant Gourmand"
+          ],
+          "en": [
+            "Restaurant Gourmand"
+          ],
+          "it": [
+            "Restaurant Gourmand"
+          ],
+          "fr": [
+            "Restaurant Gourmand"
+          ],
+          "nl": [
+            "Restaurant Gourmand"
+          ],
+          "es": [
+            "Restaurant Gourmand"
+          ]
+        },
+        "isCompliantWith": [
+          "Restaurant"
+        ]
+      },
+      "reviewDeliveryDate": "2024-01-01"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c079c97f-e0c3-3b42-a877-3b32c680dc16",
+      "@type": [
+        "Review"
+      ],
+      "reviewDeliveryDate": "2019-09-26"
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/1632ee8c-4586-3d2e-9563-07147ef520ff",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4b7b801b-5fc4-351c-ac19-627400463f22",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a1010cb9-fead-35f1-a0c3-d027857575de",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/268c261c-3f12-3d7a-8f35-3a333f1d1717",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/ca8a40ff-d0d1-387a-922d-c26d093ae0c8",
+          "schema:addressLocality": "Saint-André-de-Najac",
+          "schema:postalCode": "12270",
+          "schema:streetAddress": [
+            "41 route de l'Occitanie"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12210",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-André-de-Najac"
+              ],
+              "pt": [
+                "Saint-André-de-Najac"
+              ],
+              "en": [
+                "Saint-André-de-Najac"
+              ],
+              "it": [
+                "Saint-André-de-Najac"
+              ],
+              "fr": [
+                "Saint-André-de-Najac"
+              ],
+              "nl": [
+                "Saint-André-de-Najac"
+              ],
+              "es": [
+                "Saint-André-de-Najac"
+              ]
+            },
+            "insee": "12210",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/3fcd15f9-7537-318b-81d0-9a953c57af2b",
+        "schema:latitude": "44.193",
+        "schema:longitude": "2.0381",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2025-07-18",
+  "lastUpdateDatatourisme": "2025-07-19T06:19:14.426Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/e766d23a-c84a-33a9-b3e9-ca6c1587b778",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:AmericanExpress",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "American Express"
+            ],
+            "pt": [
+              "American Express"
+            ],
+            "en": [
+              "American express"
+            ],
+            "it": [
+              "American Express"
+            ],
+            "fr": [
+              "American express"
+            ],
+            "nl": [
+              "American Express"
+            ],
+            "es": [
+              "American Express"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:CreditCards",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bankkarten"
+            ],
+            "pt": [
+              "Cartões bancários"
+            ],
+            "en": [
+              "Credit Cards"
+            ],
+            "it": [
+              "Carte bancarie"
+            ],
+            "fr": [
+              "Cartes bancaires"
+            ],
+            "es": [
+              "Tarjetas bancarias"
+            ],
+            "nl": [
+              "Bankkaarten"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/088f66dd-ba14-3a21-9fc6-21ac7f641b56",
+          "schema:price": "85",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Auf der Grundlage eines Doppelzimmers, pro Tag und pro Person (ohne Getränke)."
+            ],
+            "en": [
+              "On the basis of a double room, per day and per person (excluding drinks)."
+            ],
+            "it": [
+              "Basato su una camera doppia, al giorno e per persona (bevande escluse)."
+            ],
+            "fr": [
+              "Sur la base d'une chambre double, par jour et par personne (hors boissons)."
+            ],
+            "nl": [
+              "Op basis van een tweepersoonskamer, per dag en per persoon (exclusief drankjes)."
+            ],
+            "es": [
+              "Basado en una habitación doble, por día y por persona (excluyendo las bebidas)."
+            ]
+          },
+          "hasPricingOffer": [
+            {
+              "@id": "kb:HalfPension",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Halbpension"
+                ],
+                "pt": [
+                  "Meia-pensão"
+                ],
+                "en": [
+                  "Half pension"
+                ],
+                "it": [
+                  "Mezza pensione"
+                ],
+                "fr": [
+                  "Demi-pension"
+                ],
+                "es": [
+                  "Media pensión"
+                ],
+                "nl": [
+                  "Halfpension"
+                ]
+              }
+            }
+          ],
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/0dc26fc6-606d-39d6-b911-80283b1c2453",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/20063bca-e5b0-30f1-9a56-31705b24545f",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/3b5d456c-8921-35c5-8cea-edf8b1baa39c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d56dad9f-0ba9-312e-a912-513385091022",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e22d5c37-add2-3394-914a-8f3b4d03f9a7",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/986bc6eb-0b45-3562-a33e-5a5e1ab4fe72",
+          "schema:price": "80",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "1-Personen-Zimmer ohne Frühstück"
+            ],
+            "en": [
+              "Room 1 person without breakfast"
+            ],
+            "it": [
+              "Camera singola senza colazione"
+            ],
+            "fr": [
+              "Chambre 1 personne sans petit déjeuner"
+            ],
+            "es": [
+              "Habitación individual sin desayuno"
+            ],
+            "nl": [
+              "Eenpersoonskamer zonder ontbijt"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/09ecc6f1-eb60-3696-ac96-fffd00059a81",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/1213ba80-e85f-3457-8c87-ecaa1edf8fc3",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/47824327-c903-3727-a719-3d5d79f68571",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/6172818b-4bc1-3220-81d2-3dee9d2e0de8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/86e4373c-6684-30bb-9456-66e8c44c5b21",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f96f227a-e5cf-365a-a1a7-ab09d3944487",
+          "schema:maxPrice": [
+            "100"
+          ],
+          "schema:minPrice": [
+            "90"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "haben Sie die Wahl zwischen Zimmern mit Dusche oder Badewanne. Wir haben ein PMR-Zimmer sowie ein Familienzimmer für maximal 4 Personen"
+            ],
+            "en": [
+              "you can choose between rooms with shower or bath. We also have a PMR room and a family room for up to 4 people"
+            ],
+            "it": [
+              "è possibile scegliere tra camere con doccia o bagno. Abbiamo una camera PMR e una camera familiare per un massimo di 4 persone"
+            ],
+            "fr": [
+              "vous avez le choix entre chambre avec douche ou baignoire. Nous avons une chambre PMR ainsi qu'une chambre familiale de maximum 4 personnes"
+            ],
+            "es": [
+              "puede elegir entre habitaciones con ducha o bañera. Disponemos de una habitación PMR y una habitación familiar para hasta 4 personas"
+            ],
+            "nl": [
+              "je kunt kiezen tussen kamers met douche of bad. We hebben een PMR-kamer en een familiekamer voor maximaal 4 personen"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/0e26ce33-7c0e-3297-86f4-ba77bb786335",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/4e3b151c-f6e4-3684-b744-ab9fabccdcf8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/825f4891-6a43-33bf-9994-b24983b25433",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a342ad91-be41-3ef1-aa5e-30482469ca53",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a69dc9df-df9d-3dfe-adff-6b604099986b",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "reducedMobilityAccess": true
+}

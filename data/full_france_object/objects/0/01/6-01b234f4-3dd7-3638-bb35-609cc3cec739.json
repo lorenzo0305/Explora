@@ -1,0 +1,881 @@
+{
+  "@id": "https://data.datatourisme.fr/6/01b234f4-3dd7-3638-bb35-609cc3cec739",
+  "dc:identifier": "HLOBFC000V53E6KR",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Domaine des Montis"
+    ]
+  },
+  "allowedPersons": 4,
+  "creationDate": "2025-07-05",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/2bedb577-a1d9-3e42-bc0c-a4f13861ca9c",
+    "dc:identifier": "8adc4ac8-dd5b-4561-9450-a65f4807a76c",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/393c1bbc-1d11-3f98-9d9b-9258ca76b1ec",
+        "schema:addressLocality": "Lons-le-Saunier",
+        "schema:postalCode": "39000",
+        "schema:streetAddress": [
+          "17 rue Rouget de Lisle"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:39300",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Lons-le-Saunier"
+            ],
+            "pt": [
+              "Lons-le-Saunier"
+            ],
+            "en": [
+              "Lons-le-Saunier"
+            ],
+            "it": [
+              "Lons-le-Saunier"
+            ],
+            "fr": [
+              "Lons-le-Saunier"
+            ],
+            "nl": [
+              "Lons-le-Saunier"
+            ],
+            "es": [
+              "Lons-le-Saunier"
+            ]
+          },
+          "insee": "39300",
+          "isPartOfDepartment": {
+            "@id": "kb:France2739",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Jura"
+              ],
+              "pt": [
+                "Jura"
+              ],
+              "en": [
+                "Jura"
+              ],
+              "it": [
+                "Jura"
+              ],
+              "fr": [
+                "Jura"
+              ],
+              "nl": [
+                "Jura"
+              ],
+              "es": [
+                "Jura"
+              ]
+            },
+            "insee": "39",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "thomas.bernollin@jura-tourism.com"
+    ],
+    "schema:legalName": "JURA TOURISME (COORDINATION DECIBELLES DATA)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/e4d89b41-f6bd-3be4-bc20-b8b26a0c3f08",
+      "schema:email": [
+        "stephanierapone@orange.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 32 96 87 56"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.cheval-randonnee-jura.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/e4d89b41-f6bd-3be4-bc20-b8b26a0c3f08",
+      "schema:email": [
+        "stephanierapone@orange.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 32 96 87 56"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.cheval-randonnee-jura.com/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/fd172060-a3ab-3e14-978e-daf285466d64",
+      "dc:description": {
+        "de": [
+          "Inmitten eines 12 Hektar großen Reitgebiets* und in einer außergewöhnlichen natürlichen Umgebung empfangen Sie diese Unterkünfte vom Typ Chalet in einem ungewöhnlichen Western-Dekor. In der Nähe bewegen sich die Tiere des Bauernhofs (Pferde, Ponys, Ziegen, Lamas...) in aller Ruhe und zur Freude von Naturliebhabern. Jedes Chalet besteht aus einem Wohnraum mit Küchenzeile (Gasherd, Kühlschrank, Mikrowelle, Kaffeemaschine, Wasserkocher und Geschirr) und Essbereich, einem Badezimmer/WC, einem ersten Schlafzimmer mit einem 140 cm breiten Bett und einem zweiten Schlafzimmer mit 3 80 cm breiten Betten, davon 2 Etagenbetten (Wohnfläche: 21,70 m²), sowie einer 8,40 m² großen Terrasse. Während Ihres Aufenthalts haben Sie die Möglichkeit, verschiedene Aktivitäten auszuüben: Wandern, Radfahren, Mountainbiken... (Start von der Unterkunft aus auf IGN-Pfaden), Ponyreiten (diese Aktivitäten werden auf unserem Landgut im Rahmen unserer Aktivität \"Ferme Équestre Élevage Juan\" angeboten), Schwimmbad und Thermalbäder, Seen, Besichtigung von touristischen und kulturellen Sehenswürdigkeiten... oder einfach nur von unserem Landgut profitieren, um sich an einem Wochenende oder während einiger Urlaubstage zu erholen Unser Landgut liegt zwischen Bergen und Tälern, was Ihnen die Freizeit bietet, Orte zu entdecken, die zu den schönsten Dörfern Frankreichs ernannt wurden (Château-Chalon, Baume-les-Messieurs), malerische Dörfer (Poligny, Stadt des Comté; Arbois ? sein Museum und seine Weine; Salins-les-Bains ? seine Thermen und Festungen; Dole ? das Venedig des Jura; Arc-et-Senans und seine Salinen, die zum UNESCO-Weltkulturerbe gehören...), die Region der Seen (Chalain,...) und Wasserfälle (du Hérisson, des Tufs...) Haustiere werden kostenlos und unter Einhaltung der Charta für Haustiere von \"Gîte de France\" akzeptiert (ein Haustier pro Unterkunft ? Möglichkeit der zusätzlichen Aufnahme mit Zustimmung der Eigentümer). Kaution von 300 ? pro Tier verlangt. Für das Aufladen von Elektrofahrzeugen wird ein Aufpreis verlangt (mit den Eigentümern absprechen)"
+        ],
+        "en": [
+          "Situated in the heart of a 12-hectare equestrian estate* in an exceptional natural setting, these chalet-style accommodations welcome you in an unusual ?western? setting. Nearby, farm animals (horses, ponies, goats, llamas...) roam the grounds, providing peace and quiet for nature lovers. Each chalet comprises a living room with kitchenette (two gas rings, table-top fridge, microwave oven, filter coffee maker, kettle and crockery) and dining area, a shower room/wc, a 1st bedroom with 1 double bed (140cm) and a 2nd bedroom with 3 single beds (80cm), 2 of which are bunk beds (living area: 21.70 m²), plus an 8.40 m² terrace. During your stay, you'll be able to enjoy a wide range of activities: hiking, cycling, mountain biking... (departure from the gîte on IGN trails), pony trekking (activities offered on our estate as part of our \"Ferme Équestre Élevage Juan\" activity), swimming pool and thermal baths, lakes, visits to tourist and cultural sites... or simply take advantage of our estate to relax for a weekend or a few days of vacation. Our estate is located between hills and valleys, giving you the chance to discover the sites of France's most beautiful villages (Château-Chalon, Baume-les-Messieurs), picturesque villages (Poligny, the town of Comté; Arbois? its museum and wines; Salins-les-Bains ? its thermal baths and fortifications; Dole ? the Venice of the Jura; Arc-et-Senans and its UNESCO World Heritage saltworks...), the region's lakes (Chalain,...) and waterfalls (du Hérisson, des Tufs...). Pets are welcome free of charge and in compliance with the \"Gîte de France\" pet charter (one per accommodation ? additional pets possible with owners' agreement). Deposit of 300 ? per pet required. For electric vehicle charging, an extra charge will be requested (see owner)"
+        ],
+        "it": [
+          "Situato nel cuore di una tenuta equestre di 12 ettari* in un contesto naturale eccezionale, questo alloggio in stile chalet vi accoglie in un insolito ambiente \"western\". Nelle vicinanze, gli animali della fattoria (cavalli, pony, capre, lama, ecc.) si aggirano in tutta tranquillità, per la gioia degli amanti della natura. Ogni chalet è composto da un soggiorno con angolo cottura (due fornelli a gas, frigorifero da tavolo, microonde, caffettiera a filtro, bollitore e stoviglie) e zona pranzo, un bagno con doccia/wc, una prima camera con 1 letto matrimoniale (140 cm) e una seconda camera con 3 letti singoli (80 cm), di cui 2 a castello (superficie abitabile: 21,70 m²), oltre a una terrazza di 8,40 m². Durante il vostro soggiorno, avrete la possibilità di praticare diverse attività: escursioni a piedi, in bicicletta, in mountain bike... (partenza dal gîte su sentieri IGN), pony trekking (attività proposte nella nostra tenuta nell'ambito dell'attività \"Ferme Equestre Élevage Juan\"), piscina e bagni termali, laghi, visite a siti turistici e culturali... la nostra tenuta è situata tra colline e valli, dandovi la possibilità di scoprire i più bei villaggi di Francia (Château-Chalon, Baume-les-Messieurs), villaggi pittoreschi (Poligny, la città di Comté; Arbois? il suo museo e i suoi vini; Salins-les-Bains? le sue terme e le sue fortificazioni; Dole? la Venezia del Giura; Arc-et-Senans e le sue saline patrimonio mondiale dell'UNESCO...), la regione dei laghi (Chalain,...) e delle cascate (du Hérisson, des Tufs...) Gli animali domestici sono i benvenuti gratuitamente e nel rispetto della carta degli animali domestici \"Gîte de France\" (uno per alloggio; animali supplementari possibili con l'accordo dei proprietari). È richiesta una cauzione di 300 euro per animale. Verrà richiesto un supplemento per la ricarica dei veicoli elettrici (consultare il proprietario)"
+        ],
+        "fr": [
+          "Situé au cœur d'un domaine équestre* de 12 hectares et dans un cadre naturel exceptionnel, ces hébergements type chalets vous accueillent dans un décor “western” insolite. A proximité évoluent les animaux de la ferme (chevaux, poneys, chèvres, lamas...), en toute quiétude et pour le bonheur des amoureux de la nature. Chaque chalet est composé d'une pièce à vivre avec kitchenette (plaque deux gaz, frigo table top, four micro onde, cafetière filtre, bouilloire et vaisselle nécessaire) et espace repas, une salle d'eau/wc, une 1ère chambre avec 1 lit de 140 et une 2ème chambre avec 3 lits de 80 dont 2 superposés (surface habitable : 21.70 m²), ainsi qu'une terrasse de 8.40 m². Au cours de votre séjour, vous aurez la possibilité de pratiquer diverses activités : randonnée à pieds, vélo, VTT... (départ depuis le gîte sur des pistes IGN), balades à poneys (activités proposées au sein de notre domaine dans le cadre de notre activité de \"Ferme Équestre Élevage Juan\"), piscine et thermes, lacs, visite de sites touristiques et culturels... ou tout simplement profiter de notre domaine pour vous reposer sur le temps d'un week-end ou durant quelques jours de vacances Notre domaine se situe entre monts et vallées, ce qui vous offre le loisir découvrir des sites nommés plus beaux villages de France (Château-Chalon, Baume-les-Messieurs), des villages pittoresques ( Poligny ville du Comté ; Arbois – son musée et ses vins ; Salins-les-Bains – ses thermes et fortifications ; Dole – la Venise Jurassienne ; Arc-et-Senans et ses salines classées au Patrimoine Mondial de l'UNESCO...), la région des lacs (Chalain,...) et des cascades (du Hérisson, des Tufs...) Animal de compagnie acceptés gratuitement et dans le respect de la charte d'accueil des animaux de \"Gîte de France\" (un par logement – possibilité d'accueil supplémentaire avec accord des propriétaires). Caution de 300 € par animal demandée. Pour charge de véhicule électrique un surcout sera demandé (voir avec la propriétaire)"
+        ],
+        "es": [
+          "Situado en el corazón de una finca ecuestre* de 12 hectáreas, en un marco natural excepcional, este alojamiento tipo chalet le acoge en un insólito entorno \"western\". En las inmediaciones, los animales de granja (caballos, ponis, cabras, llamas, etc.) deambulan tranquilamente, para deleite de los amantes de la naturaleza. Cada chalet consta de una sala de estar con cocina americana (dos fogones, frigorífico de mesa, microondas, cafetera de filtro, hervidor y vajilla) y comedor, un cuarto de ducha/wc, un 1er dormitorio con 1 cama doble (140 cm) y un 2º dormitorio con 3 camas individuales (80 cm), 2 de ellas literas (superficie habitable: 21,70 m²), además de una terraza de 8,40 m². Durante su estancia, tendrá la oportunidad de participar en diversas actividades: senderismo, ciclismo, bicicleta de montaña, etc. (salida desde la casa rural por los senderos del IGN), paseos en poni (actividades ofrecidas en nuestra finca en el marco de nuestra actividad \"Ferme Equestre Élevage Juan\"), piscina y baños termales, lagos, visitas a lugares turísticos y culturales... nuestra finca está situada entre colinas y valles, lo que le permitirá descubrir los pueblos más bellos de Francia (Château-Chalon, Baume-les-Messieurs), pueblos pintorescos (Poligny, la ciudad de Comté; Arbois ? su museo y sus vinos; Salins-les-Bains, sus termas y fortificaciones; Dole, la Venecia del Jura; Arc-et-Senans y sus salinas declaradas Patrimonio Mundial por la UNESCO...), la región de los lagos (Chalain,...) y las cascadas (du Hérisson, des Tufs...) Los animales de compañía son bienvenidos gratuitamente y de conformidad con la carta de animales de compañía \"Gîte de France\" (uno por alojamiento ? animales de compañía adicionales posibles con el acuerdo de los propietarios). Fianza de 300 euros por animal. Para la carga de vehículos eléctricos, se solicitará un suplemento (consultar al propietario)"
+        ],
+        "nl": [
+          "Gelegen in het hart van een 12 hectare groot hippisch landgoed* in een uitzonderlijke natuurlijke omgeving, verwelkomt deze accommodatie in chaletstijl je in een ongewone \"western\" omgeving. In de buurt lopen boerderijdieren (paarden, pony's, geiten, lama's, enz.) in alle rust rond, tot groot genoegen van natuurliefhebbers. Elk chalet bestaat uit een woonkamer met kookhoek (twee gaspitten, koelkast op tafel, magnetron, filterkoffiezetapparaat, waterkoker en vaatwerk) en eethoek, een badkamer met douche/wc, een 1e slaapkamer met 1 tweepersoonsbed (140 cm) en een 2e slaapkamer met 3 eenpersoonsbedden (80 cm), waarvan 2 stapelbedden (woonoppervlakte: 21,70 m²), plus een terras van 8,40 m². Tijdens uw verblijf kunt u deelnemen aan verschillende activiteiten: wandelen, fietsen, mountainbiken, enz. (vertrek vanaf de gîte op IGN paden), ponyrijden (activiteiten aangeboden op ons landgoed in het kader van onze activiteit \"Ferme Equestre Élevage Juan\"), zwembad en thermale baden, meren, bezoeken aan toeristische en culturele bezienswaardigheden... ons landgoed ligt tussen heuvels en valleien, waardoor je de mooiste dorpjes van Frankrijk kunt ontdekken (Château-Chalon, Baume-les-Messieurs), pittoreske dorpjes (Poligny, de stad Comté; Arbois ? zijn museum en zijn wijnen; Salins-les-Bains ? zijn thermale baden en vestingwerken; Dole ? het Venetië van de Jura; Arc-et-Senans en zijn zoutziederij die op de werelderfgoedlijst van UNESCO staat...), de streek van de meren (Chalain,...) en watervallen (du Hérisson, des Tufs...) Huisdieren zijn gratis welkom en in overeenstemming met het huisdierenreglement van \"Gîte de France\" (één per accommodatie ? extra huisdieren mogelijk met toestemming van de eigenaar). Borg van 300€ per huisdier is vereist. Er wordt een toeslag gevraagd voor het opladen van elektrische voertuigen (zie eigenaar)"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/041c8e7f-0688-3973-968f-6ee9f7f9cda0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/25125176-0275-3eb5-914c-94a265c3c65c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b45062d5-821c-3df9-96f5-211515d792b6",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b823d68e-1f93-327c-9d10-c0a249935e2c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e5d8aa37-f28d-3330-bb11-46c129783b34",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/0d9cce6c-1e96-3e10-9bb0-e70d5f4ecf99",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:BabyEquipment",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Baby-, Kindermaterial"
+            ],
+            "pt": [
+              "Material para bebés e crianças"
+            ],
+            "en": [
+              "Baby or child equipment"
+            ],
+            "it": [
+              "Dotazioni per neonati e bambini"
+            ],
+            "fr": [
+              "Matériel bébé, enfant"
+            ],
+            "es": [
+              "Material para bebés y niños pequeños"
+            ],
+            "nl": [
+              "Baby- en kinderuitrusting"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/1e839dd0-9732-3944-81a8-0aac24587e52",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Cot",
+          "@type": [
+            "AccommodationPricingOffer",
+            "TypeOfBed"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Babybett"
+            ],
+            "pt": [
+              "Berço"
+            ],
+            "en": [
+              "Cot"
+            ],
+            "it": [
+              "Lettino per bambini"
+            ],
+            "fr": [
+              "Lit bébé"
+            ],
+            "es": [
+              "Cuna"
+            ],
+            "nl": [
+              "Babybed"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/3866328c-b0f0-3008-9eed-b4ce6e8ba0a3",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:BabyChair",
+          "@type": [
+            "CateringAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Hochstuhl"
+            ],
+            "pt": [
+              "Cadeira de bebé"
+            ],
+            "en": [
+              "Baby chair"
+            ],
+            "it": [
+              "Sedia per bambini"
+            ],
+            "fr": [
+              "Chaise bébé"
+            ],
+            "es": [
+              "Silla de bebé"
+            ],
+            "nl": [
+              "Kinderstoel"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6955edda-b76d-3968-909e-ae7e5ace3935",
+      "schema:value": "2",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6a0b1587-8f0e-389c-a3e4-4866252b283c",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:AirConditioner",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Klimaanlage"
+            ],
+            "pt": [
+              "Sistema de ar condicionado"
+            ],
+            "en": [
+              "Air conditioner"
+            ],
+            "it": [
+              "Aria condizionata"
+            ],
+            "fr": [
+              "Climatisation"
+            ],
+            "es": [
+              "Sistema de aire acondicionado"
+            ],
+            "nl": [
+              "Klimaatbeheersing"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f09208d7-1375-390c-85b3-3a02e6d09cfb",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Microwave",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mikrowellen"
+            ],
+            "pt": [
+              "Micro-ondas"
+            ],
+            "en": [
+              "Microwave"
+            ],
+            "it": [
+              "Microonde"
+            ],
+            "fr": [
+              "Micro-ondes"
+            ],
+            "es": [
+              "Microondas"
+            ],
+            "nl": [
+              "Magnetron"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/f8884d70-4a02-376b-a0b0-3171c508b279",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_GitesDeFrance",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Gîtes de France"
+          ],
+          "pt": [
+            "Gîtes de France"
+          ],
+          "en": [
+            "Gîtes de France"
+          ],
+          "it": [
+            "Gîtes de France"
+          ],
+          "fr": [
+            "Gîtes de France"
+          ],
+          "nl": [
+            "Gîtes de France"
+          ],
+          "es": [
+            "Gîtes de France"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/00c28121-8a6a-31d4-870b-b10b10578a3e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/33c4008c-00dd-3724-8407-98333fa6793d",
+          "schema:addressLocality": "Fay-en-Montagne",
+          "schema:postalCode": "39800",
+          "schema:streetAddress": [
+            "1 Route de Picarreau"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:39222",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Fay-en-Montagne"
+              ],
+              "pt": [
+                "Fay-en-Montagne"
+              ],
+              "en": [
+                "Fay-en-Montagne"
+              ],
+              "it": [
+                "Fay-en-Montagne"
+              ],
+              "fr": [
+                "Fay-en-Montagne"
+              ],
+              "nl": [
+                "Fay-en-Montagne"
+              ],
+              "es": [
+                "Fay-en-Montagne"
+              ]
+            },
+            "insee": "39222",
+            "isPartOfDepartment": {
+              "@id": "kb:France2739",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Jura"
+                ],
+                "pt": [
+                  "Jura"
+                ],
+                "en": [
+                  "Jura"
+                ],
+                "it": [
+                  "Jura"
+                ],
+                "fr": [
+                  "Jura"
+                ],
+                "nl": [
+                  "Jura"
+                ],
+                "es": [
+                  "Jura"
+                ]
+              },
+              "insee": "39",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/4786f26c-ab21-3f6f-8ad1-1936e2c6af9a",
+        "schema:latitude": "46.7555",
+        "schema:longitude": "5.72959",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-08-02",
+  "lastUpdateDatatourisme": "2025-08-03T00:06:05.256Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/544257e2-2d59-3f0e-8d8b-e429d849f774",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

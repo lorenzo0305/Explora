@@ -1,0 +1,969 @@
+{
+  "@id": "https://data.datatourisme.fr/6/02ab5c0b-081c-32e5-9373-389ce46017ea",
+  "dc:identifier": "HLOBFC000V53EJ7Q",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Appartement en résidence - Les Tavaillons - R432BAC00"
+    ],
+    "en": [
+      "Appartement en résidence - Les Tavaillons - R432BAC00"
+    ],
+    "fr": [
+      "Appartement en résidence - Les Tavaillons - R432BAC00"
+    ]
+  },
+  "allowedPersons": 4,
+  "availableLanguage": [
+    "en",
+    "fr"
+  ],
+  "creationDate": "2025-07-08",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/d7e3bef0-fdf5-3176-94b2-81148ab0a8db",
+    "dc:identifier": "d14678af-292c-4ae4-a80d-a541da1251b9",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/0653fe73-d1f6-3b26-b074-1697234d814d",
+        "schema:addressLocality": "Les Rousses",
+        "schema:postalCode": "39220",
+        "schema:streetAddress": [
+          "495 rue Pasteur"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:39470",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Les Rousses"
+            ],
+            "pt": [
+              "Les Rousses"
+            ],
+            "en": [
+              "Les Rousses"
+            ],
+            "it": [
+              "Les Rousses"
+            ],
+            "fr": [
+              "Les Rousses"
+            ],
+            "nl": [
+              "Les Rousses"
+            ],
+            "es": [
+              "Les Rousses"
+            ]
+          },
+          "insee": "39470",
+          "isPartOfDepartment": {
+            "@id": "kb:France2739",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Jura"
+              ],
+              "pt": [
+                "Jura"
+              ],
+              "en": [
+                "Jura"
+              ],
+              "it": [
+                "Jura"
+              ],
+              "fr": [
+                "Jura"
+              ],
+              "nl": [
+                "Jura"
+              ],
+              "es": [
+                "Jura"
+              ]
+            },
+            "insee": "39",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "infos@lesrousses.com"
+    ],
+    "schema:legalName": "Offices de Tourisme de la Station des Rousses",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.lesrousses.com/espace-pro"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/f80827ab-c5da-32e5-9b29-d4c81a79dc48",
+      "schema:email": [
+        "resa@lesrousses-reservation.com"
+      ],
+      "schema:telephone": [
+        "+33 3 84 60 55 56"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/f80827ab-c5da-32e5-9b29-d4c81a79dc48",
+      "schema:email": [
+        "resa@lesrousses-reservation.com"
+      ],
+      "schema:telephone": [
+        "+33 3 84 60 55 56"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/7c6dfee1-019a-3cdc-a404-8fc1a375ca46",
+      "dc:description": {
+        "de": [
+          "Angenehme und gemütliche Wohnung , im Herzen des Dorfes Les Rousses.\n\nIn der Residenz \"Les Tavaillons\" gelegen, besteht die 48m² große Wohnung im 3. Stock aus einem Hauptraum mit Ess- und Sitzecke, einer geschlossenen Küche.\nIm Obergeschoss befinden sich ein Schlafzimmer mit einem 140 cm breiten Bett und ein Schlafzimmer mit zwei 90 cm breiten Betten. \nBadezimmer und separates WC. \nEin Zugang von außen auf den Balkon vervollständigt das Ganze. \nPrivatparkplatz auf dem Innenparkplatz.\n\nPraktische Informationen: Im Sommer wie im Winter finden Sie alle Aktivitäten im Ort; die Skipisten sind 5 km und die Langlaufloipen 700 m entfernt. Im Winter ist der Skibus 500m entfernt. Im Sommer finden Sie im Ort zahlreiche Wanderwege und können in unseren Bergseen baden. In der Nähe von Lebensmittelgeschäften und dem Dorfzentrum.\n\nZusätzliche Leistungen: Bettwäsche und Handtücher, Babybett, Endreinigung, Einkaufskorb, Haushaltsset, Wifi-Box."
+        ],
+        "en": [
+          "Pleasant, warm flat in the heart of the village of Les Rousses.\n\nLocated in the \"Les Tavaillons\" residence, this 48m² flat on the 3rd floor comprises a main room with a dining area and sitting area, and a closed kitchen.\nUpstairs, 1 bedroom with a 140cm bed and 1 bedroom with 2 90cm beds. \nSeparate bathroom and WC. \nExterior access to balcony. \nPrivate parking on the indoor car park.\n\nPractical info: In summer and winter, you'll find all the activities you need in the resort; downhill ski slopes are 5km away and cross-country ski slopes 700m away. In winter, the Skibus is 500m away. In summer, there are numerous hiking trails in the resort and you can enjoy swimming in our mountain lakes. Close to food shops and village centre.\n\nAdditional services: bed and bathroom linen, cot, end-of-stay cleaning, shopping basket, cleaning kit, wifi box."
+        ],
+        "it": [
+          "Appartamento piacevole e caldo nel cuore del villaggio di Les Rousses.\n\nSituato nella residenza \"Les Tavaillons\", questo appartamento di 48 m² al 3° piano comprende una sala principale con zona pranzo e salotto, e una cucina chiusa.\nAl piano superiore, 1 camera con letto da 140 cm e 1 camera con 2 letti da 90 cm.\nBagno e WC separati.\nAccesso esterno al balcone.\nParcheggio privato nel parcheggio interno.\n\nInformazioni pratiche: In estate e in inverno, troverete tutte le attività necessarie nella località; le piste di sci alpino sono a 5 km e quelle di sci di fondo a 700 metri. In inverno, lo Skibus si trova a 500 metri. In estate, nella località ci sono numerosi sentieri escursionistici e potrete fare il bagno nei nostri laghi di montagna. Vicino ai negozi di alimentari e al centro del paese.\n\nServizi aggiuntivi: biancheria da letto e da bagno, culla, pulizia di fine soggiorno, cestino della spesa, kit di pulizia, wifi box."
+        ],
+        "fr": [
+          "Appartement agréable et chaleureux , au cœur du village des Rousses.\n\nSitué dans la résidence \"Les Tavaillons\", l’appartement de 48m² au 3éme étage est composé d'une pièce principale avec coin repas et coin salon, d'une cuisine fermé.\nA l'étage , 1 chambre avec un lit en 140cm et 1 chambre avec 2 lits en 90cm. \nSalle de bain et WC indépendants. \nUn accès extérieur sur balcon complète le tout. \nStationnement privé sur parking intérieur.\n\nInfos pratiques : Été comme hiver, vous trouverez toutes les activités sur la station ; les pistes de ski alpin se trouvent à 5kms et les pistes de ski de fond à 700m. En hiver, Skibus à 500m. En été, vous trouverez de nombreux départs de randonnées sur la station et pourrez profiter de la baignade dans nos lacs de montagnes. Proche commerce alimentaire et centre village.\n\nServices en supplément : linge de lit et de toilette, lit bébé, ménage de fin de séjour, panier premières courses, kit ménage, boitier wifi."
+        ],
+        "es": [
+          "Piso agradable y cálido en el corazón del pueblo de Les Rousses.\n\nSituado en la residencia \"Les Tavaillons\", este piso de 48m² en el 3er piso consta de una sala principal con comedor y sala de estar, y una cocina cerrada.\nArriba, 1 habitación con cama de 140cm y 1 habitación con 2 camas de 90cm.\nCuarto de baño y WC separados.\nAcceso exterior al balcón.\nAparcamiento privado en el parking cubierto.\n\nInformación práctica: Tanto en verano como en invierno, encontrará todas las actividades que necesite en la estación; las pistas de esquí alpino están a 5 km y las de esquí de fondo a 700 metros. En invierno, el Skibus está a 500 m. En verano, hay numerosas rutas de senderismo en la estación y puedes disfrutar nadando en nuestros lagos de montaña. Cerca de tiendas de alimentación y del centro del pueblo.\n\nServicios adicionales: ropa de cama y baño, cuna, limpieza de final de estancia, cesta de la compra, kit de limpieza, wifi box."
+        ],
+        "nl": [
+          "Aangenaam, warm appartement in het hart van het dorp Les Rousses.\n\nDit appartement van 48 m² op de 3e verdieping ligt in de residentie \"Les Tavaillons\" en bestaat uit een woonkamer met eethoek en zithoek, en een gesloten keuken.\nBoven, 1 slaapkamer met een bed van 140cm en 1 slaapkamer met 2 bedden van 90cm.\nAparte badkamer en WC.\nBuiten toegang tot balkon.\nPrivé parkeerplaats op de overdekte parkeerplaats.\n\nPraktische informatie: In de zomer en winter vindt u alle activiteiten die u nodig heeft in het resort; skipistes op 5 km en langlaufpistes op 700m. In de winter bevindt de skibus zich op 500 meter afstand. In de zomer zijn er talloze wandelroutes in het resort en kun je heerlijk zwemmen in onze bergmeren. Dicht bij levensmiddelenwinkels en het dorpscentrum.\n\nExtra services: bed- en badlinnen, kinderbed, eindschoonmaak, boodschappenmand, schoonmaakset, wifi-box."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/978fa56e-edfb-3337-8d7e-8cc85cda1daa",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d74e120e-5ec4-3cc1-96bb-4c66e119aee5",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/faf4481f-dcbb-3c16-85e2-ca5128815c3a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/15d35785-c3c7-3e46-89c4-4525e872a74d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:HairDryer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Haartrockner"
+            ],
+            "pt": [
+              "Secador de cabelo"
+            ],
+            "en": [
+              "Hair dryer"
+            ],
+            "it": [
+              "Asciugacapelli"
+            ],
+            "fr": [
+              "Sèche cheveux"
+            ],
+            "es": [
+              "Secador de pelo"
+            ],
+            "nl": [
+              "Haardroger"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2d6b3d0f-aedc-3589-a874-754a890f54f6",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:IronAndIroningBoard",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bügeleisen und -brett"
+            ],
+            "pt": [
+              "Ferro e tábua de engomar"
+            ],
+            "en": [
+              "Iron and ironing board"
+            ],
+            "it": [
+              "Ferro e asse da stiro"
+            ],
+            "fr": [
+              "Fer et planche à repasser"
+            ],
+            "nl": [
+              "Strijkbout en strijkplank"
+            ],
+            "es": [
+              "Plancha y tabla de planchar"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/62fa879e-59bc-3bb6-9b8e-df6a0175ae78",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Fridge",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Kühlschrank"
+            ],
+            "pt": [
+              "Frigorífico"
+            ],
+            "en": [
+              "Fridge"
+            ],
+            "it": [
+              "Frigorifero"
+            ],
+            "fr": [
+              "Réfrigérateur"
+            ],
+            "nl": [
+              "Koelkast"
+            ],
+            "es": [
+              "Frigorífico"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8fcb0e73-e6cb-328e-8238-d0a08c9a5036",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a5ba25b7-31b0-3334-b994-2ad4813a329d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Elevator",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Personenaufzug"
+            ],
+            "pt": [
+              "Elevador"
+            ],
+            "en": [
+              "Elevator"
+            ],
+            "it": [
+              "Ascensore"
+            ],
+            "fr": [
+              "Ascenseur"
+            ],
+            "nl": [
+              "Lift"
+            ],
+            "es": [
+              "Ascensor"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b4ee1e19-6cd3-300f-adda-ef753335fc37",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Television",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Fernsehen"
+            ],
+            "pt": [
+              "Televisão"
+            ],
+            "en": [
+              "Television"
+            ],
+            "it": [
+              "Televisione"
+            ],
+            "fr": [
+              "Télévision"
+            ],
+            "nl": [
+              "Televisie"
+            ],
+            "es": [
+              "Televisión"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bc7463a7-9f28-3ed6-872f-2014f4305edd",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Accommodation",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Unterbringung"
+            ],
+            "pt": [
+              "Alojamento"
+            ],
+            "en": [
+              "Accommodation"
+            ],
+            "it": [
+              "Alloggio"
+            ],
+            "fr": [
+              "Logement"
+            ],
+            "nl": [
+              "Logies"
+            ],
+            "es": [
+              "Alojamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/b3875e95-faf4-3a4e-b2d8-547fcd85018e",
+        "schema:unitText": [
+          "m²"
+        ],
+        "schema:value": "48",
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f09208d7-1375-390c-85b3-3a02e6d09cfb",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Microwave",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mikrowellen"
+            ],
+            "pt": [
+              "Micro-ondas"
+            ],
+            "en": [
+              "Microwave"
+            ],
+            "it": [
+              "Microonde"
+            ],
+            "fr": [
+              "Micro-ondes"
+            ],
+            "es": [
+              "Microondas"
+            ],
+            "nl": [
+              "Magnetron"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f9d94de2-273f-3b0e-a3f2-8c6349564a58",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Oven",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Ofen"
+            ],
+            "pt": [
+              "Forno"
+            ],
+            "en": [
+              "Oven"
+            ],
+            "it": [
+              "Forno"
+            ],
+            "fr": [
+              "Four"
+            ],
+            "nl": [
+              "Oven"
+            ],
+            "es": [
+              "Horno"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/55c6c532-2d99-328a-9714-b3957c710c93",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/719c85b0-98f1-330d-abf9-9b9483d4d025",
+          "schema:addressLocality": "Les Rousses",
+          "schema:postalCode": "39220",
+          "schema:streetAddress": [
+            "164 Route du Noirmont"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:39470",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Les Rousses"
+              ],
+              "pt": [
+                "Les Rousses"
+              ],
+              "en": [
+                "Les Rousses"
+              ],
+              "it": [
+                "Les Rousses"
+              ],
+              "fr": [
+                "Les Rousses"
+              ],
+              "nl": [
+                "Les Rousses"
+              ],
+              "es": [
+                "Les Rousses"
+              ]
+            },
+            "insee": "39470",
+            "isPartOfDepartment": {
+              "@id": "kb:France2739",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Jura"
+                ],
+                "pt": [
+                  "Jura"
+                ],
+                "en": [
+                  "Jura"
+                ],
+                "it": [
+                  "Jura"
+                ],
+                "fr": [
+                  "Jura"
+                ],
+                "nl": [
+                  "Jura"
+                ],
+                "es": [
+                  "Jura"
+                ]
+              },
+              "insee": "39",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/f8706193-43d7-371d-93db-a507832f6625",
+        "schema:latitude": "46.48579",
+        "schema:longitude": "6.06214",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/476fd5e1-0c61-3e31-80f6-4c65565c6e32",
+          "schema:validFrom": "2025-07-08T00:00:00",
+          "schema:validThrough": "2055-07-08T00:00:00",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-30",
+  "lastUpdateDatatourisme": "2025-07-31T00:03:00.341Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/cae9f608-6507-37dc-89b1-c621a1fd6173",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

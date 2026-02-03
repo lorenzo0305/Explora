@@ -1,0 +1,246 @@
+{
+  "@id": "https://data.datatourisme.fr/13/062642ee-6157-30f9-954f-9c1f5d756bfb",
+  "dc:identifier": "5437792",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "L'Original"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/e034fb6b-66aa-3c1d-88f4-45ddfb08da98",
+    "dc:identifier": "1233",
+    "schema:email": [
+      "d.trioux@destination-paris-saclay.com"
+    ],
+    "schema:legalName": "Destination Paris-Saclay",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.destination-paris-saclay.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/181d88c2-c62c-366d-a08d-fccbd88e1213",
+      "schema:telephone": [
+        "+33 1 60 13 37 83"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://loriginal-fast-food-restaurant.business.site/?utm_source=gmb&utm_medium=referral"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/baf7b97a-8a27-3fc6-9d89-eac1317d474c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/77e2867d-9764-32a6-aed3-6ba61f1f1e1d",
+          "schema:addressLocality": "Palaiseau",
+          "schema:postalCode": "91120",
+          "schema:streetAddress": [
+            "40 Rue de Paris"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:91477",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Palaiseau"
+              ],
+              "pt": [
+                "Palaiseau"
+              ],
+              "en": [
+                "Palaiseau"
+              ],
+              "it": [
+                "Palaiseau"
+              ],
+              "fr": [
+                "Palaiseau"
+              ],
+              "nl": [
+                "Palaiseau"
+              ],
+              "es": [
+                "Palaiseau"
+              ]
+            },
+            "insee": "91477",
+            "isPartOfDepartment": {
+              "@id": "kb:France1191",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Essonne"
+                ],
+                "pt": [
+                  "Essonne"
+                ],
+                "en": [
+                  "Essonne"
+                ],
+                "it": [
+                  "Essonne"
+                ],
+                "fr": [
+                  "Essonne"
+                ],
+                "nl": [
+                  "Essonne"
+                ],
+                "es": [
+                  "Essonne"
+                ]
+              },
+              "insee": "91",
+              "isPartOfRegion": {
+                "@id": "kb:France11",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Île-de-France"
+                  ],
+                  "pt": [
+                    "Île-de-France"
+                  ],
+                  "en": [
+                    "Île-de-France"
+                  ],
+                  "it": [
+                    "Île-de-France"
+                  ],
+                  "fr": [
+                    "Île-de-France"
+                  ],
+                  "nl": [
+                    "Île-de-France"
+                  ],
+                  "es": [
+                    "Île-de-France"
+                  ]
+                },
+                "insee": "11",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/efaad5ed-2dd4-35c7-8e86-ca89c35f735d",
+        "schema:latitude": "48.716976",
+        "schema:longitude": "2.247515",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/8fab471d-0a8f-3307-999d-c3fd5d6b766b",
+          "schema:closes": "23:30:00",
+          "schema:opens": "11:30:00",
+          "schema:validFrom": "2025-01-01T00:00:00",
+          "schema:validThrough": "2025-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/d87037ec-223f-3b91-8276-b2fe7d28f333",
+      "schema:email": [
+        "d.trioux@destination-paris-saclay.com"
+      ],
+      "schema:legalName": "Destination Paris-Saclay",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.destination-paris-saclay.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2022-02-11",
+  "lastUpdateDatatourisme": "2025-06-10T13:12:49.779Z"
+}

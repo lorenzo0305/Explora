@@ -1,0 +1,918 @@
+{
+  "@id": "https://data.datatourisme.fr/6/05e9acf6-216a-3c2d-89af-e888671cb5d3",
+  "dc:identifier": "HLOBOU000V50RFAK",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Chêne Vert"
+    ],
+    "en": [
+      "Chêne Vert"
+    ],
+    "fr": [
+      "Chêne Vert"
+    ]
+  },
+  "allowedPersons": 4,
+  "creationDate": "2023-12-22",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/82578c73-08c7-342e-8845-dc63b20d54a8",
+    "dc:identifier": "6012fdba-d499-4734-b015-373e96f99808",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/264b87c4-2c8b-383e-bc71-d437efb5644d",
+        "schema:addressLocality": "Mâcon",
+        "schema:postalCode": "71000",
+        "schema:streetAddress": [
+          "Maison de la Saône-et-Loire"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:71270",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mâcon"
+            ],
+            "pt": [
+              "Mâcon"
+            ],
+            "en": [
+              "Mâcon"
+            ],
+            "it": [
+              "Mâcon"
+            ],
+            "fr": [
+              "Mâcon"
+            ],
+            "nl": [
+              "Mâcon"
+            ],
+            "es": [
+              "Mâcon"
+            ]
+          },
+          "insee": "71270",
+          "isPartOfDepartment": {
+            "@id": "kb:France2771",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saône-et-Loire"
+              ],
+              "pt": [
+                "Saône-et-Loire"
+              ],
+              "en": [
+                "Saône-et-Loire"
+              ],
+              "it": [
+                "Saône-et-Loire"
+              ],
+              "fr": [
+                "Saône-et-Loire"
+              ],
+              "nl": [
+                "Saône-et-Loire"
+              ],
+              "es": [
+                "Saône-et-Loire"
+              ]
+            },
+            "insee": "71",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "missiontourisme@saoneetloire71.fr"
+    ],
+    "schema:legalName": "Mission Tourisme - Département 71",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://route71.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/438f77b2-b24d-3932-85b6-19da3fa73d60",
+      "schema:email": [
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=3182&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/438f77b2-b24d-3932-85b6-19da3fa73d60",
+      "schema:email": [
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=3182&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/555b5ba2-fe10-35e0-8ac4-0f047fce9190",
+      "dc:description": {
+        "de": [
+          "Christine und Marc (ein passionierter Radfahrer, der Sie begleiten wird) öffnen Ihnen die Türen eines authentischen, sorgfältig restaurierten Landhauses aus dem 17. Jahrhundert, das die Hauptstraße durch das Dorf säumt und gegenüber einem ungewöhnlichen Postkartenschlösschen liegt, nur wenige Schritte vom Ortszentrum entfernt. Das Dorf liegt auf einem 400 m hohen Hügel und ist die historische Hauptstadt des Brionnais mit dem prestigeträchtigen Label \"Plus beaux villages de France\" (Schönste Dörfer Frankreichs) und der geschichtsträchtigen \"site clunisien\" (ehemaliges Lehen des Abtes Saint-Hugues, der die \"Größe\" des Dorfes erlangte)dieses malerische mittelalterliche Dorf verfügt über ein außergewöhnliches Kulturerbe (Überreste des Schlosses aus dem 10. Jahrhundert mit seinem imposanten viereckigen Bergfried, eine romanische Stiftskirche und Kapelle aus dem 12. Jahrhundert, ein majestätisches Priorat aus dem 19) und profitiert von einer hügeligen Landschaft, die reich an wunderschönen Landschaften ist, eingebettet in die prächtige lokale Bocage, die von weitläufigen, unberührten Wäldern umgeben ist. Geräumiges Ferienhaus mit sehr gutem Komfort. Gemütlicher Charakter, der Traditionen und Modernität miteinander verbindet, zwischen \"bürgerlicher\" Landhausatmosphäre und zeitgenössischem Geist, verbunden mit der entrückenden Seele eines alten Herrenhauses. Viel Charme und Charakter. Gemütlich & sehr gemütlich. Großer, 50m² großer, sonniger und schattiger Balkon mit Terrasse, der sich an die Rückseite des Hauses auf der Wiesenseite schmiegt und einen schönen Blick auf die umliegende Landschaft und den Bergfried des Schlosses als \"Hintergrund\" bietet.\nZusammensetzung: Reihen-Dorfhaus, das auch die Wohnung der Eigentümer umfasst (völlige Unabhängigkeit ohne Gegenüber). Zentralheizung mit Gas. Wifi (Glasfaser). Unterkunft im 1. Stock (Zugang über Außentreppe). Wohnküche, Wohnzimmer (1 Schlafsofa 1 P. 130x190cm als Zusatz im \"Alkoven\"), 2 Schlafzimmer (Bett 2 P. 160x200cm / Bett 2 P. 140x190cm), Badezimmer (Dusche), separates WC. Balkon-Terrasse + geschützter Privatbalkon. Abstellraum für Fahrräder. Kostenloser öffentlicher Parkplatz. Alle Einkaufsmöglichkeiten 5 km. Hinweis: Deckenhöhe zwischen 2,04 und 2,08 m (außer Wohnzimmer)."
+        ],
+        "en": [
+          "Christine & Marc (bicycle enthusiast who will be able to guide you), open the doors of an authentic 17th century \"town residence\" of character, carefully restored, along the main street crossing the village, located opposite an unusual little castle of \" postcard\" a stone's throw from the town center. Nestled at the top of a hill culminating at 400m, historic capital of Brionnais with the prestigious label \"Most beautiful villages in France\" & \"Clunisian site\" steeped in history (former stronghold of Saint-Hugues abbot having worked for \"greatness\" of Cluny Abbey), this picturesque medieval village has an exceptional heritage (remains of the 10th century castle & its imposing \"square keep\", \"collegiate\" church & 12th century Romanesque chapel, majestic 19th century priory, town hall from the 18th century, historic residences, etc.) and enjoys a hilly rural setting rich in sublime landscapes, nestled in the hollow of the sumptuous local bocage surrounded by vast preserved wild forests. Spacious gîte with very good comfort. Warm character mixing traditions & modernity, between \"bourgeois\" country atmosphere & contemporary spirit, combined with the exotic soul of an old residence. Lots of charm & character. Cozy & very cozy. Large exposed & shaded balcony-terrace of 50m², nestled at the back of the house \"meadow side\", offering a beautiful unobstructed view of the surrounding countryside and the castle keep in the \"backdrop\".\nComposition: Semi-detached village house also including the owners' accommodation (total independence without vis-à-vis). Gas central heating. Wifi (fiber). Gîte on the 1st floor (access by external staircase). Living room-kitchen, lounge (1 convertible sofa 1 p. 130x190cm as extra in \"alcove\"), 2 bedrooms (double bed 160x200cm / double bed 140x190cm), bathroom (shower), separate toilet. Balcony terrace + private sheltered balcony. Bicycle storage. Free public parking. All amenities 5 km. Please note: ceiling height between 2.04 and 2.08m (except living room)."
+        ],
+        "it": [
+          "Christine & Marc (un appassionato ciclista che potrà guidarvi), aprono le porte di un'autentica \"casa di paese\" del XVII secolo, accuratamente restaurata, sulla strada principale che attraversa il villaggio, di fronte a un insolito piccolo castello \"da cartolina\" a due passi dal centro del paese. Adagiata sulla sommità di una collina che sale fino a 400 metri, questa capitale storica della regione del Brionnais è stata insignita del prestigioso marchio \"I più bei villaggi di Francia\" ed è un \"sito cluniacense\" ricco di storia (ex roccaforte dell'abate di Saint-Hugues che ?uvré à la 'grandeur' de l'abbaye de Cluny), questo pittoresco villaggio medievale vanta un patrimonio eccezionale (resti del castello del X secolo e del suo imponente \"mastio quadrato\", chiesa e cappella romanica \"collegiata\" del XII secolo, maestoso priorato del XIX secolo, municipio del XVIII secolo, residenze storiche?) ed è immerso in una campagna ondulata con uno scenario sublime, annidato nel sontuoso bocage locale e circondato da vaste foreste incontaminate. Gîte spazioso e confortevole. Caldo e accogliente, con un mix di tradizione e modernità, tra un'atmosfera di campagna \"borghese\" e uno spirito contemporaneo, unito allo spirito esotico di un'antica casa. Molto fascino e carattere. Accogliente e molto confortevole. Vasta terrazza balconata di 50 m² esposta e ombreggiata, nascosta sul retro della casa sul \"lato prato\", che offre una bella vista senza ostacoli sulla campagna circostante con il torrione del castello come sfondo.\nComposizione: casa di paese bifamiliare che comprende anche l'alloggio dei proprietari (totale indipendenza senza vicini). Riscaldamento centrale a gas. Wifi (fibra). Gîte al 1° piano (accesso tramite scala esterna). Soggiorno/cucina, salotto (1 divano letto 1 p. 130x190cm in alcova), 2 camere da letto (letto 2 p. 160x200cm / letto 2 p. 140x190cm), bagno con doccia, WC separato. Balcone-terrazza privata + balcone riparato. Capanno per biciclette. Parcheggio pubblico gratuito. Tutti i servizi a 5 km. Attenzione: altezza dei soffitti tra 2,04 e 2,08 m (tranne il soggiorno)."
+        ],
+        "fr": [
+          "Christine & Marc (passionné de vélo qui saura vous guider), vous ouvrent les portes d'une authentique \"demeure de bourg\" de caractère du XVIIe soigneusement restaurée, bordant la rue principale traversant le village, sise face à un insolite petit château de \"carte postale\" à deux pas du centre bourg. Blotti au sommet d'une colline culminant à 400m, capitale historique du Brionnais doté du prestigieux label \"Plus beaux villages de France \" & \"site clunisien\" pétri d'histoire (ancien fief de Saint-Hugues abbé ayant œuvré à la \"grandeur\" de l'abbaye de Cluny), ce pittoresque village médiéval dispose d'un patrimoine exceptionnel (vestiges du château du Xe & son imposant \"donjon carré\", église \"collégiale\" & chapelle romanes du XIIe, majestueux prieuré du XIXe, hôtel de ville du XVIIIe, demeures historiques…) et profite d'un écrin champêtre vallonné riche de sublimes paysages, lové au creux du somptueux bocage local cerclé de vastes forêts sauvages préservées. Spacieux gîte de très bon confort. Chaleureux cachet mixant traditions & modernité, entre ambiance campagnarde \"bourgeoise\" & esprit contemporain, conjugué à l'âme dépaysante d'une ancienne demeure. Beaucoup de charme & caractère. Cosy & très douillet. Vaste balcon-terrasse exposé & ombragé de 50m², niché à l'arrière de la maison \"côté prairies\", offrant une belle vue dégagée sur la campagne environnante et le donjon du château en \"toile de fond\". \nComposition : Maison de village mitoyenne comprenant également le logement des propriétaires (indépendance totale sans vis-à-vis). Chauffage central gaz. Wifi (fibre). Gîte au 1er étage (accès par escalier extérieur). Séjour-cuisine, salon (1 canapé convertible 1 p. 130x190cm en appoint en « alcôve »), 2 chambres (lit 2 p. 160x200cm / lit 2 p. 140x190cm), salle d'eau (douche), Wc indépendant. Balcon-terrasse + balcon abrité privatifs. Local vélos. Parking public gratuit. Toutes commodités 5 km. A noter : hauteur sous plafond comprises entre 2.04 et 2.08m (sauf salon)."
+        ],
+        "es": [
+          "Christine y Marc (apasionados del ciclismo que sabrán guiarle), le abren las puertas de una auténtica \"casa de pueblo\" del siglo XVII, cuidadosamente restaurada, situada en la calle principal que atraviesa el pueblo, frente a un insólito castillo de \"postal\" a dos pasos del centro del pueblo. Enclavada en lo alto de una colina de 400 m de altitud, esta capital histórica de la región de Brionnais, galardonada con el prestigioso sello de los \"Pueblos más bonitos de Francia\", es un \"lugar cluniacense\" cargado de historia (antigua fortaleza del abad de Saint-Hugues que ?uvré à la 'grandeur' de l'abbaye de Cluny), este pintoresco pueblo medieval cuenta con un patrimonio excepcional (restos del castillo del siglo X y su imponente 'torre del homenaje', iglesia y capilla románicas 'colegiatas' del siglo XII, majestuoso priorato del siglo XIX, ayuntamiento del siglo XVIII, residencias históricas?) y se encuentra en una campiña ondulada con un paisaje sublime, enclavado en el suntuoso bocage local rodeado de vastos bosques vírgenes. Casa rural espaciosa y confortable. Cálida y acogedora, con una mezcla de tradición y modernidad, entre un ambiente campestre \"burgués\" y un espíritu contemporáneo, combinado con el espíritu exótico de una casa antigua. Mucho encanto y carácter. Acogedora y muy confortable. Amplia terraza balcón de 50 m², expuesta y sombreada, escondida en la parte trasera de la casa, en el \"lado del prado\", que ofrece una hermosa vista sin obstáculos del campo circundante con la torre del homenaje del castillo como telón de fondo.\nComposición: Casa de pueblo adosada que incluye también el alojamiento de los propietarios (independencia total sin vecinos). Calefacción central de gas. Wifi (fibra). Casa rural en el 1er piso (acceso por escalera exterior). Salón-cocina, salón (1 sofá cama 1 p. 130x190cm en alcoba), 2 habitaciones (cama 2 p. 160x200cm / cama 2 p. 140x190cm), cuarto de ducha, WC separado. Balcón-terraza privado + balcón protegido. Cobertizo para bicicletas. Parking público gratuito. Todos los servicios a 5 km. Atención: altura de los techos entre 2,04 y 2,08 m (excepto salón)."
+        ],
+        "nl": [
+          "Christine & Marc (een fervent fietser die je de weg kan wijzen), openen de deuren van een zorgvuldig gerestaureerd authentiek 17e-eeuws \"dorpshuis\" aan de hoofdstraat die door het dorp loopt, tegenover een ongebruikelijk klein \"ansichtkaart\"-kasteel op een steenworp afstand van het dorpscentrum. Deze historische hoofdstad van de regio Brionnais, genesteld op de top van een heuvel met een hoogte van 400 m, is bekroond met het prestigieuze label \"Mooiste dorpen van Frankrijk\" en is een \"Cluniac site\" met een rijke geschiedenis (voormalige vesting van Saint-Hugues abt die ?uvré à la 'grandeur' de l'abbaye de Cluny), dit pittoreske middeleeuwse dorp beschikt over een uitzonderlijk erfgoed (overblijfselen van het 10e-eeuwse kasteel en zijn imposante 'vierkante donjon', 12e-eeuwse Romaanse 'collegiale' kerk en kapel, majestueuze 19e-eeuwse priorij, 18e-eeuws stadhuis, historische residenties?) en ligt in een glooiend landschap met sublieme vergezichten, genesteld in de weelderige plaatselijke bocage omringd door uitgestrekte ongerepte bossen. Ruime, comfortabele gîte. Warm en gastvrij, met een mix van traditie en moderniteit, tussen een \"burgerlijke\" plattelandssfeer en een eigentijdse geest, gecombineerd met de exotische geest van een oud huis. Veel charme en karakter. Gezellig en zeer comfortabel. Groot schaduwrijk balkonterras van 50 m², verscholen aan de achterkant van het huis aan de \"weidezijde\", met een prachtig vrij uitzicht op het omliggende platteland met de slottoren op de achtergrond.\nIndeling: Halfvrijstaand dorpshuis dat ook de woning van de eigenaren omvat (totale onafhankelijkheid zonder buren). Centrale verwarming op gas. Wifi (glasvezel). Gîte op 1e verdieping (toegang via buitentrap). Woonkamer/keuken, zitkamer (1 slaapbank 1 p. 130x190cm in alkoof), 2 slaapkamers (bed 2 p. 160x200cm / bed 2 p. 140x190cm), doucheruimte, aparte WC. Privé balkon-terras + overdekt balkon. Fietsenberging. Gratis openbare parkeerplaats. Alle voorzieningen op 5 km. Let op: plafondhoogtes tussen 2.04 en 2.08m (behalve woonkamer)."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0e7efbfb-7d63-3a20-92fe-6055a5dfadb7",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/20fbca05-0ff0-3f8a-bdf6-68b88432f781",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5f3c220a-a045-3190-8053-846254807aac",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a5ecd657-1d29-35dd-b83a-964ee07da36d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/39622c81-d525-36fd-b9d2-75d9a2412ac8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6955edda-b76d-3968-909e-ae7e5ace3935",
+      "schema:value": "2",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7ceb9845-41d9-3c7f-964f-7248c3f92964",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Accommodation",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Unterbringung"
+            ],
+            "pt": [
+              "Alojamento"
+            ],
+            "en": [
+              "Accommodation"
+            ],
+            "it": [
+              "Alloggio"
+            ],
+            "fr": [
+              "Logement"
+            ],
+            "nl": [
+              "Logies"
+            ],
+            "es": [
+              "Alojamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/23a84862-6e88-3ed6-befe-187b8b254c8a",
+        "schema:unitText": [
+          "m²"
+        ],
+        "schema:value": "91",
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8fcb0e73-e6cb-328e-8238-d0a08c9a5036",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bfff4488-8625-3579-ae4c-479a61aecaaf",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Freezer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gefriergerät"
+            ],
+            "pt": [
+              "Congelador"
+            ],
+            "en": [
+              "Freezer"
+            ],
+            "it": [
+              "Congelatore"
+            ],
+            "fr": [
+              "Congélateur"
+            ],
+            "nl": [
+              "Diepvriezer"
+            ],
+            "es": [
+              "Congelador"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef987579-32be-36f7-a54d-805aacd16d8e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/2be01c8a-de7b-393b-b059-2d32a7089289",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3epis",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Ähren/Komfort"
+          ],
+          "pt": [
+            "3 espigas / conforto"
+          ],
+          "en": [
+            "3 ears of corn / Confort level"
+          ],
+          "it": [
+            "3 spighe / Comfort"
+          ],
+          "fr": [
+            "3 épis / Confort"
+          ],
+          "es": [
+            "3 espigas/Confort"
+          ],
+          "nl": [
+            "3 aren / Comfort"
+          ]
+        },
+        "isCompliantWith": [
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f8884d70-4a02-376b-a0b0-3171c508b279",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_GitesDeFrance",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Gîtes de France"
+          ],
+          "pt": [
+            "Gîtes de France"
+          ],
+          "en": [
+            "Gîtes de France"
+          ],
+          "it": [
+            "Gîtes de France"
+          ],
+          "fr": [
+            "Gîtes de France"
+          ],
+          "nl": [
+            "Gîtes de France"
+          ],
+          "es": [
+            "Gîtes de France"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/56855d8b-58ce-3f80-bfa3-3ea62462e1fe",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/dd5d642d-ffa6-38cf-91e8-982d56c49435",
+          "schema:addressLocality": "Semur-en-Brionnais",
+          "schema:postalCode": "71110",
+          "schema:streetAddress": [
+            "541 Grand'Rue"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:71510",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Semur-en-Brionnais"
+              ],
+              "pt": [
+                "Semur-en-Brionnais"
+              ],
+              "en": [
+                "Semur-en-Brionnais"
+              ],
+              "it": [
+                "Semur-en-Brionnais"
+              ],
+              "fr": [
+                "Semur-en-Brionnais"
+              ],
+              "nl": [
+                "Semur-en-Brionnais"
+              ],
+              "es": [
+                "Semur-en-Brionnais"
+              ]
+            },
+            "insee": "71510",
+            "isPartOfDepartment": {
+              "@id": "kb:France2771",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Saône-et-Loire"
+                ],
+                "pt": [
+                  "Saône-et-Loire"
+                ],
+                "en": [
+                  "Saône-et-Loire"
+                ],
+                "it": [
+                  "Saône-et-Loire"
+                ],
+                "fr": [
+                  "Saône-et-Loire"
+                ],
+                "nl": [
+                  "Saône-et-Loire"
+                ],
+                "es": [
+                  "Saône-et-Loire"
+                ]
+              },
+              "insee": "71",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/6f92a064-2463-3825-9603-eb5962214aaf",
+        "schema:latitude": "46.264042",
+        "schema:longitude": "4.095048",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-31",
+  "lastUpdateDatatourisme": "2025-08-01T00:10:05.577Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/544257e2-2d59-3f0e-8d8b-e429d849f774",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

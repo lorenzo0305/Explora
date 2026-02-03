@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WishAdventure — Création</title>
+
+  <link rel="stylesheet" href="/static/styles/app.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body{ background:#121212; color:#fff; }
+    .wrap{ max-width:1100px; margin:24px auto; padding:0 16px; }
+    .topbar{ display:flex; gap:12px; align-items:center; justify-content:space-between; margin-bottom:16px; }
+    .title{ font-size:clamp(22px,3vw,32px); font-weight:700; margin:0; }
+    .new-btn{ border:none; background:#FF6000; color:#190028; font-weight:800; padding:10px 14px; border-radius:10px; }
+    .empty{ opacity:.8; padding:16px 0; }
+
+    .grid{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:16px; }
+    @media (min-width: 768px){ .grid{ grid-template-columns: repeat(3, minmax(0,1fr)); } }
+    @media (min-width: 1200px){ .grid{ grid-template-columns: repeat(4, minmax(0,1fr)); } }
+
+    .journey-card{
+      position:relative;
+      background:#1e1e1e; border-radius:12px; overflow:hidden; cursor:pointer;
+      transition: transform .08s ease, box-shadow .2s ease;
+      display:flex; flex-direction:column;
+    }
+    .journey-card:hover{ transform: translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.35); }
+    .journey-card img{ width:100%; height:160px; object-fit:cover; display:block; }
+    .journey-card .info{ padding:10px 12px; display:flex; flex-direction:column; gap:4px; }
+    .journey-card .name{ font-weight:700; font-size:15px; color:#fff; }
+    .journey-card .meta{ font-size:12px; color:#bbb; }
+
+    .trash-btn{
+      position:absolute; top:8px; right:8px;
+      width:28px; height:28px; border:none; border-radius:6px;
+      background:rgba(0,0,0,.45);
+      display:flex; align-items:center; justify-content:center;
+      cursor:pointer; z-index:2;
+    }
+    .trash-btn:hover{ background:rgba(0,0,0,.6); transform:translateY(-1px); }
+    .trash-btn svg{ width:16px; height:16px; fill:#ff4d4d; }
+
+    nav.bottom-nav{ position:sticky; bottom:0; left:0; right:0; }
+    .nav-icon{width:18px;height:18px;vertical-align:-3px;margin-right:6px;fill:#fff}
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="topbar">
+      <h1 class="title">Création</h1>
+      <button id="newJourneyBtn" class="new-btn" type="button">＋ Nouveau</button>
+    </div>
+
+    <div id="journeyList" class="grid"></div>
+    <p id="emptyState" class="empty" style="display:none;">Aucun voyage pour l’instant.</p>
+  </div>
+
+  <nav class="bottom-nav">
+    <a href="/" class="bouton">
+      <button class="boutonNav">
+        <svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3l9-8z"/></svg>
+        Accueil
+      </button>
+    </a>
+    <a href="/Destinations" class="bouton">
+      <button class="boutonNav">
+        <svg class="nav-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="M20 20l-3.5-3.5" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+        Exploration
+      </button>
+    </a>
+    <a href="/topics" class="bouton">
+      <button class="boutonNav">
+        <svg class="nav-icon" viewBox="0 0 24 24"><path d="M5 4h11a2 2 0 0 1 2 2v12H7a2 2 0 0 1-2-2V4z"/><rect x="3" y="6" width="2" height="12" rx="1" ry="1"/><path d="M8 8h7M8 11h7M8 14h5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        Carnet
+      </button>
+    </a>
+    <a href="/makejourney" class="bouton">
+      <button class="boutonNav active">
+        <svg class="nav-icon" viewBox="0 0 24 24">
+          <path d="M12 2a6 6 0 0 0-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 0 0-6-6zm0 8.5A2.5 2.5 0 1 1 12 5.5a2.5 2.5 0 0 1 0 5z"/>
+          <path d="M15.2 14.2l3.2 3.2-2.3 0.5-1.4 1.4-0.5-2.3 1-1z"/>
+        </svg>
+        Création
+      </button>
+    </a>
+  </nav>
+
+  <script>
+    /* ------- Lecture voyages (serveur + local + merge) ------- */
+    const LS_KEY = "journeys";
+    function lsGetJourneys(){ try{ return JSON.parse(localStorage.getItem(LS_KEY) || "[]"); }catch{ return []; } }
+    function lsSetJourneys(arr){ localStorage.setItem(LS_KEY, JSON.stringify(arr)); }
+
+    async function fetchFromServer() {
+      try { const r1 = await fetch("/journeys"); if (r1.ok) return await r1.json(); } catch {}
+      try { const r2 = await fetch("/journeys/list"); if (r2.ok) return await r2.json(); } catch {}
+      return [];
+    }
+
+    function pickCover(j){ return j?.image || j?.basket?.[0]?.image || "/static/img/no-image.jpg"; }
+    function fmtDate(ts){
+      if (!ts) return ""; try{ const d=new Date(ts); return d.toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'});}catch{return"";}
+    }
+
+    function removeLocal(id){ const next = lsGetJourneys().filter(j => String(j.id) !== String(id)); lsSetJourneys(next); }
+    async function deleteOnServer(id){
+      try{ const r=await fetch(`/journeys/${id}`,{method:"DELETE"}); if (r.ok) return true; }catch{}
+      try{ const r2=await fetch(`/journeys/delete`,{method:"POST",headers:{ "Content-Type":"application/json"},body:JSON.stringify({id})}); if (r2.ok) return true; }catch{}
+      return false;
+    }
+
+    async function fetchJourneys(){
+      const listEl  = document.getElementById("journeyList");
+      const emptyEl = document.getElementById("emptyState");
+      listEl.innerHTML = ""; emptyEl.style.display = "none";
+
+      let serverJourneys = []; try{ serverJourneys = await fetchFromServer(); }catch{}
+      const localJourneys = lsGetJourneys();
+
+      let journeys = [];
+      if (Array.isArray(serverJourneys) && serverJourneys.length){
+        const byId = new Map();
+        for (const j of serverJourneys) byId.set(String(j.id), j || {});
+        for (const j of localJourneys){
+          const k = String(j.id);
+          if (!byId.has(k)) byId.set(k, j);
+          else { const cur = byId.get(k); if ((j?.updatedAt||0) > (cur?.updatedAt||0)) byId.set(k, j); }
+        }
+        journeys = Array.from(byId.values());
+      } else {
+        journeys = localJourneys;
+      }
+
+      if (!journeys || !journeys.length){ emptyEl.style.display="block"; return; }
+      journeys.sort((a,b)=>((b?.updatedAt)||0)-((a?.updatedAt)||0));
+
+      for (const j of journeys){
+        const card = document.createElement("div");
+        card.className = "journey-card";
+
+        // poubelle rouge
+        const del = document.createElement("button");
+        del.className = "trash-btn";
+        del.title = "Supprimer ce voyage";
+        del.innerHTML = `<svg viewBox="0 0 24 24"><path d="M9 3h6a1 1 0 0 1 1 1v1h4v2h-1l-1 13a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 7H4V5h4V4a1 1 0 0 1 1-1zm2 0v1h2V3h-2zm-2.8 6h2l-.7 9h-2l.7-9zm7.6 0h2l-.7 9h-2l.7-9zM7 7h10l.9 12a1 1 0 0 1-1 1H7.1a1 1 0 0 1-1-1L7 7zM6 7V5h12v2H6z"/></svg>`;
+        del.addEventListener("click", async (e) => {
+          e.stopPropagation();
+          if (!confirm("Supprimer ce voyage ?")) return;
+          const ok = await deleteOnServer(j.id);
+          removeLocal(j.id);
+          if (!ok) console.warn("Suppression serveur indisponible, suppression locale effectuée.");
+          fetchJourneys();
+        });
+        card.appendChild(del);
+
+        const img=document.createElement("img"); img.src=pickCover(j); img.alt=j?.name||"Voyage"; card.appendChild(img);
+
+        const info=document.createElement("div"); info.className="info";
+        const name=document.createElement("div"); name.className="name"; name.textContent=j?.name||"Sans nom"; info.appendChild(name);
+        const meta=document.createElement("div"); meta.className="meta";
+        const parts=[]; if (j?.location) parts.push(j.location); if (j?.updatedAt) parts.push("modifié le "+fmtDate(j.updatedAt));
+        meta.textContent=parts.join(" • "); info.appendChild(meta);
+        card.appendChild(info);
+
+        card.addEventListener("click",()=>{ window.location.href=`/makejourney/${j.id}`; });
+        document.getElementById("journeyList").appendChild(card);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchJourneys();
+      const newBtn = document.getElementById("newJourneyBtn");
+      if (newBtn){ newBtn.addEventListener("click", () => { window.location.href = "/makejourney/new"; }); }
+    });
+  </script>
+</body>
+</html>

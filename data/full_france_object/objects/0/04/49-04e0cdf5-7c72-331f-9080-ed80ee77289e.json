@@ -1,0 +1,227 @@
+{
+  "@id": "https://data.datatourisme.fr/49/04e0cdf5-7c72-331f-9080-ed80ee77289e",
+  "dc:identifier": "RESPDL049V50H05C",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Winery",
+    "BistroOrWineBar",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Bar à Bières - La Minute Blonde Chanto"
+    ]
+  },
+  "creationDate": "2024-02-01",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/3236e3c6-0b72-39e5-ab24-401341fc0820",
+    "schema:email": [
+      "tourisme@cc-paysdechantonnay.fr"
+    ],
+    "schema:legalName": "Office de Tourisme du Pays de Chantonnay",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.paysdechantonnay.fr/loffice-de-tourisme/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/620096f7-797e-361c-9005-c4196b5837bb",
+      "schema:email": [
+        "m.belouard@vendee-expansion.fr"
+      ],
+      "schema:legalName": "Vendée Expansion",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://tourisme.vendee-expansion.fr/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/8b50b1ee-3982-3fd5-8275-36b75fda1341",
+      "schema:email": [
+        "contact@laminuteblondechanto.com"
+      ],
+      "schema:telephone": [
+        "+33 2 28 85 15 26",
+        "+33 6 70 04 27 81"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.laminuteblondechanto.com/"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/8a144a1d-a812-3935-8baf-be81f57b87f1",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/b8dfc699-14f9-359e-affb-0d09fc9d861a",
+          "schema:addressLocality": "Chantonnay",
+          "schema:postalCode": "85110",
+          "schema:streetAddress": [
+            "4 rue de la Rabine",
+            "Zone Polaris"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:85051",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Chantonnay"
+              ],
+              "pt": [
+                "Chantonnay"
+              ],
+              "en": [
+                "Chantonnay"
+              ],
+              "it": [
+                "Chantonnay"
+              ],
+              "fr": [
+                "Chantonnay"
+              ],
+              "nl": [
+                "Chantonnay"
+              ],
+              "es": [
+                "Chantonnay"
+              ]
+            },
+            "insee": "85051",
+            "isPartOfDepartment": {
+              "@id": "kb:France5285",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Vendée"
+                ],
+                "pt": [
+                  "Vendée"
+                ],
+                "en": [
+                  "Vendée"
+                ],
+                "it": [
+                  "Vendée"
+                ],
+                "fr": [
+                  "Vendée"
+                ],
+                "nl": [
+                  "Vendée"
+                ],
+                "es": [
+                  "Vendée"
+                ]
+              },
+              "insee": "85",
+              "isPartOfRegion": {
+                "@id": "kb:France52",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Pays de la Loire"
+                  ],
+                  "pt": [
+                    "Pays de la Loire"
+                  ],
+                  "en": [
+                    "Pays de la Loire"
+                  ],
+                  "it": [
+                    "Pays de la Loire"
+                  ],
+                  "fr": [
+                    "Pays de la Loire"
+                  ],
+                  "nl": [
+                    "Pays de la Loire"
+                  ],
+                  "es": [
+                    "Pays de la Loire"
+                  ]
+                },
+                "insee": "52",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/f5050cea-842b-3748-93b5-1f0e51e654fa",
+        "schema:latitude": "46.6876243",
+        "schema:longitude": "-1.0513457",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-05-15",
+  "lastUpdateDatatourisme": "2025-05-16T04:07:17.887Z"
+}

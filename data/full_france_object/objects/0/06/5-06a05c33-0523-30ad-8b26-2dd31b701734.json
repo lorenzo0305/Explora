@@ -1,0 +1,335 @@
+{
+  "@id": "https://data.datatourisme.fr/5/06a05c33-0523-30ad-8b26-2dd31b701734",
+  "dc:identifier": "255005072",
+  "@type": [
+    "schema:CivicStructure",
+    "PlaceOfInterest",
+    "PlayArea",
+    "PointOfInterest",
+    "SportsAndLeisurePlace"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Aire de jeux"
+    ]
+  },
+  "creationDate": "2020-12-14",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/974ebc1e-13b6-3951-82bb-798c6f860ff9",
+    "schema:legalName": "Office de tourisme Intercommunal Mossig et Vignoble",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/f9be77db-d6c0-3a31-9fa8-638da3098074",
+      "schema:legalName": "Système d'informations touristique Alsace",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/300182b8-b2e3-3a56-b9a7-70de30e06562",
+      "schema:telephone": [
+        "+33 3 88 50 66 00"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.dahlenheim.fr/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/300182b8-b2e3-3a56-b9a7-70de30e06562",
+      "schema:telephone": [
+        "+33 3 88 50 66 00"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.dahlenheim.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/0a9a4a99-768b-37c2-9dec-71cf205bbbe6",
+      "dc:description": {
+        "de": [
+          "Dieser Spielplatz befindet sich auf dem Schulhof in der Nähe des Rathauses. Er ist für Kleinkinder und Kinder bis 12 Jahre geeignet."
+        ],
+        "en": [
+          "Playground located in the school yard, near the town hall. It is suitable for children up to 12 years."
+        ],
+        "it": [
+          "Parco giochi situato nel cortile della scuola, vicino al municipio. È adatto ai bambini fino a 12 anni."
+        ],
+        "fr": [
+          "Aire de jeux située dans la cour de l'école, à proximité de la mairie. Elle est adapté pour les petits et enfants jusqu'à 12 ans."
+        ],
+        "nl": [
+          "Speeltuin op het schoolplein, vlakbij het gemeentehuis. Het is geschikt voor kinderen tot 12 jaar."
+        ],
+        "es": [
+          "Parque infantil situado en el patio de la escuela, cerca del ayuntamiento. Es adecuado para niños de hasta 12 años."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/29b829b1-2973-3ebd-ade8-7710c2b0cfc9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/8b5f0010-ad92-3c5f-aa14-07f9dce5b416",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a12fd638-b699-3499-a584-7da293e79d8f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a4b1958f-b1af-358a-8e5c-3b426945a70f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b927777b-188c-3df1-9051-18bb55bab018",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/8ae9273e-8ce7-341a-9747-14b3a34b11e4",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/89c49dbf-d7de-33e0-b601-02b2cafe8e03",
+          "schema:addressLocality": "Dahlenheim",
+          "schema:postalCode": "67310",
+          "schema:streetAddress": [
+            "2 rue du lavoir"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:67081",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Dahlenheim"
+              ],
+              "pt": [
+                "Dahlenheim"
+              ],
+              "en": [
+                "Dahlenheim"
+              ],
+              "it": [
+                "Dahlenheim"
+              ],
+              "fr": [
+                "Dahlenheim"
+              ],
+              "nl": [
+                "Dahlenheim"
+              ],
+              "es": [
+                "Dahlenheim"
+              ]
+            },
+            "insee": "67081",
+            "isPartOfDepartment": {
+              "@id": "kb:France4467",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bas-Rhin"
+                ],
+                "pt": [
+                  "Bas-Rhin"
+                ],
+                "en": [
+                  "Bas-Rhin"
+                ],
+                "it": [
+                  "Bas-Rhin"
+                ],
+                "fr": [
+                  "Bas-Rhin"
+                ],
+                "nl": [
+                  "Bas-Rhin"
+                ],
+                "es": [
+                  "Bas-Rhin"
+                ]
+              },
+              "insee": "67",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/5d697af6-3ad0-335d-9a91-07e2c0dad46c",
+        "schema:latitude": "48.5868698",
+        "schema:longitude": "7.5064345",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/974ebc1e-13b6-3951-82bb-798c6f860ff9",
+      "schema:legalName": "Office de tourisme Intercommunal Mossig et Vignoble",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2022-04-25",
+  "lastUpdateDatatourisme": "2025-05-12T11:44:28.201Z"
+}

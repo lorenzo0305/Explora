@@ -1,0 +1,968 @@
+{
+  "@id": "https://data.datatourisme.fr/6/0676860f-e0fe-37fc-b827-6777890d6b9b",
+  "dc:identifier": "HLOBOU000V50K0CO",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Gîte des Iris"
+    ],
+    "en": [
+      "Gîte des Iris"
+    ],
+    "fr": [
+      "Gîte des Iris"
+    ]
+  },
+  "allowedPersons": 9,
+  "creationDate": "2019-03-11",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/82578c73-08c7-342e-8845-dc63b20d54a8",
+    "dc:identifier": "6012fdba-d499-4734-b015-373e96f99808",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/264b87c4-2c8b-383e-bc71-d437efb5644d",
+        "schema:addressLocality": "Mâcon",
+        "schema:postalCode": "71000",
+        "schema:streetAddress": [
+          "Maison de la Saône-et-Loire"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:71270",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mâcon"
+            ],
+            "pt": [
+              "Mâcon"
+            ],
+            "en": [
+              "Mâcon"
+            ],
+            "it": [
+              "Mâcon"
+            ],
+            "fr": [
+              "Mâcon"
+            ],
+            "nl": [
+              "Mâcon"
+            ],
+            "es": [
+              "Mâcon"
+            ]
+          },
+          "insee": "71270",
+          "isPartOfDepartment": {
+            "@id": "kb:France2771",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saône-et-Loire"
+              ],
+              "pt": [
+                "Saône-et-Loire"
+              ],
+              "en": [
+                "Saône-et-Loire"
+              ],
+              "it": [
+                "Saône-et-Loire"
+              ],
+              "fr": [
+                "Saône-et-Loire"
+              ],
+              "nl": [
+                "Saône-et-Loire"
+              ],
+              "es": [
+                "Saône-et-Loire"
+              ]
+            },
+            "insee": "71",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "missiontourisme@saoneetloire71.fr"
+    ],
+    "schema:legalName": "Mission Tourisme - Département 71",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://route71.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/37083400-7b0d-357f-8939-29e5596af646",
+      "schema:email": [
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=1886&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/37083400-7b0d-357f-8939-29e5596af646",
+      "schema:email": [
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=1886&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/10a6c57f-1ed5-3642-b35d-2e8554022c33",
+      "dc:description": {
+        "de": [
+          "Authentisches burgundisches Herrenhaus mit Charakter aus dem 19. Jahrhundert - sorgfältig restauriert - in ruhiger Lage im Herzen eines typischen kleinen Dorfes, das sich an einen bewaldeten Hügel schmiegt, inmitten einer absolut zauberhaften, unberührten Natur und ländlichen Umgebung. Ein wunderschönes grünes Schmuckkästchen, ein kleines Paradies auf der Weinstraße und der Straße der romanischen Kirchen. Das Dorf liegt am Rande eines ausgedehnten Waldes (Wanderweg und Aussichtspunkte mit Panoramablick), ist von Kalksteinwiesen und -rasen mit Orchideen gesäumt (ökologische Besonderheit dieses geschützten Gebiets) und verfügt über ein originelles \"Théâtre de Verdure\" mit einem reichhaltigen Kulturprogramm sowie über ein beachtliches Kulturerbe (Kapelle aus dem Jahr 1679, Waschhaus, alte traditionelle Häuser mit Lavadächern). Unterkunft mit gutem Komfort. Sehr geräumig. Großer Wohnraum in Kathedraleform. Schöne Volumen. Sorgfältige Renovierung im Sinne des Kulturerbes (Gebälk, Kaminköpfe, Originalsteinmauern....). Gemütlicher Landhausstil im Sinne eines Familienhauses. Sehr viel Charme. Doppelte Terrasse (sonnig und schattig) und geschützte Balkon-Terrasse. Angenehmer eingezäunter Garten mit Blumen (ergänzt durch einen zweiten eingezäunten Garten). Schöner freier Blick. Wunderschöne Landschaften und Panorama. Zusammensetzung: Doppelhaushälfte. Wifi. Elektrische Heizung. Holzofen. Erdgeschoss: Wohnraum-Küche-Wohnraum, 1 Schlafzimmer (Doppelbett 160x200cm), Badezimmer (Dusche), separates WC. 1. Stock: TV-Wohnzimmer, 2 Schlafzimmer (Doppelbett 140x190cm + Einzelbett 90x190cm / 2 Einzelbetten 90x190cm), Badezimmer (Badewanne), separates WC. 2. Stock: 1 Schlafzimmer (Bett 2 P. 140x190cm). Doppelte Terrasse + geschützter Balkon-Terrasse. Doppelter geschlossener Garten. Einfacher öffentlicher Parkplatz vor der Unterkunft. Geschäfte und Dienstleistungen 2,5 km. Bahnhof 13 km. TGV-Bahnhöfe: Creusot 44 km, Mâcon Loché 50 km."
+        ],
+        "en": [
+          "Authentic 19th century Burgundian character residence - carefully restored - nestled in the peace and quiet of a charming little typical village leaning against a wooded hill, in an absolutely magical preserved natural and rural setting. Splendid green setting, a true little corner of paradise on the wine and Romanesque church route. Nestled on the edge of a vast forest (footpath and panoramic viewpoints), bordered by meadows & limestone lawns dotted with orchids (ecological specificity of this protected site), the village has an original \"open-air theater\" with a rich cultural program and a notable heritage (chapel from 1679, wash house, old traditional houses with lava roofs). Comfortable gîte. Ultra spacious. Vast \"cathedral\" living room. Beautiful volumes. Careful heritage renovation (frames, chimney heads, original stone walls, etc.). Warm, country-style character with a \"family home\" feel. Plenty of charm. Double terrace (exposed and shaded) and sheltered balcony-terrace. Pleasant enclosed flower garden (completed by a second enclosed garden). Beautiful unobstructed views. Magnificent landscapes and panorama.\nComposition: Semi-detached house. Wi-Fi. Electric heating. Wood stove. Ground floor: Living room-kitchen-lounge, 1 bedroom (double bed 160x200cm), bathroom (shower), separate toilet. 1st floor: TV lounge, 2 bedrooms (double bed 140x190cm + single bed 90x190cm / 2 single beds 90x190cm), bathroom (bathtub), separate toilet. 2nd floor: 1 bedroom (double bed 140x190cm). Double terrace + sheltered balcony-terrace. Double enclosed garden. Easy public parking in front of the cottage. Shops and services 2.5 km. Supermarket 3.5 km. Train station 13 km. TGV stations: Creusot 44 km, Mâcon Loché 50 km. Please note: the cottage is located in a white zone."
+        ],
+        "it": [
+          "Autentica casa borgognona del XIX secolo piena di carattere - restaurata con amore - immersa in un ambiente tranquillo, nel cuore di un delizioso paesino situato su una collina boscosa, in un contesto naturale e rurale assolutamente magico e incontaminato. Una splendida cornice verde, un piccolo angolo di paradiso sulla strada del vino e delle chiese romaniche. Immerso in una vasta foresta (sentieri e punti panoramici), delimitata da prati calcarei e prati punteggiati di orchidee (caratteristica ecologica di questo sito protetto), il villaggio vanta un originale \"théâtre de verdure\" con un ricco programma culturale e un notevole patrimonio (cappella del 1679, lavatoio, antiche case tradizionali con tetti in lava). Alloggio molto confortevole. Molto spaziosa. Vasto soggiorno \"cattedrale\". Bei volumi. Ristrutturazione meticolosa degli elementi del patrimonio (travi del tetto, teste dei camini, muri in pietra originali...). Sensazione di \"casa di famiglia\" calda e rustica. Molto fascino. Doppia terrazza (esposta e ombreggiata) e balcone-terrazza riparato. Piacevole giardino recintato con fiori (completato da un secondo giardino recintato). Splendida vista senza ostacoli. Magnifico scenario e vista panoramica.\nComposizione: Casa bifamiliare. Connessione Wifi. Riscaldamento elettrico. Stufa a legna. Piano terra: soggiorno-cucina-salotto, 1 camera (letto matrimoniale 160x200cm), bagno con doccia, WC separato. 1° piano: sala TV, 2 camere da letto (letto matrimoniale 140x190cm + letto singolo 90x190cm / 2 letti singoli 90x190cm), bagno (vasca), WC separato. 2° piano: 1 camera da letto (letto matrimoniale 140x190cm). Doppia terrazza + balcone-terrazza riparato. Doppio giardino recintato. Facile parcheggio pubblico davanti all'alloggio. Negozi e servizi a 2,5 km. Supermercato 3,5 km. Stazione ferroviaria 13 km. Stazioni TGV: Creusot 44 km, Mâcon Loché 50 km. Nota bene: l'alloggio si trova in una zona bianca."
+        ],
+        "fr": [
+          "Authentique demeure bourguignonne de caractère du 19ème siècle - restaurée avec soins - nichée au calme au cœur d'un ravissant petit village typique adossé à une colline boisée, au sein d'un cadre naturel et champêtre préservés absolument magique. Splendide écrin de verdure, véritable petit coin de paradis sur la route des vins et des églises romanes. Lové en lisière d'une vaste forêt (sentier pédestre et belvédères panoramiques), bordé de prairies & pelouses calcaires parsemées d'orchidées (spécificité écologique de ce site protégé), le village dispose d'un original « théâtre de verdure » à la riche programmation culturelle et d'un patrimoine notable (chapelle de 1679, lavoir, anciennes demeures traditionnelles à toit de lave). Gîte de bon confort. Ultra spacieux. Vaste pièce de vie « cathédrale ». Beaux volumes. Rénovation patrimoniale soignée (charpentes, têtes de cheminée, murs en pierres d'origine….). Chaleureux cachet campagnard esprit «maison de famille ». Beaucoup de charme. Double terrasse (exposée et ombragée) et balcon-terrasse abrité. Agréable jardinet clos fleuri (complété par second jardinet clos). Belle vue dégagée. Magnifiques paysages et panorama.\nComposition : Maison mitoyenne. Wifi. Chauffage électrique. Poêle à bois. Rdc : Séjour-cuisine-salon, 1 chambre (lit 2 p. 160x200cm), salle d'eau (douche), wc indépendant. 1er étage : salon TV, 2 chambres (lit 2 p. 140x190cm + lit 1 p. 90x190cm / 2 lits 1 p. 90x190cm), salle de bain (baignoire), wc indépendant. 2ème étage : 1 chambre (lit 2 p. 140x190cm). Double terrasse + balcon-terrasse abrité. Double jardinet clos. Parking public aisé devant gîte. Commerces et services 2.5 km. Supermarché 3.5 km. Gare 13 km. Gares TGV : Creusot 44 km, Mâcon Loché 50 km. A noter : gîte situé en zone blanche."
+        ],
+        "nl": [
+          "Authentiek karaktervol 19e-eeuws Bourgondisch huis - liefdevol gerestaureerd - genesteld in een rustige omgeving in het hart van een prachtig klein dorpje tegen een beboste heuvel, in een absoluut magische ongerepte natuurlijke en landelijke omgeving. Een prachtige groene omgeving, een klein stukje paradijs aan de wijnroute en Romaanse kerken. Genesteld aan de rand van een uitgestrekt bos (wandelpaden en panoramische uitzichtpunten), omzoomd door kalkgraslanden en grasvelden vol orchideeën (een ecologisch kenmerk van dit beschermde gebied), beschikt het dorp over een origineel \"théâtre de verdure\" met een rijk cultureel programma en een opmerkelijk erfgoed (kapel uit 1679, wasplaats, oude traditionele huizen met lavadaken). Zeer comfortabele gîte. Zeer ruim. Grote \"kathedraal\" woonkamer. Prachtige volumes. Zorgvuldige renovatie van het erfgoed (dakgebinte, schoorstenen, originele stenen muren...). Warm, landelijk \"familie thuis\" gevoel. Veel charme. Dubbel terras (open en schaduwrijk) en beschut balkon-terras. Aangename omheinde tuin met bloemen (aangevuld met een tweede omheinde tuin). Prachtig vrij uitzicht. Prachtig landschap en panoramisch uitzicht.\nIndeling: Halfvrijstaande woning. Wifi aansluiting. Elektrische verwarming. Houtkachel. Begane grond: woonkamer-keuken-lounge, 1 slaapkamer (tweepersoonsbed 160x200cm), badkamer met douche, aparte wc. 1ste verdieping: TV-lounge, 2 slaapkamers (dubbel bed 140x190cm + enkel bed 90x190cm / 2 enkele bedden 90x190cm), badkamer (bad), afzonderlijke wc. 2e verdieping: 1 slaapkamer (tweepersoonsbed 140x190cm). Dubbel terras + beschut balkon-terras. Omheinde dubbele tuin. Gemakkelijk openbaar parkeren voor de gîte. Winkels en faciliteiten 2.5 km. Supermarkt 3.5 km. Treinstation 13 km. TGV-stations: Creusot 44 km, Mâcon Loché 50 km. Let op: gîte gelegen in een witte zone."
+        ],
+        "es": [
+          "Auténtica casa borgoñona del siglo XIX llena de carácter - restaurada con cariño - enclavada en un entorno tranquilo en el corazón de un encantador pueblecito situado en una ladera boscosa, en un entorno natural y rural virgen absolutamente mágico. Un espléndido entorno verde, un pequeño rincón del paraíso en la ruta del vino y las iglesias románicas. Enclavado al borde de un inmenso bosque (senderos y miradores panorámicos), bordeado de prados calcáreos y céspedes salpicados de orquídeas (característica ecológica de este lugar protegido), el pueblo cuenta con un original \"théâtre de verdure\" con una rica programación cultural y un notable patrimonio (capilla de 1679, lavadero, antiguas casas tradicionales con tejados de lava). Casa rural muy confortable. Muy espaciosa. Gran salón \"catedral\". Hermosos volúmenes. Meticulosa renovación de sus elementos patrimoniales (vigas del tejado, cabezas de chimeneas, muros de piedra originales, etc.). Cálido ambiente de casa de campo. Mucho encanto. Doble terraza (descubierta y sombreada) y balcón-terraza protegido. Agradable jardín cerrado con flores (complementado por un segundo jardín cerrado). Bonitas vistas despejadas. Magnífico paisaje y vistas panorámicas.\nComposición: Casa adosada. Conexión Wifi. Calefacción eléctrica. Estufa de leña. Planta baja: salón-cocina-sala de estar, 1 dormitorio (cama doble 160x200cm), cuarto de ducha, wc separado. 1ª planta: salón TV, 2 habitaciones (cama doble 140x190cm + cama individual 90x190cm / 2 camas individuales 90x190cm), cuarto de baño (bañera), wc separado. 2ª planta: 1 habitación (cama doble 140x190cm). Terraza doble + balcón-terraza protegido. Doble jardín cerrado. Fácil aparcamiento público delante de la casa rural. Comercios y servicios a 2,5 km. Supermercado 3,5 km. Estación de tren 13 km. Estaciones de TGV: Creusot 44 km, Mâcon Loché 50 km. A tener en cuenta: casa rural situada en zona blanca."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/8d2d0de4-26d9-33af-ac67-40ba238764e3",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b58d2e36-70a8-38aa-9504-6eb4c725cea3",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/cc1467b3-39bd-3017-a73b-227742d7f4df",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/7aa78383-f621-fb66-3954-67bab210ed18",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "78Z26YNDAJE7",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/39622c81-d525-36fd-b9d2-75d9a2412ac8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/60881a78-15b5-3640-8883-24551dd98000",
+      "schema:value": "4",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/89a6d212-d164-3c0c-b395-32132f8614ac",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Accommodation",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Unterbringung"
+            ],
+            "pt": [
+              "Alojamento"
+            ],
+            "en": [
+              "Accommodation"
+            ],
+            "it": [
+              "Alloggio"
+            ],
+            "fr": [
+              "Logement"
+            ],
+            "nl": [
+              "Logies"
+            ],
+            "es": [
+              "Alojamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/c613f5ca-9b2d-3013-b371-f49d877beb72",
+        "schema:unitText": [
+          "m²"
+        ],
+        "schema:value": "171",
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8fcb0e73-e6cb-328e-8238-d0a08c9a5036",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bfff4488-8625-3579-ae4c-479a61aecaaf",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Freezer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gefriergerät"
+            ],
+            "pt": [
+              "Congelador"
+            ],
+            "en": [
+              "Freezer"
+            ],
+            "it": [
+              "Congelatore"
+            ],
+            "fr": [
+              "Congélateur"
+            ],
+            "nl": [
+              "Diepvriezer"
+            ],
+            "es": [
+              "Congelador"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef987579-32be-36f7-a54d-805aacd16d8e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/2be01c8a-de7b-393b-b059-2d32a7089289",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3epis",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Ähren/Komfort"
+          ],
+          "pt": [
+            "3 espigas / conforto"
+          ],
+          "en": [
+            "3 ears of corn / Confort level"
+          ],
+          "it": [
+            "3 spighe / Comfort"
+          ],
+          "fr": [
+            "3 épis / Confort"
+          ],
+          "es": [
+            "3 espigas/Confort"
+          ],
+          "nl": [
+            "3 aren / Comfort"
+          ]
+        },
+        "isCompliantWith": [
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f8884d70-4a02-376b-a0b0-3171c508b279",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_GitesDeFrance",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Gîtes de France"
+          ],
+          "pt": [
+            "Gîtes de France"
+          ],
+          "en": [
+            "Gîtes de France"
+          ],
+          "it": [
+            "Gîtes de France"
+          ],
+          "fr": [
+            "Gîtes de France"
+          ],
+          "nl": [
+            "Gîtes de France"
+          ],
+          "es": [
+            "Gîtes de France"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/c3678fcf-5902-3a21-85ea-3a0dfa6f67cd",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/59df4019-672d-3d7b-a133-352e196ff0aa",
+          "schema:addressLocality": "Montceaux-Ragny",
+          "schema:postalCode": "71240",
+          "schema:streetAddress": [
+            "7 Promenade de la Chapelle"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:71308",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Montceaux-Ragny"
+              ],
+              "pt": [
+                "Montceaux-Ragny"
+              ],
+              "en": [
+                "Montceaux-Ragny"
+              ],
+              "it": [
+                "Montceaux-Ragny"
+              ],
+              "fr": [
+                "Montceaux-Ragny"
+              ],
+              "nl": [
+                "Montceaux-Ragny"
+              ],
+              "es": [
+                "Montceaux-Ragny"
+              ]
+            },
+            "insee": "71308",
+            "isPartOfDepartment": {
+              "@id": "kb:France2771",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Saône-et-Loire"
+                ],
+                "pt": [
+                  "Saône-et-Loire"
+                ],
+                "en": [
+                  "Saône-et-Loire"
+                ],
+                "it": [
+                  "Saône-et-Loire"
+                ],
+                "fr": [
+                  "Saône-et-Loire"
+                ],
+                "nl": [
+                  "Saône-et-Loire"
+                ],
+                "es": [
+                  "Saône-et-Loire"
+                ]
+              },
+              "insee": "71",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/f65eb057-8dc1-3368-8fff-f18a1a8f1eec",
+        "schema:latitude": "46.620918",
+        "schema:longitude": "4.843767",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-30",
+  "lastUpdateDatatourisme": "2025-07-31T00:03:00.328Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/544257e2-2d59-3f0e-8d8b-e429d849f774",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

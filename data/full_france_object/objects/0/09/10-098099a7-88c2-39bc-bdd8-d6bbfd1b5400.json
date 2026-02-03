@@ -1,0 +1,821 @@
+{
+  "@id": "https://data.datatourisme.fr/10/098099a7-88c2-39bc-bdd8-d6bbfd1b5400",
+  "dc:identifier": "777010034",
+  "schema:endDate": [
+    "2025-08-09"
+  ],
+  "schema:startDate": [
+    "2025-08-09"
+  ],
+  "@type": [
+    "schema:Event",
+    "schema:MusicEvent",
+    "Concert",
+    "CulturalEvent",
+    "EntertainmentAndEvent",
+    "PointOfInterest",
+    "ShowEvent"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Kommentiertes Konzert rund um Bach und Luther. Mit Reservierung."
+    ],
+    "en": [
+      "Concert with commentary on Bach and Luther. Reservations required."
+    ],
+    "it": [
+      "Concerto con commento su Bach e Lutero. Prenotazione obbligatoria."
+    ],
+    "fr": [
+      "Concert commenté autour de Bach et Luther. Sur réservation."
+    ],
+    "es": [
+      "Concierto comentado sobre Bach y Lutero. Reserva obligatoria."
+    ],
+    "nl": [
+      "Concert met commentaar op Bach en Luther. Reserveren verplicht."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "22ème rencontres musicales"
+    ]
+  },
+  "hasAudience": [
+    {
+      "@id": "kb:Local",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Lokal"
+        ],
+        "pt": [
+          "Local"
+        ],
+        "en": [
+          "Local"
+        ],
+        "it": [
+          "Locale"
+        ],
+        "fr": [
+          "Locale"
+        ],
+        "nl": [
+          "Lokaal"
+        ],
+        "es": [
+          "Local"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/10/f1c15925-8841-3002-af34-0cbaedd6fc33",
+    "dc:identifier": "777",
+    "schema:legalName": "OT COMMUNAUTAIRE GERARDMER HAUTES VOSGES",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/39f8abf8-1828-3176-97f2-cfb47d18656a",
+      "schema:email": [
+        "contact@sitlorpro.com"
+      ],
+      "schema:legalName": "Système d'information touristique Lorrain",
+      "schema:logo": "http://www.sitlorpro.com/wp-content/uploads/sites/12/2016/03/logo-sitlor-blanc-fond-couleur.jpg",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.sitlorpro.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/a47d1322-0aef-309b-a715-e199ad7d9523",
+      "schema:email": [
+        "resa@rencontresmusicales.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 60 51 16 66"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/3a746392-9e1c-3e67-b4f0-13183a62028c",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/4628cce9-9733-3ebd-8374-cbfae17308e8",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/559abf19-a36e-3480-8ae7-4f572ff8ef9a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6eecda36-b36b-3174-a6e1-aab7b2e94a5d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/8c3394ba-dd50-3bf3-bd05-7c83127ebce2",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d33699e8-ec1c-31a3-8b21-8dda945c1356",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "isDedicatedTo": [
+        {
+          "@id": "kb:ForAll",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Für alle"
+            ],
+            "pt": [
+              "Para todos"
+            ],
+            "en": [
+              "For all"
+            ],
+            "it": [
+              "Per tutti"
+            ],
+            "fr": [
+              "Tout public"
+            ],
+            "nl": [
+              "Voor iedereen"
+            ],
+            "es": [
+              "Todos los públicos"
+            ]
+          }
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Kommentiertes Konzert rund um Bach und Luther. Mit Reservierung."
+        ],
+        "en": [
+          "Concert with commentary on Bach and Luther. Reservations required."
+        ],
+        "it": [
+          "Concerto con commento su Bach e Lutero. Prenotazione obbligatoria."
+        ],
+        "fr": [
+          "Concert commenté autour de Bach et Luther. Sur réservation."
+        ],
+        "es": [
+          "Concierto comentado sobre Bach y Lutero. Reserva obligatoria."
+        ],
+        "nl": [
+          "Concert met commentaar op Bach en Luther. Reserveren verplicht."
+        ]
+      }
+    }
+  ],
+  "hasGeographicReach": [
+    {
+      "@id": "kb:Local",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Lokal"
+        ],
+        "pt": [
+          "Local"
+        ],
+        "en": [
+          "Local"
+        ],
+        "it": [
+          "Locale"
+        ],
+        "fr": [
+          "Locale"
+        ],
+        "nl": [
+          "Lokaal"
+        ],
+        "es": [
+          "Local"
+        ]
+      }
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/3c4b237c-13c5-30eb-ab3d-dfcec20a54f7",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/9528bf0a-036f-3bf0-a8bb-4d30b98bb621",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "E. Villeminey"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/ee161e63-3c61-314d-8069-fa8304a400b2",
+          "ebucore:locator": [
+            "https://opendata.sitlor.fr/photos/777/777010034_4_800x600.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/3c4b237c-13c5-30eb-ab3d-dfcec20a54f7",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/9528bf0a-036f-3bf0-a8bb-4d30b98bb621",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "E. Villeminey"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/ee161e63-3c61-314d-8069-fa8304a400b2",
+          "ebucore:locator": [
+            "https://opendata.sitlor.fr/photos/777/777010034_4_800x600.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/04947751-2835-3a73-b616-2b2d5cd6ab0e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/21735d48-60e2-38bb-9579-6828395d1a77",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5c7b82d8-ddd9-369f-aa31-5f33da5a4ea1",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/78759854-ac4c-3d9c-b881-9f70a3f20af9",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/875bb23a-7def-3858-b40f-5176e1aa44e5",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/27a6d233-5b27-3274-8616-17e856d9ddc1",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/014698ea-9081-3d37-a5c8-df3e3fc565fc",
+          "schema:addressLocality": "Gérardmer",
+          "schema:postalCode": "88400",
+          "schema:streetAddress": [
+            "4 Rue du casino",
+            "Temple"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:88196",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Gérardmer"
+              ],
+              "pt": [
+                "Gérardmer"
+              ],
+              "en": [
+                "Gérardmer"
+              ],
+              "it": [
+                "Gérardmer"
+              ],
+              "fr": [
+                "Gérardmer"
+              ],
+              "nl": [
+                "Gérardmer"
+              ],
+              "es": [
+                "Gérardmer"
+              ]
+            },
+            "insee": "88196",
+            "isPartOfDepartment": {
+              "@id": "kb:France4488",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Vosges"
+                ],
+                "pt": [
+                  "Vosges"
+                ],
+                "en": [
+                  "Vosges"
+                ],
+                "it": [
+                  "Vosges"
+                ],
+                "fr": [
+                  "Vosges"
+                ],
+                "nl": [
+                  "Vosges"
+                ],
+                "es": [
+                  "Vosges"
+                ]
+              },
+              "insee": "88",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/d548a224-0dd9-37a4-a381-94b53cb191f1",
+        "schema:latitude": "48.0689518",
+        "schema:longitude": "6.8697856",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/b61411a7-c84d-3a15-93f1-bd70d8cab3e9",
+          "schema:dayOfWeek": [
+            {
+              "@id": "schema:Saturday",
+              "@type": [
+                "schema:DayOfWeek"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Samstag"
+                ],
+                "pt": [
+                  "Sábado"
+                ],
+                "en": [
+                  "Saturday"
+                ],
+                "it": [
+                  "Sabato"
+                ],
+                "fr": [
+                  "Samedi"
+                ],
+                "nl": [
+                  "Zaterdag"
+                ],
+                "es": [
+                  "Sábado"
+                ]
+              }
+            }
+          ],
+          "schema:opens": "20:30:00",
+          "schema:validFrom": "2025-08-09T00:00:00",
+          "schema:validThrough": "2025-08-09T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": false
+    }
+  ],
+  "lastUpdate": "2025-07-19",
+  "lastUpdateDatatourisme": "2025-07-21T04:07:16.015Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/acbd1688-a724-3780-abb9-be915ae6c3ab",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/31e65754-1d43-38c0-b2c5-f9ee2eeb99db",
+          "schema:price": "12",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "hasAudience": [
+            {
+              "@id": "kb:Adults",
+              "@type": [
+                "PeopleAudience"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Erwachsene"
+                ],
+                "pt": [
+                  "Adultos"
+                ],
+                "en": [
+                  "Adults"
+                ],
+                "it": [
+                  "Adulti"
+                ],
+                "fr": [
+                  "Adultes"
+                ],
+                "nl": [
+                  "Volwassenen"
+                ],
+                "es": [
+                  "Adultos"
+                ]
+              }
+            }
+          ],
+          "hasEligibleAudience": [
+            {
+              "@id": "kb:Adults",
+              "@type": [
+                "PeopleAudience"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Erwachsene"
+                ],
+                "pt": [
+                  "Adultos"
+                ],
+                "en": [
+                  "Adults"
+                ],
+                "it": [
+                  "Adulti"
+                ],
+                "fr": [
+                  "Adultes"
+                ],
+                "nl": [
+                  "Volwassenen"
+                ],
+                "es": [
+                  "Adultos"
+                ]
+              }
+            }
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:BaseRateFullRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Basistarif – voller Tarif"
+                ],
+                "pt": [
+                  "Preço de base — preço total"
+                ],
+                "en": [
+                  "Base rate - full rate"
+                ],
+                "it": [
+                  "Tariffa di base — tariffa intera"
+                ],
+                "fr": [
+                  "Tarif de base - plein tarif"
+                ],
+                "es": [
+                  "Tarifa básica - tarifa completa"
+                ],
+                "nl": [
+                  "Basistarief - vol tarief"
+                ]
+              }
+            }
+          ],
+          "hasPricingMode": [
+            {
+              "@id": "kb:PerPerson",
+              "@type": [
+                "PricingMode"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pro Person"
+                ],
+                "pt": [
+                  "Por pessoa"
+                ],
+                "en": [
+                  "Per person"
+                ],
+                "it": [
+                  "Per persona"
+                ],
+                "fr": [
+                  "Par personne"
+                ],
+                "es": [
+                  "Por persona"
+                ],
+                "nl": [
+                  "Per persoon"
+                ]
+              }
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:Ticket",
+              "@type": [
+                "ActivityPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Eintrittskarte, Eintrittsgeld, Pauschale"
+                ],
+                "pt": [
+                  "Bilhete, Direito de entrada, Preço fixo"
+                ],
+                "en": [
+                  "Ticket, Entry fee, Pass"
+                ],
+                "it": [
+                  "Biglietto, diritto d'ingresso, forfait"
+                ],
+                "fr": [
+                  "Ticket, Droit d'entrée, Forfait"
+                ],
+                "nl": [
+                  "Ticket, toegangsbewijs, pas"
+                ],
+                "es": [
+                  "Billete, entrada, forfait"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "takesPlaceAt": [
+    {
+      "@id": "https://data.datatourisme.fr/a72894de-a462-370e-88e6-af88ef947d3e",
+      "@type": [
+        "Period",
+        "RecurrentPeriod"
+      ],
+      "appliesOnDay": [
+        {
+          "@id": "schema:Saturday",
+          "@type": [
+            "schema:DayOfWeek"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Samstag"
+            ],
+            "pt": [
+              "Sábado"
+            ],
+            "en": [
+              "Saturday"
+            ],
+            "it": [
+              "Sabato"
+            ],
+            "fr": [
+              "Samedi"
+            ],
+            "nl": [
+              "Zaterdag"
+            ],
+            "es": [
+              "Sábado"
+            ]
+          }
+        }
+      ],
+      "endDate": "2025-08-09",
+      "startDate": "2025-08-09",
+      "startTime": "20:30:00"
+    }
+  ]
+}

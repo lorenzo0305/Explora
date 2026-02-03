@@ -1,0 +1,287 @@
+{
+  "@id": "https://data.datatourisme.fr/49/0e3adb68-2f2c-3213-90c8-bae6c76be4f7",
+  "dc:identifier": "RESPDL085V51S170",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Restaurant",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "PIZZERIA AU COIN DU FEU"
+    ]
+  },
+  "creationDate": "2023-10-05",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/124f1236-fd87-3e46-98ac-6cd852ad1769",
+    "schema:email": [
+      "tourisme@paysdemortagne.fr"
+    ],
+    "schema:legalName": "Office de Tourisme du Pays de Mortagne",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.vendeesevretourisme.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/620096f7-797e-361c-9005-c4196b5837bb",
+      "schema:email": [
+        "m.belouard@vendee-expansion.fr"
+      ],
+      "schema:legalName": "Vendée Expansion",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://tourisme.vendee-expansion.fr/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/aa9295b5-9a8c-3a98-b2e8-9e8524f3691a",
+      "schema:email": [
+        "boucheriedantan@outlook.fr"
+      ],
+      "schema:telephone": [
+        "+33 7 49 61 13 15"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.aucoindufeuenvendee.fr/"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:Pizzeria",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Pizzeria"
+        ],
+        "pt": [
+          "Pizaria"
+        ],
+        "en": [
+          "Pizzeria"
+        ],
+        "it": [
+          "Pizzeria"
+        ],
+        "fr": [
+          "Pizzeria"
+        ],
+        "nl": [
+          "Pizzeria"
+        ],
+        "es": [
+          "Pizzería"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/2f7ae8af-7390-3c3c-b959-8f64eeaf8af2",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/96de82ab-09a1-3d33-8dab-3a849c82273c",
+          "schema:addressLocality": "La Gaubretière",
+          "schema:postalCode": "85130",
+          "schema:streetAddress": [
+            "13 Place du Marché"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:85097",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "La Gaubretière"
+              ],
+              "pt": [
+                "La Gaubretière"
+              ],
+              "en": [
+                "La Gaubretière"
+              ],
+              "it": [
+                "La Gaubretière"
+              ],
+              "fr": [
+                "La Gaubretière"
+              ],
+              "nl": [
+                "La Gaubretière"
+              ],
+              "es": [
+                "La Gaubretière"
+              ]
+            },
+            "insee": "85097",
+            "isPartOfDepartment": {
+              "@id": "kb:France5285",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Vendée"
+                ],
+                "pt": [
+                  "Vendée"
+                ],
+                "en": [
+                  "Vendée"
+                ],
+                "it": [
+                  "Vendée"
+                ],
+                "fr": [
+                  "Vendée"
+                ],
+                "nl": [
+                  "Vendée"
+                ],
+                "es": [
+                  "Vendée"
+                ]
+              },
+              "insee": "85",
+              "isPartOfRegion": {
+                "@id": "kb:France52",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Pays de la Loire"
+                  ],
+                  "pt": [
+                    "Pays de la Loire"
+                  ],
+                  "en": [
+                    "Pays de la Loire"
+                  ],
+                  "it": [
+                    "Pays de la Loire"
+                  ],
+                  "fr": [
+                    "Pays de la Loire"
+                  ],
+                  "nl": [
+                    "Pays de la Loire"
+                  ],
+                  "es": [
+                    "Pays de la Loire"
+                  ]
+                },
+                "insee": "52",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/d98f3359-dddb-395d-ae8c-664bd30a42ad",
+        "schema:latitude": "46.9424515",
+        "schema:longitude": "-1.0646572",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-22",
+  "lastUpdateDatatourisme": "2025-07-23T04:06:16.998Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:Pizzeria",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Pizzeria"
+        ],
+        "pt": [
+          "Pizaria"
+        ],
+        "en": [
+          "Pizzeria"
+        ],
+        "it": [
+          "Pizzeria"
+        ],
+        "fr": [
+          "Pizzeria"
+        ],
+        "nl": [
+          "Pizzeria"
+        ],
+        "es": [
+          "Pizzería"
+        ]
+      }
+    }
+  ]
+}

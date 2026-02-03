@@ -1,0 +1,965 @@
+{
+  "@id": "https://data.datatourisme.fr/6/0ccb5192-1431-3c2d-a188-f62131cf9700",
+  "dc:identifier": "HLOBOU000V50RBF4",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Gîte de la Forêt"
+    ],
+    "en": [
+      "Gîte de la Forêt"
+    ],
+    "fr": [
+      "Gîte de la Forêt"
+    ]
+  },
+  "allowedPersons": 6,
+  "creationDate": "2023-09-15",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/82578c73-08c7-342e-8845-dc63b20d54a8",
+    "dc:identifier": "6012fdba-d499-4734-b015-373e96f99808",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/264b87c4-2c8b-383e-bc71-d437efb5644d",
+        "schema:addressLocality": "Mâcon",
+        "schema:postalCode": "71000",
+        "schema:streetAddress": [
+          "Maison de la Saône-et-Loire"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:71270",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mâcon"
+            ],
+            "pt": [
+              "Mâcon"
+            ],
+            "en": [
+              "Mâcon"
+            ],
+            "it": [
+              "Mâcon"
+            ],
+            "fr": [
+              "Mâcon"
+            ],
+            "nl": [
+              "Mâcon"
+            ],
+            "es": [
+              "Mâcon"
+            ]
+          },
+          "insee": "71270",
+          "isPartOfDepartment": {
+            "@id": "kb:France2771",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saône-et-Loire"
+              ],
+              "pt": [
+                "Saône-et-Loire"
+              ],
+              "en": [
+                "Saône-et-Loire"
+              ],
+              "it": [
+                "Saône-et-Loire"
+              ],
+              "fr": [
+                "Saône-et-Loire"
+              ],
+              "nl": [
+                "Saône-et-Loire"
+              ],
+              "es": [
+                "Saône-et-Loire"
+              ]
+            },
+            "insee": "71",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "missiontourisme@saoneetloire71.fr"
+    ],
+    "schema:legalName": "Mission Tourisme - Département 71",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://route71.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/f21dba7d-7c06-3fdc-9b43-fe6c28d1daa4",
+      "schema:email": [
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=3183&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/f21dba7d-7c06-3fdc-9b43-fe6c28d1daa4",
+      "schema:email": [
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=3183&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/6472dcda-1968-3ed3-8cb5-35ffda4ec1ea",
+      "dc:description": {
+        "de": [
+          "Cécile & Jérémy öffnen Ihnen die Türen eines authentischen, geschichtsträchtigen Bauernhauses aus dem Jahr 1850, das sorgfältig restauriert und in eine sanfte Ferienanlage umgewandelt wurde. Es liegt auf einem \"Balkon\" und Aussichtspunkt mit Panoramablick an einem sonnigen Südosthang in den Ausläufern eines großen Waldgebiets (das wegen seines reichen Ökosystems zum Teil als \"Natura 2000\"-Gebiet geschützt ist). Ruhe und völlige Stille inmitten der hügeligen Landschaft von Mâcon, in der Nähe eines friedlichen Mini-Weindorfs, das sich in die Natur in einem kleinen bewaldeten Tal einfügt, nur wenige Schritte von den allerersten Weinbergen entfernt. Eine außergewöhnliche Umgebung inmitten eines wunderschönen, geschützten Natur- und Weingebiets, in dem sich liebliche Weinberge, Wiesen, Flüsse und Hügel vereinen. Es liegt am \"Signal de la Mère Boitier\", dem höchsten Punkt des Mâconnais (702 m), der auf erholsamen Wanderungen oder Mountainbike-Touren erreicht werden kann. Absolut zauberhafte und 100% erholsame Umgebung. Wunderschönes Panorama und Landschaften. Unterkunft mit sehr gutem Komfort. Sehr geräumig. Elegantes zeitgenössisches Flair. Zen & sanfte Atmosphäre. Sehr viel Charme. Große Terrasse mit einem Whirlpool im Freien (kostenpflichtig), offen zu einem sorgfältig bepflanzten Garten mit vielen Blumen, einem schönen Pool (10x4m mit Unterwasserstrand), einer Tischtennisplatte, einem Trampolin und einer Schaukel mit Rutsche.\nZusammensetzung: Unterkunft im Erdgeschoss des Hauses der Eigentümer (völlige Unabhängigkeit). Wifi. Elektrische Heizung. Wohnraum-Küche-Wohnraum, 3 Schlafzimmer (2 Einzelbetten 90x200cm, die zu einem Doppelbett zusammengestellt werden können. 180x200cm / Bett 2 P. 160x200cm in den anderen 2), davon 2 mit TV und ein völlig unabhängiges (von außen zugänglich) mit eigenem Badezimmer (Dusche/WC) und kompletter Küchenzeile (Typ Studio), Badezimmer (Dusche), separates WC, große Halle mit Tischfußball. Terrasse + Garten (mit Tischtennisplatte, Trampolin, Schaukel mit Rutsche) + Pool (10x4m) + Whirlpool im Freien (5 P. / kostenpflichtiger Zugang) + Privatparkplatz. Abstellraum für Fahrräder. Supermarkt 7 km. Supermarkt 11 km."
+        ],
+        "en": [
+          "Cécile & Jérémy welcome you to an authentic 1850 country farmhouse steeped in history, carefully restored & revisited as a gentle holiday resort, nestled in a \"balcony\" & panoramic belvedere on a well-exposed south-east hillside, on the foothills of a vast forest massif (partly protected as a \"Natura 2000 Zone\" for its rich ecosystem). Peace & total tranquility in the heart of the rolling Mâconnais countryside, neighboring a peaceful mini wine-growing hamlet, nestled in the heart of nature in the hollow of a small wooded valley just a stone's throw from the very first vines. Exceptional environment, nestled in the heart of a sublime, unspoiled rural setting, combining bucolic vineyard slopes, wooded meadows, rivers, and hills, backed by the \"Signal de la Mère Boitier,\" the highest point in the Mâconnais (702m), to be explored during invigorating walks or mountain bike rides. An absolutely enchanting and 100% relaxing setting. Superb panorama and landscapes. Very comfortable cottage. Ultra spacious. Elegant contemporary style. Zen and gentle atmosphere. Lots of charm. Large terrace with an outdoor spa (access fee), opening onto a carefully planted and flowery garden, featuring a beautiful swimming pool (10x4m with submerged beach), a ping-pong table, a trampoline, and a swing with a slide.\nComposition: Cottage on the ground floor of the owners' house (complete independence). Wi-Fi. Electric heating. Living room-kitchen-lounge, 3 bedrooms (2 single beds 90x200cm which can be twinned into a double bed 180x200cm / double bed 160x200cm in the other 2) including 2 with TV and one completely independent (accessible from the outside) with private bathroom (shower/WC) and complete kitchenette (studio type), bathroom (shower), separate WC, large hall with table football. Terrace + garden (including ping-pong table, trampoline, swing with slide) + swimming pool (10x4m) + outdoor spa (5 p. / paid access) + private parking. Bicycle storage. Mini-market 7 km away. Supermarket 11 km away."
+        ],
+        "it": [
+          "Cécile e Jérémy ci aprono le porte di un'autentica casa colonica del 1850 ricca di storia, accuratamente restaurata e rivisitata come dolce rifugio per le vacanze, adagiata su un balcone e un belvedere panoramico su una collina esposta a sud-est, ai piedi di una vasta foresta (in parte protetta come \"Zona Natura 2000\" per il suo ricco ecosistema). Pace e tranquillità assoluta nel cuore della campagna del Mâconnais, accanto a un tranquillo mini borgo vinicolo, immerso nel cuore della natura, nella conca di una piccola valle boscosa a due passi dai primi vigneti. Un ambiente eccezionale, immerso nel cuore di una natura e di una viticoltura sublimi e incontaminate, che combinano bucolici pendii di vigneti, prati con siepi, fiumi e colline, con alle spalle il \"Signal de la Mère Boitier\", il punto più alto del Mâconnais (702 m), da esplorare con rigeneranti passeggiate a piedi o in mountain bike. L'ambiente è assolutamente incantevole e rilassante al 100%. Vista e paesaggio superbi. Gîte molto confortevole. Molto spaziosa. Elegante stile contemporaneo. Atmosfera zen e gentile. Molto fascino. Ampia terrazza con spa esterna (a pagamento), che si apre su un giardino fiorito e curato, con una bella piscina (10x4 m con terrazza subacquea), tavolo da ping pong, trampolino e altalena con scivolo.\nComposizione: Gîte al piano terra della casa dei proprietari (totale indipendenza). Accesso internet Wifi. Riscaldamento elettrico. Soggiorno-cucina-salotto, 3 camere da letto (2 letti singoli 90x200 che possono essere gemellati per formare un letto matrimoniale. 180x200cm / letto 2 p. 160x200cm nelle altre 2), di cui 2 con TV e una completamente indipendente (accessibile dall'esterno) con bagno privato (doccia/WC) e angolo cottura completo (tipo studio), bagno (doccia), WC separato, ampio salone con calcio balilla. Terrazza + giardino (incluso tavolo da ping-pong, trampolino, altalena con scivolo) + piscina (10x4m) + spa esterna (5 p. / accesso a pagamento) + parcheggio privato. Rimessa per biciclette. Supermercato a 7 km. Supermercato a 11 km."
+        ],
+        "fr": [
+          "Cécile & Jérémy vous ouvrent les portes d'une authentique ferme de pays de 1850 chargée d'histoire, soigneusement restaurée & revisitée en douce villégiature, nichée en \"balcon\" & belvédère panoramique à flanc de coteau sud-est bien exposé, sur les contreforts d'un vaste massif forestier (en partie protégé en \"Zone Natura 2000\" pour son riche écosystème). Calme & totale tranquillité en pleine campagne mâconnaise vallonnée, voisinant un paisible mini hameau viticole, blotti en pleine nature au creux d'un petit vallon boisé à deux pas des toutes premières vignes. Environnement d'exception, lové au coeur d'un sublime écrin champêtre, naturel & viticole préservé, conjuguant bucoliques coteaux de vignobles, prairies bocagères, rivières & collines , adossé au \"Signal de la Mère Boitier\" point culminant du Mâconnais (702m), à sillonner lors de ressourçantes balades à pied ou VTT. Cadre absolument enchanteur & 100% reposant. Superbe panorama & paysages. Gîte de très bon confort. Ultra spacieux. Élégant cachet contemporain. Ambiance zen & douce. Beaucoup de charme. Vaste terrasse agrémentée d'un spa extérieur (en accès payant), ouverte sur un jardin soigneusement végétalisé & très fleuri, disposant d'une belle piscine (10x4m avec plage immergée), d'une table de ping-pong, d'un trampoline et d'une balançoire avec toboggan.\nComposition : Gîte au rdc de la maison des propriétaires (indépendance totale). Wifi. Chauffage électrique. Séjour-cuisine-salon, 3 chambres ( 2 lits 1 p. 90x200 jumelables en lit 2 p. 180x200cm / lit 2 p. 160x200cm dans les 2 autres) dont 2 avec TV et une totalement indépendante (accessible par l'extérieur) avec salle d'eau privative (douche/Wc) et kitchenette complète (type studio), salle d'eau (douche), Wc indépendant, grand hall avec babyfoot. Terrasse + jardin (comprenant table ping-pong, trampoline, balançoire avec toboggan) + piscine (10x4m) + spa extérieur (5 p. / accès payant) + parking privatifs. Local vélos. Supérette à 7 km. Supermarché 11 km."
+        ],
+        "es": [
+          "Cécile y Jérémy le abren las puertas de una auténtica granja de 1850 cargada de historia, cuidadosamente restaurada y reconvertida en un apacible refugio de vacaciones, enclavado en un balcón y un mirador panorámico en una ladera orientada al sureste, en las estribaciones de un extenso bosque (parcialmente protegido como \"Zona Natura 2000\" por su rico ecosistema). Paz y tranquilidad totales en el corazón de la ondulada campiña de Mâconnais, junto a una apacible mini aldea vinícola, enclavada en plena naturaleza en la hondonada de un pequeño valle boscoso a dos pasos de los primeros viñedos. Un marco excepcional, en el corazón de un entorno natural y vitícola sublime y virgen, que combina bucólicas laderas de viñedos, praderas con setos, ríos y colinas, con la \"Signal de la Mère Boitier\" como telón de fondo, el punto más alto del Mâconnais (702 m), para recorrer a pie o en bicicleta de montaña. Un entorno absolutamente encantador y 100% relajante. Magníficas vistas y paisajes. Casa rural muy confortable. Muy espaciosa. Estilo contemporáneo y elegante. Ambiente zen y apacible. Mucho encanto. Amplia terraza con spa al aire libre (de pago), que da a un jardín cuidadosamente plantado con muchas flores, con una bonita piscina (10x4m con cubierta bajo el agua), mesa de ping-pong, cama elástica y columpio con tobogán.\nComposición: Casa rural en la planta baja de la casa de los propietarios (independencia total). Acceso Internet Wifi. Calefacción eléctrica. Salón-cocina-sala de estar, 3 habitaciones (2 camas individuales 90x200 que se pueden hermanar para formar una cama doble. 180x200cm / cama 2 p. 160x200cm en las otras 2), 2 con TV y una totalmente independiente (accesible desde el exterior) con cuarto de ducha privado (ducha/WC) y cocina americana completa (tipo estudio), cuarto de ducha (ducha), WC separado, gran salón con futbolín. Terraza + jardín (incluye mesa de ping-pong, cama elástica, columpio con tobogán) + piscina (10x4m) + spa exterior (5 p. / acceso con suplemento) + aparcamiento privado. Cobertizo para bicicletas. Supermercado a 7 km. Supermercado a 11 km."
+        ],
+        "nl": [
+          "Cécile & Jérémy openen de deuren van een authentieke boerderij uit 1850 met een rijke geschiedenis, zorgvuldig gerestaureerd en opnieuw ingericht als een rustig vakantieverblijf, genesteld op een balkon en panoramische belvedère op een zuidoostelijke heuvel, in de uitlopers van een uitgestrekt bos (deels beschermd als \"Natura 2000 Zone\" voor zijn rijke ecosysteem). Rust & totale stilte in het hart van het glooiende landschap van de Mâconnais, naast een vredig wijnbouw mini-gehucht, genesteld in het hart van de natuur in de holte van een kleine beboste vallei op een steenworp afstand van de allereerste wijngaarden. Een uitzonderlijke omgeving, genesteld in het hart van een sublieme, ongerepte natuurlijke en wijnbouw omgeving, een combinatie van bucolische wijngaard hellingen, omheinde weiden, rivieren en heuvels, ondersteund door het \"Signal de la Mère Boitier\", het hoogste punt in de Mâconnais (702m), te verkennen tijdens verjongende wandelingen of mountainbiketochten. Een absoluut betoverende en 100% ontspannende omgeving. Prachtig uitzicht en landschap. Zeer comfortabele gîte. Zeer ruim. Elegante eigentijdse stijl. Zen en zachte sfeer. Veel charme. Groot terras met buitenspa (tegen betaling), uitkomend op een zorgvuldig beplante tuin met veel bloemen, met een mooi zwembad (10x4m met onderwaterdek), pingpongtafel, trampoline en schommel met glijbaan.\nIndeling: Gîte op de begane grond van het huis van de eigenaren (totale onafhankelijkheid). Wifi internettoegang. Elektrische verwarming. Woonkamer-keuken-salon, 3 slaapkamers (2 eenpersoonsbedden 90x200 die kunnen worden samengevoegd tot een tweepersoonsbed. 180x200cm / bed 2 p. 160x200cm in de andere 2), 2 met TV en een volledig onafhankelijk (toegankelijk van buitenaf) met eigen doucheruimte (douche/WC) en volledige kitchenette (type studio), doucheruimte (douche), aparte WC, grote hal met tafelvoetbal. Terras + tuin (met tafeltennistafel, trampoline, schommel met glijbaan) + zwembad (10x4m) + buiten spa (5 p. / toegang tegen betaling) + privé parkeerplaats. Fietsenstalling. Supermarkt op 7 km. Supermarkt op 11 km."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/4c2a6229-c75b-3c53-a8ae-22c0ddb45805",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/630072ae-1231-38f3-980c-2681b0c00bb5",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9c409142-865d-3539-a21e-836671b5c5ed",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/c2326ccc-dbd9-3331-b8e5-df340dd352b0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/287f375d-7837-322d-89ab-d85e9c96387a",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Accommodation",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Unterbringung"
+            ],
+            "pt": [
+              "Alojamento"
+            ],
+            "en": [
+              "Accommodation"
+            ],
+            "it": [
+              "Alloggio"
+            ],
+            "fr": [
+              "Logement"
+            ],
+            "nl": [
+              "Logies"
+            ],
+            "es": [
+              "Alojamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/5b40a0b4-cdbd-316e-9418-ea8fe30f2c83",
+        "schema:unitText": [
+          "m²"
+        ],
+        "schema:value": "121",
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/291b3921-3d00-326b-8ed7-258e60a01e7d",
+      "schema:value": "3",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/39622c81-d525-36fd-b9d2-75d9a2412ac8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4f533e68-e395-38ec-84c8-63df3537c904",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SwimmingPool",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Pool"
+            ],
+            "pt": [
+              "Piscina"
+            ],
+            "en": [
+              "Swimming pool"
+            ],
+            "it": [
+              "Piscina"
+            ],
+            "fr": [
+              "Piscine"
+            ],
+            "nl": [
+              "Zwembad"
+            ],
+            "es": [
+              "Piscina"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8fcb0e73-e6cb-328e-8238-d0a08c9a5036",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bfff4488-8625-3579-ae4c-479a61aecaaf",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Freezer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gefriergerät"
+            ],
+            "pt": [
+              "Congelador"
+            ],
+            "en": [
+              "Freezer"
+            ],
+            "it": [
+              "Congelatore"
+            ],
+            "fr": [
+              "Congélateur"
+            ],
+            "nl": [
+              "Diepvriezer"
+            ],
+            "es": [
+              "Congelador"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef987579-32be-36f7-a54d-805aacd16d8e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/2be01c8a-de7b-393b-b059-2d32a7089289",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3epis",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Ähren/Komfort"
+          ],
+          "pt": [
+            "3 espigas / conforto"
+          ],
+          "en": [
+            "3 ears of corn / Confort level"
+          ],
+          "it": [
+            "3 spighe / Comfort"
+          ],
+          "fr": [
+            "3 épis / Confort"
+          ],
+          "es": [
+            "3 espigas/Confort"
+          ],
+          "nl": [
+            "3 aren / Comfort"
+          ]
+        },
+        "isCompliantWith": [
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f8884d70-4a02-376b-a0b0-3171c508b279",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_GitesDeFrance",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Gîtes de France"
+          ],
+          "pt": [
+            "Gîtes de France"
+          ],
+          "en": [
+            "Gîtes de France"
+          ],
+          "it": [
+            "Gîtes de France"
+          ],
+          "fr": [
+            "Gîtes de France"
+          ],
+          "nl": [
+            "Gîtes de France"
+          ],
+          "es": [
+            "Gîtes de France"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/c4a19acf-52dd-3d1e-b6db-ed5cb68eb0f5",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/aae8a1fe-7095-3518-b995-1b890f588568",
+          "schema:addressLocality": "Serrières",
+          "schema:postalCode": "71960",
+          "schema:streetAddress": [
+            "626 Chemin de la Forêt"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:71518",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Serrières"
+              ],
+              "pt": [
+                "Serrières"
+              ],
+              "en": [
+                "Serrières"
+              ],
+              "it": [
+                "Serrières"
+              ],
+              "fr": [
+                "Serrières"
+              ],
+              "nl": [
+                "Serrières"
+              ],
+              "es": [
+                "Serrières"
+              ]
+            },
+            "insee": "71518",
+            "isPartOfDepartment": {
+              "@id": "kb:France2771",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Saône-et-Loire"
+                ],
+                "pt": [
+                  "Saône-et-Loire"
+                ],
+                "en": [
+                  "Saône-et-Loire"
+                ],
+                "it": [
+                  "Saône-et-Loire"
+                ],
+                "fr": [
+                  "Saône-et-Loire"
+                ],
+                "nl": [
+                  "Saône-et-Loire"
+                ],
+                "es": [
+                  "Saône-et-Loire"
+                ]
+              },
+              "insee": "71",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/9e239636-e0a7-3718-aa4f-37bef490a768",
+        "schema:latitude": "46.311605",
+        "schema:longitude": "4.64688",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-28",
+  "lastUpdateDatatourisme": "2025-07-28T23:57:21.636Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/544257e2-2d59-3f0e-8d8b-e429d849f774",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

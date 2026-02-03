@@ -1,0 +1,937 @@
+{
+  "@id": "https://data.datatourisme.fr/6/068db494-435d-3f86-b815-7f2e8f6c03fb",
+  "dc:identifier": "HLOBFC000V5077VQ",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Les Bruyères (étape)"
+    ],
+    "en": [
+      "Les Bruyères (étape)"
+    ],
+    "fr": [
+      "Les Bruyères (étape)"
+    ]
+  },
+  "allowedPersons": 18,
+  "availableLanguage": [
+    "fr"
+  ],
+  "creationDate": "2020-05-06",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/ccd6cf45-1094-3ed6-9510-a7b0d6b3d374",
+    "dc:identifier": "51b530b1-4a7e-4050-b1d7-c67b31e7867c",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/cc2855d7-37b0-3fe9-a784-237a2ccb2e46",
+        "schema:addressLocality": "Dijon",
+        "schema:postalCode": "21000",
+        "schema:streetAddress": [
+          "5 avenue Garibaldi"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:21231",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Dijon"
+            ],
+            "pt": [
+              "Dijon"
+            ],
+            "en": [
+              "Dijon"
+            ],
+            "it": [
+              "Dijon"
+            ],
+            "fr": [
+              "Dijon"
+            ],
+            "nl": [
+              "Dijon"
+            ],
+            "es": [
+              "Dijon"
+            ]
+          },
+          "insee": "21231",
+          "isPartOfDepartment": {
+            "@id": "kb:France2721",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Côte-d'Or"
+              ],
+              "pt": [
+                "Côte-d'Or"
+              ],
+              "en": [
+                "Côte-d'Or"
+              ],
+              "it": [
+                "Côte-d'Or"
+              ],
+              "fr": [
+                "Côte-d'Or"
+              ],
+              "nl": [
+                "Côte-d'Or"
+              ],
+              "es": [
+                "Côte-d'Or"
+              ]
+            },
+            "insee": "21",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "info@bfctourisme.com"
+    ],
+    "schema:legalName": "Bourgogne-Franche-Comté Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/c18d9f86-3752-3e40-a0e3-a84aca026b46",
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.gites-de-france-nievre.com/fr/location/gite-groupe-alligny-en-morvan-les-bruyeres-etape-h58p028539"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/5789bef5-4371-3fdf-99a9-8cbb0c0bad0b",
+      "schema:email": [
+        "alligny.morvan@wanadoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 3 86 76 13 50"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.alligny-en-morvan.fr/",
+        "https://www.gites-de-france-nievre.com/fr/location/gite-groupe-alligny-en-morvan-les-bruyeres-etape-h58p028539"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c18d9f86-3752-3e40-a0e3-a84aca026b46",
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.gites-de-france-nievre.com/fr/location/gite-groupe-alligny-en-morvan-les-bruyeres-etape-h58p028539"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/d7f6bc92-6815-3e68-aee1-4cad34a765bd",
+      "dc:description": {
+        "de": [
+          "In einem Haus im Herzen des Regionalparks Morvan und gegenüber dem Ammenmuseum: Empfangsraum mit Entspannungsbereich (Fernseher und kostenloses WLAN), Esszimmer und Küche, 1 Zimmer mit 2 Betten 90x190 und Badezimmer mit behindertengerechtem Zugang. Stock: 1 Zimmer mit 2 Betten 90x190, 1 Zimmer mit 1 Bett 90x190 und 1 Etagenbett, 1 Zimmer mit 4 Betten 90x190, 1 Zimmer mit 2 Betten 90x190 und 1 Etagenbett, und 1 Zimmer mit 3 Betten 90x190. Alle Zimmer sind mit WC, Waschbecken und Dusche ausgestattet. Heizung und Strom sind inbegriffen. Preis pro Person = 15€/Person/Nacht. \nDie Vermietung des gesamten Ferienhauses für 1 Nacht kostet 250€ bei einer Anreise ab 18 Uhr und einer Abreise um 10 Uhr. Wenn Sie die gesamte Unterkunft für ein Wochenende mieten möchten, mit Anreise am Freitag ab 18 Uhr und Abreise am Sonntag um 14 Uhr, wobei die Zimmer bis 10 Uhr geräumt sein müssen, beträgt der Preis 550€. \nZahlreiche Wanderwege. In der Nähe des Lac des Settons. Im Dorf: Lebensmittelgeschäft, Apotheke, Pub, Restaurant, Brasserie, Museum, auf Anfrage abschließbarer Fahrradraum. Möglichkeit, einen Raum für 20 Personen zu mieten, der mit einem Bildschirm ausgestattet ist."
+        ],
+        "en": [
+          "In a house in the heart of the Morvan Regional Park and opposite the Nourrices Museum: reception room with relaxation area (TV and free wifi), dining room and kitchen, 1 bedroom with 2 beds 90x190 and shower room accessible to people with reduced mobility. On the first floor: 1 bedroom with 2 beds 90x190, 1 bedroom with 1 bed 90x190 and 1 bunk bed, 1 bedroom with 4 beds 90x190, 1 bedroom with 2 beds 90x190 and 1 bunk bed, and 1 bedroom with 3 beds 90x190. All rooms are equipped with toilet, washbasin and shower. Heating and electricity included. Price per person = 15€/person/night. \nThe rental of the whole gîte for 1 night is 250€ with arrival from 6pm and departure at 10am. To rent the whole gîte for a weekend with arrival on Friday from 6pm and departure on Sunday at 2pm with rooms vacated by 10am, the price is 550€. \nMany hiking trails. Close to the Lac des Settons. In the village: Grocery, Pharmacy, Pub, Restaurant, Brasserie, Museum, on request, lockable bicycle storage. Possibility to rent a room for 20 people equipped with a screen."
+        ],
+        "it": [
+          "In una casa nel cuore del Parco Regionale del Morvan e di fronte al Museo di Nourrices: sala di accoglienza con zona relax (TV e WiFi gratuito), sala da pranzo e cucina, 1 camera con 2 letti singoli (90x190) e bagno con doccia accessibile alle persone con mobilità ridotta. 1° piano: 1 camera con 2 letti 90x190, 1 camera con 1 letto 90x190 e 1 letto a castello, 1 camera con 4 letti 90x190, 1 camera con 2 letti 90x190 e 1 letto a castello, e 1 camera con 3 letti 90x190. Tutte le camere sono dotate di servizi igienici, lavabo e doccia. Riscaldamento ed elettricità inclusi. Prezzo per persona = 18?/persona/notte.\n\nNumerosi sentieri escursionistici. Vicino al Lac des Settons. Nel villaggio: negozio di alimentari, farmacia, pub, ristorante, brasserie, museo, rimessa per biciclette con serratura su richiesta. Possibilità di affittare una sala per 20 persone dotata di schermo.\n\nCosti e opzioni:\nRiscaldamento ed elettricità inclusi\nNoleggio biancheria da letto: 4 €/persona\nTariffa per persona: 18? / persona / notte"
+        ],
+        "fr": [
+          "Dans une maison au cœur du Parc Régional du Morvan et en face du Musée des Nourrices: salle d'accueil avec espace détente (télé et wifi gratuit) Salle à manger et cuisine, 1 chambre avec 2 lits 90x190 et salle d'eau accessible aux personnes à mobilité réduite. Au 1er étage : 1 chambre avec 2 lits 90x190, 1 chambre avec 1 lit 90x190 et 1 lit superposé, 1 chambre avec 4 lits 90x190 1 chambre avec 2 lits 90x190 et 1 lit superposé, et 1 chambre avec 3 lits 90x190. Toutes les chambres sont équipées de wc, lavabo et douche. Chauffage et électricité compris. Tarif par personne = 18€/personne/nuit.\n\nNombreux sentiers de randonnées. Proche du Lac des Settons. Dans le village : Epicerie, Pharmacie, Pub, restaurant, brasserie, Musée .Sur demande local à vélos fermant à clefs. Possibilité location salle 20 personnes équipée d'un écran.\n\nCharges et options:\nChauffage et électricité compris\nLocation linge de lit : 4€ / personne\nTarif par personne : 18€ / personne / nuit"
+        ],
+        "nl": [
+          "In een huis in het hart van het Regionale Park van de Morvan en tegenover het Museum van Nourrices: ontvangstruimte met ontspanningsruimte (TV en gratis WiFi), eetkamer en keuken, 1 slaapkamer met 2 eenpersoonsbedden (90x190) en doucheruimte toegankelijk voor mensen met een beperkte mobiliteit. 1e verdieping: 1 slaapkamer met 2 bedden 90x190, 1 slaapkamer met 1 bed 90x190 en 1 stapelbed, 1 slaapkamer met 4 bedden 90x190, 1 slaapkamer met 2 bedden 90x190 en 1 stapelbed, en 1 slaapkamer met 3 bedden 90x190. Alle kamers hebben een toilet, wastafel en douche. Verwarming en elektriciteit inbegrepen. Prijs per persoon = 18?/persoon/nacht.\n\nTalrijke wandelpaden. Vlakbij het Lac des Settons. In het dorp: kruidenier, apotheek, café, restaurant, brasserie, museum, afsluitbare fietsenstalling op aanvraag. Mogelijkheid tot het huren van een zaal voor 20 personen uitgerust met een scherm.\n\nKosten en opties:\nVerwarming en elektriciteit inbegrepen\nHuur beddengoed: €4/persoon\nTarief per persoon: 18? / persoon / nacht"
+        ],
+        "es": [
+          "En una casa en el corazón del Parque Regional de Morvan y frente al Museo de Nourrices: sala de recepción con zona de descanso (TV y WiFi gratuito), comedor y cocina, 1 dormitorio con 2 camas individuales (90x190) y cuarto de ducha accesible para personas con movilidad reducida. 1ª planta: 1 dormitorio con 2 camas de 90x190, 1 dormitorio con 1 cama de 90x190 y 1 litera, 1 dormitorio con 4 camas de 90x190, 1 dormitorio con 2 camas de 90x190 y 1 litera, y 1 dormitorio con 3 camas de 90x190. Todas las habitaciones disponen de WC, lavabo y ducha. Calefacción y electricidad incluidas. Precio por persona = 18?/persona/noche.\n\nNumerosas rutas de senderismo. Cerca del lago des Settons. En el pueblo: tienda de ultramarinos, farmacia, pub, restaurante, brasserie, museo, cobertizo para bicicletas con llave a petición. Posibilidad de alquilar una sala para 20 personas equipada con un biombo.\n\nTarifas y opciones:\nCalefacción y electricidad incluidas\nAlquiler de ropa de cama: 4 euros/persona\nTarifa por persona: 18? / persona / noche"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/147c3637-bd88-3e82-b30a-d1aa1cb26462",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/73e17b07-b097-3dbc-8bdd-8857ccdd6881",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e036602b-76c5-3760-9890-4526154dd455",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/1af5318a-46f7-3374-adcf-f4397e483cde",
+      "schema:value": "6",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/39622c81-d525-36fd-b9d2-75d9a2412ac8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8fcb0e73-e6cb-328e-8238-d0a08c9a5036",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b4ee1e19-6cd3-300f-adda-ef753335fc37",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Television",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Fernsehen"
+            ],
+            "pt": [
+              "Televisão"
+            ],
+            "en": [
+              "Television"
+            ],
+            "it": [
+              "Televisione"
+            ],
+            "fr": [
+              "Télévision"
+            ],
+            "nl": [
+              "Televisie"
+            ],
+            "es": [
+              "Televisión"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e8e7119a-e6f4-369d-a244-4bb5ba4f336b",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Heating",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Heizen"
+            ],
+            "pt": [
+              "Aquecimento"
+            ],
+            "en": [
+              "Heating"
+            ],
+            "it": [
+              "Riscaldamento"
+            ],
+            "fr": [
+              "Chauffage"
+            ],
+            "nl": [
+              "Verwarming"
+            ],
+            "es": [
+              "Climatización"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f09208d7-1375-390c-85b3-3a02e6d09cfb",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Microwave",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mikrowellen"
+            ],
+            "pt": [
+              "Micro-ondas"
+            ],
+            "en": [
+              "Microwave"
+            ],
+            "it": [
+              "Microonde"
+            ],
+            "fr": [
+              "Micro-ondes"
+            ],
+            "es": [
+              "Microondas"
+            ],
+            "nl": [
+              "Magnetron"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/2be01c8a-de7b-393b-b059-2d32a7089289",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3epis",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Ähren/Komfort"
+          ],
+          "pt": [
+            "3 espigas / conforto"
+          ],
+          "en": [
+            "3 ears of corn / Confort level"
+          ],
+          "it": [
+            "3 spighe / Comfort"
+          ],
+          "fr": [
+            "3 épis / Confort"
+          ],
+          "es": [
+            "3 espigas/Confort"
+          ],
+          "nl": [
+            "3 aren / Comfort"
+          ]
+        },
+        "isCompliantWith": [
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f8884d70-4a02-376b-a0b0-3171c508b279",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_GitesDeFrance",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Gîtes de France"
+          ],
+          "pt": [
+            "Gîtes de France"
+          ],
+          "en": [
+            "Gîtes de France"
+          ],
+          "it": [
+            "Gîtes de France"
+          ],
+          "fr": [
+            "Gîtes de France"
+          ],
+          "nl": [
+            "Gîtes de France"
+          ],
+          "es": [
+            "Gîtes de France"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/3c6047da-5a5b-38e6-a271-63c00ac1dc2b",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/92e75ccf-cffb-3cba-bdf3-7956bc60ca06",
+          "schema:addressLocality": "Alligny-en-Morvan",
+          "schema:postalCode": "58230",
+          "schema:streetAddress": [
+            "LE BOURG"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:58003",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Alligny-en-Morvan"
+              ],
+              "pt": [
+                "Alligny-en-Morvan"
+              ],
+              "en": [
+                "Alligny-en-Morvan"
+              ],
+              "it": [
+                "Alligny-en-Morvan"
+              ],
+              "fr": [
+                "Alligny-en-Morvan"
+              ],
+              "nl": [
+                "Alligny-en-Morvan"
+              ],
+              "es": [
+                "Alligny-en-Morvan"
+              ]
+            },
+            "insee": "58003",
+            "isPartOfDepartment": {
+              "@id": "kb:France2758",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nièvre"
+                ],
+                "pt": [
+                  "Nièvre"
+                ],
+                "en": [
+                  "Nièvre"
+                ],
+                "it": [
+                  "Nièvre"
+                ],
+                "fr": [
+                  "Nièvre"
+                ],
+                "nl": [
+                  "Nièvre"
+                ],
+                "es": [
+                  "Nièvre"
+                ]
+              },
+              "insee": "58",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/a7bbccf0-3a1a-33ae-b1c1-cf8c644cac8e",
+        "schema:latitude": "47.199833",
+        "schema:longitude": "4.177142",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-08-02",
+  "lastUpdateDatatourisme": "2025-08-03T00:06:05.246Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/ef06a3d2-146f-3cac-b044-d55ad2d6a22b",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

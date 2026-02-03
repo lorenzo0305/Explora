@@ -1,0 +1,975 @@
+{
+  "@id": "https://data.datatourisme.fr/6/0171a9d0-e82d-3bce-91c4-06b08eb9dd7d",
+  "dc:identifier": "HLOBOU0710001169",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Chalet de la Source"
+    ],
+    "en": [
+      "Chalet de la Source"
+    ],
+    "fr": [
+      "Chalet de la Source"
+    ]
+  },
+  "allowedPersons": 5,
+  "availableLanguage": [
+    "en",
+    "fr"
+  ],
+  "creationDate": "2013-01-17",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/82578c73-08c7-342e-8845-dc63b20d54a8",
+    "dc:identifier": "6012fdba-d499-4734-b015-373e96f99808",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/264b87c4-2c8b-383e-bc71-d437efb5644d",
+        "schema:addressLocality": "Mâcon",
+        "schema:postalCode": "71000",
+        "schema:streetAddress": [
+          "Maison de la Saône-et-Loire"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:71270",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mâcon"
+            ],
+            "pt": [
+              "Mâcon"
+            ],
+            "en": [
+              "Mâcon"
+            ],
+            "it": [
+              "Mâcon"
+            ],
+            "fr": [
+              "Mâcon"
+            ],
+            "nl": [
+              "Mâcon"
+            ],
+            "es": [
+              "Mâcon"
+            ]
+          },
+          "insee": "71270",
+          "isPartOfDepartment": {
+            "@id": "kb:France2771",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saône-et-Loire"
+              ],
+              "pt": [
+                "Saône-et-Loire"
+              ],
+              "en": [
+                "Saône-et-Loire"
+              ],
+              "it": [
+                "Saône-et-Loire"
+              ],
+              "fr": [
+                "Saône-et-Loire"
+              ],
+              "nl": [
+                "Saône-et-Loire"
+              ],
+              "es": [
+                "Saône-et-Loire"
+              ]
+            },
+            "insee": "71",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "missiontourisme@saoneetloire71.fr"
+    ],
+    "schema:legalName": "Mission Tourisme - Département 71",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://route71.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/070d4b38-4947-3c96-bb52-b52a3fafb11d",
+      "schema:email": [
+        "draigtalamh@orange.fr"
+      ],
+      "schema:telephone": [
+        "+33 3 85 82 49 16",
+        "+33 6 80 61 75 31"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=1169&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/070d4b38-4947-3c96-bb52-b52a3fafb11d",
+      "schema:email": [
+        "draigtalamh@orange.fr"
+      ],
+      "schema:telephone": [
+        "+33 3 85 82 49 16",
+        "+33 6 80 61 75 31"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=1169&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/30338cf9-f15d-3f45-8375-88281010ef2f",
+      "dc:description": {
+        "de": [
+          "Warme Holzatmosphäre, freistehendes Ferienhaus, das so konzipiert ist, dass es zu jeder Jahreszeit angenehm ist, und mit Sorgfalt eingerichtet wurde. Wunderschöne Landschaften, die Sie vom Balkon Ihres Zimmers oder von der offenen Terrasse des Wohnzimmers aus betrachten können. Erdgeschoss: Großer Wohnraum mit ausgestatteter amerikanischer Küche, Essbereich und Wohnzimmer (Schlafsofa, Kamineinsatz, TV, Zugang zur Terrasse), Badezimmer (Dusche), separates WC. 1. Stock: 2 Schlafzimmer (3 Einzelbetten 90x190cm / 1 Doppelbett 160x200cm), davon 1 mit Balkon mit Panoramablick, separates WC. Großer geschlossener Garten. Elektro- und Holzheizung. Ausstattung mit allem Komfort. Mountainbikes vor Ort (2 Erwachsene, 2 Kinder). Möglichkeit von begleiteten Wanderungen. Telefonkarte von France Telecom. 1 Clic-clac für eine Person."
+        ],
+        "en": [
+          "Lovely contemporary chalet (built in 2004) backing onto a \"balcony\" & \"panoramic belvedere\", on a well-exposed south-east hillside, in a peaceful rural residential hamlet overlooking the verdant Méchet valley (& its fish-filled river) . Calm & total tranquility in the heart of the Morvan countryside & its gentle mountains, in the very heart of the park and the Morvan massif, nestled on the immediate edge of the woods in the hollow of a bucolic valley preserved with fields & meadows surrounded by vast wild forest massifs (to be explored during relaxing walks or mountain bike rides). Magnificent preserved setting of nature & greenery. The privilege of being able to observe wildlife on site (deer, foxes, badgers, wild boars, etc.). Totally enchanting landscaped setting, 100% relaxing & rejuvenating. Natural garden with trees and vegetation, nestled behind a \"plant barrier\", including a shaded terrace area under a mulberry tree & a \"mini meadow\" with a swing (located below the chalet). Double large sheltered panoramic balcony. Superb unobstructed view of the surrounding countryside including the city of Autun and its night lights in the background. Magnificent panorama & landscapes. Spacious, comfortable gîte. Warm & very cozy wooded mountain character. Soft & exotic atmosphere. Pleasant rooms nestled under the roof in “cocoon cabin” mode.\nComposition: Detached house on 2 levels. Electric heating + fireplace. Ground floor (2 steps): living room-kitchen-lounge (extra 140x190cm BZ 2 p. convertible sofa), bathroom (shower), separate toilet. 1st floor: 2 bedrooms (double bed 160x200cm / 3 single beds 90x190cm), separate WC. Double sheltered balcony (one on each floor) + bicycle storage + natural grounds with furnished “terrace space” & swing + private parking. Shops including supermarket 10 km. All amenities including supermarkets 18 km."
+        ],
+        "it": [
+          "Delizioso chalet contemporaneo (costruito nel 2004) situato su un balcone con vista panoramica, su una collina ben esposta a sud-est, in un tranquillo borgo rurale residenziale che si affaccia sulla verdeggiante valle del Méchet (e sul suo fiume ricco di pesci). Pace e tranquillità totale nel cuore della campagna del Morvan e delle sue dolci montagne, nel cuore del Parco e del Massiccio del Morvan, ai margini del bosco, in una valle bucolica e incontaminata di campi e prati circondata da vasti boschi selvaggi (ideale per rilassanti passeggiate a piedi o in mountain bike). Un magnifico scenario incontaminato di natura e verde. Il privilegio di osservare la fauna selvatica in loco (caprioli, volpi, tassi, cinghiali, ecc.). Un ambiente paesaggistico assolutamente incantevole, rilassante e rigenerante al 100%. Giardino naturale con alberi e piante, nascosto dietro un \"recinto vegetale\", che comprende una terrazza ombreggiata sotto un gelso e un \"mini prato\" con altalena (sotto lo chalet). Doppio ampio balcone panoramico riparato. Superba vista senza ostacoli sulla campagna circostante, con la città di Autun e le sue luci notturne come sfondo. Panorama e paesaggio magnifici. Gîte spazioso e confortevole. Caldo e accogliente, con un'atmosfera da bosco di montagna. Atmosfera delicata e rilassante. Piacevoli camere da letto incastonate sotto il tetto in stile \"capanna bozzolo\".\nComposizione: Casa indipendente su 2 livelli. Riscaldamento elettrico + camino. Piano terra (2 gradini): soggiorno-cucina (divano letto BZ 2 p. 140x190cm in aggiunta), bagno (doccia), WC separato. 1° piano: 2 camere da letto (letto matrimoniale 160x200cm / 3 letti singoli 90x190cm), WC separato. Doppio balcone riparato (uno per piano) + deposito biciclette + terreno naturale con \"terrazza\" paesaggistica e altalena + parcheggio privato. Negozi e mini-market a 10 km. Tutti i servizi, compresi i supermercati, a 18 km."
+        ],
+        "fr": [
+          "Ravissant chalet contemporain (construit en 2004) adossé \"en balcon\" & \"belvédère panoramique\", à flanc de coteau sud-est bien exposé, au sein d'un paisible hameau rural résidentiel dominant la verdoyante vallée du Méchet (& sa rivière poissonneuse). Calme & totale tranquillité en pleine campagne morvandelle & sa montagne douce, au cœur même du parc et du massif du Morvan, blotti à l'orée immédiate des bois au creux d'un bucolique vallon préservé de champs & prairies cerclés de vastes massifs forestiers sauvages (à parcourir lors de reposantes balades à pied ou VTT). Magnifique écrin préservé de nature & verdure. Le privilège de possibilité d'observer la faune sauvage sur place (chevreuils, renards, blaireaux, sangliers etc…). Cadre paysagé totalement enchanteur, 100% relaxant & ressourçant. Jardin naturel arboré & végétalisé, niché derrière une \"barrière végétale\", comprenant un espace terrasse ombragé sous un murier & une \"mini prairie\" dotée d'une balançoire (sise en contrebas du chalet). Double large balcon panoramique abrités. Superbe vue dégagée sur la campagne environnante dont la cité d'Autun & ses lumières nocturnes s'affichant en toile de fond. Magnifique panorama & paysages. Spacieux gîte de bon confort. Chaleureux & très douillet cachet montagnard boisé. Ambiance douce & dépaysante. Agréables chambres lovées sous les toits en mode \"cocon cabane\". \nComposition : Maison individuelle sur 2 niveaux. Chauffage électrique + cheminée. Rdc (2 marches) : séjour-cuisine-salon (canapé convertible BZ 2 p. de 140x190cm en appoint), salle d'eau (douche), Wc indépendant. 1er étage : 2 chambres (lit 2 p. 160x200cm / 3 lits 1 p. 90x190cm), WC indépendant. Double balcon abrité (un à chaque étage) + local vélos + terrain naturel avec \"espace terrasse\" aménagé & balançoire + parking privatifs. Commerces dont supérette 10 km. Toutes commodités dont supermarchés 18 km."
+        ],
+        "nl": [
+          "Prachtig modern chalet (gebouwd in 2004) op een balkon met panoramisch uitzicht, op een goed geëxponeerde zuidoostelijke helling, in een vredig, landelijk woongehucht met uitzicht op de groene Méchet-vallei (en de visrijke rivier). Rust en stilte in het hart van de Morvan en zijn glooiende bergen, in het hart van het Morvan Park & Massief, genesteld aan de rand van het bos in een bucolische, ongerepte vallei van velden en weiden omringd door uitgestrekte, wilde bossen (ideaal voor ontspannende wandelingen of mountainbiketochten). Een prachtige, ongerepte omgeving van natuur en groen. Het voorrecht om ter plaatse wilde dieren te observeren (reeën, vossen, dassen, everzwijnen, enz.). Een betoverend landschap, 100% ontspannend en rustgevend. Natuurlijke tuin met bomen en planten, genesteld achter een \"plantenhek\", inclusief een schaduwrijk terras onder een moerbeiboom en een \"mini-weide\" met een schommel (onder het chalet). Dubbel breed panoramisch beschut balkon. Schitterend vrij uitzicht over het omringende landschap, met op de achtergrond de stad Autun en haar nachtverlichting. Prachtig panorama en landschap. Ruime, comfortabele gîte. Warm en gezellig met een bosachtig berggevoel. Zachte, ontspannen sfeer. Gezellige slaapkamers genesteld onder het dak in \"cocoon hut\" stijl.\nIndeling: Vrijstaand huis op 2 niveaus. Elektrische verwarming + open haard. Begane grond (2 treden): woonkamer-keuken (extra slaapbank BZ 2 p. 140x190cm), badkamer (douche), apart toilet. 1e verdieping: 2 slaapkamers (tweepersoonsbed 160x200cm / 3 eenpersoonsbedden 90x190cm), aparte WC. Dubbel overdekt balkon (één op elke verdieping) + fietsenruimte + natuurlijk terrein met aangelegde \"terraszone\" & schommel + privé-parkeerplaats. Winkels inclusief minimarkt 10 km. Alle voorzieningen inclusief supermarkten 18 km."
+        ],
+        "es": [
+          "Encantador chalet contemporáneo (construido en 2004) situado en un balcón con vistas panorámicas, en una ladera bien expuesta orientada al sureste, en una tranquila aldea residencial rural con vistas al verde valle del Méchet (y su río lleno de peces). Paz y tranquilidad totales en el corazón del campo de Morvan y sus suaves montañas, en el mismo corazón del Parque y Macizo de Morvan, enclavado en el mismo borde de los bosques en un valle bucólico y virgen de campos y prados rodeados de vastos bosques salvajes (ideal para relajantes paseos a pie o en bicicleta de montaña). Un magnífico entorno de naturaleza y verdor. El privilegio de observar la fauna in situ (corzos, zorros, tejones, jabalíes, etc.). Un entorno paisajístico totalmente encantador, 100% relajante y rejuvenecedor. Jardín natural con árboles y plantas, escondido detrás de una \"valla vegetal\", que incluye una zona de terraza sombreada bajo una morera y un \"mini prado\" con columpio (debajo del chalet). Doble balcón panorámico protegido. Magníficas vistas despejadas sobre la campiña circundante, con la ciudad de Autun y sus luces nocturnas como telón de fondo. Magnífico panorama y paisaje. Casa rural espaciosa y confortable. Cálida y acogedora, con un ambiente de montaña boscosa. Ambiente tranquilo y relajante. Agradables habitaciones situadas bajo el tejado en estilo \"cabaña capullo\".\nComposición: Casa independiente en 2 niveles. Calefacción eléctrica + chimenea. Planta baja (2 escalones): salón-cocina (sofá cama BZ 2 p. 140x190cm además), cuarto de baño (ducha), WC separado. 1ª planta: 2 dormitorios (cama doble 160x200cm / 3 camas individuales 90x190cm), WC separado. Doble balcón protegido (uno en cada planta) + sala para bicicletas + terreno natural con \"zona de terraza\" ajardinada y columpio + aparcamiento privado. Comercios y minimarket a 10 km. Todos los servicios y supermercados a 18 km."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/1cc80961-9b58-3190-96f9-f83bce501f0b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a1e3f619-7d31-3fa3-9838-105042042d8d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/c3a1d50a-e207-336f-9b24-abb54a1fc8c9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/eab61675-ac3e-3e7d-7988-a761bc277344",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "DW2VY68F9P2R",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/6955edda-b76d-3968-909e-ae7e5ace3935",
+      "schema:value": "2",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8fcb0e73-e6cb-328e-8238-d0a08c9a5036",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bb084cc2-62bf-3465-913d-e097f8b00ad4",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:LinenHire",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wäsche-Verleih"
+            ],
+            "pt": [
+              "Aluguer de roupa"
+            ],
+            "en": [
+              "Linen hire"
+            ],
+            "it": [
+              "Noleggio di biancheria"
+            ],
+            "fr": [
+              "Location de linge"
+            ],
+            "nl": [
+              "Linnenverhuur"
+            ],
+            "es": [
+              "Alquiler de ropa de cama"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bfff4488-8625-3579-ae4c-479a61aecaaf",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Freezer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gefriergerät"
+            ],
+            "pt": [
+              "Congelador"
+            ],
+            "en": [
+              "Freezer"
+            ],
+            "it": [
+              "Congelatore"
+            ],
+            "fr": [
+              "Congélateur"
+            ],
+            "nl": [
+              "Diepvriezer"
+            ],
+            "es": [
+              "Congelador"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d3c92506-c678-3951-8668-8450ff344b34",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Accommodation",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Unterbringung"
+            ],
+            "pt": [
+              "Alojamento"
+            ],
+            "en": [
+              "Accommodation"
+            ],
+            "it": [
+              "Alloggio"
+            ],
+            "fr": [
+              "Logement"
+            ],
+            "nl": [
+              "Logies"
+            ],
+            "es": [
+              "Alojamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/1ad93e2c-e258-3ed7-9186-74b5a3a51029",
+        "schema:unitText": [
+          "m²"
+        ],
+        "schema:value": "59",
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef987579-32be-36f7-a54d-805aacd16d8e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/1002bb22-ed27-365d-967e-623322c2e9ae",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_2epis",
+        "schema:ratingValue": "2.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "2 Ähren"
+          ],
+          "pt": [
+            "2 espigas"
+          ],
+          "en": [
+            "2 ears of corn"
+          ],
+          "it": [
+            "2 spighe"
+          ],
+          "fr": [
+            "2 épis"
+          ],
+          "es": [
+            "2 espigas"
+          ],
+          "nl": [
+            "2 aren"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f8884d70-4a02-376b-a0b0-3171c508b279",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_GitesDeFrance",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Gîtes de France"
+          ],
+          "pt": [
+            "Gîtes de France"
+          ],
+          "en": [
+            "Gîtes de France"
+          ],
+          "it": [
+            "Gîtes de France"
+          ],
+          "fr": [
+            "Gîtes de France"
+          ],
+          "nl": [
+            "Gîtes de France"
+          ],
+          "es": [
+            "Gîtes de France"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/6da88730-f6c7-3e36-a67e-34f1e0b038fc",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/d9393da2-b2b6-35d8-ae57-990d5f8a792f",
+          "schema:addressLocality": "La Grande-Verrière",
+          "schema:postalCode": "71990",
+          "schema:streetAddress": [
+            "79 Route du Crot au Meunier"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:71223",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "La Grande-Verrière"
+              ],
+              "pt": [
+                "La Grande-Verrière"
+              ],
+              "en": [
+                "La Grande-Verrière"
+              ],
+              "it": [
+                "La Grande-Verrière"
+              ],
+              "fr": [
+                "La Grande-Verrière"
+              ],
+              "nl": [
+                "La Grande-Verrière"
+              ],
+              "es": [
+                "La Grande-Verrière"
+              ]
+            },
+            "insee": "71223",
+            "isPartOfDepartment": {
+              "@id": "kb:France2771",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Saône-et-Loire"
+                ],
+                "pt": [
+                  "Saône-et-Loire"
+                ],
+                "en": [
+                  "Saône-et-Loire"
+                ],
+                "it": [
+                  "Saône-et-Loire"
+                ],
+                "fr": [
+                  "Saône-et-Loire"
+                ],
+                "nl": [
+                  "Saône-et-Loire"
+                ],
+                "es": [
+                  "Saône-et-Loire"
+                ]
+              },
+              "insee": "71",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/f0739f8d-102b-3afd-b183-4bd1589a0517",
+        "schema:latitude": "46.979895",
+        "schema:longitude": "4.112996",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-28",
+  "lastUpdateDatatourisme": "2025-07-28T23:57:21.633Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/544257e2-2d59-3f0e-8d8b-e429d849f774",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

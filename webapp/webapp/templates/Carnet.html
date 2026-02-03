@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WishAdventure — Carnet</title>
+
+  <link rel="stylesheet" href="/static/styles/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#190028;
+      --accent:#FF6000;
+      --text:#F9F0F7;
+      --text-dim:rgba(255,255,255,.70);
+      --card:rgba(255,255,255,.04);
+      --nav-h:64px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:#0f0a18; color:var(--text);
+      font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
+      min-height:100vh;
+    }
+
+    .app-frame{
+      width:100vw; height:100vh;
+      background:var(--bg);
+      position:relative; overflow:hidden;
+      display:flex; flex-direction:column;
+    }
+    .content-panel{
+      padding: 28px 20px calc(var(--nav-h) + 24px) 20px;
+      display:flex; flex-direction:column; gap:16px; flex:1; overflow:auto;
+      scrollbar-width:thin;
+    }
+    .content-inner{
+      width:100%; max-width: 960px; margin: 0 auto;
+      display:flex; flex-direction:column; gap:12px;
+    }
+
+    .top-title{ display:flex; align-items:center; justify-content:space-between; }
+    .top-title .left{ display:flex; align-items:center; gap:12px; }
+    .top-title .logo{ width:25px; height:25px; background:var(--accent); border-radius:4px; flex:0 0 25px; }
+    .top-title .title{ font-size:30px; font-weight:600; color:var(--text); }
+
+    /* Actions (Panier / Coeur) en haut à droite */
+    .actions{ position:relative; display:flex; align-items:center; gap:8px; }
+    .action-btn{
+      background:rgba(255,255,255,.08); color:#fff; border:none;
+      padding:6px 10px; border-radius:8px; font-weight:600; font-size:12px; line-height:1;
+      cursor:pointer; display:flex; align-items:center; gap:6px;
+    }
+    .action-btn.active { color: #ff4081; }
+    .badge{ font-size:11px; background:var(--accent); color:#190028; border-radius:999px; padding:2px 6px; font-weight:800; }
+    .badge.pink{ background:#ff4081; color:#fff; }
+
+    /* Panels flottants */
+    .floating-panel{
+      position:absolute; top:calc(100% + 8px); right:0;
+      width:min(300px, 80vw); max-height:min(50vh, 400px); overflow:auto;
+      background:#1e1e1e; border-radius:12px; padding:10px; display:none; z-index:100;
+      box-shadow:0 16px 36px rgba(0,0,0,.5); border:1px solid rgba(255,255,255,.1);
+    }
+    .floating-panel h4{ margin:6px 0 8px; font-size:14px; opacity:.9; border-bottom:1px solid rgba(255,255,255,.1); padding-bottom:6px; }
+    .panel-empty{ color:var(--text-dim); font-size:13px; margin:6px 0; font-style:italic; }
+    .panel-item{
+      display:flex; align-items:center; gap:8px; padding:6px; border-radius:8px;
+      background:rgba(255,255,255,.04); margin-bottom:6px;
+    }
+    .panel-item img{ width:36px; height:36px; border-radius:6px; object-fit:cover }
+    .panel-item .pi-name{ font-size:13px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:140px; }
+    .panel-item .pi-remove{
+      margin-left:auto; background:rgba(255,255,255,.08); color:#fff; border:none;
+      padding:4px 8px; border-radius:6px; font-size:11px; cursor:pointer;
+    }
+    .panel-footer{ display:flex; justify-content:flex-end; margin-top:8px; }
+    .panel-footer a{ background:var(--accent); color:#190028; border-radius:8px; padding:6px 10px; font-weight:700; text-decoration:none; font-size:12px; }
+
+    .section-title{ font-size:13px; font-weight:500; color:var(--text); }
+
+    .list{ display:flex; flex-direction:column; gap:8px; }
+    .item{
+      display:flex; align-items:center; justify-content:space-between;
+      min-height:60px; border-radius:6px; padding:6px 6px 6px 0;
+      cursor:pointer; user-select:none;
+    }
+    .item:hover{ background:rgba(255,255,255,.02); }
+    .item .left{ display:flex; align-items:center; gap:16px; }
+    .thumb{
+      width:60px; height:60px; border-radius:5px; background:#333; flex:0 0 60px;
+      background-size:cover; background-position:center;
+      box-shadow:0 0 0 1px rgba(255,255,255,.06) inset;
+    }
+    .meta{ display:flex; flex-direction:column; }
+    .name{ font-size:15px; font-weight:700; color:var(--text); }
+    .desc{ font-size:13px; font-weight:500; color:var(--text-dim); }
+
+    .actions-right{ display:flex; align-items:center; gap:8px; }
+    .icon-btn{
+      width:30px; height:30px; border-radius:6px;
+      display:flex; align-items:center; justify-content:center;
+      border:1px solid rgba(255,255,255,.12);
+      background:transparent; cursor:pointer; flex:0 0 30px;
+    }
+    .icon-btn:hover{ background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.22); }
+    .icon-btn:focus{ outline:2px solid rgba(255,255,255,.35); outline-offset:2px; }
+    .icon-btn svg{ width:16px; height:16px; fill:none; stroke:#F9F0F7; stroke-width:2; }
+    .edit-btn svg{ stroke:#FFBC66; }
+    .delete-btn svg{ stroke:#F9F0F7; }
+
+    .empty{ font-size:13px; color:var(--text-dim); }
+
+    nav.bottom-nav{
+      position:absolute; left:0; right:0; bottom:0;
+      height:var(--nav-h);
+      display:flex; gap:8px; padding:10px;
+      background:rgba(0,0,0,.25); backdrop-filter:blur(6px);
+      border-top:1px solid rgba(255,255,255,.06);
+    }
+    .boutonNav{
+      flex:1; border:none; border-radius:12px; padding:10px 8px;
+      background:rgba(255,255,255,.06); color:#fff; font-weight:600; cursor:pointer;
+      display:flex; align-items:center; justify-content:center; gap:6px;
+    }
+    .boutonNav.active{ background:var(--accent); color:#190028 }
+    .nav-icon{ width:18px; height:18px; vertical-align:-3px; fill:#fff; }
+  </style>
+</head>
+<body>
+
+  <div class="app-frame">
+    <div class="content-panel">
+      <div class="content-inner">
+
+        <div class="top-title">
+          <div class="left">
+            <div class="logo"></div>
+            <div class="title">Mon carnet</div>
+          </div>
+          
+          <div class="actions">
+            <button id="likesIcon" class="action-btn" type="button" title="Mes Favoris">
+              ❤️ <span id="likesCount" class="badge pink" hidden>0</span>
+            </button>
+            <div id="floatingLikes" class="floating-panel" aria-live="polite"></div>
+
+            <button id="basketIcon" class="action-btn" type="button" title="Panier">
+              🧺 <span id="basketCount" class="badge" hidden>0</span>
+            </button>
+            <div id="floatingBasket" class="floating-panel" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-title">Téléchargements</div>
+          <div id="topicsList" class="list"></div>
+          <p id="emptyState" class="empty" style="display:none;">Aucun voyage pour l’instant.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="/" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z"/></svg>Accueil</button></a>
+      <a href="/Destinations" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="M20 20l-3.5-3.5" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/></svg>Exploration</button></a>
+      <a href="/topics" class="bouton"><button class="boutonNav active"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M5 4h11a2 2 0 0 1 2 2v12H7a2 2 0 0 1-2-2V4z"/><rect x="3" y="6" width="2" height="12" rx="1" ry="1"/><path d="M8 8h7M8 11h7M8 14h5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Carnet</button></a>
+      <a href="/makejourney" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 0-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 0 0-6-6zm0 8.5A2.5 2.5 0 1 1 12 5.5a2.5 2.5 0 0 1 0 5z"/><path d="M15.2 14.2l3.2 3.2-2.3 0.5-1.4 1.4-0.5-2.3 1-1z"/></svg>Création</button></a>
+    </nav>
+  </div>
+
+  <script>
+    /* ===== Logic Panier & Favoris ===== */
+    const BASKET_KEY = 'wish_basket_v1';
+    const LIKES_KEY = 'wish_likes_v1';
+    
+    const basketIcon = document.getElementById('basketIcon');
+    const basketCount = document.getElementById('basketCount');
+    const floatingBasket = document.getElementById('floatingBasket');
+    const likesIcon = document.getElementById('likesIcon');
+    const likesCount = document.getElementById('likesCount');
+    const floatingLikes = document.getElementById('floatingLikes');
+
+    const loadData = (k) => { try{ return JSON.parse(localStorage.getItem(k)||'[]'); }catch{ return []; } };
+    const saveData = (k, d) => { localStorage.setItem(k, JSON.stringify(d)); updateCounts(); renderPanels(); };
+
+    function updateCounts(){
+      const b = loadData(BASKET_KEY).length;
+      basketCount.textContent = b; basketCount.hidden = b===0;
+      const l = loadData(LIKES_KEY).length;
+      likesCount.textContent = l; likesCount.hidden = l===0;
+    }
+
+    function renderPanel(key, container, title, emptyMsg, isLike=false){
+      const items = loadData(key);
+      if(!items.length){
+        container.innerHTML = `<h4>${title}</h4><p class="panel-empty">${emptyMsg}</p>` + (isLike ? '' : `<div class="panel-footer"><a href="/makejourney">Aller à la création</a></div>`);
+        return;
+      }
+      const html = items.map(x => `
+        <div class="panel-item">
+          <img src="${x.image || '/static/img/no-image.jpg'}" alt="">
+          <div class="pi-name">${x.name || 'Sans nom'}</div>
+          <button class="pi-remove" onclick="removeItem('${key}', '${x.id}')">✕</button>
+        </div>
+      `).join('');
+      container.innerHTML = `<h4>${title}</h4>${html}` + (isLike ? '' : `<div class="panel-footer"><a href="/makejourney">Aller à la création</a></div>`);
+    }
+
+    function renderPanels(){
+      renderPanel(BASKET_KEY, floatingBasket, 'Votre panier', 'Votre panier est vide.');
+      renderPanel(LIKES_KEY, floatingLikes, 'Mes Favoris', 'Aucun favori.', true);
+    }
+
+    window.removeItem = function(key, id){
+      const data = loadData(key).filter(x => String(x.id) !== String(id));
+      saveData(key, data);
+    };
+
+    basketIcon.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      floatingLikes.style.display = 'none';
+      floatingBasket.style.display = floatingBasket.style.display==='block' ? 'none' : 'block';
+    });
+    likesIcon.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      floatingBasket.style.display = 'none';
+      floatingLikes.style.display = floatingLikes.style.display==='block' ? 'none' : 'block';
+    });
+    document.addEventListener('click', (e)=>{
+      if(!floatingBasket.contains(e.target) && e.target !== basketIcon) floatingBasket.style.display = 'none';
+      if(!floatingLikes.contains(e.target) && e.target !== likesIcon) floatingLikes.style.display = 'none';
+    });
+    
+    window.addEventListener("storage", (e) => {
+      if (e.key === BASKET_KEY || e.key === LIKES_KEY){ updateCounts(); renderPanels(); }
+    });
+
+    /* ===== Logic Carnet (Liste Voyages) ===== */
+    const JOURNEYS_KEY = "wish_journeys_v1";
+
+    const lsGetJourneys = () => { try { return JSON.parse(localStorage.getItem(JOURNEYS_KEY) || "[]"); } catch { return []; } };
+    const lsSetJourneys = (arr) => { try { localStorage.setItem(JOURNEYS_KEY, JSON.stringify(arr)); } catch {} };
+
+    // ... (Helpers de parsing conservés) ...
+    function normalizeSlotsAny(s){ s=s||{}; return { morning: s.morning||[], noon: s.noon||[], afternoon: s.afternoon||[], evening: s.evening||[] }; }
+    function deriveDays(j){ 
+        if(Array.isArray(j?.plan)) return j.plan.map((d,i)=>({slots:d.slots}));
+        return [{slots:normalizeSlotsAny(j?.slots)}]; // Fallback simple
+    }
+    function activitiesCount(j){
+        const days = deriveDays(j);
+        return days.reduce((acc,d)=>{
+            const s = d.slots||{};
+            const c = (arr)=>Array.isArray(arr)?arr.length:(arr?Object.values(arr).length:0);
+            return acc + c(s.morning) + c(s.noon) + c(s.afternoon) + c(s.evening);
+        },0);
+    }
+    function daysCount(j){ return Array.isArray(j?.plan) ? j.plan.length : 1; }
+    function metaText(j){
+      const d = daysCount(j);
+      const a = activitiesCount(j);
+      return (j.location ? j.location + " • " : "") + d + (d>1 ? " jours" : " jour") + " • " + a + (a>1 ? " activités" : " activité");
+    }
+    function pickCover(j){ return j?.cover || "/static/img/no-image.jpg"; }
+    function stashEditPayload(j){ try{ sessionStorage.setItem('wish_edit_id', String(j.id)); }catch{} }
+
+    async function loadJourneys(){
+      const listEl = document.getElementById("topicsList");
+      const emptyEl = document.getElementById("emptyState");
+      listEl.innerHTML = ""; emptyEl.style.display = "none";
+
+      const journeys = lsGetJourneys().sort((a,b)=> new Date(b?.updatedAt||0) - new Date(a?.updatedAt||0));
+      if (!journeys.length){ emptyEl.style.display="block"; return; }
+
+      for (const j of journeys){
+        const item = document.createElement("div"); item.className = "item";
+        item.innerHTML = `
+          <div class="left">
+            <div class="thumb" style="background-image:url('${pickCover(j)}')"></div>
+            <div class="meta">
+              <div class="name">${j.name || "Voyage sans titre"}</div>
+              <div class="desc">${metaText(j)}</div>
+            </div>
+          </div>
+          <div class="actions-right">
+            <button class="icon-btn edit-btn" title="Modifier">
+              <svg viewBox="0 0 24 24"><path d="M3 21l3.9-1 11.7-11.7a2.1 2.1 0 0 0 0-3l-1-1a2.1 2.1 0 0 0-3 0L3 16.1 3 21z"/><path d="M15 5l4 4"/></svg>
+            </button>
+            <button class="icon-btn delete-btn" title="Supprimer">
+              <svg viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M8 6v-2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
+            </button>
+          </div>
+        `;
+
+        item.querySelector('.edit-btn').addEventListener('click', (e)=>{
+          e.stopPropagation(); stashEditPayload(j);
+          window.location.href = `/makejourney?id=${encodeURIComponent(j.id)}&edit=1`;
+        });
+        
+        item.querySelector('.delete-btn').addEventListener('click', (e)=>{
+          e.stopPropagation();
+          if(confirm(`Supprimer « ${j.name||'Voyage'} » ?`)){
+             const arr = lsGetJourneys().filter(x=>String(x.id)!==String(j.id));
+             lsSetJourneys(arr);
+             loadJourneys();
+          }
+        });
+
+        item.addEventListener("click", () => window.location.href = `/journeys/view/${encodeURIComponent(j.id)}`);
+        listEl.appendChild(item);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        loadJourneys(); updateCounts(); renderPanels();
+    });
+  </script>
+</body>
+</html>

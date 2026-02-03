@@ -1,0 +1,242 @@
+{
+  "@id": "https://data.datatourisme.fr/5/0e5a34e0-ea41-362f-985e-50bfa6a932c8",
+  "dc:identifier": "261007541",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Location de vacances de Ria WETTERER"
+    ]
+  },
+  "allowedPersons": 4,
+  "creationDate": "2023-03-15",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/ae97b562-7ff6-3ceb-ac6e-66a4f34c986c",
+    "schema:legalName": "Office de tourisme du Grand Ried",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/f9be77db-d6c0-3a31-9fa8-638da3098074",
+      "schema:legalName": "Système d'informations touristique Alsace",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/b7047ecb-3f21-30ce-8612-ee37f5e32055",
+      "schema:email": [
+        "lucie.wetterer@gmail.com"
+      ],
+      "schema:legalName": "Location de vacances de Ria WETTERER",
+      "schema:telephone": [
+        "+33 6 64 77 67 73"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/b7047ecb-3f21-30ce-8612-ee37f5e32055",
+      "schema:email": [
+        "lucie.wetterer@gmail.com"
+      ],
+      "schema:legalName": "Location de vacances de Ria WETTERER",
+      "schema:telephone": [
+        "+33 6 64 77 67 73"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/0e3c773d-f65f-320c-9cee-9df622d4b164",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/9c272905-7d9b-30d8-8b15-f22e3cb60a4b",
+          "schema:addressLocality": "Daubensand",
+          "schema:postalCode": "67150",
+          "schema:streetAddress": [
+            "11 rue de l'Eglise"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:67086",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Daubensand"
+              ],
+              "pt": [
+                "Daubensand"
+              ],
+              "en": [
+                "Daubensand"
+              ],
+              "it": [
+                "Daubensand"
+              ],
+              "fr": [
+                "Daubensand"
+              ],
+              "nl": [
+                "Daubensand"
+              ],
+              "es": [
+                "Daubensand"
+              ]
+            },
+            "insee": "67086",
+            "isPartOfDepartment": {
+              "@id": "kb:France4467",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bas-Rhin"
+                ],
+                "pt": [
+                  "Bas-Rhin"
+                ],
+                "en": [
+                  "Bas-Rhin"
+                ],
+                "it": [
+                  "Bas-Rhin"
+                ],
+                "fr": [
+                  "Bas-Rhin"
+                ],
+                "nl": [
+                  "Bas-Rhin"
+                ],
+                "es": [
+                  "Bas-Rhin"
+                ]
+              },
+              "insee": "67",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/c6e5d027-0ba7-3f86-8baf-d746c60f83e4",
+        "schema:latitude": "48.3478284",
+        "schema:longitude": "7.7230993",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/ae97b562-7ff6-3ceb-ac6e-66a4f34c986c",
+      "schema:legalName": "Office de tourisme du Grand Ried",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-18",
+  "lastUpdateDatatourisme": "2025-07-22T07:45:58.334Z"
+}

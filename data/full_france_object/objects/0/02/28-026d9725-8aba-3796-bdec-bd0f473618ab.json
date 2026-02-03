@@ -1,0 +1,918 @@
+{
+  "@id": "https://data.datatourisme.fr/28/026d9725-8aba-3796-bdec-bd0f473618ab",
+  "dc:identifier": "HLOPIC002V50TYP1",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Etwa 10 km von Saint-Quentin entfernt empfängt Sie das Gîte de Manick in einer idyllischen Umgebung..."
+    ],
+    "en": [
+      "Located at about ten kilometers from Saint-Quentin, the Gîte de Manick welcomes you in a beautiful setting."
+    ],
+    "it": [
+      "Situato a circa 10 km da Saint-Quentin, il Gîte de Manick vi accoglie in un ambiente tranquillo."
+    ],
+    "fr": [
+      "Situé à une dizaine de kilomètres de Saint-Quentin, le Gîte de Manick vous accueille dans un cadre d..."
+    ],
+    "es": [
+      "Situado a unos 10 km de Saint-Quentin, el Gîte de Manick le acoge en un entorno tranquilo."
+    ],
+    "nl": [
+      "De Gîte de Manick ligt op ongeveer 10 km van Saint-Quentin en verwelkomt u in een rustige omgeving."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Gîte de Manick"
+    ]
+  },
+  "allowedPersons": 3,
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/17dad568-5c90-378c-b907-d87a88c5bbf8",
+    "schema:legalName": "SIM Hauts-de-France - OT du Saint-Quentinois",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/5463b4e3-2482-3579-a40a-47ba972f29d5",
+      "schema:legalName": "SIM Hauts-de-France",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/41c39bf9-6b96-30f1-8002-3ac6091f4678",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/5c699586-aede-343b-8634-bcf008b2253d",
+          "schema:addressLocality": "Séry-lès-Mézières",
+          "schema:postalCode": "02240",
+          "schema:streetAddress": [
+            "18 bis rue de Sénercy"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:02717",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Séry-lès-Mézières"
+              ],
+              "pt": [
+                "Séry-lès-Mézières"
+              ],
+              "en": [
+                "Séry-lès-Mézières"
+              ],
+              "it": [
+                "Séry-lès-Mézières"
+              ],
+              "fr": [
+                "Séry-lès-Mézières"
+              ],
+              "nl": [
+                "Séry-lès-Mézières"
+              ],
+              "es": [
+                "Séry-lès-Mézières"
+              ]
+            },
+            "insee": "02717",
+            "isPartOfDepartment": {
+              "@id": "kb:France3202",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aisne"
+                ],
+                "pt": [
+                  "Aisne"
+                ],
+                "en": [
+                  "Aisne"
+                ],
+                "it": [
+                  "Aisne"
+                ],
+                "fr": [
+                  "Aisne"
+                ],
+                "nl": [
+                  "Aisne"
+                ],
+                "es": [
+                  "Aisne"
+                ]
+              },
+              "insee": "02",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "thierry-dhaussy@orange.fr"
+      ],
+      "schema:legalName": "Hébergements locatifs",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.france-voyage.com/locations-vacances/location-sery-les-mezieres-129886.htm"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/41c39bf9-6b96-30f1-8002-3ac6091f4678",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/5c699586-aede-343b-8634-bcf008b2253d",
+          "schema:addressLocality": "Séry-lès-Mézières",
+          "schema:postalCode": "02240",
+          "schema:streetAddress": [
+            "18 bis rue de Sénercy"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:02717",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Séry-lès-Mézières"
+              ],
+              "pt": [
+                "Séry-lès-Mézières"
+              ],
+              "en": [
+                "Séry-lès-Mézières"
+              ],
+              "it": [
+                "Séry-lès-Mézières"
+              ],
+              "fr": [
+                "Séry-lès-Mézières"
+              ],
+              "nl": [
+                "Séry-lès-Mézières"
+              ],
+              "es": [
+                "Séry-lès-Mézières"
+              ]
+            },
+            "insee": "02717",
+            "isPartOfDepartment": {
+              "@id": "kb:France3202",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aisne"
+                ],
+                "pt": [
+                  "Aisne"
+                ],
+                "en": [
+                  "Aisne"
+                ],
+                "it": [
+                  "Aisne"
+                ],
+                "fr": [
+                  "Aisne"
+                ],
+                "nl": [
+                  "Aisne"
+                ],
+                "es": [
+                  "Aisne"
+                ]
+              },
+              "insee": "02",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "thierry-dhaussy@orange.fr"
+      ],
+      "schema:legalName": "Hébergements locatifs",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.france-voyage.com/locations-vacances/location-sery-les-mezieres-129886.htm"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/87b562e4-b961-3d6a-9653-a28c5eebde72",
+      "schema:email": [
+        "thierry-dhaussy@orange.fr"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.france-voyage.com/locations-vacances/location-sery-les-mezieres-129886.htm"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/2caf8b86-f5bf-3b10-860d-957c0be45f16",
+      "dc:description": {
+        "de": [
+          "Das Gîte de Manick liegt etwa 10 km von Saint-Quentin entfernt und empfängt Sie in einer außergewöhnlichen Umgebung, um Ihren Aufenthalt zu zweit zu einer unvergesslichen Erinnerung zu machen.\n\nDas Ferienhaus liegt im Herzen des Oise-Tals, inmitten einer grünen Natur, und bietet Ihnen die Möglichkeit, eine zeitlose Zeit zu verbringen. Sie werden vor Ort von allen Annehmlichkeiten profitieren, die Sie brauchen, um Ihre Batterien wieder aufzuladen.\n\nIm Erdgeschoss befindet sich eine voll ausgestattete Küche (Geschirrspüler, Mikrowelle, Kaffeemaschine usw.), die sich zu einem hellen Wohnzimmer hin öffnet. Sie haben Zugang zu einem kleinen privaten Innenhof, der ruhig und vor Blicken geschützt ist.\nIm Obergeschoss befindet sich ein kuscheliges Schlafzimmer, in dem Sie besondere Momente mit Ihrem Partner genießen können. Das schöne angrenzende Badezimmer ermöglicht Ihnen eine totale Entspannung.\n\nUnd da Thierry, Ihr Gastgeber, Ihren Aufenthalt noch schöner machen möchte, wartet der beheizte Innenpool nur auf Sie! Er befindet sich hinter der Glasfront der Küche und ist mit Liegestühlen ausgestattet, sodass Sie dem Alltag sofort entfliehen können, sobald Sie die Türschwelle überschritten haben.\n\nPacken Sie also Ihre Koffer, vergessen Sie Ihre bessere Hälfte nicht und verbringen Sie einen zeitlosen Aufenthalt im Gîte de Manick!"
+        ],
+        "en": [
+          "Located a dozen kilometers from Saint-Quentin, the Gîte de Manick welcomes you in an exceptional setting to make your romantic stay unforgettable.\n\nSituated in the heart of the Oise Valley, in a lush green setting, this gîte will give you a moment out of time. You'll enjoy all the comforts you need to recharge your batteries.\n\nOn the first floor, you'll find a fully-equipped kitchen (dishwasher, microwave, coffee maker, etc.) opening onto a bright living room with bay windows. These give access to a small, private courtyard, in a quiet, private setting.\nUpstairs, a cocooning bedroom is perfect for special moments with your other half. The en-suite bathroom is perfect for total relaxation.\n\nAnd since Thierry, your host, wants to make your stay even more magnificent, a covered, heated swimming pool is just waiting for you! Located behind the bay window in the kitchen and equipped with deckchairs, you'll be able to get away from it all as soon as you step through the door.\n\nSo don't wait any longer, pack your bags, don't forget your other half, and come and enjoy a timeless stay at Gîte de Manick!"
+        ],
+        "it": [
+          "Situato a una decina di chilometri da Saint-Quentin, il Gîte de Manick vi accoglie in un ambiente eccezionale per rendere indimenticabile la vostra vacanza romantica.\n\nSituato nel cuore della valle dell'Oise, in un ambiente verdeggiante, questo gîte vi regalerà un momento fuori dal tempo. Potrete godere di tutti i comfort necessari per fare il pieno di energia.\n\nAl piano terra, una cucina completamente attrezzata (lavastoviglie, microonde, macchina per il caffè, ecc.) si apre su un luminoso soggiorno con finestre a golfo. Da qui si accede a un piccolo cortile privato, tranquillo e non visibile.\nAl piano superiore, un'accogliente camera da letto è perfetta per trascorrere momenti di qualità con il vostro partner. Il bagno in camera è perfetto per un relax totale.\n\nE poiché Thierry, il vostro padrone di casa, vuole rendere il vostro soggiorno ancora più meraviglioso, una piscina coperta e riscaldata vi aspetta! Situata dietro il bovindo della cucina e dotata di lettini, vi permetterà di staccare la spina non appena varcherete la porta.\n\nQuindi non aspettate oltre, fate le valigie, non dimenticate la vostra dolce metà e venite a trascorrere un soggiorno senza tempo al Gîte de Manick!"
+        ],
+        "fr": [
+          "Situé à une dizaine de kilomètres de Saint-Quentin, le Gîte de Manick vous accueille dans un cadre d’exception pour faire de votre séjour en amoureux, un souvenir inoubliable.\n\nSitué en plein cœur de la vallée de l’Oise, dans une nature verdoyante, ce gîte vous permettra de passer un moment hors du temps. Vous profiterez sur place de tout le confort nécessaire afin de recharger les batteries.\n\nAu rez-de-chaussée, vous profiterez d’une cuisine tout équipée (lave-vaisselle, micro-ondes, cafetière…) ouverte sur un séjour lumineux grâce aux baies vitrées. Celles-ci vous donnent accès à une petite cour privatisée, au calme et à l’abri de tous regards.\nÀ l’étage, une chambre cocooning sera parfaite pour profiter de moments privilégiés avec votre moitié. Sa belle salle de bain attenante vous permettra une relaxation totale.\n\nEt puisque Thierry, votre hôte, veut rendre votre séjour encore plus magnifique une piscine couverte et chauffée n’attend que vous ! Située derrière la baie vitrée de la cuisine et équipée de transats, elle vous permettra une évasion immédiate à peine après avoir franchi le pas de la porte. \n\nAlors n’attendez plus, faîtes vos valises, n’oubliez pas votre moitié et venez passer un séjour hors du temps au Gîte de Manick !"
+        ],
+        "es": [
+          "Situado a unos diez kilómetros de Saint-Quentin, el Gîte de Manick le acoge en un marco excepcional para que su escapada romántica sea inolvidable.\n\nSituada en el corazón del valle del Oise, en un entorno de exuberante vegetación, esta casa rural le regalará un momento fuera del tiempo. Disfrutará de todas las comodidades necesarias para recargar las pilas.\n\nEn la planta baja, una cocina totalmente equipada (lavavajillas, microondas, cafetera, etc.) se abre a un luminoso salón con ventanales. Desde aquí se accede a un pequeño patio privado, tranquilo y fuera de las miradas.\nEn la planta superior, un acogedor dormitorio es perfecto para pasar buenos momentos con su pareja. El cuarto de baño es perfecto para relajarse.\n\nY como Thierry, su anfitrión, quiere que su estancia sea aún más agradable, le espera una piscina cubierta y climatizada Situada detrás del ventanal de la cocina y equipada con tumbonas, le permitirá desconectar desde el primer momento.\n\nNo espere más, haga las maletas, no olvide a su media naranja y venga a pasar una estancia eterna en la casa rural de Manick"
+        ],
+        "nl": [
+          "De Gîte de Manick ligt op ongeveer tien kilometer van Saint-Quentin en verwelkomt je in een uitzonderlijke omgeving voor een onvergetelijke romantische vakantie.\n\nGelegen in het hart van de Oise vallei, in een weelderige groene omgeving, zal deze gîte je een moment buiten de tijd geven. Je geniet er van alle comfort om nieuwe energie op te doen.\n\nOp de begane grond beschikt u over een volledig uitgeruste keuken (vaatwasser, magnetron, koffiezetapparaat, enz.) die uitkomt op een lichte woonkamer met erkers. Deze geven je toegang tot een kleine privébinnenplaats, die rustig en uit het zicht ligt.\nBoven is een gezellige slaapkamer perfect om tijd door te brengen met je wederhelft. De en-suite badkamer is perfect voor totale ontspanning.\n\nEn omdat Thierry, je gastheer, je verblijf nog aangenamer wil maken, ligt er een overdekt, verwarmd zwembad op je te wachten! Het ligt achter de erker in de keuken en is uitgerust met ligstoelen, zodat je er even helemaal tussenuit kunt zodra je binnenkomt.\n\nDus wacht niet langer, pak je koffers, vergeet je wederhelft niet en kom een tijdloos verblijf doorbrengen in Gîte de Manick!"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/202fcf68-df20-3579-bdbf-a819d4ed84ab",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/23151bd4-a423-3759-b071-ee79adcebc5a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2fec6a07-0e8c-3b92-8bac-73753edcdf02",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/58c620c7-b9a2-36e4-b335-0b53a81f4e83",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5c65ea65-e34f-3887-aaad-10e6c601af86",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7021e1ff-bc9e-3348-bacc-1eba6422dc17",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/79b51baa-1177-3f37-9a1e-568bfc663261",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/8b3b008a-e9e9-3b78-8ff0-a482e7107630",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d1d3f692-3bca-30ce-a151-51acb795d9ac",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ec56f4b4-4e1e-303a-9c8f-598a9444c31d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Etwa 10 km von Saint-Quentin entfernt empfängt Sie das Gîte de Manick in einer idyllischen Umgebung..."
+        ],
+        "en": [
+          "Located at about ten kilometers from Saint-Quentin, the Gîte de Manick welcomes you in a beautiful setting."
+        ],
+        "it": [
+          "Situato a circa 10 km da Saint-Quentin, il Gîte de Manick vi accoglie in un ambiente tranquillo."
+        ],
+        "fr": [
+          "Situé à une dizaine de kilomètres de Saint-Quentin, le Gîte de Manick vous accueille dans un cadre d..."
+        ],
+        "es": [
+          "Situado a unos 10 km de Saint-Quentin, el Gîte de Manick le acoge en un entorno tranquilo."
+        ],
+        "nl": [
+          "De Gîte de Manick ligt op ongeveer 10 km van Saint-Quentin en verwelkomt u in een rustige omgeving."
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/331e4d1d-88d9-f235-e768-22ec93979084",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "8BEYEK1M3J9X",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8ea87015-739c-79a4-b11b-37274807d53b",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "TK7Y3BD5HR76",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/098d98a6-69d2-32fa-befd-38d9a7e17094",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/0fcb0871-0af0-36e9-b213-0b78ebf2963e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2d3497ec-bfa7-348f-9f01-14792e707ab5",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5731a3aa-b9a7-388a-aff5-bc6b3dc52146",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6a4a1a73-0404-3688-9f54-5927a073c53a",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/d01c7476-9e0b-3093-ad96-913793adc151",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/5c699586-aede-343b-8634-bcf008b2253d",
+          "schema:addressLocality": "Séry-lès-Mézières",
+          "schema:postalCode": "02240",
+          "schema:streetAddress": [
+            "18 bis rue de Sénercy"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:02717",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Séry-lès-Mézières"
+              ],
+              "pt": [
+                "Séry-lès-Mézières"
+              ],
+              "en": [
+                "Séry-lès-Mézières"
+              ],
+              "it": [
+                "Séry-lès-Mézières"
+              ],
+              "fr": [
+                "Séry-lès-Mézières"
+              ],
+              "nl": [
+                "Séry-lès-Mézières"
+              ],
+              "es": [
+                "Séry-lès-Mézières"
+              ]
+            },
+            "insee": "02717",
+            "isPartOfDepartment": {
+              "@id": "kb:France3202",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aisne"
+                ],
+                "pt": [
+                  "Aisne"
+                ],
+                "en": [
+                  "Aisne"
+                ],
+                "it": [
+                  "Aisne"
+                ],
+                "fr": [
+                  "Aisne"
+                ],
+                "nl": [
+                  "Aisne"
+                ],
+                "es": [
+                  "Aisne"
+                ]
+              },
+              "insee": "02",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/a15d8fb5-7d75-3438-9b84-0b37d80dee94",
+        "schema:latitude": "49.773174",
+        "schema:longitude": "3.41893",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": false
+    }
+  ],
+  "lastUpdate": "2025-04-23",
+  "lastUpdateDatatourisme": "2025-04-24T02:13:23.293Z"
+}

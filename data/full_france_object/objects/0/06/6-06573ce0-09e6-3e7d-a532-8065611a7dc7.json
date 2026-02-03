@@ -1,0 +1,930 @@
+{
+  "@id": "https://data.datatourisme.fr/6/06573ce0-09e6-3e7d-a532-8065611a7dc7",
+  "dc:identifier": "HLOBOU000V50RHS3",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Spa Repaire"
+    ],
+    "en": [
+      "Spa Repaire"
+    ],
+    "fr": [
+      "Spa Repaire"
+    ]
+  },
+  "allowedPersons": 5,
+  "availableLanguage": [
+    "en",
+    "fr"
+  ],
+  "creationDate": "2024-02-09",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/d811a049-85c9-38a2-96c5-2ffcbf546e3c",
+    "dc:identifier": "bd46a0b3-9208-4af6-94d8-bd05a6bd4836",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/2702b6b2-d958-3015-bd3e-15535a38e533",
+        "schema:addressLocality": "Belfort",
+        "schema:postalCode": "90000",
+        "schema:streetAddress": [
+          "2 place de l'Arsenal"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:90010",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Belfort"
+            ],
+            "pt": [
+              "Belfort"
+            ],
+            "en": [
+              "Belfort"
+            ],
+            "it": [
+              "Belfort"
+            ],
+            "fr": [
+              "Belfort"
+            ],
+            "nl": [
+              "Belfort"
+            ],
+            "es": [
+              "Belfort"
+            ]
+          },
+          "insee": "90010",
+          "isPartOfDepartment": {
+            "@id": "kb:France2790",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Territoire de Belfort"
+              ],
+              "pt": [
+                "Territoire de Belfort"
+              ],
+              "en": [
+                "Territoire de Belfort"
+              ],
+              "it": [
+                "Territoire de Belfort"
+              ],
+              "fr": [
+                "Territoire de Belfort"
+              ],
+              "nl": [
+                "Territoire de Belfort"
+              ],
+              "es": [
+                "Territoire de Belfort"
+              ]
+            },
+            "insee": "90",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "accueil@belfort-tourisme.com"
+    ],
+    "schema:legalName": "BELFORT TOURISME (COORDINATION DECIBELLES DATA)",
+    "schema:telephone": [
+      "+33 3 84 55 90 90"
+    ],
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.belfort-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/e64e7f40-680f-33ac-a39e-86a1a9f3c16b",
+      "schema:email": [
+        "info@cabanesdesgrandsreflets.com"
+      ],
+      "schema:telephone": [
+        "+33 3 84 77 00 10"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.cabanesdesgrandsreflets.com/produit/cabane-arbres-repaire/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/e64e7f40-680f-33ac-a39e-86a1a9f3c16b",
+      "schema:email": [
+        "info@cabanesdesgrandsreflets.com"
+      ],
+      "schema:telephone": [
+        "+33 3 84 77 00 10"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.cabanesdesgrandsreflets.com/produit/cabane-arbres-repaire/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/3d9e7d2d-7cf7-3b2d-aeb3-432d1e06f2b5",
+      "dc:description": {
+        "de": [
+          "Das ideale Versteck, um einen Aufenthalt mit der Familie oder mit Freunden zu verbringen!\n\nWenn Sie oben auf der Treppe zu Ihrem Baumhaus ankommen, müssen Sie zwischen den beiden riesigen Zimmermännern der Buche, die Sie empfängt, hindurchschlüpfen, um auf die Terrasse Ihres Baumhauses zu gelangen. Sie befindet sich direkt am Wasser und bietet Ihnen einen atemberaubenden Blick auf den Teich und den umliegenden Wald.\n\nSobald Sie im Inneren sind, werden Sie sich sicherlich fragen, wo die Betten der Kinder sind ... schauen Sie sich um, eine Leiter im Wohnzimmer führt Sie auf eine geheime Mezzanine, die junge Abenteurer begeistern wird!\n\nGönnen Sie sich auf der Terrasse eine Pause zum Abschalten in Ihrem beheizten nordischen Bad, das von Altipure angeboten wird und dessen Wasser dank der Ultra Bio Ozone®-Technologie gefiltert und ohne Chemikalien behandelt wird.\n\nDiese Hütte ist mit Trockentoiletten, einem 10-Liter-Wasservorrat und einem beheizten nordischen Bad ausgestattet. Unsere individuellen und voll ausgestatteten Badezimmer befinden sich in der Öko-Hütte auf der Ebene des Empfangsgebäudes und sind rund um die Uhr zugänglich.\n\nMachen Sie das Beste aus Ihrem ungewöhnlichen Abenteuer und schmücken Sie Ihren Aufenthalt mit unseren Zusatzleistungen.\nBereiten Sie Ihre Nacht in den Bäumen bestmöglich vor, indem Sie die praktischen Infos und die verschiedenen Fragen konsultieren.\n\nDas Frühstück ist in unseren Preisen inbegriffen."
+        ],
+        "en": [
+          "The ideal place to spend a holiday with family or friends!\n\nOnce you reach the top of the staircase leading to your tree house, you'll have to slip between the 2 huge carpenters of the Beech tree that welcomes you to access the terrace of your tree house. Situated on the water's edge, you'll have an uninterrupted view of the pond and surrounding forest.\n\nOnce inside, you'll probably wonder where the children's beds are... look around, a ladder in the living room gives you access to a secret mezzanine that will delight young adventurers!\n\nOn the terrace, treat yourself to a relaxing break in the heated Nordic bath offered by Altipure, whose water is filtered and treated without chemicals thanks to Ultra Bio Ozone® technology.\n\nThis cabin is equipped with dry toilets, a 10-litre water tank and a heated Nordic bath. Our fully-equipped individual bathrooms are located in the eco-hut in the reception building and are accessible 24 hours a day.\n\nMake the most of your unusual adventure and enhance your stay with our additional services.\nPrepare for your night in the trees by consulting the practical information and various questions.\n\nBreakfast is included in our prices."
+        ],
+        "it": [
+          "Il luogo ideale per trascorrere una vacanza con la famiglia o con gli amici!\n\nUna volta raggiunta la cima della scala che conduce alla vostra casa sull'albero, dovrete infilarvi tra i due enormi carpentieri del faggio che vi accoglie per accedere alla terrazza della vostra casa sull'albero. Situata in riva al mare, avrete una vista ininterrotta sul laghetto e sulla foresta circostante.\n\nUna volta entrati, vi chiederete dove siano i letti dei bambini: guardatevi intorno, una scala nel soggiorno vi dà accesso a un soppalco segreto che piacerà ai piccoli avventurieri!\n\nSulla terrazza, fate una pausa per rilassarvi nella vasca nordica riscaldata fornita da Altipure, la cui acqua è filtrata e trattata senza sostanze chimiche grazie alla tecnologia Ultra Bio Ozone®.\n\nQuesta cabina è dotata di servizi igienici a secco, di un serbatoio d'acqua da 10 litri e di una vasca nordica riscaldata. I nostri bagni individuali completamente attrezzati si trovano nell'eco-capanna nell'edificio della reception e sono accessibili 24 ore al giorno.\n\nApprofittate della vostra insolita avventura e arricchite il vostro soggiorno con i nostri servizi aggiuntivi.\nPreparatevi alla vostra notte tra gli alberi consultando le informazioni pratiche e le altre domande.\n\nLa colazione è inclusa nei nostri prezzi."
+        ],
+        "fr": [
+          "Le repaire idéal pour passer un séjour en famille ou entre amis !\n\nArrivez en haut de l’escalier qui mène à votre cabane dans les arbres, vous devrez vous glisser entre les 2 énormes charpentières du Hêtre qui vous accueille pour accéder à la terrasse de votre Cabane. Située au bord de l’eau, elle vous offrira une vue imprenable sur l’étang et la forêt environnante.\n\nUne fois à l’intérieur, vous vous demanderez certainement ou sont les lits des enfants… regardez autour de vous, une échelle dans le salon vous donne accès à une mezzanine secrète qui ravira les jeunes aventuriers !\n\nSur la terrasse, accordez-vous une pause de déconnexion dans votre bain nordique chauffé proposé par Altipure dont l’eau est filtrée et traitée sans produits chimiques grâce à la technologie Ultra Bio Ozone®.\n\nCette cabane est équipée de toilettes sèches, d’une réserve d’eau de 10L et d’un bain nordique chauffé. Nos salles de bain individuelles et toutes équipées se trouvent dans l’éco-hutte au niveau du bâtiment d’accueil et sont accessibles 24h/24.\n\nProfitez de votre aventure insolite au maximum et agrémentez votre séjour de nos prestations complémentaires.\nPréparez au mieux votre nuit dans les arbres en consultant les infos pratiques et les questions diverses.\n\nLe petit déjeuner est inclus dans nos tarifs."
+        ],
+        "es": [
+          "El lugar ideal para pasar unas vacaciones en familia o con amigos\n\nAl llegar a lo alto de la escalera que conduce a su casa del árbol, tendrá que apretujarse entre las 2 enormes carpinterías del Haya que le da la bienvenida para acceder a la terraza de su casa del árbol. Situada al borde del agua, tendrá una vista ininterrumpida del estanque y del bosque circundante.\n\nUna vez dentro, te preguntarás dónde están las camas de los niños... Echa un vistazo, ¡una escalera en el salón te da acceso a un altillo secreto que encantará a los jóvenes aventureros!\n\nEn la terraza, tómese un respiro para relajarse en la bañera nórdica climatizada proporcionada por Altipure, cuya agua está filtrada y tratada sin productos químicos mediante la tecnología Ultra Bio Ozone®.\n\nEsta cabina está equipada con inodoros secos, un depósito de agua de 10 litros y una bañera nórdica climatizada. Nuestros baños individuales, totalmente equipados, se encuentran en la cabaña ecológica del edificio de recepción y son accesibles las 24 horas del día.\n\nAproveche al máximo su insólita aventura y mejore su estancia con nuestros servicios adicionales.\nPrepárese para su noche en los árboles consultando la información práctica y otras preguntas.\n\nEl desayuno está incluido en nuestros precios."
+        ],
+        "nl": [
+          "De ideale plek om een vakantie door te brengen met familie of vrienden!\n\nBovenaan de trap die naar je boomhut leidt, moet je je tussen de 2 enorme timmerbomen van de beuk wringen die je verwelkomt om op het terras van je boomhut te komen. Gelegen aan het water heb je een ononderbroken uitzicht op de vijver en het omringende bos.\n\nAls je eenmaal binnen bent, vraag je je af waar de kinderbedjes zijn? Kijk maar eens rond, een ladder in de woonkamer geeft je toegang tot een geheime mezzanine waar jonge avonturiers dol op zullen zijn!\n\nOp het terras kunt u ontspannen in het verwarmde Scandinavische bad van Altipure, waarvan het water wordt gefilterd en behandeld zonder chemicaliën met behulp van Ultra Bio Ozone®-technologie.\n\nDeze cabine is uitgerust met droge toiletten, een watertank van 10 liter en een verwarmd Scandinavisch bad. Onze individuele, volledig uitgeruste badkamers bevinden zich in de eco-hut in het receptiegebouw en zijn 24 uur per dag toegankelijk.\n\nHaal het meeste uit je ongewone avontuur en verrijk je verblijf met onze extra diensten.\nBereid je voor op je nacht in de bomen door de praktische informatie en andere vragen te raadplegen.\n\nOntbijt is inbegrepen in onze prijzen."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/49698c74-f14e-3bec-ab4e-1e63e7489872",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5aece497-e3ae-3a71-af71-47d5b12527ac",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f907cb54-21be-3e99-9f00-620acb2ec3b2",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/2bf797fb-90bd-3c21-a18c-c83fd2017633",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:ChargingStation",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Ladestation für Elektrofahrzeuge"
+            ],
+            "pt": [
+              "Terminal de carregamento de veículos elétricos"
+            ],
+            "en": [
+              "Charging station"
+            ],
+            "it": [
+              "Terminale di ricarica per veicoli elettrici"
+            ],
+            "fr": [
+              "Borne de charge véhicule électrique"
+            ],
+            "nl": [
+              "Laadpaal elektrische auto"
+            ],
+            "es": [
+              "Estación de carga de vehículos eléctricos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/86d82df5-9db9-389f-aabd-790c58b085fb",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:BoulesPitch",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Kegelbahn, Pétanque-Platz"
+            ],
+            "pt": [
+              "Campo de jogos de bola, terreno de petanca"
+            ],
+            "en": [
+              "Boules pitch"
+            ],
+            "it": [
+              "Bocciodromo, campo da bocce"
+            ],
+            "fr": [
+              "Boulodrome, terrain de pétanque"
+            ],
+            "es": [
+              "Pista de petanca"
+            ],
+            "nl": [
+              "Jeu de boulesbaan"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/99b233b3-c581-300d-bd3f-9a66cbd975c9",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a5f5bebc-cbb2-3ef6-be00-10e80b3f2ac9",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Jacuzzi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Spa, Whirlpool, Jacuzzi"
+            ],
+            "pt": [
+              "Estância termal, banheira de hidromassagem, jacuzzi"
+            ],
+            "en": [
+              "Spa, jacuzzi or outdoor jacuzzi"
+            ],
+            "it": [
+              "Spa, idromassaggio, jacuzzi"
+            ],
+            "fr": [
+              "Spa, bain à remous, jacuzzi"
+            ],
+            "nl": [
+              "Spa, bubbelbad, jacuzzi"
+            ],
+            "es": [
+              "Spa, bañera de hidromasaje, jacuzzi"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b1d31810-f1f7-34f9-8f68-0ed5a6fa6993",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:ShopsFirstNeed",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschäfte für den Grundbedarf"
+            ],
+            "pt": [
+              "Comércio de primeira necessidade"
+            ],
+            "en": [
+              "Shops first need"
+            ],
+            "it": [
+              "Negozi prima necessità"
+            ],
+            "fr": [
+              "Commerces 1ère nécessité"
+            ],
+            "nl": [
+              "Winkels voor eerste levensbehoeften"
+            ],
+            "es": [
+              "Comercio de primera necesidad"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e8e7119a-e6f4-369d-a244-4bb5ba4f336b",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Heating",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Heizen"
+            ],
+            "pt": [
+              "Aquecimento"
+            ],
+            "en": [
+              "Heating"
+            ],
+            "it": [
+              "Riscaldamento"
+            ],
+            "fr": [
+              "Chauffage"
+            ],
+            "nl": [
+              "Verwarming"
+            ],
+            "es": [
+              "Climatización"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef2d7794-2aa6-3c88-a672-d20e3cc76cc7",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SheetsAndTowels",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bettwäsche und Handtücher"
+            ],
+            "pt": [
+              "Lençóis e toalhas"
+            ],
+            "en": [
+              "Sheets and towels"
+            ],
+            "it": [
+              "Lenzuola e biancheria"
+            ],
+            "fr": [
+              "Draps et linges"
+            ],
+            "es": [
+              "Sábanas y ropa de cama"
+            ],
+            "nl": [
+              "Beddengoed en handdoeken"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/3f8fb45b-5428-3d1f-ba8f-5b3654e5a761",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/9d76e98a-e5d7-3c4a-add3-d4bb292721de",
+          "schema:addressLocality": "Joncherey",
+          "schema:postalCode": "90100",
+          "schema:streetAddress": [
+            "Lieu-dit Étang du Verchat"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:90056",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Joncherey"
+              ],
+              "pt": [
+                "Joncherey"
+              ],
+              "en": [
+                "Joncherey"
+              ],
+              "it": [
+                "Joncherey"
+              ],
+              "fr": [
+                "Joncherey"
+              ],
+              "nl": [
+                "Joncherey"
+              ],
+              "es": [
+                "Joncherey"
+              ]
+            },
+            "insee": "90056",
+            "isPartOfDepartment": {
+              "@id": "kb:France2790",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Territoire de Belfort"
+                ],
+                "pt": [
+                  "Territoire de Belfort"
+                ],
+                "en": [
+                  "Territoire de Belfort"
+                ],
+                "it": [
+                  "Territoire de Belfort"
+                ],
+                "fr": [
+                  "Territoire de Belfort"
+                ],
+                "nl": [
+                  "Territoire de Belfort"
+                ],
+                "es": [
+                  "Territoire de Belfort"
+                ]
+              },
+              "insee": "90",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/894bbd9c-cd0c-36ea-ba25-6d4605c5e6e8",
+        "schema:latitude": "47.54135",
+        "schema:longitude": "7.01891",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-12-31",
+  "lastUpdateDatatourisme": "2025-02-07T00:28:25.505Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/cfdffde9-b848-365d-a6d8-6c7597ec4030",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

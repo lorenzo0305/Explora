@@ -1,0 +1,875 @@
+{
+  "@id": "https://data.datatourisme.fr/31/0c056ce6-9f92-3526-837d-2abff430b040",
+  "dc:identifier": "TFO416403419393",
+  "@type": [
+    "olo:OrderedList",
+    "PointOfInterest",
+    "Tour",
+    "WalkingTour"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Die prächtige Landschaft der Monts du Lévézou entfaltet sich vor Ihren Augen auf diesem Rundweg, der Sie auf den Buschpfaden des Massivs, durch die Weite der Causse und die grünen Wälder führt"
+    ],
+    "en": [
+      "The sumptuous landscape of the Lévézou mountains unfolds before your eyes as you follow this loop through the bushy paths of the massif, across the expanse of the causse and the green woods"
+    ],
+    "it": [
+      "Il sontuoso paesaggio delle montagne di Lévézou si dispiega davanti ai vostri occhi seguendo questo anello attraverso i sentieri cespugliosi del massiccio, la distesa di causse e i verdi boschi"
+    ],
+    "fr": [
+      "Le somptueux paysage des monts du Lévézou se déploie sous vos regards au fil de cette boucle qui vous entraîne sur les chemins buissonniers du massif, à travers l’étendue du causse et les bois verdoyants"
+    ],
+    "nl": [
+      "Het weelderige landschap van de bergen van de Lévézou ontvouwt zich voor uw ogen als u deze lus volgt door de bosrijke paden van het massief, over de uitgestrektheid van de causse en de groene bossen"
+    ],
+    "es": [
+      "El suntuoso paisaje de las montañas de Lévézou se despliega ante sus ojos mientras sigue este bucle a través de los caminos de arbustos del macizo, a través de la extensión del causse y los bosques verdes"
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Randonnée \" Tour des Horizons\""
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/db224e7a-611f-379d-b03d-1cb615389a8d",
+    "schema:legalName": "HIT Aveyron (ADAT Aveyron)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/66be3cfa-8d5c-34e7-87b1-87e1705c3fc4",
+      "schema:email": [
+        "webmaster@tourisme-aveyron.com"
+      ],
+      "schema:legalName": "ADT Aveyron",
+      "schema:telephone": [
+        "+33 5 65 75 40 12"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-aveyron.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/a14bc6e0-4744-30a3-82cb-5ee0411cd62c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/378f00ae-a1a6-3f88-9d95-1a2bc68e63c7",
+          "schema:addressLocality": "Pont-de-Salars",
+          "schema:postalCode": "12290",
+          "schema:streetAddress": [
+            "Place de la Rivière"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12185",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Pont-de-Salars"
+              ],
+              "pt": [
+                "Pont-de-Salars"
+              ],
+              "en": [
+                "Pont-de-Salars"
+              ],
+              "it": [
+                "Pont-de-Salars"
+              ],
+              "fr": [
+                "Pont-de-Salars"
+              ],
+              "nl": [
+                "Pont-de-Salars"
+              ],
+              "es": [
+                "Pont-de-Salars"
+              ]
+            },
+            "insee": "12185",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "contact@levezou-aveyron.com"
+      ],
+      "schema:legalName": "Office de Tourisme Pareloup Lévézou",
+      "schema:telephone": [
+        "+33 5 65 46 89 90"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.facebook.com/parelouplevezouaveyron",
+        "https://www.levezou-aveyron.com/"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ceb87250-0005-3a97-bc2a-a5b73431151c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/ad9a4eea-be9c-3a1c-ac4d-0fab828d6850",
+          "schema:addressLocality": "Saint-Laurent-de-Lévézou",
+          "schema:postalCode": "12620",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12236",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Laurent-de-Lévézou"
+              ],
+              "pt": [
+                "Saint-Laurent-de-Lévézou"
+              ],
+              "en": [
+                "Saint-Laurent-de-Lévézou"
+              ],
+              "it": [
+                "Saint-Laurent-de-Lévézou"
+              ],
+              "fr": [
+                "Saint-Laurent-de-Lévézou"
+              ],
+              "nl": [
+                "Saint-Laurent-de-Lévézou"
+              ],
+              "es": [
+                "Saint-Laurent-de-Lévézou"
+              ]
+            },
+            "insee": "12236",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:legalName": "Randonnée   Tour des Horizons",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/b8c64564-f11d-3ab7-9cb3-b9d19a6c991a",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/58ae6f5c-2e27-334c-a769-c907a0d613a0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7cbf1454-505c-3680-b952-64f155997cb7",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a4dba757-5600-3d14-88b3-e797c2e69dd8",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a5f6da69-f283-3de8-b355-05c841920f65",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/dadc3952-9628-33e4-ac14-01e747449bee",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Die prächtige Landschaft der Monts du Lévézou entfaltet sich vor Ihren Augen auf diesem Rundweg, der Sie auf den Buschpfaden des Massivs, durch die Weite der Causse und die grünen Wälder führt"
+        ],
+        "en": [
+          "The sumptuous landscape of the Lévézou mountains unfolds before your eyes as you follow this loop through the bushy paths of the massif, across the expanse of the causse and the green woods"
+        ],
+        "it": [
+          "Il sontuoso paesaggio delle montagne di Lévézou si dispiega davanti ai vostri occhi seguendo questo anello attraverso i sentieri cespugliosi del massiccio, la distesa di causse e i verdi boschi"
+        ],
+        "fr": [
+          "Le somptueux paysage des monts du Lévézou se déploie sous vos regards au fil de cette boucle qui vous entraîne sur les chemins buissonniers du massif, à travers l’étendue du causse et les bois verdoyants"
+        ],
+        "nl": [
+          "Het weelderige landschap van de bergen van de Lévézou ontvouwt zich voor uw ogen als u deze lus volgt door de bosrijke paden van het massief, over de uitgestrektheid van de causse en de groene bossen"
+        ],
+        "es": [
+          "El suntuoso paisaje de las montañas de Lévézou se despliega ante sus ojos mientras sigue este bucle a través de los caminos de arbustos del macizo, a través de la extensión del causse y los bosques verdes"
+        ]
+      }
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/7eb3d1fa-32ec-3499-8d96-d4d097a29396",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/a8c583ef-2611-39c1-a978-769bef554e79",
+          "ebucore:comments": {
+            "fr": [
+              "Randonnée \" Tour des Horizons\""
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Randonnée \" Tour des Horizons\""
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "OFFICE DE TOURISME DE PARELOUP LEVEZOU"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/c6501614-df8d-3bf9-87ae-c1870a0f4a9f",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/804/images/2711_1c19af7c-b7e4-4622-9a32-48476489cf47/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/7eb3d1fa-32ec-3499-8d96-d4d097a29396",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/a8c583ef-2611-39c1-a978-769bef554e79",
+          "ebucore:comments": {
+            "fr": [
+              "Randonnée \" Tour des Horizons\""
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Randonnée \" Tour des Horizons\""
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "OFFICE DE TOURISME DE PARELOUP LEVEZOU"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/c6501614-df8d-3bf9-87ae-c1870a0f4a9f",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/804/images/2711_1c19af7c-b7e4-4622-9a32-48476489cf47/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/29a7fb77-a6d7-3651-a272-24562ff9ef40",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6eea827f-7066-3390-b9ed-f4819208e42c",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b4a5e3be-483a-3459-aacc-1543c8638eb5",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c8dbe795-2689-38d1-82c3-1c3a1068bf7f",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cb9a593c-743e-39f3-8a84-d3a962cbe0a3",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/cfa6c0c7-52ea-3df7-a141-0058e5d7fc8d",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/ad9a4eea-be9c-3a1c-ac4d-0fab828d6850",
+          "schema:addressLocality": "Saint-Laurent-de-Lévézou",
+          "schema:postalCode": "12620",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12236",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Laurent-de-Lévézou"
+              ],
+              "pt": [
+                "Saint-Laurent-de-Lévézou"
+              ],
+              "en": [
+                "Saint-Laurent-de-Lévézou"
+              ],
+              "it": [
+                "Saint-Laurent-de-Lévézou"
+              ],
+              "fr": [
+                "Saint-Laurent-de-Lévézou"
+              ],
+              "nl": [
+                "Saint-Laurent-de-Lévézou"
+              ],
+              "es": [
+                "Saint-Laurent-de-Lévézou"
+              ]
+            },
+            "insee": "12236",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/e9a61852-6c15-30cf-9c26-8365c6194d2e",
+        "schema:latitude": "44.208",
+        "schema:longitude": "2.95912917",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2021-03-12",
+  "lastUpdateDatatourisme": "2025-05-07T12:20:20.1Z"
+}

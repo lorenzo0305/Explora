@@ -1,0 +1,451 @@
+{
+  "@id": "https://data.datatourisme.fr/15/099dd255-e612-33c9-8943-fba9544465bc",
+  "dc:identifier": "HLOCEN037V50CS4V",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Der Mandelgarten"
+    ],
+    "en": [
+      "The almond garden"
+    ],
+    "it": [
+      "Il giardino dei mandorli"
+    ],
+    "fr": [
+      "Le jardin des amandiers"
+    ],
+    "es": [
+      "El jardín de almendros"
+    ],
+    "nl": [
+      "De amandeltuin"
+    ]
+  },
+  "allowedPersons": 2,
+  "availableLanguage": [
+    "en",
+    "fr"
+  ],
+  "creationDate": "2018-03-27",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/15/64078973-b34c-317a-af2a-c1bdc034aab4",
+    "dc:identifier": "eb1e0a80-0eb6-4915-9983-2e9105b7d77c",
+    "schema:legalName": "Tours Val de Loire Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/bba35b4d-022c-3fa7-90a3-07eba818e3a5",
+      "schema:legalName": "SIT Centre-Val de Loire",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/dbdcf090-390c-333d-adec-34268baeb3e2",
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://unbeaujour.voyage/"
+      ]
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/0a27152b-0b8f-a1d5-325c-0bf7cc0dc6ff",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "NR1HW9KY668G",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/25ea30c8-8b56-3426-9ba7-e1b2eead5ee6",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:DailyHousekeeping",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Täglicher Haushalt"
+            ],
+            "pt": [
+              "Limpeza quotidiana"
+            ],
+            "en": [
+              "Daily housekeeping"
+            ],
+            "it": [
+              "Pulizia quotidiana"
+            ],
+            "fr": [
+              "Ménage quotidien"
+            ],
+            "es": [
+              "Tareas del hogar diarias"
+            ],
+            "nl": [
+              "Dagelijkse schoonmaak"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "internetAccess": true
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/7724dbf0-7649-358b-be17-1db1b66a240f",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3etoiles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Sterne"
+          ],
+          "pt": [
+            "3 estrelas"
+          ],
+          "en": [
+            "3 Stars"
+          ],
+          "it": [
+            "3 stelle"
+          ],
+          "fr": [
+            "3 étoiles"
+          ],
+          "nl": [
+            "3 sterren"
+          ],
+          "es": [
+            "3 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/d303b05f-4346-3237-b235-e2cbaa39e70b",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/70b1e5af-e7ab-38c3-a3ab-3e787a02d0f7",
+          "schema:addressLocality": "Tours",
+          "schema:postalCode": "37000",
+          "schema:streetAddress": [
+            "16 rue des amandiers"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:37261",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Tours"
+              ],
+              "pt": [
+                "Tours"
+              ],
+              "en": [
+                "Tours"
+              ],
+              "it": [
+                "Tours"
+              ],
+              "fr": [
+                "Tours"
+              ],
+              "nl": [
+                "Tours"
+              ],
+              "es": [
+                "Tours"
+              ]
+            },
+            "insee": "37261",
+            "isPartOfDepartment": {
+              "@id": "kb:France2437",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Indre-et-Loire"
+                ],
+                "pt": [
+                  "Indre-et-Loire"
+                ],
+                "en": [
+                  "Indre-et-Loire"
+                ],
+                "it": [
+                  "Indre-et-Loire"
+                ],
+                "fr": [
+                  "Indre-et-Loire"
+                ],
+                "nl": [
+                  "Indre-et-Loire"
+                ],
+                "es": [
+                  "Indre-et-Loire"
+                ]
+              },
+              "insee": "37",
+              "isPartOfRegion": {
+                "@id": "kb:France24",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Centre-Val de Loire"
+                  ],
+                  "pt": [
+                    "Centre-Val de Loire"
+                  ],
+                  "en": [
+                    "Centre-Val de Loire"
+                  ],
+                  "it": [
+                    "Centre-Val de Loire"
+                  ],
+                  "fr": [
+                    "Centre-Val de Loire"
+                  ],
+                  "nl": [
+                    "Centre-Val de Loire"
+                  ],
+                  "es": [
+                    "Centre-Val de Loire"
+                  ]
+                },
+                "insee": "24",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/fad4d077-03a5-3d57-869e-0b7885b0e80d",
+        "schema:latitude": "47.3965233",
+        "schema:longitude": "0.691745",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "internetAccess": true
+    }
+  ],
+  "lastUpdate": "2025-04-14",
+  "lastUpdateDatatourisme": "2025-04-15T03:13:53.341Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/46a98b43-9896-37d7-be71-ce1979551c2b",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Paypal",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Paypal"
+            ],
+            "pt": [
+              "PayPal"
+            ],
+            "en": [
+              "Paypal"
+            ],
+            "it": [
+              "Paypal"
+            ],
+            "fr": [
+              "Paypal"
+            ],
+            "nl": [
+              "Paypal"
+            ],
+            "es": [
+              "PayPal"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "reducedMobilityAccess": false
+}

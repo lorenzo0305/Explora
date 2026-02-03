@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UI + Fonctions (intégration sans modifier le visuel)</title>
+  <style>
+    html,body{background:#0b0b0b;margin:0;padding:24px;display:flex;align-items:flex-start;justify-content:center;font-family:system-ui,-apple-system,Segoe UI,Roboto}
+  </style>
+</head>
+<body>
+<div style="width: 390px; height: 852px; position: relative; border-radius: 20px">
+  <div style="width: 390px; padding-top: 112px; padding-bottom: 104px; padding-left: 16px; padding-right: 16px; left: 0px; top: 0px; position: absolute; background: #190028; border-radius: 20px; flex-direction: column; justify-content: center; align-items: center; gap: 16px; display: inline-flex">
+    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+      <div style="align-self: stretch; padding-top: 8px; padding-bottom: 8px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+        <div style="align-self: stretch; height: 100px; padding-top: 16px; padding-bottom: 16px; background: rgba(255, 96, 0, 0.15); border-radius: 10px; outline: 0.50px #FF6000 solid; outline-offset: -0.25px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+          <div style="text-box-trim: trim-both; text-box-edge: cap alphabetic; justify-content: center; display: flex; flex-direction: column; color: #FF6000; font-size: 30px; font-family: Poppins; font-weight: 250; text-transform: capitalize; word-wrap: break-word">+ photos</div>
+        </div>
+        <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+          <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 248px; display: inline-flex">
+            <div style="text-box-trim: trim-both; text-box-edge: cap alphabetic; justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 30px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Titre</div>
+            <div data-property-1="en attente" style="width: 24px; height: 24px; position: relative; overflow: hidden">
+              <div style="width: 24px; height: 24px; left: 0px; top: 0px; position: absolute"></div>
+              <div style="width: 14px; height: 17px; left: 5px; top: 3px; position: absolute; background: #FF6000"></div>
+            </div>
+          </div>
+          <div style="justify-content: center; display: flex; flex-direction: column; color: rgba(249, 240, 247, 0.80); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Ville, lieux...</div>
+          <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+            <div style="justify-content: flex-start; align-items: center; display: flex">
+              <div style="width: 29.35px; height: 29.35px; position: relative; overflow: hidden">
+                <div style="width: 29.35px; height: 29.35px; left: 0px; top: 0px; position: absolute"></div>
+                <div style="width: 26.90px; height: 17.12px; left: 1.22px; top: 6.11px; position: absolute; background: #FF6000"></div>
+              </div>
+              <div style="width: 29.35px; height: 29.35px; position: relative; overflow: hidden">
+                <div style="width: 29.35px; height: 29.35px; left: 0px; top: 0px; position: absolute"></div>
+                <div style="width: 26.90px; height: 17.12px; left: 1.22px; top: 6.11px; position: absolute; background: #FF6000"></div>
+              </div>
+              <div style="width: 29.35px; height: 29.35px; position: relative; overflow: hidden">
+                <div style="width: 29.35px; height: 29.35px; left: 0px; top: 0px; position: absolute"></div>
+                <div style="width: 26.90px; height: 17.12px; left: 1.22px; top: 6.11px; position: absolute; background: #FF6000"></div>
+              </div>
+            </div>
+            <div style="width: 25px; height: 25px; position: relative; overflow: hidden">
+              <div style="width: 25px; height: 25px; left: 0px; top: 0px; position: absolute"></div>
+              <div style="width: 22.92px; height: 16.67px; left: 1.04px; top: 4.17px; position: absolute; background: #FF6000"></div>
+            </div>
+          </div>
+          <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+            <div style="justify-content: center; align-items: center; display: inline-flex">
+              <div style="justify-content: center; display: flex; flex-direction: column"><span style="color: #F9F0F7; font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">...</span><span style="color: rgba(249, 240, 247, 0.80); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word"> jours pour </span><span style="color: #F9F0F7; font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">...</span><span style="color: rgba(249, 240, 247, 0.80); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word"> pers. </span></div>
+              <div style="justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 13px; font-family: Poppins; font-weight: 700; word-wrap: break-word">...€</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+        <div style="width: 354px; height: 148px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 4px; display: flex">
+          <div style="justify-content: center; display: flex; flex-direction: column; color: rgba(249, 240, 247, 0.80); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Matinée</div>
+          <div style="align-self: stretch; height: 60px; border-radius: 5px; justify-content: flex-start; align-items: center; gap: 64px; display: inline-flex">
+            <div style="justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+              <div style="width: 60px; height: 60px; border-radius: 5px; border: 1px var(--Back-color, rgba(249, 240, 247, 0.30)) solid"></div>
+              <div style="flex-direction: column; justify-content: flex-end; align-items: flex-start; display: inline-flex">
+                <div style="justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 15px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Activité n°1</div>
+                <div style="justify-content: center; display: flex; flex-direction: column; color: rgba(249, 240, 247, 0.70); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">type ~ lieu ~ prix</div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; height: 60px; border-radius: 5px; justify-content: flex-start; align-items: center; gap: 64px; display: inline-flex">
+            <div style="justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+              <div style="width: 60px; height: 60px; border-radius: 5px; border: 1px var(--Back-color, rgba(249, 240, 247, 0.30)) solid"></div>
+              <div style="flex-direction: column; justify-content: flex-end; align-items: flex-start; display: inline-flex">
+                <div style="justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 15px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Activité n°2</div>
+                <div style="justify-content: center; display: flex; flex-direction: column; color: rgba(249, 240, 247, 0.70); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">type ~ lieu ~ prix</div>
+              </div>
+            </div>
+            <div style="width: 20px; height: 20px; position: relative; overflow: hidden">
+              <div style="width: 20px; height: 20px; left: 0px; top: 0px; position: absolute"></div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 354px; height: 84px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 4px; display: flex">
+          <div style="justify-content: center; display: flex; flex-direction: column; color: rgba(249, 240, 247, 0.80); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Déjeuner</div>
+          <div style="align-self: stretch; height: 60px; border-radius: 5px; justify-content: flex-start; align-items: center; gap: 64px; display: inline-flex">
+            <div style="justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+              <div style="width: 60px; height: 60px; border-radius: 5px; border: 1px var(--Back-color, rgba(249, 240, 247, 0.30)) solid"></div>
+              <div style="flex-direction: column; justify-content: flex-end; align-items: flex-start; display: inline-flex">
+                <div style="justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 15px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Restaurant</div>
+                <div style="justify-content: center; display: flex; flex-direction: column; color: rgba(249, 240, 247, 0.70); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">lieu ~ prix</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 354px; height: 148px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 4px; display: flex">
+          <div style="justify-content: center; display: flex; flex-direction: column; color: rgba(249, 240, 247, 0.80); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Après - midi</div>
+          <div style="align-self: stretch; height: 60px; border-radius: 5px; justify-content: flex-start; align-items: center; gap: 64px; display: inline-flex">
+            <div style="justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+              <div style="width: 60px; height: 60px; border-radius: 5px; border: 1px var(--Back-color, rgba(249, 240, 247, 0.30)) solid"></div>
+              <div style="flex-direction: column; justify-content: flex-end; align-items: flex-start; display: inline-flex">
+                <div style="justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 15px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Activité n°1</div>
+                <div style="justify-content: center; display: flex; flex-direction: column; color: rgba(249, 240, 247, 0.70); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">type ~ lieu ~ prix</div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; height: 60px; border-radius: 5px; justify-content: flex-start; align-items: center; gap: 64px; display: inline-flex">
+            <div style="justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+              <div style="width: 60px; height: 60px; border-radius: 5px; border: 1px var(--Back-color, rgba(249, 240, 247, 0.30)) solid"></div>
+              <div style="flex-direction: column; justify-content: flex-end; align-items: flex-start; display: inline-flex">
+                <div style="justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 15px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Activité n°2</div>
+                <div style="justify-content: center; display: flex; flex-direction: column; color: rgba(249, 240, 247, 0.70); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">type ~ lieu ~ prix</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 354px; height: 84px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 4px; display: flex">
+          <div style="justify-content: center; display: flex; flex-direction: column; color: rgba(249, 240, 247, 0.80); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Dîner</div>
+          <div style="align-self: stretch; height: 60px; border-radius: 5px; justify-content: flex-start; align-items: center; gap: 64px; display: inline-flex">
+            <div style="justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+              <div style="width: 60px; height: 60px; border-radius: 5px; border: 1px var(--Back-color, rgba(249, 240, 247, 0.30)) solid"></div>
+              <div style="flex-direction: column; justify-content: flex-end; align-items: flex-start; display: inline-flex">
+                <div style="justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 15px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Restaurant</div>
+                <div style="justify-content: center; display: flex; flex-direction: column; color: rgba(249, 240, 247, 0.70); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">lieu ~ prix</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 354px; height: 84px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 4px; display: flex">
+          <div style="justify-content: center; display: flex; flex-direction: column; color: rgba(249, 240, 247, 0.80); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Soirée</div>
+          <div style="align-self: stretch; height: 60px; border-radius: 5px; justify-content: flex-start; align-items: center; gap: 64px; display: inline-flex">
+            <div style="justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+              <div style="width: 60px; height: 60px; border-radius: 5px; border: 1px var(--Back-color, rgba(249, 240, 247, 0.30)) solid"></div>
+              <div style="flex-direction: column; justify-content: flex-end; align-items: flex-start; display: inline-flex">
+                <div style="justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 15px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Activité</div>
+                <div style="justify-content: center; display: flex; flex-direction: column; color: rgba(249, 240, 247, 0.70); font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">type ~ lieu ~ prix</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-property-1="Création" style="width: 390px; height: 85px; padding-top: 8px; padding-bottom: 16px; left: 0px; top: 767px; position: absolute; background: #190028; flex-direction: column; justify-content: center; align-items: center; gap: 16px; display: inline-flex">
+    <div style="width: 374.18px; justify-content: center; align-items: center; gap: 16px; display: inline-flex">
+      <div data-property-1="Default" style="width: 77px; flex-direction: column; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
+        <div data-property-1="Default" style="width: 30.97px; height: 30.97px; position: relative; overflow: hidden">
+          <div style="width: 30.97px; height: 30.97px; left: 0px; top: 0px; position: absolute"></div>
+          <div style="width: 25.81px; height: 21.93px; left: 2.58px; top: 3.87px; position: absolute; background: #F9F0F7"></div>
+          <div style="width: 12.90px; height: 15.88px; left: 9.03px; top: 7.34px; position: absolute; opacity: 0; background: #F9F0F7"></div>
+        </div>
+        <div style="justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Accueil</div>
+      </div>
+      <div data-property-1="Default" style="width: 77px; flex-direction: column; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
+        <div style="width: 30.97px; height: 30.97px; position: relative; overflow: hidden">
+          <div style="width: 30.97px; height: 30.97px; left: 0px; top: 0px; position: absolute"></div>
+          <div style="width: 22.57px; height: 22.57px; left: 3.87px; top: 3.87px; position: absolute; background: #F9F0F7"></div>
+        </div>
+        <div style="justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Exploration</div>
+      </div>
+      <div data-property-1="Default" style="width: 77px; flex-direction: column; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
+        <div style="width: 30.97px; height: 30.97px; position: relative; overflow: hidden">
+          <div style="width: 30.97px; height: 30.97px; left: 0px; top: 0px; position: absolute"></div>
+          <div style="width: 23.22px; height: 18.06px; left: 3.87px; top: 6.45px; position: absolute; background: #F9F0F7"></div>
+          <div style="width: 18.06px; height: 2.58px; left: 6.45px; top: 19.35px; position: absolute; opacity: 0; background: #F9F0F7"></div>
+        </div>
+        <div style="justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Carnet</div>
+      </div>
+      <div data-property-1="cliqué" style="width: 77px; background: rgba(255, 96, 0, 0.50); border-radius: 8px; outline: 0.50px #FF6000 solid; outline-offset: -0.25px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+        <div style="width: 30px; height: 30px; position: relative; overflow: hidden">
+          <div style="width: 30px; height: 30px; left: 0px; top: 0px; position: absolute"></div>
+          <div style="width: 15px; height: 19.17px; left: 7.50px; top: 5px; position: absolute; background: #F9F0F7"></div>
+          <div style="width: 21.25px; height: 26.25px; left: 5px; top: 1.26px; position: absolute; background: #F9F0F7"></div>
+          <div style="width: 8.27px; height: 8.29px; left: 14.44px; top: 4.80px; position: absolute; background: #F9F0F7"></div>
+        </div>
+        <div style="justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 13px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Création</div>
+      </div>
+    </div>
+  </div>
+  <div style="width: 390px; padding-bottom: 8px; padding-left: 25px; padding-right: 25px; left: 0px; top: 0px; position: absolute; background: #190028; overflow: hidden; border-top-left-radius: 20px; border-top-right-radius: 20px; flex-direction: column; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
+    <div data-property-1="fond noir" style="width: 390px; padding-top: 10px; padding-left: 22px; padding-right: 10px; background: #190028; border-radius: 10px; justify-content: center; align-items: center; gap: 195px; display: inline-flex">
+      <div style="justify-content: center; display: flex; flex-direction: column; color: #F9F0F7; font-size: 17px; font-family: Inter; font-weight: 600; line-height: 40px; letter-spacing: 0.35px; word-wrap: break-word">09:23</div>
+      <div style="width: 78.11px; height: 12px; position: relative">
+        <div style="left: 0px; top: 0px; position: absolute; justify-content: flex-start; align-items: flex-end; gap: 2px; display: inline-flex">
+          <div style="width: 3px; height: 5px; background: #F9F0F7; border-radius: 1px"></div>
+          <div style="width: 3px; height: 7px; background: #F9F0F7; border-radius: 1px"></div>
+          <div style="width: 3px; height: 9px; background: #F9F0F7; border-radius: 1px"></div>
+          <div style="width: 3px; height: 12px; background: #F9F0F7; border-radius: 1px"></div>
+        </div>
+        <div style="width: 14.11px; left: 28px; top: 1px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+          <div style="width: 14.11px; height: 10px; outline: 2px #F9F0F7 solid; outline-offset: -1px"></div>
+        </div>
+        <div style="width: 26px; left: 52.11px; top: 0px; position: absolute; border-radius: 30px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+          <div style="width: 26px; height: 12px; background: #F9F0F7"></div>
+        </div>
+      </div>
+    </div>
+    <div style="width: 354px; justify-content: flex-start; align-items: center; gap: 176px; display: inline-flex">
+      <div style="padding-top: 10px; padding-bottom: 10px; padding-right: 10px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+        <div style="width: 25px; height: 25px; background: #FF6000"></div>
+        <div style="text-box-trim: trim-both; text-box-edge: cap alphabetic; text-align: center; justify-content: flex-end; display: flex; flex-direction: column; color: #F9F0F7; font-size: 30px; font-family: Poppins; font-weight: 600; text-transform: capitalize; word-wrap: break-word">Créer</div>
+      </div>
+      <div style="width: 32px; height: 32px; padding-left: 1px; padding-right: 1px; padding-top: 2px; padding-bottom: 2px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: flex">
+        <div style="width: 24px; height: 21px; background: #FF6000"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+
+// === Adapter: map the Figma UI to makejourney.js expected structure, WITHOUT changing the visual ===
+document.addEventListener('DOMContentLoaded', () => {
+  // 1) Photos: make the orange card clickable (acts as #addPhotos), create hidden input (#photosInput), and hidden preview (#photosPreview).
+  const photosCard = Array.from(document.querySelectorAll('div'))
+    .find(d => /rgba\(255,\s*96,\s*0,\s*0\.15\)/.test(d.getAttribute('style')||'') && d.textContent.trim() === '+ photos');
+  if (photosCard) {
+    photosCard.id = 'addPhotos';
+    photosCard.style.cursor = 'pointer';
+    // hidden file input
+    let input = document.getElementById('photosInput');
+    if (!input){
+      input = document.createElement('input');
+      input.type = 'file';
+      input.accept = 'image/*';
+      input.multiple = true;
+      input.id = 'photosInput';
+      input.style.display = 'none';
+      document.body.appendChild(input);
+    }
+    // hidden preview (we keep it hidden to preserve visuals)
+    let prev = document.getElementById('photosPreview');
+    if (!prev){
+      prev = document.createElement('div');
+      prev.id = 'photosPreview';
+      prev.style.display = 'none';
+      document.body.appendChild(prev);
+    }
+  }
+
+  // 2) Journey title ('Titre') and location ('Ville, lieux...'): make them editable and sync to hidden inputs (#journeyName, #journeyLocation)
+  const titleEl = Array.from(document.querySelectorAll('div')).find(d => d.textContent.trim() === 'Titre');
+  if (titleEl){
+    titleEl.contentEditable = 'true';
+    titleEl.setAttribute('data-role', 'journeyNameEditable');
+    let hiddenName = document.getElementById('journeyName');
+    if (!hiddenName){
+      hiddenName = document.createElement('input');
+      hiddenName.type = 'hidden';
+      hiddenName.id = 'journeyName';
+      document.body.appendChild(hiddenName);
+    }
+    const syncName = () => { hiddenName.value = (titleEl.textContent||'').trim(); };
+    titleEl.addEventListener('input', syncName);
+    syncName();
+  }
+  const locEl = Array.from(document.querySelectorAll('div')).find(d => d.textContent.trim() === 'Ville, lieux...');
+  if (locEl){
+    locEl.contentEditable = 'true';
+    locEl.setAttribute('data-role', 'journeyLocationEditable');
+    let hiddenLoc = document.getElementById('journeyLocation');
+    if (!hiddenLoc){
+      hiddenLoc = document.createElement('input');
+      hiddenLoc.type = 'hidden';
+      hiddenLoc.id = 'journeyLocation';
+      document.body.appendChild(hiddenLoc);
+    }
+    const syncLoc = () => { hiddenLoc.value = (locEl.textContent||'').trim(); };
+    locEl.addEventListener('input', syncLoc);
+    syncLoc();
+  }
+
+  // 3) Basket icon: use the small square next to 'Titre' as the basket toggle.
+  // We'll also add a small count badge (#basketCount) inside it (positioned absolutely) and a floating container (#floatingBasket).
+  const titleRow = Array.from(document.querySelectorAll('div')).find(d => (d.getAttribute('style')||'').includes('gap: 248px') && d.textContent.includes('Titre'));
+  let basketIcon = null;
+  if (titleRow){
+    const maybeIcon = titleRow.querySelector('div[style*="width: 24px"][style*="height: 24px"]');
+    if (maybeIcon){
+      maybeIcon.id = 'basketIcon';
+      maybeIcon.style.position = 'relative';
+      basketIcon = maybeIcon;
+      // badge
+      let badge = document.createElement('span');
+      badge.id = 'basketCount';
+      badge.textContent = '0';
+      badge.hidden = true;
+      badge.style.position = 'absolute';
+      badge.style.right = '-6px';
+      badge.style.top = '-6px';
+      badge.style.minWidth = '16px';
+      badge.style.height = '16px';
+      badge.style.padding = '0 4px';
+      badge.style.borderRadius = '16px';
+      badge.style.background = '#FF6000';
+      badge.style.color = '#190028';
+      badge.style.fontSize = '10px';
+      badge.style.fontWeight = '800';
+      badge.style.display = 'inline-flex';
+      badge.style.alignItems = 'center';
+      badge.style.justifyContent = 'center';
+      basketIcon.appendChild(badge);
+    }
+  }
+  // floating basket container (positioned near top-right of the main phone frame)
+  if (!document.getElementById('floatingBasket')){
+    const fb = document.createElement('div');
+    fb.id = 'floatingBasket';
+    fb.style.position = 'absolute';
+    fb.style.right = '12px';
+    fb.style.top = '120px';
+    fb.style.width = '300px';
+    fb.style.maxHeight = '360px';
+    fb.style.overflow = 'auto';
+    fb.style.background = '#1e1e1e';
+    fb.style.borderRadius = '12px';
+    fb.style.boxShadow = '0 12px 24px rgba(0,0,0,.45)';
+    fb.style.padding = '10px';
+    fb.style.display = 'none';
+    fb.style.color = '#fff';
+    document.body.appendChild(fb);
+  }
+
+  // 4) Map the first line in each section as a drop target slot (IDs expected by makejourney.js)
+  function markFirstRowSlot(sectionLabelText, slotId){
+    // find the label
+    const label = Array.from(document.querySelectorAll('div')).find(d => d.textContent.trim() === sectionLabelText);
+    if (!label) return;
+    // the first sibling row (height:60px) after the label
+    const container = label.parentElement;
+    if (!container) return;
+    const firstRow = Array.from(container.querySelectorAll('div')).find(rr => (rr.getAttribute('style')||'').includes('height: 60px') and 'display: inline-flex' in (rr.getAttribute('style') or ''));
+  }
+
+  // JS in Python string can't include "and" logic above; reconstruct properly in JS.
+
+  function markFirstRowSlot(sectionLabelText, slotId){
+    const label = Array.from(document.querySelectorAll('div')).find(d => d.textContent.trim() === sectionLabelText);
+    if (!label) return;
+    const container = label.parentElement;
+    if (!container) return;
+    // find the first child row immediately following the label with height: 60px
+    const rows = Array.from(container.querySelectorAll(':scope > div')).filter(el => (el.getAttribute('style')||'').includes('height: 60px'));
+    if (rows.length > 0){
+      const slot = rows[0];
+      slot.classList.add('slot');
+      slot.id = slotId;
+      // Make it look unchanged visually; just ensure it can accept drops.
+      slot.style.position = slot.style.position || 'relative';
+    }
+  }
+  markFirstRowSlot('Matinée','morning');
+  markFirstRowSlot('Déjeuner','noon');
+  markFirstRowSlot('Après - midi','afternoon');
+  markFirstRowSlot('Dîner','dinner');
+  markFirstRowSlot('Soirée','evening');
+
+  // 5) Hidden form for data-id
+  if (!document.getElementById('createJourneyForm')){
+    const form = document.createElement('form');
+    form.id = 'createJourneyForm';
+    form.setAttribute('data-id','');
+    form.hidden = true;
+    document.body.appendChild(form);
+  }
+
+  // 6) Use the top-right 32x32 square in the header as save button
+  const headerRow = Array.from(document.querySelectorAll('div')).find(d => (d.getAttribute('style')||'').includes('width: 354px') && (d.getAttribute('style')||'').includes('gap: 176px'));
+  if (headerRow){
+    const saveBtnWrap = headerRow.querySelector('div[style*="width: 32px"][style*="height: 32px"]');
+    if (saveBtnWrap){
+      saveBtnWrap.id = 'saveJourneyBtn';
+      saveBtnWrap.title = 'Sauvegarder';
+      saveBtnWrap.style.cursor = 'pointer';
+    }
+  }
+
+});
+
+
+/* ===========================
+   makejourney.js — Éditeur + Panier + Sauvegarde
+   =========================== */
+
+/* --------- Utils LocalStorage (fallback) --------- */
+const LS_KEY = "journeys";
+function lsGetJourneys(){ try{ return JSON.parse(localStorage.getItem(LS_KEY) || "[]"); }catch{ return []; } }
+function lsSetJourneys(arr){ localStorage.setItem(LS_KEY, JSON.stringify(arr)); }
+
+/* --------- Panier (localStorage dédié) --------- */
+function getBasket() {
+  try { return JSON.parse(localStorage.getItem("basket") || "[]"); }
+  catch { return []; }
+}
+function setBasket(basket) {
+  localStorage.setItem("basket", JSON.stringify(basket));
+  updateBasketCount();
+  renderBasket();
+}
+function updateBasketCount() {
+  const badge = document.getElementById("basketCount");
+  if (!badge) return;
+  const count = getBasket().length;
+  badge.textContent = count;
+  badge.hidden = count === 0;
+}
+function createActivityElement(act, { draggable = true } = {}) {
+  const row = document.createElement("div");
+  row.className = "activity";
+  row.dataset.id = act.id;
+
+  const img = document.createElement("img");
+  img.src = act.image || "/static/img/no-image.jpg";
+  img.alt = act.name || "Activité";
+  row.appendChild(img);
+
+  const span = document.createElement("span");
+  span.textContent = act.name || "Sans nom";
+  row.appendChild(span);
+
+  if (draggable) {
+    row.setAttribute("draggable", "true");
+    row.addEventListener("dragstart", (e) => {
+      e.dataTransfer.setData("id", act.id);
+      e.dataTransfer.effectAllowed = "move";
+    });
+  }
+  return row;
+}
+function renderBasket() {
+  const classic = document.getElementById("basketContent");
+  const floating = document.getElementById("floatingBasket");
+  const basket = getBasket();
+
+  if (classic) {
+    classic.innerHTML = basket.length ? "" : "<p>Aucune activité ajoutée.</p>";
+    basket.forEach((a) => {
+      const row = document.createElement("div");
+      row.className = "d-flex align-items-center mb-2 p-1";
+      row.style.background = "#1e1e1e";
+      row.style.borderRadius = "6px";
+      row.style.color = "white";
+
+      const img = document.createElement("img");
+      img.src = a.image || "/static/img/no-image.jpg";
+      img.alt = a.name || "Activité";
+      img.style.width = "50px";
+      img.style.height = "50px";
+      img.style.objectFit = "cover";
+      img.style.borderRadius = "6px";
+      img.style.marginRight = "10px";
+      row.appendChild(img);
+
+      const span = document.createElement("span");
+      span.textContent = a.name || "Sans nom";
+      row.appendChild(span);
+
+      const btn = document.createElement("button");
+      btn.className = "btn btn-sm btn-danger ms-auto";
+      btn.textContent = "❌";
+      btn.addEventListener("click", () => {
+        setBasket(getBasket().filter((x) => x.id !== a.id));
+      });
+      row.appendChild(btn);
+
+      classic.appendChild(row);
+    });
+  }
+  if (floating) {
+    floating.innerHTML = basket.length ? "" : "<p>Aucune activité ajoutée.</p>";
+    basket.forEach((a) => floating.appendChild(createActivityElement(a)));
+  }
+}
+function addToBasket(item) {
+  const basket = getBasket();
+  if (!basket.find((a) => a.id === item.id)) {
+    basket.push(item);
+    setBasket(basket);
+    alert((item.name || "Activité") + " a été ajouté(e) au panier !");
+  }
+}
+
+/* --------- Recherche (facultative) --------- */
+function wireSearchIfPresent() {
+  const input = document.getElementById("search");
+  const resultsList = document.getElementById("results");
+  if (!input || !resultsList) return;
+
+  input.addEventListener("input", async function () {
+    const query = this.value.trim();
+    resultsList.innerHTML = "";
+    if (query.length < 1) return;
+
+    try {
+      const res = await fetch(`/search?query=${encodeURIComponent(query)}`);
+      const data = await res.json();
+
+      if (!Array.isArray(data) || data.length === 0) {
+        resultsList.innerHTML = "<li class='list-group-item'>Aucun résultat</li>";
+        return;
+      }
+
+      data.forEach((item) => {
+        const li = document.createElement("li");
+        li.className = "list-group-item d-flex align-items-center";
+
+        const img = document.createElement("img");
+        img.src = item.image || "/static/img/no-image.jpg";
+        img.alt = item.name || "Activité";
+        img.style.width = "60px";
+        img.style.height = "60px";
+        img.style.objectFit = "cover";
+        img.style.borderRadius = "8px";
+        img.style.marginRight = "10px";
+        li.appendChild(img);
+
+        const span = document.createElement("span");
+        span.textContent = item.name || "Sans nom";
+        span.style.flexGrow = "1";
+        li.appendChild(span);
+
+        const btn = document.createElement("button");
+        btn.className = "btn btn-sm btn-success";
+        btn.textContent = "➕";
+        btn.addEventListener("click", () => addToBasket(item));
+        li.appendChild(btn);
+
+        resultsList.appendChild(li);
+      });
+    } catch (err) {
+      console.error("Erreur lors de la recherche :", err);
+      resultsList.innerHTML = "<li class='list-group-item text-danger'>Erreur de chargement</li>";
+    }
+  });
+}
+
+/* --------- Drag & drop des slots --------- */
+function wireSlots() {
+  const slots = document.querySelectorAll(".slot");
+  slots.forEach((slot) => {
+    slot.addEventListener("dragover", (e) => { e.preventDefault(); e.dataTransfer.dropEffect = "move"; });
+    slot.addEventListener("drop", (e) => {
+      e.preventDefault();
+      const id = e.dataTransfer.getData("id");
+      const act = getBasket().find((a) => String(a.id) === String(id));
+      if (act) slot.appendChild(createActivityElement(act, { draggable: false }));
+    });
+  });
+}
+
+/* --------- Photos / Cover --------- */
+function wirePhotos() {
+  const add = document.getElementById("addPhotos");
+  const input = document.getElementById("photosInput");
+  const preview = document.getElementById("photosPreview");
+  if (!add || !input || !preview) return;
+
+  add.addEventListener("click", () => input.click());
+  input.addEventListener("change", () => {
+    preview.innerHTML = "";
+    Array.from(input.files || []).slice(0, 12).forEach((file) => {
+      const url = URL.createObjectURL(file);
+      const img = document.createElement("img");
+      img.src = url;
+      img.alt = file.name;
+      preview.appendChild(img);
+    });
+  });
+}
+function fileToDataURL(file){
+  return new Promise((resolve, reject)=>{
+    const r = new FileReader();
+    r.onload = () => resolve(r.result);
+    r.onerror = reject;
+    r.readAsDataURL(file);
+  });
+}
+
+/* --------- Préchargement (édition) --------- */
+function getIdFromURL(){
+  const m = location.pathname.match(/\/makejourney\/([^\/]+)$/);
+  return m ? m[1] : "";
+}
+async function preloadIfEditing() {
+  const form = document.getElementById("createJourneyForm");
+  const serverId = form ? (form.getAttribute("data-id") || "") : "";
+  const urlId = getIdFromURL();
+  const id = serverId || (urlId !== "new" ? urlId : "");
+
+  if (!id) return;
+
+  // 1) Essai serveur
+  try {
+    const res = await fetch(`/journeys/${id}`);
+    if (!res.ok) throw new Error("not ok");
+    const j = await res.json();
+    hydrateEditorFromJourney(j);
+    return;
+  } catch(e) {
+    console.warn("Serveur indisponible, fallback LS pour preload.");
+  }
+
+  // 2) Fallback LS
+  const ls = lsGetJourneys();
+  const j = ls.find(x => String(x.id) === String(id));
+  if (j) hydrateEditorFromJourney(j);
+}
+function hydrateEditorFromJourney(j){
+  const nameEl = document.getElementById("journeyName");
+  if (nameEl) nameEl.value = j.name || "";
+
+  const locEl = document.getElementById("journeyLocation");
+  if (locEl) locEl.value = j.location || "";
+
+  setBasket(j.basket || []);
+
+  const slots = j.slots || {};
+  Object.entries(slots).forEach(([slotId, acts]) => {
+    const el = document.getElementById(slotId);
+    if (!el) return;
+    acts.forEach((a) => el.appendChild(createActivityElement(a, { draggable: false })));
+  });
+
+  if (j.image){
+    const prev = document.getElementById("photosPreview");
+    if (prev){
+      const img = document.createElement("img");
+      img.src = j.image;
+      img.alt = "Couverture";
+      prev.innerHTML = "";
+      prev.appendChild(img);
+    }
+  }
+}
+
+/* --------- Sauvegarde --------- */
+async function collectCoverImage(){
+  const input = document.getElementById("photosInput");
+  if (input && input.files && input.files[0]){
+    try { return await fileToDataURL(input.files[0]); } catch { /* ignore */ }
+  }
+  // fallback: première image trouvée dans un slot ou le panier
+  const firstSlotImg = document.querySelector(".slot .activity img")?.src;
+  if (firstSlotImg) return firstSlotImg;
+  const firstBasket = getBasket()[0]?.image;
+  return firstBasket || "/static/img/no-image.jpg";
+}
+
+async function saveJourney() {
+  const form = document.getElementById("createJourneyForm");
+  const currentId = form ? (form.getAttribute("data-id") || "") : "";
+  const urlId = getIdFromURL();
+  const id = currentId || (urlId && urlId !== "new" ? urlId : "");
+
+  const name = (document.getElementById("journeyName")?.value || "").trim();
+  const location = (document.getElementById("journeyLocation")?.value || "").trim();
+
+  if (!name) {
+    alert("Veuillez saisir un nom de voyage");
+    return;
+  }
+
+  // Collecte des slots
+  const slotsData = {};
+  document.querySelectorAll(".slot").forEach((slot) => {
+    slotsData[slot.id] = [];
+    slot.querySelectorAll(".activity").forEach((el) => {
+      slotsData[slot.id].push({
+        id: el.dataset.id,
+        name: el.querySelector("span")?.textContent || "Sans nom",
+        image: el.querySelector("img")?.src || "/static/img/no-image.jpg",
+      });
+    });
+  });
+
+  const cover = await collectCoverImage();
+
+  const payload = {
+    id: id || undefined,
+    name,
+    location,
+    image: cover,     // image de couverture
+    basket: getBasket(),
+    slots: slotsData,
+    updatedAt: Date.now()
+  };
+
+  // 1) Serveur
+  try {
+    const isUpdate = !!id;
+    const res = await fetch(isUpdate ? `/journeys/${id}` : "/journeys", {
+      method: isUpdate ? "PUT" : "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) throw new Error("not ok");
+    const data = await res.json();
+    // si le serveur renvoie un id, on le prend
+    const newId = data.id || id;
+    if (!newId) throw new Error("id manquant");
+    alert("Voyage sauvegardé !");
+    window.location.href = "/makejourney"; // page liste
+    return;
+  } catch (err) {
+    console.warn("Serveur indisponible, fallback LS pour save.", err);
+  }
+
+  // 2) Fallback LocalStorage
+  const list = lsGetJourneys();
+  if (id) {
+    const i = list.findIndex(x => String(x.id) === String(id));
+    if (i >= 0) list[i] = { ...list[i], ...payload, id };
+    else list.push({ ...payload, id });
+  } else {
+    const newId = "j_" + Date.now().toString(36);
+    list.push({ ...payload, id: newId });
+  }
+  lsSetJourneys(list);
+  alert("Voyage sauvegardé (local) !");
+  window.location.href = "/makejourney";
+}
+
+/* --------- Init --------- */
+document.addEventListener("DOMContentLoaded", () => {
+  // Panier flottant
+  const basketIcon = document.getElementById("basketIcon");
+  const floatingBasket = document.getElementById("floatingBasket");
+  if (basketIcon && floatingBasket) {
+    basketIcon.addEventListener("click", () => {
+      const shown = floatingBasket.style.display === "block";
+      floatingBasket.style.display = shown ? "none" : "block";
+    });
+  }
+
+  updateBasketCount();
+  renderBasket();
+  wireSearchIfPresent();
+  wireSlots();
+  wirePhotos();
+  preloadIfEditing();
+
+  // Bouton save
+  const saveBtn = document.getElementById("saveJourneyBtn");
+  if (saveBtn) saveBtn.addEventListener("click", saveJourney);
+});
+
+</script>
+</body>
+</html>

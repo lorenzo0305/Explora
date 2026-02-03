@@ -1,0 +1,932 @@
+{
+  "@id": "https://data.datatourisme.fr/22/0935041f-6100-3370-b4d4-bac02da554d8",
+  "dc:identifier": "HLOMIP046V51X8Z6",
+  "@type": [
+    "schema:Accommodation",
+    "schema:BedAndBreakfast",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "Guesthouse",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Gästezimmer und Restaurant im Herzen des Dorfes Gagnac sur Cère."
+    ],
+    "en": [
+      "Bed and breakfast and restaurant in the heart of the village of Gagnac sur Cère."
+    ],
+    "it": [
+      "Bed and breakfast e ristorante nel cuore del villaggio di Gagnac sur Cère."
+    ],
+    "fr": [
+      "Chambres d'hôtes et restaurant au cœur du bourg de Gagnac sur Cère."
+    ],
+    "es": [
+      "Casa de huéspedes y restaurante en el corazón del pueblo de Gagnac sur Cère."
+    ],
+    "nl": [
+      "Bed and breakfast en restaurant in het hart van het dorp Gagnac sur Cère."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "L'Embellie"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/c5b43365-0137-3383-b91f-23d5988ce46d",
+    "schema:legalName": "OT Vallée de la Dordogne",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.vallee-dordogne.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/614eb29d-754d-3a8e-b729-485d03c2a8c8",
+      "schema:legalName": "Lot Tourisme - Agence de Développement Touristique du Lot",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.tourisme-lot.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/78d02c20-0f3b-3bd0-b28f-f6fcbccbcf9b",
+      "schema:email": [
+        "maisonlembellie@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 5 81 71 60 77"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/5e9fc61d-4f4f-3949-ba75-63fa53dc6568",
+      "dc:description": {
+        "de": [
+          "Gästezimmer und Restaurant im Herzen der Stadt Gagnac sur Cère"
+        ],
+        "en": [
+          "B&B and restaurant in the heart of the village of Gagnac sur Cère"
+        ],
+        "it": [
+          "Bed and breakfast e ristorante nel cuore del villaggio di Gagnac sur Cère"
+        ],
+        "fr": [
+          "Chambres d'hôtes et restaurant au cœur du bourg de Gagnac sur Cère"
+        ],
+        "es": [
+          "Casa de huéspedes y restaurante en el corazón del pueblo de Gagnac sur Cère"
+        ],
+        "nl": [
+          "Bed and breakfast en restaurant in het hart van het dorp Gagnac sur Cère"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0430df93-ad3d-3576-875f-738deb45280e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/081641c6-9976-3493-a7d0-0b0b137d31a6",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/1accf591-b54b-3c14-a89a-4d1b69b218e9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5a8d16b9-96cc-3869-a804-0ce21956b1d6",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/60dc071e-08f6-3c26-a8c0-15f09204120b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b37f0952-ec51-3e33-9036-e60698faea76",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b6cf9ada-dc7b-3743-94d5-cacedab2440c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/bf5a8f24-a940-3567-8561-9b4e917d26eb",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d38e6a85-2e06-33dc-87ed-e87932a5f337",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d5310897-1fe1-34b2-aaa3-37a050d20e23",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Gästezimmer und Restaurant im Herzen des Dorfes Gagnac sur Cère."
+        ],
+        "en": [
+          "Bed and breakfast and restaurant in the heart of the village of Gagnac sur Cère."
+        ],
+        "it": [
+          "Bed and breakfast e ristorante nel cuore del villaggio di Gagnac sur Cère."
+        ],
+        "fr": [
+          "Chambres d'hôtes et restaurant au cœur du bourg de Gagnac sur Cère."
+        ],
+        "es": [
+          "Casa de huéspedes y restaurante en el corazón del pueblo de Gagnac sur Cère."
+        ],
+        "nl": [
+          "Bed and breakfast en restaurant in het hart van het dorp Gagnac sur Cère."
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/673e2061-251f-f1f9-76cb-64cf68a49612",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "def96258-c7ef-4920-8a82-699f4044a30e",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:AcceslibrePlatform",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Teilen Sie wichtige Reiseinformationen für Menschen mit Behinderungen."
+            ],
+            "pt": [
+              "Compartilhe informações essenciais sobre viagens para pessoas com deficiência."
+            ],
+            "en": [
+              "Share essential travel information for people with disabilities."
+            ],
+            "it": [
+              "Condividi informazioni di viaggio essenziali per le persone con disabilità."
+            ],
+            "fr": [
+              "Partagez les informations indispensables aux déplacements des personnes en situation de handicap."
+            ],
+            "nl": [
+              "Deel essentiële reisinformatie voor mensen met een handicap."
+            ],
+            "es": [
+              "Comparta información de viaje esencial para personas con discapacidades."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Acceslibre-Plattform"
+            ],
+            "pt": [
+              "Plataforma Acceslibre"
+            ],
+            "en": [
+              "Acceslibre platform"
+            ],
+            "it": [
+              "Piattaforma Acceslibre"
+            ],
+            "fr": [
+              "Plateforme Acceslibre"
+            ],
+            "es": [
+              "Plataforma Acceslibre"
+            ],
+            "nl": [
+              "Acceslibre-platform"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://acceslibre.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/90c42002-1c2a-38cd-a624-3f28fc258043",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/fa9fee1b-307c-3064-9d91-b77435b70bec",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "AH"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/4c734093-f7a4-3c86-bf60-ac25416b0d92",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt46.media.tourinsoft.eu/upload/yuzu-01.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/3854979e-2866-3bef-b9e8-46e3f18c5ad4",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/fa9fee1b-307c-3064-9d91-b77435b70bec",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "AH"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/766370e8-efd5-3cae-86ca-249bdd8ff975",
+          "ebucore:locator": [
+            "https://cdt46.media.tourinsoft.eu/upload/IMG-20210603-103345.jpg",
+            "https://cdt46.media.tourinsoft.eu/upload/P5080378.JPG",
+            "https://cdt46.media.tourinsoft.eu/upload/P5080381.JPG",
+            "https://cdt46.media.tourinsoft.eu/upload/P5080385.JPG",
+            "https://cdt46.media.tourinsoft.eu/upload/P5080391.JPG",
+            "https://cdt46.media.tourinsoft.eu/upload/P5080392.JPG",
+            "https://cdt46.media.tourinsoft.eu/upload/P5080394.JPG",
+            "https://cdt46.media.tourinsoft.eu/upload/syrah-03.jpg",
+            "https://cdt46.media.tourinsoft.eu/upload/syrah-04.jpg",
+            "https://cdt46.media.tourinsoft.eu/upload/yuzu-01.jpg",
+            "https://cdt46.media.tourinsoft.eu/upload/yuzu-02.jpg",
+            "https://cdt46.media.tourinsoft.eu/upload/yuzu-03.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/90c42002-1c2a-38cd-a624-3f28fc258043",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/fa9fee1b-307c-3064-9d91-b77435b70bec",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "AH"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/4c734093-f7a4-3c86-bf60-ac25416b0d92",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt46.media.tourinsoft.eu/upload/yuzu-01.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/3af81ab2-f65e-3023-b4fa-92504534966a",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9c62b6db-33d3-3956-9ccf-f9aba67d017c",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c2037d31-d391-3d5a-ba14-0fd86bbd2189",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cccf53f1-1c61-3a16-a457-de276405102e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e4347796-cc56-3da6-8789-65f3d26ba161",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/35962d33-c570-3ca9-8ac7-202e5862ee15",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/6424d15c-4940-38e8-92e4-e8c4dedbd295",
+          "schema:addressLocality": "Gagnac-sur-Cère",
+          "schema:postalCode": "46130",
+          "schema:streetAddress": [
+            "7 Place Docteur Molinie"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:46117",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Gagnac-sur-Cère"
+              ],
+              "pt": [
+                "Gagnac-sur-Cère"
+              ],
+              "en": [
+                "Gagnac-sur-Cère"
+              ],
+              "it": [
+                "Gagnac-sur-Cère"
+              ],
+              "fr": [
+                "Gagnac-sur-Cère"
+              ],
+              "nl": [
+                "Gagnac-sur-Cère"
+              ],
+              "es": [
+                "Gagnac-sur-Cère"
+              ]
+            },
+            "insee": "46117",
+            "isPartOfDepartment": {
+              "@id": "kb:France7646",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Lot"
+                ],
+                "pt": [
+                  "Lot"
+                ],
+                "en": [
+                  "Lot"
+                ],
+                "it": [
+                  "Lot"
+                ],
+                "fr": [
+                  "Lot"
+                ],
+                "nl": [
+                  "Lot"
+                ],
+                "es": [
+                  "Lot"
+                ]
+              },
+              "insee": "46",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/d5beb7a2-14a3-3bd4-906a-9f5166e4f173",
+        "schema:latitude": "44.93994",
+        "schema:longitude": "1.87679",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-05-20",
+  "lastUpdateDatatourisme": "2025-07-31T14:33:33.825Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/ec55ea3f-c77a-3d32-8aa5-f0420bd88432",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:EurocardMastercard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Eurocard – Mastercard"
+            ],
+            "pt": [
+              "Eurocard — Mastercard"
+            ],
+            "en": [
+              "Eurocard - mastercard"
+            ],
+            "it": [
+              "Eurocard - mastercard"
+            ],
+            "fr": [
+              "Eurocard - mastercard"
+            ],
+            "nl": [
+              "Eurocard - Mastercard"
+            ],
+            "es": [
+              "Eurocard - Mastercard"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Visa",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Visa"
+            ],
+            "pt": [
+              "Visto"
+            ],
+            "en": [
+              "Visa"
+            ],
+            "it": [
+              "Visto"
+            ],
+            "fr": [
+              "Visa"
+            ],
+            "nl": [
+              "Visum"
+            ],
+            "es": [
+              "Visa"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/2ae382e5-f559-3c26-8454-0bca53bf36c4",
+          "schema:minPrice": [
+            "22"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/3deab423-5fc0-3aea-b256-9a70752d114a",
+          "schema:minPrice": [
+            "10"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a68c7ea3-74e5-3ea6-860d-cbfdd329bbfd",
+          "schema:minPrice": [
+            "97"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d0327a69-ff58-348c-87e1-be54d86a893e",
+          "schema:maxPrice": [
+            "80"
+          ],
+          "schema:minPrice": [
+            "75"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

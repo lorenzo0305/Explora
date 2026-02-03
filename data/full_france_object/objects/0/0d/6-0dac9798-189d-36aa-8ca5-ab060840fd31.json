@@ -1,0 +1,926 @@
+{
+  "@id": "https://data.datatourisme.fr/6/0dac9798-189d-36aa-8ca5-ab060840fd31",
+  "dc:identifier": "HLOBFC000V51MGJ8",
+  "@type": [
+    "schema:Accommodation",
+    "schema:Hostel",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CollectiveAccommodation",
+    "HolidayCentre",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Prémonval"
+    ],
+    "en": [
+      "Prémonval"
+    ],
+    "fr": [
+      "Prémonval"
+    ]
+  },
+  "allowedPersons": 120,
+  "availableLanguage": [
+    "fr"
+  ],
+  "creationDate": "2022-09-12",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/2bedb577-a1d9-3e42-bc0c-a4f13861ca9c",
+    "dc:identifier": "8adc4ac8-dd5b-4561-9450-a65f4807a76c",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/393c1bbc-1d11-3f98-9d9b-9258ca76b1ec",
+        "schema:addressLocality": "Lons-le-Saunier",
+        "schema:postalCode": "39000",
+        "schema:streetAddress": [
+          "17 rue Rouget de Lisle"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:39300",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Lons-le-Saunier"
+            ],
+            "pt": [
+              "Lons-le-Saunier"
+            ],
+            "en": [
+              "Lons-le-Saunier"
+            ],
+            "it": [
+              "Lons-le-Saunier"
+            ],
+            "fr": [
+              "Lons-le-Saunier"
+            ],
+            "nl": [
+              "Lons-le-Saunier"
+            ],
+            "es": [
+              "Lons-le-Saunier"
+            ]
+          },
+          "insee": "39300",
+          "isPartOfDepartment": {
+            "@id": "kb:France2739",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Jura"
+              ],
+              "pt": [
+                "Jura"
+              ],
+              "en": [
+                "Jura"
+              ],
+              "it": [
+                "Jura"
+              ],
+              "fr": [
+                "Jura"
+              ],
+              "nl": [
+                "Jura"
+              ],
+              "es": [
+                "Jura"
+              ]
+            },
+            "insee": "39",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "thomas.bernollin@jura-tourism.com"
+    ],
+    "schema:legalName": "JURA TOURISME (COORDINATION DECIBELLES DATA)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/817526bb-f2b4-3c3d-8292-4be9b90c730c",
+      "schema:email": [
+        "centre.premonval@free.fr",
+        "reservation@gites-de-france-jura.com"
+      ],
+      "schema:telephone": [
+        "+33 3 84 60 78 07",
+        "+33 3 84 87 22 55",
+        "+33 6 85 70 33 12"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.sejourspremonval.fr/",
+        "https://www.gites-de-france-jura.com/",
+        "https://www.gites-de-france-jura.com/resa/etape1.php?NUM=G5042&INSTANCE=gites39&OPE=DECIBELD&ORI=DECIBELD&&&&&"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/817526bb-f2b4-3c3d-8292-4be9b90c730c",
+      "schema:email": [
+        "centre.premonval@free.fr",
+        "reservation@gites-de-france-jura.com"
+      ],
+      "schema:telephone": [
+        "+33 3 84 60 78 07",
+        "+33 3 84 87 22 55",
+        "+33 6 85 70 33 12"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.sejourspremonval.fr/",
+        "https://www.gites-de-france-jura.com/",
+        "https://www.gites-de-france-jura.com/resa/etape1.php?NUM=G5042&INSTANCE=gites39&OPE=DECIBELD&ORI=DECIBELD&&&&&"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/f0ef8ac7-af15-3286-ba43-50ad350275f3",
+      "dc:description": {
+        "de": [
+          "Im Herzen des Ferienortes Les Rousses und des Regionalen Naturparks ist diese Einrichtung inmitten der Natur und in unmittelbarer Nähe der Skipisten und Wanderwege der ideale Ort für Abwechslung und Erholung für Groß und Klein. Mehrere Formeln: Unterbringung im Gemeinschaftsgebäude (2 Ähren, 80 Betten) oder in freistehenden Holzchalets (3 Ähren für 4 bis 6 Pers.), ½ Pension oder Vollpension - Übernachtung, Wochenende oder Woche - Möglichkeit von All-Inclusive- und maßgeschneiderten Aufenthalten. Genießen Sie einen außergewöhnlich geschützten Rahmen für Ihren Aufenthalt mit der Familie, mit Freunden oder in der Gruppe!"
+        ],
+        "en": [
+          "In the heart of the Les Rousses resort and the Regional Nature Park, this establishment in the heart of nature and right next to the ski slopes and hiking trails is the ideal place for a change of scenery and a restful break for young and old alike. There are several options: accommodation in a collective building (2 ears of corn, 80 beds) or in independent wooden chalets (3 ears of corn for 4 to 6 people), ½ board or full board - overnight stay, weekend or week - possibility of all-inclusive, tailor-made holidays. Come and enjoy an exceptional unspoilt setting for your stay with your family, friends or group!"
+        ],
+        "it": [
+          "Nel cuore della stazione di Les Rousses e del Parco Naturale Regionale, questa struttura immersa nella natura e nelle immediate vicinanze delle piste da sci e dei sentieri escursionistici è il luogo ideale per cambiare scenario e riposare per grandi e piccini. Diverse formule: alloggio in un edificio collettivo (2 spighe, 80 posti letto) o in chalet di legno indipendenti (3 spighe per 4-6 persone), ½ pensione o pensione completa - pernottamento, weekend o settimana - possibilità di soggiorni all-inclusive e su misura. Venite a godere di un ambiente eccezionale conservato per il vostro soggiorno in famiglia, con gli amici o in gruppo!"
+        ],
+        "fr": [
+          "Au cœur de la Station des Rousses et du Parc Naturel Régional, cet établissement en pleine nature et à proximité immédiate des pistes de skis et des sentiers de randonnées est le lieu idéal pour le dépaysement et le repos des petits et des grands. Plusieurs formules : hébergement en bâtiment collectif (2 épis, 80 lits) ou dans des chalets en bois indépendants (3 épis de 4 à 6 pers.), ½ pension ou pension complète - nuitée, week-end ou semaine - possibilité de séjours tout compris et sur mesure. Venez profiter d'un cadre préservé exceptionnel pour votre séjour en famille, entre amis ou en groupe !"
+        ],
+        "nl": [
+          "In het hart van het skioord Les Rousses en het Regionaal Natuurpark, is dit etablissement midden in de natuur en in de onmiddellijke nabijheid van de skipistes en wandelpaden de ideale plek voor afwisseling en rust voor jong en oud. Verschillende formules: accommodatie in een collectief gebouw (2 korenaren, 80 bedden) of in zelfstandige houten chalets (3 korenaren voor 4 tot 6 personen), ½ pension of vol pension - overnachting, weekend of week - mogelijkheid tot all-inclusive en verblijf op maat. Kom en geniet van een uitzonderlijke behouden omgeving voor uw verblijf met familie, vrienden of groepen!"
+        ],
+        "es": [
+          "En el corazón de la estación de Les Rousses y del Parque Natural Regional, este establecimiento en plena naturaleza y en las inmediaciones de las pistas de esquí y de las rutas de senderismo es el lugar ideal para un cambio de aires y el descanso de grandes y pequeños. Varias fórmulas: alojamiento en edificio colectivo (2 espigas, 80 camas) o en chalés de madera independientes (3 espigas para 4 a 6 personas), ½ pensión o pensión completa - pernoctación, fin de semana o semana - posibilidad de todo incluido y estancias a medida. ¡Venga a disfrutar de un entorno preservado excepcional para su estancia en familia, con amigos o en grupo!"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/4004ad74-e79a-33af-8088-c56f7476b6c1",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/931446aa-eea3-35ac-be0f-e21958757f63",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/c73a61da-5b78-3c82-9f66-acd9d89590ea",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/39622c81-d525-36fd-b9d2-75d9a2412ac8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/66cc15b7-4c5f-3a38-a449-a5905c9bd14f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Garden",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Garten"
+            ],
+            "pt": [
+              "Jardim"
+            ],
+            "en": [
+              "Garden"
+            ],
+            "it": [
+              "Giardino"
+            ],
+            "fr": [
+              "Jardin"
+            ],
+            "nl": [
+              "Tuin"
+            ],
+            "es": [
+              "Jardín"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8fcb0e73-e6cb-328e-8238-d0a08c9a5036",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/94f774aa-109b-3aea-9508-1361d3e58c49",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateTerrace",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Private Terrasse"
+            ],
+            "pt": [
+              "Terraço privativo"
+            ],
+            "en": [
+              "Private terrace"
+            ],
+            "it": [
+              "Terrazza privata"
+            ],
+            "fr": [
+              "Terrasse privative"
+            ],
+            "es": [
+              "Terraza privada"
+            ],
+            "nl": [
+              "Privéterras"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b4ee1e19-6cd3-300f-adda-ef753335fc37",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Television",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Fernsehen"
+            ],
+            "pt": [
+              "Televisão"
+            ],
+            "en": [
+              "Television"
+            ],
+            "it": [
+              "Televisione"
+            ],
+            "fr": [
+              "Télévision"
+            ],
+            "nl": [
+              "Televisie"
+            ],
+            "es": [
+              "Televisión"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef987579-32be-36f7-a54d-805aacd16d8e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f09208d7-1375-390c-85b3-3a02e6d09cfb",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Microwave",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mikrowellen"
+            ],
+            "pt": [
+              "Micro-ondas"
+            ],
+            "en": [
+              "Microwave"
+            ],
+            "it": [
+              "Microonde"
+            ],
+            "fr": [
+              "Micro-ondes"
+            ],
+            "es": [
+              "Microondas"
+            ],
+            "nl": [
+              "Magnetron"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/2be01c8a-de7b-393b-b059-2d32a7089289",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3epis",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Ähren/Komfort"
+          ],
+          "pt": [
+            "3 espigas / conforto"
+          ],
+          "en": [
+            "3 ears of corn / Confort level"
+          ],
+          "it": [
+            "3 spighe / Comfort"
+          ],
+          "fr": [
+            "3 épis / Confort"
+          ],
+          "es": [
+            "3 espigas/Confort"
+          ],
+          "nl": [
+            "3 aren / Comfort"
+          ]
+        },
+        "isCompliantWith": [
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f8884d70-4a02-376b-a0b0-3171c508b279",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_GitesDeFrance",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Gîtes de France"
+          ],
+          "pt": [
+            "Gîtes de France"
+          ],
+          "en": [
+            "Gîtes de France"
+          ],
+          "it": [
+            "Gîtes de France"
+          ],
+          "fr": [
+            "Gîtes de France"
+          ],
+          "nl": [
+            "Gîtes de France"
+          ],
+          "es": [
+            "Gîtes de France"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/2351dbab-3cc2-32d6-89c3-c17d9803f554",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/de3143f7-6ae2-3abb-8b43-db1c6f6e6d37",
+          "schema:addressLocality": "Prémanon",
+          "schema:postalCode": "39220",
+          "schema:streetAddress": [
+            "440 chemin Becs de Peroseys"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:39441",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Prémanon"
+              ],
+              "pt": [
+                "Prémanon"
+              ],
+              "en": [
+                "Prémanon"
+              ],
+              "it": [
+                "Prémanon"
+              ],
+              "fr": [
+                "Prémanon"
+              ],
+              "nl": [
+                "Prémanon"
+              ],
+              "es": [
+                "Prémanon"
+              ]
+            },
+            "insee": "39441",
+            "isPartOfDepartment": {
+              "@id": "kb:France2739",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Jura"
+                ],
+                "pt": [
+                  "Jura"
+                ],
+                "en": [
+                  "Jura"
+                ],
+                "it": [
+                  "Jura"
+                ],
+                "fr": [
+                  "Jura"
+                ],
+                "nl": [
+                  "Jura"
+                ],
+                "es": [
+                  "Jura"
+                ]
+              },
+              "insee": "39",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/64516215-4adf-3e43-87e6-07cb1160bd77",
+        "schema:latitude": "46.46802",
+        "schema:longitude": "6.02658",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-30",
+  "lastUpdateDatatourisme": "2025-07-31T00:03:00.345Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/ce3d8745-c354-351a-aed1-d18446451af9",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

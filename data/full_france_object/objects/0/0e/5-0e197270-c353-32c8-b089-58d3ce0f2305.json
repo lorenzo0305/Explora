@@ -1,0 +1,242 @@
+{
+  "@id": "https://data.datatourisme.fr/5/0e197270-c353-32c8-b089-58d3ce0f2305",
+  "dc:identifier": "213010166",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Meublé Patrice MANGIN 1"
+    ]
+  },
+  "allowedPersons": 6,
+  "creationDate": "2020-09-11",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/2ab59d04-79d9-3369-8fe3-d2a9939fb637",
+    "schema:legalName": "Office de tourisme du pays de Barr",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/f9be77db-d6c0-3a31-9fa8-638da3098074",
+      "schema:legalName": "Système d'informations touristique Alsace",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/923d80ed-8e07-3f09-b91a-a2baf4a8bd37",
+      "schema:email": [
+        "peufm@orange.fr"
+      ],
+      "schema:legalName": "LOCATION MANGIN PATRICE",
+      "schema:telephone": [
+        "+33 6 79 03 28 40"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/923d80ed-8e07-3f09-b91a-a2baf4a8bd37",
+      "schema:email": [
+        "peufm@orange.fr"
+      ],
+      "schema:legalName": "LOCATION MANGIN PATRICE",
+      "schema:telephone": [
+        "+33 6 79 03 28 40"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/a5f7e874-17d3-3400-994d-5ed272d14270",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/c122d9a5-a353-3d9c-87c9-c8b6ab25b61a",
+          "schema:addressLocality": "Dambach-la-Ville",
+          "schema:postalCode": "67650",
+          "schema:streetAddress": [
+            "33 rue du bernstein"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:67084",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Dambach-la-Ville"
+              ],
+              "pt": [
+                "Dambach-la-Ville"
+              ],
+              "en": [
+                "Dambach-la-Ville"
+              ],
+              "it": [
+                "Dambach-la-Ville"
+              ],
+              "fr": [
+                "Dambach-la-Ville"
+              ],
+              "nl": [
+                "Dambach-la-Ville"
+              ],
+              "es": [
+                "Dambach-la-Ville"
+              ]
+            },
+            "insee": "67084",
+            "isPartOfDepartment": {
+              "@id": "kb:France4467",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bas-Rhin"
+                ],
+                "pt": [
+                  "Bas-Rhin"
+                ],
+                "en": [
+                  "Bas-Rhin"
+                ],
+                "it": [
+                  "Bas-Rhin"
+                ],
+                "fr": [
+                  "Bas-Rhin"
+                ],
+                "nl": [
+                  "Bas-Rhin"
+                ],
+                "es": [
+                  "Bas-Rhin"
+                ]
+              },
+              "insee": "67",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/61293fbb-2b18-3b50-b925-569e1bd2302b",
+        "schema:latitude": "48.3213729",
+        "schema:longitude": "7.4345951",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/2ab59d04-79d9-3369-8fe3-d2a9939fb637",
+      "schema:legalName": "Office de tourisme du pays de Barr",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-03-27",
+  "lastUpdateDatatourisme": "2024-03-28T08:01:09.489Z"
+}

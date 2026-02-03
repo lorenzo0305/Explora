@@ -1,0 +1,750 @@
+{
+  "@id": "https://data.datatourisme.fr/15/0292e15e-0a3c-3356-9aca-b4da110bd502",
+  "dc:identifier": "ACCCEN045V506AP0",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CamperVanArea",
+    "CampingAndCaravanning",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Der Servicebereich Les Choux bietet Platz für bis zu 10 Wohnmobile."
+    ],
+    "en": [
+      "The service area of Les Choux can accommodate up to 10 motorhomes."
+    ],
+    "it": [
+      "L'area di servizio di Choux può ospitare fino a 10 camper."
+    ],
+    "fr": [
+      "L'aire de services des Choux peut accueillir jusqu'à 10 camping cars."
+    ],
+    "nl": [
+      "Het serviceterrein van Choux biedt plaats aan maximaal 10 campers."
+    ],
+    "es": [
+      "El área de servicio de Choux puede albergar hasta 10 autocaravanas."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Aire de services municipale pour camping-car"
+    ]
+  },
+  "allowedPersons": 10,
+  "creationDate": "2020-10-22",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/15/fa035c5d-9a5f-3e9d-9991-196a6a84b254",
+    "dc:identifier": "b230ab9f-9bba-4abf-a8fa-ae4b12ae93cd",
+    "schema:legalName": "OT GIEN",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/bba35b4d-022c-3fa7-90a3-07eba818e3a5",
+      "schema:legalName": "SIT Centre-Val de Loire",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/b328a8aa-95d6-3da0-be62-565da50fccad",
+      "schema:email": [
+        "mairie.leschoux@wanadoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 2 38 31 33 94"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.leschoux.fr/mairie/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/0bbd2ed4-9bfb-3706-a1c2-b3011aa0e89f",
+      "dc:description": {
+        "de": [
+          "Der Servicebereich Les Choux bietet Platz für bis zu 10 Wohnmobile."
+        ],
+        "en": [
+          "The service area of Les Choux can accommodate up to 10 motorhomes."
+        ],
+        "it": [
+          "L'area di servizio di Choux può ospitare fino a 10 camper."
+        ],
+        "fr": [
+          "L'aire de services des Choux peut accueillir jusqu'à 10 camping cars."
+        ],
+        "nl": [
+          "Het serviceterrein van Choux biedt plaats aan maximaal 10 campers."
+        ],
+        "es": [
+          "El área de servicio de Choux puede albergar hasta 10 autocaravanas."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "shortDescription": {
+        "de": [
+          "Der Servicebereich Les Choux bietet Platz für bis zu 10 Wohnmobile."
+        ],
+        "en": [
+          "The service area of Les Choux can accommodate up to 10 motorhomes."
+        ],
+        "it": [
+          "L'area di servizio di Choux può ospitare fino a 10 camper."
+        ],
+        "fr": [
+          "L'aire de services des Choux peut accueillir jusqu'à 10 camping cars."
+        ],
+        "nl": [
+          "Het serviceterrein van Choux biedt plaats aan maximaal 10 campers."
+        ],
+        "es": [
+          "El área de servicio de Choux puede albergar hasta 10 autocaravanas."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/208142fb-3efd-3e7b-a955-06ef824023bd",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CamperPitch",
+          "@type": [
+            "AccommodationPricingOffer",
+            "CampingAndCaravanningAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Stellplatz Wohnmobil"
+            ],
+            "pt": [
+              "Alvéolo para autocaravana"
+            ],
+            "en": [
+              "Motorhome pitch"
+            ],
+            "it": [
+              "Piazzola per camper"
+            ],
+            "fr": [
+              "Emplacement camping car"
+            ],
+            "es": [
+              "Espacio para autocaravanas"
+            ],
+            "nl": [
+              "Camperstaanplaats"
+            ]
+          }
+        },
+        {
+          "@id": "kb:ChemicalToiletEmptying",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Entleerung chemischer Toiletten"
+            ],
+            "pt": [
+              "Despejo das sanitas químicas"
+            ],
+            "en": [
+              "Chemical toilets emptying"
+            ],
+            "it": [
+              "Svuotamento di bagni chimici"
+            ],
+            "fr": [
+              "Vidange toilettes chimiques"
+            ],
+            "es": [
+              "Vaciado de inodoros químicos"
+            ],
+            "nl": [
+              "Loospunt chemische toiletten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:WastwaterEvacuation",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Entleerung von Abwasser"
+            ],
+            "pt": [
+              "Despejo de águas sujas"
+            ],
+            "en": [
+              "Wastwater evacuation"
+            ],
+            "it": [
+              "Svuotamento delle acque reflue"
+            ],
+            "fr": [
+              "Vidange des eaux usées"
+            ],
+            "es": [
+              "Vaciado de aguas residuales"
+            ],
+            "nl": [
+              "Afvalwaterpunt"
+            ]
+          }
+        },
+        {
+          "@id": "kb:WaterConnections",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wasseranschlüsse"
+            ],
+            "pt": [
+              "Ligações de água"
+            ],
+            "en": [
+              "Water connections"
+            ],
+            "it": [
+              "Collegamenti idrici"
+            ],
+            "fr": [
+              "Branchements d'eau"
+            ],
+            "nl": [
+              "Wateraansluitingen"
+            ],
+            "es": [
+              "Conexiones de agua"
+            ]
+          }
+        }
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/b9d19728-05a1-3de2-8d92-d23183dbfeac",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/8532b1c3-7c89-3d4d-9221-40a9e9feebe6",
+          "ebucore:title": {
+            "fr": [
+              "300655"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "AIRE MUNICIPALE"
+          ],
+          "rightsEndDate": "2028-01-01",
+          "rightsStartDate": "2020-10-22"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/a55419ec-3c43-3072-9a27-e56bad288827",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/300655.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasNeighborhood": [
+    {
+      "@id": "kb:InTheCountryside",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Auf dem Land"
+        ],
+        "pt": [
+          "No campo"
+        ],
+        "en": [
+          "In the countryside"
+        ],
+        "it": [
+          "In campagna"
+        ],
+        "fr": [
+          "A la campagne"
+        ],
+        "nl": [
+          "Op het platteland"
+        ],
+        "es": [
+          "En el campo"
+        ]
+      }
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/1fdbd6db-9880-393f-a63a-5152aaf0fa8b",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/8e5f0abc-36bc-3945-be98-5b9f0f618c23",
+          "ebucore:title": {
+            "fr": [
+              "image-3"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "mchoux"
+          ],
+          "rightsEndDate": "2028-01-01",
+          "rightsStartDate": "2020-12-19"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/619e5b90-4426-3541-b3ef-9bbb526ca272",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/image-3-4.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b9d19728-05a1-3de2-8d92-d23183dbfeac",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/8532b1c3-7c89-3d4d-9221-40a9e9feebe6",
+          "ebucore:title": {
+            "fr": [
+              "300655"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "AIRE MUNICIPALE"
+          ],
+          "rightsEndDate": "2028-01-01",
+          "rightsStartDate": "2020-10-22"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/a55419ec-3c43-3072-9a27-e56bad288827",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/300655.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:InTheCountryside",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Auf dem Land"
+        ],
+        "pt": [
+          "No campo"
+        ],
+        "en": [
+          "In the countryside"
+        ],
+        "it": [
+          "In campagna"
+        ],
+        "fr": [
+          "A la campagne"
+        ],
+        "nl": [
+          "Op het platteland"
+        ],
+        "es": [
+          "En el campo"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/03bfdb7a-26fb-38cc-aa22-d3592de92b97",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/24bf2252-eb02-3b4c-9dba-69e99a880e93",
+          "schema:addressLocality": "Les Choux",
+          "schema:postalCode": "45290",
+          "schema:streetAddress": [
+            "Rue de Dampierre"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:45096",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Les Choux"
+              ],
+              "pt": [
+                "Les Choux"
+              ],
+              "en": [
+                "Les Choux"
+              ],
+              "it": [
+                "Les Choux"
+              ],
+              "fr": [
+                "Les Choux"
+              ],
+              "nl": [
+                "Les Choux"
+              ],
+              "es": [
+                "Les Choux"
+              ]
+            },
+            "insee": "45096",
+            "isPartOfDepartment": {
+              "@id": "kb:France2445",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Loiret"
+                ],
+                "pt": [
+                  "Loiret"
+                ],
+                "en": [
+                  "Loiret"
+                ],
+                "it": [
+                  "Loiret"
+                ],
+                "fr": [
+                  "Loiret"
+                ],
+                "nl": [
+                  "Loiret"
+                ],
+                "es": [
+                  "Loiret"
+                ]
+              },
+              "insee": "45",
+              "isPartOfRegion": {
+                "@id": "kb:France24",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Centre-Val de Loire"
+                  ],
+                  "pt": [
+                    "Centre-Val de Loire"
+                  ],
+                  "en": [
+                    "Centre-Val de Loire"
+                  ],
+                  "it": [
+                    "Centre-Val de Loire"
+                  ],
+                  "fr": [
+                    "Centre-Val de Loire"
+                  ],
+                  "nl": [
+                    "Centre-Val de Loire"
+                  ],
+                  "es": [
+                    "Centre-Val de Loire"
+                  ]
+                },
+                "insee": "24",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/c05c00b2-3069-3c04-9992-0dea7f161be9",
+        "schema:latitude": "47.7970699",
+        "schema:longitude": "2.67275955",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2025-01-02",
+  "lastUpdateDatatourisme": "2025-01-03T04:11:07.52Z"
+}

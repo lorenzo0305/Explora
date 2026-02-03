@@ -1,0 +1,3581 @@
+{
+  "@id": "https://data.datatourisme.fr/31/0c45edfe-2dbc-35b8-9cbe-b3a5f6ddadbb",
+  "dc:identifier": "TFO057058278765",
+  "@type": [
+    "schema:Accommodation",
+    "schema:House",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "House",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Dieses charmante Haus wurde mit einer Kombination aus Stein und Holz renoviert und ist mit allen Annehmlichkeiten ausgestattet, um einen angenehmen Urlaub zu verbringen!"
+    ],
+    "en": [
+      "This charming house has been renovated by combining stone and wood and is equipped with all the comforts for a pleasant holiday!"
+    ],
+    "it": [
+      "Questa incantevole casa è stata ristrutturata utilizzando una combinazione di pietra e legno e dispone di tutti i comfort necessari per una grande vacanza!"
+    ],
+    "fr": [
+      "Cette maison pleine de charme a été rénovée en alliant la pierre et le bois et est dotée de tout le confort pour passer d'agréables vacances !"
+    ],
+    "es": [
+      "¡Esta encantadora casa ha sido renovada combinando piedra y madera y está equipada con todas las comodidades para unas vacaciones agradables!"
+    ],
+    "nl": [
+      "Dit charmante huis is gerenoveerd met een combinatie van steen en hout en is van alle gemakken voorzien die je nodig hebt voor een geweldige vakantie!"
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Chez Firmin - Véronique DELTOUR"
+    ]
+  },
+  "allowedPersons": 6,
+  "availableLanguage": [
+    "fr"
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/db224e7a-611f-379d-b03d-1cb615389a8d",
+    "schema:legalName": "HIT Aveyron (ADAT Aveyron)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/66be3cfa-8d5c-34e7-87b1-87e1705c3fc4",
+      "schema:email": [
+        "webmaster@tourisme-aveyron.com"
+      ],
+      "schema:legalName": "ADT Aveyron",
+      "schema:telephone": [
+        "+33 5 65 75 40 12"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-aveyron.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/2524755c-cf4b-339e-ab87-c796283104bb",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/f6d73a50-749e-383b-944e-5da5f0f8e41a",
+          "schema:addressLocality": "Castelnau-Pégayrols",
+          "schema:postalCode": "12620",
+          "schema:streetAddress": [
+            "Estalane"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12062",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Castelnau-Pégayrols"
+              ],
+              "pt": [
+                "Castelnau-Pégayrols"
+              ],
+              "en": [
+                "Castelnau-Pégayrols"
+              ],
+              "it": [
+                "Castelnau-Pégayrols"
+              ],
+              "fr": [
+                "Castelnau-Pégayrols"
+              ],
+              "nl": [
+                "Castelnau-Pégayrols"
+              ],
+              "es": [
+                "Castelnau-Pégayrols"
+              ]
+            },
+            "insee": "12062",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "yves.deltour@wanadoo.fr"
+      ],
+      "schema:familyName": [
+        "DELTOUR"
+      ],
+      "schema:givenName": [
+        "Véronique"
+      ],
+      "schema:legalName": "Chez firmin - Véronique DELTOUR - AYG7048",
+      "schema:telephone": [
+        "+33 5 65 62 32 23"
+      ],
+      "@type": [
+        "schema:Organization",
+        "schema:Person",
+        "foaf:Agent",
+        "foaf:Person",
+        "Agent",
+        "Person"
+      ],
+      "foaf:homepage": [
+        "http://gite-chezfirmin.com/",
+        "https://www.gite-chezfirmin.com/"
+      ],
+      "foaf:title": [
+        "Madame"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8fc362df-f755-3df5-a4e8-c87139aa2e0a",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/ac0433fe-8bbd-318a-9e64-077d61ea9bc2",
+          "schema:addressLocality": "Rodez",
+          "schema:postalCode": "12000",
+          "schema:streetAddress": [
+            "2 rue de Dublin",
+            "Les Terrasses de Bourran - Bât C"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12202",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Rodez"
+              ],
+              "pt": [
+                "Rodez"
+              ],
+              "en": [
+                "Rodez"
+              ],
+              "it": [
+                "Rodez"
+              ],
+              "fr": [
+                "Rodez"
+              ],
+              "nl": [
+                "Rodez"
+              ],
+              "es": [
+                "Rodez"
+              ]
+            },
+            "insee": "12202",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "info@gitesdefrance-reservation-altg.com"
+      ],
+      "schema:legalName": "Gites de France Aveyron Réservation",
+      "schema:telephone": [
+        "+33 5 65 75 55 61",
+        "+33 5 65 75 55 66"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.gites-de-france-aveyron.com/fr/location/locations-gites-castelnau-pegayrols-ayg7048-h12g005763"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/ca10aa98-23a3-3590-a597-3c60b2ee9f19",
+      "dc:description": {
+        "de": [
+          "Unterkunft, die an ein anderes Haus (Eigentümerfamilie) angrenzt, auf 2 Ebenen, in einem kleinen Dorf. 3 Schlafzimmer (2 Betten 140, 2 Betten 90), 2 Badezimmer, Küchenecke (Geschirrspüler)/Wohnzimmer (Sofa, Holzofen, Fernseher, DVD-Player, Mini-Anlage, Internetanschluss), Vorratskammer (Waschmaschine, Bügelbrett und Bügeleisen), Hochstuhl, Babybett, Topf und Badewanne zur Verfügung, Zentralheizung, Gartenmöbel, Grill, private Terrasse (8m²) und Garten (9m²), teilweise gemeinsamer umzäunter Hof (60m²), Parkplatz. Kurtaxe, Verleih von Bettwäsche (10? pro Paar) obligatorisch für Geschäftsleute, Handtücher, Reinigungsoption (50?) obligatorisch für Geschäftsleute. Haustiere sind erlaubt."
+        ],
+        "en": [
+          "Gîte adjoining another dwelling (owner's family), on 2 levels, in small village. 3 bedrooms (2 x 140 beds, 2 x 90 beds), 2 bathrooms, kitchenette (dishwasher)/living room (sofa, wood-burning stove, TV, DVD player, mini-stereo, Internet access), storeroom (washing machine, ironing board and iron), highchair, cot, potty and bath available, central heating, garden furniture, barbecue, private terrace (8m²) and garden (9m²), partly enclosed courtyard (60m²), parking. Tourist tax, bed linen rental (10? per pair) compulsory for professionals, towels, cleaning option (50?) compulsory for professionals. Pets allowed."
+        ],
+        "it": [
+          "Gîte adiacente a un'altra abitazione (famiglia del proprietario), su 2 livelli, in un piccolo villaggio. 3 camere da letto (2 letti da 140 cm, 2 letti da 90 cm), 2 bagni con doccia, angolo cottura (lavastoviglie)/soggiorno (divano, stufa a legna, televisione, lettore DVD, mini-stereo, accesso a internet), ripostiglio (lavatrice, asse da stiro e ferro da stiro), seggiolone, culla, vasino e vasca da bagno a disposizione, riscaldamento centralizzato, mobili da giardino, barbecue, terrazza privata (8 m²) e giardino (9 m²), cortile chiuso in parte in comune (60 m²), parcheggio. Tassa di soggiorno, noleggio biancheria da letto (10? a coppia) obbligatorio per i professionisti, biancheria da bagno, opzione pulizia (50?) obbligatoria per i professionisti. Animali ammessi."
+        ],
+        "fr": [
+          "Gîte mitoyen à une autre habitation (famille propriétaire), sur 2 niveaux, dans petit village. 3 chambres (2 lits 140, 2 lits 90), 2 salles d'eau, coin-cuisine (lave-vaisselle)/séjour (canapé, poêle à bois, télévision, lecteur DVD, mini-chaîne, accès internet), cellier (lave-linge, table et fer à repasser), chaise haute, lit bébé, pot et baignoire à disposition, chauffage central, salon de jardin, barbecue, terrasse (8m²) et jardin (9m²) privés, cour close en partie commune (60m²), parking. Taxe de séjour, location de draps (10 € la paire) obligatoire professionnels , linge de toilette, option ménage (50€) obligatoire professionnels. Animaux admis."
+        ],
+        "nl": [
+          "Gîte bij een andere woning (familie van de eigenaar), op 2 niveaus, in een klein dorp. 3 slaapkamers (2 x bedden van 140, 2 x bedden van 90), 2 doucheruimtes, keukenhoek (vaatwasser)/zitkamer (bank, houtkachel, televisie, DVD-speler, mini-stereo, internettoegang), berging (wasmachine, strijkplank en strijkijzer), kinderstoel, kinderbed, potje en bad beschikbaar, centrale verwarming, tuinmeubels, barbecue, eigen terras (8m²) en tuin (9m²), omheinde binnenplaats gedeeltelijk gemeenschappelijk (60m²), parking. Toeristenbelasting, huur beddengoed (10? per paar) verplicht voor professionelen, badkamerlinnen, optie schoonmaak (50?) verplicht voor professionelen. Huisdieren toegestaan."
+        ],
+        "es": [
+          "Casa rural contigua a otra vivienda (familia del propietario), en 2 niveles, en un pequeño pueblo. 3 habitaciones (2 camas de 140 cm, 2 camas de 90 cm), 2 cuartos de ducha, cocina americana (lavavajillas)/sala de estar (sofá, estufa de leña, televisión, lector DVD, mini-estéreo, acceso a Internet), trastero (lavadora, tabla de planchar y plancha), trona, cuna, orinal y bañera disponibles, calefacción central, muebles de jardín, barbacoa, terraza privada (8 m²) y jardín (9 m²), patio cerrado parcialmente compartido (60 m²), aparcamiento. Tasa turística, alquiler de ropa de cama (10? por par) obligatorio para los profesionales, ropa de baño, opción limpieza (50?) obligatorio para los profesionales. Se admiten animales de compañía."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0e59f5fa-4876-3d42-a94d-e55ab90071bf",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/55f74249-c9d2-32ab-b445-a18e49675aaa",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/af41a2b1-5805-37b0-80d6-1aca0a2b5844",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b4643334-ab8d-3167-9161-58c46f30911e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/c75e9363-5dbe-38d7-9d58-94dc10e4250b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f6658c77-f3ca-3b6a-b89b-0e34369bd85c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/fad65be9-3c44-3c38-967e-251bbaf36e89",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/fb6d4e32-c445-36c1-b9a5-7e25852e18a2",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Dieses charmante Haus wurde mit einer Kombination aus Stein und Holz renoviert und ist mit allen Annehmlichkeiten ausgestattet, um einen angenehmen Urlaub zu verbringen!"
+        ],
+        "en": [
+          "This charming house has been renovated by combining stone and wood and is equipped with all the comforts for a pleasant holiday!"
+        ],
+        "it": [
+          "Questa incantevole casa è stata ristrutturata utilizzando una combinazione di pietra e legno e dispone di tutti i comfort necessari per una grande vacanza!"
+        ],
+        "fr": [
+          "Cette maison pleine de charme a été rénovée en alliant la pierre et le bois et est dotée de tout le confort pour passer d'agréables vacances !"
+        ],
+        "es": [
+          "¡Esta encantadora casa ha sido renovada combinando piedra y madera y está equipada con todas las comodidades para unas vacaciones agradables!"
+        ],
+        "nl": [
+          "Dit charmante huis is gerenoveerd met een combinatie van steen en hout en is van alle gemakken voorzien die je nodig hebt voor een geweldige vakantie!"
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/0adbd0d7-d75b-3a3a-a7b4-0d4b850e75a3",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:HairDryer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Haartrockner"
+            ],
+            "pt": [
+              "Secador de cabelo"
+            ],
+            "en": [
+              "Hair dryer"
+            ],
+            "it": [
+              "Asciugacapelli"
+            ],
+            "fr": [
+              "Sèche cheveux"
+            ],
+            "es": [
+              "Secador de pelo"
+            ],
+            "nl": [
+              "Haardroger"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/0e9faf0e-cbca-3a1a-a9a7-c0ee80651f45",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "petsAllowed": true
+    },
+    {
+      "@id": "https://data.datatourisme.fr/20a9e41b-ed49-3d5d-93f9-ac858c0ac441",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Terrace",
+          "@type": [
+            "CommonAmenity",
+            "ParkAndGardenTheme"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Terrasse"
+            ],
+            "pt": [
+              "Terraço"
+            ],
+            "en": [
+              "Terrace"
+            ],
+            "it": [
+              "Terrazzo"
+            ],
+            "fr": [
+              "Terrasse"
+            ],
+            "es": [
+              "Terraza"
+            ],
+            "nl": [
+              "Terras"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/42aa53a7-b05b-3a8f-9b1c-9631ded80981",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/454cd779-b00d-3ae6-a7cb-228de2ec5e4c",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true,
+      "features": [
+        {
+          "@id": "kb:SportRoom",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Sporthalle oder -platz"
+            ],
+            "pt": [
+              "Pavilhão ou terreno desportivo"
+            ],
+            "en": [
+              "Sport room"
+            ],
+            "it": [
+              "Sala o campo sportivo"
+            ],
+            "fr": [
+              "Salle ou terrain de sport"
+            ],
+            "nl": [
+              "Sportzaal of -terrein"
+            ],
+            "es": [
+              "Pabellón o campo deportivo"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/47b6c5ae-cf8c-34ec-b5b5-1bfcf66dd71a",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:ShopsFirstNeed",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschäfte für den Grundbedarf"
+            ],
+            "pt": [
+              "Comércio de primeira necessidade"
+            ],
+            "en": [
+              "Shops first need"
+            ],
+            "it": [
+              "Negozi prima necessità"
+            ],
+            "fr": [
+              "Commerces 1ère nécessité"
+            ],
+            "nl": [
+              "Winkels voor eerste levensbehoeften"
+            ],
+            "es": [
+              "Comercio de primera necesidad"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4cba7bb6-a09a-3fb8-9fc1-38935866d515",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Playground",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Spielplatz, Außenspielplatz"
+            ],
+            "pt": [
+              "Parque infantil, parque de jogos exterior"
+            ],
+            "en": [
+              "Playground"
+            ],
+            "it": [
+              "Parco giochi, parco giochi all'aperto"
+            ],
+            "fr": [
+              "Aire de jeux, terrain de jeux extérieurs"
+            ],
+            "nl": [
+              "Speelplaats, buitenspeelplaats"
+            ],
+            "es": [
+              "Parque infantil, zona de juegos al aire libre"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/52c7b247-ad74-3bc5-8098-ca2113495420",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:PrivateShower",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Waschraum"
+            ],
+            "pt": [
+              "Duche privativo"
+            ],
+            "en": [
+              "Private shower"
+            ],
+            "it": [
+              "Bagno privato"
+            ],
+            "fr": [
+              "Salle d'eau privée"
+            ],
+            "nl": [
+              "Privédoucheruimte"
+            ],
+            "es": [
+              "Cuarto de baño privado"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5806b3df-de51-3b50-a850-3a94fe421c27",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:GardenLounge",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Garten-Lounge"
+            ],
+            "pt": [
+              "Mobília de jardim"
+            ],
+            "en": [
+              "Garden lounge"
+            ],
+            "it": [
+              "Mobili da giardino"
+            ],
+            "fr": [
+              "Salon de jardin"
+            ],
+            "nl": [
+              "Tuinset"
+            ],
+            "es": [
+              "Muebles de jardín"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/583e670a-3a67-3d20-8f74-c62773d1d15c",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Fireplace",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Kamin, Öfen"
+            ],
+            "pt": [
+              "Chaminé, salamandra"
+            ],
+            "en": [
+              "Fireplace, stove"
+            ],
+            "it": [
+              "Camino, stufa"
+            ],
+            "fr": [
+              "Cheminée, poële"
+            ],
+            "nl": [
+              "Schoorsteen, kachel"
+            ],
+            "es": [
+              "Chimenea, estufa"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5e8b0b35-a5f6-3726-a647-f483738b80fa",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:EnclosedLand",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Eingezäuntes Grundstück"
+            ],
+            "pt": [
+              "Terreno confinado"
+            ],
+            "en": [
+              "Enclosed land"
+            ],
+            "it": [
+              "Terreno recintato"
+            ],
+            "fr": [
+              "Terrain clos"
+            ],
+            "es": [
+              "Terreno cerrado"
+            ],
+            "nl": [
+              "Afgesloten terrein"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/61749a82-9e66-3a81-9a5a-5057d9c53134",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true,
+      "features": [
+        {
+          "@id": "kb:FinalHousekeeping",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Endreinigung"
+            ],
+            "pt": [
+              "Limpeza no fim da estadia"
+            ],
+            "en": [
+              "Final housekeeping"
+            ],
+            "it": [
+              "Pulizia alla fine del soggiorno"
+            ],
+            "fr": [
+              "Ménage en fin de séjour"
+            ],
+            "es": [
+              "Tareas de limpieza al final del día"
+            ],
+            "nl": [
+              "Eindschoonmaak"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/674bc3ab-e707-31f6-8b76-ed2906ce8753",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false
+    },
+    {
+      "@id": "https://data.datatourisme.fr/753d577c-9d87-3b89-9efc-053c2e128300",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:KitchenKitchenette",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Küche – Kochecke"
+            ],
+            "pt": [
+              "Cozinha — canto de cozinha"
+            ],
+            "en": [
+              "Kitchen - kitchenette"
+            ],
+            "it": [
+              "Cucina - angolo cottura"
+            ],
+            "fr": [
+              "Cuisine - coin cuisine"
+            ],
+            "nl": [
+              "Keuken - keukengedeelte"
+            ],
+            "es": [
+              "Cocina"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/772737ee-b898-3d0f-962d-81946bd94336",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:PrivateParking",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Parkplatz"
+            ],
+            "pt": [
+              "Parque de estacionamento privativo"
+            ],
+            "en": [
+              "Private parking"
+            ],
+            "it": [
+              "Parcheggio privato"
+            ],
+            "fr": [
+              "Parking privé"
+            ],
+            "nl": [
+              "Privéparking"
+            ],
+            "es": [
+              "Aparcamiento privado"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8ddd2ff4-2684-32ee-ae43-82c003958326",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Toilet",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Toiletten"
+            ],
+            "pt": [
+              "Sanitários"
+            ],
+            "en": [
+              "Toilets"
+            ],
+            "it": [
+              "Servizi igienici"
+            ],
+            "fr": [
+              "Toilettes"
+            ],
+            "nl": [
+              "Toiletten"
+            ],
+            "es": [
+              "Aseos"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/918b68b6-ca27-3a59-878b-8fa3b8015b4f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Court",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Hof"
+            ],
+            "pt": [
+              "Pátio"
+            ],
+            "en": [
+              "Court"
+            ],
+            "it": [
+              "Cortile"
+            ],
+            "fr": [
+              "Cour"
+            ],
+            "es": [
+              "Patio"
+            ],
+            "nl": [
+              "Binnenplaats"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/936c2406-8651-33ce-85eb-b9b23fabaaa5",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true
+    },
+    {
+      "@id": "https://data.datatourisme.fr/972080b8-3a91-31cc-aa2a-b818e4fffcd4",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Television",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Fernsehen"
+            ],
+            "pt": [
+              "Televisão"
+            ],
+            "en": [
+              "Television"
+            ],
+            "it": [
+              "Televisione"
+            ],
+            "fr": [
+              "Télévision"
+            ],
+            "nl": [
+              "Televisie"
+            ],
+            "es": [
+              "Televisión"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9c419e26-aeb9-3669-824b-6b4f11bdd62d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Barbecue",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Grill"
+            ],
+            "pt": [
+              "Churrasco"
+            ],
+            "en": [
+              "Barbecue"
+            ],
+            "it": [
+              "Barbecue"
+            ],
+            "fr": [
+              "Barbecue"
+            ],
+            "nl": [
+              "Barbecue"
+            ],
+            "es": [
+              "Barbacoa"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9cc1e7e7-9cfe-372f-8d91-41e821010259",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:BabyChair",
+          "@type": [
+            "CateringAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Hochstuhl"
+            ],
+            "pt": [
+              "Cadeira de bebé"
+            ],
+            "en": [
+              "Baby chair"
+            ],
+            "it": [
+              "Sedia per bambini"
+            ],
+            "fr": [
+              "Chaise bébé"
+            ],
+            "es": [
+              "Silla de bebé"
+            ],
+            "nl": [
+              "Kinderstoel"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a54e2ad3-756a-3661-a3a3-aa020bde912f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Heating",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Heizen"
+            ],
+            "pt": [
+              "Aquecimento"
+            ],
+            "en": [
+              "Heating"
+            ],
+            "it": [
+              "Riscaldamento"
+            ],
+            "fr": [
+              "Chauffage"
+            ],
+            "nl": [
+              "Verwarming"
+            ],
+            "es": [
+              "Climatización"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a7b4927d-3e82-3596-b87b-017e70d14a3d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bc57fc38-12ee-37f1-a37b-e93987118326",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:SemiShaddedArea",
+          "@type": [
+            "CampingAndCaravanningAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Halbschattiger Platz"
+            ],
+            "pt": [
+              "Local a meia sombra"
+            ],
+            "en": [
+              "Semi-shadded area"
+            ],
+            "it": [
+              "Piazzola semi-ombreggiata"
+            ],
+            "fr": [
+              "Emplacement semi-ombragé"
+            ],
+            "nl": [
+              "Staanplaats gedeeltelijk in de schaduw"
+            ],
+            "es": [
+              "Parcela con sol y sombra"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cd293d81-08b8-390d-8bac-cdf53e8eca74",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:SeparateEntrance",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Separater Eingang"
+            ],
+            "pt": [
+              "Entrada independente"
+            ],
+            "en": [
+              "Separate entrance"
+            ],
+            "it": [
+              "Ingresso indipendente"
+            ],
+            "fr": [
+              "Entrée indépendante"
+            ],
+            "nl": [
+              "Onafhankelijke ingang"
+            ],
+            "es": [
+              "Entrada independiente"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cd4789cd-7e09-3ca5-8293-0431f1008e7e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true,
+      "features": [
+        {
+          "@id": "kb:LinenHire",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wäsche-Verleih"
+            ],
+            "pt": [
+              "Aluguer de roupa"
+            ],
+            "en": [
+              "Linen hire"
+            ],
+            "it": [
+              "Noleggio di biancheria"
+            ],
+            "fr": [
+              "Location de linge"
+            ],
+            "nl": [
+              "Linnenverhuur"
+            ],
+            "es": [
+              "Alquiler de ropa de cama"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/dc47845c-9a17-3d29-9ad7-ef0d299d6927",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:BabyEquipment",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Baby-, Kindermaterial"
+            ],
+            "pt": [
+              "Material para bebés e crianças"
+            ],
+            "en": [
+              "Baby or child equipment"
+            ],
+            "it": [
+              "Dotazioni per neonati e bambini"
+            ],
+            "fr": [
+              "Matériel bébé, enfant"
+            ],
+            "es": [
+              "Material para bebés y niños pequeños"
+            ],
+            "nl": [
+              "Baby- en kinderuitrusting"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cot",
+          "@type": [
+            "AccommodationPricingOffer",
+            "TypeOfBed"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Babybett"
+            ],
+            "pt": [
+              "Berço"
+            ],
+            "en": [
+              "Cot"
+            ],
+            "it": [
+              "Lettino per bambini"
+            ],
+            "fr": [
+              "Lit bébé"
+            ],
+            "es": [
+              "Cuna"
+            ],
+            "nl": [
+              "Babybed"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e3656004-545f-3962-a7e6-4e2848cc304d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:FoodGrocery",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Ernährung – Lebensmittelgeschäft"
+            ],
+            "pt": [
+              "Alimentação — ponto de alimentação"
+            ],
+            "en": [
+              "Food - grocery"
+            ],
+            "it": [
+              "Alimentazione - negozio di alimentari"
+            ],
+            "fr": [
+              "Alimentation - point alimentation"
+            ],
+            "nl": [
+              "Levensmiddelen - levensmiddelenwinkel"
+            ],
+            "es": [
+              "Alimentación - punto de alimentación"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ea6c865e-995c-3850-ba92-0e87bdcddfda",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:ChemicalToiletEmptying",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Entleerung chemischer Toiletten"
+            ],
+            "pt": [
+              "Despejo das sanitas químicas"
+            ],
+            "en": [
+              "Chemical toilets emptying"
+            ],
+            "it": [
+              "Svuotamento di bagni chimici"
+            ],
+            "fr": [
+              "Vidange toilettes chimiques"
+            ],
+            "es": [
+              "Vaciado de inodoros químicos"
+            ],
+            "nl": [
+              "Loospunt chemische toiletten"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ebc11be3-3445-36e8-8cd9-d3ce53a30fd6",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:BikeRoom",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Fahrradraum"
+            ],
+            "pt": [
+              "Local para bicicletas"
+            ],
+            "en": [
+              "Bike room"
+            ],
+            "it": [
+              "Locale biciclette"
+            ],
+            "fr": [
+              "Local vélo"
+            ],
+            "es": [
+              "Local de bicicletas"
+            ],
+            "nl": [
+              "Fietsenruimte"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/efaec19c-6247-3b98-8ee7-f0d99b81a2cd",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true,
+      "features": [
+        {
+          "@id": "kb:SwimmingPool",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Pool"
+            ],
+            "pt": [
+              "Piscina"
+            ],
+            "en": [
+              "Swimming pool"
+            ],
+            "it": [
+              "Piscina"
+            ],
+            "fr": [
+              "Piscine"
+            ],
+            "nl": [
+              "Zwembad"
+            ],
+            "es": [
+              "Piscina"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f450a789-fbca-321a-ade0-9cd66e66e6e1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true,
+      "features": [
+        {
+          "@id": "kb:SheetsAndTowels",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bettwäsche und Handtücher"
+            ],
+            "pt": [
+              "Lençóis e toalhas"
+            ],
+            "en": [
+              "Sheets and towels"
+            ],
+            "it": [
+              "Lenzuola e biancheria"
+            ],
+            "fr": [
+              "Draps et linges"
+            ],
+            "es": [
+              "Sábanas y ropa de cama"
+            ],
+            "nl": [
+              "Beddengoed en handdoeken"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fc0bc025-becb-3e99-bc11-03d3f175876b",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        },
+        {
+          "@id": "kb:SharedWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gemeinschaftlich genutzte Waschmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar roupa coletiva"
+            ],
+            "en": [
+              "Shared washer"
+            ],
+            "it": [
+              "Lavatrice comune"
+            ],
+            "fr": [
+              "Lave linge collectif"
+            ],
+            "es": [
+              "Lavadoras colectivas"
+            ],
+            "nl": [
+              "Gemeenschappelijke wasmachine"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/f4b7f991-1e34-348d-b14f-400fe694c7c0",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/40c1aef7-e021-39c2-a238-8b65930df2dc",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/da639ed7-7614-37a7-8950-35d18846e255",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/21340/images/341316_0aaae2d5-7a86-4ef2-935a-1ed36dc23fd5/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/1c73de02-f4dd-34c5-9071-3b29aa2809f0",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/40c1aef7-e021-39c2-a238-8b65930df2dc",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/781bae21-c51f-3692-8ec0-d380c58fedce",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/21340/images/341318_617c6bfd-ecdf-433f-a6ec-21c37c18232b/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/32bd6ff1-c1ff-3691-80bd-fa4d27c128c2",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/40c1aef7-e021-39c2-a238-8b65930df2dc",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/839189af-b6db-3451-b432-aae90c5bf5b9",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/21340/images/341325_c063957b-195d-4972-b578-5771829587ae/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/44683e02-3ea0-38fd-b75e-6c787df4d7f5",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/40c1aef7-e021-39c2-a238-8b65930df2dc",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/840185da-5092-302e-b214-e6702747bdd4",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/21340/images/341321_88442792-e8bb-4f6a-8e12-b8631889703a/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/521eedcd-32e1-31ea-8741-c397677ad6b1",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/40c1aef7-e021-39c2-a238-8b65930df2dc",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/470cf20b-98ef-3b62-a852-fb41ac7bb538",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/21340/images/341319_988b44da-b33d-4072-b28c-d0023a8f52a7/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8265f825-21e1-38a0-bff6-512cf43773d5",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/40c1aef7-e021-39c2-a238-8b65930df2dc",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/992c256f-5067-35bc-9c4c-c097750447e8",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/21340/images/341324_6a0e0bed-7913-464a-8f48-9947313c6bad/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a4e3ec19-32b8-3923-8cd6-75b97bcbb7fb",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/8fa5965e-b0e0-33ae-98f9-cf9566f979d3",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "OFFICE TOURISME DU PAYS DE LA MUSE ET RASPES DU TARN"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/608b93f7-0e3a-3b3c-958b-29c41fc9038d",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/21340/images/341323_92be6c6c-87b9-4b6f-922f-def39446ee6f/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b903fb6f-c98f-3753-b17f-4a83ac8ba6ee",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/40c1aef7-e021-39c2-a238-8b65930df2dc",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/9eece182-1a8d-3392-bc99-19b8e9974c08",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/21340/images/341320_685b4f5a-3d95-4099-98ff-150bd513a877/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c7f2d215-c334-39f6-bebe-5f82b1f4b550",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/40c1aef7-e021-39c2-a238-8b65930df2dc",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/0dda4941-d1c6-3b97-8073-d95b6ba476a7",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/21340/images/341317_fa3b443a-1737-4508-a9c5-3d7742af4661/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d39d2775-4bb1-3296-827d-c345158de128",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/40c1aef7-e021-39c2-a238-8b65930df2dc",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/a21f95f3-e030-3926-b929-4dfe58660f99",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/21340/images/341322_56b0a783-d694-4f4a-bf29-1f6dca35f711/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f4b7f991-1e34-348d-b14f-400fe694c7c0",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/40c1aef7-e021-39c2-a238-8b65930df2dc",
+          "ebucore:comments": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chez Firmin - Véronique DELTOUR - AYG7048"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/da639ed7-7614-37a7-8950-35d18846e255",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/21340/images/341316_0aaae2d5-7a86-4ef2-935a-1ed36dc23fd5/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/3d8bf3e6-01cb-3004-9f20-a08461127a74",
+      "@type": [
+        "Review"
+      ],
+      "reviewDeliveryDate": "2011-01-20"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e58ecd8d-4ac8-3249-aba9-d5ec3c607894",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3epis",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Ähren/Komfort"
+          ],
+          "pt": [
+            "3 espigas / conforto"
+          ],
+          "en": [
+            "3 ears of corn / Confort level"
+          ],
+          "it": [
+            "3 spighe / Comfort"
+          ],
+          "fr": [
+            "3 épis / Confort"
+          ],
+          "es": [
+            "3 espigas/Confort"
+          ],
+          "nl": [
+            "3 aren / Comfort"
+          ]
+        },
+        "isCompliantWith": [
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      },
+      "reviewDeliveryDate": "2020-09-17"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fca69d39-7d92-3b0e-b984-2ef840584e23",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3etoiles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Sterne"
+          ],
+          "pt": [
+            "3 estrelas"
+          ],
+          "en": [
+            "3 Stars"
+          ],
+          "it": [
+            "3 stelle"
+          ],
+          "fr": [
+            "3 étoiles"
+          ],
+          "nl": [
+            "3 sterren"
+          ],
+          "es": [
+            "3 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      },
+      "reviewDeliveryDate": "2020-09-29"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ffaef214-c8ad-3e3c-9f70-334abea43fe1",
+      "@type": [
+        "Review"
+      ],
+      "reviewDeliveryDate": "2023-01-01"
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/729cc244-9d3e-379d-b0d1-01b625c0174a",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9d7f07c5-351c-3d3d-aa29-486b24f21dab",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ea5edf58-81d0-3aa5-a4c4-fabf031c7673",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/f5786bce-86d6-3609-bd2d-c92fe1d21901",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/f6d73a50-749e-383b-944e-5da5f0f8e41a",
+          "schema:addressLocality": "Castelnau-Pégayrols",
+          "schema:postalCode": "12620",
+          "schema:streetAddress": [
+            "Estalane"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12062",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Castelnau-Pégayrols"
+              ],
+              "pt": [
+                "Castelnau-Pégayrols"
+              ],
+              "en": [
+                "Castelnau-Pégayrols"
+              ],
+              "it": [
+                "Castelnau-Pégayrols"
+              ],
+              "fr": [
+                "Castelnau-Pégayrols"
+              ],
+              "nl": [
+                "Castelnau-Pégayrols"
+              ],
+              "es": [
+                "Castelnau-Pégayrols"
+              ]
+            },
+            "insee": "12062",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/1c282872-6e6e-37c4-97d4-1ffc5fe53638",
+        "schema:latitude": "44.1553",
+        "schema:longitude": "2.9212",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2024-10-02",
+  "lastUpdateDatatourisme": "2025-05-07T12:20:20.038Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/6d3512a8-213b-3b13-b30f-29ef1160da68",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/0795bd09-17da-3bcd-acb7-fcd388526bc0",
+          "schema:price": "282",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "3 nuits du 29/06 au 05/07"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/12f41a9c-cc53-34a7-a989-2efdc33b7a95",
+          "schema:price": "342",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "1 ou 2 nuits du 06/07 au 16/08"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/14b32e27-d507-312d-8e1e-572528d74f86",
+          "schema:price": "366",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "4 ou 5 nuits du 19/10 au 02/11"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/1e4af925-939d-3d0f-8bca-e86f16da6040",
+          "schema:price": "561",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "6 nuits ou 1 semaine du 17/08 au 23/08"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/226ecc8e-8477-37ba-8add-ddfbfd4d79a6",
+          "schema:price": "257",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "1 ou 2 nuits du 29/06 au 05/07"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/296c71d5-9f1c-3c0f-9c0e-cc25dec781c9",
+          "schema:price": "366",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "4 ou 5 nuits du 27/04 au 28/06"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2baf93d3-2760-3d99-8951-0b16bb766202",
+          "schema:price": "561",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "1 semaine du 17/08 au 23/08"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2c94c718-1ef9-3f59-9c8a-f2d2e8d9cfc6",
+          "schema:price": "275",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "3 nuits du 19/10 au 02/11"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2cb9e052-60bf-3152-b21b-194228198c97",
+          "schema:price": "464",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "4 ou 5 nuits du 06/07 au 16/08"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/37e9b2bd-d862-3016-b822-01fa16c1a344",
+          "schema:price": "439",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "4 ou 5 nuits du 17/08 au 23/08"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/3c5acaf9-9668-3f3b-acbd-d4c00c25b40a",
+          "schema:price": "561",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "6 nuits ou 1 semaine du 29/06 au 05/07"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/3f237f88-2df8-3ebd-9995-cfcd97b25686",
+          "schema:price": "427",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "6 nuits ou 1 semaine du 19/10 au 02/11"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/51cbc6e2-d0f9-31ab-bad8-0c28553a4ec0",
+          "schema:price": "366",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "4 ou 5 nuits du 24/08 au 20/09"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/587ad3dc-ba75-3bec-956b-891363ffcbae",
+          "schema:price": "244",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "1 ou 2 nuits du 24/08 au 20/09"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5c5b764b-d734-3603-bb4a-3517be5ede91",
+          "schema:price": "244",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "1 ou 2 nuits du 27/04 au 28/06"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/782e83cd-e46d-3594-950f-92c8475ff262",
+          "schema:price": "282",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "3 nuits du 17/08 au 23/08"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7cbb3c04-03c2-3c84-85ff-6c3b1a88334e",
+          "schema:price": "427",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "6 nuits ou 1 semaine du 24/08 au 20/09"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/81d9817f-c8a8-320a-9b68-baede9fe40ff",
+          "schema:price": "244",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "1 ou 2 nuits du 19/10 au 02/11"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/82732ecd-ecbb-3770-834c-4453a14e6384",
+          "schema:price": "378",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "3 nuits du 06/07 au 16/08"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/8f28a0ef-b05e-3e1c-b813-dddcd0d591e5",
+          "schema:price": "427",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "6 nuits ou 1 semaine du 27/04 au 28/06"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a746a8d7-a0ea-3cb5-8ded-e5a6c04ce177",
+          "schema:price": "439",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "4 ou 5 nuits du 29/06 au 05/07"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/abcb8955-7bf2-3373-b7de-87da34a4b208",
+          "schema:price": "257",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "3 nuits du 21/09 au 18/10"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ad1a020b-1cd9-3362-8073-246d19e021e4",
+          "schema:price": "275",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "3 nuits du 27/04 au 28/06"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b0e48c63-baa4-35c9-9087-c345cdd28a23",
+          "schema:price": "647",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "6 nuits ou 1 semaine du 06/07 au 16/08"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ce3d6c53-a51e-34d3-9662-cb71c5ecf381",
+          "schema:price": "275",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "3 nuits du 24/08 au 20/09"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d9b8806e-0127-387a-91e6-28df7a564899",
+          "schema:price": "257",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "1 ou 2 nuits du 17/08 au 23/08"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/fbcdcf0a-429d-3719-8e7f-0c6cddfb2887",
+          "schema:price": "305",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "4 ou 5 nuits du 21/09 au 18/10"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/fc86ece7-5496-376c-9cd3-717131c80bb9",
+          "schema:price": "220",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "1 ou 2 nuits du 21/09 au 18/10"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/fe29eea1-17a6-342b-9236-2854159acad7",
+          "schema:price": "330",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "6 nuits ou 1 semaine du 21/09 au 18/10"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

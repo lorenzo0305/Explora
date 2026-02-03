@@ -1,0 +1,338 @@
+{
+  "@id": "https://data.datatourisme.fr/13/0d55c40b-1293-3f0a-8321-a87037e6f597",
+  "dc:identifier": "6217585",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Restaurant La Fontaine d'Etiolles"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/08fe2621-d8e7-36b0-aec0-da35256a998d",
+    "dc:identifier": "1016",
+    "schema:email": [
+      "direction.tourismegpsses@orange.fr",
+      "k.gabrhel@tourismegps.com",
+      "m.delvalle@tourismegps.com",
+      "m.meneur@tourismegps.com",
+      "m.pantin@tourismegps.com",
+      "s.chaouch@tourismegps.com"
+    ],
+    "schema:legalName": "Office de Tourisme Grand Paris Sud Seine-Essonne-Sénart",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://tourisme-grandparissud.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/f4d376e7-bdd4-3001-92ad-c1a92ccbdbfe",
+      "schema:email": [
+        "fontainedetiolles@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 9 71 72 58 06"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/e6174e08-4c09-3283-adf9-0ad494d351a3",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/9d143bee-01dc-30fa-8d3e-a6a274b9602b",
+          "schema:addressLocality": "Étiolles",
+          "schema:postalCode": "91450",
+          "schema:streetAddress": [
+            "43 Av. de la Font au Soulier"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:91225",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Étiolles"
+              ],
+              "pt": [
+                "Étiolles"
+              ],
+              "en": [
+                "Étiolles"
+              ],
+              "it": [
+                "Étiolles"
+              ],
+              "fr": [
+                "Étiolles"
+              ],
+              "nl": [
+                "Étiolles"
+              ],
+              "es": [
+                "Étiolles"
+              ]
+            },
+            "insee": "91225",
+            "isPartOfDepartment": {
+              "@id": "kb:France1191",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Essonne"
+                ],
+                "pt": [
+                  "Essonne"
+                ],
+                "en": [
+                  "Essonne"
+                ],
+                "it": [
+                  "Essonne"
+                ],
+                "fr": [
+                  "Essonne"
+                ],
+                "nl": [
+                  "Essonne"
+                ],
+                "es": [
+                  "Essonne"
+                ]
+              },
+              "insee": "91",
+              "isPartOfRegion": {
+                "@id": "kb:France11",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Île-de-France"
+                  ],
+                  "pt": [
+                    "Île-de-France"
+                  ],
+                  "en": [
+                    "Île-de-France"
+                  ],
+                  "it": [
+                    "Île-de-France"
+                  ],
+                  "fr": [
+                    "Île-de-France"
+                  ],
+                  "nl": [
+                    "Île-de-France"
+                  ],
+                  "es": [
+                    "Île-de-France"
+                  ]
+                },
+                "insee": "11",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/e67f19e3-5491-3cf8-b920-f5fc1144e135",
+        "schema:latitude": "48.629925",
+        "schema:longitude": "2.469442",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/b7833a72-2b71-3953-bd06-d106f837b09a",
+          "schema:closes": "22:30:00",
+          "schema:opens": "12:00:00",
+          "schema:validFrom": "2025-01-01T00:00:00",
+          "schema:validThrough": "2025-01-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Montag: Geschlossen\r\nDienstag: 12.00-14.30 Uhr / 19.00-22.30 Uhr\r\nMittwoch: 12.00-14.30 Uhr / 19.00-22.30 Uhr\r\nDonnerstag: 12.00-14.30 Uhr / 19.00-22.30 Uhr\r\nFreitag: 12.00-14.30 Uhr / 19.00-22.30 Uhr\r\nSamstag: 12.00-14.30 Uhr / 19.00-22.30 Uhr\r\nSonntag: 12.00-14.30 Uhr"
+            ],
+            "en": [
+              "Monday : Closed\r\nTuesday : 12h00-14h30 / 19h00-22h30\r\nWednesday : 12:00-14:30 / 19:00-22:30\r\nThursday : 12:00-14:30 / 19:00-22:30\r\nFriday : 12:00-14:30 / 19:00-22:30\r\nSaturday: 12:00-14:30 / 19:00-22:30\r\nSunday: 12:00 pm - 2:30 pm"
+            ],
+            "it": [
+              "Lunedì: Chiuso\r\nMartedì: 12:00-14:30 / 19:00-22:30\r\nMercoledì: 12:00-14:30 / 19:00-22:30\r\nGiovedì: 12:00-14:30 / 19:00-22:30\r\nVenerdì: 12:00-14:30 / 19:00-22:30\r\nSabato: 12:00-14:30 / 19:00-22:30\r\nDomenica: 12:00-14:30"
+            ],
+            "fr": [
+              "Lundi : Fermé\r\nMardi : 12h00-14h30 / 19h00-22h30\r\nMercredi : 12h00-14h30 / 19h00-22h30\r\nJeudi : 12h00-14h30 / 19h00-22h30\r\nVendredi : 12h00-14h30 / 19h00-22h30\r\nSamedi : 12h00-14h30 / 19h00-22h30\r\nDimanche : 12h00-14h30"
+            ],
+            "nl": [
+              "Maandag: Gesloten\r\nDinsdag: 12:00-14:30 / 19:00-22:30\r\nWoensdag: 12:00-14:30 / 19:00-22:30\r\nDonderdag: 12:00-14:30 / 19:00-22:30\r\nVrijdag: 12:00-14:30 / 19:00-22:30\r\nZaterdag: 12:00-14:30 / 19:00-22:30\r\nZondag: 12:00-14:30"
+            ],
+            "es": [
+              "Lunes: Cerrado\r\nMartes: 12:00-14:30 / 19:00-22:30\r\nMiércoles: 12:00-14:30 / 19:00-22:30\r\nJueves: 12:00-14:30 / 19:00-22:30\r\nViernes: 12:00-14:30 / 19:00-22:30\r\nSábado: 12:00-14:30 / 19:00-22:30\r\nDomingo: 12:00-14:30"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/0d7c031e-4d70-3abe-a077-1cc1f00300e7",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/5fd2a8b5-42b9-3361-aa34-225eb2ff1cb5",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/baf64269-4d88-3533-a1a9-7b1df0572d2c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d9aa2a91-2097-3780-a8e0-fbe86d3b4846",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f799d68f-8794-353e-9ff8-10d599c8d284",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/67f6a3d0-2317-33ba-a798-032d49d6b55d",
+      "schema:email": [
+        "direction.tourismegpsses@orange.fr",
+        "k.gabrhel@tourismegps.com",
+        "m.delvalle@tourismegps.com",
+        "m.meneur@tourismegps.com",
+        "m.pantin@tourismegps.com",
+        "s.chaouch@tourismegps.com"
+      ],
+      "schema:legalName": "Office de Tourisme Grand Paris Sud Seine-Essonne-Sénart",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://tourisme-grandparissud.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2022-07-28",
+  "lastUpdateDatatourisme": "2025-06-12T07:51:16.545Z"
+}

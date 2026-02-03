@@ -1,0 +1,694 @@
+{
+  "@id": "https://data.datatourisme.fr/10/0e6493e1-40e3-32b7-bed7-1beaefbfd4d1",
+  "dc:identifier": "751000525",
+  "@type": [
+    "schema:FastFoodRestaurant",
+    "schema:FoodEstablishment",
+    "schema:Restaurant",
+    "FastFoodRestaurant",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Das Kebab Etoile bietet Ihnen türkische Spezialitäten an. Sie können vor Ort essen oder die Gerichte mitnehmen. Wir garantieren Ihnen einen qualitativ hochwertigen Service und freuen uns, Sie während unserer Öffnungszeiten begrüßen zu dürfen. Warten Sie nicht länger und probieren Sie es aus!"
+    ],
+    "en": [
+      "The Kebab Etoile offers you Turkish specialities, you can eat on the spot or take away the dishes. A quality service is guaranteed, we are ready to welcome you during our opening hours. Don't wait any longer to try!"
+    ],
+    "it": [
+      "Il Kebab Etoile vi offre specialità turche, che potete mangiare sul posto o portare via. Un servizio di qualità è garantito, siamo pronti ad accogliervi durante i nostri orari di apertura. Non aspettate oltre per provarlo!"
+    ],
+    "fr": [
+      "Le Kebab Etoile vous propose des spécialités turques.Vous pouvez vous restaurer sur place ou emporter les plats. Un service de qualité vous est garanti, nous sommes prêts à vous accueillir pendant nos horaires d'ouverture. N'attendez pas plus longtemps pour tester!"
+    ],
+    "es": [
+      "El Kebab Etoile le ofrece especialidades turcas, que puede comer allí mismo o llevarse. Un servicio de calidad está garantizado, estamos listos para recibirle durante nuestro horario de apertura. ¡No espere más para probarlo!"
+    ],
+    "nl": [
+      "De Kebab Etoile biedt u Turkse specialiteiten, die u ter plaatse kunt eten of meenemen. Een kwaliteitsservice is gegarandeerd, wij staan voor u klaar tijdens onze openingstijden. Wacht niet langer om het te proberen!"
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Kebab l'etoile"
+    ]
+  },
+  "allowedPersons": 20,
+  "hasAudience": [
+    {
+      "@id": "kb:ForAll",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Für alle"
+        ],
+        "pt": [
+          "Para todos"
+        ],
+        "en": [
+          "For all"
+        ],
+        "it": [
+          "Per tutti"
+        ],
+        "fr": [
+          "Tout public"
+        ],
+        "nl": [
+          "Voor iedereen"
+        ],
+        "es": [
+          "Todos los públicos"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/10/912d2b1c-7b28-36ca-b996-87388d2e8f7c",
+    "dc:identifier": "751",
+    "schema:legalName": "TOURISME BASSIN de POMPEY",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/20532ef0-d667-3379-a67a-acc084fad788",
+      "schema:email": [
+        "contact@sitlorpro.com"
+      ],
+      "schema:legalName": "Système d’information touristique Lorrain",
+      "schema:logo": "http://www.sitlorpro.com/wp-content/uploads/sites/12/2016/03/logo-sitlor-blanc-fond-couleur.jpg",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.sitlorpro.com/"
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:ForAll",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Für alle"
+        ],
+        "pt": [
+          "Para todos"
+        ],
+        "en": [
+          "For all"
+        ],
+        "it": [
+          "Per tutti"
+        ],
+        "fr": [
+          "Tout public"
+        ],
+        "nl": [
+          "Voor iedereen"
+        ],
+        "es": [
+          "Todos los públicos"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/3dbc5b52-19cc-308e-aa36-c9d7f30ef247",
+      "schema:telephone": [
+        "+33 3 83 49 80 54"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/63f46617-6774-320e-ad14-4b83e8640da4",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/9b8c7389-f447-3225-82e9-a82a1f86be0b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b536c848-9b69-3d0b-aeff-c0c3e51e5b4a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d833be10-f1b3-3894-95be-cac64721d9b5",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e0914c97-0e97-3c26-8e7a-0bf68f5c9d8b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f65d1694-e322-32a5-997d-56bf190d04d2",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Das Kebab Etoile bietet Ihnen türkische Spezialitäten an. Sie können vor Ort essen oder die Gerichte mitnehmen. Wir garantieren Ihnen einen qualitativ hochwertigen Service und freuen uns, Sie während unserer Öffnungszeiten begrüßen zu dürfen. Warten Sie nicht länger und probieren Sie es aus!"
+        ],
+        "en": [
+          "The Kebab Etoile offers you Turkish specialities, you can eat on the spot or take away the dishes. A quality service is guaranteed, we are ready to welcome you during our opening hours. Don't wait any longer to try!"
+        ],
+        "it": [
+          "Il Kebab Etoile vi offre specialità turche, che potete mangiare sul posto o portare via. Un servizio di qualità è garantito, siamo pronti ad accogliervi durante i nostri orari di apertura. Non aspettate oltre per provarlo!"
+        ],
+        "fr": [
+          "Le Kebab Etoile vous propose des spécialités turques.Vous pouvez vous restaurer sur place ou emporter les plats. Un service de qualité vous est garanti, nous sommes prêts à vous accueillir pendant nos horaires d'ouverture. N'attendez pas plus longtemps pour tester!"
+        ],
+        "es": [
+          "El Kebab Etoile le ofrece especialidades turcas, que puede comer allí mismo o llevarse. Un servicio de calidad está garantizado, estamos listos para recibirle durante nuestro horario de apertura. ¡No espere más para probarlo!"
+        ],
+        "nl": [
+          "De Kebab Etoile biedt u Turkse specialiteiten, die u ter plaatse kunt eten of meenemen. Een kwaliteitsservice is gegarandeerd, wij staan voor u klaar tijdens onze openingstijden. Wacht niet langer om het te proberen!"
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/9f9505aa-ad77-3e86-90d5-03dde3e9998d",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "35S1ZN2N6S4J",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/8536702d-241c-35e9-82bf-e3b4cb7ee227",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:TakeawayFoodOrMeals",
+          "@type": [
+            "CateringAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Essen zum Mitnehmen"
+            ],
+            "pt": [
+              "Venda de refeições para fora"
+            ],
+            "en": [
+              "Takeaway food or meals"
+            ],
+            "it": [
+              "Vendita di piatti da asporto"
+            ],
+            "fr": [
+              "Vente de plats à emporter"
+            ],
+            "nl": [
+              "Verkoop van afhaalmaaltijden"
+            ],
+            "es": [
+              "Venta de platos para llevar"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/08073a36-dfc8-342f-9c89-c9d3f90b776b",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4a7e69ad-3ad3-37f2-b560-27ad006ec80e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7b668e12-fb8e-3d8f-aefb-9eccee6b3b4d",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d687a3df-e0e2-3607-a531-c999405ee5e8",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/dbc0666d-3d0c-3c70-bb2e-23e5bfd36279",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/cb0b65c7-5214-3ad8-bbd8-da074a1d9f05",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/e069e231-79cd-3437-a3a3-630aba61e024",
+          "schema:addressLocality": "Frouard",
+          "schema:postalCode": "54390",
+          "schema:streetAddress": [
+            "2 RUE DE NANCY"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:54215",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Frouard"
+              ],
+              "pt": [
+                "Frouard"
+              ],
+              "en": [
+                "Frouard"
+              ],
+              "it": [
+                "Frouard"
+              ],
+              "fr": [
+                "Frouard"
+              ],
+              "nl": [
+                "Frouard"
+              ],
+              "es": [
+                "Frouard"
+              ]
+            },
+            "insee": "54215",
+            "isPartOfDepartment": {
+              "@id": "kb:France4454",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Meurthe-et-Moselle"
+                ],
+                "pt": [
+                  "Meurthe-et-Moselle"
+                ],
+                "en": [
+                  "Meurthe-et-Moselle"
+                ],
+                "it": [
+                  "Meurthe-et-Moselle"
+                ],
+                "fr": [
+                  "Meurthe-et-Moselle"
+                ],
+                "nl": [
+                  "Meurthe-et-Moselle"
+                ],
+                "es": [
+                  "Meurthe-et-Moselle"
+                ]
+              },
+              "insee": "54",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/2f114a0f-eeb4-349a-9f9d-f48d42419f78",
+        "schema:latitude": "48.7548543917088",
+        "schema:longitude": "6.14117364536901",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": false
+    }
+  ],
+  "lastUpdate": "2025-08-01",
+  "lastUpdateDatatourisme": "2025-08-02T04:15:57.473Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/b9905356-f711-3501-9606-e22445059a61",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:CreditCards",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bankkarten"
+            ],
+            "pt": [
+              "Cartões bancários"
+            ],
+            "en": [
+              "Credit Cards"
+            ],
+            "it": [
+              "Carte bancarie"
+            ],
+            "fr": [
+              "Cartes bancaires"
+            ],
+            "es": [
+              "Tarjetas bancarias"
+            ],
+            "nl": [
+              "Bankkaarten"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "reducedMobilityAccess": false
+}

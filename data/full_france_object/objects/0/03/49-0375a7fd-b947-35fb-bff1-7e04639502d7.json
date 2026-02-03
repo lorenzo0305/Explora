@@ -1,0 +1,289 @@
+{
+  "@id": "https://data.datatourisme.fr/49/0375a7fd-b947-35fb-bff1-7e04639502d7",
+  "dc:identifier": "RESPDL085V5000BG",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Restaurant",
+    "FoodEstablishment",
+    "GourmetRestaurant",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "L'ORANGERIE"
+    ]
+  },
+  "creationDate": "2013-01-24",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/124f1236-fd87-3e46-98ac-6cd852ad1769",
+    "schema:email": [
+      "tourisme@paysdemortagne.fr"
+    ],
+    "schema:legalName": "Office de Tourisme du Pays de Mortagne",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.vendeesevretourisme.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/620096f7-797e-361c-9005-c4196b5837bb",
+      "schema:email": [
+        "m.belouard@vendee-expansion.fr"
+      ],
+      "schema:legalName": "Vendée Expansion",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://tourisme.vendee-expansion.fr/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/da602a95-ff26-3392-9697-c07b39e09422",
+      "schema:email": [
+        "contact@chateau-barbiniere.com"
+      ],
+      "schema:telephone": [
+        "+33 2 51 92 46 00"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.chateau-barbiniere.com/"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:GourmetCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gourmet-Küche"
+        ],
+        "pt": [
+          "Cozinha gastronómica"
+        ],
+        "en": [
+          "Gourmet cuisine"
+        ],
+        "it": [
+          "Cucina gastronomica"
+        ],
+        "fr": [
+          "Cuisine gastronomique"
+        ],
+        "nl": [
+          "Gastronomische keuken"
+        ],
+        "es": [
+          "Cocina gastronómica"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/b28bfef4-6500-34c0-b1db-7cd4587c11ff",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/22a06618-2e63-37a2-b8c5-859cbb91fa93",
+          "schema:addressLocality": "Saint-Laurent-sur-Sèvre",
+          "schema:postalCode": "85290",
+          "schema:streetAddress": [
+            "Château de la Barbinière",
+            "La Barbinière"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:85238",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Laurent-sur-Sèvre"
+              ],
+              "pt": [
+                "Saint-Laurent-sur-Sèvre"
+              ],
+              "en": [
+                "Saint-Laurent-sur-Sèvre"
+              ],
+              "it": [
+                "Saint-Laurent-sur-Sèvre"
+              ],
+              "fr": [
+                "Saint-Laurent-sur-Sèvre"
+              ],
+              "nl": [
+                "Saint-Laurent-sur-Sèvre"
+              ],
+              "es": [
+                "Saint-Laurent-sur-Sèvre"
+              ]
+            },
+            "insee": "85238",
+            "isPartOfDepartment": {
+              "@id": "kb:France5285",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Vendée"
+                ],
+                "pt": [
+                  "Vendée"
+                ],
+                "en": [
+                  "Vendée"
+                ],
+                "it": [
+                  "Vendée"
+                ],
+                "fr": [
+                  "Vendée"
+                ],
+                "nl": [
+                  "Vendée"
+                ],
+                "es": [
+                  "Vendée"
+                ]
+              },
+              "insee": "85",
+              "isPartOfRegion": {
+                "@id": "kb:France52",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Pays de la Loire"
+                  ],
+                  "pt": [
+                    "Pays de la Loire"
+                  ],
+                  "en": [
+                    "Pays de la Loire"
+                  ],
+                  "it": [
+                    "Pays de la Loire"
+                  ],
+                  "fr": [
+                    "Pays de la Loire"
+                  ],
+                  "nl": [
+                    "Pays de la Loire"
+                  ],
+                  "es": [
+                    "Pays de la Loire"
+                  ]
+                },
+                "insee": "52",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/13ea96f2-aeb2-3ba3-9526-c30bcfd2f277",
+        "schema:latitude": "46.9638238",
+        "schema:longitude": "-0.9084194",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-21",
+  "lastUpdateDatatourisme": "2025-07-22T04:07:26.139Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:GourmetCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gourmet-Küche"
+        ],
+        "pt": [
+          "Cozinha gastronómica"
+        ],
+        "en": [
+          "Gourmet cuisine"
+        ],
+        "it": [
+          "Cucina gastronomica"
+        ],
+        "fr": [
+          "Cuisine gastronomique"
+        ],
+        "nl": [
+          "Gastronomische keuken"
+        ],
+        "es": [
+          "Cocina gastronómica"
+        ]
+      }
+    }
+  ]
+}

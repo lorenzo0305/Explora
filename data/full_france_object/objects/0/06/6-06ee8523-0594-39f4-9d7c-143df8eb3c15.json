@@ -1,0 +1,318 @@
+{
+  "@id": "https://data.datatourisme.fr/6/06ee8523-0594-39f4-9d7c-143df8eb3c15",
+  "dc:identifier": "HLOBFC000V535GLT",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Les Mésanges"
+    ]
+  },
+  "allowedPersons": 4,
+  "creationDate": "2025-01-17",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/68020c5b-279c-389c-b0c1-2538e826cb24",
+    "dc:identifier": "36174fe7-b28b-474c-b839-1aaee28e326e",
+    "schema:email": [
+      "caroline.haillet@cotedor-tourisme.com"
+    ],
+    "schema:legalName": "COTE-D'OR ATTRACTIVITE (COORDINATION DECIBELLES DATA)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/5e5f19b9-5e00-335b-906b-799484d75e8c",
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.airbnb.fr/rooms/45646814"
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/6955edda-b76d-3968-909e-ae7e5ace3935",
+      "schema:value": "2",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/7724dbf0-7649-358b-be17-1db1b66a240f",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3etoiles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Sterne"
+          ],
+          "pt": [
+            "3 estrelas"
+          ],
+          "en": [
+            "3 Stars"
+          ],
+          "it": [
+            "3 stelle"
+          ],
+          "fr": [
+            "3 étoiles"
+          ],
+          "nl": [
+            "3 sterren"
+          ],
+          "es": [
+            "3 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/ecc82c98-3a78-39df-823a-e20a6e8699ea",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/52999699-0fd4-343a-b6ae-7ba77cfe2fc4",
+          "schema:addressLocality": "Ménessaire",
+          "schema:postalCode": "21430",
+          "schema:streetAddress": [
+            "9 Route de Gien"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:21403",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Ménessaire"
+              ],
+              "pt": [
+                "Ménessaire"
+              ],
+              "en": [
+                "Ménessaire"
+              ],
+              "it": [
+                "Ménessaire"
+              ],
+              "fr": [
+                "Ménessaire"
+              ],
+              "nl": [
+                "Ménessaire"
+              ],
+              "es": [
+                "Ménessaire"
+              ]
+            },
+            "insee": "21403",
+            "isPartOfDepartment": {
+              "@id": "kb:France2721",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Côte-d'Or"
+                ],
+                "pt": [
+                  "Côte-d'Or"
+                ],
+                "en": [
+                  "Côte-d'Or"
+                ],
+                "it": [
+                  "Côte-d'Or"
+                ],
+                "fr": [
+                  "Côte-d'Or"
+                ],
+                "nl": [
+                  "Côte-d'Or"
+                ],
+                "es": [
+                  "Côte-d'Or"
+                ]
+              },
+              "insee": "21",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/e357b9f0-ad73-3cd9-aec4-8a9764d22d4a",
+        "schema:latitude": "47.13427",
+        "schema:longitude": "4.14398",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-02-11",
+  "lastUpdateDatatourisme": "2025-02-12T00:32:29.77Z"
+}

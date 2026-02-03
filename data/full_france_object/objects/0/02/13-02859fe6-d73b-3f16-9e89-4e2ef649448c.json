@@ -1,0 +1,314 @@
+{
+  "@id": "https://data.datatourisme.fr/13/02859fe6-d73b-3f16-9e89-4e2ef649448c",
+  "dc:identifier": "6775922",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "L'Ancre"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/fc79250f-8c5b-3043-90e8-da280b4cf06e",
+    "dc:identifier": "2439",
+    "schema:email": [
+      "clara.bruckmann@letsgrau.com",
+      "julie.bosc@letsgrau.com",
+      "marion.inquimbert@letsgrau.com",
+      "nasrin.hashemi@letsgrau.com",
+      "sophie.montanard@letsgrau.com"
+    ],
+    "schema:legalName": "Office de Tourisme Le Grau du Roi Port Camargue",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.letsgrau.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/5cece4fa-f7b0-3ee1-a5c7-aca67eebe012",
+      "schema:email": [
+        "restaurantlancre30240@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 4 66 51 36 86"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:MediterraneanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Mediterrane Küche"
+        ],
+        "pt": [
+          "Cozinha mediterrânica"
+        ],
+        "en": [
+          "Mediterranean cuisine"
+        ],
+        "it": [
+          "Cucina mediterranea"
+        ],
+        "fr": [
+          "Cuisine méditerranéenne"
+        ],
+        "nl": [
+          "Mediterrane keuken"
+        ],
+        "es": [
+          "Cocina mediterránea"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/d40ad233-2107-30db-8aec-f985f3970f9c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/ab0ec8bb-c79d-3b07-a023-f62057239a10",
+          "schema:addressLocality": "Le Grau-du-Roi",
+          "schema:postalCode": "30240",
+          "schema:streetAddress": [
+            "9 avenue Simone Veil"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:30133",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Le Grau-du-Roi"
+              ],
+              "pt": [
+                "Le Grau-du-Roi"
+              ],
+              "en": [
+                "Le Grau-du-Roi"
+              ],
+              "it": [
+                "Le Grau-du-Roi"
+              ],
+              "fr": [
+                "Le Grau-du-Roi"
+              ],
+              "nl": [
+                "Le Grau-du-Roi"
+              ],
+              "es": [
+                "Le Grau-du-Roi"
+              ]
+            },
+            "insee": "30133",
+            "isPartOfDepartment": {
+              "@id": "kb:France7630",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Gard"
+                ],
+                "pt": [
+                  "Gard"
+                ],
+                "en": [
+                  "Gard"
+                ],
+                "it": [
+                  "Gard"
+                ],
+                "fr": [
+                  "Gard"
+                ],
+                "nl": [
+                  "Gard"
+                ],
+                "es": [
+                  "Gard"
+                ]
+              },
+              "insee": "30",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/a4b40bfe-b3b4-3220-899e-78eb669d691c",
+        "schema:latitude": "43.537737",
+        "schema:longitude": "4.139933",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/63ba550e-9978-3f5b-847b-00c809fab527",
+          "schema:validFrom": "2025-01-01T00:00:00",
+          "schema:validThrough": "2025-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/0c3f66ff-f112-342d-9e3d-514c012d0888",
+      "schema:email": [
+        "clara.bruckmann@letsgrau.com",
+        "julie.bosc@letsgrau.com",
+        "marion.inquimbert@letsgrau.com",
+        "nasrin.hashemi@letsgrau.com",
+        "sophie.montanard@letsgrau.com"
+      ],
+      "schema:legalName": "Office de Tourisme Le Grau du Roi Port Camargue",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.letsgrau.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-04-23",
+  "lastUpdateDatatourisme": "2025-01-09T06:44:43.612Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:MediterraneanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Mediterrane Küche"
+        ],
+        "pt": [
+          "Cozinha mediterrânica"
+        ],
+        "en": [
+          "Mediterranean cuisine"
+        ],
+        "it": [
+          "Cucina mediterranea"
+        ],
+        "fr": [
+          "Cuisine méditerranéenne"
+        ],
+        "nl": [
+          "Mediterrane keuken"
+        ],
+        "es": [
+          "Cocina mediterránea"
+        ]
+      }
+    }
+  ]
+}

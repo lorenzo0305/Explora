@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Aetherius'; /* Nom personnalisé pour la police */
+    src: url('Aetherius.ttf') format('truetype'); /* Chemin vers le fichier */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #310723;
+    font-family: 'Aetherius', sans-serif;
+    margin: 0;
+    padding-bottom: 70px; /* Laisser de la place pour la navbar */
+}
+
+/* Titres */
+.wish-title {
+    text-align: center;
+    font-size: 3vw;
+    color: #f7f9f9;
+    margin: 0 20vw;
+}
+
+.wish-title span {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap; /* Empêche le saut de ligne */
+}
+
+.wish-title h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Logo */
+#logoWishAdv {
+    width: 10vw;
+    height: 10vw;
+}
+
+#imagePrinc {
+    display: block;
+    margin: auto;
+    width: 30em;
+    height: 30em;
+}
+
+.logo-img {
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Navbar fixée en bas */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #3c0d27;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    z-index: 1000;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+}
+
+.bottom-nav button {
+    font-family: 'Aetherius', sans-serif;
+    font-size: 1.2vw;
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #040404;
+    color: #f7f4f6;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.bottom-nav button:hover {
+    transform: scale(1.05);
+    background-color: #ffe9a0;
+}
+
+/* Suppression des positions absolues pour les boutons */
+#boutonindex,
+#boutonDestination,
+#boutonTopics,
+#boutonMJourney {
+    position: static;
+}

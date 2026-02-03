@@ -1,0 +1,1765 @@
+{
+  "@id": "https://data.datatourisme.fr/31/0cc319ef-05dd-3108-a5fc-af24b27bd102",
+  "dc:identifier": "TFO436802070760",
+  "@type": [
+    "schema:Accommodation",
+    "schema:House",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "House",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Dieses geräumige Haus im Herzen von Ségala wurde mit Charme restauriert und ist von einem nicht eingezäunten Grundstück umgeben. Hier können Sie den heutigen Komfort genießen und gleichzeitig den Charme des Alten vereinen."
+    ],
+    "en": [
+      "This spacious house in the heart of the Segala restored with charm surrounded by an unfenced land, allows to benefit from the current comfort while combining the charm of the old."
+    ],
+    "it": [
+      "Questa spaziosa casa nel cuore della Segala è stata restaurata con charme ed è circondata da un terreno non recintato. Offre tutti i comfort di casa con il fascino del passato."
+    ],
+    "fr": [
+      "Cette spacieuse maison au coeur du Ségala restaurée avec charme entourée d'un terrain non clos, permet de bénéficier du confort actuel tout en alliant le charme de l'ancien."
+    ],
+    "es": [
+      "Esta espaciosa casa en el corazón de la Segala ha sido restaurada con encanto y está rodeada de terreno sin cercar. Ofrece todas las comodidades del hogar con el encanto del pasado."
+    ],
+    "nl": [
+      "Dit ruime huis in het hart van de Segala is charmant gerestaureerd en omgeven door een niet afgesloten terrein. Het biedt alle comfort van thuis met de charme van het verleden."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Gîte à la ferme au coeur de l'Aveyron"
+    ]
+  },
+  "allowedPersons": 10,
+  "availableLanguage": [
+    "fr"
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/db224e7a-611f-379d-b03d-1cb615389a8d",
+    "schema:legalName": "HIT Aveyron (ADAT Aveyron)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/66be3cfa-8d5c-34e7-87b1-87e1705c3fc4",
+      "schema:email": [
+        "webmaster@tourisme-aveyron.com"
+      ],
+      "schema:legalName": "ADT Aveyron",
+      "schema:telephone": [
+        "+33 5 65 75 40 12"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-aveyron.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/e34e6732-c091-356a-aee1-8d604b062e6f",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/2bd7f1e2-5d24-300c-ac81-04c7cbc322f4",
+          "schema:addressLocality": "Mayran",
+          "schema:postalCode": "12390",
+          "schema:streetAddress": [
+            "Puech-haut"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12142",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Mayran"
+              ],
+              "pt": [
+                "Mayran"
+              ],
+              "en": [
+                "Mayran"
+              ],
+              "it": [
+                "Mayran"
+              ],
+              "fr": [
+                "Mayran"
+              ],
+              "nl": [
+                "Mayran"
+              ],
+              "es": [
+                "Mayran"
+              ]
+            },
+            "insee": "12142",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "vergnesestelle@yahoo.fr"
+      ],
+      "schema:legalName": "Gîte à la ferme au coeur de l'Aveyron",
+      "schema:telephone": [
+        "+33 6 19 78 43 16"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/141f060a-913f-3370-acc7-d8468c19a096",
+      "dc:description": {
+        "de": [
+          "Es befindet sich in einem kleinen Weiler auf einem Bauernhof mit Viehzucht (Kalbfleisch aus Aveyron und Ségala - rotes Gütesiegel) und liegt dennoch in der Nähe von Annehmlichkeiten.\nBeim Betreten des Hauses finden Sie den hellen Wohnraum mit offener und ausgestatteter Küche sowie eine Toilette. Glasfaser, Gesellschaftsspiele... stehen Ihnen zur Verfügung.\nIm Obergeschoss: 3 helle Schlafzimmer mit Stauraum (Bett 160 cm), ein Badezimmer und eine Toilette.\nIm Untergeschoss: 2 helle Schlafzimmer mit Stauraum (Bett 160 cm), ein Badezimmer, Toilette und Waschmaschine.\nBettwäsche, Toilette und Tisch werden gestellt."
+        ],
+        "en": [
+          "Located in a small hamlet in the heart of a breeding farm (veal of Aveyron and Segala - red label), it remains nevertheless close to the conveniences.\nAt your entrance, you will find the bright living room with open and equipped kitchen and a toilet. The fiber, board games ... are at your disposal.\nOn the floor: 3 luminous rooms with arrangement (bed in 160), a water room, a toilet.\nIn the basement: 2 luminous rooms with arrangement (bed in 160), a bathroom, toilet and washing machine.\nBed linen, toilet and table provided."
+        ],
+        "it": [
+          "Situata in una piccola frazione nel cuore di un'azienda agricola di allevamento (vitello dell'Aveyron e del Ségala - etichetta rossa), è tuttavia vicina a tutti i servizi.\nAll'ingresso si trova un luminoso soggiorno con cucina a vista e una toilette. Fibra ottica, giochi da tavolo, ecc. sono a vostra disposizione.\nAl piano superiore: 3 camere da letto luminose con ripostiglio (letto 160), un bagno, una toilette.\nNel seminterrato: 2 camere da letto luminose con ripostiglio (160 posti letto), bagno, WC e lavatrice.\nBiancheria da letto, toilette e tavolo forniti."
+        ],
+        "fr": [
+          "Située dans un petit hameau au sein d'une ferme d'élevage (veau d'Aveyron et du Ségala - label rouge), elle reste néanmoins proche des commodités.\nA votre entrée, vous trouverez la pièce de vie lumineuse avec cuisine ouverte et équipée ainsi qu'un toilette. La fibre, des jeux de société... sont à votre disposition.\nA l'étage : 3 chambres lumineuses avec rangement (lit en 160), une salle d'eau, un toilette. \nAu sous-sol :  2 chambres lumineuses avec rangement (lit en 160), une salle de bain, toilette et lave-linge.\nLinge de lit, toilettes et table fournis."
+        ],
+        "es": [
+          "Situado en una pequeña aldea en el corazón de una granja de cría (ternera de Aveyron y Ségala - etiqueta roja), es, sin embargo, cerca de todos los servicios.\nA su entrada, encontrará el luminoso salón con cocina americana y un aseo. Fibra óptica, juegos de mesa, etc. están a su disposición.\nArriba: 3 dormitorios luminosos con trastero (cama 160), un cuarto de baño, un aseo.\nEn el sótano: 2 habitaciones luminosas con almacenamiento (cama 160), un cuarto de baño, aseo y lavadora.\nRopa de cama, aseo y mesa proporcionados."
+        ],
+        "nl": [
+          "Gelegen in een klein gehucht in het hart van een fokkerij (kalfsvlees uit Aveyron en Ségala - rood label), is het toch dicht bij alle voorzieningen.\nBij uw ingang vindt u de lichte woonkamer met open keuken en een toilet. Glasvezel, gezelschapsspelen, enz. staan tot uw beschikking.\nBoven: 3 lichte slaapkamers met opbergruimte (bed 160), een badkamer, een toilet.\nIn de kelder: 2 lichte slaapkamers met berging (bed 160), een badkamer, toilet en wasmachine.\nBeddengoed, toilet en tafel zijn aanwezig."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/78b5658f-b361-3e69-9b9f-1165b600289e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/79dc29aa-793f-357f-afab-1e5d3497fb10",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/8037c82f-892c-35b2-b900-bd273d6024cf",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/80465683-d1a5-39e6-9905-464fba5ad410",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/87220c5d-0db4-353b-b8e8-2d265b0bea6f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/92efb727-9426-3848-b482-d7185e36093b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e7b06574-d240-365f-97e1-666d9d58f91e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ed3d2734-0707-347a-972b-da5a1aea8189",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ee8027df-ea7b-3b36-bc6c-79c511cab2c0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ef877637-3910-31d9-87ab-86688461bc8e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Dieses geräumige Haus im Herzen von Ségala wurde mit Charme restauriert und ist von einem nicht eingezäunten Grundstück umgeben. Hier können Sie den heutigen Komfort genießen und gleichzeitig den Charme des Alten vereinen."
+        ],
+        "en": [
+          "This spacious house in the heart of the Segala restored with charm surrounded by an unfenced land, allows to benefit from the current comfort while combining the charm of the old."
+        ],
+        "it": [
+          "Questa spaziosa casa nel cuore della Segala è stata restaurata con charme ed è circondata da un terreno non recintato. Offre tutti i comfort di casa con il fascino del passato."
+        ],
+        "fr": [
+          "Cette spacieuse maison au coeur du Ségala restaurée avec charme entourée d'un terrain non clos, permet de bénéficier du confort actuel tout en alliant le charme de l'ancien."
+        ],
+        "es": [
+          "Esta espaciosa casa en el corazón de la Segala ha sido restaurada con encanto y está rodeada de terreno sin cercar. Ofrece todas las comodidades del hogar con el encanto del pasado."
+        ],
+        "nl": [
+          "Dit ruime huis in het hart van de Segala is charmant gerestaureerd en omgeven door een niet afgesloten terrein. Het biedt alle comfort van thuis met de charme van het verleden."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/034e6cd0-13ba-3807-b45f-6a22654ffc74",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:SheetsAndTowels",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bettwäsche und Handtücher"
+            ],
+            "pt": [
+              "Lençóis e toalhas"
+            ],
+            "en": [
+              "Sheets and towels"
+            ],
+            "it": [
+              "Lenzuola e biancheria"
+            ],
+            "fr": [
+              "Draps et linges"
+            ],
+            "es": [
+              "Sábanas y ropa de cama"
+            ],
+            "nl": [
+              "Beddengoed en handdoeken"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2e92add4-bb45-3e06-934d-82d44b7d732c",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:CarPark",
+          "@type": [
+            "CommonAmenity",
+            "GeneralPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Parkplatz"
+            ],
+            "pt": [
+              "Estacionamento"
+            ],
+            "en": [
+              "Car park"
+            ],
+            "it": [
+              "Parcheggio"
+            ],
+            "fr": [
+              "Parking"
+            ],
+            "nl": [
+              "Parkeerplaats"
+            ],
+            "es": [
+              "Aparcamiento"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/42aa53a7-b05b-3a8f-9b1c-9631ded80981",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/674bc3ab-e707-31f6-8b76-ed2906ce8753",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9cc1e7e7-9cfe-372f-8d91-41e821010259",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:BabyChair",
+          "@type": [
+            "CateringAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Hochstuhl"
+            ],
+            "pt": [
+              "Cadeira de bebé"
+            ],
+            "en": [
+              "Baby chair"
+            ],
+            "it": [
+              "Sedia per bambini"
+            ],
+            "fr": [
+              "Chaise bébé"
+            ],
+            "es": [
+              "Silla de bebé"
+            ],
+            "nl": [
+              "Kinderstoel"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/dc47845c-9a17-3d29-9ad7-ef0d299d6927",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:BabyEquipment",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Baby-, Kindermaterial"
+            ],
+            "pt": [
+              "Material para bebés e crianças"
+            ],
+            "en": [
+              "Baby or child equipment"
+            ],
+            "it": [
+              "Dotazioni per neonati e bambini"
+            ],
+            "fr": [
+              "Matériel bébé, enfant"
+            ],
+            "es": [
+              "Material para bebés y niños pequeños"
+            ],
+            "nl": [
+              "Baby- en kinderuitrusting"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cot",
+          "@type": [
+            "AccommodationPricingOffer",
+            "TypeOfBed"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Babybett"
+            ],
+            "pt": [
+              "Berço"
+            ],
+            "en": [
+              "Cot"
+            ],
+            "it": [
+              "Lettino per bambini"
+            ],
+            "fr": [
+              "Lit bébé"
+            ],
+            "es": [
+              "Cuna"
+            ],
+            "nl": [
+              "Babybed"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e3656004-545f-3962-a7e6-4e2848cc304d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:FoodGrocery",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Ernährung – Lebensmittelgeschäft"
+            ],
+            "pt": [
+              "Alimentação — ponto de alimentação"
+            ],
+            "en": [
+              "Food - grocery"
+            ],
+            "it": [
+              "Alimentazione - negozio di alimentari"
+            ],
+            "fr": [
+              "Alimentation - point alimentation"
+            ],
+            "nl": [
+              "Levensmiddelen - levensmiddelenwinkel"
+            ],
+            "es": [
+              "Alimentación - punto de alimentación"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/dcc54f5e-e06a-395e-824d-79e0cbc65960",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e0e313ea-c0c9-34d8-a88d-5ae522cc7967",
+          "ebucore:comments": {
+            "fr": [
+              "Gîte à la ferme au coeur de l'Aveyron"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Gîte à la ferme au coeur de l'Aveyron"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "OFFICE DE TOURISME DU PAYS RIGNACOIS"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/7699a643-1d02-35f9-b7af-fe9ddc37b9b4",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/20678/images/325413_ea50e699-4eb4-4e7b-a117-67eabee1d879/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/a1cea49f-4fce-3fdb-ac81-8af236c4fb9a",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e0e313ea-c0c9-34d8-a88d-5ae522cc7967",
+          "ebucore:comments": {
+            "fr": [
+              "Gîte à la ferme au coeur de l'Aveyron"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Gîte à la ferme au coeur de l'Aveyron"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "OFFICE DE TOURISME DU PAYS RIGNACOIS"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/aae01928-436b-37d5-b218-ffad4c200352",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/20678/images/325415_5f4f48f8-0182-4dbd-875b-9da3d2d1d22e/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d4c83995-5f4a-3f36-92aa-58ce8eadb59a",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e0e313ea-c0c9-34d8-a88d-5ae522cc7967",
+          "ebucore:comments": {
+            "fr": [
+              "Gîte à la ferme au coeur de l'Aveyron"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Gîte à la ferme au coeur de l'Aveyron"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "OFFICE DE TOURISME DU PAYS RIGNACOIS"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/fa5a61df-af07-3bc0-a544-c70f6e287c99",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/20678/images/325416_1d4f0a4a-51e6-424a-b977-930852152b45/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/dcc54f5e-e06a-395e-824d-79e0cbc65960",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e0e313ea-c0c9-34d8-a88d-5ae522cc7967",
+          "ebucore:comments": {
+            "fr": [
+              "Gîte à la ferme au coeur de l'Aveyron"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Gîte à la ferme au coeur de l'Aveyron"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "OFFICE DE TOURISME DU PAYS RIGNACOIS"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/7699a643-1d02-35f9-b7af-fe9ddc37b9b4",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/20678/images/325413_ea50e699-4eb4-4e7b-a117-67eabee1d879/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f7b171ed-ef90-3d82-be41-6c9220090409",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e0e313ea-c0c9-34d8-a88d-5ae522cc7967",
+          "ebucore:comments": {
+            "fr": [
+              "Gîte à la ferme au coeur de l'Aveyron"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Gîte à la ferme au coeur de l'Aveyron"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "OFFICE DE TOURISME DU PAYS RIGNACOIS"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/dd18b0a2-93c5-372f-92f6-c96802f73ab7",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/20678/images/325414_092f9241-d687-4a7f-a5b2-69bc7207770f/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/0179b0d1-6226-34e5-85ee-ecaede561296",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3epis",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Ähren/Komfort"
+          ],
+          "pt": [
+            "3 espigas / conforto"
+          ],
+          "en": [
+            "3 ears of corn / Confort level"
+          ],
+          "it": [
+            "3 spighe / Comfort"
+          ],
+          "fr": [
+            "3 épis / Confort"
+          ],
+          "es": [
+            "3 espigas/Confort"
+          ],
+          "nl": [
+            "3 aren / Comfort"
+          ]
+        },
+        "isCompliantWith": [
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      },
+      "reviewDeliveryDate": "2024-01-30"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6b42805d-ce46-3bf0-a2d9-c1ed19c8ff45",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_4etoiles",
+        "schema:ratingValue": "4.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "4 Sterne"
+          ],
+          "pt": [
+            "4 estrelas"
+          ],
+          "en": [
+            "4 Stars"
+          ],
+          "it": [
+            "4 stelle"
+          ],
+          "fr": [
+            "4 étoiles"
+          ],
+          "nl": [
+            "4 sterren"
+          ],
+          "es": [
+            "4 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      },
+      "reviewDeliveryDate": "2021-09-21"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fcf4bb32-a88e-3c10-b4e6-02ca5adde3fc",
+      "@type": [
+        "Review"
+      ],
+      "reviewDeliveryDate": "2021-03-23"
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/a4b55a49-07f7-3df1-874a-2f28ea7ae497",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a5246073-01d5-3ed3-bd11-ac8db3fc7e12",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ab90c45f-a414-386f-a868-b69f0c5c6587",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b4a7268b-cad7-3e10-96c5-3157458b4f1f",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b80d1dea-da79-3e86-9b3d-d526272bd7d7",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/8ad16527-ccfc-3234-90de-bad195ee8a1a",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/2bd7f1e2-5d24-300c-ac81-04c7cbc322f4",
+          "schema:addressLocality": "Mayran",
+          "schema:postalCode": "12390",
+          "schema:streetAddress": [
+            "Puech-haut"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12142",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Mayran"
+              ],
+              "pt": [
+                "Mayran"
+              ],
+              "en": [
+                "Mayran"
+              ],
+              "it": [
+                "Mayran"
+              ],
+              "fr": [
+                "Mayran"
+              ],
+              "nl": [
+                "Mayran"
+              ],
+              "es": [
+                "Mayran"
+              ]
+            },
+            "insee": "12142",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/668b38b3-1133-3fd1-ab77-855ccb9e00e0",
+        "schema:latitude": "44.40474016",
+        "schema:longitude": "2.36295383",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-09-26",
+  "lastUpdateDatatourisme": "2025-05-07T12:20:20.062Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/123b28ec-5ff6-3f0d-9c60-6186f7f04845",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/31bab285-b33c-3bea-9972-0c0d8ba7c198",
+          "schema:price": "910",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "910? die Woche für das komplette Ferienhaus (5 Zimmer) oder 130? die Nacht"
+            ],
+            "en": [
+              "910? per week for the complete gite (5 rooms) or 130? per night"
+            ],
+            "it": [
+              "910? a settimana per la gite completa (5 camere) o 130? a notte"
+            ],
+            "fr": [
+              "910€ la semaine pour le gite complet (5 chambres) soit 130€ la nuit"
+            ],
+            "es": [
+              "910? por semana para la casa rural completa (5 habitaciones) o 130? por noche"
+            ],
+            "nl": [
+              "910? per week voor de volledige gîte (5 kamers) of 130? per nacht"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/7b9628a2-61fb-3769-9914-7e93c840cc9a",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/803d7435-b6a5-373c-b864-0db8646bf5e8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/bb240b74-e1fb-35c6-943d-6334603cecf3",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/c2a96450-054a-3033-8de8-d74eb397bc90",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/cdacb79b-1124-3c6d-b8f5-9bf21af8a030",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/fb4ada62-e615-3616-b109-b9cc05418315",
+          "schema:price": "135",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "135? pro Nacht für das komplette Ferienhaus (5 Zimmer) mit einem Minimum von 2 Nächten. Im Winter wird ein Heizkostenzuschlag pro Nacht erhoben."
+            ],
+            "en": [
+              "135? per night for the complete gite (5 rooms) with a minimum of 2 nights. In winter period, a heating supplement is required per night."
+            ],
+            "it": [
+              "135? a notte per il gite completo (5 camere) con un minimo di 2 notti. In inverno è richiesto un supplemento per il riscaldamento a notte."
+            ],
+            "fr": [
+              "135€ la nuit pour le gite complet (5 chambres) avec un minimum de 2 nuits. En période hivernale, un supplément chauffage est demandé par nuitée."
+            ],
+            "es": [
+              "135? por noche para la casa rural completa (5 habitaciones) con un mínimo de 2 noches. En invierno, se requiere un suplemento de calefacción por noche."
+            ],
+            "nl": [
+              "135? per nacht voor de volledige gite (5 kamers) met een minimum van 2 nachten. In de winter is een verwarmingstoeslag per nacht vereist."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/12c6793a-c3e9-31b6-ab26-52960b1ebae3",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/22d56be0-7752-3b09-b277-2ac681f43c1e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/52edd37a-d650-3ecd-98c2-7d38002d7539",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a1865d8e-58ae-39a7-a745-d767c5a0453e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/dd453089-90dd-3d3d-951e-486f724d7b06",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

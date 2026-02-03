@@ -1,0 +1,2790 @@
+{
+  "@id": "https://data.datatourisme.fr/58/0e6aa302-6710-377a-ba04-6a0dadc804eb",
+  "dc:identifier": "5704062",
+  "@type": [
+    "schema:Accommodation",
+    "schema:BedAndBreakfast",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "Guesthouse",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Ein charmantes Gästehaus mit allem Komfort in einer sehr ruhigen Gegend zu Fuß vom Stadtzentrum von Aix, mit Pool, Garage, Garten."
+    ],
+    "en": [
+      "A charming, top-quality guest house in a very quiet district, within walking distance of Aix town centre, with a pool, garage and garden."
+    ],
+    "it": [
+      "Una guest house affascinante e confortevole in una zona molto tranquilla a pochi passi dal centro di Aix, con piscina, garage e giardino."
+    ],
+    "fr": [
+      "Une maison d'hôtes de charme tout confort dans un quartier très calme à pied du centre-ville d'Aix, avec piscine, garage, jardin."
+    ],
+    "es": [
+      "Una encantadora y confortable casa de huéspedes en una zona muy tranquila a poca distancia del centro de la ciudad de Aix, con piscina, garaje y jardín."
+    ],
+    "nl": [
+      "Een charmant en comfortabel pension in een zeer rustige omgeving op loopafstand van het centrum van Aix, met zwembad, garage en tuin."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Villa des Félibres"
+    ]
+  },
+  "allowedPersons": 3,
+  "availableLanguage": [
+    "de",
+    "en",
+    "fr"
+  ],
+  "hasAudience": [
+    {
+      "@id": "kb:CycleTourist",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radtouristen"
+        ],
+        "pt": [
+          "Cicloturistas"
+        ],
+        "en": [
+          "Cycle tourist"
+        ],
+        "it": [
+          "Cicloturisti"
+        ],
+        "fr": [
+          "Cyclotouristes"
+        ],
+        "nl": [
+          "Fietstoeristen"
+        ],
+        "es": [
+          "Cicloturistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Cyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radfahrer"
+        ],
+        "pt": [
+          "Ciclistas"
+        ],
+        "en": [
+          "Cyclists"
+        ],
+        "it": [
+          "Ciclisti"
+        ],
+        "fr": [
+          "Cyclistes"
+        ],
+        "nl": [
+          "Wielrenners"
+        ],
+        "es": [
+          "Ciclistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Motorcyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Motorradfahrer"
+        ],
+        "pt": [
+          "Motociclistas (motards)"
+        ],
+        "en": [
+          "Motorcyclists"
+        ],
+        "it": [
+          "Motociclisti"
+        ],
+        "fr": [
+          "Motards"
+        ],
+        "nl": [
+          "Motorrijders"
+        ],
+        "es": [
+          "Motero"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/58/9d7311ba-459f-3e45-ad74-6755a32dcd11",
+    "dc:identifier": "1988",
+    "schema:email": [
+      "jchevalier@aixenprovencetourism.com",
+      "mreus@aixenprovencetourism.com",
+      "sdardenne@aixenprovencetourism.com",
+      "vmontpellaz@aixenprovencetourism.com"
+    ],
+    "schema:legalName": "Office de Tourisme d'Aix en Provence",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.aixenprovencetourism.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/cfa7f75a-c871-3d3a-9d49-68e7775a2d7c",
+      "schema:legalName": "Provence Tourisme / Office de Tourisme d'Aix en Provence",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:CycleTourist",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radtouristen"
+        ],
+        "pt": [
+          "Cicloturistas"
+        ],
+        "en": [
+          "Cycle tourist"
+        ],
+        "it": [
+          "Cicloturisti"
+        ],
+        "fr": [
+          "Cyclotouristes"
+        ],
+        "nl": [
+          "Fietstoeristen"
+        ],
+        "es": [
+          "Cicloturistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Cyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radfahrer"
+        ],
+        "pt": [
+          "Ciclistas"
+        ],
+        "en": [
+          "Cyclists"
+        ],
+        "it": [
+          "Ciclisti"
+        ],
+        "fr": [
+          "Cyclistes"
+        ],
+        "nl": [
+          "Wielrenners"
+        ],
+        "es": [
+          "Ciclistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Motorcyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Motorradfahrer"
+        ],
+        "pt": [
+          "Motociclistas (motards)"
+        ],
+        "en": [
+          "Motorcyclists"
+        ],
+        "it": [
+          "Motociclisti"
+        ],
+        "fr": [
+          "Motards"
+        ],
+        "nl": [
+          "Motorrijders"
+        ],
+        "es": [
+          "Motero"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/5e74e477-31f0-361f-9df7-5b056f34c7a5",
+      "schema:email": [
+        "bastide.etoile@gmail.com",
+        "contact@bastide-etoile.com"
+      ],
+      "schema:telephone": [
+        "+33 6 32 19 98 31"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.aix-villa-felibres.com/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/5d4e2f1f-1f75-3694-8466-091ee9a80ad4",
+      "dc:description": {
+        "de": [
+          "In Aix-en-Provence liegt dieses B&B mit Pool nahe dem Stadtzentrum. Ideal für kulturelle Aktivitäten, Nachtleben, Shopping in Les Allées und Ausflüge in die Umgebung (Wine-Touring, Luberon, Lavendelfelder).\r\n \r\nVertrauen Sie auf die zwölfjährige Erfahrung und Leidenschaft der Eigentümer! Genießen Sie ein großes Zimmer, in dem Ihr Fahrzeug sicher untergebracht ist.\r\n\r\nFür Berufstätige, die von Nizza nach Marseille, zum Technologiepark Arbois oder nach Cadarache reisen, liegt das Gästezimmer sehr nahe an den Autobahnen A8 und A7."
+        ],
+        "en": [
+          "In Aix-en-Provence, this guest house with a swimming pool is near the town centre. It is ideal for cultural activities, evenings out, shopping trips in Les Allées and sightseeing nearby (wine-touring, Lubéron, lavender fields).\r\nYou can make the most of the enthusiastic owners' 12 years of experience. Enjoy a large bedroom and secure parking facilities.\r\n\r\nFor a business trip to Nice, Marseille, the L'Arbois technology hub or Cadarache, the guest house is very close to the A8 and A7 motorways."
+        ],
+        "it": [
+          "Ad Aix-en-Provence, questo bed and breakfast con piscina è vicino al centro città, ideale per attività culturali, vita notturna, shopping a Les Allées e visite ai dintorni (enoturismo, Lubéron, campi di lavanda).\r\n \r\nAffidatevi ai dodici anni di esperienza e alla passione dei proprietari! Godetevi un ampio spazio con il vostro veicolo in tutta sicurezza.\r\n\r\nPer i professionisti che viaggiano da Nizza a Marsiglia, al parco tecnologico di Arbois o a Cadarache, il bed and breakfast è molto vicino alle autostrade A8 e A7."
+        ],
+        "fr": [
+          "À Aix-en-Provence, cette chambre d'hôte avec piscine est proche du centre-ville, idéale pour les activités culturelles, les sorties nocturnes, le shopping aux Allées et visites des environs (wine-touring, Lubéron, lavender fields).\r\n \r\nFaites confiance aux douze années d'expérience et de passion des propriétaires ! Profitez d'une grande chambre avec votre véhicule en sécurité.\r\n\r\nPour les professionnels en déplacement de Nice vers Marseille, vers le technopole de l'Arbois, vers Cadarache, la chambre d'hôtes est très proche de l'autoroute A8 et A7."
+        ],
+        "es": [
+          "En Aix-en-Provence, este bed and breakfast con piscina está cerca del centro de la ciudad, ideal para actividades culturales, vida nocturna, compras en Les Allées y visitas a los alrededores (enoturismo, Lubéron, campos de lavanda).\r\n \r\nConfíe en los doce años de experiencia y pasión de los propietarios Disfrute de un amplio espacio con su vehículo en toda seguridad.\r\n\r\nPara los profesionales que viajan de Niza a Marsella, al parque tecnológico de Arbois o a Cadarache, el bed and breakfast está muy cerca de las autopistas A8 y A7."
+        ],
+        "nl": [
+          "Deze bed & breakfast met zwembad in Aix-en-Provence ligt dicht bij het stadscentrum, ideaal voor culturele activiteiten, het nachtleven, winkelen in Les Allées en bezoeken aan de omgeving (wijntoeren, Lubéron, lavendelvelden).\r\n \r\nVertrouw op de twaalf jaar ervaring en passie van de eigenaars! Geniet in alle veiligheid van een grote ruimte met uw voertuig.\r\n\r\nVoor professionals die van Nice naar Marseille, het technologiepark van Arbois of Cadarache reizen, ligt de chambres d'hôtes heel dicht bij de snelwegen A8 en A7."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0f270f7a-08da-3e64-a572-04407c1a2f0b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5ff20628-baba-3e48-a26a-de86060c29ed",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/607a161e-8a1c-3af8-8bd8-d408307df353",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/67c5efd6-961a-306f-b472-a5a7f43fef7f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b0a8d653-219a-3824-b50d-c6f1535c68d5",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/c5667758-1e42-3794-903b-a8bf4a10e69c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "isDedicatedTo": [
+        {
+          "@id": "kb:CycleTourist",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Radtouristen"
+            ],
+            "pt": [
+              "Cicloturistas"
+            ],
+            "en": [
+              "Cycle tourist"
+            ],
+            "it": [
+              "Cicloturisti"
+            ],
+            "fr": [
+              "Cyclotouristes"
+            ],
+            "nl": [
+              "Fietstoeristen"
+            ],
+            "es": [
+              "Cicloturistas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cyclists",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Radfahrer"
+            ],
+            "pt": [
+              "Ciclistas"
+            ],
+            "en": [
+              "Cyclists"
+            ],
+            "it": [
+              "Ciclisti"
+            ],
+            "fr": [
+              "Cyclistes"
+            ],
+            "nl": [
+              "Wielrenners"
+            ],
+            "es": [
+              "Ciclistas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Motorcyclists",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Motorradfahrer"
+            ],
+            "pt": [
+              "Motociclistas (motards)"
+            ],
+            "en": [
+              "Motorcyclists"
+            ],
+            "it": [
+              "Motociclisti"
+            ],
+            "fr": [
+              "Motards"
+            ],
+            "nl": [
+              "Motorrijders"
+            ],
+            "es": [
+              "Motero"
+            ]
+          }
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Ein charmantes Gästehaus mit allem Komfort in einer sehr ruhigen Gegend zu Fuß vom Stadtzentrum von Aix, mit Pool, Garage, Garten."
+        ],
+        "en": [
+          "A charming, top-quality guest house in a very quiet district, within walking distance of Aix town centre, with a pool, garage and garden."
+        ],
+        "it": [
+          "Una guest house affascinante e confortevole in una zona molto tranquilla a pochi passi dal centro di Aix, con piscina, garage e giardino."
+        ],
+        "fr": [
+          "Une maison d'hôtes de charme tout confort dans un quartier très calme à pied du centre-ville d'Aix, avec piscine, garage, jardin."
+        ],
+        "es": [
+          "Una encantadora y confortable casa de huéspedes en una zona muy tranquila a poca distancia del centro de la ciudad de Aix, con piscina, garaje y jardín."
+        ],
+        "nl": [
+          "Een charmant en comfortabel pension in een zeer rustige omgeving op loopafstand van het centrum van Aix, met zwembad, garage en tuin."
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/2a5bf29a-0983-1f71-18bc-1f1bb5a7a44a",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "CZ265C238RSE",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/30c8e406-8a30-b468-f1d4-2ec1eabadd5c",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "TG37MHNK9HMW",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4e37b1ad-e79e-469a-751a-531bbcc5f6a8",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "4RAT9TC8GWW4",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/063c6c41-0875-3af8-8cdf-ddbd7e54e79a",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Garden",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Garten"
+            ],
+            "pt": [
+              "Jardim"
+            ],
+            "en": [
+              "Garden"
+            ],
+            "it": [
+              "Giardino"
+            ],
+            "fr": [
+              "Jardin"
+            ],
+            "nl": [
+              "Tuin"
+            ],
+            "es": [
+              "Jardín"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/06a4dd9e-bf3f-3416-82ea-22a508162d2f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Shower",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Dusche"
+            ],
+            "pt": [
+              "Chuveiro"
+            ],
+            "en": [
+              "Shower"
+            ],
+            "it": [
+              "Doccia"
+            ],
+            "fr": [
+              "Douche"
+            ],
+            "es": [
+              "Ducha"
+            ],
+            "nl": [
+              "Douche"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/15a13ccd-48ff-309e-b0be-6aa88d8f0c71",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateBathroom",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privates Badzimmer"
+            ],
+            "pt": [
+              "Casa de banho privativa"
+            ],
+            "en": [
+              "Private bathroom"
+            ],
+            "it": [
+              "Bagno privato con vasca"
+            ],
+            "fr": [
+              "Salle de bain privée"
+            ],
+            "nl": [
+              "Privébadkamer"
+            ],
+            "es": [
+              "Baño privado"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/1d7876f7-fa05-31a5-8951-8a5cb9986d3d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bath",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Badewanne"
+            ],
+            "pt": [
+              "Banheira"
+            ],
+            "en": [
+              "Bath"
+            ],
+            "it": [
+              "Vasca da bagno"
+            ],
+            "fr": [
+              "Baignoire"
+            ],
+            "nl": [
+              "Badkuip"
+            ],
+            "es": [
+              "Bañera"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2bc74dd6-f955-31b2-bda0-7182b397c750",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:OutdoorPool",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Freibad"
+            ],
+            "pt": [
+              "Piscina ao ar livre"
+            ],
+            "en": [
+              "Outdoor pool"
+            ],
+            "it": [
+              "Piscina all'aperto"
+            ],
+            "fr": [
+              "Piscine plein air"
+            ],
+            "es": [
+              "Piscina de exterior"
+            ],
+            "nl": [
+              "Openluchtzwembad"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2d3553bf-376d-3b31-bab3-e096f6bec423",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SeparateToilet",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Separate Toiletten"
+            ],
+            "pt": [
+              "Sanitários separados"
+            ],
+            "en": [
+              "Separate toilets"
+            ],
+            "it": [
+              "Servizi igienici separati"
+            ],
+            "fr": [
+              "Toilettes séparées"
+            ],
+            "nl": [
+              "Gescheiden toiletten"
+            ],
+            "es": [
+              "Aseos separados"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2eaae2c6-ed89-3e15-9052-ab2093cb91d1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:FamilyBedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Familienzimmer"
+            ],
+            "pt": [
+              "Quarto familiar"
+            ],
+            "en": [
+              "Family bedroom"
+            ],
+            "it": [
+              "Camera familiare"
+            ],
+            "fr": [
+              "Chambre familiale"
+            ],
+            "es": [
+              "Habitación familiar"
+            ],
+            "nl": [
+              "Familiekamer"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/30158ebf-7950-31c6-9727-b9c4732f17bd",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SeparateEntrance",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Separater Eingang"
+            ],
+            "pt": [
+              "Entrada independente"
+            ],
+            "en": [
+              "Separate entrance"
+            ],
+            "it": [
+              "Ingresso indipendente"
+            ],
+            "fr": [
+              "Entrée indépendante"
+            ],
+            "nl": [
+              "Onafhankelijke ingang"
+            ],
+            "es": [
+              "Entrada independiente"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/38c54688-e8de-3108-ba57-b37fe297bd8d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:QueenSizeBed",
+          "@type": [
+            "TypeOfBed"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Queensize-Bett"
+            ],
+            "pt": [
+              "Cama «queen size»"
+            ],
+            "en": [
+              "Queen size bed"
+            ],
+            "it": [
+              "Letto queen size"
+            ],
+            "fr": [
+              "Lit queen size"
+            ],
+            "nl": [
+              "Queensize bed"
+            ],
+            "es": [
+              "Cama de tamaño Queen size"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/425575b1-811f-3efe-a46f-9ace5f2ebffd",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Heating",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Heizen"
+            ],
+            "pt": [
+              "Aquecimento"
+            ],
+            "en": [
+              "Heating"
+            ],
+            "it": [
+              "Riscaldamento"
+            ],
+            "fr": [
+              "Chauffage"
+            ],
+            "nl": [
+              "Verwarming"
+            ],
+            "es": [
+              "Climatización"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7bd7040f-c99b-3e31-8be9-63992d5c9a38",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:BikeGarage",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Fahrradgarage"
+            ],
+            "pt": [
+              "Garagem de bicicletas"
+            ],
+            "en": [
+              "Bike garage"
+            ],
+            "it": [
+              "Garage di biciclette"
+            ],
+            "fr": [
+              "Garage à vélo"
+            ],
+            "es": [
+              "Garaje para bicicletas"
+            ],
+            "nl": [
+              "Fietsenstalling"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8582104d-0788-3d3d-b66c-c7f0f4b00cb6",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:OneStorey",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Einstöckig"
+            ],
+            "pt": [
+              "Casa térrea"
+            ],
+            "en": [
+              "One-storey"
+            ],
+            "it": [
+              "Su un unico livello"
+            ],
+            "fr": [
+              "Plain pied"
+            ],
+            "nl": [
+              "Gelijkvloers"
+            ],
+            "es": [
+              "De un solo piso"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9bb3d2f7-e8ce-3de9-a0a1-43a6f39229c8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Terrace",
+          "@type": [
+            "CommonAmenity",
+            "ParkAndGardenTheme"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Terrasse"
+            ],
+            "pt": [
+              "Terraço"
+            ],
+            "en": [
+              "Terrace"
+            ],
+            "it": [
+              "Terrazzo"
+            ],
+            "fr": [
+              "Terrasse"
+            ],
+            "es": [
+              "Terraza"
+            ],
+            "nl": [
+              "Terras"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9fe5e26c-5eaa-3e63-8f94-1ee1b9a7323f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SwimmingPool",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Pool"
+            ],
+            "pt": [
+              "Piscina"
+            ],
+            "en": [
+              "Swimming pool"
+            ],
+            "it": [
+              "Piscina"
+            ],
+            "fr": [
+              "Piscine"
+            ],
+            "nl": [
+              "Zwembad"
+            ],
+            "es": [
+              "Piscina"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a239c937-4c7f-3dd4-80e9-20470f81bf0b",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:HairDryer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Haartrockner"
+            ],
+            "pt": [
+              "Secador de cabelo"
+            ],
+            "en": [
+              "Hair dryer"
+            ],
+            "it": [
+              "Asciugacapelli"
+            ],
+            "fr": [
+              "Sèche cheveux"
+            ],
+            "es": [
+              "Secador de pelo"
+            ],
+            "nl": [
+              "Haardroger"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a28972cb-4b37-3961-8609-712f73f447a6",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Fridge",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Kühlschrank"
+            ],
+            "pt": [
+              "Frigorífico"
+            ],
+            "en": [
+              "Fridge"
+            ],
+            "it": [
+              "Frigorifero"
+            ],
+            "fr": [
+              "Réfrigérateur"
+            ],
+            "nl": [
+              "Koelkast"
+            ],
+            "es": [
+              "Frigorífico"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c33870ea-d744-3063-81ce-09dbae0b7f72",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateGarage",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Private Garage"
+            ],
+            "pt": [
+              "Garagem privativa"
+            ],
+            "en": [
+              "Private garage"
+            ],
+            "it": [
+              "Garage privato"
+            ],
+            "fr": [
+              "Garage privé"
+            ],
+            "nl": [
+              "Privégarage"
+            ],
+            "es": [
+              "Garaje privado"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cd32d3c2-e14e-3333-b8b5-5ea6980c7e04",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CoffeeMaker",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Kaffeemaschine"
+            ],
+            "pt": [
+              "Cafeteira"
+            ],
+            "en": [
+              "Coffee maker"
+            ],
+            "it": [
+              "Macchina da caffè"
+            ],
+            "fr": [
+              "Cafetière"
+            ],
+            "nl": [
+              "Koffiezetapparaat"
+            ],
+            "es": [
+              "Cafetera"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d4e0ccaf-d2ae-3f1b-b0f9-2bf47fd861c3",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:EnclosedLand",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Eingezäuntes Grundstück"
+            ],
+            "pt": [
+              "Terreno confinado"
+            ],
+            "en": [
+              "Enclosed land"
+            ],
+            "it": [
+              "Terreno recintato"
+            ],
+            "fr": [
+              "Terrain clos"
+            ],
+            "es": [
+              "Terreno cerrado"
+            ],
+            "nl": [
+              "Afgesloten terrein"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d6b9a71a-60f7-39ea-8931-1a5be53c3f02",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:DocumentationPlan",
+          "@type": [
+            "InformativeAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Dokumentation – Plan"
+            ],
+            "pt": [
+              "Documentação — plano"
+            ],
+            "en": [
+              "Documentation - plan"
+            ],
+            "it": [
+              "Documentazione - piano"
+            ],
+            "fr": [
+              "Documentation - plan"
+            ],
+            "nl": [
+              "Documentatie - plattegrond"
+            ],
+            "es": [
+              "Documentación - plano"
+            ]
+          }
+        },
+        {
+          "@id": "kb:TouristInformation",
+          "@type": [
+            "InformativeAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Touristeninformation"
+            ],
+            "pt": [
+              "Informações turísticas"
+            ],
+            "en": [
+              "Tourist information"
+            ],
+            "it": [
+              "Informazioni turistiche"
+            ],
+            "fr": [
+              "Informations touristiques"
+            ],
+            "nl": [
+              "Toeristeninformatie"
+            ],
+            "es": [
+              "Información turística"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d9457737-393d-3727-aaaa-9f883f438721",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Garage",
+          "@type": [
+            "CommonAmenity",
+            "GeneralPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Garage"
+            ],
+            "pt": [
+              "Garagem"
+            ],
+            "en": [
+              "Garage"
+            ],
+            "it": [
+              "Garage"
+            ],
+            "fr": [
+              "Garage"
+            ],
+            "es": [
+              "Garaje"
+            ],
+            "nl": [
+              "Garage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fc97e15f-e0ff-3611-bc20-bf9cd511fd06",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:GardenLounge",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Garten-Lounge"
+            ],
+            "pt": [
+              "Mobília de jardim"
+            ],
+            "en": [
+              "Garden lounge"
+            ],
+            "it": [
+              "Mobili da giardino"
+            ],
+            "fr": [
+              "Salon de jardin"
+            ],
+            "nl": [
+              "Tuinset"
+            ],
+            "es": [
+              "Muebles de jardín"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fe1ec871-7db0-39bf-bfb0-1c38d2a3f202",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SheetsAndTowels",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bettwäsche und Handtücher"
+            ],
+            "pt": [
+              "Lençóis e toalhas"
+            ],
+            "en": [
+              "Sheets and towels"
+            ],
+            "it": [
+              "Lenzuola e biancheria"
+            ],
+            "fr": [
+              "Draps et linges"
+            ],
+            "es": [
+              "Sábanas y ropa de cama"
+            ],
+            "nl": [
+              "Beddengoed en handdoeken"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/04d116d5-8126-30f8-9eba-a7d824d53b98",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e715b0aa-2015-3d12-ae07-109c79d5c453",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "DR / Villa des Félibres"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/2ac43a7c-2b3b-363e-b76b-8db3dbdadea0",
+          "ebucore:fileSize": [
+            "56264"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "435",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/207/175/26652623.jpg"
+          ],
+          "ebucore:width": "384",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/0c0bacf5-d747-3f1b-a0d5-0dd1612e9e50",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e715b0aa-2015-3d12-ae07-109c79d5c453",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "DR / Villa des Félibres"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/14be63a9-0fba-3be6-ae41-97a4583f02d0",
+          "ebucore:fileSize": [
+            "642266"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "1806",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/215/175/26652631.jpg"
+          ],
+          "ebucore:width": "1696",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7cba0426-a56b-34ea-ab90-1a1c9dd87603",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e715b0aa-2015-3d12-ae07-109c79d5c453",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "DR / Villa des Félibres"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/8cae77f7-f43b-32a4-82a6-b032c7182540",
+          "ebucore:fileSize": [
+            "83432"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "541",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/210/175/26652626.jpg"
+          ],
+          "ebucore:width": "405",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7db27f24-1053-3424-82d6-fac5727c4f0c",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e715b0aa-2015-3d12-ae07-109c79d5c453",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "DR / Villa des Félibres"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/76cd3492-fa09-3915-a783-a04d4f1730a5",
+          "ebucore:fileSize": [
+            "72953"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "511",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/214/175/26652630.jpg"
+          ],
+          "ebucore:width": "383",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9cdc2dc7-765e-305d-8d4e-3cfdbb5e001e",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e715b0aa-2015-3d12-ae07-109c79d5c453",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "DR / Villa des Félibres"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/6db907a4-25c1-3971-9ac2-1d5a2ff8e432",
+          "ebucore:fileSize": [
+            "846602"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "2078",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/208/175/26652624.jpg"
+          ],
+          "ebucore:width": "2082",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/adf7c085-4a5a-3dcc-891c-62bca66278a7",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e715b0aa-2015-3d12-ae07-109c79d5c453",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "DR / Villa des Félibres"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/38d11684-e866-3fb0-8c0b-37ef04e5263d",
+          "ebucore:fileSize": [
+            "1108661"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "2156",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/213/175/26652629.jpg"
+          ],
+          "ebucore:width": "2983",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b5315f22-9aac-3454-8ae1-0e1415a8c465",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e715b0aa-2015-3d12-ae07-109c79d5c453",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "DR / Villa des Félibres"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/5cd0bbbd-79e3-35e6-ab08-09b5ef337bf6",
+          "ebucore:fileSize": [
+            "72494"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "454",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/209/175/26652625.jpg"
+          ],
+          "ebucore:width": "381",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b615e11e-c9b0-3685-a147-1bf95c8dd765",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e715b0aa-2015-3d12-ae07-109c79d5c453",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "DR / Villa des Félibres"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/adcd07bd-9ebe-3153-8e0a-a6cd78b8b403",
+          "ebucore:fileSize": [
+            "61477"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "308",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/206/175/26652622.jpg"
+          ],
+          "ebucore:width": "383",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/1a02a52d-ffbf-3341-a00f-109be670bfb1",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_ChambreDhotesReference",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Chambre d'hôtes référence"
+          ],
+          "pt": [
+            "Chambre d'hôtes référence"
+          ],
+          "en": [
+            "Chambre d'hôtes référence"
+          ],
+          "it": [
+            "Chambre d'hôtes référence"
+          ],
+          "fr": [
+            "Chambre d'hôtes référence"
+          ],
+          "nl": [
+            "Chambre d'hôtes référence"
+          ],
+          "es": [
+            "Chambre d'hôtes référence"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/9ce49b25-0b1a-3109-bb77-8530b635a4fe",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bc5079ba-bfcc-3add-8009-d46714c58654",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c5c8ac01-60c0-386c-9e14-44835a19fd8f",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e4f7e919-2db0-37ff-8781-5e893a4c799e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/3f91db9a-2274-3aab-bfad-7d51f30c8b41",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/5dbb3ad0-4538-3fec-840c-2528019a8873",
+          "schema:addressLocality": "Aix-en-Provence",
+          "schema:postalCode": "13090",
+          "schema:streetAddress": [
+            "4 avenue Saint-Michel du Pigonnet"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:13001",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Aix-en-Provence"
+              ],
+              "pt": [
+                "Aix-en-Provence"
+              ],
+              "en": [
+                "Aix-en-Provence"
+              ],
+              "it": [
+                "Aix-en-Provence"
+              ],
+              "fr": [
+                "Aix-en-Provence"
+              ],
+              "nl": [
+                "Aix-en-Provence"
+              ],
+              "es": [
+                "Aix-en-Provence"
+              ]
+            },
+            "insee": "13001",
+            "isPartOfDepartment": {
+              "@id": "kb:France9313",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bouches-du-Rhône"
+                ],
+                "pt": [
+                  "Bouches-du-Rhône"
+                ],
+                "en": [
+                  "Bouches-du-Rhône"
+                ],
+                "it": [
+                  "Bouches-du-Rhône"
+                ],
+                "fr": [
+                  "Bouches-du-Rhône"
+                ],
+                "nl": [
+                  "Bouches-du-Rhône"
+                ],
+                "es": [
+                  "Bouches-du-Rhône"
+                ]
+              },
+              "insee": "13",
+              "isPartOfRegion": {
+                "@id": "kb:France93",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "pt": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "en": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "it": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "fr": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "nl": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "es": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ]
+                },
+                "insee": "93",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/2a1a7bea-eca4-31ed-8bf2-4efc20c9e365",
+        "schema:latitude": "43.516513",
+        "schema:longitude": "5.441748",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/f87e535a-636d-3343-ad63-8a03392e7511",
+          "schema:validFrom": "2023-01-01T00:00:00",
+          "schema:validThrough": "2023-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "internetAccess": false,
+      "petsAllowed": false,
+      "textOpeningHoursSpecification": {
+        "fr": [
+          "Toute l'année."
+        ]
+      }
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e7805029-2b44-32b4-afa1-ab3632e25786",
+      "schema:email": [
+        "jchevalier@aixenprovencetourism.com",
+        "mreus@aixenprovencetourism.com",
+        "vmontpellaz@aixenprovencetourism.com"
+      ],
+      "schema:legalName": "Office de Tourisme d'Aix en Provence",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.aixenprovencetourism.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-11-05",
+  "lastUpdateDatatourisme": "2025-06-12T05:15:29.961Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/15b4ed42-c47b-34a4-87c4-60dfb4dcb11c",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/37fdf0e5-dd16-3895-866c-1b832cc22fbd",
+          "schema:maxPrice": [
+            "155"
+          ],
+          "schema:minPrice": [
+            "110"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "je nach Zeitraum, inklusive Frühstück und Kurtaxe"
+            ],
+            "en": [
+              "depending on period, including breakfast and tourist tax"
+            ],
+            "it": [
+              "a seconda del periodo, compresa la prima colazione e la tassa di soggiorno"
+            ],
+            "fr": [
+              "selon la période, petits déjeuners et taxes de séjour inclus"
+            ],
+            "es": [
+              "según el período, incluido el desayuno y la tasa turística"
+            ],
+            "nl": [
+              "afhankelijk van de periode, inclusief ontbijt en toeristenbelasting"
+            ]
+          },
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/31f5d72b-a58c-3b74-a324-625d6ba3a28e",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2024-12-31",
+              "startDate": "2024-01-01"
+            }
+          ],
+          "hasPricingMode": [
+            {
+              "@id": "kb:TwoPeopleBAndB",
+              "@type": [
+                "PricingMode"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Zwei Personen"
+                ],
+                "pt": [
+                  "Duas pessoas"
+                ],
+                "en": [
+                  "Two people"
+                ],
+                "it": [
+                  "Due persone"
+                ],
+                "fr": [
+                  "Deux personnes"
+                ],
+                "nl": [
+                  "Twee personen"
+                ],
+                "es": [
+                  "Dos personas"
+                ]
+              }
+            }
+          ],
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/3335478f-bbc4-34df-84b4-8e2ed699947c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/58ea634b-2d98-32eb-8b46-a3b767824b5b",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/941fc3c7-a979-3928-83dd-fd85a3e42d18",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d2c712b0-f549-33cd-a866-a23d2d2abeac",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/feb574bf-4c1a-389e-a868-3d51e54d41d5",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ],
+      "textPriceSpecification": {
+        "fr": [
+          "Deux personnes : de 110 à 155 € (selon la période, petits déjeuners et taxes de séjour inclus)."
+        ]
+      }
+    }
+  ],
+  "reducedMobilityAccess": false
+}

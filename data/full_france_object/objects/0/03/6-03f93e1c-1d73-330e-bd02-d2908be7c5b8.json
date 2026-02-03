@@ -1,0 +1,815 @@
+{
+  "@id": "https://data.datatourisme.fr/6/03f93e1c-1d73-330e-bd02-d2908be7c5b8",
+  "dc:identifier": "HLOBOU089V502YUS",
+  "@type": [
+    "schema:Accommodation",
+    "schema:BedAndBreakfast",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "Guesthouse",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Gästezimmer mit Charme."
+    ],
+    "en": [
+      "Charming guest rooms."
+    ],
+    "it": [
+      "Camere di charme per gli ospiti."
+    ],
+    "fr": [
+      "Chambres d'hôtes de charme."
+    ],
+    "es": [
+      "Habitaciones de huéspedes con encanto."
+    ],
+    "nl": [
+      "Charmante gastenkamers."
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "Ferme de la Fontaine Géry"
+    ],
+    "en": [
+      "Ferme de la Fontaine Géry"
+    ],
+    "fr": [
+      "Ferme de la Fontaine Géry"
+    ]
+  },
+  "allowedPersons": 6,
+  "availableLanguage": [
+    "en",
+    "fr"
+  ],
+  "creationDate": "2017-05-16",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/6eb41cc0-d5f2-3a39-8496-197f3fccb2d0",
+    "dc:identifier": "8d9ae516-a279-45ca-9b95-2aad39b73459",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/06850cfd-2af4-37ad-8a3b-a36fae58e442",
+        "schema:addressLocality": "Auxerre",
+        "schema:postalCode": "89000",
+        "schema:streetAddress": [
+          "16-18, boulevard de la Marne"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:89024",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Auxerre"
+            ],
+            "pt": [
+              "Auxerre"
+            ],
+            "en": [
+              "Auxerre"
+            ],
+            "it": [
+              "Auxerre"
+            ],
+            "fr": [
+              "Auxerre"
+            ],
+            "nl": [
+              "Auxerre"
+            ],
+            "es": [
+              "Auxerre"
+            ]
+          },
+          "insee": "89024",
+          "isPartOfDepartment": {
+            "@id": "kb:France2789",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Yonne"
+              ],
+              "pt": [
+                "Yonne"
+              ],
+              "en": [
+                "Yonne"
+              ],
+              "it": [
+                "Yonne"
+              ],
+              "fr": [
+                "Yonne"
+              ],
+              "nl": [
+                "Yonne"
+              ],
+              "es": [
+                "Yonne"
+              ]
+            },
+            "insee": "89",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "adt89@tourisme-yonne.com"
+    ],
+    "schema:legalName": "Yonne Attractivité",
+    "schema:telephone": [
+      "+33 3 86 72 92 00"
+    ],
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.tourisme-yonne.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/d29f9eca-1477-3331-9fda-7dc0e7287df3",
+      "schema:email": [
+        "contact@lafermedefontainegery.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 82 27 81 06"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.lafermedefontainegery.fr/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/26ab25da-7695-3ded-8e95-e2ea59af4be4",
+      "schema:email": [
+        "contact@lafermedefontainegery.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 82 27 81 06"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.facebook.com/lafermedefontainegery",
+        "https://www.instagram.com/lafermedefontainegery/",
+        "https://www.lafermedefontainegery.fr/"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d29f9eca-1477-3331-9fda-7dc0e7287df3",
+      "schema:email": [
+        "contact@lafermedefontainegery.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 82 27 81 06"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.lafermedefontainegery.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/fb95797d-bb01-33d4-84d2-948c3c2fa3c0",
+      "dc:description": {
+        "de": [
+          "Gästezimmer mit Charme."
+        ],
+        "en": [
+          "Charming guest rooms."
+        ],
+        "it": [
+          "Camere di charme per gli ospiti."
+        ],
+        "fr": [
+          "Chambres d'hôtes de charme."
+        ],
+        "es": [
+          "Habitaciones de huéspedes con encanto."
+        ],
+        "nl": [
+          "Charmante gastenkamers."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/68887482-9778-3233-aa25-98a70ec14f72",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6bd098c3-1e90-3961-a542-569330bd376a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9fb5f9f1-edd2-327a-8498-9c9c76fecd00",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d12387a9-c5a6-33ea-8e38-bb092183a402",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e241e783-0430-333e-a1c0-8f66fe7448e1",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f2943992-978e-33ae-b376-d5a724290391",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Gästezimmer mit Charme."
+        ],
+        "en": [
+          "Charming guest rooms."
+        ],
+        "it": [
+          "Camere di charme per gli ospiti."
+        ],
+        "fr": [
+          "Chambres d'hôtes de charme."
+        ],
+        "es": [
+          "Habitaciones de huéspedes con encanto."
+        ],
+        "nl": [
+          "Charmante gastenkamers."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/291b3921-3d00-326b-8ed7-258e60a01e7d",
+      "schema:value": "3",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/39622c81-d525-36fd-b9d2-75d9a2412ac8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4d758a8d-d6d3-3077-b8de-09654a74284f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Accommodation",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Unterbringung"
+            ],
+            "pt": [
+              "Alojamento"
+            ],
+            "en": [
+              "Accommodation"
+            ],
+            "it": [
+              "Alloggio"
+            ],
+            "fr": [
+              "Logement"
+            ],
+            "nl": [
+              "Logies"
+            ],
+            "es": [
+              "Alojamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/22f8475e-94f1-32b9-abac-ae9f813028fd",
+        "schema:unitText": [
+          "m²"
+        ],
+        "schema:value": "14",
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4f533e68-e395-38ec-84c8-63df3537c904",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SwimmingPool",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Pool"
+            ],
+            "pt": [
+              "Piscina"
+            ],
+            "en": [
+              "Swimming pool"
+            ],
+            "it": [
+              "Piscina"
+            ],
+            "fr": [
+              "Piscine"
+            ],
+            "nl": [
+              "Zwembad"
+            ],
+            "es": [
+              "Piscina"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/3a50b0c3-82d9-3da9-9a6d-58300eb38f4a",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5b17dbe5-c740-3ad7-b042-29f5f5cd26c1",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b44eee90-e08d-3e3d-84f8-5d7b73aaffa9",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/879388b7-f4c2-3038-8a6d-555a2e192399",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/51d33bc3-ba12-3692-867a-e544f4ad44d0",
+          "schema:addressLocality": "Tonnerre",
+          "schema:postalCode": "89700",
+          "schema:streetAddress": [
+            "Route de Chablis"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:89418",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Tonnerre"
+              ],
+              "pt": [
+                "Tonnerre"
+              ],
+              "en": [
+                "Tonnerre"
+              ],
+              "it": [
+                "Tonnerre"
+              ],
+              "fr": [
+                "Tonnerre"
+              ],
+              "nl": [
+                "Tonnerre"
+              ],
+              "es": [
+                "Tonnerre"
+              ]
+            },
+            "insee": "89418",
+            "isPartOfDepartment": {
+              "@id": "kb:France2789",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Yonne"
+                ],
+                "pt": [
+                  "Yonne"
+                ],
+                "en": [
+                  "Yonne"
+                ],
+                "it": [
+                  "Yonne"
+                ],
+                "fr": [
+                  "Yonne"
+                ],
+                "nl": [
+                  "Yonne"
+                ],
+                "es": [
+                  "Yonne"
+                ]
+              },
+              "insee": "89",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/f0e4f49d-9be5-3d75-8112-24d1c76fb5c3",
+        "schema:latitude": "47.875303",
+        "schema:longitude": "3.874047",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/8688fd22-20dc-3504-b911-91c87c07daab",
+          "schema:validFrom": "2025-01-01T00:00:00",
+          "schema:validThrough": "2025-12-31T00:00:00",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-10",
+  "lastUpdateDatatourisme": "2025-07-12T00:06:03.955Z"
+}

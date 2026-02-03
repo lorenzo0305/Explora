@@ -1,0 +1,1530 @@
+{
+  "@id": "https://data.datatourisme.fr/49/0186ad95-4fcb-3bec-89b8-46abd058a202",
+  "dc:identifier": "LOIPDL044V510617",
+  "@type": [
+    "schema:AmusementPark",
+    "schema:LocalBusiness",
+    "LeisureComplex",
+    "NauticalCentre",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "SportsAndLeisurePlace",
+    "ThemePark"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Vermietung, Leistungen und Betreuung Kanu, Paddel, Tretboot"
+    ],
+    "en": [
+      "Canoe, kayak, paddle and pedalo rental, services and supervision"
+    ],
+    "it": [
+      "Noleggio, servizi e supervisione di canoe, kayak, pagaie e pedalò"
+    ],
+    "fr": [
+      "Location, prestations et encadrement canoë-kayak, paddle, pédalo"
+    ],
+    "nl": [
+      "Kano-, kajak-, peddel- en waterfietsverhuur, diensten en toezicht"
+    ],
+    "es": [
+      "Alquiler, servicios y vigilancia de canoas, kayaks, remos y pédalos"
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "CANAL KAYAK"
+    ]
+  },
+  "availableLanguage": [
+    "fr"
+  ],
+  "creationDate": "2022-01-24",
+  "hasAudience": [
+    {
+      "@id": "kb:BetweenFriends",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Unter Freunden"
+        ],
+        "pt": [
+          "Entre amigos"
+        ],
+        "en": [
+          "Between friends"
+        ],
+        "it": [
+          "Tra amici"
+        ],
+        "fr": [
+          "Entre amis"
+        ],
+        "nl": [
+          "Met vrienden"
+        ],
+        "es": [
+          "Entre amigos"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Children",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kinder"
+        ],
+        "pt": [
+          "Crianças"
+        ],
+        "en": [
+          "Children"
+        ],
+        "it": [
+          "Bambini"
+        ],
+        "fr": [
+          "Enfants"
+        ],
+        "es": [
+          "Menores"
+        ],
+        "nl": [
+          "Kinderen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Couples",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Paare"
+        ],
+        "pt": [
+          "Casais"
+        ],
+        "en": [
+          "Couples"
+        ],
+        "it": [
+          "Coppie"
+        ],
+        "fr": [
+          "Couples"
+        ],
+        "es": [
+          "Parejas"
+        ],
+        "nl": [
+          "Koppels"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:LargeFamilies",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kinderreiche Familien"
+        ],
+        "pt": [
+          "Famílias numerosas"
+        ],
+        "en": [
+          "Large families"
+        ],
+        "it": [
+          "Famiglie numerose"
+        ],
+        "fr": [
+          "Familles nombreuses"
+        ],
+        "nl": [
+          "Grote gezinnen"
+        ],
+        "es": [
+          "Familias numerosas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Lover",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Verliebte(r)"
+        ],
+        "pt": [
+          "Apaixonados"
+        ],
+        "en": [
+          "Lover"
+        ],
+        "it": [
+          "Innamorati"
+        ],
+        "fr": [
+          "Amoureux"
+        ],
+        "nl": [
+          "Geliefden"
+        ],
+        "es": [
+          "Amoroso"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Solo",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Solo"
+        ],
+        "pt": [
+          "A solo"
+        ],
+        "en": [
+          "Solo"
+        ],
+        "it": [
+          "Solo"
+        ],
+        "fr": [
+          "Solo"
+        ],
+        "nl": [
+          "Solo"
+        ],
+        "es": [
+          "Solo"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Teenagers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Jugendliche"
+        ],
+        "pt": [
+          "Adolescentes"
+        ],
+        "en": [
+          "Teenagers"
+        ],
+        "it": [
+          "Adolescenti"
+        ],
+        "fr": [
+          "Adolescents"
+        ],
+        "nl": [
+          "Tieners"
+        ],
+        "es": [
+          "Adolescentes"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/a0d2d7fe-03ec-345d-8b6a-356129359044",
+    "schema:email": [
+      "accueil@erdrecanalforet.fr"
+    ],
+    "schema:legalName": "Pays Erdre Canal Forêt",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.erdrecanalforet.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/cb37ecba-e500-37e7-b601-64f9b1ef5b04",
+      "schema:email": [
+        "b.paulmyer@solutions-eco.fr"
+      ],
+      "schema:legalName": "eSPRIT Pays de la Loire",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.solutions-pro-tourisme-paysdelaloire.fr/"
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:BetweenFriends",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Unter Freunden"
+        ],
+        "pt": [
+          "Entre amigos"
+        ],
+        "en": [
+          "Between friends"
+        ],
+        "it": [
+          "Tra amici"
+        ],
+        "fr": [
+          "Entre amis"
+        ],
+        "nl": [
+          "Met vrienden"
+        ],
+        "es": [
+          "Entre amigos"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Children",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kinder"
+        ],
+        "pt": [
+          "Crianças"
+        ],
+        "en": [
+          "Children"
+        ],
+        "it": [
+          "Bambini"
+        ],
+        "fr": [
+          "Enfants"
+        ],
+        "es": [
+          "Menores"
+        ],
+        "nl": [
+          "Kinderen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Couples",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Paare"
+        ],
+        "pt": [
+          "Casais"
+        ],
+        "en": [
+          "Couples"
+        ],
+        "it": [
+          "Coppie"
+        ],
+        "fr": [
+          "Couples"
+        ],
+        "es": [
+          "Parejas"
+        ],
+        "nl": [
+          "Koppels"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:LargeFamilies",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kinderreiche Familien"
+        ],
+        "pt": [
+          "Famílias numerosas"
+        ],
+        "en": [
+          "Large families"
+        ],
+        "it": [
+          "Famiglie numerose"
+        ],
+        "fr": [
+          "Familles nombreuses"
+        ],
+        "nl": [
+          "Grote gezinnen"
+        ],
+        "es": [
+          "Familias numerosas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Lover",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Verliebte(r)"
+        ],
+        "pt": [
+          "Apaixonados"
+        ],
+        "en": [
+          "Lover"
+        ],
+        "it": [
+          "Innamorati"
+        ],
+        "fr": [
+          "Amoureux"
+        ],
+        "nl": [
+          "Geliefden"
+        ],
+        "es": [
+          "Amoroso"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Solo",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Solo"
+        ],
+        "pt": [
+          "A solo"
+        ],
+        "en": [
+          "Solo"
+        ],
+        "it": [
+          "Solo"
+        ],
+        "fr": [
+          "Solo"
+        ],
+        "nl": [
+          "Solo"
+        ],
+        "es": [
+          "Solo"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Teenagers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Jugendliche"
+        ],
+        "pt": [
+          "Adolescentes"
+        ],
+        "en": [
+          "Teenagers"
+        ],
+        "it": [
+          "Adolescenti"
+        ],
+        "fr": [
+          "Adolescents"
+        ],
+        "nl": [
+          "Tieners"
+        ],
+        "es": [
+          "Adolescentes"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/d5d79eaf-38c9-3e38-9ce6-f374d3a6358c",
+      "schema:email": [
+        "contact@canalkayak.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 71 48 29 75"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://canalkayak.fr/#/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/7ea8c913-6edc-39ec-a030-ba3f91fd19ac",
+      "dc:description": {
+        "de": [
+          "Canal Kayak bietet Ihnen :\n- den Verleih von Kanus, Paddelbooten und Tretbooten\n- von einem staatlich geprüften Trainer betreute Sitzungen für Ihre Gruppen (Schulklassen, Betriebsrat, CLSH, Freizeitzentrum, Sondereinrichtungen...),\n- paddel- und Kajakkurse\n - abende zur Entdeckung des Paddelns, Aperitif/Pedalo etc.\n\nEntdecken Sie den Canal de Nantes à Brest ab der großen Bief von Bout de Bois"
+        ],
+        "en": [
+          "Canal Kayak offers :\n- canoe, kayak, paddle and pedalo rentals\n- supervised sessions for your groups (schools, works councils, CLSH, leisure centers, specialized establishments, etc.),\n- paddle and kayak lessons\n - paddle discovery evenings, aperitifs/pedalos, etc.\n\nCome and discover the Nantes-Brest Canal from the Bout de Bois bief"
+        ],
+        "it": [
+          "Canal Kayak vi offre :\n- noleggio di canoe, kayak, pagaie e pedalò\n- sessioni sotto la supervisione di un istruttore certificato dallo Stato per i vostri gruppi (scuole, consigli di fabbrica, CLSH, centri ricreativi, istituti specializzati...),\n- lezioni di paddle e kayak\n - serate di scoperta della pagaia, aperitivi/pedalate, ecc.\n\nVenite a scoprire il Canale di Nantes-Brest dal Bout de Bois bief"
+        ],
+        "fr": [
+          "Canal Kayak vous propose :\n- de la location de canoë-kayak, paddle, pédalo\n- des séances encadrées par un brevet d'état pour vos groupes (Scolaire, Comité d'entreprise, CLSH, centre de loisirs, établissements spécialisés...),\n- des cours de paddle et de kayak\n - des soirées découverte paddle, apéro/pédalo etc...\n\nVenez découvrir le Canal de Nantes à Brest à partir du grand bief de Bout de Bois"
+        ],
+        "es": [
+          "Canal Kayak le ofrece :\n- alquiler de canoas, kayaks, remos y pedalós\n- sesiones supervisadas por un monitor diplomado para sus grupos (escuelas, comités de empresa, CLSH, centros de ocio, establecimientos especializados, etc.),\n- cursos de remo y kayak\n - veladas de descubrimiento del remo, aperitivos/pedalos, etc.\n\nVenga a descubrir el Canal de Nantes-Brest desde el bief Bout de Bois"
+        ],
+        "nl": [
+          "Canal Kayak biedt je :\n- verhuur van kano's, kajaks, peddels en waterfietsen\n- sessies onder begeleiding van een gediplomeerd instructeur voor groepen (scholen, ondernemingsraden, CLSH, recreatiecentra, gespecialiseerde instellingen, enz,)\n- peddel- en kajaklessen\n - peddelavonden, aperitieven/pedalo's, enz.\n\nKom het kanaal Nantes-Brest ontdekken vanaf de Bout de Bois bief"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/104565b7-628f-3eca-b45c-864d75a97647",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2af1c3f1-1e3b-37f8-b507-13b19de3ca61",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/464bbb7b-5970-3895-aa79-bf739b23b8d7",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7733d024-66de-31f3-bc3d-b7260746fe1e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7e2b81b6-52aa-3937-8d67-4ed305768689",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/84e980cb-c9b5-38bf-83ec-4f2902c11073",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/85febcd9-efee-3c4c-aca2-0d474322288f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b41a1de2-e734-3942-8482-d79b415992d3",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d1e74382-8c8b-3904-b6f7-d4e74e3dc9d1",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e41e6fbc-04d9-3dd6-8064-344a1e4ed317",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Vermietung, Leistungen und Betreuung Kanu, Paddel, Tretboot"
+        ],
+        "en": [
+          "Canoe, kayak, paddle and pedalo rental, services and supervision"
+        ],
+        "it": [
+          "Noleggio, servizi e supervisione di canoe, kayak, pagaie e pedalò"
+        ],
+        "fr": [
+          "Location, prestations et encadrement canoë-kayak, paddle, pédalo"
+        ],
+        "nl": [
+          "Kano-, kajak-, peddel- en waterfietsverhuur, diensten en toezicht"
+        ],
+        "es": [
+          "Alquiler, servicios y vigilancia de canoas, kayaks, remos y pédalos"
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/5a9c5f9c-e591-7522-bc8f-09509282885e",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "41bc95e8-4105-4f18-9413-3ebd91734d00",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:AcceslibrePlatform",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Teilen Sie wichtige Reiseinformationen für Menschen mit Behinderungen."
+            ],
+            "pt": [
+              "Compartilhe informações essenciais sobre viagens para pessoas com deficiência."
+            ],
+            "en": [
+              "Share essential travel information for people with disabilities."
+            ],
+            "it": [
+              "Condividi informazioni di viaggio essenziali per le persone con disabilità."
+            ],
+            "fr": [
+              "Partagez les informations indispensables aux déplacements des personnes en situation de handicap."
+            ],
+            "nl": [
+              "Deel essentiële reisinformatie voor mensen met een handicap."
+            ],
+            "es": [
+              "Comparta información de viaje esencial para personas con discapacidades."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Acceslibre-Plattform"
+            ],
+            "pt": [
+              "Plataforma Acceslibre"
+            ],
+            "en": [
+              "Acceslibre platform"
+            ],
+            "it": [
+              "Piattaforma Acceslibre"
+            ],
+            "fr": [
+              "Plateforme Acceslibre"
+            ],
+            "es": [
+              "Plataforma Acceslibre"
+            ],
+            "nl": [
+              "Acceslibre-platform"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://acceslibre.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/16602daa-a199-3003-ab0e-903815adeaec",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PicnicArea",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Picknickplatz"
+            ],
+            "pt": [
+              "Área de piquenique"
+            ],
+            "en": [
+              "Picnic area"
+            ],
+            "it": [
+              "Area pic-nic"
+            ],
+            "fr": [
+              "Aire de pique-nique"
+            ],
+            "es": [
+              "Zona de pícnic"
+            ],
+            "nl": [
+              "Picknickplaats"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/1a8edbca-e937-3aa7-9e82-b11fad3a9015",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Toilet",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Toiletten"
+            ],
+            "pt": [
+              "Sanitários"
+            ],
+            "en": [
+              "Toilets"
+            ],
+            "it": [
+              "Servizi igienici"
+            ],
+            "fr": [
+              "Toilettes"
+            ],
+            "nl": [
+              "Toiletten"
+            ],
+            "es": [
+              "Aseos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/72c2f096-32b5-3aa0-bbf7-3f5433d37f6f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CarPark",
+          "@type": [
+            "CommonAmenity",
+            "GeneralPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Parkplatz"
+            ],
+            "pt": [
+              "Estacionamento"
+            ],
+            "en": [
+              "Car park"
+            ],
+            "it": [
+              "Parcheggio"
+            ],
+            "fr": [
+              "Parking"
+            ],
+            "nl": [
+              "Parkeerplaats"
+            ],
+            "es": [
+              "Aparcamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/82af1634-fc79-3928-9a7d-0a58c44349f9",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:GameArea",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Spielbereich"
+            ],
+            "pt": [
+              "Espaço de jogos"
+            ],
+            "en": [
+              "Game area"
+            ],
+            "it": [
+              "Area giochi"
+            ],
+            "fr": [
+              "Espace jeux"
+            ],
+            "nl": [
+              "Gameruimte"
+            ],
+            "es": [
+              "Espacio de juegos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:CanoeingKayaking",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kanu-Kajakfahren"
+        ],
+        "pt": [
+          "Canoa caiaque"
+        ],
+        "en": [
+          "Canoeing-kayaking"
+        ],
+        "it": [
+          "Canoismo"
+        ],
+        "fr": [
+          "Canoé kayak"
+        ],
+        "es": [
+          "Piraguas y kayak"
+        ],
+        "nl": [
+          "Kano/kajak"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Multisport",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Multisport"
+        ],
+        "pt": [
+          "Multidesporto"
+        ],
+        "en": [
+          "Multisport"
+        ],
+        "it": [
+          "Multisport"
+        ],
+        "fr": [
+          "Multisport"
+        ],
+        "nl": [
+          "Verschillende sporten"
+        ],
+        "es": [
+          "Multideporte"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Nautisme",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wassersport"
+        ],
+        "pt": [
+          "Nautismo (atividades náuticas)"
+        ],
+        "en": [
+          "Nautisme"
+        ],
+        "it": [
+          "Sport nautici"
+        ],
+        "fr": [
+          "Nautisme"
+        ],
+        "nl": [
+          "Watersport"
+        ],
+        "es": [
+          "Náutica"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Paddleboat",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Tretboot"
+        ],
+        "pt": [
+          "Gaivota"
+        ],
+        "en": [
+          "Paddleboat"
+        ],
+        "it": [
+          "Pedalò"
+        ],
+        "fr": [
+          "Pédalo"
+        ],
+        "nl": [
+          "Waterfiets"
+        ],
+        "es": [
+          "Embarcación de pedales"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/1f66b524-67ab-3e38-a0b0-5aaaa377385b",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/59f1ffd0-b73c-33dd-bd80-d20c9f796583",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/61302929-5df7-332a-b793-5948269f1cf6",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b5498a85-e98d-3e78-adee-52fccb807b9c",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bdb2014f-bd9e-372e-9f3d-a0934fea680a",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/cb89fdea-b261-34ab-a363-d557cb2d3af8",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/d6f86fe4-ed18-3bd6-a182-2e2762e47bfc",
+          "schema:addressLocality": "Saffré",
+          "schema:postalCode": "44390",
+          "schema:streetAddress": [
+            "Etang de Bout de Bois",
+            "Lieu-dit Le Pommain"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:44149",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saffré"
+              ],
+              "pt": [
+                "Saffré"
+              ],
+              "en": [
+                "Saffré"
+              ],
+              "it": [
+                "Saffré"
+              ],
+              "fr": [
+                "Saffré"
+              ],
+              "nl": [
+                "Saffré"
+              ],
+              "es": [
+                "Saffré"
+              ]
+            },
+            "insee": "44149",
+            "isPartOfDepartment": {
+              "@id": "kb:France5244",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Loire-Atlantique"
+                ],
+                "pt": [
+                  "Loire-Atlantique"
+                ],
+                "en": [
+                  "Loire-Atlantique"
+                ],
+                "it": [
+                  "Loire-Atlantique"
+                ],
+                "fr": [
+                  "Loire-Atlantique"
+                ],
+                "nl": [
+                  "Loire-Atlantique"
+                ],
+                "es": [
+                  "Loire-Atlantique"
+                ]
+              },
+              "insee": "44",
+              "isPartOfRegion": {
+                "@id": "kb:France52",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Pays de la Loire"
+                  ],
+                  "pt": [
+                    "Pays de la Loire"
+                  ],
+                  "en": [
+                    "Pays de la Loire"
+                  ],
+                  "it": [
+                    "Pays de la Loire"
+                  ],
+                  "fr": [
+                    "Pays de la Loire"
+                  ],
+                  "nl": [
+                    "Pays de la Loire"
+                  ],
+                  "es": [
+                    "Pays de la Loire"
+                  ]
+                },
+                "insee": "52",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/cb6cb389-2595-3661-acc0-e3d941d718f9",
+        "schema:latitude": "47.4551705",
+        "schema:longitude": "-1.632818",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2025-05-05",
+  "lastUpdateDatatourisme": "2025-05-06T22:06:10.134Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/926597c3-7fdb-354d-ab63-379e258fb07d",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:CreditCards",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bankkarten"
+            ],
+            "pt": [
+              "Cartões bancários"
+            ],
+            "en": [
+              "Credit Cards"
+            ],
+            "it": [
+              "Carte bancarie"
+            ],
+            "fr": [
+              "Cartes bancaires"
+            ],
+            "es": [
+              "Tarjetas bancarias"
+            ],
+            "nl": [
+              "Bankkaarten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "@id": "https://data.datatourisme.fr/6/0f78e30e-7046-333f-baa3-25cc890d7ced",
+  "dc:identifier": "HLOBFC000V53EJ1H",
+  "@type": [
+    "schema:Accommodation",
+    "schema:BedAndBreakfast",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "Guesthouse",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "La Meule"
+    ]
+  },
+  "allowedPersons": 2,
+  "creationDate": "2025-07-08",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/a6c1fbd3-5a13-329f-9091-93d8585a3896",
+    "dc:identifier": "8329d7ce-aab1-47c2-b1e4-8172ae310db2",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/a835572a-3e2b-35de-8e0c-e9272184086e",
+        "schema:postalCode": "39600",
+        "schema:streetAddress": [
+          "17 Rue de l'Hôtel de ville"
+        ],
+        "@type": [
+          "schema:PostalAddress"
+        ]
+      }
+    ],
+    "schema:email": [
+      "salins@cdj-tourisme.com"
+    ],
+    "schema:legalName": "OFFICE DE TOURISME ARBOIS-POLIGNY-SALINS CŒUR DU JURA",
+    "schema:telephone": [
+      "+33 3 84 66 55 50"
+    ],
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.coeurdujura-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/acb509fa-775e-383b-8748-e86b6d0c37af",
+      "schema:telephone": [
+        "+33 6 82 68 73 81"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/68a14e24-77ce-388e-a9a6-88a6cb4f5a1e",
+      "schema:value": "1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/24e41304-6c23-31f7-b922-1424de2969ea",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/e18c36e9-1ebe-33c7-a9f8-eb922ad011e7",
+          "schema:addressLocality": "Poligny",
+          "schema:postalCode": "39800",
+          "schema:streetAddress": [
+            "7 Rue de la Meule"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:39434",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Poligny"
+              ],
+              "pt": [
+                "Poligny"
+              ],
+              "en": [
+                "Poligny"
+              ],
+              "it": [
+                "Poligny"
+              ],
+              "fr": [
+                "Poligny"
+              ],
+              "nl": [
+                "Poligny"
+              ],
+              "es": [
+                "Poligny"
+              ]
+            },
+            "insee": "39434",
+            "isPartOfDepartment": {
+              "@id": "kb:France2739",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Jura"
+                ],
+                "pt": [
+                  "Jura"
+                ],
+                "en": [
+                  "Jura"
+                ],
+                "it": [
+                  "Jura"
+                ],
+                "fr": [
+                  "Jura"
+                ],
+                "nl": [
+                  "Jura"
+                ],
+                "es": [
+                  "Jura"
+                ]
+              },
+              "insee": "39",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/dc2a3f03-036e-30de-8dd3-a2dd3e8abcfb",
+        "schema:latitude": "46.8383",
+        "schema:longitude": "5.70706",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-31",
+  "lastUpdateDatatourisme": "2025-08-01T00:10:05.587Z"
+}

@@ -1,0 +1,984 @@
+{
+  "@id": "https://data.datatourisme.fr/6/06344d49-2e86-3b6f-a80b-1219251d6727",
+  "dc:identifier": "HLOBOU000V50NJ44",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Évelyne & Michel begrüßen Sie in einem alten Bauernhaus aus dem Ende des 19. Jahrhunderts"
+    ],
+    "en": [
+      "Évelyne & Michel welcome you in an old country farmhouse dating from the end of the 19th century."
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "La Maison de Simone"
+    ],
+    "en": [
+      "La Maison de Simone"
+    ],
+    "fr": [
+      "La Maison de Simone"
+    ]
+  },
+  "allowedPersons": 4,
+  "creationDate": "2020-07-13",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/82578c73-08c7-342e-8845-dc63b20d54a8",
+    "dc:identifier": "6012fdba-d499-4734-b015-373e96f99808",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/264b87c4-2c8b-383e-bc71-d437efb5644d",
+        "schema:addressLocality": "Mâcon",
+        "schema:postalCode": "71000",
+        "schema:streetAddress": [
+          "Maison de la Saône-et-Loire"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:71270",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mâcon"
+            ],
+            "pt": [
+              "Mâcon"
+            ],
+            "en": [
+              "Mâcon"
+            ],
+            "it": [
+              "Mâcon"
+            ],
+            "fr": [
+              "Mâcon"
+            ],
+            "nl": [
+              "Mâcon"
+            ],
+            "es": [
+              "Mâcon"
+            ]
+          },
+          "insee": "71270",
+          "isPartOfDepartment": {
+            "@id": "kb:France2771",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saône-et-Loire"
+              ],
+              "pt": [
+                "Saône-et-Loire"
+              ],
+              "en": [
+                "Saône-et-Loire"
+              ],
+              "it": [
+                "Saône-et-Loire"
+              ],
+              "fr": [
+                "Saône-et-Loire"
+              ],
+              "nl": [
+                "Saône-et-Loire"
+              ],
+              "es": [
+                "Saône-et-Loire"
+              ]
+            },
+            "insee": "71",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "missiontourisme@saoneetloire71.fr"
+    ],
+    "schema:legalName": "Mission Tourisme - Département 71",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://route71.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/d261ef87-acaa-3c39-8307-8a1503c696a7",
+      "schema:email": [
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=1987&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/d261ef87-acaa-3c39-8307-8a1503c696a7",
+      "schema:email": [
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=1987&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/468ad999-d754-3fa2-80e9-9c8e0c4446b8",
+      "dc:description": {
+        "de": [
+          "Évelyne & Michel begrüßen Sie in einem alten Bauernhaus aus dem Ende des 19. Jahrhunderts, das jetzt vollständig restauriert und zu einem komfortablen modernen Resort umgebaut wurde. Absolute Ruhe, im Herzen eines friedlichen kleinen Wohndorfes, eingebettet in die Landschaft, 2,5 km vom Zentrum des charmanten typischen Brixner Dorfes Simard entfernt. Erholsamer grüner Ort und ultra verjüngend. Geräumige Gîte mit gutem Komfort. Schöner zeitgenössischer Landhausstil mit einem \"rustikalen Chic\"-Geist. Warme, weiche und exotische Atmosphäre eines alten Hauses. Geräumige exponierte und schattige Terrasse mit Zugang zu einem schönen geschlossenen, angelegten und blühenden Garten."
+        ],
+        "en": [
+          "Farmers now retired, whose nearby farm you can visit which still welcomes many animals for the enjoyment of children (horses, donkeys, geese, chickens, ducks, rabbits, etc.), Évelyne & Michel welcome you in a old country farmhouse dating from the end of the 19th century, now fully restored & revamped into a comfortable contemporary holiday resort. Absolute calm, in the heart of a peaceful little residential hamlet nestled in the countryside 2.5 km from the center of the charming typical Bressan village of Simard. In the hollow of a relaxing rural & agricultural setting preserved on the immediate edge of vast fields, rivers & meadows, a stone's throw from a bucolic little private, intimate & wooded pond, protected from view by a small wood, with a sheltered room fitted out with summer kitchen, perfect little \"spot\" for any fishing enthusiast or for basking & lounging in a privileged natural setting. Restful green site & ultra rejuvenating. Spacious gîte with good comfort. Lovely contemporary country style with a \"rustic chic\" spirit. Warm, soft and exotic atmosphere of an old house. Spacious exposed & shaded terrace opening onto a pleasant enclosed garden furnished and flowered with care, with the historic outbuildings of the farm including a large sheltered passageway terrace (and a bicycle room) as well as a gravel courtyard (potential for pétanque natural!). Beautiful open view over the surrounding countryside.\nComposition: Village house adjoining another house (total independence without vis-à-vis). Wireless. Oil central heating. Single storey cottage: kitchen, living room, 2 bedrooms (double bed 140x190cm / 2 single beds 90x190cm), bathroom (shower + bath), separate WC (2 descending steps to access the sanitary area) . Enclosed land (250m²) + terrace + parking + sheltered terrace + bike room. All private. Shops and services 6.5 km. TGV stations: Creusot 61 km, Mâcon 74 km."
+        ],
+        "it": [
+          "Évelyne e Michel sono agricoltori in pensione e possono visitare la loro vicina fattoria, che ha ancora molti animali per i bambini (cavalli, asini, oche, galline, anatre, conigli, ecc.). Vi accolgono in un'antica casa colonica risalente alla fine del XIX secolo, che è stata completamente restaurata e ristrutturata come una confortevole casa vacanze contemporanea. Pace e tranquillità assolute nel cuore di un piccolo borgo residenziale immerso nella campagna a 2,5 km dal centro dell'incantevole villaggio bresciano di Simard. In un contesto rurale e agricolo rilassante e incontaminato, ai margini di vasti campi, fiumi e prati, a pochi passi da un bucolico laghetto privato con alberi, protetto da un piccolo bosco, con un'area riparata dotata di cucina estiva, un luogo perfetto per gli appassionati di pesca o per rilassarsi in un ambiente naturale privilegiato. Un sito verde, riposante e ultra-ricaricante. Gîte spazioso e confortevole. Un delizioso stile country contemporaneo con un'atmosfera \"rustic chic\". L'atmosfera calda e accogliente di un'antica casa. Ampia terrazza ombreggiata che si apre su un piacevole giardino recintato, curato nei minimi dettagli e fiorito, in cui si trovano gli edifici storici della fattoria con un'ampia terrazza riparata (e un deposito per le biciclette) e un cortile in ghiaia (potenziale campo da bocce naturale!). Bellissima vista libera sulla campagna circostante.\nComposizione: casa di paese confinante con un'altra abitazione (totale indipendenza senza vicini). Connessione Wifi. Riscaldamento centrale a gasolio. Gîte su un unico livello: cucina, soggiorno, 2 camere da letto (letto matrimoniale 140x190cm / 2 letti singoli 90x190cm), bagno (doccia + vasca), WC separato (2 gradini per accedere alla zona sanitaria). Giardino recintato (250m²) + terrazza + parcheggio + terrazza riparata + deposito biciclette. Tutto privato. Negozi e servizi a 6,5 km. Stazioni TGV: Creusot 61 km, Mâcon 74 km."
+        ],
+        "fr": [
+          "Agriculteurs aujourd'hui retraités, dont vous pourrez visiter la ferme toute proche qui accueille toujours de nombreux animaux pour le plaisir des enfants (chevaux, ânes, oies, poules, canards, lapins…), Évelyne & Michel vous accueillent au sein d'une ancienne « fermette » de pays datant de la fin du 19ème siècle, désormais intégralement restaurée & relookée en confortable villégiature contemporaine. Calme absolu, en plein cœur d'un paisible petit hameau résidentiel niché en pleine campagne à 2.5 km du centre du charmant village bressan typique de Simard. Au creux d'un relaxant cadre champêtre & agricole préservé en lisière immédiate de vastes champs, rivières & prairies, à deux pas d'un bucolique petit étang privé intimiste & arboré, protégé des regards par un petit bois, disposant d'un local abrité aménagé avec cuisine d'été, parfait petit « spot » pour tout amateur de pêche ou pour lézarder & se prélasser dans un écrin naturel privilégié. Site verdoyant reposant & ultra ressourçant. Spacieux gîte de bon confort. Ravissant cachet campagnard contemporain d'esprit « rustique chic ». Chaleureuse ambiance douce et dépaysante d'une ancienne demeure. Spacieuse terrasse exposée & ombragée ouverte sur un agréable jardin clos aménagé et fleuri avec soins, doté des dépendances historiques de la ferme intégrant une large terrasse en coursive abritée (et un local à vélo) ainsi qu'une cour en gravier (potentiel terrain de pétanque naturel !). Belle vue dégagée sur la campagne environnante.\nComposition : Maison de village mitoyenne à une autre habitation (indépendance totale sans vis-à-vis). Wifi. Chauffage central fioul. Gîte de plain-pied : cuisine, séjour-salon, 2 chambres (lit 2 p. 140x190cm / 2 lits 1 p. 90x190cm), sdb (douche + baignoire), WC indépendant (2 marches descendantes pour accéder à l'espace sanitaires). Terrain clos (250m²) + terrasse + parking + terrasse abritée + local vélo. Tout privatif. Commerces et services 6.5 km. Gares TGV : Creusot 61 km, Mâcon 74 km."
+        ],
+        "es": [
+          "Évelyne y Michel, agricultores jubilados, le recibirán en una antigua granja de finales del siglo XIX, totalmente restaurada y acondicionada como una confortable casa de vacaciones contemporánea, en la que los niños podrán disfrutar de sus animales (caballos, burros, ocas, gallinas, patos, conejos, etc.). Tranquilidad absoluta en el corazón de una pequeña y tranquila aldea residencial enclavada en el campo a 2,5 km del centro del encantador pueblo bresés de Simard. En un entorno rural y agrícola tranquilo y preservado, al borde de vastos campos, ríos y prados, a dos pasos de un bucólico estanque privado con árboles, protegido de las miradas por un pequeño bosque, con una zona protegida equipada con una cocina de verano, un pequeño lugar ideal para los aficionados a la pesca o para descansar y relajarse en un entorno natural privilegiado. Un lugar verde, tranquilo y muy recreativo. Casa rural espaciosa y confortable. Encantador estilo rústico contemporáneo con un toque \"rústico chic\". El ambiente cálido y acogedor de una casa antigua. Terraza espaciosa y sombreada que da a un agradable jardín cerrado, cuidadosamente ajardinado y florido, con las dependencias históricas de la granja y una gran terraza protegida (y espacio para guardar bicicletas), así como un patio de grava (¡posible zona de petanca natural!). Hermosas vistas despejadas sobre la campiña circundante.\nComposición: Casa de pueblo contigua a otra vivienda (independencia total sin vecinos). Conexión wifi. Calefacción central de gasoil. Casa rural de una sola planta: cocina, salón, 2 habitaciones (cama doble 140x190cm / 2 camas individuales 90x190cm), cuarto de baño (ducha + bañera), WC separado (2 escalones para acceder a la zona sanitaria). Jardín cerrado (250m²) + terraza + aparcamiento + terraza cubierta + sala para bicicletas. Todo privado. Comercios y servicios a 6,5 km. Estaciones de TGV: Creusot 61 km, Mâcon 74 km."
+        ],
+        "nl": [
+          "Évelyne en Michel zijn gepensioneerde boeren en je kunt een bezoek brengen aan hun nabijgelegen boerderij, waar nog volop dieren zijn waar kinderen van kunnen genieten (paarden, ezels, ganzen, kippen, eenden, konijnen, enz.). Ze heten je welkom in een oude boerderij uit het einde van de 19e eeuw, die nu volledig is gerestaureerd en opnieuw ingericht als een comfortabel, eigentijds vakantiehuis. Absolute rust en stilte in het hart van een vredig klein woongehucht genesteld op het platteland op 2,5 km van het centrum van het charmante Bresse-dorp Simard. Gelegen in een ontspannen, ongerepte landelijke en agrarische omgeving aan de rand van uitgestrekte velden, rivieren en weilanden, op een steenworp afstand van een bucolische kleine privévijver met bomen, afgeschermd van het zicht door een klein bos, met een beschut gedeelte uitgerust met een zomerkeuken, een perfecte kleine plek voor elke visliefhebber of om te loungen en te ontspannen in een bevoorrechte natuurlijke omgeving. Een groene, rustgevende en ultralichte plek. Ruime, comfortabele gîte. Heerlijke eigentijdse landelijke stijl met een \"rustiek chic\" gevoel. De warme, gezellige sfeer van een oud huis. Ruim, schaduwrijk terras dat uitgeeft op een aangename, omheinde tuin, zorgvuldig aangelegd en beplant met bloemen, met de historische bijgebouwen van de boerderij met een groot, beschut terras (en fietsenstalling) en een binnenplaats met grind (potentiële natuurlijke petanquebaan!). Prachtig vrij uitzicht over het omliggende platteland.\nIndeling: Dorpshuis grenzend aan een andere woning (totale onafhankelijkheid zonder buren). Wifi aansluiting. Centrale verwarming op stookolie. Gîte op één niveau: keuken, woonkamer, 2 slaapkamers (tweepersoonsbed 140x190cm / 2 eenpersoonsbedden 90x190cm), badkamer (douche + bad), aparte WC (2 treden naar beneden om bij de sanitaire ruimte te komen). Omheinde tuin (250m²) + terras + parkeerplaats + overdekt terras + fietsenberging. Alles privé. Winkels en diensten op 6,5 km. TGV stations: Creusot 61 km, Mâcon 74 km."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0c9317aa-e838-367f-8445-5e77e0c80d94",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6b7fbb42-7e41-3dd3-87ed-75bb84f98fcd",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a9457b21-b16c-3541-91fc-7484af53be2d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Évelyne & Michel begrüßen Sie in einem alten Bauernhaus aus dem Ende des 19. Jahrhunderts"
+        ],
+        "en": [
+          "Évelyne & Michel welcome you in an old country farmhouse dating from the end of the 19th century."
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/72495c1d-3f21-8682-0234-18b16bf851a5",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "BRCXB4G447CG",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/39622c81-d525-36fd-b9d2-75d9a2412ac8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6955edda-b76d-3968-909e-ae7e5ace3935",
+      "schema:value": "2",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8fcb0e73-e6cb-328e-8238-d0a08c9a5036",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bfff4488-8625-3579-ae4c-479a61aecaaf",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Freezer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gefriergerät"
+            ],
+            "pt": [
+              "Congelador"
+            ],
+            "en": [
+              "Freezer"
+            ],
+            "it": [
+              "Congelatore"
+            ],
+            "fr": [
+              "Congélateur"
+            ],
+            "nl": [
+              "Diepvriezer"
+            ],
+            "es": [
+              "Congelador"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef987579-32be-36f7-a54d-805aacd16d8e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f310885b-858a-3cf4-946b-7e46cff2e79e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Accommodation",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Unterbringung"
+            ],
+            "pt": [
+              "Alojamento"
+            ],
+            "en": [
+              "Accommodation"
+            ],
+            "it": [
+              "Alloggio"
+            ],
+            "fr": [
+              "Logement"
+            ],
+            "nl": [
+              "Logies"
+            ],
+            "es": [
+              "Alojamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/1bae0677-6ff8-3258-93f7-88fe717d76a6",
+        "schema:unitText": [
+          "m²"
+        ],
+        "schema:value": "69",
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/2be01c8a-de7b-393b-b059-2d32a7089289",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3epis",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Ähren/Komfort"
+          ],
+          "pt": [
+            "3 espigas / conforto"
+          ],
+          "en": [
+            "3 ears of corn / Confort level"
+          ],
+          "it": [
+            "3 spighe / Comfort"
+          ],
+          "fr": [
+            "3 épis / Confort"
+          ],
+          "es": [
+            "3 espigas/Confort"
+          ],
+          "nl": [
+            "3 aren / Comfort"
+          ]
+        },
+        "isCompliantWith": [
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f8884d70-4a02-376b-a0b0-3171c508b279",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_GitesDeFrance",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Gîtes de France"
+          ],
+          "pt": [
+            "Gîtes de France"
+          ],
+          "en": [
+            "Gîtes de France"
+          ],
+          "it": [
+            "Gîtes de France"
+          ],
+          "fr": [
+            "Gîtes de France"
+          ],
+          "nl": [
+            "Gîtes de France"
+          ],
+          "es": [
+            "Gîtes de France"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/2f3e7921-566e-340d-9d93-086bf99a174d",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/c5cdfb4c-976f-3e1e-8084-fd2eecfced34",
+          "schema:addressLocality": "Simard",
+          "schema:postalCode": "71330",
+          "schema:streetAddress": [
+            "20 le Petit Cerisier"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:71523",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Simard"
+              ],
+              "pt": [
+                "Simard"
+              ],
+              "en": [
+                "Simard"
+              ],
+              "it": [
+                "Simard"
+              ],
+              "fr": [
+                "Simard"
+              ],
+              "nl": [
+                "Simard"
+              ],
+              "es": [
+                "Simard"
+              ]
+            },
+            "insee": "71523",
+            "isPartOfDepartment": {
+              "@id": "kb:France2771",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Saône-et-Loire"
+                ],
+                "pt": [
+                  "Saône-et-Loire"
+                ],
+                "en": [
+                  "Saône-et-Loire"
+                ],
+                "it": [
+                  "Saône-et-Loire"
+                ],
+                "fr": [
+                  "Saône-et-Loire"
+                ],
+                "nl": [
+                  "Saône-et-Loire"
+                ],
+                "es": [
+                  "Saône-et-Loire"
+                ]
+              },
+              "insee": "71",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/b48365cf-c7dc-3f01-9672-b0a0fb92b511",
+        "schema:latitude": "46.741196",
+        "schema:longitude": "5.182548",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-31",
+  "lastUpdateDatatourisme": "2025-08-01T00:10:05.575Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/544257e2-2d59-3f0e-8d8b-e429d849f774",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

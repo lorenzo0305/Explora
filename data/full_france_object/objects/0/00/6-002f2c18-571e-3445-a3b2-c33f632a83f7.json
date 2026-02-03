@@ -1,0 +1,966 @@
+{
+  "@id": "https://data.datatourisme.fr/6/002f2c18-571e-3445-a3b2-c33f632a83f7",
+  "dc:identifier": "HLOBOU000V50RT9Y",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Le Gris Coquelet"
+    ],
+    "en": [
+      "Le Gris Coquelet"
+    ],
+    "fr": [
+      "Le Gris Coquelet"
+    ]
+  },
+  "allowedPersons": 4,
+  "creationDate": "2024-07-19",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/82578c73-08c7-342e-8845-dc63b20d54a8",
+    "dc:identifier": "6012fdba-d499-4734-b015-373e96f99808",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/264b87c4-2c8b-383e-bc71-d437efb5644d",
+        "schema:addressLocality": "Mâcon",
+        "schema:postalCode": "71000",
+        "schema:streetAddress": [
+          "Maison de la Saône-et-Loire"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:71270",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mâcon"
+            ],
+            "pt": [
+              "Mâcon"
+            ],
+            "en": [
+              "Mâcon"
+            ],
+            "it": [
+              "Mâcon"
+            ],
+            "fr": [
+              "Mâcon"
+            ],
+            "nl": [
+              "Mâcon"
+            ],
+            "es": [
+              "Mâcon"
+            ]
+          },
+          "insee": "71270",
+          "isPartOfDepartment": {
+            "@id": "kb:France2771",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saône-et-Loire"
+              ],
+              "pt": [
+                "Saône-et-Loire"
+              ],
+              "en": [
+                "Saône-et-Loire"
+              ],
+              "it": [
+                "Saône-et-Loire"
+              ],
+              "fr": [
+                "Saône-et-Loire"
+              ],
+              "nl": [
+                "Saône-et-Loire"
+              ],
+              "es": [
+                "Saône-et-Loire"
+              ]
+            },
+            "insee": "71",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "missiontourisme@saoneetloire71.fr"
+    ],
+    "schema:legalName": "Mission Tourisme - Département 71",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://route71.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/3e2275b1-f3d5-3d2b-9ccb-a68056b0beae",
+      "schema:email": [
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=3242&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/3e2275b1-f3d5-3d2b-9ccb-a68056b0beae",
+      "schema:email": [
+        "info@gites71.com"
+      ],
+      "schema:telephone": [
+        "+33 3 85 29 55 60"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://webitea-71-v4-francais.gl.itea.fr/resa/etape1.php?NUM=3242&INSTANCE=gites71&OPE=CRTBOURG&ORI=CRTBOURG&&&&&"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/f0d7021c-1a74-393f-add9-6bd536dc60e3",
+      "dc:description": {
+        "de": [
+          "Hübsches, modernes \"Cottage\" in ruhiger Lage in \"Belvedere & Balkon mit Panoramablick\" auf einem sonnigen Westhang mit Blick auf die Stadt und ein grünes Tal am Rande eines friedlichen Wohnviertels am Hang eines Hügels. Völlige Ruhe inmitten der Landschaft der Brionnaise, inmitten eines beruhigenden, unberührten Rahmens einer sanften Hügellandschaft, am unmittelbaren Rand von Feldern und Wiesen (mit den berühmten Charolais-Rindern als nahen Nachbarn in der Saison), im Tal des Bocquesin der Nähe des mittelalterlichen Städtchens und sämtlicher Annehmlichkeiten wie den Thermalbädern, dem Kasino, dem geschichtsträchtigen öffentlichen Park Puzenat (6 ha eingezäuntes Gelände mit seltenen und bemerkenswerten hundertjährigen Bäumen, wo Damwild weidet!) und den zahlreichen Freizeiteinrichtungen der Stadt (darunter Golfplatz und Angelteich). Bourbon-Lancy ist eine historische Kurstadt (seit der Antike von den Römern für die Heilkraft ihrer \"Wasser\" anerkannt) und verfügt über ein sehr reiches Kulturerbe (romanische Kirche aus dem 11. Jahrhundert, mittelalterliche Stadtmauer mit Fachwerkhäusern, Stadtmauerviertel, verschiedene Schlösser, Kirchen und Kapellen usw.) und profitiert von einer wunderschönen ländlichen und natürlichen Umgebung, die Landwirtschaft und \"freie Natur\" zwischen erhabenen Hainen, Wäldern, Flüssen und Teichen vereint. Ferienhaus mit gutem Komfort. Sehr große Räume. Sehr hell und freundlich. Gemütliches, bewaldetes Landhaus mit zeitgenössischen Akzenten im Stil eines Chalets. Kuschelige und gemütliche Atmosphäre. Große, offene Terrasse mit Zugang zu einem kleinen Garten. Schöner freier Blick auf die umliegende Landschaft.\nZusammensetzung: Einfamilienhaus auf einer Ebene. Wifi (Glasfaser). Zentralheizung PAC + Holzofen. Klimaanlage. Erdgeschoss: Wohnraum-Küche-Wohnraum, 2 Schlafzimmer (Doppelbett 140x190cm / 2 Einzelbetten 90x190cm), davon eines im Maisonette-Stil mit einem Schlafplatz auf einer flexiblen Galerie (über eine \"Müllerleiter\" erreichbar), Badezimmer (Dusche/WC). Parkplatz (Hof) + Terrasse + Privatgarten. Supermarkt in 3 km Entfernung. Einkaufsmöglichkeiten 2 km."
+        ],
+        "en": [
+          "Lovely contemporary \"cottage\" nestled in a quiet \"belvedere & panoramic balcony\" on a well-exposed western hillside, overlooking the town & a green valley, on the borders of a peaceful residential area leaning against the hillside. Total tranquility in the heart of the Brion countryside, nestled in a peaceful, preserved setting of gentle rolling countryside, on the immediate edge of fields & meadows (with the famous Charolais cows as close neighbors in season), in the hollow of a bucolic bocage plateau dotted with beautiful wild forests, a stone's throw from the medieval village & all amenities, such as thermal establishments, the casino, the Puzenat public park steeped in history (6 hectares enclosed with rare & remarkable century-old trees, where grazing deer!) & the many leisure facilities in the town (including golf & fishing pond). A historic spa town (recognized since antiquity by the Romans for the virtues of its \"waters\"), Bourbon-Lancy has a very rich heritage (11th century Romanesque church, medieval enclosure and its half-timbered houses, rampart district, various castles, churches & chapels, etc.) and enjoys a magnificent rural & natural surroundings, combining agriculture & \"outdoor nature\", between sublime bocage, forests, rivers & ponds. Comfortable cottage. Beautiful volumes. Very bright. Warm wooded country style with contemporary accents, “chalet” spirit. Cozy & cozy atmosphere. Large exposed terrace opening onto a pleasant little garden. Beautiful unobstructed view of the surrounding countryside. \nComposition: Detached single-storey house. Wifi (fiber). PAC central heating + wood stove. Air conditioner. Ground floor: living room-kitchen-lounge, 2 bedrooms (double bed 140x190cm / 2 single beds 90x190cm) including one duplex including sleeping on a lofted mezzanine (accessible via a \"miller's ladder\"), bathroom ( shower/toilet). Parking (courtyard) + terrace + private garden. Supermarket 3 km. Shops 2 km away."
+        ],
+        "it": [
+          "Un delizioso cottage contemporaneo immerso in un tranquillo \"belvedere e balcone panoramico\" su una collina ben esposta a ovest, con vista sulla città e su una valle verdeggiante, ai margini di una tranquilla zona residenziale addossata alla collina. Pace e tranquillità nel cuore della campagna del Brionnais, immerso in un ambiente tranquillo e incontaminato di dolci colline, ai margini di campi e prati (con le famose mucche Charolais come vicini di stagione), nella conca di un bucolico altopiano bocageè a due passi dalla città medievale e da tutti i servizi, tra cui le terme, il casinò, il parco pubblico Puzenat ricco di storia (6 ettari recintati con rari e notevoli alberi secolari, dove pascolano i cervi!) e le numerose strutture per il tempo libero della città (tra cui un campo da golf e un laghetto di pesca). Storica città termale (rinomata fin dall'antichità dai Romani per le virtù delle sue \"acque\"), Bourbon-Lancy vanta un patrimonio ricchissimo (chiesa romanica dell'XI secolo, mura medievali con case a graticcio, bastioni, vari castelli, chiese e cappelle, ecc.) e beneficia di un magnifico ambiente rurale e naturale, che combina agricoltura e \"aperta campagna\", tra sublimi terreni coltivati a siepi, boschi, fiumi e stagni. Gîte molto confortevole. Bei volumi. Molto luminoso. Sensazione di campagna calda e boscosa con accenti contemporanei in stile chalet. Atmosfera accogliente e calorosa. Grande terrazza esposta che si apre su un piccolo e piacevole giardino. Bella vista ininterrotta sulla campagna circostante.\nComposizione : Casa indipendente a un piano. Wifi (fibra). Riscaldamento centrale PAC + stufa a legna. Aria condizionata. Piano terra: soggiorno-cucina-salotto, 2 camere da letto (letto matrimoniale 140x190cm / 2 letti singoli 90x190cm), di cui una duplex con zona notte su soppalco con letto supplementare (accessibile tramite una \"scala da mugnaio\"), bagno (doccia/WC). Parcheggio privato (cortile) + terrazza + giardino. Supermercato a 3 km. Negozi a 2 km."
+        ],
+        "fr": [
+          "Ravissant \"cottage\" contemporain niché au calme en \"belvédère & balcon panoramique\" sur un coteau ouest bien exposé, dominant la ville & un verdoyant vallon, aux confins d’un paisible quartier résidentiel adossé à flanc de colline. Totale tranquillité en pleine campagne brionnaise, lové au sein d’un apaisant cadre préservé de douce campagne vallonnée, en lisière immédiate de champs & prairies (avec les célèbres vaches charolaises comme proches voisines en saison), au creux d’un bucolique plateau de bocage parsemée de belles forêts sauvages, à deux pas du bourg médiéval & de l'intégralité des commodités, comme des établissements thermaux, du casino, du parc public Puzenat chargé d'histoire (6 ha clos aux rares & remarquables arbres centenaires, où paissent des daims !) & des très nombreux équipements de loisirs que compte la ville (dont golf & étang de pêche). Historique cité thermale (reconnue depuis l'antiquité par les romains pour les vertus de ses \"eaux\"), Bourbon-Lancy dispose d'un très riche patrimoine (église romane du XIe, enceinte médiévale et ses maisons à colombages, quartier des remparts, divers châteaux, églises & chapelles…) et profite d’un magnifique écrin champêtre & naturel alentours, conjuguant agriculture & \"pleine nature\", entre sublime bocage, forêts, rivières & étangs. Gîte de bon confort. Beaux volumes. Très lumineux. Chaleureux cachet campagnard boisé aux accents contemporains, d’esprit \"chalet\". Ambiance douillette & cosy. Large terrasse exposée ouverte sur un agréable petit jardin. Belle vue dégagée sur la campagne environnante. \nComposition : Maison individuelle de plain-pied. Wifi (fibre). Chauffage central PAC + poêle à bois. Climatisation. Rdc : séjour-cuisine-salon, 2 chambres (lit 2 p. 140x190cm / 2 lits 1 p. 90x190cm) dont une en duplex intégrant un couchage en mezzanine soupentée (accessible par une \"échelle de meunier\"), salle d’eau (douche/Wc). Parking (cour) + terrasse + jardin privatifs. Supermarché à 3 km. Commerces à 2 km."
+        ],
+        "es": [
+          "Una encantadora casa de campo contemporánea situada en un tranquilo \"mirador y balcón panorámico\" en una ladera bien expuesta orientada al oeste, con vistas a la ciudad y un valle verde, en el borde de una tranquila zona residencial situada contra la ladera. Tranquilidad absoluta en el corazón de la campiña de Brionnais, en un entorno tranquilo y virgen de suaves ondulaciones, al borde mismo de campos y prados (con las famosas vacas charolesas como vecinas cercanas en temporada), en la hondonada de una bucólica meseta de bocagea dos pasos de la ciudad medieval y de todos los servicios, como las termas, el casino, el parque público histórico de Puzenat (6 hectáreas rodeadas de árboles centenarios raros y notables, donde pastan los ciervos) y las numerosas instalaciones de ocio de la ciudad (campo de golf, estanque de pesca, etc.). Ciudad balneario histórica (conocida desde la antigüedad por los romanos por las virtudes de sus \"aguas\"), Bourbon-Lancy posee un patrimonio muy rico (iglesia románica del siglo XI, murallas medievales con casas de entramado, murallas, varios castillos, iglesias y capillas, etc.) y se beneficia de un magnífico entorno rural y natural, que combina agricultura y \"campo abierto\", entre sublimes tierras de cultivo con setos, bosques, ríos y estanques. Casa rural muy confortable. Bonitos volúmenes. Muy luminoso. Ambiente cálido y arbolado, con toques contemporáneos y de chalet. Ambiente acogedor y cálido. Gran terraza expuesta que da a un pequeño jardín agradable. Hermosas vistas ininterrumpidas sobre la campiña circundante.\nComposición : Casa unifamiliar de una sola planta. Wifi (fibra). Calefacción central PAC + estufa de leña. Aire acondicionado. Planta baja: salón-cocina-sala de estar, 2 habitaciones (cama doble 140x190cm / 2 camas individuales 90x190cm), una de ellas dúplex con zona de dormir en altillo con cama supletoria (accesible por \"escalera de molinero\"), cuarto de ducha (ducha/WC). Aparcamiento privado (patio) + terraza + jardín. Supermercado a 3 km. Tiendas a 2 km."
+        ],
+        "nl": [
+          "Een heerlijk modern huisje genesteld in een rustige \"belvedère & panoramisch balkon\" op een goed belichte heuvel op het westen, met uitzicht op de stad en een groene vallei, aan de rand van een rustige woonwijk tegen de heuvel. Volledige rust en stilte in het hart van het platteland van de Brionnais, genesteld in een rustige, ongerepte omgeving van zacht glooiend landschap, aan de rand van velden en weiden (met de beroemde Charolais-koeien als naaste buren in het seizoen), in de holte van een bucolisch bocage plateauhet ligt op een steenworp afstand van de middeleeuwse marktstad en alle voorzieningen, waaronder de thermale baden, het casino, het historische openbare park Puzenat (6 hectare omheind met zeldzame en opmerkelijke eeuwenoude bomen, waar herten grazen!) en de vele recreatiefaciliteiten van de stad (waaronder een golfbaan en visvijver). Bourbon-Lancy is een historisch kuuroord (al sinds de oudheid door de Romeinen geroemd om de deugden van zijn 'water') en kan bogen op een zeer rijk erfgoed (Romaanse kerk uit de 11e eeuw, middeleeuwse muren met vakwerkhuizen, stadswallen, verschillende kastelen, kerken en kapellen, enz.) en geniet van een prachtige landelijke en natuurlijke omgeving, een combinatie van landbouw en 'open platteland', tussen sublieme landbouwgronden met heggen, bossen, rivieren en vijvers. Zeer comfortabele gîte. Mooie volumes. Zeer licht. Warme, bosrijke landelijke sfeer met hedendaagse accenten in chaletstijl. Gezellige en warme sfeer. Groot open terras dat uitgeeft op een aangenaam tuintje. Prachtig ononderbroken uitzicht over het omliggende platteland.\nIndeling : Vrijstaand huis op één verdieping. Wifi (glasvezel). Centrale verwarming (PAC) + houtkachel. Airconditioning. Begane grond: woonkamer-keuken-living, 2 slaapkamers (dubbel bed 140x190cm / 2 enkele bedden 90x190cm), waarvan één duplex met een slaapgedeelte op een mezzanine met een extra bed (bereikbaar via een \"molenaarstrap\"), doucheruimte (douche/WC). Privé parkeerplaats (binnenplaats) + terras + tuin. Supermarkt op 3 km. Winkels op 2 km."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/25da6a7b-059f-3221-9ccd-c7aa55be5c83",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d879c368-452b-3a91-8e9e-7d9ed16cbe6a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d9d486c1-6246-350d-9186-8d523ffb675d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e11e45e6-ac13-3528-99a7-b46c3b62f2ce",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/097af80d-f569-3392-baf4-3b01310df962",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Accommodation",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Unterbringung"
+            ],
+            "pt": [
+              "Alojamento"
+            ],
+            "en": [
+              "Accommodation"
+            ],
+            "it": [
+              "Alloggio"
+            ],
+            "fr": [
+              "Logement"
+            ],
+            "nl": [
+              "Logies"
+            ],
+            "es": [
+              "Alojamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/c0a425ef-6bb3-3a37-af7b-17b018d31145",
+        "schema:unitText": [
+          "m²"
+        ],
+        "schema:value": "41",
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/39622c81-d525-36fd-b9d2-75d9a2412ac8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6955edda-b76d-3968-909e-ae7e5ace3935",
+      "schema:value": "2",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6a0b1587-8f0e-389c-a3e4-4866252b283c",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:AirConditioner",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Klimaanlage"
+            ],
+            "pt": [
+              "Sistema de ar condicionado"
+            ],
+            "en": [
+              "Air conditioner"
+            ],
+            "it": [
+              "Aria condizionata"
+            ],
+            "fr": [
+              "Climatisation"
+            ],
+            "es": [
+              "Sistema de aire acondicionado"
+            ],
+            "nl": [
+              "Klimaatbeheersing"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8fcb0e73-e6cb-328e-8238-d0a08c9a5036",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bfff4488-8625-3579-ae4c-479a61aecaaf",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Freezer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gefriergerät"
+            ],
+            "pt": [
+              "Congelador"
+            ],
+            "en": [
+              "Freezer"
+            ],
+            "it": [
+              "Congelatore"
+            ],
+            "fr": [
+              "Congélateur"
+            ],
+            "nl": [
+              "Diepvriezer"
+            ],
+            "es": [
+              "Congelador"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef987579-32be-36f7-a54d-805aacd16d8e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/1002bb22-ed27-365d-967e-623322c2e9ae",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_2epis",
+        "schema:ratingValue": "2.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "2 Ähren"
+          ],
+          "pt": [
+            "2 espigas"
+          ],
+          "en": [
+            "2 ears of corn"
+          ],
+          "it": [
+            "2 spighe"
+          ],
+          "fr": [
+            "2 épis"
+          ],
+          "es": [
+            "2 espigas"
+          ],
+          "nl": [
+            "2 aren"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f8884d70-4a02-376b-a0b0-3171c508b279",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_GitesDeFrance",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Gîtes de France"
+          ],
+          "pt": [
+            "Gîtes de France"
+          ],
+          "en": [
+            "Gîtes de France"
+          ],
+          "it": [
+            "Gîtes de France"
+          ],
+          "fr": [
+            "Gîtes de France"
+          ],
+          "nl": [
+            "Gîtes de France"
+          ],
+          "es": [
+            "Gîtes de France"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/e0417ab0-1a5f-342c-a974-10de51d65e9c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/5ae03567-3c8a-3b9c-a297-768dc48e3f34",
+          "schema:addressLocality": "Bourbon-Lancy",
+          "schema:postalCode": "71140",
+          "schema:streetAddress": [
+            "71 Rue d’Arcy"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:71047",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Bourbon-Lancy"
+              ],
+              "pt": [
+                "Bourbon-Lancy"
+              ],
+              "en": [
+                "Bourbon-Lancy"
+              ],
+              "it": [
+                "Bourbon-Lancy"
+              ],
+              "fr": [
+                "Bourbon-Lancy"
+              ],
+              "nl": [
+                "Bourbon-Lancy"
+              ],
+              "es": [
+                "Bourbon-Lancy"
+              ]
+            },
+            "insee": "71047",
+            "isPartOfDepartment": {
+              "@id": "kb:France2771",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Saône-et-Loire"
+                ],
+                "pt": [
+                  "Saône-et-Loire"
+                ],
+                "en": [
+                  "Saône-et-Loire"
+                ],
+                "it": [
+                  "Saône-et-Loire"
+                ],
+                "fr": [
+                  "Saône-et-Loire"
+                ],
+                "nl": [
+                  "Saône-et-Loire"
+                ],
+                "es": [
+                  "Saône-et-Loire"
+                ]
+              },
+              "insee": "71",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/18c01ea4-4ccb-3eca-8403-36e7fa4f67da",
+        "schema:latitude": "46.630164",
+        "schema:longitude": "3.786909",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-08-02",
+  "lastUpdateDatatourisme": "2025-08-03T00:06:05.248Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/544257e2-2d59-3f0e-8d8b-e429d849f774",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

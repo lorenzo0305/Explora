@@ -1,0 +1,1779 @@
+{
+  "@id": "https://data.datatourisme.fr/23/0eacba6f-fbbc-3e5e-9c66-8bdc1875c7d3",
+  "dc:identifier": "ITIAQU047V50GOQ8",
+  "@type": [
+    "olo:OrderedList",
+    "CyclingTour",
+    "HorseTour",
+    "PointOfInterest",
+    "Tour",
+    "WalkingTour"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Durchstreifen Sie die hügelige Landschaft mit ihren bemerkenswerten Aussichtspunkten. Der Boden, den Sie betreten, bewahrt die Erinnerung an eine historische Konfrontation, die Aquitanien über 130 Jahre lang in Brand gesetzt hat."
+    ],
+    "en": [
+      "Stroll through the rolling countryside and its remarkable views. The ground you will walk on keeps the memory of a historical confrontation which put Aquitaine on fire for more than 130 years."
+    ],
+    "it": [
+      "Passeggiate nella campagna ondulata e nei suoi notevoli panorami. Il terreno su cui camminerete porta la memoria di uno storico scontro che ha incendiato la regione dell'Aquitania per più di 130 anni."
+    ],
+    "fr": [
+      "Parcourez les paysages vallonnés et ses remarquables points de vue. Le sol que vous foulerez garde la mémoire d’un affrontement historique qui a mis à feu et à sang l’Aquitaine pendant plus de 130 ans."
+    ],
+    "nl": [
+      "Wandel door het glooiende landschap en de opmerkelijke uitzichten. De grond waarop u loopt, draagt de herinnering aan een historische confrontatie die de regio Aquitaine meer dan 130 jaar in vuur en vlam zette."
+    ],
+    "es": [
+      "Pasee por el campo ondulado y sus notables vistas. El suelo que pisará lleva el recuerdo de un enfrentamiento histórico que incendió la región de Aquitania durante más de 130 años."
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "Saint-Sardos/Montpezat, aux origines de la guerre de Cent Ans"
+    ],
+    "en": [
+      "Saint-Sardos/Montpezat, aux origines de la guerre de Cent Ans"
+    ],
+    "fr": [
+      "Saint-Sardos/Montpezat, aux origines de la guerre de Cent Ans"
+    ],
+    "nl": [
+      "Saint-Sardos/Montpezat, aux origines de la guerre de Cent Ans"
+    ],
+    "es": [
+      "Saint-Sardos/Montpezat, aux origines de la guerre de Cent Ans"
+    ]
+  },
+  "creationDate": "2021-09-02",
+  "hasAudience": [
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Hikers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wanderer"
+        ],
+        "pt": [
+          "Caminheiros"
+        ],
+        "en": [
+          "Hikers"
+        ],
+        "it": [
+          "Escursionisti"
+        ],
+        "fr": [
+          "Randonneurs"
+        ],
+        "nl": [
+          "Trekkers"
+        ],
+        "es": [
+          "Senderistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Horserider",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Reiter"
+        ],
+        "pt": [
+          "Cavaleiros"
+        ],
+        "en": [
+          "Horserider"
+        ],
+        "it": [
+          "Cavallerizzi"
+        ],
+        "fr": [
+          "Cavaliers"
+        ],
+        "nl": [
+          "Ruiters"
+        ],
+        "es": [
+          "Jinetes"
+        ]
+      }
+    },
+    {
+      "@id": "kb:MountainBikers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Mountainbiker"
+        ],
+        "pt": [
+          "Ciclistas de montanha"
+        ],
+        "en": [
+          "Mountain bikers"
+        ],
+        "it": [
+          "Ciclisti di mountain bike"
+        ],
+        "fr": [
+          "Vttistes"
+        ],
+        "nl": [
+          "Mountainbikers"
+        ],
+        "es": [
+          "Ciclistas de montaña"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Walkers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Spaziergänger"
+        ],
+        "pt": [
+          "Caminhantes"
+        ],
+        "en": [
+          "Walkers"
+        ],
+        "it": [
+          "Camminatori"
+        ],
+        "fr": [
+          "Marcheurs"
+        ],
+        "nl": [
+          "Wandelaars"
+        ],
+        "es": [
+          "Senderistas"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/23/b9e76fdc-00d4-384b-953e-ba89250f8d70",
+    "dc:identifier": "58826eae-8dc9-47e9-b8d6-ab31e849407e",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/ebb34925-cd6b-33d4-a053-82dce769d108",
+        "schema:addressLocality": "Agen",
+        "schema:postalCode": "47931",
+        "schema:streetAddress": [
+          "BP208"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:47001",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Agen"
+            ],
+            "pt": [
+              "Agen"
+            ],
+            "en": [
+              "Agen"
+            ],
+            "it": [
+              "Agen"
+            ],
+            "fr": [
+              "Agen"
+            ],
+            "nl": [
+              "Agen"
+            ],
+            "es": [
+              "Agen"
+            ]
+          },
+          "insee": "47001",
+          "isPartOfDepartment": {
+            "@id": "kb:France7547",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Lot-et-Garonne"
+              ],
+              "pt": [
+                "Lot-et-Garonne"
+              ],
+              "en": [
+                "Lot-et-Garonne"
+              ],
+              "it": [
+                "Lot-et-Garonne"
+              ],
+              "fr": [
+                "Lot-et-Garonne"
+              ],
+              "nl": [
+                "Lot-et-Garonne"
+              ],
+              "es": [
+                "Lot-et-Garonne"
+              ]
+            },
+            "insee": "47",
+            "isPartOfRegion": {
+              "@id": "kb:France75",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "pt": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "en": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "it": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "fr": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "nl": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "es": [
+                  "Nouvelle-Aquitaine"
+                ]
+              },
+              "insee": "75",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "adrt47@tourisme-lotetgaronne.com"
+    ],
+    "schema:legalName": "ADRT Lot et Garonne (47)",
+    "schema:telephone": [
+      "+33 5 53 66 14 14"
+    ],
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.tourisme-lotetgaronne.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/05dc9cb8-2fa5-383d-b87b-497de06649a2",
+      "schema:email": [
+        "sirtaqui@na-tourisme.com"
+      ],
+      "schema:legalName": "SIRTAQUI Nouvelle-Aquitaine",
+      "schema:logo": "http://aquitaine.media.tourinsoft.eu/upload/Logo-Sirtaqui-1280x405.jpg",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "rdfs:comment": {
+        "de": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "en": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "it": [
+          "L'obiettivo di SIRTAQUI, il Sistema Regionale di Informazione Turistica della Nuova Aquitania, è quello di raccogliere, mettere in comune e diffondere il più possibile informazioni complete e di qualità a beneficio dei nostri residenti e visitatori. Il sistema è realizzato congiuntamente dal Comité Régional de Tourisme de Nouvelle-Aquitaine, dai servizi turistici di Corrèze, Creuse, Dordogne, Gironde, Landes, Lot-et-Garonne, Pyrénées-Atlantiques, Deux-Sèvres, Vienne e Haute-Vienne, in collaborazione con gli Uffici del Turismo e con il sostegno finanziario dell'Europa e del Conseil Régional."
+        ],
+        "fr": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "nl": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "es": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ]
+      },
+      "foaf:homepage": [
+        "http://www.sirtaqui-aquitaine.com/"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/eef27e75-4a23-313e-a6ee-797e7b64a1cd",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "rdfs:comment"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Hikers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wanderer"
+        ],
+        "pt": [
+          "Caminheiros"
+        ],
+        "en": [
+          "Hikers"
+        ],
+        "it": [
+          "Escursionisti"
+        ],
+        "fr": [
+          "Randonneurs"
+        ],
+        "nl": [
+          "Trekkers"
+        ],
+        "es": [
+          "Senderistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Horserider",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Reiter"
+        ],
+        "pt": [
+          "Cavaleiros"
+        ],
+        "en": [
+          "Horserider"
+        ],
+        "it": [
+          "Cavallerizzi"
+        ],
+        "fr": [
+          "Cavaliers"
+        ],
+        "nl": [
+          "Ruiters"
+        ],
+        "es": [
+          "Jinetes"
+        ]
+      }
+    },
+    {
+      "@id": "kb:MountainBikers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Mountainbiker"
+        ],
+        "pt": [
+          "Ciclistas de montanha"
+        ],
+        "en": [
+          "Mountain bikers"
+        ],
+        "it": [
+          "Ciclisti di mountain bike"
+        ],
+        "fr": [
+          "Vttistes"
+        ],
+        "nl": [
+          "Mountainbikers"
+        ],
+        "es": [
+          "Ciclistas de montaña"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Walkers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Spaziergänger"
+        ],
+        "pt": [
+          "Caminhantes"
+        ],
+        "en": [
+          "Walkers"
+        ],
+        "it": [
+          "Camminatori"
+        ],
+        "fr": [
+          "Marcheurs"
+        ],
+        "nl": [
+          "Wandelaars"
+        ],
+        "es": [
+          "Senderistas"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/53bd3343-35aa-3917-b9d9-0db4ebb9a7ab",
+      "schema:email": [
+        "randonnee@tourisme-lotetgaronne.com"
+      ],
+      "schema:legalName": "ADRT Tourisme Lot-et-Garonne",
+      "schema:telephone": [
+        "+33 5 53 66 14 14"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/77f08d69-6d11-30a8-8cea-b80926afe16d",
+      "dc:description": {
+        "de": [
+          "Durchstreifen Sie die hügelige Landschaft mit ihren bemerkenswerten Aussichtspunkten. Der Boden, den Sie betreten, bewahrt die Erinnerung an eine historische Konfrontation, die Aquitanien über 130 Jahre lang in Brand gesetzt hat."
+        ],
+        "en": [
+          "Stroll through the rolling countryside and its remarkable views. The ground you will walk on keeps the memory of a historical confrontation which put Aquitaine on fire for more than 130 years."
+        ],
+        "it": [
+          "Passeggiate nella campagna ondulata e nei suoi notevoli panorami. Il terreno su cui camminerete porta la memoria di uno storico scontro che ha incendiato la regione dell'Aquitania per più di 130 anni."
+        ],
+        "fr": [
+          "Parcourez les paysages vallonnés et ses remarquables points de vue. Le sol que vous foulerez garde la mémoire d’un affrontement historique qui a mis à feu et à sang l’Aquitaine pendant plus de 130 ans."
+        ],
+        "nl": [
+          "Wandel door het glooiende landschap en de opmerkelijke uitzichten. De grond waarop u loopt, draagt de herinnering aan een historische confrontatie die de regio Aquitaine meer dan 130 jaar in vuur en vlam zette."
+        ],
+        "es": [
+          "Pasee por el campo ondulado y sus notables vistas. El suelo que pisará lleva el recuerdo de un enfrentamiento histórico que incendió la región de Aquitania durante más de 130 años."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0a856ca0-d9c8-3b3e-a3ae-58558d00d61c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b99bc05b-48f7-32b6-9cc8-6e048a209bc0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "isDedicatedTo": [
+        {
+          "@id": "kb:Families",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Familien"
+            ],
+            "pt": [
+              "Famílias"
+            ],
+            "en": [
+              "Families"
+            ],
+            "it": [
+              "Famiglie"
+            ],
+            "fr": [
+              "Familles"
+            ],
+            "nl": [
+              "Families"
+            ],
+            "es": [
+              "Familias"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Hikers",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wanderer"
+            ],
+            "pt": [
+              "Caminheiros"
+            ],
+            "en": [
+              "Hikers"
+            ],
+            "it": [
+              "Escursionisti"
+            ],
+            "fr": [
+              "Randonneurs"
+            ],
+            "nl": [
+              "Trekkers"
+            ],
+            "es": [
+              "Senderistas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Horserider",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Reiter"
+            ],
+            "pt": [
+              "Cavaleiros"
+            ],
+            "en": [
+              "Horserider"
+            ],
+            "it": [
+              "Cavallerizzi"
+            ],
+            "fr": [
+              "Cavaliers"
+            ],
+            "nl": [
+              "Ruiters"
+            ],
+            "es": [
+              "Jinetes"
+            ]
+          }
+        },
+        {
+          "@id": "kb:MountainBikers",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mountainbiker"
+            ],
+            "pt": [
+              "Ciclistas de montanha"
+            ],
+            "en": [
+              "Mountain bikers"
+            ],
+            "it": [
+              "Ciclisti di mountain bike"
+            ],
+            "fr": [
+              "Vttistes"
+            ],
+            "nl": [
+              "Mountainbikers"
+            ],
+            "es": [
+              "Ciclistas de montaña"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Walkers",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Spaziergänger"
+            ],
+            "pt": [
+              "Caminhantes"
+            ],
+            "en": [
+              "Walkers"
+            ],
+            "it": [
+              "Camminatori"
+            ],
+            "fr": [
+              "Marcheurs"
+            ],
+            "nl": [
+              "Wandelaars"
+            ],
+            "es": [
+              "Senderistas"
+            ]
+          }
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Durchstreifen Sie die hügelige Landschaft mit ihren bemerkenswerten Aussichtspunkten. Der Boden, den Sie betreten, bewahrt die Erinnerung an eine historische Konfrontation, die Aquitanien über 130 Jahre lang in Brand gesetzt hat."
+        ],
+        "en": [
+          "Stroll through the rolling countryside and its remarkable views. The ground you will walk on keeps the memory of a historical confrontation which put Aquitaine on fire for more than 130 years."
+        ],
+        "it": [
+          "Passeggiate nella campagna ondulata e nei suoi notevoli panorami. Il terreno su cui camminerete porta la memoria di uno storico scontro che ha incendiato la regione dell'Aquitania per più di 130 anni."
+        ],
+        "fr": [
+          "Parcourez les paysages vallonnés et ses remarquables points de vue. Le sol que vous foulerez garde la mémoire d’un affrontement historique qui a mis à feu et à sang l’Aquitaine pendant plus de 130 ans."
+        ],
+        "nl": [
+          "Wandel door het glooiende landschap en de opmerkelijke uitzichten. De grond waarop u loopt, draagt de herinnering aan een historische confrontatie die de regio Aquitaine meer dan 130 jaar in vuur en vlam zette."
+        ],
+        "es": [
+          "Pasee por el campo ondulado y sus notables vistas. El suelo que pisará lleva el recuerdo de un enfrentamiento histórico que incendió la región de Aquitania durante más de 130 años."
+        ]
+      }
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/82883d2f-297e-3440-bda6-52e2531d0bbe",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e57b89e9-b3c1-3459-8853-063e4ec50cf9",
+          "ebucore:isCoveredBy": "By-NC-ND 4.0",
+          "ebucore:title": {
+            "de": [
+              "Montpezat"
+            ],
+            "en": [
+              "Montpezat"
+            ],
+            "fr": [
+              "Saint-Sardos"
+            ],
+            "nl": [
+              "Montpezat"
+            ],
+            "es": [
+              "Montpezat"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "© CDT47"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/654c62b8-a4fc-3ac2-9fbb-84686b24c129",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt64.media.tourinsoft.eu/upload/Montpezat-2.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasPracticeCondition": [
+    {
+      "@id": "https://data.datatourisme.fr/40b2430b-84db-39a5-a11d-d01274c9ad9b",
+      "@type": [
+        "PracticeCondition"
+      ],
+      "hasDifficultyLevel": [
+        {
+          "@id": "kb:MediumDifficultyTour",
+          "@type": [
+            "DifficultyLevel"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mittlere Schwierigkeit"
+            ],
+            "pt": [
+              "Dificuldade média"
+            ],
+            "en": [
+              "Medium difficulty"
+            ],
+            "it": [
+              "Difficoltà media"
+            ],
+            "fr": [
+              "Difficulté moyenne"
+            ],
+            "nl": [
+              "Gemiddelde moeilijkheidsgraad"
+            ],
+            "es": [
+              "Dificultad media"
+            ]
+          }
+        }
+      ],
+      "hasLocomotionMode": [
+        {
+          "@id": "kb:MBMode",
+          "@type": [
+            "BicycleLocomotionMode"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mit Mountainbikes"
+            ],
+            "pt": [
+              "Com bicicletas de montanha"
+            ],
+            "en": [
+              "With mountain bikes"
+            ],
+            "it": [
+              "Con le mountain bike"
+            ],
+            "fr": [
+              "En VTT"
+            ],
+            "nl": [
+              "Met mountainbikes"
+            ],
+            "es": [
+              "Con bicicletas de montaña"
+            ]
+          }
+        }
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/7e1fcac5-d730-3c90-ac8c-8a9234ac9617",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "practicalTips"
+          ]
+        }
+      ],
+      "practicalTips": {
+        "de": [
+          "Durée: 2h"
+        ],
+        "en": [
+          "Durée: 2h"
+        ],
+        "it": [
+          "Durata: 2 ore"
+        ],
+        "fr": [
+          "Durée: 2h"
+        ],
+        "nl": [
+          "Durée: 2h"
+        ],
+        "es": [
+          "Durée: 2h"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7be8fb0d-4fd2-3b70-9a92-443f41ae53fa",
+      "@type": [
+        "PracticeCondition"
+      ],
+      "hasDifficultyLevel": [
+        {
+          "@id": "kb:MediumDifficultyTour",
+          "@type": [
+            "DifficultyLevel"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mittlere Schwierigkeit"
+            ],
+            "pt": [
+              "Dificuldade média"
+            ],
+            "en": [
+              "Medium difficulty"
+            ],
+            "it": [
+              "Difficoltà media"
+            ],
+            "fr": [
+              "Difficulté moyenne"
+            ],
+            "nl": [
+              "Gemiddelde moeilijkheidsgraad"
+            ],
+            "es": [
+              "Dificultad media"
+            ]
+          }
+        }
+      ],
+      "hasLocomotionMode": [
+        {
+          "@id": "kb:HorsebackMode",
+          "@type": [
+            "EquestrianLocomotionMode"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Reiten"
+            ],
+            "pt": [
+              "Passeios a cavalo"
+            ],
+            "en": [
+              "Horseback riding"
+            ],
+            "it": [
+              "Equitazione"
+            ],
+            "fr": [
+              "A cheval"
+            ],
+            "nl": [
+              "Paardrijden"
+            ],
+            "es": [
+              "A caballo"
+            ]
+          }
+        }
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/091e92d8-762f-39df-aa9e-1417124e4e62",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "practicalTips"
+          ]
+        }
+      ],
+      "practicalTips": {
+        "de": [
+          "Durée: 2h40"
+        ],
+        "en": [
+          "Durée: 2h40"
+        ],
+        "it": [
+          "Durata: 2h40"
+        ],
+        "fr": [
+          "Durée: 2h40"
+        ],
+        "nl": [
+          "Durée: 2h40"
+        ],
+        "es": [
+          "Durée: 2h40"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/97f38aa3-8727-3668-b77d-0c2682bbc6d7",
+      "@type": [
+        "PracticeCondition"
+      ],
+      "hasDifficultyLevel": [
+        {
+          "@id": "kb:MediumDifficultyTour",
+          "@type": [
+            "DifficultyLevel"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mittlere Schwierigkeit"
+            ],
+            "pt": [
+              "Dificuldade média"
+            ],
+            "en": [
+              "Medium difficulty"
+            ],
+            "it": [
+              "Difficoltà media"
+            ],
+            "fr": [
+              "Difficulté moyenne"
+            ],
+            "nl": [
+              "Gemiddelde moeilijkheidsgraad"
+            ],
+            "es": [
+              "Dificultad media"
+            ]
+          }
+        }
+      ],
+      "hasLocomotionMode": [
+        {
+          "@id": "kb:WalkingMode",
+          "@type": [
+            "PedestrianLocomotionMode"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zu Fuß"
+            ],
+            "pt": [
+              "Um pé"
+            ],
+            "en": [
+              "Walking"
+            ],
+            "it": [
+              "Un piede"
+            ],
+            "fr": [
+              "A pieds"
+            ],
+            "es": [
+              "Un pie"
+            ],
+            "nl": [
+              "Een voet"
+            ]
+          }
+        }
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/eada3af6-c676-329c-93ec-43c2751d83fc",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "practicalTips"
+          ]
+        }
+      ],
+      "practicalTips": {
+        "de": [
+          "Durée: 4h"
+        ],
+        "en": [
+          "Durée: 4h"
+        ],
+        "it": [
+          "Durata: 4 ore"
+        ],
+        "fr": [
+          "Durée: 4h"
+        ],
+        "nl": [
+          "Durée: 4h"
+        ],
+        "es": [
+          "Durée: 4h"
+        ]
+      }
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/82883d2f-297e-3440-bda6-52e2531d0bbe",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e57b89e9-b3c1-3459-8853-063e4ec50cf9",
+          "ebucore:isCoveredBy": "By-NC-ND 4.0",
+          "ebucore:title": {
+            "de": [
+              "Montpezat"
+            ],
+            "en": [
+              "Montpezat"
+            ],
+            "fr": [
+              "Saint-Sardos"
+            ],
+            "nl": [
+              "Montpezat"
+            ],
+            "es": [
+              "Montpezat"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "© CDT47"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/654c62b8-a4fc-3ac2-9fbb-84686b24c129",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt64.media.tourinsoft.eu/upload/Montpezat-2.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:ATV",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "MTB"
+        ],
+        "pt": [
+          "Bicicleta-todo-o-terreno (BTT)"
+        ],
+        "en": [
+          "Atv"
+        ],
+        "it": [
+          "Mountain bike"
+        ],
+        "fr": [
+          "Vtt"
+        ],
+        "nl": [
+          "Mountainbike"
+        ],
+        "es": [
+          "BTT"
+        ]
+      }
+    },
+    {
+      "@id": "kb:FaunaFlora",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Fauna – Flora"
+        ],
+        "pt": [
+          "Fauna — flora"
+        ],
+        "en": [
+          "Fauna - flora"
+        ],
+        "it": [
+          "Fauna - Flora"
+        ],
+        "fr": [
+          "Faune - flore"
+        ],
+        "nl": [
+          "Fauna - flora"
+        ],
+        "es": [
+          "Fauna - flora"
+        ]
+      }
+    },
+    {
+      "@id": "kb:NatureAndEnvironment",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Umwelt und Natur"
+        ],
+        "pt": [
+          "Ambiente e natureza"
+        ],
+        "en": [
+          "Nature and environment"
+        ],
+        "it": [
+          "Ambiente e natura"
+        ],
+        "fr": [
+          "Environnement et nature"
+        ],
+        "nl": [
+          "Milieu en natuur"
+        ],
+        "es": [
+          "Medioambiente y naturaleza"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Pedestrian",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Zu Fuß"
+        ],
+        "pt": [
+          "Pedestre"
+        ],
+        "en": [
+          "Pedestrian"
+        ],
+        "it": [
+          "A piedi"
+        ],
+        "fr": [
+          "Pédestre"
+        ],
+        "nl": [
+          "Voetgangers"
+        ],
+        "es": [
+          "Peatón"
+        ]
+      }
+    },
+    {
+      "@id": "kb:PlantsAndFlower",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Pflanze und Blume"
+        ],
+        "pt": [
+          "Plantas e flores"
+        ],
+        "en": [
+          "Plants and flower"
+        ],
+        "it": [
+          "Pianta e fiore"
+        ],
+        "fr": [
+          "Plante et fleur"
+        ],
+        "es": [
+          "Plantas y flores"
+        ],
+        "nl": [
+          "Bloemen en planten"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Riding",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Reiten"
+        ],
+        "pt": [
+          "Equitação"
+        ],
+        "en": [
+          "Riding"
+        ],
+        "it": [
+          "Equitazione"
+        ],
+        "fr": [
+          "Equitation"
+        ],
+        "nl": [
+          "Paardrijden"
+        ],
+        "es": [
+          "Equitación"
+        ]
+      }
+    }
+  ],
+  "hasTourType": [
+    {
+      "@id": "kb:Loop",
+      "@type": [
+        "TourType"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Schleifenroute"
+        ],
+        "pt": [
+          "Circular"
+        ],
+        "en": [
+          "Loop itinerary"
+        ],
+        "it": [
+          "Ad anello"
+        ],
+        "fr": [
+          "En boucle"
+        ],
+        "nl": [
+          "In een lus"
+        ],
+        "es": [
+          "Circuito"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/0d40e170-9c61-3887-944d-72c9aefbbeaf",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/232813f8-66c5-3948-905e-1a1405d67706",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4ea720a6-31d9-3fc4-b7c0-b9d0fb55e4f3",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b38f5519-9dea-3166-acc2-dc5a710525c8",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b5ac6908-6061-39c9-b5e4-16f8da8febee",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/841a2aa6-d3a1-365a-a57b-bc92f02a6e8a",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/4d6b6500-68bd-33a6-ae27-4e4246008a9e",
+          "schema:addressLocality": "Saint-Sardos",
+          "schema:postalCode": "47360",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:47276",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Sardos"
+              ],
+              "pt": [
+                "Saint-Sardos"
+              ],
+              "en": [
+                "Saint-Sardos"
+              ],
+              "it": [
+                "Saint-Sardos"
+              ],
+              "fr": [
+                "Saint-Sardos"
+              ],
+              "nl": [
+                "Saint-Sardos"
+              ],
+              "es": [
+                "Saint-Sardos"
+              ]
+            },
+            "insee": "47276",
+            "isPartOfDepartment": {
+              "@id": "kb:France7547",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Lot-et-Garonne"
+                ],
+                "pt": [
+                  "Lot-et-Garonne"
+                ],
+                "en": [
+                  "Lot-et-Garonne"
+                ],
+                "it": [
+                  "Lot-et-Garonne"
+                ],
+                "fr": [
+                  "Lot-et-Garonne"
+                ],
+                "nl": [
+                  "Lot-et-Garonne"
+                ],
+                "es": [
+                  "Lot-et-Garonne"
+                ]
+              },
+              "insee": "47",
+              "isPartOfRegion": {
+                "@id": "kb:France75",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "pt": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "en": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "it": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "fr": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "nl": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "es": [
+                    "Nouvelle-Aquitaine"
+                  ]
+                },
+                "insee": "75",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/aaf1e52a-5ad7-3518-8b1f-49507262102e",
+        "schema:latitude": "44.3402942",
+        "schema:longitude": "0.47865629",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "altInsee": [
+        "SAINT-SARDOS"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/53bd3343-35aa-3917-b9d9-0db4ebb9a7ab",
+      "schema:email": [
+        "randonnee@tourisme-lotetgaronne.com"
+      ],
+      "schema:legalName": "ADRT Tourisme Lot-et-Garonne",
+      "schema:telephone": [
+        "+33 5 53 66 14 14"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-11-22",
+  "lastUpdateDatatourisme": "2025-07-15T08:18:55.3Z",
+  "markup": {
+    "de": [
+      "Grün"
+    ],
+    "en": [
+      "Green"
+    ],
+    "fr": [
+      "Vert"
+    ],
+    "es": [
+      "Verde"
+    ],
+    "nl": [
+      "Groen"
+    ]
+  },
+  "positiveCumulDifference": "385.0",
+  "tourDistance": "16000.0"
+}

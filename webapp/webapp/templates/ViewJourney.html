@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WishAdventure — Détail du voyage</title>
+
+  <link rel="stylesheet" href="/static/styles/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{ --bg:#190028; --accent:#FF6000; --text:#F9F0F7; --text-dim:rgba(249,240,247,.80);
+      --card:rgba(255,255,255,.06); --nav-h:85px; }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{ margin:0; background:#0f0a18; color:var(--text);
+      font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial; min-height:100vh; }
+
+    .app-frame{ width:100vw; height:100vh; background:linear-gradient(180deg, rgba(253,196,63,.80) 32%, #190028 55%);
+      position:relative; overflow:hidden; display:flex; flex-direction:column; }
+    .topbar{ position:sticky; top:0; z-index:5; padding:10px 18px 12px; background:#FDC43F;
+      display:flex; flex-direction:column; gap:8px; border-bottom-left-radius:10px; border-bottom-right-radius:10px; }
+    .row{ display:flex; align-items:center; justify-content:space-between }
+    .time{ font:600 17px/40px Inter,Poppins,sans-serif; color:#F9F0F7; letter-spacing:.35px }
+    .status{ width:78px; height:12px; background:rgba(249,240,247,.9); border-radius:30px }
+    .back{ width:40px; height:40px; border-radius:9999px; background:rgba(20,20,20,.18);
+      display:flex; align-items:center; justify-content:center; cursor:pointer; outline:1px solid rgba(249,240,247,.18) }
+    .back svg{ width:18px; height:18px }
+    .title{ font-size:20px; font-weight:600; color:#F9F0F7; text-align:center; flex:1 }
+
+    .content{ flex:1; overflow:auto; scrollbar-width:thin;
+      padding:24px 18px calc(var(--nav-h) + 24px); display:flex; flex-direction:column; align-items:center; gap:16px; }
+    .cover{ width:min(260px,70vw); height:min(260px,70vw); max-width:260px; max-height:260px;
+      border-radius:8px; object-fit:cover; background:#FDC43F; box-shadow:0 0 0 1px rgba(255,255,255,.08) inset; }
+
+    .meta-block{ width:100%; max-width:720px; display:flex; flex-direction:column; gap:12px }
+    .loc{ font-size:13px; font-weight:500; color:var(--text-dim) }
+    .meta-row{ display:flex; align-items:center; justify-content:space-between; gap:8px; }
+    .meta-left{ display:flex; align-items:center; gap:8px }
+    .avatar{ width:28px; height:28px; border-radius:50%; background:var(--accent);
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:0 0 0 1px rgba(0,0,0,.15) inset, 0 1px 2px rgba(0,0,0,.25); flex:0 0 28px; }
+    .avatar svg{ width:18px; height:18px; }
+    .you{ font-size:16px; font-weight:600 }
+    .mini{ width:11px; height:11px; background:var(--accent); border-radius:50% }
+
+    .summary{ display:flex; align-items:center; gap:8px; font-size:13px; flex-wrap:wrap }
+    .summary b{ font-weight:700; color:#F9F0F7 }
+
+    .list-wrap{ width:100%; max-width:720px; display:flex; flex-direction:column; gap:8px }
+    .sec-ttl{ font-size:13px; color:var(--text-dim); }
+    .days{ display:flex; flex-direction:column; gap:8px; }
+
+    .day-item{ min-height:60px; border-radius:8px; padding:6px; display:flex; align-items:center;
+      justify-content:space-between; gap:12px; background:rgba(255,255,255,.02); box-shadow:inset 0 0 0 1px rgba(255,255,255,.06); cursor:pointer; }
+    .day-item:hover{ background:rgba(255,255,255,.04) }
+    .day-left{ display:flex; align-items:center; gap:12px }
+
+    .day-thumb{ width:60px; height:60px; border-radius:6px; border:1px solid #F9F0F7;
+      background:#2b2137 center/cover no-repeat; overflow:hidden; flex:0 0 60px; }
+
+    .day-meta{ display:flex; flex-direction:column }
+    .day-name{ font-size:15px; font-weight:700; color:#fff }
+    .day-desc{ font-size:13px; color:rgba(249,240,247,.70) }
+
+    .notes-wrap{ width:100%; max-width:720px; display:flex; flex-direction:column; gap:8px }
+    .notes-label{ color:rgba(255,96,0,.80); font-size:13px; text-decoration:underline }
+    .notes{ width:100%; min-height:110px; border-radius:10.5px; padding:8px; background:rgba(232,197,224,.15); color:rgba(249,240,247,.90); font-size:12px; outline:none; border:none; resize:vertical; }
+
+    nav.bottom-nav{ position:fixed; left:0; right:0; bottom:0; height:var(--nav-h); background:#190028;
+      display:flex; align-items:center; justify-content:center; border-top:1px solid rgba(255,255,255,.06); }
+    .nav-inner{ width:min(960px,92vw); max-width:374px; display:flex; gap:16px; justify-content:center; }
+    .boutonNav{ flex:0 0 77px; border:none; border-radius:8px; padding:8px 6px; background:transparent;
+      color:#F9F0F7; font-weight:500; font-size:13px; cursor:pointer; display:flex; flex-direction:column; align-items:center; gap:4px; }
+    .boutonNav.active{ background:rgba(255,96,0,.50); outline:0.5px solid var(--accent); outline-offset:-.25px; }
+    .nav-icon{ width:31px; height:31px; fill:#F9F0F7; }
+
+    @media (max-width:480px){ .day-item{ gap:8px } .day-name{ font-size:14px } .day-desc{ font-size:12px } }
+  </style>
+</head>
+<body>
+
+  <div class="app-frame">
+    <div class="topbar">
+      <div class="row"><div class="time">09:23</div><div class="status"></div></div>
+      <div class="row">
+        <div class="back" id="backBtn" title="Retour" aria-label="Retour">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M14 6l-6 6 6 6" stroke="#F9F0F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="title" id="journeyTitle">Titre du voyage</div>
+        <div style="width:40px"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <img id="cover" class="cover" alt="cover">
+
+      <div class="meta-block">
+        <div class="loc" id="journeyLocation">Ville, lieux...</div>
+
+        <div class="meta-row">
+          <div class="meta-left">
+            <div class="avatar" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#fff" opacity=".95"/><path d="M4 20c0-3.5 3.6-6 8-6s8 2.5 8 6" fill="#fff" opacity=".95"/></svg>
+            </div>
+            <div class="you">créé par vous</div><div class="mini"></div>
+          </div>
+        </div>
+
+        <div class="summary" id="summaryLine">
+          <span><b id="daysLabel">0</b> jours pour <b>…</b> pers.</span>
+          <span>• <b>…€</b></span>
+        </div>
+      </div>
+
+      <div class="list-wrap">
+        <div class="sec-ttl">Journées</div>
+        <div class="days" id="daysList"></div>
+      </div>
+
+      <div class="notes-wrap">
+        <div class="notes-label">Privé</div>
+        <textarea id="privateNotes" class="notes" placeholder="Écrivez vos aventures et émotions des vacances..."></textarea>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <div class="nav-inner">
+        <a href="/"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z"/></svg>Accueil</button></a>
+        <a href="/Destinations"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="M20 20l-3.5-3.5" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/></svg>Exploration</button></a>
+        <a href="/topics"><button class="boutonNav active"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M5 4h11a 2 2 0 0 1 2 2v12H7a 2 2 0 0 1-2-2V4z"/><rect x="3" y="6" width="2" height="12" rx="1" ry="1"/><path d="M8 8h7M8 11h7M8 14h5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Carnet</button></a>
+        <a href="/makejourney"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 0-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 0 0-6-6zm0 8.5A2.5 2.5 0 1 1 12 5.5a2.5 2.5 0 0 1 0 5z"/><path d="M15.2 14.2l3.2 3.2-2.3 0.5-1.4 1.4-0.5-2.3 1-1z"/></svg>Création</button></a>
+      </div>
+    </nav>
+  </div>
+
+  <script>
+    const DEFAULT_COVER="/static/img/no-image.jpg";
+    const JOURNEY_KEYS=["wish_journeys_v1","journeys"];
+    const LAST_ID_KEY="wish_last_journey_id";
+
+    function loadAllLocalJourneys(){
+      for(const k of JOURNEY_KEYS){ try{ const a=JSON.parse(localStorage.getItem(k)||"[]"); if(a&&a.length) return a; }catch{} }
+      try{ return JSON.parse(localStorage.getItem(JOURNEY_KEYS[0])||"[]"); }catch{ return []; }
+    }
+    function byLocalId(id){ return loadAllLocalJourneys().find(j=>String(j.id)===String(id))||null }
+    function getJourneyId(){
+      const m = location.pathname.match(/\/journeys\/view\/([^\/\?#]+)/);
+      if (m) return m[1];
+      const q = new URLSearchParams(location.search).get("id");
+      if (q) return q;
+      const last = localStorage.getItem(LAST_ID_KEY);
+      if (last) return last;
+      const first = (loadAllLocalJourneys()[0]||{}).id;
+      return first || "";
+    }
+
+    const A=(a)=>Array.isArray(a)?a:(a&&typeof a==="object")?Object.values(a):[];
+    function slotsArrayToObj(slotsArr){ const obj={morning:[],noon:[],afternoon:[],evening:[]};
+      (Array.isArray(slotsArr)?slotsArr:[]).forEach(s=>{ const k=String(s?.key||"").toLowerCase(); if(obj[k]) obj[k]=A(s.items); }); return obj; }
+    function normalizeSlots(s){ s=s||{}; return { morning:A(s.morning), noon:A(s.noon), afternoon:A(s.afternoon), evening:A(s.evening) }; }
+    function normalizeDayAny(d,i){
+      if(!d||typeof d!=="object") return {day:(i||0)+1,slots:{morning:[],noon:[],afternoon:[],evening:[]}};
+      const day=(d.day!=null)?Number(d.day):(i||0)+1; if(Array.isArray(d.slots)) return {day,slots:slotsArrayToObj(d.slots)};
+      return {day,slots:normalizeSlots(d.slots||{morning:d.morning,noon:d.noon,afternoon:d.afternoon,evening:d.evening})};
+    }
+    function deriveDays(j){
+      if(Array.isArray(j?.plan)) return j.plan.map((d,i)=>normalizeDayAny(d,i));
+      let days=j?.days ?? j?.days_json; if(typeof days==="string"){ try{ days=JSON.parse(days); }catch{ days=null; } }
+      if(Array.isArray(days)) return days.map((d,i)=>normalizeDayAny(d,i));
+      const s=normalizeSlots(j?.slots||{}); const total=s.morning.length+s.noon.length+s.afternoon.length+s.evening.length;
+      return total?[{day:1,slots:s}]:[];
+    }
+
+    const pickFirstStr=(...vals)=> vals.find(v=>typeof v==="string"&&v.trim()) || "";
+    const safeImg=(u)=> u && (/^data:image\//i.test(u) || /^https?:\/\//i.test(u) || u.startsWith("/")) ? u : "";
+    function activityImage(it){
+      const u=pickFirstStr(it?.image,it?.photo,it?.picture,it?.thumbnail,it?.cover);
+      return safeImg(u);
+    }
+    function pickRandom(arr){ return (!arr||!arr.length) ? null : arr[Math.floor(Math.random()*arr.length)]; }
+    function randomDayImage(d){
+      const order=['morning','noon','afternoon','evening']; const pool=[];
+      for(const k of order){ for(const it of (d.slots?.[k]||[])){ const u=activityImage(it); if(u) pool.push(u); } }
+      return pool.length ? pickRandom(pool) : DEFAULT_COVER;
+    }
+    function coverFrom(j){
+      if(j?.cover) return safeImg(j.cover) || DEFAULT_COVER;
+      const days=deriveDays(j||{});
+      for(const d of days){
+        for(const k of ['morning','noon','afternoon','evening']){
+          const u=activityImage((d.slots?.[k]||[])[0]); if(u) return u;
+        }
+      }
+      return DEFAULT_COVER;
+    }
+    function countActivities(j){
+      const days=deriveDays(j||{}); let n=0;
+      for(const d of days){ n+=(d.slots?.morning?.length||0)+(d.slots?.noon?.length||0)+(d.slots?.afternoon?.length||0)+(d.slots?.evening?.length||0); }
+      return n;
+    }
+
+    async function fetchServerJourney(id){ try{ const r=await fetch('/journeys/'+encodeURIComponent(id)); if(r.ok) return await r.json(); }catch{} return null }
+    function mergeJourneys(a={},b={}){ const newer=(new Date(a?.updatedAt||0)>=new Date(b?.updatedAt||0))?a:b; const older=(newer===a)?b:a;
+      const m={...older,...newer}; const nd=deriveDays(newer), od=deriveDays(older);
+      if(!nd.length&&od.length){ if(older.plan)m.plan=older.plan; if(older.days)m.days=older.days; if(older.days_json)m.days_json=older.days_json; if(!m.slots&&older.slots)m.slots=older.slots; }
+      return m; }
+
+    function setImgWithFallback(imgEl,url){
+      const finalUrl=url||DEFAULT_COVER;
+      imgEl.onerror=function(){ if(imgEl.dataset.fallback!=="1"){ imgEl.dataset.fallback="1"; imgEl.src=DEFAULT_COVER; } };
+      imgEl.src=finalUrl;
+    }
+
+    function render(j){
+      localStorage.setItem(LAST_ID_KEY, String(j.id)); // mémorise l’ID ouvert
+
+      document.getElementById('journeyTitle').textContent=j?.name||'Voyage';
+      document.getElementById('journeyLocation').textContent=j?.location||'Ville, lieux...';
+      setImgWithFallback(document.getElementById('cover'), coverFrom(j));
+
+      const days=deriveDays(j||{}); const aCount=countActivities(j||{});
+      document.getElementById('summaryLine').innerHTML =
+        `<span><b id="daysLabel">${days.length}</b> jours pour <b>${j?.persons ?? '…'}</b> pers.</span>
+         <span>• <b>${j?.price ?? '…'}€</b> • <b>${aCount}</b> activité${aCount>1?'s':''}</span>`;
+
+      const list=document.getElementById('daysList'); list.innerHTML='';
+      for(let idx=0; idx<days.length; idx++){ // ← let pour bon index
+        const d=days[idx];
+        const item=document.createElement('div'); item.className='day-item';
+        const left=document.createElement('div'); left.className='day-left';
+        const thumb=document.createElement('div'); thumb.className='day-thumb';
+        thumb.style.backgroundImage=`url('${randomDayImage(d)}')`;
+
+        const meta=document.createElement('div'); meta.className='day-meta';
+        const name=document.createElement('div'); name.className='day-name'; name.textContent='Journée '+d.day;
+        const labels=[['morning','Matinée'],['noon','Midi'],['afternoon','Après-midi'],['evening','Soirée']];
+        const present=[]; let count=0;
+        for(const [k,fr] of labels){ const len=(d.slots?.[k]?.length||0); if(len){ present.push(fr); count+=len; } }
+        const desc=document.createElement('div'); desc.className='day-desc';
+        desc.textContent = count ? `${count} activités ~ ${present.join(' · ')}` : 'type des activités ~ distance ~ prix';
+
+        meta.appendChild(name); meta.appendChild(desc);
+        left.appendChild(thumb); left.appendChild(meta);
+        item.appendChild(left);
+
+        item.addEventListener('click', ()=>{
+          const id = getJourneyId();
+          window.location.href = `/journeys/view/${encodeURIComponent(id)}/day/${idx+1}`;
+        });
+
+        list.appendChild(item);
+      }
+
+      const notesKey='journey_notes_'+j.id;
+      const ta=document.getElementById('privateNotes');
+      ta.value=localStorage.getItem(notesKey)||'';
+      ta.addEventListener('input',()=>localStorage.setItem(notesKey,ta.value));
+    }
+
+    document.getElementById('backBtn').addEventListener('click', ()=>history.back());
+
+    (async function init(){
+      const id = getJourneyId();
+      if(!id){ document.getElementById('journeyTitle').textContent='Voyage introuvable'; return; }
+      const local=byLocalId(id); const server=await fetchServerJourney(id);
+      const journey=(local&&server)?mergeJourneys(local,server):(server||local);
+      if(!journey){ document.getElementById('journeyTitle').textContent='Voyage introuvable'; return; }
+      render(journey);
+    })();
+  </script>
+</body>
+</html>

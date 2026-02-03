@@ -1,0 +1,944 @@
+{
+  "@id": "https://data.datatourisme.fr/23/03fed47a-8834-3fe4-8023-6e8c5aff8029",
+  "dc:identifier": "ITIAQU023V5003UW",
+  "@type": [
+    "olo:OrderedList",
+    "PointOfInterest",
+    "Tour",
+    "WalkingTour"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Balade à pied en famille : la balade de Coux"
+    ],
+    "en": [
+      "Balade à pied en famille : la balade de Coux"
+    ],
+    "fr": [
+      "Balade à pied en famille : la balade de Coux"
+    ],
+    "nl": [
+      "Balade à pied en famille : la balade de Coux"
+    ],
+    "es": [
+      "Balade à pied en famille : la balade de Coux"
+    ]
+  },
+  "creationDate": "2023-01-12",
+  "hasAudience": [
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/23/faff3cbc-0d47-3083-ada2-90821858ded2",
+    "dc:identifier": "8b2b9136-f6f1-4a58-9cbe-09ee4a0f685c",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/932d69af-c796-3b20-86e1-e79547a104ad",
+        "schema:addressLocality": "Auzances",
+        "schema:postalCode": "23700",
+        "schema:streetAddress": [
+          "1 Place du Marché"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:23013",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Auzances"
+            ],
+            "pt": [
+              "Auzances"
+            ],
+            "en": [
+              "Auzances"
+            ],
+            "it": [
+              "Auzances"
+            ],
+            "fr": [
+              "Auzances"
+            ],
+            "nl": [
+              "Auzances"
+            ],
+            "es": [
+              "Auzances"
+            ]
+          },
+          "insee": "23013",
+          "isPartOfDepartment": {
+            "@id": "kb:France7523",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Creuse"
+              ],
+              "pt": [
+                "Creuse"
+              ],
+              "en": [
+                "Creuse"
+              ],
+              "it": [
+                "Creuse"
+              ],
+              "fr": [
+                "Creuse"
+              ],
+              "nl": [
+                "Creuse"
+              ],
+              "es": [
+                "Creuse"
+              ]
+            },
+            "insee": "23",
+            "isPartOfRegion": {
+              "@id": "kb:France75",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "pt": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "en": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "it": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "fr": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "nl": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "es": [
+                  "Nouvelle-Aquitaine"
+                ]
+              },
+              "insee": "75",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "tourisme@marcheetcombraille.fr"
+    ],
+    "schema:legalName": "Marche et Combraille en Aquitaine",
+    "schema:telephone": [
+      "+33 5 55 67 17 13"
+    ],
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.tourisme-creuse.com/marche-et-combraille/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/05dc9cb8-2fa5-383d-b87b-497de06649a2",
+      "schema:email": [
+        "sirtaqui@na-tourisme.com"
+      ],
+      "schema:legalName": "SIRTAQUI Nouvelle-Aquitaine",
+      "schema:logo": "http://aquitaine.media.tourinsoft.eu/upload/Logo-Sirtaqui-1280x405.jpg",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "rdfs:comment": {
+        "de": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "en": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "it": [
+          "L'obiettivo di SIRTAQUI, il Sistema Regionale di Informazione Turistica della Nuova Aquitania, è quello di raccogliere, mettere in comune e diffondere il più possibile informazioni complete e di qualità a beneficio dei nostri residenti e visitatori. Il sistema è realizzato congiuntamente dal Comité Régional de Tourisme de Nouvelle-Aquitaine, dai servizi turistici di Corrèze, Creuse, Dordogne, Gironde, Landes, Lot-et-Garonne, Pyrénées-Atlantiques, Deux-Sèvres, Vienne e Haute-Vienne, in collaborazione con gli Uffici del Turismo e con il sostegno finanziario dell'Europa e del Conseil Régional."
+        ],
+        "fr": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "nl": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "es": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ]
+      },
+      "foaf:homepage": [
+        "http://www.sirtaqui-aquitaine.com/"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/eef27e75-4a23-313e-a6ee-797e7b64a1cd",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "rdfs:comment"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/1d1884d5-bbe9-3b50-a271-dfa448f60798",
+      "dc:description": {
+        "de": [
+          "Start / Ziel: Kaserne der Feuerwehr, Auzances\nMarkierung: Chemins Douce Heure\n\n1 - Umgehen Sie die Feuerwehrkaserne über den Vorplatz und gehen Sie am Anfang den Grasweg hinauf.\nAn der 1. Gabelung rechts hinuntergehen. An der zweiten Gabelung gehen Sie rechts den Weg hinunter.\n2 - Bei der Chaussée de l'étang folgen Sie der kleinen Straße, die unterhalb des Bauernhofs verläuft.\nNach den Gebäuden gehen Sie rechts den Feldweg hinunter.\n3 - Am oberen Ende der Steigung biegen Sie links in den Weg am Waldrand ein.\n4 - An den Häusern nehmen Sie die Straße nach links. Vor den Gebäuden der DDE gehen Sie links hinunter, um den Tierpark links zu umrunden.\n5 - Nach dem Teich rechts hinaufsteigen. Folgen Sie der Straße nach rechts."
+        ],
+        "en": [
+          "Start / Finish : Caserne des Pompiers, Auzances\nSigns : Chemins Douce Heure\n\n1 - Go around the fire station via the esplanade and up the grassy path at the start.\nAt the 1st fork, turn right. At the 2nd fork, turn right down the path.\n2 - At chaussée de l'étang, follow the small road which passes under the farm.\nAfter the buildings, turn right down the dirt track.\n3 - At the top of the climb, turn left onto the woodland path.\n4 - At the houses, take the road on the left. Before the DDE buildings, turn left to go around the wildlife park.\n5 - After the pond, turn right. Follow the road to the right."
+        ],
+        "it": [
+          "Partenza / Arrivo : Caserne des Pompiers, Auzances\nSegnaletica : Chemins Douce Heure\n\n1 - Aggirare la caserma dei pompieri passando per la spianata e risalire il sentiero erboso all'inizio.\nAl primo bivio, girare a destra. Al 2° bivio, girare a destra lungo il sentiero.\n2 - Alla chaussée de l'étang, seguire la stradina che passa sotto la fattoria.\nDopo gli edifici, svoltare a destra sulla strada sterrata.\n3 - In cima alla salita, girare a sinistra sul sentiero ai margini del bosco.\n4 - Alle case, prendere la strada a sinistra. Prima degli edifici DDE, girare a sinistra per aggirare il parco animali.\n5 - Dopo il laghetto, girare a destra. Seguire la strada a destra."
+        ],
+        "fr": [
+          "Départ / Arrivée : Caserne des Pompiers, Auzances\nBalisage : Chemins Douce Heure\n\n1 -  Contourner la caserne des Pompiers par l’esplanade et monter le chemin herbeux au départ.\nA la 1e fourche, descendre à droite. A la 2e fourche, descendre à droite sur le sentier.\n2 -  Au niveau de la chaussée de l’étang, suivre la petite route qui passe sous la ferme.\nAprès les bâtiments, descendre le chemin de terre à droite.\n3 - En haut de la montée, tourner sur le chemin à gauche, en lisière de bois.\n4 -  Aux maisons, emprunter la route à gauche. Avant les bâtiments de la DDE, descendre à gauche pour contourner le parc animalier par la gauche.\n5 -  Après l’étang, monter à droite. Suivre la route à droite."
+        ],
+        "nl": [
+          "Start/ Finish : Caserne des Pompiers, Auzances\nBewegwijzering : Chemins Douce Heure\n\n1 - Ga om de brandweerkazerne heen via de esplanade en omhoog via het graspad aan het begin.\nBij de 1e splitsing rechtsaf. Ga bij de 2e splitsing rechtsaf het pad af.\n2 - Volg bij de chaussée de l'étang de kleine weg die onder de boerderij doorgaat.\nNa de gebouwen ga je rechtsaf het onverharde pad af.\n3 - Ga bovenaan de klim linksaf het pad aan de rand van het bos op.\n4 - Neem bij de huizen de weg links. Voor de DDE-gebouwen ga je linksaf om het dierenpark heen.\n5 - Na de vijver ga je rechtsaf. Volg de weg naar rechts."
+        ],
+        "es": [
+          "Salida / Llegada : Caserne des Pompiers, Auzances\nSeñales : Chemins Douce Heure\n\n1 - Rodee el parque de bomberos por la explanada y suba por el camino herboso del inicio.\nEn la 1ª bifurcación, girar a la derecha. En la 2ª bifurcación, gire a la derecha por el sendero.\n2 - En la chaussée de l'étang, seguir la pequeña carretera que pasa por debajo de la granja.\nDespués de los edificios, gire a la derecha por el camino de tierra.\n3 - En lo alto de la subida, gire a la izquierda por la pista que bordea el bosque.\n4 - Al llegar a las casas, tome el camino de la izquierda. Antes de los edificios DDE, gire a la izquierda para rodear el parque de animales.\n5 - Después del estanque, girar a la derecha. Siga el camino de la derecha."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/1b4818b1-e2b5-3d33-ae54-ddf485fa1a97",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "isDedicatedTo": [
+        {
+          "@id": "kb:Families",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Familien"
+            ],
+            "pt": [
+              "Famílias"
+            ],
+            "en": [
+              "Families"
+            ],
+            "it": [
+              "Famiglie"
+            ],
+            "fr": [
+              "Familles"
+            ],
+            "nl": [
+              "Families"
+            ],
+            "es": [
+              "Familias"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/f609dcd2-0454-32b8-a304-179dbb734f7f",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/6e9a6587-7e4d-3b2a-8a90-c3e8648738fa",
+          "ebucore:isCoveredBy": "By-NC-ND 4.0",
+          "ebucore:title": {
+            "en": [
+              "Parc de Coux"
+            ],
+            "fr": [
+              "Parc de Coux"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Saison d'Or"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/33f93fc4-86d1-3a71-bb16-f1b5e76a1a16",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt64.media.tourinsoft.eu/upload/630180-auzances-coux-2.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasPracticeCondition": [
+    {
+      "@id": "https://data.datatourisme.fr/00fe359b-95a2-37f1-b619-d07a73c43d22",
+      "@type": [
+        "PracticeCondition"
+      ],
+      "hasDifficultyLevel": [
+        {
+          "@id": "kb:EasyTour",
+          "@type": [
+            "DifficultyLevel"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Einfach"
+            ],
+            "pt": [
+              "Fácil"
+            ],
+            "en": [
+              "Easy"
+            ],
+            "it": [
+              "Facile"
+            ],
+            "fr": [
+              "Facile"
+            ],
+            "nl": [
+              "Gemakkelijk"
+            ],
+            "es": [
+              "Fácil"
+            ]
+          }
+        }
+      ],
+      "hasLocomotionMode": [
+        {
+          "@id": "kb:WalkingMode",
+          "@type": [
+            "PedestrianLocomotionMode"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zu Fuß"
+            ],
+            "pt": [
+              "Um pé"
+            ],
+            "en": [
+              "Walking"
+            ],
+            "it": [
+              "Un piede"
+            ],
+            "fr": [
+              "A pieds"
+            ],
+            "es": [
+              "Un pie"
+            ],
+            "nl": [
+              "Een voet"
+            ]
+          }
+        }
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/3ee59c5e-5ab9-3220-8479-d834dfca7965",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "practicalTips"
+          ]
+        }
+      ],
+      "practicalTips": {
+        "de": [
+          "Durée: 1h"
+        ],
+        "en": [
+          "Durée: 1h"
+        ],
+        "it": [
+          "Durata: 1 ora"
+        ],
+        "fr": [
+          "Durée: 1h"
+        ],
+        "nl": [
+          "Durée: 1h"
+        ],
+        "es": [
+          "Durée: 1h"
+        ]
+      }
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/f609dcd2-0454-32b8-a304-179dbb734f7f",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/6e9a6587-7e4d-3b2a-8a90-c3e8648738fa",
+          "ebucore:isCoveredBy": "By-NC-ND 4.0",
+          "ebucore:title": {
+            "en": [
+              "Parc de Coux"
+            ],
+            "fr": [
+              "Parc de Coux"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Saison d'Or"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/33f93fc4-86d1-3a71-bb16-f1b5e76a1a16",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt64.media.tourinsoft.eu/upload/630180-auzances-coux-2.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:FaunaFlora",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Fauna – Flora"
+        ],
+        "pt": [
+          "Fauna — flora"
+        ],
+        "en": [
+          "Fauna - flora"
+        ],
+        "it": [
+          "Fauna - Flora"
+        ],
+        "fr": [
+          "Faune - flore"
+        ],
+        "nl": [
+          "Fauna - flora"
+        ],
+        "es": [
+          "Fauna - flora"
+        ]
+      }
+    },
+    {
+      "@id": "kb:NatureAndEnvironment",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Umwelt und Natur"
+        ],
+        "pt": [
+          "Ambiente e natureza"
+        ],
+        "en": [
+          "Nature and environment"
+        ],
+        "it": [
+          "Ambiente e natura"
+        ],
+        "fr": [
+          "Environnement et nature"
+        ],
+        "nl": [
+          "Milieu en natuur"
+        ],
+        "es": [
+          "Medioambiente y naturaleza"
+        ]
+      }
+    },
+    {
+      "@id": "kb:PlantsAndFlower",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Pflanze und Blume"
+        ],
+        "pt": [
+          "Plantas e flores"
+        ],
+        "en": [
+          "Plants and flower"
+        ],
+        "it": [
+          "Pianta e fiore"
+        ],
+        "fr": [
+          "Plante et fleur"
+        ],
+        "es": [
+          "Plantas y flores"
+        ],
+        "nl": [
+          "Bloemen en planten"
+        ]
+      }
+    }
+  ],
+  "hasTourType": [
+    {
+      "@id": "kb:Loop",
+      "@type": [
+        "TourType"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Schleifenroute"
+        ],
+        "pt": [
+          "Circular"
+        ],
+        "en": [
+          "Loop itinerary"
+        ],
+        "it": [
+          "Ad anello"
+        ],
+        "fr": [
+          "En boucle"
+        ],
+        "nl": [
+          "In een lus"
+        ],
+        "es": [
+          "Circuito"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/7ecfda4e-3a49-3d9c-9d7b-2cd149a0abd7",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/be16dc36-1111-3d84-97b7-d77cf54e5b87",
+          "schema:addressLocality": "Auzances",
+          "schema:postalCode": "23700",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:23013",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Auzances"
+              ],
+              "pt": [
+                "Auzances"
+              ],
+              "en": [
+                "Auzances"
+              ],
+              "it": [
+                "Auzances"
+              ],
+              "fr": [
+                "Auzances"
+              ],
+              "nl": [
+                "Auzances"
+              ],
+              "es": [
+                "Auzances"
+              ]
+            },
+            "insee": "23013",
+            "isPartOfDepartment": {
+              "@id": "kb:France7523",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Creuse"
+                ],
+                "pt": [
+                  "Creuse"
+                ],
+                "en": [
+                  "Creuse"
+                ],
+                "it": [
+                  "Creuse"
+                ],
+                "fr": [
+                  "Creuse"
+                ],
+                "nl": [
+                  "Creuse"
+                ],
+                "es": [
+                  "Creuse"
+                ]
+              },
+              "insee": "23",
+              "isPartOfRegion": {
+                "@id": "kb:France75",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "pt": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "en": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "it": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "fr": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "nl": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "es": [
+                    "Nouvelle-Aquitaine"
+                  ]
+                },
+                "insee": "75",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/4194276a-fb25-3bfa-87f8-bc170276c715",
+        "schema:latitude": "46.03437",
+        "schema:longitude": "2.5004",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "altInsee": [
+        "AUZANCES"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-03-26",
+  "lastUpdateDatatourisme": "2025-07-15T08:18:55.341Z",
+  "tourDistance": "4209.0"
+}

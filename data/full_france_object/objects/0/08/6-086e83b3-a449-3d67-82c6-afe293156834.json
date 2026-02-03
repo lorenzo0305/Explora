@@ -1,0 +1,777 @@
+{
+  "@id": "https://data.datatourisme.fr/6/086e83b3-a449-3d67-82c6-afe293156834",
+  "dc:identifier": "ITIBFC000V50TSHL",
+  "@type": [
+    "olo:OrderedList",
+    "PointOfInterest",
+    "Tour",
+    "WalkingTour"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "La Pelouse de la Chaux - Espace Sensible Naturel"
+    ]
+  },
+  "creationDate": "2021-09-16",
+  "hasAudience": [
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    },
+    {
+      "@id": "kb:ForAll",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Für alle"
+        ],
+        "pt": [
+          "Para todos"
+        ],
+        "en": [
+          "For all"
+        ],
+        "it": [
+          "Per tutti"
+        ],
+        "fr": [
+          "Tout public"
+        ],
+        "nl": [
+          "Voor iedereen"
+        ],
+        "es": [
+          "Todos los públicos"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/79e5e790-b24c-3143-b667-994c1c37e2a4",
+    "dc:identifier": "df9d75ec-0717-4b47-8870-05acb4f84081",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/a05f952e-f1a1-35af-8224-a424b9a9ac61",
+        "schema:addressLocality": "Besançon",
+        "schema:postalCode": "25000",
+        "schema:streetAddress": [
+          "83 Rue de Dole"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:25056",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Besançon"
+            ],
+            "pt": [
+              "Besançon"
+            ],
+            "en": [
+              "Besançon"
+            ],
+            "it": [
+              "Besançon"
+            ],
+            "fr": [
+              "Besançon"
+            ],
+            "nl": [
+              "Besançon"
+            ],
+            "es": [
+              "Besançon"
+            ]
+          },
+          "insee": "25056",
+          "isPartOfDepartment": {
+            "@id": "kb:France2725",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Doubs"
+              ],
+              "pt": [
+                "Doubs"
+              ],
+              "en": [
+                "Doubs"
+              ],
+              "it": [
+                "Doubs"
+              ],
+              "fr": [
+                "Doubs"
+              ],
+              "nl": [
+                "Doubs"
+              ],
+              "es": [
+                "Doubs"
+              ]
+            },
+            "insee": "25",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "cdt@doubs.com"
+    ],
+    "schema:legalName": "DOUBS TOURISME",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    },
+    {
+      "@id": "kb:ForAll",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Für alle"
+        ],
+        "pt": [
+          "Para todos"
+        ],
+        "en": [
+          "For all"
+        ],
+        "it": [
+          "Per tutti"
+        ],
+        "fr": [
+          "Tout public"
+        ],
+        "nl": [
+          "Voor iedereen"
+        ],
+        "es": [
+          "Todos los públicos"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/d837d543-dc71-3ec4-9f85-3c7a636df898",
+      "schema:email": [
+        "contact@ot-valmarnaysien.com"
+      ],
+      "schema:telephone": [
+        "+33 3 84 31 90 91"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.facebook.com/otvalmarnaysien"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/65ebea22-809d-32c1-ad94-e1c5ff4ddecb",
+      "dc:description": {
+        "de": [
+          "Das Departement Doubs entwickelt ein Netz von Espaces Naturels Sensibles: Diese Gebiete sind wahre Schaufenster der Vielfalt der natürlichen Lebensräume des Departements. Sie werden verwaltet, um die biologische Vielfalt zu erhalten, und sind auch für die Öffentlichkeit bestimmt, indem sie geöffnet und vernünftig gestaltet werden.\nDer Espace Naturel Sensible d'Etrabonne befindet sich zwischen den Dörfern Ougney und Burgille und überragt das Dorf Etrabonne. Im oberen Teil mischen sich Weinberge, Gestrüpp und kleine Wälder, der nach Süden ausgerichtete Hang trägt den Kalksteinrasen des Espace Naturel Sensible d'Etrabonne.\nDer Rasen von La Chaux ist zum Teil von Strauchvegetation überwuchert, ein Teil wird von Pferden beweidet.\nDer Pfad auf dem Rasen von La Chaux in Etrabonne ist das ganze Jahr über für freie Besichtigungen zugänglich.\nDie Dauer des Rundgangs beträgt ca. 1 - 1,5 Stunden und ist für ein Familienpublikum geeignet. Sie sollten Schuhe mitbringen, die zum Gehen geeignet sind.\nFolgen Sie der Markierung \"étoile du berger\" (Hirtenstern)."
+        ],
+        "en": [
+          "The Department of Doubs is developing a network of Sensitive Natural Areas: these areas are real showcases of the diversity of natural environments in the department, they are managed to preserve biodiversity and are also intended to welcome the public through an opening and a reasoned development.\nThe Sensitive Natural Area of Etrabonne is located between the villages of Ougney and Burgille, it dominates the village of Etrabonne. In the upper part, vineyards, scrub and small woodlands are mixed, the south-facing slope supports the limestone lawn of the Sensitive Natural Area of Etrabonne.\nThe lawn of La Chaux is partly invaded by shrubbery, a part is grazed by horses.\nThe path of the lawn of the Lime in Etrabonne is accessible in free visit all the year.\nThe duration of the trail is about 1h - 1h30 and it is adapted to a family public. You must bring shoes adapted to walking.\nFollow the markings of the shepherd's star."
+        ],
+        "it": [
+          "Il Dipartimento del Doubs sta sviluppando una rete di Aree Naturali Sensibili: queste aree sono vere e proprie vetrine della diversità degli ambienti naturali del dipartimento, sono gestite per preservare la biodiversità e sono anche destinate ad accogliere il pubblico attraverso un'apertura e uno sviluppo ragionato.\nL'Area Naturale Sensibile di Etrabonne si trova tra i villaggi di Ougney e Burgille e domina il villaggio di Etrabonne. Nella parte superiore si mescolano viti, macchia e piccoli boschi, mentre il pendio esposto a sud sostiene il prato calcareo dell'Area Naturale Sensibile di Etrabonne.\nIl prato di La Chaux è in parte invaso da arbusti e in parte è pascolato da cavalli.\nIl sentiero del prato della Chaux a Etrabonne è aperto ai visitatori tutto l'anno.\nLa passeggiata dura circa 1 ora - 1,5 ore ed è adatta alle famiglie.\nSeguire le indicazioni della stella del pastore."
+        ],
+        "fr": [
+          "Le Département du Doubs développe un réseau d'Espaces Naturels Sensibles : ces espaces  sont de véritables vitrines de la diversité des milieux naturels du département, ils font l'objet d'une gestion visant à préserver la biodiversité et sont également destinés à l'accueil du public à travers une ouverture et un aménagement raisonné. \nL'Espace Naturel Sensible d'Etrabonne se trouve entre les villages d'Ougney de Burgille, il domine le village d'Etrabonne. Dans la partie supérieure se mêlent vignes, broussailles et petits boisements, le versant exposé au sud supporte la pelouse calcaire de l'Espace Naturel Sensible d'Etrabonne. \nLa pelouse de la Chaux est en partie envahie par la végétation arbustive, une partie est pâturée par des chevaux. \nLe sentier de la pelouse de la Chaux à Etrabonne est accessible en visite libre toute l'année. \nLa durée du parcours est d'environ 1h - 1h30 et adaptée à un public familial, il faut se munir de chaussures adaptées à la marche. \nSuivre le balisage de l'étoile du berger."
+        ],
+        "nl": [
+          "Het departement Doubs ontwikkelt een netwerk van kwetsbare natuurgebieden: deze gebieden zijn echte vitrines van de diversiteit van de natuurlijke milieus van het departement, ze worden beheerd om de biodiversiteit te behouden en zijn ook bedoeld om het publiek te ontvangen door een beredeneerde openstelling en ontwikkeling.\nHet kwetsbare natuurgebied van Etrabonne ligt tussen de dorpen Ougney en Burgille, en kijkt uit over het dorp Etrabonne. In het bovenste gedeelte vermengen wijngaarden, struikgewas en kleine bossen zich, terwijl de zuidhelling het kalkgrasveld van het kwetsbare natuurgebied van Etrabonne ondersteunt.\nHet gazon van La Chaux is gedeeltelijk begroeid met struiken en een deel ervan wordt begraasd door paarden.\nHet pad van het gazon van La Chaux in Etrabonne is het hele jaar geopend voor bezoekers.\nDe wandeling duurt ongeveer 1 uur - 1,5 uur en is geschikt voor gezinnen.\nVolg de tekens van de herdersster."
+        ],
+        "es": [
+          "El Departamento del Doubs está desarrollando una red de Espacios Naturales Sensibles: estas zonas son verdaderos escaparates de la diversidad de los entornos naturales del departamento, se gestionan para preservar la biodiversidad y también están destinadas a acoger al público mediante una apertura y un desarrollo razonados.\nEl Espacio Natural Sensible de Etrabonne está situado entre los pueblos de Ougney y Burgille, y domina el pueblo de Etrabonne. En la parte superior se mezclan viñas, matorrales y pequeños bosques, mientras que la ladera orientada al sur soporta el césped calcáreo del Espacio Natural Sensible de Etrabonne.\nEl césped de La Chaux está en parte cubierto de arbustos y en parte es pasto de caballos.\nEl sendero del Césped de la Chaux en Etrabona está abierto a los visitantes todo el año.\nEl paseo dura entre una hora y una hora y media y es adecuado para familias.\nSiga las señales de la estrella del pastor."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/3dcc5f7b-82d2-3767-9fc0-cce86b725780",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/420c9785-24a9-3ea3-9f90-3217d27ff129",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/989ceb27-11a8-3814-b10a-13468189a6d1",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9c3e9f05-8c00-39d1-a582-15f7f58b50f2",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a118eb99-dc57-3226-a625-67bfe3fbc71c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasPracticeCondition": [
+    {
+      "@id": "https://data.datatourisme.fr/55f7feaf-d231-368c-821b-b7a1fc0e76df",
+      "@type": [
+        "PracticeCondition"
+      ],
+      "hasLocomotionMode": [
+        {
+          "@id": "kb:WalkingMode",
+          "@type": [
+            "PedestrianLocomotionMode"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zu Fuß"
+            ],
+            "pt": [
+              "Um pé"
+            ],
+            "en": [
+              "Walking"
+            ],
+            "it": [
+              "Un piede"
+            ],
+            "fr": [
+              "A pieds"
+            ],
+            "es": [
+              "Un pie"
+            ],
+            "nl": [
+              "Een voet"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/bc445668-8edd-38a3-892d-bbb9ab3db08f",
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/2bd304a6-0297-3276-ac53-6a05e5f16bb3",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:GPX",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "GPX-Datei"
+                ],
+                "pt": [
+                  "Ficheiro GPX"
+                ],
+                "en": [
+                  "GPX file"
+                ],
+                "it": [
+                  "File GPX"
+                ],
+                "fr": [
+                  "Fichier GPX"
+                ],
+                "nl": [
+                  "GPX-bestand"
+                ],
+                "es": [
+                  "Archivo GPX"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "application/gpx+xml"
+                ],
+                "pt": [
+                  "application/gpx+xml"
+                ],
+                "en": [
+                  "application/gpx+xml"
+                ],
+                "it": [
+                  "application/gpx+xml"
+                ],
+                "fr": [
+                  "application/gpx+xml"
+                ],
+                "nl": [
+                  "application/gpx+xml"
+                ],
+                "es": [
+                  "application/gpx+xml"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://decibelles-data.tourinsoft.com/upload/trace/ITIBFC000V50TSHL.gpx"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:FaunaFlora",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Fauna – Flora"
+        ],
+        "pt": [
+          "Fauna — flora"
+        ],
+        "en": [
+          "Fauna - flora"
+        ],
+        "it": [
+          "Fauna - Flora"
+        ],
+        "fr": [
+          "Faune - flore"
+        ],
+        "nl": [
+          "Fauna - flora"
+        ],
+        "es": [
+          "Fauna - flora"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Geocaching",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Geocaching"
+        ],
+        "pt": [
+          "Geocaching"
+        ],
+        "en": [
+          "Geocaching"
+        ],
+        "it": [
+          "Geocaching"
+        ],
+        "fr": [
+          "Geocaching"
+        ],
+        "nl": [
+          "Geocaching"
+        ],
+        "es": [
+          "Geocaching"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Pedestrian",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Zu Fuß"
+        ],
+        "pt": [
+          "Pedestre"
+        ],
+        "en": [
+          "Pedestrian"
+        ],
+        "it": [
+          "A piedi"
+        ],
+        "fr": [
+          "Pédestre"
+        ],
+        "nl": [
+          "Voetgangers"
+        ],
+        "es": [
+          "Peatón"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/aafe090b-3712-303a-b03b-f4fca0c8dcea",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/820cf3c7-f072-3be4-a199-a67941d60c2d",
+          "schema:addressLocality": "Étrabonne",
+          "schema:postalCode": "25170",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:25225",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Étrabonne"
+              ],
+              "pt": [
+                "Étrabonne"
+              ],
+              "en": [
+                "Étrabonne"
+              ],
+              "it": [
+                "Étrabonne"
+              ],
+              "fr": [
+                "Étrabonne"
+              ],
+              "nl": [
+                "Étrabonne"
+              ],
+              "es": [
+                "Étrabonne"
+              ]
+            },
+            "insee": "25225",
+            "isPartOfDepartment": {
+              "@id": "kb:France2725",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Doubs"
+                ],
+                "pt": [
+                  "Doubs"
+                ],
+                "en": [
+                  "Doubs"
+                ],
+                "it": [
+                  "Doubs"
+                ],
+                "fr": [
+                  "Doubs"
+                ],
+                "nl": [
+                  "Doubs"
+                ],
+                "es": [
+                  "Doubs"
+                ]
+              },
+              "insee": "25",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/2bb0ef28-e627-31a4-b6a3-73407cfd5e58",
+        "schema:latitude": "47.23894",
+        "schema:longitude": "5.73311",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-05-13",
+  "lastUpdateDatatourisme": "2025-06-03T15:34:30.727Z"
+}

@@ -1,0 +1,356 @@
+{
+  "@id": "https://data.datatourisme.fr/15/04d584e4-7ea6-3bd9-831b-654738d76674",
+  "dc:identifier": "ACCCEN000V5000EH",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CamperVanArea",
+    "CampingAndCaravanning",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Lage: Parkplatz des Festsaals - Kostenloser Parkplatz."
+    ],
+    "en": [
+      "Location: parking lot of the village hall. - Free parking (3 spaces)."
+    ],
+    "it": [
+      "Luogo: parcheggio della sala del villaggio. - Parcheggio gratuito (3 posti)."
+    ],
+    "fr": [
+      "Situation : parking de la salle des fêtes. - Stationnement (3 emplacements) gratuit."
+    ],
+    "es": [
+      "Lugar: aparcamiento de la sala de fiestas del pueblo. - Aparcamiento gratuito (3 plazas)."
+    ],
+    "nl": [
+      "Locatie: parkeerplaats van het dorpshuis. - Gratis parkeren (3 plaatsen)."
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "Aire de stationnement pour camping-cars - Montlivault"
+    ],
+    "fr": [
+      "Aire de stationnement pour camping-cars - Montlivault"
+    ]
+  },
+  "allowedPersons": 3,
+  "creationDate": "2013-10-21",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/15/b6b9951c-4bc3-3087-b238-59072ca039eb",
+    "dc:identifier": "144fd193-6dc0-4487-b994-1f2ae891d58a",
+    "schema:legalName": "ADT41",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/bba35b4d-022c-3fa7-90a3-07eba818e3a5",
+      "schema:legalName": "SIT Centre-Val de Loire",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/b6829c02-30cc-379f-b70e-23d5b59afefa",
+      "schema:telephone": [
+        "+33 2 54 20 62 18"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.montlivault.fr/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/84187845-e7f9-348f-a53e-99246ce0ed5d",
+      "schema:email": [
+        "contact@montlivault.fr"
+      ],
+      "schema:telephone": [
+        "+33 2 54 20 62 18"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.montlivault.fr/"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b6829c02-30cc-379f-b70e-23d5b59afefa",
+      "schema:telephone": [
+        "+33 2 54 20 62 18"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.montlivault.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/6e4271ad-6f84-366e-b29b-263d6532b642",
+      "dc:description": {
+        "de": [
+          "Lage: Parkplatz des Festsaals. - Parken (3 Plätze) kostenlos."
+        ],
+        "en": [
+          "Location: parking lot of the village hall. - Free parking (3 spaces)."
+        ],
+        "it": [
+          "Luogo: parcheggio della sala del villaggio. - Parcheggio gratuito (3 posti)."
+        ],
+        "fr": [
+          "Situation : parking de la salle des fêtes. - Stationnement (3 emplacements) gratuit."
+        ],
+        "es": [
+          "Lugar: aparcamiento de la sala de fiestas del pueblo. - Aparcamiento gratuito (3 plazas)."
+        ],
+        "nl": [
+          "Locatie: parkeerplaats van het dorpshuis. - Gratis parkeren (3 plaatsen)."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "shortDescription": {
+        "de": [
+          "Lage: Parkplatz des Festsaals - Kostenloser Parkplatz."
+        ],
+        "en": [
+          "Location: parking lot of the village hall. - Free parking (3 spaces)."
+        ],
+        "it": [
+          "Luogo: parcheggio della sala del villaggio. - Parcheggio gratuito (3 posti)."
+        ],
+        "fr": [
+          "Situation : parking de la salle des fêtes. - Stationnement (3 emplacements) gratuit."
+        ],
+        "es": [
+          "Lugar: aparcamiento de la sala de fiestas del pueblo. - Aparcamiento gratuito (3 plazas)."
+        ],
+        "nl": [
+          "Locatie: parkeerplaats van het dorpshuis. - Gratis parkeren (3 plaatsen)."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/8bd09a81-1a57-3bbe-8ed2-997a4ff1e910",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CamperPitch",
+          "@type": [
+            "AccommodationPricingOffer",
+            "CampingAndCaravanningAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Stellplatz Wohnmobil"
+            ],
+            "pt": [
+              "Alvéolo para autocaravana"
+            ],
+            "en": [
+              "Motorhome pitch"
+            ],
+            "it": [
+              "Piazzola per camper"
+            ],
+            "fr": [
+              "Emplacement camping car"
+            ],
+            "es": [
+              "Espacio para autocaravanas"
+            ],
+            "nl": [
+              "Camperstaanplaats"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/88150490-7ba3-3d5c-910b-5abb117700b7",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/f09b1b41-74cf-32ae-957d-fc1de47c99e7",
+          "schema:addressLocality": "Montlivault",
+          "schema:postalCode": "41350",
+          "schema:streetAddress": [
+            "Grande rue"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:41148",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Montlivault"
+              ],
+              "pt": [
+                "Montlivault"
+              ],
+              "en": [
+                "Montlivault"
+              ],
+              "it": [
+                "Montlivault"
+              ],
+              "fr": [
+                "Montlivault"
+              ],
+              "nl": [
+                "Montlivault"
+              ],
+              "es": [
+                "Montlivault"
+              ]
+            },
+            "insee": "41148",
+            "isPartOfDepartment": {
+              "@id": "kb:France2441",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Loir-et-Cher"
+                ],
+                "pt": [
+                  "Loir-et-Cher"
+                ],
+                "en": [
+                  "Loir-et-Cher"
+                ],
+                "it": [
+                  "Loir-et-Cher"
+                ],
+                "fr": [
+                  "Loir-et-Cher"
+                ],
+                "nl": [
+                  "Loir-et-Cher"
+                ],
+                "es": [
+                  "Loir-et-Cher"
+                ]
+              },
+              "insee": "41",
+              "isPartOfRegion": {
+                "@id": "kb:France24",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Centre-Val de Loire"
+                  ],
+                  "pt": [
+                    "Centre-Val de Loire"
+                  ],
+                  "en": [
+                    "Centre-Val de Loire"
+                  ],
+                  "it": [
+                    "Centre-Val de Loire"
+                  ],
+                  "fr": [
+                    "Centre-Val de Loire"
+                  ],
+                  "nl": [
+                    "Centre-Val de Loire"
+                  ],
+                  "es": [
+                    "Centre-Val de Loire"
+                  ]
+                },
+                "insee": "24",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/bfc6ddd7-704f-3684-bff9-b4a1fd26853d",
+        "schema:latitude": "47.63",
+        "schema:longitude": "1.44",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-01-02",
+  "lastUpdateDatatourisme": "2025-01-03T04:11:07.52Z"
+}

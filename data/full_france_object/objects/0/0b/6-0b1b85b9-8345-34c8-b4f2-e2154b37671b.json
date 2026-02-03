@@ -1,0 +1,754 @@
+{
+  "@id": "https://data.datatourisme.fr/6/0b1b85b9-8345-34c8-b4f2-e2154b37671b",
+  "dc:identifier": "HLOBFC000V51TXN1",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Wohnung am Fuße der Pisten in einer Residenz, in der ein Schwimmbad und ein Tennisplatz zur Verfügung stehen."
+    ],
+    "en": [
+      "Flat located at the foot of the pistes, in a residence with swimming pool and tennis court."
+    ],
+    "it": [
+      "Appartamento situato ai piedi delle piste, in un residence con piscina e campo da tennis."
+    ],
+    "fr": [
+      "Appartement situé au pied des pistes, dans une résidence où piscine et terrain de tennis sont mis à disposition."
+    ],
+    "es": [
+      "Piso situado a pie de pistas, en una residencia con piscina y pista de tenis."
+    ],
+    "nl": [
+      "Appartement gelegen aan de voet van de pistes, in een residentie met zwembad en tennisbaan."
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "Chez Michel et Patricia"
+    ],
+    "en": [
+      "Chez Michel et Patricia"
+    ],
+    "fr": [
+      "Chez Michel et Patricia"
+    ]
+  },
+  "allowedPersons": 4,
+  "creationDate": "2023-01-26",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/79e5e790-b24c-3143-b667-994c1c37e2a4",
+    "dc:identifier": "df9d75ec-0717-4b47-8870-05acb4f84081",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/a05f952e-f1a1-35af-8224-a424b9a9ac61",
+        "schema:addressLocality": "Besançon",
+        "schema:postalCode": "25000",
+        "schema:streetAddress": [
+          "83 Rue de Dole"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:25056",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Besançon"
+            ],
+            "pt": [
+              "Besançon"
+            ],
+            "en": [
+              "Besançon"
+            ],
+            "it": [
+              "Besançon"
+            ],
+            "fr": [
+              "Besançon"
+            ],
+            "nl": [
+              "Besançon"
+            ],
+            "es": [
+              "Besançon"
+            ]
+          },
+          "insee": "25056",
+          "isPartOfDepartment": {
+            "@id": "kb:France2725",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Doubs"
+              ],
+              "pt": [
+                "Doubs"
+              ],
+              "en": [
+                "Doubs"
+              ],
+              "it": [
+                "Doubs"
+              ],
+              "fr": [
+                "Doubs"
+              ],
+              "nl": [
+                "Doubs"
+              ],
+              "es": [
+                "Doubs"
+              ]
+            },
+            "insee": "25",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "cdt@doubs.com"
+    ],
+    "schema:legalName": "DOUBS TOURISME",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/f16d65b0-5693-3b3a-a2a2-b29acabb4959",
+      "schema:email": [
+        "patriciabaranzelli@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 6 89 21 45 20"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/c90f615b-2fd8-3955-a77d-c5ec5e351085",
+      "dc:description": {
+        "de": [
+          "Wohnung am Fuße der Pisten in einer Residenz, in der ein Schwimmbad und ein Tennisplatz zur Verfügung stehen."
+        ],
+        "en": [
+          "Flat located at the foot of the pistes, in a residence with swimming pool and tennis court."
+        ],
+        "it": [
+          "Appartamento situato ai piedi delle piste, in un residence con piscina e campo da tennis."
+        ],
+        "fr": [
+          "Appartement situé au pied des pistes, dans une résidence où piscine et terrain de tennis sont mis à disposition."
+        ],
+        "es": [
+          "Piso situado a pie de pistas, en una residencia con piscina y pista de tenis."
+        ],
+        "nl": [
+          "Appartement gelegen aan de voet van de pistes, in een residentie met zwembad en tennisbaan."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/248eedaa-5bdf-38c1-a64e-27bc9239d53f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/38cdad34-1f8b-3752-b5e4-0c390f58e99f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4f867536-bae1-3f43-9b2e-10134c8d0544",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5225ddc7-dca5-372b-8bab-ba18891a6a9d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6bf75c35-1259-36d9-9061-2306e7d6945b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/891f24d3-7616-395d-81ff-b8a12309c195",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Wohnung am Fuße der Pisten in einer Residenz, in der ein Schwimmbad und ein Tennisplatz zur Verfügung stehen."
+        ],
+        "en": [
+          "Flat located at the foot of the pistes, in a residence with swimming pool and tennis court."
+        ],
+        "it": [
+          "Appartamento situato ai piedi delle piste, in un residence con piscina e campo da tennis."
+        ],
+        "fr": [
+          "Appartement situé au pied des pistes, dans une résidence où piscine et terrain de tennis sont mis à disposition."
+        ],
+        "es": [
+          "Piso situado a pie de pistas, en una residencia con piscina y pista de tenis."
+        ],
+        "nl": [
+          "Appartement gelegen aan de voet van de pistes, in een residentie met zwembad en tennisbaan."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/1884ddb4-6fe7-3412-be0e-950606e6a64b",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Accommodation",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Unterbringung"
+            ],
+            "pt": [
+              "Alojamento"
+            ],
+            "en": [
+              "Accommodation"
+            ],
+            "it": [
+              "Alloggio"
+            ],
+            "fr": [
+              "Logement"
+            ],
+            "nl": [
+              "Logies"
+            ],
+            "es": [
+              "Alojamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/7fe6774c-faa7-3d32-b8ac-98a2e4065fb1",
+        "schema:unitText": [
+          "m²"
+        ],
+        "schema:value": "38",
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/68a14e24-77ce-388e-a9a6-88a6cb4f5a1e",
+      "schema:value": "1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef987579-32be-36f7-a54d-805aacd16d8e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/594fb33f-5b53-3e97-9f17-ef5f023a9de0",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_1etoile",
+        "schema:ratingValue": "1.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "1 Stern"
+          ],
+          "pt": [
+            "1 estrela"
+          ],
+          "en": [
+            "1 Star"
+          ],
+          "it": [
+            "1 stella"
+          ],
+          "fr": [
+            "1 étoile"
+          ],
+          "nl": [
+            "1 ster"
+          ],
+          "es": [
+            "1 estrella"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/65e1dabd-ca7f-3d8f-a31e-20a77526eebc",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e1f83bee-8fc6-393b-a01f-e929642e4a54",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f3a5f267-75ce-3a25-846d-83a9acde3977",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/ca3ce3fa-b2ce-334e-bddc-bb737467feb4",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/a4ca6c0a-4247-3b2b-80b2-266a0aaf7d17",
+          "schema:addressLocality": "Métabief",
+          "schema:postalCode": "25370",
+          "schema:streetAddress": [
+            "Allée des Chalets",
+            "Rés. Mont d'Or 73"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:25380",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Métabief"
+              ],
+              "pt": [
+                "Métabief"
+              ],
+              "en": [
+                "Métabief"
+              ],
+              "it": [
+                "Métabief"
+              ],
+              "fr": [
+                "Métabief"
+              ],
+              "nl": [
+                "Métabief"
+              ],
+              "es": [
+                "Métabief"
+              ]
+            },
+            "insee": "25380",
+            "isPartOfDepartment": {
+              "@id": "kb:France2725",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Doubs"
+                ],
+                "pt": [
+                  "Doubs"
+                ],
+                "en": [
+                  "Doubs"
+                ],
+                "it": [
+                  "Doubs"
+                ],
+                "fr": [
+                  "Doubs"
+                ],
+                "nl": [
+                  "Doubs"
+                ],
+                "es": [
+                  "Doubs"
+                ]
+              },
+              "insee": "25",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/bde1f617-6e3f-3a7c-b2c8-174fdb622066",
+        "schema:latitude": "46.76934",
+        "schema:longitude": "6.35269",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-02-10",
+  "lastUpdateDatatourisme": "2025-02-12T00:32:29.76Z"
+}

@@ -1,0 +1,325 @@
+{
+  "@id": "https://data.datatourisme.fr/49/0cb56736-4f0f-3174-9200-191e927a8528",
+  "dc:identifier": "ITI878000147",
+  "@type": [
+    "olo:OrderedList",
+    "CyclingTour",
+    "HorseTour",
+    "PointOfInterest",
+    "Tour",
+    "WalkingTour"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Chemin de Saint Calais - Changé"
+    ]
+  },
+  "creationDate": "2012-02-17",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/59404e77-a52a-34e3-9bd9-481b11f7811c",
+    "schema:email": [
+      "j.trelohan@sarthetourisme.com"
+    ],
+    "schema:legalName": "CDT72",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.sarthetourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/cb37ecba-e500-37e7-b601-64f9b1ef5b04",
+      "schema:email": [
+        "b.paulmyer@solutions-eco.fr"
+      ],
+      "schema:legalName": "eSPRIT Pays de la Loire",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.solutions-pro-tourisme-paysdelaloire.fr/"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:ATV",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "MTB"
+        ],
+        "pt": [
+          "Bicicleta-todo-o-terreno (BTT)"
+        ],
+        "en": [
+          "Atv"
+        ],
+        "it": [
+          "Mountain bike"
+        ],
+        "fr": [
+          "Vtt"
+        ],
+        "nl": [
+          "Mountainbike"
+        ],
+        "es": [
+          "BTT"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Pedestrian",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Zu Fuß"
+        ],
+        "pt": [
+          "Pedestre"
+        ],
+        "en": [
+          "Pedestrian"
+        ],
+        "it": [
+          "A piedi"
+        ],
+        "fr": [
+          "Pédestre"
+        ],
+        "nl": [
+          "Voetgangers"
+        ],
+        "es": [
+          "Peatón"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Riding",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Reiten"
+        ],
+        "pt": [
+          "Equitação"
+        ],
+        "en": [
+          "Riding"
+        ],
+        "it": [
+          "Equitazione"
+        ],
+        "fr": [
+          "Equitation"
+        ],
+        "nl": [
+          "Paardrijden"
+        ],
+        "es": [
+          "Equitación"
+        ]
+      }
+    }
+  ],
+  "hasTourType": [
+    {
+      "@id": "kb:Loop",
+      "@type": [
+        "TourType"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Schleifenroute"
+        ],
+        "pt": [
+          "Circular"
+        ],
+        "en": [
+          "Loop itinerary"
+        ],
+        "it": [
+          "Ad anello"
+        ],
+        "fr": [
+          "En boucle"
+        ],
+        "nl": [
+          "In een lus"
+        ],
+        "es": [
+          "Circuito"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/2a6a6ca4-ab95-3649-b7ae-045bc9aca0ed",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/b04f4819-6178-36a1-8c9c-8c610b942a76",
+          "schema:addressLocality": "Changé",
+          "schema:postalCode": "72560",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:72058",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Changé"
+              ],
+              "pt": [
+                "Changé"
+              ],
+              "en": [
+                "Changé"
+              ],
+              "it": [
+                "Changé"
+              ],
+              "fr": [
+                "Changé"
+              ],
+              "nl": [
+                "Changé"
+              ],
+              "es": [
+                "Changé"
+              ]
+            },
+            "insee": "72058",
+            "isPartOfDepartment": {
+              "@id": "kb:France5272",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Sarthe"
+                ],
+                "pt": [
+                  "Sarthe"
+                ],
+                "en": [
+                  "Sarthe"
+                ],
+                "it": [
+                  "Sarthe"
+                ],
+                "fr": [
+                  "Sarthe"
+                ],
+                "nl": [
+                  "Sarthe"
+                ],
+                "es": [
+                  "Sarthe"
+                ]
+              },
+              "insee": "72",
+              "isPartOfRegion": {
+                "@id": "kb:France52",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Pays de la Loire"
+                  ],
+                  "pt": [
+                    "Pays de la Loire"
+                  ],
+                  "en": [
+                    "Pays de la Loire"
+                  ],
+                  "it": [
+                    "Pays de la Loire"
+                  ],
+                  "fr": [
+                    "Pays de la Loire"
+                  ],
+                  "nl": [
+                    "Pays de la Loire"
+                  ],
+                  "es": [
+                    "Pays de la Loire"
+                  ]
+                },
+                "insee": "52",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/0b7fbad7-6a65-347c-8760-ef516f124d5d",
+        "schema:latitude": "47.96643",
+        "schema:longitude": "0.27559",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-03-19",
+  "lastUpdateDatatourisme": "2025-01-21T12:07:34.458Z",
+  "tourDistance": "10000.0"
+}

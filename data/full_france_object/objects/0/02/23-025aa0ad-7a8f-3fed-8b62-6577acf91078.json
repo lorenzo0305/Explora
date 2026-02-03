@@ -1,0 +1,894 @@
+{
+  "@id": "https://data.datatourisme.fr/23/025aa0ad-7a8f-3fed-8b62-6577acf91078",
+  "dc:identifier": "FMAAQU064V5C2ND4",
+  "schema:endDate": [
+    "2025-10-21"
+  ],
+  "schema:startDate": [
+    "2025-10-21"
+  ],
+  "@type": [
+    "schema:Event",
+    "schema:SaleEvent",
+    "CulturalEvent",
+    "EntertainmentAndEvent",
+    "Market",
+    "PointOfInterest",
+    "SaleEvent"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Marché"
+    ],
+    "en": [
+      "Marché"
+    ],
+    "fr": [
+      "Marché"
+    ],
+    "nl": [
+      "Marché"
+    ],
+    "es": [
+      "Marché"
+    ]
+  },
+  "creationDate": "2025-02-12",
+  "hasAudience": [
+    {
+      "@id": "kb:Local",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Lokal"
+        ],
+        "pt": [
+          "Local"
+        ],
+        "en": [
+          "Local"
+        ],
+        "it": [
+          "Locale"
+        ],
+        "fr": [
+          "Locale"
+        ],
+        "nl": [
+          "Lokaal"
+        ],
+        "es": [
+          "Local"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/23/03070e70-dbf8-3daa-a0b2-bc4aaf8b21c7",
+    "dc:identifier": "4cbd4f8d-22ae-4c0f-8b7e-60123f1f2946",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/94a994ff-1faa-30d0-80e5-53a027a2cc5b",
+        "schema:addressLocality": "Pau",
+        "schema:postalCode": "64000",
+        "schema:streetAddress": [
+          "Place Royale"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:64445",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Pau"
+            ],
+            "pt": [
+              "Pau"
+            ],
+            "en": [
+              "Pau"
+            ],
+            "it": [
+              "Pau"
+            ],
+            "fr": [
+              "Pau"
+            ],
+            "nl": [
+              "Pau"
+            ],
+            "es": [
+              "Pau"
+            ]
+          },
+          "insee": "64445",
+          "isPartOfDepartment": {
+            "@id": "kb:France7564",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Pyrénées-Atlantiques"
+              ],
+              "pt": [
+                "Pyrénées-Atlantiques"
+              ],
+              "en": [
+                "Pyrénées-Atlantiques"
+              ],
+              "it": [
+                "Pyrénées-Atlantiques"
+              ],
+              "fr": [
+                "Pyrénées-Atlantiques"
+              ],
+              "nl": [
+                "Pyrénées-Atlantiques"
+              ],
+              "es": [
+                "Pyrénées-Atlantiques"
+              ]
+            },
+            "insee": "64",
+            "isPartOfRegion": {
+              "@id": "kb:France75",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "pt": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "en": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "it": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "fr": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "nl": [
+                  "Nouvelle-Aquitaine"
+                ],
+                "es": [
+                  "Nouvelle-Aquitaine"
+                ]
+              },
+              "insee": "75",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "accueil@tourismepau.fr"
+    ],
+    "schema:legalName": "OT Pau",
+    "schema:telephone": [
+      "+33 5 59 27 27 08"
+    ],
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.tourismepau.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/05dc9cb8-2fa5-383d-b87b-497de06649a2",
+      "schema:email": [
+        "sirtaqui@na-tourisme.com"
+      ],
+      "schema:legalName": "SIRTAQUI Nouvelle-Aquitaine",
+      "schema:logo": "http://aquitaine.media.tourinsoft.eu/upload/Logo-Sirtaqui-1280x405.jpg",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "rdfs:comment": {
+        "de": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "en": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "it": [
+          "L'obiettivo di SIRTAQUI, il Sistema Regionale di Informazione Turistica della Nuova Aquitania, è quello di raccogliere, mettere in comune e diffondere il più possibile informazioni complete e di qualità a beneficio dei nostri residenti e visitatori. Il sistema è realizzato congiuntamente dal Comité Régional de Tourisme de Nouvelle-Aquitaine, dai servizi turistici di Corrèze, Creuse, Dordogne, Gironde, Landes, Lot-et-Garonne, Pyrénées-Atlantiques, Deux-Sèvres, Vienne e Haute-Vienne, in collaborazione con gli Uffici del Turismo e con il sostegno finanziario dell'Europa e del Conseil Régional."
+        ],
+        "fr": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "nl": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ],
+        "es": [
+          "Collecter, mettre en commun et diffuser le plus largement possible une information complète et de qualité au service de nos habitants et de nos visiteurs : voici les objectifs du SIRTAQUI, Système d’Information Régional Touristique de Nouvelle-AQUItaine. Le dispositif est mis en œuvre conjointement par le Comité Régional de Tourisme de Nouvelle-Aquitaine, les services touristiques de la Corrèze, de la Creuse, de la Dordogne, de la Gironde, des Landes, du Lot-et-Garonne, des Pyrénées-Atlantiques, des Deux-Sèvres, de la Vienne et de la Haute-Vienne, en collaboration avec les Offices de Tourisme, et avec le soutien financier de l’Europe et du Conseil Régional."
+        ]
+      },
+      "foaf:homepage": [
+        "http://www.sirtaqui-aquitaine.com/"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/eef27e75-4a23-313e-a6ee-797e7b64a1cd",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "rdfs:comment"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/1caef41c-cd74-3d30-aca1-5ea32e9ca18e",
+      "schema:email": [
+        "mairie@gelos.fr"
+      ],
+      "schema:telephone": [
+        "+33 5 59 06 63 25"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.gelos.fr/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/1caef41c-cd74-3d30-aca1-5ea32e9ca18e",
+      "schema:email": [
+        "mairie@gelos.fr"
+      ],
+      "schema:telephone": [
+        "+33 5 59 06 63 25"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.gelos.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/252ae3e8-5b26-392a-857b-3415bcf3b9bc",
+      "dc:description": {
+        "de": [
+          "Jeden Dienstagmorgen von 8:00 bis 13:00 Uhr stehen auf dem Place de la Liberté Produzenten zu Ihrer Verfügung: Obst und Gemüse, Käse, Fisch, Spezialitäten aus aller Welt und verschiedene andere Produkte."
+        ],
+        "en": [
+          "Every Tuesday morning from 8am to 1pm, on the Place de la Liberté, producers are at your disposal: fruit and vegetables, cheese, fish, world specialities and various other products."
+        ],
+        "it": [
+          "Ogni martedì mattina dalle 8.00 alle 13.00, in Place de la Liberté, i produttori sono a disposizione per offrire frutta e verdura, formaggi, pesce, specialità del mondo e una serie di altri prodotti."
+        ],
+        "fr": [
+          "Chaque mardi matin de 8h00 à 13h00, sur la place de la Liberté, des producteurs sont à votre disposition : fruits et légumes, fromages, poissons, spécialités du monde et divers autres produits."
+        ],
+        "es": [
+          "Todos los martes por la mañana, de 8:00 a 13:00, en la plaza de la Libertad, los productores le ofrecerán frutas y verduras, quesos, pescados, especialidades del mundo y otros muchos productos."
+        ],
+        "nl": [
+          "Elke dinsdagochtend van 8.00 tot 13.00 uur staan op de Place de la Liberté producenten klaar om je fruit en groenten, kaas, vis, wereldspecialiteiten en een hele reeks andere producten aan te bieden."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/2331085d-9163-3135-a6d7-177e0e92cee4",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a5dab540-4b46-3f62-aa7c-eb62de224322",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b02830ee-57b6-3917-9e86-5d474e6d1194",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/db89c375-798a-3bf6-823a-fe1b607d4007",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/fe3972a9-f8db-35ee-a6f9-183b8d69d5ef",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasGeographicReach": [
+    {
+      "@id": "kb:Local",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Lokal"
+        ],
+        "pt": [
+          "Local"
+        ],
+        "en": [
+          "Local"
+        ],
+        "it": [
+          "Locale"
+        ],
+        "fr": [
+          "Locale"
+        ],
+        "nl": [
+          "Lokaal"
+        ],
+        "es": [
+          "Local"
+        ]
+      }
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/ce75e96e-7fb6-38eb-b08c-28505549b41d",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/5936e87c-1222-347c-b65d-a0f718241030",
+          "ebucore:isCoveredBy": "By-NC-ND 4.0",
+          "ebucore:title": {
+            "de": [
+              "marché de gelos"
+            ],
+            "en": [
+              "marché de gelos"
+            ],
+            "fr": [
+              "marché de gelos"
+            ],
+            "nl": [
+              "marché de gelos"
+            ],
+            "es": [
+              "marché de gelos"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "ville de Gelos"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/9bea0d86-1e57-3fa8-804b-d30ac3adc3a2",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt64.media.tourinsoft.eu/upload/marche-gelos.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/ce75e96e-7fb6-38eb-b08c-28505549b41d",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/5936e87c-1222-347c-b65d-a0f718241030",
+          "ebucore:isCoveredBy": "By-NC-ND 4.0",
+          "ebucore:title": {
+            "de": [
+              "marché de gelos"
+            ],
+            "en": [
+              "marché de gelos"
+            ],
+            "fr": [
+              "marché de gelos"
+            ],
+            "nl": [
+              "marché de gelos"
+            ],
+            "es": [
+              "marché de gelos"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "ville de Gelos"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/9bea0d86-1e57-3fa8-804b-d30ac3adc3a2",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://cdt64.media.tourinsoft.eu/upload/marche-gelos.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/8ea9e310-eab5-355e-a280-7c66cb823a92",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/9ddbdbc1-e8d9-3d0c-9a6c-a9fb786ce5b0",
+          "schema:addressLocality": "Gelos",
+          "schema:postalCode": "64110",
+          "schema:streetAddress": [
+            "Place de la Liberté"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:64237",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Gelos"
+              ],
+              "pt": [
+                "Gelos"
+              ],
+              "en": [
+                "Gelos"
+              ],
+              "it": [
+                "Gelos"
+              ],
+              "fr": [
+                "Gelos"
+              ],
+              "nl": [
+                "Gelos"
+              ],
+              "es": [
+                "Gelos"
+              ]
+            },
+            "insee": "64237",
+            "isPartOfDepartment": {
+              "@id": "kb:France7564",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pyrénées-Atlantiques"
+                ],
+                "pt": [
+                  "Pyrénées-Atlantiques"
+                ],
+                "en": [
+                  "Pyrénées-Atlantiques"
+                ],
+                "it": [
+                  "Pyrénées-Atlantiques"
+                ],
+                "fr": [
+                  "Pyrénées-Atlantiques"
+                ],
+                "nl": [
+                  "Pyrénées-Atlantiques"
+                ],
+                "es": [
+                  "Pyrénées-Atlantiques"
+                ]
+              },
+              "insee": "64",
+              "isPartOfRegion": {
+                "@id": "kb:France75",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "pt": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "en": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "it": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "fr": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "nl": [
+                    "Nouvelle-Aquitaine"
+                  ],
+                  "es": [
+                    "Nouvelle-Aquitaine"
+                  ]
+                },
+                "insee": "75",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/a41f4d45-ab43-33e4-a009-8a86251775e8",
+        "schema:latitude": "43.285713",
+        "schema:longitude": "-0.3722359",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "altInsee": [
+        "GELOS"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/1caef41c-cd74-3d30-aca1-5ea32e9ca18e",
+      "schema:email": [
+        "mairie@gelos.fr"
+      ],
+      "schema:telephone": [
+        "+33 5 59 06 63 25"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.gelos.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-06-16",
+  "lastUpdateDatatourisme": "2025-07-08T10:27:26.624Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/f37b30a5-0e99-3134-8a73-44caa808e4d9",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/99ad361f-5fec-368d-9412-cc6ca4407589",
+          "schema:maxPrice": [
+            "0"
+          ],
+          "schema:minPrice": [
+            "0"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:Free",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Kostenlos"
+                ],
+                "pt": [
+                  "Gratuito"
+                ],
+                "en": [
+                  "Free"
+                ],
+                "it": [
+                  "Gratuito"
+                ],
+                "fr": [
+                  "Gratuit"
+                ],
+                "es": [
+                  "Gratuito"
+                ],
+                "nl": [
+                  "Gratis"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "takesPlaceAt": [
+    {
+      "@id": "https://data.datatourisme.fr/d95e9890-321f-317a-b2e4-5791bcea27cb",
+      "@type": [
+        "Period"
+      ],
+      "endDate": "2025-10-21",
+      "startDate": "2025-10-21"
+    }
+  ]
+}

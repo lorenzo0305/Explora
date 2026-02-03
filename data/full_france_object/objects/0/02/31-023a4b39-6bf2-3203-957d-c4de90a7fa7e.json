@@ -1,0 +1,2185 @@
+{
+  "@id": "https://data.datatourisme.fr/31/023a4b39-6bf2-3203-957d-c4de90a7fa7e",
+  "dc:identifier": "TFO155836108540",
+  "@type": [
+    "schema:Accommodation",
+    "schema:Hostel",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CollectiveAccommodation",
+    "HolidayCentre",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "StopOverOrGroupLodge"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Diese Unterkunft für Sportgruppen, Jung und Alt liegt in Peyreleau, einem denkmalgeschützten mittelalterlichen Dorf, das den Zusammenfluss von Jonte und Tarnschlucht überblickt, in einer Umgebung aus Wasser, Grün und Weite."
+    ],
+    "en": [
+      "Peyreleau, listed mediaeval village, overlooks the confluence of the Jonte and the Tarn, in an environment of water, greenery and space."
+    ],
+    "it": [
+      "Gîte per gruppi sportivi, giovani e meno giovani, situato a Peyreleau, un villaggio medievale classificato che domina la confluenza della Jonte e delle Gorges du Tarn, in un ambiente di acqua, verde e spazio."
+    ],
+    "fr": [
+      "Gîte destiné aux groupes sportifs, jeunes et moins jeunes, situé à Peyreleau, village médiéval classé, dominant le confluent de la Jonte et Gorges du Tarn, dans un environnement d'eau, de verdure et d'espace."
+    ],
+    "nl": [
+      "Gîte voor sportieve groepen, jong en oud, gelegen in Peyreleau, een geklasseerd middeleeuws dorp met uitzicht op de samenvloeiing van de Jonte en de Gorges du Tarn, in een omgeving van water, groen en ruimte."
+    ],
+    "es": [
+      "El pueblo medieval catalogado de Peyreleau domina la confluencia del río Jonte con las gargantas del Tarn en un entorno donde predominan el agua, la vegetación frondosa y el espacio."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Gîte Évolutions"
+    ]
+  },
+  "allowedPersons": 24,
+  "availableLanguage": [
+    "en",
+    "es",
+    "fr"
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/db224e7a-611f-379d-b03d-1cb615389a8d",
+    "schema:legalName": "HIT Aveyron (ADAT Aveyron)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/66be3cfa-8d5c-34e7-87b1-87e1705c3fc4",
+      "schema:email": [
+        "webmaster@tourisme-aveyron.com"
+      ],
+      "schema:legalName": "ADT Aveyron",
+      "schema:telephone": [
+        "+33 5 65 75 40 12"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-aveyron.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/a512003f-21b7-37c6-ae03-7504710589d0",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/90739dc9-5209-32c6-becc-0440a1f6f22c",
+          "schema:addressLocality": "Peyreleau",
+          "schema:postalCode": "12720",
+          "schema:streetAddress": [
+            "Route de La Cresse"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12180",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Peyreleau"
+              ],
+              "pt": [
+                "Peyreleau"
+              ],
+              "en": [
+                "Peyreleau"
+              ],
+              "it": [
+                "Peyreleau"
+              ],
+              "fr": [
+                "Peyreleau"
+              ],
+              "nl": [
+                "Peyreleau"
+              ],
+              "es": [
+                "Peyreleau"
+              ]
+            },
+            "insee": "12180",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "contact@gite-evolutions.com"
+      ],
+      "schema:legalName": "Gîte Évolutions",
+      "schema:telephone": [
+        "+33 5 65 62 60 93"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.gite-evolutions.com/",
+        "https://www.facebook.com/pages/Gite-et-Rando-Evolutions-Les-Corniches-de-la-Jonte/201620269853126"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/d536a6d9-a035-3d92-82b4-b7a0fe178f17",
+      "dc:description": {
+        "de": [
+          "Gruppenunterkunft, auf 3 Ebenen, in einem Dorfhaus, das am Felsen hängt. Aufenthalte mit Halb- oder Vollpension. 7 Zimmer und Panorama-Esszimmer mit Bar, und Wohnzimmer mit Bibliothek, Öfen. Abendessen (auf Reservierung), serviert vom Eigentümer, offen für alle, traditionelle Mahlzeiten und lokale Rezepte. Kurtaxe. Vermietung von Bettwäsche und Handtüchern. 1 Doppelzimmer, 1 Zweibettzimmer und 5 Schlafsäle für 4 Personen."
+        ],
+        "en": [
+          "Group gîte on 3 floors, in a village house clinging to the rock. Stays in half or full board. 7 rooms, panoramic dining room with a bar and living room with a library and a fireplace. Evening meal on reservation, served by the owner; traditional meals and local recipes. Stay tax. Bedsheets and toilet linen rental. Open from the 1st of April to the 11/15, starting from 2 people. Outdoor activities organisation."
+        ],
+        "it": [
+          "Gîte di gruppo, su 3 livelli, in una casa di paese aggrappata alla roccia. Soggiorni in 1/2 pensione o pensione completa. 7 camere da letto e sala da pranzo panoramica con bar e salone con biblioteca, stufe. Cene serali (su prenotazione) servite dal proprietario, aperte a tutti, con piatti tradizionali e ricette locali. Tassa di soggiorno. Noleggio lenzuola e asciugamani. 1 camera matrimoniale, 1 camera doppia e 5 dormitori per 4 persone."
+        ],
+        "fr": [
+          "Gîte de groupes, sur 3 niveaux, dans maison de village, accrochée au rocher. Séjours en 1/2 pension ou pension complète. 7 chambres et salle à manger panoramique avec bar, et salon avec bibliothèque, poêles. Repas du soir (sur réservation) servis par le propriétaire, ouvert à tous, repas traditionnels et recettes locales. Taxe de séjour. Location de draps et linge de toilette. 1 chambre double, 1 chambre twin et 5 dortoirs de 4 personnes."
+        ],
+        "nl": [
+          "Groepsgîte, op 3 niveaus, in een dorpshuis dat zich vastklampt aan de rots. Verblijf op basis van 1/2 of volpension. 7 kamers en panoramische eetzaal met bar en salon met bibliotheek, kachels. Avondmaaltijden (reserveren verplicht) geserveerd door de eigenaar, open voor iedereen, traditionele maaltijden en lokale recepten. Toeristenbelasting. Verhuur van lakens en handdoeken. 1 tweepersoonskamer, 1 kamer met twee enkele bedden en 5 slaapzalen voor 4 personen."
+        ],
+        "es": [
+          "Casa rural para grupos, en 3 niveles, en una casa de pueblo aferrada a la roca. Estancias en régimen de 1/2 pensión o pensión completa. 7 habitaciones y comedor panorámico con bar, y salón con biblioteca, estufas. Cenas (previa reserva) servidas por el propietario, abiertas a todos, comidas tradicionales y recetas locales. Impuesto de estancia. Alquiler de sábanas y toallas. 1 habitación doble, 1 habitación de matrimonio y 5 dormitorios para 4 personas."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/1cc3c36b-571c-3807-bf7b-d3760bfb0644",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/32070c27-60b1-3ec4-b89c-5eb8d325de85",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/3e50d101-dbe4-3912-b228-19b7449d03be",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4af32b86-85ef-3259-a85d-ff606771365b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/55c6f049-88c9-3a13-8c98-bf5428482ca1",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/95d3d407-8b35-3819-a084-6048380ab67c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b2ce9d04-7256-3732-843d-74e738720c82",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Diese Unterkunft für Sportgruppen, Jung und Alt liegt in Peyreleau, einem denkmalgeschützten mittelalterlichen Dorf, das den Zusammenfluss von Jonte und Tarnschlucht überblickt, in einer Umgebung aus Wasser, Grün und Weite."
+        ],
+        "en": [
+          "Peyreleau, listed mediaeval village, overlooks the confluence of the Jonte and the Tarn, in an environment of water, greenery and space."
+        ],
+        "it": [
+          "Gîte per gruppi sportivi, giovani e meno giovani, situato a Peyreleau, un villaggio medievale classificato che domina la confluenza della Jonte e delle Gorges du Tarn, in un ambiente di acqua, verde e spazio."
+        ],
+        "fr": [
+          "Gîte destiné aux groupes sportifs, jeunes et moins jeunes, situé à Peyreleau, village médiéval classé, dominant le confluent de la Jonte et Gorges du Tarn, dans un environnement d'eau, de verdure et d'espace."
+        ],
+        "nl": [
+          "Gîte voor sportieve groepen, jong en oud, gelegen in Peyreleau, een geklasseerd middeleeuws dorp met uitzicht op de samenvloeiing van de Jonte en de Gorges du Tarn, in een omgeving van water, groen en ruimte."
+        ],
+        "es": [
+          "El pueblo medieval catalogado de Peyreleau domina la confluencia del río Jonte con las gargantas del Tarn en un entorno donde predominan el agua, la vegetación frondosa y el espacio."
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/b3cf1611-e540-b4ff-3e73-3539ea74e9f1",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "C9Y7PFKN2FTN",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/0a8480ea-c035-3f28-a062-a6e4ee1c7fb3",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true,
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        },
+        {
+          "@id": "kb:SharedWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gemeinschaftlich genutzte Waschmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar roupa coletiva"
+            ],
+            "en": [
+              "Shared washer"
+            ],
+            "it": [
+              "Lavatrice comune"
+            ],
+            "fr": [
+              "Lave linge collectif"
+            ],
+            "es": [
+              "Lavadoras colectivas"
+            ],
+            "nl": [
+              "Gemeenschappelijke wasmachine"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/42aa53a7-b05b-3a8f-9b1c-9631ded80981",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/674bc3ab-e707-31f6-8b76-ed2906ce8753",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cd4789cd-7e09-3ca5-8293-0431f1008e7e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true,
+      "features": [
+        {
+          "@id": "kb:LinenHire",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wäsche-Verleih"
+            ],
+            "pt": [
+              "Aluguer de roupa"
+            ],
+            "en": [
+              "Linen hire"
+            ],
+            "it": [
+              "Noleggio di biancheria"
+            ],
+            "fr": [
+              "Location de linge"
+            ],
+            "nl": [
+              "Linnenverhuur"
+            ],
+            "es": [
+              "Alquiler de ropa de cama"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/dc47845c-9a17-3d29-9ad7-ef0d299d6927",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:BabyEquipment",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Baby-, Kindermaterial"
+            ],
+            "pt": [
+              "Material para bebés e crianças"
+            ],
+            "en": [
+              "Baby or child equipment"
+            ],
+            "it": [
+              "Dotazioni per neonati e bambini"
+            ],
+            "fr": [
+              "Matériel bébé, enfant"
+            ],
+            "es": [
+              "Material para bebés y niños pequeños"
+            ],
+            "nl": [
+              "Baby- en kinderuitrusting"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cot",
+          "@type": [
+            "AccommodationPricingOffer",
+            "TypeOfBed"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Babybett"
+            ],
+            "pt": [
+              "Berço"
+            ],
+            "en": [
+              "Cot"
+            ],
+            "it": [
+              "Lettino per bambini"
+            ],
+            "fr": [
+              "Lit bébé"
+            ],
+            "es": [
+              "Cuna"
+            ],
+            "nl": [
+              "Babybed"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/5308e9d1-47fc-345e-a452-3576f12a566c",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/838238d8-09b8-3d74-83bc-b28b9c052afb",
+          "ebucore:comments": {
+            "fr": [
+              "le gîte, vue sur la vallée du Tarn"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "le gîte, vue sur la vallée du Tarn"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Gîte et Rando Evolutions - Les Corniches de la Jonte"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/1cdffdc1-1f67-397f-a1e9-f348bcf6cc09",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19587/images/287887_c1289055-a413-462e-b5d1-30a01c8c6cbf/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/3c9c0504-f3eb-3ce0-98fd-ee818f5947b8",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/a4160c50-a3fd-3e9b-ad8e-6f6e62720ee9",
+          "ebucore:comments": {
+            "fr": [
+              "Chambre 4"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Chambre 4"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/95ce2da6-d50d-348c-89c2-fea00ad13cd3",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19587/images/287888_4089800d-622c-49da-a6da-e92d01d4707d/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5308e9d1-47fc-345e-a452-3576f12a566c",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/838238d8-09b8-3d74-83bc-b28b9c052afb",
+          "ebucore:comments": {
+            "fr": [
+              "le gîte, vue sur la vallée du Tarn"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "le gîte, vue sur la vallée du Tarn"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Gîte et Rando Evolutions - Les Corniches de la Jonte"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/1cdffdc1-1f67-397f-a1e9-f348bcf6cc09",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19587/images/287887_c1289055-a413-462e-b5d1-30a01c8c6cbf/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5a164de9-b6b4-3b08-9969-c79480407408",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/16a8397a-339d-3dc2-b11d-47710f797ad5",
+          "ebucore:comments": {
+            "fr": [
+              "Vue de la salle de restaurant"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Vue de la salle de restaurant"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/d980b0e5-8ba3-3c61-bbde-0022e0c6e767",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19587/images/287891_e4f9ce56-ebb6-4981-b185-7462e5bce3ad/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c1ddef24-4831-3a0d-b112-bb1629739b13",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/d16e6291-6667-3d38-b48d-259fb61fc6f0",
+          "ebucore:comments": {
+            "fr": [
+              "Nous vous accueillons toujours avec le sourire"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Nous vous accueillons toujours avec le sourire"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/c5d4bf4e-ea0c-33c3-8b48-6f40c039f732",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19587/images/287889_37158b30-f806-4874-8b39-773e56f98e0b/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c7c6b41e-6bfe-386c-94e2-799941dfb17f",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/908d5064-9450-3d21-81c7-87a6f4828e86",
+          "ebucore:comments": {
+            "fr": [
+              "Des repas savoureux vous attendent..."
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Des repas savoureux vous attendent..."
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/6712bef4-a986-368c-821d-341cc9bee87b",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19587/images/287890_c59f3f94-32d4-443e-a407-695538367084/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/0e2b73d8-effb-3a69-bbb4-21db3f5e0582",
+      "@type": [
+        "Review"
+      ],
+      "reviewDeliveryDate": "2021-12-14"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2d85c7c1-be5d-3756-a1f2-ed038db910bf",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3epis",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Ähren/Komfort"
+          ],
+          "pt": [
+            "3 espigas / conforto"
+          ],
+          "en": [
+            "3 ears of corn / Confort level"
+          ],
+          "it": [
+            "3 spighe / Comfort"
+          ],
+          "fr": [
+            "3 épis / Confort"
+          ],
+          "es": [
+            "3 espigas/Confort"
+          ],
+          "nl": [
+            "3 aren / Comfort"
+          ]
+        },
+        "isCompliantWith": [
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      },
+      "reviewDeliveryDate": "2019-07-16"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/36daade3-f583-394b-9137-60d584e87e48",
+      "@type": [
+        "Review"
+      ],
+      "reviewDeliveryDate": "2018-07-30"
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/1326482a-d4b3-324e-8292-2b99de306108",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/18dc240f-eca7-336c-9b1f-254980ce2b2f",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/38e4ca5f-6c98-3062-9d9f-875dd506b558",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/d9717c6f-228e-314b-bbad-e1cdbc02276d",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/90739dc9-5209-32c6-becc-0440a1f6f22c",
+          "schema:addressLocality": "Peyreleau",
+          "schema:postalCode": "12720",
+          "schema:streetAddress": [
+            "Route de La Cresse"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12180",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Peyreleau"
+              ],
+              "pt": [
+                "Peyreleau"
+              ],
+              "en": [
+                "Peyreleau"
+              ],
+              "it": [
+                "Peyreleau"
+              ],
+              "fr": [
+                "Peyreleau"
+              ],
+              "nl": [
+                "Peyreleau"
+              ],
+              "es": [
+                "Peyreleau"
+              ]
+            },
+            "insee": "12180",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/2dda8c26-bace-3757-80d4-e44a30af1d89",
+        "schema:latitude": "44.1882",
+        "schema:longitude": "3.2093",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/88431750-acb4-3ba5-930a-d1d1fc15ad33",
+          "schema:validFrom": "2025-04-04T00:00:00",
+          "schema:validThrough": "2025-11-03T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-02-20",
+  "lastUpdateDatatourisme": "2025-05-07T12:20:20.026Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/e9781343-fb88-351c-880f-d952b4d86304",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:CreditCards",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bankkarten"
+            ],
+            "pt": [
+              "Cartões bancários"
+            ],
+            "en": [
+              "Credit Cards"
+            ],
+            "it": [
+              "Carte bancarie"
+            ],
+            "fr": [
+              "Cartes bancaires"
+            ],
+            "es": [
+              "Tarjetas bancarias"
+            ],
+            "nl": [
+              "Bankkaarten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/253a5588-7bc7-3dcf-a1bf-c505dac5c795",
+          "schema:price": "50",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Der Preis ist pro Person und Tag"
+            ],
+            "en": [
+              "The price is per person per day"
+            ],
+            "it": [
+              "Il prezzo si intende per persona al giorno"
+            ],
+            "fr": [
+              "Le prix est par personne et par jour"
+            ],
+            "es": [
+              "El precio es por persona y día"
+            ],
+            "nl": [
+              "De prijs is per persoon per dag"
+            ]
+          },
+          "hasPricingOffer": [
+            {
+              "@id": "kb:HalfPension",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Halbpension"
+                ],
+                "pt": [
+                  "Meia-pensão"
+                ],
+                "en": [
+                  "Half pension"
+                ],
+                "it": [
+                  "Mezza pensione"
+                ],
+                "fr": [
+                  "Demi-pension"
+                ],
+                "es": [
+                  "Media pensión"
+                ],
+                "nl": [
+                  "Halfpension"
+                ]
+              }
+            }
+          ],
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/400a8537-b201-3a6e-8246-5f8ae3536c7d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/47bd74cf-e8ec-3847-953a-d35f0366d732",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/908531b5-11a8-3255-a3d8-94ae4ea12eb5",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/c13610a4-88fe-353e-9ea4-dc4cb8dfff45",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f7901a86-6c6e-367c-923a-6d556e2341e4",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Chambre dortoir (4 pers)"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9be80b32-c6c7-3f0d-b10b-f8383544de39",
+          "schema:price": "65",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Der Preis ist pro Person und Tag"
+            ],
+            "en": [
+              "The price is per person per day"
+            ],
+            "it": [
+              "Il prezzo si intende per persona al giorno"
+            ],
+            "fr": [
+              "Le prix est par personne et par jour"
+            ],
+            "es": [
+              "El precio es por persona y día"
+            ],
+            "nl": [
+              "De prijs is per persoon per dag"
+            ]
+          },
+          "hasPricingOffer": [
+            {
+              "@id": "kb:HalfPension",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Halbpension"
+                ],
+                "pt": [
+                  "Meia-pensão"
+                ],
+                "en": [
+                  "Half pension"
+                ],
+                "it": [
+                  "Mezza pensione"
+                ],
+                "fr": [
+                  "Demi-pension"
+                ],
+                "es": [
+                  "Media pensión"
+                ],
+                "nl": [
+                  "Halfpension"
+                ]
+              }
+            }
+          ],
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/1f4870c8-3c16-3362-b357-3255a283513d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/3a83f282-6fbe-3c91-9dc3-14f8da906c49",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/600f3dfe-67a8-3c48-b6a7-1e94d30e4864",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/cc221cb2-d21d-368c-83c9-05326bff9537",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d39e5e1c-6deb-37a9-a98a-a9f0df1131af",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Chambre double (lit double)"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d275ddbc-cb75-33d5-8f84-1ee31346be95",
+          "schema:price": "60",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Der Preis ist pro Person und Tag"
+            ],
+            "en": [
+              "The price is per person per day"
+            ],
+            "it": [
+              "Il prezzo si intende per persona al giorno"
+            ],
+            "fr": [
+              "Le prix est par personne et par jour"
+            ],
+            "es": [
+              "El precio es por persona y día"
+            ],
+            "nl": [
+              "De prijs is per persoon per dag"
+            ]
+          },
+          "hasPricingOffer": [
+            {
+              "@id": "kb:HalfPension",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Halbpension"
+                ],
+                "pt": [
+                  "Meia-pensão"
+                ],
+                "en": [
+                  "Half pension"
+                ],
+                "it": [
+                  "Mezza pensione"
+                ],
+                "fr": [
+                  "Demi-pension"
+                ],
+                "es": [
+                  "Media pensión"
+                ],
+                "nl": [
+                  "Halfpension"
+                ]
+              }
+            }
+          ],
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/61a1c8c5-574b-39e1-93d3-8da5f8fd4dfa",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/97c53ccb-56a3-34a3-941d-5931b3d5cdfa",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/9fdf4ecd-4544-3e77-983f-994069222dd5",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f9626de6-977d-3f45-96fd-a9c2d0728c32",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/fe76f3a0-6cbb-37be-bdb7-9c3758597217",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Chambre twin (2 lits séparés)"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f2300da7-e2aa-3d33-9a5d-2b263c279161",
+          "schema:price": "10",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Der Preis ist pro Person und Tag"
+            ],
+            "en": [
+              "The price is per person per day"
+            ],
+            "it": [
+              "Il prezzo si intende per persona al giorno"
+            ],
+            "fr": [
+              "Le prix est par personne et par jour"
+            ],
+            "es": [
+              "El precio es por persona y día"
+            ],
+            "nl": [
+              "De prijs is per persoon per dag"
+            ]
+          },
+          "hasPricingOffer": [
+            {
+              "@id": "kb:AdultMenu",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Menü für Erwachsene"
+                ],
+                "pt": [
+                  "Menu para adultos"
+                ],
+                "en": [
+                  "Adult menu"
+                ],
+                "it": [
+                  "Menù per adulti"
+                ],
+                "fr": [
+                  "Menu adulte"
+                ],
+                "nl": [
+                  "Volwassenenmenu"
+                ],
+                "es": [
+                  "Menú para adultos"
+                ]
+              }
+            },
+            {
+              "@id": "kb:Picnic",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Picknick, Lunchpaket"
+                ],
+                "pt": [
+                  "Piquenique, cesta de refeição"
+                ],
+                "en": [
+                  "Picnic"
+                ],
+                "it": [
+                  "Pic-nic, pranzo al sacco"
+                ],
+                "fr": [
+                  "Pique-nique, Panier repas"
+                ],
+                "nl": [
+                  "Picknick, lunchpakket"
+                ],
+                "es": [
+                  "Pícnic, comida para llevar"
+                ]
+              }
+            }
+          ],
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/2d215762-66fb-3364-be86-6c80f44a6078",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/34d895f2-27ab-3888-b072-41f17cd51816",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/6010ab38-4cc9-3b0d-9485-557872b39c29",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/6fa9994d-cc4c-3dd8-a610-9b15b088af23",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d6e09821-d811-3f34-98e1-4198bd5b6bec",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Panier repas"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

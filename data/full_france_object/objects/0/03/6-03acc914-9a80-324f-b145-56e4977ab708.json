@@ -1,0 +1,433 @@
+{
+  "@id": "https://data.datatourisme.fr/6/03acc914-9a80-324f-b145-56e4977ab708",
+  "dc:identifier": "HPABFC039320001091",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "CamperVanArea",
+    "CampingAndCaravanning",
+    "CampingCar",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Aire de camping-car"
+    ],
+    "en": [
+      "Aire de camping-car"
+    ],
+    "fr": [
+      "Aire de camping-car"
+    ]
+  },
+  "creationDate": "2015-02-23",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/a48d32d9-d058-3c82-9563-b0ec4435f935",
+    "dc:identifier": "f011817c-1832-4f1b-aaac-c39a1814b44b",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/ce2d6b50-fa57-3c01-a6e6-c6b21c94dbf8",
+        "schema:addressLocality": "Voiteur",
+        "schema:postalCode": "39210",
+        "schema:streetAddress": [
+          "3 Place de la Mairie"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:39582",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Voiteur"
+            ],
+            "pt": [
+              "Voiteur"
+            ],
+            "en": [
+              "Voiteur"
+            ],
+            "it": [
+              "Voiteur"
+            ],
+            "fr": [
+              "Voiteur"
+            ],
+            "nl": [
+              "Voiteur"
+            ],
+            "es": [
+              "Voiteur"
+            ]
+          },
+          "insee": "39582",
+          "isPartOfDepartment": {
+            "@id": "kb:France2739",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Jura"
+              ],
+              "pt": [
+                "Jura"
+              ],
+              "en": [
+                "Jura"
+              ],
+              "it": [
+                "Jura"
+              ],
+              "fr": [
+                "Jura"
+              ],
+              "nl": [
+                "Jura"
+              ],
+              "es": [
+                "Jura"
+              ]
+            },
+            "insee": "39",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "contact@jurabsolu.fr"
+    ],
+    "schema:legalName": "Office de Tourisme JurAbsolu",
+    "schema:telephone": [
+      "+33 3 84 44 62 47"
+    ],
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.jurabsolu.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/aced6b1c-1271-39ee-9976-10baaf76ffc2",
+      "schema:telephone": [
+        "+33 3 84 24 76 05"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/ffb4786a-037b-33f0-b972-6a9caf54ca96",
+      "schema:value": "6",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Pitch",
+          "@type": [
+            "AccommodationPricingOffer",
+            "CampingAndCaravanningAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Lage"
+            ],
+            "pt": [
+              "Local"
+            ],
+            "en": [
+              "Pitch"
+            ],
+            "it": [
+              "Piazzola"
+            ],
+            "fr": [
+              "Emplacement"
+            ],
+            "nl": [
+              "Plaats"
+            ],
+            "es": [
+              "Parcela"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/220d6ef1-75a8-34e8-a4df-729db71a5d49",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/75fa1507-0b20-3bd6-ba09-527d1f3358c1",
+          "schema:addressLocality": "Château-Chalon",
+          "schema:postalCode": "39210",
+          "schema:streetAddress": [
+            "route de Champagnole"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:39114",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Château-Chalon"
+              ],
+              "pt": [
+                "Château-Chalon"
+              ],
+              "en": [
+                "Château-Chalon"
+              ],
+              "it": [
+                "Château-Chalon"
+              ],
+              "fr": [
+                "Château-Chalon"
+              ],
+              "nl": [
+                "Château-Chalon"
+              ],
+              "es": [
+                "Château-Chalon"
+              ]
+            },
+            "insee": "39114",
+            "isPartOfDepartment": {
+              "@id": "kb:France2739",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Jura"
+                ],
+                "pt": [
+                  "Jura"
+                ],
+                "en": [
+                  "Jura"
+                ],
+                "it": [
+                  "Jura"
+                ],
+                "fr": [
+                  "Jura"
+                ],
+                "nl": [
+                  "Jura"
+                ],
+                "es": [
+                  "Jura"
+                ]
+              },
+              "insee": "39",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/2cfca368-92e3-369f-9bdf-f608e573e158",
+        "schema:latitude": "46.7549728",
+        "schema:longitude": "5.63117299",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/7b1272a0-5528-30eb-9320-bf0d1790cf70",
+          "schema:validFrom": "2015-01-01T00:00:00",
+          "schema:validThrough": "2025-12-31T00:00:00",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2023-11-21",
+  "lastUpdateDatatourisme": "2024-08-08T12:07:16.732Z"
+}

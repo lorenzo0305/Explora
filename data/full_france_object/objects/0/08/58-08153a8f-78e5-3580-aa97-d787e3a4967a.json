@@ -1,0 +1,1128 @@
+{
+  "@id": "https://data.datatourisme.fr/58/08153a8f-78e5-3580-aa97-d787e3a4967a",
+  "dc:identifier": "5227130",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Restaurant",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "La Tramontane"
+    ]
+  },
+  "availableLanguage": [
+    "en",
+    "es",
+    "fr"
+  ],
+  "hasAudience": [
+    {
+      "@id": "kb:CycleTourist",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radtouristen"
+        ],
+        "pt": [
+          "Cicloturistas"
+        ],
+        "en": [
+          "Cycle tourist"
+        ],
+        "it": [
+          "Cicloturisti"
+        ],
+        "fr": [
+          "Cyclotouristes"
+        ],
+        "nl": [
+          "Fietstoeristen"
+        ],
+        "es": [
+          "Cicloturistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Cyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radfahrer"
+        ],
+        "pt": [
+          "Ciclistas"
+        ],
+        "en": [
+          "Cyclists"
+        ],
+        "it": [
+          "Ciclisti"
+        ],
+        "fr": [
+          "Cyclistes"
+        ],
+        "nl": [
+          "Wielrenners"
+        ],
+        "es": [
+          "Ciclistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Hikers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wanderer"
+        ],
+        "pt": [
+          "Caminheiros"
+        ],
+        "en": [
+          "Hikers"
+        ],
+        "it": [
+          "Escursionisti"
+        ],
+        "fr": [
+          "Randonneurs"
+        ],
+        "nl": [
+          "Trekkers"
+        ],
+        "es": [
+          "Senderistas"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/58/f1981e4b-d8a0-36d8-8620-16d2fc6276b3",
+    "dc:identifier": "2009",
+    "schema:email": [
+      "camargue.saintesmaries@gmail.com",
+      "info@saintesmaries.com",
+      "marine.delacruz.suff@gmail.com",
+      "rronat@saintesmaries.com"
+    ],
+    "schema:legalName": "Office de Tourisme des Saintes Maries de la Mer",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.saintesmaries.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/4e81ad4e-025e-36fb-81a9-09828f793c47",
+      "schema:legalName": "Provence Tourisme / Office de Tourisme des Saintes Maries de la Mer",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/cbbdc1c2-de36-3f4f-8ee6-1444c83f5093",
+      "schema:email": [
+        "info@latramontane.com"
+      ],
+      "schema:legalName": "La Tramontane",
+      "schema:telephone": [
+        "+33 4 90 97 96 07"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.latramontane.com/"
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:CycleTourist",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radtouristen"
+        ],
+        "pt": [
+          "Cicloturistas"
+        ],
+        "en": [
+          "Cycle tourist"
+        ],
+        "it": [
+          "Cicloturisti"
+        ],
+        "fr": [
+          "Cyclotouristes"
+        ],
+        "nl": [
+          "Fietstoeristen"
+        ],
+        "es": [
+          "Cicloturistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Cyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radfahrer"
+        ],
+        "pt": [
+          "Ciclistas"
+        ],
+        "en": [
+          "Cyclists"
+        ],
+        "it": [
+          "Ciclisti"
+        ],
+        "fr": [
+          "Cyclistes"
+        ],
+        "nl": [
+          "Wielrenners"
+        ],
+        "es": [
+          "Ciclistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Hikers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wanderer"
+        ],
+        "pt": [
+          "Caminheiros"
+        ],
+        "en": [
+          "Hikers"
+        ],
+        "it": [
+          "Escursionisti"
+        ],
+        "fr": [
+          "Randonneurs"
+        ],
+        "nl": [
+          "Trekkers"
+        ],
+        "es": [
+          "Senderistas"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/c9aea51c-f3c7-38ff-8cda-9b2385cff920",
+      "schema:email": [
+        "contact@latramontane.com"
+      ],
+      "schema:telephone": [
+        "+33 4 90 97 96 07"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.latramontane.com/"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cbbdc1c2-de36-3f4f-8ee6-1444c83f5093",
+      "schema:email": [
+        "info@latramontane.com"
+      ],
+      "schema:legalName": "La Tramontane",
+      "schema:telephone": [
+        "+33 4 90 97 96 07"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.latramontane.com/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/45dbb2ad-466c-3a5f-a50c-66c7e63b7a7e",
+      "dc:description": {
+        "de": [
+          "25 Zimmer auf Garten und Pool. Privater und geschlossener Parkplatz. Erdgeschoss.Jachthafen und Meer 3 km entfernt.\nRestaurant: Kulinarische Spezialitäten: gegrilltes Stierfleisch und gegrillter Fisch. Provenzalische und spanische Küche."
+        ],
+        "en": [
+          "In this bubbly landscape of quiétude, the hotel planted his setting with delicacy for not nothing to disrupt of this beautiful harmony. Poetry earth, the Camargue is a continuation of soft emotions and of strong pictures. The Tramontane that sweeps the full grassy one, transports a vacation perfume and of adventures."
+        ],
+        "it": [
+          "25 camere con vista sul giardino e sulla piscina. Parcheggio privato e chiuso. Piano terra: porto turistico e mare a 3 km.\nRistorante: specialità culinarie: carne di toro alla griglia e pesce alla griglia. Cucina provenzale e spagnola."
+        ],
+        "fr": [
+          "25 chambres sur jardin et piscine. Parking privé et fermé. Rez-de-chaussée.Port de plaisance et mer à 3 km.\nRestaurant : spécialités culinaires : viande de taureau grillée et poissons grillés. Cuisine provençale et espagnole."
+        ],
+        "nl": [
+          "25 kamers met uitzicht op de tuin en het zwembad. Privé en afgesloten parkeerplaats. Begane grond: jachthaven en zee op 3 km afstand.\nRestaurant: culinaire specialiteiten: gegrild stierenvlees en gegrilde vis. Provençaalse en Spaanse keuken."
+        ],
+        "es": [
+          "25 habitaciones con vistas al jardín y a la piscina. Aparcamiento privado y cerrado. Planta baja: puerto deportivo y mar a 3 km.\nRestaurante: especialidades culinarias: carne de toro a la parrilla y pescado a la parrilla. Cocina provenzal y española."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/2a5c7321-bd68-3173-867f-8b3654648635",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/47b456b8-1003-3950-8d83-3cb3287d3ec3",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/8a3f7bcb-6688-3524-b873-e76c5cf0bb5c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e1975e7a-020a-3c19-9e1b-e447249cc27c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "isDedicatedTo": [
+        {
+          "@id": "kb:CycleTourist",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Radtouristen"
+            ],
+            "pt": [
+              "Cicloturistas"
+            ],
+            "en": [
+              "Cycle tourist"
+            ],
+            "it": [
+              "Cicloturisti"
+            ],
+            "fr": [
+              "Cyclotouristes"
+            ],
+            "nl": [
+              "Fietstoeristen"
+            ],
+            "es": [
+              "Cicloturistas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cyclists",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Radfahrer"
+            ],
+            "pt": [
+              "Ciclistas"
+            ],
+            "en": [
+              "Cyclists"
+            ],
+            "it": [
+              "Ciclisti"
+            ],
+            "fr": [
+              "Cyclistes"
+            ],
+            "nl": [
+              "Wielrenners"
+            ],
+            "es": [
+              "Ciclistas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Hikers",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wanderer"
+            ],
+            "pt": [
+              "Caminheiros"
+            ],
+            "en": [
+              "Hikers"
+            ],
+            "it": [
+              "Escursionisti"
+            ],
+            "fr": [
+              "Randonneurs"
+            ],
+            "nl": [
+              "Trekkers"
+            ],
+            "es": [
+              "Senderistas"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/232158eb-f161-7d09-0e30-122dc9fa46c6",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "3A2C64P7YBZ7",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/be130c02-7eee-384e-91b8-9f3e87fd4da1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CarPark",
+          "@type": [
+            "CommonAmenity",
+            "GeneralPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Parkplatz"
+            ],
+            "pt": [
+              "Estacionamento"
+            ],
+            "en": [
+              "Car park"
+            ],
+            "it": [
+              "Parcheggio"
+            ],
+            "fr": [
+              "Parking"
+            ],
+            "nl": [
+              "Parkeerplaats"
+            ],
+            "es": [
+              "Aparcamiento"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d9457737-393d-3727-aaaa-9f883f438721",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Garage",
+          "@type": [
+            "CommonAmenity",
+            "GeneralPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Garage"
+            ],
+            "pt": [
+              "Garagem"
+            ],
+            "en": [
+              "Garage"
+            ],
+            "it": [
+              "Garage"
+            ],
+            "fr": [
+              "Garage"
+            ],
+            "es": [
+              "Garaje"
+            ],
+            "nl": [
+              "Garage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/df174465-2dab-31bc-a116-a36a0cd26122",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateParking",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Parkplatz"
+            ],
+            "pt": [
+              "Parque de estacionamento privativo"
+            ],
+            "en": [
+              "Private parking"
+            ],
+            "it": [
+              "Parcheggio privato"
+            ],
+            "fr": [
+              "Parking privé"
+            ],
+            "nl": [
+              "Privéparking"
+            ],
+            "es": [
+              "Aparcamiento privado"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e9e11830-d9ae-3bb5-a755-e5e85927210c",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CoachParking",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Busparkplatz"
+            ],
+            "pt": [
+              "Estacionamento para autocarros"
+            ],
+            "en": [
+              "Coach parking"
+            ],
+            "it": [
+              "Parcheggio per pullman"
+            ],
+            "fr": [
+              "Parking autocar"
+            ],
+            "nl": [
+              "Busparking"
+            ],
+            "es": [
+              "Aparcamiento para autocares"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:FrenchCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Französische regionale Spezialitäten"
+        ],
+        "pt": [
+          "Especialidades regionais francesas"
+        ],
+        "en": [
+          "Traditional or regional French cuisine (Lorraine, Alsace, Brittany, Burgundy, ...)"
+        ],
+        "it": [
+          "Specialità regionali francesi"
+        ],
+        "fr": [
+          "Spécialités régionales françaises"
+        ],
+        "nl": [
+          "Regionale Franse specialiteiten"
+        ],
+        "es": [
+          "Especialidades regionales francesas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/89d042c6-511b-3df8-a788-bddf1886f7e5",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/f69780ca-cf14-3080-af39-bd7578872615",
+          "schema:addressLocality": "Saintes-Maries-de-la-Mer",
+          "schema:postalCode": "13460",
+          "schema:streetAddress": [
+            "RD 570 - Route d'Arles"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:13096",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saintes-Maries-de-la-Mer"
+              ],
+              "pt": [
+                "Saintes-Maries-de-la-Mer"
+              ],
+              "en": [
+                "Saintes-Maries-de-la-Mer"
+              ],
+              "it": [
+                "Saintes-Maries-de-la-Mer"
+              ],
+              "fr": [
+                "Saintes-Maries-de-la-Mer"
+              ],
+              "nl": [
+                "Saintes-Maries-de-la-Mer"
+              ],
+              "es": [
+                "Saintes-Maries-de-la-Mer"
+              ]
+            },
+            "insee": "13096",
+            "isPartOfDepartment": {
+              "@id": "kb:France9313",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bouches-du-Rhône"
+                ],
+                "pt": [
+                  "Bouches-du-Rhône"
+                ],
+                "en": [
+                  "Bouches-du-Rhône"
+                ],
+                "it": [
+                  "Bouches-du-Rhône"
+                ],
+                "fr": [
+                  "Bouches-du-Rhône"
+                ],
+                "nl": [
+                  "Bouches-du-Rhône"
+                ],
+                "es": [
+                  "Bouches-du-Rhône"
+                ]
+              },
+              "insee": "13",
+              "isPartOfRegion": {
+                "@id": "kb:France93",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "pt": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "en": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "it": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "fr": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "nl": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "es": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ]
+                },
+                "insee": "93",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/26647f83-866c-31b2-8975-451a9f071023",
+        "schema:latitude": "43.472282",
+        "schema:longitude": "4.410501",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/a97805aa-47a4-3eb3-b3de-ca4823e20ffa",
+          "schema:validFrom": "2020-02-13T00:00:00",
+          "schema:validThrough": "2020-11-13T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "internetAccess": false,
+      "petsAllowed": false,
+      "textOpeningHoursSpecification": {
+        "fr": [
+          "Du 13/02 au 13/11, tous les jours."
+        ]
+      }
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/c2c99d07-8004-34ee-92f6-5e329080f189",
+      "schema:email": [
+        "camargue.saintesmaries@gmail.com",
+        "info@saintesmaries.com",
+        "marine.delacruz.suff@gmail.com",
+        "rronat@saintesmaries.com"
+      ],
+      "schema:legalName": "Office de Tourisme des Saintes Maries de la Mer",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.saintesmaries.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2020-11-06",
+  "lastUpdateDatatourisme": "2024-05-24T14:41:43.162Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/2af31c75-0285-3085-8847-a59411b248ff",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:CreditCards",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bankkarten"
+            ],
+            "pt": [
+              "Cartões bancários"
+            ],
+            "en": [
+              "Credit Cards"
+            ],
+            "it": [
+              "Carte bancarie"
+            ],
+            "fr": [
+              "Cartes bancaires"
+            ],
+            "es": [
+              "Tarjetas bancarias"
+            ],
+            "nl": [
+              "Bankkaarten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:FrenchBonsCAF",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Familiengutscheine"
+            ],
+            "pt": [
+              "Vales CAF (caixa de abonos de família)"
+            ],
+            "en": [
+              "French bons caf"
+            ],
+            "it": [
+              "Buoni CAF"
+            ],
+            "fr": [
+              "Bons caf"
+            ],
+            "nl": [
+              "Vakantiesubsidie in Frankrijk (CAF)"
+            ],
+            "es": [
+              "Fondos de asignaciones familiares"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ],
+      "textPriceSpecification": {
+        "fr": [
+          "Menu adulte : de 25€ à 40€"
+        ]
+      }
+    }
+  ],
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:FrenchCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Französische regionale Spezialitäten"
+        ],
+        "pt": [
+          "Especialidades regionais francesas"
+        ],
+        "en": [
+          "Traditional or regional French cuisine (Lorraine, Alsace, Brittany, Burgundy, ...)"
+        ],
+        "it": [
+          "Specialità regionali francesi"
+        ],
+        "fr": [
+          "Spécialités régionales françaises"
+        ],
+        "nl": [
+          "Regionale Franse specialiteiten"
+        ],
+        "es": [
+          "Especialidades regionales francesas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "reducedMobilityAccess": false
+}

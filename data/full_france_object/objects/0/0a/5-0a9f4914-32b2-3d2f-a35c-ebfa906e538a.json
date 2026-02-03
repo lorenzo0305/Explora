@@ -1,0 +1,274 @@
+{
+  "@id": "https://data.datatourisme.fr/5/0a9f4914-32b2-3d2f-a35c-ebfa906e538a",
+  "dc:identifier": "235017708",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Gîte du facteur d'orgues"
+    ]
+  },
+  "allowedPersons": 4,
+  "creationDate": "2025-05-02",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/1d8a838d-3106-384c-8184-2f3ad7dc13b1",
+    "schema:legalName": "Office de tourisme de Colmar",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/f9be77db-d6c0-3a31-9fa8-638da3098074",
+      "schema:legalName": "Système d'informations touristique Alsace",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/a613406f-85a1-3f87-8595-b762fbe16047",
+      "schema:email": [
+        "boispierre68@gmail.com"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/a613406f-85a1-3f87-8595-b762fbe16047",
+      "schema:email": [
+        "boispierre68@gmail.com"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/09c9a82f-c6a9-34ff-b0fa-fdcfb9aed542",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3Cles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Schlüssel"
+          ],
+          "pt": [
+            "3 chaves"
+          ],
+          "en": [
+            "3 Keys"
+          ],
+          "it": [
+            "3 chiavi"
+          ],
+          "fr": [
+            "3 Clés"
+          ],
+          "nl": [
+            "3 sleutels"
+          ],
+          "es": [
+            "3 llaves"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/576fa6ca-87d5-3838-bc66-8d436b3cc72c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/f31c4a68-ffe9-3111-8529-859fe51ce934",
+          "schema:addressLocality": "Colmar",
+          "schema:postalCode": "68000",
+          "schema:streetAddress": [
+            "136 route d'Ingersheim"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:68066",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Colmar"
+              ],
+              "pt": [
+                "Colmar"
+              ],
+              "en": [
+                "Colmar"
+              ],
+              "it": [
+                "Colmar"
+              ],
+              "fr": [
+                "Colmar"
+              ],
+              "nl": [
+                "Colmar"
+              ],
+              "es": [
+                "Colmar"
+              ]
+            },
+            "insee": "68066",
+            "isPartOfDepartment": {
+              "@id": "kb:France4468",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haut-Rhin"
+                ],
+                "pt": [
+                  "Haut-Rhin"
+                ],
+                "en": [
+                  "Haut-Rhin"
+                ],
+                "it": [
+                  "Haut-Rhin"
+                ],
+                "fr": [
+                  "Haut-Rhin"
+                ],
+                "nl": [
+                  "Haut-Rhin"
+                ],
+                "es": [
+                  "Haut-Rhin"
+                ]
+              },
+              "insee": "68",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/6247de35-fda9-3081-8872-178a5997ea96",
+        "schema:latitude": "48.0856407",
+        "schema:longitude": "7.3363696",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/1d8a838d-3106-384c-8184-2f3ad7dc13b1",
+      "schema:legalName": "Office de tourisme de Colmar",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-05-02",
+  "lastUpdateDatatourisme": "2025-05-03T07:04:54.198Z"
+}

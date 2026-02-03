@@ -1,0 +1,938 @@
+{
+  "@id": "https://data.datatourisme.fr/36/0460367a-8213-3402-8bc6-b36bb19358a4",
+  "dc:identifier": "HOTMID065FS0002J",
+  "@type": [
+    "schema:Accommodation",
+    "schema:FoodEstablishment",
+    "schema:Hotel",
+    "schema:LodgingBusiness",
+    "schema:Restaurant",
+    "Accommodation",
+    "FoodEstablishment",
+    "Hotel",
+    "HotelRestaurant",
+    "HotelTrade",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Das Hotel des Pyrénées liegt im Herzen der Stadt Bagnères-de-Bigorre, gegenüber den Grands Thermes und in unmittelbarer Nähe der Einkaufsmöglichkeiten. Es empfängt Sie zu jeder Jahreszeit, egal ob Sie eine Thermalkur machen, Sport treiben, einen Ausflug zu zweit oder mit der Familie machen wollen."
+    ],
+    "en": [
+      "A 2-star small hotel and restaurant, far from the modern hustle and bustle. The hotel is in front of the thermal baths in Bagnères-de-Bigorre, close to the town centre."
+    ],
+    "it": [
+      "Situato nel cuore della città di Bagnères-de-Bigorre, di fronte alle terme Grands Thermes e vicino ai negozi, l'Hôtel des Pyrénées vi accoglie tutto l'anno, sia che si tratti di cure termali, di una pausa sportiva, di una fuga romantica o di una vacanza in famiglia."
+    ],
+    "fr": [
+      "Situé au cœur de la ville de Bagnères-de-Bigorre, face aux Grands Thermes et à proximité immédiate des commerces, l'hôtel des Pyrénées vous accueille en toute saison que vous soyez en cure thermale, en séjour sportif, en escapade à deux ou en famille."
+    ],
+    "es": [
+      "Hotel-restaurante 2 estrellas pero conservando su dimensión familiar, fuera del pataleo del mundo moderno. El hotel se sitúa en frente de las termas de Bagnères de Bigorre, cerca del centro ciudad."
+    ],
+    "nl": [
+      "Hôtel des Pyrénées ligt in het hart van de stad Bagnères-de-Bigorre, tegenover de thermale baden Grands Thermes en vlak bij de winkels. Het verwelkomt je het hele jaar door, of je nu op kuur, sportief, romantisch of gezinsvakantie bent."
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "HOTEL DES PYRENEES"
+    ],
+    "en": [
+      "HOTEL DES PYRENEES"
+    ],
+    "fr": [
+      "HOTEL DES PYRENEES"
+    ],
+    "es": [
+      "HOTEL DES PYRENEES"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/96e146f9-b74b-38c8-92a2-5fb89aace39d",
+    "schema:legalName": "HAUTES PYRENEES TOURISME ENVIRONNEMENT",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/7d3e58d7-59ca-3925-9fce-9efc8ba1fc49",
+      "schema:email": [
+        "tourisme-hautes-pyrenees@ha-py.fr"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/8c6ae587-6571-333c-aeef-a6f7ada4447d",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/31bafa39-4635-3f3a-92dc-69d6ddeb7be7",
+          "schema:addressLocality": "Bagnères-de-Bigorre",
+          "schema:postalCode": "65200",
+          "schema:streetAddress": [
+            "20 Place des Thermes"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:65059",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Bagnères-de-Bigorre"
+              ],
+              "pt": [
+                "Bagnères-de-Bigorre"
+              ],
+              "en": [
+                "Bagnères-de-Bigorre"
+              ],
+              "it": [
+                "Bagnères-de-Bigorre"
+              ],
+              "fr": [
+                "Bagnères-de-Bigorre"
+              ],
+              "nl": [
+                "Bagnères-de-Bigorre"
+              ],
+              "es": [
+                "Bagnères-de-Bigorre"
+              ]
+            },
+            "insee": "65059",
+            "isPartOfDepartment": {
+              "@id": "kb:France7665",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Hautes-Pyrénées"
+                ],
+                "pt": [
+                  "Hautes-Pyrénées"
+                ],
+                "en": [
+                  "Hautes-Pyrénées"
+                ],
+                "it": [
+                  "Hautes-Pyrénées"
+                ],
+                "fr": [
+                  "Hautes-Pyrénées"
+                ],
+                "nl": [
+                  "Hautes-Pyrénées"
+                ],
+                "es": [
+                  "Hautes-Pyrénées"
+                ]
+              },
+              "insee": "65",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "fboue@carrehotels.com"
+      ],
+      "schema:legalName": "HOTEL DES PYRENEES",
+      "schema:telephone": [
+        "+33 5 62 95 27 56"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.hoteldespyrenees.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/e7c899ab-3bc7-357a-8256-6c6bbbdcfdc4",
+      "dc:description": {
+        "de": [
+          "Das Hotel des Pyrénées liegt im Herzen der Stadt Bagnères-de-Bigorre, gegenüber den Grands Thermes und in unmittelbarer Nähe der Einkaufsmöglichkeiten. Es empfängt Sie zu jeder Jahreszeit, egal ob Sie eine Thermalkur machen, Sport treiben, einen Ausflug zu zweit oder mit der Familie machen wollen.",
+          "Das Hotel des Pyrénées liegt im Herzen der Stadt Bagnères-de-Bigorre, gegenüber den großen Thermen und in unmittelbarer Nähe der Geschäfte. Es empfängt Sie zu jeder Jahreszeit, ob Sie nun eine Thermalkur machen, Sport treiben, einen Ausflug zu zweit oder mit der Familie machen wollen. Das Haus bietet ruhige, geräumige und komfortable Zimmer (alle Nichtraucherzimmer), die sich auf zwei Etagen verteilen (mit dem Aufzug erreichbar). Die Stärke des Hotels? Das Restaurant respektiert den Tagesablauf und/oder die Diät eines jeden Einzelnen und bietet ausgewogene Menüs an, die je nach Ihren aktuellen Wünschen mit regionalen Spezialitäten angereichert werden!"
+        ],
+        "en": [
+          "A 2-star small hotel and restaurant, far from the modern hustle and bustle. The hotel is in front of the thermal baths in Bagnères-de-Bigorre, close to the town centre.",
+          "Warm and friendly welcome. Quiet, spacious, very comfortable and non-smoking bedrooms. A lift lead to all floors. Family and regional cooking. The restaurant will respect everyone's timetable and diet. Whether here to take the waters, for a sports break, in family or as a gourmet, our cook will offer to you healthy meals, accompanied with regional specialities according to your wishes of the moment."
+        ],
+        "it": [
+          "Situato nel cuore della città di Bagnères-de-Bigorre, di fronte alle terme Grands Thermes e vicino ai negozi, l'Hôtel des Pyrénées vi accoglie tutto l'anno, per un trattamento termale, una pausa sportiva, una fuga romantica o una vacanza in famiglia. L'hotel offre camere tranquille, spaziose e confortevoli (tutte non fumatori) distribuite su due piani (accessibili in ascensore). Il punto di forza dell'hotel? Il ristorante che rispetta gli orari e/o le diete di ognuno, offrendo menù equilibrati con specialità regionali per soddisfare i vostri gusti!",
+          "Situato nel cuore della città di Bagnères-de-Bigorre, di fronte alle terme Grands Thermes e vicino ai negozi, l'Hôtel des Pyrénées vi accoglie tutto l'anno, sia che si tratti di cure termali, di una pausa sportiva, di una fuga romantica o di una vacanza in famiglia."
+        ],
+        "fr": [
+          "Situé au cœur de la ville de Bagnères-de-Bigorre, face aux Grands Thermes et à proximité immédiate des commerces, l'hôtel des Pyrénées vous accueille en toute saison que vous soyez en cure thermale, en séjour sportif, en escapade à deux ou en famille. L'établissement propose des chambres calmes, spacieuses et confortable (toutes non-fumeur) réparties sur deux étages (accessibles par ascenseur). Le point fort de l'hôtel ? Le restaurant respecte l'emploi du temps et/ou le régime de chacun en proposant des menus équilibrés et agrémentés de spécialités régionales selon vos désirs du moment !",
+          "Situé au cœur de la ville de Bagnères-de-Bigorre, face aux Grands Thermes et à proximité immédiate des commerces, l'hôtel des Pyrénées vous accueille en toute saison que vous soyez en cure thermale, en séjour sportif, en escapade à deux ou en famille."
+        ],
+        "nl": [
+          "Hôtel des Pyrénées ligt in het hart van de stad Bagnères-de-Bigorre, tegenover de thermale baden Grands Thermes en vlak bij de winkels. Het verwelkomt je het hele jaar door, of je nu op kuur, sportief, romantisch of gezinsvakantie bent. Het hotel biedt rustige, ruime en comfortabele kamers (allemaal niet-roken) verdeeld over twee verdiepingen (toegankelijk met lift). Het sterke punt van het hotel? Het restaurant respecteert ieders schema en/of dieet en biedt uitgebalanceerde menu's met regionale specialiteiten naar ieders smaak!",
+          "Hôtel des Pyrénées ligt in het hart van de stad Bagnères-de-Bigorre, tegenover de thermale baden Grands Thermes en vlak bij de winkels. Het verwelkomt je het hele jaar door, of je nu op kuur, sportief, romantisch of gezinsvakantie bent."
+        ],
+        "es": [
+          "Acogida calurosa y amistosa. Habitaciones apacibles, espaciosas, muy cómodas y no fumador. Llegas a todas las habitaciones con ascensor. Cocina familiar y regional. El restaurante se adapta a tus horarios y tipo de comida. Que seas de bañista, de deportista, de familia o de gastrónomo, nuestro cocinero te propondrá menús equilibrados con algunas especialidades regionales dependiendo de tus deseos del momento.",
+          "Hotel-restaurante 2 estrellas pero conservando su dimensión familiar, fuera del pataleo del mundo moderno. El hotel se sitúa en frente de las termas de Bagnères de Bigorre, cerca del centro ciudad."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/23c2536a-e4ec-3f99-86ce-371f3e2ef331",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/460a4870-786b-3494-85cf-9bb6bd64af0d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4806a383-2067-3d79-b2fd-4a50dedf3e19",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5c130556-2218-372b-b8ec-c8098809e110",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/755f1884-b608-3913-ac5b-c4a93acb8d93",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9b231faa-d2bc-3966-8c7d-920cce736feb",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/c44acf00-7d8e-38f4-80cb-82f1757ad49a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ce1c8923-5fa4-3429-9348-dcafce043ab3",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ec97e25b-8a99-340c-b788-2282ecc068fd",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Das Hotel des Pyrénées liegt im Herzen der Stadt Bagnères-de-Bigorre, gegenüber den Grands Thermes und in unmittelbarer Nähe der Einkaufsmöglichkeiten. Es empfängt Sie zu jeder Jahreszeit, egal ob Sie eine Thermalkur machen, Sport treiben, einen Ausflug zu zweit oder mit der Familie machen wollen."
+        ],
+        "en": [
+          "A 2-star small hotel and restaurant, far from the modern hustle and bustle. The hotel is in front of the thermal baths in Bagnères-de-Bigorre, close to the town centre."
+        ],
+        "it": [
+          "Situato nel cuore della città di Bagnères-de-Bigorre, di fronte alle terme Grands Thermes e vicino ai negozi, l'Hôtel des Pyrénées vi accoglie tutto l'anno, sia che si tratti di cure termali, di una pausa sportiva, di una fuga romantica o di una vacanza in famiglia."
+        ],
+        "fr": [
+          "Situé au cœur de la ville de Bagnères-de-Bigorre, face aux Grands Thermes et à proximité immédiate des commerces, l'hôtel des Pyrénées vous accueille en toute saison que vous soyez en cure thermale, en séjour sportif, en escapade à deux ou en famille."
+        ],
+        "es": [
+          "Hotel-restaurante 2 estrellas pero conservando su dimensión familiar, fuera del pataleo del mundo moderno. El hotel se sitúa en frente de las termas de Bagnères de Bigorre, cerca del centro ciudad."
+        ],
+        "nl": [
+          "Hôtel des Pyrénées ligt in het hart van de stad Bagnères-de-Bigorre, tegenover de thermale baden Grands Thermes en vlak bij de winkels. Het verwelkomt je het hele jaar door, of je nu op kuur, sportief, romantisch of gezinsvakantie bent."
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/5e6360e1-0dc4-c054-2821-72ea58dfcf51",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "18MA5X38GGFB",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/55b939bd-a411-3618-8f73-77921a0e60a6",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_2etoiles",
+        "schema:ratingValue": "2.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "2 Sterne"
+          ],
+          "pt": [
+            "2 estrelas"
+          ],
+          "en": [
+            "2 Stars"
+          ],
+          "it": [
+            "2 stelle"
+          ],
+          "fr": [
+            "2 étoiles"
+          ],
+          "nl": [
+            "2 sterren"
+          ],
+          "es": [
+            "2 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/49ff564f-ce83-333a-8c0f-e132d2125331",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b026598f-f11b-33db-97cb-edb084979c9c",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bbe1a5b0-8d4a-316c-bed8-e53beb66d08e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/0493b220-cbbb-3fe3-a145-d109b2c14880",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/31bafa39-4635-3f3a-92dc-69d6ddeb7be7",
+          "schema:addressLocality": "Bagnères-de-Bigorre",
+          "schema:postalCode": "65200",
+          "schema:streetAddress": [
+            "20 Place des Thermes"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:65059",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Bagnères-de-Bigorre"
+              ],
+              "pt": [
+                "Bagnères-de-Bigorre"
+              ],
+              "en": [
+                "Bagnères-de-Bigorre"
+              ],
+              "it": [
+                "Bagnères-de-Bigorre"
+              ],
+              "fr": [
+                "Bagnères-de-Bigorre"
+              ],
+              "nl": [
+                "Bagnères-de-Bigorre"
+              ],
+              "es": [
+                "Bagnères-de-Bigorre"
+              ]
+            },
+            "insee": "65059",
+            "isPartOfDepartment": {
+              "@id": "kb:France7665",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Hautes-Pyrénées"
+                ],
+                "pt": [
+                  "Hautes-Pyrénées"
+                ],
+                "en": [
+                  "Hautes-Pyrénées"
+                ],
+                "it": [
+                  "Hautes-Pyrénées"
+                ],
+                "fr": [
+                  "Hautes-Pyrénées"
+                ],
+                "nl": [
+                  "Hautes-Pyrénées"
+                ],
+                "es": [
+                  "Hautes-Pyrénées"
+                ]
+              },
+              "insee": "65",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/1c4b3938-6550-39c7-8593-ac66cb985fed",
+        "schema:latitude": "43.0624674",
+        "schema:longitude": "0.1476459",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/cacbd6df-19ed-38f8-b7fa-2a0add7b6dfa",
+          "schema:dayOfWeek": [
+            {
+              "@id": "schema:Friday",
+              "@type": [
+                "schema:DayOfWeek"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Freitag"
+                ],
+                "pt": [
+                  "Sexta-feira"
+                ],
+                "en": [
+                  "Friday"
+                ],
+                "it": [
+                  "Venerdì"
+                ],
+                "fr": [
+                  "Vendredi"
+                ],
+                "nl": [
+                  "Vrijdag"
+                ],
+                "es": [
+                  "Viernes"
+                ]
+              }
+            },
+            {
+              "@id": "schema:Monday",
+              "@type": [
+                "schema:DayOfWeek"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Montag"
+                ],
+                "pt": [
+                  "Segunda-feira"
+                ],
+                "en": [
+                  "Monday"
+                ],
+                "it": [
+                  "Lunedì"
+                ],
+                "fr": [
+                  "Lundi"
+                ],
+                "nl": [
+                  "Maandag"
+                ],
+                "es": [
+                  "Lunes"
+                ]
+              }
+            },
+            {
+              "@id": "schema:Saturday",
+              "@type": [
+                "schema:DayOfWeek"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Samstag"
+                ],
+                "pt": [
+                  "Sábado"
+                ],
+                "en": [
+                  "Saturday"
+                ],
+                "it": [
+                  "Sabato"
+                ],
+                "fr": [
+                  "Samedi"
+                ],
+                "nl": [
+                  "Zaterdag"
+                ],
+                "es": [
+                  "Sábado"
+                ]
+              }
+            },
+            {
+              "@id": "schema:Sunday",
+              "@type": [
+                "schema:DayOfWeek"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Sonntag"
+                ],
+                "pt": [
+                  "Domingo"
+                ],
+                "en": [
+                  "Sunday"
+                ],
+                "it": [
+                  "Domenica"
+                ],
+                "fr": [
+                  "Dimanche"
+                ],
+                "nl": [
+                  "Zondag"
+                ],
+                "es": [
+                  "Domingo"
+                ]
+              }
+            },
+            {
+              "@id": "schema:Thursday",
+              "@type": [
+                "schema:DayOfWeek"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Donnerstag"
+                ],
+                "pt": [
+                  "Quinta-feira"
+                ],
+                "en": [
+                  "Thursday"
+                ],
+                "it": [
+                  "Giovedì"
+                ],
+                "fr": [
+                  "Jeudi"
+                ],
+                "es": [
+                  "Jueves"
+                ],
+                "nl": [
+                  "Donderdag"
+                ]
+              }
+            },
+            {
+              "@id": "schema:Tuesday",
+              "@type": [
+                "schema:DayOfWeek"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Dienstag"
+                ],
+                "pt": [
+                  "Terça-feira"
+                ],
+                "en": [
+                  "Tuesday"
+                ],
+                "it": [
+                  "Martedì"
+                ],
+                "fr": [
+                  "Mardi"
+                ],
+                "es": [
+                  "Martes"
+                ],
+                "nl": [
+                  "Dinsdag"
+                ]
+              }
+            },
+            {
+              "@id": "schema:Wednesday",
+              "@type": [
+                "schema:DayOfWeek"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Mittwoch"
+                ],
+                "pt": [
+                  "Quarta-feira"
+                ],
+                "en": [
+                  "Wednesday"
+                ],
+                "it": [
+                  "Mercoledì"
+                ],
+                "fr": [
+                  "Mercredi"
+                ],
+                "nl": [
+                  "Woensdag"
+                ],
+                "es": [
+                  "Miércoles"
+                ]
+              }
+            }
+          ],
+          "schema:validFrom": "2025-03-01T00:00:00",
+          "schema:validThrough": "2025-11-30T00:00:00",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "altInsee": [
+        "BAGNERES-DE-BIGORRE"
+      ],
+      "petsAllowed": false
+    }
+  ],
+  "lastUpdate": "2025-07-21",
+  "lastUpdateDatatourisme": "2025-07-22T03:33:42.457Z",
+  "reducedMobilityAccess": false
+}

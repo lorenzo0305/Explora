@@ -1,0 +1,917 @@
+{
+  "@id": "https://data.datatourisme.fr/22/02806574-d9da-370f-9d51-447e31b8cd68",
+  "dc:identifier": "HLOMIP046V50NO9J",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Unsere Unterkunft befindet sich in der Gemeinde www.calvignac.fr (200 Einwohner) im Departement Lot, 800 m vom Fluss entfernt, auf dem schiffbaren Teil des Flusses von Saint-Cirq-Lapopie bis Larnagol."
+    ],
+    "en": [
+      "Our location is in the commune of www.calvignac.fr (200 inhabitants) in the Lot department, 800 metres from the river, on the navigable part of the river from Saint-Cirq-Lapopie to Larnagol."
+    ],
+    "it": [
+      "La nostra sede si trova nel comune di www.calvignac.fr (200 abitanti) nel dipartimento del Lot, a 800 metri dal fiume, sulla parte navigabile del fiume da Saint-Cirq-Lapopie a Larnagol."
+    ],
+    "fr": [
+      "Notre location se trouve sur la commune de www.calvignac.fr (200 habitants) dans le département du  Lot  à 800 mètres de la rivière, sur la partie  navigable de la rivière de Saint-Cirq-Lapopie à Larnagol."
+    ],
+    "nl": [
+      "Onze ligging is in de gemeente www.calvignac.fr (200 inwoners) in het departement Lot, op 800 meter van de rivier, aan het bevaarbare deel van de rivier van Saint-Cirq-Lapopie tot Larnagol."
+    ],
+    "es": [
+      "Nos encontramos en el municipio de www.calvignac.fr (200 habitantes) en el departamento de Lot, a 800 metros del río, en la parte navegable del río desde Saint-Cirq-Lapopie hasta Larnagol."
+    ]
+  },
+  "rdfs:label": {
+    "en": [
+      "La Grangette"
+    ],
+    "fr": [
+      "La Grangette"
+    ],
+    "es": [
+      "La Grangette"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/175b06dd-79b8-3a80-a5ab-a17e2785c954",
+    "schema:legalName": "OT Lacapelle Marival",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/43c37e63-84a7-3232-bd68-42980c0d5def",
+      "schema:legalName": "Lot Tourisme - Agence de développement touristique du Lot",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.tourisme-lot.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/2bff55a9-7cb7-3a8a-89f0-f61f1132e71f",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/43246246-6795-3054-9726-b7971bc2ade2",
+          "schema:addressLocality": "Calvignac",
+          "schema:postalCode": "46160",
+          "schema:streetAddress": [
+            "Le Communal"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:46049",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Calvignac"
+              ],
+              "pt": [
+                "Calvignac"
+              ],
+              "en": [
+                "Calvignac"
+              ],
+              "it": [
+                "Calvignac"
+              ],
+              "fr": [
+                "Calvignac"
+              ],
+              "nl": [
+                "Calvignac"
+              ],
+              "es": [
+                "Calvignac"
+              ]
+            },
+            "insee": "46049",
+            "isPartOfDepartment": {
+              "@id": "kb:France7646",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Lot"
+                ],
+                "pt": [
+                  "Lot"
+                ],
+                "en": [
+                  "Lot"
+                ],
+                "it": [
+                  "Lot"
+                ],
+                "fr": [
+                  "Lot"
+                ],
+                "nl": [
+                  "Lot"
+                ],
+                "es": [
+                  "Lot"
+                ]
+              },
+              "insee": "46",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "christian.vallet@dbmail.com"
+      ],
+      "schema:legalName": "La Grangette",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/64d63f74-6f34-34ab-ad43-3de3c22a44c7",
+      "dc:description": {
+        "de": [
+          "Unsere Unterkunft befindet sich in der Gemeinde www.calvignac.fr (200 Einwohner) im Departement Lot, 800 m vom Fluss entfernt, auf dem schiffbaren Teil des Flusses von Saint-Cirq-Lapopie bis Larnagol."
+        ],
+        "en": [
+          "Our location is in the commune of www.calvignac.fr (200 inhabitants) in the Lot department, 800 metres from the river, on the navigable part of the river from Saint-Cirq-Lapopie to Larnagol."
+        ],
+        "it": [
+          "La nostra sede si trova nel comune di www.calvignac.fr (200 abitanti) nel dipartimento del Lot, a 800 metri dal fiume, sulla parte navigabile del fiume da Saint-Cirq-Lapopie a Larnagol."
+        ],
+        "fr": [
+          "Notre location se trouve sur la commune de www.calvignac.fr (200 habitants) dans le département du  Lot  à 800 mètres de la rivière, sur la partie  navigable de la rivière de Saint-Cirq-Lapopie à Larnagol."
+        ],
+        "nl": [
+          "Onze ligging is in de gemeente www.calvignac.fr (200 inwoners) in het departement Lot, op 800 meter van de rivier, aan het bevaarbare deel van de rivier van Saint-Cirq-Lapopie tot Larnagol."
+        ],
+        "es": [
+          "Nos encontramos en el municipio de www.calvignac.fr (200 habitantes) en el departamento de Lot, a 800 metros del río, en la parte navegable del río desde Saint-Cirq-Lapopie hasta Larnagol."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/21a98b35-39be-348c-8b92-e3e5ec7062e5",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/272b1833-299a-3b0d-a1a6-21bd5ea3ef75",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/81b36a54-e1ba-3469-926a-e8958942e465",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a840bc30-415d-326d-9309-fe26497a8219",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ab643448-2c46-3011-9f23-cd9d81e39769",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ea95e578-3cfb-380d-baec-51445f9ff50d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Unsere Unterkunft befindet sich in der Gemeinde www.calvignac.fr (200 Einwohner) im Departement Lot, 800 m vom Fluss entfernt, auf dem schiffbaren Teil des Flusses von Saint-Cirq-Lapopie bis Larnagol."
+        ],
+        "en": [
+          "Our location is in the commune of www.calvignac.fr (200 inhabitants) in the Lot department, 800 metres from the river, on the navigable part of the river from Saint-Cirq-Lapopie to Larnagol."
+        ],
+        "it": [
+          "La nostra sede si trova nel comune di www.calvignac.fr (200 abitanti) nel dipartimento del Lot, a 800 metri dal fiume, sulla parte navigabile del fiume da Saint-Cirq-Lapopie a Larnagol."
+        ],
+        "fr": [
+          "Notre location se trouve sur la commune de www.calvignac.fr (200 habitants) dans le département du  Lot  à 800 mètres de la rivière, sur la partie  navigable de la rivière de Saint-Cirq-Lapopie à Larnagol."
+        ],
+        "nl": [
+          "Onze ligging is in de gemeente www.calvignac.fr (200 inwoners) in het departement Lot, op 800 meter van de rivier, aan het bevaarbare deel van de rivier van Saint-Cirq-Lapopie tot Larnagol."
+        ],
+        "es": [
+          "Nos encontramos en el municipio de www.calvignac.fr (200 habitantes) en el departamento de Lot, a 800 metros del río, en la parte navegable del río desde Saint-Cirq-Lapopie hasta Larnagol."
+        ]
+      }
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/bb1f4127-8f61-34c3-8973-980969f2f2a4",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/05657b5b-66b4-3a70-8ede-749cb1633147",
+          "ebucore:title": {
+            "en": [
+              "DSC07123 (2)"
+            ],
+            "fr": [
+              "( arrivée au gîte)"
+            ],
+            "es": [
+              "DSC07123 (2)"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Christian VALLET"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/164d5407-f325-3d5f-99dd-66640c78a754",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "http://cdt46.media.tourinsoft.com/upload/DSC07123--2--2.JPG"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/bb1f4127-8f61-34c3-8973-980969f2f2a4",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/05657b5b-66b4-3a70-8ede-749cb1633147",
+          "ebucore:title": {
+            "en": [
+              "DSC07123 (2)"
+            ],
+            "fr": [
+              "( arrivée au gîte)"
+            ],
+            "es": [
+              "DSC07123 (2)"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Christian VALLET"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/164d5407-f325-3d5f-99dd-66640c78a754",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "http://cdt46.media.tourinsoft.com/upload/DSC07123--2--2.JPG"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/7724dbf0-7649-358b-be17-1db1b66a240f",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3etoiles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Sterne"
+          ],
+          "pt": [
+            "3 estrelas"
+          ],
+          "en": [
+            "3 Stars"
+          ],
+          "it": [
+            "3 stelle"
+          ],
+          "fr": [
+            "3 étoiles"
+          ],
+          "nl": [
+            "3 sterren"
+          ],
+          "es": [
+            "3 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/08d442c1-3677-3fa1-b604-c0cf7be964ea",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4a001c12-732b-3146-8fd6-d356151a7d8f",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4c790266-4a69-351f-aff4-e552a41dddc3",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5d76e852-d52d-3685-a82c-3024492b8827",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/0dca6c9d-0902-3c39-8a5c-80d54f149483",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/43246246-6795-3054-9726-b7971bc2ade2",
+          "schema:addressLocality": "Calvignac",
+          "schema:postalCode": "46160",
+          "schema:streetAddress": [
+            "Le Communal"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:46049",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Calvignac"
+              ],
+              "pt": [
+                "Calvignac"
+              ],
+              "en": [
+                "Calvignac"
+              ],
+              "it": [
+                "Calvignac"
+              ],
+              "fr": [
+                "Calvignac"
+              ],
+              "nl": [
+                "Calvignac"
+              ],
+              "es": [
+                "Calvignac"
+              ]
+            },
+            "insee": "46049",
+            "isPartOfDepartment": {
+              "@id": "kb:France7646",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Lot"
+                ],
+                "pt": [
+                  "Lot"
+                ],
+                "en": [
+                  "Lot"
+                ],
+                "it": [
+                  "Lot"
+                ],
+                "fr": [
+                  "Lot"
+                ],
+                "nl": [
+                  "Lot"
+                ],
+                "es": [
+                  "Lot"
+                ]
+              },
+              "insee": "46",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/77705c8e-0ace-3c6a-b6b8-a9d5e1461dbe",
+        "schema:latitude": "44.4631879",
+        "schema:longitude": "1.77151577",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/f180fd50-3906-3fb2-a628-9bf99514ef7c",
+          "schema:validFrom": "2025-06-01T00:00:00",
+          "schema:validThrough": "2025-09-15T00:00:00",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/175b06dd-79b8-3a80-a5ab-a17e2785c954",
+      "schema:legalName": "OT Lacapelle Marival",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-03-04",
+  "lastUpdateDatatourisme": "2025-08-03T13:01:38.35Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/d7a4a999-426e-30b5-b945-7b0bfb0b892e",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/186305dd-2478-31f9-a78a-52de9e2ca2be",
+          "schema:maxPrice": [
+            "480"
+          ],
+          "schema:minPrice": [
+            "420"
+          ],
+          "schema:price": "420",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:BaseRateFullRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Basistarif – voller Tarif"
+                ],
+                "pt": [
+                  "Preço de base — preço total"
+                ],
+                "en": [
+                  "Base rate - full rate"
+                ],
+                "it": [
+                  "Tariffa di base — tariffa intera"
+                ],
+                "fr": [
+                  "Tarif de base - plein tarif"
+                ],
+                "es": [
+                  "Tarifa básica - tarifa completa"
+                ],
+                "nl": [
+                  "Basistarief - vol tarief"
+                ]
+              }
+            }
+          ],
+          "hasPricingMode": [
+            {
+              "@id": "kb:PerWeek7Nights",
+              "@type": [
+                "PricingMode"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pro Woche (7 Übernachtungen)"
+                ],
+                "pt": [
+                  "Por semana (7 noites)"
+                ],
+                "en": [
+                  "Per week (7 nights)"
+                ],
+                "it": [
+                  "Alla settimana (7 notti)"
+                ],
+                "fr": [
+                  "A la semaine (7 nuits)"
+                ],
+                "es": [
+                  "Por semana (7 noches)"
+                ],
+                "nl": [
+                  "Per week (7 nachten)"
+                ]
+              }
+            }
+          ],
+          "name": {
+            "en": [
+              "Week (appartment)"
+            ],
+            "fr": [
+              "Semaine (meublé)"
+            ],
+            "es": [
+              "Semana (amueblado)"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

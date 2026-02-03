@@ -1,0 +1,984 @@
+{
+  "@id": "https://data.datatourisme.fr/6/0c754df4-6c00-3d0a-bce7-4091199bb1a8",
+  "dc:identifier": "HLOBFC000V521CZY",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Diese Unterkunft ist ein Holzchalet, das auf Stelzen steht und einen atemberaubenden Blick auf die Saône bietet.  Privater Wellnessbereich.  Zugang..."
+    ],
+    "en": [
+      "This accommodation is a wooden chalet, on stilts with a breathtaking view over the Saône.  Private spa.  Access to the estate's swimming pool and r..."
+    ],
+    "it": [
+      "Questo alloggio è uno chalet in legno su palafitte con una vista mozzafiato sulla Saona.  Spa privata.  Accesso alla piscina della tenuta e ai trattamenti rilassanti."
+    ],
+    "fr": [
+      "Ce logement est un chalet en bois, sur pilotis avec une vue imprenable sur la Saône.  Spa privatif.  Accès à la piscine du domaine et soins relaxants."
+    ],
+    "es": [
+      "Este alojamiento es un chalet de madera sobre pilotes con impresionantes vistas al Saona.  Spa privado.  Acceso a la piscina de la finca y a tratamientos relajantes."
+    ],
+    "nl": [
+      "Deze accommodatie is een houten chalet op palen met een adembenemend uitzicht over de Saône.  Privé spa.  Toegang tot het zwembad van het landgoed en ontspannende behandelingen."
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "L' Antoinette"
+    ],
+    "en": [
+      "L' Antoinette"
+    ],
+    "fr": [
+      "L' Antoinette"
+    ]
+  },
+  "allowedPersons": 2,
+  "availableLanguage": [
+    "en",
+    "fr"
+  ],
+  "creationDate": "2023-05-10",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/cb68bccb-9578-38b0-a443-c7382b838b51",
+    "dc:identifier": "ec5a06c4-c41e-4502-9dae-4b03c8609fb8",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/bbad1cb0-ab5e-3be9-bccd-9110e0cb2df7",
+        "schema:addressLocality": "Auxonne",
+        "schema:postalCode": "21130",
+        "schema:streetAddress": [
+          "11 rue de Berbis"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:21038",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Auxonne"
+            ],
+            "pt": [
+              "Auxonne"
+            ],
+            "en": [
+              "Auxonne"
+            ],
+            "it": [
+              "Auxonne"
+            ],
+            "fr": [
+              "Auxonne"
+            ],
+            "nl": [
+              "Auxonne"
+            ],
+            "es": [
+              "Auxonne"
+            ]
+          },
+          "insee": "21038",
+          "isPartOfDepartment": {
+            "@id": "kb:France2721",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Côte-d'Or"
+              ],
+              "pt": [
+                "Côte-d'Or"
+              ],
+              "en": [
+                "Côte-d'Or"
+              ],
+              "it": [
+                "Côte-d'Or"
+              ],
+              "fr": [
+                "Côte-d'Or"
+              ],
+              "nl": [
+                "Côte-d'Or"
+              ],
+              "es": [
+                "Côte-d'Or"
+              ]
+            },
+            "insee": "21",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "contact@capvaldesaone-tourisme.fr"
+    ],
+    "schema:legalName": "OT Cap Val de Saône",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/50fd34f2-9e03-3646-8738-1f991c84d94e",
+      "schema:email": [
+        "lesaintantoine@wanadoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 3 80 47 11 33"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.airbnb.fr/rooms/674958776122318785?adults=2&check_in=2022-11-05&check_out=2022-11-06&federated_search_id=c088a1fd-e930-480e-ac5a-20f1d590dfce&source_impression_id=p3_1663855054_x8EotRL9vKdj4N4l&guests=1"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/50fd34f2-9e03-3646-8738-1f991c84d94e",
+      "schema:email": [
+        "lesaintantoine@wanadoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 3 80 47 11 33"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.airbnb.fr/rooms/674958776122318785?adults=2&check_in=2022-11-05&check_out=2022-11-06&federated_search_id=c088a1fd-e930-480e-ac5a-20f1d590dfce&source_impression_id=p3_1663855054_x8EotRL9vKdj4N4l&guests=1"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/39e44377-ef20-354e-b129-c9e995c50881",
+      "dc:description": {
+        "de": [
+          "Genießen Sie die charmante Umgebung dieser romantischen Unterkunft inmitten der Natur. Sie werden den atemberaubenden Blick auf die Saône, das private Spa auf der Terrasse und die gemütliche Atmosphäre dieses Chalets zu schätzen wissen.  Auf Wunsch wird das Frühstück im Zimmer serviert. Sie haben die Möglichkeit, den Pool des Anwesens zu nutzen sowie entspannende Behandlungen durchzuführen."
+        ],
+        "en": [
+          "Enjoy the charming setting of this romantic accommodation in the heart of nature. You'll love the breathtaking view over the Saône, the private spa on the terrace, and the warm ambience of this chalet.  Breakfast served in your room on request. You can use the estate's swimming pool and enjoy relaxing treatments."
+        ],
+        "it": [
+          "Godetevi l'incantevole cornice di questo romantico alloggio nel cuore della natura. Vi piacerà la vista mozzafiato sulla Saona, la spa privata sulla terrazza e la calda atmosfera di questo chalet.  Colazione servita in camera su richiesta. Potrete utilizzare la piscina della tenuta e godere di trattamenti rilassanti."
+        ],
+        "fr": [
+          "Profitez du cadre charmant de ce logement romantique en pleine nature. Vous apprécierez la vue imprenable sur la Saône, le spa privatif sur la terrasse, ainsi que l'ambiance chaleureuse de ce chalet.  Petits déjeuners servis en chambre sur demande. Vous avez la possibilité d'accéder à la piscine du domaine ainsi que d'effectuer des soins relaxants."
+        ],
+        "nl": [
+          "Geniet van de charmante omgeving van deze romantische accommodatie midden in de natuur. Je zult genieten van het adembenemende uitzicht over de Saône, de privé spa op het terras en de warme sfeer van dit chalet.  Op verzoek wordt het ontbijt op de kamer geserveerd. Je kunt gebruik maken van het zwembad van het landgoed en genieten van ontspannende behandelingen."
+        ],
+        "es": [
+          "Disfrute del encanto de este romántico alojamiento en plena naturaleza. Le encantarán las impresionantes vistas sobre el Saona, el spa privado de la terraza y el cálido ambiente de este chalet.  Desayuno servido en la habitación previa petición. Podrá utilizar la piscina de la finca y disfrutar de tratamientos relajantes."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/2fa3c044-43a0-33dd-bad5-b8f5ff0e829d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/65378fde-21dc-3134-91de-58f2c3ac351c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6fe69bfc-aad4-3a59-8e87-53a1e4590d6e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/81207d0a-dd5a-3930-8964-0659414188e2",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/96540044-b770-3a2c-bb6c-76d577af572c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e99d28f1-fde3-3f5a-abe2-90f4e27cdc23",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Diese Unterkunft ist ein Holzchalet, das auf Stelzen steht und einen atemberaubenden Blick auf die Saône bietet.  Privater Wellnessbereich.  Zugang..."
+        ],
+        "en": [
+          "This accommodation is a wooden chalet, on stilts with a breathtaking view over the Saône.  Private spa.  Access to the estate's swimming pool and r..."
+        ],
+        "it": [
+          "Questo alloggio è uno chalet in legno su palafitte con una vista mozzafiato sulla Saona.  Spa privata.  Accesso alla piscina della tenuta e ai trattamenti rilassanti."
+        ],
+        "fr": [
+          "Ce logement est un chalet en bois, sur pilotis avec une vue imprenable sur la Saône.  Spa privatif.  Accès à la piscine du domaine et soins relaxants."
+        ],
+        "es": [
+          "Este alojamiento es un chalet de madera sobre pilotes con impresionantes vistas al Saona.  Spa privado.  Acceso a la piscina de la finca y a tratamientos relajantes."
+        ],
+        "nl": [
+          "Deze accommodatie is een houten chalet op palen met een adembenemend uitzicht over de Saône.  Privé spa.  Toegang tot het zwembad van het landgoed en ontspannende behandelingen."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/0d9cce6c-1e96-3e10-9bb0-e70d5f4ecf99",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:BabyEquipment",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Baby-, Kindermaterial"
+            ],
+            "pt": [
+              "Material para bebés e crianças"
+            ],
+            "en": [
+              "Baby or child equipment"
+            ],
+            "it": [
+              "Dotazioni per neonati e bambini"
+            ],
+            "fr": [
+              "Matériel bébé, enfant"
+            ],
+            "es": [
+              "Material para bebés y niños pequeños"
+            ],
+            "nl": [
+              "Baby- en kinderuitrusting"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/15d35785-c3c7-3e46-89c4-4525e872a74d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:HairDryer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Haartrockner"
+            ],
+            "pt": [
+              "Secador de cabelo"
+            ],
+            "en": [
+              "Hair dryer"
+            ],
+            "it": [
+              "Asciugacapelli"
+            ],
+            "fr": [
+              "Sèche cheveux"
+            ],
+            "es": [
+              "Secador de pelo"
+            ],
+            "nl": [
+              "Haardroger"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4f533e68-e395-38ec-84c8-63df3537c904",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SwimmingPool",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Pool"
+            ],
+            "pt": [
+              "Piscina"
+            ],
+            "en": [
+              "Swimming pool"
+            ],
+            "it": [
+              "Piscina"
+            ],
+            "fr": [
+              "Piscine"
+            ],
+            "nl": [
+              "Zwembad"
+            ],
+            "es": [
+              "Piscina"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/62fa879e-59bc-3bb6-9b8e-df6a0175ae78",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Fridge",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Kühlschrank"
+            ],
+            "pt": [
+              "Frigorífico"
+            ],
+            "en": [
+              "Fridge"
+            ],
+            "it": [
+              "Frigorifero"
+            ],
+            "fr": [
+              "Réfrigérateur"
+            ],
+            "nl": [
+              "Koelkast"
+            ],
+            "es": [
+              "Frigorífico"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/68a14e24-77ce-388e-a9a6-88a6cb4f5a1e",
+      "schema:value": "1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/99b233b3-c581-300d-bd3f-9a66cbd975c9",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a5f5bebc-cbb2-3ef6-be00-10e80b3f2ac9",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Jacuzzi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Spa, Whirlpool, Jacuzzi"
+            ],
+            "pt": [
+              "Estância termal, banheira de hidromassagem, jacuzzi"
+            ],
+            "en": [
+              "Spa, jacuzzi or outdoor jacuzzi"
+            ],
+            "it": [
+              "Spa, idromassaggio, jacuzzi"
+            ],
+            "fr": [
+              "Spa, bain à remous, jacuzzi"
+            ],
+            "nl": [
+              "Spa, bubbelbad, jacuzzi"
+            ],
+            "es": [
+              "Spa, bañera de hidromasaje, jacuzzi"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e8e7119a-e6f4-369d-a244-4bb5ba4f336b",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Heating",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Heizen"
+            ],
+            "pt": [
+              "Aquecimento"
+            ],
+            "en": [
+              "Heating"
+            ],
+            "it": [
+              "Riscaldamento"
+            ],
+            "fr": [
+              "Chauffage"
+            ],
+            "nl": [
+              "Verwarming"
+            ],
+            "es": [
+              "Climatización"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef2d7794-2aa6-3c88-a672-d20e3cc76cc7",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SheetsAndTowels",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bettwäsche und Handtücher"
+            ],
+            "pt": [
+              "Lençóis e toalhas"
+            ],
+            "en": [
+              "Sheets and towels"
+            ],
+            "it": [
+              "Lenzuola e biancheria"
+            ],
+            "fr": [
+              "Draps et linges"
+            ],
+            "es": [
+              "Sábanas y ropa de cama"
+            ],
+            "nl": [
+              "Beddengoed en handdoeken"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/886e9708-d408-3f2d-b0fc-b962a4087754",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8d359988-baab-30cf-beb7-a74c0883157f",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/df95dab8-80e2-38be-b662-614db7935639",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/c3ce2df6-95ce-39a2-a165-bc2d0ddfe664",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/2344978a-33d3-3bd4-9dfa-0661d03531d0",
+          "schema:addressLocality": "Lamarche-sur-Saône",
+          "schema:postalCode": "21760",
+          "schema:streetAddress": [
+            "32 Rue de Franche-Comté"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:21337",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Lamarche-sur-Saône"
+              ],
+              "pt": [
+                "Lamarche-sur-Saône"
+              ],
+              "en": [
+                "Lamarche-sur-Saône"
+              ],
+              "it": [
+                "Lamarche-sur-Saône"
+              ],
+              "fr": [
+                "Lamarche-sur-Saône"
+              ],
+              "nl": [
+                "Lamarche-sur-Saône"
+              ],
+              "es": [
+                "Lamarche-sur-Saône"
+              ]
+            },
+            "insee": "21337",
+            "isPartOfDepartment": {
+              "@id": "kb:France2721",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Côte-d'Or"
+                ],
+                "pt": [
+                  "Côte-d'Or"
+                ],
+                "en": [
+                  "Côte-d'Or"
+                ],
+                "it": [
+                  "Côte-d'Or"
+                ],
+                "fr": [
+                  "Côte-d'Or"
+                ],
+                "nl": [
+                  "Côte-d'Or"
+                ],
+                "es": [
+                  "Côte-d'Or"
+                ]
+              },
+              "insee": "21",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/1c9cfe3b-24d6-385e-8367-49ebf9b84272",
+        "schema:latitude": "47.27688",
+        "schema:longitude": "5.38412",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-02-09",
+  "lastUpdateDatatourisme": "2025-02-10T00:31:58.088Z"
+}

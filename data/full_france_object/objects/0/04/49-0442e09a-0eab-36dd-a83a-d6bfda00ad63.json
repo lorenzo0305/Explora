@@ -1,0 +1,2072 @@
+{
+  "@id": "https://data.datatourisme.fr/49/0442e09a-0eab-36dd-a83a-d6bfda00ad63",
+  "dc:identifier": "HLOPDL049V50HPUP",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Was wäre, wenn Charme und Schönheit hier ihre Herberge gefunden hätten?"
+    ],
+    "en": [
+      "What if charm and beauty had found a home here?"
+    ],
+    "it": [
+      "E se il fascino e la bellezza avessero trovato casa qui?"
+    ],
+    "fr": [
+      "Et si le charme et la beauté avaient trouvé là leur gîte ?"
+    ],
+    "es": [
+      "¿Y si el encanto y la belleza hubieran encontrado aquí su hogar?"
+    ],
+    "nl": [
+      "Wat als charme en schoonheid hier een thuis hadden gevonden?"
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "GÎTE AU TEMPS SUSPENDU"
+    ]
+  },
+  "allowedPersons": 10,
+  "availableLanguage": [
+    "de",
+    "en",
+    "fr"
+  ],
+  "creationDate": "2025-02-06",
+  "hasAudience": [
+    {
+      "@id": "kb:BetweenFriends",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Unter Freunden"
+        ],
+        "pt": [
+          "Entre amigos"
+        ],
+        "en": [
+          "Between friends"
+        ],
+        "it": [
+          "Tra amici"
+        ],
+        "fr": [
+          "Entre amis"
+        ],
+        "nl": [
+          "Met vrienden"
+        ],
+        "es": [
+          "Entre amigos"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Children",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kinder"
+        ],
+        "pt": [
+          "Crianças"
+        ],
+        "en": [
+          "Children"
+        ],
+        "it": [
+          "Bambini"
+        ],
+        "fr": [
+          "Enfants"
+        ],
+        "es": [
+          "Menores"
+        ],
+        "nl": [
+          "Kinderen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Couples",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Paare"
+        ],
+        "pt": [
+          "Casais"
+        ],
+        "en": [
+          "Couples"
+        ],
+        "it": [
+          "Coppie"
+        ],
+        "fr": [
+          "Couples"
+        ],
+        "es": [
+          "Parejas"
+        ],
+        "nl": [
+          "Koppels"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:LargeFamilies",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kinderreiche Familien"
+        ],
+        "pt": [
+          "Famílias numerosas"
+        ],
+        "en": [
+          "Large families"
+        ],
+        "it": [
+          "Famiglie numerose"
+        ],
+        "fr": [
+          "Familles nombreuses"
+        ],
+        "nl": [
+          "Grote gezinnen"
+        ],
+        "es": [
+          "Familias numerosas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Lover",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Verliebte(r)"
+        ],
+        "pt": [
+          "Apaixonados"
+        ],
+        "en": [
+          "Lover"
+        ],
+        "it": [
+          "Innamorati"
+        ],
+        "fr": [
+          "Amoureux"
+        ],
+        "nl": [
+          "Geliefden"
+        ],
+        "es": [
+          "Amoroso"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Solo",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Solo"
+        ],
+        "pt": [
+          "A solo"
+        ],
+        "en": [
+          "Solo"
+        ],
+        "it": [
+          "Solo"
+        ],
+        "fr": [
+          "Solo"
+        ],
+        "nl": [
+          "Solo"
+        ],
+        "es": [
+          "Solo"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Teenagers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Jugendliche"
+        ],
+        "pt": [
+          "Adolescentes"
+        ],
+        "en": [
+          "Teenagers"
+        ],
+        "it": [
+          "Adolescenti"
+        ],
+        "fr": [
+          "Adolescents"
+        ],
+        "nl": [
+          "Tieners"
+        ],
+        "es": [
+          "Adolescentes"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/0411c3d3-2a75-3861-b23f-1ac5c48047a2",
+    "schema:email": [
+      "accueil@anjou-vignoble-villages.com"
+    ],
+    "schema:legalName": "Office de tourisme Anjou Vignobles et Villages",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.anjou-vignoble-villages.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e014813e-a168-3a77-b882-6ad07382274d",
+      "schema:email": [
+        "contact@anjou-tourisme.com"
+      ],
+      "schema:legalName": "Anjou tourime",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "rdfs:comment": {
+        "de": [
+          "Anjou tourisme & attractivité, die Tourismusagentur des Departements Anjou, ist eine öffentliche Interessenvereinigung, deren Aufgabe es ist, gemeinsam mit den lokalen Wirtschaftsakteuren zur Strategie der touristischen Entwicklung des Anjou beizutragen."
+        ],
+        "en": [
+          "Anjou tourisme & attractivité, Anjou?s departmental tourism agency, is a Public Interest Group whose mission is to contribute to Anjou?s tourism development strategy with local economic players."
+        ],
+        "it": [
+          "Anjou tourisme & attractivité, l'agenzia turistica dipartimentale dell'Anjou, è un Gruppo di interesse pubblico la cui missione è contribuire alla strategia di sviluppo turistico dell'Anjou con gli attori economici locali."
+        ],
+        "fr": [
+          "Anjou tourisme & attractivité, Agence départementale du tourisme de l’Anjou, est un Groupement d’Intérêt Public qui a pour mission de contribuer à la stratégie de développement touristique de l’Anjou avec les acteurs économiques locaux."
+        ],
+        "nl": [
+          "Anjou tourisme & attractivité, het departementale agentschap voor toerisme van Anjou, is een groep van openbaar belang die als missie heeft om bij te dragen aan de strategie voor de ontwikkeling van toerisme in Anjou, in samenwerking met lokale economische spelers."
+        ],
+        "es": [
+          "Anjou tourisme & attractivité, agencia departamental de turismo de Anjou, es una Agrupación de Interés Público cuya misión es contribuir a la estrategia de desarrollo turístico de Anjou con los agentes económicos locales."
+        ]
+      },
+      "foaf:homepage": [
+        "https://pro.anjou-tourisme.com/"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/405fbffd-c3f5-3985-b724-2ddb4e4777a6",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "rdfs:comment"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/44245f46-1b26-3ec3-bf61-b80fd771780e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "rdfs:comment"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/509a9547-3e61-3774-bcbc-2984f955da10",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "rdfs:comment"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/778b682b-e45f-3c3c-a679-b23bf53e96fa",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "rdfs:comment"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/af44157d-54e9-399e-9254-6dd00407160a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "rdfs:comment"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:BetweenFriends",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Unter Freunden"
+        ],
+        "pt": [
+          "Entre amigos"
+        ],
+        "en": [
+          "Between friends"
+        ],
+        "it": [
+          "Tra amici"
+        ],
+        "fr": [
+          "Entre amis"
+        ],
+        "nl": [
+          "Met vrienden"
+        ],
+        "es": [
+          "Entre amigos"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Children",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kinder"
+        ],
+        "pt": [
+          "Crianças"
+        ],
+        "en": [
+          "Children"
+        ],
+        "it": [
+          "Bambini"
+        ],
+        "fr": [
+          "Enfants"
+        ],
+        "es": [
+          "Menores"
+        ],
+        "nl": [
+          "Kinderen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Couples",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Paare"
+        ],
+        "pt": [
+          "Casais"
+        ],
+        "en": [
+          "Couples"
+        ],
+        "it": [
+          "Coppie"
+        ],
+        "fr": [
+          "Couples"
+        ],
+        "es": [
+          "Parejas"
+        ],
+        "nl": [
+          "Koppels"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:LargeFamilies",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kinderreiche Familien"
+        ],
+        "pt": [
+          "Famílias numerosas"
+        ],
+        "en": [
+          "Large families"
+        ],
+        "it": [
+          "Famiglie numerose"
+        ],
+        "fr": [
+          "Familles nombreuses"
+        ],
+        "nl": [
+          "Grote gezinnen"
+        ],
+        "es": [
+          "Familias numerosas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Lover",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Verliebte(r)"
+        ],
+        "pt": [
+          "Apaixonados"
+        ],
+        "en": [
+          "Lover"
+        ],
+        "it": [
+          "Innamorati"
+        ],
+        "fr": [
+          "Amoureux"
+        ],
+        "nl": [
+          "Geliefden"
+        ],
+        "es": [
+          "Amoroso"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Solo",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Solo"
+        ],
+        "pt": [
+          "A solo"
+        ],
+        "en": [
+          "Solo"
+        ],
+        "it": [
+          "Solo"
+        ],
+        "fr": [
+          "Solo"
+        ],
+        "nl": [
+          "Solo"
+        ],
+        "es": [
+          "Solo"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Teenagers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Jugendliche"
+        ],
+        "pt": [
+          "Adolescentes"
+        ],
+        "en": [
+          "Teenagers"
+        ],
+        "it": [
+          "Adolescenti"
+        ],
+        "fr": [
+          "Adolescents"
+        ],
+        "nl": [
+          "Tieners"
+        ],
+        "es": [
+          "Adolescentes"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/79dab264-42a7-3bd1-a132-8ea7893ac4e3",
+      "schema:email": [
+        "autempssuspendu.lesrogeries@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 6 80 03 72 88"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/f68208af-64d5-3c46-84ea-4ccfb03e837a",
+      "dc:description": {
+        "de": [
+          "15 Minuten südlich von Angers, zwischen der Loire und den Schlössern von Anjou, liegt das Ferienhaus \"Au temps suspendu\", das von Andrea und Philippe geschmackvoll restauriert wurde und Sie für Ihren Aufenthalt mit Familie oder Freunden willkommen heißt. Freuen Sie sich auf den authentischen Charme von Tuffstein, Schiefer und Sonnenuntergängen über dem Tal und den Weinbergen. Das Haus aus dem 19. Jahrhundert wurde raffiniert dekoriert und verfügt über ein großes, helles Wohnzimmer, eine neue Küche, Schlafzimmer mit eigenem Bad und eine geräumige Terrasse mit Zugang zum ruhigen Garten, Liegestühlen und einem großen Tisch, an dem Sie im Freien speisen können.\n\nDie Unterkunft\nAndréa und Philippe haben das Haus mit authentischen Materialien - Tuffstein, Stein, Schiefer, Fliesen -, ökologischen Entscheidungen und einer raffinierten und gemütlichen Dekoration restauriert, um Ihren Aufenthalt so angenehm wie möglich zu gestalten. Eine große Terrasse führt ebenerdig zum hellen Wohnzimmer, zur Küche und zu den Schlafzimmern. Die Schlafzimmer 2 und 3 haben eigene Badezimmer, Schlafzimmer 1 hat ein Badezimmer in unmittelbarer Nähe. Der Garten verfügt über Liegestühle, die zum Lesen unter den Bäumen oder zum Betrachten der Sonnenuntergänge einladen. Die friedliche Landschaft, die Pracht der Sehenswürdigkeiten, Weinbergwanderungen und das Angebot der Restaurants stehen Ihnen zur Verfügung.\n\nZugang für Reisende\nIn diesem unabhängigen Haus ist die gesamte Unterkunft mit großer Terrasse und Garten mit Bäumen für Ihren Aufenthalt für bis zu 10 Personen zugänglich (1 Schlafzimmer mit einem Doppelbett + 1 Schlafzimmer mit einem Doppelbett und 2 Einzelbetten und einem Doppelbett im Zwischengeschoss + 1 Schlafzimmer mit einem Doppelbett). Es gibt Parkplätze im Hof oder im Freien. Andréa und Philippe werden Sie gerne empfangen und können, wenn Sie es wünschen, alle Informationen für einen gelungenen Aufenthalt weitergeben.\n\nSonstige Anmerkungen\nDie Unterkunft ist ebenerdig und für Personen mit eingeschränkter Mobilität zugänglich. Eines der Zimmer verfügt über ein Badezimmer, das für eine Person zugänglich ist, die einen Stuhl von 0,80 benutzt.\nSie wohnen auf dem Land, können in den Weinbergen und entlang der Flüsse wandern und sind dennoch nur eine Viertelstunde von den Dienstleistungen der Stadt entfernt."
+        ],
+        "en": [
+          "15 minutes south of Angers, between the Loire and the Anjou châteaux, the gîte \"Au temps suspendu\" has been tastefully restored by Andréa and Philippe, who welcome you to stay with family or friends. Enjoy the authentic charm of tuffeau, slate and sunsets over the valley and vineyards. Dating back to the 19th century, the house has been refurbished to a very high standard, with a large, bright living room, a new kitchen, bedrooms with en-suite bathrooms, and a spacious terrace with access to the peaceful garden, deckchairs and a large table for al fresco dining.\n\nThe accommodation\nFacing a horizon where sumptuous sunsets blossom, Andréa and Philippe have restored the house using authentic materials - tuffeau, stone, slate, terracotta tiles - and ecological choices, with a refined, cosy decor to welcome your guests. A vast terrace leads from the ground floor to a bright living room, kitchen and bedrooms. Bedrooms 2 and 3 have their own bathrooms, while bedroom 1 has a bathroom in the immediate vicinity. The garden has deckchairs for reading under the trees or watching the sunset. The peaceful countryside, the splendor of the sites, the walks through the vineyards and the restaurants are all yours.\n\nTraveler access\nIn this detached house, the entire accommodation, with its large terrace and wooded garden, is accessible for your stay for up to 10 people (1 bedroom with a double bed + 1 bedroom with a double bed and 2 single beds and a double bed on the mezzanine + 1 bedroom with a double bed). Parking is available in the courtyard or outside. Andréa and Philippe will be delighted to welcome you and share any information you may need to make your stay a success.\n\nOther comments\nThe accommodation is on one level and accessible to people with reduced mobility. One of the bedrooms has a bathroom accessible for a person using a 0.80 wheelchair.\nYou'll be staying in the heart of the countryside, where you can hike through vineyards and along rivers, while still being within a quarter of an hour of the town's amenities."
+        ],
+        "it": [
+          "A 15 minuti a sud di Angers, tra la Loira e i castelli dell'Anjou, il gîte \"Au temps suspendu\" è stato restaurato con gusto da Andréa e Philippe, che saranno lieti di accogliervi con la famiglia o gli amici. Godetevi il fascino autentico del tuffeau, l'ardesia e i tramonti sulla valle e sui vigneti. Risalente al XIX secolo, la casa è stata arredata con gusto e vanta un ampio e luminoso soggiorno, una nuova cucina, camere da letto con bagno privato e una spaziosa terrazza con accesso al tranquillo giardino, sedie a sdraio e un grande tavolo per mangiare all'aperto.\n\nL'alloggio\nDi fronte a un orizzonte in cui sbocciano sontuosi tramonti, Andréa e Philippe hanno ristrutturato la casa utilizzando materiali autentici - tuffeau, pietra, ardesia, cotto - e scelte ecologiche, con un arredamento raffinato e accogliente per accogliere i vostri ospiti. Un'ampia terrazza conduce dal piano terra al luminoso soggiorno, alla cucina e alle camere da letto. Le camere da letto 2 e 3 hanno il proprio bagno, mentre la camera da letto 1 ha un bagno proprio accanto. Il giardino è dotato di lettini per leggere sotto gli alberi o guardare il tramonto. La campagna tranquilla, lo splendore dei siti, le passeggiate tra i vigneti e i ristoranti sono tutti da scoprire.\n\nAccesso per i viaggiatori\nIn questa casa indipendente, l'intero alloggio, con la sua grande terrazza e il giardino alberato, è accessibile per il vostro soggiorno fino a 10 persone (1 camera con letto matrimoniale + 1 camera con letto matrimoniale e 2 letti singoli e un letto matrimoniale sul soppalco + 1 camera con letto matrimoniale). Il parcheggio è disponibile nel cortile o all'esterno. Andréa e Philippe saranno lieti di darvi il benvenuto e, se lo desiderate, potranno condividere con voi tutte le informazioni necessarie per la buona riuscita del vostro soggiorno.\n\nAltri commenti\nL'alloggio è su un unico livello ed è accessibile alle persone con mobilità ridotta. Una delle camere da letto ha un bagno accessibile a una persona che utilizza una sedia a rotelle da 0,80.\nSoggiornerete nel cuore della campagna, dove potrete passeggiare tra i vigneti e lungo i fiumi, pur essendo a solo un quarto d'ora dai servizi della città."
+        ],
+        "fr": [
+          "À 15 mn sud d’Angers, entre Loire et châteaux d’Anjou, le gîte \"Au temps suspendu\" a été restauré avec goût par Andréa et Philippe qui vous accueillent pour vos séjours en famille ou amis. À vous, le charme authentique du tuffeau, de l’ardoise et des couchers de soleil sur la vallée et les vignes. Cette maison, datant du XIXème siècle, a retrouvé une décoration raffinée et bénéficie d'un grand salon lumineux, d'une cuisine neuve, des chambres avec salles de bain privatives, et d'une terrasse spacieuse qui accède au calme du jardin, aux chaises longues et à une grande table propice à vos dîners en plein air.\n\nLe logement\nFace à un horizon où s’épanouissent de somptueux couchers de soleil, Andréa et Philippe ont restauré la maison avec des matériaux authentiques - tuffeau, pierres , ardoises, tomettes -, des choix écologiques, et une décoration raffinée et cosy pour accueillir vos séjours. Une vaste terrasse distribue de plain-pied un salon lumineux, une cuisine, et les chambres. Les chambres 2 et 3 ont leurs propres salles de bains, la chambre 1 a une salle de bain à immédiate proximité. Le jardin dispose de chaises longues pour accueillir la lecture sous les arbres ou les contemplations des couchers de soleil. À vous, la campagne paisible, la splendeur des sites, les randonnées dans les vignes, l’offre des restaurants.\n\nAccès des voyageurs\nDans cette maison indépendante, l’ensemble du logement, avec grande terrasse et jardin arboré est accessible pour votre séjour jusqu’à 10 personnes (1 chambre avec un lit double + 1 chambre avec un lit double et 2 lits simples et un lit double en mezzanine + 1 chambre avec un lit double). Vous disposerez de parking dans la cour ou à l’extérieur. Andréa et Philippe vous accueilleront avec plaisir et pourront, si vous le souhaitez, partager toute information pour la réussite de votre séjour.\n\nAutres remarques\nLe logement est de plain-pied et accessible aux personnes à mobilité réduite. Une des chambres dispose d une salle de bain accessible pour une personne utilisant un fauteuil de 0,80. \nVous séjournerez en pleine campagne, pourrez randonner dans les vignes et au long des rivières tout en disposant à un quart d heure des services de la ville."
+        ],
+        "es": [
+          "A 15 minutos al sur de Angers, entre el Loira y los castillos de Anjou, la casa rural \"Au temps suspendu\" ha sido restaurada con gusto por Andréa y Philippe, que estarán encantados de recibirle en familia o con amigos. Disfrute del auténtico encanto de la toba, la pizarra y las puestas de sol sobre el valle y los viñedos. La casa, que data del siglo XIX, ha sido decorada con gusto y cuenta con un amplio y luminoso salón, una cocina nueva, habitaciones con baño y una espaciosa terraza con acceso al tranquilo jardín, tumbonas y una gran mesa para comer al aire libre.\n\nEl alojamiento\nFrente a un horizonte donde florecen suntuosas puestas de sol, Andréa y Philippe han restaurado la casa utilizando materiales auténticos - toba, piedra, pizarra, baldosas de terracota - y opciones ecológicas, con una decoración refinada y acogedora para recibir a sus invitados. Una amplia terraza conduce desde la planta baja a un luminoso salón, la cocina y los dormitorios. Los dormitorios 2 y 3 tienen su propio cuarto de baño, mientras que el dormitorio 1 tiene un cuarto de baño justo al lado. El jardín dispone de tumbonas para leer bajo los árboles o contemplar la puesta de sol. La tranquilidad del campo, el esplendor de los parajes, los paseos por los viñedos y los restaurantes son todo suyo por descubrir.\n\nAcceso para viajeros\nEn esta casa unifamiliar, todo el alojamiento, con su gran terraza y su jardín arbolado, es accesible para su estancia de hasta 10 personas (1 habitación con cama de matrimonio + 1 habitación con cama de matrimonio y 2 camas individuales y una cama de matrimonio en el entresuelo + 1 habitación con cama de matrimonio). Aparcamiento disponible en el patio o en el exterior. Andréa y Philippe estarán encantados de darle la bienvenida y pueden, si lo desea, compartir cualquier información que pueda necesitar para que su estancia sea un éxito.\n\nOtros comentarios\nEl alojamiento es de una sola planta y accesible para personas con movilidad reducida. Una de las habitaciones dispone de un cuarto de baño accesible para una persona que utilice una silla de ruedas de 0,80.\nTe alojarás en plena naturaleza, donde podrás pasear por los viñedos y a lo largo de los ríos, sin dejar de estar a un cuarto de hora de los servicios de la ciudad."
+        ],
+        "nl": [
+          "15 minuten ten zuiden van Angers, tussen de Loire en de kastelen van Anjou, is de gîte \"Au temps suspendu\" smaakvol gerestaureerd door Andréa en Philippe, die je graag verwelkomen met familie of vrienden. Geniet van de authentieke charme van de tuffeau, de leisteen en de zonsondergangen over de vallei en de wijngaarden. Het huis dateert uit de 19e eeuw, is smaakvol ingericht en beschikt over een grote, lichte woonkamer, een nieuwe keuken, slaapkamers met eigen badkamer en een ruim terras met toegang tot de rustige tuin, ligstoelen en een grote tafel om buiten te eten.\n\nDe accommodatie\nMet uitzicht op een horizon waar prachtige zonsondergangen bloeien, hebben Andréa en Philippe het huis gerestaureerd met behulp van authentieke materialen - tuffeau, steen, leisteen, terracotta tegels - en ecologische keuzes, met een verfijnde, gezellige inrichting om je gasten te verwelkomen. Een groot terras leidt vanaf de begane grond naar een lichte woonkamer, keuken en slaapkamers. Slaapkamers 2 en 3 hebben een eigen badkamer, terwijl slaapkamer 1 een badkamer ernaast heeft. In de tuin staan ligstoelen om onder de bomen te lezen of naar de zonsondergang te kijken. Het rustige platteland, de pracht van de bezienswaardigheden, de wandelingen door de wijngaarden en de restaurants zijn allemaal voor jou om te ontdekken.\n\nToegang voor reizigers\nIn dit vrijstaande huis is de hele accommodatie, met groot terras en beboste tuin, toegankelijk voor een verblijf tot 10 personen (1 kamer met tweepersoonsbed + 1 kamer met tweepersoonsbed en 2 eenpersoonsbedden en een tweepersoonsbed op de mezzanine + 1 kamer met tweepersoonsbed). Parkeren is mogelijk op de binnenplaats of buiten. Andréa en Philippe heten je van harte welkom en geven je desgewenst alle informatie die je nodig hebt om je verblijf tot een succes te maken.\n\nAndere opmerkingen\nDe accommodatie is gelijkvloers en toegankelijk voor personen met beperkte mobiliteit. Een van de slaapkamers heeft een badkamer die toegankelijk is voor iemand die een rolstoel van 0,80 gebruikt.\nU verblijft midden in de natuur, waar u kunt wandelen door de wijngaarden en langs de rivieren, terwijl u toch maar een kwartiertje verwijderd bent van de voorzieningen van de stad."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/185178fa-2827-3531-8b39-8a9f70aba2b3",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/28a2a44b-82dc-3e99-8ff5-98450af83ec7",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/364af305-ff28-30f8-aa80-8476a3f387d9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4801831a-6eed-3221-9531-e0476286f221",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/525192b6-92f9-34fd-92c5-08f39bca9772",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7b144160-f048-34bf-ac59-a385a9a501f8",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7cab16ee-8f74-30a6-a950-671274c5159e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9353d10e-4bab-3adc-8c0b-7b3ce999fe14",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b99628ea-2efa-35a7-8fea-27a9eed0a12e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e9bb10e3-31b7-3429-a196-8c0219fe802a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Was wäre, wenn Charme und Schönheit hier ihre Herberge gefunden hätten?"
+        ],
+        "en": [
+          "What if charm and beauty had found a home here?"
+        ],
+        "it": [
+          "E se il fascino e la bellezza avessero trovato casa qui?"
+        ],
+        "fr": [
+          "Et si le charme et la beauté avaient trouvé là leur gîte ?"
+        ],
+        "es": [
+          "¿Y si el encanto y la belleza hubieran encontrado aquí su hogar?"
+        ],
+        "nl": [
+          "Wat als charme en schoonheid hier een thuis hadden gevonden?"
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/0d9cce6c-1e96-3e10-9bb0-e70d5f4ecf99",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:BabyEquipment",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Baby-, Kindermaterial"
+            ],
+            "pt": [
+              "Material para bebés e crianças"
+            ],
+            "en": [
+              "Baby or child equipment"
+            ],
+            "it": [
+              "Dotazioni per neonati e bambini"
+            ],
+            "fr": [
+              "Matériel bébé, enfant"
+            ],
+            "es": [
+              "Material para bebés y niños pequeños"
+            ],
+            "nl": [
+              "Baby- en kinderuitrusting"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/14d79d11-d8c2-3cfb-8415-c97163176fd1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:OneStorey",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Einstöckig"
+            ],
+            "pt": [
+              "Casa térrea"
+            ],
+            "en": [
+              "One-storey"
+            ],
+            "it": [
+              "Su un unico livello"
+            ],
+            "fr": [
+              "Plain pied"
+            ],
+            "nl": [
+              "Gelijkvloers"
+            ],
+            "es": [
+              "De un solo piso"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2639c08c-4116-303d-badd-a0bf973bf199",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SeparateToilet",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Separate Toiletten"
+            ],
+            "pt": [
+              "Sanitários separados"
+            ],
+            "en": [
+              "Separate toilets"
+            ],
+            "it": [
+              "Servizi igienici separati"
+            ],
+            "fr": [
+              "Toilettes séparées"
+            ],
+            "nl": [
+              "Gescheiden toiletten"
+            ],
+            "es": [
+              "Aseos separados"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/291b3921-3d00-326b-8ed7-258e60a01e7d",
+      "schema:value": "3",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zimmer"
+            ],
+            "pt": [
+              "Quarto"
+            ],
+            "en": [
+              "Bedroom"
+            ],
+            "it": [
+              "Camera"
+            ],
+            "fr": [
+              "Chambre"
+            ],
+            "nl": [
+              "Kamer"
+            ],
+            "es": [
+              "Habitación"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/39ae3fa2-f278-38c3-8066-48647496cf2b",
+      "schema:value": "1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Accommodation",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Unterbringung"
+            ],
+            "pt": [
+              "Alojamento"
+            ],
+            "en": [
+              "Accommodation"
+            ],
+            "it": [
+              "Alloggio"
+            ],
+            "fr": [
+              "Logement"
+            ],
+            "nl": [
+              "Logies"
+            ],
+            "es": [
+              "Alojamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/66cc15b7-4c5f-3a38-a449-a5905c9bd14f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Garden",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Garten"
+            ],
+            "pt": [
+              "Jardim"
+            ],
+            "en": [
+              "Garden"
+            ],
+            "it": [
+              "Giardino"
+            ],
+            "fr": [
+              "Jardin"
+            ],
+            "nl": [
+              "Tuin"
+            ],
+            "es": [
+              "Jardín"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6960b820-4736-3c5b-8771-972387162d51",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:EnclosedLand",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Eingezäuntes Grundstück"
+            ],
+            "pt": [
+              "Terreno confinado"
+            ],
+            "en": [
+              "Enclosed land"
+            ],
+            "it": [
+              "Terreno recintato"
+            ],
+            "fr": [
+              "Terrain clos"
+            ],
+            "es": [
+              "Terreno cerrado"
+            ],
+            "nl": [
+              "Afgesloten terrein"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/72c2f096-32b5-3aa0-bbf7-3f5433d37f6f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CarPark",
+          "@type": [
+            "CommonAmenity",
+            "GeneralPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Parkplatz"
+            ],
+            "pt": [
+              "Estacionamento"
+            ],
+            "en": [
+              "Car park"
+            ],
+            "it": [
+              "Parcheggio"
+            ],
+            "fr": [
+              "Parking"
+            ],
+            "nl": [
+              "Parkeerplaats"
+            ],
+            "es": [
+              "Aparcamiento"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8fcb0e73-e6cb-328e-8238-d0a08c9a5036",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9dc7d658-673f-3fa5-98de-a7e70d84c522",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SeparateEntrance",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Separater Eingang"
+            ],
+            "pt": [
+              "Entrada independente"
+            ],
+            "en": [
+              "Separate entrance"
+            ],
+            "it": [
+              "Ingresso indipendente"
+            ],
+            "fr": [
+              "Entrée indépendante"
+            ],
+            "nl": [
+              "Onafhankelijke ingang"
+            ],
+            "es": [
+              "Entrada independiente"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b3d6c5b7-2abc-3e76-83e7-5585ae538e94",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Terrace",
+          "@type": [
+            "CommonAmenity",
+            "ParkAndGardenTheme"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Terrasse"
+            ],
+            "pt": [
+              "Terraço"
+            ],
+            "en": [
+              "Terrace"
+            ],
+            "it": [
+              "Terrazzo"
+            ],
+            "fr": [
+              "Terrasse"
+            ],
+            "es": [
+              "Terraza"
+            ],
+            "nl": [
+              "Terras"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cd037dd2-d534-3099-a0ac-48570e922019",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:FinalHousekeeping",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Endreinigung"
+            ],
+            "pt": [
+              "Limpeza no fim da estadia"
+            ],
+            "en": [
+              "Final housekeeping"
+            ],
+            "it": [
+              "Pulizia alla fine del soggiorno"
+            ],
+            "fr": [
+              "Ménage en fin de séjour"
+            ],
+            "es": [
+              "Tareas de limpieza al final del día"
+            ],
+            "nl": [
+              "Eindschoonmaak"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d4593985-2112-34b8-92bc-1a9d9a014971",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SeparateGarden",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Separater Garten"
+            ],
+            "pt": [
+              "Jardim independente"
+            ],
+            "en": [
+              "Separate garden"
+            ],
+            "it": [
+              "Giardino indipendente"
+            ],
+            "fr": [
+              "Jardin indépendant"
+            ],
+            "nl": [
+              "Onafhankelijke tuin"
+            ],
+            "es": [
+              "Jardín independiente"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e57ad56e-0694-34a5-8f83-58e1aacde810",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Washrooms",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Toiletteneinrichtungen"
+            ],
+            "pt": [
+              "Sanitários"
+            ],
+            "en": [
+              "Washrooms"
+            ],
+            "it": [
+              "Sanitari"
+            ],
+            "fr": [
+              "Sanitaires"
+            ],
+            "es": [
+              "Sanitarios"
+            ],
+            "nl": [
+              "Sanitair"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef2d7794-2aa6-3c88-a672-d20e3cc76cc7",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SheetsAndTowels",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bettwäsche und Handtücher"
+            ],
+            "pt": [
+              "Lençóis e toalhas"
+            ],
+            "en": [
+              "Sheets and towels"
+            ],
+            "it": [
+              "Lenzuola e biancheria"
+            ],
+            "fr": [
+              "Draps et linges"
+            ],
+            "es": [
+              "Sábanas y ropa de cama"
+            ],
+            "nl": [
+              "Beddengoed en handdoeken"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef987579-32be-36f7-a54d-805aacd16d8e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f09208d7-1375-390c-85b3-3a02e6d09cfb",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Microwave",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mikrowellen"
+            ],
+            "pt": [
+              "Micro-ondas"
+            ],
+            "en": [
+              "Microwave"
+            ],
+            "it": [
+              "Microonde"
+            ],
+            "fr": [
+              "Micro-ondes"
+            ],
+            "es": [
+              "Microondas"
+            ],
+            "nl": [
+              "Magnetron"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/7724dbf0-7649-358b-be17-1db1b66a240f",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3etoiles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Sterne"
+          ],
+          "pt": [
+            "3 estrelas"
+          ],
+          "en": [
+            "3 Stars"
+          ],
+          "it": [
+            "3 stelle"
+          ],
+          "fr": [
+            "3 étoiles"
+          ],
+          "nl": [
+            "3 sterren"
+          ],
+          "es": [
+            "3 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/1a769a78-bcc8-3198-99fd-a00bedf5f6ac",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/368c3dec-4d27-37dd-8542-9b66d0fb1919",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8817133b-eca2-36a7-94ab-2373ace16ab4",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a6941edb-24f8-3139-a00c-c3400759d91f",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ff4b3ac8-291c-372d-8bbe-6411403107e2",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/1f220667-52a3-37ec-8b25-454d7ad1d550",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/e8da43c6-4591-3086-ae30-b04550b85348",
+          "schema:addressLocality": "Mozé-sur-Louet",
+          "schema:postalCode": "49610",
+          "schema:streetAddress": [
+            "Lieu-dit Les Rogeries 1"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:49222",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Mozé-sur-Louet"
+              ],
+              "pt": [
+                "Mozé-sur-Louet"
+              ],
+              "en": [
+                "Mozé-sur-Louet"
+              ],
+              "it": [
+                "Mozé-sur-Louet"
+              ],
+              "fr": [
+                "Mozé-sur-Louet"
+              ],
+              "nl": [
+                "Mozé-sur-Louet"
+              ],
+              "es": [
+                "Mozé-sur-Louet"
+              ]
+            },
+            "insee": "49222",
+            "isPartOfDepartment": {
+              "@id": "kb:France5249",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Maine-et-Loire"
+                ],
+                "pt": [
+                  "Maine-et-Loire"
+                ],
+                "en": [
+                  "Maine-et-Loire"
+                ],
+                "it": [
+                  "Maine-et-Loire"
+                ],
+                "fr": [
+                  "Maine-et-Loire"
+                ],
+                "nl": [
+                  "Maine-et-Loire"
+                ],
+                "es": [
+                  "Maine-et-Loire"
+                ]
+              },
+              "insee": "49",
+              "isPartOfRegion": {
+                "@id": "kb:France52",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Pays de la Loire"
+                  ],
+                  "pt": [
+                    "Pays de la Loire"
+                  ],
+                  "en": [
+                    "Pays de la Loire"
+                  ],
+                  "it": [
+                    "Pays de la Loire"
+                  ],
+                  "fr": [
+                    "Pays de la Loire"
+                  ],
+                  "nl": [
+                    "Pays de la Loire"
+                  ],
+                  "es": [
+                    "Pays de la Loire"
+                  ]
+                },
+                "insee": "52",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/79da362f-2b24-366f-af8f-31a7e7b580b0",
+        "schema:latitude": "47.38061",
+        "schema:longitude": "-0.59016",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": false
+    }
+  ],
+  "lastUpdate": "2025-07-25",
+  "lastUpdateDatatourisme": "2025-07-26T00:31:39.889Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/ef06a3d2-146f-3cac-b044-d55ad2d6a22b",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

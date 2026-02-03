@@ -1,0 +1,827 @@
+{
+  "@id": "https://data.datatourisme.fr/28/025cec91-a662-3186-bb8d-b19232c1b6b2",
+  "dc:identifier": "HOTHDF000V507IZG",
+  "@type": [
+    "schema:Accommodation",
+    "schema:FoodEstablishment",
+    "schema:Hotel",
+    "schema:LodgingBusiness",
+    "schema:Restaurant",
+    "Accommodation",
+    "FoodEstablishment",
+    "Hotel",
+    "HotelRestaurant",
+    "HotelTrade",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "1 km vom Stadtzentrum von Cambrai, 2 km vom Museum der Schönen Künste, in der Nähe von Notre-Dame-de-Grâc..."
+    ],
+    "en": [
+      "1 km from downtown Cambrai, 2 km from the Museum of Fine Arts, near Notre-Dame-de-Grâc..."
+    ],
+    "it": [
+      "A 1 km dal centro di Cambrai, a 2 km dal Musée des Beaux Arts, vicino a Notre-Dame-de-Grâc..."
+    ],
+    "fr": [
+      "A 1 km du centre-ville de Cambrai, à 2 km de Musée des Beaux Arts, à proximité de Notre-Dame-de-Grâc..."
+    ],
+    "es": [
+      "A 1 km del centro de Cambrai, a 2 km del Museo de Bellas Artes, cerca de Notre-Dame-de-Grâc..."
+    ],
+    "nl": [
+      "1 km van het centrum van Cambrai, 2 km van het Musée des Beaux Arts, vlak bij Notre-Dame-de-Grâc..."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "La Chope"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/7390cd60-df56-3380-adcf-7c129d7e3e10",
+    "schema:legalName": "SIM Hauts-de-France - Hauts-de-France Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/5463b4e3-2482-3579-a40a-47ba972f29d5",
+      "schema:legalName": "SIM Hauts-de-France",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/1a82b09d-cdce-374c-8723-256cf0077b3e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/cf8d429b-17ee-3f81-844b-f3b2ba034d08",
+          "schema:addressLocality": "Cambrai",
+          "schema:postalCode": "59400",
+          "schema:streetAddress": [
+            "17, Rue des Docks"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:59122",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Cambrai"
+              ],
+              "pt": [
+                "Cambrai"
+              ],
+              "en": [
+                "Cambrai"
+              ],
+              "it": [
+                "Cambrai"
+              ],
+              "fr": [
+                "Cambrai"
+              ],
+              "nl": [
+                "Cambrai"
+              ],
+              "es": [
+                "Cambrai"
+              ]
+            },
+            "insee": "59122",
+            "isPartOfDepartment": {
+              "@id": "kb:France3259",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nord"
+                ],
+                "pt": [
+                  "Nord"
+                ],
+                "en": [
+                  "Nord"
+                ],
+                "it": [
+                  "Nord"
+                ],
+                "fr": [
+                  "Nord"
+                ],
+                "nl": [
+                  "Nord"
+                ],
+                "es": [
+                  "Nord"
+                ]
+              },
+              "insee": "59",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:legalName": "Hôtellerie",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/10f10c2d-ebf0-3a4b-b83c-d59b0ade413e",
+      "schema:email": [
+        "logis.lachope@orange.fr"
+      ],
+      "schema:telephone": [
+        "+33 3 27 81 36 78"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://hotel-la-chope-cambrai.hotelmix.fr/"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/1a82b09d-cdce-374c-8723-256cf0077b3e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/cf8d429b-17ee-3f81-844b-f3b2ba034d08",
+          "schema:addressLocality": "Cambrai",
+          "schema:postalCode": "59400",
+          "schema:streetAddress": [
+            "17, Rue des Docks"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:59122",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Cambrai"
+              ],
+              "pt": [
+                "Cambrai"
+              ],
+              "en": [
+                "Cambrai"
+              ],
+              "it": [
+                "Cambrai"
+              ],
+              "fr": [
+                "Cambrai"
+              ],
+              "nl": [
+                "Cambrai"
+              ],
+              "es": [
+                "Cambrai"
+              ]
+            },
+            "insee": "59122",
+            "isPartOfDepartment": {
+              "@id": "kb:France3259",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nord"
+                ],
+                "pt": [
+                  "Nord"
+                ],
+                "en": [
+                  "Nord"
+                ],
+                "it": [
+                  "Nord"
+                ],
+                "fr": [
+                  "Nord"
+                ],
+                "nl": [
+                  "Nord"
+                ],
+                "es": [
+                  "Nord"
+                ]
+              },
+              "insee": "59",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:legalName": "Hôtellerie",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/a812073a-2229-3889-8e7d-ee90d2e5f571",
+      "dc:description": {
+        "de": [
+          "1 km vom Stadtzentrum von Cambrai, 2 km vom Musée des Beaux Arts, in der Nähe von Notre-Dame-de-Grâce Cathédrale, 20 Gehminuten vom Stadtzentrum von Cambrai entfernt. Restaurants und Bars befinden sich in der Nähe, der Flughafen Valenciennes-Denain ist 30 Minuten mit dem Auto entfernt, während der SNCF-Bahnhof von Cambrai 20 Minuten zu Fuß entfernt ist."
+        ],
+        "en": [
+          "1 km from downtown Cambrai, 2 km from the Museum of Fine Arts, close to Notre-Dame-de-Grâce Cathedral, 20 minutes walk from downtown Cambrai, restaurants and bars are nearby, Valenciennes-Denain airport is 30 minutes drive while Cambrai train station is 20 minutes walk."
+        ],
+        "it": [
+          "1 km dal centro di Cambrai, 2 km dal Musée des Beaux Arts, vicino alla Cattedrale di Notre-Dame-de-Grâce, 20 minuti a piedi dal centro di Cambrai, ristoranti e bar nelle vicinanze, l'aeroporto di Valenciennes-Denain è a 30 minuti di auto mentre la stazione ferroviaria SNCF di Cambrai è a 20 minuti a piedi"
+        ],
+        "fr": [
+          "A 1 km du centre-ville de Cambrai, à 2 km de Musée des Beaux Arts, à proximité de Notre-Dame-de-Grâce Cathédrale, à 20 minutes de marche du centre-ville de Cambrai, les restaurants et les bars sont à proximité, l'aéroport Valenciennes-Denain est à 30 minutes de route tandis que la gare SNCF de Cambrai est à 20 minutes à pied."
+        ],
+        "es": [
+          "A 1 km del centro de Cambrai, a 2 km del Museo de Bellas Artes, cerca de la catedral de Notre-Dame-de-Grâce, a 20 minutos a pie del centro de Cambrai, cerca de restaurantes y bares, el aeropuerto de Valenciennes-Denain está a 30 minutos en coche y la estación de tren SNCF de Cambrai, a 20 minutos a pie."
+        ],
+        "nl": [
+          "1 km van het stadscentrum van Cambrai, 2 km van het Musée des Beaux Arts, vlakbij de kathedraal Notre-Dame-de-Grâce, 20 minuten lopen van het stadscentrum van Cambrai, restaurants en bars zijn in de buurt, de luchthaven Valenciennes-Denain ligt op 30 minuten rijden en het SNCF-treinstation van Cambrai ligt op 20 minuten lopen."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/1ea39320-2e28-3b66-b7dc-66ab4bfa5c32",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/24fa47cb-1d89-346c-9894-a64ef2e010c4",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/283b801e-1275-302f-a2a9-55af5ffeacdb",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/61b6bba2-33a7-3233-a761-afe1ccef2e20",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7ec95beb-1548-3598-a7c4-5e52d32c5db7",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/86497849-969c-32dd-b3eb-35977d9a9d58",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9ca01d9c-0e29-383a-8e91-a91d65138032",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a5e46e1f-2287-3c44-90ec-bc7189ee0b4b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/c674ef57-1ff1-3b85-b475-276f84676906",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d1ce8839-0999-3028-9e41-73982ac593b0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "1 km vom Stadtzentrum von Cambrai, 2 km vom Museum der Schönen Künste, in der Nähe von Notre-Dame-de-Grâc..."
+        ],
+        "en": [
+          "1 km from downtown Cambrai, 2 km from the Museum of Fine Arts, near Notre-Dame-de-Grâc..."
+        ],
+        "it": [
+          "A 1 km dal centro di Cambrai, a 2 km dal Musée des Beaux Arts, vicino a Notre-Dame-de-Grâc..."
+        ],
+        "fr": [
+          "A 1 km du centre-ville de Cambrai, à 2 km de Musée des Beaux Arts, à proximité de Notre-Dame-de-Grâc..."
+        ],
+        "es": [
+          "A 1 km del centro de Cambrai, a 2 km del Museo de Bellas Artes, cerca de Notre-Dame-de-Grâc..."
+        ],
+        "nl": [
+          "1 km van het centrum van Cambrai, 2 km van het Musée des Beaux Arts, vlak bij Notre-Dame-de-Grâc..."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/618fb16c-c665-3fb5-9c0e-062d3e4e868d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Restaurant",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Restaurant"
+            ],
+            "pt": [
+              "Restaurante"
+            ],
+            "en": [
+              "Restaurant"
+            ],
+            "it": [
+              "Ristorante"
+            ],
+            "fr": [
+              "Restaurant"
+            ],
+            "es": [
+              "Restaurante"
+            ],
+            "nl": [
+              "Restaurant"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/0a2dfe08-c352-35c1-8c38-f16e2013d302",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/0e1f4dd4-90d9-3cd2-8097-43309a1a1974",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/1acb7a4b-1bec-3d31-818a-a045213963e6",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b0b2ff71-a6b5-32eb-b507-7d30562d5e11",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ee6540f4-8f24-3402-ae9e-cd870990b7a4",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/3b6b5f81-a232-393f-bf34-0e1569b741b9",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/cf8d429b-17ee-3f81-844b-f3b2ba034d08",
+          "schema:addressLocality": "Cambrai",
+          "schema:postalCode": "59400",
+          "schema:streetAddress": [
+            "17, Rue des Docks"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:59122",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Cambrai"
+              ],
+              "pt": [
+                "Cambrai"
+              ],
+              "en": [
+                "Cambrai"
+              ],
+              "it": [
+                "Cambrai"
+              ],
+              "fr": [
+                "Cambrai"
+              ],
+              "nl": [
+                "Cambrai"
+              ],
+              "es": [
+                "Cambrai"
+              ]
+            },
+            "insee": "59122",
+            "isPartOfDepartment": {
+              "@id": "kb:France3259",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nord"
+                ],
+                "pt": [
+                  "Nord"
+                ],
+                "en": [
+                  "Nord"
+                ],
+                "it": [
+                  "Nord"
+                ],
+                "fr": [
+                  "Nord"
+                ],
+                "nl": [
+                  "Nord"
+                ],
+                "es": [
+                  "Nord"
+                ]
+              },
+              "insee": "59",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/6a8ff8e7-ae49-35f0-b55d-6a82510d8583",
+        "schema:latitude": "50.177214",
+        "schema:longitude": "3.218522",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-07",
+  "lastUpdateDatatourisme": "2025-07-08T05:29:43.635Z"
+}

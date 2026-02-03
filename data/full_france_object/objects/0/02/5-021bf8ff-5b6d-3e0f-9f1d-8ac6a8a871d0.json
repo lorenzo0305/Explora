@@ -1,0 +1,325 @@
+{
+  "@id": "https://data.datatourisme.fr/5/021bf8ff-5b6d-3e0f-9f1d-8ac6a8a871d0",
+  "dc:identifier": "213012068",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Meublé La cour cachée - MOHLER Carole"
+    ]
+  },
+  "allowedPersons": 12,
+  "creationDate": "2025-05-26",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/2ab59d04-79d9-3369-8fe3-d2a9939fb637",
+    "schema:legalName": "Office de tourisme du pays de Barr",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/f9be77db-d6c0-3a31-9fa8-638da3098074",
+      "schema:legalName": "Système d'informations touristique Alsace",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/28776978-2939-3f5d-bd32-725ba2972f7b",
+      "schema:email": [
+        "carole.mohler@orange.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 71 16 83 04"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/28776978-2939-3f5d-bd32-725ba2972f7b",
+      "schema:email": [
+        "carole.mohler@orange.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 71 16 83 04"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/7724dbf0-7649-358b-be17-1db1b66a240f",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3etoiles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Sterne"
+          ],
+          "pt": [
+            "3 estrelas"
+          ],
+          "en": [
+            "3 Stars"
+          ],
+          "it": [
+            "3 stelle"
+          ],
+          "fr": [
+            "3 étoiles"
+          ],
+          "nl": [
+            "3 sterren"
+          ],
+          "es": [
+            "3 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/892908d7-0677-399d-9f23-797df770463d",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_4epis",
+        "schema:ratingValue": "4.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "4 Ähren/Premium"
+          ],
+          "pt": [
+            "4 espigas / Premium"
+          ],
+          "en": [
+            "4 Ears of corn / Premium level"
+          ],
+          "it": [
+            "4 spighe / Premium"
+          ],
+          "fr": [
+            "4 épis / Premium"
+          ],
+          "es": [
+            "4 espigas/Premium"
+          ],
+          "nl": [
+            "4 aren / Premium"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "Chalet",
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/7fc64ddf-9d87-3ca6-ae1d-aae502c5eed6",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/b401054a-078d-3f5d-bf5a-8b35fb6701a6",
+          "schema:addressLocality": "Zellwiller",
+          "schema:postalCode": "67140",
+          "schema:streetAddress": [
+            "7 rue du château"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:67557",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Zellwiller"
+              ],
+              "pt": [
+                "Zellwiller"
+              ],
+              "en": [
+                "Zellwiller"
+              ],
+              "it": [
+                "Zellwiller"
+              ],
+              "fr": [
+                "Zellwiller"
+              ],
+              "nl": [
+                "Zellwiller"
+              ],
+              "es": [
+                "Zellwiller"
+              ]
+            },
+            "insee": "67557",
+            "isPartOfDepartment": {
+              "@id": "kb:France4467",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bas-Rhin"
+                ],
+                "pt": [
+                  "Bas-Rhin"
+                ],
+                "en": [
+                  "Bas-Rhin"
+                ],
+                "it": [
+                  "Bas-Rhin"
+                ],
+                "fr": [
+                  "Bas-Rhin"
+                ],
+                "nl": [
+                  "Bas-Rhin"
+                ],
+                "es": [
+                  "Bas-Rhin"
+                ]
+              },
+              "insee": "67",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/08fe5b8a-0280-30d9-a725-bf6af6c2d66a",
+        "schema:latitude": "48.3974814",
+        "schema:longitude": "7.4993327",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/2ab59d04-79d9-3369-8fe3-d2a9939fb637",
+      "schema:legalName": "Office de tourisme du pays de Barr",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-05-27",
+  "lastUpdateDatatourisme": "2025-05-28T07:04:15.724Z"
+}

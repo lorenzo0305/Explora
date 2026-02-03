@@ -1,0 +1,286 @@
+{
+  "@id": "https://data.datatourisme.fr/5/04a72a38-fdf9-38f4-b04e-b707467e13d4",
+  "dc:identifier": "235017689",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "La maison Turckheim"
+    ]
+  },
+  "allowedPersons": 8,
+  "creationDate": "2025-05-02",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/1d8a838d-3106-384c-8184-2f3ad7dc13b1",
+    "schema:legalName": "Office de tourisme de Colmar",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/f9be77db-d6c0-3a31-9fa8-638da3098074",
+      "schema:legalName": "Système d'informations touristique Alsace",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/a3d65b2d-0f2b-3fa1-86a2-ced1d2a74318",
+      "schema:email": [
+        "contactgitedurempart@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 6 08 25 99 21"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.gitedurempart.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/a3d65b2d-0f2b-3fa1-86a2-ced1d2a74318",
+      "schema:email": [
+        "contactgitedurempart@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 6 08 25 99 21"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.gitedurempart.com/"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/09c9a82f-c6a9-34ff-b0fa-fdcfb9aed542",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3Cles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Schlüssel"
+          ],
+          "pt": [
+            "3 chaves"
+          ],
+          "en": [
+            "3 Keys"
+          ],
+          "it": [
+            "3 chiavi"
+          ],
+          "fr": [
+            "3 Clés"
+          ],
+          "nl": [
+            "3 sleutels"
+          ],
+          "es": [
+            "3 llaves"
+          ]
+        },
+        "isCompliantWith": [
+          "Guesthouse",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/e5930d46-77ec-3def-8b53-cfa0ed5041a4",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/40972071-c14d-365b-aa06-4bb1515698ea",
+          "schema:addressLocality": "Turckheim",
+          "schema:postalCode": "68230",
+          "schema:streetAddress": [
+            "23 rue des vignerons"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:68338",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Turckheim"
+              ],
+              "pt": [
+                "Turckheim"
+              ],
+              "en": [
+                "Turckheim"
+              ],
+              "it": [
+                "Turckheim"
+              ],
+              "fr": [
+                "Turckheim"
+              ],
+              "nl": [
+                "Turckheim"
+              ],
+              "es": [
+                "Turckheim"
+              ]
+            },
+            "insee": "68338",
+            "isPartOfDepartment": {
+              "@id": "kb:France4468",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haut-Rhin"
+                ],
+                "pt": [
+                  "Haut-Rhin"
+                ],
+                "en": [
+                  "Haut-Rhin"
+                ],
+                "it": [
+                  "Haut-Rhin"
+                ],
+                "fr": [
+                  "Haut-Rhin"
+                ],
+                "nl": [
+                  "Haut-Rhin"
+                ],
+                "es": [
+                  "Haut-Rhin"
+                ]
+              },
+              "insee": "68",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/d6b5ef83-d66a-3a8d-88c2-4ae77c8a645a",
+        "schema:latitude": "48.086943",
+        "schema:longitude": "7.2734985",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/1d8a838d-3106-384c-8184-2f3ad7dc13b1",
+      "schema:legalName": "Office de tourisme de Colmar",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-05-02",
+  "lastUpdateDatatourisme": "2025-05-03T07:04:54.199Z"
+}

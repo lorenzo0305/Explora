@@ -1,0 +1,300 @@
+{
+  "@id": "https://data.datatourisme.fr/13/00802e09-58de-3683-9342-6c67bfaa6ba1",
+  "dc:identifier": "6809600",
+  "@type": [
+    "olo:OrderedList",
+    "EducationalTrail",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "SportsAndLeisurePlace",
+    "Tour",
+    "WalkingTour"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "7 - Tafoni & Roselière"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/84c6494d-3085-3c63-a55c-db8cb047fadd",
+    "dc:identifier": "1738",
+    "schema:email": [
+      "direction@destination-sudcorse.com",
+      "gestion@destination-sudcorse.com",
+      "promotion@destination-sudcorse.com",
+      "service.accueil@destination-sudcorse.com",
+      "webmaster@destination-sudcorse.com"
+    ],
+    "schema:legalName": "Porto Vecchio Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.portovecchio-tourisme.corsica/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:Hiking",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wanderung"
+        ],
+        "pt": [
+          "Caminhada"
+        ],
+        "en": [
+          "Hiking"
+        ],
+        "it": [
+          "Escursione"
+        ],
+        "fr": [
+          "Randonnée"
+        ],
+        "nl": [
+          "Wandelen"
+        ],
+        "es": [
+          "Senderismo"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Pedestrian",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Zu Fuß"
+        ],
+        "pt": [
+          "Pedestre"
+        ],
+        "en": [
+          "Pedestrian"
+        ],
+        "it": [
+          "A piedi"
+        ],
+        "fr": [
+          "Pédestre"
+        ],
+        "nl": [
+          "Voetgangers"
+        ],
+        "es": [
+          "Peatón"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/04005f64-cf29-38ba-abfb-fdc97731aaac",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/f0fd6aa6-2a4b-3be3-8e58-e008304c3b33",
+          "schema:addressLocality": "Porto-Vecchio",
+          "schema:postalCode": "20137",
+          "schema:streetAddress": [
+            "Plage I Pini"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:2A247",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Porto-Vecchio"
+              ],
+              "pt": [
+                "Porto-Vecchio"
+              ],
+              "en": [
+                "Porto-Vecchio"
+              ],
+              "it": [
+                "Porto-Vecchio"
+              ],
+              "fr": [
+                "Porto-Vecchio"
+              ],
+              "nl": [
+                "Porto-Vecchio"
+              ],
+              "es": [
+                "Porto-Vecchio"
+              ]
+            },
+            "insee": "2A247",
+            "isPartOfDepartment": {
+              "@id": "kb:France942A",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Corse-du-Sud"
+                ],
+                "pt": [
+                  "Corse-du-Sud"
+                ],
+                "en": [
+                  "Corse-du-Sud"
+                ],
+                "it": [
+                  "Corse-du-Sud"
+                ],
+                "fr": [
+                  "Corse-du-Sud"
+                ],
+                "nl": [
+                  "Corse-du-Sud"
+                ],
+                "es": [
+                  "Corse-du-Sud"
+                ]
+              },
+              "insee": "2A",
+              "isPartOfRegion": {
+                "@id": "kb:France94",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Corse"
+                  ],
+                  "pt": [
+                    "Corse"
+                  ],
+                  "en": [
+                    "Corse"
+                  ],
+                  "it": [
+                    "Corse"
+                  ],
+                  "fr": [
+                    "Corse"
+                  ],
+                  "nl": [
+                    "Corse"
+                  ],
+                  "es": [
+                    "Corse"
+                  ]
+                },
+                "insee": "94",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/a4fffef4-f74d-3c8d-951a-3f9d3ed127e1",
+        "schema:latitude": "41.552108",
+        "schema:longitude": "9.317781",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/63ba550e-9978-3f5b-847b-00c809fab527",
+          "schema:validFrom": "2025-01-01T00:00:00",
+          "schema:validThrough": "2025-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/ace08413-138d-39a4-b3e8-23cab411ddce",
+      "schema:email": [
+        "direction@destination-sudcorse.com",
+        "gestion@destination-sudcorse.com",
+        "promotion@destination-sudcorse.com",
+        "service.accueil@destination-sudcorse.com",
+        "webmaster@destination-sudcorse.com"
+      ],
+      "schema:legalName": "Porto Vecchio Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.portovecchio-tourisme.corsica/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-04-19",
+  "lastUpdateDatatourisme": "2025-06-10T13:12:49.897Z"
+}

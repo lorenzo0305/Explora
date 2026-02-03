@@ -1,0 +1,323 @@
+{
+  "@id": "https://data.datatourisme.fr/49/05c91a8c-6176-3ca9-a734-d5b5beb698d7",
+  "dc:identifier": "RESTLECAILLEUR",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Restaurant",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "L'écailleur"
+    ]
+  },
+  "creationDate": "2019-09-28",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/544f9647-39d5-38bb-9c94-8470d0d0fa6a",
+    "schema:email": [
+      "tourisme@loireatlantique-developpement.fr"
+    ],
+    "schema:legalName": "ADT44",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.tourisme-loireatlantique.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/cb37ecba-e500-37e7-b601-64f9b1ef5b04",
+      "schema:email": [
+        "b.paulmyer@solutions-eco.fr"
+      ],
+      "schema:legalName": "eSPRIT Pays de la Loire",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.solutions-pro-tourisme-paysdelaloire.fr/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/88e123b3-2bd3-34ab-bf12-e2dea11bdafe",
+      "schema:email": [
+        "lecailleurlabaule@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 2 40 60 87 94"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/fce038cd-1ee7-305f-bdbf-7a84a742b9f9",
+      "dc:description": {
+        "de": [
+          "Austern- und Langustinenbar auf dem Markt von La Baule."
+        ],
+        "en": [
+          "Oyster and scampi bar at the La Baule market."
+        ],
+        "it": [
+          "Bar di ostriche e scampi al mercato di La Baule."
+        ],
+        "fr": [
+          "Bar à huîtres et langoustines au Marché de La Baule."
+        ],
+        "nl": [
+          "Oester- en scampibar op de markt van La Baule."
+        ],
+        "es": [
+          "Bar de ostras y langostinos en el mercado de La Baule."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/1dea46b2-0f5b-3691-b8a9-52c207b14190",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/1e3084d6-f94d-3573-b5a9-5a29485b64b0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/604fce33-1d61-3575-adcb-458d938d48ba",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6e4da246-6bef-3129-91f1-7cc02e7b674a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b4092dd7-e8df-32a5-966f-00bfd9de5f6b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/7afa6ac9-b314-3800-b1af-f34ac25df7cc",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/9634e5ad-c483-3fdf-b1cf-84c4f545e3be",
+          "schema:addressLocality": "La Baule-Escoublac",
+          "schema:postalCode": "44500",
+          "schema:streetAddress": [
+            "37 Avenue des Ibis"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:44055",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "La Baule-Escoublac"
+              ],
+              "pt": [
+                "La Baule-Escoublac"
+              ],
+              "en": [
+                "La Baule-Escoublac"
+              ],
+              "it": [
+                "La Baule-Escoublac"
+              ],
+              "fr": [
+                "La Baule-Escoublac"
+              ],
+              "nl": [
+                "La Baule-Escoublac"
+              ],
+              "es": [
+                "La Baule-Escoublac"
+              ]
+            },
+            "insee": "44055",
+            "isPartOfDepartment": {
+              "@id": "kb:France5244",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Loire-Atlantique"
+                ],
+                "pt": [
+                  "Loire-Atlantique"
+                ],
+                "en": [
+                  "Loire-Atlantique"
+                ],
+                "it": [
+                  "Loire-Atlantique"
+                ],
+                "fr": [
+                  "Loire-Atlantique"
+                ],
+                "nl": [
+                  "Loire-Atlantique"
+                ],
+                "es": [
+                  "Loire-Atlantique"
+                ]
+              },
+              "insee": "44",
+              "isPartOfRegion": {
+                "@id": "kb:France52",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Pays de la Loire"
+                  ],
+                  "pt": [
+                    "Pays de la Loire"
+                  ],
+                  "en": [
+                    "Pays de la Loire"
+                  ],
+                  "it": [
+                    "Pays de la Loire"
+                  ],
+                  "fr": [
+                    "Pays de la Loire"
+                  ],
+                  "nl": [
+                    "Pays de la Loire"
+                  ],
+                  "es": [
+                    "Pays de la Loire"
+                  ]
+                },
+                "insee": "52",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/aa66960d-cc88-3685-99dc-076d2681763c",
+        "schema:latitude": "47.2856084",
+        "schema:longitude": "-2.394468",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2025-08-02",
+  "lastUpdateDatatourisme": "2025-08-03T04:07:28.519Z"
+}

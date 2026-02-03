@@ -1,0 +1,910 @@
+{
+  "@id": "https://data.datatourisme.fr/15/0cea8fd1-46de-3208-b8fd-dc0bc3b2a416",
+  "dc:identifier": "ACCCEN03600033",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CamperVanArea",
+    "CampingAndCaravanning",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Euro-Relais-Terminal am Place du Général de Gaulle (in der Nähe der Unterpräfektur)."
+    ],
+    "en": [
+      "Euro Relais pitch on Place du Général de Gaulle (near the subprefecture)."
+    ],
+    "it": [
+      "Stazione Euro-relay situata in Place du Général de Gaulle (vicino alla sottoprefettura)."
+    ],
+    "fr": [
+      "Borne Euro-relais située place du Général de Gaulle (près de la sous-préfecture)."
+    ],
+    "nl": [
+      "Euro-relaisstation gelegen aan de Place du Général de Gaulle (bij de onderprefectuur)."
+    ],
+    "es": [
+      "Estación de euro-relé situada en la Place du Général de Gaulle (cerca de la subprefectura)."
+    ]
+  },
+  "rdfs:label": {
+    "en": [
+      "Campervan pitch"
+    ],
+    "fr": [
+      "Borne de camping-car de Le Blanc"
+    ]
+  },
+  "allowedPersons": 6,
+  "creationDate": "2009-06-02",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/15/258a22d9-ec6b-3b0c-a6ec-d65a0d1fe1ba",
+    "dc:identifier": "bb582899-e37d-4142-9722-9641c244049e",
+    "schema:legalName": "Destination Brenne",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/bba35b4d-022c-3fa7-90a3-07eba818e3a5",
+      "schema:legalName": "SIT Centre-Val de Loire",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/9d47bf7e-0aac-35ae-a278-93f274ad337a",
+      "schema:email": [
+        "accueil@ville-leblanc.fr"
+      ],
+      "schema:telephone": [
+        "+33 2 54 37 05 13"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/f9663816-7c03-355d-a03d-70cefc191cf8",
+      "dc:description": {
+        "de": [
+          "Euro-Relais-Anschlussstelle gegenüber der Creuse Place du Général de Gaulle (in der Nähe der Unterpräfektur) im Stadtzentrum, in der Nähe aller Geschäfte und Dienstleistungen. WC in der Nähe\nJeton für die Euro-Relais-Säule für Wohnmobile (im Tourismusbüro abholen)."
+        ],
+        "en": [
+          "Euro-relay station located in front of the Creuse river, place du Général de Gaulle (near the sub-prefecture) in the city center, near all shops and services. WC nearby\nToken for the Euro-relay terminal (to be picked up at the tourist office)."
+        ],
+        "it": [
+          "Stazione Euro-relay situata di fronte al fiume Creuse, in Place du Général de Gaulle (vicino alla sottoprefettura), nel centro della città, vicino a tutti i negozi e servizi. WC nelle vicinanze\nGettone per il terminal camper Euro-relay (da ritirare presso l'ufficio turistico)."
+        ],
+        "fr": [
+          "Borne Euro-relais située face à la Creuse place du Général de Gaulle (près de la sous-préfecture) en centre ville, à proximité de tous commerces et services. WC à proximité. \nJeton borne camping-car euro-relais (à récupérer à l'office de tourisme)."
+        ],
+        "nl": [
+          "Euro-relaisstation gelegen tegenover de Creuse op de Place du Général de Gaulle (bij de onderprefectuur) in het stadscentrum, dicht bij alle winkels en diensten. WC in de buurt\nPenning voor de Euro-relay camperterminal (af te halen bij het toeristenbureau)."
+        ],
+        "es": [
+          "Estación Euro-relé situada frente al río Creuse, en la Place du Général de Gaulle (cerca de la subprefectura), en el centro de la ciudad, cerca de todos los comercios y servicios. WC cerca\nFicha para la terminal de autocaravanas Euro-relé (a recoger en la oficina de turismo)."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "shortDescription": {
+        "de": [
+          "Euro-Relais-Terminal am Place du Général de Gaulle (in der Nähe der Unterpräfektur)."
+        ],
+        "en": [
+          "Euro Relais pitch on Place du Général de Gaulle (near the subprefecture)."
+        ],
+        "it": [
+          "Stazione Euro-relay situata in Place du Général de Gaulle (vicino alla sottoprefettura)."
+        ],
+        "fr": [
+          "Borne Euro-relais située place du Général de Gaulle (près de la sous-préfecture)."
+        ],
+        "nl": [
+          "Euro-relaisstation gelegen aan de Place du Général de Gaulle (bij de onderprefectuur)."
+        ],
+        "es": [
+          "Estación de euro-relé situada en la Place du Général de Gaulle (cerca de la subprefectura)."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/23182d7c-edb5-39ab-8d9d-95981b5ab34f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CamperPitch",
+          "@type": [
+            "AccommodationPricingOffer",
+            "CampingAndCaravanningAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Stellplatz Wohnmobil"
+            ],
+            "pt": [
+              "Alvéolo para autocaravana"
+            ],
+            "en": [
+              "Motorhome pitch"
+            ],
+            "it": [
+              "Piazzola per camper"
+            ],
+            "fr": [
+              "Emplacement camping car"
+            ],
+            "es": [
+              "Espacio para autocaravanas"
+            ],
+            "nl": [
+              "Camperstaanplaats"
+            ]
+          }
+        },
+        {
+          "@id": "kb:CamperServicePoint",
+          "@type": [
+            "AccommodationPricingOffer",
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Servicestation für Wohnmobile"
+            ],
+            "pt": [
+              "Terminal de serviços para autocaravanas"
+            ],
+            "en": [
+              "Camper service point"
+            ],
+            "it": [
+              "Stazione di servizio per camper"
+            ],
+            "fr": [
+              "Borne de service camping car"
+            ],
+            "nl": [
+              "Servicepunt voor camper"
+            ],
+            "es": [
+              "Estación de servicio para autocaravanas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:ChemicalToiletEmptying",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Entleerung chemischer Toiletten"
+            ],
+            "pt": [
+              "Despejo das sanitas químicas"
+            ],
+            "en": [
+              "Chemical toilets emptying"
+            ],
+            "it": [
+              "Svuotamento di bagni chimici"
+            ],
+            "fr": [
+              "Vidange toilettes chimiques"
+            ],
+            "es": [
+              "Vaciado de inodoros químicos"
+            ],
+            "nl": [
+              "Loospunt chemische toiletten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:ElectricalConnections",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Elektrische Schaltung"
+            ],
+            "pt": [
+              "Ligações elétricas"
+            ],
+            "en": [
+              "Electrical connections"
+            ],
+            "it": [
+              "Collegamenti elettrici"
+            ],
+            "fr": [
+              "Branchements électriques"
+            ],
+            "nl": [
+              "Elektrische aansluitingen"
+            ],
+            "es": [
+              "Conexiones eléctricas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Washrooms",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Toiletteneinrichtungen"
+            ],
+            "pt": [
+              "Sanitários"
+            ],
+            "en": [
+              "Washrooms"
+            ],
+            "it": [
+              "Sanitari"
+            ],
+            "fr": [
+              "Sanitaires"
+            ],
+            "es": [
+              "Sanitarios"
+            ],
+            "nl": [
+              "Sanitair"
+            ]
+          }
+        },
+        {
+          "@id": "kb:WastwaterEvacuation",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Entleerung von Abwasser"
+            ],
+            "pt": [
+              "Despejo de águas sujas"
+            ],
+            "en": [
+              "Wastwater evacuation"
+            ],
+            "it": [
+              "Svuotamento delle acque reflue"
+            ],
+            "fr": [
+              "Vidange des eaux usées"
+            ],
+            "es": [
+              "Vaciado de aguas residuales"
+            ],
+            "nl": [
+              "Afvalwaterpunt"
+            ]
+          }
+        },
+        {
+          "@id": "kb:WaterConnections",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wasseranschlüsse"
+            ],
+            "pt": [
+              "Ligações de água"
+            ],
+            "en": [
+              "Water connections"
+            ],
+            "it": [
+              "Collegamenti idrici"
+            ],
+            "fr": [
+              "Branchements d'eau"
+            ],
+            "nl": [
+              "Wateraansluitingen"
+            ],
+            "es": [
+              "Conexiones de agua"
+            ]
+          }
+        }
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/69f5243b-dbc9-342a-ae4d-0be987a14d06",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/0d9ab664-8095-3dd5-bd95-7d96c5dace3f",
+          "ebucore:title": {
+            "fr": [
+              "Borne camping car du Blanc"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "DB-Florence CONSTANT"
+          ],
+          "rightsEndDate": "2050-12-31"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/0a602109-d8ff-3d38-95d3-c54d96686014",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/DSC-0635.JPG"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasNeighborhood": [
+    {
+      "@id": "kb:Downtown",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Im Stadtzentrum"
+        ],
+        "pt": [
+          "No centro da cidade"
+        ],
+        "en": [
+          "Downtown"
+        ],
+        "it": [
+          "In centro città"
+        ],
+        "fr": [
+          "En centre ville"
+        ],
+        "nl": [
+          "In het centrum van de stad"
+        ],
+        "es": [
+          "En el centro de la ciudad"
+        ]
+      }
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/69f5243b-dbc9-342a-ae4d-0be987a14d06",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/0d9ab664-8095-3dd5-bd95-7d96c5dace3f",
+          "ebucore:title": {
+            "fr": [
+              "Borne camping car du Blanc"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "DB-Florence CONSTANT"
+          ],
+          "rightsEndDate": "2050-12-31"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/0a602109-d8ff-3d38-95d3-c54d96686014",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/DSC-0635.JPG"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:Downtown",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Im Stadtzentrum"
+        ],
+        "pt": [
+          "No centro da cidade"
+        ],
+        "en": [
+          "Downtown"
+        ],
+        "it": [
+          "In centro città"
+        ],
+        "fr": [
+          "En centre ville"
+        ],
+        "nl": [
+          "In het centrum van de stad"
+        ],
+        "es": [
+          "En el centro de la ciudad"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/976b37e2-2713-3bab-b753-4405cbaa1b5c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/73ce70e5-524c-3940-9ef5-0bdf1e7a4b26",
+          "schema:addressLocality": "Le Blanc",
+          "schema:postalCode": "36300",
+          "schema:streetAddress": [
+            "Place du Général de Gaulle"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:36018",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Le Blanc"
+              ],
+              "pt": [
+                "Le Blanc"
+              ],
+              "en": [
+                "Le Blanc"
+              ],
+              "it": [
+                "Le Blanc"
+              ],
+              "fr": [
+                "Le Blanc"
+              ],
+              "nl": [
+                "Le Blanc"
+              ],
+              "es": [
+                "Le Blanc"
+              ]
+            },
+            "insee": "36018",
+            "isPartOfDepartment": {
+              "@id": "kb:France2436",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Indre"
+                ],
+                "pt": [
+                  "Indre"
+                ],
+                "en": [
+                  "Indre"
+                ],
+                "it": [
+                  "Indre"
+                ],
+                "fr": [
+                  "Indre"
+                ],
+                "nl": [
+                  "Indre"
+                ],
+                "es": [
+                  "Indre"
+                ]
+              },
+              "insee": "36",
+              "isPartOfRegion": {
+                "@id": "kb:France24",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Centre-Val de Loire"
+                  ],
+                  "pt": [
+                    "Centre-Val de Loire"
+                  ],
+                  "en": [
+                    "Centre-Val de Loire"
+                  ],
+                  "it": [
+                    "Centre-Val de Loire"
+                  ],
+                  "fr": [
+                    "Centre-Val de Loire"
+                  ],
+                  "nl": [
+                    "Centre-Val de Loire"
+                  ],
+                  "es": [
+                    "Centre-Val de Loire"
+                  ]
+                },
+                "insee": "24",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/e22bd90e-7341-37e5-b9a3-eb2c06fe20e2",
+        "schema:latitude": "46.63153",
+        "schema:longitude": "1.06164",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2025-01-02",
+  "lastUpdateDatatourisme": "2025-01-03T04:11:07.519Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/ba6c7d38-62b7-34bf-87b8-eaef049c1882",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/f07d10ca-acb0-32d4-9bdd-3236686894b5",
+          "schema:minPrice": [
+            "2"
+          ],
+          "schema:price": "2",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "jeton im Tourismusbüro erhältlich"
+            ],
+            "en": [
+              "token on sale at the Tourist Office"
+            ],
+            "it": [
+              "gettone in vendita presso l'Ufficio del Turismo"
+            ],
+            "fr": [
+              "jeton en vente à l'Office de Tourisme"
+            ],
+            "nl": [
+              "penning te koop bij de VVV"
+            ],
+            "es": [
+              "ficha a la venta en la Oficina de Turismo"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/227720c0-285a-3b2f-9cd8-e8b580af8115",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/3de0683c-1dfd-3e6c-b250-c82dd2673e2a",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/7001bf31-67d6-31c7-965f-ec0711f38a05",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/96b4583e-80e7-3786-b2dc-c7c96990a215",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/b2f6381b-4d41-3321-a3fe-141bd5318bda",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

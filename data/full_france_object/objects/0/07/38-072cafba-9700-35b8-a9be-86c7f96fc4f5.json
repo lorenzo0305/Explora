@@ -1,0 +1,473 @@
+{
+  "@id": "https://data.datatourisme.fr/38/072cafba-9700-35b8-a9be-86c7f96fc4f5",
+  "dc:identifier": "HPABRE029CY00217",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CamperVanArea",
+    "Camping",
+    "CampingAndCaravanning",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "en": [
+      "Camping Eco Luxe Les Embruns"
+    ],
+    "fr": [
+      "Camping Eco Luxe Les Embruns"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/3be8ff4f-e15a-3cb9-9a15-c9a135e38f89",
+    "schema:legalName": "Finistère 360° - Direction",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/cbc8f135-bec8-365b-8b02-ea7abf78dfa7",
+      "schema:legalName": "SIT Breton",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/3320e26f-e30f-3874-8a64-b6b8579075ad",
+      "schema:telephone": [
+        "+33 2 98 39 91 07",
+        "+33 6 67 45 18 35"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.camping-les-embruns.com/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/e5d3e022-d15c-3521-86b9-1806fd02da4d",
+      "dc:description": {
+        "de": [
+          "Freilufthotelgewerbe"
+        ],
+        "en": [
+          "Hôtellerie de plein air"
+        ],
+        "it": [
+          "Hotel all'aperto"
+        ],
+        "fr": [
+          "Hôtellerie de plein air"
+        ],
+        "nl": [
+          "Openluchthotels"
+        ],
+        "es": [
+          "Hoteles al aire libre"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/2cd6e3ea-557d-3429-b5d6-2ce6a742f8e8",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6fe6a55f-4314-36de-a9c4-4e183fcecfa9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9bbb84f2-8f97-3109-ac95-4148a3a98ded",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f6ce4c71-76d1-3da6-9828-14b4672c8944",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/80360749-6b50-b0f8-51f1-3401de2a64e7",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "33BP8BSJ8GCK",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ec919164-60cf-bf00-b614-f95125811697",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "fdfaa8ce-7b0f-4a8e-83fc-b9756fdabd23",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:AcceslibrePlatform",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Teilen Sie wichtige Reiseinformationen für Menschen mit Behinderungen."
+            ],
+            "pt": [
+              "Compartilhe informações essenciais sobre viagens para pessoas com deficiência."
+            ],
+            "en": [
+              "Share essential travel information for people with disabilities."
+            ],
+            "it": [
+              "Condividi informazioni di viaggio essenziali per le persone con disabilità."
+            ],
+            "fr": [
+              "Partagez les informations indispensables aux déplacements des personnes en situation de handicap."
+            ],
+            "nl": [
+              "Deel essentiële reisinformatie voor mensen met een handicap."
+            ],
+            "es": [
+              "Comparta información de viaje esencial para personas con discapacidades."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Acceslibre-Plattform"
+            ],
+            "pt": [
+              "Plataforma Acceslibre"
+            ],
+            "en": [
+              "Acceslibre platform"
+            ],
+            "it": [
+              "Piattaforma Acceslibre"
+            ],
+            "fr": [
+              "Plateforme Acceslibre"
+            ],
+            "es": [
+              "Plataforma Acceslibre"
+            ],
+            "nl": [
+              "Acceslibre-platform"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://acceslibre.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/688fd068-96b8-3abb-a54a-19da1853d342",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_5etoiles",
+        "schema:ratingValue": "5.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "5 Sterne"
+          ],
+          "pt": [
+            "5 estrelas"
+          ],
+          "en": [
+            "5 Stars"
+          ],
+          "it": [
+            "5 stelle"
+          ],
+          "fr": [
+            "5 étoiles"
+          ],
+          "nl": [
+            "5 sterren"
+          ],
+          "es": [
+            "5 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/ebbdb715-d4da-3dff-9969-19ee90f9ede7",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/fe78beec-2a41-338d-a5b0-c6c9499c3160",
+          "schema:addressLocality": "Clohars-Carnoët",
+          "schema:postalCode": "29360",
+          "schema:streetAddress": [
+            "2 rue du Philosophe Alain",
+            "Le Pouldu"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:29031",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Clohars-Carnoët"
+              ],
+              "pt": [
+                "Clohars-Carnoët"
+              ],
+              "en": [
+                "Clohars-Carnoët"
+              ],
+              "it": [
+                "Clohars-Carnoët"
+              ],
+              "fr": [
+                "Clohars-Carnoët"
+              ],
+              "nl": [
+                "Clohars-Carnoët"
+              ],
+              "es": [
+                "Clohars-Carnoët"
+              ]
+            },
+            "insee": "29031",
+            "isPartOfDepartment": {
+              "@id": "kb:France5329",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Finistère"
+                ],
+                "pt": [
+                  "Finistère"
+                ],
+                "en": [
+                  "Finistère"
+                ],
+                "it": [
+                  "Finistère"
+                ],
+                "fr": [
+                  "Finistère"
+                ],
+                "nl": [
+                  "Finistère"
+                ],
+                "es": [
+                  "Finistère"
+                ]
+              },
+              "insee": "29",
+              "isPartOfRegion": {
+                "@id": "kb:France53",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bretagne"
+                  ],
+                  "pt": [
+                    "Bretagne"
+                  ],
+                  "en": [
+                    "Bretagne"
+                  ],
+                  "it": [
+                    "Bretagne"
+                  ],
+                  "fr": [
+                    "Bretagne"
+                  ],
+                  "nl": [
+                    "Bretagne"
+                  ],
+                  "es": [
+                    "Bretagne"
+                  ]
+                },
+                "insee": "53",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/eecf66af-d739-398e-b5db-2946ed5cba7e",
+        "schema:latitude": "47.7684558",
+        "schema:longitude": "-3.54545",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-31",
+  "lastUpdateDatatourisme": "2025-08-01T03:12:15.352Z"
+}

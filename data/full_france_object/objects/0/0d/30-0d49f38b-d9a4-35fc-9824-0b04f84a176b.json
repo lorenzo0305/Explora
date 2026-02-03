@@ -1,0 +1,941 @@
+{
+  "@id": "https://data.datatourisme.fr/30/0d49f38b-d9a4-35fc-9824-0b04f84a176b",
+  "dc:identifier": "ITINOR014V5568JI",
+  "@type": [
+    "olo:OrderedList",
+    "CyclingTour",
+    "PointOfInterest",
+    "Tour"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Fahren Sie von Caen nach Luc sur Mer auf einem grünen Weg, von dem aus Sie zur Velomaritime gelangen."
+    ],
+    "en": [
+      "Travel from Caen to Luc sur mer on a greenway, from where you can join the Vélomaritime."
+    ],
+    "it": [
+      "Da Caen a Luc sur mer si percorre una via verde, da cui ci si può unire alla Vélomaritime."
+    ],
+    "fr": [
+      "Parcourez Caen à Luc sur mer en empruntant une voie verte d'où vous pourrez rejoindre la Vélomaritime."
+    ],
+    "es": [
+      "Viaje de Caen a Luc sur mer por una vía verde, desde donde podrá incorporarse al Vélomaritime."
+    ],
+    "nl": [
+      "Reis van Caen naar Luc sur mer over een groene weg, vanwaar je de Vélomaritime op kunt."
+    ]
+  },
+  "rdfs:label": {
+    "en": [
+      "Itinéraire vélo : de Luc-sur-mer à Caen"
+    ],
+    "fr": [
+      "Itinéraire vélo : de Luc-sur-mer à Caen"
+    ]
+  },
+  "creationDate": "2024-08-07",
+  "duration": "90",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/30/21858487-02ea-3f91-9453-82fa4fd5583e",
+    "dc:identifier": "59915d82-0b86-41db-b4be-5481fa48c36e",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/3016067a-08b2-3709-8d76-06b48875f9d3",
+        "schema:addressLocality": "Caen",
+        "schema:postalCode": "14054",
+        "schema:streetAddress": [
+          "8 rue Renoir"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:14118",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Caen"
+            ],
+            "pt": [
+              "Caen"
+            ],
+            "en": [
+              "Caen"
+            ],
+            "it": [
+              "Caen"
+            ],
+            "fr": [
+              "Caen"
+            ],
+            "nl": [
+              "Caen"
+            ],
+            "es": [
+              "Caen"
+            ]
+          },
+          "insee": "14118",
+          "isPartOfDepartment": {
+            "@id": "kb:France2814",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Calvados"
+              ],
+              "pt": [
+                "Calvados"
+              ],
+              "en": [
+                "Calvados"
+              ],
+              "it": [
+                "Calvados"
+              ],
+              "fr": [
+                "Calvados"
+              ],
+              "nl": [
+                "Calvados"
+              ],
+              "es": [
+                "Calvados"
+              ]
+            },
+            "insee": "14",
+            "isPartOfRegion": {
+              "@id": "kb:France28",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Normandie"
+                ],
+                "pt": [
+                  "Normandie"
+                ],
+                "en": [
+                  "Normandie"
+                ],
+                "it": [
+                  "Normandie"
+                ],
+                "fr": [
+                  "Normandie"
+                ],
+                "nl": [
+                  "Normandie"
+                ],
+                "es": [
+                  "Normandie"
+                ]
+              },
+              "insee": "28",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "tourisme@calvados.fr"
+    ],
+    "schema:legalName": "Calvados Attractivité",
+    "schema:telephone": [
+      "+33 2 31 27 90 30"
+    ],
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/adce4411-0f8d-3138-8d32-b8eb71125ab5",
+      "schema:email": [
+        "l.helbert@normandie-tourisme.fr"
+      ],
+      "schema:legalName": "Normandie Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.normandie-tourisme.fr/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/d24a2bcb-64c3-343f-b551-dd668d16b3be",
+      "schema:email": [
+        "anne.jolibois@calvados.fr"
+      ],
+      "schema:telephone": [
+        "+33 2 31 27 90 30"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.calvados-tourisme.com/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/02053a60-cb9a-36ba-b2f7-6275a358ae7a",
+      "dc:description": {
+        "de": [
+          "Fahren Sie von Caen nach Luc sur Mer auf einem grünen Weg, von dem aus Sie zur Velomaritime gelangen."
+        ],
+        "en": [
+          "Travel from Caen to Luc sur mer on a greenway, from where you can join the Vélomaritime."
+        ],
+        "it": [
+          "Da Caen a Luc sur mer si percorre una via verde, da cui ci si può unire alla Vélomaritime."
+        ],
+        "fr": [
+          "Parcourez Caen à Luc sur mer en empruntant une voie verte d'où vous pourrez rejoindre la Vélomaritime."
+        ],
+        "es": [
+          "Viaje de Caen a Luc sur mer por una vía verde, desde donde podrá incorporarse al Vélomaritime."
+        ],
+        "nl": [
+          "Reis van Caen naar Luc sur mer over een groene weg, vanwaar je de Vélomaritime op kunt."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0b5ba75c-ee18-3aee-95f3-7b6a7994ebd0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/54b2f3df-d4c4-37a0-ac9f-5a2fb43ec2c0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/614dc1bb-554d-3547-ac9b-94ec1141b297",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/78e7e148-f307-36d5-b7fb-4adb260222aa",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9bf18e18-619f-3f43-a4e9-171526033816",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/abc1f918-a73b-3a7b-8f65-b4d0e564a7db",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ac5aabe6-eb77-3151-930b-c14cc0d73912",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b0bf65d8-8560-3bf3-b3b4-14f675bbab97",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b23b6013-04e9-3fd1-b02a-60d4e6fd4529",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d3ca0618-5476-3f79-8f34-ee3cd404d15e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Fahren Sie von Caen nach Luc sur Mer auf einem grünen Weg, von dem aus Sie zur Velomaritime gelangen."
+        ],
+        "en": [
+          "Travel from Caen to Luc sur mer on a greenway, from where you can join the Vélomaritime."
+        ],
+        "it": [
+          "Da Caen a Luc sur mer si percorre una via verde, da cui ci si può unire alla Vélomaritime."
+        ],
+        "fr": [
+          "Parcourez Caen à Luc sur mer en empruntant une voie verte d'où vous pourrez rejoindre la Vélomaritime."
+        ],
+        "es": [
+          "Viaje de Caen a Luc sur mer por una vía verde, desde donde podrá incorporarse al Vélomaritime."
+        ],
+        "nl": [
+          "Reis van Caen naar Luc sur mer over een groene weg, vanwaar je de Vélomaritime op kunt."
+        ]
+      }
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/0f8ce3d4-0c07-3afa-9973-13fbeb4c7730",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/68a13da6-f52d-39d6-b9a9-4fc2b3ae6e98",
+          "ebucore:title": {
+            "en": [
+              "Balade-a-velo-Caen-2"
+            ],
+            "fr": [
+              "Balade-a-velo-Caen-2"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Daniel Decamps / Calvados Attractivité"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/bc798eea-864e-3ad1-84e7-f46e60011d55",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://normandie.media.tourinsoft.eu/upload/Balade-a-velo-Caen-2.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/0f8ce3d4-0c07-3afa-9973-13fbeb4c7730",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/68a13da6-f52d-39d6-b9a9-4fc2b3ae6e98",
+          "ebucore:title": {
+            "en": [
+              "Balade-a-velo-Caen-2"
+            ],
+            "fr": [
+              "Balade-a-velo-Caen-2"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Daniel Decamps / Calvados Attractivité"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/bc798eea-864e-3ad1-84e7-f46e60011d55",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://normandie.media.tourinsoft.eu/upload/Balade-a-velo-Caen-2.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8f87e7de-8b83-378e-bf02-212d52396930",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/75beccd5-a54f-3fd2-babc-29e15c8b7b15",
+          "ebucore:title": {
+            "en": [
+              "Fleurissement_2022-Photo_911___Calvados_Attractivite-12196-1600px"
+            ],
+            "fr": [
+              "Fleurissement_2022-Photo_911___Calvados_Attractivite-12196-1600px"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Photo_911___Calvados_Attractivite"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/e8c5d557-9688-3e01-88fc-17d85a4f70ec",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://normandie.media.tourinsoft.eu/upload/Fleurissement-2022-Photo-911---Calvados-Attractivite-12196-1600px.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTourType": [
+    {
+      "@id": "kb:RoundTrip",
+      "@type": [
+        "TourType"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Rundreise"
+        ],
+        "pt": [
+          "Ida e volta"
+        ],
+        "en": [
+          "Round Trip"
+        ],
+        "it": [
+          "Andata e ritorno"
+        ],
+        "fr": [
+          "Aller-Retour"
+        ],
+        "nl": [
+          "Retour"
+        ],
+        "es": [
+          "Ida y vuelta"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/17fdea0e-7d80-3129-b7b1-873555ab0c6c",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7d695505-f27d-3e87-b61a-952f88aa9707",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/92768fc2-5fd1-34de-a8ca-cec0a95da9d1",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/dd9a12d9-c5a9-39d0-8b40-38cb56844d34",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e20c759c-b945-363f-8d9e-55d05dc6fac2",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/effcac52-7e56-31ad-b0e3-fac14fd41f7a",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/7a2a02d0-1dc1-3b21-8b9d-7133388b425f",
+          "schema:addressLocality": "Luc-sur-Mer",
+          "schema:postalCode": "14530",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:14384",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Luc-sur-Mer"
+              ],
+              "pt": [
+                "Luc-sur-Mer"
+              ],
+              "en": [
+                "Luc-sur-Mer"
+              ],
+              "it": [
+                "Luc-sur-Mer"
+              ],
+              "fr": [
+                "Luc-sur-Mer"
+              ],
+              "nl": [
+                "Luc-sur-Mer"
+              ],
+              "es": [
+                "Luc-sur-Mer"
+              ]
+            },
+            "insee": "14384",
+            "isPartOfDepartment": {
+              "@id": "kb:France2814",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Calvados"
+                ],
+                "pt": [
+                  "Calvados"
+                ],
+                "en": [
+                  "Calvados"
+                ],
+                "it": [
+                  "Calvados"
+                ],
+                "fr": [
+                  "Calvados"
+                ],
+                "nl": [
+                  "Calvados"
+                ],
+                "es": [
+                  "Calvados"
+                ]
+              },
+              "insee": "14",
+              "isPartOfRegion": {
+                "@id": "kb:France28",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Normandie"
+                  ],
+                  "pt": [
+                    "Normandie"
+                  ],
+                  "en": [
+                    "Normandie"
+                  ],
+                  "it": [
+                    "Normandie"
+                  ],
+                  "fr": [
+                    "Normandie"
+                  ],
+                  "nl": [
+                    "Normandie"
+                  ],
+                  "es": [
+                    "Normandie"
+                  ]
+                },
+                "insee": "28",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/c7b24d47-a597-35e8-8d7b-dd1647aa32c1",
+        "schema:latitude": "49.322327",
+        "schema:longitude": "-0.37271",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-11",
+  "lastUpdateDatatourisme": "2025-07-12T02:52:55.039Z",
+  "tourDistance": "19000.0"
+}

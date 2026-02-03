@@ -1,0 +1,803 @@
+{
+  "@id": "https://data.datatourisme.fr/6/0e6fa7d5-51ce-3af2-b8c3-75c287cb5fe1",
+  "dc:identifier": "HLOBFC000V51OJZG",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "schema:Product",
+    "Accommodation",
+    "AccommodationProduct",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Product",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Cabane nuitée insolite : chambre féérique"
+    ],
+    "en": [
+      "Cabane nuitée insolite : chambre féérique"
+    ],
+    "fr": [
+      "Cabane nuitée insolite : chambre féérique"
+    ]
+  },
+  "allowedPersons": 2,
+  "creationDate": "2022-10-27",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/1bac5a22-27ad-3d23-89a7-28b99b62e964",
+    "dc:identifier": "5e606be5-65f3-4420-9738-64e2c6175271",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/5a2b67ef-c937-3be7-9f05-26f2f6a6803e",
+        "schema:addressLocality": "Rioz",
+        "schema:postalCode": "70190",
+        "schema:streetAddress": [
+          "Place du Souvenir Francais"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:70447",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Rioz"
+            ],
+            "pt": [
+              "Rioz"
+            ],
+            "en": [
+              "Rioz"
+            ],
+            "it": [
+              "Rioz"
+            ],
+            "fr": [
+              "Rioz"
+            ],
+            "nl": [
+              "Rioz"
+            ],
+            "es": [
+              "Rioz"
+            ]
+          },
+          "insee": "70447",
+          "isPartOfDepartment": {
+            "@id": "kb:France2770",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Haute-Saône"
+              ],
+              "pt": [
+                "Haute-Saône"
+              ],
+              "en": [
+                "Haute-Saône"
+              ],
+              "it": [
+                "Haute-Saône"
+              ],
+              "fr": [
+                "Haute-Saône"
+              ],
+              "nl": [
+                "Haute-Saône"
+              ],
+              "es": [
+                "Haute-Saône"
+              ]
+            },
+            "insee": "70",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "contact@tourisme7rivieres.fr"
+    ],
+    "schema:legalName": "OFFICE DE TOURISME DU PAYS DES 7 RIVIERES",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/d9ceeb54-cf12-37ae-b5cd-79ddb834e06b",
+      "schema:email": [
+        "contact@augredupre.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 73 66 95 32"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/d9ceeb54-cf12-37ae-b5cd-79ddb834e06b",
+      "schema:email": [
+        "contact@augredupre.fr"
+      ],
+      "schema:telephone": [
+        "+33 6 73 66 95 32"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/8925ddf6-7301-39d5-98e7-eb7dd0a79d31",
+      "dc:description": {
+        "de": [
+          "Kommen Sie für einen Abend und eine Nacht in die Mitte des Parks, in die Nähe der Gehege der Wallabys, Damhirsche und Yaks... in diese märchenhafte kleine Hütte mit Blick auf das Ognon-Tal. \nEs ist ein Eintauchen in unsere Welt, das wir Ihnen anbieten. \nSie können den ganzen Abend und die ganze Nacht frei von der Entdeckung der Tiere profitieren. \nDie Hütte verfügt über eine Innen- und Außenbeleuchtung sowie über Steckdosen zum Aufladen Ihrer Telefone. Trockentoilette neben der Hütte. \nDuschkabine, Waschbecken und klassische Toilette 140 m entfernt."
+        ],
+        "en": [
+          "Come and recharge your batteries for an evening and night, in the middle of the park, near the wallabies, fallow deer, yaks... in this small fairy-tale hut, with a view over the valley of the Ognon. \nIt is an immersion in our universe that we offer you. \nYou will be able to freely enjoy the discovery of the animals all evening and night. \nThe hut has interior and exterior lighting, as well as sockets for recharging your phones. Dry toilets next to the hut. \nShower cabin, washbasin and conventional toilet 140 metres away."
+        ],
+        "it": [
+          "Venite a fare il pieno di energia per una sera e una notte, in mezzo al parco, vicino ai wallaby, ai daini, agli yak, in questo piccolo rifugio da favola, con vista sulla valle dell'ognon\nÈ un'immersione nel nostro universo quella che vi offriamo\nPotrete godervi la scoperta degli animali per tutta la sera e la notte\nIl rifugio è dotato di illuminazione interna ed esterna e di prese per ricaricare i telefoni. Servizi igienici a secco accanto al rifugio\nCabina doccia, lavabo e WC convenzionale a 140 metri."
+        ],
+        "fr": [
+          "Venez vous ressourcer le temps d’une soirée et nuit, au milieu du parc, près des enclos des wallabys, daims, yacks… dans cette petite cabane féerique, avec vue plongeante sur la vallée de l’ognon. \nC’est une immersion dans notre univers que l’on vous propose. \nVous pourrez librement profiter de la découverte des animaux toute la soirée et nuit. \nLa cabane dispose d’un éclairage intérieur et extérieur, ainsi que des prises pour recharger vos téléphones. Toilettes séches à côté de la cabane. \nCabine de douche, lavabo et toilettes classiques à 140 mètres."
+        ],
+        "es": [
+          "Venga a reponer fuerzas durante una tarde y una noche, en pleno parque, cerca de los ualabíes, gamos, yaks... en esta pequeña cabaña de cuento, con vistas al valle del ognon\nEs una inmersión en nuestro universo lo que le ofrecemos\nPodrá disfrutar del descubrimiento de los animales durante toda la tarde y la noche\nLa cabaña tiene iluminación interior y exterior, así como enchufes para recargar los teléfonos. Aseos secos junto a la cabaña\nCabina de ducha, lavabo e inodoro convencional a 140 metros."
+        ],
+        "nl": [
+          "Kom een avond en nacht nieuwe energie opdoen, midden in het park, bij de wallaby's, damherten, yaks? in deze kleine sprookjeshut, met uitzicht over de vallei van de ognon\nHet is een onderdompeling in ons universum dat wij u aanbieden\nU kunt de hele avond en nacht genieten van de ontdekking van de dieren\nDe hut heeft binnen- en buitenverlichting en stopcontacten om uw telefoon op te laden. Droge toiletten naast de hut\nDouchecabine, wastafel en conventioneel toilet op 140 meter."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0b545ab3-54ac-3639-947b-f6e9dffbf3bd",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/459c18e3-ae39-3ee5-9c8d-6e91d4f51da6",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/c0b22ab5-e446-3b9f-88bd-898143d426cc",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/0d9cce6c-1e96-3e10-9bb0-e70d5f4ecf99",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:BabyEquipment",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Baby-, Kindermaterial"
+            ],
+            "pt": [
+              "Material para bebés e crianças"
+            ],
+            "en": [
+              "Baby or child equipment"
+            ],
+            "it": [
+              "Dotazioni per neonati e bambini"
+            ],
+            "fr": [
+              "Matériel bébé, enfant"
+            ],
+            "es": [
+              "Material para bebés y niños pequeños"
+            ],
+            "nl": [
+              "Baby- en kinderuitrusting"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/597bddeb-e95c-3f09-ac40-bea47ae48e59",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:GameArea",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Spielbereich"
+            ],
+            "pt": [
+              "Espaço de jogos"
+            ],
+            "en": [
+              "Game area"
+            ],
+            "it": [
+              "Area giochi"
+            ],
+            "fr": [
+              "Espace jeux"
+            ],
+            "nl": [
+              "Gameruimte"
+            ],
+            "es": [
+              "Espacio de juegos"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Playground",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Spielplatz, Außenspielplatz"
+            ],
+            "pt": [
+              "Parque infantil, parque de jogos exterior"
+            ],
+            "en": [
+              "Playground"
+            ],
+            "it": [
+              "Parco giochi, parco giochi all'aperto"
+            ],
+            "fr": [
+              "Aire de jeux, terrain de jeux extérieurs"
+            ],
+            "nl": [
+              "Speelplaats, buitenspeelplaats"
+            ],
+            "es": [
+              "Parque infantil, zona de juegos al aire libre"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b1d31810-f1f7-34f9-8f68-0ed5a6fa6993",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:ShopsFirstNeed",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschäfte für den Grundbedarf"
+            ],
+            "pt": [
+              "Comércio de primeira necessidade"
+            ],
+            "en": [
+              "Shops first need"
+            ],
+            "it": [
+              "Negozi prima necessità"
+            ],
+            "fr": [
+              "Commerces 1ère nécessité"
+            ],
+            "nl": [
+              "Winkels voor eerste levensbehoeften"
+            ],
+            "es": [
+              "Comercio de primera necesidad"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef2d7794-2aa6-3c88-a672-d20e3cc76cc7",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SheetsAndTowels",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bettwäsche und Handtücher"
+            ],
+            "pt": [
+              "Lençóis e toalhas"
+            ],
+            "en": [
+              "Sheets and towels"
+            ],
+            "it": [
+              "Lenzuola e biancheria"
+            ],
+            "fr": [
+              "Draps et linges"
+            ],
+            "es": [
+              "Sábanas y ropa de cama"
+            ],
+            "nl": [
+              "Beddengoed en handdoeken"
+            ]
+          }
+        }
+      ],
+      "hasFloorSize": {
+        "@id": "https://data.datatourisme.fr/594bee9e-fea2-3a91-a1bf-d15acea9e590",
+        "schema:unitText": [
+          "m²"
+        ],
+        "@type": [
+          "schema:QuantitativeValue"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/f6de9b16-8c06-3e87-955f-f982a9a46a73",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/4eca7b40-e027-3541-b419-cdf9ef355adc",
+          "schema:addressLocality": "Loulans-Verchamp",
+          "schema:postalCode": "70230",
+          "schema:streetAddress": [
+            "15 Rue Charles Vincent"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:70309",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Loulans-Verchamp"
+              ],
+              "pt": [
+                "Loulans-Verchamp"
+              ],
+              "en": [
+                "Loulans-Verchamp"
+              ],
+              "it": [
+                "Loulans-Verchamp"
+              ],
+              "fr": [
+                "Loulans-Verchamp"
+              ],
+              "nl": [
+                "Loulans-Verchamp"
+              ],
+              "es": [
+                "Loulans-Verchamp"
+              ]
+            },
+            "insee": "70309",
+            "isPartOfDepartment": {
+              "@id": "kb:France2770",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Saône"
+                ],
+                "pt": [
+                  "Haute-Saône"
+                ],
+                "en": [
+                  "Haute-Saône"
+                ],
+                "it": [
+                  "Haute-Saône"
+                ],
+                "fr": [
+                  "Haute-Saône"
+                ],
+                "nl": [
+                  "Haute-Saône"
+                ],
+                "es": [
+                  "Haute-Saône"
+                ]
+              },
+              "insee": "70",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/d502738d-d500-3123-9411-9be371168cdd",
+        "schema:latitude": "47.43121",
+        "schema:longitude": "6.21597",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-02",
+  "lastUpdateDatatourisme": "2025-07-03T23:59:27.751Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/c3da5cfe-b3a8-3a7f-9f3b-55b968545989",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Paypal",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Paypal"
+            ],
+            "pt": [
+              "PayPal"
+            ],
+            "en": [
+              "Paypal"
+            ],
+            "it": [
+              "Paypal"
+            ],
+            "fr": [
+              "Paypal"
+            ],
+            "nl": [
+              "Paypal"
+            ],
+            "es": [
+              "PayPal"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

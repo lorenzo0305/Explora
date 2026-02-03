@@ -1,0 +1,345 @@
+{
+  "@id": "https://data.datatourisme.fr/38/04a96863-cd11-3807-8086-51a97c7d878d",
+  "dc:identifier": "HPAcbd2ded026324",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CamperVanArea",
+    "Camping",
+    "CampingAndCaravanning",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "en": [
+      "Camping de Painfaut"
+    ],
+    "fr": [
+      "Camping de Painfaut"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/12a1baab-9011-380f-8e91-fb2ce040971d",
+    "schema:legalName": "OT - PAYS DE REDON",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/cbc8f135-bec8-365b-8b02-ea7abf78dfa7",
+      "schema:legalName": "SIT Breton",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/129e7d76-916a-3224-9554-173b231e6f3a",
+      "schema:telephone": [
+        "+33 6 45 24 77 70"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.camping-lepainfaut.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/e5d3e022-d15c-3521-86b9-1806fd02da4d",
+      "dc:description": {
+        "de": [
+          "Freilufthotelgewerbe"
+        ],
+        "en": [
+          "Hôtellerie de plein air"
+        ],
+        "it": [
+          "Hotel all'aperto"
+        ],
+        "fr": [
+          "Hôtellerie de plein air"
+        ],
+        "nl": [
+          "Openluchthotels"
+        ],
+        "es": [
+          "Hoteles al aire libre"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/2cd6e3ea-557d-3429-b5d6-2ce6a742f8e8",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6fe6a55f-4314-36de-a9c4-4e183fcecfa9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9bbb84f2-8f97-3109-ac95-4148a3a98ded",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f6ce4c71-76d1-3da6-9828-14b4672c8944",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/55b939bd-a411-3618-8f73-77921a0e60a6",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_2etoiles",
+        "schema:ratingValue": "2.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "2 Sterne"
+          ],
+          "pt": [
+            "2 estrelas"
+          ],
+          "en": [
+            "2 Stars"
+          ],
+          "it": [
+            "2 stelle"
+          ],
+          "fr": [
+            "2 étoiles"
+          ],
+          "nl": [
+            "2 sterren"
+          ],
+          "es": [
+            "2 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/0ec46002-c1e8-344e-a322-db57cd014057",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/8dd2fee8-f37d-3591-a5ed-a8dc34cd881e",
+          "schema:addressLocality": "Saint-Vincent-sur-Oust",
+          "schema:postalCode": "56350",
+          "schema:streetAddress": [
+            "Painfaut"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:56239",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Vincent-sur-Oust"
+              ],
+              "pt": [
+                "Saint-Vincent-sur-Oust"
+              ],
+              "en": [
+                "Saint-Vincent-sur-Oust"
+              ],
+              "it": [
+                "Saint-Vincent-sur-Oust"
+              ],
+              "fr": [
+                "Saint-Vincent-sur-Oust"
+              ],
+              "nl": [
+                "Saint-Vincent-sur-Oust"
+              ],
+              "es": [
+                "Saint-Vincent-sur-Oust"
+              ]
+            },
+            "insee": "56239",
+            "isPartOfDepartment": {
+              "@id": "kb:France5356",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Morbihan"
+                ],
+                "pt": [
+                  "Morbihan"
+                ],
+                "en": [
+                  "Morbihan"
+                ],
+                "it": [
+                  "Morbihan"
+                ],
+                "fr": [
+                  "Morbihan"
+                ],
+                "nl": [
+                  "Morbihan"
+                ],
+                "es": [
+                  "Morbihan"
+                ]
+              },
+              "insee": "56",
+              "isPartOfRegion": {
+                "@id": "kb:France53",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bretagne"
+                  ],
+                  "pt": [
+                    "Bretagne"
+                  ],
+                  "en": [
+                    "Bretagne"
+                  ],
+                  "it": [
+                    "Bretagne"
+                  ],
+                  "fr": [
+                    "Bretagne"
+                  ],
+                  "nl": [
+                    "Bretagne"
+                  ],
+                  "es": [
+                    "Bretagne"
+                  ]
+                },
+                "insee": "53",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/d9408242-5f58-320b-9408-a202d9448c74",
+        "schema:latitude": "47.70863",
+        "schema:longitude": "-2.129181",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-06-20",
+  "lastUpdateDatatourisme": "2025-06-21T03:44:29.347Z"
+}

@@ -1,0 +1,783 @@
+{
+  "@id": "https://data.datatourisme.fr/28/07d45928-cac5-301a-936b-3c15ce779b86",
+  "dc:identifier": "VILPIC000V503XWT",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CollectiveAccommodation",
+    "HolidayResort",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Das Hôtel de France befindet sich im Zentrum von Roubaix und ist ideal am Grand Place gelegen, gegenüber..."
+    ],
+    "en": [
+      "Located in the center of Roubaix, the Hôtel de France is ideally situated on the Grand Place, opposite..."
+    ],
+    "it": [
+      "Situato nel centro di Roubaix, l'Hôtel de France gode di una posizione ideale sulla Grand Place, di fronte al..."
+    ],
+    "fr": [
+      "Situé dans le centre de Roubaix,  l'Hôtel de France est idéalement localisé sur la Grand Place, face..."
+    ],
+    "es": [
+      "Situado en el centro de Roubaix, el Hôtel de France goza de una ubicación ideal en la Grand Place, frente al..."
+    ],
+    "nl": [
+      "Hôtel de France ligt in het centrum van Roubaix, op een ideale locatie aan de Grand Place, tegenover de..."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "L'Hôtel de France"
+    ]
+  },
+  "allowedPersons": 20,
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/7390cd60-df56-3380-adcf-7c129d7e3e10",
+    "schema:legalName": "SIM Hauts-de-France - Hauts-de-France Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/5463b4e3-2482-3579-a40a-47ba972f29d5",
+      "schema:legalName": "SIM Hauts-de-France",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/eee85bea-1bef-3df0-9b63-cc58571a143e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/37fafaaf-4dee-3136-8c1c-0340fa53523c",
+          "schema:addressLocality": "Roubaix",
+          "schema:postalCode": "59100",
+          "schema:streetAddress": [
+            "1 Grand Place"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:59512",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Roubaix"
+              ],
+              "pt": [
+                "Roubaix"
+              ],
+              "en": [
+                "Roubaix"
+              ],
+              "it": [
+                "Roubaix"
+              ],
+              "fr": [
+                "Roubaix"
+              ],
+              "nl": [
+                "Roubaix"
+              ],
+              "es": [
+                "Roubaix"
+              ]
+            },
+            "insee": "59512",
+            "isPartOfDepartment": {
+              "@id": "kb:France3259",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nord"
+                ],
+                "pt": [
+                  "Nord"
+                ],
+                "en": [
+                  "Nord"
+                ],
+                "it": [
+                  "Nord"
+                ],
+                "fr": [
+                  "Nord"
+                ],
+                "nl": [
+                  "Nord"
+                ],
+                "es": [
+                  "Nord"
+                ]
+              },
+              "insee": "59",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:legalName": "Résidence de tourisme-Villages Vacances",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/6db46ef7-3f11-32f5-ba89-0989edd82f20",
+      "schema:email": [
+        "contact@brasserie-hoteldefrance.fr"
+      ],
+      "schema:telephone": [
+        "+33 9 81 42 20 22"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.brasserie-hoteldefrance.fr/hotel.html"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/eee85bea-1bef-3df0-9b63-cc58571a143e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/37fafaaf-4dee-3136-8c1c-0340fa53523c",
+          "schema:addressLocality": "Roubaix",
+          "schema:postalCode": "59100",
+          "schema:streetAddress": [
+            "1 Grand Place"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:59512",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Roubaix"
+              ],
+              "pt": [
+                "Roubaix"
+              ],
+              "en": [
+                "Roubaix"
+              ],
+              "it": [
+                "Roubaix"
+              ],
+              "fr": [
+                "Roubaix"
+              ],
+              "nl": [
+                "Roubaix"
+              ],
+              "es": [
+                "Roubaix"
+              ]
+            },
+            "insee": "59512",
+            "isPartOfDepartment": {
+              "@id": "kb:France3259",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nord"
+                ],
+                "pt": [
+                  "Nord"
+                ],
+                "en": [
+                  "Nord"
+                ],
+                "it": [
+                  "Nord"
+                ],
+                "fr": [
+                  "Nord"
+                ],
+                "nl": [
+                  "Nord"
+                ],
+                "es": [
+                  "Nord"
+                ]
+              },
+              "insee": "59",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:legalName": "Résidence de tourisme-Villages Vacances",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/17cb0953-3303-325c-9df1-67199436fbb5",
+      "dc:description": {
+        "de": [
+          "Das Hôtel de France befindet sich im Zentrum von Roubaix und ist ideal am Grand Place gegenüber dem Rathaus gelegen.\n\nFür einen individuellen Aufenthalt, einen Familienurlaub oder eine Geschäftsreise bieten Ihnen die Zimmer einen passenden Rahmen für alle Ihre Bedürfnisse. Mit seinen vielen modern gestalteten Zimmern lädt es Sie zu einem angenehmen Aufenthalt in Roubaix ein.\n\nJedes Zimmer ist mit einer Küchenzeile ausgestattet, die über eine Kaffeemaschine, einen Kühlschrank und eine Mikrowelle verfügt.\n\nZögern Sie nicht, einen Tisch in der hoteleigenen Brasserie zu reservieren, um die lokalen Spezialitäten zu probieren oder zu entdecken."
+        ],
+        "en": [
+          "Located in the center of Roubaix, Hôtel de France is ideally situated on the Grand Place, opposite the town hall.\n\nWhether you're staying on your own, with your family or on a business trip, the rooms offer the right setting for all your needs. With its many modern-design rooms, it invites you to enjoy a pleasant stay in Roubaix.\n\nEach room is equipped with a kitchenette, including coffee maker, fridge and microwave.\n\nDon?t hesitate to book a table at the hotel?s brasserie to taste, or discover, local specialties."
+        ],
+        "it": [
+          "Situato nel centro di Roubaix, l'Hôtel de France gode di una posizione ideale sulla Grand Place, di fronte al municipio.\n\nPer un soggiorno individuale, un viaggio in famiglia o un viaggio d'affari, le camere offrono un ambiente adatto a tutte le vostre esigenze. Con le sue numerose camere dal design moderno, vi invita a trascorrere un piacevole soggiorno a Roubaix.\n\nOgni camera è dotata di angolo cottura, macchina per il caffè, frigorifero e microonde.\n\nNon esitate a prenotare un tavolo nella brasserie dell'hotel per gustare o scoprire le specialità locali."
+        ],
+        "fr": [
+          "Situé dans le centre de Roubaix,  l'Hôtel de France est idéalement localisé sur la Grand Place, face à la Mairie. \n\nPour un séjour individuel, en famille ou un voyage d’affaires, les chambres vous offrent un cadre adapté pour tous vos besoins. Avec ses nombreuses chambres au design moderne, il vous invite à passer un séjour agréable à Roubaix.\n\nChaque chambre est équipée d’une kitchenette, avec cafetière, réfrigérateur et micro-ondes. \n\nN’hésitez pas à réserver une table à la brasserie de l’hôtel pour déguster, ou découvrir, les spécialités locales."
+        ],
+        "es": [
+          "Situado en el centro de Roubaix, el Hôtel de France goza de una ubicación ideal en la Grand Place, frente al ayuntamiento.\n\nPara una estancia individual, un viaje en familia o un viaje de negocios, las habitaciones ofrecen un marco adaptado a todas sus necesidades. Con sus numerosas habitaciones de diseño moderno, le invita a pasar una agradable estancia en Roubaix.\n\nCada habitación está equipada con cocina americana, cafetera, nevera y microondas.\n\nNo dude en reservar mesa en la brasserie del hotel para degustar o descubrir las especialidades locales."
+        ],
+        "nl": [
+          "Hôtel de France ligt in het centrum van Roubaix en heeft een ideale ligging aan de Grand Place, tegenover het stadhuis.\n\nVoor een individueel verblijf, een familie-uitstap of een zakenreis bieden de kamers een omgeving die is aangepast aan al uw behoeften. Met zijn vele modern ingerichte kamers nodigt het u uit voor een aangenaam verblijf in Roubaix.\n\nElke kamer is uitgerust met een kitchenette, een koffiezetapparaat, een koelkast en een magnetron.\n\nAarzel niet om een tafel te reserveren in de brasserie van het hotel om de lokale specialiteiten te proeven of te ontdekken."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0eef11f7-8108-30c1-8231-8ddc596683b5",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/1244a50e-7859-356b-b761-4d4bf50c00a9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4562c3e9-08bf-33d1-ab68-21de6f9a979f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/486e6698-ad06-3faf-bd1c-e2e010b13a4b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7171c987-e917-38c7-b29e-a8b0ff299fc2",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9c9354c8-6ef3-3e59-b9b8-b40c8cb2bb54",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a3d583fb-19ef-3fbe-8baa-dc1de2da2226",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a59523d1-94e4-388e-bf4f-072dc0df7ef1",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b188c7a8-e90c-3a30-a98c-597113eedcc1",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f2a2240d-5206-3c29-ad95-9a8e13459184",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Das Hôtel de France befindet sich im Zentrum von Roubaix und ist ideal am Grand Place gelegen, gegenüber..."
+        ],
+        "en": [
+          "Located in the center of Roubaix, the Hôtel de France is ideally situated on the Grand Place, opposite..."
+        ],
+        "it": [
+          "Situato nel centro di Roubaix, l'Hôtel de France gode di una posizione ideale sulla Grand Place, di fronte al..."
+        ],
+        "fr": [
+          "Situé dans le centre de Roubaix,  l'Hôtel de France est idéalement localisé sur la Grand Place, face..."
+        ],
+        "es": [
+          "Situado en el centro de Roubaix, el Hôtel de France goza de una ubicación ideal en la Grand Place, frente al..."
+        ],
+        "nl": [
+          "Hôtel de France ligt in het centrum van Roubaix, op een ideale locatie aan de Grand Place, tegenover de..."
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/2a603dcf-f59e-36f9-b535-d841eea566f1",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/48d0517f-c359-3ecb-99c0-74f540495941",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5327ad12-eed8-3ff2-b85c-88114c5e5f88",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5fc904f9-4b3c-3b29-a763-0550c158c0cd",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/af91d504-44d4-3c34-a56f-d1d2a1c9403b",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/605c1824-4481-3b81-9648-cb24bf78fd95",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/37fafaaf-4dee-3136-8c1c-0340fa53523c",
+          "schema:addressLocality": "Roubaix",
+          "schema:postalCode": "59100",
+          "schema:streetAddress": [
+            "1 Grand Place"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:59512",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Roubaix"
+              ],
+              "pt": [
+                "Roubaix"
+              ],
+              "en": [
+                "Roubaix"
+              ],
+              "it": [
+                "Roubaix"
+              ],
+              "fr": [
+                "Roubaix"
+              ],
+              "nl": [
+                "Roubaix"
+              ],
+              "es": [
+                "Roubaix"
+              ]
+            },
+            "insee": "59512",
+            "isPartOfDepartment": {
+              "@id": "kb:France3259",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nord"
+                ],
+                "pt": [
+                  "Nord"
+                ],
+                "en": [
+                  "Nord"
+                ],
+                "it": [
+                  "Nord"
+                ],
+                "fr": [
+                  "Nord"
+                ],
+                "nl": [
+                  "Nord"
+                ],
+                "es": [
+                  "Nord"
+                ]
+              },
+              "insee": "59",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/fe7e57ae-95b2-32f8-8fbb-b0d68cf821af",
+        "schema:latitude": "50.6915978",
+        "schema:longitude": "3.1729481",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2025-07-05",
+  "lastUpdateDatatourisme": "2025-07-06T04:36:15.681Z"
+}

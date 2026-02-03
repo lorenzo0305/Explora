@@ -1,0 +1,4881 @@
+{
+  "@id": "https://data.datatourisme.fr/31/077dfe65-233e-36f7-bcdc-7ea5c99a2a59",
+  "dc:identifier": "TFO18208136679",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "Camping",
+    "CampingAndCaravanning",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Liebenswerter Campingplatz vor den Toren von Millau, ruhig und schattig am Ufer des Tarn gelegen, mit Swimmingpool. Herrlicher Blick auf unseren schönen Berg Puncho D'Agast."
+    ],
+    "en": [
+      "Adorable campsite, at the gates of Millau, quiet and shaded on the banks of the Tarn, with swimming pool. Magnificent view of our beautiful mountain the Puncho D'Agast."
+    ],
+    "it": [
+      "Adorabile campeggio, alle porte di Millau, tranquillo e ombreggiato sulle rive del Tarn, con piscina. Magnifica vista sulla nostra bella montagna, il Puncho d'Agast."
+    ],
+    "fr": [
+      "Adorable Camping, aux portes de Millau, calme et ombragé au bord du Tarn, avec piscine. Vue magnifique sur notre belle montagne la Puncho D'Agast."
+    ],
+    "nl": [
+      "Mooie camping, net buiten Millau, rustig en schaduwrijk aan de oever van de Tarn, met zwembad. Prachtig uitzicht op onze mooie berg Puncho D'Agast."
+    ],
+    "es": [
+      "Camping adorable, a las puertas de Millau, tranquilo y sombreado a orillas del Tarn, con piscina. Magnífica vista de nuestra hermosa montaña el Puncho D'Agast."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Camping Larribal"
+    ]
+  },
+  "allowedPersons": 207,
+  "availableLanguage": [
+    "en",
+    "fr"
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/db224e7a-611f-379d-b03d-1cb615389a8d",
+    "schema:legalName": "HIT Aveyron (ADAT Aveyron)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/66be3cfa-8d5c-34e7-87b1-87e1705c3fc4",
+      "schema:email": [
+        "webmaster@tourisme-aveyron.com"
+      ],
+      "schema:legalName": "ADT Aveyron",
+      "schema:telephone": [
+        "+33 5 65 75 40 12"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-aveyron.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/90fe835f-d048-319b-88d6-f40fe9781388",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/4b85cb73-368d-305c-bfc1-147d6586f5b3",
+          "schema:addressLocality": "Millau",
+          "schema:postalCode": "12100",
+          "schema:streetAddress": [
+            "avenue de Millau Plage"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12145",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Millau"
+              ],
+              "pt": [
+                "Millau"
+              ],
+              "en": [
+                "Millau"
+              ],
+              "it": [
+                "Millau"
+              ],
+              "fr": [
+                "Millau"
+              ],
+              "nl": [
+                "Millau"
+              ],
+              "es": [
+                "Millau"
+              ]
+            },
+            "insee": "12145",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "campinglarribal@gmail.com"
+      ],
+      "schema:familyName": [
+        "Charpentier"
+      ],
+      "schema:givenName": [
+        "Sandrine & Eric"
+      ],
+      "schema:legalName": "Camping Larribal",
+      "schema:telephone": [
+        "+33 5 65 59 08 04"
+      ],
+      "@type": [
+        "schema:Organization",
+        "schema:Person",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://campinglarribal.com/camping-millau-larribal/mobilehome-millau",
+        "https://www.facebook.com/campinglarribal"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b4db4ae8-7046-3f98-85dc-dade67f30426",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/d5a095ea-7695-3f0c-84ff-928f528a7640",
+          "schema:addressLocality": "Millau",
+          "schema:postalCode": "12100",
+          "schema:streetAddress": [
+            "Avenue de Millau Plage"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12145",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Millau"
+              ],
+              "pt": [
+                "Millau"
+              ],
+              "en": [
+                "Millau"
+              ],
+              "it": [
+                "Millau"
+              ],
+              "fr": [
+                "Millau"
+              ],
+              "nl": [
+                "Millau"
+              ],
+              "es": [
+                "Millau"
+              ]
+            },
+            "insee": "12145",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "campinglarribal@gmail.com"
+      ],
+      "schema:familyName": [
+        "CHARPENTIER"
+      ],
+      "schema:givenName": [
+        "Eric et Sandrine"
+      ],
+      "schema:legalName": "CAMPING LARRIBAL",
+      "schema:telephone": [
+        "+33 5 65 59 08 04"
+      ],
+      "@type": [
+        "schema:Organization",
+        "schema:Person",
+        "foaf:Agent",
+        "foaf:Person",
+        "Agent",
+        "Person"
+      ],
+      "foaf:homepage": [
+        "https://www.campinglarribal.com/",
+        "https://www.facebook.com/pages/Camping-Larribal/108856959184823"
+      ],
+      "foaf:title": [
+        "Monsieur et Madame"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b95ba164-b85a-311b-a470-fa68497d10e3",
+      "schema:familyName": [
+        "CHARPENTIER"
+      ],
+      "schema:givenName": [
+        "Sandrine"
+      ],
+      "schema:legalName": "CAMPING LARRIBAL",
+      "@type": [
+        "schema:Organization",
+        "schema:Person",
+        "foaf:Agent",
+        "foaf:Person",
+        "Agent",
+        "Person"
+      ],
+      "foaf:title": [
+        "Monsieur et Madame"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/0498f18f-ea8e-37b5-b874-99cc1d0120bb",
+      "dc:description": {
+        "de": [
+          "Eine familiäre Atmosphäre auf diesem kleinen Campingplatz am Flussufer, 10 Minuten zu Fuß vom Stadtzentrum Millau entfernt. Zahlreiche schattige Plätze. Eine Bar mit Terrasse steht Ihnen gegenüber dem Pool zur Verfügung. Im Sommer bieten wir Ihnen von Zeit zu Zeit Animationen und Konzerte lokaler Gruppen an."
+        ],
+        "en": [
+          "A friendly family atmosphere for this small campsite on the river bank 10 minutes walk from Millau town centre. Several shaded spots. A bar with a terrace is at your disposal in front of the swimming pool. During summer we sometimes propose activities and concerts."
+        ],
+        "it": [
+          "Atmosfera familiare per questo piccolo campeggio sul fiume, a 10 minuti a piedi dal centro di Millau. Molti posti all'ombra. Un bar con terrazza è a vostra disposizione, di fronte alla piscina. In estate, offriamo occasionalmente intrattenimento e concerti di gruppi locali."
+        ],
+        "fr": [
+          "Une ambiance familiale pour ce petit camping en bordure de rivière, à 10 minutes du centre-ville de Millau à pied. Nombreuses places ombragées. Un bar avec terrasse est à votre disposition, face à la piscine. L'été nous vous proposons de temps en temps des animations et concerts de groupes locaux."
+        ],
+        "es": [
+          "Un ambiente familiar para este pequeño camping a lo largo del río, a 10 minutos del centro de Millau a pie. Muchos lugares con sombra. Un bar con terraza está a su disposición, frente a la piscina. En el verano le ofrecemos animaciones y conciertos de grupos locales de vez en cuando."
+        ],
+        "nl": [
+          "Familiale sfeer op deze kleine camping aan de rivier, op 10 minuten lopen van het centrum van Millau. Veel schaduwrijke plekjes. Een bar met terras is beschikbaar tegenover het zwembad. In de zomer bieden we af en toe entertainment en concerten door lokale groepen."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/2dcca7fb-eed7-3f0f-b423-ce804c8d8ba2",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/437eac07-67ae-3afb-a9bf-c1e50a37de46",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9be7a71b-b925-3628-be1f-a9987c8a83cd",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/bfea5a44-9fbb-3ddf-9fc3-eca6ea6e72d0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e0a5dbbd-e011-35cc-99fb-e42b3efbad97",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e6db82e9-f5ab-39a3-82e6-62b165b0002a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Liebenswerter Campingplatz vor den Toren von Millau, ruhig und schattig am Ufer des Tarn gelegen, mit Swimmingpool. Herrlicher Blick auf unseren schönen Berg Puncho D'Agast."
+        ],
+        "en": [
+          "Adorable campsite, at the gates of Millau, quiet and shaded on the banks of the Tarn, with swimming pool. Magnificent view of our beautiful mountain the Puncho D'Agast."
+        ],
+        "it": [
+          "Adorabile campeggio, alle porte di Millau, tranquillo e ombreggiato sulle rive del Tarn, con piscina. Magnifica vista sulla nostra bella montagna, il Puncho d'Agast."
+        ],
+        "fr": [
+          "Adorable Camping, aux portes de Millau, calme et ombragé au bord du Tarn, avec piscine. Vue magnifique sur notre belle montagne la Puncho D'Agast."
+        ],
+        "nl": [
+          "Mooie camping, net buiten Millau, rustig en schaduwrijk aan de oever van de Tarn, met zwembad. Prachtig uitzicht op onze mooie berg Puncho D'Agast."
+        ],
+        "es": [
+          "Camping adorable, a las puertas de Millau, tranquilo y sombreado a orillas del Tarn, con piscina. Magnífica vista de nuestra hermosa montaña el Puncho D'Agast."
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/46042b79-b5c5-a778-b6b5-79ccc67a4228",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "65K1WJ4GZR8S",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/1a4f01c7-fd78-32fb-b1b9-95ed6c25eb4a",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true,
+      "petsAllowed": true
+    },
+    {
+      "@id": "https://data.datatourisme.fr/329278d9-da89-3efd-ae81-8d0549787303",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Paddling",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Planschbecken, Kinderbecken"
+            ],
+            "pt": [
+              "Piscina infantil, piscina para crianças"
+            ],
+            "en": [
+              "Paddling, Children's pool"
+            ],
+            "it": [
+              "Piscinetta, piscina per bambini"
+            ],
+            "fr": [
+              "Pataugeoire, Piscine enfants"
+            ],
+            "es": [
+              "Piscina infantil, piscina para niños"
+            ],
+            "nl": [
+              "Peuterbadje, kinderzwembad"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/337daa48-7f66-3ae3-9c19-fce9fccc3340",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Beach",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Strand"
+            ],
+            "pt": [
+              "Praia"
+            ],
+            "en": [
+              "Beach"
+            ],
+            "it": [
+              "Spiaggia"
+            ],
+            "fr": [
+              "Plage"
+            ],
+            "nl": [
+              "Strand"
+            ],
+            "es": [
+              "Playa"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/358e108a-a377-3222-9a5d-2a47e3b23cb0",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Bar",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bar"
+            ],
+            "pt": [
+              "Bar"
+            ],
+            "en": [
+              "Bar"
+            ],
+            "it": [
+              "Bar"
+            ],
+            "fr": [
+              "Bar"
+            ],
+            "nl": [
+              "Bar"
+            ],
+            "es": [
+              "Bar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/387b8c8c-ce7c-3754-bed9-90d4fce0574e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:MobilHomeHire",
+          "@type": [
+            "AccommodationPricingOffer",
+            "CampingAndCaravanningAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wohnmobilvermietung"
+            ],
+            "pt": [
+              "Aluguer de casa pré-fabricada"
+            ],
+            "en": [
+              "Mobile home hire"
+            ],
+            "it": [
+              "Affitto di case mobili"
+            ],
+            "fr": [
+              "Location mobil home"
+            ],
+            "nl": [
+              "Stacaravanverhuur"
+            ],
+            "es": [
+              "Alquiler casa prefabricada"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/42aa53a7-b05b-3a8f-9b1c-9631ded80981",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/47b6c5ae-cf8c-34ec-b5b5-1bfcf66dd71a",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:ShopsFirstNeed",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschäfte für den Grundbedarf"
+            ],
+            "pt": [
+              "Comércio de primeira necessidade"
+            ],
+            "en": [
+              "Shops first need"
+            ],
+            "it": [
+              "Negozi prima necessità"
+            ],
+            "fr": [
+              "Commerces 1ère nécessité"
+            ],
+            "nl": [
+              "Winkels voor eerste levensbehoeften"
+            ],
+            "es": [
+              "Comercio de primera necesidad"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4cba7bb6-a09a-3fb8-9fc1-38935866d515",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Playground",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Spielplatz, Außenspielplatz"
+            ],
+            "pt": [
+              "Parque infantil, parque de jogos exterior"
+            ],
+            "en": [
+              "Playground"
+            ],
+            "it": [
+              "Parco giochi, parco giochi all'aperto"
+            ],
+            "fr": [
+              "Aire de jeux, terrain de jeux extérieurs"
+            ],
+            "nl": [
+              "Speelplaats, buitenspeelplaats"
+            ],
+            "es": [
+              "Parque infantil, zona de juegos al aire libre"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4fa7761e-10e1-3642-8c8f-8fa9093fa020",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:ShaddedArea",
+          "@type": [
+            "CampingAndCaravanningAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Schattiger Platz"
+            ],
+            "pt": [
+              "Local à sombra"
+            ],
+            "en": [
+              "Shadded area"
+            ],
+            "it": [
+              "Piazzola ombreggiata"
+            ],
+            "fr": [
+              "Emplacement ombragé"
+            ],
+            "nl": [
+              "Staanplaats in de schaduw"
+            ],
+            "es": [
+              "Parcela con sombra"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5410b7c3-e0c0-344f-9ba4-65b3b92fb26e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:TakeawayFoodOrMeals",
+          "@type": [
+            "CateringAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Essen zum Mitnehmen"
+            ],
+            "pt": [
+              "Venda de refeições para fora"
+            ],
+            "en": [
+              "Takeaway food or meals"
+            ],
+            "it": [
+              "Vendita di piatti da asporto"
+            ],
+            "fr": [
+              "Vente de plats à emporter"
+            ],
+            "nl": [
+              "Verkoop van afhaalmaaltijden"
+            ],
+            "es": [
+              "Venta de platos para llevar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/674bc3ab-e707-31f6-8b76-ed2906ce8753",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9c419e26-aeb9-3669-824b-6b4f11bdd62d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:Barbecue",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Grill"
+            ],
+            "pt": [
+              "Churrasco"
+            ],
+            "en": [
+              "Barbecue"
+            ],
+            "it": [
+              "Barbecue"
+            ],
+            "fr": [
+              "Barbecue"
+            ],
+            "nl": [
+              "Barbecue"
+            ],
+            "es": [
+              "Barbacoa"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9cb5090e-1c3f-37a2-9e0b-f96ebbddd400",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true,
+      "features": [
+        {
+          "@id": "kb:BabyEquipment",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Baby-, Kindermaterial"
+            ],
+            "pt": [
+              "Material para bebés e crianças"
+            ],
+            "en": [
+              "Baby or child equipment"
+            ],
+            "it": [
+              "Dotazioni per neonati e bambini"
+            ],
+            "fr": [
+              "Matériel bébé, enfant"
+            ],
+            "es": [
+              "Material para bebés y niños pequeños"
+            ],
+            "nl": [
+              "Baby- en kinderuitrusting"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cot",
+          "@type": [
+            "AccommodationPricingOffer",
+            "TypeOfBed"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Babybett"
+            ],
+            "pt": [
+              "Berço"
+            ],
+            "en": [
+              "Cot"
+            ],
+            "it": [
+              "Lettino per bambini"
+            ],
+            "fr": [
+              "Lit bébé"
+            ],
+            "es": [
+              "Cuna"
+            ],
+            "nl": [
+              "Babybed"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/aabad2e7-0513-3295-a478-54abed6bb327",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:BikeHire",
+          "@type": [
+            "CommonAmenity",
+            "RentalPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Fahrradvermietung"
+            ],
+            "pt": [
+              "Aluguer de bicicletas"
+            ],
+            "en": [
+              "Bike hire"
+            ],
+            "it": [
+              "Noleggio di biciclette"
+            ],
+            "fr": [
+              "Location de vélo"
+            ],
+            "nl": [
+              "Fietsenverhuur"
+            ],
+            "es": [
+              "Alquiler de bicicletas"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c0336aa1-edbf-3cec-98d3-0397ffe71e0b",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": true,
+      "features": [
+        {
+          "@id": "kb:Laundry",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Waschsalon, Wäscherei"
+            ],
+            "pt": [
+              "Lavandaria"
+            ],
+            "en": [
+              "Laundry"
+            ],
+            "it": [
+              "Lavanderia, anche a gettoni"
+            ],
+            "fr": [
+              "laverie, blanchisserie"
+            ],
+            "es": [
+              "lavandería"
+            ],
+            "nl": [
+              "Wasserij"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c25c6c27-7693-3f93-820b-009b61c6c387",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:CamperServicePoint",
+          "@type": [
+            "AccommodationPricingOffer",
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Servicestation für Wohnmobile"
+            ],
+            "pt": [
+              "Terminal de serviços para autocaravanas"
+            ],
+            "en": [
+              "Camper service point"
+            ],
+            "it": [
+              "Stazione di servizio per camper"
+            ],
+            "fr": [
+              "Borne de service camping car"
+            ],
+            "nl": [
+              "Servicepunt voor camper"
+            ],
+            "es": [
+              "Estación de servicio para autocaravanas"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cf0a5a5c-1bb4-3219-9a74-db1e68be6349",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:OutdoorPool",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Freibad"
+            ],
+            "pt": [
+              "Piscina ao ar livre"
+            ],
+            "en": [
+              "Outdoor pool"
+            ],
+            "it": [
+              "Piscina all'aperto"
+            ],
+            "fr": [
+              "Piscine plein air"
+            ],
+            "es": [
+              "Piscina de exterior"
+            ],
+            "nl": [
+              "Openluchtzwembad"
+            ]
+          }
+        },
+        {
+          "@id": "kb:SwimmingPool",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Pool"
+            ],
+            "pt": [
+              "Piscina"
+            ],
+            "en": [
+              "Swimming pool"
+            ],
+            "it": [
+              "Piscina"
+            ],
+            "fr": [
+              "Piscine"
+            ],
+            "nl": [
+              "Zwembad"
+            ],
+            "es": [
+              "Piscina"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fd96ec96-a92e-3e88-a6cb-64f4465950a1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "charged": false,
+      "features": [
+        {
+          "@id": "kb:SiteClosedAtNight",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Nachts geschlossene Anlage"
+            ],
+            "pt": [
+              "Local encerrado à noite"
+            ],
+            "en": [
+              "Site closed at night"
+            ],
+            "it": [
+              "Area chiusa di notte"
+            ],
+            "fr": [
+              "Terrain fermé la nuit"
+            ],
+            "nl": [
+              "’s Nachts afgesloten terrein"
+            ],
+            "es": [
+              "Terreno cerrado por la noche"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/7ac20a52-442b-3d1c-ae9e-409a8179eaf5",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/bb010db7-42ab-3b32-ba26-c3916b4347ce",
+          "ebucore:comments": {
+            "fr": [
+              "CAMPING LARRIBAL au bord du Tarn, au pied de la Pouncho d'Agast"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "CAMPING LARRIBAL au bord du Tarn, au pied de la Pouncho d'Agast"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "CAMPING LARRIBAL"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/2d22f73d-6ee3-3da2-958b-c364c9abf58a",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275441_b0e99169-0c36-4887-ab72-ab76cc187067/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasNeighborhood": [
+    {
+      "@id": "kb:CityOutskirts",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Peripherie der Stadt"
+        ],
+        "pt": [
+          "Periferia da cidade"
+        ],
+        "en": [
+          "City outskirts"
+        ],
+        "it": [
+          "Periferia della città"
+        ],
+        "fr": [
+          "Périphérie de la ville"
+        ],
+        "es": [
+          "Periferia de la ciudad"
+        ],
+        "nl": [
+          "Buitenwijken"
+        ]
+      }
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/19adb07c-6601-3335-8d63-a6d905c34d39",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/091c4b02-44b1-3bab-a2bf-85e9a7137191",
+          "ebucore:comments": {
+            "fr": [
+              "Cocosweet 4 personnes"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Cocosweet 4 personnes"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/00491879-e3dd-34b8-80dd-430bd0f3b78e",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275447_a5a5eb34-964a-4993-b7fa-f0746119e8c3/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/23ab3bef-b1b0-37d5-84e9-c4e4e6446d15",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/0b9e4803-2af1-3cfc-aa89-4d3b05b406ed",
+          "ebucore:comments": {
+            "fr": [
+              "Grands emplacements pour groupe"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Grands emplacements pour groupe"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/6af1fbdb-18ef-3b12-bde9-b30434c9b33f",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275455_215c83d4-b307-4464-8d3f-a44842dd4e0e/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2b1a9abd-feb5-3db6-a3f7-a6981b2db0a6",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/1d096934-75ab-301a-836a-e267874a3f52",
+          "ebucore:comments": {
+            "fr": [
+              "Cocosweet"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Cocosweet"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/957d61b4-cf7a-31fc-9dc5-b6446e2854ea",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275450_2160821b-f308-4a89-a406-2352cf509f3f/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/3567a431-3112-34f8-a36f-ddaefc7870a5",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/a0b31046-944d-3760-b202-ebc75f038a47",
+          "ebucore:comments": {
+            "fr": [
+              "piscine"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "piscine"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "CAMPING LARRIBAL"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/805e4c49-56bc-3f42-9384-927bbcf75259",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275445_cbd9e53f-16d6-43a1-9893-d47bdcb0f972/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/3de74bbb-ae35-3813-ac6b-a461517d6314",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/3dbc1886-f653-3f41-b9c3-4bc2268b6e4b",
+          "ebucore:comments": {
+            "fr": [
+              "Piscine"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Piscine"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/ee5fb4f6-da39-3452-9617-6f1126c4b927",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275457_6c2d97b2-9db3-4d13-a6a0-a2fb91857ccb/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/60b5c673-5006-3dff-a517-6e52c53dff64",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/22e4220f-d064-32d6-bb36-d0c5edac2109",
+          "ebucore:comments": {
+            "fr": [
+              "Mobil home premium 3 chambres avec clim et lave vaisselle 6 personnes"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Mobil home premium 3 chambres avec clim et lave vaisselle 6 personnes"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/9b794258-0abf-3a4c-a6e3-04e1032247cb",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275442_16851694-05de-4d76-8955-d97adeb9fd40/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/792c71d5-ae66-3a1d-9dd6-abfd65c2e3e0",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/ced3829c-f944-31d4-a57d-0d434915d6e1",
+          "ebucore:comments": {
+            "fr": [
+              "Vue sur La Puncho d'Agast"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Vue sur La Puncho d'Agast"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/3f32d27c-3564-384d-b2e5-0452db742406",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275458_34a3066a-96b7-48a2-9adf-244f0dcd52d5/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7ac20a52-442b-3d1c-ae9e-409a8179eaf5",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/bb010db7-42ab-3b32-ba26-c3916b4347ce",
+          "ebucore:comments": {
+            "fr": [
+              "CAMPING LARRIBAL au bord du Tarn, au pied de la Pouncho d'Agast"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "CAMPING LARRIBAL au bord du Tarn, au pied de la Pouncho d'Agast"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "CAMPING LARRIBAL"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/2d22f73d-6ee3-3da2-958b-c364c9abf58a",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275441_b0e99169-0c36-4887-ab72-ab76cc187067/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/91cc62eb-22c0-3f5d-9167-01863418a4fc",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/af5a8061-06c7-3d7d-a232-57e96dda55fb",
+          "ebucore:comments": {
+            "fr": [
+              "Piscine nocturne le mardi soir en haute saison"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Piscine nocturne le mardi soir en haute saison"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/b63fc975-a552-398b-a8ae-3974b755816e",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275459_703ddce6-ed9b-4209-87a3-3459971b9d47/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/93fb784a-a3c5-3ca0-821a-84009a1c8e25",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/61536f26-b7a3-3bee-b13c-91b0b69672e2",
+          "ebucore:comments": {
+            "fr": [
+              "Bar /snack"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Bar /snack"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/1f492702-1c53-3f80-a3a1-4c2faee082ae",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275454_f7cd8b80-0f4d-4b7f-967f-58406659e690/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9a86453e-eec6-39d4-aafb-6ad6444d5fa5",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/b5bfa5a3-6269-3c63-8934-39e5336b4566",
+          "ebucore:comments": {
+            "fr": [
+              "Bloc sanitaire"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Bloc sanitaire"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/65ceab03-5e18-3027-ad32-a7233d79a584",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275452_8a6a3513-d0e7-4c9d-8045-4dae8d05855d/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/af852ba5-8b0b-3481-8971-e6b08a811607",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/a4d8c7d9-1ce8-373d-b3b6-65bade7c5883",
+          "ebucore:comments": {
+            "fr": [
+              "Camping au bord du Tarn"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Camping au bord du Tarn"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "CAMPING LARRIBAL"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/68c89930-70d7-3fdf-87d3-710962e26b85",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275451_2d12dfce-2720-4ee1-958f-ff4743230961/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c205cac0-6964-3538-8060-e0a5df1a4229",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/84cc85c1-4736-3df8-8330-cb5e7a724fab",
+          "ebucore:comments": {
+            "fr": [
+              "Mobil home 2 chambres premium ave clim et lave vaisselle 4/5 personnes"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Mobil home 2 chambres premium ave clim et lave vaisselle 4/5 personnes"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/822708ed-1319-3d88-8024-231f244b9ff2",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275444_2404b663-c081-424e-b389-aa32a42d1f41/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c859cb3d-fb8b-3bd7-a7a9-816e27833508",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/c847ac54-528b-3e9e-b684-7ce927352b26",
+          "ebucore:comments": {
+            "fr": [
+              "Snack / Bar et Piscine"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Snack / Bar et Piscine"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "CAMPING LARRIBAL"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/e9d35088-9d20-3b45-833b-17c1fb79097f",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275443_245df03d-1775-4d60-ac98-b7b48198c110/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ce10b8c1-6d22-3f40-8b39-038314c1644a",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/c1f99459-8ae4-37d9-a529-dd6fef486240",
+          "ebucore:comments": {
+            "fr": [
+              "Emplacements arborés"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Emplacements arborés"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/1c1c5cfb-5913-3e1d-b6ab-387247cffc03",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275453_757da278-c826-491b-9875-0fe075e21357/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e2e95bed-3959-3e9b-b167-d8ca772c8c71",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/83ee186f-c6b0-399a-bf9a-4b1a2c5958f3",
+          "ebucore:comments": {
+            "fr": [
+              "Emplacements spatieux au bord du Tarn"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Emplacements spatieux au bord du Tarn"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "CAMPING LARRIBAL"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/566bd83f-b06c-3104-bc5e-6173b2e41b5a",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275449_d551d5cc-76c6-400c-b425-6bc8637582b4/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e8006d10-1e8e-3b24-a6cd-d605f3f955cb",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/1c345b84-730c-343f-afdc-02f5cd5d63d6",
+          "ebucore:comments": {
+            "fr": [
+              "Tente Lodge Mayotte pour 4 personnes"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Tente Lodge Mayotte pour 4 personnes"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/cbaac3a1-0981-3ab4-bda4-dcad5e945b69",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275448_d56e72a7-439b-4c6a-83ba-ac6bfd5b9a50/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/efdd53ed-9867-377c-ad07-f86916569927",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/8b3e17e3-0fa0-39fe-9c11-044505a16935",
+          "ebucore:comments": {
+            "fr": [
+              "Emplacements ombragés au bord du Tarn"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Emplacements ombragés au bord du Tarn"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/7043d262-f0f6-3ede-9097-33b4164733aa",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275456_c8a1c78c-27cb-439c-b20b-cd5b59867e12/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f74b2a7e-ee7b-309e-ac0c-84b47c4980a8",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/2deb9d0e-3b2f-386d-8c31-979920966cec",
+          "ebucore:comments": {
+            "fr": [
+              "Mobil home 4 personnes"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Mobil home 4 personnes"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "Camping Larribal"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/2b3bfb3a-9429-305d-a570-d6dd06e3f4b7",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/19098/images/275446_3d071309-af2d-44cf-9e10-abec8248538b/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/3e9ba59c-71c4-310c-9d71-89586bb48952",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3etoiles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Sterne"
+          ],
+          "pt": [
+            "3 estrelas"
+          ],
+          "en": [
+            "3 Stars"
+          ],
+          "it": [
+            "3 stelle"
+          ],
+          "fr": [
+            "3 étoiles"
+          ],
+          "nl": [
+            "3 sterren"
+          ],
+          "es": [
+            "3 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      },
+      "reviewDeliveryDate": "2025-05-07"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ef92279c-7f19-3551-8b41-443fb7c38629",
+      "@type": [
+        "Review"
+      ],
+      "reviewDeliveryDate": "2025-05-07"
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:CityOutskirts",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Peripherie der Stadt"
+        ],
+        "pt": [
+          "Periferia da cidade"
+        ],
+        "en": [
+          "City outskirts"
+        ],
+        "it": [
+          "Periferia della città"
+        ],
+        "fr": [
+          "Périphérie de la ville"
+        ],
+        "es": [
+          "Periferia de la ciudad"
+        ],
+        "nl": [
+          "Buitenwijken"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/1f205df0-f364-3e24-85b8-6adddcdb153e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/317cbaf6-4d56-3731-9f4f-02e81a692f85",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d9d3fff2-b45b-3da7-9469-2783c2338c56",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/e8e58fc8-2450-396d-aab1-674dd6e12479",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/d5a095ea-7695-3f0c-84ff-928f528a7640",
+          "schema:addressLocality": "Millau",
+          "schema:postalCode": "12100",
+          "schema:streetAddress": [
+            "Avenue de Millau Plage"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12145",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Millau"
+              ],
+              "pt": [
+                "Millau"
+              ],
+              "en": [
+                "Millau"
+              ],
+              "it": [
+                "Millau"
+              ],
+              "fr": [
+                "Millau"
+              ],
+              "nl": [
+                "Millau"
+              ],
+              "es": [
+                "Millau"
+              ]
+            },
+            "insee": "12145",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/bb3e48f4-abe3-3bc0-be66-9e939aa43803",
+        "schema:latitude": "44.1105",
+        "schema:longitude": "3.0869",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/f4fd9e2b-4801-3f56-aa3b-f215a960c26e",
+          "schema:validFrom": "2025-04-01T00:00:00",
+          "schema:validThrough": "2025-10-20T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2025-05-13",
+  "lastUpdateDatatourisme": "2025-05-14T06:09:08.573Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/f6d3e363-75ba-30eb-803e-3a05d152cfb4",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:CreditCards",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bankkarten"
+            ],
+            "pt": [
+              "Cartões bancários"
+            ],
+            "en": [
+              "Credit Cards"
+            ],
+            "it": [
+              "Carte bancarie"
+            ],
+            "fr": [
+              "Cartes bancaires"
+            ],
+            "es": [
+              "Tarjetas bancarias"
+            ],
+            "nl": [
+              "Bankkaarten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:FrenchBonsCAF",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Familiengutscheine"
+            ],
+            "pt": [
+              "Vales CAF (caixa de abonos de família)"
+            ],
+            "en": [
+              "French bons caf"
+            ],
+            "it": [
+              "Buoni CAF"
+            ],
+            "fr": [
+              "Bons caf"
+            ],
+            "nl": [
+              "Vakantiesubsidie in Frankrijk (CAF)"
+            ],
+            "es": [
+              "Fondos de asignaciones familiares"
+            ]
+          }
+        },
+        {
+          "@id": "kb:HolidayVouchers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Urlaubsschecks"
+            ],
+            "pt": [
+              "Vales de férias"
+            ],
+            "en": [
+              "Holiday vouchers"
+            ],
+            "it": [
+              "Buoni vacanza"
+            ],
+            "fr": [
+              "Chèques vacances"
+            ],
+            "nl": [
+              "Vakantiecheques"
+            ],
+            "es": [
+              "Cheques de vacaciones"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/1cb28b6f-d18d-31e2-b37d-747ac789bc4b",
+          "schema:maxPrice": [
+            "22"
+          ],
+          "schema:minPrice": [
+            "12"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "fr": [
+              "Forfait emplacement 2 personnes"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/24cee329-2598-398c-885b-eabd30c71ae5",
+          "schema:price": "567",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In der Nebensaison ist es möglich, mindestens 2 Nächte zu mieten.\nIm Juli und August mindestens 1 Woche von Samstag bis Samstag.\nPremium-Modell mit Klimaanlage und Geschirrspüler.\nAußerhalb der Veranstaltungszeit."
+            ],
+            "en": [
+              "In low season it is possible to rent for a minimum of 2 nights.\nIn July and August, minimum 1 week from Saturday to Saturday.\nPremium model with air conditioning and dishwasher.\nExcluding event periods."
+            ],
+            "it": [
+              "In bassa stagione è possibile affittare per un minimo di 2 notti.\nIn luglio e agosto, minimo 1 settimana da sabato a sabato.\nModello Premium con aria condizionata e lavastoviglie.\nEsclusi i periodi di eventi."
+            ],
+            "fr": [
+              "En basse saison il est possible de louer 2 nuits au minimum.\nEn juillet et Août, minimum 1 semaine du samedi au samedi.\nModèle Premium avec climatisation et lave vaisselle.\nHors période évènementielle."
+            ],
+            "nl": [
+              "In het laagseizoen is het mogelijk om voor minimaal 2 nachten te huren.\nIn juli en augustus, minimaal 1 week van zaterdag tot zaterdag.\nPremium model met airconditioning en vaatwasser.\nMet uitzondering van evenementenperiodes."
+            ],
+            "es": [
+              "En temporada baja es posible alquilar por un mínimo de 2 noches.\nEn julio y agosto, mínimo 1 semana de sábado a sábado.\nModelo Premium con aire acondicionado y lavavajillas.\nExcluyendo periodos de eventos."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/3bf94ffd-a864-3ef9-a3cc-c677163a538b",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/42b40bd7-cc82-382c-9d90-fd903f68cbf8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/c3aaea9e-81bc-3f05-bcb2-972609e299b3",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e11e96d5-0a4b-316f-bfb5-ef34d34f3220",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f0e25337-5e59-3954-92b9-45576caf46b8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Mobil home 3 chambres 6 couchages Premium"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5862b171-6815-3922-905d-f110a5c881f9",
+          "schema:price": "336",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In der Nebensaison ist es möglich, mindestens 2 Nächte zu mieten.\nIm Juli und August mindestens 1 Woche von Samstag bis Samstag.\nPremium-Modell mit Klimaanlage und Geschirrspüler.\nAußerhalb der Veranstaltungszeit."
+            ],
+            "en": [
+              "In low season it is possible to rent for a minimum of 2 nights.\nIn July and August, minimum 1 week from Saturday to Saturday.\nPremium model with air conditioning and dishwasher.\nExcluding event periods."
+            ],
+            "it": [
+              "In bassa stagione è possibile affittare per un minimo di 2 notti.\nIn luglio e agosto, minimo 1 settimana da sabato a sabato.\nModello Premium con aria condizionata e lavastoviglie.\nEsclusi i periodi di eventi."
+            ],
+            "fr": [
+              "En basse saison il est possible de louer 2 nuits au minimum.\nEn juillet et Août, minimum 1 semaine du samedi au samedi.\nModèle Premium avec climatisation et lave vaisselle.\nHors période évènementielle."
+            ],
+            "nl": [
+              "In het laagseizoen is het mogelijk om voor minimaal 2 nachten te huren.\nIn juli en augustus, minimaal 1 week van zaterdag tot zaterdag.\nPremium model met airconditioning en vaatwasser.\nMet uitzondering van evenementenperiodes."
+            ],
+            "es": [
+              "En temporada baja es posible alquilar por un mínimo de 2 noches.\nEn julio y agosto, mínimo 1 semana de sábado a sábado.\nModelo Premium con aire acondicionado y lavavajillas.\nExcluyendo periodos de eventos."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/3d75de65-3ff4-3c7b-a6c7-193b2b977aaa",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/98886d36-f508-35b5-936f-6f573191fa4e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e6a6e587-f532-320f-a30c-34dd24056160",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/ee3a7fd4-dc9e-3002-89e9-705b50fad0b2",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/faae8a48-d1a1-3a37-afd7-bbdc2e0dd35f",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Mobil home 3 chambres 6 couchages Premium"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6a08f7ac-67f3-3486-a959-bdfec3aadae1",
+          "schema:price": "782",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In der Nebensaison ist es möglich, mindestens 2 Nächte zu mieten.\nIm Juli und August mindestens 1 Woche von Samstag bis Samstag.\nPremium-Modell mit Klimaanlage und Geschirrspüler.\nAußerhalb der Veranstaltungszeit."
+            ],
+            "en": [
+              "In low season it is possible to rent for a minimum of 2 nights.\nIn July and August, minimum 1 week from Saturday to Saturday.\nPremium model with air conditioning and dishwasher.\nExcluding event periods."
+            ],
+            "it": [
+              "In bassa stagione è possibile affittare per un minimo di 2 notti.\nIn luglio e agosto, minimo 1 settimana da sabato a sabato.\nModello Premium con aria condizionata e lavastoviglie.\nEsclusi i periodi di eventi."
+            ],
+            "fr": [
+              "En basse saison il est possible de louer 2 nuits au minimum.\nEn juillet et Août, minimum 1 semaine du samedi au samedi.\nModèle Premium avec climatisation et lave vaisselle.\nHors période évènementielle."
+            ],
+            "nl": [
+              "In het laagseizoen is het mogelijk om voor minimaal 2 nachten te huren.\nIn juli en augustus, minimaal 1 week van zaterdag tot zaterdag.\nPremium model met airconditioning en vaatwasser.\nMet uitzondering van evenementenperiodes."
+            ],
+            "es": [
+              "En temporada baja es posible alquilar por un mínimo de 2 noches.\nEn julio y agosto, mínimo 1 semana de sábado a sábado.\nModelo Premium con aire acondicionado y lavavajillas.\nExcluyendo periodos de eventos."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/1d1e3579-da87-3ea4-afa8-b224a0f07303",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/53ff761d-0dae-3cad-825f-e584800ba86f",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/61ab8291-ee57-3905-a4a9-6cdac573c862",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/7014c045-28b7-3158-9b2b-ca4e9b961459",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/b16fb229-b571-3140-92a3-48951b9155bf",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Mobil home 3 chambres 6 couchages Premium"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/73acd970-0c03-38fd-bc9e-476b93fcffeb",
+          "schema:price": "299",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In der Nebensaison ist es möglich, mindestens 2 Nächte zu mieten.\nIm Juli und August mindestens 1 Woche von Samstag bis Samstag.\nPremium-Modell mit Klimaanlage und Geschirrspüler.\nAußerhalb der Veranstaltungszeit."
+            ],
+            "en": [
+              "In low season it is possible to rent for a minimum of 2 nights.\nIn July and August, minimum 1 week from Saturday to Saturday.\nPremium model with air conditioning and dishwasher.\nExcluding event periods."
+            ],
+            "it": [
+              "In bassa stagione è possibile affittare per un minimo di 2 notti.\nIn luglio e agosto, minimo 1 settimana da sabato a sabato.\nModello Premium con aria condizionata e lavastoviglie.\nEsclusi i periodi di eventi."
+            ],
+            "fr": [
+              "En basse saison il est possible de louer 2 nuits au minimum.\nEn juillet et Août, minimum 1 semaine du samedi au samedi.\nModèle Premium avec climatisation et lave vaisselle.\nHors période évènementielle."
+            ],
+            "nl": [
+              "In het laagseizoen is het mogelijk om voor minimaal 2 nachten te huren.\nIn juli en augustus, minimaal 1 week van zaterdag tot zaterdag.\nPremium model met airconditioning en vaatwasser.\nMet uitzondering van evenementenperiodes."
+            ],
+            "es": [
+              "En temporada baja es posible alquilar por un mínimo de 2 noches.\nEn julio y agosto, mínimo 1 semana de sábado a sábado.\nModelo Premium con aire acondicionado y lavavajillas.\nExcluyendo periodos de eventos."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/3c9bf4af-3111-3487-b483-e015fd61f0f0",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/4d064f8c-8fe9-3424-9d9d-02f54056e9b5",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/7eb687cc-143f-31b9-bfba-2a5ae4b392d7",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/8536562a-f6e7-33b6-9455-369e3e4e093a",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d064fcd3-4a28-351b-9c2b-642576849335",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Mobil home 2 chambres 5 couchages Premium"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7828db75-f6a1-3a01-85e0-4cda4dd5a8cc",
+          "schema:price": "509",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In der Nebensaison ist es möglich, mindestens 2 Nächte zu mieten.\nIm Juli und August mindestens 1 Woche von Samstag bis Samstag.\nPremium-Modell mit Klimaanlage und Geschirrspüler.\nAußerhalb der Veranstaltungszeit."
+            ],
+            "en": [
+              "In low season it is possible to rent for a minimum of 2 nights.\nIn July and August, minimum 1 week from Saturday to Saturday.\nPremium model with air conditioning and dishwasher.\nExcluding event periods."
+            ],
+            "it": [
+              "In bassa stagione è possibile affittare per un minimo di 2 notti.\nIn luglio e agosto, minimo 1 settimana da sabato a sabato.\nModello Premium con aria condizionata e lavastoviglie.\nEsclusi i periodi di eventi."
+            ],
+            "fr": [
+              "En basse saison il est possible de louer 2 nuits au minimum.\nEn juillet et Août, minimum 1 semaine du samedi au samedi.\nModèle Premium avec climatisation et lave vaisselle.\nHors période évènementielle."
+            ],
+            "nl": [
+              "In het laagseizoen is het mogelijk om voor minimaal 2 nachten te huren.\nIn juli en augustus, minimaal 1 week van zaterdag tot zaterdag.\nPremium model met airconditioning en vaatwasser.\nMet uitzondering van evenementenperiodes."
+            ],
+            "es": [
+              "En temporada baja es posible alquilar por un mínimo de 2 noches.\nEn julio y agosto, mínimo 1 semana de sábado a sábado.\nModelo Premium con aire acondicionado y lavavajillas.\nExcluyendo periodos de eventos."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/3566f7dd-e73f-3c47-9663-a2e82331baf1",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/36b75f9d-5dd6-3198-8783-6f56bfba6bce",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a7dcc91c-6e36-3585-87da-269d335ab881",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/ab67a2d1-5895-3579-ae3a-1339ac21c272",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/ae945e95-8d90-31da-a778-2cdf05e6f819",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Mobil home 2 chambres 5 couchages Premium"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/78a30a5e-3e52-3465-8879-f5bbac2f0707",
+          "schema:price": "257",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In der Nebensaison ist es möglich, mindestens 2 Nächte zu mieten.\nIm Juli und August mindestens 1 Woche von Samstag bis Samstag.\n\nAußerhalb der Veranstaltungszeit."
+            ],
+            "en": [
+              "In low season it is possible to rent for a minimum of 2 nights.\nIn July and August, minimum 1 week from Saturday to Saturday.\n\nExcluding event periods."
+            ],
+            "it": [
+              "In bassa stagione è possibile affittare per un minimo di 2 notti.\nIn luglio e agosto, minimo 1 settimana da sabato a sabato.\n\nEsclusi i periodi di eventi."
+            ],
+            "fr": [
+              "En basse saison il est possible de louer 2 nuits au minimum.\nEn juillet et Août, minimum 1 semaine du samedi au samedi.\n\nHors période évènementielle."
+            ],
+            "nl": [
+              "In het laagseizoen is het mogelijk om voor minimaal 2 nachten te huren.\nIn juli en augustus, minimaal 1 week van zaterdag tot zaterdag.\n\nMet uitzondering van evenementenperiodes."
+            ],
+            "es": [
+              "En temporada baja es posible alquilar por un mínimo de 2 noches.\nEn julio y agosto, mínimo 1 semana de sábado a sábado.\n\nExcluyendo periodos de eventos."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/0086cba1-8189-3780-966c-b51c521292dd",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/3dd32481-b673-3484-90a9-ff06d5b0abff",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/4e182105-1748-3385-af9c-0403e4e6ee0c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a0573928-1ae7-3a44-9f9f-19af3c399770",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/cfff26c9-f18e-3e88-94a1-49bb75eb8812",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Mobil home 2 chambres 4 couchages"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/792d3dba-3153-366e-9c18-34ada8ae688e",
+          "schema:price": "677",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In der Nebensaison ist es möglich, mindestens 2 Nächte zu mieten.\nIm Juli und August mindestens 1 Woche von Samstag bis Samstag.\nPremium-Modell mit Klimaanlage und Geschirrspüler.\nAußerhalb der Veranstaltungszeit."
+            ],
+            "en": [
+              "In low season it is possible to rent for a minimum of 2 nights.\nIn July and August, minimum 1 week from Saturday to Saturday.\nPremium model with air conditioning and dishwasher.\nExcluding event periods."
+            ],
+            "it": [
+              "In bassa stagione è possibile affittare per un minimo di 2 notti.\nIn luglio e agosto, minimo 1 settimana da sabato a sabato.\nModello Premium con aria condizionata e lavastoviglie.\nEsclusi i periodi di eventi."
+            ],
+            "fr": [
+              "En basse saison il est possible de louer 2 nuits au minimum.\nEn juillet et Août, minimum 1 semaine du samedi au samedi.\nModèle Premium avec climatisation et lave vaisselle.\nHors période évènementielle."
+            ],
+            "nl": [
+              "In het laagseizoen is het mogelijk om voor minimaal 2 nachten te huren.\nIn juli en augustus, minimaal 1 week van zaterdag tot zaterdag.\nPremium model met airconditioning en vaatwasser.\nMet uitzondering van evenementenperiodes."
+            ],
+            "es": [
+              "En temporada baja es posible alquilar por un mínimo de 2 noches.\nEn julio y agosto, mínimo 1 semana de sábado a sábado.\nModelo Premium con aire acondicionado y lavavajillas.\nExcluyendo periodos de eventos."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/5c7df6ba-42af-3569-9c14-8964e96ab806",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/8f31de5d-4c1d-3254-b5c7-a7d3625aed1d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/ac101406-f632-3eee-8a96-98380b3192e8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d13d0a8a-99ed-3cc2-8dd7-9bbb4cb62a88",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e6470e38-8810-3e65-af72-5748d3ac0b89",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Mobil home 2 chambres 5 couchages Premium"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/839a97dc-4fe5-3d18-a999-4f6b58ee3494",
+          "schema:price": "441",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In der Nebensaison ist es möglich, mindestens 2 Nächte zu mieten.\nIm Juli und August mindestens 1 Woche von Samstag bis Samstag.\n\nAußerhalb der Veranstaltungszeit."
+            ],
+            "en": [
+              "In low season it is possible to rent for a minimum of 2 nights.\nIn July and August, minimum 1 week from Saturday to Saturday.\n\nExcluding event periods."
+            ],
+            "it": [
+              "In bassa stagione è possibile affittare per un minimo di 2 notti.\nIn luglio e agosto, minimo 1 settimana da sabato a sabato.\n\nEsclusi i periodi di eventi."
+            ],
+            "fr": [
+              "En basse saison il est possible de louer 2 nuits au minimum.\nEn juillet et Août, minimum 1 semaine du samedi au samedi.\n\nHors période évènementielle."
+            ],
+            "nl": [
+              "In het laagseizoen is het mogelijk om voor minimaal 2 nachten te huren.\nIn juli en augustus, minimaal 1 week van zaterdag tot zaterdag.\n\nMet uitzondering van evenementenperiodes."
+            ],
+            "es": [
+              "En temporada baja es posible alquilar por un mínimo de 2 noches.\nEn julio y agosto, mínimo 1 semana de sábado a sábado.\n\nExcluyendo periodos de eventos."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/39d50dfc-e188-3c86-b10b-24800a6c717c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/9d77f77d-105f-3d8e-ab53-98d34e0478ba",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/9f7b1ca3-f7f3-3ca2-a81e-b6bdcc591c0c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/dde820c7-5ff1-3b1c-a556-3be17fa35841",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f0cf4f43-cf90-3d40-8ecf-07dca77b7091",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Mobil home 2 chambres 4 couchages"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/8f8a3e8b-d9d6-3a71-9e9a-6a1f85f96160",
+          "schema:price": "729",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In der Nebensaison ist es möglich, mindestens 2 Nächte zu mieten.\nIm Juli und August mindestens 1 Woche von Samstag bis Samstag.\nPremium-Modell mit Klimaanlage und Geschirrspüler.\nAußerhalb der Veranstaltungszeit."
+            ],
+            "en": [
+              "In low season it is possible to rent for a minimum of 2 nights.\nIn July and August, minimum 1 week from Saturday to Saturday.\nPremium model with air conditioning and dishwasher.\nExcluding event periods."
+            ],
+            "it": [
+              "In bassa stagione è possibile affittare per un minimo di 2 notti.\nIn luglio e agosto, minimo 1 settimana da sabato a sabato.\nModello Premium con aria condizionata e lavastoviglie.\nEsclusi i periodi di eventi."
+            ],
+            "fr": [
+              "En basse saison il est possible de louer 2 nuits au minimum.\nEn juillet et Août, minimum 1 semaine du samedi au samedi.\nModèle Premium avec climatisation et lave vaisselle.\nHors période évènementielle."
+            ],
+            "nl": [
+              "In het laagseizoen is het mogelijk om voor minimaal 2 nachten te huren.\nIn juli en augustus, minimaal 1 week van zaterdag tot zaterdag.\nPremium model met airconditioning en vaatwasser.\nMet uitzondering van evenementenperiodes."
+            ],
+            "es": [
+              "En temporada baja es posible alquilar por un mínimo de 2 noches.\nEn julio y agosto, mínimo 1 semana de sábado a sábado.\nModelo Premium con aire acondicionado y lavavajillas.\nExcluyendo periodos de eventos."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/30598bd9-e3d2-3ffb-b857-5f53dba09468",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/802c27e9-be44-38e9-a7be-c7f929d7a572",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/966724dd-e002-30bc-876d-9f012272e16d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/9845e534-d125-36ad-9f8d-c3609afbc652",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d5b27f68-1b37-3bad-9793-67799ec9e674",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Mobil home 3 chambres 6 couchages Premium"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9c84328c-c6ec-3f8f-a874-47d6823ebf91",
+          "schema:price": "630",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In der Nebensaison ist es möglich, mindestens 2 Nächte zu mieten.\nIm Juli und August mindestens 1 Woche von Samstag bis Samstag.\n\nAußerhalb der Veranstaltungszeit."
+            ],
+            "en": [
+              "In low season it is possible to rent for a minimum of 2 nights.\nIn July and August, minimum 1 week from Saturday to Saturday.\n\nExcluding event periods."
+            ],
+            "it": [
+              "In bassa stagione è possibile affittare per un minimo di 2 notti.\nIn luglio e agosto, minimo 1 settimana da sabato a sabato.\n\nEsclusi i periodi di eventi."
+            ],
+            "fr": [
+              "En basse saison il est possible de louer 2 nuits au minimum.\nEn juillet et Août, minimum 1 semaine du samedi au samedi.\n\nHors période évènementielle."
+            ],
+            "nl": [
+              "In het laagseizoen is het mogelijk om voor minimaal 2 nachten te huren.\nIn juli en augustus, minimaal 1 week van zaterdag tot zaterdag.\n\nMet uitzondering van evenementenperiodes."
+            ],
+            "es": [
+              "En temporada baja es posible alquilar por un mínimo de 2 noches.\nEn julio y agosto, mínimo 1 semana de sábado a sábado.\n\nExcluyendo periodos de eventos."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/211641c7-84cd-3f78-b2f6-e8527bfa35e5",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/264cfeeb-4861-31aa-8cd9-c131922cda10",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/6975ba7e-f6eb-32bf-92cf-4cd9a973234c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/ab486350-83a3-308a-88eb-11e30bde3a7d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e9f12c3c-057c-3eda-936e-15021cdf578d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Mobil home 2 chambres 4 couchages"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e8cd047d-b707-3b90-98dd-4ee7b6aeb9f9",
+          "schema:price": "577",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In der Nebensaison ist es möglich, mindestens 2 Nächte zu mieten.\nIm Juli und August mindestens 1 Woche von Samstag bis Samstag.\n\nAußerhalb der Veranstaltungszeit."
+            ],
+            "en": [
+              "In low season it is possible to rent for a minimum of 2 nights.\nIn July and August, minimum 1 week from Saturday to Saturday.\n\nExcluding event periods."
+            ],
+            "it": [
+              "In bassa stagione è possibile affittare per un minimo di 2 notti.\nIn luglio e agosto, minimo 1 settimana da sabato a sabato.\n\nEsclusi i periodi di eventi."
+            ],
+            "fr": [
+              "En basse saison il est possible de louer 2 nuits au minimum.\nEn juillet et Août, minimum 1 semaine du samedi au samedi.\n\nHors période évènementielle."
+            ],
+            "nl": [
+              "In het laagseizoen is het mogelijk om voor minimaal 2 nachten te huren.\nIn juli en augustus, minimaal 1 week van zaterdag tot zaterdag.\n\nMet uitzondering van evenementenperiodes."
+            ],
+            "es": [
+              "En temporada baja es posible alquilar por un mínimo de 2 noches.\nEn julio y agosto, mínimo 1 semana de sábado a sábado.\n\nExcluyendo periodos de eventos."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/086c5faa-71f0-350f-9770-284e5095c7f2",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/167a6a93-ed5f-3df2-93c8-51d548eb478d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/1f6b38d8-b7a5-353f-a156-10082c65ac3f",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/705b6b4c-f3cf-32e4-ba3c-859d82cf3694",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/79e7ba00-8322-3efd-80c2-9453f5b2a74b",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Mobil home 2 chambres 4 couchages"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/fc85ad24-fd39-36dd-851d-bec070c2d739",
+          "schema:price": "624",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In der Nebensaison ist es möglich, mindestens 2 Nächte zu mieten.\nIm Juli und August mindestens 1 Woche von Samstag bis Samstag.\nPremium-Modell mit Klimaanlage und Geschirrspüler.\nAußerhalb der Veranstaltungszeit."
+            ],
+            "en": [
+              "In low season it is possible to rent for a minimum of 2 nights.\nIn July and August, minimum 1 week from Saturday to Saturday.\nPremium model with air conditioning and dishwasher.\nExcluding event periods."
+            ],
+            "it": [
+              "In bassa stagione è possibile affittare per un minimo di 2 notti.\nIn luglio e agosto, minimo 1 settimana da sabato a sabato.\nModello Premium con aria condizionata e lavastoviglie.\nEsclusi i periodi di eventi."
+            ],
+            "fr": [
+              "En basse saison il est possible de louer 2 nuits au minimum.\nEn juillet et Août, minimum 1 semaine du samedi au samedi.\nModèle Premium avec climatisation et lave vaisselle.\nHors période évènementielle."
+            ],
+            "nl": [
+              "In het laagseizoen is het mogelijk om voor minimaal 2 nachten te huren.\nIn juli en augustus, minimaal 1 week van zaterdag tot zaterdag.\nPremium model met airconditioning en vaatwasser.\nMet uitzondering van evenementenperiodes."
+            ],
+            "es": [
+              "En temporada baja es posible alquilar por un mínimo de 2 noches.\nEn julio y agosto, mínimo 1 semana de sábado a sábado.\nModelo Premium con aire acondicionado y lavavajillas.\nExcluyendo periodos de eventos."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/2e1219b5-f505-3f18-9778-78ee9cd3f679",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/4366353a-5841-3230-9282-7e6567e14126",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/b2fca54a-b61e-343f-a27b-ba0efdcef63f",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d3106e51-7964-34b1-a431-b20654005a0d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/dee6fde7-dc89-3453-849e-169ab5cf007e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ],
+          "name": {
+            "fr": [
+              "Mobil home 2 chambres 5 couchages Premium"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

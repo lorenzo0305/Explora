@@ -1,0 +1,251 @@
+{
+  "@id": "https://data.datatourisme.fr/30/00202903-e165-308b-9e65-669c05e2020d",
+  "dc:identifier": "ITINOR076V51PCC2",
+  "@type": [
+    "olo:OrderedList",
+    "CyclingTour",
+    "PointOfInterest",
+    "Tour"
+  ],
+  "rdfs:label": {
+    "en": [
+      "Circuit des Huchiers"
+    ],
+    "fr": [
+      "Circuit des Huchiers"
+    ]
+  },
+  "creationDate": "2022-12-09",
+  "duration": "150",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/30/a7d4fd1c-8b07-3aee-af45-b8961010b34a",
+    "dc:identifier": "5a3bd788-7a26-4c5d-a43b-84aa0601d079",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/2210ab60-c056-3f5c-9db7-5aa4839c9a3a",
+        "schema:postalCode": "76824",
+        "schema:streetAddress": [
+          "28 rue Raymond Aron"
+        ],
+        "@type": [
+          "schema:PostalAddress"
+        ]
+      }
+    ],
+    "schema:email": [
+      "contact@sma76.fr"
+    ],
+    "schema:legalName": "Seine-Maritime Attractivité",
+    "schema:telephone": [
+      "+33 2 35 12 10 10"
+    ],
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/adce4411-0f8d-3138-8d32-b8eb71125ab5",
+      "schema:email": [
+        "l.helbert@normandie-tourisme.fr"
+      ],
+      "schema:legalName": "Normandie Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.normandie-tourisme.fr/"
+      ]
+    }
+  ],
+  "hasTourType": [
+    {
+      "@id": "kb:Loop",
+      "@type": [
+        "TourType"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Schleifenroute"
+        ],
+        "pt": [
+          "Circular"
+        ],
+        "en": [
+          "Loop itinerary"
+        ],
+        "it": [
+          "Ad anello"
+        ],
+        "fr": [
+          "En boucle"
+        ],
+        "nl": [
+          "In een lus"
+        ],
+        "es": [
+          "Circuito"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/6f222929-605f-3869-81b1-817dee399500",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/897f61ab-8aed-3a6c-99f2-dd1396fcfc89",
+          "schema:addressLocality": "Argueil",
+          "schema:postalCode": "76780",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:76025",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Argueil"
+              ],
+              "pt": [
+                "Argueil"
+              ],
+              "en": [
+                "Argueil"
+              ],
+              "it": [
+                "Argueil"
+              ],
+              "fr": [
+                "Argueil"
+              ],
+              "nl": [
+                "Argueil"
+              ],
+              "es": [
+                "Argueil"
+              ]
+            },
+            "insee": "76025",
+            "isPartOfDepartment": {
+              "@id": "kb:France2876",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Seine-Maritime"
+                ],
+                "pt": [
+                  "Seine-Maritime"
+                ],
+                "en": [
+                  "Seine-Maritime"
+                ],
+                "it": [
+                  "Seine-Maritime"
+                ],
+                "fr": [
+                  "Seine-Maritime"
+                ],
+                "nl": [
+                  "Seine-Maritime"
+                ],
+                "es": [
+                  "Seine-Maritime"
+                ]
+              },
+              "insee": "76",
+              "isPartOfRegion": {
+                "@id": "kb:France28",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Normandie"
+                  ],
+                  "pt": [
+                    "Normandie"
+                  ],
+                  "en": [
+                    "Normandie"
+                  ],
+                  "it": [
+                    "Normandie"
+                  ],
+                  "fr": [
+                    "Normandie"
+                  ],
+                  "nl": [
+                    "Normandie"
+                  ],
+                  "es": [
+                    "Normandie"
+                  ]
+                },
+                "insee": "28",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/5ba6f3ad-0cc1-33e8-ae22-5371d18058e2",
+        "schema:latitude": "49.54418",
+        "schema:longitude": "1.51349",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-08-01",
+  "lastUpdateDatatourisme": "2025-08-02T22:14:10.015Z",
+  "tourDistance": "28500.0"
+}

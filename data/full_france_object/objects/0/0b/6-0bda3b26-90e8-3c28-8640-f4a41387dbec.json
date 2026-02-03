@@ -1,0 +1,988 @@
+{
+  "@id": "https://data.datatourisme.fr/6/0bda3b26-90e8-3c28-8640-f4a41387dbec",
+  "dc:identifier": "ASCBOU0210000631",
+  "@type": [
+    "olo:OrderedList",
+    "schema:Product",
+    "ActivityProvider",
+    "CyclingTour",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Practice",
+    "Product",
+    "Rental",
+    "SportsAndLeisurePlace",
+    "Tour"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Fahren Sie mit der Familie, mit Freunden ... in Begleitung eines Reiseführers mit dem Fahrrad über die kleinen Straßen im Herzen der berühmten Wein..."
+    ],
+    "en": [
+      "Cycle with your family or friends... accompanied by a guide, along the back roads through the famous vineyards of the Côte de Beaune."
+    ],
+    "it": [
+      "Pedalate con la famiglia o con gli amici... accompagnati da una guida, lungo le strade secondarie nel cuore dei famosi vigneti della Côte de Beaune."
+    ],
+    "fr": [
+      "Sillonnez à vélo, en famille, entre amis... accompagné(s) d'un guide, les petites routes au cœur des célèbres vignobles de la Côte de Beaune."
+    ],
+    "es": [
+      "Pedalee en familia o entre amigos... acompañado de un guía, por las carreteras secundarias del corazón de los famosos viñedos de la Côte de Beaune."
+    ],
+    "nl": [
+      "Fiets met je familie of vrienden... onder begeleiding van een gids, langs de binnenwegen in het hart van de beroemde wijngaarden van de Côte de Beaune."
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "Beaune Vélo Tour"
+    ],
+    "en": [
+      "Beaune Vélo Tour"
+    ],
+    "fr": [
+      "Beaune Vélo Tour"
+    ]
+  },
+  "availableLanguage": [
+    "en",
+    "fr"
+  ],
+  "creationDate": "2015-07-16",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/841990b4-1c62-31ca-93a4-f584fed7dd21",
+    "dc:identifier": "0dcdc797-fe13-4f8f-9542-ba80ac8a81fa",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/a5b12a51-5e66-30a9-9469-4d0ba0ff7e0b",
+        "schema:addressLocality": "Dijon",
+        "schema:postalCode": "21000",
+        "schema:streetAddress": [
+          "19 rue Ferdinand de Lesseps"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:21231",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Dijon"
+            ],
+            "pt": [
+              "Dijon"
+            ],
+            "en": [
+              "Dijon"
+            ],
+            "it": [
+              "Dijon"
+            ],
+            "fr": [
+              "Dijon"
+            ],
+            "nl": [
+              "Dijon"
+            ],
+            "es": [
+              "Dijon"
+            ]
+          },
+          "insee": "21231",
+          "isPartOfDepartment": {
+            "@id": "kb:France2721",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Côte-d'Or"
+              ],
+              "pt": [
+                "Côte-d'Or"
+              ],
+              "en": [
+                "Côte-d'Or"
+              ],
+              "it": [
+                "Côte-d'Or"
+              ],
+              "fr": [
+                "Côte-d'Or"
+              ],
+              "nl": [
+                "Côte-d'Or"
+              ],
+              "es": [
+                "Côte-d'Or"
+              ]
+            },
+            "insee": "21",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "contact@lacotedorjadore.com"
+    ],
+    "schema:legalName": "La Côte-d'Or J'adore",
+    "schema:telephone": [
+      "+33 3 80 63 69 49"
+    ],
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.lacotedorjadore.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/0704ebb7-ba67-38e7-a705-387f864b233c",
+      "schema:email": [
+        "beaunevelotour@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 6 23 31 15 93"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.beaunevelotour.fr/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/0704ebb7-ba67-38e7-a705-387f864b233c",
+      "schema:email": [
+        "beaunevelotour@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 6 23 31 15 93"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.beaunevelotour.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/78dd184f-dcb0-3b3a-a76c-fd0a7306ef91",
+      "dc:description": {
+        "de": [
+          "Fahren Sie mit der Familie, mit Freunden ... in Begleitung eines Führers oder einer Führerin mit dem Fahrrad auf kleinen Straßen durch die berühmten Weinberge der Côte de Beaune und die Dörfer und treffen Sie einen Winzer auf dem Weingut.\n\nFür Preisinformationen wenden Sie sich bitte direkt an den Anbieter."
+        ],
+        "en": [
+          "Cycle with your family or friends... accompanied by a guide, along the back roads through the famous Côte de Beaune vineyards and villages, and meet a winegrower on the estate.\n\nFor prices, please contact the tour operator directly."
+        ],
+        "it": [
+          "Pedalate con la famiglia o con gli amici... accompagnati da una guida, lungo le piccole strade nel cuore dei vigneti e dei villaggi della famosa Côte de Beaune e incontrate un viticoltore nella sua tenuta.\n\nPer i prezzi, contattare direttamente il tour operator."
+        ],
+        "fr": [
+          "Sillonnez à vélo, en famille, entre amis... accompagné(s) d'un guide, les petites routes au cœur des célèbres vignobles de la Côte de Beaune et des villages et rencontrez un vigneron au domaine.\n\nPour connaître les tarifs veuillez contacter directement le prestataire."
+        ],
+        "es": [
+          "Pedalee en familia o con amigos... acompañado de un guía, por las pequeñas carreteras del corazón de los famosos viñedos y pueblos de la Côte de Beaune y conozca a un viticultor en la finca.\n\nPara conocer los precios, póngase en contacto directamente con el operador turístico."
+        ],
+        "nl": [
+          "Fiets met je familie of vrienden... onder begeleiding van een gids langs de kleine weggetjes in het hart van de beroemde wijngaarden en dorpjes van de Côte de Beaune en ontmoet een wijnboer op het landgoed.\n\nNeem voor prijzen rechtstreeks contact op met de touroperator."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/136ed044-bed4-3c3a-b42e-00e182d7f5fa",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/16f587b5-7f0f-3555-8b4a-67234f347320",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/48fd39fe-9c3c-3b83-8ce3-4125d4642091",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5359cf86-2e1e-320f-8ced-658d9d3a4d9e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5cd620ae-7a73-3c7f-98f9-79f48ff77319",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7006f271-6e83-3de8-a4d4-1f01366316a7",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Fahren Sie mit der Familie, mit Freunden ... in Begleitung eines Reiseführers mit dem Fahrrad über die kleinen Straßen im Herzen der berühmten Wein..."
+        ],
+        "en": [
+          "Cycle with your family or friends... accompanied by a guide, along the back roads through the famous vineyards of the Côte de Beaune."
+        ],
+        "it": [
+          "Pedalate con la famiglia o con gli amici... accompagnati da una guida, lungo le strade secondarie nel cuore dei famosi vigneti della Côte de Beaune."
+        ],
+        "fr": [
+          "Sillonnez à vélo, en famille, entre amis... accompagné(s) d'un guide, les petites routes au cœur des célèbres vignobles de la Côte de Beaune."
+        ],
+        "es": [
+          "Pedalee en familia o entre amigos... acompañado de un guía, por las carreteras secundarias del corazón de los famosos viñedos de la Côte de Beaune."
+        ],
+        "nl": [
+          "Fiets met je familie of vrienden... onder begeleiding van een gids, langs de binnenwegen in het hart van de beroemde wijngaarden van de Côte de Beaune."
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/d4c70967-4a5e-f352-8945-8ca30e728f58",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "QZFF7P5F9KFH",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:ATV",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "MTB"
+        ],
+        "pt": [
+          "Bicicleta-todo-o-terreno (BTT)"
+        ],
+        "en": [
+          "Atv"
+        ],
+        "it": [
+          "Mountain bike"
+        ],
+        "fr": [
+          "Vtt"
+        ],
+        "nl": [
+          "Mountainbike"
+        ],
+        "es": [
+          "BTT"
+        ]
+      }
+    },
+    {
+      "@id": "kb:BicycleTouring",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radtourismus"
+        ],
+        "pt": [
+          "Cicloturismo"
+        ],
+        "en": [
+          "Bicycle touring"
+        ],
+        "it": [
+          "Cicloturismo"
+        ],
+        "fr": [
+          "Cyclotourisme"
+        ],
+        "nl": [
+          "Fietstoerisme"
+        ],
+        "es": [
+          "Cicloturismo"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Bike",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Fahrrad"
+        ],
+        "pt": [
+          "Bicicleta"
+        ],
+        "en": [
+          "Bike"
+        ],
+        "it": [
+          "Bicicletta"
+        ],
+        "fr": [
+          "Vélo"
+        ],
+        "nl": [
+          "Fiets"
+        ],
+        "es": [
+          "Bicicleta"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Cycling",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radfahren"
+        ],
+        "pt": [
+          "Ciclismo"
+        ],
+        "en": [
+          "Cycling"
+        ],
+        "it": [
+          "Ciclismo"
+        ],
+        "fr": [
+          "Cyclisme"
+        ],
+        "nl": [
+          "Wielrennen"
+        ],
+        "es": [
+          "Ciclismo"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/1be19253-b279-3fb4-8ff1-1415312fc1f8",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/3b3dd24f-2f71-3ed5-b583-9cfbffcd4c09",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cce49258-5d97-360c-912b-ca71ab4fea28",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/cacea958-566a-33ab-ae75-08e537cbab34",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/e0a8f27f-fe50-3228-92d7-86b8a0c7aa9c",
+          "schema:addressLocality": "Beaune",
+          "schema:postalCode": "21200",
+          "schema:streetAddress": [
+            "4, impasse du Pigeou"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:21054",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Beaune"
+              ],
+              "pt": [
+                "Beaune"
+              ],
+              "en": [
+                "Beaune"
+              ],
+              "it": [
+                "Beaune"
+              ],
+              "fr": [
+                "Beaune"
+              ],
+              "nl": [
+                "Beaune"
+              ],
+              "es": [
+                "Beaune"
+              ]
+            },
+            "insee": "21054",
+            "isPartOfDepartment": {
+              "@id": "kb:France2721",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Côte-d'Or"
+                ],
+                "pt": [
+                  "Côte-d'Or"
+                ],
+                "en": [
+                  "Côte-d'Or"
+                ],
+                "it": [
+                  "Côte-d'Or"
+                ],
+                "fr": [
+                  "Côte-d'Or"
+                ],
+                "nl": [
+                  "Côte-d'Or"
+                ],
+                "es": [
+                  "Côte-d'Or"
+                ]
+              },
+              "insee": "21",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/9ccd281b-cc8b-3fce-8ff3-efc6fda86594",
+        "schema:latitude": "47.0163334",
+        "schema:longitude": "4.8266997",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-01-22",
+  "lastUpdateDatatourisme": "2025-01-24T10:32:42.862Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/4c3df69e-f2eb-3685-af1c-9c8fee18f4e4",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:BlueCard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Carte bleue"
+            ],
+            "pt": [
+              "Cartão de pagamento (Carte bleue)"
+            ],
+            "en": [
+              "Blue card"
+            ],
+            "it": [
+              "Carta blu"
+            ],
+            "fr": [
+              "Carte bleue"
+            ],
+            "es": [
+              "Tarjeta bancaria"
+            ],
+            "nl": [
+              "Carte Bleue"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:CreditCards",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bankkarten"
+            ],
+            "pt": [
+              "Cartões bancários"
+            ],
+            "en": [
+              "Credit Cards"
+            ],
+            "it": [
+              "Carte bancarie"
+            ],
+            "fr": [
+              "Cartes bancaires"
+            ],
+            "es": [
+              "Tarjetas bancarias"
+            ],
+            "nl": [
+              "Bankkaarten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:EurocardMastercard",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Eurocard – Mastercard"
+            ],
+            "pt": [
+              "Eurocard — Mastercard"
+            ],
+            "en": [
+              "Eurocard - mastercard"
+            ],
+            "it": [
+              "Eurocard - mastercard"
+            ],
+            "fr": [
+              "Eurocard - mastercard"
+            ],
+            "nl": [
+              "Eurocard - Mastercard"
+            ],
+            "es": [
+              "Eurocard - Mastercard"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Paypal",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Paypal"
+            ],
+            "pt": [
+              "PayPal"
+            ],
+            "en": [
+              "Paypal"
+            ],
+            "it": [
+              "Paypal"
+            ],
+            "fr": [
+              "Paypal"
+            ],
+            "nl": [
+              "Paypal"
+            ],
+            "es": [
+              "PayPal"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Visa",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Visa"
+            ],
+            "pt": [
+              "Visto"
+            ],
+            "en": [
+              "Visa"
+            ],
+            "it": [
+              "Visto"
+            ],
+            "fr": [
+              "Visa"
+            ],
+            "nl": [
+              "Visum"
+            ],
+            "es": [
+              "Visa"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

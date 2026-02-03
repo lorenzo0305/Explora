@@ -1,0 +1,242 @@
+{
+  "@id": "https://data.datatourisme.fr/5/05f2edf6-eb9f-36b1-a389-221e29282cd7",
+  "dc:identifier": "213011912",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Meublé Gérard GRUNEISEN"
+    ]
+  },
+  "allowedPersons": 6,
+  "creationDate": "2025-01-20",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/2ab59d04-79d9-3369-8fe3-d2a9939fb637",
+    "schema:legalName": "Office de tourisme du pays de Barr",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/f9be77db-d6c0-3a31-9fa8-638da3098074",
+      "schema:legalName": "Système d'informations touristique Alsace",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/95178d93-28f5-36f0-9493-59c5010f7bde",
+      "schema:email": [
+        "gerard.gruneisen@gmail.com"
+      ],
+      "schema:legalName": "LOCATION GRUNEISEN GERARD",
+      "schema:telephone": [
+        "+33 6 10 78 72 61"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/95178d93-28f5-36f0-9493-59c5010f7bde",
+      "schema:email": [
+        "gerard.gruneisen@gmail.com"
+      ],
+      "schema:legalName": "LOCATION GRUNEISEN GERARD",
+      "schema:telephone": [
+        "+33 6 10 78 72 61"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/5d3a4085-5e40-3f24-9334-a5d96c58adcc",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/c84b3f9c-7050-338f-9dbb-e16ccb719cf6",
+          "schema:addressLocality": "Epfig",
+          "schema:postalCode": "67680",
+          "schema:streetAddress": [
+            "75 rue des Alliés"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:67125",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Epfig"
+              ],
+              "pt": [
+                "Epfig"
+              ],
+              "en": [
+                "Epfig"
+              ],
+              "it": [
+                "Epfig"
+              ],
+              "fr": [
+                "Epfig"
+              ],
+              "nl": [
+                "Epfig"
+              ],
+              "es": [
+                "Epfig"
+              ]
+            },
+            "insee": "67125",
+            "isPartOfDepartment": {
+              "@id": "kb:France4467",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bas-Rhin"
+                ],
+                "pt": [
+                  "Bas-Rhin"
+                ],
+                "en": [
+                  "Bas-Rhin"
+                ],
+                "it": [
+                  "Bas-Rhin"
+                ],
+                "fr": [
+                  "Bas-Rhin"
+                ],
+                "nl": [
+                  "Bas-Rhin"
+                ],
+                "es": [
+                  "Bas-Rhin"
+                ]
+              },
+              "insee": "67",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/e3b40dc8-09d2-3d1b-a680-cdc2834626e1",
+        "schema:latitude": "48.355047",
+        "schema:longitude": "7.4631719",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/2ab59d04-79d9-3369-8fe3-d2a9939fb637",
+      "schema:legalName": "Office de tourisme du pays de Barr",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-01-20",
+  "lastUpdateDatatourisme": "2025-01-21T08:06:16.448Z"
+}

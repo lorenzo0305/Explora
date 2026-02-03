@@ -1,0 +1,260 @@
+{
+  "@id": "https://data.datatourisme.fr/10/0a55f27a-fac0-3817-b8a3-ef52fa310144",
+  "dc:identifier": "1306000483",
+  "@type": [
+    "CityHeritage",
+    "CulturalSite",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Commune de Diebling"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/10/7940ab47-4683-3656-9a90-6f75ff3f20ef",
+    "dc:identifier": "1306",
+    "schema:legalName": "FORBACH TOURISME",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/20532ef0-d667-3379-a67a-acc084fad788",
+      "schema:email": [
+        "contact@sitlorpro.com"
+      ],
+      "schema:legalName": "Système d’information touristique Lorrain",
+      "schema:logo": "http://www.sitlorpro.com/wp-content/uploads/sites/12/2016/03/logo-sitlor-blanc-fond-couleur.jpg",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.sitlorpro.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/d0043a01-6109-300e-b87f-8edae43a41d6",
+      "schema:email": [
+        "mairie@diebling.fr"
+      ],
+      "schema:telephone": [
+        "+33 3 87 02 50 27"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.diebling.fr/"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/8b2033cb-a3a5-3ece-abc9-1cb2cf8e8cb6",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_2Fleurs",
+        "schema:ratingValue": "2.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "2 Blumen"
+          ],
+          "pt": [
+            "2 flores"
+          ],
+          "en": [
+            "2 Flowers"
+          ],
+          "it": [
+            "2 fiori"
+          ],
+          "fr": [
+            "2 fleurs"
+          ],
+          "es": [
+            "2 flores"
+          ],
+          "nl": [
+            "2 bloemen"
+          ]
+        },
+        "isCompliantWith": [
+          "City"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/15aad7cd-6959-3ca9-b3e7-8202bb9f65c8",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/8c89b865-9688-3022-a4e7-4c1fcacc8b43",
+          "schema:addressLocality": "Diebling",
+          "schema:postalCode": "57980",
+          "schema:streetAddress": [
+            "53 Rue Principale"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:57176",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Diebling"
+              ],
+              "pt": [
+                "Diebling"
+              ],
+              "en": [
+                "Diebling"
+              ],
+              "it": [
+                "Diebling"
+              ],
+              "fr": [
+                "Diebling"
+              ],
+              "nl": [
+                "Diebling"
+              ],
+              "es": [
+                "Diebling"
+              ]
+            },
+            "insee": "57176",
+            "isPartOfDepartment": {
+              "@id": "kb:France4457",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Moselle"
+                ],
+                "pt": [
+                  "Moselle"
+                ],
+                "en": [
+                  "Moselle"
+                ],
+                "it": [
+                  "Moselle"
+                ],
+                "fr": [
+                  "Moselle"
+                ],
+                "nl": [
+                  "Moselle"
+                ],
+                "es": [
+                  "Moselle"
+                ]
+              },
+              "insee": "57",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/5f90d87c-25eb-3ecb-89dc-8517e27c5d5d",
+        "schema:latitude": "49.1086789466241",
+        "schema:longitude": "6.94142818450928",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-24",
+  "lastUpdateDatatourisme": "2025-07-25T05:18:05.366Z",
+  "reducedMobilityAccess": false
+}

@@ -1,0 +1,853 @@
+{
+  "@id": "https://data.datatourisme.fr/10/007c0c14-900b-341d-93dc-85fe1d9aed3c",
+  "dc:identifier": "853140456",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Restaurant",
+    "schema:Winery",
+    "BistroOrWineBar",
+    "BrasserieOrTavern",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "In einer warmen und freundlichen Atmosphäre bietet Ihnen dieses kleine Restaurant im Herzen des Dorfes eine traditionelle Küche.\nIm Sommer profitieren Sie von einer schönen überdachten Terrasse mit 60 Plätzen, auf der Sie sich entspannen können...\nMittags wird ein Tagesmenü angeboten. Abends und am Wochenende serviert Ihnen der Chefkoch seine Spezialitäten à la carte sowie seine köstlichen Pizzas und Flammkuchen."
+    ],
+    "en": [
+      "In a warm and friendly atmosphere, this small restaurant in the heart of the village offers traditional cuisine.\nIn summer, relax on the 60-seat covered terrace...\nA menu of the day is available at lunchtime, and the chef offers à la carte specialities in the evening and at weekends, as well as delicious pizzas and tarts flambées."
+    ],
+    "it": [
+      "In un'atmosfera calda e accogliente, questo piccolo ristorante nel cuore del villaggio offre una cucina tradizionale.\nIn estate, potrete rilassarvi sulla terrazza coperta da 60 posti...\nA pranzo è disponibile un menu del giorno, mentre la sera e nei fine settimana lo chef propone le sue specialità à la carte, oltre alle sue deliziose pizze e crostate flambées."
+    ],
+    "fr": [
+      "Dans une ambiance chaleureuse et conviviale, ce petit restaurant au coeur du village vous propose une cuisine traditionnelle. \nEn été profitez d'une belle terrasse couverte de 60 places pour vous détendre...\nUn menu du jour est proposé à midi, et le chef vous propose ses spécialités à la carte en soirée et le week-end, ainsi que ses délicieuses pizzas et tartes flambées."
+    ],
+    "nl": [
+      "In een warme en vriendelijke sfeer biedt dit kleine restaurant in het hart van het dorp traditionele gerechten.\nIn de zomer kunt u ontspannen op het overdekte terras met 60 zitplaatsen...\nS Middags is er een dagmenu beschikbaar en 's avonds en in het weekend biedt de chef zijn à la carte specialiteiten aan, evenals zijn heerlijke pizza's en flammkuchen."
+    ],
+    "es": [
+      "En un ambiente cálido y acogedor, este pequeño restaurante en el corazón del pueblo ofrece cocina tradicional.\nEn verano, podrá relajarse en la terraza cubierta de 60 plazas...\nA mediodía se sirve un menú del día, y por la noche y los fines de semana el chef ofrece especialidades a la carta, así como deliciosas pizzas y tartas flambeadas."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Restaurant au vieux sabot"
+    ]
+  },
+  "allowedPersons": 60,
+  "availableLanguage": [
+    "de"
+  ],
+  "hasAudience": [
+    {
+      "@id": "kb:ForAll",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Für alle"
+        ],
+        "pt": [
+          "Para todos"
+        ],
+        "en": [
+          "For all"
+        ],
+        "it": [
+          "Per tutti"
+        ],
+        "fr": [
+          "Tout public"
+        ],
+        "nl": [
+          "Voor iedereen"
+        ],
+        "es": [
+          "Todos los públicos"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/10/aff16212-54f7-31be-92f6-4550478c56e6",
+    "dc:identifier": "853",
+    "schema:legalName": "OT DU PAYS DE BITCHE",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/20532ef0-d667-3379-a67a-acc084fad788",
+      "schema:email": [
+        "contact@sitlorpro.com"
+      ],
+      "schema:legalName": "Système d’information touristique Lorrain",
+      "schema:logo": "http://www.sitlorpro.com/wp-content/uploads/sites/12/2016/03/logo-sitlor-blanc-fond-couleur.jpg",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.sitlorpro.com/"
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:ForAll",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Für alle"
+        ],
+        "pt": [
+          "Para todos"
+        ],
+        "en": [
+          "For all"
+        ],
+        "it": [
+          "Per tutti"
+        ],
+        "fr": [
+          "Tout public"
+        ],
+        "nl": [
+          "Voor iedereen"
+        ],
+        "es": [
+          "Todos los públicos"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/d3eff4f2-b235-3e90-b05d-d96c90dd979a",
+      "schema:email": [
+        "auvieuxsabot@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 3 72 29 31 38"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "foaf:Organization",
+        "Agent",
+        "Organisation"
+      ],
+      "foaf:homepage": [
+        "https://www.facebook.com/auvieuxsabot"
+      ],
+      "siret": "44990176800019"
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/75e3fe82-dac8-3bd8-a34d-f283471d82f9",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/3b228c7d-7d60-32a8-adf3-fcf8d2f8bc6d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6eaca3dd-c6a4-38b6-8b70-65bd8a097d63",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7b0ed97d-0091-37a0-8c91-74488d2ea65f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a8c4501a-67c8-35f2-90ef-de19d55431f7",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ca45b391-967f-3737-9e51-974cbcfd5ffa",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "In einer warmen und freundlichen Atmosphäre bietet Ihnen dieses kleine Restaurant im Herzen des Dorfes eine traditionelle Küche.\nIm Sommer profitieren Sie von einer schönen überdachten Terrasse mit 60 Plätzen, auf der Sie sich entspannen können...\nMittags wird ein Tagesmenü angeboten. Abends und am Wochenende serviert Ihnen der Chefkoch seine Spezialitäten à la carte sowie seine köstlichen Pizzas und Flammkuchen."
+        ],
+        "en": [
+          "In a warm and friendly atmosphere, this small restaurant in the heart of the village offers traditional cuisine.\nIn summer, relax on the 60-seat covered terrace...\nA menu of the day is available at lunchtime, and the chef offers à la carte specialities in the evening and at weekends, as well as delicious pizzas and tarts flambées."
+        ],
+        "it": [
+          "In un'atmosfera calda e accogliente, questo piccolo ristorante nel cuore del villaggio offre una cucina tradizionale.\nIn estate, potrete rilassarvi sulla terrazza coperta da 60 posti...\nA pranzo è disponibile un menu del giorno, mentre la sera e nei fine settimana lo chef propone le sue specialità à la carte, oltre alle sue deliziose pizze e crostate flambées."
+        ],
+        "fr": [
+          "Dans une ambiance chaleureuse et conviviale, ce petit restaurant au coeur du village vous propose une cuisine traditionnelle. \nEn été profitez d'une belle terrasse couverte de 60 places pour vous détendre...\nUn menu du jour est proposé à midi, et le chef vous propose ses spécialités à la carte en soirée et le week-end, ainsi que ses délicieuses pizzas et tartes flambées."
+        ],
+        "nl": [
+          "In een warme en vriendelijke sfeer biedt dit kleine restaurant in het hart van het dorp traditionele gerechten.\nIn de zomer kunt u ontspannen op het overdekte terras met 60 zitplaatsen...\nS Middags is er een dagmenu beschikbaar en 's avonds en in het weekend biedt de chef zijn à la carte specialiteiten aan, evenals zijn heerlijke pizza's en flammkuchen."
+        ],
+        "es": [
+          "En un ambiente cálido y acogedor, este pequeño restaurante en el corazón del pueblo ofrece cocina tradicional.\nEn verano, podrá relajarse en la terraza cubierta de 60 plazas...\nA mediodía se sirve un menú del día, y por la noche y los fines de semana el chef ofrece especialidades a la carta, así como deliciosas pizzas y tartas flambeadas."
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/26790b7a-3cdc-d2ca-11e4-3595e08991fc",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "9KGBY2AWQQH8",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:ReferentielNationalBatiments",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Ein digitaler öffentlicher Dienst, der eine nationale Gebäude-Referenz erstellt."
+            ],
+            "pt": [
+              "Serviço público digital que cria uma referência nacional de edifícios."
+            ],
+            "en": [
+              "A digital public service creating a national building reference."
+            ],
+            "it": [
+              "Servizio pubblico digitale che crea un riferimento nazionale degli edifici."
+            ],
+            "fr": [
+              "Service public numérique créant une référence nationale du bâtiment."
+            ],
+            "es": [
+              "Un servicio público digital que crea una referencia nacional de edificios."
+            ],
+            "nl": [
+              "Een digitale openbare dienst die een nationale gebouwreferentie creëert."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Nationales Gebäude-Referenzsystem"
+            ],
+            "pt": [
+              "Normas nacionais de construção"
+            ],
+            "en": [
+              "National Building Standards"
+            ],
+            "it": [
+              "Standard edilizi nazionali"
+            ],
+            "fr": [
+              "Référentiel National des Bâtiments"
+            ],
+            "es": [
+              "Normas nacionales de construcción"
+            ],
+            "nl": [
+              "Nationale bouwnorm"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://rnb.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/e5afa5db-7de3-30a7-9bdc-c4a460525acb",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:HomeDeliveries",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Lieferung nach Hause"
+            ],
+            "pt": [
+              "Entregas ao domicílio"
+            ],
+            "en": [
+              "Home deliveries"
+            ],
+            "it": [
+              "Consegne a domicilio"
+            ],
+            "fr": [
+              "Livraisons à domicile"
+            ],
+            "nl": [
+              "Thuisbezorging"
+            ],
+            "es": [
+              "Entregas a domicilio"
+            ]
+          }
+        },
+        {
+          "@id": "kb:TakeawayFoodOrMeals",
+          "@type": [
+            "CateringAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Essen zum Mitnehmen"
+            ],
+            "pt": [
+              "Venda de refeições para fora"
+            ],
+            "en": [
+              "Takeaway food or meals"
+            ],
+            "it": [
+              "Vendita di piatti da asporto"
+            ],
+            "fr": [
+              "Vente de plats à emporter"
+            ],
+            "nl": [
+              "Verkoop van afhaalmaaltijden"
+            ],
+            "es": [
+              "Venta de platos para llevar"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/3db66e76-68ac-35c9-8381-69d2c92ea2ca",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/444ab3f4-ff00-34d5-8d16-b1f0dc3257ac",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7b747a0f-c959-33ff-88c4-93b17e5c7ed9",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b0af1b33-8021-3850-9a0b-51662d4b3231",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c25bb610-9016-35aa-863e-5707ba0fae3e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/78d8cd98-0432-3de3-9db8-46260eab179b",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/79293eed-02f3-33c1-9767-e050350b68e5",
+          "schema:addressLocality": "Soucht",
+          "schema:postalCode": "57960",
+          "schema:streetAddress": [
+            "1 place du Général de Gaulle"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:57658",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Soucht"
+              ],
+              "pt": [
+                "Soucht"
+              ],
+              "en": [
+                "Soucht"
+              ],
+              "it": [
+                "Soucht"
+              ],
+              "fr": [
+                "Soucht"
+              ],
+              "nl": [
+                "Soucht"
+              ],
+              "es": [
+                "Soucht"
+              ]
+            },
+            "insee": "57658",
+            "isPartOfDepartment": {
+              "@id": "kb:France4457",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Moselle"
+                ],
+                "pt": [
+                  "Moselle"
+                ],
+                "en": [
+                  "Moselle"
+                ],
+                "it": [
+                  "Moselle"
+                ],
+                "fr": [
+                  "Moselle"
+                ],
+                "nl": [
+                  "Moselle"
+                ],
+                "es": [
+                  "Moselle"
+                ]
+              },
+              "insee": "57",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/1693307e-70de-3dd2-ad54-cab01e8c24c5",
+        "schema:latitude": "48.9588954513285",
+        "schema:longitude": "7.33500662023766",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2025-05-21",
+  "lastUpdateDatatourisme": "2025-05-22T04:17:16.689Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/098ab7b5-a852-3a65-ad81-09cd4c0e566f",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:ChequesDejeunersTicketsRestaurants",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Essensgutscheine – Ticket Restaurant"
+            ],
+            "pt": [
+              "Vales-refeições — vales-restaurante"
+            ],
+            "en": [
+              "Chèques déjeuners - tickets restaurants"
+            ],
+            "it": [
+              "Buoni pasto - ticket restaurant"
+            ],
+            "fr": [
+              "Chèques déjeuners - tickets restaurants"
+            ],
+            "es": [
+              "Vales de comida - Cheques restaurante"
+            ],
+            "nl": [
+              "Ontbijtcheques - restauranttickets"
+            ]
+          }
+        },
+        {
+          "@id": "kb:CreditCards",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bankkarten"
+            ],
+            "pt": [
+              "Cartões bancários"
+            ],
+            "en": [
+              "Credit Cards"
+            ],
+            "it": [
+              "Carte bancarie"
+            ],
+            "fr": [
+              "Cartes bancaires"
+            ],
+            "es": [
+              "Tarjetas bancarias"
+            ],
+            "nl": [
+              "Bankkaarten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "reducedMobilityAccess": false
+}

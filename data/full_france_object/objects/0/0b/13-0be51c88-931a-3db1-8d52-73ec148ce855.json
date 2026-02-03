@@ -1,0 +1,823 @@
+{
+  "@id": "https://data.datatourisme.fr/13/0be51c88-931a-3db1-8d52-73ec148ce855",
+  "dc:identifier": "4910779",
+  "@type": [
+    "schema:Accommodation",
+    "schema:FoodEstablishment",
+    "schema:Hotel",
+    "schema:LodgingBusiness",
+    "schema:Restaurant",
+    "Accommodation",
+    "FoodEstablishment",
+    "Hotel",
+    "HotelRestaurant",
+    "HotelTrade",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Dreihundert Jahre altes Haus mit Charme und modernem Komfort. Kaminzimmer oder Pool je nach Saison. Restaurant, das in zahlreichen Führern erwähnt wird\r\nSpezieller Empfang für Wanderer, Radfahrer und Motorradfahrer mit Garage. Themenwochenende, Wellness ..."
+    ],
+    "en": [
+      "Three-hundred-year-old house with charm and modern comfort. Living room with fireplace or swimming pool depending on the season. Restaurant referenced in many guides\r\nSpecific reception for hikers, cyclists, motorcyclists with garage. Theme weekends, well-being ..."
+    ],
+    "it": [
+      "Casa antica di trecento anni con fascino e comfort moderni. Soggiorno con camino o piscina a seconda della stagione. Ristorante segnalato in numerose guide\r\nAccoglienza specifica per escursionisti, ciclisti, motociclisti con garage. Weekend a tema, benessere ..."
+    ],
+    "fr": [
+      "Maison tricentenaire avec charme et confort moderne. Salon cheminée ou piscine selon saison. Restaurant référencé dans de nombreux guides. \r\nAccueil spécifique randonneurs, cyclistes, motards avec garage. Week-end à thème, bien-être ..."
+    ],
+    "nl": [
+      "Driehonderd jaar oud huis met charme en modern comfort. Woonkamer met open haard of zwembad afhankelijk van het seizoen. Restaurant vermeld in talrijke gidsen\r\nSpecifieke opvang voor wandelaars, fietsers, motorrijders met garage. Themaweekenden, wellness ..."
+    ],
+    "es": [
+      "Casa tricentenaria con encanto y confort moderno. Salón con chimenea o piscina según la temporada. Restaurante incluido en numerosas guías\r\nAcogida específica para excursionistas, ciclistas y motoristas con garaje. Fines de semana temáticos, bienestar ..."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Le Relais de Fusiès"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/285ab944-8d27-31ee-97ec-e7f762c39095",
+    "dc:identifier": "1211",
+    "schema:email": [
+      "anne.sers@tourismemlhl.fr",
+      "antoine.leblic@tourismemlhl.fr",
+      "auriane.izard@tourismemlhl.fr",
+      "blandine.gos@tourismemlhl.fr",
+      "julie.galonnier@gmail.com",
+      "julie.galonnier@tourismemlhl.fr"
+    ],
+    "schema:legalName": "Office de tourisme Destination Haut-Languedoc",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.tourisme-montsetlacsenhautlanguedoc.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/a37422ee-fddd-3cd8-bb48-2efc4b078f7a",
+      "schema:email": [
+        "contact@hotelfusies.fr"
+      ],
+      "schema:telephone": [
+        "+33 5 63 37 02 03"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.hotelfusies.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/72d6196c-84eb-3106-841c-a445123e8a48",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/02245cf1-02fa-306d-9417-b3183c5feece",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5862ce22-941e-3eda-9606-e472febf9dda",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/af771d14-549f-3ad9-b8ea-4a9aaed42c90",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b76f21e8-2b95-36c4-b031-4021f65e64e2",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f7a71a54-0ca2-349f-ada7-73c29c4e1c57",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Dreihundert Jahre altes Haus mit Charme und modernem Komfort. Kaminzimmer oder Pool je nach Saison. Restaurant, das in zahlreichen Führern erwähnt wird\r\nSpezieller Empfang für Wanderer, Radfahrer und Motorradfahrer mit Garage. Themenwochenende, Wellness ..."
+        ],
+        "en": [
+          "Three-hundred-year-old house with charm and modern comfort. Living room with fireplace or swimming pool depending on the season. Restaurant referenced in many guides\r\nSpecific reception for hikers, cyclists, motorcyclists with garage. Theme weekends, well-being ..."
+        ],
+        "it": [
+          "Casa antica di trecento anni con fascino e comfort moderni. Soggiorno con camino o piscina a seconda della stagione. Ristorante segnalato in numerose guide\r\nAccoglienza specifica per escursionisti, ciclisti, motociclisti con garage. Weekend a tema, benessere ..."
+        ],
+        "fr": [
+          "Maison tricentenaire avec charme et confort moderne. Salon cheminée ou piscine selon saison. Restaurant référencé dans de nombreux guides. \r\nAccueil spécifique randonneurs, cyclistes, motards avec garage. Week-end à thème, bien-être ..."
+        ],
+        "nl": [
+          "Driehonderd jaar oud huis met charme en modern comfort. Woonkamer met open haard of zwembad afhankelijk van het seizoen. Restaurant vermeld in talrijke gidsen\r\nSpecifieke opvang voor wandelaars, fietsers, motorrijders met garage. Themaweekenden, wellness ..."
+        ],
+        "es": [
+          "Casa tricentenaria con encanto y confort moderno. Salón con chimenea o piscina según la temporada. Restaurante incluido en numerosas guías\r\nAcogida específica para excursionistas, ciclistas y motoristas con garaje. Fines de semana temáticos, bienestar ..."
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/7724dbf0-7649-358b-be17-1db1b66a240f",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3etoiles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Sterne"
+          ],
+          "pt": [
+            "3 estrelas"
+          ],
+          "en": [
+            "3 Stars"
+          ],
+          "it": [
+            "3 stelle"
+          ],
+          "fr": [
+            "3 étoiles"
+          ],
+          "nl": [
+            "3 sterren"
+          ],
+          "es": [
+            "3 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/045ef236-3459-3fa2-8630-17acca7bb600",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/095411d1-d7d4-32a5-ac45-35c4ec2b7125",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/10d2182b-9212-3ed9-b05b-9d673563bbdd",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/95565e07-f8e3-34d3-a3b7-85a94abd2c18",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/caa3fb15-83ee-3d37-9967-73028d741e9d",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/c8d24938-cde8-3e30-94ca-c7df1d0e4192",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/37bb6e45-82c9-366b-af78-9b9b5a2482a7",
+          "schema:addressLocality": "Lacaune",
+          "schema:postalCode": "81230",
+          "schema:streetAddress": [
+            "2 rue de la République"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:81124",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Lacaune"
+              ],
+              "pt": [
+                "Lacaune"
+              ],
+              "en": [
+                "Lacaune"
+              ],
+              "it": [
+                "Lacaune"
+              ],
+              "fr": [
+                "Lacaune"
+              ],
+              "nl": [
+                "Lacaune"
+              ],
+              "es": [
+                "Lacaune"
+              ]
+            },
+            "insee": "81124",
+            "isPartOfDepartment": {
+              "@id": "kb:France7681",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Tarn"
+                ],
+                "pt": [
+                  "Tarn"
+                ],
+                "en": [
+                  "Tarn"
+                ],
+                "it": [
+                  "Tarn"
+                ],
+                "fr": [
+                  "Tarn"
+                ],
+                "nl": [
+                  "Tarn"
+                ],
+                "es": [
+                  "Tarn"
+                ]
+              },
+              "insee": "81",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/36712493-628c-3de1-b3aa-3d462c0f0afe",
+        "schema:elevation": "795",
+        "schema:latitude": "43.707058",
+        "schema:longitude": "2.691804",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/6bfc3d25-240f-36d6-a473-f82e1a540d9c",
+          "schema:validFrom": "2025-01-06T00:00:00",
+          "schema:validThrough": "2025-12-19T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/b6d960d7-b838-3399-9466-202083f5d1e7",
+      "schema:email": [
+        "anne.sers@tourismemlhl.fr",
+        "antoine.leblic@tourismemlhl.fr",
+        "auriane.izard@tourismemlhl.fr",
+        "blandine.gos@tourismemlhl.fr",
+        "julie.galonnier@gmail.com",
+        "julie.galonnier@tourismemlhl.fr"
+      ],
+      "schema:legalName": "Office de tourisme Destination Haut-Languedoc",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-montsetlacsenhautlanguedoc.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-04-01",
+  "lastUpdateDatatourisme": "2025-06-10T13:12:49.8Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/083fa924-6fd6-3bf4-9f13-3c1ad9a48ace",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/2bca4952-7d73-34f3-8931-5db462709e5a",
+          "schema:maxPrice": [
+            "96"
+          ],
+          "schema:minPrice": [
+            "86"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/ff914ade-9798-356c-81e8-9add51afcd7d",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-19",
+              "startDate": "2025-01-06"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/3bc81790-f72e-3142-b4bf-f3416336da15",
+          "schema:maxPrice": [
+            "80"
+          ],
+          "schema:minPrice": [
+            "70"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/ff914ade-9798-356c-81e8-9add51afcd7d",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-19",
+              "startDate": "2025-01-06"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4158b686-daa5-37bb-a44d-863099961690",
+          "schema:maxPrice": [
+            "107"
+          ],
+          "schema:minPrice": [
+            "99"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/ff914ade-9798-356c-81e8-9add51afcd7d",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-19",
+              "startDate": "2025-01-06"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/61923f51-a5db-3aa4-9aa3-98cfd7bda067",
+          "schema:maxPrice": [
+            "120"
+          ],
+          "schema:minPrice": [
+            "110"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/ff914ade-9798-356c-81e8-9add51afcd7d",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-19",
+              "startDate": "2025-01-06"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6a074c30-f03d-3b52-b77d-6301eb09bc3c",
+          "schema:maxPrice": [
+            "107"
+          ],
+          "schema:minPrice": [
+            "99"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/ff914ade-9798-356c-81e8-9add51afcd7d",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-19",
+              "startDate": "2025-01-06"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:FamilyBedroom",
+              "@type": [
+                "AccommodationAmenity",
+                "AccommodationPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Familienzimmer"
+                ],
+                "pt": [
+                  "Quarto familiar"
+                ],
+                "en": [
+                  "Family bedroom"
+                ],
+                "it": [
+                  "Camera familiare"
+                ],
+                "fr": [
+                  "Chambre familiale"
+                ],
+                "es": [
+                  "Habitación familiar"
+                ],
+                "nl": [
+                  "Familiekamer"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/85a24d16-93e2-36cd-af7b-71aa7da58bd1",
+          "schema:maxPrice": [
+            "10"
+          ],
+          "schema:minPrice": [
+            "10"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/ff914ade-9798-356c-81e8-9add51afcd7d",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-19",
+              "startDate": "2025-01-06"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/cba20ea8-02ba-3d73-a956-c858660f6a54",
+          "schema:maxPrice": [
+            "12"
+          ],
+          "schema:minPrice": [
+            "12"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/ff914ade-9798-356c-81e8-9add51afcd7d",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-19",
+              "startDate": "2025-01-06"
+            }
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:BaseRateFullRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Basistarif – voller Tarif"
+                ],
+                "pt": [
+                  "Preço de base — preço total"
+                ],
+                "en": [
+                  "Base rate - full rate"
+                ],
+                "it": [
+                  "Tariffa di base — tariffa intera"
+                ],
+                "fr": [
+                  "Tarif de base - plein tarif"
+                ],
+                "es": [
+                  "Tarifa básica - tarifa completa"
+                ],
+                "nl": [
+                  "Basistarief - vol tarief"
+                ]
+              }
+            }
+          ],
+          "hasPricingMode": [
+            {
+              "@id": "kb:PerUnit",
+              "@type": [
+                "PricingMode"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pro Einheit"
+                ],
+                "pt": [
+                  "Por unidade"
+                ],
+                "en": [
+                  "Per unit"
+                ],
+                "it": [
+                  "Per unità"
+                ],
+                "fr": [
+                  "A l'unité"
+                ],
+                "es": [
+                  "Por unidad"
+                ],
+                "nl": [
+                  "Per eenheid"
+                ]
+              }
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:Breakfast",
+              "@type": [
+                "CateringAmenity",
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Frühstück"
+                ],
+                "pt": [
+                  "Pequeno-almoço"
+                ],
+                "en": [
+                  "Breakfast"
+                ],
+                "it": [
+                  "Colazione"
+                ],
+                "fr": [
+                  "Petit-déjeuner"
+                ],
+                "nl": [
+                  "Ontbijt"
+                ],
+                "es": [
+                  "Desayuno"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d021a2aa-6278-341f-b68b-d2127745704c",
+          "schema:maxPrice": [
+            "80"
+          ],
+          "schema:minPrice": [
+            "75"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/ff914ade-9798-356c-81e8-9add51afcd7d",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-19",
+              "startDate": "2025-01-06"
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

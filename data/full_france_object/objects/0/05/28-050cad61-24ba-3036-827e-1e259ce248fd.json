@@ -1,0 +1,827 @@
+{
+  "@id": "https://data.datatourisme.fr/28/050cad61-24ba-3036-827e-1e259ce248fd",
+  "dc:identifier": "HLOPIC000V509TP5",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Willkommen in der Villa Surcouf, einem bezaubernden Haus in Aultoise aus den 1900er Jahren, eingebettet in..."
+    ],
+    "en": [
+      "Welcome to Villa Surcouf, a delightful 1900s Aultoise mansion nestling in the heart of..."
+    ],
+    "it": [
+      "Benvenuti a Villa Surcouf, una deliziosa residenza di Aultoise risalente al 1900, immersa nella..."
+    ],
+    "fr": [
+      "Bienvenue à la Villa Surcouf, une ravissante demeure aultoise datant des années 1900, nichée dans le..."
+    ],
+    "nl": [
+      "Welkom in Villa Surcouf, een prachtige Aultoise woning uit de jaren 1900, genesteld in..."
+    ],
+    "es": [
+      "Bienvenido a Villa Surcouf, una encantadora residencia Aultoise que data de la década de 1900,..."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Villa Surcouf"
+    ]
+  },
+  "allowedPersons": 6,
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/68439f94-dc11-3442-b5a9-42cbd4c403d1",
+    "schema:legalName": "SIM Hauts-de-France - ADRT80",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/5463b4e3-2482-3579-a40a-47ba972f29d5",
+      "schema:legalName": "SIM Hauts-de-France",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/010cf16f-8fca-35f3-b188-9ecd87471e79",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/5cf24638-919e-3646-8c2d-4ab39f5e7ef4",
+          "schema:addressLocality": "Ault",
+          "schema:postalCode": "80460",
+          "schema:streetAddress": [
+            "15 rue de la Petite Provence"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:80039",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Ault"
+              ],
+              "pt": [
+                "Ault"
+              ],
+              "en": [
+                "Ault"
+              ],
+              "it": [
+                "Ault"
+              ],
+              "fr": [
+                "Ault"
+              ],
+              "nl": [
+                "Ault"
+              ],
+              "es": [
+                "Ault"
+              ]
+            },
+            "insee": "80039",
+            "isPartOfDepartment": {
+              "@id": "kb:France3280",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Somme"
+                ],
+                "pt": [
+                  "Somme"
+                ],
+                "en": [
+                  "Somme"
+                ],
+                "it": [
+                  "Somme"
+                ],
+                "fr": [
+                  "Somme"
+                ],
+                "nl": [
+                  "Somme"
+                ],
+                "es": [
+                  "Somme"
+                ]
+              },
+              "insee": "80",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "lnservices80@gmail.com"
+      ],
+      "schema:legalName": "Hébergements locatifs",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/010cf16f-8fca-35f3-b188-9ecd87471e79",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/5cf24638-919e-3646-8c2d-4ab39f5e7ef4",
+          "schema:addressLocality": "Ault",
+          "schema:postalCode": "80460",
+          "schema:streetAddress": [
+            "15 rue de la Petite Provence"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:80039",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Ault"
+              ],
+              "pt": [
+                "Ault"
+              ],
+              "en": [
+                "Ault"
+              ],
+              "it": [
+                "Ault"
+              ],
+              "fr": [
+                "Ault"
+              ],
+              "nl": [
+                "Ault"
+              ],
+              "es": [
+                "Ault"
+              ]
+            },
+            "insee": "80039",
+            "isPartOfDepartment": {
+              "@id": "kb:France3280",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Somme"
+                ],
+                "pt": [
+                  "Somme"
+                ],
+                "en": [
+                  "Somme"
+                ],
+                "it": [
+                  "Somme"
+                ],
+                "fr": [
+                  "Somme"
+                ],
+                "nl": [
+                  "Somme"
+                ],
+                "es": [
+                  "Somme"
+                ]
+              },
+              "insee": "80",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "lnservices80@gmail.com"
+      ],
+      "schema:legalName": "Hébergements locatifs",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/75ffced7-ff24-3ca8-82b4-0e7972e20d98",
+      "schema:email": [
+        "lnservices80@gmail.com"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/d331708f-7a35-3c11-b7d8-3cb3dbf70c65",
+      "dc:description": {
+        "de": [
+          "Willkommen in der Villa Surcouf, einem bezaubernden Haus in Aultoise aus den 1900er Jahren, das im malerischen Sektor von Onival liegt und einen atemberaubenden Blick auf das Meer bietet. Sobald Sie die Schwelle dieses charmanten Familienhauses überschreiten, empfängt Sie das Erdgeschoss mit einer voll ausgestatteten Küche, einem Wohn-, Ess- und Wohnzimmer mit Panoramablick auf das Meer und einem WC für Ihre Bequemlichkeit. Im Obergeschoss lädt ein wunderschönes Doppelzimmer mit eigenem Balkon dazu ein, die maritime Atmosphäre aufzusaugen, begleitet von einem Duschbad und einem Waschbecken-WC-Bereich, die Komfort und Privatsphäre miteinander verbinden. Auf der zweiten Etage bieten zwei weitere Doppelzimmer einen majestätischen Blick auf das Meer, ergänzt durch eine Dusche, ein Badezimmer mit WC und Waschbecken, wodurch ein Raum geschaffen wird, der der Entspannung und der Flucht aus dem Alltag gewidmet ist. Der Garten mit Blick auf den Deich und die unendliche Weite des Ozeans bietet Ihnen einen idyllischen Rahmen, um neue Energie zu tanken. Für Wassersportler gibt es einen Strand, der während der gesamten Sommersaison geöffnet ist und Segelkurse sowie den Verleih von Katamaranen, Paddles und Windsurfbrettern anbietet, sodass Sie diese außergewöhnliche maritime Umgebung in vollen Zügen genießen können. Die Villa Surcouf, zwischen historischem Erbe und zeitgenössischer Eleganz, lädt Sie zu einem einzigartigen Erlebnis ein, bei dem sich der Charme der Vergangenheit harmonisch mit dem zeitlosen Schauspiel des Meeres verbindet. Ein Ort, an dem jeder Augenblick zu einer verzauberten Klammer wird, die vom Rauschen der Wellen und der sanften Meeresbrise gewiegt wird."
+        ],
+        "en": [
+          "Welcome to Villa Surcouf, a delightful Aultoise home dating from the 1900s, nestled in the picturesque Onival area, with breathtaking sea views. As soon as you cross the threshold of this charming family home, the first floor welcomes you with a fully equipped kitchen, a living-dining room with panoramic sea views, and a toilet for your convenience. Upstairs, a superb double bedroom with private balcony invites you to soak up the maritime atmosphere, accompanied by a shower room and washbasin/WC area, combining comfort and privacy. On the second floor, two further double bedrooms offer majestic sea views, complemented by a shower, WC and washbasin area, creating a space dedicated to relaxation and escape. The garden, overlooking the seawall and the infinite expanse of the ocean, offers an idyllic setting in which to recharge your batteries. For water sports enthusiasts, a beach point, open throughout the summer season, offers sailing lessons as well as catamaran, paddles and windsurf rentals, allowing you to take full advantage of this exceptional maritime setting. Villa Surcouf, a blend of historic heritage and contemporary elegance, invites you to a unique experience where the charm of the past blends harmoniously with the timeless spectacle of the sea. A place where every moment becomes an enchanted interlude, lulled by the murmur of the waves and the gentle sea breeze."
+        ],
+        "it": [
+          "Benvenuti a Villa Surcouf, una deliziosa casa di Aultoise risalente al 1900, immersa nella pittoresca zona di Onival, con vista ininterrotta sul mare. Appena varcata la soglia di questa affascinante casa di famiglia, il piano terra vi accoglie con una cucina completamente attrezzata, un soggiorno-sala da pranzo con vista panoramica sul mare e una toilette per la vostra comodità. Al piano superiore, una splendida camera da letto matrimoniale con balcone privato invita a immergersi nell'atmosfera marittima, accompagnata da un bagno con doccia e zona lavabo/WC, che unisce comfort e privacy. Al secondo piano, altre due camere matrimoniali offrono una maestosa vista sul mare, completata da una doccia, un bagno con WC e lavabo, creando uno spazio dedicato al relax e all'evasione. Il giardino, affacciato sul lungomare e sull'infinita distesa dell'oceano, offre un ambiente idilliaco in cui ricaricare le batterie. Per gli amanti degli sport acquatici, un punto spiaggia, aperto per tutta la stagione estiva, offre lezioni di vela e noleggio di catamarani, paddle e windsurf, consentendo di sfruttare al meglio questa eccezionale cornice marittima. Villa Surcouf, un mix di patrimonio storico ed eleganza contemporanea, vi invita a vivere un'esperienza unica in cui il fascino del passato si fonde armoniosamente con lo spettacolo senza tempo del mare. Un luogo dove ogni momento diventa un intermezzo incantato, cullato dal mormorio delle onde e dalla dolce brezza marina."
+        ],
+        "fr": [
+          "Bienvenue à la Villa Surcouf, une ravissante demeure aultoise datant des années 1900, nichée dans le pittoresque secteur d'Onival, offrant une vue imprenable sur la mer. Dès que vous franchissez le seuil de cette charmante maison familiale, le rez-de-chaussée vous accueille avec une cuisine entièrement équipée, un salon-séjour-salle à manger offrant une vue panoramique sur la mer, et un WC pour votre commodité. À l'étage, une superbe chambre double avec un balcon privé vous invite à vous imprégner de l'atmosphère maritime, accompagnée d'une salle de douche et d'un espace lavabo-WC, alliant confort et intimité. Au deuxième étage, deux autres chambres doubles offrent une vue majestueuse sur la mer, complétées par une douche, une salle d'eau avec WC et lavabo, créant un espace dédié à la détente et à l'évasion. Le jardin, surplombant la digue et l'étendue infinie de l'océan, vous offre un cadre idyllique pour vous ressourcer. Pour les amateurs de sports nautiques, un point plage, ouvert tout au long de la saison estivale, propose des cours de voile ainsi que la location de catamarans, paddles et planches à voile, vous permettant de profiter pleinement de ce cadre maritime exceptionnel. La Villa Surcouf, entre héritage historique et élégance contemporaine, vous convie à une expérience unique où le charme du passé se marie harmonieusement avec le spectacle intemporel de la mer. Un lieu où chaque instant devient une parenthèse enchantée, bercée par le murmure des vagues et la douce brise marine."
+        ],
+        "nl": [
+          "Welkom in Villa Surcouf, een prachtig Aultoise huis uit de jaren 1900, genesteld in de pittoreske wijk Onival, met ononderbroken uitzicht op zee. Zodra je over de drempel stapt van dit charmante familiehuis, verwelkomt de begane grond je met een volledig uitgeruste keuken, een woon-eetkamer met panoramisch uitzicht op zee, en een toilet voor jouw gemak. Boven nodigt een prachtige tweepersoonsslaapkamer met een eigen balkon je uit om de maritieme sfeer op te snuiven, samen met een doucheruimte en een wastafel/toiletruimte, waar comfort en privacy gecombineerd worden. Op de tweede verdieping bieden nog twee tweepersoonsslaapkamers majestueus uitzicht op zee, aangevuld met een douche, een doucheruimte met wc en wastafel, waardoor een ruimte ontstaat die is gewijd aan ontspanning en ontsnapping. De tuin, met uitzicht op de zeedijk en de oneindige uitgestrektheid van de oceaan, biedt een idyllische omgeving om nieuwe energie op te doen. Voor watersportliefhebbers is er een strandtent die het hele zomerseizoen open is en waar je zeillessen kunt nemen en catamarans, peddels en windsurf kunt huren, zodat je optimaal kunt genieten van deze uitzonderlijke maritieme omgeving. Villa Surcouf, een mix van historisch erfgoed en hedendaagse elegantie, nodigt u uit voor een unieke ervaring waar de charme van het verleden harmonieus samengaat met het tijdloze schouwspel van de zee. Een plek waar elk moment een betoverend intermezzo wordt, gesust door het ruisen van de golven en de zachte zeebries."
+        ],
+        "es": [
+          "Bienvenido a Villa Surcouf, una encantadora casa aultoise que data de la década de 1900, enclavada en la pintoresca zona de Onival, con vistas ininterrumpidas al mar. Nada más cruzar el umbral de esta encantadora casa familiar, la planta baja le da la bienvenida con una cocina totalmente equipada, un salón-comedor con vistas panorámicas al mar y un aseo para su comodidad. En la planta superior, un magnífico dormitorio doble con balcón privado le invita a empaparse del ambiente marítimo, acompañado de un cuarto de ducha y una zona de lavabo/WC, que combinan comodidad e intimidad. En la segunda planta, otros dos dormitorios dobles ofrecen majestuosas vistas al mar, complementados por una ducha, un cuarto de ducha con WC y lavabo, creando un espacio dedicado a la relajación y la evasión. El jardín, con vistas al malecón y a la infinita extensión del océano, ofrece un entorno idílico en el que recargar las pilas. Para los amantes de los deportes náuticos, un punto de playa, abierto durante toda la temporada estival, ofrece clases de vela, así como alquiler de catamaranes, paddle y windsurf, lo que le permitirá disfrutar al máximo de este excepcional entorno marítimo. Villa Surcouf, mezcla de patrimonio histórico y elegancia contemporánea, le invita a una experiencia única donde el encanto del pasado se funde armoniosamente con el espectáculo intemporal del mar. Un lugar donde cada momento se convierte en un interludio encantado, arrullado por el murmullo de las olas y la suave brisa marina."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/03caaf38-192f-309e-9637-193ba5c48619",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/30e71b8d-b8f5-3a62-bfaf-45edeba65cff",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/3fab639e-05a9-37eb-ad17-6c5e028357c5",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/491dd3c7-f150-3955-9875-ceeacf0939a0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4a150beb-ea71-3d32-92d7-7cb86af87ad9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/59cabc9f-33c0-336d-8011-a9f3562c38ba",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b0ee68d1-0933-300d-af67-61d1bef94953",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b5a6b112-f63d-3579-82a1-524d92bceb9d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/c68d16d9-b190-34ae-9ef9-97b0fc768740",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/fe6e677f-53d6-34cc-9cd3-1fa92d872334",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Willkommen in der Villa Surcouf, einem bezaubernden Haus in Aultoise aus den 1900er Jahren, eingebettet in..."
+        ],
+        "en": [
+          "Welcome to Villa Surcouf, a delightful 1900s Aultoise mansion nestling in the heart of..."
+        ],
+        "it": [
+          "Benvenuti a Villa Surcouf, una deliziosa residenza di Aultoise risalente al 1900, immersa nella..."
+        ],
+        "fr": [
+          "Bienvenue à la Villa Surcouf, une ravissante demeure aultoise datant des années 1900, nichée dans le..."
+        ],
+        "nl": [
+          "Welkom in Villa Surcouf, een prachtige Aultoise woning uit de jaren 1900, genesteld in..."
+        ],
+        "es": [
+          "Bienvenido a Villa Surcouf, una encantadora residencia Aultoise que data de la década de 1900,..."
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/7724dbf0-7649-358b-be17-1db1b66a240f",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3etoiles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Sterne"
+          ],
+          "pt": [
+            "3 estrelas"
+          ],
+          "en": [
+            "3 Stars"
+          ],
+          "it": [
+            "3 stelle"
+          ],
+          "fr": [
+            "3 étoiles"
+          ],
+          "nl": [
+            "3 sterren"
+          ],
+          "es": [
+            "3 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/3631f70b-74f6-38e8-b5ef-2dc47bf6c8eb",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4cef8fb3-50a7-3ffe-b4bd-75cb5febc031",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6472031f-678e-3591-9584-c49bf2195db4",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7dad9ee1-065e-3eee-98d3-e7778fca1dcc",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fe91304f-7bbf-3ea4-8982-9a1043152eb1",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/5195f226-a001-3edf-a5a0-18ef767a54df",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/5cf24638-919e-3646-8c2d-4ab39f5e7ef4",
+          "schema:addressLocality": "Ault",
+          "schema:postalCode": "80460",
+          "schema:streetAddress": [
+            "15 rue de la Petite Provence"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:80039",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Ault"
+              ],
+              "pt": [
+                "Ault"
+              ],
+              "en": [
+                "Ault"
+              ],
+              "it": [
+                "Ault"
+              ],
+              "fr": [
+                "Ault"
+              ],
+              "nl": [
+                "Ault"
+              ],
+              "es": [
+                "Ault"
+              ]
+            },
+            "insee": "80039",
+            "isPartOfDepartment": {
+              "@id": "kb:France3280",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Somme"
+                ],
+                "pt": [
+                  "Somme"
+                ],
+                "en": [
+                  "Somme"
+                ],
+                "it": [
+                  "Somme"
+                ],
+                "fr": [
+                  "Somme"
+                ],
+                "nl": [
+                  "Somme"
+                ],
+                "es": [
+                  "Somme"
+                ]
+              },
+              "insee": "80",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/1092360e-37f7-38a4-867e-829e5118f953",
+        "schema:latitude": "50.1085359",
+        "schema:longitude": "1.45400396",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-25",
+  "lastUpdateDatatourisme": "2025-07-26T03:26:24.833Z"
+}

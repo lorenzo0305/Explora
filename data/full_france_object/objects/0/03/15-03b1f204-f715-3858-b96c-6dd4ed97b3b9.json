@@ -1,0 +1,883 @@
+{
+  "@id": "https://data.datatourisme.fr/15/03b1f204-f715-3858-b96c-6dd4ed97b3b9",
+  "dc:identifier": "ACCCEN03600030",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CamperVanArea",
+    "CampingAndCaravanning",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Multiservice-Wohnmobilanlegestelle."
+    ],
+    "en": [
+      "Multi-service campervan pitch"
+    ],
+    "it": [
+      "Terminale camper multiservizi."
+    ],
+    "fr": [
+      "Borne de camping-cars multi-services."
+    ],
+    "es": [
+      "Terminal de autocaravanas multiservicio."
+    ],
+    "nl": [
+      "Multi-service camper terminal."
+    ]
+  },
+  "rdfs:label": {
+    "en": [
+      "Le Moulin campervan pitch"
+    ],
+    "fr": [
+      "Borne de camping-car Le Moulin"
+    ]
+  },
+  "allowedPersons": 1,
+  "creationDate": "2009-06-02",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/15/258a22d9-ec6b-3b0c-a6ec-d65a0d1fe1ba",
+    "dc:identifier": "bb582899-e37d-4142-9722-9641c244049e",
+    "schema:legalName": "Destination Brenne",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/bba35b4d-022c-3fa7-90a3-07eba818e3a5",
+      "schema:legalName": "SIT Centre-Val de Loire",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/2ec89051-32e7-3f8a-a08b-101847db29e8",
+      "schema:email": [
+        "tournon-mairie@wanadoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 2 42 16 00 18"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/82af0c32-2f22-3fe3-815b-58f5ddef4994",
+      "dc:description": {
+        "de": [
+          "Euro-relais-Wohnmobilanlegestelle gegenüber dem Wildwasserstadion (siehe Anlegestelle für Einkaufsort), gegenüber dem angelegten und schattigen Picknickplatz, gegenüber dem Fluss Creuse. Wifi vor Ort."
+        ],
+        "en": [
+          "Euro-relais motorhome terminal located opposite the white water stadium (see terminal for place of purchase), opposite the shaded picnic area, facing the Creuse river. Wifi on site."
+        ],
+        "it": [
+          "Il terminal dei camping-car Euro-relais si trova di fronte allo stadio delle acque bianche (vedere il terminal per il luogo di acquisto), di fronte all'area picnic ombreggiata, di fronte al fiume Creuse. Wifi in loco."
+        ],
+        "fr": [
+          "Borne de camping-cars Euro-relais située en face du stade d’eau vive (voir borne pour lieu d’achat), face à l'aire de pique-nique aménagée et ombragée, face à la Creuse. Wifi sur place."
+        ],
+        "es": [
+          "Terminal de camping-cars Euro-relais situada frente al estadio de aguas bravas (ver terminal para el lugar de compra), frente a la zona de picnic sombreada, frente al río Creuse. Wifi en el sitio."
+        ],
+        "nl": [
+          "Euro-relais camping-cars terminal gelegen voor het wildwaterstadion (zie terminal voor plaats van aankoop), voor de schaduwrijke picknickplaats, met uitzicht op de Creuse. Wifi ter plaatse."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "shortDescription": {
+        "de": [
+          "Multiservice-Wohnmobilanlegestelle."
+        ],
+        "en": [
+          "Multi-service campervan pitch"
+        ],
+        "it": [
+          "Terminale camper multiservizi."
+        ],
+        "fr": [
+          "Borne de camping-cars multi-services."
+        ],
+        "es": [
+          "Terminal de autocaravanas multiservicio."
+        ],
+        "nl": [
+          "Multi-service camper terminal."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/d8eb366d-4444-397f-b8cc-a1903ff810c6",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CamperPitch",
+          "@type": [
+            "AccommodationPricingOffer",
+            "CampingAndCaravanningAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Stellplatz Wohnmobil"
+            ],
+            "pt": [
+              "Alvéolo para autocaravana"
+            ],
+            "en": [
+              "Motorhome pitch"
+            ],
+            "it": [
+              "Piazzola per camper"
+            ],
+            "fr": [
+              "Emplacement camping car"
+            ],
+            "es": [
+              "Espacio para autocaravanas"
+            ],
+            "nl": [
+              "Camperstaanplaats"
+            ]
+          }
+        },
+        {
+          "@id": "kb:CamperServicePoint",
+          "@type": [
+            "AccommodationPricingOffer",
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Servicestation für Wohnmobile"
+            ],
+            "pt": [
+              "Terminal de serviços para autocaravanas"
+            ],
+            "en": [
+              "Camper service point"
+            ],
+            "it": [
+              "Stazione di servizio per camper"
+            ],
+            "fr": [
+              "Borne de service camping car"
+            ],
+            "nl": [
+              "Servicepunt voor camper"
+            ],
+            "es": [
+              "Estación de servicio para autocaravanas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:ChargingStation",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Ladestation für Elektrofahrzeuge"
+            ],
+            "pt": [
+              "Terminal de carregamento de veículos elétricos"
+            ],
+            "en": [
+              "Charging station"
+            ],
+            "it": [
+              "Terminale di ricarica per veicoli elettrici"
+            ],
+            "fr": [
+              "Borne de charge véhicule électrique"
+            ],
+            "nl": [
+              "Laadpaal elektrische auto"
+            ],
+            "es": [
+              "Estación de carga de vehículos eléctricos"
+            ]
+          }
+        },
+        {
+          "@id": "kb:ChemicalToiletEmptying",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Entleerung chemischer Toiletten"
+            ],
+            "pt": [
+              "Despejo das sanitas químicas"
+            ],
+            "en": [
+              "Chemical toilets emptying"
+            ],
+            "it": [
+              "Svuotamento di bagni chimici"
+            ],
+            "fr": [
+              "Vidange toilettes chimiques"
+            ],
+            "es": [
+              "Vaciado de inodoros químicos"
+            ],
+            "nl": [
+              "Loospunt chemische toiletten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:ElectricalConnections",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Elektrische Schaltung"
+            ],
+            "pt": [
+              "Ligações elétricas"
+            ],
+            "en": [
+              "Electrical connections"
+            ],
+            "it": [
+              "Collegamenti elettrici"
+            ],
+            "fr": [
+              "Branchements électriques"
+            ],
+            "nl": [
+              "Elektrische aansluitingen"
+            ],
+            "es": [
+              "Conexiones eléctricas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Washrooms",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Toiletteneinrichtungen"
+            ],
+            "pt": [
+              "Sanitários"
+            ],
+            "en": [
+              "Washrooms"
+            ],
+            "it": [
+              "Sanitari"
+            ],
+            "fr": [
+              "Sanitaires"
+            ],
+            "es": [
+              "Sanitarios"
+            ],
+            "nl": [
+              "Sanitair"
+            ]
+          }
+        },
+        {
+          "@id": "kb:WastwaterEvacuation",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Entleerung von Abwasser"
+            ],
+            "pt": [
+              "Despejo de águas sujas"
+            ],
+            "en": [
+              "Wastwater evacuation"
+            ],
+            "it": [
+              "Svuotamento delle acque reflue"
+            ],
+            "fr": [
+              "Vidange des eaux usées"
+            ],
+            "es": [
+              "Vaciado de aguas residuales"
+            ],
+            "nl": [
+              "Afvalwaterpunt"
+            ]
+          }
+        },
+        {
+          "@id": "kb:WaterConnections",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wasseranschlüsse"
+            ],
+            "pt": [
+              "Ligações de água"
+            ],
+            "en": [
+              "Water connections"
+            ],
+            "it": [
+              "Collegamenti idrici"
+            ],
+            "fr": [
+              "Branchements d'eau"
+            ],
+            "nl": [
+              "Wateraansluitingen"
+            ],
+            "es": [
+              "Conexiones de agua"
+            ]
+          }
+        }
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/d95342c0-d75b-32d8-8671-1e6784a9714a",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/d78c64e8-752a-30c9-bfdf-397fb9ce996a",
+          "ebucore:title": {
+            "fr": [
+              "Borne de camping car de Tournon-Saint-Martin"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "ADTI - Charles Guilloteau"
+          ],
+          "rightsEndDate": "2050-12-31"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/24a4373a-7240-3ec2-a618-282eff31cb15",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/CC-Tournon-02-08-CG.JPG"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasNeighborhood": [
+    {
+      "@id": "kb:NearARiverOrStream",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Am Ufer eines Flusses oder eines Stroms"
+        ],
+        "pt": [
+          "Na borda de um rio ou ribeira"
+        ],
+        "en": [
+          "Near a river or stream"
+        ],
+        "it": [
+          "Lungo il fiume"
+        ],
+        "fr": [
+          "En bord de fleuve ou rivière"
+        ],
+        "nl": [
+          "Aan de oever van een stroompje of rivier"
+        ],
+        "es": [
+          "A orillas de un río"
+        ]
+      }
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/cdaa9612-0bf8-337d-b951-d74dcde25e19",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/d78c64e8-752a-30c9-bfdf-397fb9ce996a",
+          "ebucore:title": {
+            "fr": [
+              "Borne de camping car de Tournon-Saint-Martin"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "ADTI - Charles Guilloteau"
+          ],
+          "rightsEndDate": "2050-12-31"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/94bcd615-9261-329f-a1e8-217a40d7ba42",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/CC-Tournon-01-08-CG.JPG"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d95342c0-d75b-32d8-8671-1e6784a9714a",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/d78c64e8-752a-30c9-bfdf-397fb9ce996a",
+          "ebucore:title": {
+            "fr": [
+              "Borne de camping car de Tournon-Saint-Martin"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "ADTI - Charles Guilloteau"
+          ],
+          "rightsEndDate": "2050-12-31"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/24a4373a-7240-3ec2-a618-282eff31cb15",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/CC-Tournon-02-08-CG.JPG"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:NearARiverOrStream",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Am Ufer eines Flusses oder eines Stroms"
+        ],
+        "pt": [
+          "Na borda de um rio ou ribeira"
+        ],
+        "en": [
+          "Near a river or stream"
+        ],
+        "it": [
+          "Lungo il fiume"
+        ],
+        "fr": [
+          "En bord de fleuve ou rivière"
+        ],
+        "nl": [
+          "Aan de oever van een stroompje of rivier"
+        ],
+        "es": [
+          "A orillas de un río"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/5ed8a967-f262-33ba-9fb8-505e09922ad0",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/4fe7edb5-9d51-3940-aab4-360c98a3b730",
+          "schema:addressLocality": "Tournon-Saint-Martin",
+          "schema:postalCode": "36220",
+          "schema:streetAddress": [
+            "Rue du Moulin",
+            "Stade d'eau vive"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:36224",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Tournon-Saint-Martin"
+              ],
+              "pt": [
+                "Tournon-Saint-Martin"
+              ],
+              "en": [
+                "Tournon-Saint-Martin"
+              ],
+              "it": [
+                "Tournon-Saint-Martin"
+              ],
+              "fr": [
+                "Tournon-Saint-Martin"
+              ],
+              "nl": [
+                "Tournon-Saint-Martin"
+              ],
+              "es": [
+                "Tournon-Saint-Martin"
+              ]
+            },
+            "insee": "36224",
+            "isPartOfDepartment": {
+              "@id": "kb:France2436",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Indre"
+                ],
+                "pt": [
+                  "Indre"
+                ],
+                "en": [
+                  "Indre"
+                ],
+                "it": [
+                  "Indre"
+                ],
+                "fr": [
+                  "Indre"
+                ],
+                "nl": [
+                  "Indre"
+                ],
+                "es": [
+                  "Indre"
+                ]
+              },
+              "insee": "36",
+              "isPartOfRegion": {
+                "@id": "kb:France24",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Centre-Val de Loire"
+                  ],
+                  "pt": [
+                    "Centre-Val de Loire"
+                  ],
+                  "en": [
+                    "Centre-Val de Loire"
+                  ],
+                  "it": [
+                    "Centre-Val de Loire"
+                  ],
+                  "fr": [
+                    "Centre-Val de Loire"
+                  ],
+                  "nl": [
+                    "Centre-Val de Loire"
+                  ],
+                  "es": [
+                    "Centre-Val de Loire"
+                  ]
+                },
+                "insee": "24",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/85c7542c-ee87-3ac1-b1fb-16673561bfdf",
+        "schema:latitude": "46.73111",
+        "schema:longitude": "0.95198",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2025-01-02",
+  "lastUpdateDatatourisme": "2025-01-03T04:11:07.52Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/5c32b1ee-3e94-3083-99d8-78f4942e6fec",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/ddc3ce88-2f72-3be8-afe2-1513cc20da13",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

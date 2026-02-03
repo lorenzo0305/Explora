@@ -1,0 +1,615 @@
+{
+  "@id": "https://data.datatourisme.fr/6/0061ed65-7042-3929-b9d8-236eadd6e406",
+  "dc:identifier": "ASCBFC000V51ZTRI",
+  "@type": [
+    "schema:Product",
+    "ActivityProvider",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Practice",
+    "Product",
+    "Rental",
+    "SportsAndLeisurePlace"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Wanderungen zu Fuß (5 km oder 8 km). Diese Wanderungen sind für alle offen. Ab drei Wanderungen müssen Sie eine Lizenz erwerben."
+    ],
+    "en": [
+      "Walking tours (5km or 8km). These walks are open to all, and you will be asked to take out a licence for three or more walks"
+    ],
+    "it": [
+      "Passeggiate (5 km o 8 km). Queste passeggiate sono aperte a tutti e vi verrà chiesto di sottoscrivere una licenza per tre o più passeggiate"
+    ],
+    "fr": [
+      "Randonnées pédestres (5km ou 8km). Ces randonnées sont ouvertes à tous, et il vous sera demandé de prendre une licence à partir de trois randonnées"
+    ],
+    "nl": [
+      "Wandelingen (5 km of 8 km). Deze wandelingen zijn voor iedereen toegankelijk en er wordt gevraagd om een licentie voor drie of meer wandelingen"
+    ],
+    "es": [
+      "Paseos (5 km u 8 km). Estos paseos están abiertos a todos, y se le pedirá que suscriba una licencia para tres o más paseos"
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "Randonneurs du Bazois \"Traîne-Savates\""
+    ],
+    "en": [
+      "Randonneurs du Bazois \"Traîne-Savates\""
+    ],
+    "fr": [
+      "Randonneurs du Bazois \"Traîne-Savates\""
+    ]
+  },
+  "creationDate": "2023-04-15",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/4924b214-568b-3864-abe1-096f5f554a53",
+    "dc:identifier": "2f39d510-bc20-4554-80f5-836149e47cfc",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/c5de9e36-b592-33bc-83e4-2ff08896778b",
+        "schema:addressLocality": "Saint-Honoré-les-Bains",
+        "schema:postalCode": "58360",
+        "schema:streetAddress": [
+          "13 Rue Henri Renaud"
+        ],
+        "@type": [
+          "schema:PostalAddress",
+          "PostalAddress"
+        ],
+        "hasAddressCity": {
+          "@id": "kb:58246",
+          "@type": [
+            "City"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Saint-Honoré-les-Bains"
+            ],
+            "pt": [
+              "Saint-Honoré-les-Bains"
+            ],
+            "en": [
+              "Saint-Honoré-les-Bains"
+            ],
+            "it": [
+              "Saint-Honoré-les-Bains"
+            ],
+            "fr": [
+              "Saint-Honoré-les-Bains"
+            ],
+            "nl": [
+              "Saint-Honoré-les-Bains"
+            ],
+            "es": [
+              "Saint-Honoré-les-Bains"
+            ]
+          },
+          "insee": "58246",
+          "isPartOfDepartment": {
+            "@id": "kb:France2758",
+            "@type": [
+              "Department"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Nièvre"
+              ],
+              "pt": [
+                "Nièvre"
+              ],
+              "en": [
+                "Nièvre"
+              ],
+              "it": [
+                "Nièvre"
+              ],
+              "fr": [
+                "Nièvre"
+              ],
+              "nl": [
+                "Nièvre"
+              ],
+              "es": [
+                "Nièvre"
+              ]
+            },
+            "insee": "58",
+            "isPartOfRegion": {
+              "@id": "kb:France27",
+              "@type": [
+                "Region"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "pt": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "en": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "it": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "fr": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "nl": [
+                  "Bourgogne-Franche-Comté"
+                ],
+                "es": [
+                  "Bourgogne-Franche-Comté"
+                ]
+              },
+              "insee": "27",
+              "isPartOfCountry": {
+                "@id": "kb:France",
+                "@type": [
+                  "schema:Country"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "France",
+                    "Frankreich"
+                  ],
+                  "pt": [
+                    "França",
+                    "France"
+                  ],
+                  "en": [
+                    "France"
+                  ],
+                  "it": [
+                    "France",
+                    "Francia"
+                  ],
+                  "fr": [
+                    "France"
+                  ],
+                  "nl": [
+                    "France",
+                    "Frankrijk"
+                  ],
+                  "es": [
+                    "France",
+                    "Francia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "schema:email": [
+      "e.soyer@rivesdumorvan.fr"
+    ],
+    "schema:legalName": "OT Rives du Morvan",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.rivesdumorvan.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/d281d2f3-325f-3429-9a05-42b1ba4930ac",
+      "schema:telephone": [
+        "+33 6 83 27 52 23"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/b2790f2e-0d79-304c-a19a-58b6a1b540ea",
+      "dc:description": {
+        "de": [
+          "Wanderungen (5 km oder 8 km). Diese Wanderungen sind für alle offen. Ab drei Wanderungen werden Sie gebeten, eine Lizenz zu erwerben. Es ist wichtig, dass Sie gute Wanderschuhe haben."
+        ],
+        "en": [
+          "Walking tours (5km or 8km). These walks are open to all, and you will be asked to take out a licence after three walks. It is important to have good walking shoes."
+        ],
+        "it": [
+          "Passeggiate (5 km o 8 km). Queste passeggiate sono aperte a tutti e vi verrà chiesto di prendere una licenza dopo tre passeggiate. Sono indispensabili buone scarpe da trekking."
+        ],
+        "fr": [
+          "Randonnées pédestres (5km ou 8km). Ces randonnées sont ouvertes à tous, et il vous sera demandé de prendre une licence à partir de trois randonnées. Il est important d'avoir de bonnes chaussures de marche."
+        ],
+        "nl": [
+          "Wandelingen (5 km of 8 km). Deze wandelingen zijn voor iedereen toegankelijk en na drie wandelingen moet je een licentie aanvragen. Goede wandelschoenen zijn essentieel."
+        ],
+        "es": [
+          "Paseos (5 km u 8 km). Estos paseos están abiertos a todos, y se le pedirá que saque una licencia después de tres paseos. Es imprescindible llevar buen calzado."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/1f9c640b-5e56-3051-90ae-5cd6ab3ee746",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/25ee023f-3062-3094-b396-4d77f720d8bf",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4bea8a13-b8ea-36e5-b29c-373ce40ca042",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6603867b-6bc8-3fd8-b7d1-9fcf8b3b09ec",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d385a4b5-bf42-312d-a6b6-ce8623af9b34",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ffdba8ab-617c-3a85-b6eb-74b6652c5524",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Wanderungen zu Fuß (5 km oder 8 km). Diese Wanderungen sind für alle offen. Ab drei Wanderungen müssen Sie eine Lizenz erwerben."
+        ],
+        "en": [
+          "Walking tours (5km or 8km). These walks are open to all, and you will be asked to take out a licence for three or more walks"
+        ],
+        "it": [
+          "Passeggiate (5 km o 8 km). Queste passeggiate sono aperte a tutti e vi verrà chiesto di sottoscrivere una licenza per tre o più passeggiate"
+        ],
+        "fr": [
+          "Randonnées pédestres (5km ou 8km). Ces randonnées sont ouvertes à tous, et il vous sera demandé de prendre une licence à partir de trois randonnées"
+        ],
+        "nl": [
+          "Wandelingen (5 km of 8 km). Deze wandelingen zijn voor iedereen toegankelijk en er wordt gevraagd om een licentie voor drie of meer wandelingen"
+        ],
+        "es": [
+          "Paseos (5 km u 8 km). Estos paseos están abiertos a todos, y se le pedirá que suscriba una licencia para tres o más paseos"
+        ]
+      }
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:Hiking",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wanderung"
+        ],
+        "pt": [
+          "Caminhada"
+        ],
+        "en": [
+          "Hiking"
+        ],
+        "it": [
+          "Escursione"
+        ],
+        "fr": [
+          "Randonnée"
+        ],
+        "nl": [
+          "Wandelen"
+        ],
+        "es": [
+          "Senderismo"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Pedestrian",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Zu Fuß"
+        ],
+        "pt": [
+          "Pedestre"
+        ],
+        "en": [
+          "Pedestrian"
+        ],
+        "it": [
+          "A piedi"
+        ],
+        "fr": [
+          "Pédestre"
+        ],
+        "nl": [
+          "Voetgangers"
+        ],
+        "es": [
+          "Peatón"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/89ffaa9b-d23a-39ca-a328-10d1bd9aa57f",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d0a1bb3a-7c7c-3ac6-ba6c-15cbbcce4df0",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f15be52c-ee18-31af-b4ce-3b0a52bf8531",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/b4d4131e-0f70-3b2b-abed-0547f5dfb8e3",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/11ec88db-1657-3217-a16e-7777bc36bca6",
+          "schema:addressLocality": "Châtillon-en-Bazois",
+          "schema:postalCode": "58110",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:58065",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Châtillon-en-Bazois"
+              ],
+              "pt": [
+                "Châtillon-en-Bazois"
+              ],
+              "en": [
+                "Châtillon-en-Bazois"
+              ],
+              "it": [
+                "Châtillon-en-Bazois"
+              ],
+              "fr": [
+                "Châtillon-en-Bazois"
+              ],
+              "nl": [
+                "Châtillon-en-Bazois"
+              ],
+              "es": [
+                "Châtillon-en-Bazois"
+              ]
+            },
+            "insee": "58065",
+            "isPartOfDepartment": {
+              "@id": "kb:France2758",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nièvre"
+                ],
+                "pt": [
+                  "Nièvre"
+                ],
+                "en": [
+                  "Nièvre"
+                ],
+                "it": [
+                  "Nièvre"
+                ],
+                "fr": [
+                  "Nièvre"
+                ],
+                "nl": [
+                  "Nièvre"
+                ],
+                "es": [
+                  "Nièvre"
+                ]
+              },
+              "insee": "58",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/20dffa47-964f-35db-a03d-c9067e5da28a",
+        "schema:latitude": "47.05235",
+        "schema:longitude": "3.65599",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-04-25",
+  "lastUpdateDatatourisme": "2024-08-08T11:59:36.838Z"
+}

@@ -1,0 +1,230 @@
+{
+  "@id": "https://data.datatourisme.fr/10/0f55db90-9385-39aa-ab9f-e70f6d8b549f",
+  "dc:identifier": "848152724",
+  "@type": [
+    "schema:Accommodation",
+    "schema:BedAndBreakfast",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "Guesthouse",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Chambre d'hôtes Sutter"
+    ]
+  },
+  "allowedPersons": 3,
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/10/362e80d4-df43-303a-a6d3-f8540cd63626",
+    "dc:identifier": "848",
+    "schema:legalName": "TOURISME SARREBOURG MOSELLE SUD - SITE SARREBOURG",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/5f0b0fd6-acc5-3334-9f88-93ce81933081",
+      "schema:email": [
+        "contact@sitlorpro.com"
+      ],
+      "schema:legalName": "Système d’information touristique Lorrain",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.sitlorpro.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/5853d07f-5d2f-37a0-b622-f8fe1d4001db",
+      "schema:email": [
+        "sarah.manathan@hotmail.com"
+      ],
+      "schema:telephone": [
+        "+33 6 22 33 18 84"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/a7caff4b-14c3-3da5-98ca-cdd61b3543b2",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "petsAllowed": false
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/fc6c5e66-3ca1-3d64-babe-77be0e30f942",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/79801e26-16bc-3b4f-b30a-de85e1684e9d",
+          "schema:addressLocality": "Métairies-Saint-Quirin",
+          "schema:postalCode": "57560",
+          "schema:streetAddress": [
+            "20 route de Lorquin"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:57461",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Métairies-Saint-Quirin"
+              ],
+              "pt": [
+                "Métairies-Saint-Quirin"
+              ],
+              "en": [
+                "Métairies-Saint-Quirin"
+              ],
+              "it": [
+                "Métairies-Saint-Quirin"
+              ],
+              "fr": [
+                "Métairies-Saint-Quirin"
+              ],
+              "nl": [
+                "Métairies-Saint-Quirin"
+              ],
+              "es": [
+                "Métairies-Saint-Quirin"
+              ]
+            },
+            "insee": "57461",
+            "isPartOfDepartment": {
+              "@id": "kb:France4457",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Moselle"
+                ],
+                "pt": [
+                  "Moselle"
+                ],
+                "en": [
+                  "Moselle"
+                ],
+                "it": [
+                  "Moselle"
+                ],
+                "fr": [
+                  "Moselle"
+                ],
+                "nl": [
+                  "Moselle"
+                ],
+                "es": [
+                  "Moselle"
+                ]
+              },
+              "insee": "57",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/bce1a2b4-36f2-30e6-ab9b-f3e41c854d7d",
+        "schema:latitude": "48.638835",
+        "schema:longitude": "7.014369",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-02-22",
+  "lastUpdateDatatourisme": "2025-02-23T06:03:44.852Z",
+  "reducedMobilityAccess": false
+}

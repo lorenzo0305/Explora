@@ -1,0 +1,988 @@
+{
+  "@id": "https://data.datatourisme.fr/10/009bca1f-1ac8-3704-b5ba-e43c39e91ee1",
+  "dc:identifier": "776003739",
+  "schema:endDate": [
+    "2025-08-31",
+    "2025-09-28",
+    "2025-10-26"
+  ],
+  "schema:startDate": [
+    "2025-08-31",
+    "2025-09-28",
+    "2025-10-26"
+  ],
+  "@type": [
+    "schema:Event",
+    "schema:ExhibitionEvent",
+    "CulturalEvent",
+    "EntertainmentAndEvent",
+    "Exhibition",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Ausstellung von Oldtimern, organisiert vom Club \"Rétro Loisirs Ligne Bleue\"."
+    ],
+    "en": [
+      "Classic car show organized by the Club \"Rétro Loisirs Ligne Bleue\"."
+    ],
+    "it": [
+      "Mostra di auto d'epoca organizzata dal Club \"Rétro Loisirs Ligne Bleue\"."
+    ],
+    "fr": [
+      "Exposition de voitures anciennes organisée par le Club \"Rétro Loisirs Ligne Bleue\"."
+    ],
+    "es": [
+      "Exposición de coches clásicos organizada por el Club \"Rétro Loisirs Ligne Bleue\"."
+    ],
+    "nl": [
+      "Een tentoonstelling van klassieke auto's georganiseerd door de Club \"Rétro Loisirs Ligne Bleue\"."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Exposition de véhicules anciens"
+    ]
+  },
+  "hasAudience": [
+    {
+      "@id": "kb:Local",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Lokal"
+        ],
+        "pt": [
+          "Local"
+        ],
+        "en": [
+          "Local"
+        ],
+        "it": [
+          "Locale"
+        ],
+        "fr": [
+          "Locale"
+        ],
+        "nl": [
+          "Lokaal"
+        ],
+        "es": [
+          "Local"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/10/8c6744c9-d42e-32cb-9e88-85b54ff744d0",
+    "dc:identifier": "776",
+    "schema:legalName": "OT COMMUNAUTAIRE DE LA BRESSE HAUTES VOSGES",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/39f8abf8-1828-3176-97f2-cfb47d18656a",
+      "schema:email": [
+        "contact@sitlorpro.com"
+      ],
+      "schema:legalName": "Système d'information touristique Lorrain",
+      "schema:logo": "http://www.sitlorpro.com/wp-content/uploads/sites/12/2016/03/logo-sitlor-blanc-fond-couleur.jpg",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.sitlorpro.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/2bbab6ba-d58e-394c-b5f6-253aaf594ad4",
+      "schema:telephone": [
+        "+33 6 89 46 93 31"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.retroloisirslignebleue.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/768bd6ca-6192-3d86-b4d0-2797e9a58ade",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/1c3bee91-b7b1-3296-af20-3b76c93c51b1",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/28d934d5-c412-3626-87e2-89a16143508d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2ed1b4c7-89fb-3dea-bac9-7869882ba6b9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9ee2dc29-ece5-3062-bbf3-b04c8e830d42",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/c69ed84b-cca4-333f-b9d7-2c3e4875157f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "isDedicatedTo": [
+        {
+          "@id": "kb:ForAll",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Für alle"
+            ],
+            "pt": [
+              "Para todos"
+            ],
+            "en": [
+              "For all"
+            ],
+            "it": [
+              "Per tutti"
+            ],
+            "fr": [
+              "Tout public"
+            ],
+            "nl": [
+              "Voor iedereen"
+            ],
+            "es": [
+              "Todos los públicos"
+            ]
+          }
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Ausstellung von Oldtimern, organisiert vom Club \"Rétro Loisirs Ligne Bleue\"."
+        ],
+        "en": [
+          "Classic car show organized by the Club \"Rétro Loisirs Ligne Bleue\"."
+        ],
+        "it": [
+          "Mostra di auto d'epoca organizzata dal Club \"Rétro Loisirs Ligne Bleue\"."
+        ],
+        "fr": [
+          "Exposition de voitures anciennes organisée par le Club \"Rétro Loisirs Ligne Bleue\"."
+        ],
+        "es": [
+          "Exposición de coches clásicos organizada por el Club \"Rétro Loisirs Ligne Bleue\"."
+        ],
+        "nl": [
+          "Een tentoonstelling van klassieke auto's georganiseerd door de Club \"Rétro Loisirs Ligne Bleue\"."
+        ]
+      }
+    }
+  ],
+  "hasGeographicReach": [
+    {
+      "@id": "kb:Local",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Lokal"
+        ],
+        "pt": [
+          "Local"
+        ],
+        "en": [
+          "Local"
+        ],
+        "it": [
+          "Locale"
+        ],
+        "fr": [
+          "Locale"
+        ],
+        "nl": [
+          "Lokaal"
+        ],
+        "es": [
+          "Local"
+        ]
+      }
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/e717f1c0-9bf9-351d-aa35-7f6abb633580",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/69fef02d-a147-356e-a0b2-9661d8145c0a",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "DR - Rétro Loisirs Ligne Bleue"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/e2b6a697-f0e5-3545-86d1-0beab4958f0d",
+          "ebucore:locator": [
+            "https://opendata.sitlor.fr/photos/776/exposition-de-vehicules-anciens-la-bresse-1_800x600.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/e717f1c0-9bf9-351d-aa35-7f6abb633580",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/69fef02d-a147-356e-a0b2-9661d8145c0a",
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "DR - Rétro Loisirs Ligne Bleue"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/e2b6a697-f0e5-3545-86d1-0beab4958f0d",
+          "ebucore:locator": [
+            "https://opendata.sitlor.fr/photos/776/exposition-de-vehicules-anciens-la-bresse-1_800x600.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/747f4829-2fd2-3b3a-bda4-3b5a6acb8783",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b7ff0a26-4dd5-353c-a338-ffc149890f02",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/be41a7c9-4b08-3cd7-8758-b653f61f4ef0",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ca6b7610-4773-3095-9794-793da40b181b",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d3d647de-0b97-34f1-b0d4-3b70deecf24a",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/319c68d6-e5bd-3ac3-9670-90ba40c8e16a",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/df62030e-023e-375e-b4f5-6b718f9a8c95",
+          "schema:addressLocality": "La Bresse",
+          "schema:postalCode": "88250",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:88075",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "La Bresse"
+              ],
+              "pt": [
+                "La Bresse"
+              ],
+              "en": [
+                "La Bresse"
+              ],
+              "it": [
+                "La Bresse"
+              ],
+              "fr": [
+                "La Bresse"
+              ],
+              "nl": [
+                "La Bresse"
+              ],
+              "es": [
+                "La Bresse"
+              ]
+            },
+            "insee": "88075",
+            "isPartOfDepartment": {
+              "@id": "kb:France4488",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Vosges"
+                ],
+                "pt": [
+                  "Vosges"
+                ],
+                "en": [
+                  "Vosges"
+                ],
+                "it": [
+                  "Vosges"
+                ],
+                "fr": [
+                  "Vosges"
+                ],
+                "nl": [
+                  "Vosges"
+                ],
+                "es": [
+                  "Vosges"
+                ]
+              },
+              "insee": "88",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/1f0931ad-4d30-3130-8c5f-9a32d70e621e",
+        "schema:latitude": "48.0058733184676",
+        "schema:longitude": "6.8756242209015",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/367020f6-2938-3061-b0ec-bc3643dec3fa",
+          "schema:closes": "12:00:00",
+          "schema:dayOfWeek": [
+            {
+              "@id": "schema:Sunday",
+              "@type": [
+                "schema:DayOfWeek"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Sonntag"
+                ],
+                "pt": [
+                  "Domingo"
+                ],
+                "en": [
+                  "Sunday"
+                ],
+                "it": [
+                  "Domenica"
+                ],
+                "fr": [
+                  "Dimanche"
+                ],
+                "nl": [
+                  "Zondag"
+                ],
+                "es": [
+                  "Domingo"
+                ]
+              }
+            }
+          ],
+          "schema:opens": "09:00:00",
+          "schema:validFrom": "2025-08-31T00:00:00",
+          "schema:validThrough": "2025-08-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/56a36fda-c5b0-319d-810a-21dad8d1bd33",
+          "schema:closes": "12:00:00",
+          "schema:dayOfWeek": [
+            {
+              "@id": "schema:Sunday",
+              "@type": [
+                "schema:DayOfWeek"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Sonntag"
+                ],
+                "pt": [
+                  "Domingo"
+                ],
+                "en": [
+                  "Sunday"
+                ],
+                "it": [
+                  "Domenica"
+                ],
+                "fr": [
+                  "Dimanche"
+                ],
+                "nl": [
+                  "Zondag"
+                ],
+                "es": [
+                  "Domingo"
+                ]
+              }
+            }
+          ],
+          "schema:opens": "09:00:00",
+          "schema:validFrom": "2025-09-28T00:00:00",
+          "schema:validThrough": "2025-09-28T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a4636070-effc-3a52-994a-d87cbd600309",
+          "schema:closes": "12:00:00",
+          "schema:dayOfWeek": [
+            {
+              "@id": "schema:Sunday",
+              "@type": [
+                "schema:DayOfWeek"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Sonntag"
+                ],
+                "pt": [
+                  "Domingo"
+                ],
+                "en": [
+                  "Sunday"
+                ],
+                "it": [
+                  "Domenica"
+                ],
+                "fr": [
+                  "Dimanche"
+                ],
+                "nl": [
+                  "Zondag"
+                ],
+                "es": [
+                  "Domingo"
+                ]
+              }
+            }
+          ],
+          "schema:opens": "09:00:00",
+          "schema:validFrom": "2025-10-26T00:00:00",
+          "schema:validThrough": "2025-10-26T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": false
+    }
+  ],
+  "lastUpdate": "2025-07-14",
+  "lastUpdateDatatourisme": "2025-07-28T04:06:14.146Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/992aca1f-15ea-3081-825f-62c21f6b5391",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/31fb540e-8005-32a4-b0d4-e3765f562904",
+          "schema:price": "0",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "hasAudience": [
+            {
+              "@id": "kb:ForAll",
+              "@type": [
+                "PeopleAudience"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Für alle"
+                ],
+                "pt": [
+                  "Para todos"
+                ],
+                "en": [
+                  "For all"
+                ],
+                "it": [
+                  "Per tutti"
+                ],
+                "fr": [
+                  "Tout public"
+                ],
+                "nl": [
+                  "Voor iedereen"
+                ],
+                "es": [
+                  "Todos los públicos"
+                ]
+              }
+            }
+          ],
+          "hasEligibleAudience": [
+            {
+              "@id": "kb:ForAll",
+              "@type": [
+                "PeopleAudience"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Für alle"
+                ],
+                "pt": [
+                  "Para todos"
+                ],
+                "en": [
+                  "For all"
+                ],
+                "it": [
+                  "Per tutti"
+                ],
+                "fr": [
+                  "Tout public"
+                ],
+                "nl": [
+                  "Voor iedereen"
+                ],
+                "es": [
+                  "Todos los públicos"
+                ]
+              }
+            }
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:Free",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Kostenlos"
+                ],
+                "pt": [
+                  "Gratuito"
+                ],
+                "en": [
+                  "Free"
+                ],
+                "it": [
+                  "Gratuito"
+                ],
+                "fr": [
+                  "Gratuit"
+                ],
+                "es": [
+                  "Gratuito"
+                ],
+                "nl": [
+                  "Gratis"
+                ]
+              }
+            }
+          ],
+          "hasPricingMode": [
+            {
+              "@id": "kb:PerPerson",
+              "@type": [
+                "PricingMode"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pro Person"
+                ],
+                "pt": [
+                  "Por pessoa"
+                ],
+                "en": [
+                  "Per person"
+                ],
+                "it": [
+                  "Per persona"
+                ],
+                "fr": [
+                  "Par personne"
+                ],
+                "es": [
+                  "Por persona"
+                ],
+                "nl": [
+                  "Per persoon"
+                ]
+              }
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:Ticket",
+              "@type": [
+                "ActivityPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Eintrittskarte, Eintrittsgeld, Pauschale"
+                ],
+                "pt": [
+                  "Bilhete, Direito de entrada, Preço fixo"
+                ],
+                "en": [
+                  "Ticket, Entry fee, Pass"
+                ],
+                "it": [
+                  "Biglietto, diritto d'ingresso, forfait"
+                ],
+                "fr": [
+                  "Ticket, Droit d'entrée, Forfait"
+                ],
+                "nl": [
+                  "Ticket, toegangsbewijs, pas"
+                ],
+                "es": [
+                  "Billete, entrada, forfait"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "takesPlaceAt": [
+    {
+      "@id": "https://data.datatourisme.fr/1bd33b89-0009-3285-a3c5-126373c04072",
+      "@type": [
+        "Period",
+        "RecurrentPeriod"
+      ],
+      "appliesOnDay": [
+        {
+          "@id": "schema:Sunday",
+          "@type": [
+            "schema:DayOfWeek"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Sonntag"
+            ],
+            "pt": [
+              "Domingo"
+            ],
+            "en": [
+              "Sunday"
+            ],
+            "it": [
+              "Domenica"
+            ],
+            "fr": [
+              "Dimanche"
+            ],
+            "nl": [
+              "Zondag"
+            ],
+            "es": [
+              "Domingo"
+            ]
+          }
+        }
+      ],
+      "endDate": "2025-08-31",
+      "endTime": "12:00:00",
+      "startDate": "2025-08-31",
+      "startTime": "09:00:00"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2fc245b6-0e53-3b13-9c7e-66180a7458c7",
+      "@type": [
+        "Period",
+        "RecurrentPeriod"
+      ],
+      "appliesOnDay": [
+        {
+          "@id": "schema:Sunday",
+          "@type": [
+            "schema:DayOfWeek"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Sonntag"
+            ],
+            "pt": [
+              "Domingo"
+            ],
+            "en": [
+              "Sunday"
+            ],
+            "it": [
+              "Domenica"
+            ],
+            "fr": [
+              "Dimanche"
+            ],
+            "nl": [
+              "Zondag"
+            ],
+            "es": [
+              "Domingo"
+            ]
+          }
+        }
+      ],
+      "endDate": "2025-09-28",
+      "endTime": "12:00:00",
+      "startDate": "2025-09-28",
+      "startTime": "09:00:00"
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f6b56902-bae8-324b-b9a6-760359aa0081",
+      "@type": [
+        "Period",
+        "RecurrentPeriod"
+      ],
+      "appliesOnDay": [
+        {
+          "@id": "schema:Sunday",
+          "@type": [
+            "schema:DayOfWeek"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Sonntag"
+            ],
+            "pt": [
+              "Domingo"
+            ],
+            "en": [
+              "Sunday"
+            ],
+            "it": [
+              "Domenica"
+            ],
+            "fr": [
+              "Dimanche"
+            ],
+            "nl": [
+              "Zondag"
+            ],
+            "es": [
+              "Domingo"
+            ]
+          }
+        }
+      ],
+      "endDate": "2025-10-26",
+      "endTime": "12:00:00",
+      "startDate": "2025-10-26",
+      "startTime": "09:00:00"
+    }
+  ]
+}

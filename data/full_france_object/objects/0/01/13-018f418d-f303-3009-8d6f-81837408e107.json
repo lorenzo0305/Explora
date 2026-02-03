@@ -1,0 +1,241 @@
+{
+  "@id": "https://data.datatourisme.fr/13/018f418d-f303-3009-8d6f-81837408e107",
+  "dc:identifier": "121334",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Mc Donald's"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/38b3eff8-baf5-3627-878e-c76a704e9b52",
+    "dc:identifier": "101",
+    "schema:email": [
+      "ajouvenaud@vienne-condrieu.com"
+    ],
+    "schema:legalName": "Office de Tourisme de Vienne Condrieu Agglomération",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.vienne-condrieu.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/50994c19-2a03-3ccf-b3c7-efe83b17e2b9",
+      "schema:telephone": [
+        "+33 4 78 73 73 23"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/c1615948-fc92-36d0-b473-cbbd2dedb896",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/5ed61139-7da5-32c8-8fe3-083b2aa68976",
+          "schema:addressLocality": "Chasse-sur-Rhône",
+          "schema:postalCode": "38670",
+          "schema:streetAddress": [
+            "Chemin Laurent Devalors"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:38087",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Chasse-sur-Rhône"
+              ],
+              "pt": [
+                "Chasse-sur-Rhône"
+              ],
+              "en": [
+                "Chasse-sur-Rhône"
+              ],
+              "it": [
+                "Chasse-sur-Rhône"
+              ],
+              "fr": [
+                "Chasse-sur-Rhône"
+              ],
+              "nl": [
+                "Chasse-sur-Rhône"
+              ],
+              "es": [
+                "Chasse-sur-Rhône"
+              ]
+            },
+            "insee": "38087",
+            "isPartOfDepartment": {
+              "@id": "kb:France8438",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Isère"
+                ],
+                "pt": [
+                  "Isère"
+                ],
+                "en": [
+                  "Isère"
+                ],
+                "it": [
+                  "Isère"
+                ],
+                "fr": [
+                  "Isère"
+                ],
+                "nl": [
+                  "Isère"
+                ],
+                "es": [
+                  "Isère"
+                ]
+              },
+              "insee": "38",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/aa891bfc-9efa-3323-af89-fa3f1dcfc1a5",
+        "schema:latitude": "45.574704",
+        "schema:longitude": "4.812639",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/63ba550e-9978-3f5b-847b-00c809fab527",
+          "schema:validFrom": "2025-01-01T00:00:00",
+          "schema:validThrough": "2025-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/9c0f3fcb-3ecf-363c-ad5c-fd0d45a170c8",
+      "schema:email": [
+        "ajouvenaud@vienne-condrieu.com"
+      ],
+      "schema:legalName": "Office de Tourisme de Vienne Condrieu Agglomération",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.vienne-condrieu.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2023-02-07",
+  "lastUpdateDatatourisme": "2025-02-14T06:51:01.977Z"
+}

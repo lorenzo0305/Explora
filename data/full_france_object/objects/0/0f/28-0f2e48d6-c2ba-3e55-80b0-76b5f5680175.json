@@ -1,0 +1,782 @@
+{
+  "@id": "https://data.datatourisme.fr/28/0f2e48d6-c2ba-3e55-80b0-76b5f5680175",
+  "dc:identifier": "VILHDF000V507DTO",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CollectiveAccommodation",
+    "HolidayResort",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Ein paar Kilometer vom Stadtzentrum von Dünkirchen entfernt und in der Nähe des Meeres liegt Les Résidences du Moulin à T..."
+    ],
+    "en": [
+      "A few kilometers from downtown Dunkirk and close to the sea, Les Résidences du Moulin à T..."
+    ],
+    "it": [
+      "A pochi chilometri dal centro di Dunkerque e vicino al mare, Les Résidences du Moulin à T..."
+    ],
+    "fr": [
+      "A quelques kilomètres du centre-ville de Dunkerque et proche de la mer, Les Résidences du Moulin à T..."
+    ],
+    "nl": [
+      "Op enkele kilometers van het centrum van Duinkerken en dicht bij de zee ligt Les Résidences du Moulin à T..."
+    ],
+    "es": [
+      "A pocos kilómetros del centro de Dunkerque y cerca del mar, Les Résidences du Moulin à T..."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Les Résidences du Moulin"
+    ]
+  },
+  "allowedPersons": 28,
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/7390cd60-df56-3380-adcf-7c129d7e3e10",
+    "schema:legalName": "SIM Hauts-de-France - Hauts-de-France Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/5463b4e3-2482-3579-a40a-47ba972f29d5",
+      "schema:legalName": "SIM Hauts-de-France",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/3ff5233d-f0fe-3b57-af4e-9d5a5ea5b98e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/66b10921-5efe-33be-8b40-392584c11d34",
+          "schema:addressLocality": "Téteghem-Coudekerque-Village",
+          "schema:postalCode": "59229",
+          "schema:streetAddress": [
+            "174/176 Rue des Pierres"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:59588",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "pt": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "en": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "it": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "fr": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "nl": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "es": [
+                "Téteghem-Coudekerque-Village"
+              ]
+            },
+            "insee": "59588",
+            "isPartOfDepartment": {
+              "@id": "kb:France3259",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nord"
+                ],
+                "pt": [
+                  "Nord"
+                ],
+                "en": [
+                  "Nord"
+                ],
+                "it": [
+                  "Nord"
+                ],
+                "fr": [
+                  "Nord"
+                ],
+                "nl": [
+                  "Nord"
+                ],
+                "es": [
+                  "Nord"
+                ]
+              },
+              "insee": "59",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:legalName": "Résidence de tourisme-Villages Vacances",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/3ff5233d-f0fe-3b57-af4e-9d5a5ea5b98e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/66b10921-5efe-33be-8b40-392584c11d34",
+          "schema:addressLocality": "Téteghem-Coudekerque-Village",
+          "schema:postalCode": "59229",
+          "schema:streetAddress": [
+            "174/176 Rue des Pierres"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:59588",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "pt": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "en": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "it": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "fr": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "nl": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "es": [
+                "Téteghem-Coudekerque-Village"
+              ]
+            },
+            "insee": "59588",
+            "isPartOfDepartment": {
+              "@id": "kb:France3259",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nord"
+                ],
+                "pt": [
+                  "Nord"
+                ],
+                "en": [
+                  "Nord"
+                ],
+                "it": [
+                  "Nord"
+                ],
+                "fr": [
+                  "Nord"
+                ],
+                "nl": [
+                  "Nord"
+                ],
+                "es": [
+                  "Nord"
+                ]
+              },
+              "insee": "59",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:legalName": "Résidence de tourisme-Villages Vacances",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7e71ca26-ffd8-369d-bedd-5d7cc8afeb63",
+      "schema:email": [
+        "residencesdumoulin@outlook.fr"
+      ],
+      "schema:telephone": [
+        "+33 3 28 26 14 30"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://residencesdumoulin.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/6a0024be-7449-3b79-87f4-290d2ea4c823",
+      "dc:description": {
+        "de": [
+          "Nur wenige Kilometer vom Stadtzentrum Dünkirchens entfernt und in der Nähe des Meeres empfängt Sie Les Résidences du Moulin in Téteghem in einer angenehmen Umgebung. Zwischen Vergangenheit und Moderne öffnet diese Einrichtung ihre großzügige Seele, die einer alten Dampfmühle, im Dienste einer qualitativ hochwertigen Restauration.\nDie 9 neuen und charaktervollen Zimmer und 5 Studios (davon 2 klassifiziert) stehen Ihnen zur Verfügung.\nNach einer erholsamen Nacht und der Entdeckung der touristischen Reichtümer der Region Dunkerque können Sie im Restaurant die raffinierte Küche des Küchenchefs David Caudron, einem Liebhaber der französischen Gastronomie, genießen."
+        ],
+        "en": [
+          "A few kilometers from the city center of Dunkerque and close to the sea, Les Résidences du Moulin in Téteghem welcomes you in a pleasant setting. Between past and modernity, this establishment opens its generous soul, that of an old steam mill, to the service of a quality restoration.\nRecent and of character, 9 rooms and 5 studios (including 2 classified) are proposed to you.\nAfter a good night's sleep and the discovery of the touristic richness of the Dunkerque region, taste in the restaurant the refined cuisine of the chef David Caudron, a lover of French gastronomy."
+        ],
+        "it": [
+          "A pochi chilometri dal centro di Dunkerque e vicino al mare, Les Résidences du Moulin di Téteghem vi accoglie in un ambiente piacevole. Tra passato e presente, questa struttura apre la sua anima generosa, quella di un antico mulino a vapore, al servizio di un restauro di qualità.\nL'hotel offre 9 camere e 5 monolocali (di cui 2 classificati), tutti recenti e pieni di carattere.\nDopo un buon sonno e la scoperta delle attrazioni turistiche della regione di Dunkerque, gustate la raffinata cucina dello chef David Caudron, amante della gastronomia francese, nel ristorante."
+        ],
+        "fr": [
+          "A quelques kilomètres du centre-ville de Dunkerque et proche de la mer, Les Résidences du Moulin à Téteghem vous accueillent dans un cadre agréable. Entre passé et modernité, cet établissement ouvre son âme généreuse, celle d’un ancien moulin à vapeur, au service d'une restauration de qualité.\nRécents et de de caractère, 9 chambres et 5 studios (dont 2 classés) vous sont proposés.\nAprès une bonne nuit de sommeil et la découverte des richesses touristiques de la région dunkerquoise, goûtez au restaurant la cuisine raffinée du chef David Caudron, un amoureux de la gastronomie française."
+        ],
+        "nl": [
+          "Op enkele kilometers van het centrum van Duinkerke en vlak bij de zee verwelkomt Les Résidences du Moulin in Téteghem u in een aangenaam kader. Tussen verleden en heden opent dit etablissement zijn gulle ziel, die van een oude stoommolen, voor de service van een kwaliteitsrestauratie.\nHet hotel beschikt over 9 kamers en 5 studio's (waarvan 2 geklasseerd), allemaal recent en vol karakter.\nNa een goede nachtrust en de ontdekking van de toeristische attracties van de regio Duinkerken kunt u in het restaurant proeven van de verfijnde keuken van chef-kok David Caudron, een liefhebber van de Franse gastronomie."
+        ],
+        "es": [
+          "A pocos kilómetros del centro de Dunkerque y cerca del mar, Les Résidences du Moulin de Téteghem le dan la bienvenida en un entorno agradable. Entre pasado y presente, este establecimiento abre su alma generosa, la de un antiguo molino de vapor, al servicio de una restauración de calidad.\nEl hotel ofrece 9 habitaciones y 5 estudios (2 de ellos clasificados), todos ellos recientes y llenos de carácter.\nTras una buena noche de sueño y el descubrimiento de los atractivos turísticos de la región de Dunkerque, deguste en el restaurante la refinada cocina del chef David Caudron, amante de la gastronomía francesa."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0d60a2f3-e715-335c-9d27-597901d38157",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/343fafe4-b3ca-3260-8391-b07c9532c4e9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/46f40e74-7a83-3b86-a102-635577af32d3",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/54a0fc3f-7716-383b-b70f-acf5776f9aff",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/606ef63e-b487-3d86-a44f-c2d623f28a85",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/85635284-3394-3bc8-8ea2-f8472a9e5fa8",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9489b5e5-ae1b-3d1b-ab0e-5e53a86c03b3",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d4e0fee8-caef-3844-a477-0e15228140ea",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f674efcc-a083-3803-8b00-b100a1e8db05",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/fe31d81e-e879-301f-a05f-bf8d6355ecfe",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Ein paar Kilometer vom Stadtzentrum von Dünkirchen entfernt und in der Nähe des Meeres liegt Les Résidences du Moulin à T..."
+        ],
+        "en": [
+          "A few kilometers from downtown Dunkirk and close to the sea, Les Résidences du Moulin à T..."
+        ],
+        "it": [
+          "A pochi chilometri dal centro di Dunkerque e vicino al mare, Les Résidences du Moulin à T..."
+        ],
+        "fr": [
+          "A quelques kilomètres du centre-ville de Dunkerque et proche de la mer, Les Résidences du Moulin à T..."
+        ],
+        "nl": [
+          "Op enkele kilometers van het centrum van Duinkerken en dicht bij de zee ligt Les Résidences du Moulin à T..."
+        ],
+        "es": [
+          "A pocos kilómetros del centro de Dunkerque y cerca del mar, Les Résidences du Moulin à T..."
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/1cc0288b-f3b1-3318-9249-03d240f8d02d",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/42d32abe-3bf4-357e-805c-ed90a44747dc",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9ab085d0-d41f-31c3-8abb-376bb38a1ab7",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cbf82001-70a3-353c-a203-eed13d7ea97b",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e300b2f3-39cd-3c88-aefd-4383a6add982",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/e6e3b803-dc79-31bf-b9b1-0caf27e3a082",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/66b10921-5efe-33be-8b40-392584c11d34",
+          "schema:addressLocality": "Téteghem-Coudekerque-Village",
+          "schema:postalCode": "59229",
+          "schema:streetAddress": [
+            "174/176 Rue des Pierres"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:59588",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "pt": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "en": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "it": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "fr": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "nl": [
+                "Téteghem-Coudekerque-Village"
+              ],
+              "es": [
+                "Téteghem-Coudekerque-Village"
+              ]
+            },
+            "insee": "59588",
+            "isPartOfDepartment": {
+              "@id": "kb:France3259",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nord"
+                ],
+                "pt": [
+                  "Nord"
+                ],
+                "en": [
+                  "Nord"
+                ],
+                "it": [
+                  "Nord"
+                ],
+                "fr": [
+                  "Nord"
+                ],
+                "nl": [
+                  "Nord"
+                ],
+                "es": [
+                  "Nord"
+                ]
+              },
+              "insee": "59",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/ef3a8872-cf1a-31b7-9aeb-a034b0da900c",
+        "schema:latitude": "51.0088536",
+        "schema:longitude": "2.4539648",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-05",
+  "lastUpdateDatatourisme": "2025-07-06T04:36:15.681Z"
+}

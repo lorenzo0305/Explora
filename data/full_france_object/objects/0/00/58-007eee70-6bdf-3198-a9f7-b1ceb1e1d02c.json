@@ -1,0 +1,3493 @@
+{
+  "@id": "https://data.datatourisme.fr/58/007eee70-6bdf-3198-a9f7-b1ceb1e1d02c",
+  "dc:identifier": "5476667",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Charmantes Ferienhaus in der Camargue, auf einem abgelegenen und sehr ruhigen Gelände.\r\nIdeal für einen Aufenthalt mit der Familie, aber auch mit Freunden.\r\nGeeignet für Naturliebhaber, Sportler, Menschen auf der Suche nach Ruhe, Erholung und Abschalten."
+    ],
+    "en": [
+      "Charming rental in the Camargue, on a secluded, very quiet site.\r\nIdeal for families and friends alike.\r\nSuitable for nature lovers, sports enthusiasts and those seeking peace and quiet, rest and relaxation."
+    ],
+    "it": [
+      "Affascinante locazione nella Camargue, in un luogo appartato e molto tranquillo.\r\nIdeale per famiglie e amici.\r\nAdatto agli amanti della natura, agli sportivi e a chiunque cerchi pace e tranquillità, riposo e relax."
+    ],
+    "fr": [
+      "Location de charme en Camargue, sur un site isolé et très calme.\r\nIdéale pour des séjours en famille, mais également entre amis.\r\nConvient aux amoureux de la nature, aux sportifs, aux personnes en quête de calme, de repos et de déconnexion."
+    ],
+    "nl": [
+      "Charmante huurwoning in de Camargue, op een geïsoleerde en zeer rustige plek.\r\nIdeaal voor familieverblijven, maar ook tussen vrienden.\r\nGeschikt voor natuurliefhebbers, sportievelingen, mensen die op zoek zijn naar rust, rust en ontkoppeling."
+    ],
+    "es": [
+      "Alquiler con encanto en la Camarga, en un sitio aislado y muy tranquilo.\r\nIdeal para familias y amigos.\r\nAdecuado para los amantes de la naturaleza, los entusiastas del deporte y cualquier persona que busque paz y tranquilidad, descanso y relajación."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Le café du Petit Badon"
+    ]
+  },
+  "COVID19SpecialMeasures": {
+    "de": [
+      "EINFÜHRUNG VON GESUNDHEITSMASSNAHMEN \n\nAbstand von 1,50 m zwischen den Personen\nTragen von Mundschutz für Ihre Mitarbeiter\nBereitstellung von hydroalkoholischem Gel\nVerstärkte Reinigung"
+    ],
+    "en": [
+      "IMPLEMENTATION OF SANITARY MEASURES \n\nDistance of 1m50 between people\nWearing a mask for your employees\nProvision of hydroalcoholic gel\nReinforced cleaning"
+    ],
+    "it": [
+      "ATTUAZIONE DELLE MISURE SANITARIE \n\nDistanza di 1m50 tra le persone\nIndossare una maschera per i propri dipendenti\nFornitura di gel idroalcolico\nPulizia rinforzata"
+    ],
+    "nl": [
+      "TENUITVOERLEGGING VAN SANITAIRE MAATREGELEN \n\nAfstand van 1m50 tussen personen\nHet dragen van een masker voor uw werknemers\nVerstrekking van hydroalcoholische gel\nVersterkte reiniging"
+    ],
+    "es": [
+      "APLICACIÓN DE MEDIDAS SANITARIAS \n\nDistancia de 1m50 entre personas\nUtilizar una máscara para sus empleados\nSuministro de gel hidroalcohólico\nLimpieza reforzada"
+    ]
+  },
+  "allowedPersons": 6,
+  "availableLanguage": [
+    "en",
+    "es"
+  ],
+  "hasAudience": [
+    {
+      "@id": "kb:CycleTourist",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radtouristen"
+        ],
+        "pt": [
+          "Cicloturistas"
+        ],
+        "en": [
+          "Cycle tourist"
+        ],
+        "it": [
+          "Cicloturisti"
+        ],
+        "fr": [
+          "Cyclotouristes"
+        ],
+        "nl": [
+          "Fietstoeristen"
+        ],
+        "es": [
+          "Cicloturistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Cyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radfahrer"
+        ],
+        "pt": [
+          "Ciclistas"
+        ],
+        "en": [
+          "Cyclists"
+        ],
+        "it": [
+          "Ciclisti"
+        ],
+        "fr": [
+          "Cyclistes"
+        ],
+        "nl": [
+          "Wielrenners"
+        ],
+        "es": [
+          "Ciclistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Fishermen",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Fischer"
+        ],
+        "pt": [
+          "Pescadores"
+        ],
+        "en": [
+          "Fishermen"
+        ],
+        "it": [
+          "Pescatori"
+        ],
+        "fr": [
+          "Pêcheurs"
+        ],
+        "nl": [
+          "Vissers"
+        ],
+        "es": [
+          "Pescadores"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Hikers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wanderer"
+        ],
+        "pt": [
+          "Caminheiros"
+        ],
+        "en": [
+          "Hikers"
+        ],
+        "it": [
+          "Escursionisti"
+        ],
+        "fr": [
+          "Randonneurs"
+        ],
+        "nl": [
+          "Trekkers"
+        ],
+        "es": [
+          "Senderistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Horserider",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Reiter"
+        ],
+        "pt": [
+          "Cavaleiros"
+        ],
+        "en": [
+          "Horserider"
+        ],
+        "it": [
+          "Cavallerizzi"
+        ],
+        "fr": [
+          "Cavaliers"
+        ],
+        "nl": [
+          "Ruiters"
+        ],
+        "es": [
+          "Jinetes"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Motorcyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Motorradfahrer"
+        ],
+        "pt": [
+          "Motociclistas (motards)"
+        ],
+        "en": [
+          "Motorcyclists"
+        ],
+        "it": [
+          "Motociclisti"
+        ],
+        "fr": [
+          "Motards"
+        ],
+        "nl": [
+          "Motorrijders"
+        ],
+        "es": [
+          "Motero"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Naturists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "FKK"
+        ],
+        "pt": [
+          "Naturistas"
+        ],
+        "en": [
+          "Naturists"
+        ],
+        "it": [
+          "Naturisti"
+        ],
+        "fr": [
+          "Naturistes"
+        ],
+        "nl": [
+          "Naturisten"
+        ],
+        "es": [
+          "Naturistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Pilgrims",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Pilger"
+        ],
+        "pt": [
+          "Peregrinos"
+        ],
+        "en": [
+          "Pilgrims"
+        ],
+        "it": [
+          "Pellegrini"
+        ],
+        "fr": [
+          "Pélerins"
+        ],
+        "es": [
+          "Peregrinos"
+        ],
+        "nl": [
+          "Pelgrims"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/58/a29d1598-024f-3e87-beab-4b98411d48ce",
+    "dc:identifier": "2112",
+    "schema:email": [
+      "a.quarta@arlestourisme.com",
+      "coordination@arlestourisme.com",
+      "f.soliveres@arlestourisme.com",
+      "l.ferrier@arlestourisme.com",
+      "m.ginoux@arlestourisme.com",
+      "m.louvet@arlestourisme.com",
+      "s.pivin@arlestourisme.com"
+    ],
+    "schema:legalName": "Office de Tourisme d'Arles",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.arlestourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/eec2cff6-0bd7-39c1-99e1-63b3de209f79",
+      "schema:legalName": "Provence Tourisme / Office de Tourisme d'Arles",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/f482aae6-e58d-32ec-9269-3ad751ca6d00",
+      "schema:email": [
+        "sarlaioli@orange.fr"
+      ],
+      "schema:legalName": "Lien de réservation",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:CycleTourist",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radtouristen"
+        ],
+        "pt": [
+          "Cicloturistas"
+        ],
+        "en": [
+          "Cycle tourist"
+        ],
+        "it": [
+          "Cicloturisti"
+        ],
+        "fr": [
+          "Cyclotouristes"
+        ],
+        "nl": [
+          "Fietstoeristen"
+        ],
+        "es": [
+          "Cicloturistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Cyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radfahrer"
+        ],
+        "pt": [
+          "Ciclistas"
+        ],
+        "en": [
+          "Cyclists"
+        ],
+        "it": [
+          "Ciclisti"
+        ],
+        "fr": [
+          "Cyclistes"
+        ],
+        "nl": [
+          "Wielrenners"
+        ],
+        "es": [
+          "Ciclistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Families",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Familien"
+        ],
+        "pt": [
+          "Famílias"
+        ],
+        "en": [
+          "Families"
+        ],
+        "it": [
+          "Famiglie"
+        ],
+        "fr": [
+          "Familles"
+        ],
+        "nl": [
+          "Families"
+        ],
+        "es": [
+          "Familias"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Fishermen",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Fischer"
+        ],
+        "pt": [
+          "Pescadores"
+        ],
+        "en": [
+          "Fishermen"
+        ],
+        "it": [
+          "Pescatori"
+        ],
+        "fr": [
+          "Pêcheurs"
+        ],
+        "nl": [
+          "Vissers"
+        ],
+        "es": [
+          "Pescadores"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Hikers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wanderer"
+        ],
+        "pt": [
+          "Caminheiros"
+        ],
+        "en": [
+          "Hikers"
+        ],
+        "it": [
+          "Escursionisti"
+        ],
+        "fr": [
+          "Randonneurs"
+        ],
+        "nl": [
+          "Trekkers"
+        ],
+        "es": [
+          "Senderistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Horserider",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Reiter"
+        ],
+        "pt": [
+          "Cavaleiros"
+        ],
+        "en": [
+          "Horserider"
+        ],
+        "it": [
+          "Cavallerizzi"
+        ],
+        "fr": [
+          "Cavaliers"
+        ],
+        "nl": [
+          "Ruiters"
+        ],
+        "es": [
+          "Jinetes"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Motorcyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Motorradfahrer"
+        ],
+        "pt": [
+          "Motociclistas (motards)"
+        ],
+        "en": [
+          "Motorcyclists"
+        ],
+        "it": [
+          "Motociclisti"
+        ],
+        "fr": [
+          "Motards"
+        ],
+        "nl": [
+          "Motorrijders"
+        ],
+        "es": [
+          "Motero"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Naturists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "FKK"
+        ],
+        "pt": [
+          "Naturistas"
+        ],
+        "en": [
+          "Naturists"
+        ],
+        "it": [
+          "Naturisti"
+        ],
+        "fr": [
+          "Naturistes"
+        ],
+        "nl": [
+          "Naturisten"
+        ],
+        "es": [
+          "Naturistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Pilgrims",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Pilger"
+        ],
+        "pt": [
+          "Peregrinos"
+        ],
+        "en": [
+          "Pilgrims"
+        ],
+        "it": [
+          "Pellegrini"
+        ],
+        "fr": [
+          "Pélerins"
+        ],
+        "es": [
+          "Peregrinos"
+        ],
+        "nl": [
+          "Pelgrims"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/5e8c618b-3efd-32e0-a218-f01c0eba25cb",
+      "schema:email": [
+        "sarlaioli@orange.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 90 97 28 64",
+        "+33 6 13 70 72 23"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f482aae6-e58d-32ec-9269-3ad751ca6d00",
+      "schema:email": [
+        "sarlaioli@orange.fr"
+      ],
+      "schema:legalName": "Lien de réservation",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/79f5e6b8-1b58-38bc-b515-4a3ffe570806",
+      "dc:description": {
+        "de": [
+          "Das Café du Petit Badon ist ein typisches Bauernhaus in Camarguais, ideal gelegen im Herzen des regionalen Naturparks Camargue, 30 Minuten von Arles und 10 Minuten von den unberührten Stränden der Camargue entfernt.Dieses ehemalige Gebäude wurde komplett restauriert und eingerichtet, um unseren Gästen einen komfortablen und unvergesslichen Aufenthalt zu bieten.Der angelegte Garten sorgt für Ruhe und Entspannung und ermöglicht es Familien mit Kindern, die weiten Freiflächen zu genießen.Auf 220 Quadratmetern bietet dieses ehemalige Café: einen großen Wohnbereich mit der alten Zinged-Theke mit Blick auf das Esszimmer und wohnzimmer, 3 Schlafzimmer und die angrenzenden Badezimmer, einen Waschbereich, Terrassen mit Gartengeräuschen , Sonnenliegen und ein Grill. Sat-TV, kostenloses WLAN, Heizung und Klimaanlage, sichere Eigenschaft. Bettwäsche zur Verfügung gestellt.Es ist möglich, ein weiteres Mas zu mieten, das bis zu 6 Personen auf dem gleichen Anwesen unterbringen kann.Wir heißen Sie das ganze Jahr über willkommen und beantworten alle Anfragen."
+        ],
+        "en": [
+          "Café du Petit Badon is a typical Camarguais farmhouse, ideally located in the heart of the Camargue Regional Natural Park 30 minutes from Arles and 10 minutes from the unspoilt beaches of Camargue.This former building has been completely restored and furnished to offer our guests a most comfortable and unforgettable stay.The landscaped garden will provide calm and relaxation, while allowing families with children to enjoy the wide open spaces around.On 220 square feet, this former café offers: a large living area with the old zinged counter overlooking the dining room and living room, 3 bedrooms and their adjoining bathrooms, a laundry area, terraces equipped with garden sounds , sunbeds and a barbecue. Satellite TV, free wifi, heating and air conditioning, secure property. Linen provided.It is possible to rent another mas that can accommodate up to 6 people on the same estate.We welcome you all year round and respond to all requests."
+        ],
+        "it": [
+          "Il Café du Petit Badon è una tipica casa colonica di Camarguais, situata in posizione ideale nel cuore del Parco Naturale Regionale della Camargue, a 30 minuti da Arles e a 10 minuti dalle spiagge incontaminate della Camargue.Questo ex edificio è stato completamente restaurato e arredato per offrire ai nostri ospiti un soggiorno più confortevole e indimenticabile.Il giardino paesaggistico fornirà calma e relax, permettendo alle famiglie con bambini di godersi gli ampi spazi aperti intorno.Su 220 piedi quadrati, questo ex caffè offre: una grande zona giorno con il vecchio bancone zinged che si affaccia sul salotto e soggiorno, 3 camere da letto e i loro bagni adiacenti, una zona lavanderia, terrazze dotate di suoni del giardino , lettini e un barbecue. TV satellitare, wifi gratuito, riscaldamento e aria condizionata, proprietà sicura. Biancheria fornita.È possibile affittare un altro mas che può ospitare fino a 6 persone nella stessa tenuta.Vi diamo il benvenuto tutto l'anno e rispondiamo a tutte le richieste."
+        ],
+        "fr": [
+          "Le Café du Petit Badon est un mas camarguais typique, idéalement situé en plein coeur du Parc Naturel Régional de Camargue à 30 minutes d'Arles et à 10 minutes des plages préservées de Camargue.\r\nCette ancienne bâtisse a été entièrement restaurée et aménagée afin d'offrir à nos hôtes un séjour des plus confortables et des plus inoubliables.\r\nLe jardin paysager procurera calme et détente, tout en permettant aux familles avec enfants de profiter des grands espaces alentours.\r\nSur 220 m2 de plain pied, cet ancien café propose : un vaste espace de vie avec l'ancien comptoir zingué donnant sur la salle à manger et le salon, 3 chambres et leurs salles de bains attenantes, un espace buanderie, des terrasses équipées de sons de jardin, de transats et d'un barbecue. TV par satellite, wifi gratuit, chauffage et climatisation, propriété sécurisée. Linge de maison fourni.\r\nPossibilité de louer un autre mas pouvant accueillir jusqu'à 6 personnes sur le même domaine.\r\nNous vous accueillons toute l'année et répondons à toutes les demandes."
+        ],
+        "nl": [
+          "Het Café du Petit Badon is een typische Camargue boerderij, ideaal gelegen in het hart van het regionale natuurpark van de Camargue, op 30 minuten van Arles en 10 minuten van de ongerepte stranden van de Camargue.\r\nDit oude gebouw is volledig gerestaureerd en ingericht om onze gasten een uiterst comfortabel en onvergetelijk verblijf te bieden.\r\nDe aangelegde tuin zorgt voor rust en ontspanning, terwijl gezinnen met kinderen kunnen genieten van de weidse omgeving.\r\nOp 220 m2 op één niveau biedt dit voormalige café: een grote leefruimte met de oude zinken toonbank die uitkijkt op de eetkamer en de salon, 3 slaapkamers en hun eigen badkamers, een wasruimte, terrassen uitgerust met tuinmeubelen, ligstoelen en een barbecue. Satelliet-tv, gratis wifi, verwarming en airconditioning, beveiligde woning. Linnen voorzien.\r\nMogelijkheid tot het huren van een andere boerderij voor maximaal 6 personen op hetzelfde landgoed.\r\nWij ontvangen u het hele jaar door en kunnen aan alle verzoeken voldoen."
+        ],
+        "es": [
+          "El Café du Petit Badon es una casa de campo típica de Camarguais, situada en el corazón del parque natural regional de la Camarga, a 30 minutos de Arlés y a 10 minutos de las playas vírgenes de Camargue.Este antiguo edificio ha sido completamente restaurado y amueblado para ofrecer a nuestros huéspedes una estancia más cómoda e inolvidable.El jardín ajardinado proporcionará calma y relajación, mientras que permite a las familias con niños para disfrutar de los amplios espacios abiertos alrededor.Con 220 pies cuadrados, este antiguo café ofrece: una gran sala de estar con el antiguo mostrador con vistas al comedor y la sala de estar, 3 dormitorios y sus baños contiguos, una zona de lavandería, terrazas equipadas con sonidos de jardín , tumbonas y barbacoa. TV vía satélite, wifi gratuito, calefacción y aire acondicionado, propiedad segura. Ropa de cama proporcionada.Es posible alquilar otro mas con capacidad para 6 personas en la misma finca.Le damos la bienvenida durante todo el año y responder a todas las solicitudes."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/464a3ce8-2538-3605-bb0c-2580a1a2bf63",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/58e8018e-8870-3071-a51f-77c78debf962",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/8ec1b12b-50d6-383a-a3f1-d111004421dc",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "isDedicatedTo": [
+        {
+          "@id": "kb:CycleTourist",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Radtouristen"
+            ],
+            "pt": [
+              "Cicloturistas"
+            ],
+            "en": [
+              "Cycle tourist"
+            ],
+            "it": [
+              "Cicloturisti"
+            ],
+            "fr": [
+              "Cyclotouristes"
+            ],
+            "nl": [
+              "Fietstoeristen"
+            ],
+            "es": [
+              "Cicloturistas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cyclists",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Radfahrer"
+            ],
+            "pt": [
+              "Ciclistas"
+            ],
+            "en": [
+              "Cyclists"
+            ],
+            "it": [
+              "Ciclisti"
+            ],
+            "fr": [
+              "Cyclistes"
+            ],
+            "nl": [
+              "Wielrenners"
+            ],
+            "es": [
+              "Ciclistas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Families",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Familien"
+            ],
+            "pt": [
+              "Famílias"
+            ],
+            "en": [
+              "Families"
+            ],
+            "it": [
+              "Famiglie"
+            ],
+            "fr": [
+              "Familles"
+            ],
+            "nl": [
+              "Families"
+            ],
+            "es": [
+              "Familias"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Fishermen",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Fischer"
+            ],
+            "pt": [
+              "Pescadores"
+            ],
+            "en": [
+              "Fishermen"
+            ],
+            "it": [
+              "Pescatori"
+            ],
+            "fr": [
+              "Pêcheurs"
+            ],
+            "nl": [
+              "Vissers"
+            ],
+            "es": [
+              "Pescadores"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Hikers",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wanderer"
+            ],
+            "pt": [
+              "Caminheiros"
+            ],
+            "en": [
+              "Hikers"
+            ],
+            "it": [
+              "Escursionisti"
+            ],
+            "fr": [
+              "Randonneurs"
+            ],
+            "nl": [
+              "Trekkers"
+            ],
+            "es": [
+              "Senderistas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Horserider",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Reiter"
+            ],
+            "pt": [
+              "Cavaleiros"
+            ],
+            "en": [
+              "Horserider"
+            ],
+            "it": [
+              "Cavallerizzi"
+            ],
+            "fr": [
+              "Cavaliers"
+            ],
+            "nl": [
+              "Ruiters"
+            ],
+            "es": [
+              "Jinetes"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Motorcyclists",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Motorradfahrer"
+            ],
+            "pt": [
+              "Motociclistas (motards)"
+            ],
+            "en": [
+              "Motorcyclists"
+            ],
+            "it": [
+              "Motociclisti"
+            ],
+            "fr": [
+              "Motards"
+            ],
+            "nl": [
+              "Motorrijders"
+            ],
+            "es": [
+              "Motero"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Naturists",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "FKK"
+            ],
+            "pt": [
+              "Naturistas"
+            ],
+            "en": [
+              "Naturists"
+            ],
+            "it": [
+              "Naturisti"
+            ],
+            "fr": [
+              "Naturistes"
+            ],
+            "nl": [
+              "Naturisten"
+            ],
+            "es": [
+              "Naturistas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Pilgrims",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Pilger"
+            ],
+            "pt": [
+              "Peregrinos"
+            ],
+            "en": [
+              "Pilgrims"
+            ],
+            "it": [
+              "Pellegrini"
+            ],
+            "fr": [
+              "Pélerins"
+            ],
+            "es": [
+              "Peregrinos"
+            ],
+            "nl": [
+              "Pelgrims"
+            ]
+          }
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Charmantes Ferienhaus in der Camargue, auf einem abgelegenen und sehr ruhigen Gelände.\r\nIdeal für einen Aufenthalt mit der Familie, aber auch mit Freunden.\r\nGeeignet für Naturliebhaber, Sportler, Menschen auf der Suche nach Ruhe, Erholung und Abschalten."
+        ],
+        "en": [
+          "Charming rental in the Camargue, on a secluded, very quiet site.\r\nIdeal for families and friends alike.\r\nSuitable for nature lovers, sports enthusiasts and those seeking peace and quiet, rest and relaxation."
+        ],
+        "it": [
+          "Affascinante locazione nella Camargue, in un luogo appartato e molto tranquillo.\r\nIdeale per famiglie e amici.\r\nAdatto agli amanti della natura, agli sportivi e a chiunque cerchi pace e tranquillità, riposo e relax."
+        ],
+        "fr": [
+          "Location de charme en Camargue, sur un site isolé et très calme.\r\nIdéale pour des séjours en famille, mais également entre amis.\r\nConvient aux amoureux de la nature, aux sportifs, aux personnes en quête de calme, de repos et de déconnexion."
+        ],
+        "nl": [
+          "Charmante huurwoning in de Camargue, op een geïsoleerde en zeer rustige plek.\r\nIdeaal voor familieverblijven, maar ook tussen vrienden.\r\nGeschikt voor natuurliefhebbers, sportievelingen, mensen die op zoek zijn naar rust, rust en ontkoppeling."
+        ],
+        "es": [
+          "Alquiler con encanto en la Camarga, en un sitio aislado y muy tranquilo.\r\nIdeal para familias y amigos.\r\nAdecuado para los amantes de la naturaleza, los entusiastas del deporte y cualquier persona que busque paz y tranquilidad, descanso y relajación."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/063c6c41-0875-3af8-8cdf-ddbd7e54e79a",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Garden",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Garten"
+            ],
+            "pt": [
+              "Jardim"
+            ],
+            "en": [
+              "Garden"
+            ],
+            "it": [
+              "Giardino"
+            ],
+            "fr": [
+              "Jardin"
+            ],
+            "nl": [
+              "Tuin"
+            ],
+            "es": [
+              "Jardín"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/06a4dd9e-bf3f-3416-82ea-22a508162d2f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Shower",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Dusche"
+            ],
+            "pt": [
+              "Chuveiro"
+            ],
+            "en": [
+              "Shower"
+            ],
+            "it": [
+              "Doccia"
+            ],
+            "fr": [
+              "Douche"
+            ],
+            "es": [
+              "Ducha"
+            ],
+            "nl": [
+              "Douche"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/1d7876f7-fa05-31a5-8951-8a5cb9986d3d",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Bath",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Badewanne"
+            ],
+            "pt": [
+              "Banheira"
+            ],
+            "en": [
+              "Bath"
+            ],
+            "it": [
+              "Vasca da bagno"
+            ],
+            "fr": [
+              "Baignoire"
+            ],
+            "nl": [
+              "Badkuip"
+            ],
+            "es": [
+              "Bañera"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/27b72f6c-c1b8-309a-948f-80c6031e023a",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Library",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bibliothek"
+            ],
+            "pt": [
+              "Biblioteca"
+            ],
+            "en": [
+              "Library"
+            ],
+            "it": [
+              "Biblioteca"
+            ],
+            "fr": [
+              "Bibliothèque"
+            ],
+            "nl": [
+              "Bibliotheek"
+            ],
+            "es": [
+              "Biblioteca"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/29878605-f1c9-3a72-89f5-2df0abf1ef14",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Cot",
+          "@type": [
+            "AccommodationPricingOffer",
+            "TypeOfBed"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Babybett"
+            ],
+            "pt": [
+              "Berço"
+            ],
+            "en": [
+              "Cot"
+            ],
+            "it": [
+              "Lettino per bambini"
+            ],
+            "fr": [
+              "Lit bébé"
+            ],
+            "es": [
+              "Cuna"
+            ],
+            "nl": [
+              "Babybed"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2b7ffcc2-a9dc-3856-a199-b5f35d63a375",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Dishwasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Geschirrspülmaschine"
+            ],
+            "pt": [
+              "Máquina de lavar louça"
+            ],
+            "en": [
+              "Dishwasher"
+            ],
+            "it": [
+              "Lavastoviglie"
+            ],
+            "fr": [
+              "Lave vaisselle"
+            ],
+            "nl": [
+              "Vaatwasmachine"
+            ],
+            "es": [
+              "Lavaplatos"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2d3553bf-376d-3b31-bab3-e096f6bec423",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SeparateToilet",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Separate Toiletten"
+            ],
+            "pt": [
+              "Sanitários separados"
+            ],
+            "en": [
+              "Separate toilets"
+            ],
+            "it": [
+              "Servizi igienici separati"
+            ],
+            "fr": [
+              "Toilettes séparées"
+            ],
+            "nl": [
+              "Gescheiden toiletten"
+            ],
+            "es": [
+              "Aseos separados"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2eaae2c6-ed89-3e15-9052-ab2093cb91d1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:FamilyBedroom",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Familienzimmer"
+            ],
+            "pt": [
+              "Quarto familiar"
+            ],
+            "en": [
+              "Family bedroom"
+            ],
+            "it": [
+              "Camera familiare"
+            ],
+            "fr": [
+              "Chambre familiale"
+            ],
+            "es": [
+              "Habitación familiar"
+            ],
+            "nl": [
+              "Familiekamer"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5b20cd66-eb6c-3608-b26f-cf235f53a931",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5d9cb441-9e35-3ce2-a956-625b80b91c9f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:BabyChair",
+          "@type": [
+            "CateringAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Hochstuhl"
+            ],
+            "pt": [
+              "Cadeira de bebé"
+            ],
+            "en": [
+              "Baby chair"
+            ],
+            "it": [
+              "Sedia per bambini"
+            ],
+            "fr": [
+              "Chaise bébé"
+            ],
+            "es": [
+              "Silla de bebé"
+            ],
+            "nl": [
+              "Kinderstoel"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6e1d4456-6a68-3666-b992-dd3f0c1c2665",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateWasher",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Máquina de lavar roupa privativa"
+            ],
+            "en": [
+              "Private washer"
+            ],
+            "it": [
+              "Lavatrice privata"
+            ],
+            "fr": [
+              "Lave linge privatif"
+            ],
+            "nl": [
+              "Wasmachine voor privégebruik"
+            ],
+            "es": [
+              "Lavadora privada"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7231603a-7ec5-33a4-8b7d-b37b82e653aa",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:AirConditioner",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Klimaanlage"
+            ],
+            "pt": [
+              "Sistema de ar condicionado"
+            ],
+            "en": [
+              "Air conditioner"
+            ],
+            "it": [
+              "Aria condizionata"
+            ],
+            "fr": [
+              "Climatisation"
+            ],
+            "es": [
+              "Sistema de aire acondicionado"
+            ],
+            "nl": [
+              "Klimaatbeheersing"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7a995567-961c-3305-a5d8-2f507059fe30",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateDryer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Wäschetrockner"
+            ],
+            "pt": [
+              "Secador de roupa privativo"
+            ],
+            "en": [
+              "Private dryer"
+            ],
+            "it": [
+              "Asciugatrice privata"
+            ],
+            "fr": [
+              "Sèche linge privatif"
+            ],
+            "es": [
+              "Secadora privada"
+            ],
+            "nl": [
+              "Droger voor privégebruik"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7ff86f28-2878-316e-a346-31171d845e0b",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Microwave",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Mikrowellen"
+            ],
+            "pt": [
+              "Micro-ondas"
+            ],
+            "en": [
+              "Microwave"
+            ],
+            "it": [
+              "Microonde"
+            ],
+            "fr": [
+              "Micro-ondes"
+            ],
+            "es": [
+              "Microondas"
+            ],
+            "nl": [
+              "Magnetron"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8582104d-0788-3d3d-b66c-c7f0f4b00cb6",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:OneStorey",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Einstöckig"
+            ],
+            "pt": [
+              "Casa térrea"
+            ],
+            "en": [
+              "One-storey"
+            ],
+            "it": [
+              "Su un unico livello"
+            ],
+            "fr": [
+              "Plain pied"
+            ],
+            "nl": [
+              "Gelijkvloers"
+            ],
+            "es": [
+              "De un solo piso"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9bb3d2f7-e8ce-3de9-a0a1-43a6f39229c8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Terrace",
+          "@type": [
+            "CommonAmenity",
+            "ParkAndGardenTheme"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Terrasse"
+            ],
+            "pt": [
+              "Terraço"
+            ],
+            "en": [
+              "Terrace"
+            ],
+            "it": [
+              "Terrazzo"
+            ],
+            "fr": [
+              "Terrasse"
+            ],
+            "es": [
+              "Terraza"
+            ],
+            "nl": [
+              "Terras"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a239c937-4c7f-3dd4-80e9-20470f81bf0b",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:HairDryer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Haartrockner"
+            ],
+            "pt": [
+              "Secador de cabelo"
+            ],
+            "en": [
+              "Hair dryer"
+            ],
+            "it": [
+              "Asciugacapelli"
+            ],
+            "fr": [
+              "Sèche cheveux"
+            ],
+            "es": [
+              "Secador de pelo"
+            ],
+            "nl": [
+              "Haardroger"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a28972cb-4b37-3961-8609-712f73f447a6",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Fridge",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Kühlschrank"
+            ],
+            "pt": [
+              "Frigorífico"
+            ],
+            "en": [
+              "Fridge"
+            ],
+            "it": [
+              "Frigorifero"
+            ],
+            "fr": [
+              "Réfrigérateur"
+            ],
+            "nl": [
+              "Koelkast"
+            ],
+            "es": [
+              "Frigorífico"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a58d89cf-81dc-3c8f-863e-ca7b4aa16e8c",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:KitchenKitchenette",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Küche – Kochecke"
+            ],
+            "pt": [
+              "Cozinha — canto de cozinha"
+            ],
+            "en": [
+              "Kitchen - kitchenette"
+            ],
+            "it": [
+              "Cucina - angolo cottura"
+            ],
+            "fr": [
+              "Cuisine - coin cuisine"
+            ],
+            "nl": [
+              "Keuken - keukengedeelte"
+            ],
+            "es": [
+              "Cocina"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b78fd6d0-aa01-34ef-99ba-571847b5fdbc",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Television",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Fernsehen"
+            ],
+            "pt": [
+              "Televisão"
+            ],
+            "en": [
+              "Television"
+            ],
+            "it": [
+              "Televisione"
+            ],
+            "fr": [
+              "Télévision"
+            ],
+            "nl": [
+              "Televisie"
+            ],
+            "es": [
+              "Televisión"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/be130c02-7eee-384e-91b8-9f3e87fd4da1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CarPark",
+          "@type": [
+            "CommonAmenity",
+            "GeneralPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Parkplatz"
+            ],
+            "pt": [
+              "Estacionamento"
+            ],
+            "en": [
+              "Car park"
+            ],
+            "it": [
+              "Parcheggio"
+            ],
+            "fr": [
+              "Parking"
+            ],
+            "nl": [
+              "Parkeerplaats"
+            ],
+            "es": [
+              "Aparcamiento"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c55de7f4-4ba7-355d-8644-e8bd7b31e6d0",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Oven",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Ofen"
+            ],
+            "pt": [
+              "Forno"
+            ],
+            "en": [
+              "Oven"
+            ],
+            "it": [
+              "Forno"
+            ],
+            "fr": [
+              "Four"
+            ],
+            "nl": [
+              "Oven"
+            ],
+            "es": [
+              "Horno"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cd32d3c2-e14e-3333-b8b5-5ea6980c7e04",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CoffeeMaker",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Kaffeemaschine"
+            ],
+            "pt": [
+              "Cafeteira"
+            ],
+            "en": [
+              "Coffee maker"
+            ],
+            "it": [
+              "Macchina da caffè"
+            ],
+            "fr": [
+              "Cafetière"
+            ],
+            "nl": [
+              "Koffiezetapparaat"
+            ],
+            "es": [
+              "Cafetera"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d6b9a71a-60f7-39ea-8931-1a5be53c3f02",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:DocumentationPlan",
+          "@type": [
+            "InformativeAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Dokumentation – Plan"
+            ],
+            "pt": [
+              "Documentação — plano"
+            ],
+            "en": [
+              "Documentation - plan"
+            ],
+            "it": [
+              "Documentazione - piano"
+            ],
+            "fr": [
+              "Documentation - plan"
+            ],
+            "nl": [
+              "Documentatie - plattegrond"
+            ],
+            "es": [
+              "Documentación - plano"
+            ]
+          }
+        },
+        {
+          "@id": "kb:TouristInformation",
+          "@type": [
+            "InformativeAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Touristeninformation"
+            ],
+            "pt": [
+              "Informações turísticas"
+            ],
+            "en": [
+              "Tourist information"
+            ],
+            "it": [
+              "Informazioni turistiche"
+            ],
+            "fr": [
+              "Informations touristiques"
+            ],
+            "nl": [
+              "Toeristeninformatie"
+            ],
+            "es": [
+              "Información turística"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/df174465-2dab-31bc-a116-a36a0cd26122",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateParking",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Parkplatz"
+            ],
+            "pt": [
+              "Parque de estacionamento privativo"
+            ],
+            "en": [
+              "Private parking"
+            ],
+            "it": [
+              "Parcheggio privato"
+            ],
+            "fr": [
+              "Parking privé"
+            ],
+            "nl": [
+              "Privéparking"
+            ],
+            "es": [
+              "Aparcamiento privado"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e7646145-71a7-3db9-b6a0-9965bf9aa987",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateDiningRoom",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privates Esszimmer"
+            ],
+            "pt": [
+              "Sala de jantar privativa"
+            ],
+            "en": [
+              "Private dining room"
+            ],
+            "it": [
+              "Sala da pranzo privata"
+            ],
+            "fr": [
+              "Salle à manger privée"
+            ],
+            "nl": [
+              "Privé-eetkamer"
+            ],
+            "es": [
+              "Comedor privado"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e8e5481c-9988-352a-be11-264755763c62",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Freezer",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gefriergerät"
+            ],
+            "pt": [
+              "Congelador"
+            ],
+            "en": [
+              "Freezer"
+            ],
+            "it": [
+              "Congelatore"
+            ],
+            "fr": [
+              "Congélateur"
+            ],
+            "nl": [
+              "Diepvriezer"
+            ],
+            "es": [
+              "Congelador"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/efe59bc3-fd0f-3f73-953e-4beb64321812",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:DoubleBed",
+          "@type": [
+            "TypeOfBed"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Doppelbett"
+            ],
+            "pt": [
+              "Cama dupla"
+            ],
+            "en": [
+              "Double bed"
+            ],
+            "it": [
+              "Letto matrimoniale"
+            ],
+            "fr": [
+              "Lit double"
+            ],
+            "nl": [
+              "Tweepersoonsbed"
+            ],
+            "es": [
+              "Cama doble"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f0cc1752-3191-30d1-b564-8713a014a20e",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:BabyEquipment",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Baby-, Kindermaterial"
+            ],
+            "pt": [
+              "Material para bebés e crianças"
+            ],
+            "en": [
+              "Baby or child equipment"
+            ],
+            "it": [
+              "Dotazioni per neonati e bambini"
+            ],
+            "fr": [
+              "Matériel bébé, enfant"
+            ],
+            "es": [
+              "Material para bebés y niños pequeños"
+            ],
+            "nl": [
+              "Baby- en kinderuitrusting"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f4a702a5-230d-3276-8f22-f91486569264",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Barbecue",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Grill"
+            ],
+            "pt": [
+              "Churrasco"
+            ],
+            "en": [
+              "Barbecue"
+            ],
+            "it": [
+              "Barbecue"
+            ],
+            "fr": [
+              "Barbecue"
+            ],
+            "nl": [
+              "Barbecue"
+            ],
+            "es": [
+              "Barbacoa"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fccceff5-9638-32fb-a82e-8aae5895b138",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Vacuum",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Staubsauger"
+            ],
+            "pt": [
+              "Aspirador"
+            ],
+            "en": [
+              "Vacuum"
+            ],
+            "it": [
+              "Aspirapolvere"
+            ],
+            "fr": [
+              "Aspirateur"
+            ],
+            "nl": [
+              "Stofzuiger"
+            ],
+            "es": [
+              "Aspiradora"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fe1ec871-7db0-39bf-bfb0-1c38d2a3f202",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SheetsAndTowels",
+          "@type": [
+            "AccommodationAmenity",
+            "AccommodationPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bettwäsche und Handtücher"
+            ],
+            "pt": [
+              "Lençóis e toalhas"
+            ],
+            "en": [
+              "Sheets and towels"
+            ],
+            "it": [
+              "Lenzuola e biancheria"
+            ],
+            "fr": [
+              "Draps et linges"
+            ],
+            "es": [
+              "Sábanas y ropa de cama"
+            ],
+            "nl": [
+              "Beddengoed en handdoeken"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasNeighborhood": [
+    {
+      "@id": "kb:InTheCountryside",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Auf dem Land"
+        ],
+        "pt": [
+          "No campo"
+        ],
+        "en": [
+          "In the countryside"
+        ],
+        "it": [
+          "In campagna"
+        ],
+        "fr": [
+          "A la campagne"
+        ],
+        "nl": [
+          "Op het platteland"
+        ],
+        "es": [
+          "En el campo"
+        ]
+      }
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/000d9663-0842-3f2d-8df7-ca413e9d1c2c",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/e1ca1303-f28e-31fa-86ee-8d7982b5a63c",
+          "ebucore:title": {
+            "fr": [
+              "13GIT012662_5_HD.jpg"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "BOUCHES DU RHONE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/38e721ff-b63e-3572-afe0-edcfa83bde98",
+          "ebucore:fileSize": [
+            "80467"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "600",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/215/34/15606487.jpg"
+          ],
+          "ebucore:width": "800",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/281174aa-549a-3d9e-9188-81484e4a3898",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/49ddee3a-e921-3863-b0c8-1d4acbe9b291",
+          "ebucore:title": {
+            "fr": [
+              "13GIT012662_4_HD.jpg"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "BOUCHES DU RHONE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/dd1df842-9664-35d5-81f6-c8183defcbd6",
+          "ebucore:fileSize": [
+            "99701"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "600",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/214/34/15606486.jpg"
+          ],
+          "ebucore:width": "800",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5fbc55f2-144d-3452-9a26-6d0643e9d2cf",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/1b296660-168d-3616-8b4d-72c3d653211e",
+          "ebucore:title": {
+            "fr": [
+              "13GIT012662_9_HD.jpg"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "BOUCHES DU RHONE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/85e8f77c-817f-34ac-ba6f-2dbbe809ae4e",
+          "ebucore:fileSize": [
+            "87983"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "600",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/219/34/15606491.jpg"
+          ],
+          "ebucore:width": "800",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/97c792b9-b807-348b-8d08-0e09c07b7525",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/baba210d-e40d-38c9-b14b-6ec8c6dca464",
+          "ebucore:title": {
+            "fr": [
+              "13GIT012662_3_HD.jpg"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "BOUCHES DU RHONE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/baa42cb5-0a4f-3856-9b56-5a622e8db8e4",
+          "ebucore:fileSize": [
+            "163864"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "600",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/213/34/15606485.jpg"
+          ],
+          "ebucore:width": "800",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a0989654-c57b-3ef8-802a-53187fab67d6",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/80ada678-ad71-369f-8fc0-e7b81e04a647",
+          "ebucore:title": {
+            "fr": [
+              "13GIT012662_2_HD.jpg"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "BOUCHES DU RHONE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/e3361602-c8d4-351a-8874-45eaadd8912d",
+          "ebucore:fileSize": [
+            "111612"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "600",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/212/34/15606484.jpg"
+          ],
+          "ebucore:width": "800",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b7e7a100-46e9-3c8d-8bde-85371898c696",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/3734c304-46c4-300d-b3bf-46c4c4267c2b",
+          "ebucore:title": {
+            "fr": [
+              "13GIT012662_6_HD.jpg"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "BOUCHES DU RHONE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/2652a5c0-9ab9-39d9-93ae-7fdc2573514c",
+          "ebucore:fileSize": [
+            "86635"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "600",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/216/34/15606488.jpg"
+          ],
+          "ebucore:width": "800",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/eb419711-4027-33d5-b05d-c801056f7574",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/8f5cd0be-e57d-38f9-b991-d7e287694b0c",
+          "ebucore:title": {
+            "fr": [
+              "13GIT012662_1_HD.jpg"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "BOUCHES DU RHONE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/ade59769-4aa1-39fc-a199-ae27d4154342",
+          "ebucore:fileSize": [
+            "162021"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "600",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/211/34/15606483.jpg"
+          ],
+          "ebucore:width": "800",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/eb98028d-58ea-3e16-b2f5-9d47bd716b77",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/6dd13fb0-344b-304e-ae0c-85235c39809a",
+          "ebucore:title": {
+            "fr": [
+              "13GIT012662_7_HD.jpg"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "BOUCHES DU RHONE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/a4e731e3-11bf-3ff7-9e9f-d861d3a86b5e",
+          "ebucore:fileSize": [
+            "72654"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "600",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/217/34/15606489.jpg"
+          ],
+          "ebucore:width": "800",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f2a6e09e-3518-3ec5-af79-5cfb78cc5a6b",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/6f511ae5-bf35-3f38-a2c6-67a2f6de62e6",
+          "ebucore:title": {
+            "fr": [
+              "13GIT012662_8_HD.jpg"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "BOUCHES DU RHONE"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/9375fdac-0b4b-3670-9ebc-f15d0a5bb9e8",
+          "ebucore:fileSize": [
+            "111897"
+          ],
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:height": "600",
+          "ebucore:locator": [
+            "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/218/34/15606490.jpg"
+          ],
+          "ebucore:width": "800",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:InTheCountryside",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Auf dem Land"
+        ],
+        "pt": [
+          "No campo"
+        ],
+        "en": [
+          "In the countryside"
+        ],
+        "it": [
+          "In campagna"
+        ],
+        "fr": [
+          "A la campagne"
+        ],
+        "nl": [
+          "Op het platteland"
+        ],
+        "es": [
+          "En el campo"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/225ecf04-2d57-388d-b3a9-a8db20dcd189",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/47667d80-578e-3de5-8b2f-d8a8a5d94c40",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/c062ca27-a614-3468-975d-384719f3b46c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/0f84c0b7-775d-3183-a00b-991b9c9974e2",
+          "schema:addressLocality": "Arles",
+          "schema:postalCode": "13129",
+          "schema:streetAddress": [
+            "En Camargue",
+            "MAS DU PETIT BADON"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:13004",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Arles"
+              ],
+              "pt": [
+                "Arles"
+              ],
+              "en": [
+                "Arles"
+              ],
+              "it": [
+                "Arles"
+              ],
+              "fr": [
+                "Arles"
+              ],
+              "nl": [
+                "Arles"
+              ],
+              "es": [
+                "Arles"
+              ]
+            },
+            "insee": "13004",
+            "isPartOfDepartment": {
+              "@id": "kb:France9313",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bouches-du-Rhône"
+                ],
+                "pt": [
+                  "Bouches-du-Rhône"
+                ],
+                "en": [
+                  "Bouches-du-Rhône"
+                ],
+                "it": [
+                  "Bouches-du-Rhône"
+                ],
+                "fr": [
+                  "Bouches-du-Rhône"
+                ],
+                "nl": [
+                  "Bouches-du-Rhône"
+                ],
+                "es": [
+                  "Bouches-du-Rhône"
+                ]
+              },
+              "insee": "13",
+              "isPartOfRegion": {
+                "@id": "kb:France93",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "pt": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "en": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "it": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "fr": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "nl": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "es": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ]
+                },
+                "insee": "93",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/bd93d266-05e3-36d5-96cf-6440176a4fa6",
+        "schema:latitude": "43.450082",
+        "schema:longitude": "4.690864",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "internetAccess": true,
+      "petsAllowed": true
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/23bd4f46-1e54-3cd7-999c-1f34be66fa2b",
+      "schema:email": [
+        "a.quarta@arlestourisme.com",
+        "coordination@arlestourisme.com",
+        "f.soliveres@arlestourisme.com",
+        "m.louvet@arlestourisme.com"
+      ],
+      "schema:legalName": "Office de Tourisme d'Arles",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.arlestourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-01-10",
+  "lastUpdateDatatourisme": "2025-01-25T05:14:39.379Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/9c9900fb-64cd-3aab-ad71-7043669ba240",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/1838155b-253c-3d97-be59-69bd33f218b6",
+          "schema:minPrice": [
+            "300"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/31f5d72b-a58c-3b74-a324-625d6ba3a28e",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2024-12-31",
+              "startDate": "2024-01-01"
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ],
+      "textPriceSpecification": {
+        "fr": [
+          "Location du gîte ou meublé : 3360€ (Semaine) \r\nLocation du gîte ou meublé : 2520€ (Semaine) \r\nLocation du gîte ou meublé : 1960€ (Semaine) \r\nLocation du gîte ou meublé : 1500€ (Semaine) \r\nLocation du gîte ou meublé : de 350€ à 1000€ (Week-end) \r\nLocation du gîte ou meublé : de 290€ à 600€ (Nuitée)"
+        ]
+      }
+    }
+  ],
+  "reducedMobilityAccess": false
+}

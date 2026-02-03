@@ -1,0 +1,1689 @@
+{
+  "@id": "https://data.datatourisme.fr/58/04b040ff-227d-3a43-82fa-74bad14c26d2",
+  "dc:identifier": "5227953",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Restaurant",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Restaurant mit lokalen und provenzalischen Spezialitäten: Eine saisonabhängige Speisekarte mit Produkten aus der Region, regionalem Fleisch und frischem Fisch."
+    ],
+    "en": [
+      "Restaurant serving local and Provencal specialities: a seasonal menu featuring local produce, regional meats and fresh fish."
+    ],
+    "it": [
+      "Ristorante con specialità locali e provenzali: menù stagionale a base di prodotti locali, carni regionali e pesce fresco."
+    ],
+    "fr": [
+      "Restaurant de spécialités locales et provençales : Une carte en fonction des saisons à partir de produits du terroir, de viandes régionales et de poissons frais."
+    ],
+    "es": [
+      "Restaurante que sirve especialidades locales y provenzales: Un menú de temporada basado en productos locales, carnes regionales y pescado fresco."
+    ],
+    "nl": [
+      "Restaurant met lokale en Provençaalse specialiteiten: een seizoensgebonden menu op basis van lokale producten, regionaal vlees en verse vis."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Restaurant Le Val Baussenc"
+    ]
+  },
+  "availableLanguage": [
+    "de",
+    "en",
+    "fr"
+  ],
+  "hasAudience": [
+    {
+      "@id": "kb:CycleTourist",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radtouristen"
+        ],
+        "pt": [
+          "Cicloturistas"
+        ],
+        "en": [
+          "Cycle tourist"
+        ],
+        "it": [
+          "Cicloturisti"
+        ],
+        "fr": [
+          "Cyclotouristes"
+        ],
+        "nl": [
+          "Fietstoeristen"
+        ],
+        "es": [
+          "Cicloturistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Cyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radfahrer"
+        ],
+        "pt": [
+          "Ciclistas"
+        ],
+        "en": [
+          "Cyclists"
+        ],
+        "it": [
+          "Ciclisti"
+        ],
+        "fr": [
+          "Cyclistes"
+        ],
+        "nl": [
+          "Wielrenners"
+        ],
+        "es": [
+          "Ciclistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Hikers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wanderer"
+        ],
+        "pt": [
+          "Caminheiros"
+        ],
+        "en": [
+          "Hikers"
+        ],
+        "it": [
+          "Escursionisti"
+        ],
+        "fr": [
+          "Randonneurs"
+        ],
+        "nl": [
+          "Trekkers"
+        ],
+        "es": [
+          "Senderistas"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/58/697e382c-fd25-307a-be62-275d3ee132b3",
+    "dc:identifier": "2158",
+    "schema:email": [
+      "sylvaine.audoin@maussanelesalpilles.fr",
+      "tourisme@maussane.com"
+    ],
+    "schema:legalName": "Office de Tourisme de Maussane-les-Alpilles",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.maussanelesalpilles.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/0cef725e-3559-309e-9aae-373b086418ff",
+      "schema:legalName": "Provence Tourisme / Office de Tourisme de Maussane-les-Alpilles",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasClientTarget": [
+    {
+      "@id": "kb:CycleTourist",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radtouristen"
+        ],
+        "pt": [
+          "Cicloturistas"
+        ],
+        "en": [
+          "Cycle tourist"
+        ],
+        "it": [
+          "Cicloturisti"
+        ],
+        "fr": [
+          "Cyclotouristes"
+        ],
+        "nl": [
+          "Fietstoeristen"
+        ],
+        "es": [
+          "Cicloturistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Cyclists",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radfahrer"
+        ],
+        "pt": [
+          "Ciclistas"
+        ],
+        "en": [
+          "Cyclists"
+        ],
+        "it": [
+          "Ciclisti"
+        ],
+        "fr": [
+          "Cyclistes"
+        ],
+        "nl": [
+          "Wielrenners"
+        ],
+        "es": [
+          "Ciclistas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Groups",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gruppen"
+        ],
+        "pt": [
+          "Grupos"
+        ],
+        "en": [
+          "Groups"
+        ],
+        "it": [
+          "Gruppi"
+        ],
+        "fr": [
+          "Groupes"
+        ],
+        "es": [
+          "Grupos"
+        ],
+        "nl": [
+          "Groepen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Hikers",
+      "@type": [
+        "PeopleAudience"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wanderer"
+        ],
+        "pt": [
+          "Caminheiros"
+        ],
+        "en": [
+          "Hikers"
+        ],
+        "it": [
+          "Escursionisti"
+        ],
+        "fr": [
+          "Randonneurs"
+        ],
+        "nl": [
+          "Trekkers"
+        ],
+        "es": [
+          "Senderistas"
+        ]
+      }
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/fe53b0dd-ead9-3ac9-9baa-7285d3b46bce",
+      "schema:email": [
+        "information@valbaussenc.com"
+      ],
+      "schema:telephone": [
+        "+33 4 90 54 38 90"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.valbaussenc.com/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/b5e40775-f290-38f8-a933-9aa82e749bba",
+      "dc:description": {
+        "de": [
+          "Entdecken Sie unser provenzalisches Mas (Landhaus) in den Alpilles. Hier finden Sie Ruhe und Komfort. Unser Restaurant bietet eine regionale Küche im Wandel der Jahreszeiten. Gastfreundlichkeit, familiärer Empfang und Farniente sind angesagt!"
+        ],
+        "en": [
+          "In the heart of the Alpilles, discover our quiet, comfortable Provençal Mas. Our restaurant serves seasonal regional cuisine. Hospitality and a relaxed family welcome are guaranteed."
+        ],
+        "it": [
+          "Nel cuore delle Alpilles, scoprite il nostro cascinale provenzale che coniuga calma e comfort. Il ristorante propone una cucina regionale che varia con le stagioni. Ospitalità, accoglienza familiare e dolce far niente sono d'obbligo."
+        ],
+        "fr": [
+          "Au coeur des Alpilles, découvrez dans un superbe mas provençal alliant calme et confort le restaurant \" le Val Baussenc \".\r\nLe restaurant propose une cuisine régionale au gré des saisons, élaborée avec des produits frais et de qualité!\r\nHospitalité, accueil familial et farniente sont au rendez-vous!\r\nLe restaurant est ouvert le soir et vous pourrez dîner, en terrasse au bord de la piscine ou en intérieur avec une décoration originale et design!"
+        ],
+        "nl": [
+          "Ontdek in het hart van de Alpilles het restaurant \"le Val Baussenc\" in een prachtige Provençaalse boerderij die rust en comfort combineert.\r\nHet restaurant biedt een regionale keuken volgens de seizoenen, bereid met verse en kwaliteitsproducten!\r\nGastvrijheid, familiaal onthaal en ontspanning zijn aan de orde van de dag!\r\nHet restaurant is 's avonds geopend en u kunt dineren op het terras bij het zwembad of binnen met een originele en design inrichting!"
+        ],
+        "es": [
+          "En el corazón de los Alpilles, descubra el restaurante \"le Val Baussenc\" en una magnífica granja provenzal que combina calma y confort.\r\nEl restaurante ofrece una cocina regional acorde con las estaciones, preparada con productos frescos y de calidad\r\nLa hospitalidad, la acogida familiar y la relajación están a la orden del día\r\nEl restaurante está abierto por la noche y se puede cenar en la terraza junto a la piscina o en el interior con una decoración original y de diseño"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/4c31f0d8-b4ed-3233-bb65-d5c2767c635b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5d9a188e-b880-36fa-b0f9-38b770bdd25f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/629aed42-06f1-345a-b6ff-de402aa52d2d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7e6386ef-a831-3bae-979b-112c964f0583",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d69d3835-b33c-3a99-ad2e-c2540fd82523",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "isDedicatedTo": [
+        {
+          "@id": "kb:CycleTourist",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Radtouristen"
+            ],
+            "pt": [
+              "Cicloturistas"
+            ],
+            "en": [
+              "Cycle tourist"
+            ],
+            "it": [
+              "Cicloturisti"
+            ],
+            "fr": [
+              "Cyclotouristes"
+            ],
+            "nl": [
+              "Fietstoeristen"
+            ],
+            "es": [
+              "Cicloturistas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cyclists",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Radfahrer"
+            ],
+            "pt": [
+              "Ciclistas"
+            ],
+            "en": [
+              "Cyclists"
+            ],
+            "it": [
+              "Ciclisti"
+            ],
+            "fr": [
+              "Cyclistes"
+            ],
+            "nl": [
+              "Wielrenners"
+            ],
+            "es": [
+              "Ciclistas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Groups",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Gruppen"
+            ],
+            "pt": [
+              "Grupos"
+            ],
+            "en": [
+              "Groups"
+            ],
+            "it": [
+              "Gruppi"
+            ],
+            "fr": [
+              "Groupes"
+            ],
+            "es": [
+              "Grupos"
+            ],
+            "nl": [
+              "Groepen"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Hikers",
+          "@type": [
+            "PeopleAudience"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wanderer"
+            ],
+            "pt": [
+              "Caminheiros"
+            ],
+            "en": [
+              "Hikers"
+            ],
+            "it": [
+              "Escursionisti"
+            ],
+            "fr": [
+              "Randonneurs"
+            ],
+            "nl": [
+              "Trekkers"
+            ],
+            "es": [
+              "Senderistas"
+            ]
+          }
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Restaurant mit lokalen und provenzalischen Spezialitäten: Eine saisonabhängige Speisekarte mit Produkten aus der Region, regionalem Fleisch und frischem Fisch."
+        ],
+        "en": [
+          "Restaurant serving local and Provencal specialities: a seasonal menu featuring local produce, regional meats and fresh fish."
+        ],
+        "it": [
+          "Ristorante con specialità locali e provenzali: menù stagionale a base di prodotti locali, carni regionali e pesce fresco."
+        ],
+        "fr": [
+          "Restaurant de spécialités locales et provençales : Une carte en fonction des saisons à partir de produits du terroir, de viandes régionales et de poissons frais."
+        ],
+        "es": [
+          "Restaurante que sirve especialidades locales y provenzales: Un menú de temporada basado en productos locales, carnes regionales y pescado fresco."
+        ],
+        "nl": [
+          "Restaurant met lokale en Provençaalse specialiteiten: een seizoensgebonden menu op basis van lokale producten, regionaal vlees en verse vis."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/063c6c41-0875-3af8-8cdf-ddbd7e54e79a",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Garden",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Garten"
+            ],
+            "pt": [
+              "Jardim"
+            ],
+            "en": [
+              "Garden"
+            ],
+            "it": [
+              "Giardino"
+            ],
+            "fr": [
+              "Jardin"
+            ],
+            "nl": [
+              "Tuin"
+            ],
+            "es": [
+              "Jardín"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5b20cd66-eb6c-3608-b26f-cf235f53a931",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9bb3d2f7-e8ce-3de9-a0a1-43a6f39229c8",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Terrace",
+          "@type": [
+            "CommonAmenity",
+            "ParkAndGardenTheme"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Terrasse"
+            ],
+            "pt": [
+              "Terraço"
+            ],
+            "en": [
+              "Terrace"
+            ],
+            "it": [
+              "Terrazzo"
+            ],
+            "fr": [
+              "Terrasse"
+            ],
+            "es": [
+              "Terraza"
+            ],
+            "nl": [
+              "Terras"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9fe5e26c-5eaa-3e63-8f94-1ee1b9a7323f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:SwimmingPool",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Pool"
+            ],
+            "pt": [
+              "Piscina"
+            ],
+            "en": [
+              "Swimming pool"
+            ],
+            "it": [
+              "Piscina"
+            ],
+            "fr": [
+              "Piscine"
+            ],
+            "nl": [
+              "Zwembad"
+            ],
+            "es": [
+              "Piscina"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/be130c02-7eee-384e-91b8-9f3e87fd4da1",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CarPark",
+          "@type": [
+            "CommonAmenity",
+            "GeneralPricingOffer"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Parkplatz"
+            ],
+            "pt": [
+              "Estacionamento"
+            ],
+            "en": [
+              "Car park"
+            ],
+            "it": [
+              "Parcheggio"
+            ],
+            "fr": [
+              "Parking"
+            ],
+            "nl": [
+              "Parkeerplaats"
+            ],
+            "es": [
+              "Aparcamiento"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d6b9a71a-60f7-39ea-8931-1a5be53c3f02",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:DocumentationPlan",
+          "@type": [
+            "InformativeAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Dokumentation – Plan"
+            ],
+            "pt": [
+              "Documentação — plano"
+            ],
+            "en": [
+              "Documentation - plan"
+            ],
+            "it": [
+              "Documentazione - piano"
+            ],
+            "fr": [
+              "Documentation - plan"
+            ],
+            "nl": [
+              "Documentatie - plattegrond"
+            ],
+            "es": [
+              "Documentación - plano"
+            ]
+          }
+        },
+        {
+          "@id": "kb:TouristInformation",
+          "@type": [
+            "InformativeAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Touristeninformation"
+            ],
+            "pt": [
+              "Informações turísticas"
+            ],
+            "en": [
+              "Tourist information"
+            ],
+            "it": [
+              "Informazioni turistiche"
+            ],
+            "fr": [
+              "Informations touristiques"
+            ],
+            "nl": [
+              "Toeristeninformatie"
+            ],
+            "es": [
+              "Información turística"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/df174465-2dab-31bc-a116-a36a0cd26122",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:PrivateParking",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Privater Parkplatz"
+            ],
+            "pt": [
+              "Parque de estacionamento privativo"
+            ],
+            "en": [
+              "Private parking"
+            ],
+            "it": [
+              "Parcheggio privato"
+            ],
+            "fr": [
+              "Parking privé"
+            ],
+            "nl": [
+              "Privéparking"
+            ],
+            "es": [
+              "Aparcamiento privado"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e9e11830-d9ae-3bb5-a755-e5e85927210c",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CoachParking",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Busparkplatz"
+            ],
+            "pt": [
+              "Estacionamento para autocarros"
+            ],
+            "en": [
+              "Coach parking"
+            ],
+            "it": [
+              "Parcheggio per pullman"
+            ],
+            "fr": [
+              "Parking autocar"
+            ],
+            "nl": [
+              "Busparking"
+            ],
+            "es": [
+              "Aparcamiento para autocares"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasNeighborhood": [
+    {
+      "@id": "kb:InTheCountryside",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Auf dem Land"
+        ],
+        "pt": [
+          "No campo"
+        ],
+        "en": [
+          "In the countryside"
+        ],
+        "it": [
+          "In campagna"
+        ],
+        "fr": [
+          "A la campagne"
+        ],
+        "nl": [
+          "Op het platteland"
+        ],
+        "es": [
+          "En el campo"
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/25a8a3a3-a796-32ea-8654-e6c3d7b77704",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_QualiteTourisme",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Qualité Tourisme"
+          ],
+          "pt": [
+            "Qualité Tourisme"
+          ],
+          "en": [
+            "Qualité Tourisme"
+          ],
+          "it": [
+            "Qualité Tourisme"
+          ],
+          "fr": [
+            "Qualité Tourisme"
+          ],
+          "nl": [
+            "Qualité Tourisme"
+          ],
+          "es": [
+            "Qualité Tourisme"
+          ]
+        },
+        "isCompliantWith": [
+          "Arena",
+          "BarOrPub",
+          "CafeOrTearoom",
+          "CampingAndCaravanning",
+          "CollectiveAccommodation",
+          "CulturalSite",
+          "Guesthouse",
+          "HolidayCentre",
+          "Hotel",
+          "LeisurePlace",
+          "LocalTouristOffice",
+          "Marina",
+          "Practice",
+          "RealEstateAgent",
+          "Restaurant",
+          "Store",
+          "Visit"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6f901716-5b9e-3727-8e92-3ba75c5e4ae3",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_TourismeHandicapPictogrammeAuditif",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Tourismus und Hörbehinderung"
+          ],
+          "pt": [
+            "Turismo e deficiência auditiva (Tourisme & Handicap auditif)"
+          ],
+          "en": [
+            "Tourisme & Handicap - hearing disability"
+          ],
+          "it": [
+            "Turismo e disabilità uditiva"
+          ],
+          "fr": [
+            "Tourisme & Handicap auditif"
+          ],
+          "es": [
+            "Tourisme & Handicap auditif - diversidad funcional auditiva"
+          ],
+          "nl": [
+            "Label Tourisme & Handicap voor doven en slechthorenden"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "CulturalSite",
+          "EntertainmentAndEvent",
+          "Guesthouse",
+          "HolidayCentre",
+          "Hotel",
+          "Practice",
+          "Rental",
+          "Restaurant",
+          "SelfCateringAccommodation",
+          "Store",
+          "Tour",
+          "Visit"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d42504f7-6d1d-369c-b8a6-5103b5d5c140",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_TourismeHandicapPictogrammeVisuel",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Tourismus und Sehbehinderung"
+          ],
+          "pt": [
+            "Turismo e deficiência visual (Tourisme & Handicap visuel)"
+          ],
+          "en": [
+            "Tourisme & Handicap - visual disability"
+          ],
+          "it": [
+            "Turismo e disabilità visiva"
+          ],
+          "fr": [
+            "Tourisme & Handicap visuel"
+          ],
+          "es": [
+            "Tourisme & Handicap visuel - diversidad funcional visual"
+          ],
+          "nl": [
+            "Label Tourisme & Handicap voor blinden en slechtzienden"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "CulturalSite",
+          "EntertainmentAndEvent",
+          "Guesthouse",
+          "HolidayCentre",
+          "Hotel",
+          "Practice",
+          "Rental",
+          "Restaurant",
+          "SelfCateringAccommodation",
+          "Store",
+          "Tour",
+          "Visit"
+        ]
+      }
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e2e2d46b-ad70-3d20-a92d-755d70fe1077",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:LabelRating_TourismeHandicapPictogrammeMoteur",
+        "@type": [
+          "LabelRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "Tourismus und motorische Behinderung"
+          ],
+          "pt": [
+            "Turismo e deficiência motora (Tourisme & Handicap moteur)"
+          ],
+          "en": [
+            "Tourisme & Handicap - motor disability"
+          ],
+          "it": [
+            "Turismo e disabilità motoria"
+          ],
+          "fr": [
+            "Tourisme & Handicap moteur"
+          ],
+          "es": [
+            "Tourisme & Handicap moteur -diversidad funcional motora"
+          ],
+          "nl": [
+            "Label Tourisme & Handicap voor mensen met motorische beperkingen"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "CulturalSite",
+          "EntertainmentAndEvent",
+          "Guesthouse",
+          "HolidayCentre",
+          "Hotel",
+          "Practice",
+          "Rental",
+          "Restaurant",
+          "SelfCateringAccommodation",
+          "Store",
+          "Tour",
+          "Visit"
+        ]
+      }
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:FrenchCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Französische regionale Spezialitäten"
+        ],
+        "pt": [
+          "Especialidades regionais francesas"
+        ],
+        "en": [
+          "Traditional or regional French cuisine (Lorraine, Alsace, Brittany, Burgundy, ...)"
+        ],
+        "it": [
+          "Specialità regionali francesi"
+        ],
+        "fr": [
+          "Spécialités régionales françaises"
+        ],
+        "nl": [
+          "Regionale Franse specialiteiten"
+        ],
+        "es": [
+          "Especialidades regionales francesas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:InTheCountryside",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Auf dem Land"
+        ],
+        "pt": [
+          "No campo"
+        ],
+        "en": [
+          "In the countryside"
+        ],
+        "it": [
+          "In campagna"
+        ],
+        "fr": [
+          "A la campagne"
+        ],
+        "nl": [
+          "Op het platteland"
+        ],
+        "es": [
+          "En el campo"
+        ]
+      }
+    },
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/5778be3f-aaa9-3faf-a603-585076f08089",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9c238825-ff6c-35d5-880e-29663ca987e9",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9e80efee-de66-3d57-85e1-9687a46108c1",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fb9b99ae-079d-3e7e-860a-965c9c8a12e4",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/9fb4505a-fddd-3091-b3ee-bab161efd643",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/a265ce4d-f347-368e-8551-5536e36b714b",
+          "schema:addressLocality": "Maussane-les-Alpilles",
+          "schema:postalCode": "13520",
+          "schema:streetAddress": [
+            "122 Avenue De la Vallée des Baux"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:13058",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Maussane-les-Alpilles"
+              ],
+              "pt": [
+                "Maussane-les-Alpilles"
+              ],
+              "en": [
+                "Maussane-les-Alpilles"
+              ],
+              "it": [
+                "Maussane-les-Alpilles"
+              ],
+              "fr": [
+                "Maussane-les-Alpilles"
+              ],
+              "nl": [
+                "Maussane-les-Alpilles"
+              ],
+              "es": [
+                "Maussane-les-Alpilles"
+              ]
+            },
+            "insee": "13058",
+            "isPartOfDepartment": {
+              "@id": "kb:France9313",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Bouches-du-Rhône"
+                ],
+                "pt": [
+                  "Bouches-du-Rhône"
+                ],
+                "en": [
+                  "Bouches-du-Rhône"
+                ],
+                "it": [
+                  "Bouches-du-Rhône"
+                ],
+                "fr": [
+                  "Bouches-du-Rhône"
+                ],
+                "nl": [
+                  "Bouches-du-Rhône"
+                ],
+                "es": [
+                  "Bouches-du-Rhône"
+                ]
+              },
+              "insee": "13",
+              "isPartOfRegion": {
+                "@id": "kb:France93",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "pt": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "en": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "it": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "fr": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "nl": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "es": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ]
+                },
+                "insee": "93",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/997ee06f-cf3c-35af-a347-8160ef3ac0db",
+        "schema:latitude": "43.719046",
+        "schema:longitude": "4.811754",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/7c273c3d-385d-3469-8c11-e503dcee954c",
+          "schema:validFrom": "2025-03-15T00:00:00",
+          "schema:validThrough": "2025-11-15T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "internetAccess": false,
+      "petsAllowed": true,
+      "textOpeningHoursSpecification": {
+        "fr": [
+          "Du 15/03 au 15/11, tous les mardis, mercredis, jeudis, vendredis et samedis."
+        ]
+      }
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/5dc23b1f-3e09-3ffe-aeae-7b5150c93751",
+      "schema:email": [
+        "sylvaine.audoin@maussanelesalpilles.fr",
+        "tourisme@maussane.com"
+      ],
+      "schema:legalName": "Office de Tourisme de Maussane-les-Alpilles",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.maussanelesalpilles.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-01-06",
+  "lastUpdateDatatourisme": "2025-01-07T05:14:36.595Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/7d57eabb-5b7c-30b3-b02e-e0cb76e155cc",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:AmericanExpress",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "American Express"
+            ],
+            "pt": [
+              "American Express"
+            ],
+            "en": [
+              "American express"
+            ],
+            "it": [
+              "American Express"
+            ],
+            "fr": [
+              "American express"
+            ],
+            "nl": [
+              "American Express"
+            ],
+            "es": [
+              "American Express"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:CreditCards",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Bankkarten"
+            ],
+            "pt": [
+              "Cartões bancários"
+            ],
+            "en": [
+              "Credit Cards"
+            ],
+            "it": [
+              "Carte bancarie"
+            ],
+            "fr": [
+              "Cartes bancaires"
+            ],
+            "es": [
+              "Tarjetas bancarias"
+            ],
+            "nl": [
+              "Bankkaarten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:FrenchCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Französische regionale Spezialitäten"
+        ],
+        "pt": [
+          "Especialidades regionais francesas"
+        ],
+        "en": [
+          "Traditional or regional French cuisine (Lorraine, Alsace, Brittany, Burgundy, ...)"
+        ],
+        "it": [
+          "Specialità regionali francesi"
+        ],
+        "fr": [
+          "Spécialités régionales françaises"
+        ],
+        "nl": [
+          "Regionale Franse specialiteiten"
+        ],
+        "es": [
+          "Especialidades regionales francesas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "reducedMobilityAccess": false
+}

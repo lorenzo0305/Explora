@@ -1,0 +1,561 @@
+{
+  "@id": "https://data.datatourisme.fr/6/09c566ce-ce63-3c71-9809-710588652dad",
+  "dc:identifier": "FMABOU021V504BSN",
+  "schema:endDate": [
+    "2026-06-30"
+  ],
+  "schema:startDate": [
+    "2025-09-01"
+  ],
+  "@type": [
+    "schema:Event",
+    "EntertainmentAndEvent",
+    "PointOfInterest",
+    "SportsEvent"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Cours de gym, pilates"
+    ],
+    "en": [
+      "Cours de gym, pilates"
+    ],
+    "fr": [
+      "Cours de gym, pilates"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6/68020c5b-279c-389c-b0c1-2538e826cb24",
+    "dc:identifier": "36174fe7-b28b-474c-b839-1aaee28e326e",
+    "schema:email": [
+      "caroline.haillet@cotedor-tourisme.com"
+    ],
+    "schema:legalName": "COTE-D'OR ATTRACTIVITE (COORDINATION DECIBELLES DATA)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0259627-197d-3ec4-b3b8-80f8141a7b79",
+      "schema:email": [
+        "m.boularess@bfctourisme.com"
+      ],
+      "schema:legalName": "Bourgogne-Franche-Comté Tourisme - Decibelles Data",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bourgognefranchecomte.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/65c1147c-bad6-3d3e-9114-54f76ea62bf0",
+      "schema:email": [
+        "lacanche.animation@laposte.net"
+      ],
+      "schema:telephone": [
+        "+33 6 89 49 08 57"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/0370741b-054f-3c39-b07a-86ab62639fb4",
+      "dc:description": {
+        "de": [
+          "KARDIOKURSE, PILATES, SENIORENGYMNASTIK, GESUNDHEITSGYMNASTIK, MUSKELAUFBAU"
+        ],
+        "en": [
+          "CARDIO CLASSES, PILATES, SENIOR GYM, HEALTH GYM, MUSCLE STRENGTHENING"
+        ],
+        "it": [
+          "CORSI CARDIO, PILATES, PALESTRA PER ANZIANI, PALESTRA PER LA SALUTE, POTENZIAMENTO MUSCOLARE"
+        ],
+        "fr": [
+          "COURS DE CARDIO, PILATES, GYM SENIOR, GYM SANTE, RENFORCEMENT MUSCULAIRE"
+        ],
+        "es": [
+          "CLASES DE CARDIO, PILATES, GIMNASIO PARA MAYORES, GIMNASIO DE SALUD, FORTALECIMIENTO MUSCULAR"
+        ],
+        "nl": [
+          "CARDIOLESSEN, PILATES, SENIORENGYMNASTIEK, GEZONDHEIDSGYMNASTIEK, SPIERVERSTERKING"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/06d45efb-2c82-3fb2-bc08-5ade77204b62",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/1597b90b-ad3a-3ed4-a4a7-d8c4a42178b3",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7210518e-eac3-3192-814f-9e7b94b7ae8e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:Gymnastics",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gymnastik"
+        ],
+        "pt": [
+          "Ginástica"
+        ],
+        "en": [
+          "Gymnastics"
+        ],
+        "it": [
+          "Ginnastica"
+        ],
+        "fr": [
+          "Gymnastique"
+        ],
+        "nl": [
+          "Gymnastiek"
+        ],
+        "es": [
+          "Gimnasia"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/0426b74b-2de8-3d49-a3c7-a460531230a1",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/d2af9229-29ee-3b9c-af0a-521095450b84",
+          "schema:addressLocality": "Lacanche",
+          "schema:postalCode": "21230",
+          "schema:streetAddress": [
+            "2 Rue Hubert Coste",
+            "salle des fêtes"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:21334",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Lacanche"
+              ],
+              "pt": [
+                "Lacanche"
+              ],
+              "en": [
+                "Lacanche"
+              ],
+              "it": [
+                "Lacanche"
+              ],
+              "fr": [
+                "Lacanche"
+              ],
+              "nl": [
+                "Lacanche"
+              ],
+              "es": [
+                "Lacanche"
+              ]
+            },
+            "insee": "21334",
+            "isPartOfDepartment": {
+              "@id": "kb:France2721",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Côte-d'Or"
+                ],
+                "pt": [
+                  "Côte-d'Or"
+                ],
+                "en": [
+                  "Côte-d'Or"
+                ],
+                "it": [
+                  "Côte-d'Or"
+                ],
+                "fr": [
+                  "Côte-d'Or"
+                ],
+                "nl": [
+                  "Côte-d'Or"
+                ],
+                "es": [
+                  "Côte-d'Or"
+                ]
+              },
+              "insee": "21",
+              "isPartOfRegion": {
+                "@id": "kb:France27",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "pt": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "en": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "it": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "fr": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "nl": [
+                    "Bourgogne-Franche-Comté"
+                  ],
+                  "es": [
+                    "Bourgogne-Franche-Comté"
+                  ]
+                },
+                "insee": "27",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/3810bec5-d14a-3003-b3d7-9ef8f742721d",
+        "schema:latitude": "47.07394",
+        "schema:longitude": "4.56047",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-11",
+  "lastUpdateDatatourisme": "2025-07-13T00:18:19.862Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/45c5d138-96bd-379f-bbee-c0e4c4aa6a94",
+      "schema:acceptedPaymentMethod": [
+        {
+          "@id": "kb:Cash",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Art"
+            ],
+            "pt": [
+              "Espécie"
+            ],
+            "en": [
+              "Cash"
+            ],
+            "it": [
+              "Contanti"
+            ],
+            "fr": [
+              "Espèce"
+            ],
+            "es": [
+              "Especie"
+            ],
+            "nl": [
+              "Contant"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Check",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Scheck"
+            ],
+            "pt": [
+              "Cheque"
+            ],
+            "en": [
+              "Check"
+            ],
+            "it": [
+              "Assegno"
+            ],
+            "fr": [
+              "Chèque"
+            ],
+            "nl": [
+              "Cheque"
+            ],
+            "es": [
+              "Cheque"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Transfers",
+          "@type": [
+            "schema:PaymentMethod"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Überweisungen"
+            ],
+            "pt": [
+              "Transferências"
+            ],
+            "en": [
+              "Transfers"
+            ],
+            "it": [
+              "Bonifici"
+            ],
+            "fr": [
+              "Virements"
+            ],
+            "es": [
+              "Transferencias"
+            ],
+            "nl": [
+              "Overschrijvingen"
+            ]
+          }
+        }
+      ],
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/f62e3dd2-9508-3bed-aaaf-877a72d558ce",
+          "schema:maxPrice": [
+            "115"
+          ],
+          "schema:minPrice": [
+            "100"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:BaseRateFullRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Basistarif – voller Tarif"
+                ],
+                "pt": [
+                  "Preço de base — preço total"
+                ],
+                "en": [
+                  "Base rate - full rate"
+                ],
+                "it": [
+                  "Tariffa di base — tariffa intera"
+                ],
+                "fr": [
+                  "Tarif de base - plein tarif"
+                ],
+                "es": [
+                  "Tarifa básica - tarifa completa"
+                ],
+                "nl": [
+                  "Basistarief - vol tarief"
+                ]
+              }
+            }
+          ],
+          "hasPricingMode": [
+            {
+              "@id": "kb:PerPerson",
+              "@type": [
+                "PricingMode"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pro Person"
+                ],
+                "pt": [
+                  "Por pessoa"
+                ],
+                "en": [
+                  "Per person"
+                ],
+                "it": [
+                  "Per persona"
+                ],
+                "fr": [
+                  "Par personne"
+                ],
+                "es": [
+                  "Por persona"
+                ],
+                "nl": [
+                  "Per persoon"
+                ]
+              }
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:Ticket",
+              "@type": [
+                "ActivityPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Eintrittskarte, Eintrittsgeld, Pauschale"
+                ],
+                "pt": [
+                  "Bilhete, Direito de entrada, Preço fixo"
+                ],
+                "en": [
+                  "Ticket, Entry fee, Pass"
+                ],
+                "it": [
+                  "Biglietto, diritto d'ingresso, forfait"
+                ],
+                "fr": [
+                  "Ticket, Droit d'entrée, Forfait"
+                ],
+                "nl": [
+                  "Ticket, toegangsbewijs, pas"
+                ],
+                "es": [
+                  "Billete, entrada, forfait"
+                ]
+              }
+            }
+          ],
+          "name": {
+            "de": [
+              "Normalpreis"
+            ],
+            "en": [
+              "Base rate"
+            ],
+            "fr": [
+              "Tarif de base"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "takesPlaceAt": [
+    {
+      "@id": "https://data.datatourisme.fr/7a218a94-8e22-37cd-8fee-072c1219bc3b",
+      "@type": [
+        "Period"
+      ],
+      "endDate": "2026-06-30",
+      "startDate": "2025-09-01"
+    }
+  ]
+}

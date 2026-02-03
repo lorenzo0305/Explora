@@ -1,0 +1,848 @@
+{
+  "@id": "https://data.datatourisme.fr/15/0d0a4100-d8fa-344f-b080-893b419b8818",
+  "dc:identifier": "ACCCEN0450004N",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "CamperVanArea",
+    "CampingAndCaravanning",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Schöner Ort 100m vom Stadtzentrum entfernt auf den Stadtmauern, angenehmer und schattiger Ort für 3 Wohnmobilstellplätze."
+    ],
+    "en": [
+      "Nice place at 100m from the town centre on the city walls, Pleasant and shady place for 3 camper van pitches."
+    ],
+    "it": [
+      "Bella posizione a 100 m dal centro città sulle mura, luogo piacevole e ombreggiato per 3 piazzole per camper."
+    ],
+    "fr": [
+      "Bel endroit à 100m du centre ville sur les remparts de la ville, Lieu agréable et ombragé pour 3 emplacements de camping-cars."
+    ],
+    "nl": [
+      "Mooie locatie 100m van het centrum op de stadsmuren, aangename en schaduwrijke plek voor 3 camperplaatsen."
+    ],
+    "es": [
+      "Hermosa ubicación a 100 metros del centro de la ciudad en las murallas, lugar agradable y sombreado para 3 parcelas de autocaravanas."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Aire de services pour camping-car des bords de la Cheuille"
+    ]
+  },
+  "allowedPersons": 3,
+  "creationDate": "2013-05-06",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/15/2e3c31a9-5e72-3a39-b1ea-75526cf59f14",
+    "dc:identifier": "080bbcec-56e0-4b3b-8273-4bd92508c42b",
+    "schema:legalName": "OT TERRES DE LOIRE ET CANAUX",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/bba35b4d-022c-3fa7-90a3-07eba818e3a5",
+      "schema:legalName": "SIT Centre-Val de Loire",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/9f0e6c9f-0cce-3113-b094-444797dc277c",
+      "schema:email": [
+        "mairie@bonnysurloire.fr"
+      ],
+      "schema:telephone": [
+        "+33 2 38 29 59 00",
+        "+33 6 64 02 74 43"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bonny-sur-loire.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/e98a46d0-73b7-323f-a1cd-d18f95583a6f",
+      "dc:description": {
+        "de": [
+          "Wohnmobilstellplatz an der Stadtmauer gelegen."
+        ],
+        "en": [
+          "Motorhome area located on the city walls."
+        ],
+        "it": [
+          "Area di sosta per camper situata sulle mura della città."
+        ],
+        "fr": [
+          "Aire de camping-cars situé sur les remparts de la ville."
+        ],
+        "es": [
+          "Parque de autocaravanas situado en las murallas de la ciudad."
+        ],
+        "nl": [
+          "Camperpark op de stadsmuren."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "shortDescription": {
+        "de": [
+          "Schöner Ort 100m vom Stadtzentrum entfernt auf den Stadtmauern, angenehmer und schattiger Ort für 3 Wohnmobilstellplätze."
+        ],
+        "en": [
+          "Nice place at 100m from the town centre on the city walls, Pleasant and shady place for 3 camper van pitches."
+        ],
+        "it": [
+          "Bella posizione a 100 m dal centro città sulle mura, luogo piacevole e ombreggiato per 3 piazzole per camper."
+        ],
+        "fr": [
+          "Bel endroit à 100m du centre ville sur les remparts de la ville, Lieu agréable et ombragé pour 3 emplacements de camping-cars."
+        ],
+        "nl": [
+          "Mooie locatie 100m van het centrum op de stadsmuren, aangename en schaduwrijke plek voor 3 camperplaatsen."
+        ],
+        "es": [
+          "Hermosa ubicación a 100 metros del centro de la ciudad en las murallas, lugar agradable y sombreado para 3 parcelas de autocaravanas."
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/ab40b02f-e54b-385a-bc66-02bfa3e7a24f",
+      "@type": [
+        "schema:PropertyValue",
+        "FeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:CamperServicePoint",
+          "@type": [
+            "AccommodationPricingOffer",
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Servicestation für Wohnmobile"
+            ],
+            "pt": [
+              "Terminal de serviços para autocaravanas"
+            ],
+            "en": [
+              "Camper service point"
+            ],
+            "it": [
+              "Stazione di servizio per camper"
+            ],
+            "fr": [
+              "Borne de service camping car"
+            ],
+            "nl": [
+              "Servicepunt voor camper"
+            ],
+            "es": [
+              "Estación de servicio para autocaravanas"
+            ]
+          }
+        },
+        {
+          "@id": "kb:ChemicalToiletEmptying",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Entleerung chemischer Toiletten"
+            ],
+            "pt": [
+              "Despejo das sanitas químicas"
+            ],
+            "en": [
+              "Chemical toilets emptying"
+            ],
+            "it": [
+              "Svuotamento di bagni chimici"
+            ],
+            "fr": [
+              "Vidange toilettes chimiques"
+            ],
+            "es": [
+              "Vaciado de inodoros químicos"
+            ],
+            "nl": [
+              "Loospunt chemische toiletten"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Washrooms",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Toiletteneinrichtungen"
+            ],
+            "pt": [
+              "Sanitários"
+            ],
+            "en": [
+              "Washrooms"
+            ],
+            "it": [
+              "Sanitari"
+            ],
+            "fr": [
+              "Sanitaires"
+            ],
+            "es": [
+              "Sanitarios"
+            ],
+            "nl": [
+              "Sanitair"
+            ]
+          }
+        },
+        {
+          "@id": "kb:WastwaterEvacuation",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Entleerung von Abwasser"
+            ],
+            "pt": [
+              "Despejo de águas sujas"
+            ],
+            "en": [
+              "Wastwater evacuation"
+            ],
+            "it": [
+              "Svuotamento delle acque reflue"
+            ],
+            "fr": [
+              "Vidange des eaux usées"
+            ],
+            "es": [
+              "Vaciado de aguas residuales"
+            ],
+            "nl": [
+              "Afvalwaterpunt"
+            ]
+          }
+        },
+        {
+          "@id": "kb:WaterConnections",
+          "@type": [
+            "AccommodationAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Wasseranschlüsse"
+            ],
+            "pt": [
+              "Ligações de água"
+            ],
+            "en": [
+              "Water connections"
+            ],
+            "it": [
+              "Collegamenti idrici"
+            ],
+            "fr": [
+              "Branchements d'eau"
+            ],
+            "nl": [
+              "Wateraansluitingen"
+            ],
+            "es": [
+              "Conexiones de agua"
+            ]
+          }
+        }
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/6f9e846e-3248-39c0-a7f7-a15e45c735ba",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f8ee45f2-1f5d-3e6b-828e-722d639eb9ce",
+          "ebucore:title": {
+            "fr": [
+              "Bonny sur Loire-Borne camping-cars"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "OTTLC"
+          ],
+          "rightsEndDate": "2027-12-14",
+          "rightsStartDate": "2022-12-14"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/9bf19226-c27b-3334-a4ed-3862d4c739d0",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/Borne-camping-car-Bonny.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasNeighborhood": [
+    {
+      "@id": "kb:InTheVillage",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Im Dorf"
+        ],
+        "pt": [
+          "Na aldeia"
+        ],
+        "en": [
+          "In the village"
+        ],
+        "it": [
+          "Nel villaggio"
+        ],
+        "fr": [
+          "Dans le village"
+        ],
+        "nl": [
+          "In het dorp"
+        ],
+        "es": [
+          "En el pueblo"
+        ]
+      }
+    },
+    {
+      "@id": "kb:NearARiverOrStream",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Am Ufer eines Flusses oder eines Stroms"
+        ],
+        "pt": [
+          "Na borda de um rio ou ribeira"
+        ],
+        "en": [
+          "Near a river or stream"
+        ],
+        "it": [
+          "Lungo il fiume"
+        ],
+        "fr": [
+          "En bord de fleuve ou rivière"
+        ],
+        "nl": [
+          "Aan de oever van een stroompje of rivier"
+        ],
+        "es": [
+          "A orillas de un río"
+        ]
+      }
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/6f9e846e-3248-39c0-a7f7-a15e45c735ba",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/f8ee45f2-1f5d-3e6b-828e-722d639eb9ce",
+          "ebucore:title": {
+            "fr": [
+              "Bonny sur Loire-Borne camping-cars"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "OTTLC"
+          ],
+          "rightsEndDate": "2027-12-14",
+          "rightsStartDate": "2022-12-14"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/9bf19226-c27b-3334-a4ed-3862d4c739d0",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://centre.media.tourinsoft.eu/upload/Borne-camping-car-Bonny.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:InTheVillage",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Im Dorf"
+        ],
+        "pt": [
+          "Na aldeia"
+        ],
+        "en": [
+          "In the village"
+        ],
+        "it": [
+          "Nel villaggio"
+        ],
+        "fr": [
+          "Dans le village"
+        ],
+        "nl": [
+          "In het dorp"
+        ],
+        "es": [
+          "En el pueblo"
+        ]
+      }
+    },
+    {
+      "@id": "kb:NearARiverOrStream",
+      "@type": [
+        "SpatialEnvironmentTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Am Ufer eines Flusses oder eines Stroms"
+        ],
+        "pt": [
+          "Na borda de um rio ou ribeira"
+        ],
+        "en": [
+          "Near a river or stream"
+        ],
+        "it": [
+          "Lungo il fiume"
+        ],
+        "fr": [
+          "En bord de fleuve ou rivière"
+        ],
+        "nl": [
+          "Aan de oever van een stroompje of rivier"
+        ],
+        "es": [
+          "A orillas de un río"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/0b127da0-7107-3d8d-a00a-48b1b9701856",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/9b2b69c1-2e50-308d-a6cb-9d3f6615eda4",
+          "schema:addressLocality": "Bonny-sur-Loire",
+          "schema:postalCode": "45420",
+          "schema:streetAddress": [
+            "Chemin de la Cheuille"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:45040",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Bonny-sur-Loire"
+              ],
+              "pt": [
+                "Bonny-sur-Loire"
+              ],
+              "en": [
+                "Bonny-sur-Loire"
+              ],
+              "it": [
+                "Bonny-sur-Loire"
+              ],
+              "fr": [
+                "Bonny-sur-Loire"
+              ],
+              "nl": [
+                "Bonny-sur-Loire"
+              ],
+              "es": [
+                "Bonny-sur-Loire"
+              ]
+            },
+            "insee": "45040",
+            "isPartOfDepartment": {
+              "@id": "kb:France2445",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Loiret"
+                ],
+                "pt": [
+                  "Loiret"
+                ],
+                "en": [
+                  "Loiret"
+                ],
+                "it": [
+                  "Loiret"
+                ],
+                "fr": [
+                  "Loiret"
+                ],
+                "nl": [
+                  "Loiret"
+                ],
+                "es": [
+                  "Loiret"
+                ]
+              },
+              "insee": "45",
+              "isPartOfRegion": {
+                "@id": "kb:France24",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Centre-Val de Loire"
+                  ],
+                  "pt": [
+                    "Centre-Val de Loire"
+                  ],
+                  "en": [
+                    "Centre-Val de Loire"
+                  ],
+                  "it": [
+                    "Centre-Val de Loire"
+                  ],
+                  "fr": [
+                    "Centre-Val de Loire"
+                  ],
+                  "nl": [
+                    "Centre-Val de Loire"
+                  ],
+                  "es": [
+                    "Centre-Val de Loire"
+                  ]
+                },
+                "insee": "24",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/322cf54d-5542-3be6-ab4a-a1178454d2eb",
+        "schema:latitude": "47.5598002",
+        "schema:longitude": "2.83915579",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": true
+    }
+  ],
+  "lastUpdate": "2025-06-19",
+  "lastUpdateDatatourisme": "2025-06-20T04:51:03.228Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/8567f15f-b681-37a8-badf-c6c605ae48b1",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/073a8cb1-8a6d-334a-8895-2871f797ae2d",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "parken und entleeren"
+            ],
+            "en": [
+              "parking and emptying"
+            ],
+            "it": [
+              "parcheggio e svuotamento"
+            ],
+            "fr": [
+              "stationnement et vidange"
+            ],
+            "nl": [
+              "parkeren en legen"
+            ],
+            "es": [
+              "aparcamiento y vaciado"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/23df6512-4c42-347d-9011-73c952075e79",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/ae42c415-473b-310a-a67f-8d909424fce3",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/cf0277a2-d0e1-3508-b94a-62ac4f6a04b4",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/cf9663f2-4f9c-3394-a3f3-58e365c47880",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e41a1d76-6b92-3b6a-a8aa-cb6cc8aafb1f",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

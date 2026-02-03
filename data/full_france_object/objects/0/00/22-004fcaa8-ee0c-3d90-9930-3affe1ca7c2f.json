@@ -1,0 +1,809 @@
+{
+  "@id": "https://data.datatourisme.fr/22/004fcaa8-ee0c-3d90-9930-3affe1ca7c2f",
+  "dc:identifier": "RESMIP046V51ASXZ",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Restaurant",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Sommerrestaurant im Archipel, Partyservice und Gruppenessen in der Markthalle von Cahors außerhalb der Saison.\nAlles ist hausgemacht: Pommes frites, Feinschmeckersalate, Gegrilltes, Crêpes... Wir bieten auch Gerichte zum Mitnehmen und Cocktails an."
+    ],
+    "en": [
+      "Enjoy a drink with friends, try our chef's home-made tapas (Asian, regional and seafood specialities), listen to some good music… All this in an exceptional, comfortable setting in the lounge or on the terrace beside the Lot."
+    ],
+    "it": [
+      "Ristorante estivo all'Archipel, servizio di catering e pasti di gruppo nella sala del mercato di Cahors fuori stagione.\nTutto è fatto in casa: patatine, insalate gourmet, grigliate, pancake? Offriamo anche pasti e cocktail da asporto."
+    ],
+    "fr": [
+      "Restaurant d'été à l'Archipel, service traiteur et repas groupes sous la halle de Cahors hors saison.\nTout est fait maison : frites, salades gourmandes, grillades, crêpes… Nous proposons aussi des plats à emporter et des cocktails."
+    ],
+    "nl": [
+      "Zomerrestaurant in l'Archipel, traiteurdienst en groepsmaaltijden in de markthal van Cahors buiten het seizoen.\nAlles is huisgemaakt: frietjes, gastronomische salades, gegrild vlees, pannenkoeken... We bieden ook afhaalmaaltijden en cocktails."
+    ],
+    "es": [
+      "Restaurante de verano en l'Archipel, servicio de catering y comidas para grupos en la sala del mercado de Cahors fuera de temporada.\nTodo es casero: patatas fritas, ensaladas gourmet, parrillas, tortitas.. También ofrecemos comidas y cócteles para llevar."
+    ]
+  },
+  "rdfs:label": {
+    "en": [
+      "La Paillote de l’Archipel"
+    ],
+    "fr": [
+      "La Paillote de l’Archipel"
+    ],
+    "es": [
+      "La Paillote de l’Archipel"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/6d92cdc3-82d6-3331-9326-169a754b7dbf",
+    "schema:legalName": "OT CVL Saint-Cirq-Lapopie",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/43c37e63-84a7-3232-bd68-42980c0d5def",
+      "schema:legalName": "Lot Tourisme - Agence de développement touristique du Lot",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.tourisme-lot.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/ecf7aeaf-ec4f-3e0a-9c39-a665ecd0e3ba",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/a1363c25-b085-3a14-ab52-79b39819e16f",
+          "schema:addressLocality": "Cahors",
+          "schema:postalCode": "46000",
+          "schema:streetAddress": [
+            "Chemin Ludo Rollès"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:46042",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Cahors"
+              ],
+              "pt": [
+                "Cahors"
+              ],
+              "en": [
+                "Cahors"
+              ],
+              "it": [
+                "Cahors"
+              ],
+              "fr": [
+                "Cahors"
+              ],
+              "nl": [
+                "Cahors"
+              ],
+              "es": [
+                "Cahors"
+              ]
+            },
+            "insee": "46042",
+            "isPartOfDepartment": {
+              "@id": "kb:France7646",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Lot"
+                ],
+                "pt": [
+                  "Lot"
+                ],
+                "en": [
+                  "Lot"
+                ],
+                "it": [
+                  "Lot"
+                ],
+                "fr": [
+                  "Lot"
+                ],
+                "nl": [
+                  "Lot"
+                ],
+                "es": [
+                  "Lot"
+                ]
+              },
+              "insee": "46",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:legalName": "La Paillote de l’Archipel",
+      "schema:telephone": [
+        "+33 5 65 22 09 10"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/8f9b5f01-91f9-3f00-ad8b-c7a20a19a494",
+      "dc:description": {
+        "de": [
+          "Sommerrestaurant im Archipel, Partyservice und Gruppenessen in der Markthalle von Cahors außerhalb der Saison.\nAlles ist hausgemacht: Pommes frites, Feinschmeckersalate, Gegrilltes, Crêpes... Wir bieten auch Gerichte zum Mitnehmen und Cocktails an."
+        ],
+        "en": [
+          "Enjoy a drink with friends, try our chef's home-made tapas (Asian, regional and seafood specialities), listen to some good music… All this in an exceptional, comfortable setting in the lounge or on the terrace beside the Lot."
+        ],
+        "it": [
+          "Ristorante estivo all'Archipel, servizio di catering e pasti di gruppo nella sala del mercato di Cahors fuori stagione.\nTutto è fatto in casa: patatine, insalate gourmet, grigliate, pancake? Offriamo anche pasti e cocktail da asporto."
+        ],
+        "fr": [
+          "Restaurant d'été à l'Archipel, service traiteur et repas groupes sous la halle de Cahors hors saison.\nTout est fait maison : frites, salades gourmandes, grillades, crêpes… Nous proposons aussi des plats à emporter et des cocktails."
+        ],
+        "nl": [
+          "Zomerrestaurant in l'Archipel, traiteurdienst en groepsmaaltijden in de markthal van Cahors buiten het seizoen.\nAlles is huisgemaakt: frietjes, gastronomische salades, gegrild vlees, pannenkoeken... We bieden ook afhaalmaaltijden en cocktails."
+        ],
+        "es": [
+          "Restaurante de verano en l'Archipel, servicio de catering y comidas para grupos en la sala del mercado de Cahors fuera de temporada.\nTodo es casero: patatas fritas, ensaladas gourmet, parrillas, tortitas.. También ofrecemos comidas y cócteles para llevar."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0be076db-b461-3699-acc2-2b4874ac2607",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/15aa54df-2763-3cef-9279-b86893062175",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2c34adf7-1d9c-3e64-b60e-c373ef227772",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/36a763df-d0c8-350f-8603-3754f14bd6c7",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/68bc2a7c-8574-3db3-8a7d-14d45bfc7cb9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7fb9fb52-4f62-3052-8759-4e85310e5e0c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Sommerrestaurant im Archipel, Partyservice und Gruppenessen in der Markthalle von Cahors außerhalb der Saison.\nAlles ist hausgemacht: Pommes frites, Feinschmeckersalate, Gegrilltes, Crêpes... Wir bieten auch Gerichte zum Mitnehmen und Cocktails an."
+        ],
+        "en": [
+          "Enjoy a drink with friends, try our chef's home-made tapas (Asian, regional and seafood specialities), listen to some good music… All this in an exceptional, comfortable setting in the lounge or on the terrace beside the Lot."
+        ],
+        "it": [
+          "Ristorante estivo all'Archipel, servizio di catering e pasti di gruppo nella sala del mercato di Cahors fuori stagione.\nTutto è fatto in casa: patatine, insalate gourmet, grigliate, pancake? Offriamo anche pasti e cocktail da asporto."
+        ],
+        "fr": [
+          "Restaurant d'été à l'Archipel, service traiteur et repas groupes sous la halle de Cahors hors saison.\nTout est fait maison : frites, salades gourmandes, grillades, crêpes… Nous proposons aussi des plats à emporter et des cocktails."
+        ],
+        "nl": [
+          "Zomerrestaurant in l'Archipel, traiteurdienst en groepsmaaltijden in de markthal van Cahors buiten het seizoen.\nAlles is huisgemaakt: frietjes, gastronomische salades, gegrild vlees, pannenkoeken... We bieden ook afhaalmaaltijden en cocktails."
+        ],
+        "es": [
+          "Restaurante de verano en l'Archipel, servicio de catering y comidas para grupos en la sala del mercado de Cahors fuera de temporada.\nTodo es casero: patatas fritas, ensaladas gourmet, parrillas, tortitas.. También ofrecemos comidas y cócteles para llevar."
+        ]
+      }
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/9986c724-3c69-3b80-b9d2-9982c8fc687e",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/31219d0f-cda3-3477-8488-f3f9bc5d8cb5",
+          "ebucore:title": {
+            "en": [
+              "20210516_175956"
+            ],
+            "fr": [
+              "la paillote de l'archipel"
+            ],
+            "es": [
+              "20210516_175956"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "la paillote de l'archipel"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/f39b8350-9481-3e71-92ae-5600737f05d7",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "http://cdt46.media.tourinsoft.com/upload/20210516-175956.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/9986c724-3c69-3b80-b9d2-9982c8fc687e",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/31219d0f-cda3-3477-8488-f3f9bc5d8cb5",
+          "ebucore:title": {
+            "en": [
+              "20210516_175956"
+            ],
+            "fr": [
+              "la paillote de l'archipel"
+            ],
+            "es": [
+              "20210516_175956"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ],
+          "credits": [
+            "la paillote de l'archipel"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/f39b8350-9481-3e71-92ae-5600737f05d7",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "http://cdt46.media.tourinsoft.com/upload/20210516-175956.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/9911323e-96d5-3201-a3ed-f8b4fdda474a",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c863822c-e5a7-3f25-b6ae-636daafe9fec",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f3bc76db-a298-3920-bc4f-a9962b084beb",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/71b86b34-c608-3ff4-87d5-55b284a15349",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/eccfa3c0-0a98-357e-b410-eba760be2a98",
+          "schema:addressLocality": "Cahors",
+          "schema:postalCode": "46000",
+          "schema:streetAddress": [
+            "Chemin Ludo Rollès",
+            "Piscine d'été l'Archipel"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:46042",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Cahors"
+              ],
+              "pt": [
+                "Cahors"
+              ],
+              "en": [
+                "Cahors"
+              ],
+              "it": [
+                "Cahors"
+              ],
+              "fr": [
+                "Cahors"
+              ],
+              "nl": [
+                "Cahors"
+              ],
+              "es": [
+                "Cahors"
+              ]
+            },
+            "insee": "46042",
+            "isPartOfDepartment": {
+              "@id": "kb:France7646",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Lot"
+                ],
+                "pt": [
+                  "Lot"
+                ],
+                "en": [
+                  "Lot"
+                ],
+                "it": [
+                  "Lot"
+                ],
+                "fr": [
+                  "Lot"
+                ],
+                "nl": [
+                  "Lot"
+                ],
+                "es": [
+                  "Lot"
+                ]
+              },
+              "insee": "46",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/2571faf0-89c0-3906-98bc-846405485bc2",
+        "schema:latitude": "44.453394",
+        "schema:longitude": "1.44295271",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/6d92cdc3-82d6-3331-9326-169a754b7dbf",
+      "schema:legalName": "OT CVL Saint-Cirq-Lapopie",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-03-04",
+  "lastUpdateDatatourisme": "2025-06-13T09:14:54.571Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/2cd124b6-f7b9-3883-a01b-dbfdeeab1994",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/09e5376b-7b18-36fc-9629-c90d51bc9005",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ],
+          "name": {
+            "en": [
+              "A la carte menu"
+            ],
+            "fr": [
+              "A la carte"
+            ],
+            "es": [
+              "A la carta"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

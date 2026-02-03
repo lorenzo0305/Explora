@@ -1,0 +1,795 @@
+{
+  "@id": "https://data.datatourisme.fr/13/05a9c44c-d126-3300-a539-283e91b5f103",
+  "dc:identifier": "6530131",
+  "@type": [
+    "schema:Accommodation",
+    "schema:FoodEstablishment",
+    "schema:Hotel",
+    "schema:LodgingBusiness",
+    "schema:Restaurant",
+    "Accommodation",
+    "FoodEstablishment",
+    "Hotel",
+    "HotelRestaurant",
+    "HotelTrade",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Das Hotel Le Pradinas, eine ehemalige Seidenraupenzucht aus dem 18. Jahrhundert, ermöglicht es Ihnen, Ihren Aufenthalt in den Cevennen unter den bestmöglichen Bedingungen zu genießen, während sein Restaurant Sie mit den Spezialitäten des Landes verwöhnt."
+    ],
+    "en": [
+      "The hotel Le Pradinas, an 18th-century Cévenol farmhouse and former silkworm nursery, offers the best possible conditions for your stay in the Cévennes, while its restaurant serves local specialities."
+    ],
+    "it": [
+      "L'hotel Le Pradinas, una fattoria cévenol del XVIII secolo ed ex vivaio di bachi da seta, vi garantirà un soggiorno nelle Cévennes nelle migliori condizioni possibili, mentre il suo ristorante vi farà scoprire le specialità della regione."
+    ],
+    "fr": [
+      "L'hôtel Le Pradinas mas cévenol du XVIIIème siècle, ancienne magnanerie, vous permettra de profiter, dans les meilleurs conditions possibles, de votre séjour en Cévennes pendant que son restaurant saura vous faire découvrir les spécialités du pays."
+    ],
+    "nl": [
+      "Hotel Le Pradinas, een 18e-eeuwse Cevenolse boerderij en voormalige zijderupskwekerij, zorgt ervoor dat u in de beste omstandigheden van uw verblijf in de Cevennen kunt genieten, terwijl het restaurant u de specialiteiten van de streek laat ontdekken."
+    ],
+    "es": [
+      "El hotel Le Pradinas, una granja cévenol del siglo XVIII y antiguo vivero de gusanos de seda, le hará disfrutar de su estancia en las Cevenas en las mejores condiciones, mientras que su restaurante le ayudará a descubrir las especialidades de la región."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Hôtel du Pradinas"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/d6288499-d008-3cc3-8e60-a077b7c4b3e1",
+    "dc:identifier": "2257",
+    "schema:email": [
+      "bgay@cevennes-tourisme.pro",
+      "dqueron@cevennes-tourisme.pro",
+      "jmoine@cevennes-tourisme.pro",
+      "lauger@cevennes-tourisme.pro",
+      "mbret@cevennes-tourisme.pro",
+      "mgantier@cevennes-tourisme.pro",
+      "ndedavydoff@cevennes-tourisme.pro"
+    ],
+    "schema:legalName": "SPL Alès Cévennes - Cévennes Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.cevennes-tourisme.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/55d38724-28f9-3f61-8f29-fb4d06d4f73f",
+      "schema:email": [
+        "contact@lepradinas.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 66 85 01 34"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.lepradinas.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/1828bc12-e910-304a-8e58-34b27b7d3ff5",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/3665e1e1-367b-3db6-a7bc-22b62711f6a7",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/92707a3b-d38c-38f1-964c-4adddf4aed08",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/af42b55f-bbde-3250-9ed2-6e7ceb56d88e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b9a79f11-44c3-36a7-a5ba-b0c9e5f7d49c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d42e5478-84b2-3e05-9841-e8895f9e00bd",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Das Hotel Le Pradinas, eine ehemalige Seidenraupenzucht aus dem 18. Jahrhundert, ermöglicht es Ihnen, Ihren Aufenthalt in den Cevennen unter den bestmöglichen Bedingungen zu genießen, während sein Restaurant Sie mit den Spezialitäten des Landes verwöhnt."
+        ],
+        "en": [
+          "The hotel Le Pradinas, an 18th-century Cévenol farmhouse and former silkworm nursery, offers the best possible conditions for your stay in the Cévennes, while its restaurant serves local specialities."
+        ],
+        "it": [
+          "L'hotel Le Pradinas, una fattoria cévenol del XVIII secolo ed ex vivaio di bachi da seta, vi garantirà un soggiorno nelle Cévennes nelle migliori condizioni possibili, mentre il suo ristorante vi farà scoprire le specialità della regione."
+        ],
+        "fr": [
+          "L'hôtel Le Pradinas mas cévenol du XVIIIème siècle, ancienne magnanerie, vous permettra de profiter, dans les meilleurs conditions possibles, de votre séjour en Cévennes pendant que son restaurant saura vous faire découvrir les spécialités du pays."
+        ],
+        "nl": [
+          "Hotel Le Pradinas, een 18e-eeuwse Cevenolse boerderij en voormalige zijderupskwekerij, zorgt ervoor dat u in de beste omstandigheden van uw verblijf in de Cevennen kunt genieten, terwijl het restaurant u de specialiteiten van de streek laat ontdekken."
+        ],
+        "es": [
+          "El hotel Le Pradinas, una granja cévenol del siglo XVIII y antiguo vivero de gusanos de seda, le hará disfrutar de su estancia en las Cevenas en las mejores condiciones, mientras que su restaurante le ayudará a descubrir las especialidades de la región."
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/7724dbf0-7649-358b-be17-1db1b66a240f",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3etoiles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Sterne"
+          ],
+          "pt": [
+            "3 estrelas"
+          ],
+          "en": [
+            "3 Stars"
+          ],
+          "it": [
+            "3 stelle"
+          ],
+          "fr": [
+            "3 étoiles"
+          ],
+          "nl": [
+            "3 sterren"
+          ],
+          "es": [
+            "3 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/0f8aca06-2253-3f6e-bf65-502d23063432",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/25725e5d-78c8-322e-95b1-80cc391152ce",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2776d4f8-8867-38d9-96c9-58286c0f7bbc",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b2099350-5a52-37fa-9cb4-cd801b86c81b",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/bc4099e9-5a98-3cc7-a940-405261f71eaf",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/756a6282-1a49-3ef9-b6f8-8657f3f00082",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/370889d4-239c-379d-b604-7800fdcb000b",
+          "schema:addressLocality": "Mialet",
+          "schema:postalCode": "30140",
+          "schema:streetAddress": [
+            "4377 Route de Générargues"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:30168",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Mialet"
+              ],
+              "pt": [
+                "Mialet"
+              ],
+              "en": [
+                "Mialet"
+              ],
+              "it": [
+                "Mialet"
+              ],
+              "fr": [
+                "Mialet"
+              ],
+              "nl": [
+                "Mialet"
+              ],
+              "es": [
+                "Mialet"
+              ]
+            },
+            "insee": "30168",
+            "isPartOfDepartment": {
+              "@id": "kb:France7630",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Gard"
+                ],
+                "pt": [
+                  "Gard"
+                ],
+                "en": [
+                  "Gard"
+                ],
+                "it": [
+                  "Gard"
+                ],
+                "fr": [
+                  "Gard"
+                ],
+                "nl": [
+                  "Gard"
+                ],
+                "es": [
+                  "Gard"
+                ]
+              },
+              "insee": "30",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/dc7fd471-99b1-35e0-b12e-1153ff47f0b4",
+        "schema:latitude": "44.084215",
+        "schema:longitude": "3.96507",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/a2e45f7e-e2ae-36f1-9400-42a2edd83d70",
+          "schema:validFrom": "2025-04-11T00:00:00",
+          "schema:validThrough": "2025-10-02T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/01f18785-e95f-358e-9210-77e355f5189e",
+      "schema:email": [
+        "bgay@cevennes-tourisme.pro",
+        "dqueron@cevennes-tourisme.pro",
+        "jmoine@cevennes-tourisme.pro",
+        "lauger@cevennes-tourisme.pro",
+        "mbret@cevennes-tourisme.pro",
+        "mgantier@cevennes-tourisme.pro",
+        "ndedavydoff@cevennes-tourisme.pro"
+      ],
+      "schema:legalName": "SPL Alès Cévennes - Cévennes Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.cevennes-tourisme.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-12-12",
+  "lastUpdateDatatourisme": "2025-03-29T07:51:15.981Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/e47f51a4-9367-3f22-b1d6-2c4c14e24772",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/3c43c7d2-5d41-3620-886d-5f6f3859eae7",
+          "schema:maxPrice": [
+            "140"
+          ],
+          "schema:minPrice": [
+            "127"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/92d1673f-47bd-324d-a2e5-cb7f98b37ac8",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-10-02",
+              "startDate": "2025-04-11"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/72cbfd8f-85aa-339a-ab8c-8337201e93bd",
+          "schema:maxPrice": [
+            "180"
+          ],
+          "schema:minPrice": [
+            "150"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/92d1673f-47bd-324d-a2e5-cb7f98b37ac8",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-10-02",
+              "startDate": "2025-04-11"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:HotelSuite",
+              "@type": [
+                "AccommodationPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Suite"
+                ],
+                "pt": [
+                  "Suite"
+                ],
+                "en": [
+                  "Hotel Suite"
+                ],
+                "it": [
+                  "Suite"
+                ],
+                "fr": [
+                  "Suite"
+                ],
+                "nl": [
+                  "Suite"
+                ],
+                "es": [
+                  "Suite"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/79d09829-9f09-3350-9b17-63260bae2437",
+          "schema:maxPrice": [
+            "155"
+          ],
+          "schema:minPrice": [
+            "140"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/92d1673f-47bd-324d-a2e5-cb7f98b37ac8",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-10-02",
+              "startDate": "2025-04-11"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a5a13028-ec5c-38e9-9d70-21c802a65e57",
+          "schema:minPrice": [
+            "15"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/92d1673f-47bd-324d-a2e5-cb7f98b37ac8",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-10-02",
+              "startDate": "2025-04-11"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/dc903562-3d77-3cb8-8c96-39c0a93dc2e8",
+          "schema:minPrice": [
+            "46"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/92d1673f-47bd-324d-a2e5-cb7f98b37ac8",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-10-02",
+              "startDate": "2025-04-11"
+            }
+          ],
+          "name": {
+            "fr": [
+              "à rajouter au prix de la chambre"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e05da8d1-2268-3cde-b35f-abcefd981304",
+          "schema:maxPrice": [
+            "120"
+          ],
+          "schema:minPrice": [
+            "106"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/92d1673f-47bd-324d-a2e5-cb7f98b37ac8",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-10-02",
+              "startDate": "2025-04-11"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/fce8021e-d679-3229-be09-91766e1a1143",
+          "schema:minPrice": [
+            "16.5"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/92d1673f-47bd-324d-a2e5-cb7f98b37ac8",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-10-02",
+              "startDate": "2025-04-11"
+            }
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:BaseRateFullRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Basistarif – voller Tarif"
+                ],
+                "pt": [
+                  "Preço de base — preço total"
+                ],
+                "en": [
+                  "Base rate - full rate"
+                ],
+                "it": [
+                  "Tariffa di base — tariffa intera"
+                ],
+                "fr": [
+                  "Tarif de base - plein tarif"
+                ],
+                "es": [
+                  "Tarifa básica - tarifa completa"
+                ],
+                "nl": [
+                  "Basistarief - vol tarief"
+                ]
+              }
+            }
+          ],
+          "hasPricingMode": [
+            {
+              "@id": "kb:PerUnit",
+              "@type": [
+                "PricingMode"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pro Einheit"
+                ],
+                "pt": [
+                  "Por unidade"
+                ],
+                "en": [
+                  "Per unit"
+                ],
+                "it": [
+                  "Per unità"
+                ],
+                "fr": [
+                  "A l'unité"
+                ],
+                "es": [
+                  "Por unidad"
+                ],
+                "nl": [
+                  "Per eenheid"
+                ]
+              }
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:Breakfast",
+              "@type": [
+                "CateringAmenity",
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Frühstück"
+                ],
+                "pt": [
+                  "Pequeno-almoço"
+                ],
+                "en": [
+                  "Breakfast"
+                ],
+                "it": [
+                  "Colazione"
+                ],
+                "fr": [
+                  "Petit-déjeuner"
+                ],
+                "nl": [
+                  "Ontbijt"
+                ],
+                "es": [
+                  "Desayuno"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "@id": "https://data.datatourisme.fr/13/089a6596-0e59-33c4-83c2-c948928b40ef",
+  "dc:identifier": "6521644",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Soleil Bar"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/3df1d4b9-6d89-36ff-9986-393e8767f5b2",
+    "dc:identifier": "939",
+    "schema:email": [
+      "a.gurnari@saint-raphael.com",
+      "accueil@saint-raphael.com",
+      "d.samulczyk@saint-raphael.com",
+      "e.entraygues@saint-raphael.com",
+      "m.aernouts@saint-raphael.com"
+    ],
+    "schema:legalName": "Office de tourisme de Saint-Raphaël",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.saint-raphael.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/70868e2c-cefc-3597-a354-d0aec33452e6",
+      "schema:telephone": [
+        "+33 4 94 82 01 88"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:MediterraneanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Mediterrane Küche"
+        ],
+        "pt": [
+          "Cozinha mediterrânica"
+        ],
+        "en": [
+          "Mediterranean cuisine"
+        ],
+        "it": [
+          "Cucina mediterranea"
+        ],
+        "fr": [
+          "Cuisine méditerranéenne"
+        ],
+        "nl": [
+          "Mediterrane keuken"
+        ],
+        "es": [
+          "Cocina mediterránea"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/54a4ec23-dc25-384a-a8e2-3b01b6195248",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/9458dc4a-bc37-3e9b-8fde-ee4457670efd",
+          "schema:addressLocality": "Saint-Raphaël",
+          "schema:postalCode": "83700",
+          "schema:streetAddress": [
+            "1324 Bd de la 36ème Division du Texas"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:83118",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Raphaël"
+              ],
+              "pt": [
+                "Saint-Raphaël"
+              ],
+              "en": [
+                "Saint-Raphaël"
+              ],
+              "it": [
+                "Saint-Raphaël"
+              ],
+              "fr": [
+                "Saint-Raphaël"
+              ],
+              "nl": [
+                "Saint-Raphaël"
+              ],
+              "es": [
+                "Saint-Raphaël"
+              ]
+            },
+            "insee": "83118",
+            "isPartOfDepartment": {
+              "@id": "kb:France9383",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Var"
+                ],
+                "pt": [
+                  "Var"
+                ],
+                "en": [
+                  "Var"
+                ],
+                "it": [
+                  "Var"
+                ],
+                "fr": [
+                  "Var"
+                ],
+                "nl": [
+                  "Var"
+                ],
+                "es": [
+                  "Var"
+                ]
+              },
+              "insee": "83",
+              "isPartOfRegion": {
+                "@id": "kb:France93",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "pt": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "en": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "it": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "fr": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "nl": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "es": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ]
+                },
+                "insee": "93",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/2dc0f276-eca8-3f9f-bb90-9e8af77f7c81",
+        "schema:latitude": "43.418938",
+        "schema:longitude": "6.8522",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/ae0aaff4-1026-350f-9a07-c7cf811d1881",
+          "schema:closes": "20:00:00",
+          "schema:opens": "07:00:00",
+          "schema:validFrom": "2025-01-01T00:00:00",
+          "schema:validThrough": "2025-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/3fc734ae-79dc-3ec9-b6d6-f882e13a39f2",
+      "schema:email": [
+        "a.gurnari@saint-raphael.com",
+        "accueil@saint-raphael.com",
+        "d.samulczyk@saint-raphael.com",
+        "e.entraygues@saint-raphael.com",
+        "m.aernouts@saint-raphael.com"
+      ],
+      "schema:legalName": "Office de tourisme de Saint-Raphaël",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.saint-raphael.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-11",
+  "lastUpdateDatatourisme": "2025-07-12T06:09:32.926Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:MediterraneanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Mediterrane Küche"
+        ],
+        "pt": [
+          "Cozinha mediterrânica"
+        ],
+        "en": [
+          "Mediterranean cuisine"
+        ],
+        "it": [
+          "Cucina mediterranea"
+        ],
+        "fr": [
+          "Cuisine méditerranéenne"
+        ],
+        "nl": [
+          "Mediterrane keuken"
+        ],
+        "es": [
+          "Cocina mediterránea"
+        ]
+      }
+    }
+  ]
+}

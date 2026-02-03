@@ -1,0 +1,287 @@
+{
+  "@id": "https://data.datatourisme.fr/5/071c584e-a1d4-38ad-bad6-c674cb207f30",
+  "dc:identifier": "234010641",
+  "@type": [
+    "schema:Accommodation",
+    "schema:LodgingBusiness",
+    "Accommodation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RentalAccommodation",
+    "SelfCateringAccommodation"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Meublé L'arsSix"
+    ]
+  },
+  "allowedPersons": 2,
+  "creationDate": "2020-10-23",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/b9579f36-cee3-3ca8-a1de-5d55bf5abbf6",
+    "schema:legalName": "Office de Tourisme de l'Agence d'Attractivité Mulhouse Sud Alsace",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/f9be77db-d6c0-3a31-9fa8-638da3098074",
+      "schema:legalName": "Système d'informations touristique Alsace",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/e0f4e19c-4f7c-3fb6-94d9-34aca1363212",
+      "schema:email": [
+        "info@travel-homes.com"
+      ],
+      "schema:legalName": "Travel Homes",
+      "schema:telephone": [
+        "+33 3 68 38 20 80"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/e0f4e19c-4f7c-3fb6-94d9-34aca1363212",
+      "schema:email": [
+        "info@travel-homes.com"
+      ],
+      "schema:legalName": "Travel Homes",
+      "schema:telephone": [
+        "+33 3 68 38 20 80"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/594fb33f-5b53-3e97-9f17-ef5f023a9de0",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_1etoile",
+        "schema:ratingValue": "1.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "1 Stern"
+          ],
+          "pt": [
+            "1 estrela"
+          ],
+          "en": [
+            "1 Star"
+          ],
+          "it": [
+            "1 stella"
+          ],
+          "fr": [
+            "1 étoile"
+          ],
+          "nl": [
+            "1 ster"
+          ],
+          "es": [
+            "1 estrella"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/ece3d5c4-66bf-370a-b667-d33fe5f73af1",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/33a6a359-7585-333f-8c60-eed97fc4b833",
+          "schema:addressLocality": "Mulhouse",
+          "schema:postalCode": "68100",
+          "schema:streetAddress": [
+            "19 rue de la Loi"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:68224",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Mulhouse"
+              ],
+              "pt": [
+                "Mulhouse"
+              ],
+              "en": [
+                "Mulhouse"
+              ],
+              "it": [
+                "Mulhouse"
+              ],
+              "fr": [
+                "Mulhouse"
+              ],
+              "nl": [
+                "Mulhouse"
+              ],
+              "es": [
+                "Mulhouse"
+              ]
+            },
+            "insee": "68224",
+            "isPartOfDepartment": {
+              "@id": "kb:France4468",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haut-Rhin"
+                ],
+                "pt": [
+                  "Haut-Rhin"
+                ],
+                "en": [
+                  "Haut-Rhin"
+                ],
+                "it": [
+                  "Haut-Rhin"
+                ],
+                "fr": [
+                  "Haut-Rhin"
+                ],
+                "nl": [
+                  "Haut-Rhin"
+                ],
+                "es": [
+                  "Haut-Rhin"
+                ]
+              },
+              "insee": "68",
+              "isPartOfRegion": {
+                "@id": "kb:France44",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Grand Est"
+                  ],
+                  "pt": [
+                    "Grand Est"
+                  ],
+                  "en": [
+                    "Grand Est"
+                  ],
+                  "it": [
+                    "Grand Est"
+                  ],
+                  "fr": [
+                    "Grand Est"
+                  ],
+                  "nl": [
+                    "Grand Est"
+                  ],
+                  "es": [
+                    "Grand Est"
+                  ]
+                },
+                "insee": "44",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/5eabd600-1081-3a01-bdd1-58b48d0e7cab",
+        "schema:latitude": "47.7466075",
+        "schema:longitude": "7.3335287",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/b9579f36-cee3-3ca8-a1de-5d55bf5abbf6",
+      "schema:legalName": "Office de Tourisme de l'Agence d'Attractivité Mulhouse Sud Alsace",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2023-04-06",
+  "lastUpdateDatatourisme": "2024-11-28T08:01:37.291Z"
+}

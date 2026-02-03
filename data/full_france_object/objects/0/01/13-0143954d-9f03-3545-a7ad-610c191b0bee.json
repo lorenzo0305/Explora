@@ -1,0 +1,351 @@
+{
+  "@id": "https://data.datatourisme.fr/13/0143954d-9f03-3545-a7ad-610c191b0bee",
+  "dc:identifier": "6040445",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Französisches Restaurant"
+    ],
+    "en": [
+      "French restaurant"
+    ],
+    "it": [
+      "Ristorante francese"
+    ],
+    "fr": [
+      "Restaurant français"
+    ],
+    "es": [
+      "Restaurante francés"
+    ],
+    "nl": [
+      "Frans restaurant"
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Le Bikini"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/efdf562c-e2fb-3ad4-a0fd-8e9d33e57f57",
+    "dc:identifier": "2227",
+    "schema:email": [
+      "angeline@sainttropeztourisme.com",
+      "cecilia@sainttropeztourisme.com",
+      "guillaume@sainttropeztourisme.com",
+      "laurent@sainttropeztourisme.com"
+    ],
+    "schema:legalName": "Saint-Tropez Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.sainttropeztourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/4e100084-b8a5-37ae-82a5-14bba265e8d8",
+      "schema:telephone": [
+        "+33 4 94 97 78 85"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/0309009b-e45d-39bc-a96c-3d5bfe09e6db",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/63d65d08-1fea-395b-9ee7-7bde1bd99dbd",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/8b341eaa-f111-3eb8-a6e6-4564c000eeb0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Französisches Restaurant"
+        ],
+        "en": [
+          "French restaurant"
+        ],
+        "it": [
+          "Ristorante francese"
+        ],
+        "fr": [
+          "Restaurant français"
+        ],
+        "es": [
+          "Restaurante francés"
+        ],
+        "nl": [
+          "Frans restaurant"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/c0c6c7ff-094b-3973-8570-763c1997ad84",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/dad6cc93-73ea-3abd-9111-b85a4b51aabc",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/3e31690c-6e72-309a-a703-15fc5d3ab217",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/82c3c8f8-93aa-3a7c-b374-fdc69e0dd45e",
+          "schema:addressLocality": "Saint-Tropez",
+          "schema:postalCode": "83990",
+          "schema:streetAddress": [
+            "44-46 D93"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:83119",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Tropez"
+              ],
+              "pt": [
+                "Saint-Tropez"
+              ],
+              "en": [
+                "Saint-Tropez"
+              ],
+              "it": [
+                "Saint-Tropez"
+              ],
+              "fr": [
+                "Saint-Tropez"
+              ],
+              "nl": [
+                "Saint-Tropez"
+              ],
+              "es": [
+                "Saint-Tropez"
+              ]
+            },
+            "insee": "83119",
+            "isPartOfDepartment": {
+              "@id": "kb:France9383",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Var"
+                ],
+                "pt": [
+                  "Var"
+                ],
+                "en": [
+                  "Var"
+                ],
+                "it": [
+                  "Var"
+                ],
+                "fr": [
+                  "Var"
+                ],
+                "nl": [
+                  "Var"
+                ],
+                "es": [
+                  "Var"
+                ]
+              },
+              "insee": "83",
+              "isPartOfRegion": {
+                "@id": "kb:France93",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "pt": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "en": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "it": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "fr": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "nl": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ],
+                  "es": [
+                    "Provence-Alpes-Côte d'Azur"
+                  ]
+                },
+                "insee": "93",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/8421439a-a410-373c-891e-dad639572c9a",
+        "schema:latitude": "43.260853",
+        "schema:longitude": "6.629685",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/63ba550e-9978-3f5b-847b-00c809fab527",
+          "schema:validFrom": "2025-01-01T00:00:00",
+          "schema:validThrough": "2025-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/a425d617-31c8-38f3-a838-1f575dbb1707",
+      "schema:email": [
+        "angeline@sainttropeztourisme.com",
+        "cecilia@sainttropeztourisme.com",
+        "guillaume@sainttropeztourisme.com",
+        "laurent@sainttropeztourisme.com"
+      ],
+      "schema:legalName": "Saint-Tropez Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.sainttropeztourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-11-06",
+  "lastUpdateDatatourisme": "2025-02-14T06:51:01.918Z"
+}

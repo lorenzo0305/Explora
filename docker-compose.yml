@@ -1,0 +1,226 @@
+
+services:
+  webapp:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /app/webapp
+    command: ["uvicorn","main:app","--reload","--host","0.0.0.0","--port","8080"]
+    ports:
+      - "8080:8080"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/LORA_voyage
+      - ELASTICSEARCH_URI=http://elasticsearch:9200
+      - DATA_ROOT=/app/data
+    depends_on:
+      mongo:
+        condition: service_healthy
+      elasticsearch:
+        condition: service_healthy
+      initdb:
+        condition: service_completed_successfully
+    volumes:
+      - ./webapp:/app/webapp
+      - ./data:/app/data:ro
+
+  mongo:
+    image: mongo:4.4
+    container_name: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongo", "--quiet", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ▶ UI pour voir/éditer Mongo en direct
+  mongo-express:
+    image: mongo-express:1.0.2
+    container_name: mongo-express
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongo
+      - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
+      - ME_CONFIG_BASICAUTH=false     # mettre true + user/pass en prod
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+  # ▶ Compteur live dans les logs (toutes les 2s)
+  mongo-watch:
+    image: mongo:4.4
+    depends_on:
+      mongo:
+        condition: service_healthy
+      initdb:
+        condition: service_completed_successfully
+    command: >
+      bash -lc 'while true; do
+        C=$(mongo --quiet LORA_voyage --host mongo --eval "db.objects.countDocuments()");
+        echo "[mongo-watch] objects: $C";
+        sleep 2;
+      done'
+    restart: unless-stopped
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.13.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "9200:9200"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fs http://localhost:9200/_cluster/health || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 12
+      start_period: 40s
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.13.0
+    container_name: kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+
+  # 🔰 Bootstrap d'init : import Mongo -> attache photos -> indexation ES
+  initdb:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /app/webapp
+    depends_on:
+      mongo:
+        condition: service_healthy
+      elasticsearch:
+        condition: service_healthy
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DATA_ROOT=/app/data
+      - MONGO_URI=mongodb://mongo:27017/LORA_voyage
+      - MONGO_DB=LORA_voyage
+      - MONGO_COLLECTION=objects
+      - ES_HOST=http://elasticsearch:9200      # URL complète
+      - REGION_FILES=Auvergne-Rhône-Alpes.json,Hauts-de-France.json # extension explicite (facilite la résolution)
+    # (optionnel mais robuste)
+    volumes:
+      - ./data/full_france_object/objects:/app/data/full_france_object/objects:ro
+      - ./data/Auvergne-Rhône-Alpes.json:/app/data/Auvergne-Rhône-Alpes.json:ro
+      - ./data/Hauts-de-France.json:/app/data/Hauts-de-France.json:ro
+
+    command: [
+      "sh","-lc",
+      "set -e; \
+       echo '📥 Import Mongo…' && \
+       python /app/webapp/mongo_object.py && \
+       echo '🖼 Attache Photothèque…' && \
+       python /app/webapp/attach_phototheque_zip.py \
+         --images-dir /app/webapp/static/img/phototheque \
+         --xlsx /app/webapp/static/img/phototheque/phototheque.auvergnerhonealpes-tourisme.com-20250909-143729.xlsx \
+         --mongo mongodb://mongo:27017/LORA_voyage \
+         --base-url /static/img/phototheque \
+         --region 'Auvergne-Rhône-Alpes' \
+         --min-score 85 \
+         --topk 1 \
+         --force && \
+       echo '🧭 Indexation Elasticsearch…' && \
+       python /app/webapp/es_indexer.py --es http://elasticsearch:9200 && \
+       echo '✅ Init terminé.'"
+    ]
+    restart: "no"
+
+  # ▶ Enrichisseur après initdb
+  enricher:
+    build:
+      context: ./
+    working_dir: /app/webapp
+    depends_on:
+      mongo:
+        condition: service_healthy
+      elasticsearch:
+        condition: service_healthy
+      initdb:
+        condition: service_completed_successfully
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/LORA_voyage
+      - MONGO_DB=LORA_voyage
+      - MONGO_COL=objects
+      - MONGO_MIN_DOCS=1
+      - MONGO_WAIT_TIMEOUT=900
+      - ENRICH_PREFER=og,openverse,wikimedia
+      - ENRICH_LIMIT=0
+      - ES_HOST=http://elasticsearch:9200
+      - ES_WAIT_TIMEOUT=600
+    volumes:
+      - ./webapp:/app/webapp
+      - ./data:/app/data:ro
+    command: ["sh","/app/webapp/static/scripts/enrichisseur.sh"]
+    restart: "no"
+
+  attach_photos:
+    build:
+      context: ./
+    working_dir: /app/webapp
+    depends_on:
+      mongo:
+        condition: service_healthy
+      initdb:
+        condition: service_completed_successfully
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/LORA_voyage
+    volumes:
+      - ./webapp:/app/webapp
+      - ./data:/app/data:ro
+    command: [
+      "python","attach_phototheque_zip.py",
+      "--images-dir","/app/webapp/static/img/phototheque",
+      "--xlsx","/app/webapp/static/img/phototheque/phototheque.auvergnerhonealpes-tourisme.com-20250909-143729.xlsx",
+      "--mongo","mongodb://mongo:27017/LORA_voyage",
+      "--base-url","/static/img/phototheque",
+      "--region","Auvergne-Rhône-Alpes",
+      "--min-score","78"
+    ]
+    restart: "no"
+
+  reindex:
+      profiles: ["manual"]
+      working_dir: /app/webapp
+      depends_on:
+        elasticsearch:
+          condition: service_healthy
+        mongo:
+          condition: service_healthy
+      environment:
+        - PYTHONUNBUFFERED=1
+        - MONGO_URI=mongodb://mongo:27017/LORA_voyage
+        - MONGO_DB=LORA_voyage
+        - MONGO_COLLECTION=objects
+        - ES_HOST=http://elasticsearch:9200
+      volumes:
+        - ./webapp:/app/webapp:ro
+      command: ["python","es_indexer.py","--es","http://elasticsearch:9200"]
+      restart: "no"
+
+
+volumes:
+  mongo_data:
+  es_data:

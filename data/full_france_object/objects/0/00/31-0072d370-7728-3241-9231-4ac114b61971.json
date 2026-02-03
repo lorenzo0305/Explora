@@ -1,0 +1,985 @@
+{
+  "@id": "https://data.datatourisme.fr/31/0072d370-7728-3241-9231-4ac114b61971",
+  "dc:identifier": "TFO297079832276",
+  "@type": [
+    "olo:OrderedList",
+    "PointOfInterest",
+    "Tour",
+    "WalkingTour"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "PR 30, der Weg der Kreuze. Auf einer Höhe von etwa 1000 m hat der Lévézou keineswegs das Aussehen einer Gebirgskette. Es ist ein Hochplateau, das mit Buchen und Nadelbäumen bewachsen ist, die mit ihren dunklen Flecken das Grün der Wiesen durchbrechen."
+    ],
+    "en": [
+      "PR 30, the Way of the Cross. At an altitude of around 1000 m, Lévézou is by no means a mountain range. It is a high plateau, covered with beech and coniferous trees, which cut the green of the meadows from their dark patches."
+    ],
+    "it": [
+      "PR 30, le chemin des Croix. A circa 1000 m di altitudine, il Lévézou non ha l'aspetto di una catena montuosa. È un altopiano, ricoperto di faggi e conifere, che tagliano il verde dei prati con le loro macchie scure."
+    ],
+    "fr": [
+      "PR 30, le chemin des Croix. A une altitude voisine de 1000 m, le Lévézou n'a nullement l'aspect d'une chaine montagneuse. C'est un haut plateau, revêtu de hêtres et de résineux, qui coupent de leurs taches sombres le vert des prairies."
+    ],
+    "nl": [
+      "PR 30, le chemin des Croix. Op een hoogte van ongeveer 1000 m heeft de Lévézou niet het uiterlijk van een bergketen. Het is een hoog plateau, bedekt met beuken en naaldbomen, die met hun donkere vlekken het groen van de weilanden snijden."
+    ],
+    "es": [
+      "PR 30, le chemin des Croix. A unos 1.000 m de altitud, el Lévézou no tiene el aspecto de una cordillera. Es una meseta alta, cubierta de hayas y coníferas, que cortan el verde de los prados con sus manchas oscuras."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Randonnée Saint-Léons"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/db224e7a-611f-379d-b03d-1cb615389a8d",
+    "schema:legalName": "HIT Aveyron (ADAT Aveyron)",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/66be3cfa-8d5c-34e7-87b1-87e1705c3fc4",
+      "schema:email": [
+        "webmaster@tourisme-aveyron.com"
+      ],
+      "schema:legalName": "ADT Aveyron",
+      "schema:telephone": [
+        "+33 5 65 75 40 12"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-aveyron.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/ff2ac770-fec5-3042-be0c-b53f3ec81959",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/eff0a36f-82b9-3ece-8f69-973e8ab8422a",
+          "schema:addressLocality": "Saint-Léons",
+          "schema:postalCode": "12780",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12238",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Léons"
+              ],
+              "pt": [
+                "Saint-Léons"
+              ],
+              "en": [
+                "Saint-Léons"
+              ],
+              "it": [
+                "Saint-Léons"
+              ],
+              "fr": [
+                "Saint-Léons"
+              ],
+              "nl": [
+                "Saint-Léons"
+              ],
+              "es": [
+                "Saint-Léons"
+              ]
+            },
+            "insee": "12238",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:legalName": "Randonnée Saint-Léons",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/039b7c31-3fb2-367b-90cf-3bb3c88ae86a",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/118ba3b8-f659-3191-8adb-252f5291c729",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/1dce503f-6f80-3554-abcc-dfe73b27c19e",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/31339d01-163c-344b-85e5-c121f636ec89",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/cf27910b-e41a-30da-b38c-380621484022",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/dd9a38d4-c9c7-3dbe-9ff1-3d10dcf70753",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "PR 30, der Weg der Kreuze. Auf einer Höhe von etwa 1000 m hat der Lévézou keineswegs das Aussehen einer Gebirgskette. Es ist ein Hochplateau, das mit Buchen und Nadelbäumen bewachsen ist, die mit ihren dunklen Flecken das Grün der Wiesen durchbrechen."
+        ],
+        "en": [
+          "PR 30, the Way of the Cross. At an altitude of around 1000 m, Lévézou is by no means a mountain range. It is a high plateau, covered with beech and coniferous trees, which cut the green of the meadows from their dark patches."
+        ],
+        "it": [
+          "PR 30, le chemin des Croix. A circa 1000 m di altitudine, il Lévézou non ha l'aspetto di una catena montuosa. È un altopiano, ricoperto di faggi e conifere, che tagliano il verde dei prati con le loro macchie scure."
+        ],
+        "fr": [
+          "PR 30, le chemin des Croix. A une altitude voisine de 1000 m, le Lévézou n'a nullement l'aspect d'une chaine montagneuse. C'est un haut plateau, revêtu de hêtres et de résineux, qui coupent de leurs taches sombres le vert des prairies."
+        ],
+        "nl": [
+          "PR 30, le chemin des Croix. Op een hoogte van ongeveer 1000 m heeft de Lévézou niet het uiterlijk van een bergketen. Het is een hoog plateau, bedekt met beuken en naaldbomen, die met hun donkere vlekken het groen van de weilanden snijden."
+        ],
+        "es": [
+          "PR 30, le chemin des Croix. A unos 1.000 m de altitud, el Lévézou no tiene el aspecto de una cordillera. Es una meseta alta, cubierta de hayas y coníferas, que cortan el verde de los prados con sus manchas oscuras."
+        ]
+      }
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/74822135-f74f-34c6-bbde-23199867d31d",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/71d26bdf-9473-3e8f-8c07-720273c0265b",
+          "ebucore:comments": {
+            "fr": [
+              "Randonnée Saint-Léons"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Randonnée Saint-Léons"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/2b881177-40ff-342f-9de7-8b23f914f971",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/2853/images/22037_cd59be52-7177-4051-a5d9-46b6ab863d74/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/0c5bf353-7107-3d56-8e96-c4ddee36eab7",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/71d26bdf-9473-3e8f-8c07-720273c0265b",
+          "ebucore:comments": {
+            "fr": [
+              "Randonnée Saint-Léons"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Randonnée Saint-Léons"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/c8141355-1a5f-30e7-9f37-83becd797ba1",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:XML",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "XML"
+                ],
+                "pt": [
+                  "XML"
+                ],
+                "en": [
+                  "XML"
+                ],
+                "it": [
+                  "XML"
+                ],
+                "fr": [
+                  "XML"
+                ],
+                "nl": [
+                  "XML"
+                ],
+                "es": [
+                  "XML"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "application/xml"
+                ],
+                "pt": [
+                  "application/xml"
+                ],
+                "en": [
+                  "application/xml"
+                ],
+                "it": [
+                  "application/xml"
+                ],
+                "fr": [
+                  "application/xml"
+                ],
+                "nl": [
+                  "application/xml"
+                ],
+                "es": [
+                  "application/xml"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/2853/documents/9638c3d2-8abf-4a99-9b01-0ef832b70601.xml"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6dde9697-e627-3c92-84aa-21138816c941",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/71d26bdf-9473-3e8f-8c07-720273c0265b",
+          "ebucore:comments": {
+            "fr": [
+              "Randonnée Saint-Léons"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Randonnée Saint-Léons"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/03f94d49-8d66-305e-a4ce-3cd0c69bd2be",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:GPX",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "GPX-Datei"
+                ],
+                "pt": [
+                  "Ficheiro GPX"
+                ],
+                "en": [
+                  "GPX file"
+                ],
+                "it": [
+                  "File GPX"
+                ],
+                "fr": [
+                  "Fichier GPX"
+                ],
+                "nl": [
+                  "GPX-bestand"
+                ],
+                "es": [
+                  "Archivo GPX"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "application/gpx+xml"
+                ],
+                "pt": [
+                  "application/gpx+xml"
+                ],
+                "en": [
+                  "application/gpx+xml"
+                ],
+                "it": [
+                  "application/gpx+xml"
+                ],
+                "fr": [
+                  "application/gpx+xml"
+                ],
+                "nl": [
+                  "application/gpx+xml"
+                ],
+                "es": [
+                  "application/gpx+xml"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/2853/documents/18b1d43f-b574-42c3-8bfb-c806fe85f6be.gpx"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/74822135-f74f-34c6-bbde-23199867d31d",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/71d26bdf-9473-3e8f-8c07-720273c0265b",
+          "ebucore:comments": {
+            "fr": [
+              "Randonnée Saint-Léons"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Randonnée Saint-Léons"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/2b881177-40ff-342f-9de7-8b23f914f971",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:Webp",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "WebP-Bilddatei"
+                ],
+                "pt": [
+                  "Ficheiro imagem WebP"
+                ],
+                "en": [
+                  "WebP image file"
+                ],
+                "it": [
+                  "File immagine WebP"
+                ],
+                "fr": [
+                  "WebP fichier image"
+                ],
+                "nl": [
+                  "WebP-afbeelding"
+                ],
+                "es": [
+                  "Archivo de imagen WebP"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/webp"
+                ],
+                "pt": [
+                  "image/webp"
+                ],
+                "en": [
+                  "image/webp"
+                ],
+                "it": [
+                  "image/webp"
+                ],
+                "fr": [
+                  "image/webp"
+                ],
+                "nl": [
+                  "image/webp"
+                ],
+                "es": [
+                  "image/webp"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/2853/images/22037_cd59be52-7177-4051-a5d9-46b6ab863d74/600.webp"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d3fb7c78-36ee-3ee2-8da9-132d6590c74e",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/0eb4e688-6d41-3b1c-9498-5c4eeb5fc784",
+          "ebucore:comments": {
+            "fr": [
+              "Le chemin des Croix  (Saint-Léons) - PR n° 30"
+            ]
+          },
+          "ebucore:title": {
+            "fr": [
+              "Le chemin des Croix  (Saint-Léons) - PR n° 30"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation"
+          ]
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/c450ea98-4125-3a42-a213-fbf7807afdc6",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:PDF",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "PDF-Datei"
+                ],
+                "pt": [
+                  "Ficheiro PDF"
+                ],
+                "en": [
+                  "PDF file"
+                ],
+                "it": [
+                  "File PDF"
+                ],
+                "fr": [
+                  "Adobe Portable Document Format"
+                ],
+                "nl": [
+                  "Pdf-bestand"
+                ],
+                "es": [
+                  "Archivo PDF"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "application/pdf"
+                ],
+                "pt": [
+                  "application/pdf"
+                ],
+                "en": [
+                  "application/pdf"
+                ],
+                "it": [
+                  "application/pdf"
+                ],
+                "fr": [
+                  "application/pdf"
+                ],
+                "nl": [
+                  "application/pdf"
+                ],
+                "es": [
+                  "application/pdf"
+                ]
+              }
+            }
+          ],
+          "ebucore:heightUnit": "px",
+          "ebucore:locator": [
+            "https://medias.hit.enaveyron.fr/fiches/2853/documents/714c4d3b-5704-40a5-873e-fc96ed336329.pdf"
+          ],
+          "ebucore:widthUnit": "px",
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/21de839f-0ee9-311b-9bcc-4cc4b2257b69",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/28db919a-725e-3d58-9ead-1866be514a77",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4998e2c5-0a6f-30f9-9b46-4aae4fd4f0c1",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/625c43e6-5204-303a-9753-4c6f03c6dd2e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/92ea05c8-9e8f-3c28-ab76-050e2b4d9bc8",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/0d92d770-1c9d-3ad7-a8c5-b613d3bf9d9e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/eff0a36f-82b9-3ece-8f69-973e8ab8422a",
+          "schema:addressLocality": "Saint-Léons",
+          "schema:postalCode": "12780",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:12238",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Léons"
+              ],
+              "pt": [
+                "Saint-Léons"
+              ],
+              "en": [
+                "Saint-Léons"
+              ],
+              "it": [
+                "Saint-Léons"
+              ],
+              "fr": [
+                "Saint-Léons"
+              ],
+              "nl": [
+                "Saint-Léons"
+              ],
+              "es": [
+                "Saint-Léons"
+              ]
+            },
+            "insee": "12238",
+            "isPartOfDepartment": {
+              "@id": "kb:France7612",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Aveyron"
+                ],
+                "pt": [
+                  "Aveyron"
+                ],
+                "en": [
+                  "Aveyron"
+                ],
+                "it": [
+                  "Aveyron"
+                ],
+                "fr": [
+                  "Aveyron"
+                ],
+                "nl": [
+                  "Aveyron"
+                ],
+                "es": [
+                  "Aveyron"
+                ]
+              },
+              "insee": "12",
+              "isPartOfRegion": {
+                "@id": "kb:France76",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Occitanie"
+                  ],
+                  "pt": [
+                    "Occitanie"
+                  ],
+                  "en": [
+                    "Occitanie"
+                  ],
+                  "it": [
+                    "Occitanie"
+                  ],
+                  "fr": [
+                    "Occitanie"
+                  ],
+                  "nl": [
+                    "Occitanie"
+                  ],
+                  "es": [
+                    "Occitanie"
+                  ]
+                },
+                "insee": "76",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/a38f992b-7077-397e-b4c4-4ab96edfe383",
+        "schema:latitude": "44.2152",
+        "schema:longitude": "2.98612917",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2023-07-20",
+  "lastUpdateDatatourisme": "2025-05-07T12:20:20.035Z"
+}
