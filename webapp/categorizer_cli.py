@@ -26,7 +26,8 @@ CATEGORY_MAPPING = {
     },
     "culture": {
         "types": [
-            "CulturalSite", "Museum", "Castle", "ReligiousSite", 
+            "CulturalSite", "Museum", "Castle", "ReligiousSite",
+            "Cinema", "MovieTheater",
             "Chapel", "Church", "Cathedral", "Monastery",
             "RemarkableBuilding", "ArcheologicalSite", "TechnicalHeritage",
             "RemembranceSite", "DefenceSite", "Library", "ArtGallery",
@@ -98,7 +99,7 @@ CATEGORY_MAPPING = {
 KEYWORD_FALLBACK = {
     "restauration": [
         r"\b(restaurant|cafe|brasserie|bistrot|pizzeria|creperie|snack)\b",
-        r"\b(auberge|gite|table|repas|gastronomie)\b",
+        r"\b(table|repas|gastronomie)\b",
         r"\b(boulangerie|patisserie|salon de the|tea room)\b",
         r"\b(bar|pub|taverne)\b"
     ],
@@ -169,6 +170,16 @@ def guess_category_from_label(label: str) -> Dict[str, str]:
     
     best_category = "autres"
     best_score = 0
+    priority = {
+        "hebergement": 0,
+        "restauration": 1,
+        "culture": 2,
+        "spectacles": 3,
+        "sport": 4,
+        "nature": 5,
+        "shopping": 6,
+        "services": 7
+    }
     
     for category_key, patterns in KEYWORD_FALLBACK.items():
         score = 0
@@ -179,6 +190,9 @@ def guess_category_from_label(label: str) -> Dict[str, str]:
         if score > best_score:
             best_score = score
             best_category = category_key
+        elif score == best_score and score > 0:
+            if priority.get(category_key, 99) < priority.get(best_category, 99):
+                best_category = category_key
     
     return {
         "label": CATEGORY_MAPPING.get(best_category, {}).get("label", "Autres points d'intérêt"),
@@ -281,7 +295,7 @@ REGIONS = {
 
 if __name__ == "__main__":
     BASE_DIR = Path(__file__).parent.parent
-    DATA_DIR = BASE_DIR / "data"
+    DATA_DIR = BASE_DIR / "data" / "full_france_object"
     OBJECTS_DIR = DATA_DIR / "full_france_object" / "objects"
     
     # Déterminer quelle(s) région(s) traiter

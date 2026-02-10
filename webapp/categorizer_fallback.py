@@ -19,11 +19,12 @@ KEYWORD_FALLBACK = {
         r'\bcreperie\b', r'\bcrêperie\b', r'\bpizzeria\b', r'\bboucherie\b',
         r'\bboulangerie\b', r'\bpatisserie\b', r'\bpâtisserie\b', r'\bmarche\b',
         r'\bmarché\b', r'\bgastronomie\b', r'\bcuisine\b', r'\btable\b',
-        r'\bauberge\b', r'\btraiteur\b', r'\bsnack\b', r'\bfood\b'
+        r'\btraiteur\b', r'\bsnack\b', r'\bfood\b'
     ],
     "culture": [
-        r'\bmusee\b', r'\bmusée\b', r'\bchateau\b', r'\bchâteau\b', r'\beglise\b',
-        r'\béglise\b', r'\bchapelle\b', r'\babbaye\b', r'\bcathedrale\b',
+        r'\bcinema\b', r'\bcinéma\b', r'\bmusee\b', r'\bmusée\b', r'\bchateau\b',
+        r'\bchâteau\b', r'\beglise\b', r'\béglise\b', r'\bchapelle\b', r'\babbaye\b',
+        r'\bcathedrale\b',
         r'\bcathédrale\b', r'\bmonastere\b', r'\bmonastère\b', r'\bpatrimoine\b',
         r'\bhistoire\b', r'\bhistorique\b', r'\bartistique\b', r'\bculture\b',
         r'\bgalerie\b', r'\bexposition\b', r'\bartiste\b', r'\bmonument\b',
@@ -83,6 +84,16 @@ def guess_category_from_label(label: str) -> Dict[str, str]:
     
     # Compter les matches par catégorie
     scores = {}
+    priority = {
+        "hebergement": 0,
+        "restauration": 1,
+        "culture": 2,
+        "spectacles": 3,
+        "sport": 4,
+        "nature": 5,
+        "shopping": 6,
+        "services": 7
+    }
     for category_slug, patterns in KEYWORD_FALLBACK.items():
         score = 0
         for pattern in patterns:
@@ -93,7 +104,7 @@ def guess_category_from_label(label: str) -> Dict[str, str]:
     
     # Retourner la meilleure catégorie
     if scores:
-        best_slug = max(scores, key=scores.get)
+        best_slug = max(scores, key=lambda k: (scores[k], -priority.get(k, 99)))
         return {
             "label": CATEGORY_MAPPING[best_slug]["label"],
             "slug": best_slug
@@ -167,7 +178,7 @@ if __name__ == "__main__":
     import sys
     
     BASE_DIR = Path(__file__).parent.parent
-    DATA_DIR = BASE_DIR / "data"
+    DATA_DIR = BASE_DIR / "data" / "full_france_object"
     OBJECTS_DIR = DATA_DIR / "full_france_object" / "objects"
     
     region = sys.argv[1] if len(sys.argv) > 1 else "auvergne"
