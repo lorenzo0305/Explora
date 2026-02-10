@@ -21,7 +21,7 @@ CATEGORY_MAPPING = {
             "BrasserieOrTavern", "Cafe", "BarOrPub", "Market",
             "Winery", "Store"
         ],
-        "label": "🍽️ Restauration & Gastronomie",
+        "label": "Restauration et gastronomie",
         "slug": "restauration"
     },
     "culture": {
@@ -32,7 +32,7 @@ CATEGORY_MAPPING = {
             "RemembranceSite", "DefenceSite", "Library", "ArtGallery",
             "ConventionalExhibition"
         ],
-        "label": "🎨 Culture & Patrimoine",
+        "label": "Culture et patrimoine",
         "slug": "culture"
     },
     "spectacles": {
@@ -41,7 +41,7 @@ CATEGORY_MAPPING = {
             "TheatreEvent", "EntertainmentAndEvent", "Parade",
             "LocalAnimation", "OpenDay", "Circus", "Opera", "DanceEvent"
         ],
-        "label": "🎭 Spectacles & Événements",
+        "label": "Spectacles et événements",
         "slug": "spectacles"
     },
     "sport": {
@@ -52,7 +52,7 @@ CATEGORY_MAPPING = {
             "Skiing", "IceRink", "GolfCourse", "TennisComplex",
             "FitnessCenter", "WaterSport", "AirSport"
         ],
-        "label": "🏃 Sports & Activités Outdoor",
+        "label": "Sports et activités outdoor",
         "slug": "sport"
     },
     "nature": {
@@ -62,7 +62,7 @@ CATEGORY_MAPPING = {
             "Waterfall", "Cave", "Forest", "Mountain",
             "BotanicalGardenOrZoo", "Zoo", "Arboretum"
         ],
-        "label": "🌳 Nature & Détente",
+        "label": "Nature et détente",
         "slug": "nature"
     },
     "hebergement": {
@@ -72,7 +72,7 @@ CATEGORY_MAPPING = {
             "SelfCateringAccommodation", "BedAndBreakfast",
             "Guesthouse", "GroupLodging", "CollectiveAccommodation"
         ],
-        "label": "🏨 Hébergement",
+        "label": "Hébergement",
         "slug": "hebergement"
     },
     "shopping": {
@@ -80,7 +80,7 @@ CATEGORY_MAPPING = {
             "Store", "BricABrac", "CraftsmanShop", "LocalProducer",
             "SaleEvent"
         ],
-        "label": "🛍️ Shopping & Artisanat",
+        "label": "Shopping et artisanat",
         "slug": "shopping"
     },
     "services": {
@@ -89,7 +89,7 @@ CATEGORY_MAPPING = {
             "ConvenientService", "TaxiCompany", "TaxiStation",
             "Cybercafe", "Rental"
         ],
-        "label": "👥 Services & Activités encadrées",
+        "label": "Services et activités encadrées",
         "slug": "services"
     }
 }
@@ -104,7 +104,7 @@ KEYWORD_FALLBACK = {
     ],
     "culture": [
         r"\b(musee|museum|galerie|expo|exposition|theatre|cinema)\b",
-        r"\b(chateau|chateau fort|fortification|abbaye|basilique|eglise)\b",
+        r"\b(chapelle|chateau|chateau fort|fortification|abbaye|basilique|eglise)\b",
         r"\b(monument|patrimoine|historique|archeologique|pigeonnier)\b",
         r"\b(bibliotheque|archives|mediatheque)\b",
         r"\b(beaux-arts|pinacotbeque|collection|fresco|tableau|sculpture)\b"
@@ -181,14 +181,14 @@ def guess_category_from_label(label: str) -> Dict[str, str]:
             best_category = category_key
     
     return {
-        "label": CATEGORY_MAPPING.get(best_category, {}).get("label", "📍 Autres points d'intérêt"),
+        "label": CATEGORY_MAPPING.get(best_category, {}).get("label", "Autres points d'intérêt"),
         "slug": CATEGORY_MAPPING.get(best_category, {}).get("slug", "autres")
     }
 
 def get_category_for_types(types: List[str]) -> Dict[str, str]:
     """Détermine la catégorie principale"""
     if not types:
-        return {"label": "📍 Autres points d'intérêt", "slug": "autres"}
+        return {"label": "Autres points d'intérêt", "slug": "autres"}
     
     category_scores = {}
     for category_key, category_info in CATEGORY_MAPPING.items():
@@ -205,7 +205,7 @@ def get_category_for_types(types: List[str]) -> Dict[str, str]:
             "slug": CATEGORY_MAPPING[best_category_key]["slug"]
         }
     
-    return {"label": "📍 Autres points d'intérêt", "slug": "autres"}
+    return {"label": "Autres points d'intérêt", "slug": "autres"}
 
 
 def load_detailed_data(file_path: str, base_path: str) -> Dict:

@@ -101,7 +101,7 @@ def guess_category_from_label(label: str) -> Dict[str, str]:
     
     # Par défaut
     return {
-        "label": "📍 Autres points d'intérêt",
+        "label": "Autres points d'intérêt",
         "slug": "autres"
     }
 

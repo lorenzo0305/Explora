@@ -17,7 +17,7 @@ CATEGORY_MAPPING = {
             "BrasserieOrTavern", "Cafe", "BarOrPub", "Market",
             "Winery", "Store"  # pour les boutiques alimentaires
         ],
-        "label": "🍽️ Restauration & Gastronomie",
+        "label": "Restauration et gastronomie",
         "slug": "restauration"
     },
     "culture": {
@@ -28,7 +28,7 @@ CATEGORY_MAPPING = {
             "RemembranceSite", "DefenceSite", "Library", "ArtGallery",
             "ConventionalExhibition"
         ],
-        "label": "🎨 Culture & Patrimoine",
+        "label": "Culture et patrimoine",
         "slug": "culture"
     },
     "spectacles": {
@@ -38,7 +38,7 @@ CATEGORY_MAPPING = {
             "LocalAnimation", "OpenDay", "LocalAnimation",
             "Circus", "Opera", "DanceEvent"
         ],
-        "label": "🎭 Spectacles & Événements",
+        "label": "Spectacles et événements",
         "slug": "spectacles"
     },
     "sport": {
@@ -49,7 +49,7 @@ CATEGORY_MAPPING = {
             "Skiing", "IceRink", "GolfCourse", "TennisComplex",
             "FitnessCenter", "WaterSport", "AirSport"
         ],
-        "label": "🏃 Sports & Activités Outdoor",
+        "label": "Sports et activités outdoor",
         "slug": "sport"
     },
     "nature": {
@@ -59,7 +59,7 @@ CATEGORY_MAPPING = {
             "Waterfall", "Cave", "Forest", "Mountain",
             "BotanicalGardenOrZoo", "Zoo", "Arboretum"
         ],
-        "label": "🌳 Nature & Détente",
+        "label": "Nature et détente",
         "slug": "nature"
     },
     "hebergement": {
@@ -69,7 +69,7 @@ CATEGORY_MAPPING = {
             "SelfCateringAccommodation", "BedAndBreakfast",
             "Guesthouse", "GroupLodging", "CollectiveAccommodation"
         ],
-        "label": "🏨 Hébergement",
+        "label": "Hébergement",
         "slug": "hebergement"
     },
     "shopping": {
@@ -77,7 +77,7 @@ CATEGORY_MAPPING = {
             "Store", "BricABrac", "CraftsmanShop", "LocalProducer",
             "SaleEvent"
         ],
-        "label": "🛍️ Shopping & Artisanat",
+        "label": "Shopping et artisanat",
         "slug": "shopping"
     },
     "services": {
@@ -86,7 +86,7 @@ CATEGORY_MAPPING = {
             "ConvenientService", "TaxiCompany", "TaxiStation",
             "Cybercafe", "Rental"
         ],
-        "label": "👥 Services & Activités encadrées",
+        "label": "Services et activités encadrées",
         "slug": "services"
     }
 }
@@ -186,7 +186,7 @@ def get_category_for_types(types: List[str]) -> Dict[str, str]:
         }
     
     return {
-        "label": "📍 Autres points d'intérêt",
+        "label": "Autres points d'intérêt",
         "slug": "autres"
     }
 
@@ -223,7 +223,7 @@ def guess_category_from_label(label: str) -> Dict[str, str]:
     
     # Par défaut
     return {
-        "label": "📍 Autres points d'intérêt",
+        "label": "Autres points d'intérêt",
         "slug": "autres"
     }
 
