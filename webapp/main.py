@@ -141,6 +141,13 @@ async def creation_editor(request: Request, id: str | None = None):
     """
     return templates.TemplateResponse("Creation.html", {"request": request, "id": id})
 
+@app.get("/soumission", response_class=HTMLResponse)
+async def soumission(request: Request):
+    """
+    Affiche la page de soumission des critères (Soumission.html).
+    """
+    return templates.TemplateResponse("Soumission.html", {"request": request})
+
 #  Détail d’un voyage (vue générale) 
 @app.get("/journeys/view/{id}", response_class=HTMLResponse)
 async def view_journey(request: Request, id: str):
