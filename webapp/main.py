@@ -139,7 +139,7 @@ async def creation_editor(request: Request, id: str | None = None):
     - Si 'id' est fourni en query (?id=...), charge l'édition de ce voyage.
     - Sinon, démarre un nouveau voyage (id=None).
     """
-    return templates.TemplateResponse("Creation.html", {"request": request, "id": id})
+    return templates.TemplateResponse("Soumission.html", {"request": request, "id": id})
 
 @app.get("/soumission", response_class=HTMLResponse)
 async def soumission(request: Request):
@@ -174,7 +174,7 @@ async def detail_act_perso_redirect(id: str):
 # Edition via /creation/{journey_id}
 @app.get("/creation/{journey_id}", response_class=HTMLResponse)
 async def creation_edit(request: Request, journey_id: str):
-    return templates.TemplateResponse("Creation.html", {"request": request, "id": journey_id})
+    return templates.TemplateResponse("Soumission.html", {"request": request, "id": journey_id})
 
 # Page Région
 @app.get("/region/{slug}", response_class=HTMLResponse)
