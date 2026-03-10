@@ -2,7 +2,7 @@ function updateVal(id) {
     document.getElementById('val-' + id).textContent = document.getElementById(id).value;
 }
 
-document.getElementById('criteriaForm').addEventListener('submit', function (e) {
+document.getElementById('criteriaForm').addEventListener('submit', async function (e) {
     e.preventDefault();
 
     const formData = {
@@ -15,17 +15,30 @@ document.getElementById('criteriaForm').addEventListener('submit', function (e) 
 
     console.log("Critères soumis :", formData);
 
-    // Animation bouton
     const btn = document.getElementById('submitBtn');
-    const originalText = btn.innerHTML;
-    btn.innerHTML = "Création en cours...";
-    btn.style.opacity = "0.8";
+    btn.disabled = true;
+    btn.textContent = 'Soumission en cours...';
 
-    // Simulation traitement ou redirection
-    setTimeout(() => {
-        // Redirection vers la page de création/édition classique avec ces préréglages (pour l'instant, juste redirection)
-        // Vous pouvez passer ces paramètres en URL ou localStorage
-        localStorage.setItem('wish_last_criteria', JSON.stringify(formData));
-        window.location.href = '/creation';
-    }, 1000);
+    try{
+        const res = await fetch('/algorithm', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+
+        if (!res.ok) {
+            throw new Error(`Erreur HTTP ${res.status}`);
+        }
+
+        const data = await res.json();
+        console.log("Réponse reçue :", data);
+    } catch (error) {
+        console.error("Erreur lors de la soumission :", error);
+        alert("Une erreur est survenue lors de la soumission. Veuillez réessayer.");
+    } finally {
+        btn.disabled = false;
+        btn.textContent = 'Soumettre';
+    }
 });
