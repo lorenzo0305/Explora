@@ -27,6 +27,27 @@
 
                 <form class="criteria-form" id="criteriaForm">
 
+                    <!-- Critères de Localisation -->
+                    <div class="criteria-item">
+                        <div class="criteria-label">
+                            <span>🏙️ Ville</span>
+                        </div>
+                        <input type="text" id="ville" name="ville" class="criteria-input" placeholder="Ex: Paris, Lyon...">
+                    </div>
+
+                    <div class="criteria-item">
+                        <div class="criteria-label">
+                            <span>📍 Zone géographique</span>
+                        </div>
+                        <select id="rayon" name="rayon" class="criteria-select">
+                            <option value="10">Rayon de 10 km</option>
+                            <option value="20" selected>Rayon de 20 km</option>
+                            <option value="30">Rayon de 30 km</option>
+                        </select>
+                    </div>
+
+                    <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 10px 0;">
+
                     <!-- Critère: Détente -->
                     <div class="criteria-item">
                         <div class="criteria-label">

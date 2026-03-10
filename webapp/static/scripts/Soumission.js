@@ -5,12 +5,31 @@ function updateVal(id) {
 document.getElementById('criteriaForm').addEventListener('submit', async function (e) {
     e.preventDefault();
 
-    const formData = {
+    // ==========================================
+    // DONNÉES DE LOCALISATION (Ville & Zone Géo)
+    // ==========================================
+    const locationData = {
+        ville: document.getElementById('ville').value.trim(),
+        rayon: parseInt(document.getElementById('rayon').value, 10)
+    };
+
+    // ==========================================
+    // CRITÈRES DE PRÉFÉRENCES (1 à 10)
+    // ==========================================
+    const preferencesData = {
         detente: document.getElementById('detente').value,
         nature: document.getElementById('nature').value,
         sport: document.getElementById('sport').value,
         gastronomie: document.getElementById('gastronomie').value,
         culture: document.getElementById('culture').value
+    };
+
+    // ==========================================
+    // FUSION DES DONNÉES POUR SOUMISSION
+    // ==========================================
+    const formData = {
+        ...locationData,
+        ...preferencesData
     };
 
     console.log("Critères soumis :", formData);
@@ -19,7 +38,7 @@ document.getElementById('criteriaForm').addEventListener('submit', async functio
     btn.disabled = true;
     btn.textContent = 'Soumission en cours...';
 
-    try{
+    try {
         const res = await fetch('/algorithm', {
             method: 'POST',
             headers: {
