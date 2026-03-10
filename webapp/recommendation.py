@@ -18,7 +18,7 @@ def calculer_distance(lat_c, lon_c, lats, lons):
     a = np.sin(dlat/2)**2 + np.cos(np.radians(lat_c)) * np.cos(np.radians(lats)) * np.sin(dlon/2)**2
     return R * 2 * np.arcsin(np.sqrt(a))
 
-def lancer_explora_complet():
+def lancer_explora_complet(ville_user, rayon_max, nature, gastronomie, sport, culture, detente):
     dossier = "/kaggle/working/data/models"
     fichiers = [f for f in os.listdir(dossier) if f.endswith('_REGIONALE.pkl')]
 
@@ -44,7 +44,7 @@ def lancer_explora_complet():
     print(f"{len(df_global)} activités chargées au total.")
 
     # --- LOCALISATION ---
-    ville_user = input("\nDans quelle ville es-tu ? ").strip()
+    #ville_user = input("\nDans quelle ville es-tu ? ").strip()
     print(f"Recherche du centre de {ville_user}...")
     loc = geolocator.geocode(f"{ville_user}, France")
 
@@ -55,7 +55,7 @@ def lancer_explora_complet():
     lat_c, lon_c = loc.latitude, loc.longitude
     print(f"→ Coordonnées : {lat_c:.4f}, {lon_c:.4f}")
 
-    rayon_max = float(input("Rayon de recherche (km) : ").strip() or 20)
+    #rayon_max = float(input("Rayon de recherche (km) : ").strip() or 20)
 
     # --- FILTRAGE GÉOGRAPHIQUE ---
     df_global['dist'] = calculer_distance(lat_c, lon_c, 
@@ -73,7 +73,7 @@ def lancer_explora_complet():
     # --- PRÉFÉRENCES ---
     print("\nNotes (0-10) pour vos préférences :")
     themes = ["Nature", "Gastronomie", "Sport", "Culture", "Détente"]
-    n_user = [float(input(f"  {t} : ") or 5.0) for t in themes]
+    n_user = [nature,gastronomie,sport,culture,detente]
 
     # --- TRI HYBRIDE (IA + PROXIMITÉ) ---
     X = np.array([[s['nature'], s['gastronomie'], s['sport'], s['culture'], s['detente']] 
@@ -93,9 +93,7 @@ def lancer_explora_complet():
     ordre = np.argsort(score_final)[::-1][:20]
 
     # --- AFFICHAGE ---
-    print(f"\nTOP 20 — {ville_user.upp
-    
-    er()} ({rayon_max} km)")
+    print(f"\nTOP 20 — {ville_user.upper()} ({rayon_max} km)")
     print("-" * 65)
     for rank, i in enumerate(ordre, start=1):
         idx = indices[0][i]
