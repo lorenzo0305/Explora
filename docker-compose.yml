@@ -1,4 +1,3 @@
-
 services:
   webapp:
     build:
@@ -123,8 +122,8 @@ services:
       - REGION_FILES=Auvergne-Rhône-Alpes.json,Hauts-de-France.json
     volumes:
       - ./data/full_france_object/objects:/app/data/full_france_object/objects:ro
-      - ./data/Auvergne-Rhône-Alpes.json:/app/data/Auvergne-Rhône-Alpes.json:ro
-      - ./data/Hauts-de-France.json:/app/data/Hauts-de-France.json:ro
+      - ./data/full_france_object/Auvergne-Rhône-Alpes.json:/app/data/Auvergne-Rhône-Alpes.json:ro
+      - ./data/full_france_object/Hauts-de-France.json:/app/data/Hauts-de-France.json:ro
 
     command: [
       "sh","-lc",
