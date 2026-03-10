@@ -18,6 +18,8 @@ from itertools import chain
 import re
 from threading import RLock
 
+from recommendation import lancer_explora_complet
+
 app = FastAPI()
 
 #  Panier en mémoire (dev) 
@@ -1013,3 +1015,26 @@ async def object_detail(request: Request, item_id: str):
         "types": doc.get("@type", []),
         "imageAttribution": doc.get("image_attribution")
     })
+
+class CriteriaPayload(BaseModel):
+    ville: str
+    rayon: float
+    detente: int
+    nature: int
+    sport: int
+    gastronomie: int
+    culture: int
+
+@app.post("/algorithm")
+async def create_travel(payload: CriteriaPayload):
+    detente = payload.detente
+    nature = payload.nature
+    sport = payload.sport
+    gastronomie = payload.gastronomie
+    culture = payload.culture
+
+    return {
+        "status": "ok",
+        "received": payload.model_dump(),
+        "total": detente + nature + sport + gastronomie + culture
+    }
