@@ -93,9 +93,7 @@ def lancer_explora_complet():
     ordre = np.argsort(score_final)[::-1][:20]
 
     # --- AFFICHAGE ---
-    print(f"\nTOP 20 — {ville_user.upp
-    
-    er()} ({rayon_max} km)")
+    print(f"\nTOP 20 — {ville_user.upper()} ({rayon_max} km)")
     print("-" * 65)
     for rank, i in enumerate(ordre, start=1):
         idx = indices[0][i]
