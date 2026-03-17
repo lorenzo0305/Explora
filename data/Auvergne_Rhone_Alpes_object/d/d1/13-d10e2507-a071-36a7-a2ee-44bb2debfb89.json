@@ -1,0 +1,408 @@
+{
+  "@id": "https://data.datatourisme.fr/13/d10e2507-a071-36a7-a2ee-44bb2debfb89",
+  "dc:identifier": "179997",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "de": [
+      "RESTAURANT LES PORTES DU SOLEIL"
+    ],
+    "en": [
+      "Mountain restaurant Les Portes du Soleil"
+    ],
+    "it": [
+      "RESTAURANT LES PORTES DU SOLEIL"
+    ],
+    "fr": [
+      "Restaurant d'altitude Les Portes du Soleil"
+    ],
+    "es": [
+      "RESTAURANT LES PORTES DU SOLEIL"
+    ],
+    "nl": [
+      "Bergrestaurant Les Portes du Soleil"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/d61e4bbd-6393-3911-9e65-26ea173a7c8b",
+    "dc:identifier": "449",
+    "schema:email": [
+      "editions@chatel.com",
+      "relation.interne@chatel.com",
+      "webmaster@chatel.com"
+    ],
+    "schema:legalName": "Châtel Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.chatel.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/e2178217-e595-3a75-892a-5dd2fbac36ab",
+      "schema:email": [
+        "restaurant-porte-du-soleil@orange.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 50 73 32 46"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/d50f9f6e-e3fe-3f64-91a4-17b036d4d6bb",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/aac180a2-87f4-384f-b26c-e3419924c290",
+          "schema:addressLocality": "Châtel",
+          "schema:postalCode": "74390",
+          "schema:streetAddress": [
+            "Super-Châtel"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:74063",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Châtel"
+              ],
+              "pt": [
+                "Châtel"
+              ],
+              "en": [
+                "Châtel"
+              ],
+              "it": [
+                "Châtel"
+              ],
+              "fr": [
+                "Châtel"
+              ],
+              "nl": [
+                "Châtel"
+              ],
+              "es": [
+                "Châtel"
+              ]
+            },
+            "insee": "74063",
+            "isPartOfDepartment": {
+              "@id": "kb:France8474",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Savoie"
+                ],
+                "pt": [
+                  "Haute-Savoie"
+                ],
+                "en": [
+                  "Haute-Savoie"
+                ],
+                "it": [
+                  "Haute-Savoie"
+                ],
+                "fr": [
+                  "Haute-Savoie"
+                ],
+                "nl": [
+                  "Haute-Savoie"
+                ],
+                "es": [
+                  "Haute-Savoie"
+                ]
+              },
+              "insee": "74",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/8dac3667-ce15-3dd1-912f-bd4bfc14a62c",
+        "schema:elevation": "1600",
+        "schema:latitude": "46.266602",
+        "schema:longitude": "6.851971",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/64cdcbe1-0c4b-3042-8168-a86fe220b7db",
+          "schema:validFrom": "2026-12-20T00:00:00",
+          "schema:validThrough": "2026-04-05T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Tage und Öffnungszeiten nicht bekannt gegeben"
+            ],
+            "en": [
+              "Opening days and times not communicated"
+            ],
+            "it": [
+              "Giorni e orari di apertura non pubblicati"
+            ],
+            "fr": [
+              "Jours et horaires d'ouverture non-communiqués"
+            ],
+            "nl": [
+              "Openingsdagen en -tijden niet gepubliceerd"
+            ],
+            "es": [
+              "Días y horarios de apertura no publicados"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/0edd4ef2-e4e5-35f3-a2c6-965ec72438d7",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/4c8e0c48-30bd-3fb4-b0c3-e1bd5a5364bb",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/94146786-6124-39f3-b6a8-852b524474fa",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a3b3d46e-f660-3b03-8d9e-24fb1056dada",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/ea4c5180-f78f-34ae-a283-74ab4968922a",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/541a1f94-2b4c-3c16-86d9-fd874469da22",
+      "schema:email": [
+        "editions@chatel.com",
+        "relation.interne@chatel.com",
+        "webmaster@chatel.com"
+      ],
+      "schema:legalName": "Châtel Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.chatel.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2026-01-19",
+  "lastUpdateDatatourisme": "2026-01-20T06:48:56.251Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "@id": "https://data.datatourisme.fr/13/22184b9d-2fb6-39f3-bde3-313dbd790e6d",
+  "dc:identifier": "7593317",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Winery",
+    "BistroOrWineBar",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "SportsAndLeisurePlace"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "L'imprévu"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/1373b284-bc38-3890-849e-92d324f56de0",
+    "dc:identifier": "1541",
+    "schema:legalName": "Vichy Destinations",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.vichymonamour.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c55300f9-494b-38ba-adff-d663c77ad33a",
+      "schema:legalName": "ALLIER BOURBONNAIS ATTRACTIVITÉ - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/13022e2a-ed4e-3b69-b4f4-c9fc7834c124",
+      "schema:email": [
+        "limprevuvichy03200@gmail.com"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/d6d71ddd-9b44-36a3-ad6f-f90ffdb7f200",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/fec5d6d6-fb19-3662-a69f-b4adadf0d7dc",
+          "schema:addressLocality": "Vichy",
+          "schema:postalCode": "03200",
+          "schema:streetAddress": [
+            "5 place de la Gare"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:03310",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Vichy"
+              ],
+              "pt": [
+                "Vichy"
+              ],
+              "en": [
+                "Vichy"
+              ],
+              "it": [
+                "Vichy"
+              ],
+              "fr": [
+                "Vichy"
+              ],
+              "nl": [
+                "Vichy"
+              ],
+              "es": [
+                "Vichy"
+              ]
+            },
+            "insee": "03310",
+            "isPartOfDepartment": {
+              "@id": "kb:France8403",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Allier"
+                ],
+                "pt": [
+                  "Allier"
+                ],
+                "en": [
+                  "Allier"
+                ],
+                "it": [
+                  "Allier"
+                ],
+                "fr": [
+                  "Allier"
+                ],
+                "nl": [
+                  "Allier"
+                ],
+                "es": [
+                  "Allier"
+                ]
+              },
+              "insee": "03",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/648b36ab-7fe4-3bff-8112-9c3621cd404f",
+        "schema:latitude": "46.127123",
+        "schema:longitude": "3.429705",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/3451bc7d-afcb-3b69-a8f8-9a638ab8b424",
+      "schema:legalName": "Vichy Destinations",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.vichymonamour.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2026-02-19",
+  "lastUpdateDatatourisme": "2026-02-20T06:58:15.629Z"
+}

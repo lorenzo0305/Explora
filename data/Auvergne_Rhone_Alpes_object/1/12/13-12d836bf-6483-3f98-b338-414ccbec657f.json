@@ -1,0 +1,329 @@
+{
+  "@id": "https://data.datatourisme.fr/13/12d836bf-6483-3f98-b338-414ccbec657f",
+  "dc:identifier": "16152",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Lane Xang"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/ec8ce6ab-b3e9-32a8-9b85-51ba726a1227",
+    "dc:identifier": "220",
+    "schema:email": [
+      "accueil-tourisme@ccpu.fr",
+      "amendes@roannais-tourisme.com",
+      "bmodenese@roannais-tourisme.com",
+      "claplace@roannais-tourisme.com",
+      "claroche@copler.fr",
+      "creynier@roannais-tourisme.com",
+      "fguerin@roannais-tourisme.com",
+      "lbruchet@roannais-tourisme.com",
+      "nberger@copler.fr",
+      "sbonnet@copler.fr",
+      "sscarciello@ot-roanne.fr",
+      "tourisme@ccvai.fr"
+    ],
+    "schema:legalName": "Roannais Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.roannais-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/1ddb4e55-4005-33b9-8753-1a2740ab7e70",
+      "schema:email": [
+        "nguyen.hungloan@yahoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 77 71 08 73"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:AsianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Asiatische Küche"
+        ],
+        "pt": [
+          "Cozinha asiática"
+        ],
+        "en": [
+          "Asian cuisine"
+        ],
+        "it": [
+          "Cucina asiatica"
+        ],
+        "fr": [
+          "Cuisine asiatique"
+        ],
+        "es": [
+          "Cocina asiática"
+        ],
+        "nl": [
+          "Aziatische keuken"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/1bd94572-c42b-3c07-b627-922d5f3cdc3e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/64bad505-2dbc-32a5-b5f7-140ad106a0e4",
+          "schema:addressLocality": "Roanne",
+          "schema:postalCode": "42300",
+          "schema:streetAddress": [
+            "11, rue de Clermont"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:42187",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Roanne"
+              ],
+              "pt": [
+                "Roanne"
+              ],
+              "en": [
+                "Roanne"
+              ],
+              "it": [
+                "Roanne"
+              ],
+              "fr": [
+                "Roanne"
+              ],
+              "nl": [
+                "Roanne"
+              ],
+              "es": [
+                "Roanne"
+              ]
+            },
+            "insee": "42187",
+            "isPartOfDepartment": {
+              "@id": "kb:France8442",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Loire"
+                ],
+                "pt": [
+                  "Loire"
+                ],
+                "en": [
+                  "Loire"
+                ],
+                "it": [
+                  "Loire"
+                ],
+                "fr": [
+                  "Loire"
+                ],
+                "nl": [
+                  "Loire"
+                ],
+                "es": [
+                  "Loire"
+                ]
+              },
+              "insee": "42",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/19caf785-6597-3d41-9a04-7f5f504c8ee0",
+        "schema:elevation": "277",
+        "schema:latitude": "46.030584",
+        "schema:longitude": "4.067062",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/a874ce0f-b014-36e0-85e1-dfdfc473ee3f",
+      "schema:email": [
+        "accueil-tourisme@ccpu.fr",
+        "amendes@roannais-tourisme.com",
+        "bmodenese@roannais-tourisme.com",
+        "claplace@roannais-tourisme.com",
+        "claroche@copler.fr",
+        "creynier@roannais-tourisme.com",
+        "fguerin@roannais-tourisme.com",
+        "lbruchet@roannais-tourisme.com",
+        "nberger@copler.fr",
+        "sbonnet@copler.fr",
+        "sscarciello@ot-roanne.fr",
+        "tourisme@ccvai.fr"
+      ],
+      "schema:legalName": "Roannais Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.roannais-tourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2021-12-21",
+  "lastUpdateDatatourisme": "2026-02-07T09:36:15.197Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:AsianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Asiatische Küche"
+        ],
+        "pt": [
+          "Cozinha asiática"
+        ],
+        "en": [
+          "Asian cuisine"
+        ],
+        "it": [
+          "Cucina asiatica"
+        ],
+        "fr": [
+          "Cuisine asiatique"
+        ],
+        "es": [
+          "Cocina asiática"
+        ],
+        "nl": [
+          "Aziatische keuken"
+        ]
+      }
+    }
+  ]
+}

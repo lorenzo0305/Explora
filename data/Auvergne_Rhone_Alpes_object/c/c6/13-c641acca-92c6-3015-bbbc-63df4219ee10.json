@@ -1,0 +1,314 @@
+{
+  "@id": "https://data.datatourisme.fr/13/c641acca-92c6-3015-bbbc-63df4219ee10",
+  "dc:identifier": "4823379",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Hôtel du parc"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/1373b284-bc38-3890-849e-92d324f56de0",
+    "dc:identifier": "1541",
+    "schema:legalName": "Vichy Destinations",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.vichymonamour.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c55300f9-494b-38ba-adff-d663c77ad33a",
+      "schema:legalName": "ALLIER BOURBONNAIS ATTRACTIVITÉ - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/b2552a8c-b236-354a-8910-b33465269890",
+      "schema:email": [
+        "alain@leparccusset.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 70 97 97 55"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/46f09633-f104-32ab-a63d-24a4360097b0",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/508a1717-b4e7-3f7f-828c-6528db206a5d",
+          "schema:addressLocality": "Cusset",
+          "schema:postalCode": "03300",
+          "schema:streetAddress": [
+            "1 Avenue de Vichy"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:03095",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Cusset"
+              ],
+              "pt": [
+                "Cusset"
+              ],
+              "en": [
+                "Cusset"
+              ],
+              "it": [
+                "Cusset"
+              ],
+              "fr": [
+                "Cusset"
+              ],
+              "nl": [
+                "Cusset"
+              ],
+              "es": [
+                "Cusset"
+              ]
+            },
+            "insee": "03095",
+            "isPartOfDepartment": {
+              "@id": "kb:France8403",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Allier"
+                ],
+                "pt": [
+                  "Allier"
+                ],
+                "en": [
+                  "Allier"
+                ],
+                "it": [
+                  "Allier"
+                ],
+                "fr": [
+                  "Allier"
+                ],
+                "nl": [
+                  "Allier"
+                ],
+                "es": [
+                  "Allier"
+                ]
+              },
+              "insee": "03",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/0dd40c54-c036-3dac-8cab-23179ee53b33",
+        "schema:latitude": "46.133361",
+        "schema:longitude": "3.452311",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/6cdc52a8-a78d-3ca3-95e2-de53fbe72ceb",
+          "schema:closes": "17:30:00",
+          "schema:opens": "08:00:00",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/3451bc7d-afcb-3b69-a8f8-9a638ab8b424",
+      "schema:legalName": "Vichy Destinations",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.vichymonamour.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-09-30",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.651Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ]
+}

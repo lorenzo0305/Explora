@@ -1,0 +1,394 @@
+{
+  "@id": "https://data.datatourisme.fr/13/b75f7de0-12de-3f74-9b39-baf21c31a5f2",
+  "dc:identifier": "4862315",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Opal'pizza"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/1373b284-bc38-3890-849e-92d324f56de0",
+    "dc:identifier": "1541",
+    "schema:legalName": "Vichy Destinations",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.vichymonamour.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c55300f9-494b-38ba-adff-d663c77ad33a",
+      "schema:legalName": "ALLIER BOURBONNAIS ATTRACTIVITÉ - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/f0f4da72-e9b4-3c7b-9fd8-f3f1aab1ed38",
+      "schema:email": [
+        "laurence.ansion1@sfr.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 70 56 19 80"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:MediterraneanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Mediterrane Küche"
+        ],
+        "pt": [
+          "Cozinha mediterrânica"
+        ],
+        "en": [
+          "Mediterranean cuisine"
+        ],
+        "it": [
+          "Cucina mediterranea"
+        ],
+        "fr": [
+          "Cuisine méditerranéenne"
+        ],
+        "nl": [
+          "Mediterrane keuken"
+        ],
+        "es": [
+          "Cocina mediterránea"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/074ac831-35bb-3175-a077-9134761531b7",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/4249bc35-9270-321c-9f5e-e9876be3882b",
+          "schema:addressLocality": "Saint-Germain-des-Fossés",
+          "schema:postalCode": "03260",
+          "schema:streetAddress": [
+            "39 rue Pierre Sémard"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:03236",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Germain-des-Fossés"
+              ],
+              "pt": [
+                "Saint-Germain-des-Fossés"
+              ],
+              "en": [
+                "Saint-Germain-des-Fossés"
+              ],
+              "it": [
+                "Saint-Germain-des-Fossés"
+              ],
+              "fr": [
+                "Saint-Germain-des-Fossés"
+              ],
+              "nl": [
+                "Saint-Germain-des-Fossés"
+              ],
+              "es": [
+                "Saint-Germain-des-Fossés"
+              ]
+            },
+            "insee": "03236",
+            "isPartOfDepartment": {
+              "@id": "kb:France8403",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Allier"
+                ],
+                "pt": [
+                  "Allier"
+                ],
+                "en": [
+                  "Allier"
+                ],
+                "it": [
+                  "Allier"
+                ],
+                "fr": [
+                  "Allier"
+                ],
+                "nl": [
+                  "Allier"
+                ],
+                "es": [
+                  "Allier"
+                ]
+              },
+              "insee": "03",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/8a1b62c5-426a-3f3e-976c-0bc2fc3cf9c7",
+        "schema:latitude": "46.204295",
+        "schema:longitude": "3.432388",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/19291074-c6ca-366a-a90a-65dec015e6fc",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Dienstag bis Donnerstag von 17:00 bis 22:00 Uhr, Freitag bis Sonntag von 17:00 bis 22:30 Uhr"
+            ],
+            "en": [
+              "Tuesday to Thursday from 5 to 10 p.m., Friday to Sunday from 5 to 10.30 p.m"
+            ],
+            "it": [
+              "Da martedì a giovedì dalle 17.00 alle 22.00, da venerdì a domenica dalle 17.00 alle 22.30"
+            ],
+            "fr": [
+              "Du mardi au jeudi de 17 h à 22 h, du vendredi au dimanche de 17 h à 22 h 30"
+            ],
+            "nl": [
+              "Dinsdag tot donderdag van 17 tot 22 uur, vrijdag tot zondag van 17 tot 22.30 uur"
+            ],
+            "es": [
+              "De martes a jueves de 17 a 22 horas, de viernes a domingo de 17 a 22.30 horas"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/251310b3-84a7-3879-83e4-8b4a984200a9",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/47ec2537-b300-3339-a8e9-b66651265640",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/73ab6163-25a4-376c-8902-c92343123c20",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/c6a97581-ec9e-34bd-bc8c-1eadb249cf4f",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d9f0645b-568f-36c2-b95a-051e9549b894",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/3451bc7d-afcb-3b69-a8f8-9a638ab8b424",
+      "schema:legalName": "Vichy Destinations",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.vichymonamour.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-09-30",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.597Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:MediterraneanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Mediterrane Küche"
+        ],
+        "pt": [
+          "Cozinha mediterrânica"
+        ],
+        "en": [
+          "Mediterranean cuisine"
+        ],
+        "it": [
+          "Cucina mediterranea"
+        ],
+        "fr": [
+          "Cuisine méditerranéenne"
+        ],
+        "nl": [
+          "Mediterrane keuken"
+        ],
+        "es": [
+          "Cocina mediterránea"
+        ]
+      }
+    }
+  ]
+}
