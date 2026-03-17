@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/static/styles/Creation.css">
     <script src="/static/scripts/Creation.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
@@ -26,11 +28,13 @@
                 <form class="criteria-form" id="criteriaForm">
 
                     <!-- Critères de Localisation -->
-                    <div class="criteria-item">
-                        <div class="criteria-label">
+                    <div class="criteria-item" style="flex-direction: column; align-items: stretch; gap: 10px;">
+                        <div class="criteria-label" style="display: flex; justify-content: space-between; align-items: center;">
                             <span>🏙️ Ville</span>
+                            <span id="selected-ville-name" style="font-size:12px; opacity:0.8; font-weight: normal;">Cliquez sur la carte</span>
                         </div>
-                        <input type="text" id="ville" name="ville" class="criteria-input" placeholder="Ex: Paris, Lyon...">
+                        <div id="map" style="height: 250px; width: 100%; border-radius: 8px; z-index: 1; border: 1px solid rgba(255,255,255,0.1);"></div>
+                        <input type="hidden" id="ville" name="ville" value="">
                     </div>
 
                     <div class="criteria-item">

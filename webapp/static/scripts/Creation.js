@@ -62,11 +62,51 @@ document.getElementById('criteriaForm').addEventListener('submit', async functio
     }
 });
 
+// ==========================================
+// INITIALISATION DE LA CARTE (LEAFLET)
+// ==========================================
+document.addEventListener('DOMContentLoaded', () => {
+    // Si la carte existe sur la page
+    if (document.getElementById('map')) {
+        // Coordonnées par défaut (centre de la France)
+        const map = L.map('map').setView([46.603354, 1.888334], 5);
 
+        // Ajout du fond de carte OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
+        }).addTo(map);
 
+        let marker;
 
+        // Gérer le clic sur la carte
+        map.on('click', async function (e) {
+            const lat = e.latlng.lat;
+            const lng = e.latlng.lng;
 
+            // Placer le marqueur
+            if (marker) map.removeLayer(marker);
+            marker = L.marker([lat, lng]).addTo(map);
 
+            // Mettre à jour l'affichage pendant la recherche
+            document.getElementById('selected-ville-name').textContent = "Recherche...";
+            
+            // Appel API Nominatim pour trouver la ville (Reverse Geocoding)
+            try {
+                const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`);
+                const data = await response.json();
+                
+                const ville = data.address.city || data.address.town || data.address.village || data.address.municipality || 'Lieu inconnu';
+                
+                document.getElementById('ville').value = ville;
+                document.getElementById('selected-ville-name').textContent = ville;
+            } catch (err) {
+                console.error(err);
+                document.getElementById('ville').value = `${lat.toFixed(3)}, ${lng.toFixed(3)}`;
+                document.getElementById('selected-ville-name').textContent = "Lieu sélectionné";
+            }
+        });
+    }
+});
 
 /* ========= Clés & helpers =========
 const BASKET_KEY = 'wish_basket_v1';
