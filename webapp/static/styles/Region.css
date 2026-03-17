@@ -1,0 +1,188 @@
+:root{
+    --bg:#190028; --accent:#FF6000; --text:#F9F0F7; --text-dim:rgba(249,240,247,.80);
+    --card:#1e1e1e; --nav-h:64px; --content-max: 1100px; --page-pad: clamp(12px, 3vw, 24px);
+}
+*{box-sizing:border-box}
+body{ margin:0; background:var(--bg); color:var(--text); font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial; }
+
+.wrap{
+    min-height:100vh; padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 12px);
+    display:flex; flex-direction:column; align-items:center; gap:18px;
+    background: linear-gradient(180deg, #52B2CF 9%, #190028 18%);
+}
+
+.header{
+    width:100%; max-width:var(--content-max);
+    padding: 14px var(--page-pad) 8px;
+    display:flex; align-items:center; justify-content:space-between;
+}
+.title{
+    width:100%; max-width:var(--content-max);
+    padding: 0 var(--page-pad) 10px;
+    display:flex; flex-direction:column; gap:10px;
+}
+.region-name{
+    font-size: clamp(22px, 5.5vw, 32px); font-weight:700; text-align:center;
+}
+
+/* Recherche locale (dans la région) */
+.search-area{
+    width:min(820px, 100%); margin: 0 auto; position:relative;
+    display:flex; align-items:center; gap:10px; justify-content:space-between;
+}
+.search-wrap{
+    flex:1;
+    background:#F9F0F7; border-radius:10px; padding:7px 11px;
+    display:flex; align-items:center; gap:7px;
+}
+.search-icon{ width:25px; height:25px; background:#190028; border-radius:4px; flex:0 0 25px }
+#search{
+    flex:1; border:none; outline:none; background:transparent; font-size:15px; color:#190028;
+}
+.results{
+    position:absolute; top: calc(100% + 6px); left: 0; right: 0;
+    display:none; background:#0f0a18; border:1px solid rgba(255,255,255,.12);
+    border-radius:10px; overflow:auto; max-height:min(60vh, 520px); z-index: 10;
+}
+.result-item{
+    display:flex; align-items:center; gap:10px; padding:10px 12px;
+    background:#fdfeff; color:#000; cursor:pointer; justify-content:space-between;
+}
+.result-left{ display:flex; align-items:center; gap:10px; min-width:0; }
+.result-item + .result-item{ border-top:1px solid #e9ecef }
+.result-item:hover{ background:#e9ecef }
+.result-thumb{ width:60px; height:60px; border-radius:8px; object-fit:cover; flex:0 0 60px; }
+.result-name{ font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:60vw; }
+.no-res{ padding:10px 12px; background:#fdfeff; color:#000 }
+.results-loader, .results-end{
+    padding:10px 12px; background:#fdfeff; color:#000; text-align:center; font-size:13px; border-top:1px solid #e9ecef;
+}
+/* Bouton + dans les résultats (à droite) */
+.result-add{ flex:0 0 auto; }
+.result-add .add{
+    width:28px; height:28px; border-radius:999px; border:none; cursor:pointer;
+    background:var(--accent); color:#190028; font-weight:800; display:flex; align-items:center; justify-content:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+}
+.result-add .add:active{ transform: translateY(1px); }
+
+/* Sections catégories */
+.section{
+    width:100%; max-width:var(--content-max);
+    padding: 0 var(--page-pad) 10px;
+    display:flex; flex-direction:column; gap:10px;
+}
+.section h3{ margin:0; font-size: clamp(18px,3.3vw,22px); font-weight:600; }
+.row{
+    display:flex; gap:12px; overflow:auto; padding-bottom:6px; scrollbar-width: thin;
+}
+
+/* Card */
+.card{
+    position:relative;
+    min-width: 180px; max-width: 220px;
+    background: linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+    border:1px solid rgba(255,255,255,.06); border-radius:12px;
+    padding:10px; display:flex; flex-direction:column; gap:8px; cursor:pointer;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+.card:hover{ transform: translateY(-2px); box-shadow:0 6px 18px rgba(0,0,0,.18) }
+.thumb{ width:100%; aspect-ratio: 4/3; border-radius:8px; background:#2b2137; background-size:cover; background-position:center; }
+.name{ font-size:14px; font-weight:700; line-height:1.25 }
+.meta{ font-size:12px; opacity:.8 }
+
+/* + bouton sur la card */
+.add-btn{
+    position:absolute; top:8px; right:8px;
+    width:28px; height:28px; border-radius:999px;
+    background:var(--accent); color:#190028; border:none; font-weight:800;
+    display:flex; align-items:center; justify-content:center; cursor:pointer;
+    box-shadow:0 2px 8px rgba(0,0,0,.3);
+}
+.add-btn:active{ transform: translateY(1px); }
+
+/* Panier & Favoris */
+.actions{ position:relative; display:flex; flex-direction:column; gap:8px; align-items:flex-end; }
+.basket-btn{
+    background:rgba(255,255,255,.08); color:#fff; border:none;
+    padding:6px 10px; border-radius:8px; font-weight:600; font-size:12px; line-height:1;
+    cursor:pointer; display:flex; align-items:center; gap:6px;
+}
+#basketCount{
+    font-size:11px; background:var(--accent); color:#190028; border-radius:999px; padding:2px 6px; font-weight:800;
+}
+#floatingBasket{
+    position:absolute; top: calc(100% + 8px); right:0;
+    width: min(420px, 80vw);
+    max-height: min(60vh, 520px);
+    overflow:auto;
+    background:var(--card); border-radius:12px; padding:10px; display:none; z-index:20;
+    box-shadow:0 16px 36px rgba(0,0,0,.45);
+}
+#floatingBasket h4{ margin:6px 0 8px; font-size:14px; opacity:.9 }
+.basket-empty{ color:var(--text-dim); font-size:13px; margin:6px 0; }
+.basket-item{
+    display:flex; align-items:center; gap:8px; padding:6px; border-radius:8px;
+    background:rgba(255,255,255,.04); margin-bottom:6px;
+}
+.basket-item img{ width:36px; height:36px; border-radius:6px; object-fit:cover }
+.basket-item .bi-name{ font-size:13px; font-weight:600 }
+.basket-item .bi-meta{ font-size:11px; opacity:.75 }
+.basket-item .bi-remove{
+    margin-left:auto; background:rgba(255,255,255,.08); color:#fff; border:none;
+    padding:4px 8px; border-radius:6px; font-size:11px; cursor:pointer;
+}
+.basket-footer{ display:flex; gap:8px; justify-content:flex-end; margin-top:8px; }
+.basket-footer a, .basket-footer button{
+    background:var(--accent); color:#190028; border:none; border-radius:8px; padding:6px 10px; font-weight:800; cursor:pointer;
+}
+
+/* --- Styles pour les Favoris (Cœur) --- */
+.like-btn {
+    background: rgba(255, 255, 255, .08); color: #fff; border: none;
+    padding: 6px 10px; border-radius: 8px; font-weight: 600; font-size: 12px; line-height: 1;
+    cursor: pointer; display: flex; align-items: center; gap: 6px;
+}
+.like-btn.active { color: #ff4081; }
+
+#likesCount {
+    font-size: 11px; background: #ff4081; color: #fff; border-radius: 999px; padding: 2px 6px; font-weight: 800;
+}
+
+#floatingLikes {
+    position: absolute; top: calc(100% + 8px); right: 0;
+    width: min(420px, 80vw); max-height: min(60vh, 520px); overflow: auto;
+    background: var(--card); border-radius: 12px; padding: 10px; display: none; z-index: 20;
+    box-shadow: 0 16px 36px rgba(0,0,0,.45);
+}
+#floatingLikes h4 { margin: 6px 0 8px; font-size: 14px; opacity: .9; }
+.likes-empty { color: var(--text-dim); font-size: 13px; margin: 6px 0; }
+
+/* Bouton coeur sur les items du panneau */
+.bi-like-remove {
+    margin-left: auto; background: transparent; color: #ff4081; border: 1px solid rgba(255,255,255,0.1);
+    padding: 4px 8px; border-radius: 6px; font-size: 14px; cursor: pointer;
+}
+
+/* Bouton coeur individuel (sur les cartes/résultats) */
+.fav-action {
+    background: rgba(255,255,255,0.1); border:none; border-radius:50%;
+    width: 28px; height: 28px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+    font-size: 14px; color: #ccc; transition: all 0.2s;
+}
+.fav-action.active { color: #ff4081; background: rgba(255, 64, 129, 0.15); transform: scale(1.1); }
+.fav-action:hover { background: rgba(255,255,255,0.2); }
+
+/* Bottom nav */
+nav.bottom-nav{
+    position: fixed; left:0; right:0; bottom:0; height:var(--nav-h);
+    display:flex; gap:8px; padding:10px; background:rgba(0,0,0,.25); backdrop-filter:blur(6px);
+    border-top:1px solid rgba(255,255,255,.06);
+}
+.boutonNav{
+    flex:1; border:none; border-radius:12px; padding:10px 8px;
+    background:rgba(255,255,255,.06); color:#fff; font-weight:600; cursor:pointer;
+    display:flex; align-items:center; justify-content:center; gap:6px;
+}
+.boutonNav.active{ background:var(--accent); color:#190028 }
+.nav-icon{ width:18px; height:18px; vertical-align:-3px; fill:#fff; }

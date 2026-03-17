@@ -1006,3 +1006,13 @@ async def object_detail(request: Request, item_id: str):
         "types": doc.get("@type", []),
         "imageAttribution": doc.get("image_attribution")
     })
+
+@app.post("/algorithm")
+async def run_algorithm(request: Request):
+    try:
+        data = await request.json()
+        print("[BACKEND] Données reçues : ", data)
+        return JSONResponse({"status": "success", "message": "Données reçues"})
+    except Exception as e:
+        print("[BACKEND] Erreur : ", e)
+        return JSONResponse({"status": "error", "message": str(e)}, status_code=500)
