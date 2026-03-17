@@ -28,7 +28,7 @@ def parse_args() -> argparse.Namespace:
 
 def contient_mots(mots: list[str], texte: str) -> bool:
     escaped = [re.escape(mot) for mot in mots]
-    pattern = r"\\b(" + "|".join(escaped) + r")[sx]?\\b"
+    pattern = r"\b(" + "|".join(escaped) + r")[sx]?\b"
     return bool(re.search(pattern, texte, flags=re.IGNORECASE))
 
 
@@ -122,6 +122,14 @@ def detect_categorie(texte_complet: str) -> str:
             "monument",
             "eglise",
             "église",
+            "chapelle",
+            "cathedrale",
+            "cathédrale",
+            "basilique",
+            "collegiale",
+            "collégiale",
+            "sanctuaire",
+            "religieux",
             "abbaye",
             "culture",
             "art",

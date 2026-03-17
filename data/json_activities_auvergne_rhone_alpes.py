@@ -1,16 +1,16 @@
-import os
 import json
-import glob
 import re  # NOUVEAU : La bibliothèque pour chercher des mots exacts
+from pathlib import Path
 
 # --- CONFIGURATION DES DOSSIERS ---
-DOSSIER_SOURCE = r"C:\Users\roman\ESIEE\explora\Explora\data\Auvergne_Rhone_Alpes_object"
-FICHIER_SORTIE = r"C:\Users\roman\ESIEE\explora\Explora\data\Auvergne_Rhone_Alpes_propre.json"
+BASE_DIR = Path(__file__).resolve().parent
+DOSSIER_SOURCE = BASE_DIR / "Auvergne_Rhone_Alpes_object"
+FICHIER_SORTIE = BASE_DIR / "Auvergne_Rhone_Alpes_propre.json"
 
 activites_propres = []
 
 print("🔍 Recherche des fichiers JSON...")
-fichiers_json = glob.glob(os.path.join(DOSSIER_SOURCE, "**", "*.json"), recursive=True)
+fichiers_json = sorted(DOSSIER_SOURCE.rglob("*.json"))
 print(f"✅ {len(fichiers_json)} fichiers trouvés ! Début de l'extraction...\n")
 
 # --- FONCTION MAGIQUE POUR LES MOTS ---
@@ -50,7 +50,7 @@ for chemin_fichier in fichiers_json:
             categorie = "gastronomie"
         elif contient_mots(["boutique", "magasin", "librairie", "créateur", "artisanat", "shopping", "store", "épicerie", "souvenir", "achat"], texte_complet):
             categorie = "boutique"
-        elif contient_mots(["musée", "château", "histoire", "spectacle", "concert", "théâtre", "patrimoine", "monument", "église", "abbaye", "culture", "art", "museum", "historic", "exhibition", "bibliothèque", "lecture"], texte_complet):
+        elif contient_mots(["musée", "château", "histoire", "spectacle", "concert", "théâtre", "patrimoine", "monument", "église", "eglise", "chapelle", "cathédrale", "cathedrale", "basilique", "collégiale", "collegiale", "sanctuaire", "religieux", "abbaye", "culture", "art", "museum", "historic", "exhibition", "bibliothèque", "lecture"], texte_complet):
             categorie = "culture"
         elif contient_mots(["parc", "jardin", "lac", "montagne", "forêt", "plage", "grotte", "cascade", "botanique", "nature", "garden", "lake"], texte_complet):
             categorie = "nature"
