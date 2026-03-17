@@ -1,41 +1,41 @@
-# Fusion des fichiers pkl, on n'a pas besoin de préciser la région, juste la ville. Propose les activités proches qui nous correspondent et qui sont dans
-# le rayon. Peut proposer des activités qui ne sont pas dans la même région mais dans le rayon...ce n'est pas le cas ici car on n'a que 2 régions qui
-# ne sont pas du tout à coté.
-
-import pickle
 import numpy as np
-import os
 import pandas as pd
 from sklearn.neighbors import NearestNeighbors
 from geopy.geocoders import Nominatim
+from pymongo import MongoClient # <-- Nouvel import indispensable
 
 geolocator = Nominatim(user_agent="explora_simple")
 
 def calculer_distance(lat_c, lon_c, lats, lons):
+    """Calcul de la distance à vol d'oiseau (Formule de Haversine)"""
     R = 6371
     dlat = np.radians(lats - lat_c)
     dlon = np.radians(lons - lon_c)
     a = np.sin(dlat/2)**2 + np.cos(np.radians(lat_c)) * np.cos(np.radians(lats)) * np.sin(dlon/2)**2
     return R * 2 * np.arcsin(np.sqrt(a))
 
-def lancer_explora_complet():
-    dossier = "/kaggle/working/data/models"
-    fichiers = [f for f in os.listdir(dossier) if f.endswith('_REGIONALE.pkl')]
+def lancer_explora_mongodb():
+    # --- 1. CONNEXION À MONGODB ---
+    print("Connexion à la base de données MongoDB...")
+    # Remplace par ton URI Atlas (ex: "mongodb+srv://user:mdp@cluster.mongodb.net/")
+    # Ou laisse localhost si ta base est sur ton PC
+    uri = "mongodb://localhost:27017/" 
+    client = MongoClient(uri)
+    
+    # Sélection de la base et de la collection (à adapter selon tes noms)
+    db = client["LORA_voyage"] 
+    collection = db["objects"]
 
-    if not fichiers:
-        print("Aucun fichier .pkl trouvé.")
+    # --- 2. EXTRACTION DES DONNÉES ---
+    print("Récupération des activités depuis la base...")
+    # On récupère tous les documents (équivalent de la fusion de tes anciens PKL)
+    cursor = collection.find({}) 
+    df_global = pd.DataFrame(list(cursor))
+
+    if df_global.empty:
+        print("La base de données est vide ou introuvable.")
         return
-
-    # --- FUSION DES DONNÉES ---
-    all_df = []
-    print(f" Fusion des régions : {[f.replace('_REGIONALE.pkl', '') for f in fichiers]}...")
-    for f in fichiers:
-        with open(os.path.join(dossier, f), 'rb') as tmp:
-            data = pickle.load(tmp)
-            all_df.append(data['df'])
-    
-    df_global = pd.concat(all_df, ignore_index=True)
-    
+        
     # Nettoyage
     df_global['latitude'] = pd.to_numeric(df_global['latitude'], errors='coerce')
     df_global['longitude'] = pd.to_numeric(df_global['longitude'], errors='coerce')
@@ -43,7 +43,7 @@ def lancer_explora_complet():
     
     print(f"{len(df_global)} activités chargées au total.")
 
-    # --- LOCALISATION ---
+    # --- 3. LOCALISATION UTILISATEUR ---
     ville_user = input("\nDans quelle ville es-tu ? ").strip()
     print(f"Recherche du centre de {ville_user}...")
     loc = geolocator.geocode(f"{ville_user}, France")
@@ -57,7 +57,7 @@ def lancer_explora_complet():
 
     rayon_max = float(input("Rayon de recherche (km) : ").strip() or 20)
 
-    # --- FILTRAGE GÉOGRAPHIQUE ---
+    # --- 4. FILTRAGE GÉOGRAPHIQUE ---
     df_global['dist'] = calculer_distance(lat_c, lon_c, 
                                           df_global['latitude'].values, 
                                           df_global['longitude'].values)
@@ -70,13 +70,15 @@ def lancer_explora_complet():
 
     print(f" {len(df_proche)} activités trouvées à proximité.")
 
-    # --- PRÉFÉRENCES ---
+    # --- 5. PRÉFÉRENCES ---
     print("\nNotes (0-10) pour vos préférences :")
     themes = ["Nature", "Gastronomie", "Sport", "Culture", "Détente"]
     n_user = [float(input(f"  {t} : ") or 5.0) for t in themes]
 
-    # --- TRI HYBRIDE (IA + PROXIMITÉ) ---
-    X = np.array([[s['nature'], s['gastronomie'], s['sport'], s['culture'], s['detente']] 
+    # --- 6. TRI HYBRIDE (IA + PROXIMITÉ) ---
+    # Extraction des scores comme dans ton ancien code
+    X = np.array([[s.get('nature', 0), s.get('gastronomie', 0), s.get('sport', 0), 
+                   s.get('culture', 0), s.get('detente', 0)] 
                   for s in df_proche['scores']])
 
     knn = NearestNeighbors(n_neighbors=len(df_proche), metric='cosine')
@@ -84,6 +86,7 @@ def lancer_explora_complet():
     dist_knn, indices = knn.kneighbors(np.array([n_user]))
 
     score_sim = 1 - dist_knn[0]
+    
     # Normalisation de la distance pour le score
     dist_norm = df_proche['dist'].values[indices[0]] / rayon_max
     score_prox = 1 - dist_norm
@@ -92,16 +95,15 @@ def lancer_explora_complet():
     score_final = 0.4 * score_prox + 0.6 * score_sim
     ordre = np.argsort(score_final)[::-1][:20]
 
-    # --- AFFICHAGE ---
-    print(f"\nTOP 20 — {ville_user.upp
-    
-    er()} ({rayon_max} km)")
+    # --- 7. AFFICHAGE ---
+    print(f"\nTOP 20 — {ville_user.upper()} ({rayon_max} km)")
     print("-" * 65)
     for rank, i in enumerate(ordre, start=1):
         idx = indices[0][i]
         act = df_proche.iloc[idx]
         score = int(score_final[i] * 100)
-        print(f"{rank:>2}. {score}% - {act['nom']} - {act['ville']} - {act['dist']:.1f}km")
+        print(f"{rank:>2}. {score}% - {act['nom']} - {act.get('ville', 'Inconnue')} - {act['dist']:.1f}km")
 
 # Lancement
-lancer_explora_complet()
+if __name__ == "__main__":
+    lancer_explora_mongodb()
