@@ -1,0 +1,292 @@
+:root {
+    --bg: #190028;
+    --accent: #FF6000;
+    --text: #F9F0F7;
+    --text-dim: rgba(249, 240, 247, .70);
+    --card: rgba(255, 255, 255, .04);
+    --nav-h: 64px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-frame {
+    flex: 1;
+    width: 100vw;
+    background: var(--bg);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dégradé de fond */
+.app-frame::before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    background: radial-gradient(circle at 50% 30%, #3e1e4a 0%, #190028 60%);
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.content-panel {
+    position: relative;
+    z-index: 1;
+    padding: 20px 20px calc(var(--nav-h) + 24px) 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+    overflow: auto;
+    scrollbar-width: thin;
+    align-items: center;
+}
+
+.content-inner {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Header */
+.header-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text);
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 16px;
+    color: var(--text-dim);
+    text-align: center;
+    margin-top: -10px;
+    font-weight: 500;
+}
+
+/* Formulaire Critères */
+.criteria-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.criteria-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.criteria-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.criteria-value {
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 700;
+    background: rgba(255, 96, 0, 0.15);
+    padding: 2px 8px;
+    border-radius: 6px;
+    min-width: 24px;
+    text-align: center;
+}
+
+/* Entrées texte et select */
+.criteria-input, 
+.criteria-select {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text);
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.criteria-input:focus,
+.criteria-select:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(255, 96, 0, 0.2);
+}
+
+.criteria-input::placeholder {
+    color: var(--text-dim);
+}
+
+.criteria-select option {
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Custom Range Slider */
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: transparent;
+    cursor: pointer;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+/* Chrome/Safari/Edge Track */
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 99px;
+}
+
+/* Firefox Track */
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 99px;
+}
+
+/* Chrome/Safari/Edge Thumb */
+input[type=range]::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--accent);
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -7px;
+    box-shadow: 0 0 10px rgba(255, 96, 0, 0.6);
+    transition: transform 0.1s;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+/* Firefox Thumb */
+input[type=range]::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 50%;
+    background: var(--accent);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 96, 0, 0.6);
+    transition: transform 0.1s;
+}
+
+/* Bouton Soumettre */
+.submit-btn {
+    margin-top: 10px;
+    background: linear-gradient(135deg, #FF6000 0%, #FF2000 100%);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(255, 96, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 96, 0, 0.5);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Bottom Nav */
+nav.bottom-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--nav-h);
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    background: rgba(0, 0, 0, .25);
+    backdrop-filter: blur(6px);
+    border-top: 1px solid rgba(255, 255, 255, .06);
+    z-index: 100;
+}
+
+.boutonNav {
+    flex: 1;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 8px;
+    background: rgba(255, 255, 255, .06);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.boutonNav.active {
+    background: var(--accent);
+    color: #190028;
+}
+
+.nav-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: -3px;
+    fill: #fff;
+}
