@@ -1,0 +1,502 @@
+{
+  "@id": "https://data.datatourisme.fr/14/4db1f00b-c875-3e52-b318-ecc65cb8a739",
+  "dc:identifier": "70385",
+  "@type": [
+    "schema:FastFoodRestaurant",
+    "schema:FoodEstablishment",
+    "schema:Restaurant",
+    "FastFoodRestaurant",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "La Petite Faim"
+    ]
+  },
+  "allowedPersons": 80,
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/1d834449-f267-397c-bed0-991cbc30523d",
+    "schema:legalName": "Terre des 2 Caps",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/1d834449-f267-397c-bed0-991cbc30523d",
+      "schema:legalName": "Terre des 2 Caps",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/dffc26c3-ab56-3cea-9109-5ec26d37a2a8",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/67e703ba-b41e-3bb3-848d-a800a4e34b9e",
+          "schema:addressLocality": "Wissant",
+          "schema:postalCode": "62179",
+          "schema:streetAddress": [
+            "5 rue du Professeur Leloir"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:62899",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Wissant"
+              ],
+              "pt": [
+                "Wissant"
+              ],
+              "en": [
+                "Wissant"
+              ],
+              "it": [
+                "Wissant"
+              ],
+              "fr": [
+                "Wissant"
+              ],
+              "nl": [
+                "Wissant"
+              ],
+              "es": [
+                "Wissant"
+              ]
+            },
+            "insee": "62899",
+            "isPartOfDepartment": {
+              "@id": "kb:France3262",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pas-de-Calais"
+                ],
+                "pt": [
+                  "Pas-de-Calais"
+                ],
+                "en": [
+                  "Pas-de-Calais"
+                ],
+                "it": [
+                  "Pas-de-Calais"
+                ],
+                "fr": [
+                  "Pas-de-Calais"
+                ],
+                "nl": [
+                  "Pas-de-Calais"
+                ],
+                "es": [
+                  "Pas-de-Calais"
+                ]
+              },
+              "insee": "62",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "guyhamard@yahoo.fr"
+      ],
+      "schema:legalName": "La Petite Faim",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/d38ef16f-e772-364f-804a-14792ac388d1",
+      "dc:description": {
+        "de": [
+          "Hamburger - Kebab - Hausgemachte Pommes frites"
+        ],
+        "en": [
+          "Hamburger - Kebab - Home fries"
+        ],
+        "it": [
+          "Hamburger - Kebab - Patatine fritte"
+        ],
+        "fr": [
+          "Hamburger - Kebab - Frites maison"
+        ],
+        "es": [
+          "Hamburguesa - Kebab - Patatas fritas caseras"
+        ],
+        "nl": [
+          "Hamburger - Kebab - Zelfgemaakte frietjes"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/090205ff-de8e-3c27-b9b0-b831bf2c40de",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/3ece3164-0f7a-31aa-8859-ebef6303c051",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4c4dce6f-2ea0-36f1-ae3c-efdbf33a2905",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/63a33772-525a-3eec-8858-164813d1fb6d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b795c3f9-a1c8-3cd2-ae2c-ae42e83a3c28",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:VegetarianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Vegetarische Küche"
+        ],
+        "pt": [
+          "Cozinha vegetariana"
+        ],
+        "en": [
+          "Vegetarian cuisine"
+        ],
+        "it": [
+          "Cucina vegetariana"
+        ],
+        "fr": [
+          "Cuisine végétarienne"
+        ],
+        "nl": [
+          "Vegetarische keuken"
+        ],
+        "es": [
+          "Cocina vegetariana"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/a55b9640-38ba-33e7-ae8c-a7c1add692b4",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/67e703ba-b41e-3bb3-848d-a800a4e34b9e",
+          "schema:addressLocality": "Wissant",
+          "schema:postalCode": "62179",
+          "schema:streetAddress": [
+            "5 rue du Professeur Leloir"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:62899",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Wissant"
+              ],
+              "pt": [
+                "Wissant"
+              ],
+              "en": [
+                "Wissant"
+              ],
+              "it": [
+                "Wissant"
+              ],
+              "fr": [
+                "Wissant"
+              ],
+              "nl": [
+                "Wissant"
+              ],
+              "es": [
+                "Wissant"
+              ]
+            },
+            "insee": "62899",
+            "isPartOfDepartment": {
+              "@id": "kb:France3262",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pas-de-Calais"
+                ],
+                "pt": [
+                  "Pas-de-Calais"
+                ],
+                "en": [
+                  "Pas-de-Calais"
+                ],
+                "it": [
+                  "Pas-de-Calais"
+                ],
+                "fr": [
+                  "Pas-de-Calais"
+                ],
+                "nl": [
+                  "Pas-de-Calais"
+                ],
+                "es": [
+                  "Pas-de-Calais"
+                ]
+              },
+              "insee": "62",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/4bc227fe-aaec-3aab-855e-93578fb9b226",
+        "schema:elevation": "10.27",
+        "schema:latitude": "50.885872",
+        "schema:longitude": "1.660276",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/d67ea410-1c3e-39fb-9522-1370e17df082",
+      "schema:legalName": "La Petite Faim",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-09-29",
+  "lastUpdateDatatourisme": "2026-02-11T15:36:13.17Z"
+}
