@@ -1,0 +1,249 @@
+{
+  "@id": "https://data.datatourisme.fr/13/0eafb3ba-7fbe-3c8d-9d2a-7fae274cba04",
+  "dc:identifier": "461252",
+  "@type": [
+    "schema:LocalBusiness",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Store"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Mairie"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/d09bf415-44a3-365a-86c9-077ebb5e35c3",
+    "dc:identifier": "75",
+    "schema:email": [
+      "caroline.ligouy@diois-tourisme.com",
+      "contact@diois-tourisme.com",
+      "joris.prat@diois-tourisme.com",
+      "sylvie.chagnard@diois-tourisme.com"
+    ],
+    "schema:legalName": "Office de Tourisme du Pays Diois",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.diois-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/d48f2ccd-2357-3a8e-b949-cb8bf19a361f",
+      "schema:legalName": "Agence d'Attractivité de la Drôme - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/2e80938b-e30b-3bee-92c9-d44e40c90402",
+      "schema:email": [
+        "mairie-de-pontaix@orange.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 75 21 23 37"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/6de1567b-b1ad-33e0-b88f-b04513ec6316",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/85a22d85-9eaf-37e5-9cd0-897e341045e3",
+          "schema:addressLocality": "Pontaix",
+          "schema:postalCode": "26150",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:26248",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Pontaix"
+              ],
+              "pt": [
+                "Pontaix"
+              ],
+              "en": [
+                "Pontaix"
+              ],
+              "it": [
+                "Pontaix"
+              ],
+              "fr": [
+                "Pontaix"
+              ],
+              "nl": [
+                "Pontaix"
+              ],
+              "es": [
+                "Pontaix"
+              ]
+            },
+            "insee": "26248",
+            "isPartOfDepartment": {
+              "@id": "kb:France8426",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Drôme"
+                ],
+                "pt": [
+                  "Drôme"
+                ],
+                "en": [
+                  "Drôme"
+                ],
+                "it": [
+                  "Drôme"
+                ],
+                "fr": [
+                  "Drôme"
+                ],
+                "nl": [
+                  "Drôme"
+                ],
+                "es": [
+                  "Drôme"
+                ]
+              },
+              "insee": "26",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/eefd77df-683e-3508-b7f0-176566609141",
+        "schema:latitude": "44.749696",
+        "schema:longitude": "5.264152",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/5940ba72-bb72-34d7-a821-ab301068dc00",
+          "schema:closes": "12:00:00",
+          "schema:opens": "08:30:00",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/adee4829-4026-3310-9212-fc502d3b6cb4",
+      "schema:email": [
+        "caroline.ligouy@diois-tourisme.com",
+        "contact@diois-tourisme.com",
+        "joris.prat@diois-tourisme.com",
+        "sylvie.chagnard@diois-tourisme.com"
+      ],
+      "schema:legalName": "Office de Tourisme du Pays Diois",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.diois-tourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2017-07-18",
+  "lastUpdateDatatourisme": "2026-01-15T06:55:29.404Z"
+}

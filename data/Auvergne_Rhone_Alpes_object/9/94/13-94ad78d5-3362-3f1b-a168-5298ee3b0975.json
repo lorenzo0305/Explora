@@ -1,0 +1,326 @@
+{
+  "@id": "https://data.datatourisme.fr/13/94ad78d5-3362-3f1b-a168-5298ee3b0975",
+  "dc:identifier": "5737154",
+  "@type": [
+    "schema:LocalBusiness",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Store"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "France Pare-Brise"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/9aa42b31-882e-3039-965f-3c4923ce901b",
+    "dc:identifier": "1421",
+    "schema:email": [
+      "fmeunier@ot-brioude.fr"
+    ],
+    "schema:legalName": "Office de Tourisme Brioude Sud-Auvergne",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.tourisme-brioudesudauvergne.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/c53534f8-2d08-3844-943f-dfaebbcb67af",
+      "schema:legalName": "Haute-Loire Attractivité - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/80fef271-5b4b-32c9-a3c0-28615d359bfc",
+      "schema:email": [
+        "brioude@reseau-franceparebrise.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 71 50 65 59"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/3f9ecb60-9956-322d-adaf-653de62a2f5e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/6ab823e9-f53f-37b4-9692-8c1b932d8823",
+          "schema:addressLocality": "Brioude",
+          "schema:postalCode": "43100",
+          "schema:streetAddress": [
+            "Route de Clermont"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:43040",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Brioude"
+              ],
+              "pt": [
+                "Brioude"
+              ],
+              "en": [
+                "Brioude"
+              ],
+              "it": [
+                "Brioude"
+              ],
+              "fr": [
+                "Brioude"
+              ],
+              "nl": [
+                "Brioude"
+              ],
+              "es": [
+                "Brioude"
+              ]
+            },
+            "insee": "43040",
+            "isPartOfDepartment": {
+              "@id": "kb:France8443",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Loire"
+                ],
+                "pt": [
+                  "Haute-Loire"
+                ],
+                "en": [
+                  "Haute-Loire"
+                ],
+                "it": [
+                  "Haute-Loire"
+                ],
+                "fr": [
+                  "Haute-Loire"
+                ],
+                "nl": [
+                  "Haute-Loire"
+                ],
+                "es": [
+                  "Haute-Loire"
+                ]
+              },
+              "insee": "43",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/2cb581c2-0162-3b0d-8ceb-3a2ec6786e86",
+        "schema:latitude": "45.316481",
+        "schema:longitude": "3.374349",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/8cb8abb0-ec1b-3008-986a-b1ae112f1691",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "samstagnachmittag geschlossen"
+            ],
+            "en": [
+              "closed Saturday afternoon"
+            ],
+            "it": [
+              "chiuso sabato pomeriggio"
+            ],
+            "fr": [
+              "fermé samedi après-midi"
+            ],
+            "nl": [
+              "zaterdagmiddag gesloten"
+            ],
+            "es": [
+              "cerrado el sábado por la tarde"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/0b31e2fb-0839-3d92-829d-a981f529bbed",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/af767315-8c39-3b92-9b1d-771c6d663465",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/b5c45cf8-f934-3f1f-a018-4c22e3e2163d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/b922ba4a-de66-3016-9262-8883ee1388c8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/fce705b5-39d9-3161-964e-f9932712bd87",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0c4bb4b-877e-3bcf-814d-a8d5304f5e19",
+      "schema:email": [
+        "fmeunier@ot-brioude.fr"
+      ],
+      "schema:legalName": "Office de Tourisme Brioude Sud-Auvergne",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.tourisme-brioudesudauvergne.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-05-15",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.798Z"
+}

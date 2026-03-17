@@ -1,0 +1,307 @@
+{
+  "@id": "https://data.datatourisme.fr/13/12c77abf-2211-3db4-b88a-f41d28a3a8d7",
+  "dc:identifier": "6762043",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Pizzeria L'Aurécoise"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/a424ed4b-d3a7-36ae-a720-b86d4a360f75",
+    "dc:identifier": "1425",
+    "schema:email": [
+      "officedetourisme@loire-semene.fr"
+    ],
+    "schema:legalName": "Office de Tourisme Loire Semène",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.otloiresemene.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/c53534f8-2d08-3844-943f-dfaebbcb67af",
+      "schema:legalName": "Haute-Loire Attractivité - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/73e8aca2-f510-3fd1-b505-cb14c27531ec",
+      "schema:telephone": [
+        "+33 4 77 35 35 00"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/7c9f55da-df81-3648-95db-bbdbc3ef9f4c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/4690535f-7ea0-34a4-95c9-acedf729a4d2",
+          "schema:addressLocality": "Aurec-sur-Loire",
+          "schema:postalCode": "43110",
+          "schema:streetAddress": [
+            "21, avenue de Firminy"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:43012",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Aurec-sur-Loire"
+              ],
+              "pt": [
+                "Aurec-sur-Loire"
+              ],
+              "en": [
+                "Aurec-sur-Loire"
+              ],
+              "it": [
+                "Aurec-sur-Loire"
+              ],
+              "fr": [
+                "Aurec-sur-Loire"
+              ],
+              "nl": [
+                "Aurec-sur-Loire"
+              ],
+              "es": [
+                "Aurec-sur-Loire"
+              ]
+            },
+            "insee": "43012",
+            "isPartOfDepartment": {
+              "@id": "kb:France8443",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Loire"
+                ],
+                "pt": [
+                  "Haute-Loire"
+                ],
+                "en": [
+                  "Haute-Loire"
+                ],
+                "it": [
+                  "Haute-Loire"
+                ],
+                "fr": [
+                  "Haute-Loire"
+                ],
+                "nl": [
+                  "Haute-Loire"
+                ],
+                "es": [
+                  "Haute-Loire"
+                ]
+              },
+              "insee": "43",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/2c44f9e3-482e-3af6-9010-7a68d5c08136",
+        "schema:latitude": "45.36986",
+        "schema:longitude": "4.204356",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/59fcefa3-3f31-3d3e-a612-2b605c243dce",
+      "schema:email": [
+        "officedetourisme@loire-semene.fr"
+      ],
+      "schema:legalName": "Office de Tourisme Loire Semène",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.otloiresemene.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-05-10",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.633Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/f73b2eb2-04fe-30f3-9fbc-7043f66e092f",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/4a3dbae1-7165-3768-b8fd-aa861766abd9",
+          "schema:maxPrice": [
+            "15"
+          ],
+          "schema:minPrice": [
+            "10"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/a425afdf-3594-300b-b55e-1858bafa3fd4",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2023-12-31",
+              "startDate": "2023-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:AlaCarte",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "A la carte"
+                ],
+                "pt": [
+                  "À escolha"
+                ],
+                "en": [
+                  "A la carte"
+                ],
+                "it": [
+                  "Alla carta"
+                ],
+                "fr": [
+                  "A la carte"
+                ],
+                "nl": [
+                  "À la carte"
+                ],
+                "es": [
+                  "A la carta"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}
