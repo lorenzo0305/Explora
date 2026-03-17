@@ -1,4 +1,74 @@
-/* ========= Clés & helpers ========= */
+function updateVal(id) {
+    document.getElementById('val-' + id).textContent = document.getElementById(id).value;
+}
+
+document.getElementById('criteriaForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    // ==========================================
+    // DONNÉES DE LOCALISATION (Ville & Zone Géo)
+    // ==========================================
+    const locationData = {
+        ville: document.getElementById('ville').value.trim(),
+        rayon: parseInt(document.getElementById('rayon').value, 10)
+    };
+
+    // ==========================================
+    // CRITÈRES DE PRÉFÉRENCES (1 à 10)
+    // ==========================================
+    const preferencesData = {
+        detente: document.getElementById('detente').value,
+        nature: document.getElementById('nature').value,
+        sport: document.getElementById('sport').value,
+        gastronomie: document.getElementById('gastronomie').value,
+        culture: document.getElementById('culture').value
+    };
+
+    // ==========================================
+    // FUSION DES DONNÉES POUR SOUMISSION
+    // ==========================================
+    const formData = {
+        ...locationData,
+        ...preferencesData
+    };
+
+    console.log("Critères soumis :", formData);
+
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = 'Soumission en cours...';
+
+    try {
+        const res = await fetch('/algorithm', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+
+        if (!res.ok) {
+            throw new Error(`Erreur HTTP ${res.status}`);
+        }
+
+        const data = await res.json();
+        console.log("Réponse reçue :", data);
+    } catch (error) {
+        console.error("Erreur lors de la soumission :", error);
+        alert("Une erreur est survenue lors de la soumission. Veuillez réessayer.");
+    } finally {
+        btn.disabled = false;
+        btn.textContent = 'Soumettre';
+    }
+});
+
+
+
+
+
+
+
+/* ========= Clés & helpers =========
 const BASKET_KEY = 'wish_basket_v1';
 const LIKES_KEY = 'wish_likes_v1';
 const JOURNEYS_KEY = 'wish_journeys_v1';
@@ -12,7 +82,7 @@ const urlParams = new URLSearchParams(location.search);
 const IS_EDIT = urlParams.get('edit') === '1';
 const EDIT_ID = IS_EDIT ? (urlParams.get('id') || sessionStorage.getItem('wish_edit_id') || '') : '';
 
-/* ========= Panier & Favoris Logic ========= */
+/* ========= Panier & Favoris Logic =========
 const basketIcon = $('basketIcon');
 const basketCount = $('basketCount');
 const floatingBasket = $('floatingBasket');
@@ -84,7 +154,7 @@ document.addEventListener('click', (e) => {
 window.addEventListener('storage', (e) => { if (e.key === BASKET_KEY || e.key === LIKES_KEY) { updateCounts(); renderPanels(); } });
 
 
-/* ========= Editor Logic ========= */
+/* ========= Editor Logic =========
 let draggingEl = null;
 
 function updateDropHints() {
@@ -122,7 +192,7 @@ document.addEventListener('drop', (e) => {
     } catch { }
 });
 
-/* ========= Gestion des Jours (CORRECTION DOUBLON TITRE) ========= */
+/* ========= Gestion des Jours (CORRECTION DOUBLON TITRE) =========
 function createDaySection(dayNumber) {
     const sec = document.createElement('section');
     sec.className = 'day-section';
@@ -165,7 +235,7 @@ function addDay() {
     updateDropHints();
 }
 
-/* ========= Save & Load ========= */
+/* ========= Save & Load =========
 function loadJourneys() { try { return JSON.parse(localStorage.getItem(JOURNEYS_KEY) || '[]'); } catch { return []; } }
 function saveJourneys(arr) { localStorage.setItem(JOURNEYS_KEY, JSON.stringify(arr)); }
 function uid() { return 'j_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 7); }
@@ -189,7 +259,7 @@ function upsertJourney(j) {
     alert('Voyage sauvegardé ✔️');
 }
 
-/* ========= Normalisation jours (pour édition) ========= */
+/* ========= Normalisation jours (pour édition) =========
 function deriveDays(obj) {
     const A = (a) => Array.isArray(a) ? a : (a && typeof a === 'object') ? Object.values(a) : [];
     function slotsArrayToObj(slotsArr) {
@@ -255,7 +325,7 @@ document.addEventListener('click', (e) => {
     if (e.target?.id === 'addDayBtn') { addDay(); }
 });
 
-/* ========= Photos démo ========= */
+/* ========= Photos démo =========
 const addPhotos = $('addPhotos'); const photosInput = $('photosInput'); const photosPreview = $('photosPreview');
 addPhotos?.addEventListener('click', () => photosInput?.click());
 photosInput?.addEventListener('change', () => {
@@ -270,3 +340,4 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCounts(); renderPanels();
     if (!IS_EDIT) { sessionStorage.removeItem('wish_edit_id'); sessionStorage.removeItem('wish_edit_payload'); resetEditorToEmpty(); } else { loadForEditMaybe(); }
 });
+*/
