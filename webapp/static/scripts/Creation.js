@@ -37,7 +37,7 @@ document.getElementById('criteriaForm').addEventListener('submit', async functio
     const btn = document.getElementById('submitBtn');
     btn.disabled = true;
     btn.textContent = 'Soumission en cours...';
-
+    console.log("[AVANT SOUMISSION] Critères : ", formData);
     try {
         const res = await fetch('/algorithm', {
             method: 'POST',
