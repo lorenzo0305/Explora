@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
   <link rel="stylesheet" href="/static/styles/app.css">
   <link rel="stylesheet" href="/static/styles/Accueil.css">
   <script src="/static/scripts/Accueil.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <div class="app-frame">
@@ -18,7 +20,8 @@
         <div class="header-row">
           <div class="header-greeting">
             <svg class="avatar-icon" viewBox="0 0 24 24">
-              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
             </svg>
             <div class="greeting-text">Bonjour</div>
           </div>
@@ -45,17 +48,29 @@
         <div class="section">
           <div class="section-title">Proposés par l’office du tourisme</div>
           <div class="featured-list">
-             <div class="featured-item">
+            <div class="featured-item">
               <div class="thumb" style="background: linear-gradient(180deg, #FF6000 0%, #993A00 100%);"></div>
               <div class="name">Escapade Gourmande</div>
               <div class="comment">Une découverte des saveurs locales...</div>
-              <div class="stars"><div class="star active"></div><div class="star active"></div><div class="star active"></div><div class="star"></div><div class="star"></div></div>
+              <div class="stars">
+                <div class="star active"></div>
+                <div class="star active"></div>
+                <div class="star active"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
             </div>
             <div class="featured-item">
               <div class="thumb" style="background: linear-gradient(180deg, #00999A 0%, #003434 100%);"></div>
               <div class="name">Nature & Découverte</div>
               <div class="comment">Randonnées et paysages à couper le souffle.</div>
-              <div class="stars"><div class="star active"></div><div class="star active"></div><div class="star active"></div><div class="star active"></div><div class="star"></div></div>
+              <div class="stars">
+                <div class="star active"></div>
+                <div class="star active"></div>
+                <div class="star active"></div>
+                <div class="star active"></div>
+                <div class="star"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -70,11 +85,25 @@
     </div>
 
     <nav class="bottom-nav">
-      <a href="/" class="bouton"><button class="boutonNav active"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z"/></svg>Accueil</button></a>
-      <a href="/Destinations" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="M20 20l-3.5-3.5" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/></svg>Exploration</button></a>
-      <a href="/topics" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M5 4h11a2 2 0 0 1 2 2v12H7a2 2 0 0 1-2-2V4z"/><rect x="3" y="6" width="2" height="12" rx="1" ry="1"/><path d="M8 8h7M8 11h7M8 14h5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Carnet</button></a>
-      <a href="/makejourney" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 0-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 0 0-6-6zm0 8.5A2.5 2.5 0 1 1 12 5.5a2.5 2.5 0 0 1 0 5z"/><path d="M15.2 14.2l3.2 3.2-2.3 0.5-1.4 1.4-0.5-2.3 1-1z"/></svg>Création</button></a>
+      <a href="/" class="bouton"><button class="boutonNav active"><svg class="nav-icon" viewBox="0 0 24 24">
+            <path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z" />
+          </svg>Accueil</button></a>
+      <a href="/Destinations" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="6"></circle>
+            <path d="M20 20l-3.5-3.5" stroke="white" stroke-width="2" stroke-linecap="round" fill="none" />
+          </svg>Exploration</button></a>
+      <a href="/topics" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24">
+            <path d="M5 4h11a2 2 0 0 1 2 2v12H7a2 2 0 0 1-2-2V4z" />
+            <rect x="3" y="6" width="2" height="12" rx="1" ry="1" />
+            <path d="M8 8h7M8 11h7M8 14h5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" />
+          </svg>Carnet</button></a>
+      <a href="/makejourney" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24">
+            <path
+              d="M12 2a6 6 0 0 0-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 0 0-6-6zm0 8.5A2.5 2.5 0 1 1 12 5.5a2.5 2.5 0 0 1 0 5z" />
+            <path d="M15.2 14.2l3.2 3.2-2.3 0.5-1.4 1.4-0.5-2.3 1-1z" />
+          </svg>Création</button></a>
     </nav>
   </div>
 </body>
+
 </html>
