@@ -58,7 +58,7 @@ document.getElementById('criteriaForm').addEventListener('submit', async functio
         // Pour garder les données même après la redirectoin
         sessionStorage.setItem('algorithmResponse', JSON.stringify(data));
         sessionStorage.setItem('criteriaFormPayload', JSON.stringify(formData));
-        window.location.href = '/Voyage.html';
+        window.location.href = '/voyage.html';
 
     } catch (error) {
         console.error("Erreur lors de la soumission :", error);
