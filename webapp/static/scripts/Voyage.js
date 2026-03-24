@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Le ".data" à la fin dépend de si ton backend a renvoyé {"data": [...] }
     // Si dataVoyage plante car c'est un objet qui contient un tableau, fais : JSON.parse(data).data;
-    const dataVoyage = JSON.parse(data); 
+    const dataVoyage = JSON.parse(data).data; 
 
     // 1. On cible notre conteneur HTML
     const conteneur = document.getElementById('conteneur-itineraire');
