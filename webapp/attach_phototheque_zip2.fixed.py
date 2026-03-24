@@ -1,4 +1,3 @@
-
 # attach_phototheque_zip.py
 # Associe les images Photothèque ARA (déjà téléchargées) à tes objets Mongo
 # via le fichier Excel de la photothèque (métadonnées).
@@ -51,7 +50,6 @@ def norm_txt(s: str) -> str:
 def parse_dept_from_title(title: str) -> str:
     m = re.search(r"\((\d{2})\)", title or "")
     return m.group(1) if m else ""
-
 
 # ---------------- Lecture Excel Photothèque ----------------
 
