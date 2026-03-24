@@ -5,11 +5,290 @@ from __future__ import annotations
 
 import argparse
 import os
+import re
 from typing import Any, Dict
 
 from pymongo import MongoClient
 
-from categorizer_cli import get_category_for_types, guess_category_from_label
+
+CATEGORY_MAPPING = {
+    "restauration": {
+        "types": [
+            "Restaurant",
+            "FoodEstablishment",
+            "FastFoodRestaurant",
+            "BrasserieOrTavern",
+            "Cafe",
+            "BarOrPub",
+            "Market",
+            "Winery",
+            "Store",
+        ],
+        "label": "Restauration et gastronomie",
+        "slug": "restauration",
+    },
+    "culture": {
+        "types": [
+            "CulturalSite",
+            "Museum",
+            "Castle",
+            "ReligiousSite",
+            "Cinema",
+            "MovieTheater",
+            "Chapel",
+            "Church",
+            "Cathedral",
+            "Monastery",
+            "RemarkableBuilding",
+            "ArcheologicalSite",
+            "TechnicalHeritage",
+            "RemembranceSite",
+            "DefenceSite",
+            "Library",
+            "ArtGallery",
+            "ConventionalExhibition",
+        ],
+        "label": "Culture et patrimoine",
+        "slug": "culture",
+    },
+    "spectacles": {
+        "types": [
+            "Concert",
+            "Festival",
+            "ShowEvent",
+            "CulturalEvent",
+            "TheatreEvent",
+            "EntertainmentAndEvent",
+            "Parade",
+            "LocalAnimation",
+            "OpenDay",
+            "Circus",
+            "Opera",
+            "DanceEvent",
+        ],
+        "label": "Spectacles et evenements",
+        "slug": "spectacles",
+    },
+    "sport": {
+        "types": [
+            "SportsAndLeisurePlace",
+            "SportsEvent",
+            "SwimmingPool",
+            "Rambling",
+            "CyclingTour",
+            "Hiking",
+            "EquestrianCenter",
+            "Practice",
+            "ActivityProvider",
+            "ClimbingWall",
+            "Skiing",
+            "IceRink",
+            "GolfCourse",
+            "TennisComplex",
+            "FitnessCenter",
+            "WaterSport",
+            "AirSport",
+        ],
+        "label": "Sports et activites outdoor",
+        "slug": "sport",
+    },
+    "nature": {
+        "types": [
+            "NaturalHeritage",
+            "Park",
+            "ParkAndGarden",
+            "Lake",
+            "PointOfView",
+            "PicnicArea",
+            "Beach",
+            "Fountain",
+            "Waterfall",
+            "Cave",
+            "Forest",
+            "Mountain",
+            "BotanicalGardenOrZoo",
+            "Zoo",
+            "Arboretum",
+        ],
+        "label": "Nature et detente",
+        "slug": "nature",
+    },
+    "hebergement": {
+        "types": [
+            "Accommodation",
+            "Hotel",
+            "HotelTrade",
+            "Camping",
+            "CampingAndCaravanning",
+            "RentalAccommodation",
+            "SelfCateringAccommodation",
+            "BedAndBreakfast",
+            "Guesthouse",
+            "GroupLodging",
+            "CollectiveAccommodation",
+        ],
+        "label": "Hebergement",
+        "slug": "hebergement",
+    },
+    "shopping": {
+        "types": ["Store", "BricABrac", "CraftsmanShop", "LocalProducer", "SaleEvent"],
+        "label": "Shopping et artisanat",
+        "slug": "shopping",
+    },
+    "services": {
+        "types": [
+            "ServiceProvider",
+            "TouristInformationCenter",
+            "ConvenientService",
+            "TaxiCompany",
+            "TaxiStation",
+            "Cybercafe",
+            "Rental",
+        ],
+        "label": "Services et activites encadrees",
+        "slug": "services",
+    },
+}
+
+
+KEYWORD_FALLBACK = {
+    "restauration": [
+        r"\brestaurant\b",
+        r"\bcafe\b",
+        r"\bbar\b",
+        r"\bbrasserie\b",
+        r"\bcreperie\b",
+        r"\bsnack\b",
+        r"\bgastronomie\b",
+    ],
+    "culture": [
+        r"\bmusee\b",
+        r"\bmuseum\b",
+        r"\bchateau\b",
+        r"\bchapelle\b",
+        r"\beglise\b",
+        r"\bpatrimoine\b",
+        r"\bmonument\b",
+    ],
+    "spectacles": [
+        r"\bconcert\b",
+        r"\bfestival\b",
+        r"\bspectacle\b",
+        r"\bevenement\b",
+        r"\btheatre\b",
+    ],
+    "sport": [
+        r"\bsport\b",
+        r"\bpiscine\b",
+        r"\btennis\b",
+        r"\bgolf\b",
+        r"\bvtt\b",
+        r"\bvelo\b",
+        r"\brandonnee\b",
+    ],
+    "nature": [
+        r"\bparc\b",
+        r"\bjardin\b",
+        r"\blac\b",
+        r"\bforet\b",
+        r"\bmontagne\b",
+        r"\bplage\b",
+    ],
+    "hebergement": [
+        r"\bhotel\b",
+        r"\bhebergement\b",
+        r"\bcamping\b",
+        r"\bgite\b",
+        r"\bauberge\b",
+    ],
+    "shopping": [
+        r"\bboutique\b",
+        r"\bmagasin\b",
+        r"\bcommerce\b",
+        r"\bartisan\b",
+    ],
+    "services": [
+        r"\boffice de tourisme\b",
+        r"\btaxi\b",
+        r"\bservice\b",
+        r"\bagence\b",
+    ],
+}
+
+
+def get_category_for_types(types: list[str]) -> Dict[str, str]:
+    if not types:
+        return {"label": "Autres points d'interet", "slug": "autres"}
+
+    category_scores: Dict[str, int] = {}
+    for category_key, category_info in CATEGORY_MAPPING.items():
+        score = sum(
+            2
+            if obj_type in category_info["types"]
+            else 1
+            if any(cat_type in obj_type for cat_type in category_info["types"])
+            else 0
+            for obj_type in types
+        )
+        if score > 0:
+            category_scores[category_key] = score
+
+    if category_scores:
+        best_category_key = max(category_scores, key=category_scores.get)
+        return {
+            "label": CATEGORY_MAPPING[best_category_key]["label"],
+            "slug": CATEGORY_MAPPING[best_category_key]["slug"],
+        }
+
+    return {"label": "Autres points d'interet", "slug": "autres"}
+
+
+def guess_category_from_label(label: str) -> Dict[str, str]:
+    label_lower = (
+        label.lower()
+        .replace("é", "e")
+        .replace("è", "e")
+        .replace("ê", "e")
+        .replace("à", "a")
+        .replace("â", "a")
+        .replace("ù", "u")
+        .replace("ô", "o")
+        .replace("ç", "c")
+        .replace("î", "i")
+    )
+
+    best_category = "autres"
+    best_score = 0
+    priority = {
+        "hebergement": 0,
+        "restauration": 1,
+        "culture": 2,
+        "spectacles": 3,
+        "sport": 4,
+        "nature": 5,
+        "shopping": 6,
+        "services": 7,
+    }
+
+    for category_key, patterns in KEYWORD_FALLBACK.items():
+        score = 0
+        for pattern in patterns:
+            score += len(re.findall(pattern, label_lower, re.IGNORECASE))
+
+        if score > best_score:
+            best_score = score
+            best_category = category_key
+        elif score == best_score and score > 0:
+            if priority.get(category_key, 99) < priority.get(best_category, 99):
+                best_category = category_key
+
+    if best_category in CATEGORY_MAPPING:
+        return {
+            "label": CATEGORY_MAPPING[best_category]["label"],
+            "slug": CATEGORY_MAPPING[best_category]["slug"],
+        }
+
+    return {"label": "Autres points d'interet", "slug": "autres"}
 
 
 def parse_args() -> argparse.Namespace:

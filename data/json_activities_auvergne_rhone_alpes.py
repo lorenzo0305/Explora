@@ -1,10 +1,12 @@
-import os
 import json
 import glob
 
 # --- CONFIGURATION DES DOSSIERS ---
 DOSSIER_SOURCE = r"C:\Users\roman\ESIEE\explora\Explora\data\Auvergne_Rhone_Alpes_object"
 FICHIER_SORTIE = r"C:\Users\roman\ESIEE\explora\Explora\data\Auvergne_Rhone_Alpes_multicategories.json"
+BASE_DIR = Path(__file__).resolve().parent
+DOSSIER_SOURCE = BASE_DIR / "Auvergne_Rhone_Alpes_object"
+FICHIER_SORTIE = BASE_DIR / "Auvergne_Rhone_Alpes_propre.json"
 
 activites_propres = []
 
@@ -88,7 +90,7 @@ DICTIONNAIRE_CATEGORIES = {
 }
 
 print("🔍 Recherche des fichiers JSON...")
-fichiers_json = glob.glob(os.path.join(DOSSIER_SOURCE, "**", "*.json"), recursive=True)
+fichiers_json = sorted(DOSSIER_SOURCE.rglob("*.json"))
 print(f"✅ {len(fichiers_json)} fichiers trouvés ! Début de l'extraction...\n")
 
 for chemin_fichier in fichiers_json:
@@ -123,6 +125,24 @@ for chemin_fichier in fichiers_json:
         # Le filet de sécurité
         if len(categories_trouvees) == 0:
             categories_trouvees.append("autre")
+        # On crée notre gros texte de recherche
+        categories_tags = data.get("@type", [])
+        categories_str = " ".join(categories_tags)
+        texte_complet = f"{categories_str} {nom} {description}".lower()
+        
+        # --- NOUVEAU SYSTÈME DE CATÉGORISATION (Mots entiers) ---
+        if contient_mots(["ski", "sport", "vélo", "vtt", "rando", "randonnée", "cyclisme", "piscine", "nautique", "raquette", "gym", "gymnase", "stade", "patinoire", "golf", "tennis", "fitness", "équestre"], texte_complet):
+            categorie = "sport"
+        elif contient_mots(["restaurant", "gastronomie", "brasserie", "snack", "crêperie", "dégustation", "terroir", "boulangerie", "pâtisserie", "traiteur", "glace", "food", "wine"], texte_complet):
+            categorie = "gastronomie"
+        elif contient_mots(["boutique", "magasin", "librairie", "créateur", "artisanat", "shopping", "store", "épicerie", "souvenir", "achat"], texte_complet):
+            categorie = "boutique"
+        elif contient_mots(["musée", "château", "histoire", "spectacle", "concert", "théâtre", "patrimoine", "monument", "église", "eglise", "chapelle", "cathédrale", "cathedrale", "basilique", "collégiale", "collegiale", "sanctuaire", "religieux", "abbaye", "culture", "art", "museum", "historic", "exhibition", "bibliothèque", "lecture"], texte_complet):
+            categorie = "culture"
+        elif contient_mots(["parc", "jardin", "lac", "montagne", "forêt", "plage", "grotte", "cascade", "botanique", "nature", "garden", "lake"], texte_complet):
+            categorie = "nature"
+        else:
+            categorie = "détente"
 
         # --- LOCALISATION ---
         ville, cp, adresse, region, lat, lon = "", "", "", "", "", ""
