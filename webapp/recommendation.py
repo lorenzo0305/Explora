@@ -19,7 +19,7 @@ def calculer_distance(lat_c, lon_c, lats, lons):
     return R * 2 * np.arcsin(np.sqrt(a))
 
 def lancer_explora_complet():
-    dossier = "/kaggle/working/data/models"
+    dossier = "."
     fichiers = [f for f in os.listdir(dossier) if f.endswith('_REGIONALE.pkl')]
  
     if not fichiers:
