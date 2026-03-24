@@ -10,7 +10,8 @@ document.getElementById('criteriaForm').addEventListener('submit', async functio
     // ==========================================
     const locationData = {
         ville: document.getElementById('ville').value.trim(),
-        rayon: parseInt(document.getElementById('rayon').value, 10)
+        rayon: parseInt(document.getElementById('rayon').value, 10),
+        jours: parseInt(document.getElementById('jours').value, 10) || 1
     };
 
     // ==========================================
