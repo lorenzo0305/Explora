@@ -58,6 +58,7 @@ document.getElementById('criteriaForm').addEventListener('submit', async functio
         // Pour garder les données même après la redirectoin
         sessionStorage.setItem('algorithmResponse', JSON.stringify(data));
         sessionStorage.setItem('criteriaFormPayload', JSON.stringify(formData));
+        console.log("Données stockées en sessionStorage pour la page suivante.");
         window.location.href = '/voyage.html';
 
     } catch (error) {
