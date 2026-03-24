@@ -1,7 +1,6 @@
-# ==========================================================
-# GÉNÉRATION DES FICHIERS PKL (IA SBERT + KNN)
-# ==========================================================
-import json
+# =========================================================================
+# GÉNÉRATION DES FICHIERS PKL (IA SBERT + KNN) À PARTIR DE MONGO DB ATLAS
+# =========================================================================
 import os
 import pickle
 import torch
@@ -9,14 +8,15 @@ import numpy as np
 import pandas as pd
 from sentence_transformers import SentenceTransformer, util
 from sklearn.neighbors import NearestNeighbors
+from pymongo import MongoClient
+from urllib.parse import quote_plus
 
 # 1. INITIALISATION DE L'IA
-print(" Chargement du modèle SBERT (Multilingue)...")
+print("Chargement du modèle SBERT (Multilingue)...")
 device = "cuda" if torch.cuda.is_available() else "cpu"
-# On utilise MiniLM-L12 pour un bon compromis entre vitesse et précision
 model_ai = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2', device=device)
 
-# Définition des 6 thèmes cibles avec des "ancres sémantiques"
+# Définition des 6 thèmes cibles
 themes = {
     'nature': "paysage naturel randonnée forêt montagne parc environnement plein air",
     'gastronomie': "restaurant cuisine manger table gastronomie nourriture terroir dégustation",
@@ -26,83 +26,84 @@ themes = {
     'boutique': "boutique magasin shopping commerce achat souvenirs mode artisanat marché"
 }
 
-# Encodage des thèmes en vecteurs (on le fait une seule fois)
+# Encodage des thèmes en vecteurs
 theme_embs = model_ai.encode(list(themes.values()), convert_to_tensor=True)
 
-# 2. CONFIGURATION DES DOSSIERS
-# Assure-toi que le nom du dataset 'data-propre' est correct dans ton interface Kaggle
-dossier_entree = '/kaggle/input/datasets/sarahesiee/data-propre'
-dossier_sortie = '/kaggle/working/data/models'
+# 2. CONNEXION À MONGO DB ATLAS
+# URI fournie (le mot de passe est déjà encodé)
+uri = "mongodb+srv://equipe_explora:2BqXsiNi8nCCE%40W@datas.xc1dpyu.mongodb.net/?appName=datas"
+
+try:
+    client = MongoClient(uri)
+    db = client['explora']  # Nom de votre base de données
+    collection = db['auvergne']  # Remplacez par le nom de votre collection
+    print("Connexion à MongoDB Atlas réussie.")
+except Exception as e:
+    print(f"Erreur de connexion à MongoDB Atlas : {e}")
+    exit()
+
+# 3. CHARGEMENT DES DONNÉES DEPUIS MONGO DB
+print("Chargement des activités depuis MongoDB Atlas...")
+try:
+    activites = list(collection.find({}))
+    if not activites:
+        print("Aucune activité trouvée dans la collection.")
+        exit()
+    print(f"{len(activites)} activités chargées.")
+except Exception as e:
+    print(f"Erreur lors du chargement des activités : {e}")
+    client.close()
+    exit()
+
+# 4. PRÉPARATION DU TEXTE POUR L'IA
+phrases = []
+for a in activites:
+    nom = a.get('nom', '')
+    cat = a.get('categorie', '')
+    desc = a.get('description', '')
+    phrases.append(f"{nom} {cat}. {desc}")
+
+# 5. ENCODAGE ET SCORING
+print(f"Calcul des vecteurs pour {len(phrases)} activités...")
+all_embs = model_ai.encode(phrases, convert_to_tensor=True, show_progress_bar=True)
+scores_matrice = util.cos_sim(all_embs, theme_embs)
+
+# Attribution des notes sur 10
+for i, act in enumerate(activites):
+    act['scores'] = {
+        'nature': float(scores_matrice[i][0] * 10),
+        'gastronomie': float(scores_matrice[i][1] * 10),
+        'sport': float(scores_matrice[i][2] * 10),
+        'culture': float(scores_matrice[i][3] * 10),
+        'detente': float(scores_matrice[i][4] * 10),
+        'boutique': float(scores_matrice[i][5] * 10)
+    }
+
+# 6. CRÉATION DU MODÈLE DE RECOMMANDATION (KNN)
+df_region = pd.DataFrame(activites)
+X = np.array([[
+    s['nature'], s['gastronomie'], s['sport'],
+    s['culture'], s['detente'], s['boutique']
+] for s in df_region['scores']])
+
+knn = NearestNeighbors(n_neighbors=min(20, len(df_region)), metric='cosine')
+knn.fit(X)
+
+# 7. SAUVEGARDE DU MODÈLE EN PKL
+dossier_sortie = './data/models'  # Chemin relatif ou absolu selon votre environnement
 os.makedirs(dossier_sortie, exist_ok=True)
+nom_pkl = "modele_recommandation.pkl"
+chemin_sortie = os.path.join(dossier_sortie, nom_pkl)
 
-# 3. BOUCLE DE TRAITEMENT PAR RÉGION (JSON -> PKL)
-fichiers_json = [f for f in os.listdir(dossier_entree) if f.endswith('.json')]
+data_pkl = {
+    'model': knn,
+    'df': df_region
+}
 
-if not fichiers_json:
-    print(f"Aucun fichier JSON trouvé dans {dossier_entree}")
-else:
-    for nom_f in fichiers_json:
-        print(f"\n Analyse sémantique de : {nom_f}...")
-        
-        # Chargement des données JSON
-        chemin_json = os.path.join(dossier_entree, nom_f)
-        with open(chemin_json, 'r', encoding='utf-8') as f:
-            activites = json.load(f)
+with open(chemin_sortie, 'wb') as f_out:
+    pickle.dump(data_pkl, f_out)
 
-        # PRÉPARATION DU TEXTE (Nom + Catégorie + Description)
-        # C'est ici que l'IA "lit" le contenu pour comprendre de quoi il s'agit
-        phrases = []
-        for a in activites:
-            nom = a.get('nom', '')
-            cat = a.get('categorie', '')
-            desc = a.get('description', '') 
-            # On fusionne les trois champs pour un contexte riche
-            phrases.append(f"{nom} {cat}. {desc}")
+print(f"Terminé : {nom_pkl} créé avec succès dans {dossier_sortie}.")
 
-        # ENCODAGE ET SCORING
-        print(f"   -> Calcul des vecteurs pour {len(phrases)} activités...")
-        all_embs = model_ai.encode(phrases, convert_to_tensor=True, show_progress_bar=True)
-        
-        # Comparaison mathématique (Similarité Cosinus) entre activités et thèmes
-        # scores_matrice[i][j] donne la note de l'activité i pour le thème j
-        scores_matrice = util.cos_sim(all_embs, theme_embs)
-
-        # Attribution des notes sur 10
-        for i, act in enumerate(activites):
-            act['scores'] = {
-                'nature': float(scores_matrice[i][0] * 10),
-                'gastronomie': float(scores_matrice[i][1] * 10),
-                'sport': float(scores_matrice[i][2] * 10),
-                'culture': float(scores_matrice[i][3] * 10),
-                'detente': float(scores_matrice[i][4] * 10),
-                'boutique': float(scores_matrice[i][5] * 10)
-            }
-
-        # CRÉATION DU MODÈLE DE RECOMMANDATION (KNN)
-        df_region = pd.DataFrame(activites)
-        
-        # On prépare la matrice X (les coordonnées de chaque activité dans l'espace des goûts)
-        X = np.array([[
-            s['nature'], s['gastronomie'], s['sport'], 
-            s['culture'], s['detente'], s['boutique']
-        ] for s in df_region['scores']])
-        
-        # Entraînement du KNN (on calcule les 20 plus proches voisins par défaut)
-        knn = NearestNeighbors(n_neighbors=min(20, len(df_region)), metric='cosine')
-        knn.fit(X)
-
-        # SAUVEGARDE DU MODÈLE ET DES DONNÉES
-        data_pkl = {
-            'model': knn,
-            'df': df_region
-        }
-
-        nom_pkl = nom_f.replace('.json', '.pkl')
-        chemin_sortie = os.path.join(dossier_sortie, nom_pkl)
-        
-        with open(chemin_sortie, 'wb') as f_out:
-            pickle.dump(data_pkl, f_out)
-        
-        print(f" Terminé : {nom_pkl} créé avec succès.")
-
-print("\n Félicitations ! Tes modèles régionaux sont prêts dans /kaggle/working/data/models")
+# Fermeture de la connexion MongoDB
+client.close()
