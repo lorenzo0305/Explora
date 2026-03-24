@@ -19,6 +19,32 @@ def calculer_distance(lat_c, lon_c, lats, lons):
     return R * 2 * np.arcsin(np.sqrt(a))
 
 def lancer_explora_complet():
+    # --- CONNEXION À MONGODB ---
+    uri = "mongodb+srv://equipe_explora:2BqXsiNi8nCCE@W@datas.xc1dpyu.mongodb.net/?appName=datas"
+    client = MongoClient(uri, tlsCAFile=certifi.where())
+    
+    try:
+        db = client['explora'] # Nom de ta DB sur Atlas
+        collection = db['activites'] # Nom de ta collection
+        
+        # Récupération de TOUTES les données (équivalent de ta fusion .pkl)
+        print("Récupération des données depuis MongoDB...")
+        cursor = collection.find({}) # Requête vide = tout prendre
+        df_global = pd.DataFrame(list(cursor))
+        
+        if df_global.empty:
+            print("La base de données est vide.")
+            return
+
+        # Nettoyage (MongoDB garde un champ '_id' dont on n'a pas besoin pour le calcul)
+        if '_id' in df_global.columns:
+            df_global = df_global.drop(columns=['_id'])
+
+    except Exception as e:
+        print(f"Erreur de connexion : {e}")
+        return
+    finally:
+        client.close()
     dossier = "."
     fichiers = [f for f in os.listdir(dossier) if f.endswith('_REGIONALE.pkl')]
 
