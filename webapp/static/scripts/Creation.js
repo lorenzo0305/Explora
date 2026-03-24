@@ -56,7 +56,7 @@ document.getElementById('criteriaForm').addEventListener('submit', async functio
         console.log("Réponse reçue :", data);
 
         // Pour garder les données même après la redirectoin
-        sessionStorage.setItem('algorithmResponse', JSON.stringify(data));
+        sessionStorage.setItem('algorithmRes', JSON.stringify(data));
         sessionStorage.setItem('criteriaFormPayload', JSON.stringify(formData));
         window.location.href = '/Voyage.html';
 
