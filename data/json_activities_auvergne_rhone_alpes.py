@@ -1,24 +1,95 @@
 import os
 import json
 import glob
-import re  # NOUVEAU : La bibliothèque pour chercher des mots exacts
 
 # --- CONFIGURATION DES DOSSIERS ---
 DOSSIER_SOURCE = r"C:\Users\roman\ESIEE\explora\Explora\data\Auvergne_Rhone_Alpes_object"
-FICHIER_SORTIE = r"C:\Users\roman\ESIEE\explora\Explora\data\Auvergne_Rhone_Alpes_propre.json"
+FICHIER_SORTIE = r"C:\Users\roman\ESIEE\explora\Explora\data\Auvergne_Rhone_Alpes_multicategories.json"
 
 activites_propres = []
+
+# --- LE DICTIONNAIRE OFFICIEL DATATOURISME ---
+DICTIONNAIRE_CATEGORIES = {
+    # 🏅 SPORT & LOISIRS ACTIFS
+    "AdventurePark": "sport", "AccompaniedPractice": "sport", "BilliardRoom": "sport", 
+    "BoulesPitch": "sport", "BowlingAlley": "sport", "ClimbingWall": "sport", 
+    "Competition": "sport", "CrossCountrySkiTrail": "sport", "CyclingTour": "sport", 
+    "DogSleddingTrail": "sport", "DownhillSkiRun": "sport", "EquestrianCenter": "sport", 
+    "FitnessCenter": "sport", "FitnessPath": "sport", "FreePractice": "sport", "Game": "sport", 
+    "GolfCourse": "sport", "Gymnasium": "sport", "IceSkatingRink": "sport", 
+    "LeisureSportActivityProvider": "sport", "MiniGolf": "sport", "MultiActivity": "sport", 
+    "NauticalCentre": "sport", "Practice": "sport", "Racetrack": "sport", 
+    "RacingCircuit": "sport", "RailBike": "sport", "Rally": "sport", "Rambling": "sport", 
+    "SportsAndLeisurePlace": "sport", "SportsClub": "sport", "SportsCompetition": "sport", 
+    "SportsEvent": "sport", "SquashCourt": "sport", "Stadium": "sport", 
+    "SummerToboggan": "sport", "SwimmingPool": "sport", "TennisComplex": "sport", 
+    "TobogganBobsleigh": "sport", "TrackRollerOrSkateBoard": "sport", "Trampoline": "sport", 
+    "Velodrome": "sport", "ViaFerrata": "sport", "schema:GolfCourse": "sport", 
+    "schema:SportsEvent": "sport", "schema:StadiumOrArena": "sport",
+
+    # 🥐 GASTRONOMIE & TERROIR
+    "Bakery": "gastronomie", "BistroOrWineBar": "gastronomie", "BrasserieOrTavern": "gastronomie", 
+    "Brewery": "gastronomie", "CafeOrTeahouse": "gastronomie", "Cellar": "gastronomie", 
+    "CoveredMarket": "gastronomie", "FarmhouseInn": "gastronomie", "FastFoodRestaurant": "gastronomie", 
+    "FoodEstablishment": "gastronomie", "GourmetRestaurant": "gastronomie", 
+    "HotelRestaurant": "gastronomie", "IceCreamShop": "gastronomie", "Market": "gastronomie", 
+    "Producer": "gastronomie", "ProducersGroup": "gastronomie", "Restaurant": "gastronomie", 
+    "SelfServiceCafeteria": "gastronomie", "TastingProvider": "gastronomie", 
+    "schema:Bakery": "gastronomie", "schema:CafeOrCoffeeShop": "gastronomie", 
+    "schema:FastFoodRestaurant": "gastronomie", "schema:FoodEstablishment": "gastronomie", 
+    "schema:IceCreamShop": "gastronomie", "schema:Restaurant": "gastronomie", 
+    "schema:Winery": "gastronomie",
+
+    # 🎭 CULTURE & PATRIMOINE
+    "Abbey": "culture", "ArcheologicalSite": "culture", "ArtGalleryOrExhibitionGallery": "culture", 
+    "ArtistSigning": "culture", "Basilica": "culture", "Castle": "culture", "Cathedral": "culture", 
+    "Chapel": "culture", "Chartreuse": "culture", "Church": "culture", "Cinema": "culture", 
+    "Cinematheque": "culture", "CircusPlace": "culture", "Citadel": "culture", 
+    "CityHeritage": "culture", "Cloister": "culture", "Collegiate": "culture", 
+    "Commanderie": "culture", "Commemoration": "culture", "Concert": "culture", 
+    "Convent": "culture", "CulturalEvent": "culture", "CulturalSite": "culture", "Culture": "culture", 
+    "DefenceSite": "culture", "Dungeon": "culture", "EducationalTrail": "culture", 
+    "Exhibition": "culture", "Festival": "culture", "Fort": "culture", "FortifiedCastle": "culture", 
+    "InterpretationCentre": "culture", "Library": "culture", "MegalithDolmenMenhir": "culture", 
+    "Monastery": "culture", "Mosque": "culture", "Museum": "culture", "Opera": "culture", 
+    "Palace": "culture", "Parade": "culture", "PilgrimageAndProcession": "culture", 
+    "Reading": "culture", "Recital": "culture", "ReligiousEvent": "culture", "ReligiousSite": "culture", 
+    "RemarkableBuilding": "culture", "RemembranceSite": "culture", "Ruins": "culture", 
+    "ShowEvent": "culture", "Synagogue": "culture", "TechnicalHeritage": "culture", "Temple": "culture", 
+    "Theater": "culture", "TheaterEvent": "culture", "TraditionalCelebration": "culture", 
+    "VisualArtsEvent": "culture", "schema:CivicStructure": "culture", "schema:ExhibitionEvent": "culture", 
+    "schema:Festival": "culture", "schema:Library": "culture", "schema:MovieTheater": "culture", 
+    "schema:Museum": "culture", "schema:MusicEvent": "culture", "schema:TheaterEvent": "culture",
+
+    # 🌲 NATURE & DÉCOUVERTE
+    "AlpinePasture": "nature", "Beach": "nature", "BeachClub": "nature", "Bocage": "nature", 
+    "Bog": "nature", "Canal": "nature", "Canyon": "nature", "CaveSinkholeOrAven": "nature", 
+    "Cirque": "nature", "Cliff": "nature", "Coastline": "nature", "Col": "nature", 
+    "ConeNeck": "nature", "Crest": "nature", "Dune": "nature", "Forest": "nature", 
+    "Glacier": "nature", "Gorge": "nature", "Hillsides": "nature", "IslandPeninsula": "nature", 
+    "Lake": "nature", "Landes": "nature", "Mountain": "nature", "NaturalCuriosity": "nature", 
+    "NaturalHeritage": "nature", "Orchard": "nature", "ParkAndGarden": "nature", "Peak": "nature", 
+    "Plain": "nature", "Plateau": "nature", "Pond": "nature", "River": "nature", "Source": "nature", 
+    "Stone": "nature", "Stream": "nature", "Swamp": "nature", "Valley": "nature", 
+    "Volcano": "nature", "Waterfall": "nature", "Wetland": "nature", "VivariumAquarium": "nature", 
+    "ZooAnimalPark": "nature", "schema:Aquarium": "nature", "schema:Landform": "nature", 
+    "schema:Park": "nature", "schema:Zoo": "nature",
+
+    # 🛍️ BOUTIQUES & ARTISANAT
+    "AntiqueAndSecondhandGoodDealer": "boutique", "BoutiqueOrLocalShop": "boutique", 
+    "BricABrac": "boutique", "CraftsmanShop": "boutique", "DepartmentStore": "boutique", 
+    "EquipmentRentalShop": "boutique", "GarageSale": "boutique", 
+    "HypermarketAndSupermarket": "boutique", "LocalProductsShop": "boutique", 
+    "ShoppingCentreAndGallery": "boutique", "Store": "boutique", "Trader": "boutique",
+
+    # 🧖‍♀️ DÉTENTE & BIEN-ÊTRE
+    "BalneotherapyCentre": "détente", "Hammam": "détente", "Spa": "détente", 
+    "ThalassotherapyCentre": "détente"
+}
 
 print("🔍 Recherche des fichiers JSON...")
 fichiers_json = glob.glob(os.path.join(DOSSIER_SOURCE, "**", "*.json"), recursive=True)
 print(f"✅ {len(fichiers_json)} fichiers trouvés ! Début de l'extraction...\n")
-
-# --- FONCTION MAGIQUE POUR LES MOTS ---
-def contient_mots(mots, texte):
-    # Cette ligne cherche le mot exact, en acceptant un éventuel "s" ou "x" à la fin pour le pluriel
-    # Le \b garantit qu'on ne trouve pas "sport" dans "transport"
-    pattern = r'\b(' + '|'.join(mots) + r')[sx]?\b'
-    return bool(re.search(pattern, texte))
 
 for chemin_fichier in fichiers_json:
     try:
@@ -38,26 +109,22 @@ for chemin_fichier in fichiers_json:
                 if "fr" in short:
                     description = short.get("fr", [""])[0]
 
-        # On crée notre gros texte de recherche
-        categories_tags = data.get("@type", [])
-        categories_str = " ".join(categories_tags)
-        texte_complet = f"{categories_str} {nom} {description}".lower()
+        # --- NOUVEAU SYSTÈME DE CATÉGORISATION (Par Ontologie) ---
+        categories_trouvees = []
+        tags_officiels = data.get("@type", [])
         
-        # --- NOUVEAU SYSTÈME DE CATÉGORISATION (Mots entiers) ---
-        if contient_mots(["ski", "sport", "vélo", "vtt", "rando", "randonnée", "cyclisme", "piscine", "nautique", "raquette", "gym", "gymnase", "stade", "patinoire", "golf", "tennis", "fitness", "équestre"], texte_complet):
-            categorie = "sport"
-        elif contient_mots(["restaurant", "gastronomie", "brasserie", "snack", "crêperie", "dégustation", "terroir", "boulangerie", "pâtisserie", "traiteur", "glace", "food", "wine"], texte_complet):
-            categorie = "gastronomie"
-        elif contient_mots(["boutique", "magasin", "librairie", "créateur", "artisanat", "shopping", "store", "épicerie", "souvenir", "achat"], texte_complet):
-            categorie = "boutique"
-        elif contient_mots(["musée", "château", "histoire", "spectacle", "concert", "théâtre", "patrimoine", "monument", "église", "abbaye", "culture", "art", "museum", "historic", "exhibition", "bibliothèque", "lecture"], texte_complet):
-            categorie = "culture"
-        elif contient_mots(["parc", "jardin", "lac", "montagne", "forêt", "plage", "grotte", "cascade", "botanique", "nature", "garden", "lake"], texte_complet):
-            categorie = "nature"
-        else:
-            categorie = "détente"
+        for tag in tags_officiels:
+            if tag in DICTIONNAIRE_CATEGORIES:
+                categories_trouvees.append(DICTIONNAIRE_CATEGORIES[tag])
+                
+        # On supprime les doublons (ex: si ça a matché deux fois "sport")
+        categories_trouvees = list(set(categories_trouvees))
 
-        # (La suite ne change pas)
+        # Le filet de sécurité
+        if len(categories_trouvees) == 0:
+            categories_trouvees.append("autre")
+
+        # --- LOCALISATION ---
         ville, cp, adresse, region, lat, lon = "", "", "", "", "", ""
         is_located = data.get("isLocatedAt", [])
         
@@ -83,6 +150,7 @@ for chemin_fichier in fichiers_json:
                 lat = geo.get("schema:latitude", "")
                 lon = geo.get("schema:longitude", "")
 
+        # --- CONTACTS ---
         tel, site_web = "", ""
         contacts = data.get("hasContact", [])
         if contacts and isinstance(contacts, list):
@@ -95,7 +163,7 @@ for chemin_fichier in fichiers_json:
 
         activite = {
             "nom": nom,
-            "categorie": categorie,
+            "categories": categories_trouvees,  # ICI AU PLURIEL
             "adresse": adresse,
             "code_postal": cp,
             "ville": ville,
@@ -117,4 +185,4 @@ with open(FICHIER_SORTIE, 'w', encoding='utf-8') as f_out:
     json.dump(activites_propres, f_out, ensure_ascii=False, indent=4)
 
 print("-" * 40)
-print(f"🎉 SUCCÈS ! {len(activites_propres)} activités ont été catégorisées intelligemment.")
+print(f"🎉 SUCCÈS ! {len(activites_propres)} activités ont été catégorisées avec le dictionnaire officiel.")
