@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WishAdventure - Voyage</title>
+	<link rel="stylesheet" href="/static/styles/app.css">
+	<style>
+		.voyage-wrap {
+			max-width: 900px;
+			margin: 32px auto;
+			padding: 0 16px;
+		}
+		.voyage-card {
+			background: rgba(255, 255, 255, 0.08);
+			border: 1px solid rgba(255, 255, 255, 0.15);
+			border-radius: 14px;
+			padding: 18px;
+			margin-bottom: 16px;
+			backdrop-filter: blur(8px);
+		}
+		.voyage-card h2 {
+			margin-top: 0;
+		}
+		pre {
+			background: rgba(0, 0, 0, 0.25);
+			border-radius: 10px;
+			padding: 14px;
+			overflow-x: auto;
+			white-space: pre-wrap;
+			word-break: break-word;
+		}
+		.back-link {
+			display: inline-block;
+			margin-top: 6px;
+			text-decoration: none;
+			color: #fff;
+			border: 1px solid rgba(255, 255, 255, 0.35);
+			border-radius: 10px;
+			padding: 8px 12px;
+		}
+	</style>
+</head>
+<body>
+	<main class="voyage-wrap">
+		<section class="voyage-card">
+			<h1>Resultat du voyage</h1>
+			<p>Reponse recue depuis la route /algorithm :</p>
+			<pre id="algoResponse">Chargement...</pre>
+		</section>
+
+		<section class="voyage-card">
+			<h2>Criteres envoyes</h2>
+			<pre id="submittedCriteria">Chargement...</pre>
+			<a class="back-link" href="/creation">Modifier les criteres</a>
+		</section>
+	</main>
+
+	<script>
+		function prettyPrint(targetId, storageKey, emptyMessage) {
+			const target = document.getElementById(targetId);
+			try {
+				const raw = sessionStorage.getItem(storageKey);
+				if (!raw) {
+					target.textContent = emptyMessage;
+					return;
+				}
+				const parsed = JSON.parse(raw);
+				target.textContent = JSON.stringify(parsed, null, 2);
+			} catch (err) {
+				target.textContent = 'Impossible de lire les donnees stockees.';
+				console.error(err);
+			}
+		}
+
+		prettyPrint('algoResponse', 'algorithmResponse', 'Aucune reponse disponible.');
+		prettyPrint('submittedCriteria', 'criteriaFormPayload', 'Aucun critere disponible.');
+	</script>
+</body>
+</html>

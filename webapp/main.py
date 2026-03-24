@@ -240,6 +240,12 @@ def creation(request: Request, journey_id: str | None = None):
     )
 
 
+@app.get("/voyage")
+@app.get("/Voyage.html")
+def voyage_page(request: Request):
+    return templates.TemplateResponse("Voyage.html", {"request": request})
+
+
 @app.get("/journeys/view/{journey_id}")
 def journey_view(request: Request, journey_id: str):
     return templates.TemplateResponse(
