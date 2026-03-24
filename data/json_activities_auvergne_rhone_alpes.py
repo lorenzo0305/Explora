@@ -1,12 +1,11 @@
+import os
 import json
-import glob
+from pathlib import Path
 
 # --- CONFIGURATION DES DOSSIERS ---
-DOSSIER_SOURCE = r"C:\Users\roman\ESIEE\explora\Explora\data\Auvergne_Rhone_Alpes_object"
-FICHIER_SORTIE = r"C:\Users\roman\ESIEE\explora\Explora\data\Auvergne_Rhone_Alpes_multicategories.json"
 BASE_DIR = Path(__file__).resolve().parent
 DOSSIER_SOURCE = BASE_DIR / "Auvergne_Rhone_Alpes_object"
-FICHIER_SORTIE = BASE_DIR / "Auvergne_Rhone_Alpes_propre.json"
+FICHIER_SORTIE = BASE_DIR / "Auvergne_Rhone_Alpes_multicategories_saisons.json"
 
 activites_propres = []
 
@@ -111,38 +110,44 @@ for chemin_fichier in fichiers_json:
                 if "fr" in short:
                     description = short.get("fr", [""])[0]
 
-        # --- NOUVEAU SYSTÈME DE CATÉGORISATION (Par Ontologie) ---
+        # --- SYSTÈME DE CATÉGORISATION (Par Ontologie) ---
         categories_trouvees = []
         tags_officiels = data.get("@type", [])
         
         for tag in tags_officiels:
             if tag in DICTIONNAIRE_CATEGORIES:
                 categories_trouvees.append(DICTIONNAIRE_CATEGORIES[tag])
-                
-        # On supprime les doublons (ex: si ça a matché deux fois "sport")
+        
         categories_trouvees = list(set(categories_trouvees))
-
-        # Le filet de sécurité
         if len(categories_trouvees) == 0:
             categories_trouvees.append("autre")
-        # On crée notre gros texte de recherche
-        categories_tags = data.get("@type", [])
-        categories_str = " ".join(categories_tags)
-        texte_complet = f"{categories_str} {nom} {description}".lower()
-        
-        # --- NOUVEAU SYSTÈME DE CATÉGORISATION (Mots entiers) ---
-        if contient_mots(["ski", "sport", "vélo", "vtt", "rando", "randonnée", "cyclisme", "piscine", "nautique", "raquette", "gym", "gymnase", "stade", "patinoire", "golf", "tennis", "fitness", "équestre"], texte_complet):
-            categorie = "sport"
-        elif contient_mots(["restaurant", "gastronomie", "brasserie", "snack", "crêperie", "dégustation", "terroir", "boulangerie", "pâtisserie", "traiteur", "glace", "food", "wine"], texte_complet):
-            categorie = "gastronomie"
-        elif contient_mots(["boutique", "magasin", "librairie", "créateur", "artisanat", "shopping", "store", "épicerie", "souvenir", "achat"], texte_complet):
-            categorie = "boutique"
-        elif contient_mots(["musée", "château", "histoire", "spectacle", "concert", "théâtre", "patrimoine", "monument", "église", "eglise", "chapelle", "cathédrale", "cathedrale", "basilique", "collégiale", "collegiale", "sanctuaire", "religieux", "abbaye", "culture", "art", "museum", "historic", "exhibition", "bibliothèque", "lecture"], texte_complet):
-            categorie = "culture"
-        elif contient_mots(["parc", "jardin", "lac", "montagne", "forêt", "plage", "grotte", "cascade", "botanique", "nature", "garden", "lake"], texte_complet):
-            categorie = "nature"
-        else:
-            categorie = "détente"
+
+        # --- DÉDUCTION DE LA SAISON (Via les périodes d'offres) ---
+        saison = "toute l'année"
+        try:
+            offres = data.get("offers", [])
+            if offres:
+                specs = offres[0].get("schema:priceSpecification", [])
+                if specs:
+                    # On cherche la période de validité (appliesOnPeriod)
+                    periodes = specs[0].get("appliesOnPeriod", [])
+                    if periodes:
+                        start = periodes[0].get("startDate", "")
+                        if start:
+                            mois_debut = int(start.split("-")[1])
+                            if mois_debut in [12, 1, 2]:
+                                saison = "hiver"
+                            elif mois_debut in [5, 6, 7]:
+                                saison = "été"
+        except:
+            pass
+
+        # Sécurité saison par types spécifiques
+        if saison == "toute l'année":
+            if any(t in ["SkiResort", "DownhillSkiRun", "SkiTouring"] for t in tags_officiels):
+                saison = "hiver"
+            elif any(t in ["Beach", "CanoeBay"] for t in tags_officiels):
+                saison = "été"
 
         # --- LOCALISATION ---
         ville, cp, adresse, region, lat, lon = "", "", "", "", "", ""
@@ -150,16 +155,13 @@ for chemin_fichier in fichiers_json:
         
         if is_located and isinstance(is_located, list):
             loc = is_located[0]
-            
             adresse_info = loc.get("schema:address", [])
             if adresse_info and isinstance(adresse_info, list):
                 addr = adresse_info[0]
                 ville = addr.get("schema:addressLocality", "")
                 cp = addr.get("schema:postalCode", "")
-                
                 street = addr.get("schema:streetAddress", [])
                 if street: adresse = street[0]
-
                 try:
                     region = addr.get("hasAddressCity", {}).get("isPartOfDepartment", {}).get("isPartOfRegion", {}).get("rdfs:label", {}).get("fr", [""])[0]
                 except:
@@ -177,13 +179,13 @@ for chemin_fichier in fichiers_json:
             contact = contacts[0]
             tels = contact.get("schema:telephone", [])
             if tels: tel = tels[0]
-
             webs = contact.get("foaf:homepage", [])
             if webs: site_web = webs[0]
 
         activite = {
             "nom": nom,
-            "categories": categories_trouvees,  # ICI AU PLURIEL
+            "categories": categories_trouvees,
+            "saison": saison,
             "adresse": adresse,
             "code_postal": cp,
             "ville": ville,
@@ -205,4 +207,4 @@ with open(FICHIER_SORTIE, 'w', encoding='utf-8') as f_out:
     json.dump(activites_propres, f_out, ensure_ascii=False, indent=4)
 
 print("-" * 40)
-print(f"🎉 SUCCÈS ! {len(activites_propres)} activités ont été catégorisées avec le dictionnaire officiel.")
+print(f"🎉 SUCCÈS ! {len(activites_propres)} activités ont été traitées avec catégories et saisons.")
