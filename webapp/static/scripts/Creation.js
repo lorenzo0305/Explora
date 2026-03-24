@@ -58,7 +58,7 @@ document.getElementById('criteriaForm').addEventListener('submit', async functio
         // Pour garder les données même après la redirectoin
         sessionStorage.setItem('algorithmResponse', JSON.stringify(data));
         sessionStorage.setItem('criteriaFormPayload', JSON.stringify(formData));
-        window.location.href = '/voyage.html';
+        window.location.href = '/Voyage.html';
 
     } catch (error) {
         console.error("Erreur lors de la soumission :", error);
@@ -96,14 +96,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Mettre à jour l'affichage pendant la recherche
             document.getElementById('selected-ville-name').textContent = "Recherche...";
-            
+
             // Appel API Nominatim pour trouver la ville (Reverse Geocoding)
             try {
                 const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`);
                 const data = await response.json();
-                
+
                 const ville = data.address.city || data.address.town || data.address.village || data.address.municipality || 'Lieu inconnu';
-                
+
                 document.getElementById('ville').value = ville;
                 document.getElementById('selected-ville-name').textContent = ville;
             } catch (err) {
