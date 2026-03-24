@@ -1,104 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WishAdventure — Voyage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/styles/app.css">
-    <link rel="stylesheet" href="/static/styles/Creation.css">
-    <style>
-        .voyage-card {
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 14px;
-            padding: 18px;
-            margin-bottom: 20px;
-            backdrop-filter: blur(8px);
-        }
-        pre {
-            background: rgba(0, 0, 0, 0.25);
-            border-radius: 10px;
-            padding: 14px;
-            overflow-x: auto;
-            white-space: pre-wrap;
-            word-break: break-word;
-            font-family: monospace;
-            color: #dcdcdc;
-            font-size: 0.85rem;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WishAdventure - Voyage</title>
+	<link rel="stylesheet" href="/static/styles/app.css">
+    <link rel="stylesheet" href="/static/styles/Voyage.css">
+    <script src="/static/scripts/Voyage.js" defer></script>
 </head>
 <body>
+	<main class="voyage-wrap">
+		<section class="voyage-card">
+			<h1>Resultat du voyage</h1>
+			<p>Reponse recue depuis la route /algorithm :</p>
+			<pre id="algoResponse">Chargement...</pre>
+		</section>
 
-    <div class="app-frame">
-        <div class="content-panel">
-            <div class="content-inner">
-
-                <div>
-                    <div class="header-title">Plan de Voyage</div>
-                    <div class="subtitle">Voici les résultats selon vos critères</div>
-                </div>
-
-                <div class="voyage-card" style="margin-top: 20px;">
-                    <h2 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;">Réponse de l'algorithme :</h2>
-                    <pre id="algoResponse">Chargement...</pre>
-                </div>
-
-                <div class="voyage-card" style="margin-top: 20px;">
-                    <h2 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;">Critères envoyés :</h2>
-                    <pre id="submittedCriteria">Chargement...</pre>
-                    
-                    <a class="submit-btn" href="/creation" style="display: inline-flex; justify-content: center; align-items: center; text-decoration: none; margin-top: 15px;">
-                        Modifier les critères
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
-        <nav class="bottom-nav">
-            <a href="/" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24">
-                        <path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z" />
-                    </svg>Accueil</button></a>
-            <a href="/Destinations" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24">
-                        <circle cx="11" cy="11" r="6"></circle>
-                        <path d="M20 20l-3.5-3.5" stroke="white" stroke-width="2" stroke-linecap="round" fill="none" />
-                    </svg>Exploration</button></a>
-            <a href="/topics" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24">
-                        <path d="M5 4h11a2 2 0 0 1 2 2v12H7a2 2 0 0 1-2-2V4z" />
-                        <rect x="3" y="6" width="2" height="12" rx="1" ry="1" />
-                        <path d="M8 8h7M8 11h7M8 14h5" stroke="white" stroke-width="2" fill="none"
-                            stroke-linecap="round" />
-                    </svg>Carnet</button></a>
-            <a href="/soumission" class="bouton"><button class="boutonNav active"><svg class="nav-icon"
-                        viewBox="0 0 24 24">
-                        <path
-                            d="M12 2a6 6 0 0 0-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 0 0-6-6zm0 8.5A2.5 2.5 0 1 1 12 5.5a2.5 2.5 0 0 1 0 5z" />
-                        <path d="M15.2 14.2l3.2 3.2-2.3 0.5-1.4 1.4-0.5-2.3 1-1z" />
-                    </svg>Création</button></a>
-        </nav>
-    </div>
-
-    <script>
-        function prettyPrint(targetId, storageKey, emptyMessage) {
-            const target = document.getElementById(targetId);
-            try {
-                const raw = sessionStorage.getItem(storageKey);
-                if (!raw) {
-                    target.textContent = emptyMessage;
-                    return;
-                }
-                const parsed = JSON.parse(raw);
-                target.textContent = JSON.stringify(parsed, null, 2);
-            } catch (err) {
-                target.textContent = 'Impossible de lire les donnees stockees.';
-                console.error(err);
-            }
-        }
-
-        prettyPrint('algoResponse', 'algorithmResponse', 'Aucune reponse disponible.');
-        prettyPrint('submittedCriteria', 'criteriaFormPayload', 'Aucun critere disponible.');
-    </script>
+		<section class="voyage-card">
+			<h2>Criteres envoyes</h2>
+			<pre id="submittedCriteria">Chargement...</pre>
+			<a class="back-link" href="/creation">Modifier les criteres</a>
+		</section>
+	</main>
 </body>
 </html>
