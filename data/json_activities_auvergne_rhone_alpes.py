@@ -137,7 +137,7 @@ for chemin_fichier in fichiers_json:
                             mois_debut = int(start.split("-")[1])
                             if mois_debut in [12, 1, 2]:
                                 saison = "hiver"
-                            elif mois_debut in [5, 6, 7]:
+                            elif mois_debut in [5, 6, 7, 8]:
                                 saison = "été"
         except:
             pass
