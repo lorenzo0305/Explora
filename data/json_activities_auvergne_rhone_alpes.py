@@ -4,8 +4,9 @@ from pathlib import Path
 
 # --- CONFIGURATION DES DOSSIERS ---
 BASE_DIR = Path(__file__).resolve().parent
+# Tu peux changer le nom du dossier source selon la région (ex: "Hauts_de_France_object")
 DOSSIER_SOURCE = BASE_DIR / "Auvergne_Rhone_Alpes_object"
-FICHIER_SORTIE = BASE_DIR / "Auvergne_Rhone_Alpes_multicategories_saisons.json"
+FICHIER_SORTIE = BASE_DIR / "Auvergne_Rhone_Alpes_propre.json"
 
 activites_propres = []
 
@@ -45,10 +46,11 @@ DICTIONNAIRE_CATEGORIES = {
     "Abbey": "culture", "ArcheologicalSite": "culture", "ArtGalleryOrExhibitionGallery": "culture", 
     "ArtistSigning": "culture", "Basilica": "culture", "Castle": "culture", "Cathedral": "culture", 
     "Chapel": "culture", "Chartreuse": "culture", "Church": "culture", "Cinema": "culture", 
-    "Cinematheque": "culture", "CircusPlace": "culture", "Citadel": "culture", 
-    "CityHeritage": "culture", "Cloister": "culture", "Collegiate": "culture", 
-    "Commanderie": "culture", "Commemoration": "culture", "Concert": "culture", 
-    "Convent": "culture", "CulturalEvent": "culture", "CulturalSite": "culture", "Culture": "culture", 
+    "Cinematheque": "culture", "CircusPlace": "culture", "Cirque": "culture", "Citadel": "culture", 
+    "CityHeritage": "culture", "CivilCemetery": "culture", "Cliff": "culture", "Cloister": "culture", 
+    "Coastline": "culture", "Col": "culture", "Collegiate": "culture", "Commanderie": "culture", 
+    "Commemoration": "culture", "Concert": "culture", "Convent": "culture", 
+    "CulturalEvent": "culture", "CulturalSite": "culture", "Culture": "culture", 
     "DefenceSite": "culture", "Dungeon": "culture", "EducationalTrail": "culture", 
     "Exhibition": "culture", "Festival": "culture", "Fort": "culture", "FortifiedCastle": "culture", 
     "InterpretationCentre": "culture", "Library": "culture", "MegalithDolmenMenhir": "culture", 
@@ -122,32 +124,39 @@ for chemin_fichier in fichiers_json:
         if len(categories_trouvees) == 0:
             categories_trouvees.append("autre")
 
-        # --- DÉDUCTION DE LA SAISON (Via les périodes d'offres) ---
-        saison = "toute l'année"
+        # --- DÉDUCTION DE LA SAISON ---
+        saison_calculee = "toute l'année"
         try:
             offres = data.get("offers", [])
             if offres:
                 specs = offres[0].get("schema:priceSpecification", [])
                 if specs:
-                    # On cherche la période de validité (appliesOnPeriod)
                     periodes = specs[0].get("appliesOnPeriod", [])
                     if periodes:
                         start = periodes[0].get("startDate", "")
                         if start:
                             mois_debut = int(start.split("-")[1])
                             if mois_debut in [12, 1, 2]:
-                                saison = "hiver"
-                            elif mois_debut in [5, 6, 7, 8]:
-                                saison = "été"
+                                saison_calculee = "hiver"
+                            elif mois_debut in [5, 6, 7]:
+                                saison_calculee = "été"
         except:
             pass
 
         # Sécurité saison par types spécifiques
-        if saison == "toute l'année":
+        if saison_calculee == "toute l'année":
             if any(t in ["SkiResort", "DownhillSkiRun", "SkiTouring"] for t in tags_officiels):
-                saison = "hiver"
+                saison_calculee = "hiver"
             elif any(t in ["Beach", "CanoeBay"] for t in tags_officiels):
-                saison = "été"
+                saison_calculee = "été"
+
+        # --- FILTRE SAISONNIER RESTREINT ---
+        # On n'applique la saison que si l'activité est "sport" ou "nature"
+        # Sinon, par défaut c'est "toute l'année"
+        if any(cat in ["sport", "nature"] for cat in categories_trouvees):
+            saison_finale = saison_calculee
+        else:
+            saison_finale = "toute l'année"
 
         # --- LOCALISATION ---
         ville, cp, adresse, region, lat, lon = "", "", "", "", "", ""
@@ -185,7 +194,7 @@ for chemin_fichier in fichiers_json:
         activite = {
             "nom": nom,
             "categories": categories_trouvees,
-            "saison": saison,
+            "saison": saison_finale,
             "adresse": adresse,
             "code_postal": cp,
             "ville": ville,
@@ -207,4 +216,4 @@ with open(FICHIER_SORTIE, 'w', encoding='utf-8') as f_out:
     json.dump(activites_propres, f_out, ensure_ascii=False, indent=4)
 
 print("-" * 40)
-print(f"🎉 SUCCÈS ! {len(activites_propres)} activités ont été traitées avec catégories et saisons.")
+print(f"🎉 SUCCÈS ! {len(activites_propres)} activités ont été traitées avec catégories et saisons filtrées.")
