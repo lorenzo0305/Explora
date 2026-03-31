@@ -36,7 +36,7 @@ uri = "mongodb+srv://equipe_explora:2BqXsiNi8nCCE%40W@datas.xc1dpyu.mongodb.net/
 try:
     client = MongoClient(uri)
     db = client['explora']  # Nom de votre base de données
-    collection = db['auvergne']  # Remplacez par le nom de votre collection
+    collection = db['haut_de_france']  # Remplacez par le nom de votre collection
     print("Connexion à MongoDB Atlas réussie.")
 except Exception as e:
     print(f"Erreur de connexion à MongoDB Atlas : {e}")
@@ -92,7 +92,7 @@ knn.fit(X)
 # 7. SAUVEGARDE DU MODÈLE EN PKL
 dossier_sortie = './data/models'  # Chemin relatif ou absolu selon votre environnement
 os.makedirs(dossier_sortie, exist_ok=True)
-nom_pkl = "modele_recommandation.pkl"
+nom_pkl = "modele_haut_de_france.pkl"
 chemin_sortie = os.path.join(dossier_sortie, nom_pkl)
 
 data_pkl = {
