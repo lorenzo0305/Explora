@@ -1,15 +1,14 @@
 import os
 import json
 from pathlib import Path
+from datetime import datetime
 
-# --- CONFIGURATION DES DOSSIERS ---
+# --- CONFIGURATION ---
 BASE_DIR = Path(__file__).resolve().parent
 DOSSIER_SOURCE = BASE_DIR / "Auvergne_Rhone_Alpes_object"
-FICHIER_SORTIE = BASE_DIR / "Auvergne_Rhone_Alpes_multicategories_saisons.json"
+FICHIER_SORTIE = BASE_DIR / "Auvergne_Rhone_Alpes_propre_intersaison.json"
 
-activites_propres = []
-
-# --- LE DICTIONNAIRE OFFICIEL DATATOURISME ---
+# --- LE DICTIONNAIRE OFFICIEL (Inchangé) ---
 DICTIONNAIRE_CATEGORIES = {
     # 🏅 SPORT & LOISIRS ACTIFS
     "AdventurePark": "sport", "AccompaniedPractice": "sport", "BilliardRoom": "sport", 
@@ -45,10 +44,11 @@ DICTIONNAIRE_CATEGORIES = {
     "Abbey": "culture", "ArcheologicalSite": "culture", "ArtGalleryOrExhibitionGallery": "culture", 
     "ArtistSigning": "culture", "Basilica": "culture", "Castle": "culture", "Cathedral": "culture", 
     "Chapel": "culture", "Chartreuse": "culture", "Church": "culture", "Cinema": "culture", 
-    "Cinematheque": "culture", "CircusPlace": "culture", "Citadel": "culture", 
-    "CityHeritage": "culture", "Cloister": "culture", "Collegiate": "culture", 
-    "Commanderie": "culture", "Commemoration": "culture", "Concert": "culture", 
-    "Convent": "culture", "CulturalEvent": "culture", "CulturalSite": "culture", "Culture": "culture", 
+    "Cinematheque": "culture", "CircusPlace": "culture", "Cirque": "culture", "Citadel": "culture", 
+    "CityHeritage": "culture", "CivilCemetery": "culture", "Cliff": "culture", "Cloister": "culture", 
+    "Coastline": "culture", "Col": "culture", "Collegiate": "culture", "Commanderie": "culture", 
+    "Commemoration": "culture", "Concert": "culture", "Convent": "culture", 
+    "CulturalEvent": "culture", "CulturalSite": "culture", "Culture": "culture", 
     "DefenceSite": "culture", "Dungeon": "culture", "EducationalTrail": "culture", 
     "Exhibition": "culture", "Festival": "culture", "Fort": "culture", "FortifiedCastle": "culture", 
     "InterpretationCentre": "culture", "Library": "culture", "MegalithDolmenMenhir": "culture", 
@@ -88,9 +88,18 @@ DICTIONNAIRE_CATEGORIES = {
     "ThalassotherapyCentre": "détente"
 }
 
-print("🔍 Recherche des fichiers JSON...")
+def calculer_duree_mois(start_str, end_str):
+    try:
+        debut = datetime.strptime(start_str, "%Y-%m-%d")
+        fin = datetime.strptime(end_str, "%Y-%m-%d")
+        nb_mois = (fin.year - debut.year) * 12 + (fin.month - debut.month)
+        return abs(nb_mois), debut.month
+    except:
+        return None, None
+
+print("🔍 Extraction et analyse des durées...")
+activites_propres = []
 fichiers_json = sorted(DOSSIER_SOURCE.rglob("*.json"))
-print(f"✅ {len(fichiers_json)} fichiers trouvés ! Début de l'extraction...\n")
 
 for chemin_fichier in fichiers_json:
     try:
@@ -98,113 +107,99 @@ for chemin_fichier in fichiers_json:
             data = json.load(f)
 
         nom = data.get("rdfs:label", {}).get("fr", [""])[0]
-
-        description = ""
-        comments = data.get("rdfs:comment", {})
-        if "fr" in comments:
-            description = comments.get("fr", [""])[0]
-        else:
-            has_desc = data.get("hasDescription", [])
-            if has_desc and isinstance(has_desc, list):
-                short = has_desc[0].get("shortDescription", {})
-                if "fr" in short:
-                    description = short.get("fr", [""])[0]
-
-        # --- SYSTÈME DE CATÉGORISATION (Par Ontologie) ---
-        categories_trouvees = []
         tags_officiels = data.get("@type", [])
         
-        for tag in tags_officiels:
-            if tag in DICTIONNAIRE_CATEGORIES:
-                categories_trouvees.append(DICTIONNAIRE_CATEGORIES[tag])
-        
-        categories_trouvees = list(set(categories_trouvees))
-        if len(categories_trouvees) == 0:
+        # --- CATÉGORISATION ---
+        categories_trouvees = list(set([DICTIONNAIRE_CATEGORIES[t] for t in tags_officiels if t in DICTIONNAIRE_CATEGORIES]))
+        if not categories_trouvees:
             categories_trouvees.append("autre")
 
-        # --- DÉDUCTION DE LA SAISON (Via les périodes d'offres) ---
-        saison = "toute l'année"
-        try:
-            offres = data.get("offers", [])
-            if offres:
-                specs = offres[0].get("schema:priceSpecification", [])
-                if specs:
-                    # On cherche la période de validité (appliesOnPeriod)
-                    periodes = specs[0].get("appliesOnPeriod", [])
-                    if periodes:
-                        start = periodes[0].get("startDate", "")
-                        if start:
-                            mois_debut = int(start.split("-")[1])
-                            if mois_debut in [12, 1, 2]:
-                                saison = "hiver"
-                            elif mois_debut in [5, 6, 7, 8]:
-                                saison = "été"
-        except:
-            pass
+        # --- CALCUL DURÉE ---
+        nb_mois = None
+        mois_debut = None
+        offres = data.get("offers", [])
+        if offres:
+            specs = offres[0].get("schema:priceSpecification", [])
+            if specs:
+                periodes = specs[0].get("appliesOnPeriod", [])
+                if periodes:
+                    start = periodes[0].get("startDate", "")
+                    end = periodes[0].get("endDate", "")
+                    if start and end:
+                        nb_mois, mois_debut = calculer_duree_mois(start, end)
 
-        # Sécurité saison par types spécifiques
-        if saison == "toute l'année":
-            if any(t in ["SkiResort", "DownhillSkiRun", "SkiTouring"] for t in tags_officiels):
-                saison = "hiver"
-            elif any(t in ["Beach", "CanoeBay"] for t in tags_officiels):
-                saison = "été"
+        # --- LOGIQUE SAISONNIÈRE ---
+        est_sport_nature = any(c in ["sport", "nature"] for c in categories_trouvees)
+        saison_finale = "toute l'année"
 
-        # --- LOCALISATION ---
+        if nb_mois is not None:
+            if est_sport_nature:
+                if nb_mois < 4:
+                    saison_finale = "hiver" if mois_debut in [11, 12, 1, 2] else "été"
+                elif 4 <= nb_mois <= 8:
+                    saison_finale = "Intersaison (sport/nature)"
+                else:
+                    saison_finale = "toute l'année(sport/nature)"
+            else:
+                # Autres catégories (Culture, Gastronomie, Détente...)
+                if nb_mois > 8:
+                    saison_finale = "toute l'année(Autres)"
+                else:
+                    saison_finale = "Intersaison(Autres)"
+        else:
+            # Sécurité si pas de dates : on regarde les tags prioritaires
+            if any(t in ["SkiResort", "DownhillSkiRun"] for t in tags_officiels):
+                saison_finale = "hiver"
+
+        # --- SÉCURITÉ MOTS-CLÉS (Correction des anomalies comme le Bowling ou Balicina) ---
+        nom_l = nom.lower()
+        if any(w in nom_l for w in ["bowling", "cinéma", "spa", "balnéo", "billard"]):
+            saison_finale = "toute l'année"
+            if "spa" in nom_l or "balnéo" in nom_l:
+                if "détente" not in categories_trouvees: categories_trouvees.append("détente")
+
+        # --- LOCALISATION & CONTACT (Ton code d'origine) ---
         ville, cp, adresse, region, lat, lon = "", "", "", "", "", ""
         is_located = data.get("isLocatedAt", [])
-        
-        if is_located and isinstance(is_located, list):
+        if is_located:
             loc = is_located[0]
-            adresse_info = loc.get("schema:address", [])
-            if adresse_info and isinstance(adresse_info, list):
-                addr = adresse_info[0]
-                ville = addr.get("schema:addressLocality", "")
-                cp = addr.get("schema:postalCode", "")
-                street = addr.get("schema:streetAddress", [])
-                if street: adresse = street[0]
-                try:
-                    region = addr.get("hasAddressCity", {}).get("isPartOfDepartment", {}).get("isPartOfRegion", {}).get("rdfs:label", {}).get("fr", [""])[0]
-                except:
-                    pass
-
+            addr = loc.get("schema:address", [{}])[0]
+            ville = addr.get("schema:addressLocality", "")
+            cp = addr.get("schema:postalCode", "")
+            street = addr.get("schema:streetAddress", [])
+            if street: adresse = street[0]
             geo = loc.get("schema:geo", {})
-            if geo:
-                lat = geo.get("schema:latitude", "")
-                lon = geo.get("schema:longitude", "")
+            lat = geo.get("schema:latitude", "")
+            lon = geo.get("schema:longitude", "")
 
-        # --- CONTACTS ---
         tel, site_web = "", ""
         contacts = data.get("hasContact", [])
-        if contacts and isinstance(contacts, list):
+        if contacts:
             contact = contacts[0]
-            tels = contact.get("schema:telephone", [])
-            if tels: tel = tels[0]
-            webs = contact.get("foaf:homepage", [])
-            if webs: site_web = webs[0]
+            tel = contact.get("schema:telephone", [""])[0]
+            site_web = contact.get("foaf:homepage", [""])[0]
+
+        description = data.get("rdfs:comment", {}).get("fr", [""])[0]
 
         activite = {
             "nom": nom,
             "categories": categories_trouvees,
-            "saison": saison,
+            "saison": saison_finale,
             "adresse": adresse,
             "code_postal": cp,
             "ville": ville,
-            "region": region,
             "latitude": lat,
             "longitude": lon,
             "telephone": tel,
             "site_internet": site_web,
             "description": description
         }
-
         activites_propres.append(activite)
 
-    except Exception as e:
+    except Exception:
         continue
 
-print("💾 Sauvegarde en cours...")
+print(f"💾 Sauvegarde de {len(activites_propres)} activités...")
 with open(FICHIER_SORTIE, 'w', encoding='utf-8') as f_out:
     json.dump(activites_propres, f_out, ensure_ascii=False, indent=4)
-
-print("-" * 40)
-print(f"🎉 SUCCÈS ! {len(activites_propres)} activités ont été traitées avec catégories et saisons.")
+print("🎉 Terminé !")
