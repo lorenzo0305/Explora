@@ -1,131 +1,350 @@
-# Fusion des fichiers pkl, on n'a pas besoin de préciser la région, juste la ville. Propose les activités proches qui nous correspondent et qui sont dans
-# le rayon. Peut proposer des activités qui ne sont pas dans la même région mais dans le rayon...ce n'est pas le cas ici car on n'a que 2 régions qui
-# ne sont pas du tout à coté.
-
-import pickle
-import numpy as np
 import os
+import pickle
+import urllib.parse
+import numpy as np
 import pandas as pd
-from sklearn.neighbors import NearestNeighbors
+import requests
+import certifi
+from pymongo import MongoClient
 from geopy.geocoders import Nominatim
+from sklearn.neighbors import NearestNeighbors
 
-geolocator = Nominatim(user_agent="explora_simple")
 
-def calculer_distance(lat_c, lon_c, lats, lons):
-    R = 6371
-    dlat = np.radians(lats - lat_c)
-    dlon = np.radians(lons - lon_c)
-    a = np.sin(dlat/2)**2 + np.cos(np.radians(lat_c)) * np.cos(np.radians(lats)) * np.sin(dlon/2)**2
+# ─────────────────────────────────────────────
+#  1. CONNEXION MONGODB
+# ─────────────────────────────────────────────
+def connecter_mongodb():
+    user     = "equipe_explora"
+    password = "2BqXsiNi8nCCE@W"
+    safe_pwd = urllib.parse.quote_plus(password)
+    uri      = f"mongodb+srv://{user}:{safe_pwd}@datas.xc1dpyu.mongodb.net/?appName=datas"
+
+    print("Connexion à MongoDB Atlas...")
+    client = MongoClient(uri, tlsCAFile=certifi.where())
+    client.admin.command('ping')
+    print(" Connexion réussie !\n")
+    return client
+
+
+# ─────────────────────────────────────────────
+#  2. CHARGEMENT & FUSION DES DONNÉES
+#     .pkl     → scores SBERT déjà calculés + DataFrame complet
+#     MongoDB  → enrichissement si champs manquants dans le pkl
+# ─────────────────────────────────────────────
+def charger_donnees(client, dossier_pkl="data/models", db_name="explora"):
+    """
+    Les .pkl contiennent déjà le DataFrame avec les scores SBERT calculés.
+    MongoDB est utilisé pour enrichir les champs manquants (ex: adresse).
+    """
+    # Chemin local ou Kaggle
+    if not os.path.exists(dossier_pkl):
+        dossier_pkl = "/kaggle/input/datasets/sarahesiee/fichier-pkl"
+    if not os.path.exists(dossier_pkl):
+        raise FileNotFoundError(f"Dossier .pkl introuvable : {dossier_pkl}")
+
+    fichiers_pkl = [f for f in os.listdir(dossier_pkl) if f.endswith('.pkl')]
+    if not fichiers_pkl:
+        raise FileNotFoundError("Aucun fichier .pkl trouvé dans " + dossier_pkl)
+
+    db       = client[db_name]
+    cols_mongo = db.list_collection_names()
+    all_df   = []
+
+    print(f"Chargement de {len(fichiers_pkl)} fichier(s) .pkl…")
+
+    for f in fichiers_pkl:
+        chemin = os.path.join(dossier_pkl, f)
+        with open(chemin, 'rb') as fh:
+            data = pickle.load(fh)
+
+        # Le pkl contient un dict {'model': knn, 'df': DataFrame}
+        df_pkl = data['df'] if isinstance(data, dict) and 'df' in data else data
+
+        # Nom de région déduit du nom de fichier
+        # ex: "auvergne.pkl" → "auvergne"
+        # ex: "modele_recommandation.pkl" → on cherche la collection existante
+        region = f.replace('.pkl', '')
+
+        # Enrichissement MongoDB si la collection existe
+        if region in cols_mongo:
+            docs = list(db[region].find({}, {'_id': 0}))
+            if docs:
+                df_mongo = pd.DataFrame(docs)
+                # On fusionne sur 'nom' pour récupérer les champs absents du pkl
+                cols_a_ajouter = [c for c in df_mongo.columns
+                                  if c not in df_pkl.columns and c != '_id']
+                if cols_a_ajouter and 'nom' in df_pkl.columns and 'nom' in df_mongo.columns:
+                    df_pkl = df_pkl.merge(
+                        df_mongo[['nom'] + cols_a_ajouter],
+                        on='nom', how='left'
+                    )
+            print(f"  • {f:<35} → {len(df_pkl):>4} activités  (enrichi via MongoDB '{region}')")
+        else:
+            print(f"  • {f:<35} → {len(df_pkl):>4} activités  (pas de collection MongoDB '{region}')")
+
+        df_pkl['_region'] = region
+        all_df.append(df_pkl)
+
+    df_global = pd.concat(all_df, ignore_index=True)
+    df_global[['latitude', 'longitude']] = (
+        df_global[['latitude', 'longitude']].apply(pd.to_numeric, errors='coerce')
+    )
+    # On supprime les lignes sans coordonnées ou sans scores
+    df_global = df_global.dropna(subset=['latitude', 'longitude'])
+    df_global = df_global[df_global['scores'].notna()]
+    print(f"\n {len(df_global)} activités prêtes.\n")
+    return df_global
+
+
+# ─────────────────────────────────────────────
+#  3. GÉOLOCALISATION & DISTANCES
+# ─────────────────────────────────────────────
+def geocoder_ville(ville: str):
+    geolocator = Nominatim(user_agent="explora_application")
+    loc = geolocator.geocode(f"{ville}, France")
+    if not loc:
+        raise ValueError(f"Ville introuvable : {ville}")
+    return loc.latitude, loc.longitude
+
+
+def haversine(lat1, lon1, lats2, lons2):
+    """Distance à vol d'oiseau vectorisée (km)."""
+    R    = 6371
+    dlat = np.radians(np.asarray(lats2, dtype=float) - lat1)
+    dlon = np.radians(np.asarray(lons2, dtype=float) - lon1)
+    a    = (np.sin(dlat / 2) ** 2
+            + np.cos(np.radians(lat1)) * np.cos(np.radians(lats2)) * np.sin(dlon / 2) ** 2)
     return R * 2 * np.arcsin(np.sqrt(a))
 
-def lancer_explora_complet():
-    # --- CONNEXION À MONGODB ---
-    uri = "mongodb+srv://equipe_explora:2BqXsiNi8nCCE@W@datas.xc1dpyu.mongodb.net/?appName=datas"
-    client = MongoClient(uri, tlsCAFile=certifi.where())
-    
+
+def routage_osrm(lat1, lon1, lat2, lon2):
+    """Distance routière via OSRM, fallback haversine."""
+    url = (f"http://router.project-osrm.org/route/v1/driving/"
+           f"{lon1},{lat1};{lon2},{lat2}?overview=false")
     try:
-        db = client['explora'] # Nom de ta DB sur Atlas
-        collection = db['activites'] # Nom de ta collection
-        
-        # Récupération de TOUTES les données (équivalent de ta fusion .pkl)
-        print("Récupération des données depuis MongoDB...")
-        cursor = collection.find({}) # Requête vide = tout prendre
-        df_global = pd.DataFrame(list(cursor))
-        
-        if df_global.empty:
-            print("La base de données est vide.")
-            return
+        r    = requests.get(url, timeout=4)
+        data = r.json()
+        if data.get('code') == 'Ok':
+            km = data['routes'][0]['distance'] / 1000
+            mn = data['routes'][0]['duration'] / 60
+            return f"{km:.1f} km (~{int(mn)} min en voiture)"
+    except Exception:
+        pass
+    dist = haversine(lat1, lon1, np.array([lat2]), np.array([lon2]))[0]
+    return f"≈ {dist:.1f} km (à vol d'oiseau)"
 
-        # Nettoyage (MongoDB garde un champ '_id' dont on n'a pas besoin pour le calcul)
-        if '_id' in df_global.columns:
-            df_global = df_global.drop(columns=['_id'])
 
-    except Exception as e:
-        print(f"Erreur de connexion : {e}")
-        return
-    finally:
-        client.close()
-    dossier = "."
-    fichiers = [f for f in os.listdir(dossier) if f.endswith('_REGIONALE.pkl')]
+# ─────────────────────────────────────────────
+#  4. PRÉFÉRENCES UTILISATEUR
+# ─────────────────────────────────────────────
+THEMES        = ["nature", "gastronomie", "sport", "culture", "detente", "boutique"]
+THEMES_LABELS = ["Nature", "Gastronomie", "Sport", "Culture", "Détente", "Boutique"]
 
-    if not fichiers:
-        print("Aucun fichier .pkl trouvé.")
-        return
 
-    # --- FUSION DES DONNÉES ---
-    all_df = []
-    print(f" Fusion des régions : {[f.replace('_REGIONALE.pkl', '') for f in fichiers]}...")
-    for f in fichiers:
-        with open(os.path.join(dossier, f), 'rb') as tmp:
-            data = pickle.load(tmp)
-            all_df.append(data['df'])
-    
-    df_global = pd.concat(all_df, ignore_index=True)
-    
-    # Nettoyage
-    df_global['latitude'] = pd.to_numeric(df_global['latitude'], errors='coerce')
-    df_global['longitude'] = pd.to_numeric(df_global['longitude'], errors='coerce')
-    df_global = df_global.dropna(subset=['latitude', 'longitude'])
-    
-    print(f"{len(df_global)} activités chargées au total.")
+def saisir_preferences():
+    print("Vos préférences — note de 0 à 10 :")
+    notes = []
+    for label in THEMES_LABELS:
+        val = input(f"  {label:<14} : ").strip()
+        notes.append(float(val) if val else 5.0)
+    return notes
 
-    # --- LOCALISATION ---
-    ville_user = input("\nDans quelle ville es-tu ? ").strip()
-    print(f"Recherche du centre de {ville_user}...")
-    loc = geolocator.geocode(f"{ville_user}, France")
 
-    if not loc:
-        print("Ville introuvable.")
-        return
+# ─────────────────────────────────────────────
+#  5. SCORING KNN (sur les scores SBERT du pkl)
+# ─────────────────────────────────────────────
+def scorer_activites(df: pd.DataFrame, lat_c, lon_c, rayon_max, prefs):
+    """
+    1. Filtre les activités dans le rayon.
+    2. KNN cosinus sur les scores SBERT (issus des .pkl).
+    3. Score final = 60% similarité thématique + 40% proximité.
+    """
+    df = df.copy()
+    df['dist_oiseau'] = haversine(
+        lat_c, lon_c, df['latitude'].values, df['longitude'].values
+    )
+    df = df[df['dist_oiseau'] <= rayon_max].reset_index(drop=True)
 
-    lat_c, lon_c = loc.latitude, loc.longitude
-    print(f"→ Coordonnées : {lat_c:.4f}, {lon_c:.4f}")
+    if df.empty:
+        return df
 
-    rayon_max = float(input("Rayon de recherche (km) : ").strip() or 20)
+    # Matrice des scores thématiques SBERT (déjà dans le pkl)
+    X = np.array([
+        [row['scores'].get(t, 0) for t in THEMES]
+        for _, row in df.iterrows()
+    ])
+    user_vec = np.array(prefs).reshape(1, -1)
 
-    # --- FILTRAGE GÉOGRAPHIQUE ---
-    df_global['dist'] = calculer_distance(lat_c, lon_c, 
-                                          df_global['latitude'].values, 
-                                          df_global['longitude'].values)
-    
-    df_proche = df_global[df_global['dist'] <= rayon_max].copy().reset_index(drop=True)
-    
-    if df_proche.empty:
-        print(f"Aucune activité trouvée dans un rayon de {rayon_max} km.")
-        return
-
-    print(f" {len(df_proche)} activités trouvées à proximité.")
-
-    # --- PRÉFÉRENCES ---
-    print("\nNotes (0-10) pour vos préférences :")
-    themes = ["Nature", "Gastronomie", "Sport", "Culture", "Détente"]
-    n_user = [float(input(f"  {t} : ") or 5.0) for t in themes]
-
-    # --- TRI HYBRIDE (IA + PROXIMITÉ) ---
-    X = np.array([[s['nature'], s['gastronomie'], s['sport'], s['culture'], s['detente']] 
-                  for s in df_proche['scores']])
-
-    knn = NearestNeighbors(n_neighbors=len(df_proche), metric='cosine')
+    knn = NearestNeighbors(n_neighbors=len(df), metric='cosine')
     knn.fit(X)
-    dist_knn, indices = knn.kneighbors(np.array([n_user]))
+    dist_knn, indices = knn.kneighbors(user_vec)
 
-    score_sim = 1 - dist_knn[0]
-    # Normalisation de la distance pour le score
-    dist_norm = df_proche['dist'].values[indices[0]] / rayon_max
-    score_prox = 1 - dist_norm
+    score_sim   = 1 - dist_knn[0]
+    score_prox  = 1 - (df['dist_oiseau'].values[indices[0]] / rayon_max)
+    score_final = 0.6 * score_sim + 0.4 * score_prox
+
+    df_sorted = df.iloc[indices[0]].copy()
+    df_sorted['score_final'] = score_final
+    return df_sorted.reset_index(drop=True)
+
+
+# ─────────────────────────────────────────────
+#  6. GÉNÉRATION DU PLANNING JOURNALIER
+# ─────────────────────────────────────────────
+def generer_planning(df_scored: pd.DataFrame, nb_jours: int, lat_c, lon_c):
+    # 1. Nettoyage initial
+    df_unique = df_scored.drop_duplicates(subset=['nom']).copy()
+    records = df_unique.to_dict('records')
     
-    # Mix : 60% Goûts, 40% Distance
-    score_final = 0.4 * score_prox + 0.6 * score_sim
-    ordre = np.argsort(score_final)[::-1][:20]
+    planning = []
 
-    # --- AFFICHAGE ---
-    print(f"\nTOP 20 — {ville_user.upper()} ({rayon_max} km)")
-    print("-" * 65)
-    for rank, i in enumerate(ordre, start=1):
-        idx = indices[0][i]
-        act = df_proche.iloc[idx]
-        score = int(score_final[i] * 100)
-        print(f"{rank:>2}. {score}% - {act['nom']} - {act['ville']} - {act['dist']:.1f}km")
+    for jour in range(1, nb_jours + 1):
+        matin = []
+        mots_cles_jour = set() # Pour stocker les types d'activités déjà vus aujourd'hui
 
-# Lancement
-lancer_explora_complet()
+        def est_trop_similaire(nom, blacklist):
+            # Vérifie si un mot important du nom est déjà dans la blacklist
+            mots = set(nom.lower().split())
+            # On ignore les petits mots
+            mots = {m for m in mots if len(m) > 3}
+            return not mots.isdisjoint(blacklist)
+
+        # --- MATIN ---
+        count = 0
+        while len(matin) < 2 and records:
+            act = records.pop(0)
+            # Si l'activité ressemble trop à ce qu'on a déjà, on la remet à la fin (ou on la skip)
+            if est_trop_similaire(act['nom'], mots_cles_jour):
+                records.append(act) # On la décale
+                count += 1
+                if count > 10: break # Sécurité pour ne pas boucler à l'infini
+                continue
+            
+            act['trajet_ville'] = routage_osrm(lat_c, lon_c, act['latitude'], act['longitude'])
+            matin.append(act)
+            # On ajoute les mots importants du nom à la blacklist du jour
+            mots_cles_jour.update({m for m in act['nom'].lower().split() if len(m) > 3})
+
+        # --- OPTIMISATION SPATIALE ---
+        last_lat, last_lon = matin[-1]['latitude'], matin[-1]['longitude']
+        records.sort(key=lambda x: haversine(last_lat, last_lon, x['latitude'], x['longitude']))
+
+        # --- APRÈS-MIDI ---
+        aprem = []
+        count = 0
+        while len(aprem) < 2 and records:
+            act = records.pop(0)
+            if est_trop_similaire(act['nom'], mots_cles_jour):
+                records.append(act)
+                count += 1
+                if count > 10: break
+                continue
+                
+            act['trajet_ville'] = routage_osrm(lat_c, lon_c, act['latitude'], act['longitude'])
+            aprem.append(act)
+            mots_cles_jour.update({m for m in act['nom'].lower().split() if len(m) > 3})
+
+        # Trajet liaison
+        trajet_ma = routage_osrm(matin[-1]['latitude'], matin[-1]['longitude'],
+                                aprem[0]['latitude'], aprem[0]['longitude'])
+
+        planning.append({
+            'jour': jour, 'matin': matin, 'aprem': aprem, 'trajet_ma': trajet_ma
+        })
+        
+        # --- RESET POUR LE LENDEMAIN ---
+        # On remet un coup de tri par score final pour ne pas rester bloqué dans la zone
+        records.sort(key=lambda x: x.get('score_final', 0), reverse=True)
+    
+    print(planning)
+    return planning
+# ─────────────────────────────────────────────
+#  7. AFFICHAGE (AVEC MINUTES ET PROPRETÉ)
+# ─────────────────────────────────────────────
+def afficher_activite(act, rang):
+    match_pct = int(act.get('score_final', 0) * 100)
+    route_info = act.get('trajet_ville', "Distance non disponible")
+    
+    print(f"\n     Activité {rang} : {act['nom']}")
+    if 'adresse' in act and pd.notna(act['adresse']):
+        print(f"        {act['adresse']}")
+    print(f"        Match : {match_pct}%")
+    print(f"        Accès depuis le centre : {route_info}")
+
+def afficher_planning(planning, ville):
+    SEP = "═" * 65
+    SUB = "─" * 65
+    
+    print(f"\n{SEP}")
+    print(f"   VOTRE CARNET DE ROUTE EXPLORA - {ville.upper()}")
+    print(f"{SEP}")
+
+    for j in planning:
+        if not j['matin'] and not j['aprem']:
+            continue
+            
+        print(f"\n{SUB}")
+        print(f"   JOUR {j['jour']}")
+        print(f"{SUB}")
+
+        if j['matin']:
+            print("\n   MATINÉE")
+            for idx, act in enumerate(j['matin'], 1):
+                afficher_activite(act, idx)
+
+        if j['trajet_ma']:
+            print(f"\n   Liaison midi : {j['trajet_ma']}")
+
+        if j['aprem']:
+            print("\n   APRÈS-MIDI")
+            for idx, act in enumerate(j['aprem'], 1):
+                afficher_activite(act, idx)
+
+    print(f"\n{SEP}")
+    print(SEP)
+# ─────────────────────────────────────────────
+#  8. POINT D'ENTRÉE
+# ─────────────────────────────────────────────
+def lancer_explora():
+    # Connexion & chargement
+    client    = connecter_mongodb()
+    df_global = charger_donnees(client)
+
+    # Localisation
+    ville = input("Dans quelle ville es-tu ? ").strip()
+    lat_c, lon_c = geocoder_ville(ville)
+
+    rayon_str = input("Rayon de recherche en km [défaut : 30] : ").strip()
+    rayon_max = float(rayon_str) if rayon_str else 30.0
+
+    jours_str = input("Nombre de jours du planning [défaut : 3] : ").strip()
+    nb_jours  = int(jours_str) if jours_str else 3
+
+    # Préférences
+    print()
+    prefs = saisir_preferences()
+
+    # Scoring
+    print("\nCalcul des recommandations en cours…")
+    df_scored = scorer_activites(df_global, lat_c, lon_c, rayon_max, prefs)
+
+    if df_scored.empty:
+        print(f"\n Aucune activité trouvée dans un rayon de {rayon_max} km autour de {ville}.")
+        client.close()
+        return
+
+    nb_needed = nb_jours * 4
+    if len(df_scored) < nb_needed:
+        print(f"  Seulement {len(df_scored)} activités disponibles "
+              f"(idéalement {nb_needed} pour {nb_jours} jours). Planning adapté.")
+
+    # Planning
+    print("Calcul des trajets routiers…")
+    planning = generer_planning(df_scored, nb_jours, lat_c, lon_c)
+    afficher_planning(planning, ville)
+
+    client.close()
+
+
+if __name__ == "__main__":
+    lancer_explora()
