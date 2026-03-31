@@ -145,7 +145,9 @@ function buildPlaceholderActivity(i) {
 
 // Fonction mock pour l'exemple (normalement parcourt les voyages pour trouver des photos)
 function renderActivities() {
-    const grid = document.getElementById("activitiesGrid"); grid.innerHTML = "";
+    const grid = document.getElementById("activitiesGrid"); 
+    if(!grid) return;
+    grid.innerHTML = "";
     // Ici on met juste des placeholders pour l'exemple visuel demandé
     for (let i = 0; i < 5; i++) grid.appendChild(buildPlaceholderActivity(i));
 }
