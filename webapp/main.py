@@ -12,6 +12,7 @@ from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pymongo import MongoClient
+from .recommendation import lancer_explora
 
 
 BASE_DIR = Path(__file__).resolve().parent

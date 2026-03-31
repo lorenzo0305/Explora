@@ -191,5 +191,3 @@ def lancer_explora(ville, rayon, jours, nature , gastronomie , sport, culture , 
         print(f"Rien trouvé dans un rayon de {rayon} km autour de {ville}.")
     
     client.close()
-
-if __name__ == "__main__": lancer_explora()
