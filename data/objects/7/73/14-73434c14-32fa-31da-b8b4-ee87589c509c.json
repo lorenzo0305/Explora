@@ -1,0 +1,435 @@
+{
+  "@id": "https://data.datatourisme.fr/14/73434c14-32fa-31da-b8b4-ee87589c509c",
+  "dc:identifier": "14103",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Restaurant",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Le Bulot Gourmand"
+    ]
+  },
+  "allowedPersons": 25,
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/30edb75b-722b-31fd-9b5e-8a9c43fea72f",
+    "schema:legalName": "Fruges",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/30edb75b-722b-31fd-9b5e-8a9c43fea72f",
+      "schema:legalName": "Fruges",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/323d8d22-c805-39be-9c71-1522a9b3d674",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/9723a69d-84c6-3c8b-b8f6-aee83be95d8f",
+          "schema:addressLocality": "Fruges",
+          "schema:postalCode": "62310",
+          "schema:streetAddress": [
+            "20 rue du Four"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:62364",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Fruges"
+              ],
+              "pt": [
+                "Fruges"
+              ],
+              "en": [
+                "Fruges"
+              ],
+              "it": [
+                "Fruges"
+              ],
+              "fr": [
+                "Fruges"
+              ],
+              "nl": [
+                "Fruges"
+              ],
+              "es": [
+                "Fruges"
+              ]
+            },
+            "insee": "62364",
+            "isPartOfDepartment": {
+              "@id": "kb:France3262",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pas-de-Calais"
+                ],
+                "pt": [
+                  "Pas-de-Calais"
+                ],
+                "en": [
+                  "Pas-de-Calais"
+                ],
+                "it": [
+                  "Pas-de-Calais"
+                ],
+                "fr": [
+                  "Pas-de-Calais"
+                ],
+                "nl": [
+                  "Pas-de-Calais"
+                ],
+                "es": [
+                  "Pas-de-Calais"
+                ]
+              },
+              "insee": "62",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:email": [
+        "bulotgourmand@orange.fr"
+      ],
+      "schema:legalName": "Le Bulot Gourmand",
+      "schema:telephone": [
+        "+33 3 21 03 51 83"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.lebulotgourmand.fr/"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:FrenchCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Französische regionale Spezialitäten"
+        ],
+        "pt": [
+          "Especialidades regionais francesas"
+        ],
+        "en": [
+          "Traditional or regional French cuisine (Lorraine, Alsace, Brittany, Burgundy, ...)"
+        ],
+        "it": [
+          "Specialità regionali francesi"
+        ],
+        "fr": [
+          "Spécialités régionales françaises"
+        ],
+        "nl": [
+          "Regionale Franse specialiteiten"
+        ],
+        "es": [
+          "Especialidades regionales francesas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/394ace07-804f-3356-9412-eb44bdccde9e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/9723a69d-84c6-3c8b-b8f6-aee83be95d8f",
+          "schema:addressLocality": "Fruges",
+          "schema:postalCode": "62310",
+          "schema:streetAddress": [
+            "20 rue du Four"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:62364",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Fruges"
+              ],
+              "pt": [
+                "Fruges"
+              ],
+              "en": [
+                "Fruges"
+              ],
+              "it": [
+                "Fruges"
+              ],
+              "fr": [
+                "Fruges"
+              ],
+              "nl": [
+                "Fruges"
+              ],
+              "es": [
+                "Fruges"
+              ]
+            },
+            "insee": "62364",
+            "isPartOfDepartment": {
+              "@id": "kb:France3262",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pas-de-Calais"
+                ],
+                "pt": [
+                  "Pas-de-Calais"
+                ],
+                "en": [
+                  "Pas-de-Calais"
+                ],
+                "it": [
+                  "Pas-de-Calais"
+                ],
+                "fr": [
+                  "Pas-de-Calais"
+                ],
+                "nl": [
+                  "Pas-de-Calais"
+                ],
+                "es": [
+                  "Pas-de-Calais"
+                ]
+              },
+              "insee": "62",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/2589edb7-b0b4-3abd-a5e7-de5c0c130ade",
+        "schema:elevation": "100.67",
+        "schema:latitude": "50.515008",
+        "schema:longitude": "2.132796",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/d3a15428-c9a5-3dde-9dba-9be0c210c27c",
+      "schema:legalName": "Le Bulot Gourmand",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-03-20",
+  "lastUpdateDatatourisme": "2026-02-11T15:36:13.148Z"
+}

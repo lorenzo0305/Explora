@@ -1,0 +1,250 @@
+{
+  "@id": "https://data.datatourisme.fr/13/bd36e32d-5e80-3f2f-9705-7e4fb910f104",
+  "dc:identifier": "105935",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "en": [
+      "L'Avé Maria"
+    ],
+    "fr": [
+      "L'Avé Maria"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/c20ad4d7-6fe9-3759-aa27-a0c99bff6710",
+    "dc:identifier": "12",
+    "schema:email": [
+      "f.champavere@beaujolais-tourisme.com",
+      "t.blanchier@beaujolais-tourisme.com",
+      "v.guerin@beaujolais-tourisme.com"
+    ],
+    "schema:legalName": "Beaujolais Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.beaujolais-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/d74157ab-fcd0-3b56-8272-2d6c643a76c0",
+      "schema:telephone": [
+        "+33 4 74 65 04 93"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/ce2e0129-2f6b-33a9-90bc-342cd16f57a1",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/14900c48-92de-3d52-b157-6138925fc5f9",
+          "schema:addressLocality": "Arnas",
+          "schema:postalCode": "69400",
+          "schema:streetAddress": [
+            "Route D306",
+            "lieu dit avé maria"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:69013",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Arnas"
+              ],
+              "pt": [
+                "Arnas"
+              ],
+              "en": [
+                "Arnas"
+              ],
+              "it": [
+                "Arnas"
+              ],
+              "fr": [
+                "Arnas"
+              ],
+              "nl": [
+                "Arnas"
+              ],
+              "es": [
+                "Arnas"
+              ]
+            },
+            "insee": "69013",
+            "isPartOfDepartment": {
+              "@id": "kb:France8469",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Rhône"
+                ],
+                "pt": [
+                  "Rhône"
+                ],
+                "en": [
+                  "Rhône"
+                ],
+                "it": [
+                  "Rhône"
+                ],
+                "fr": [
+                  "Rhône"
+                ],
+                "nl": [
+                  "Rhône"
+                ],
+                "es": [
+                  "Rhône"
+                ]
+              },
+              "insee": "69",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/3010e907-58ac-3174-86fa-f382eeb52f7b",
+        "schema:elevation": "175",
+        "schema:latitude": "46.021179",
+        "schema:longitude": "4.720452",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8687b10f-a743-3616-95e8-ea841adb5c78",
+      "schema:email": [
+        "f.champavere@beaujolais-tourisme.com",
+        "t.blanchier@beaujolais-tourisme.com",
+        "v.guerin@beaujolais-tourisme.com"
+      ],
+      "schema:legalName": "Beaujolais Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.beaujolais-tourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2015-03-26",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.666Z"
+}

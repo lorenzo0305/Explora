@@ -1,0 +1,876 @@
+{
+  "@id": "https://data.datatourisme.fr/13/19ce2084-4a63-33e0-b43f-8a933d92ffb5",
+  "dc:identifier": "6192305",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "La Cabane du Lac"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/af473271-1661-356e-adbf-798ba191272a",
+    "dc:identifier": "1354",
+    "schema:email": [
+      "anna-maria.veyret@vacances-livradois-forez.fr",
+      "canelle.parize@vacances-livradois-forez.fr",
+      "catherine.vitry@vacances-livradois-forez.fr",
+      "florian.debievre@protonmail.ch",
+      "florian.debievre@vacances-livradois-forez.fr",
+      "marie.cornee@vacances-livradois-forez.fr",
+      "megane.socier@vacances-livradois-forez.fr",
+      "stephanie.vachon@vacances-livradois-forez.fr",
+      "yannick.blanchon@vacances-livradois-forez.fr"
+    ],
+    "schema:legalName": "Maison du Tourisme du Livradois-Forez",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.auvergne-livradois-forez.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/05e08b75-62f4-3bd1-b71d-1c337ab5ea03",
+      "schema:email": [
+        "cabanedaubusson@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 6 66 02 69 82"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/70ebe959-1a4a-3d18-9f6a-a63fc7f29a39",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/00be2d43-eab2-342b-a69a-55edf35b200e",
+          "schema:addressLocality": "Aubusson-d'Auvergne",
+          "schema:postalCode": "63120",
+          "schema:streetAddress": [
+            "811 route de La Prade",
+            "La Prade"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:63015",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Aubusson-d'Auvergne"
+              ],
+              "pt": [
+                "Aubusson-d'Auvergne"
+              ],
+              "en": [
+                "Aubusson-d'Auvergne"
+              ],
+              "it": [
+                "Aubusson-d'Auvergne"
+              ],
+              "fr": [
+                "Aubusson-d'Auvergne"
+              ],
+              "nl": [
+                "Aubusson-d'Auvergne"
+              ],
+              "es": [
+                "Aubusson-d'Auvergne"
+              ]
+            },
+            "insee": "63015",
+            "isPartOfDepartment": {
+              "@id": "kb:France8463",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Puy-de-Dôme"
+                ],
+                "pt": [
+                  "Puy-de-Dôme"
+                ],
+                "en": [
+                  "Puy-de-Dôme"
+                ],
+                "it": [
+                  "Puy-de-Dôme"
+                ],
+                "fr": [
+                  "Puy-de-Dôme"
+                ],
+                "nl": [
+                  "Puy-de-Dôme"
+                ],
+                "es": [
+                  "Puy-de-Dôme"
+                ]
+              },
+              "insee": "63",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/e80bfbb8-f0dd-3a19-9408-a9bcd432b584",
+        "schema:elevation": "416",
+        "schema:latitude": "45.752157",
+        "schema:longitude": "3.609229",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/17cd34aa-58af-316b-996e-61f4b80e24d9",
+          "schema:validFrom": "2026-07-01T00:00:00",
+          "schema:validThrough": "2026-07-23T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Es ist ratsam, anzurufen."
+            ],
+            "en": [
+              "We advise you to call us."
+            ],
+            "it": [
+              "È consigliabile telefonare."
+            ],
+            "fr": [
+              "Il est conseillé de téléphoner."
+            ],
+            "nl": [
+              "Het is raadzaam om te bellen."
+            ],
+            "es": [
+              "Es aconsejable llamar por teléfono."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/2fee2fa1-c785-35c1-8b3d-7768d30f71d3",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/3f4dfa09-78da-311c-825b-8ba9007d7341",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/4415d91e-f17b-3ef6-819d-37fee51ad4a1",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/66fd40ad-d73d-3c93-a2a5-f879a7074ac8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/abc49aca-e3fa-3c26-93c9-03431acfdeb3",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5d8e91ad-205a-3c04-bd80-13ceaee848b9",
+          "schema:validFrom": "2026-07-24T00:00:00",
+          "schema:validThrough": "2026-07-25T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Wiedereröffnung Samstag"
+            ],
+            "en": [
+              "Reopening Saturday"
+            ],
+            "it": [
+              "Riapertura sabato"
+            ],
+            "fr": [
+              "Réouverture samedi"
+            ],
+            "es": [
+              "Reapertura el sábado"
+            ],
+            "nl": [
+              "Heropening zaterdag"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/31e7e4da-b472-3d77-a9c0-7baf5b277ccf",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/41c5001d-960f-3b00-a5a0-798bea032a65",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/4ca9a7c9-48e8-31fd-862d-ba33b58ef7eb",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/6a13276a-22b6-3b39-b57e-805d1b869ac5",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f1c54cd3-0fa2-37ae-a078-62c16accbdad",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6820c3a1-a8e6-3ba0-8f64-69f9a078c101",
+          "schema:closes": "20:00:00",
+          "schema:opens": "11:00:00",
+          "schema:validFrom": "2026-09-01T00:00:00",
+          "schema:validThrough": "2026-10-12T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Wartet auf Validierung"
+            ],
+            "en": [
+              "Pending validation"
+            ],
+            "it": [
+              "In attesa di convalida"
+            ],
+            "fr": [
+              "En attente de validation"
+            ],
+            "es": [
+              "Pendiente de validación"
+            ],
+            "nl": [
+              "In afwachting van validatie"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/05733c15-12ac-3af5-9cc1-abdf013801fa",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/961d10a2-0b9f-322c-91fb-5b2db7fdc33c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/b493e505-31ae-3813-bd46-c566f1b48a5e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/b5e89b91-7281-3f32-be35-5952d153b1ff",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d0bc79fe-5fe3-3753-a3c3-3aa0c0a2e93c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/96044c67-7f85-3e7e-8c9a-7220484599d1",
+          "schema:closes": "18:00:00",
+          "schema:opens": "14:00:00",
+          "schema:validFrom": "2026-10-18T00:00:00",
+          "schema:validThrough": "2026-12-28T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Es ist ratsam, sich telefonisch zu vergewissern, ob der Imbiss geöffnet ist."
+            ],
+            "en": [
+              "It is advisable to call to make sure the snack bar is open."
+            ],
+            "it": [
+              "È consigliabile telefonare per accertarsi che lo snack bar sia aperto."
+            ],
+            "fr": [
+              "Il est conseillé de téléphoner pour s'assurer de l'ouverture du snack."
+            ],
+            "nl": [
+              "Het is aan te raden om even te bellen om er zeker van te zijn dat de snackbar open is."
+            ],
+            "es": [
+              "Es aconsejable llamar por teléfono para asegurarse de que el bar está abierto."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/26bd98de-a212-3dcd-9813-b27a87295208",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/5b9b4e57-83d2-3f36-9999-5f6db7bed5ef",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a55a2457-068a-334d-a7e4-e7477ac6b453",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d0c917e0-26ea-3f18-9217-e309fa43ccf8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d1b85762-c690-3065-b365-c10006b1f850",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9b02094a-c160-33a1-8bb3-7852f9c6ffb3",
+          "schema:validFrom": "2026-07-26T00:00:00",
+          "schema:validThrough": "2026-08-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d8c92bc3-410d-3d49-9a88-1a927ee4e6a0",
+          "schema:closes": "18:00:00",
+          "schema:opens": "14:00:00",
+          "schema:validFrom": "2026-01-04T00:00:00",
+          "schema:validThrough": "2026-03-30T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Es ist ratsam, sich telefonisch zu vergewissern, ob der Imbiss geöffnet ist."
+            ],
+            "en": [
+              "It is advisable to call to make sure the snack bar is open."
+            ],
+            "it": [
+              "È consigliabile telefonare per accertarsi che lo snack bar sia aperto."
+            ],
+            "fr": [
+              "Il est conseillé de téléphoner pour s'assurer de l'ouverture du snack."
+            ],
+            "nl": [
+              "Het is aan te raden om even te bellen om er zeker van te zijn dat de snackbar open is."
+            ],
+            "es": [
+              "Es aconsejable llamar por teléfono para asegurarse de que el bar está abierto."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/149b5c94-0a69-3edd-bf29-c45d8736f363",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/2e7ec601-4e2e-3a23-b5d9-ce4f40d3d4c7",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/3ef000aa-00c1-3c45-a64d-b4d0f6c723c1",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/42d170f1-e7de-340e-9fd9-0cf5a2933fdc",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/56e23889-563a-3396-9608-ec8f466d51ff",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f46616db-e692-349c-8112-e320491a0352",
+          "schema:closes": "20:00:00",
+          "schema:opens": "11:00:00",
+          "schema:validFrom": "2026-04-01T00:00:00",
+          "schema:validThrough": "2026-06-29T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Durchgehender Dienst am Wochenende."
+            ],
+            "en": [
+              "Continuous service at weekends."
+            ],
+            "it": [
+              "Servizio continuo nei fine settimana."
+            ],
+            "fr": [
+              "Service en continu le week-end."
+            ],
+            "es": [
+              "Servicio continuo los fines de semana."
+            ],
+            "nl": [
+              "Continue service in het weekend."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/8122ce14-1396-30b4-bfc6-31c0cb04f049",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/ab5c5e1a-6ef7-3982-924f-807ecb2d6b89",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/cabfa9a5-9b8b-3266-bd1e-7acd6d2bd0d5",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e1374983-08e4-3f79-9928-0353d8e49497",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f7b4b8a1-41c8-3f79-ac92-24d78593772e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/262c5acb-5ad2-3df5-b614-71d71cbf18ae",
+      "schema:email": [
+        "anna-maria.veyret@vacances-livradois-forez.fr",
+        "canelle.parize@vacances-livradois-forez.fr",
+        "catherine.vitry@vacances-livradois-forez.fr",
+        "florian.debievre@protonmail.ch",
+        "florian.debievre@vacances-livradois-forez.fr",
+        "marie.cornee@vacances-livradois-forez.fr",
+        "megane.socier@vacances-livradois-forez.fr",
+        "stephanie.vachon@vacances-livradois-forez.fr",
+        "yannick.blanchon@vacances-livradois-forez.fr"
+      ],
+      "schema:legalName": "Maison du Tourisme du Livradois-Forez",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.auvergne-livradois-forez.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-24",
+  "lastUpdateDatatourisme": "2026-01-30T06:57:59.342Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/ef7543dd-c598-30b7-acd3-97a0375e5528",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/aaf88020-e1c1-32e0-a3d8-ef1cf68be395",
+          "schema:maxPrice": [
+            "25"
+          ],
+          "schema:minPrice": [
+            "2"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/8c23859b-2f93-3668-896c-749a5ce81192",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-31",
+              "startDate": "2025-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:AlaCarte",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "A la carte"
+                ],
+                "pt": [
+                  "À escolha"
+                ],
+                "en": [
+                  "A la carte"
+                ],
+                "it": [
+                  "Alla carta"
+                ],
+                "fr": [
+                  "A la carte"
+                ],
+                "nl": [
+                  "À la carte"
+                ],
+                "es": [
+                  "A la carta"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

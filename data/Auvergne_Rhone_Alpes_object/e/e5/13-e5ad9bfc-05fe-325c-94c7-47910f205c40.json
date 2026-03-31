@@ -1,0 +1,414 @@
+{
+  "@id": "https://data.datatourisme.fr/13/e5ad9bfc-05fe-325c-94c7-47910f205c40",
+  "dc:identifier": "7418303",
+  "@type": [
+    "schema:LocalBusiness",
+    "CableCarStation",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "SportsAndLeisurePlace",
+    "TourismCableCar",
+    "Transport"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Télésiège de Chamossière"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/8c3039bd-5842-3ca3-9944-faab91447818",
+    "dc:identifier": "1850",
+    "schema:email": [
+      "benjamin.devos@avoriaz.com",
+      "charlotte.dicostanzo@avoriaz.com",
+      "emilia.michaud@avoriaz.com",
+      "justine.taberlet@avoriaz.com"
+    ],
+    "schema:legalName": "Office de Tourisme Avoriaz 1800",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://reservation.avoriaz.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/c5d6ab29-1385-3da8-a420-0e773febd107",
+      "schema:email": [
+        "contact@ski-morzine.com",
+        "info@morzine-avoriaz.com"
+      ],
+      "schema:telephone": [
+        "+33 4 50 74 72 72",
+        "+33 4 50 79 00 38"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.ski-morzine.com/"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TransportNetwork",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Transport"
+        ],
+        "pt": [
+          "Transporte"
+        ],
+        "en": [
+          "Transport network"
+        ],
+        "it": [
+          "Trasporto"
+        ],
+        "fr": [
+          "Transport"
+        ],
+        "nl": [
+          "Vervoer"
+        ],
+        "es": [
+          "Transporte"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/b66ef907-29e8-362c-8435-9bb58a887557",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/0938ca76-75e4-3d0d-bd6d-8258dff48998",
+          "schema:addressLocality": "Morzine",
+          "schema:postalCode": "74110",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:74191",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Morzine"
+              ],
+              "pt": [
+                "Morzine"
+              ],
+              "en": [
+                "Morzine"
+              ],
+              "it": [
+                "Morzine"
+              ],
+              "fr": [
+                "Morzine"
+              ],
+              "nl": [
+                "Morzine"
+              ],
+              "es": [
+                "Morzine"
+              ]
+            },
+            "insee": "74191",
+            "isPartOfDepartment": {
+              "@id": "kb:France8474",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Savoie"
+                ],
+                "pt": [
+                  "Haute-Savoie"
+                ],
+                "en": [
+                  "Haute-Savoie"
+                ],
+                "it": [
+                  "Haute-Savoie"
+                ],
+                "fr": [
+                  "Haute-Savoie"
+                ],
+                "nl": [
+                  "Haute-Savoie"
+                ],
+                "es": [
+                  "Haute-Savoie"
+                ]
+              },
+              "insee": "74",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/31f660e9-984b-3041-8575-847cdf48f8cd",
+        "schema:elevation": "1493",
+        "schema:latitude": "46.138604",
+        "schema:longitude": "6.710376",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/16180c6a-a3ca-3ccf-b9c0-941e77a55c09",
+          "schema:validFrom": "2026-12-13T00:00:00",
+          "schema:validThrough": "2026-04-05T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/da313d3a-0cc2-3b9c-8b71-0ae91037d8de",
+      "schema:email": [
+        "benjamin.devos@avoriaz.com",
+        "emilia.michaud@avoriaz.com",
+        "justine.taberlet@avoriaz.com"
+      ],
+      "schema:legalName": "Office de Tourisme Avoriaz 1800",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://reservation.avoriaz.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-06-18",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.506Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/3c4d3f6a-53cd-325e-86a4-452a085772f8",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/04bcc6d4-ae2b-3ed2-9867-41d73e479f5e",
+          "schema:maxPrice": [
+            "6"
+          ],
+          "schema:minPrice": [
+            "6"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/b95b9d71-4fd9-3eb2-9741-c0a35906c5d1",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2022-08-28",
+              "startDate": "2022-07-02"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/1610ab9b-e92e-3857-8f5b-e8590b71ad91",
+          "schema:maxPrice": [
+            "7"
+          ],
+          "schema:minPrice": [
+            "7"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/b95b9d71-4fd9-3eb2-9741-c0a35906c5d1",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2022-08-28",
+              "startDate": "2022-07-02"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5cd47eba-39d1-3ece-8a25-241597c33b9f",
+          "schema:minPrice": [
+            "29"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/b95b9d71-4fd9-3eb2-9741-c0a35906c5d1",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2022-08-28",
+              "startDate": "2022-07-02"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a3b6f51d-a703-3a67-8e5c-45ecd6cdc775",
+          "schema:maxPrice": [
+            "5.8"
+          ],
+          "schema:minPrice": [
+            "5.8"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/b95b9d71-4fd9-3eb2-9741-c0a35906c5d1",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2022-08-28",
+              "startDate": "2022-07-02"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/db01474d-3e68-3857-9085-90525c402e74",
+          "schema:maxPrice": [
+            "4.8"
+          ],
+          "schema:minPrice": [
+            "4.8"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/b95b9d71-4fd9-3eb2-9741-c0a35906c5d1",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2022-08-28",
+              "startDate": "2022-07-02"
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

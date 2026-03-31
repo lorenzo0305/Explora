@@ -245,7 +245,6 @@ def creation(request: Request, journey_id: str | None = None):
 def voyage_page(request: Request):
     return templates.TemplateResponse("Voyage.html", {"request": request})
 
-
 @app.get("/journeys/view/{journey_id}")
 def journey_view(request: Request, journey_id: str):
     return templates.TemplateResponse(
@@ -253,14 +252,12 @@ def journey_view(request: Request, journey_id: str):
         {"request": request, "journey_id": journey_id},
     )
 
-
 @app.get("/journeys/view/{journey_id}/day/{day_index}")
 def journey_day_view(request: Request, journey_id: str, day_index: int):
     return templates.TemplateResponse(
         "ViewJourneyDay.html",
         {"request": request, "journey_id": journey_id, "day": day_index},
     )
-
 
 @app.get("/object/{object_id:path}")
 @app.get("/detail-act-perso/{object_id:path}")
@@ -420,11 +417,13 @@ def health():
     except Exception as exc:
         return JSONResponse(status_code=500, content={"ok": False, "error": str(exc)})
 
+
 @app.post("/algorithm")
 async def run_algorithm(request: Request):
     try:
         data = await request.json()
         print("[BACKEND] Données reçues depuis le formulaire : ", data)
+
 
         # 1. On crée nos fausses données (Mock) en Python (liste de dictionnaires)
         list_jour = [
@@ -535,12 +534,14 @@ async def run_algorithm(request: Request):
             }
         ]
 
+
         # 2. On renvoie le statut ET les données générées
         return JSONResponse({
-            "status": "success", 
+            "status": "success",
             "message": "Itinéraire généré avec succès",
             "data": list_jour # <-- Tes données sont injectées ici !
         })
+
 
     except Exception as e:
         print("[BACKEND] Erreur : ", e)

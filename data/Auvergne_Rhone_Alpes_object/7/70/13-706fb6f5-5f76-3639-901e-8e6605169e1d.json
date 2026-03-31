@@ -1,0 +1,328 @@
+{
+  "@id": "https://data.datatourisme.fr/13/706fb6f5-5f76-3639-901e-8e6605169e1d",
+  "dc:identifier": "6518235",
+  "@type": [
+    "schema:MovieTheater",
+    "Cinema",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "SportsAndLeisurePlace"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Aurecinema"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/a424ed4b-d3a7-36ae-a720-b86d4a360f75",
+    "dc:identifier": "1425",
+    "schema:email": [
+      "officedetourisme@loire-semene.fr"
+    ],
+    "schema:legalName": "Office de Tourisme Loire Semène",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.otloiresemene.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/c53534f8-2d08-3844-943f-dfaebbcb67af",
+      "schema:legalName": "Haute-Loire Attractivité - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/04618414-2cec-33be-a84c-f2ff3cf929bb",
+      "schema:email": [
+        "aurecinema@gmail.com"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.aureccinema.com/"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/3d58f86d-e082-334a-aff7-ff14abe571b3",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/38d2d5e1-683c-34c7-9626-7c1913bc23d6",
+          "schema:addressLocality": "Aurec-sur-Loire",
+          "schema:postalCode": "43110",
+          "schema:streetAddress": [
+            "Médiathèque",
+            "Place des Hêtres"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:43012",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Aurec-sur-Loire"
+              ],
+              "pt": [
+                "Aurec-sur-Loire"
+              ],
+              "en": [
+                "Aurec-sur-Loire"
+              ],
+              "it": [
+                "Aurec-sur-Loire"
+              ],
+              "fr": [
+                "Aurec-sur-Loire"
+              ],
+              "nl": [
+                "Aurec-sur-Loire"
+              ],
+              "es": [
+                "Aurec-sur-Loire"
+              ]
+            },
+            "insee": "43012",
+            "isPartOfDepartment": {
+              "@id": "kb:France8443",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Loire"
+                ],
+                "pt": [
+                  "Haute-Loire"
+                ],
+                "en": [
+                  "Haute-Loire"
+                ],
+                "it": [
+                  "Haute-Loire"
+                ],
+                "fr": [
+                  "Haute-Loire"
+                ],
+                "nl": [
+                  "Haute-Loire"
+                ],
+                "es": [
+                  "Haute-Loire"
+                ]
+              },
+              "insee": "43",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/56481bbd-5497-390d-8df0-2ea1c4b0e6a9",
+        "schema:latitude": "45.370139",
+        "schema:longitude": "4.199093",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/523ccdac-2b03-3fc4-bdf0-b4083f5abeed",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Sommerschließung vom 16. Juli bis 16. September 2025. Neue Saison ab dem 17. September 2025."
+            ],
+            "en": [
+              "Summer closure from July 16 to September 16, 2025. New season from September 17, 2025."
+            ],
+            "it": [
+              "Chiusura estiva dal 16 luglio al 16 settembre 2025. Nuova stagione dal 17 settembre 2025."
+            ],
+            "fr": [
+              "Fermeture estivale du 16 juillet au 16 septembre 2025. Nouvelle saison à partir du 17 septembre 2025."
+            ],
+            "nl": [
+              "Zomersluiting van 16 juli tot 16 september 2025. Nieuw seizoen vanaf 17 september 2025."
+            ],
+            "es": [
+              "Cierre de verano del 16 de julio al 16 de septiembre de 2025. Nueva temporada a partir del 17 de septiembre de 2025."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/3a0a715c-0f45-39d8-881e-b488e75b2e0c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/651051fd-dd12-3a9d-a229-c1c86aeb0420",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/b20e0524-8adc-3f79-a91d-475d699dd344",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/eacfa3fa-d214-38cc-a5ad-772510fcca08",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f779f147-dc45-3aa2-8774-a13214b2cb21",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/59fcefa3-3f31-3d3e-a612-2b605c243dce",
+      "schema:email": [
+        "officedetourisme@loire-semene.fr"
+      ],
+      "schema:legalName": "Office de Tourisme Loire Semène",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.otloiresemene.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2026-02-27",
+  "lastUpdateDatatourisme": "2026-02-28T06:53:27.516Z"
+}

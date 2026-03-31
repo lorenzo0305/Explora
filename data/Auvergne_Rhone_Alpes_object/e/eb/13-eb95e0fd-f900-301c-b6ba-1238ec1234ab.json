@@ -1,0 +1,371 @@
+{
+  "@id": "https://data.datatourisme.fr/13/eb95e0fd-f900-301c-b6ba-1238ec1234ab",
+  "dc:identifier": "158134",
+  "@type": [
+    "schema:Landform",
+    "Beach",
+    "NaturalHeritage",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "SportsAndLeisurePlace"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Badebereich ohne Überwachung, in der Nähe des Segelclubs."
+    ],
+    "en": [
+      "Unsupervised bathing area, near the sailing club."
+    ],
+    "it": [
+      "Area di balneazione senza sorveglianza, vicina al club di vela."
+    ],
+    "fr": [
+      "Espace de baignade sans surveillance, à proximité du club de voile."
+    ],
+    "es": [
+      "Zona de baño no supervisada cerca del club náutico."
+    ],
+    "nl": [
+      "Onbewaakt zwemgebied, in de buurt van de zeilclub."
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "Strand le Plant"
+    ],
+    "en": [
+      "Plage du Plant Beach"
+    ],
+    "it": [
+      "Spiaggia du Plant"
+    ],
+    "fr": [
+      "Plage du Plant"
+    ],
+    "nl": [
+      "Strand van Le Plant"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/a1d0c6e8-3f02-3327-9846-1063f4ac58a6",
+    "dc:identifier": "42",
+    "schema:email": [
+      "j.cousin@lac-annecy.com",
+      "p.chabord@lac-annecy.com"
+    ],
+    "schema:legalName": "Office de Tourisme du Lac d'Annecy",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.lac-annecy.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/2eec408b-dfb5-394e-ba35-9ed2ba639377",
+      "schema:telephone": [
+        "+33 4 50 60 10 13"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.veyrier-du-lac.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/1b544bd3-d7c2-3793-8e43-bacd73139ed9",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/8cde6c41-97b3-3794-809c-37cacda7e071",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Badebereich ohne Überwachung, in der Nähe des Segelclubs."
+        ],
+        "en": [
+          "Unsupervised bathing area, near the sailing club."
+        ],
+        "it": [
+          "Area di balneazione senza sorveglianza, vicina al club di vela."
+        ],
+        "fr": [
+          "Espace de baignade sans surveillance, à proximité du club de voile."
+        ],
+        "es": [
+          "Zona de baño no supervisada cerca del club náutico."
+        ],
+        "nl": [
+          "Onbewaakt zwemgebied, in de buurt van de zeilclub."
+        ]
+      }
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:Bathing",
+      "@type": [
+        "AccommodationAmenity",
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Baden"
+        ],
+        "pt": [
+          "Banho"
+        ],
+        "en": [
+          "Bathing"
+        ],
+        "it": [
+          "Bagno"
+        ],
+        "fr": [
+          "Baignade"
+        ],
+        "nl": [
+          "Zwemmen"
+        ],
+        "es": [
+          "Baño"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/d44db5a5-827a-3b78-a018-b0d49c7e4677",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/d8a2914c-5fee-3868-8c69-7f40852bc1d0",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/dcb3a89c-1254-39b9-b7be-689e5f24868b",
+          "schema:addressLocality": "Veyrier-du-Lac",
+          "schema:postalCode": "74290",
+          "schema:streetAddress": [
+            "Port des Champs"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:74299",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Veyrier-du-Lac"
+              ],
+              "pt": [
+                "Veyrier-du-Lac"
+              ],
+              "en": [
+                "Veyrier-du-Lac"
+              ],
+              "it": [
+                "Veyrier-du-Lac"
+              ],
+              "fr": [
+                "Veyrier-du-Lac"
+              ],
+              "nl": [
+                "Veyrier-du-Lac"
+              ],
+              "es": [
+                "Veyrier-du-Lac"
+              ]
+            },
+            "insee": "74299",
+            "isPartOfDepartment": {
+              "@id": "kb:France8474",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Savoie"
+                ],
+                "pt": [
+                  "Haute-Savoie"
+                ],
+                "en": [
+                  "Haute-Savoie"
+                ],
+                "it": [
+                  "Haute-Savoie"
+                ],
+                "fr": [
+                  "Haute-Savoie"
+                ],
+                "nl": [
+                  "Haute-Savoie"
+                ],
+                "es": [
+                  "Haute-Savoie"
+                ]
+              },
+              "insee": "74",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/975e72b6-8d9e-393d-8caf-9b307f1c5b48",
+        "schema:elevation": "454",
+        "schema:latitude": "45.888963",
+        "schema:longitude": "6.171527",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e60f4331-dbc3-3d1a-945f-f9c90cd0ed00",
+      "schema:email": [
+        "j.cousin@lac-annecy.com",
+        "p.chabord@lac-annecy.com"
+      ],
+      "schema:legalName": "Office de Tourisme du Lac d'Annecy",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.lac-annecy.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-05-27",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.496Z"
+}

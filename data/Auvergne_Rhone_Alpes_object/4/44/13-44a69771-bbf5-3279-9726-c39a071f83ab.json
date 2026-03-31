@@ -1,0 +1,654 @@
+{
+  "@id": "https://data.datatourisme.fr/13/44a69771-bbf5-3279-9726-c39a071f83ab",
+  "dc:identifier": "5342442",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Willkommen in Ihrer Einrichtung!"
+    ],
+    "en": [
+      "Welcome to your restaurant!"
+    ],
+    "it": [
+      "Benvenuti nel vostro stabilimento!"
+    ],
+    "fr": [
+      "Bienvenue dans votre établissement !"
+    ],
+    "nl": [
+      "Welkom in uw vestiging!"
+    ],
+    "es": [
+      "Bienvenido a su establecimiento"
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "Restaurant-Bar Easy Rider"
+    ],
+    "en": [
+      "Easy Rider restaurant-bar"
+    ],
+    "fr": [
+      "Restaurant-bar Easy Rider"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/df877f38-6575-3637-9aa5-40ea9cbc474f",
+    "dc:identifier": "533",
+    "schema:email": [
+      "contact@chamrousse.com",
+      "responsable.accueil@chamrousse.com",
+      "web@chamrousse.com"
+    ],
+    "schema:legalName": "Office du Tourisme de Chamrousse",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.chamrousse.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/54b902a8-ee66-38b9-af34-8c817ef8883c",
+      "schema:telephone": [
+        "+33 4 76 42 73 10"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.easyriderchamrousse.net/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/7c988aaf-1346-351a-b76c-02ab9ac22f64",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/435f4541-19a1-35ff-a6c3-e1a386d0119f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/730a2388-a469-33c8-ac77-da2c13b970e1",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/bb2927ca-073f-3ba8-be28-01469c190b9a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Willkommen in Ihrer Einrichtung!"
+        ],
+        "en": [
+          "Welcome to your restaurant!"
+        ],
+        "it": [
+          "Benvenuti nel vostro stabilimento!"
+        ],
+        "fr": [
+          "Bienvenue dans votre établissement !"
+        ],
+        "nl": [
+          "Welkom in uw vestiging!"
+        ],
+        "es": [
+          "Bienvenido a su establecimiento"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/7d5bae76-65b8-3ba4-ac62-6095667aa40d",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9293cc92-1d31-3aa1-8531-a24dcece11c3",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/cdfcc87b-6afc-34dc-9dc7-c0d50f5591e5",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/16c6b29c-4d33-3460-a6a3-84af652c6d32",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/69538bbf-e172-3c3e-a103-fd135919f3c7",
+          "schema:addressLocality": "Chamrousse",
+          "schema:postalCode": "38410",
+          "schema:streetAddress": [
+            "Centre Commercial",
+            "Chamrousse 1750"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:38567",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Chamrousse"
+              ],
+              "pt": [
+                "Chamrousse"
+              ],
+              "en": [
+                "Chamrousse"
+              ],
+              "it": [
+                "Chamrousse"
+              ],
+              "fr": [
+                "Chamrousse"
+              ],
+              "nl": [
+                "Chamrousse"
+              ],
+              "es": [
+                "Chamrousse"
+              ]
+            },
+            "insee": "38567",
+            "isPartOfDepartment": {
+              "@id": "kb:France8438",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Isère"
+                ],
+                "pt": [
+                  "Isère"
+                ],
+                "en": [
+                  "Isère"
+                ],
+                "it": [
+                  "Isère"
+                ],
+                "fr": [
+                  "Isère"
+                ],
+                "nl": [
+                  "Isère"
+                ],
+                "es": [
+                  "Isère"
+                ]
+              },
+              "insee": "38",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/1172749d-c091-36b6-9945-2e175d5e3d9b",
+        "schema:elevation": "1750",
+        "schema:latitude": "45.109476",
+        "schema:longitude": "5.876228",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/365d44c4-d91e-342a-ba29-1bdb2dd19f29",
+          "schema:closes": "23:00:00",
+          "schema:opens": "08:00:00",
+          "schema:validFrom": "2026-11-29T00:00:00",
+          "schema:validThrough": "2026-11-30T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Abendservice ab 19 Uhr"
+            ],
+            "en": [
+              "Evening service from 7pm"
+            ],
+            "it": [
+              "Servizio serale dalle 19.00"
+            ],
+            "fr": [
+              "Service du soir dès 19h"
+            ],
+            "es": [
+              "Servicio vespertino a partir de las 19.00 horas"
+            ],
+            "nl": [
+              "Avonddienst vanaf 19.00 uur"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/0a62d934-33dc-3d46-99f1-e6bc5bb64777",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a1f9d33e-d631-35d8-80a5-8962a4ab94a8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a5a28dd5-c5c2-37f6-91a0-da16d74e722c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f12a56aa-99db-39af-a8a6-b75812ccbb19",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f5e00df9-3c2c-3e7a-ac03-30bb6c9ab821",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5f604410-f332-3183-b2d8-276eb867c6ae",
+          "schema:closes": "22:00:00",
+          "schema:opens": "08:00:00",
+          "schema:validFrom": "2026-07-12T00:00:00",
+          "schema:validThrough": "2026-08-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "7 Tage die Woche von 8:00 bis 22:00 Uhr geöffnet."
+            ],
+            "en": [
+              "Open 7/7 from 8am to 10pm."
+            ],
+            "it": [
+              "Aperto 7 giorni su 7 dalle 8.00 alle 22.00."
+            ],
+            "fr": [
+              "Ouvert 7j/7 de 8h à 22h."
+            ],
+            "es": [
+              "Abierto los 7 días de la semana de 8.00 a 22.00 horas."
+            ],
+            "nl": [
+              "7 dagen per week geopend van 8.00 tot 22.00 uur."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/2b0e1dad-49c2-3d0f-b670-0241f262546c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/30d13b2f-3115-3e86-a931-648859b0ae06",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/3a8d99ee-95de-3d47-8bdb-f51649487b57",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/6a1a7b01-2611-35d4-87d6-fbd3127c9541",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f6a8e165-5a40-3091-bac9-4b9c0b331fc2",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/aab2abcb-24ee-34e1-8851-e55e12ae2b8d",
+          "schema:closes": "23:00:00",
+          "schema:opens": "08:00:00",
+          "schema:validFrom": "2026-12-06T00:00:00",
+          "schema:validThrough": "2026-04-12T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Abendservice ab 19 Uhr"
+            ],
+            "en": [
+              "Evening service from 7pm"
+            ],
+            "it": [
+              "Servizio serale dalle 19.00"
+            ],
+            "fr": [
+              "Service du soir dès 19h"
+            ],
+            "es": [
+              "Servicio vespertino a partir de las 19.00 horas"
+            ],
+            "nl": [
+              "Avonddienst vanaf 19.00 uur"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/65c292da-2b4e-34d1-a423-ad0750d1268f",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/716febb4-c262-3ee0-9db0-4d93c885373d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a79a1c04-7f02-31c5-aa8e-c40553814de3",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/aea1f450-1696-3a73-aa40-9bb0ad64e5bb",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/b40753ff-3db8-33e1-9ee8-af2f0d083393",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/f93d9295-7ce6-3ece-801f-dc6070f2299c",
+      "schema:email": [
+        "contact@chamrousse.com",
+        "responsable.accueil@chamrousse.com",
+        "web@chamrousse.com"
+      ],
+      "schema:legalName": "Office du Tourisme de Chamrousse",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.chamrousse.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-11-25",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.539Z"
+}

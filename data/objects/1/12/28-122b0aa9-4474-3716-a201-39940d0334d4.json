@@ -1,0 +1,984 @@
+{
+  "@id": "https://data.datatourisme.fr/28/122b0aa9-4474-3716-a201-39940d0334d4",
+  "dc:identifier": "RANDOPIC0600006O",
+  "@type": [
+    "olo:OrderedList",
+    "PointOfInterest",
+    "Tour",
+    "WalkingTour"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Der GR® 12 führt den Wanderer von der Ile de France nach Belgien. Er beginnt am Schloss der Weißen Königin, besucht Senlis, die Wälder von Halatte und Compiègne, bevor er in das Departement Aisne weiterwandert.\n\nEs sind 73,5 km, die in der Oise von den Teichen von Commelle bis Hautefontaine verlaufen."
+    ],
+    "en": [
+      "The GR® 12 takes hikers from the Ile de France to Belgium. It starts at the Château de la Reine-Blanche, visits Senlis, the Halatte and Compiègne forests, and ends in the Aisne.\n\nThe 73.5km route winds its way through the Oise from the Commelle ponds to Hautefontaine."
+    ],
+    "it": [
+      "Il GR® 12 porta gli escursionisti dall'Ile de France al Belgio. Parte dal Castello della Reine-Blanche, visita Senlis e le foreste di Halatte e Compiègne prima di passare all'Aisne.\n\nIl percorso di 73,5 km si snoda attraverso l'Oise, dagli stagni di Commelle a Hautefontaine."
+    ],
+    "fr": [
+      "Le GR® 12 emmène le randonneur de l'Ile de France à la Belgique. Il débute au château de la Reine-Blanche, visite Senlis, les forêts d'Halatte et de Compiègne  avant de se rendre dans l'Aisne.\n\nCe sont 73,5km qui sillone dans l'Oise des étangs de Commelle à Hautefontaine."
+    ],
+    "es": [
+      "El GR® 12 lleva a los senderistas desde la Isla de Francia hasta Bélgica. Comienza en el Castillo de la Reine-Blanche, visita Senlis y los bosques de Halatte y Compiègne antes de seguir hacia el Aisne.\n\nLa ruta de 73,5 km serpentea por el Oise desde los estanques de Commelle hasta Hautefontaine."
+    ],
+    "nl": [
+      "De GR® 12 neemt wandelaars mee van Île de France naar België. Hij begint bij het Château de la Reine-Blanche, bezoekt Senlis en de bossen van Halatte en Compiègne voordat hij verder gaat naar de Aisne.\n\nDe 73,5 km lange route slingert door de Oise van de Commelle-vijvers naar Hautefontaine."
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "GR® 12 des étangs de Commelles à Hautefontaine"
+    ],
+    "en": [
+      "GR® 12 des étangs de Commelles à Hautefontaine"
+    ],
+    "fr": [
+      "GR® 12 des étangs de Commelles à Hautefontaine"
+    ],
+    "es": [
+      "GR® 12 des étangs de Commelles à Hautefontaine"
+    ]
+  },
+  "arrivedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/3f444b68-8dd7-38a7-8914-52c29a9d2030",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/2d1fde04-0a28-38fb-ad91-59355a41681c",
+          "schema:addressLocality": "Hautefontaine",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:60305",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Hautefontaine"
+              ],
+              "pt": [
+                "Hautefontaine"
+              ],
+              "en": [
+                "Hautefontaine"
+              ],
+              "it": [
+                "Hautefontaine"
+              ],
+              "fr": [
+                "Hautefontaine"
+              ],
+              "nl": [
+                "Hautefontaine"
+              ],
+              "es": [
+                "Hautefontaine"
+              ]
+            },
+            "insee": "60305",
+            "isPartOfDepartment": {
+              "@id": "kb:France3260",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Oise"
+                ],
+                "pt": [
+                  "Oise"
+                ],
+                "en": [
+                  "Oise"
+                ],
+                "it": [
+                  "Oise"
+                ],
+                "fr": [
+                  "Oise"
+                ],
+                "nl": [
+                  "Oise"
+                ],
+                "es": [
+                  "Oise"
+                ]
+              },
+              "insee": "60",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "creationDate": "2012-03-14",
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/28/915afdb6-9d0c-322b-851a-df6177c35425",
+    "dc:identifier": "SIM Hauts-de-France - Oise Tourisme",
+    "schema:legalName": "SIM Hauts-de-France - Oise Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/5463b4e3-2482-3579-a40a-47ba972f29d5",
+      "schema:legalName": "SIM Hauts-de-France",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/9a54fa63-f5f0-3eff-baac-0b799515bde9",
+      "dc:description": {
+        "de": [
+          "Der GR® 12 führt den Wanderer von der Ile de France nach Belgien. Er beginnt am Schloss der Weißen Königin, besucht Senlis, die Wälder von Halatte und Compiègne, bevor er in das Departement Aisne weiterwandert.\n\nEs sind 73,5 km, die in der Oise von den Teichen von Commelle bis Hautefontaine verlaufen."
+        ],
+        "en": [
+          "The GR® 12 takes hikers from the Ile de France to Belgium. It starts at the Château de la Reine-Blanche, visits Senlis, the Halatte and Compiègne forests, and ends in the Aisne.\n\nThe 73.5km route winds its way through the Oise from the Commelle ponds to Hautefontaine."
+        ],
+        "it": [
+          "Il GR® 12 porta gli escursionisti dall'Ile de France al Belgio. Parte dal Castello della Reine-Blanche, visita Senlis e le foreste di Halatte e Compiègne prima di passare all'Aisne.\n\nIl percorso di 73,5 km si snoda attraverso l'Oise, dagli stagni di Commelle a Hautefontaine."
+        ],
+        "fr": [
+          "Le GR® 12 emmène le randonneur de l'Ile de France à la Belgique. Il débute au château de la Reine-Blanche, visite Senlis, les forêts d'Halatte et de Compiègne  avant de se rendre dans l'Aisne.\n\nCe sont 73,5km qui sillone dans l'Oise des étangs de Commelle à Hautefontaine."
+        ],
+        "es": [
+          "El GR® 12 lleva a los senderistas desde la Isla de Francia hasta Bélgica. Comienza en el Castillo de la Reine-Blanche, visita Senlis y los bosques de Halatte y Compiègne antes de seguir hacia el Aisne.\n\nLa ruta de 73,5 km serpentea por el Oise desde los estanques de Commelle hasta Hautefontaine."
+        ],
+        "nl": [
+          "De GR® 12 neemt wandelaars mee van Île de France naar België. Hij begint bij het Château de la Reine-Blanche, bezoekt Senlis en de bossen van Halatte en Compiègne voordat hij verder gaat naar de Aisne.\n\nDe 73,5 km lange route slingert door de Oise van de Commelle-vijvers naar Hautefontaine."
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/1b98e1d3-dd57-3d0f-ab42-963d7247ebdb",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2b501adf-fb59-372f-b22d-84fdab211cdf",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/3217cedf-07c9-36ee-a0ba-dbd85a7e1074",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/3ff572df-5815-3631-a2cf-e2d4a5475482",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6d851495-7594-3c64-9900-59df02ae3a66",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a90ec159-898b-37d7-846a-6f466fed7aec",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ca3f4f62-0ad6-39fd-b949-a62ff51a5999",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/da0bac89-72c3-3218-915d-61618a3f05b0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e1c9bdb5-191a-3939-b4ff-a75660a5803f",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e273beb2-df98-3c16-a134-59a5f62a1bb5",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Der GR® 12 führt den Wanderer von der Ile de France nach Belgien. Er beginnt am Schloss der Weißen Königin, besucht Senlis, die Wälder von Halatte und Compiègne, bevor er in das Departement Aisne weiterwandert.\n\nEs sind 73,5 km, die in der Oise von den Teichen von Commelle bis Hautefontaine verlaufen."
+        ],
+        "en": [
+          "The GR® 12 takes hikers from the Ile de France to Belgium. It starts at the Château de la Reine-Blanche, visits Senlis, the Halatte and Compiègne forests, and ends in the Aisne.\n\nThe 73.5km route winds its way through the Oise from the Commelle ponds to Hautefontaine."
+        ],
+        "it": [
+          "Il GR® 12 porta gli escursionisti dall'Ile de France al Belgio. Parte dal Castello della Reine-Blanche, visita Senlis e le foreste di Halatte e Compiègne prima di passare all'Aisne.\n\nIl percorso di 73,5 km si snoda attraverso l'Oise, dagli stagni di Commelle a Hautefontaine."
+        ],
+        "fr": [
+          "Le GR® 12 emmène le randonneur de l'Ile de France à la Belgique. Il débute au château de la Reine-Blanche, visite Senlis, les forêts d'Halatte et de Compiègne  avant de se rendre dans l'Aisne.\n\nCe sont 73,5km qui sillone dans l'Oise des étangs de Commelle à Hautefontaine."
+        ],
+        "es": [
+          "El GR® 12 lleva a los senderistas desde la Isla de Francia hasta Bélgica. Comienza en el Castillo de la Reine-Blanche, visita Senlis y los bosques de Halatte y Compiègne antes de seguir hacia el Aisne.\n\nLa ruta de 73,5 km serpentea por el Oise desde los estanques de Commelle hasta Hautefontaine."
+        ],
+        "nl": [
+          "De GR® 12 neemt wandelaars mee van Île de France naar België. Hij begint bij het Château de la Reine-Blanche, bezoekt Senlis en de bossen van Halatte en Compiègne voordat hij verder gaat naar de Aisne.\n\nDe 73,5 km lange route slingert door de Oise van de Commelle-vijvers naar Hautefontaine."
+        ]
+      }
+    }
+  ],
+  "hasMainRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/70d3dc98-6a72-3908-9c9e-06b7e62472df",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/43742c1e-a111-3ab3-9aa1-34f3268a0870",
+          "ebucore:title": {
+            "fr": [
+              "Château de Commelles"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "Chantilly-Senlis Tourisme"
+          ],
+          "rightsEndDate": "2029-12-31"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/37dcd943-ab31-3f28-b577-a4b32d7f2d97",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://hautsdefrance.media.tourinsoft.eu/upload/11259508-10153551796089106-8958473288517542543-n.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasPracticeCondition": [
+    {
+      "@id": "https://data.datatourisme.fr/55f7feaf-d231-368c-821b-b7a1fc0e76df",
+      "@type": [
+        "PracticeCondition"
+      ],
+      "hasLocomotionMode": [
+        {
+          "@id": "kb:WalkingMode",
+          "@type": [
+            "PedestrianLocomotionMode"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Zu Fuß"
+            ],
+            "pt": [
+              "Um pé"
+            ],
+            "en": [
+              "Walking"
+            ],
+            "it": [
+              "Un piede"
+            ],
+            "fr": [
+              "A pieds"
+            ],
+            "es": [
+              "Un pie"
+            ],
+            "nl": [
+              "Een voet"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "hasRepresentation": [
+    {
+      "@id": "https://data.datatourisme.fr/2c355bf6-6aa0-38bd-bebc-98c8add40bbe",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/9050e0d8-727e-38ea-b06d-3936d04886ca",
+          "ebucore:title": {
+            "fr": [
+              "Façade sud de la cathédrale de Senlis"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "Office de Tourisme de Senlis"
+          ],
+          "rightsEndDate": "2029-12-31"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/1f7338d4-6189-3479-899c-bfe1f9e4411c",
+          "ebucore:locator": [
+            "https://hautsdefrance.media.tourinsoft.eu/upload/P1050622.JPG"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/70d3dc98-6a72-3908-9c9e-06b7e62472df",
+      "ebucore:hasAnnotation": [
+        {
+          "@id": "https://data.datatourisme.fr/43742c1e-a111-3ab3-9aa1-34f3268a0870",
+          "ebucore:title": {
+            "fr": [
+              "Château de Commelles"
+            ]
+          },
+          "@type": [
+            "ebucore:Annotation",
+            "Annotation"
+          ],
+          "credits": [
+            "Chantilly-Senlis Tourisme"
+          ],
+          "rightsEndDate": "2029-12-31"
+        }
+      ],
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/37dcd943-ab31-3f28-b577-a4b32d7f2d97",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:JPEG",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "JPEG-Bild"
+                ],
+                "pt": [
+                  "Imagem JPEG"
+                ],
+                "en": [
+                  "JPEG image file"
+                ],
+                "it": [
+                  "Immagine JPEG"
+                ],
+                "fr": [
+                  "Image JPEG"
+                ],
+                "nl": [
+                  "JPEG-afbeelding"
+                ],
+                "es": [
+                  "Imagen JPEG"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "image/jpeg"
+                ],
+                "pt": [
+                  "image/jpeg"
+                ],
+                "en": [
+                  "image/jpeg"
+                ],
+                "it": [
+                  "image/jpeg"
+                ],
+                "fr": [
+                  "image/jpeg"
+                ],
+                "nl": [
+                  "image/jpeg"
+                ],
+                "es": [
+                  "image/jpeg"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://hautsdefrance.media.tourinsoft.eu/upload/11259508-10153551796089106-8958473288517542543-n.jpg"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ba875e01-63a7-361f-b561-4c7419a8a25f",
+      "ebucore:hasRelatedResource": [
+        {
+          "@id": "https://data.datatourisme.fr/e6917479-2235-3074-b6fb-09cb1e62800a",
+          "ebucore:hasMimeType": [
+            {
+              "@id": "kb:GPX",
+              "@type": [
+                "ebucore:MimeType"
+              ],
+              "rdfs:comment": {
+                "de": [
+                  "GPX-Datei"
+                ],
+                "pt": [
+                  "Ficheiro GPX"
+                ],
+                "en": [
+                  "GPX file"
+                ],
+                "it": [
+                  "File GPX"
+                ],
+                "fr": [
+                  "Fichier GPX"
+                ],
+                "nl": [
+                  "GPX-bestand"
+                ],
+                "es": [
+                  "Archivo GPX"
+                ]
+              },
+              "rdfs:label": {
+                "de": [
+                  "application/gpx+xml"
+                ],
+                "pt": [
+                  "application/gpx+xml"
+                ],
+                "en": [
+                  "application/gpx+xml"
+                ],
+                "it": [
+                  "application/gpx+xml"
+                ],
+                "fr": [
+                  "application/gpx+xml"
+                ],
+                "nl": [
+                  "application/gpx+xml"
+                ],
+                "es": [
+                  "application/gpx+xml"
+                ]
+              }
+            }
+          ],
+          "ebucore:locator": [
+            "https://hautsdefrance.media.tourinsoft.eu/upload/GR-12.gpx"
+          ],
+          "@type": [
+            "ebucore:Resource"
+          ]
+        }
+      ],
+      "@type": [
+        "ebucore:EditorialObject"
+      ]
+    }
+  ],
+  "hasTourType": [
+    {
+      "@id": "kb:RoundTrip",
+      "@type": [
+        "TourType"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Rundreise"
+        ],
+        "pt": [
+          "Ida e volta"
+        ],
+        "en": [
+          "Round Trip"
+        ],
+        "it": [
+          "Andata e ritorno"
+        ],
+        "fr": [
+          "Aller-Retour"
+        ],
+        "nl": [
+          "Retour"
+        ],
+        "es": [
+          "Ida y vuelta"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/08f5ee5f-3d9e-3832-beff-3e269f04fe1f",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/0c5ab8f2-a48e-33db-ac2c-6d4810272c90",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/48da2fda-d2a7-3cd2-812e-f443c711c4dd",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/abea86a3-8cbe-350e-845b-d30e767e827a",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ff0c1581-7c0e-3407-8018-949d124fe8d9",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/7392d6d1-4f4b-3173-b25d-edd7cf563685",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/bd427d99-5daf-3310-ba37-3ec3ce88e4a7",
+          "schema:addressLocality": "Coye-la-Forêt",
+          "schema:postalCode": "60580",
+          "schema:streetAddress": [
+            "Etang de la Loge (Comelles)"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:60172",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Coye-la-Forêt"
+              ],
+              "pt": [
+                "Coye-la-Forêt"
+              ],
+              "en": [
+                "Coye-la-Forêt"
+              ],
+              "it": [
+                "Coye-la-Forêt"
+              ],
+              "fr": [
+                "Coye-la-Forêt"
+              ],
+              "nl": [
+                "Coye-la-Forêt"
+              ],
+              "es": [
+                "Coye-la-Forêt"
+              ]
+            },
+            "insee": "60172",
+            "isPartOfDepartment": {
+              "@id": "kb:France3260",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Oise"
+                ],
+                "pt": [
+                  "Oise"
+                ],
+                "en": [
+                  "Oise"
+                ],
+                "it": [
+                  "Oise"
+                ],
+                "fr": [
+                  "Oise"
+                ],
+                "nl": [
+                  "Oise"
+                ],
+                "es": [
+                  "Oise"
+                ]
+              },
+              "insee": "60",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/d25e3c11-178d-31a4-9d03-480877367ee8",
+        "schema:latitude": "49.1556641",
+        "schema:longitude": "2.47930526",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-06-24",
+  "lastUpdateDatatourisme": "2025-06-25T04:38:54.807Z",
+  "markup": {
+    "fr": [
+      "Blanc/Rouge"
+    ]
+  },
+  "maxAltitude": "228.0",
+  "minAltitude": "29.0",
+  "tourDistance": "73500.0"
+}
