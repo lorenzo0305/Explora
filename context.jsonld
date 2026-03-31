@@ -1,0 +1,613 @@
+{
+  "@vocab": "https://www.datatourisme.fr/ontology/core#",
+  "schema": "http://schema.org/",
+  "data": "https://data.datatourisme.fr/",
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "align": "https://www.datatourisme.fr/ontology/alignment#",
+  "olo": "http://purl.org/ontology/olo/core#",
+  "dct": "http://purl.org/dc/terms/",
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "xml": "http://www.w3.org/XML/1998/namespace",
+  "meta": "https://www.datatourisme.fr/resource/metadata#",
+  "kb": "https://www.datatourisme.fr/resource/core#",
+  "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#",
+  "foaf": "http://xmlns.com/foaf/0.1/",
+  "dc": "http://purl.org/dc/elements/1.1/",
+  "dc:description": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "rdfs:comment": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "rdf:type": {
+    "@type": "PointOfInterestClass"
+  },
+  "rdfs:label": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "schema:suggestedGender": {
+    "@type": "schema:GenderType"
+  },
+  "isAPartOf": {
+    "@type": "PointOfInterest"
+  },
+  "hasFeature": {
+    "@type": "FeatureSpecification"
+  },
+  "hasLayout": {
+    "@type": "RoomLayout"
+  },
+  "schema:requiredMaxAge": {
+    "@type": "xsd:int"
+  },
+  "schema:priceSpecification": {
+    "@type": "schema:PriceSpecification"
+  },
+  "hasTheme": {
+    "@type": "Theme"
+  },
+  "hasNeighborhood": {
+    "@type": "SpatialEnvironmentTheme"
+  },
+  "hasPracticeCondition": {
+    "@type": "PracticeCondition"
+  },
+  "hasTourType": {
+    "@type": "TourType"
+  },
+  "hasAudience": {
+    "@type": "Audience"
+  },
+  "providesFoodProduct": {
+    "@type": "FoodProduct"
+  },
+  "hasExternalReference": {
+    "@type": "ExternalReference"
+  },
+  "isConsumableFor": {
+    "@type": "PointOfInterest"
+  },
+  "appliesOnDay": {
+    "@type": "schema:DayOfWeek"
+  },
+  "hasManagementContact": {
+    "@type": "Agent"
+  },
+  "schema:address": {
+    "@type": "schema:PostalAddress"
+  },
+  "hasPricingMode": {
+    "@type": "PricingMode"
+  },
+  "hasContact": {
+    "@type": "Agent"
+  },
+  "hasBeenCreatedBy": {
+    "@type": "Agent"
+  },
+  "hasPart": {
+    "@type": "PointOfInterest"
+  },
+  "offers": {
+    "@type": "Offer"
+  },
+  "isReferencedBy": {
+    "@type": "PointOfInterest"
+  },
+  "isPartOfCountry": {
+    "@type": "schema:Country"
+  },
+  "hasLocomotionMode": {
+    "@type": "LocomotionMode"
+  },
+  "hasExternalPlatform": {
+    "@type": "ExternalPlatform"
+  },
+  "appliesOnPeriod": {
+    "@type": "Period"
+  },
+  "arrivedAt": {
+    "@type": "Place"
+  },
+  "schema:suggestedMinAge": {
+    "@type": "xsd:int"
+  },
+  "isPartOfRegion": {
+    "@type": "Region"
+  },
+  "hasFloorSize": {
+    "@type": "schema:QuantitativeValue"
+  },
+  "isOwnedBy": {
+    "@type": "Agent"
+  },
+  "isRatingProvidedBy": {
+    "@type": "ReviewSystem"
+  },
+  "isLocatedAt": {
+    "@type": "Place"
+  },
+  "hasReviewValue": {
+    "@type": "Rating"
+  },
+  "isPartOfDepartment": {
+    "@type": "Department"
+  },
+  "schema:dayOfWeek": {
+    "@type": "schema:DayOfWeek"
+  },
+  "hasEligiblePolicy": {
+    "@type": "PricingPolicy"
+  },
+  "hasDifficultyLevel": {
+    "@type": "DifficultyLevel"
+  },
+  "hasBeenPublishedBy": {
+    "@type": "Agent"
+  },
+  "hasCreated": {
+    "@type": "PointOfInterest"
+  },
+  "hasEligibleAudience": {
+    "@type": "PeopleAudience"
+  },
+  "schema:openingHoursSpecification": {
+    "@type": "schema:OpeningHoursSpecification"
+  },
+  "hasArchitecturalStyle": {
+    "@type": "ArchitecturalStyle"
+  },
+  "hasClientTarget": {
+    "@type": "PeopleAudience"
+  },
+  "hasBookingContact": {
+    "@type": "Agent"
+  },
+  "hasGeographicReach": {
+    "@type": "GeographicReach"
+  },
+  "isEquippedWith": {
+    "@type": "Amenity"
+  },
+  "hasPricingOffer": {
+    "@type": "PricingOffer"
+  },
+  "allowsRating": {
+    "@type": "Rating"
+  },
+  "olo:slot": {
+    "@type": "olo:Slot"
+  },
+  "ebucore:hasAnnotation": {
+    "@type": "ebucore:Annotation"
+  },
+  "hasAdministrativeContact": {
+    "@type": "Agent"
+  },
+  "suggests": {
+    "@type": "PointOfInterest"
+  },
+  "hasLandTypeName": {
+    "@type": "LandTypeName"
+  },
+  "hasCommunicationContact": {
+    "@type": "Agent"
+  },
+  "hasDescription": {
+    "@type": "Description"
+  },
+  "schema:suggestedMaxAge": {
+    "@type": "xsd:int"
+  },
+  "ebucore:hasMimeType": {
+    "@type": "ebucore:MimeType"
+  },
+  "schema:requiredGender": {
+    "@type": "schema:GenderType"
+  },
+  "hasReview": {
+    "@type": "Review"
+  },
+  "schema:gender": {
+    "@type": "schema:GenderType"
+  },
+  "olo:item": {
+    "@type": "TourPath"
+  },
+  "hasPricingSeason": {
+    "@type": "PricingSeason"
+  },
+  "isDedicatedTo": {
+    "@type": "PeopleAudience"
+  },
+  "takesPlaceAt": {
+    "@type": "Period"
+  },
+  "hasAddressCity": {
+    "@type": "City"
+  },
+  "hasMainRepresentation": {
+    "@type": "ebucore:EditorialObject"
+  },
+  "ebucore:hasRelatedResource": {
+    "@type": "ebucore:Resource"
+  },
+  "owns": {
+    "@type": "PointOfInterest"
+  },
+  "hasPublished": {
+    "@type": "PointOfInterest"
+  },
+  "hasLandType": {
+    "@type": "LandType"
+  },
+  "providesCuisineOfType": {
+    "@type": "CuisineCategory"
+  },
+  "features": {
+    "@type": "Amenity"
+  },
+  "schema:acceptedPaymentMethod": {
+    "@type": "schema:PaymentMethod"
+  },
+  "hasRepresentation": {
+    "@type": "ebucore:EditorialObject"
+  },
+  "schema:requiredMinAge": {
+    "@type": "xsd:int"
+  },
+  "markup": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "reviewDeliveryDate": {
+    "@type": "xsd:date"
+  },
+  "schema:line": {
+    "@type": "xsd:string"
+  },
+  "schema:polygon": {
+    "@type": "xsd:string"
+  },
+  "schema:minValue": {
+    "@type": "xsd:decimal"
+  },
+  "allowedPersons": {
+    "@type": "xsd:integer"
+  },
+  "negativeCumulDifference": {
+    "@type": "xsd:float"
+  },
+  "airConditioning": {
+    "@type": "xsd:boolean"
+  },
+  "noSmoking": {
+    "@type": "xsd:boolean"
+  },
+  "schema:faxNumber": {
+    "@type": "xsd:string"
+  },
+  "schema:startDate": {
+    "@type": "xsd:date"
+  },
+  "schema:eligibleQuantity": {
+    "@type": "xsd:string"
+  },
+  "creationDate": {
+    "@type": "xsd:date"
+  },
+  "endTime": {
+    "@type": "xsd:time"
+  },
+  "reviewApprovalNumber": {
+    "@type": "xsd:string"
+  },
+  "endDate": {
+    "@type": "xsd:date"
+  },
+  "practicalTips": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "shortDescription": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "schema:unitText": {
+    "@type": "xsd:string"
+  },
+  "accessTips": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "schema:telephone": {
+    "@type": "xsd:string"
+  },
+  "schema:email": {
+    "@type": "xsd:string"
+  },
+  "schema:maxPrice": {
+    "@type": "xsd:decimal"
+  },
+  "requiredMaxPersonCount": {
+    "@type": "xsd:positiveInteger"
+  },
+  "ebucore:comments": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "schema:longitude": {
+    "@type": "xsd:decimal"
+  },
+  "schema:addressLocality": {
+    "@type": "xsd:string"
+  },
+  "schema:datePublished": {
+    "@type": "xsd:date"
+  },
+  "foaf:homepage": {
+    "@type": "xsd:string"
+  },
+  "charged": {
+    "@type": "xsd:boolean"
+  },
+  "additionalInformation": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "foaf:title": {
+    "@type": "xsd:string"
+  },
+  "requiredMinPersonCount": {
+    "@type": "xsd:positiveInteger"
+  },
+  "saleOnSite": {
+    "@type": "xsd:boolean"
+  },
+  "hasExternalPlatformUrl": {
+    "@type": "xsd:anyURI"
+  },
+  "schema:value": {
+    "@type": "xsd:decimal"
+  },
+  "schema:closes": {
+    "@type": "xsd:time"
+  },
+  "internetAccess": {
+    "@type": "xsd:boolean"
+  },
+  "ebucore:widthUnit": {
+    "@type": "xsd:string"
+  },
+  "pending": {
+    "@type": "xsd:boolean"
+  },
+  "allYouCanEat": {
+    "@type": "xsd:boolean"
+  },
+  "ebucore:locator": {
+    "@type": "xsd:anyURI"
+  },
+  "isObsolete": {
+    "@type": "xsd:boolean"
+  },
+  "hasExternalIdentifier": {
+    "@type": "xsd:string"
+  },
+  "worstRating": {
+    "@type": "xsd:int"
+  },
+  "ebucore:abstract": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "rightsStartDate": {
+    "@type": "xsd:date"
+  },
+  "apeNaf": {
+    "@type": "xsd:string"
+  },
+  "schema:postalCode": {
+    "@type": "xsd:string"
+  },
+  "rightsEndDate": {
+    "@type": "xsd:date"
+  },
+  "dct:hasVersion": {
+    "@type": "xsd:string"
+  },
+  "startTime": {
+    "@type": "xsd:time"
+  },
+  "dc:identifier": {
+    "@type": "xsd:string"
+  },
+  "altInsee": {
+    "@type": "xsd:string"
+  },
+  "textOpeningHoursSpecification": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "schema:endDate": {
+    "@type": "xsd:date"
+  },
+  "schema:circle": {
+    "@type": "xsd:string"
+  },
+  "schema:box": {
+    "@type": "xsd:string"
+  },
+  "guided": {
+    "@type": "xsd:boolean"
+  },
+  "schema:streetAddress": {
+    "@type": "xsd:string"
+  },
+  "schema:maxValue": {
+    "@type": "xsd:decimal"
+  },
+  "reducedMobilityAccess": {
+    "@type": "xsd:boolean"
+  },
+  "takeAway": {
+    "@type": "xsd:boolean"
+  },
+  "schema:givenName": {
+    "@type": "xsd:string"
+  },
+  "schema:elevation": {
+    "@type": "xsd:decimal"
+  },
+  "ebucore:width": {
+    "@type": "xsd:decimal"
+  },
+  "schema:familyName": {
+    "@type": "xsd:string"
+  },
+  "schema:legalName": {
+    "@type": "xsd:string"
+  },
+  "tourDistance": {
+    "@type": "xsd:float"
+  },
+  "schema:priceCurrency": {
+    "@type": "xsd:string"
+  },
+  "cedex": {
+    "@type": "xsd:string"
+  },
+  "petsAllowed": {
+    "@type": "xsd:boolean"
+  },
+  "siret": {
+    "@type": "xsd:string"
+  },
+  "lastUpdateDatatourisme": {
+    "@type": "xsd:dateTime"
+  },
+  "schema:validThrough": {
+    "@type": "xsd:dateTime"
+  },
+  "startDate": {
+    "@type": "xsd:date"
+  },
+  "ebucore:heightUnit": {
+    "@type": "xsd:string"
+  },
+  "reviewExpirationDate": {
+    "@type": "xsd:date"
+  },
+  "ebucore:title": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "positiveCumulDifference": {
+    "@type": "xsd:float"
+  },
+  "schema:validFrom": {
+    "@type": "xsd:dateTime"
+  },
+  "weekOfMonth": {
+    "@type": "WeekOfTheMonth"
+  },
+  "credits": {
+    "@type": "xsd:string"
+  },
+  "openingDetails": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "schema:postOfficeBoxNumber": {
+    "@type": "xsd:string"
+  },
+  "seatCount": {
+    "@type": "xsd:int"
+  },
+  "maxAltitude": {
+    "@type": "xsd:float"
+  },
+  "ebucore:fileSize": {
+    "@type": "xsd:decimal"
+  },
+  "schema:price": {
+    "@type": "xsd:decimal"
+  },
+  "reviewValidityDuration": {
+    "@type": "xsd:int"
+  },
+  "schema:latitude": {
+    "@type": "xsd:decimal"
+  },
+  "ebucore:height": {
+    "@type": "xsd:decimal"
+  },
+  "schema:logo": {
+    "@type": "xsd:string"
+  },
+  "duration": {
+    "@type": "xsd:positiveInteger"
+  },
+  "COVID19SpecialMeasures": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "name": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "proportion": {
+    "@type": "xsd:positiveInteger"
+  },
+  "textPriceSpecification": {
+    "@type": "rdf:langString",
+    "@container": "@language"
+  },
+  "durationDays": {
+    "@type": "xsd:float"
+  },
+  "ebucore:isCoveredBy": {
+    "@type": "xsd:string"
+  },
+  "minAltitude": {
+    "@type": "xsd:float"
+  },
+  "occupancy": {
+    "@type": "xsd:int"
+  },
+  "bestRating": {
+    "@type": "xsd:int"
+  },
+  "registeredNumber": {
+    "@type": "xsd:string"
+  },
+  "insee": {
+    "@type": "xsd:string"
+  },
+  "schema:opens": {
+    "@type": "xsd:time"
+  },
+  "availableLanguage": {
+    "@type": "xsd:string"
+  },
+  "olo:index": {
+    "@type": "xsd:int"
+  },
+  "rcs": {
+    "@type": "xsd:string"
+  },
+  "schema:minPrice": {
+    "@type": "xsd:decimal"
+  },
+  "lastUpdate": {
+    "@type": "xsd:date"
+  },
+  "lifeguarded": {
+    "@type": "xsd:boolean"
+  }
+}
