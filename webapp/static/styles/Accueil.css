@@ -261,14 +261,26 @@ body {
   gap: 16px;
 }
 
-.hiw-steps::before {
+.hiw-step:not(:last-child)::before {
   content: "";
   position: absolute;
   top: 23px;
-  left: 15%;
-  right: 15%;
+  left: calc(50% + 34px);
+  right: calc(-50% + 22px);
   height: 2px;
   background: var(--text);
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.hiw-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: calc(-50% + 16px);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid var(--text);
   opacity: 0.15;
   z-index: 1;
 }
