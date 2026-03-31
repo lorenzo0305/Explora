@@ -1,0 +1,806 @@
+{
+  "@id": "https://data.datatourisme.fr/13/51c7f8da-872a-3c24-8369-448db3c13dee",
+  "dc:identifier": "23196",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Das Restaurant Au Fil de l'Eau bietet Ihnen am Hafen von Roanne eine traditionelle Küche von hoher Qualität, die je nach Jahreszeit und Markt variiert. Die Speisekarte wurde mit Blick auf die Liebhaber von Fleisch und Fröschen zusammengestellt"
+    ],
+    "en": [
+      "The Au Fil de l'Eau restaurant in the port of Roanne offers traditional, high-quality cuisine that changes with the seasons and the markets. The menu has been created with meat and frog lovers in mind?"
+    ],
+    "it": [
+      "Il ristorante Au Fil de l'Eau, nel porto di Roanne, offre una cucina tradizionale e di qualità che cambia in base alle stagioni e ai mercati. Il menu è stato creato pensando agli amanti della carne e delle rane?"
+    ],
+    "fr": [
+      "Le restaurant Au Fil de l’Eau vous propose au port de Roanne, une cuisine traditionnelle de qualité renouvelée au fil des saisons et des marchés. La carte a été créée en pensant aux amoureux de la viande et des grenouilles…"
+    ],
+    "nl": [
+      "Het restaurant Au Fil de l'Eau in de haven van Roanne biedt traditionele gerechten van hoge kwaliteit die veranderen met de seizoenen en de markten. Het menu is samengesteld met vlees- en kikkerliefhebbers in het achterhoofd?"
+    ],
+    "es": [
+      "El restaurante Au Fil de l'Eau, en el puerto de Roanne, ofrece una cocina tradicional de calidad que cambia con las estaciones y los mercados. El menú se ha creado pensando en los amantes de la carne y las ranas.."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Au Fil de l'Eau"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/ec8ce6ab-b3e9-32a8-9b85-51ba726a1227",
+    "dc:identifier": "220",
+    "schema:email": [
+      "accueil-tourisme@ccpu.fr",
+      "amendes@roannais-tourisme.com",
+      "bmodenese@roannais-tourisme.com",
+      "claplace@roannais-tourisme.com",
+      "claroche@copler.fr",
+      "creynier@roannais-tourisme.com",
+      "fguerin@roannais-tourisme.com",
+      "lbruchet@roannais-tourisme.com",
+      "nberger@copler.fr",
+      "sbonnet@copler.fr",
+      "sscarciello@ot-roanne.fr",
+      "tourisme@ccvai.fr"
+    ],
+    "schema:legalName": "Roannais Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.roannais-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/fcf17e1e-02ba-3794-a48b-c06d44050b55",
+      "schema:email": [
+        "aufildeleau.roanne@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 4 77 71 23 28"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://aufildeleau-roanne.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/eb8a42df-69d3-33a0-8923-b306881ccd25",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/008c5c1d-7103-338a-87ec-03993c732f90",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/0e8ae5e5-705b-35cd-a0a1-b66155dfa778",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/34ffe0fb-35a3-335e-a7e1-65d463cce04d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/5120a2f2-151a-37b5-979f-030b501c0611",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e6a73fae-ea05-344a-b809-9efde5e3741d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Das Restaurant Au Fil de l'Eau bietet Ihnen am Hafen von Roanne eine traditionelle Küche von hoher Qualität, die je nach Jahreszeit und Markt variiert. Die Speisekarte wurde mit Blick auf die Liebhaber von Fleisch und Fröschen zusammengestellt"
+        ],
+        "en": [
+          "The Au Fil de l'Eau restaurant in the port of Roanne offers traditional, high-quality cuisine that changes with the seasons and the markets. The menu has been created with meat and frog lovers in mind?"
+        ],
+        "it": [
+          "Il ristorante Au Fil de l'Eau, nel porto di Roanne, offre una cucina tradizionale e di qualità che cambia in base alle stagioni e ai mercati. Il menu è stato creato pensando agli amanti della carne e delle rane?"
+        ],
+        "fr": [
+          "Le restaurant Au Fil de l’Eau vous propose au port de Roanne, une cuisine traditionnelle de qualité renouvelée au fil des saisons et des marchés. La carte a été créée en pensant aux amoureux de la viande et des grenouilles…"
+        ],
+        "nl": [
+          "Het restaurant Au Fil de l'Eau in de haven van Roanne biedt traditionele gerechten van hoge kwaliteit die veranderen met de seizoenen en de markten. Het menu is samengesteld met vlees- en kikkerliefhebbers in het achterhoofd?"
+        ],
+        "es": [
+          "El restaurante Au Fil de l'Eau, en el puerto de Roanne, ofrece una cocina tradicional de calidad que cambia con las estaciones y los mercados. El menú se ha creado pensando en los amantes de la carne y las ranas.."
+        ]
+      }
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/339a5d6f-ef61-3f2b-9204-f41b145550bc",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7b7411a5-f7f8-3eb4-8541-7b95c44b408e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/9d90ff08-f877-39a2-bdbc-8f340c868160",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c4b5a9fb-aa04-3cef-b4ca-c8481ea4bc39",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e972f8a2-32f3-373d-afdd-47845addee09",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/c125f6a4-0fb6-3f98-8115-1e623e4baf42",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/3f137c4a-63a9-38c6-b87c-5a06e29e31ca",
+          "schema:addressLocality": "Roanne",
+          "schema:postalCode": "42300",
+          "schema:streetAddress": [
+            "73 quai Commandant Lherminier"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:42187",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Roanne"
+              ],
+              "pt": [
+                "Roanne"
+              ],
+              "en": [
+                "Roanne"
+              ],
+              "it": [
+                "Roanne"
+              ],
+              "fr": [
+                "Roanne"
+              ],
+              "nl": [
+                "Roanne"
+              ],
+              "es": [
+                "Roanne"
+              ]
+            },
+            "insee": "42187",
+            "isPartOfDepartment": {
+              "@id": "kb:France8442",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Loire"
+                ],
+                "pt": [
+                  "Loire"
+                ],
+                "en": [
+                  "Loire"
+                ],
+                "it": [
+                  "Loire"
+                ],
+                "fr": [
+                  "Loire"
+                ],
+                "nl": [
+                  "Loire"
+                ],
+                "es": [
+                  "Loire"
+                ]
+              },
+              "insee": "42",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/ee594701-8105-3c8a-8cc5-6e8c302553ef",
+        "schema:elevation": "270",
+        "schema:latitude": "46.03884",
+        "schema:longitude": "4.08171",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/838815bc-7f7f-3d85-93fb-d1dbf703475e",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In der Nebensaison abends nur freitags und samstags von 19:00 bis 20:15 Uhr geöffnet."
+            ],
+            "en": [
+              "In low season, open evenings only on Fridays and Saturdays from 7pm to 8:15pm."
+            ],
+            "it": [
+              "In bassa stagione, aperto solo il venerdì e il sabato dalle 19.00 alle 20.15."
+            ],
+            "fr": [
+              "En basse saison, ouvert les soirs seulement les vendredis et samedis soirs de 19h à 20h15."
+            ],
+            "nl": [
+              "In het laagseizoen alleen 's avonds geopend op vrijdag en zaterdag van 19.00 tot 20.15 uur."
+            ],
+            "es": [
+              "En temporada baja, sólo abre por las tardes los viernes y sábados de 19.00 a 20.15 h."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/12c144df-5689-3795-97b2-fc85bfe7f562",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/550a71af-1958-3359-8892-4df42a395ff2",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/76434964-b030-33fe-8df4-05959844cec3",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/bbdc43fb-45bc-3522-b0bf-9895223ebbcb",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f3309653-c447-36de-a5ed-dac6964f6378",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/a874ce0f-b014-36e0-85e1-dfdfc473ee3f",
+      "schema:email": [
+        "accueil-tourisme@ccpu.fr",
+        "amendes@roannais-tourisme.com",
+        "bmodenese@roannais-tourisme.com",
+        "claplace@roannais-tourisme.com",
+        "claroche@copler.fr",
+        "creynier@roannais-tourisme.com",
+        "fguerin@roannais-tourisme.com",
+        "lbruchet@roannais-tourisme.com",
+        "nberger@copler.fr",
+        "sbonnet@copler.fr",
+        "sscarciello@ot-roanne.fr",
+        "tourisme@ccvai.fr"
+      ],
+      "schema:legalName": "Roannais Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.roannais-tourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2026-02-04",
+  "lastUpdateDatatourisme": "2026-02-05T07:10:58.025Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/6871908e-933e-30a6-ad09-d43506eaa355",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/4dd15384-6899-3709-b12f-e5cc189d82fb",
+          "schema:maxPrice": [
+            "18"
+          ],
+          "schema:minPrice": [
+            "18"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ],
+          "name": {
+            "fr": [
+              "Mardi à vendredi uniquement le midi."
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9d764792-05da-3447-989c-288883a797a0",
+          "schema:maxPrice": [
+            "36"
+          ],
+          "schema:minPrice": [
+            "18"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:AdultMenu",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Menü für Erwachsene"
+                ],
+                "pt": [
+                  "Menu para adultos"
+                ],
+                "en": [
+                  "Adult menu"
+                ],
+                "it": [
+                  "Menù per adulti"
+                ],
+                "fr": [
+                  "Menu adulte"
+                ],
+                "nl": [
+                  "Volwassenenmenu"
+                ],
+                "es": [
+                  "Menú para adultos"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/db7dfbc3-6ddc-31b5-92ba-223ddf3ef30d",
+          "schema:maxPrice": [
+            "13"
+          ],
+          "schema:minPrice": [
+            "13"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:ChildMenu",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Kindermenü"
+                ],
+                "pt": [
+                  "Menu para crianças"
+                ],
+                "en": [
+                  "Child menu"
+                ],
+                "it": [
+                  "Menù per bambini"
+                ],
+                "fr": [
+                  "Menu enfant"
+                ],
+                "es": [
+                  "Menú infantil"
+                ],
+                "nl": [
+                  "Kindermenu"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ea0e8ec7-a1d7-3fdc-a1a1-71ba84c22a12",
+          "schema:maxPrice": [
+            "50"
+          ],
+          "schema:minPrice": [
+            "30"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:GroupMenu",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Gruppenmenü"
+                ],
+                "pt": [
+                  "Menu de grupo"
+                ],
+                "en": [
+                  "Group menu"
+                ],
+                "it": [
+                  "Menù per gruppi"
+                ],
+                "fr": [
+                  "Menu groupe"
+                ],
+                "es": [
+                  "Menú de grupo"
+                ],
+                "nl": [
+                  "Groepsmenu"
+                ]
+              }
+            }
+          ],
+          "name": {
+            "fr": [
+              "À partir de 20 personnes avec apéritifs vin et café."
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ]
+}

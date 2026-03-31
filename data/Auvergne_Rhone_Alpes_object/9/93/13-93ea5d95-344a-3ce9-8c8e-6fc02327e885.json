@@ -1,0 +1,584 @@
+{
+  "@id": "https://data.datatourisme.fr/13/93ea5d95-344a-3ce9-8c8e-6fc02327e885",
+  "dc:identifier": "6209326",
+  "@type": [
+    "schema:LocalBusiness",
+    "ActivityProvider",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Store"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Entdecken Sie Pascals Wanderungen in Val d'Isère!"
+    ],
+    "en": [
+      "Discover Pascal's hikes in Val d'Isère!"
+    ],
+    "it": [
+      "Scopri le escursioni di Pascal in Val d’Isère!"
+    ],
+    "fr": [
+      "Découvrez les randonnées de Pascal à Val d'Isère !"
+    ],
+    "es": [
+      "¡Descubre las excursiones de Pascal en Val d'Isère!"
+    ],
+    "nl": [
+      "Ontdek Pascal's wandeltochten in Val d'Isère!"
+    ]
+  },
+  "rdfs:label": {
+    "en": [
+      "Pascal Bertrès"
+    ],
+    "it": [
+      "Pascal Bertrès"
+    ],
+    "fr": [
+      "Pascal Bertrès"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/326a8c05-5c0d-34f5-b065-44665d8bb3ea",
+    "dc:identifier": "2350",
+    "schema:email": [
+      "webmaster@valdisere.com"
+    ],
+    "schema:legalName": "Val d'Isère Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.valdisere.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/99d456cd-dbe0-33f5-900f-ddae9ad1fb6f",
+      "schema:email": [
+        "pascal.bertres@sfr.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 79 06 05 14",
+        "+33 6 13 85 64 77"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/a604ecb0-c060-3748-acaf-99bae9891a27",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0341e981-33ea-39ce-a3fb-53ff6d32f9c1",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2fcf9048-71cb-3c40-a087-d91793f7e513",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ee794c7d-df70-3ef8-9ec5-41cc7e491bdb",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Entdecken Sie Pascals Wanderungen in Val d'Isère!"
+        ],
+        "en": [
+          "Discover Pascal's hikes in Val d'Isère!"
+        ],
+        "it": [
+          "Scopri le escursioni di Pascal in Val d’Isère!"
+        ],
+        "fr": [
+          "Découvrez les randonnées de Pascal à Val d'Isère !"
+        ],
+        "es": [
+          "¡Descubre las excursiones de Pascal en Val d'Isère!"
+        ],
+        "nl": [
+          "Ontdek Pascal's wandeltochten in Val d'Isère!"
+        ]
+      }
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:DonkeyHiking",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Eselwandern"
+        ],
+        "pt": [
+          "Caminhada em burro"
+        ],
+        "en": [
+          "Donkey hiking"
+        ],
+        "it": [
+          "Escursione con asino da soma"
+        ],
+        "fr": [
+          "Randonnée avec âne porteur"
+        ],
+        "es": [
+          "Paseo con burros"
+        ],
+        "nl": [
+          "Ezelwandelingen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Hiking",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wanderung"
+        ],
+        "pt": [
+          "Caminhada"
+        ],
+        "en": [
+          "Hiking"
+        ],
+        "it": [
+          "Escursione"
+        ],
+        "fr": [
+          "Randonnée"
+        ],
+        "nl": [
+          "Wandelen"
+        ],
+        "es": [
+          "Senderismo"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Snowshoes",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Schneeschuhe"
+        ],
+        "pt": [
+          "Raquetas"
+        ],
+        "en": [
+          "Snowshoes"
+        ],
+        "it": [
+          "Racchette da neve"
+        ],
+        "fr": [
+          "Raquettes"
+        ],
+        "nl": [
+          "Sneeuwschoenen"
+        ],
+        "es": [
+          "Raquetas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Wintersports",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wintersport"
+        ],
+        "pt": [
+          "Desportos de inverno"
+        ],
+        "en": [
+          "Winter sports"
+        ],
+        "it": [
+          "Sport invernali"
+        ],
+        "fr": [
+          "Sports d'hiver"
+        ],
+        "nl": [
+          "Wintersport"
+        ],
+        "es": [
+          "Deportes de invierno"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/0549da03-05b7-3665-8214-b992946f56e9",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/768b1f1c-3ff5-3bb4-88c9-62f4697723a9",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b6dae17f-8ffa-3e86-97fd-6b8565b7fb98",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/86455276-d009-3b93-a40e-e2dc3329ff51",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/02d81b4a-e854-3787-a598-6712b54f4a42",
+          "schema:addressLocality": "Val-d'Isère",
+          "schema:postalCode": "73150",
+          "schema:streetAddress": [
+            "Chez Killy Sport"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:73304",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Val-d'Isère"
+              ],
+              "pt": [
+                "Val-d'Isère"
+              ],
+              "en": [
+                "Val-d'Isère"
+              ],
+              "it": [
+                "Val-d'Isère"
+              ],
+              "fr": [
+                "Val-d'Isère"
+              ],
+              "nl": [
+                "Val-d'Isère"
+              ],
+              "es": [
+                "Val-d'Isère"
+              ]
+            },
+            "insee": "73304",
+            "isPartOfDepartment": {
+              "@id": "kb:France8473",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Savoie"
+                ],
+                "pt": [
+                  "Savoie"
+                ],
+                "en": [
+                  "Savoie"
+                ],
+                "it": [
+                  "Savoie"
+                ],
+                "fr": [
+                  "Savoie"
+                ],
+                "nl": [
+                  "Savoie"
+                ],
+                "es": [
+                  "Savoie"
+                ]
+              },
+              "insee": "73",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/8ccf01f9-3f92-346b-82b8-c9c48951bf30",
+        "schema:latitude": "45.4492",
+        "schema:longitude": "6.98039",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/0490e7b3-1265-3481-9868-59ddcb3d3ecf",
+          "schema:closes": "16:30:00",
+          "schema:opens": "10:00:00",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Die Entdeckungswanderungen am Morgen beginnen um 10 Uhr, während die Halbtagestouren am Nachmittag um 13:30 Uhr beginnen."
+            ],
+            "en": [
+              "Morning discovery hikes start at 10am, while afternoon half-days begin at 1:30pm."
+            ],
+            "it": [
+              "I tour di scoperta mattutini iniziano alle 10.00, mentre quelli pomeridiani di mezza giornata iniziano alle 13.30."
+            ],
+            "fr": [
+              "Les randonnées découvertes du matin commencent à 10h, tandis que les demi-journées de l’après-midi débutent à 13h30."
+            ],
+            "nl": [
+              "Ontdekkingstochten in de ochtend beginnen om 10 uur, terwijl middagrondleidingen van een halve dag om 13.30 uur beginnen."
+            ],
+            "es": [
+              "Las visitas de descubrimiento por la mañana comienzan a las 10.00 horas, mientras que las visitas de medio día por la tarde comienzan a las 13.30 horas."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/69699154-e8e8-3fe6-bcab-8834a0a9ac3a",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/8551731d-6c2a-3a08-84d8-5866d52bab1c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a1e08c1f-dd89-3509-8b86-d02251b7e2ab",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a33c16f4-36f7-35f9-b814-4b33cb5dd684",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/b95e9c2d-0ec6-318c-9d9d-b07d3cc970e9",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e0447d96-a493-3a6c-b2d7-6b6893cce7e0",
+      "schema:email": [
+        "webmaster@valdisere.com"
+      ],
+      "schema:legalName": "Val d'Isère Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.valdisere.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-09-17",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.292Z"
+}

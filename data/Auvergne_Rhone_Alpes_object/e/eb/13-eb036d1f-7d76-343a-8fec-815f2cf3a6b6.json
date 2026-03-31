@@ -1,0 +1,771 @@
+{
+  "@id": "https://data.datatourisme.fr/13/eb036d1f-7d76-343a-8fec-815f2cf3a6b6",
+  "dc:identifier": "123276",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Typischer Rahmen im Beaujolais und traditionelle Küche. Spezielle Menüs für Gruppen und Busreisende."
+    ],
+    "en": [
+      "Typical Beaujolais setting and traditional cuisine. Special menus for groups and coaches."
+    ],
+    "it": [
+      "Ambiente tipico del Beaujolais e cucina tradizionale. Menù speciali per gruppi e pullman."
+    ],
+    "fr": [
+      "Cadre typiquement Beaujolais et cuisine traditionnelle. Menus spéciaux groupes et autocaristes."
+    ],
+    "nl": [
+      "Typisch Beaujolais decor en traditionele keuken. Speciale menu's voor groepen en coaches."
+    ],
+    "es": [
+      "Entorno típico del Beaujolais y cocina tradicional. Menús especiales para grupos y entrenadores."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Restaurant Au Bon Cru"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/c20ad4d7-6fe9-3759-aa27-a0c99bff6710",
+    "dc:identifier": "12",
+    "schema:email": [
+      "f.champavere@beaujolais-tourisme.com",
+      "t.blanchier@beaujolais-tourisme.com",
+      "v.guerin@beaujolais-tourisme.com"
+    ],
+    "schema:legalName": "Beaujolais Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.beaujolais-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/7cc7eec9-5fd0-317d-a176-7bbd39b8370a",
+      "schema:telephone": [
+        "+33 4 74 04 11 90"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/a6c47a93-d845-3a6d-aaae-f096970d7f3c",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/87b6ef1e-4428-3925-a028-236e1780f3b2",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9dcb946a-faa2-38b6-a9be-041ebd2fae82",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/df525ee4-9aff-3f28-9cb2-13ff3b93f416",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e8cd2b90-adbd-3872-b7d5-63a52c20b667",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ec006251-674c-3c15-b813-cf994287aa38",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Typischer Rahmen im Beaujolais und traditionelle Küche. Spezielle Menüs für Gruppen und Busreisende."
+        ],
+        "en": [
+          "Typical Beaujolais setting and traditional cuisine. Special menus for groups and coaches."
+        ],
+        "it": [
+          "Ambiente tipico del Beaujolais e cucina tradizionale. Menù speciali per gruppi e pullman."
+        ],
+        "fr": [
+          "Cadre typiquement Beaujolais et cuisine traditionnelle. Menus spéciaux groupes et autocaristes."
+        ],
+        "nl": [
+          "Typisch Beaujolais decor en traditionele keuken. Speciale menu's voor groepen en coaches."
+        ],
+        "es": [
+          "Entorno típico del Beaujolais y cocina tradicional. Menús especiales para grupos y entrenadores."
+        ]
+      }
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/0e79d377-b4a4-3614-9b2e-208ecb6d8f2b",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/45850201-22d3-3b6f-a12a-112b7451aabb",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/4713d0ca-a4d2-3a6d-9b2d-4853a3f99dad",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/7c977765-aa63-3a05-89db-ef1a232f5516",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/fd806ef0-930d-3ba4-861a-466a0c055068",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/64b72672-22f0-3907-86ba-6a2a481a1092",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/ae52b301-8942-3ca8-9bcf-c64b97e46fab",
+          "schema:addressLocality": "Fleurie",
+          "schema:postalCode": "69820",
+          "schema:streetAddress": [
+            "Route de Romanèche"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:69084",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Fleurie"
+              ],
+              "pt": [
+                "Fleurie"
+              ],
+              "en": [
+                "Fleurie"
+              ],
+              "it": [
+                "Fleurie"
+              ],
+              "fr": [
+                "Fleurie"
+              ],
+              "nl": [
+                "Fleurie"
+              ],
+              "es": [
+                "Fleurie"
+              ]
+            },
+            "insee": "69084",
+            "isPartOfDepartment": {
+              "@id": "kb:France8469",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Rhône"
+                ],
+                "pt": [
+                  "Rhône"
+                ],
+                "en": [
+                  "Rhône"
+                ],
+                "it": [
+                  "Rhône"
+                ],
+                "fr": [
+                  "Rhône"
+                ],
+                "nl": [
+                  "Rhône"
+                ],
+                "es": [
+                  "Rhône"
+                ]
+              },
+              "insee": "69",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/68134994-946e-3e72-9ce9-24ce77715b84",
+        "schema:elevation": "213",
+        "schema:latitude": "46.18526",
+        "schema:longitude": "4.717094",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/533751f7-7064-3c26-b4f3-89b743288a33",
+          "schema:validFrom": "2026-02-11T00:00:00",
+          "schema:validThrough": "2026-12-15T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Abends (außer Gruppen) und donnerstags (außer donnerstags an Feiertagen) geschlossen"
+            ],
+            "en": [
+              "Closed in the evening (except for groups) and on Thursdays (except for public holidays)"
+            ],
+            "it": [
+              "Chiuso la sera (eccetto per i gruppi) e il giovedì (eccetto i giorni festivi)"
+            ],
+            "fr": [
+              "Fermé le soir (sauf groupes) et le jeudi (sauf jeudis fériés)"
+            ],
+            "nl": [
+              "S avonds gesloten (behalve voor groepen) en op donderdag (behalve op feestdagen)"
+            ],
+            "es": [
+              "Cerrado por la noche (excepto para grupos) y los jueves (excepto los días festivos)"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/1eda9071-70ed-30bd-8c09-e9031e1a1273",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/3645d765-c266-33a2-a0a4-92b4bbfda595",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/859fcb28-4124-34aa-a9a4-b30787a8902a",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/8d45f869-5db9-3e65-89c9-df783623fed4",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f8d294bb-df07-3aee-be81-3b6ea028451e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8687b10f-a743-3616-95e8-ea841adb5c78",
+      "schema:email": [
+        "f.champavere@beaujolais-tourisme.com",
+        "t.blanchier@beaujolais-tourisme.com",
+        "v.guerin@beaujolais-tourisme.com"
+      ],
+      "schema:legalName": "Beaujolais Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.beaujolais-tourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2023-06-21",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.839Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/3e2b72c4-2358-35aa-bafd-58b4c26b5e6e",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/0be8e924-9418-3d80-b490-cd83c1d4966e",
+          "schema:minPrice": [
+            "10"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/3182b68a-0bb3-346a-aa19-85e952b5f5eb",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2019-12-15",
+              "startDate": "2019-02-11"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:DailySpecials",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Tagesgericht"
+                ],
+                "pt": [
+                  "Prato do dia"
+                ],
+                "en": [
+                  "Daily specials"
+                ],
+                "it": [
+                  "Piatto del giorno"
+                ],
+                "fr": [
+                  "Plat du jour"
+                ],
+                "es": [
+                  "Plato del día"
+                ],
+                "nl": [
+                  "Dagschotel"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2b7560c6-0f3f-3a90-a506-d4c50d03c29c",
+          "schema:maxPrice": [
+            "30"
+          ],
+          "schema:minPrice": [
+            "21"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/3182b68a-0bb3-346a-aa19-85e952b5f5eb",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2019-12-15",
+              "startDate": "2019-02-11"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:GroupMenu",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Gruppenmenü"
+                ],
+                "pt": [
+                  "Menu de grupo"
+                ],
+                "en": [
+                  "Group menu"
+                ],
+                "it": [
+                  "Menù per gruppi"
+                ],
+                "fr": [
+                  "Menu groupe"
+                ],
+                "es": [
+                  "Menú de grupo"
+                ],
+                "nl": [
+                  "Groepsmenu"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/95dfea35-1c45-3897-a591-04e67e956642",
+          "schema:minPrice": [
+            "14"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/3182b68a-0bb3-346a-aa19-85e952b5f5eb",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2019-12-15",
+              "startDate": "2019-02-11"
+            }
+          ],
+          "name": {
+            "fr": [
+              "1/4 vin et café compris, le midi en semaine uniquement"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b69cfe75-7f3f-3b6d-a13e-f423c2809049",
+          "schema:maxPrice": [
+            "32"
+          ],
+          "schema:minPrice": [
+            "21"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/3182b68a-0bb3-346a-aa19-85e952b5f5eb",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2019-12-15",
+              "startDate": "2019-02-11"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:AdultMenu",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Menü für Erwachsene"
+                ],
+                "pt": [
+                  "Menu para adultos"
+                ],
+                "en": [
+                  "Adult menu"
+                ],
+                "it": [
+                  "Menù per adulti"
+                ],
+                "fr": [
+                  "Menu adulte"
+                ],
+                "nl": [
+                  "Volwassenenmenu"
+                ],
+                "es": [
+                  "Menú para adultos"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ]
+}

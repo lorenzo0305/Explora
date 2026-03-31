@@ -1,0 +1,773 @@
+{
+  "@id": "https://data.datatourisme.fr/28/3b660805-50a2-3997-9722-ff1c8c58160b",
+  "dc:identifier": "RESHDF000V508C6Y",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Restaurant",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Steakhaus"
+    ],
+    "en": [
+      "Steak house"
+    ],
+    "it": [
+      "Bisteccheria"
+    ],
+    "fr": [
+      "Steak house"
+    ],
+    "nl": [
+      "Steakhouse"
+    ],
+    "es": [
+      "Asador"
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "La braise"
+    ]
+  },
+  "allowedPersons": 1,
+  "creationDate": "2024-07-10",
+  "hasAudience": [
+    {
+      "@id": "kb:Regional",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Regional"
+        ],
+        "pt": [
+          "Regional"
+        ],
+        "en": [
+          "Regional"
+        ],
+        "it": [
+          "Regionale"
+        ],
+        "fr": [
+          "Régionale"
+        ],
+        "es": [
+          "Regional"
+        ],
+        "nl": [
+          "Regionaal"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/28/fc795a56-df8a-3711-b2b3-e855e3dc30b1",
+    "dc:identifier": "2df411fa-c868-4f2d-9975-6717d51b7886",
+    "schema:address": [
+      {
+        "@id": "https://data.datatourisme.fr/f1c9a459-b2ff-330c-8125-94622d35bfe4",
+        "schema:postalCode": "59000",
+        "schema:streetAddress": [
+          "87, BOULEVARD DE LA LIBERTE"
+        ],
+        "@type": [
+          "schema:PostalAddress"
+        ]
+      }
+    ],
+    "schema:email": [
+      "contact@hellolille.eu"
+    ],
+    "schema:legalName": "Hello Lille",
+    "schema:telephone": [
+      "+33 6 33 72 34 17"
+    ],
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://hellolille.eu/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/28/fc795a56-df8a-3711-b2b3-e855e3dc30b1",
+      "dc:identifier": "2df411fa-c868-4f2d-9975-6717d51b7886",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/f1c9a459-b2ff-330c-8125-94622d35bfe4",
+          "schema:postalCode": "59000",
+          "schema:streetAddress": [
+            "87, BOULEVARD DE LA LIBERTE"
+          ],
+          "@type": [
+            "schema:PostalAddress"
+          ]
+        }
+      ],
+      "schema:email": [
+        "contact@hellolille.eu"
+      ],
+      "schema:legalName": "Hello Lille",
+      "schema:telephone": [
+        "+33 6 33 72 34 17"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://hellolille.eu/"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/45950f12-5d10-3101-9171-473c0749b572",
+      "schema:telephone": [
+        "+33 3 74 46 94 30"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://labraise-seclin.com/notre-carte/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/45950f12-5d10-3101-9171-473c0749b572",
+      "schema:telephone": [
+        "+33 3 74 46 94 30"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://labraise-seclin.com/notre-carte/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/02d1e7d7-9195-3819-9296-d88530463fe4",
+      "dc:description": {
+        "de": [
+          "Steakhaus"
+        ],
+        "en": [
+          "Steak house"
+        ],
+        "it": [
+          "Bisteccheria"
+        ],
+        "fr": [
+          "Steak house"
+        ],
+        "nl": [
+          "Steakhouse"
+        ],
+        "es": [
+          "Asador"
+        ]
+      },
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/0bd6ee37-6d79-3446-8b10-f1ea4e65aa92",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/13015e9d-c04c-368c-9bda-cd96a458b9fc",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/17e49d4a-808b-3efb-b761-0c17ffcbad0c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/198f317a-305e-30e3-a888-1d76c4510b87",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/22399155-5d09-3086-b5bc-b6c068c5c0b4",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6763246b-2c46-36cf-bb07-bf6837f844f3",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7000c73a-ecf5-3f22-815f-3532015c6f82",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/728c6af5-1873-3d1d-8394-a9a89878ac00",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/75afc495-992a-32ff-8190-32efc5e925af",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7aab0772-db67-39f6-b0a0-9580beb3b9fa",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            {
+              "@id": "dc:description"
+            }
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Steakhaus"
+        ],
+        "en": [
+          "Steak house"
+        ],
+        "it": [
+          "Bisteccheria"
+        ],
+        "fr": [
+          "Steak house"
+        ],
+        "nl": [
+          "Steakhouse"
+        ],
+        "es": [
+          "Asador"
+        ]
+      }
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/f8ecbf1d-2fec-3a18-a042-159df137a81b",
+      "@type": [
+        "schema:LocationFeatureSpecification",
+        "schema:PropertyValue",
+        "FeatureSpecification",
+        "RoomFeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:BabyChair",
+          "@type": [
+            "CateringAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Hochstuhl"
+            ],
+            "pt": [
+              "Cadeira de bebé"
+            ],
+            "en": [
+              "Baby chair"
+            ],
+            "it": [
+              "Sedia per bambini"
+            ],
+            "fr": [
+              "Chaise bébé"
+            ],
+            "es": [
+              "Silla de bebé"
+            ],
+            "nl": [
+              "Kinderstoel"
+            ]
+          }
+        },
+        {
+          "@id": "kb:Terrace",
+          "@type": [
+            "CommonAmenity",
+            "ParkAndGardenTheme"
+          ],
+          "rdfs:label": {
+            "de": [
+              "Terrasse"
+            ],
+            "pt": [
+              "Terraço"
+            ],
+            "en": [
+              "Terrace"
+            ],
+            "it": [
+              "Terrazzo"
+            ],
+            "fr": [
+              "Terrasse"
+            ],
+            "es": [
+              "Terraza"
+            ],
+            "nl": [
+              "Terras"
+            ]
+          }
+        }
+      ],
+      "petsAllowed": false,
+      "seatCount": 1
+    }
+  ],
+  "hasGeographicReach": [
+    {
+      "@id": "kb:Regional",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Regional"
+        ],
+        "pt": [
+          "Regional"
+        ],
+        "en": [
+          "Regional"
+        ],
+        "it": [
+          "Regionale"
+        ],
+        "fr": [
+          "Régionale"
+        ],
+        "es": [
+          "Regional"
+        ],
+        "nl": [
+          "Regionaal"
+        ]
+      }
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:GrillOrRotisserie",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Grill, Braten"
+        ],
+        "pt": [
+          "Grelhador, assador"
+        ],
+        "en": [
+          "Grill or rotisserie"
+        ],
+        "it": [
+          "Griglia, rosticceria"
+        ],
+        "fr": [
+          "Grill, rôtisserie"
+        ],
+        "es": [
+          "Parrilla, asador"
+        ],
+        "nl": [
+          "Grill, barbecue"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/30ee918a-b422-3f35-bb51-06afa5c2b9cb",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/5450fc81-3129-33a9-9585-81048245542e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/70a48b0a-7a88-392a-907f-8712ce773098",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d1fcde4d-7b7d-30cc-a001-ef5611b1ad9f",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/e47c69e4-22b9-3338-8e60-f3a65444a678",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/1f17b728-d952-38f2-a8b0-9e251b8441b6",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/56dede22-4b1f-3adf-8570-c6fe8b84f855",
+          "schema:addressLocality": "Seclin",
+          "schema:postalCode": "59113",
+          "schema:streetAddress": [
+            "204 Rue de Burgault"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:59560",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Seclin"
+              ],
+              "pt": [
+                "Seclin"
+              ],
+              "en": [
+                "Seclin"
+              ],
+              "it": [
+                "Seclin"
+              ],
+              "fr": [
+                "Seclin"
+              ],
+              "nl": [
+                "Seclin"
+              ],
+              "es": [
+                "Seclin"
+              ]
+            },
+            "insee": "59560",
+            "isPartOfDepartment": {
+              "@id": "kb:France3259",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Nord"
+                ],
+                "pt": [
+                  "Nord"
+                ],
+                "en": [
+                  "Nord"
+                ],
+                "it": [
+                  "Nord"
+                ],
+                "fr": [
+                  "Nord"
+                ],
+                "nl": [
+                  "Nord"
+                ],
+                "es": [
+                  "Nord"
+                ]
+              },
+              "insee": "59",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/2645b2e6-b8c8-3e6f-b82c-6b1ae54f2451",
+        "schema:latitude": "50.545",
+        "schema:longitude": "3.04411",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/84b257dd-6ce1-36df-85c3-ae94962bc1fa",
+          "schema:closes": "22:30:00",
+          "schema:opens": "12:00:00",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T00:00:00",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "petsAllowed": false
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/28/fc795a56-df8a-3711-b2b3-e855e3dc30b1",
+      "dc:identifier": "2df411fa-c868-4f2d-9975-6717d51b7886",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/f1c9a459-b2ff-330c-8125-94622d35bfe4",
+          "schema:postalCode": "59000",
+          "schema:streetAddress": [
+            "87, BOULEVARD DE LA LIBERTE"
+          ],
+          "@type": [
+            "schema:PostalAddress"
+          ]
+        }
+      ],
+      "schema:email": [
+        "contact@hellolille.eu"
+      ],
+      "schema:legalName": "Hello Lille",
+      "schema:telephone": [
+        "+33 6 33 72 34 17"
+      ],
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://hellolille.eu/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-07-10",
+  "lastUpdateDatatourisme": "2026-01-14T23:08:52.014Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/5c32b1ee-3e94-3083-99d8-78f4942e6fec",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/ddc3ce88-2f72-3be8-afe2-1513cc20da13",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

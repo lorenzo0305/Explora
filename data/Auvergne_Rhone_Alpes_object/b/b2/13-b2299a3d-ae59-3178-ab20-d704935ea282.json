@@ -1,0 +1,330 @@
+{
+  "@id": "https://data.datatourisme.fr/13/b2299a3d-ae59-3178-ab20-d704935ea282",
+  "dc:identifier": "4842427",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Snack-bar Chez Titou"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/7f39f831-7fbd-3198-8ef4-c628eba02591",
+    "dc:identifier": "61",
+    "schema:email": [
+      "agenda@aubenas-vals.com",
+      "alice@aubenas-vals.com",
+      "editions@aubenas-vals.com",
+      "stephane@aubenas-vals.com"
+    ],
+    "schema:legalName": "Office de Tourisme du Pays d'Aubenas-Vals-Antraigues",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.aubenas-vals.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/dbca899d-3f22-364b-b99d-40af1e917c58",
+      "schema:legalName": "Agence de Développement Touristique de l'Ardèche - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/8c6f12bd-db11-3d06-8ae5-f93c37a20d99",
+      "schema:telephone": [
+        "+33 4 75 37 60 37",
+        "+33 6 83 70 09 97"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/4922c797-9695-3217-a3ad-c8ad33e5756c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/950d5fe9-9ceb-3a59-9936-5c202547453c",
+          "schema:addressLocality": "Vals-les-Bains",
+          "schema:postalCode": "07600",
+          "schema:streetAddress": [
+            "16 avenue Chaballier"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:07331",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Vals-les-Bains"
+              ],
+              "pt": [
+                "Vals-les-Bains"
+              ],
+              "en": [
+                "Vals-les-Bains"
+              ],
+              "it": [
+                "Vals-les-Bains"
+              ],
+              "fr": [
+                "Vals-les-Bains"
+              ],
+              "nl": [
+                "Vals-les-Bains"
+              ],
+              "es": [
+                "Vals-les-Bains"
+              ]
+            },
+            "insee": "07331",
+            "isPartOfDepartment": {
+              "@id": "kb:France8407",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Ardèche"
+                ],
+                "pt": [
+                  "Ardèche"
+                ],
+                "en": [
+                  "Ardèche"
+                ],
+                "it": [
+                  "Ardèche"
+                ],
+                "fr": [
+                  "Ardèche"
+                ],
+                "nl": [
+                  "Ardèche"
+                ],
+                "es": [
+                  "Ardèche"
+                ]
+              },
+              "insee": "07",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/51bf8038-5dcb-3281-9e99-f513e5ea2d96",
+        "schema:latitude": "44.653513",
+        "schema:longitude": "4.36568",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/50b1976a-7c33-30be-9920-aff72a1dab1e",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Täglich außer sonntags ab 6:30 Uhr geöffnet. Am Samstagnachmittag ist er geschlossen."
+            ],
+            "en": [
+              "Open every day except Sunday from 6:30 am. It is closed on Saturday afternoon."
+            ],
+            "it": [
+              "Aperto tutti i giorni, tranne la domenica, dalle 6.30. È chiuso il sabato pomeriggio."
+            ],
+            "fr": [
+              "Ouvert tous les jours sauf le dimanche à partir de 6h30. Il est fermé le samedi après-midi."
+            ],
+            "nl": [
+              "Elke dag behalve zondag geopend vanaf 6.30 uur. Het is gesloten op zaterdagmiddag."
+            ],
+            "es": [
+              "Abierto todos los días, excepto los domingos, a partir de las 6.30 h. Está cerrado el sábado por la tarde."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/306c26d3-914d-3179-9fbb-6ac15523dd42",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/35091c8b-7195-3a70-aa5a-dc1c87a70ff9",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/6bd367f5-1ed2-3601-ba6a-267b3bd15137",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/af483a63-7120-3638-a8c1-513fc686c4f2",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f8d1fd09-9ac1-3e00-a9df-896867e92dcb",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/5bb1d08f-5552-3d6e-9874-b1d39979f362",
+      "schema:email": [
+        "agenda@aubenas-vals.com",
+        "alice@aubenas-vals.com",
+        "editions@aubenas-vals.com",
+        "stephane@aubenas-vals.com"
+      ],
+      "schema:legalName": "Office de Tourisme du Pays d'Aubenas-Vals-Antraigues",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.aubenas-vals.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2021-10-14",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.449Z"
+}

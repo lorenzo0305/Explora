@@ -1,0 +1,437 @@
+{
+  "@id": "https://data.datatourisme.fr/13/dbfab43a-04cf-3dc7-9e3f-6e8d2808f8cc",
+  "dc:identifier": "7531703",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "La Fournaise"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/af473271-1661-356e-adbf-798ba191272a",
+    "dc:identifier": "1354",
+    "schema:email": [
+      "anna-maria.veyret@vacances-livradois-forez.fr",
+      "canelle.parize@vacances-livradois-forez.fr",
+      "catherine.vitry@vacances-livradois-forez.fr",
+      "florian.debievre@protonmail.ch",
+      "florian.debievre@vacances-livradois-forez.fr",
+      "marie.cornee@vacances-livradois-forez.fr",
+      "megane.socier@vacances-livradois-forez.fr",
+      "stephanie.vachon@vacances-livradois-forez.fr",
+      "yannick.blanchon@vacances-livradois-forez.fr"
+    ],
+    "schema:legalName": "Maison du Tourisme du Livradois-Forez",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.auvergne-livradois-forez.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/f2440dfb-dc13-3916-b9b2-456265fea91b",
+      "schema:email": [
+        "djal.benalia@hotmail.com"
+      ],
+      "schema:telephone": [
+        "+33 7 84 81 25 06",
+        "+33 7 84 81 28 06"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:HalalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Halal-Küche"
+        ],
+        "pt": [
+          "Cozinha halal"
+        ],
+        "en": [
+          "Halal cuisine"
+        ],
+        "it": [
+          "Cucina halal"
+        ],
+        "fr": [
+          "Cuisine halal"
+        ],
+        "nl": [
+          "Halal keuken"
+        ],
+        "es": [
+          "Cocina halal"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/ec5ab37a-33ae-38f1-8bb7-309b622a84d8",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/07e81cab-887c-31d7-a3b0-fa7ead0df662",
+          "schema:addressLocality": "Thiers",
+          "schema:postalCode": "63300",
+          "schema:streetAddress": [
+            "2 avenue de Cizolles"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:63430",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Thiers"
+              ],
+              "pt": [
+                "Thiers"
+              ],
+              "en": [
+                "Thiers"
+              ],
+              "it": [
+                "Thiers"
+              ],
+              "fr": [
+                "Thiers"
+              ],
+              "nl": [
+                "Thiers"
+              ],
+              "es": [
+                "Thiers"
+              ]
+            },
+            "insee": "63430",
+            "isPartOfDepartment": {
+              "@id": "kb:France8463",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Puy-de-Dôme"
+                ],
+                "pt": [
+                  "Puy-de-Dôme"
+                ],
+                "en": [
+                  "Puy-de-Dôme"
+                ],
+                "it": [
+                  "Puy-de-Dôme"
+                ],
+                "fr": [
+                  "Puy-de-Dôme"
+                ],
+                "nl": [
+                  "Puy-de-Dôme"
+                ],
+                "es": [
+                  "Puy-de-Dôme"
+                ]
+              },
+              "insee": "63",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/6d22863b-d338-3239-8a8e-b2a65be31f96",
+        "schema:latitude": "45.84997",
+        "schema:longitude": "3.538451",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/262c5acb-5ad2-3df5-b614-71d71cbf18ae",
+      "schema:email": [
+        "anna-maria.veyret@vacances-livradois-forez.fr",
+        "canelle.parize@vacances-livradois-forez.fr",
+        "catherine.vitry@vacances-livradois-forez.fr",
+        "florian.debievre@protonmail.ch",
+        "florian.debievre@vacances-livradois-forez.fr",
+        "marie.cornee@vacances-livradois-forez.fr",
+        "megane.socier@vacances-livradois-forez.fr",
+        "stephanie.vachon@vacances-livradois-forez.fr",
+        "yannick.blanchon@vacances-livradois-forez.fr"
+      ],
+      "schema:legalName": "Maison du Tourisme du Livradois-Forez",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.auvergne-livradois-forez.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-09-24",
+  "lastUpdateDatatourisme": "2026-02-18T06:54:11.628Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/fb813b01-854d-3d2c-a480-765169f8ebd4",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/8ddc30df-b187-36ec-9f91-76e3a935b8a9",
+          "schema:maxPrice": [
+            "5.5"
+          ],
+          "schema:minPrice": [
+            "5.5"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/8c23859b-2f93-3668-896c-749a5ce81192",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-31",
+              "startDate": "2025-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:ChildMenu",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Kindermenü"
+                ],
+                "pt": [
+                  "Menu para crianças"
+                ],
+                "en": [
+                  "Child menu"
+                ],
+                "it": [
+                  "Menù per bambini"
+                ],
+                "fr": [
+                  "Menu enfant"
+                ],
+                "es": [
+                  "Menú infantil"
+                ],
+                "nl": [
+                  "Kindermenu"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/95c498d3-87ee-369d-8bf3-7bc82894b096",
+          "schema:maxPrice": [
+            "1"
+          ],
+          "schema:minPrice": [
+            "1"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/8c23859b-2f93-3668-896c-749a5ce81192",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-31",
+              "startDate": "2025-01-01"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a38d04f7-faef-31a6-8251-69358a539a22",
+          "schema:maxPrice": [
+            "1.5"
+          ],
+          "schema:minPrice": [
+            "1.5"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/8c23859b-2f93-3668-896c-749a5ce81192",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-31",
+              "startDate": "2025-01-01"
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:HalalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Halal-Küche"
+        ],
+        "pt": [
+          "Cozinha halal"
+        ],
+        "en": [
+          "Halal cuisine"
+        ],
+        "it": [
+          "Cucina halal"
+        ],
+        "fr": [
+          "Cuisine halal"
+        ],
+        "nl": [
+          "Halal keuken"
+        ],
+        "es": [
+          "Cocina halal"
+        ]
+      }
+    }
+  ]
+}

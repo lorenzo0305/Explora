@@ -1,0 +1,329 @@
+{
+  "@id": "https://data.datatourisme.fr/13/f1ef0bce-199e-3319-8b86-d3f7257b4501",
+  "dc:identifier": "4795197",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Piazza Italia"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/ec8ce6ab-b3e9-32a8-9b85-51ba726a1227",
+    "dc:identifier": "220",
+    "schema:email": [
+      "accueil-tourisme@ccpu.fr",
+      "amendes@roannais-tourisme.com",
+      "bmodenese@roannais-tourisme.com",
+      "claplace@roannais-tourisme.com",
+      "claroche@copler.fr",
+      "creynier@roannais-tourisme.com",
+      "fguerin@roannais-tourisme.com",
+      "lbruchet@roannais-tourisme.com",
+      "nberger@copler.fr",
+      "sbonnet@copler.fr",
+      "sscarciello@ot-roanne.fr",
+      "tourisme@ccvai.fr"
+    ],
+    "schema:legalName": "Roannais Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.roannais-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/e1c342a0-e49a-3495-b985-058a6805628c",
+      "schema:email": [
+        "scarciellolorenzo@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 4 69 34 17 24"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:MediterraneanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Mediterrane Küche"
+        ],
+        "pt": [
+          "Cozinha mediterrânica"
+        ],
+        "en": [
+          "Mediterranean cuisine"
+        ],
+        "it": [
+          "Cucina mediterranea"
+        ],
+        "fr": [
+          "Cuisine méditerranéenne"
+        ],
+        "nl": [
+          "Mediterrane keuken"
+        ],
+        "es": [
+          "Cocina mediterránea"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/ee06f222-c3f8-3c2b-be3b-bccb61e1fd15",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/ad5d5469-5fd1-35a1-b13e-f34da3ade882",
+          "schema:addressLocality": "Perreux",
+          "schema:postalCode": "42120",
+          "schema:streetAddress": [
+            "Galerie de Super U",
+            "Zac Les Plaines"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:42170",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Perreux"
+              ],
+              "pt": [
+                "Perreux"
+              ],
+              "en": [
+                "Perreux"
+              ],
+              "it": [
+                "Perreux"
+              ],
+              "fr": [
+                "Perreux"
+              ],
+              "nl": [
+                "Perreux"
+              ],
+              "es": [
+                "Perreux"
+              ]
+            },
+            "insee": "42170",
+            "isPartOfDepartment": {
+              "@id": "kb:France8442",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Loire"
+                ],
+                "pt": [
+                  "Loire"
+                ],
+                "en": [
+                  "Loire"
+                ],
+                "it": [
+                  "Loire"
+                ],
+                "fr": [
+                  "Loire"
+                ],
+                "nl": [
+                  "Loire"
+                ],
+                "es": [
+                  "Loire"
+                ]
+              },
+              "insee": "42",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/87d3a910-a480-3e8a-8f46-85dda0bb1dc4",
+        "schema:latitude": "46.028849",
+        "schema:longitude": "4.097125",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/a874ce0f-b014-36e0-85e1-dfdfc473ee3f",
+      "schema:email": [
+        "accueil-tourisme@ccpu.fr",
+        "amendes@roannais-tourisme.com",
+        "bmodenese@roannais-tourisme.com",
+        "claplace@roannais-tourisme.com",
+        "claroche@copler.fr",
+        "creynier@roannais-tourisme.com",
+        "fguerin@roannais-tourisme.com",
+        "lbruchet@roannais-tourisme.com",
+        "nberger@copler.fr",
+        "sbonnet@copler.fr",
+        "sscarciello@ot-roanne.fr",
+        "tourisme@ccvai.fr"
+      ],
+      "schema:legalName": "Roannais Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.roannais-tourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-09-12",
+  "lastUpdateDatatourisme": "2026-02-07T09:36:15.192Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:MediterraneanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Mediterrane Küche"
+        ],
+        "pt": [
+          "Cozinha mediterrânica"
+        ],
+        "en": [
+          "Mediterranean cuisine"
+        ],
+        "it": [
+          "Cucina mediterranea"
+        ],
+        "fr": [
+          "Cuisine méditerranéenne"
+        ],
+        "nl": [
+          "Mediterrane keuken"
+        ],
+        "es": [
+          "Cocina mediterránea"
+        ]
+      }
+    }
+  ]
+}

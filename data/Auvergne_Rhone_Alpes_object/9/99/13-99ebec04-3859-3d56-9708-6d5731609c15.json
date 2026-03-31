@@ -1,0 +1,394 @@
+{
+  "@id": "https://data.datatourisme.fr/13/99ebec04-3859-3d56-9708-6d5731609c15",
+  "dc:identifier": "5410747",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Le Delta"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/1373b284-bc38-3890-849e-92d324f56de0",
+    "dc:identifier": "1541",
+    "schema:legalName": "Vichy Destinations",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.vichymonamour.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c55300f9-494b-38ba-adff-d663c77ad33a",
+      "schema:legalName": "ALLIER BOURBONNAIS ATTRACTIVITÉ - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/832fc731-a4d5-323f-851d-8c9056e9df87",
+      "schema:email": [
+        "jeremy_delta@hotmail.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 70 58 09 16"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/bfc7f309-ef3f-3904-929a-22caf728c708",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/4c38f9a2-72f8-370d-b40a-522237cc08d2",
+          "schema:addressLocality": "Vichy",
+          "schema:postalCode": "03200",
+          "schema:streetAddress": [
+            "18 RUE DU MARECHAL FOCH"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:03310",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Vichy"
+              ],
+              "pt": [
+                "Vichy"
+              ],
+              "en": [
+                "Vichy"
+              ],
+              "it": [
+                "Vichy"
+              ],
+              "fr": [
+                "Vichy"
+              ],
+              "nl": [
+                "Vichy"
+              ],
+              "es": [
+                "Vichy"
+              ]
+            },
+            "insee": "03310",
+            "isPartOfDepartment": {
+              "@id": "kb:France8403",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Allier"
+                ],
+                "pt": [
+                  "Allier"
+                ],
+                "en": [
+                  "Allier"
+                ],
+                "it": [
+                  "Allier"
+                ],
+                "fr": [
+                  "Allier"
+                ],
+                "nl": [
+                  "Allier"
+                ],
+                "es": [
+                  "Allier"
+                ]
+              },
+              "insee": "03",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/b6a019a6-fa29-379c-80fa-58a0b0bbcc84",
+        "schema:latitude": "46.122542",
+        "schema:longitude": "3.423142",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/30a0d610-ed09-3d8b-a4c2-05b9e7664013",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "\"Das ganze Jahr über\r\nÖffnungszeiten: Montag, Mittwoch, Donnerstag, Freitag, Samstag und Sonntag von 11:00 bis 14:30 Uhr und von 18:00 bis 0:00 Uhr. Dienstags von 18:00 bis 23:00 Uhr\""
+            ],
+            "en": [
+              "\"All year long\r\nOpen Monday, Wednesday, Thursday, Friday, Saturday and Sunday from 11am to 2.30pm and 6pm to midnight. Tuesday from 6:00 to 11:00.\""
+            ],
+            "it": [
+              "\"Tutto l'anno\r\nAperto lunedì, mercoledì, giovedì, venerdì, sabato e domenica dalle 11.00 alle 14.30 e dalle 18.00 alle 24.00. Martedì dalle 18.00 alle 23.00\""
+            ],
+            "fr": [
+              "\"Toute l'année \r\nOuverture  le lundi, mercredi, jeudi, vendredi, samedi et dimanche de 11h à 14h30 et de 18h à 0h. Le mardi de 18h à 23h.\""
+            ],
+            "es": [
+              "\"Todo el año\r\nAbierto lunes, miércoles, jueves, viernes, sábado y domingo de 11:00 a 14:30 y de 18:00 a 24:00. Martes de 18 a 23 horas\""
+            ],
+            "nl": [
+              "\"Het hele jaar door\r\nOpen op maandag, woensdag, donderdag, vrijdag, zaterdag en zondag van 11.00 tot 14.30 uur en van 18.00 tot 12.00 uur. Dinsdag van 18.00 tot 23.00 uur.\""
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/049186ad-f386-3d98-921b-0a55f3f80d94",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/0a04bda1-5c99-370a-a160-d9b509184196",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/27d677bb-9277-34e0-921b-5ac23dbd8399",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/4936fa81-e623-3db1-bc2b-11f81edeb6a3",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/780471cb-60dd-3b6a-9481-fee559a7bc2f",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/3451bc7d-afcb-3b69-a8f8-9a638ab8b424",
+      "schema:legalName": "Vichy Destinations",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.vichymonamour.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-09-30",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.319Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "@id": "https://data.datatourisme.fr/13/4588a5ec-9a45-3684-b293-e16757cee7a8",
+  "dc:identifier": "145143",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Le Minerais"
+    ],
+    "ru": [
+      "Le Minerais"
+    ],
+    "en": [
+      "Le Minerais"
+    ],
+    "it": [
+      "Le Minerais"
+    ],
+    "fr": [
+      "Le Minerais"
+    ],
+    "zh": [
+      "Le Minerais"
+    ],
+    "nl": [
+      "Le Minerais"
+    ],
+    "es": [
+      "Le Minerais"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/7f6ffaa6-bb0b-3080-97b6-2254211691b5",
+    "dc:identifier": "112",
+    "schema:email": [
+      "glo@coeur-ardeche.fr",
+      "ngarousse@coeur-ardeche.fr",
+      "slextrait@coeur-ardeche.fr"
+    ],
+    "schema:legalName": "Privas Centre Ardèche Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.coeur-ardeche.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/dbca899d-3f22-364b-b99d-40af1e917c58",
+      "schema:legalName": "Agence de Développement Touristique de l'Ardèche - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/297acff4-8a8c-361e-8555-18b27b32bbbb",
+      "schema:email": [
+        "benoitbreysse79@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 4 75 64 38 65"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/a1b0083d-2aa9-3fc2-8d58-ff0e964e44fa",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/e4743676-7fd5-391d-a06a-57bf31ed6ac0",
+          "schema:addressLocality": "Saint-Priest",
+          "schema:postalCode": "07000",
+          "schema:streetAddress": [
+            "288 Route des mines"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:07288",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Priest"
+              ],
+              "pt": [
+                "Saint-Priest"
+              ],
+              "en": [
+                "Saint-Priest"
+              ],
+              "it": [
+                "Saint-Priest"
+              ],
+              "fr": [
+                "Saint-Priest"
+              ],
+              "nl": [
+                "Saint-Priest"
+              ],
+              "es": [
+                "Saint-Priest"
+              ]
+            },
+            "insee": "07288",
+            "isPartOfDepartment": {
+              "@id": "kb:France8407",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Ardèche"
+                ],
+                "pt": [
+                  "Ardèche"
+                ],
+                "en": [
+                  "Ardèche"
+                ],
+                "it": [
+                  "Ardèche"
+                ],
+                "fr": [
+                  "Ardèche"
+                ],
+                "nl": [
+                  "Ardèche"
+                ],
+                "es": [
+                  "Ardèche"
+                ]
+              },
+              "insee": "07",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/c0f972ec-c3ba-3ba3-a06f-5d11543027c3",
+        "schema:latitude": "44.72518",
+        "schema:longitude": "4.580226",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/c04663c6-f023-360e-9440-1d427268094d",
+      "schema:email": [
+        "glo@coeur-ardeche.fr",
+        "ngarousse@coeur-ardeche.fr",
+        "slextrait@coeur-ardeche.fr"
+      ],
+      "schema:legalName": "Privas Centre Ardèche Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.coeur-ardeche.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2023-12-08",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.568Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/eddee8b4-e1d9-3745-9c2e-ac518d6d9eec",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/537deab9-c8ac-348b-801e-8aaba2dbe693",
+          "schema:maxPrice": [
+            "23.5"
+          ],
+          "schema:minPrice": [
+            "16"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/6a6a9f2a-0896-3aff-92c5-5f15b17fec5e",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2012-12-31",
+              "startDate": "2012-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:AdultMenu",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Menü für Erwachsene"
+                ],
+                "pt": [
+                  "Menu para adultos"
+                ],
+                "en": [
+                  "Adult menu"
+                ],
+                "it": [
+                  "Menù per adulti"
+                ],
+                "fr": [
+                  "Menu adulte"
+                ],
+                "nl": [
+                  "Volwassenenmenu"
+                ],
+                "es": [
+                  "Menú para adultos"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ee08bde8-a226-306a-892b-83523dd29938",
+          "schema:maxPrice": [
+            "12"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/6a6a9f2a-0896-3aff-92c5-5f15b17fec5e",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2012-12-31",
+              "startDate": "2012-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:DailySpecials",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Tagesgericht"
+                ],
+                "pt": [
+                  "Prato do dia"
+                ],
+                "en": [
+                  "Daily specials"
+                ],
+                "it": [
+                  "Piatto del giorno"
+                ],
+                "fr": [
+                  "Plat du jour"
+                ],
+                "es": [
+                  "Plato del día"
+                ],
+                "nl": [
+                  "Dagschotel"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ]
+}

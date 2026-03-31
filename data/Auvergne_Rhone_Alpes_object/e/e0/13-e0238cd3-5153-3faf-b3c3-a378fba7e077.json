@@ -1,0 +1,392 @@
+{
+  "@id": "https://data.datatourisme.fr/13/e0238cd3-5153-3faf-b3c3-a378fba7e077",
+  "dc:identifier": "7024029",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "O'Kebab Gourmand"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/e369853d-f766-3a44-a1ed-0ff613f563bd",
+    "dc:identifier": "34",
+    "schema:email": [
+      "s.perraud@cc-laveyle.fr"
+    ],
+    "schema:legalName": "Office de tourisme de Vonnas - Pont-de-Veyle",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.veyle-tourisme.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/9df170af-7722-3346-a43f-94f8ed259b17",
+      "schema:legalName": "Aintourisme - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/76d49ed0-82c4-32c1-af13-13e2bc8560b8",
+      "schema:telephone": [
+        "+33 6 12 19 65 13"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.clicketrapplique.fr/okg/"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/5dc94d96-0db3-3429-9257-ffad7eeb0363",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/c8ada0c4-3b63-3847-b37e-1b73213a47f7",
+          "schema:addressLocality": "Vonnas",
+          "schema:postalCode": "01540",
+          "schema:streetAddress": [
+            "94 Rue Chaynes Aimable"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:01457",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Vonnas"
+              ],
+              "pt": [
+                "Vonnas"
+              ],
+              "en": [
+                "Vonnas"
+              ],
+              "it": [
+                "Vonnas"
+              ],
+              "fr": [
+                "Vonnas"
+              ],
+              "nl": [
+                "Vonnas"
+              ],
+              "es": [
+                "Vonnas"
+              ]
+            },
+            "insee": "01457",
+            "isPartOfDepartment": {
+              "@id": "kb:France8401",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Ain"
+                ],
+                "pt": [
+                  "Ain"
+                ],
+                "en": [
+                  "Ain"
+                ],
+                "it": [
+                  "Ain"
+                ],
+                "fr": [
+                  "Ain"
+                ],
+                "nl": [
+                  "Ain"
+                ],
+                "es": [
+                  "Ain"
+                ]
+              },
+              "insee": "01",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/35751a14-4085-33a8-a8e3-06b6ce32516a",
+        "schema:latitude": "46.219008",
+        "schema:longitude": "4.990606",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/868b3523-859e-3991-96c3-efb3173bfbb9",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Öffnungszeiten: Dienstag, Mittwoch, Donnerstag von 11:30 bis 13:30 Uhr und 18:00 bis 22:00 Uhr,\r\nFreitag von 18:00 bis 22:30 Uhr,\r\nSamstag von 11:30 bis 13:30 Uhr und von 18:00 bis 22:30 Uhr,\r\nSonntag von 18:00 bis 22:00 Uhr"
+            ],
+            "en": [
+              "Open Tuesday, Wednesday, Thursday from 11:30am to 1:30pm and 6pm to 10pm,\r\nFriday from 6pm to 10:30pm,\r\nSaturday 11.30am to 1.30pm and 6pm to 10.30pm,\r\nSunday from 18h to 22h"
+            ],
+            "it": [
+              "Aperto martedì, mercoledì e giovedì dalle 11.30 alle 13.30 e dalle 18.00 alle 22.00,\r\nVenerdì dalle 18.00 alle 22.30,\r\nSabato dalle 11.30 alle 13.30 e dalle 18.00 alle 22.30,\r\nDomenica dalle 18.00 alle 22.00"
+            ],
+            "fr": [
+              "Ouverture le mardi, mercredi, jeudi de 11h30 à 13h30 et 18h à 22h,\r\nVendredi de 18h à 22h30,\r\nSamedi de 11h30 à 13h30 et de 18h à 22h30,\r\nDimanche de 18h à 22h"
+            ],
+            "nl": [
+              "Geopend op dinsdag, woensdag en donderdag van 11.30 tot 13.30 uur en van 18.00 tot 22.00 uur,\r\nVrijdag van 18.00 tot 22.30 uur,\r\nZaterdag van 11.30 tot 13.30 uur en van 18.00 tot 22.30 uur,\r\nZondag van 18.00 tot 22.00 uur"
+            ],
+            "es": [
+              "Abierto martes, miércoles y jueves de 11.30 a 13.30 y de 18.00 a 22.00 h,\r\nViernes de 18.00 a 22.30 h,\r\nSábado de 11.30 a 13.30 y de 18.00 a 22.30,\r\nDomingo de 18.00 a 22.00 h"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/016e5103-5235-33d8-988f-3215f8236689",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/8ea69f57-781d-3616-96f9-15b498db95cc",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/ad2c4100-2b64-34ab-afb7-7f289088a65b",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d3e82691-0568-3499-8d89-207890c384ce",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f51c8bea-c9ae-30d0-b22c-97f2f5ae19d8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e78667fe-b5cc-34be-a729-1162a60e3a54",
+      "schema:email": [
+        "s.perraud@cc-laveyle.fr"
+      ],
+      "schema:legalName": "Office de tourisme de Vonnas - Pont-de-Veyle",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.veyle-tourisme.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-12",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.807Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/d5e3eb97-61c1-378d-8887-f6bab8f478b2",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/9a08554e-bcfc-3c73-aef3-5406195ee48f",
+          "schema:maxPrice": [
+            "15"
+          ],
+          "schema:minPrice": [
+            "5"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/31f5d72b-a58c-3b74-a324-625d6ba3a28e",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2024-12-31",
+              "startDate": "2024-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:AlaCarte",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "A la carte"
+                ],
+                "pt": [
+                  "À escolha"
+                ],
+                "en": [
+                  "A la carte"
+                ],
+                "it": [
+                  "Alla carta"
+                ],
+                "fr": [
+                  "A la carte"
+                ],
+                "nl": [
+                  "À la carte"
+                ],
+                "es": [
+                  "A la carta"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

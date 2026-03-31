@@ -1,0 +1,241 @@
+{
+  "@id": "https://data.datatourisme.fr/13/72ffed2e-b759-3544-8261-3ea08f6463c0",
+  "dc:identifier": "4765840",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Juste un Avant Goût"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/9683cc5f-8956-3ea4-8e72-bb321d9f03fb",
+    "dc:identifier": "1363",
+    "schema:email": [
+      "infos@salers-tourisme.fr"
+    ],
+    "schema:legalName": "Office de Tourisme du Pays de Salers",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.salers-tourisme.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/3a648649-652f-3b80-a068-39939673d08c",
+      "schema:telephone": [
+        "+33 9 67 40 96 51"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/0281a65d-0b0f-34c7-aa2f-512a97b61cf0",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/7a0aa715-e86d-35da-a9fa-f9c88926fa2a",
+          "schema:addressLocality": "Pleaux",
+          "schema:postalCode": "15700",
+          "schema:streetAddress": [
+            "1 Place Georges Pompidou"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:15153",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Pleaux"
+              ],
+              "pt": [
+                "Pleaux"
+              ],
+              "en": [
+                "Pleaux"
+              ],
+              "it": [
+                "Pleaux"
+              ],
+              "fr": [
+                "Pleaux"
+              ],
+              "nl": [
+                "Pleaux"
+              ],
+              "es": [
+                "Pleaux"
+              ]
+            },
+            "insee": "15153",
+            "isPartOfDepartment": {
+              "@id": "kb:France8415",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Cantal"
+                ],
+                "pt": [
+                  "Cantal"
+                ],
+                "en": [
+                  "Cantal"
+                ],
+                "it": [
+                  "Cantal"
+                ],
+                "fr": [
+                  "Cantal"
+                ],
+                "nl": [
+                  "Cantal"
+                ],
+                "es": [
+                  "Cantal"
+                ]
+              },
+              "insee": "15",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/4359bc7a-2a83-36a3-ae52-a849da837e15",
+        "schema:latitude": "45.133673",
+        "schema:longitude": "2.225858",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/5c62f309-d6bc-3731-a0ca-58157291363e",
+      "schema:email": [
+        "infos@salers-tourisme.fr"
+      ],
+      "schema:legalName": "Office de Tourisme du Pays de Salers",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.salers-tourisme.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-10-12",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.312Z"
+}

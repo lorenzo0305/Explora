@@ -1,0 +1,982 @@
+{
+  "@id": "https://data.datatourisme.fr/13/14de8757-fa54-384c-97bf-0edfa5c5644a",
+  "dc:identifier": "4667146",
+  "@type": [
+    "schema:Accommodation",
+    "schema:FoodEstablishment",
+    "schema:Hotel",
+    "schema:LodgingBusiness",
+    "schema:Restaurant",
+    "Accommodation",
+    "FoodEstablishment",
+    "Hotel",
+    "HotelRestaurant",
+    "HotelTrade",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Das Hotel des Chazes bietet Ihnen Zimmer oder Maisonette-Wohnungen mit allem Komfort und Blick auf den Plomb du Cantal."
+    ],
+    "en": [
+      "The Hôtel des Chazes offers comfortable rooms or duplexes with a view of the Plomb du Cantal."
+    ],
+    "it": [
+      "L'Hôtel des Chazes offre camere o maisonette confortevoli con vista sul Plomb du Cantal."
+    ],
+    "fr": [
+      "L'hôtel des Chazes vous propose des chambres ou duplex tout confort avec vue sur le Plomb du Cantal."
+    ],
+    "nl": [
+      "Hôtel des Chazes biedt comfortabele kamers of maisonnettes met uitzicht op de Plomb du Cantal."
+    ],
+    "es": [
+      "El Hôtel des Chazes ofrece cómodas habitaciones o dúplex con vistas al Plomb du Cantal."
+    ]
+  },
+  "rdfs:label": {
+    "de": [
+      "Les Chazes"
+    ],
+    "fr": [
+      "Les Chazes"
+    ],
+    "es": [
+      "Les Chazes"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/372d3f30-9fef-3619-b7fb-2f7ba36d74d2",
+    "dc:identifier": "1465",
+    "schema:email": [
+      "beatrice.bonal@carlades.fr",
+      "noemie.tixier@carlades.fr",
+      "virginie.linard@carlades.fr"
+    ],
+    "schema:legalName": "Office de Tourisme du Carladès",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.carlades.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/8279c13b-edc2-3e4d-b596-582d8a963753",
+      "schema:email": [
+        "info@hotel-des-chazes.com"
+      ],
+      "schema:telephone": [
+        "+33 4 71 47 05 68"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.hotel-des-chazes.com/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/3fe0a2b5-09b2-34bf-8579-daaf89d248ae",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/69800f46-f6e4-38a2-b46d-551365024aeb",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/73f98941-905d-3b90-93e8-129bec144db1",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/91a1e285-d70d-355b-9516-bea815047b95",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Das Hotel des Chazes bietet Ihnen Zimmer oder Maisonette-Wohnungen mit allem Komfort und Blick auf den Plomb du Cantal."
+        ],
+        "en": [
+          "The Hôtel des Chazes offers comfortable rooms or duplexes with a view of the Plomb du Cantal."
+        ],
+        "it": [
+          "L'Hôtel des Chazes offre camere o maisonette confortevoli con vista sul Plomb du Cantal."
+        ],
+        "fr": [
+          "L'hôtel des Chazes vous propose des chambres ou duplex tout confort avec vue sur le Plomb du Cantal."
+        ],
+        "nl": [
+          "Hôtel des Chazes biedt comfortabele kamers of maisonnettes met uitzicht op de Plomb du Cantal."
+        ],
+        "es": [
+          "El Hôtel des Chazes ofrece cómodas habitaciones o dúplex con vistas al Plomb du Cantal."
+        ]
+      }
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/7724dbf0-7649-358b-be17-1db1b66a240f",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3etoiles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Sterne"
+          ],
+          "pt": [
+            "3 estrelas"
+          ],
+          "en": [
+            "3 Stars"
+          ],
+          "it": [
+            "3 stelle"
+          ],
+          "fr": [
+            "3 étoiles"
+          ],
+          "nl": [
+            "3 sterren"
+          ],
+          "es": [
+            "3 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/094b1cf1-e549-3bb3-be17-3256200fd055",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/3a85a779-60ad-329c-906b-42bd3d709e61",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/60343f26-10e7-3b8b-a266-4460fcb5c9b5",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/6fd7013e-eaed-3b8d-958d-144c277c9976",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d939baca-2145-38a9-97fb-ea242c503e6f",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/1cf1f6ed-0805-3d17-9aa4-ae69050a2e5e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/d8c0f5cb-d96f-334c-96c1-9add75f81eab",
+          "schema:addressLocality": "Saint-Jacques-des-Blats",
+          "schema:postalCode": "15800",
+          "schema:streetAddress": [
+            "Les Chazes"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:15192",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Jacques-des-Blats"
+              ],
+              "pt": [
+                "Saint-Jacques-des-Blats"
+              ],
+              "en": [
+                "Saint-Jacques-des-Blats"
+              ],
+              "it": [
+                "Saint-Jacques-des-Blats"
+              ],
+              "fr": [
+                "Saint-Jacques-des-Blats"
+              ],
+              "nl": [
+                "Saint-Jacques-des-Blats"
+              ],
+              "es": [
+                "Saint-Jacques-des-Blats"
+              ]
+            },
+            "insee": "15192",
+            "isPartOfDepartment": {
+              "@id": "kb:France8415",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Cantal"
+                ],
+                "pt": [
+                  "Cantal"
+                ],
+                "en": [
+                  "Cantal"
+                ],
+                "it": [
+                  "Cantal"
+                ],
+                "fr": [
+                  "Cantal"
+                ],
+                "nl": [
+                  "Cantal"
+                ],
+                "es": [
+                  "Cantal"
+                ]
+              },
+              "insee": "15",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/66f88079-14f4-3402-adfe-8db26c8a470f",
+        "schema:latitude": "45.069581",
+        "schema:longitude": "2.718902",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d2dba670-e3d1-3b26-a3f7-0d953ae83a69",
+          "schema:validFrom": "2026-12-07T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/6956d1cc-548f-3cec-aa25-305f5d9c3017",
+      "schema:email": [
+        "beatrice.bonal@carlades.fr",
+        "noemie.tixier@carlades.fr",
+        "virginie.linard@carlades.fr"
+      ],
+      "schema:legalName": "Office de Tourisme du Carladès",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.carlades.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2026-01-28",
+  "lastUpdateDatatourisme": "2026-01-29T06:59:55.696Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/97b479ab-c08e-3dfa-a0c5-6cb9ededff5e",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/05fbc514-753f-3945-8b5c-ae88fd555af5",
+          "schema:maxPrice": [
+            "120"
+          ],
+          "schema:minPrice": [
+            "113"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/1723453f-5924-332a-8595-f3a4966f9778",
+          "schema:maxPrice": [
+            "70"
+          ],
+          "schema:minPrice": [
+            "66"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/7b4f3653-c7b9-374a-8800-763c0fee7e88",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-31",
+              "startDate": "2025-12-07"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/24e8b671-a0a1-339c-8ff3-9e56f365824c",
+          "schema:maxPrice": [
+            "14"
+          ],
+          "schema:minPrice": [
+            "14"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/7b4f3653-c7b9-374a-8800-763c0fee7e88",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-31",
+              "startDate": "2025-12-07"
+            }
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:BaseRateFullRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Basistarif – voller Tarif"
+                ],
+                "pt": [
+                  "Preço de base — preço total"
+                ],
+                "en": [
+                  "Base rate - full rate"
+                ],
+                "it": [
+                  "Tariffa di base — tariffa intera"
+                ],
+                "fr": [
+                  "Tarif de base - plein tarif"
+                ],
+                "es": [
+                  "Tarifa básica - tarifa completa"
+                ],
+                "nl": [
+                  "Basistarief - vol tarief"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2f01c174-31fc-3919-8d54-3a7522c73f86",
+          "schema:maxPrice": [
+            "122"
+          ],
+          "schema:minPrice": [
+            "122"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/7b4f3653-c7b9-374a-8800-763c0fee7e88",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-31",
+              "startDate": "2025-12-07"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4338d476-b719-3a7a-aa6e-7a3dfd0dbee3",
+          "schema:maxPrice": [
+            "102"
+          ],
+          "schema:minPrice": [
+            "92"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/7b4f3653-c7b9-374a-8800-763c0fee7e88",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-31",
+              "startDate": "2025-12-07"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4a921248-3804-3a20-bfeb-6e3ed277943b",
+          "schema:maxPrice": [
+            "170"
+          ],
+          "schema:minPrice": [
+            "170"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/537be063-9d81-38c3-b5af-2bf0f5a231e6",
+          "schema:maxPrice": [
+            "92"
+          ],
+          "schema:minPrice": [
+            "85"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/7b4f3653-c7b9-374a-8800-763c0fee7e88",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-31",
+              "startDate": "2025-12-07"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/61559cf4-1113-3494-863f-026223bc9eaf",
+          "schema:maxPrice": [
+            "70"
+          ],
+          "schema:minPrice": [
+            "66"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/6aa662b4-5376-330a-b7ef-20fa8db5174e",
+          "schema:maxPrice": [
+            "170"
+          ],
+          "schema:minPrice": [
+            "170"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/7b4f3653-c7b9-374a-8800-763c0fee7e88",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-31",
+              "startDate": "2025-12-07"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7268d7dd-b665-3b45-a8be-b0658f2c58e7",
+          "schema:maxPrice": [
+            "14"
+          ],
+          "schema:minPrice": [
+            "14"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:BaseRateFullRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Basistarif – voller Tarif"
+                ],
+                "pt": [
+                  "Preço de base — preço total"
+                ],
+                "en": [
+                  "Base rate - full rate"
+                ],
+                "it": [
+                  "Tariffa di base — tariffa intera"
+                ],
+                "fr": [
+                  "Tarif de base - plein tarif"
+                ],
+                "es": [
+                  "Tarifa básica - tarifa completa"
+                ],
+                "nl": [
+                  "Basistarief - vol tarief"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/9dc80a02-0d80-36ff-be95-85e38f512bb2",
+          "schema:maxPrice": [
+            "102"
+          ],
+          "schema:minPrice": [
+            "102"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/7b4f3653-c7b9-374a-8800-763c0fee7e88",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-31",
+              "startDate": "2025-12-07"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a8753d86-cb72-3f32-ab94-e0828d362e13",
+          "schema:maxPrice": [
+            "120"
+          ],
+          "schema:minPrice": [
+            "113"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/7b4f3653-c7b9-374a-8800-763c0fee7e88",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-31",
+              "startDate": "2025-12-07"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ad2e6fec-6d46-3523-be5e-10ea26151450",
+          "schema:maxPrice": [
+            "85"
+          ],
+          "schema:minPrice": [
+            "85"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/7b4f3653-c7b9-374a-8800-763c0fee7e88",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-12-31",
+              "startDate": "2025-12-07"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b9db73e5-bd30-3fb8-867f-85fe4829c1f4",
+          "schema:maxPrice": [
+            "122"
+          ],
+          "schema:minPrice": [
+            "122"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e1ac72b7-b137-334a-802e-ebf1ca51b89d",
+          "schema:maxPrice": [
+            "102"
+          ],
+          "schema:minPrice": [
+            "102"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f280f992-bbf6-3446-8894-293021249044",
+          "schema:maxPrice": [
+            "85"
+          ],
+          "schema:minPrice": [
+            "85"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f2a26dc9-cfd5-3d45-92bc-4d17a78f945f",
+          "schema:maxPrice": [
+            "92"
+          ],
+          "schema:minPrice": [
+            "85"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f81041c1-ff1d-3e6f-a942-fb3dfa4e8bbf",
+          "schema:maxPrice": [
+            "102"
+          ],
+          "schema:minPrice": [
+            "92"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}
