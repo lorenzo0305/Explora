@@ -133,7 +133,30 @@ def routage_osrm(lat1, lon1, lat2, lon2):
     dist = haversine(lat1, lon1, np.array([lat2]), np.array([lon2]))[0]
     return f"≈ {dist:.1f} km (à vol d'oiseau)"
 
-
+def calculer_segments_trajets(matin, aprem):
+    """Calcule tous les trajets entre les activités d'une journée."""
+    segments = {
+        'm1_m2': None,
+        'midi':   None,
+        'a1_a2': None
+    }
+    
+    # Trajet Matin 1 ⮕ Matin 2
+    if len(matin) == 2:
+        segments['m1_m2'] = routage_osrm(matin[0]['latitude'], matin[0]['longitude'], 
+                                         matin[1]['latitude'], matin[1]['longitude'])
+    
+    # Trajet Matin (dernier) ⮕ Après-midi (premier)
+    if matin and aprem:
+        segments['midi'] = routage_osrm(matin[-1]['latitude'], matin[-1]['longitude'], 
+                                        aprem[0]['latitude'], aprem[0]['longitude'])
+        
+    # Trajet Après-midi 1 ⮕ Après-midi 2
+    if len(aprem) == 2:
+        segments['a1_a2'] = routage_osrm(aprem[0]['latitude'], aprem[0]['longitude'], 
+                                         aprem[1]['latitude'], aprem[1]['longitude'])
+        
+    return segments
 # ─────────────────────────────────────────────
 #  4. PRÉFÉRENCES UTILISATEUR
 # ─────────────────────────────────────────────
@@ -192,91 +215,78 @@ def scorer_activites(df: pd.DataFrame, lat_c, lon_c, rayon_max, prefs):
 #  6. GÉNÉRATION DU PLANNING JOURNALIER
 # ─────────────────────────────────────────────
 def generer_planning(df_scored: pd.DataFrame, nb_jours: int, lat_c, lon_c):
-    # 1. Nettoyage initial
-    df_unique = df_scored.drop_duplicates(subset=['nom']).copy()
+    # 1. On garde le tri par SCORE (le pkl est déjà trié par score_final normalement)
+    # On s'assure que c'est trié par score décroissant dès le départ
+    df_unique = df_scored.sort_values(by='score_final', ascending=False).drop_duplicates(subset=['nom'])
     records = df_unique.to_dict('records')
     
     planning = []
+    MAX_DIST_KM = 40  # Environ 45min-1h de route selon le trafic
 
     for jour in range(1, nb_jours + 1):
         matin = []
-        mots_cles_jour = set() # Pour stocker les types d'activités déjà vus aujourd'hui
+        mots_cles_jour = set()
 
         def est_trop_similaire(nom, blacklist):
-            # Vérifie si un mot important du nom est déjà dans la blacklist
-            mots = set(nom.lower().split())
-            # On ignore les petits mots
-            mots = {m for m in mots if len(m) > 3}
+            mots = {m for m in nom.lower().split() if len(m) > 3}
             return not mots.isdisjoint(blacklist)
 
-        # --- MATIN ---
-        count = 0
-        while len(matin) < 2 and records:
-            act = records.pop(0)
-            # Si l'activité ressemble trop à ce qu'on a déjà, on la remet à la fin (ou on la skip)
-            if est_trop_similaire(act['nom'], mots_cles_jour):
-                records.append(act) # On la décale
-                count += 1
-                if count > 10: break # Sécurité pour ne pas boucler à l'infini
-                continue
-            
-            act['trajet_ville'] = routage_osrm(lat_c, lon_c, act['latitude'], act['longitude'])
-            matin.append(act)
-            # On ajoute les mots importants du nom à la blacklist du jour
-            mots_cles_jour.update({m for m in act['nom'].lower().split() if len(m) > 3})
+        # --- ÉTAPE 1 : CHOIX DU MATIN (Basé sur le Score) ---
+        idx = 0
+        while len(matin) < 2 and idx < len(records):
+            act = records[idx]
+            if not est_trop_similaire(act['nom'], mots_cles_jour):
+                act['trajet_ville'] = routage_osrm(lat_c, lon_c, act['latitude'], act['longitude'])
+                matin.append(act)
+                mots_cles_jour.update({m for m in act['nom'].lower().split() if len(m) > 3})
+                records.pop(idx) # On la retire des dispos
+            else:
+                idx += 1
 
-        # --- OPTIMISATION SPATIALE ---
-        last_lat, last_lon = matin[-1]['latitude'], matin[-1]['longitude']
-        records.sort(key=lambda x: haversine(last_lat, last_lon, x['latitude'], x['longitude']))
-
-        # --- APRÈS-MIDI ---
+        # --- ÉTAPE 2 : CHOIX DE L'APRÈS-MIDI (Score + Filtre Distance) ---
         aprem = []
-        count = 0
-        while len(aprem) < 2 and records:
-            act = records.pop(0)
-            if est_trop_similaire(act['nom'], mots_cles_jour):
-                records.append(act)
-                count += 1
-                if count > 10: break
-                continue
+        if matin:
+            last_lat, last_lon = matin[-1]['latitude'], matin[-1]['longitude']
+            
+            idx = 0
+            while len(aprem) < 2 and idx < len(records):
+                act = records[idx]
                 
-            act['trajet_ville'] = routage_osrm(lat_c, lon_c, act['latitude'], act['longitude'])
-            aprem.append(act)
-            mots_cles_jour.update({m for m in act['nom'].lower().split() if len(m) > 3})
+                # Calcul de la distance entre le matin et cette activité potentielle
+                dist_interne = haversine(last_lat, last_lon, act['latitude'], act['longitude'])
+                
+                # CONDITION : Meilleur score possible MAIS à moins de 1h (MAX_DIST_KM)
+                if dist_interne <= MAX_DIST_KM and not est_trop_similaire(act['nom'], mots_cles_jour):
+                    act['trajet_ville'] = routage_osrm(lat_c, lon_c, act['latitude'], act['longitude'])
+                    aprem.append(act)
+                    mots_cles_jour.update({m for m in act['nom'].lower().split() if len(m) > 3})
+                    records.pop(idx)
+                else:
+                    idx += 1
 
-        # Trajet liaison
-        trajet_ma = routage_osrm(matin[-1]['latitude'], matin[-1]['longitude'],
-                                aprem[0]['latitude'], aprem[0]['longitude'])
+        # --- CALCUL LIAISON ---
+        trajet_ma = "Non disponible"
+        if len(matin) >= 1 and len(aprem) >= 1:
+            trajet_ma = routage_osrm(matin[-1]['latitude'], matin[-1]['longitude'], 
+                                     aprem[0]['latitude'], aprem[0]['longitude'])
 
-        planning.append({
-            'jour': jour, 'matin': matin, 'aprem': aprem, 'trajet_ma': trajet_ma
-        })
         
-        # --- RESET POUR LE LENDEMAIN ---
-        # On remet un coup de tri par score final pour ne pas rester bloqué dans la zone
-        records.sort(key=lambda x: x.get('score_final', 0), reverse=True)
-    
-    print(planning)
+        planning.append({
+            'jour': jour, 
+            'matin': matin, 
+            'aprem': aprem, 
+            'trajets': calculer_segments_trajets(matin, aprem) # On stocke le dictionnaire de trajets
+        })
     return planning
 # ─────────────────────────────────────────────
 #  7. AFFICHAGE (AVEC MINUTES ET PROPRETÉ)
 # ─────────────────────────────────────────────
-def afficher_activite(act, rang):
-    match_pct = int(act.get('score_final', 0) * 100)
-    route_info = act.get('trajet_ville', "Distance non disponible")
-    
-    print(f"\n     Activité {rang} : {act['nom']}")
-    if 'adresse' in act and pd.notna(act['adresse']):
-        print(f"        {act['adresse']}")
-    print(f"        Match : {match_pct}%")
-    print(f"        Accès depuis le centre : {route_info}")
-
 def afficher_planning(planning, ville):
     SEP = "═" * 65
     SUB = "─" * 65
     
     print(f"\n{SEP}")
-    print(f"   VOTRE CARNET DE ROUTE EXPLORA - {ville.upper()}")
+    print(f"    VOTRE CARNET DE ROUTE EXPLORA - {ville.upper()}")
     print(f"{SEP}")
 
     for j in planning:
@@ -284,23 +294,43 @@ def afficher_planning(planning, ville):
             continue
             
         print(f"\n{SUB}")
-        print(f"   JOUR {j['jour']}")
+        print(f"    JOUR {j['jour']}")
         print(f"{SUB}")
 
+        # --- SECTION MATIN ---
         if j['matin']:
-            print("\n   MATINÉE")
-            for idx, act in enumerate(j['matin'], 1):
-                afficher_activite(act, idx)
+            print("\n    MATINÉE")
+            # Activité 1
+            afficher_activite(j['matin'][0], 1)
+            
+            # Trajet entre 1 et 2 du matin
+            if j['trajets']['m1_m2']:
+                print(f"\n        Liaison : {j['trajets']['m1_m2']}")
+            
+            # Activité 2 (si elle existe)
+            if len(j['matin']) > 1:
+                afficher_activite(j['matin'][1], 2)
 
-        if j['trajet_ma']:
-            print(f"\n   Liaison midi : {j['trajet_ma']}")
+        # --- SECTION MIDI ---
+        if j['trajets']['midi']:
+            print(f"\n   PAUSE MIDI - Itinéraire : {j['trajets']['midi']}")
 
+        # --- SECTION APRÈS-MIDI ---
         if j['aprem']:
-            print("\n   APRÈS-MIDI")
-            for idx, act in enumerate(j['aprem'], 1):
-                afficher_activite(act, idx)
+            print("\n    APRÈS-MIDI")
+            # Activité 1
+            afficher_activite(j['aprem'][0], 1)
+            
+            # Trajet entre 1 et 2 de l'après-midi
+            if j['trajets']['a1_a2']:
+                print(f"\n       Liaison (1 ⮕ 2) : {j['trajets']['a1_a2']}")
+                
+            # Activité 2 (si elle existe)
+            if len(j['aprem']) > 1:
+                afficher_activite(j['aprem'][1], 2)
 
     print(f"\n{SEP}")
+    print("  Bon voyage avec Explora !")
     print(SEP)
 # ─────────────────────────────────────────────
 #  8. POINT D'ENTRÉE
