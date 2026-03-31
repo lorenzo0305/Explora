@@ -186,6 +186,7 @@ def lancer_explora(ville, rayon, jours, nature , gastronomie , sport, culture , 
         # 5. Génération et affichage (on utilise 'jours' passé en argument)
         planning = generer_planning(df_scored, jours, lat_c, lon_c)
         afficher_planning(planning, ville)
+        return planning  # On retourne le planning pour un usage ultérieur (ex: API)
     else:
         print(f"Rien trouvé dans un rayon de {rayon} km autour de {ville}.")
     
