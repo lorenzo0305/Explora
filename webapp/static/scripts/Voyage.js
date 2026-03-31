@@ -7,9 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
         return; 
     }
     
-    // Le ".data" à la fin dépend de si ton backend a renvoyé {"data": [...] }
-    // Si dataVoyage plante car c'est un objet qui contient un tableau, fais : JSON.parse(data).data;
-    const dataVoyage = JSON.parse(data).data; 
+    // On parse les données. 
+    // Si c'est un tableau direct, on le prend. Si c'est dans { "data": [...] }, on prend .data
+    const parsedData = JSON.parse(data);
+    const dataVoyage = Array.isArray(parsedData) ? parsedData : parsedData.data; 
 
     // 1. On cible notre conteneur HTML
     const conteneur = document.getElementById('conteneur-itineraire');
@@ -18,39 +19,39 @@ document.addEventListener('DOMContentLoaded', function() {
     let htmlGenere = "";
 
     // 3. On boucle sur chaque jour
-    dataVoyage.forEach(jour => {
+    dataVoyage.forEach(jourData => {
         
-        // On ouvre la "carte" du jour
+        // On ouvre la "carte" du jour (Attention : la clé est 'jour' et non 'numero')
         htmlGenere += `
             <div class="jour-carte" style="margin-bottom: 30px; border: 1px solid #ccc; padding: 15px; border-radius: 8px;">
-                <h2>Jour ${jour.numero}</h2>
+                <h2>Jour ${jourData.jour}</h2>
         `;
 
         // --- MATIN ---
         htmlGenere += `<h3>☀️ Matin</h3>`;
-        jour.matin.forEach(activite => {
-            htmlGenere += `
-                <div class="activite" style="margin-left: 20px; margin-bottom: 15px;">
-                    <h4>${activite.nom}</h4>
-                    <p><strong>📍 Lieu :</strong> ${activite.ville} (${activite.code_postal})</p>
-                    <p><em>${activite.categories.join(', ')}</em></p>
-                    <p>${activite.description}</p>
-                </div>
-            `;
-        });
+        // On vérifie que le matin existe et contient des éléments
+        if (jourData.matin && jourData.matin.length > 0) {
+            jourData.matin.forEach(activite => {
+                htmlGenere += `
+                    <div class="activite" style="margin-left: 20px; margin-bottom: 5px;">
+                        <h4>${activite.nom}</h4>
+                    </div>
+                `;
+            });
+        }
 
         // --- APRÈS-MIDI ---
         htmlGenere += `<h3>🌤️ Après-midi</h3>`;
-        jour.apresMidi.forEach(activite => {
-            htmlGenere += `
-                <div class="activite" style="margin-left: 20px; margin-bottom: 15px;">
-                    <h4>${activite.nom}</h4>
-                    <p><strong>📍 Lieu :</strong> ${activite.ville} (${activite.code_postal})</p>
-                    <p><em>${activite.categories.join(', ')}</em></p>
-                    <p>${activite.description}</p>
-                </div>
-            `;
-        });
+        // On vérifie que l'aprem existe (Attention : la clé est 'aprem' et non 'apresMidi')
+        if (jourData.aprem && jourData.aprem.length > 0) {
+            jourData.aprem.forEach(activite => {
+                htmlGenere += `
+                    <div class="activite" style="margin-left: 20px; margin-bottom: 5px;">
+                        <h4>${activite.nom}</h4>
+                    </div>
+                `;
+            });
+        }
 
         // On ferme la "carte" du jour
         htmlGenere += `</div>`;
