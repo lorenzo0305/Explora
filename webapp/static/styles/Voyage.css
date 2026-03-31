@@ -17,3 +17,63 @@ pre {
     color: #dcdcdc;
     font-size: 0.85rem;
 }
+
+/* Style global des cartes de chaque jour */
+.jour-carte {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Conteneur d'une activité */
+.activite-container {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Le bouton cliquable */
+.btn-activite {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+/* Effet au survol de la souris */
+.btn-activite:hover {
+    background-color: #e2e2e8;
+}
+
+/* État du bouton quand l'accordéon est ouvert */
+.btn-activite.ouvert {
+    background-color: #e2e2e8;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Les détails (cachés par défaut) */
+.details-activite {
+    display: none;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-top: none;
+    background-color: #fafafa;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Classe ajoutée par le JS pour afficher les détails */
+.details-activite.visible {
+    display: block;
+}
+
+/* Petits ajustements de marges pour le texte */
+.details-activite p {
+    margin: 5px 0;
+}
