@@ -12,7 +12,6 @@ from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pymongo import MongoClient
-from .recommendation import lancer_explora
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -425,123 +424,45 @@ async def run_algorithm(request: Request):
         data = await request.json()
         print("[BACKEND] Données reçues depuis le formulaire : ", data)
 
+        # Import local pour éviter de faire tomber l'app au démarrage si recommendation.py a un souci.
+        try:
+            from .recommendation import lancer_explora
+        except ImportError:
+            from recommendation import lancer_explora
 
-        # 1. On crée nos fausses données (Mock) en Python (liste de dictionnaires)
-        list_jour = [
+        ville = str(data.get("ville", "")).strip()
+        if not ville:
+            raise HTTPException(status_code=400, detail="Le champ 'ville' est requis")
+
+        planning = lancer_explora(
+            ville=ville,
+            rayon=int(data.get("rayon", 30)),
+            jours=int(data.get("jours", 3)),
+            nature=int(data.get("nature", 0)),
+            gastronomie=int(data.get("gastronomie", 0)),
+            sport=int(data.get("sport", 0)),
+            culture=int(data.get("culture", 0)),
+            detente=int(data.get("detente", 0)),
+            boutique=int(data.get("boutique", 0)),
+        )
+
+        if not planning:
+            return JSONResponse(
+                status_code=404,
+                content={
+                    "status": "empty",
+                    "message": "Aucun itinéraire trouvé avec les paramètres fournis",
+                    "data": [],
+                },
+            )
+
+        return JSONResponse(
             {
-                "numero": 1,
-                "matin": [
-                    {
-                        "nom": "Musée Départemental du Bugey-Valromey",
-                        "categories": ["culture", "patrimoine"],
-                        "saison": "hiver",
-                        "adresse": "3 rue Traversière",
-                        "code_postal": "01260",
-                        "ville": "Lochieu",
-                        "region": "Auvergne-Rhône-Alpes",
-                        "latitude": "45.928123",
-                        "longitude": "5.626456",
-                        "telephone": "+33 4 79 87 52 23",
-                        "site_internet": "https://patrimoines.ain.fr",
-                        "description": "Découvrez l'histoire et les traditions du Valromey à travers des expositions fascinantes pour bien commencer la journée."
-                    }
-                ],
-                "apresMidi": [
-                    {
-                        "nom": "Restaurant Carlino",
-                        "categories": ["gastronomie"],
-                        "saison": "hiver",
-                        "adresse": "27 rue Jean Marie Delorme",
-                        "code_postal": "01400",
-                        "ville": "Châtillon-sur-Chalaronne",
-                        "region": "Auvergne-Rhône-Alpes",
-                        "latitude": "46.121063",
-                        "longitude": "4.956991",
-                        "telephone": "+33 9 83 94 89 00",
-                        "site_internet": "",
-                        "description": "Dans un décor sobre et chaleureux, Marcel et Yajaïra vous accueillent pour un repas réconfortant."
-                    }
-                ]
-            },
-            {
-                "numero": 2,
-                "matin": [
-                    {
-                        "nom": "Station Monts Jura - Mijoux",
-                        "categories": ["sport", "plein air"],
-                        "saison": "hiver",
-                        "adresse": "Route de la Faucille",
-                        "code_postal": "01410",
-                        "ville": "Mijoux",
-                        "region": "Auvergne-Rhône-Alpes",
-                        "latitude": "46.3667",
-                        "longitude": "5.9961",
-                        "telephone": "+33 4 50 20 91 43",
-                        "site_internet": "https://www.paysdegex-montsjura.com",
-                        "description": "Matinée sur les pistes avec une vue imprenable sur le Mont Blanc et le lac Léman."
-                    }
-                ],
-                "apresMidi": [
-                    {
-                        "nom": "Hôtel Le Relais Nordique",
-                        "categories": ["gastronomie", "hébergement"],
-                        "saison": "hiver",
-                        "adresse": "50 route de la Pesse",
-                        "code_postal": "01130",
-                        "ville": "Giron",
-                        "region": "Auvergne-Rhône-Alpes",
-                        "latitude": "46.225852",
-                        "longitude": "5.772145",
-                        "telephone": "+33 4 50 59 80 45",
-                        "site_internet": "https://www.relais-nordique.com",
-                        "description": "Détente au Relais Nordique après l'effort, un goûter chaud et une ambiance montagnarde."
-                    }
-                ]
-            },
-            {
-                "numero": 3,
-                "matin": [
-                    {
-                        "nom": "Fromagerie de l'Abbaye",
-                        "categories": ["terroir", "gastronomie"],
-                        "saison": "hiver",
-                        "adresse": "12 place de l'Église",
-                        "code_postal": "01130",
-                        "ville": "Chézery-Forens",
-                        "region": "Auvergne-Rhône-Alpes",
-                        "latitude": "46.22154",
-                        "longitude": "5.86542",
-                        "telephone": "+33 4 50 48 70 34",
-                        "site_internet": "",
-                        "description": "Visite de la fromagerie artisanale et dégustation du Bleu de Gex."
-                    }
-                ],
-                "apresMidi": [
-                    {
-                        "nom": "Balade en raquettes à La Vattay",
-                        "categories": ["nature", "sport"],
-                        "saison": "hiver",
-                        "adresse": "Domaine de La Vattay",
-                        "code_postal": "01410",
-                        "ville": "Mijoux",
-                        "region": "Auvergne-Rhône-Alpes",
-                        "latitude": "46.3881",
-                        "longitude": "6.0152",
-                        "telephone": "",
-                        "site_internet": "",
-                        "description": "Promenade féérique en forêt dans la neige fraîche pour clôturer ce séjour en beauté."
-                    }
-                ]
+                "status": "success",
+                "message": "Itinéraire généré avec succès",
+                "data": planning,
             }
-        ]
-
-
-        # 2. On renvoie le statut ET les données générées
-        return JSONResponse({
-            "status": "success",
-            "message": "Itinéraire généré avec succès",
-            "data": list_jour # <-- Tes données sont injectées ici !
-        })
+        )
 
 
     except Exception as e:
