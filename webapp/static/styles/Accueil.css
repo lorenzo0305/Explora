@@ -237,6 +237,69 @@ body {
   line-height: 1.6;
 }
 
+.how-it-works-panel {
+  background: FFE89C;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  margin-top: 10px;
+}
+
+.hiw-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hiw-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hiw-step {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(156, 238, 255, 0.15);
+  /* matching your new blue */
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.hiw-icon {
+  font-size: 28px;
+  background: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+.hiw-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hiw-text strong {
+  font-size: 15px;
+  color: var(--text);
+}
+
+.hiw-text span {
+  font-size: 13px;
+  color: var(--text);
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
 .section {
   display: flex;
   flex-direction: column;
