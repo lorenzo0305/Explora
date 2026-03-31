@@ -16,7 +16,7 @@ def connecter_mongodb():
     user, password = "equipe_explora", "2BqXsiNi8nCCE@W"
     uri = f"mongodb+srv://{user}:{urllib.parse.quote_plus(password)}@datas.xc1dpyu.mongodb.net/?appName=datas"
     client = MongoClient(uri, tlsCAFile=certifi.where())
-    print("✅ Connexion réussie !\n")
+    print(" Connexion réussie !\n")
     return client
 
 # ─────────────────────────────────────────────
@@ -158,25 +158,37 @@ def afficher_planning(planning, ville):
 
         if j['aprem']:
             print(f"   APREM : {j['aprem'][0]['nom']}")
-            if j['trajets']['a1_a2']: print(f"     ⬇️ {j['trajets']['a1_a2']}")
+            if j['trajets']['a1_a2']: print(f"      {j['trajets']['a1_a2']}")
             if len(j['aprem']) > 1: print(f"   APREM : {j['aprem'][1]['nom']}")
     print(f"\n{SEP}")
-
-def lancer_explora():
+def lancer_explora(ville, rayon, jours, nature , gastronomie , sport, culture , detente , boutique ):
+    # 1. Connexion et chargement (on garde cette logique interne)
     client = connecter_mongodb()
     df_global = charger_donnees(client)
-    ville = input("Ville : ").strip()
-    lat_c, lon_c = geocoder_ville(ville)
-    rayon = float(input("Rayon (km) [30] : ") or 30.0)
-    jours = int(input("Jours [3] : ") or 3)
     
-    print("\nNotes (0-10) :")
-    prefs = [float(input(f"  {t} : ") or 5.0) for t in THEMES_LABELS]
+    # 2. Localisation (utilise l'argument 'ville')
+    try:
+        lat_c, lon_c = geocoder_ville(ville)
+    except ValueError:
+        print(f"Erreur : La ville '{ville}' n'a pas été trouvée.")
+        client.close()
+        return
 
+    # 3. Préparation des préférences (on regroupe les arguments dans une liste)
+    # L'ordre doit correspondre à celui de ton modèle KNN (THEMES_LABELS)
+    prefs = [nature, gastronomie, sport, culture, detente, boutique]
+
+    # 4. Scoring et filtrage
+    # On utilise 'rayon' passé en argument
     df_scored = scorer_activites(df_global, lat_c, lon_c, rayon, prefs)
+    
     if not df_scored.empty:
-        afficher_planning(generer_planning(df_scored, jours, lat_c, lon_c), ville)
-    else: print("Rien trouvé.")
+        # 5. Génération et affichage (on utilise 'jours' passé en argument)
+        planning = generer_planning(df_scored, jours, lat_c, lon_c)
+        afficher_planning(planning, ville)
+    else:
+        print(f"Rien trouvé dans un rayon de {rayon} km autour de {ville}.")
+    
     client.close()
 
 if __name__ == "__main__": lancer_explora()
