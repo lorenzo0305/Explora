@@ -88,14 +88,7 @@ DICTIONNAIRE_CATEGORIES = {
     "ThalassotherapyCentre": "détente"
 }
 
-def calculer_duree_mois(start_str, end_str):
-    try:
-        debut = datetime.strptime(start_str, "%Y-%m-%d")
-        fin = datetime.strptime(end_str, "%Y-%m-%d")
-        nb_mois = (fin.year - debut.year) * 12 + (fin.month - debut.month)
-        return abs(nb_mois), debut.month
-    except:
-        return None, None
+
 
 print("🔍 Extraction et analyse des durées...")
 activites_propres = []
@@ -139,17 +132,18 @@ for chemin_fichier in fichiers_json:
                 elif 4 <= nb_mois <= 8:
                     saison_finale = "Intersaison (sport/nature)"
                 else:
-                    saison_finale = "toute l'année(sport/nature)"
+                    saison_finale = "toute l'année (sport/nature)"
             else:
                 # Autres catégories (Culture, Gastronomie, Détente...)
                 if nb_mois > 8:
                     saison_finale = "toute l'année(Autres)"
                 else:
-                    saison_finale = "Intersaison(Autres)"
+                    saison_finale = "Intersaison (Autres)"
         else:
             # Sécurité si pas de dates : on regarde les tags prioritaires
             if any(t in ["SkiResort", "DownhillSkiRun"] for t in tags_officiels):
                 saison_finale = "hiver"
+        
 
         # --- SÉCURITÉ MOTS-CLÉS (Correction des anomalies comme le Bowling ou Balicina) ---
         nom_l = nom.lower()
@@ -184,7 +178,6 @@ for chemin_fichier in fichiers_json:
         activite = {
             "nom": nom,
             "categories": categories_trouvees,
-            "saison": saison_finale,
             "adresse": adresse,
             "code_postal": cp,
             "ville": ville,
