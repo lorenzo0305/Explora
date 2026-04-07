@@ -139,13 +139,13 @@ for chemin_fichier in fichiers_json:
                 elif 4 <= nb_mois <= 8:
                     saison_finale = "Intersaison (sport/nature)"
                 else:
-                    saison_finale = "toute l'année(sport/nature)"
+                    saison_finale = "toute l'année (sport/nature)"
             else:
                 # Autres catégories (Culture, Gastronomie, Détente...)
                 if nb_mois > 8:
                     saison_finale = "toute l'année(Autres)"
                 else:
-                    saison_finale = "Intersaison(Autres)"
+                    saison_finale = "Intersaison (Autres)"
         else:
             # Sécurité si pas de dates : on regarde les tags prioritaires
             if any(t in ["SkiResort", "DownhillSkiRun"] for t in tags_officiels):

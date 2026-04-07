@@ -464,7 +464,6 @@ async def run_algorithm(request: Request):
             }
         )
 
-
     except Exception as e:
         print("[BACKEND] Erreur : ", e)
         return JSONResponse({"status": "error", "message": str(e)}, status_code=500)
