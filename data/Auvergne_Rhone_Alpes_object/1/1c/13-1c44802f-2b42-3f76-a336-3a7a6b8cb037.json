@@ -1,0 +1,304 @@
+{
+  "@id": "https://data.datatourisme.fr/13/1c44802f-2b42-3f76-a336-3a7a6b8cb037",
+  "dc:identifier": "5916295",
+  "@type": [
+    "schema:LocalBusiness",
+    "ActivityProvider",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Store"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Moniteur d'escalade - François Coffy"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/093f65e0-80a2-35f8-876b-1c5722a46aa2",
+    "dc:identifier": "59",
+    "schema:email": [
+      "c.chenivesse@haut-giffre-tourisme.fr",
+      "communication@haut-giffre-tourisme.fr"
+    ],
+    "schema:legalName": "Haut-Giffre Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.haut-giffre.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/6d024ae8-cc20-3d7d-a34c-1b0f0a1dfc72",
+      "schema:email": [
+        "francois.coffy@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 6 14 61 60 71"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:Climbing",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Klettern"
+        ],
+        "pt": [
+          "Escalada"
+        ],
+        "en": [
+          "Climbing"
+        ],
+        "it": [
+          "Arrampicata"
+        ],
+        "fr": [
+          "Escalade"
+        ],
+        "nl": [
+          "Klimmen"
+        ],
+        "es": [
+          "Escalada"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Hiking",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wanderung"
+        ],
+        "pt": [
+          "Caminhada"
+        ],
+        "en": [
+          "Hiking"
+        ],
+        "it": [
+          "Escursione"
+        ],
+        "fr": [
+          "Randonnée"
+        ],
+        "nl": [
+          "Wandelen"
+        ],
+        "es": [
+          "Senderismo"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/34b6be8d-d2a1-33aa-928d-3f6f6b523e7a",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/0c7b1f61-5b0b-311a-bd1e-068afda1968c",
+          "schema:addressLocality": "Samoëns",
+          "schema:postalCode": "74340",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:74258",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Samoëns"
+              ],
+              "pt": [
+                "Samoëns"
+              ],
+              "en": [
+                "Samoëns"
+              ],
+              "it": [
+                "Samoëns"
+              ],
+              "fr": [
+                "Samoëns"
+              ],
+              "nl": [
+                "Samoëns"
+              ],
+              "es": [
+                "Samoëns"
+              ]
+            },
+            "insee": "74258",
+            "isPartOfDepartment": {
+              "@id": "kb:France8474",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Savoie"
+                ],
+                "pt": [
+                  "Haute-Savoie"
+                ],
+                "en": [
+                  "Haute-Savoie"
+                ],
+                "it": [
+                  "Haute-Savoie"
+                ],
+                "fr": [
+                  "Haute-Savoie"
+                ],
+                "nl": [
+                  "Haute-Savoie"
+                ],
+                "es": [
+                  "Haute-Savoie"
+                ]
+              },
+              "insee": "74",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/edfb6ef1-26e5-3443-a886-17c7a86aa62b",
+        "schema:latitude": "46.082725",
+        "schema:longitude": "6.723369",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/6555d175-346f-3cf4-8153-958840591174",
+      "schema:email": [
+        "c.chenivesse@haut-giffre-tourisme.fr",
+        "communication@haut-giffre-tourisme.fr"
+      ],
+      "schema:legalName": "Haut-Giffre Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.haut-giffre.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-05-28",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.786Z"
+}

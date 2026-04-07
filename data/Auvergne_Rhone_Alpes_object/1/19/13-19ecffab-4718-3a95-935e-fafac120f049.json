@@ -1,0 +1,377 @@
+{
+  "@id": "https://data.datatourisme.fr/13/19ecffab-4718-3a95-935e-fafac120f049",
+  "dc:identifier": "7685088",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Inariya"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/c0e190d8-267e-3670-8f95-5d7ab048990d",
+    "dc:identifier": "219",
+    "schema:email": [
+      "c.abrioux@forez-est.com",
+      "e.joly@forez-est.com",
+      "i.lauvin@forez-est.com",
+      "l.gattuso@forez-est.com",
+      "l.rouchouse@forez-est.com",
+      "m.descours@forez-est.com"
+    ],
+    "schema:legalName": "Office de Tourisme Forez Est",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.rendezvousenforez.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/470612b7-f4e4-39fb-99ae-485687c09f51",
+      "schema:telephone": [
+        "+33 4 87 66 98 87"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:AsianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Asiatische Küche"
+        ],
+        "pt": [
+          "Cozinha asiática"
+        ],
+        "en": [
+          "Asian cuisine"
+        ],
+        "it": [
+          "Cucina asiatica"
+        ],
+        "fr": [
+          "Cuisine asiatique"
+        ],
+        "es": [
+          "Cocina asiática"
+        ],
+        "nl": [
+          "Aziatische keuken"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/1d6470d3-1d7b-3346-bc74-9c0b8b3885dd",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/d81e3f10-abd2-31ca-82ff-f495492a61e1",
+          "schema:addressLocality": "Veauche",
+          "schema:postalCode": "42340",
+          "schema:streetAddress": [
+            "1 avenue général de Gaulle"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:42323",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Veauche"
+              ],
+              "pt": [
+                "Veauche"
+              ],
+              "en": [
+                "Veauche"
+              ],
+              "it": [
+                "Veauche"
+              ],
+              "fr": [
+                "Veauche"
+              ],
+              "nl": [
+                "Veauche"
+              ],
+              "es": [
+                "Veauche"
+              ]
+            },
+            "insee": "42323",
+            "isPartOfDepartment": {
+              "@id": "kb:France8442",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Loire"
+                ],
+                "pt": [
+                  "Loire"
+                ],
+                "en": [
+                  "Loire"
+                ],
+                "it": [
+                  "Loire"
+                ],
+                "fr": [
+                  "Loire"
+                ],
+                "nl": [
+                  "Loire"
+                ],
+                "es": [
+                  "Loire"
+                ]
+              },
+              "insee": "42",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/7e1332d6-cb54-360e-b141-e76485979430",
+        "schema:latitude": "45.562026",
+        "schema:longitude": "4.277005",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/c5a488c3-e5c4-3cf1-b3ad-ea53a446fad9",
+      "schema:email": [
+        "e.joly@forez-est.com",
+        "i.lauvin@forez-est.com",
+        "l.gattuso@forez-est.com",
+        "m.descours@forez-est.com"
+      ],
+      "schema:legalName": "Office de Tourisme Forez Est",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.rendezvousenforez.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2026-02-17",
+  "lastUpdateDatatourisme": "2026-02-18T06:54:11.634Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/87a59afe-2908-354d-9d5f-1ea6c3524eaf",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/92fe45c0-fafb-3a02-bf49-e3a9536e5b0e",
+          "schema:maxPrice": [
+            "62"
+          ],
+          "schema:minPrice": [
+            "2.5"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:AlaCarte",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "A la carte"
+                ],
+                "pt": [
+                  "À escolha"
+                ],
+                "en": [
+                  "A la carte"
+                ],
+                "it": [
+                  "Alla carta"
+                ],
+                "fr": [
+                  "A la carte"
+                ],
+                "nl": [
+                  "À la carte"
+                ],
+                "es": [
+                  "A la carta"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:AsianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Asiatische Küche"
+        ],
+        "pt": [
+          "Cozinha asiática"
+        ],
+        "en": [
+          "Asian cuisine"
+        ],
+        "it": [
+          "Cucina asiatica"
+        ],
+        "fr": [
+          "Cuisine asiatique"
+        ],
+        "es": [
+          "Cocina asiática"
+        ],
+        "nl": [
+          "Aziatische keuken"
+        ]
+      }
+    }
+  ]
+}

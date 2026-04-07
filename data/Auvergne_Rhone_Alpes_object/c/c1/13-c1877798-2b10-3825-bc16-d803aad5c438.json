@@ -1,0 +1,329 @@
+{
+  "@id": "https://data.datatourisme.fr/13/c1877798-2b10-3825-bc16-d803aad5c438",
+  "dc:identifier": "4893116",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Le Dynamique"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/ec8ce6ab-b3e9-32a8-9b85-51ba726a1227",
+    "dc:identifier": "220",
+    "schema:email": [
+      "accueil-tourisme@ccpu.fr",
+      "amendes@roannais-tourisme.com",
+      "bmodenese@roannais-tourisme.com",
+      "claplace@roannais-tourisme.com",
+      "claroche@copler.fr",
+      "creynier@roannais-tourisme.com",
+      "fguerin@roannais-tourisme.com",
+      "lbruchet@roannais-tourisme.com",
+      "nberger@copler.fr",
+      "sbonnet@copler.fr",
+      "sscarciello@ot-roanne.fr",
+      "tourisme@ccvai.fr"
+    ],
+    "schema:legalName": "Roannais Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.roannais-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/9d3533d3-d6ea-358f-9960-f22ff15e92fa",
+      "schema:email": [
+        "vanessa.vallerie42@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 4 77 66 90 40",
+        "+33 6 08 96 22 83"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/3b9a93f1-7728-3b15-a856-790ff64b62bf",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/231e9212-f731-33aa-a9bc-5fa793da6ca7",
+          "schema:addressLocality": "Ouches",
+          "schema:postalCode": "42155",
+          "schema:streetAddress": [
+            "229 rue Principale"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:42162",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Ouches"
+              ],
+              "pt": [
+                "Ouches"
+              ],
+              "en": [
+                "Ouches"
+              ],
+              "it": [
+                "Ouches"
+              ],
+              "fr": [
+                "Ouches"
+              ],
+              "nl": [
+                "Ouches"
+              ],
+              "es": [
+                "Ouches"
+              ]
+            },
+            "insee": "42162",
+            "isPartOfDepartment": {
+              "@id": "kb:France8442",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Loire"
+                ],
+                "pt": [
+                  "Loire"
+                ],
+                "en": [
+                  "Loire"
+                ],
+                "it": [
+                  "Loire"
+                ],
+                "fr": [
+                  "Loire"
+                ],
+                "nl": [
+                  "Loire"
+                ],
+                "es": [
+                  "Loire"
+                ]
+              },
+              "insee": "42",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/4cde2c58-51ac-3f8f-b2d3-1689d8a30a24",
+        "schema:latitude": "46.016514",
+        "schema:longitude": "3.989082",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/a874ce0f-b014-36e0-85e1-dfdfc473ee3f",
+      "schema:email": [
+        "accueil-tourisme@ccpu.fr",
+        "amendes@roannais-tourisme.com",
+        "bmodenese@roannais-tourisme.com",
+        "claplace@roannais-tourisme.com",
+        "claroche@copler.fr",
+        "creynier@roannais-tourisme.com",
+        "fguerin@roannais-tourisme.com",
+        "lbruchet@roannais-tourisme.com",
+        "nberger@copler.fr",
+        "sbonnet@copler.fr",
+        "sscarciello@ot-roanne.fr",
+        "tourisme@ccvai.fr"
+      ],
+      "schema:legalName": "Roannais Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.roannais-tourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-09-12",
+  "lastUpdateDatatourisme": "2026-02-07T09:36:15.187Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ]
+}

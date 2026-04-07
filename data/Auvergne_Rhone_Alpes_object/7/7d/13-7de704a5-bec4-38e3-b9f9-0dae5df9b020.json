@@ -1,0 +1,407 @@
+{
+  "@id": "https://data.datatourisme.fr/13/7de704a5-bec4-38e3-b9f9-0dae5df9b020",
+  "dc:identifier": "31989",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "McDonald's Riorges"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/ec8ce6ab-b3e9-32a8-9b85-51ba726a1227",
+    "dc:identifier": "220",
+    "schema:email": [
+      "accueil-tourisme@ccpu.fr",
+      "amendes@roannais-tourisme.com",
+      "bmodenese@roannais-tourisme.com",
+      "claplace@roannais-tourisme.com",
+      "claroche@copler.fr",
+      "creynier@roannais-tourisme.com",
+      "fguerin@roannais-tourisme.com",
+      "lbruchet@roannais-tourisme.com",
+      "nberger@copler.fr",
+      "sbonnet@copler.fr",
+      "sscarciello@ot-roanne.fr",
+      "tourisme@ccvai.fr"
+    ],
+    "schema:legalName": "Roannais Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.roannais-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/3134f441-2532-3622-b3fb-69df15c213f7",
+      "schema:telephone": [
+        "+33 4 77 72 29 21"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:NorthAmericanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Nordamerikanische Küche"
+        ],
+        "pt": [
+          "Cozinha norte-americana"
+        ],
+        "en": [
+          "North american cuisine"
+        ],
+        "it": [
+          "Cucina nordamericana"
+        ],
+        "fr": [
+          "Cuisine nord-américaine"
+        ],
+        "nl": [
+          "Noord-Amerikaanse keuken"
+        ],
+        "es": [
+          "Cocina norteamericana"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/8bfe0059-4681-32ea-9bc4-15e01f2891b6",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/75dea529-aaaa-3baa-b9b3-ad02b70b17c6",
+          "schema:addressLocality": "Riorges",
+          "schema:postalCode": "42153",
+          "schema:streetAddress": [
+            "Centre Commercial Leclerc"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:42184",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Riorges"
+              ],
+              "pt": [
+                "Riorges"
+              ],
+              "en": [
+                "Riorges"
+              ],
+              "it": [
+                "Riorges"
+              ],
+              "fr": [
+                "Riorges"
+              ],
+              "nl": [
+                "Riorges"
+              ],
+              "es": [
+                "Riorges"
+              ]
+            },
+            "insee": "42184",
+            "isPartOfDepartment": {
+              "@id": "kb:France8442",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Loire"
+                ],
+                "pt": [
+                  "Loire"
+                ],
+                "en": [
+                  "Loire"
+                ],
+                "it": [
+                  "Loire"
+                ],
+                "fr": [
+                  "Loire"
+                ],
+                "nl": [
+                  "Loire"
+                ],
+                "es": [
+                  "Loire"
+                ]
+              },
+              "insee": "42",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/5efcc695-6505-364e-92f9-0864e6f08ad0",
+        "schema:latitude": "46.04601",
+        "schema:longitude": "4.053601",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/028e9318-0ea1-3f4c-820b-fb8089b4a057",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "7 Tage die Woche von 10:00 bis 23:00 Uhr und freitags und samstags bis Mitternacht"
+            ],
+            "en": [
+              "7 days a week from 10am to 11pm and until midnight on Fridays and Saturdays"
+            ],
+            "it": [
+              "7 giorni su 7, dalle 10 alle 23 e fino a mezzanotte il venerdì e il sabato"
+            ],
+            "fr": [
+              "7j/7 de 10h à 23h et jusqu'à minuit les vendredis et samedis"
+            ],
+            "nl": [
+              "7 dagen per week van 10 tot 23 uur en tot middernacht op vrijdag en zaterdag"
+            ],
+            "es": [
+              "7 días a la semana de 10 a 23 horas y hasta la medianoche los viernes y sábados"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/367cab07-0a3e-3cb3-8b0b-b751e0b45d38",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/3f5c99a6-db27-386b-a829-52af9afad9e2",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/5a23140a-24ce-3deb-9798-2c9a998d81d9",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/653e1d7e-df94-3c24-9b34-41a2c310a8ea",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f799d76b-2fed-3be0-a182-1853cd85c2b2",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/a874ce0f-b014-36e0-85e1-dfdfc473ee3f",
+      "schema:email": [
+        "accueil-tourisme@ccpu.fr",
+        "amendes@roannais-tourisme.com",
+        "bmodenese@roannais-tourisme.com",
+        "claplace@roannais-tourisme.com",
+        "claroche@copler.fr",
+        "creynier@roannais-tourisme.com",
+        "fguerin@roannais-tourisme.com",
+        "lbruchet@roannais-tourisme.com",
+        "nberger@copler.fr",
+        "sbonnet@copler.fr",
+        "sscarciello@ot-roanne.fr",
+        "tourisme@ccvai.fr"
+      ],
+      "schema:legalName": "Roannais Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.roannais-tourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2021-12-21",
+  "lastUpdateDatatourisme": "2026-02-07T09:36:15.188Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:NorthAmericanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Nordamerikanische Küche"
+        ],
+        "pt": [
+          "Cozinha norte-americana"
+        ],
+        "en": [
+          "North american cuisine"
+        ],
+        "it": [
+          "Cucina nordamericana"
+        ],
+        "fr": [
+          "Cuisine nord-américaine"
+        ],
+        "nl": [
+          "Noord-Amerikaanse keuken"
+        ],
+        "es": [
+          "Cocina norteamericana"
+        ]
+      }
+    }
+  ]
+}

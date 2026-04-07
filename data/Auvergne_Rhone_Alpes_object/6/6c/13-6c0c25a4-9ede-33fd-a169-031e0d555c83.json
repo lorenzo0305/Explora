@@ -1,0 +1,591 @@
+{
+  "@id": "https://data.datatourisme.fr/13/6c0c25a4-9ede-33fd-a169-031e0d555c83",
+  "dc:identifier": "5526975",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Bar & Restaurant täglich von 19:00 bis 02:00 Uhr geöffnet, samstags von 12:00 bis 14:00 Uhr / 19:00 bis 02:00 Uhr"
+    ],
+    "en": [
+      "Bar & Restaurant open from 12h to 02h every day"
+    ],
+    "it": [
+      "Bar & Ristorante aperto dalle 12:00 alle 02:00 tutti i giorni"
+    ],
+    "fr": [
+      "Bar & Restaurant ouvert de 19h à 02h tous les jours, et le samedi de 12H à 14H  / 19H à 02H"
+    ],
+    "es": [
+      "El bar y el restaurante abren todos los días de 19:00 a 2:00, y los sábados de 12:00 a 2:00 / de 19:00 a 2:00"
+    ],
+    "nl": [
+      "Bar & Restaurant dagelijks geopend van 19.00 tot 02.00 uur en op zaterdag van 12.00 tot 14.00 uur / 19.00 tot 02.00 uur"
+    ]
+  },
+  "rdfs:label": {
+    "en": [
+      "Restaurant QG"
+    ],
+    "it": [
+      "Ristorante QG"
+    ],
+    "fr": [
+      "Restaurant Le QG"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/beed1360-2b9b-3e6e-8b5b-568ff5058f07",
+    "dc:identifier": "383",
+    "schema:email": [
+      "jeanne.mounaut@les2alpes.com",
+      "loic.troitsky@les2alpes.com"
+    ],
+    "schema:legalName": "Office de Tourisme des 2 Alpes",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.les2alpes.com/fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/c1e68e99-d7f3-3f5b-812d-0edf88424d76",
+      "schema:email": [
+        "leqg.les2alpes@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 6 19 12 06 98",
+        "+33 6 42 20 28 47"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.facebook.com/leQGles2Alpes"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/eeb0789c-7977-3ba2-a923-cb2330fa5b5c",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/22f7f44b-ace5-3955-888f-9783e00e9b0c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d809c070-8f71-30eb-853c-b0aaea930f31",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e59738fd-6a52-38d9-a0c9-e9f8e956a1d3",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Bar & Restaurant täglich von 19:00 bis 02:00 Uhr geöffnet, samstags von 12:00 bis 14:00 Uhr / 19:00 bis 02:00 Uhr"
+        ],
+        "en": [
+          "Bar & Restaurant open from 12h to 02h every day"
+        ],
+        "it": [
+          "Bar & Ristorante aperto dalle 12:00 alle 02:00 tutti i giorni"
+        ],
+        "fr": [
+          "Bar & Restaurant ouvert de 19h à 02h tous les jours, et le samedi de 12H à 14H  / 19H à 02H"
+        ],
+        "es": [
+          "El bar y el restaurante abren todos los días de 19:00 a 2:00, y los sábados de 12:00 a 2:00 / de 19:00 a 2:00"
+        ],
+        "nl": [
+          "Bar & Restaurant dagelijks geopend van 19.00 tot 02.00 uur en op zaterdag van 12.00 tot 14.00 uur / 19.00 tot 02.00 uur"
+        ]
+      }
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    },
+    {
+      "@id": "kb:VegetarianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Vegetarische Küche"
+        ],
+        "pt": [
+          "Cozinha vegetariana"
+        ],
+        "en": [
+          "Vegetarian cuisine"
+        ],
+        "it": [
+          "Cucina vegetariana"
+        ],
+        "fr": [
+          "Cuisine végétarienne"
+        ],
+        "nl": [
+          "Vegetarische keuken"
+        ],
+        "es": [
+          "Cocina vegetariana"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/450bd046-b234-3713-82d6-33ba8de8b17f",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/665030be-4e92-31c2-8c1b-6d03b044818c",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/f8e359d2-8840-3320-a0eb-6e5e0363b341",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/cf517083-5bd5-394d-9ce7-1c8f15fb79e8",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/718f3d8d-99ad-341d-956d-246d3348888e",
+          "schema:addressLocality": "Les Deux Alpes",
+          "schema:postalCode": "38860",
+          "schema:streetAddress": [
+            "87 Avenue de la Muzelle"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:38253",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Les Deux Alpes"
+              ],
+              "pt": [
+                "Les Deux Alpes"
+              ],
+              "en": [
+                "Les Deux Alpes"
+              ],
+              "it": [
+                "Les Deux Alpes"
+              ],
+              "fr": [
+                "Les Deux Alpes"
+              ],
+              "nl": [
+                "Les Deux Alpes"
+              ],
+              "es": [
+                "Les Deux Alpes"
+              ]
+            },
+            "insee": "38253",
+            "isPartOfDepartment": {
+              "@id": "kb:France8438",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Isère"
+                ],
+                "pt": [
+                  "Isère"
+                ],
+                "en": [
+                  "Isère"
+                ],
+                "it": [
+                  "Isère"
+                ],
+                "fr": [
+                  "Isère"
+                ],
+                "nl": [
+                  "Isère"
+                ],
+                "es": [
+                  "Isère"
+                ]
+              },
+              "insee": "38",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/7e926168-eeff-328d-b4a1-31b09f73dd06",
+        "schema:elevation": "1650",
+        "schema:latitude": "45.008615",
+        "schema:longitude": "6.122355",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/6044fc32-522b-3425-ab64-fb1ec8b124d3",
+          "schema:closes": "02:00:00",
+          "schema:opens": "19:00:00",
+          "schema:validFrom": "2026-12-01T00:00:00",
+          "schema:validThrough": "2026-04-16T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Samstags auch von 12 bis 14 Uhr geöffnet"
+            ],
+            "en": [
+              "Saturday open from 12:00 to 14:00 also"
+            ],
+            "it": [
+              "Sabato aperto anche dalle 12.00 alle 14.00"
+            ],
+            "fr": [
+              "Le samedi ouvert de 12h à 14h également"
+            ],
+            "nl": [
+              "Zaterdag ook open van 12 tot 14 uur"
+            ],
+            "es": [
+              "Sábado abierto de 12 a 14 horas también"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/1e81fe66-1161-3ec2-ae93-ae5bcb2d4aa0",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/4ff1e116-4286-31bf-9e32-0fc3f31b9601",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/720de0c1-b7cc-3bd0-a564-f0146f7d8caf",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/86490c34-10eb-37c5-a004-7b4344e7844d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a6e522ce-9dae-3feb-a94a-ba9fc462935e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/ddbff2af-276d-3612-9692-2a505c4d8d07",
+      "schema:email": [
+        "jeanne.mounaut@les2alpes.com",
+        "loic.troitsky@les2alpes.com"
+      ],
+      "schema:legalName": "Office de Tourisme des 2 Alpes",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.les2alpes.com/fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-09-04",
+  "lastUpdateDatatourisme": "2026-01-01T06:52:10.356Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    },
+    {
+      "@id": "kb:VegetarianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Vegetarische Küche"
+        ],
+        "pt": [
+          "Cozinha vegetariana"
+        ],
+        "en": [
+          "Vegetarian cuisine"
+        ],
+        "it": [
+          "Cucina vegetariana"
+        ],
+        "fr": [
+          "Cuisine végétarienne"
+        ],
+        "nl": [
+          "Vegetarische keuken"
+        ],
+        "es": [
+          "Cocina vegetariana"
+        ]
+      }
+    }
+  ]
+}

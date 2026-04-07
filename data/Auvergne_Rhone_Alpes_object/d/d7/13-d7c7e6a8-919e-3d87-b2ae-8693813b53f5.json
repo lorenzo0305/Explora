@@ -1,0 +1,249 @@
+{
+  "@id": "https://data.datatourisme.fr/13/d7c7e6a8-919e-3d87-b2ae-8693813b53f5",
+  "dc:identifier": "4654118",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Les Gentianes"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/7940ab47-4683-3656-9a90-6f75ff3f20ef",
+    "dc:identifier": "1306",
+    "schema:email": [
+      "al.morge@sancy.com",
+      "i.gellion@sancy.com",
+      "n.lequillec@sancy.com",
+      "n.nouyers@sancy.com",
+      "n.teillot@sancy.com"
+    ],
+    "schema:legalName": "Office de Tourisme du Massif du Sancy",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.sancy.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/bfa4f7f0-eaf5-3097-bd6e-66b613cd6572",
+      "schema:telephone": [
+        "+33 4 73 79 50 94"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/44310047-351c-3e02-bb1c-f26925eed881",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/cf6f93cc-cd67-3674-a7d9-40db27c07d33",
+          "schema:addressLocality": "Besse-et-Saint-Anastaise",
+          "schema:postalCode": "63610",
+          "schema:streetAddress": [
+            "17 place de la Gayme"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:63038",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Besse-et-Saint-Anastaise"
+              ],
+              "pt": [
+                "Besse-et-Saint-Anastaise"
+              ],
+              "en": [
+                "Besse-et-Saint-Anastaise"
+              ],
+              "it": [
+                "Besse-et-Saint-Anastaise"
+              ],
+              "fr": [
+                "Besse-et-Saint-Anastaise"
+              ],
+              "nl": [
+                "Besse-et-Saint-Anastaise"
+              ],
+              "es": [
+                "Besse-et-Saint-Anastaise"
+              ]
+            },
+            "insee": "63038",
+            "isPartOfDepartment": {
+              "@id": "kb:France8463",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Puy-de-Dôme"
+                ],
+                "pt": [
+                  "Puy-de-Dôme"
+                ],
+                "en": [
+                  "Puy-de-Dôme"
+                ],
+                "it": [
+                  "Puy-de-Dôme"
+                ],
+                "fr": [
+                  "Puy-de-Dôme"
+                ],
+                "nl": [
+                  "Puy-de-Dôme"
+                ],
+                "es": [
+                  "Puy-de-Dôme"
+                ]
+              },
+              "insee": "63",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/ad5b3bc8-9cd9-3153-93ea-bb2b35931b64",
+        "schema:latitude": "45.511541",
+        "schema:longitude": "2.932817",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/473d363b-dcce-3461-98ba-edbf3114d33f",
+      "schema:email": [
+        "al.morge@sancy.com",
+        "i.gellion@sancy.com",
+        "n.lequillec@sancy.com",
+        "n.nouyers@sancy.com",
+        "n.teillot@sancy.com"
+      ],
+      "schema:legalName": "Office de Tourisme du Massif du Sancy",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.sancy.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2022-06-22",
+  "lastUpdateDatatourisme": "2026-01-08T06:51:58.39Z"
+}
