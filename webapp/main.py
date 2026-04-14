@@ -204,29 +204,29 @@ def _journey_doc(payload: dict[str, Any], journey_id: str) -> dict[str, Any]:
 
 @app.get("/")
 def home(request: Request):
-    return templates.TemplateResponse("Accueil.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="Accueil.html")
 
 
 @app.get("/accueil")
 def accueil(request: Request):
-    return templates.TemplateResponse("Accueil.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="Accueil.html")
 
 
 @app.get("/exploration")
 @app.get("/Destinations")
 def exploration(request: Request):
-    return templates.TemplateResponse("Exploration.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="Exploration.html")
 
 
 @app.get("/region/{region_slug}")
 def region_page(request: Request, region_slug: str):
-    return templates.TemplateResponse("Region.html", {"request": request, "region": region_slug})
+    return templates.TemplateResponse(request=request, name="Region.html", context={"region": region_slug})
 
 
 @app.get("/carnet")
 @app.get("/topics")
 def carnet(request: Request):
-    return templates.TemplateResponse("Carnet.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="Carnet.html")
 
 
 @app.get("/creation")
@@ -235,28 +235,31 @@ def carnet(request: Request):
 @app.get("/makejourney/{journey_id}")
 def creation(request: Request, journey_id: str | None = None):
     return templates.TemplateResponse(
-        "Creation.html",
-        {"request": request, "journey_id": journey_id or ""},
+        request=request,
+        name="Creation.html",
+        context={"journey_id": journey_id or ""},
     )
 
 
 @app.get("/voyage")
 @app.get("/Voyage.html")
 def voyage_page(request: Request):
-    return templates.TemplateResponse("Voyage.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="Voyage.html")
 
 @app.get("/journeys/view/{journey_id}")
 def journey_view(request: Request, journey_id: str):
     return templates.TemplateResponse(
-        "ViewJourney.html",
-        {"request": request, "journey_id": journey_id},
+        request=request,
+        name="ViewJourney.html",
+        context={"journey_id": journey_id},
     )
 
 @app.get("/journeys/view/{journey_id}/day/{day_index}")
 def journey_day_view(request: Request, journey_id: str, day_index: int):
     return templates.TemplateResponse(
-        "ViewJourneyDay.html",
-        {"request": request, "journey_id": journey_id, "day": day_index},
+        request=request,
+        name="ViewJourneyDay.html",
+        context={"journey_id": journey_id, "day": day_index},
     )
 
 @app.get("/object/{object_id:path}")
@@ -273,7 +276,7 @@ def object_page(request: Request, object_id: str):
         "image": _pick_image(doc),
         "descriptions": _get_descriptions(doc),
     }
-    return templates.TemplateResponse("DetailActPerso.html", context)
+    return templates.TemplateResponse(request=request, name="DetailActPerso.html", context=context)
 
 
 @app.get("/objects/{object_id:path}")
