@@ -6,7 +6,7 @@ from datetime import datetime
 # --- CONFIGURATION ---
 BASE_DIR = Path(__file__).resolve().parent
 DOSSIER_SOURCE = BASE_DIR / "Hauts_de_France_object"
-FICHIER_SORTIE = BASE_DIR / "Haut_de_France_propre_intersaison.json"
+FICHIER_SORTIE = BASE_DIR / "Haut_de_France_finale.json"
 
 # --- LE DICTIONNAIRE OFFICIEL (Inchangé) ---
 DICTIONNAIRE_CATEGORIES = {
@@ -114,50 +114,6 @@ for chemin_fichier in fichiers_json:
         if not categories_trouvees:
             categories_trouvees.append("autre")
 
-        # --- CALCUL DURÉE ---
-        nb_mois = None
-        mois_debut = None
-        offres = data.get("offers", [])
-        if offres:
-            specs = offres[0].get("schema:priceSpecification", [])
-            if specs:
-                periodes = specs[0].get("appliesOnPeriod", [])
-                if periodes:
-                    start = periodes[0].get("startDate", "")
-                    end = periodes[0].get("endDate", "")
-                    if start and end:
-                        nb_mois, mois_debut = calculer_duree_mois(start, end)
-
-        # --- LOGIQUE SAISONNIÈRE ---
-        est_sport_nature = any(c in ["sport", "nature"] for c in categories_trouvees)
-        saison_finale = "toute l'année"
-
-        if nb_mois is not None:
-            if est_sport_nature:
-                if nb_mois < 4:
-                    saison_finale = "hiver" if mois_debut in [11, 12, 1, 2] else "été"
-                elif 4 <= nb_mois <= 8:
-                    saison_finale = "Intersaison (sport/nature)"
-                else:
-                    saison_finale = "toute l'année (sport/nature)"
-            else:
-                # Autres catégories (Culture, Gastronomie, Détente...)
-                if nb_mois > 8:
-                    saison_finale = "toute l'année(Autres)"
-                else:
-                    saison_finale = "Intersaison (Autres)"
-        else:
-            # Sécurité si pas de dates : on regarde les tags prioritaires
-            if any(t in ["SkiResort", "DownhillSkiRun"] for t in tags_officiels):
-                saison_finale = "hiver"
-
-        # --- SÉCURITÉ MOTS-CLÉS (Correction des anomalies comme le Bowling ou Balicina) ---
-        nom_l = nom.lower()
-        if any(w in nom_l for w in ["bowling", "cinéma", "spa", "balnéo", "billard"]):
-            saison_finale = "toute l'année"
-            if "spa" in nom_l or "balnéo" in nom_l:
-                if "détente" not in categories_trouvees: categories_trouvees.append("détente")
-
         # --- LOCALISATION & CONTACT (Ton code d'origine) ---
         ville, cp, adresse, region, lat, lon = "", "", "", "", "", ""
         is_located = data.get("isLocatedAt", [])
@@ -184,7 +140,6 @@ for chemin_fichier in fichiers_json:
         activite = {
             "nom": nom,
             "categories": categories_trouvees,
-            "saison": saison_finale,
             "adresse": adresse,
             "code_postal": cp,
             "ville": ville,
