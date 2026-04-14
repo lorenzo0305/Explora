@@ -6,7 +6,7 @@ from datetime import datetime
 # --- CONFIGURATION ---
 BASE_DIR = Path(__file__).resolve().parent
 DOSSIER_SOURCE = BASE_DIR / "Auvergne_Rhone_Alpes_object"
-FICHIER_SORTIE = BASE_DIR / "Auvergne_Rhone_Alpes_propre_intersaison.json"
+FICHIER_SORTIE = BASE_DIR / "Auvergne_Rhone_Alpes_finale.json"
 
 # --- LE DICTIONNAIRE OFFICIEL (Inchangé) ---
 DICTIONNAIRE_CATEGORIES = {
