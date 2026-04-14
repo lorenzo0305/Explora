@@ -116,6 +116,34 @@
 
                 </form>
 
+                <section class="planner-panel" aria-label="Planification des journées">
+                    <div class="planner-header">
+                        <h3 class="planner-title">Planification des journées</h3>
+                        <div class="planner-actions">
+                            <button id="basketIcon" class="basket-btn" type="button" title="Panier">
+                                🧺 <span id="basketCount" hidden>0</span>
+                            </button>
+                            <div id="floatingBasket" aria-live="polite"></div>
+                        </div>
+                    </div>
+
+                    <p class="planner-help">Glissez une activité du panier vers un créneau. Vous pouvez déplacer une activité d'un créneau à un autre, ou la retirer.</p>
+
+                    <div id="daysRoot">
+                        <h4 class="day-title">Journée 1</h4>
+                        <section class="day-section" data-day="1">
+                            <div class="slots">
+                                <div class="slot" data-key="morning"><h5>Matinée</h5><div class="drop-hint">Déposez vos activités ici</div></div>
+                                <div class="slot" data-key="noon"><h5>Midi</h5><div class="drop-hint">Déposez vos activités ici</div></div>
+                                <div class="slot" data-key="afternoon"><h5>Après-midi</h5><div class="drop-hint">Déposez vos activités ici</div></div>
+                                <div class="slot" data-key="evening"><h5>Soirée</h5><div class="drop-hint">Déposez vos activités ici</div></div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <button id="addDayBtn" class="add-day-btn" type="button">+ Ajouter une journée</button>
+                </section>
+
             </div>
         </div>
 

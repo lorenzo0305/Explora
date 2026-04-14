@@ -115,6 +115,219 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// ==========================================
+// PLANIFICATION JOURNEE (PANIER + DRAG & DROP)
+// ==========================================
+(function initPlanner() {
+    const basketIcon = document.getElementById('basketIcon');
+    const basketCount = document.getElementById('basketCount');
+    const floatingBasket = document.getElementById('floatingBasket');
+    const daysRoot = document.getElementById('daysRoot');
+    const addDayBtn = document.getElementById('addDayBtn');
+    const BASKET_KEY = 'wish_basket_v1';
+
+    // Si les éléments de planification n'existent pas sur la page, on ne fait rien.
+    if (!basketIcon || !basketCount || !floatingBasket || !daysRoot || !addDayBtn) return;
+
+    let draggingEl = null;
+
+    function loadBasket() {
+        try {
+            const raw = localStorage.getItem(BASKET_KEY);
+            return raw ? JSON.parse(raw) : [];
+        } catch (e) {
+            return [];
+        }
+    }
+
+    function saveBasket(items) {
+        localStorage.setItem(BASKET_KEY, JSON.stringify(items));
+        updateBasketCount();
+        renderBasketPanel();
+    }
+
+    function updateBasketCount() {
+        const n = loadBasket().length;
+        basketCount.textContent = n;
+        basketCount.hidden = n === 0;
+    }
+
+    function removeFromBasket(id) {
+        const items = loadBasket().filter(x => String(x.id) !== String(id));
+        saveBasket(items);
+    }
+
+    function renderBasketPanel() {
+        const items = loadBasket();
+        if (!items.length) {
+            floatingBasket.innerHTML = '<h4>Votre panier</h4><p class="basket-empty">Aucun élément pour l\'instant.</p>';
+            return;
+        }
+
+        const list = items.map(x => (
+            `<div class="basket-item" draggable="true" data-id="${x.id}" data-name="${x.name || 'Sans nom'}" data-image="${x.image || '/static/img/no-image.jpg'}">
+              <img src="${x.image || '/static/img/no-image.jpg'}" alt="">
+              <div>
+                <div class="bi-name">${x.name || 'Sans nom'}</div>
+                <div class="bi-meta">${(x.types && x.types[0]) ? x.types[0] : ''}</div>
+              </div>
+              <button class="bi-remove" data-id="${x.id}">Retirer</button>
+            </div>`
+        )).join('');
+
+        floatingBasket.innerHTML = '<h4>Votre panier</h4>' + list;
+
+        floatingBasket.querySelectorAll('.bi-remove').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                removeFromBasket(btn.getAttribute('data-id'));
+            });
+        });
+
+        floatingBasket.querySelectorAll('.basket-item[draggable="true"]').forEach(row => {
+            row.addEventListener('dragstart', (e) => {
+                const data = {
+                    id: row.dataset.id,
+                    name: row.dataset.name,
+                    image: row.dataset.image
+                };
+                try {
+                    e.dataTransfer.setData('application/x-basket-item', JSON.stringify(data));
+                    e.dataTransfer.effectAllowed = 'copy';
+                } catch (err) {}
+            });
+        });
+    }
+
+    function updateDropHints() {
+        document.querySelectorAll('.slot').forEach(slot => {
+            const hint = slot.querySelector('.drop-hint');
+            if (!hint) return;
+            hint.style.display = slot.querySelector('.activity') ? 'none' : 'block';
+        });
+    }
+
+    function createActivityElement(item) {
+        const el = document.createElement('div');
+        el.className = 'activity';
+        el.draggable = true;
+        el.dataset.id = String(item.id || '');
+        el.dataset.name = item.name || '';
+        el.dataset.image = item.image || '/static/img/no-image.jpg';
+
+        const imgSrc = item.image || '/static/img/no-image.jpg';
+        el.innerHTML = `<img alt="" src="${imgSrc}"><span>${item.name || ('#' + (item.id || '?'))}</span><button class="remove" title="Supprimer">✕</button>`;
+
+        el.addEventListener('dragstart', (e) => {
+            draggingEl = el;
+            try {
+                e.dataTransfer.setData('text/x-activity', 'move');
+                e.dataTransfer.effectAllowed = 'move';
+            } catch (err) {}
+        });
+
+        el.addEventListener('dragend', () => {
+            draggingEl = null;
+            document.querySelectorAll('.slot.drag-over').forEach(s => s.classList.remove('drag-over'));
+        });
+
+        const rm = el.querySelector('.remove');
+        if (rm) {
+            rm.addEventListener('click', () => {
+                el.parentElement?.removeChild(el);
+                updateDropHints();
+            });
+        }
+        return el;
+    }
+
+    function wireSlot(slot) {
+        slot.addEventListener('dragenter', (e) => {
+            e.preventDefault();
+            slot.classList.add('drag-over');
+        });
+        slot.addEventListener('dragleave', () => slot.classList.remove('drag-over'));
+        slot.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            slot.classList.add('drag-over');
+            if (e.dataTransfer) e.dataTransfer.dropEffect = draggingEl ? 'move' : 'copy';
+        });
+        slot.addEventListener('drop', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            slot.classList.remove('drag-over');
+
+            if (draggingEl) {
+                slot.appendChild(draggingEl);
+                updateDropHints();
+                return;
+            }
+
+            try {
+                const data = e.dataTransfer.getData('application/x-basket-item');
+                if (data) {
+                    const item = JSON.parse(data);
+                    slot.appendChild(createActivityElement(item));
+                    updateDropHints();
+                }
+            } catch (err) {}
+        });
+    }
+
+    function createDaySection(dayNumber) {
+        const title = document.createElement('h4');
+        title.className = 'day-title';
+        title.textContent = 'Journée ' + dayNumber;
+
+        const sec = document.createElement('section');
+        sec.className = 'day-section';
+        sec.dataset.day = String(dayNumber);
+        sec.innerHTML = `
+            <div class="slots">
+                <div class="slot" data-key="morning"><h5>Matinée</h5><div class="drop-hint">Déposez vos activités ici</div></div>
+                <div class="slot" data-key="noon"><h5>Midi</h5><div class="drop-hint">Déposez vos activités ici</div></div>
+                <div class="slot" data-key="afternoon"><h5>Après-midi</h5><div class="drop-hint">Déposez vos activités ici</div></div>
+                <div class="slot" data-key="evening"><h5>Soirée</h5><div class="drop-hint">Déposez vos activités ici</div></div>
+            </div>`;
+
+        daysRoot.appendChild(title);
+        daysRoot.appendChild(sec);
+        sec.querySelectorAll('.slot').forEach(wireSlot);
+        updateDropHints();
+    }
+
+    basketIcon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const visible = floatingBasket.style.display === 'block';
+        floatingBasket.style.display = visible ? 'none' : 'block';
+        if (!visible) renderBasketPanel();
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!floatingBasket.contains(e.target) && e.target !== basketIcon) {
+            floatingBasket.style.display = 'none';
+        }
+    });
+
+    document.querySelectorAll('.slot').forEach(wireSlot);
+
+    addDayBtn.addEventListener('click', () => {
+        const n = daysRoot.querySelectorAll('.day-section').length + 1;
+        createDaySection(n);
+    });
+
+    window.addEventListener('storage', (e) => {
+        if (e.key === BASKET_KEY) {
+            updateBasketCount();
+            renderBasketPanel();
+        }
+    });
+
+    updateBasketCount();
+    renderBasketPanel();
+    updateDropHints();
+})();
+
 /* ========= Clés & helpers =========
 const BASKET_KEY = 'wish_basket_v1';
 const LIKES_KEY = 'wish_likes_v1';

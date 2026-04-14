@@ -248,6 +248,225 @@ input[type=range]::-moz-range-thumb {
     transform: translateY(0);
 }
 
+.planner-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 18px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.planner-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.planner-title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.planner-help {
+    margin: 0;
+    color: var(--text-dim);
+    font-size: 13px;
+}
+
+.planner-actions {
+    position: relative;
+}
+
+.basket-btn {
+    background: rgba(255, 255, 255, .08);
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#basketCount {
+    font-size: 11px;
+    background: var(--accent);
+    color: #190028;
+    border-radius: 999px;
+    padding: 2px 6px;
+    font-weight: 800;
+}
+
+#floatingBasket {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: min(420px, 80vw);
+    max-height: min(60vh, 460px);
+    overflow: auto;
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 10px;
+    display: none;
+    z-index: 50;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, .45);
+}
+
+#floatingBasket h4 {
+    margin: 6px 0 8px;
+    font-size: 14px;
+    opacity: .9;
+}
+
+.basket-empty {
+    color: var(--text-dim);
+    font-size: 13px;
+    margin: 6px 0;
+}
+
+.basket-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, .04);
+    margin-bottom: 6px;
+    cursor: grab;
+}
+
+.basket-item img {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.basket-item .bi-name {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.basket-item .bi-meta {
+    font-size: 11px;
+    opacity: .75;
+}
+
+.basket-item .bi-remove {
+    margin-left: auto;
+    background: rgba(255, 255, 255, .08);
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.day-title {
+    margin: 6px 0 6px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.day-section {
+    margin-bottom: 8px;
+}
+
+.slots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.slot {
+    min-height: 150px;
+    border-radius: 12px;
+    padding: 10px;
+    background: rgba(255, 255, 255, .02);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .06);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.slot h5 {
+    margin: 0 0 4px 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-dim);
+}
+
+.slot.drag-over {
+    outline: 2px dashed rgba(255, 255, 255, .45);
+    outline-offset: 2px;
+}
+
+.drop-hint {
+    font-size: 12px;
+    color: var(--text-dim);
+    opacity: .8;
+}
+
+.activity {
+    background: rgba(255, 255, 255, .06);
+    padding: 6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: grab;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05);
+}
+
+.activity img {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.activity span {
+    color: #fff;
+    font-size: 13px;
+}
+
+.activity .remove {
+    margin-left: auto;
+    background: rgba(255, 255, 255, .12);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.add-day-btn {
+    margin-top: 6px;
+    align-self: stretch;
+    background: rgba(255, 255, 255, .08);
+    color: #fff;
+    border: 1px dashed rgba(255, 255, 255, .25);
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .slots {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Bottom Nav */
 nav.bottom-nav {
     position: fixed;
