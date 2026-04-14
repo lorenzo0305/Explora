@@ -129,18 +129,6 @@ services:
       "set -e; \
        echo '📥 Import Mongo…' && \
        python /app/webapp/mongo_object.py && \
-       echo '🖼 Attache Photothèque…' && \
-       python /app/webapp/attach_phototheque_zip.py \
-         --images-dir /app/webapp/static/img/phototheque \
-         --xlsx /app/webapp/static/img/phototheque/phototheque.auvergnerhonealpes-tourisme.com-20250909-143729.xlsx \
-         --mongo mongodb://mongo:27017/LORA_voyage \
-         --base-url /static/img/phototheque \
-         --region 'Auvergne-Rhône-Alpes' \
-         --min-score 85 \
-         --topk 1 \
-         --force && \
-       echo '🧭 Indexation Elasticsearch…' && \
-       python /app/webapp/es_indexer.py --es http://elasticsearch:9200 && \
        echo '✅ Init terminé.'"
     ]
     restart: "no"
@@ -173,51 +161,6 @@ services:
     command: ["sh","/app/webapp/static/scripts/enrichisseur.sh"]
     restart: "no"
 
-  attach_photos:
-    build:
-      context: ./
-    working_dir: /app/webapp
-    depends_on:
-      mongo:
-        condition: service_healthy
-      initdb:
-        condition: service_completed_successfully
-    environment:
-      - MONGO_URI=mongodb://mongo:27017/LORA_voyage
-    volumes:
-      - ./webapp:/app/webapp
-      - ./data:/app/data:ro
-    command: [
-      "python","attach_phototheque_zip.py",
-      "--images-dir","/app/webapp/static/img/phototheque",
-      "--xlsx","/app/webapp/static/img/phototheque/phototheque.auvergnerhonealpes-tourisme.com-20250909-143729.xlsx",
-      "--mongo","mongodb://mongo:27017/LORA_voyage",
-      "--base-url","/static/img/phototheque",
-      "--region","Auvergne-Rhône-Alpes",
-      "--min-score","78"
-    ]
-    restart: "no"
-
-  reindex:
-      profiles: ["manual"]
-      build:
-        context: ./
-      working_dir: /app/webapp
-      depends_on:
-        elasticsearch:
-          condition: service_healthy
-        mongo:
-          condition: service_healthy
-      environment:
-        - PYTHONUNBUFFERED=1
-        - MONGO_URI=mongodb://mongo:27017/LORA_voyage
-        - MONGO_DB=LORA_voyage
-        - MONGO_COLLECTION=objects
-        - ES_HOST=http://elasticsearch:9200
-      volumes:
-        - ./webapp:/app/webapp:ro
-      command: ["python","es_indexer.py","--es","http://elasticsearch:9200"]
-      restart: "no"
 
 volumes:
   mongo_data:
