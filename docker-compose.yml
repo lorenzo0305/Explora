@@ -119,11 +119,11 @@ services:
       - MONGO_DB=LORA_voyage
       - MONGO_COLLECTION=objects
       - ES_HOST=http://elasticsearch:9200
-      - REGION_FILES=Auvergne-Rhône-Alpes.json,Hauts-de-France.json
+      - REGION_FILES= Auvergne_Rhone_Alpes_finale.json, Haut_de_France_finale.json 
     volumes:
       - ./data/full_france_object/objects:/app/data/full_france_object/objects:ro
-      - ./data/Auvergne-Rhône-Alpes.json:/app/data/Auvergne-Rhône-Alpes.json:ro
-      - ./data/Hauts-de-France.json:/app/data/Hauts-de-France.json:ro
+      - ./data/Auvergne_Rhone_Alpes_finale.json:/app/data/Auvergne_Rhone_Alpes_finale.json:ro
+      - ./data/Haut_de_France_finale.json:/app/data/Haut_de_France_finale.json:ro
 
     command: [
       "sh","-lc",

@@ -4,117 +4,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WishAdventure — Accueil</title>
+  <title>Explora — Accueil</title>
   <link rel="stylesheet" href="/static/styles/app.css">
   <link rel="stylesheet" href="/static/styles/Accueil.css">
   <script src="/static/scripts/Accueil.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lora:wght@400;500&family=Montserrat:wght@900&family=Playfair+Display:ital,wght@1,600&family=Alex+Brush&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
   <div class="app-frame">
-    <div class="content-panel" style="padding-top: 0; padding-left: 0; padding-right: 0;">
+    
+    <nav class="top-nav">
+      <div class="nav-logo"><span class="logo-fill">EXP</span><span class="logo-outline">LORA</span></div>
+      
+      <div class="nav-links">
+        <a href="/" class="active">Accueil</a>
+        <a href="/makejourney">Créer mon voyage</a>
+        <a href="/Destinations">Catalogue d'activités</a>
+        <a href="/topics">Mes voyages</a>
+      </div>
+      <div class="nav-actions">
+        <div style="position: relative;">
+          <button id="likesIcon" class="action-btn" type="button" title="Mes Favoris">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span id="likesCount" class="badge pink" hidden>0</span>
+          </button>
+          <div id="floatingLikes" class="floating-panel" aria-live="polite"></div>
+        </div>
 
-      <div style="position: relative; width: 100%; height: 35vh; min-height: 250px;">
-        <img src="/static/img/accueil.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-        <div
-          style="position: absolute; inset: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center;">
-          <h1
-            style="color: #FFF; font-size: 3.5rem; font-weight: 800; letter-spacing: 3px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); margin: 0;">
-            EXPLORA</h1>
+        <div style="position: relative;">
+          <button id="basketIcon" class="action-btn" type="button" title="Panier">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
+            <span id="basketCount" class="badge" hidden>0</span>
+          </button>
+          <div id="floatingBasket" class="floating-panel" aria-live="polite"></div>
         </div>
       </div>
+    </nav>
 
-      <div class="content-inner" style="padding: 20px;">
+    <div class="content-panel">
 
-        <div class="header-row" style="display: none;">
-          <div class="header-greeting">
-            <svg class="avatar-icon" viewBox="0 0 24 24">
-              <path
-                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-            </svg>
-            <div class="greeting-text">Bonjour</div>
+      <section class="hero-split">
+        <div class="hero-text-content">
+          
+          <div class="typography-overlap">
+            <img src="/static/img/france_haut.png" class="france-part france-top" alt="">
+            
+            <h1 class="bold-heading">LE VOYAGE</h1>
+            <span class="script-heading">sur-mesure</span>
+
+            <img src="/static/img/france_bas.png" class="france-part france-bottom" alt="">
           </div>
-
-          <div class="actions">
-            <button id="likesIcon" class="action-btn" type="button" title="Mes Favoris">
-              ❤️ <span id="likesCount" class="badge pink" hidden>0</span>
-            </button>
-            <div id="floatingLikes" class="floating-panel" aria-live="polite"></div>
-
-            <button id="basketIcon" class="action-btn" type="button" title="Panier">
-              🧺 <span id="basketCount" class="badge" hidden>0</span>
-            </button>
-            <div id="floatingBasket" class="floating-panel" aria-live="polite"></div>
-          </div>
-        </div>
-
-
-
-        <div class="presentation-panel">
-          <div class="title">Bienvenue sur Explora <br>Nous créons votre voyage de rêve !</div>
-          <div class="desc">
-            Découvrez des destinations inoubliables, planifiées sur mesure selon vos envies. Laissez-nous vous guider
-            vers votre prochaine aventure.
+          
+          <p class="hero-description">
+            Découvrez la France autrement. Que vous cherchiez des trésors cachés ou des lieux incontournables, notre intelligence artificielle conçoit pour vous un itinéraire entièrement sur mesure, basé sur vos envies du moment.
+            <br><br>
+            Vous préférez garder le contrôle ? Piochez directement dans notre catalogue exclusif d'activités insolites pour façonner le voyage qui vous ressemble vraiment.
+          </p>
+          
+          <div class="hero-buttons">
+            <a href="/makejourney" class="btn-primary">Générer mon voyage</a>
+            <a href="/Destinations" class="btn-secondary">Explorer le catalogue</a>
           </div>
         </div>
 
+        <div class="hero-gallery">
+          
+          <div class="polaroid p1">
+            <img src="/static/img/annecy.jpg" alt="Annecy" onclick="openLightbox(this.src)">
+            <div class="location-text">Annecy, Haute-Savoie</div>
+          </div>
 
+          <div class="polaroid p2">
+            <img src="/static/img/bretagne.jpg" alt="Bretagne" onclick="openLightbox(this.src)">
+            <div class="location-text">Côtes d'Armor</div>
+          </div>
 
-        <div class="how-it-works-panel">
-          <div class="hiw-title">Comment ça marche ?</div>
-          <div class="hiw-steps">
-            <div class="hiw-step">
-              <div class="hiw-icon">💡</div>
-              <div class="hiw-text">
-                <strong>1. Allez dans l'onglet Creation</strong>
-              </div>
+          <div class="polaroid p3">
+            <img src="/static/img/nice.jpg" alt="Nice" onclick="openLightbox(this.src)">
+            <div class="location-text">Nice, Côte d'Azur</div>
+          </div>
+
+          <div class="polaroid p4">
+            <img src="/static/img/hospices_beaune.jpg" alt="Hospices de Beaune" onclick="openLightbox(this.src)">
+            <div class="location-text">Hospices de Beaune</div>
+          </div>
+
+          <div class="polaroid p5">
+            <img src="/static/img/montagne_france.jpg" alt="Montagne" onclick="openLightbox(this.src)">
+            <div class="location-text">Massif du Mont-Blanc</div>
+          </div>
+
+          <div class="polaroid p6">
+            <img src="/static/img/alsace.jpg" alt="Alsace" onclick="openLightbox(this.src)">
+            <div class="location-text">Colmar, Alsace</div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="content-inner">
+        <div class="steps-section">
+          <h3 class="section-title">Comment concevoir votre aventure ?</h3>
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <h4>Vos envies</h4>
+              <p>Renseignez vos critères : dates, rythme souhaité, type de paysages et budget.</p>
             </div>
-            <div class="hiw-step">
-              <div class="hiw-icon">🗺️</div>
-              <div class="hiw-text">
-                <strong>2. Entrez vos critères de préférences pour votre voyage</strong>
-              </div>
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <h4>La magie de l'IA</h4>
+              <p>L'algorithme analyse vos goûts et vous propose une trame d'itinéraire inédite.</p>
             </div>
-            <div class="hiw-step">
-              <div class="hiw-icon">🚀</div>
-              <div class="hiw-text">
-                <strong>3. Appuyez sur soumettre et laisser la magie opérer</strong>
-              </div>
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <h4>Personnalisation</h4>
+              <p>Ajoutez ou retirez des activités depuis notre banque de données pour un carnet parfait.</p>
             </div>
           </div>
         </div>
 
-        <div class="section">
-          <div class="section-title">Récemment vus !</div>
+        <div class="section recent-section">
+          <h3 class="section-title">Inspirations récentes</h3>
           <div id="recentList" class="featured-list"></div>
-          <p id="recentEmpty" class="section-subtitle" style="display:none;opacity:.8;">Aucun voyage pour le moment.</p>
+          <p id="recentEmpty" class="section-subtitle" style="display:none; opacity:.7;">Aucun voyage consulté pour le moment.</p>
         </div>
-
       </div>
     </div>
-
-    <nav class="bottom-nav" style="position: relative; z-index: 10;">
-      <a href="/" class="bouton"><button class="boutonNav active"><svg class="nav-icon" viewBox="0 0 24 24">
-            <path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z" />
-          </svg>Accueil</button></a>
-      <a href="/Destinations" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="6"></circle>
-            <path d="M20 20l-3.5-3.5" stroke="white" stroke-width="2" stroke-linecap="round" fill="none" />
-          </svg>Exploration</button></a>
-      <a href="/topics" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24">
-            <path d="M5 4h11a2 2 0 0 1 2 2v12H7a2 2 0 0 1-2-2V4z" />
-            <rect x="3" y="6" width="2" height="12" rx="1" ry="1" />
-            <path d="M8 8h7M8 11h7M8 14h5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" />
-          </svg>Carnet</button></a>
-      <a href="/makejourney" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24">
-            <path
-              d="M12 2a6 6 0 0 0-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 0 0-6-6zm0 8.5A2.5 2.5 0 1 1 12 5.5a2.5 2.5 0 0 1 0 5z" />
-            <path d="M15.2 14.2l3.2 3.2-2.3 0.5-1.4 1.4-0.5-2.3 1-1z" />
-          </svg>Création</button></a>
-    </nav>
   </div>
-</body>
 
+  <div id="lightbox" class="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="" alt="Agrandissement">
+  </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+  </script>
+</body>
 </html>
