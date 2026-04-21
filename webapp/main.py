@@ -226,8 +226,11 @@ def region_page(request: Request, region_slug: str):
 @app.get("/carnet")
 @app.get("/topics")
 def carnet(request: Request):
-    return templates.TemplateResponse(request=request, name="Carnet.html")
+    return templates.TemplateResponse(request=request, name="MesVoyages.html")
 
+@app.get("/editeur")
+def editeur_page(request: Request):
+    return templates.TemplateResponse(request=request, name="Editeur.html")
 
 @app.get("/creation")
 @app.get("/makejourney")

@@ -1,0 +1,193 @@
+:root {
+    --bg-color: #FAF8F5; 
+    --text-main: #1C1C1C; 
+    --border-light: #D4C3B3;
+    --accent-vivid: #FF6F61; /* Corail */
+}
+
+body { margin: 0; background-color: #EAE6DF !important; font-family: 'Lora', serif; overflow-x: hidden;}
+.app-frame { display: flex; flex-direction: column; min-height: 100vh; }
+
+/* NAVIGATION */
+.top-nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(250, 248, 245, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 2000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; }
+.logo-fill { color: var(--text-main); } .logo-outline { color: transparent; -webkit-text-stroke: 1px var(--text-main); }
+.nav-links { display: flex; gap: 35px; }
+.nav-links a { text-decoration: none; color: #505050; font-weight: 500; font-size: 15px; transition: color 0.2s; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
+.nav-links a:hover, .nav-links a.active { color: #8B1D2B; font-weight: 600; }
+.nav-actions { display: flex; gap: 15px; align-items: center; }
+.action-btn { background: transparent; color: var(--text-main); border: none; padding: 8px; cursor: pointer; transition: transform 0.2s;}
+.action-btn:hover { color: #8B1D2B; transform: scale(1.1); }
+
+/* LAYOUT EN 2 COLONNES */
+.editor-layout { display: flex; flex: 1; width: 100%; max-width: 1600px; margin: 0 auto; align-items: flex-start;}
+
+/* =========================================
+   COLONNE GAUCHE (PANIER)
+========================================= */
+.sidebar-photos {
+    width: 260px; padding: 40px 15px; 
+    border-right: 1px solid rgba(0,0,0,0.06);
+    position: sticky; top: 85px; 
+    height: calc(100vh - 85px); overflow-y: auto;
+    scrollbar-width: none; background: #FAF8F5; 
+    transition: background 0.2s; z-index: 100;
+}
+
+.photo-stack-header { margin-bottom: 30px; text-align: center; }
+.script-decoration-small { font-family: 'Alex Brush', cursive; font-size: 2.2rem; color: var(--accent-vivid); display: block; margin-bottom: -10px; }
+.photo-stack-header h3 { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 900; color: var(--text-main); margin: 0; letter-spacing: 2px;}
+
+.polaroid-list { display: flex; flex-direction: column; gap: 15px; align-items: center; min-height: 200px;}
+
+.draggable-item {
+    background: white; padding: 8px 8px 25px 8px; border-radius: 2px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06); width: 100%; max-width: 200px;
+    cursor: grab; position: relative; transition: transform 0.3s, box-shadow 0.3s;
+}
+.draggable-item:hover { transform: scale(1.03); z-index: 10; box-shadow: 0 10px 25px rgba(0,0,0,0.12); }
+.draggable-item:active { cursor: grabbing; transform: scale(0.98); }
+
+.draggable-item img { width: 100%; height: 110px; object-fit: cover; background: #eee; }
+.p-name { font-family: 'Alex Brush', cursive; font-size: 18px; color: var(--text-main); text-align: center; margin-top: 5px; line-height: 1.1;}
+
+.btn-remove-item { display: none; position: absolute; right: 10px; top: 10px; background: rgba(0,0,0,0.5); border: none; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; color: white; transition: background 0.2s; backdrop-filter: blur(4px);}
+.btn-remove-item:hover { background: #1C1C1C; }
+
+/* Quand déposé dans le carnet */
+.draggable-item.dropped { 
+    width: 100%; max-width: none; cursor: default; padding: 10px; display: flex; gap: 15px; align-items: center; 
+    transform: none !important; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 10px; border: 1px solid rgba(0,0,0,0.05);
+}
+.draggable-item.dropped .btn-remove-item { display: block; }
+.draggable-item.dropped img { width: 50px; height: 50px; border-radius: 4px; }
+.draggable-item.dropped .p-name { margin-top: 0; font-size: 16px; text-align: left; }
+
+/* =========================================
+   COLONNE DROITE : L'ESPACE MAGAZINE
+========================================= */
+.magazine-workspace { flex: 1; padding: 30px 50px; display: flex; flex-direction: column; overflow-y: auto; height: calc(100vh - 85px);}
+
+.workspace-header-massive {
+    width: 100%; max-width: 1100px; margin: 0 auto 30px auto;
+    display: flex; flex-direction: column; gap: 20px;
+}
+.title-row { width: 100%; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 10px;}
+.script-decoration { font-family: 'Alex Brush', cursive; font-size: 2.5rem; color: var(--accent-vivid); display: block; margin-bottom: -15px; }
+
+/* LE TITRE NE SERA PLUS COUPÉ ! */
+.trip-title-input { 
+    border: none; background: transparent; font-family: 'Cormorant Garamond', serif; 
+    font-size: 3.5rem; font-weight: 700; color: var(--text-main); outline: none; 
+    width: 100%; text-transform: uppercase; display: block;
+}
+.trip-title-input::placeholder { color: #bbb; text-transform: none; font-weight: 600;}
+
+.controls-row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;}
+
+.days-generator { display: flex; align-items: center; gap: 8px; background: rgba(0,0,0,0.03); padding: 8px 15px; border-radius: 4px;}
+.days-generator label { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase;}
+.days-generator input { width: 45px; text-align: center; border: 1px solid var(--border-light); border-radius: 4px; font-family: 'Montserrat', sans-serif; font-weight: 700; background: white;}
+.days-suffix { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600;}
+.btn-generate { background: var(--text-main); color: white; border: none; width: 24px; height: 24px; border-radius: 50%; font-size: 12px; cursor: pointer;}
+.btn-generate:hover { background: var(--accent-vivid); }
+
+.btn-add-page { background: transparent; border: 1px solid var(--border-light); color: var(--text-main); padding: 10px 15px; border-radius: 4px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; cursor: pointer; transition: all 0.2s;}
+.btn-add-page:hover { background: rgba(0,0,0,0.03); }
+.btn-quit { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; text-transform: uppercase; color: #888; text-decoration: none; transition: color 0.2s; border-bottom: 1px solid transparent; margin-left: auto;}
+.btn-quit:hover { color: #8B1D2B; border-bottom: 1px solid #8B1D2B;}
+.btn-save-mag { background: #1C1C1C; color: white; border: none; padding: 12px 30px; border-radius: 4px; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; cursor: pointer; transition: all 0.3s; letter-spacing: 1px;}
+.btn-save-mag:hover { background: var(--accent-vivid); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255, 111, 97, 0.3);}
+
+/* =========================================
+   LE LIVRE (MAGAZINE ÉDITORIAL)
+========================================= */
+.book-wrapper {
+    width: 100%; display: flex; justify-content: center; margin-top: 10px; perspective: 2500px;
+}
+
+.book-container { 
+    width: 1100px; height: 750px; position: relative; perspective: 2500px;
+}
+
+.book-cover {
+    width: 550px; height: 750px; background: #1C1C1C; color: white;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    box-shadow: 10px 15px 30px rgba(0,0,0,0.15);
+    position: absolute; right: 0; top: 0;
+    transform-origin: left center; z-index: 50; transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/static/img/annecy.jpg');
+    background-size: cover; background-position: center; backface-visibility: hidden;
+    border-radius: 0 15px 15px 0;
+}
+.cover-content { text-align: center; padding: 40px;}
+.book-cover h1 { font-family: 'Cormorant Garamond', serif; font-size: 4rem; text-transform: uppercase; margin: 0;}
+.book-cover p { font-family: 'Montserrat', sans-serif; font-size: 14px; letter-spacing: 4px; text-transform: uppercase; color: var(--accent-vivid);}
+.cover-chevron { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 30px; cursor: pointer; color: white; background: rgba(0,0,0,0.4); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background 0.2s;}
+.cover-chevron:hover { background: var(--accent-vivid); }
+.book-cover.opened { transform: rotateY(-180deg); } 
+
+.book-spreads-container { 
+    width: 100%; height: 100%; position: absolute; top: 0; left: 0; 
+    background: white; border-radius: 4px 15px 15px 4px; 
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.02);
+}
+
+.day-spread { display: none; width: 100%; height: 100%; position: relative; }
+.day-spread.active { display: flex; }
+
+/* LA SÉPARATION CENTRALE FRANCHE */
+.book-page { flex: 1; padding: 40px; display: flex; flex-direction: column; gap: 20px; background: white; overflow-y: auto; scrollbar-width: none;}
+.left-page { border-right: 1px solid #ddd; border-radius: 4px 0 0 4px;} 
+.right-page { border-radius: 0 15px 15px 0; }
+
+.page-chevron { position: absolute; top: 50%; transform: translateY(-50%); font-size: 28px; color: #ccc; cursor: pointer; transition: color 0.2s; z-index: 30;}
+.page-chevron:hover { color: var(--accent-vivid); }
+.page-chevron.left { left: 15px; }
+.page-chevron.right { right: 15px; }
+
+.page-header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid var(--text-main); padding-bottom: 10px; margin-bottom: 10px; flex: 0 0 auto;}
+.page-header.right-align { flex-direction: row-reverse; }
+.day-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 700; text-transform: uppercase; margin: 0;}
+.page-number { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: #bbb; font-style: italic;}
+.btn-delete-day { background: transparent; border: none; font-family: 'Montserrat', sans-serif; font-size: 10px; text-transform: uppercase; font-weight: 700; color: #888; cursor: pointer; transition: color 0.2s;}
+.btn-delete-day:hover { color: #8B1D2B; }
+
+.time-title { font-family: 'Alex Brush', cursive; font-size: 26px; color: var(--accent-vivid); margin: 0 0 5px 0; font-weight: normal;}
+
+/* Les 4 zones Flexbox identiques (2 à gauche, 2 à droite) */
+.drop-zone-container { flex: 1; display: flex; flex-direction: column; min-height: 120px;}
+.drop-zone {
+    width: 100%; flex: 1; border: 1px solid #ddd;
+    display: flex; flex-direction: column; align-items: center; padding: 10px;
+    background: #fff; transition: all 0.2s;
+}
+.drop-zone:hover, .drop-zone.dragover { border-color: var(--accent-vivid); box-shadow: 0 5px 15px rgba(0,0,0,0.03);}
+.drop-placeholder { font-family: 'Lora', serif; font-style: italic; color: #bbb; font-size: 13px; text-align: center; margin-top: 30px;}
+.drop-zone.filled { border: 1px solid transparent; background: transparent; padding: 0;}
+.drop-zone.filled .drop-placeholder { display: none; }
+
+/* =========================================
+   LE VRAI MOTEUR 3D DU FLIPPER (MAGIE !)
+========================================= */
+.page-flipper {
+    position: absolute; top: 0; height: 100%; 
+    transform-style: preserve-3d; transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); z-index: 100;
+}
+.flip-forward { width: calc(50% - 20px); left: calc(50% + 20px); transform-origin: left center; }
+.flip-backward { width: calc(50% - 20px); left: 0; transform-origin: right center; }
+
+.flipper-face {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    backface-visibility: hidden; background: white; overflow: hidden;
+    padding: 40px; display: flex; flex-direction: column; gap: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+.flip-forward .flipper-front { transform: rotateY(0deg); border-radius: 0 15px 15px 0;}
+.flip-forward .flipper-back { transform: rotateY(-180deg); border-radius: 4px 0 0 4px; border-right: 1px solid #ddd;}
+.flip-forward.flipping { transform: rotateY(-180deg); }
+
+.flip-backward .flipper-front { transform: rotateY(0deg); border-radius: 4px 0 0 4px;}
+.flip-backward .flipper-back { transform: rotateY(180deg); border-radius: 0 15px 15px 0; border-left: 1px solid #ddd;}
+.flip-backward.flipping { transform: rotateY(180deg); }

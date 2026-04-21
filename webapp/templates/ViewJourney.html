@@ -3,67 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WishAdventure — Détail du voyage</title>
+  <title>Explora — Détail du voyage</title>
 
   <link rel="stylesheet" href="/static/styles/app.css">
-  <link rel="stylesheet" href="/static/styles/Region.css">
-  <script src="/static/scripts/Region.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles/ViewJourney.css?v=2.0"> 
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@700;900&family=Alex+Brush&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="app-frame">
-    <div class="topbar">
-      <div class="row"><div class="time">09:23</div><div class="status"></div></div>
-      <div class="row">
-        <div class="back" id="backBtn" title="Retour" aria-label="Retour">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M14 6l-6 6 6 6" stroke="#F9F0F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <div class="title" id="journeyTitle">Titre du voyage</div>
-        <div style="width:40px"></div>
-      </div>
-    </div>
-
-    <div class="content">
-      <img id="cover" class="cover" alt="cover">
-
-      <div class="meta-block">
-        <div class="loc" id="journeyLocation">Ville, lieux...</div>
-
-        <div class="meta-row">
-          <div class="meta-left">
-            <div class="avatar" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#fff" opacity=".95"/><path d="M4 20c0-3.5 3.6-6 8-6s8 2.5 8 6" fill="#fff" opacity=".95"/></svg>
-            </div>
-            <div class="you">créé par vous</div><div class="mini"></div>
+      
+      <nav class="top-nav">
+          <div class="nav-logo"><span class="logo-fill">EXP</span><span class="logo-outline">LORA</span></div>
+          <div class="nav-links">
+              <a href="/">Accueil</a>
+              <a href="/makejourney">Créer mon voyage</a>
+              <a href="/Destinations">Catalogue d'activités</a>
+              <a href="/topics" class="active">Mes voyages</a>
           </div>
-        </div>
+      </nav>
 
-        <div class="summary" id="summaryLine">
-          <span><b id="daysLabel">0</b> jours pour <b>…</b> pers.</span>
-          <span>• <b>…€</b></span>
-        </div>
-      </div>
+      <div class="content-panel">
+          
+          <div class="journey-hero fade-in">
+              <a href="/topics" class="back-link">← Retour au carnet</a>
+              <div class="hero-image" style="background-image: url('/static/img/alsace.jpg');"></div>
+              <div class="hero-content">
+                  <span class="script-decoration">Votre itinéraire</span>
+                  <h1 id="journeyTitle" class="main-title">Voyage en Alsace</h1>
+                  <p class="journey-meta">3 Jours • 12 Activités</p>
+              </div>
+          </div>
 
-      <div class="list-wrap">
-        <div class="sec-ttl">Journées</div>
-        <div class="days" id="daysList"></div>
-      </div>
+          <div class="journey-timeline fade-in delay-1">
+              
+              <div class="timeline-day">
+                  <div class="day-marker">Jour 1</div>
+                  
+                  <div class="timeline-card">
+                      <div class="time-slot">09:00</div>
+                      <div class="card-content">
+                          <h4>Visite de la Cathédrale</h4>
+                          <p>Patrimoine Culturel • 2 heures</p>
+                      </div>
+                  </div>
 
-      <div class="notes-wrap">
-        <div class="notes-label">Privé</div>
-        <textarea id="privateNotes" class="notes" placeholder="Écrivez vos aventures et émotions des vacances..."></textarea>
-      </div>
-    </div>
+                  <div class="timeline-card">
+                      <div class="time-slot">12:30</div>
+                      <div class="card-content">
+                          <h4>Déjeuner Winstub Traditionnelle</h4>
+                          <p>Gastronomie • Spécialités locales</p>
+                      </div>
+                  </div>
+              </div>
 
-    <nav class="bottom-nav">
-      <div class="nav-inner">
-        <a href="/"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z"/></svg>Accueil</button></a>
-        <a href="/Destinations"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="M20 20l-3.5-3.5" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/></svg>Exploration</button></a>
-        <a href="/topics"><button class="boutonNav active"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M5 4h11a 2 2 0 0 1 2 2v12H7a 2 2 0 0 1-2-2V4z"/><rect x="3" y="6" width="2" height="12" rx="1" ry="1"/><path d="M8 8h7M8 11h7M8 14h5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Carnet</button></a>
-        <a href="/makejourney"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 0-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 0 0-6-6zm0 8.5A2.5 2.5 0 1 1 12 5.5a2.5 2.5 0 0 1 0 5z"/><path d="M15.2 14.2l3.2 3.2-2.3 0.5-1.4 1.4-0.5-2.3 1-1z"/></svg>Création</button></a>
+          </div>
+
       </div>
-    </nav>
   </div>
+
 </body>
 </html>

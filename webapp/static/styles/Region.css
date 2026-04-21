@@ -6,6 +6,7 @@
     --bordeaux-nav: #8B1D2B; 
     --nav-bg: rgba(250, 248, 245, 0.90);
     --border-light: #D4C3B3;
+    --pastel-blue: #D6E4F0; 
 }
 
 * { box-sizing: border-box; }
@@ -18,9 +19,7 @@ body {
 
 .app-frame { display: flex; flex-direction: column; height: 100vh; width: 100vw; position: relative; }
 
-/* =========================================
-   NAVIGATION (Identique)
-========================================= */
+/* NAVIGATION */
 .top-nav {
   display: flex; justify-content: space-between; align-items: center;
   padding: 20px 50px; background: var(--nav-bg); backdrop-filter: blur(12px); 
@@ -40,99 +39,156 @@ body {
 .badge { position: absolute; top: 0; right: 0; background: var(--text-main); color: #fff; font-size: 10px; padding: 3px 6px; border-radius: 10px; }
 .badge.pink { background: var(--bordeaux-nav); }
 
-/* =========================================
-   LAYOUT & HEADER RÉGION
-========================================= */
+/* HEADER */
 .content-panel { flex: 1; overflow-y: auto; padding: 40px; position: relative; z-index: 1;}
-.region-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px;}
+.region-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 30px;}
 
-.region-header { text-align: center; margin-bottom: 20px; position: relative; }
+.region-header { text-align: center; margin-bottom: 10px; position: relative; }
 .back-link {
     position: absolute; left: 0; top: 20px;
     font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600;
     color: var(--text-warm); text-decoration: none; text-transform: uppercase;
-    transition: color 0.2s;
 }
-.back-link:hover { color: var(--accent-vivid); }
-
 .script-decoration { font-family: 'Alex Brush', cursive; font-size: 3rem; color: var(--accent-vivid); display: block; margin-bottom: -15px; }
-.main-title { font-family: 'Montserrat', sans-serif; font-size: 3.5rem; text-transform: uppercase; font-weight: 900; letter-spacing: -1px; margin: 0 0 30px 0; color: var(--text-main); }
+.main-title { font-family: 'Montserrat', sans-serif; font-size: 3rem; text-transform: uppercase; font-weight: 900; letter-spacing: -1px; margin: 0 0 20px 0; color: var(--text-main); }
 
-/* BARRE DE RECHERCHE */
-.search-area { max-width: 700px; margin: 0 auto; position: relative; }
-.search-wrap {
-    display: flex; align-items: center; gap: 15px;
-    background: white; padding: 15px 30px; border-radius: 50px;
-    border: 1px solid var(--border-light); box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-    transition: all 0.3s ease;
+
+/* LES 6 PETITS TÉLÉPHONES (CAROUSEL) */
+.phones-carousel {
+    display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;
+    padding: 20px 0;
 }
-.search-wrap:focus-within { border-color: var(--accent-vivid); box-shadow: 0 10px 30px rgba(255, 111, 97, 0.15); }
-#search { flex: 1; border: none; outline: none; background: transparent; font-size: 16px; font-family: 'Lora', serif; color: var(--text-main); }
-#search::placeholder { color: #aaa; font-style: italic; }
+
+.phone-mockup {
+    width: 150px; height: 320px;
+    background: #111;
+    border-radius: 28px; padding: 6px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15), inset 0 2px 5px rgba(255,255,255,0.2);
+    position: relative; cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+.phone-mockup:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+}
+
+.notch {
+    position: absolute; top: 6px; left: 50%; transform: translateX(-50%);
+    width: 50px; height: 12px; background: #111;
+    border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;
+    z-index: 10;
+}
+
+.phone-screen {
+    width: 100%; height: 100%;
+    background: #000; border-radius: 22px;
+    overflow: hidden; position: relative;
+}
+
+.fake-video {
+    position: absolute; top: 0; left: 0; width: 150%; height: 150%;
+    background-size: cover; background-position: center;
+    animation: slowPan 15s infinite alternate linear;
+    filter: brightness(0.6); 
+}
+
+@keyframes slowPan {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(-15%, -15%) scale(1.2); }
+}
+
+.phone-label {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    /* Taille réduite pour que GASTRONOMIE passe parfaitement */
+    font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 900;
+    color: white; text-transform: uppercase; letter-spacing: 1px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8); z-index: 5; text-align: center;
+    width: 100%;
+}
+
 
 /* =========================================
-   SECTIONS HORIZONTALES & CARTES "TICKET"
+   MODAL: LE TÉLÉPHONE GÉANT PAYSAGE
 ========================================= */
-.sections-container { display: flex; flex-direction: column; gap: 60px; }
-.section-title {
-    font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; color: var(--text-main);
-    margin-bottom: 20px; border-bottom: 1px solid var(--border-light); padding-bottom: 10px;
+.modal-overlay {
+    display: none; 
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(28, 28, 28, 0.7); backdrop-filter: blur(8px);
+    z-index: 2000; align-items: center; justify-content: center;
 }
 
-.horizontal-row {
-    display: flex; gap: 20px; overflow-x: auto; padding: 10px 5px 30px 5px; scrollbar-width: thin;
-}
-
-/* LA MAGIE : On transforme la carte en Ticket Chic sans image */
-.card {
+/* Le conteneur horizontal */
+.giant-phone-landscape {
+    width: 850px; height: 500px;
+    background: #111; border-radius: 40px; padding: 10px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
     position: relative;
-    min-width: 280px; max-width: 280px;
-    background: white;
-    border: 1px solid var(--border-light);
-    border-left: 6px solid var(--accent-vivid); /* Le liseré corail sur le côté */
-    border-radius: 12px;
-    padding: 25px 20px;
-    display: flex; flex-direction: column; gap: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
-
-/* ON MASQUE L'IMAGE QUE LE JS ESSAIE D'AJOUTER */
-.card .thumb { display: none !important; }
-
-.card .name { 
-    font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 800; 
-    color: var(--text-main); line-height: 1.3;
-}
-.card .meta { 
-    font-family: 'Lora', serif; font-size: 13px; color: var(--text-warm); font-style: italic; 
+    /* ⏱️ LA VITESSE EST ICI : 0.6s. 
+       Si tu veux plus lent, mets 1s ou 1.2s. 
+       Si tu veux plus rapide, mets 0.4s ! */
+    animation: flipToLandscape 1s cubic-bezier(0.175, 0.885, 0.32, 1.0) forwards;
 }
 
-/* Bouton Ajouter (+) redesigné pour le ticket */
-.card .add-btn {
-    align-self: flex-start; margin-top: auto;
-    background: var(--accent-vivid); color: white; border: none;
-    padding: 8px 16px; border-radius: 20px;
-    font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; text-transform: uppercase;
-    cursor: pointer; transition: transform 0.2s, background 0.2s;
+/* 🔄 LE SENS DE ROTATION EST ICI */
+@keyframes flipToLandscape {
+    /* J'ai enlevé le "moins" devant 90deg. 
+       Maintenant il part avec l'encoche en haut (midi) et tourne vers la gauche (9h) ! */
+    0% { transform: scale(0.4) rotate(90deg); opacity: 0; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
 }
-.card .add-btn:hover { background: var(--text-main); transform: scale(1.05); }
 
-/* ANIMATIONS */
+/* L'encoche sur le côté gauche (comme un iPhone tourné) */
+.giant-notch-landscape {
+    position: absolute; top: 50%; left: 10px; transform: translateY(-50%);
+    width: 25px; height: 120px; background: #111;
+    border-top-right-radius: 15px; border-bottom-right-radius: 15px;
+    z-index: 10;
+}
+
+.giant-screen-landscape {
+    width: 100%; height: 100%;
+    background-color: var(--pastel-blue);
+    border-radius: 32px; position: relative; overflow: auto;
+    /* Plus de marge à gauche pour éviter l'encoche */
+    padding: 30px 30px 30px 60px; 
+}
+
+.close-phone-btn {
+    position: absolute; top: 25px; right: 25px;
+    background: rgba(0,0,0,0.2); color: white; border: none;
+    width: 32px; height: 32px; border-radius: 50%;
+    font-size: 14px; font-weight: bold; cursor: pointer; z-index: 20;
+}
+.close-phone-btn:hover { background: rgba(0,0,0,0.5); }
+
+.app-title {
+    font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 900;
+    color: #111; text-align: left; margin: 0 0 30px 10px; text-transform: uppercase;
+}
+
+/* Grille beaucoup plus large pour le mode paysage ! */
+.app-grid-landscape {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 30px 20px;
+}
+
+.app-icon {
+    display: flex; flex-direction: column; align-items: center; gap: 8px; cursor: pointer;
+    transition: transform 0.2s;
+}
+.app-icon:hover { transform: scale(1.1); }
+
+.app-icon-img {
+    width: 70px; height: 70px; border-radius: 16px; background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.app-icon-text {
+    font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 12px;
+    color: #333; font-weight: 600; text-align: center; line-height: 1.2;
+}
+
+/* Animations de base */
 .fade-in { opacity: 0; transform: translateY(30px); animation: fadeInUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards; }
 .delay-1 { animation-delay: 0.1s; }
-.delay-2 { animation-delay: 0.2s; }
-.delay-3 { animation-delay: 0.3s; }
 @keyframes fadeInUp { 0% { opacity: 0; transform: translateY(30px); } 100% { opacity: 1; transform: translateY(0); } }
-
-/* PANIER & FAVORIS DROPDOWNS */
-.floating-panel { position: absolute; top: calc(100% + 15px); right: 0; width: 300px; max-height: 400px; overflow: auto; background: #FFF; border-radius: 12px; padding: 15px; display: none; box-shadow: 0 10px 40px rgba(0,0,0,0.15); border: 1px solid rgba(0,0,0,0.05); z-index: 2000;}
-.basket-item { display: flex; align-items: center; gap: 10px; padding: 10px; border-bottom: 1px solid rgba(0,0,0,0.05); }
-.basket-item img { width: 40px; height: 40px; border-radius: 6px; object-fit: cover; }
-.basket-item .bi-name { font-weight: 600; font-size: 13px; font-family: 'Montserrat', sans-serif; color: var(--text-main);}
-.basket-item .bi-remove { margin-left: auto; background: transparent; color: #888; border: 1px solid var(--border-light); padding: 4px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; transition: all 0.2s;}
-.basket-item .bi-remove:hover { color: white; background: var(--accent-vivid); border-color: var(--accent-vivid); }
-.basket-footer a { display: block; text-align: center; background: var(--accent-vivid); color: white; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: 700; font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 12px; margin-top: 10px; transition: background 0.3s;}
-.basket-footer a:hover { background: var(--text-main); }
