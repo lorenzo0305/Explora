@@ -6,68 +6,85 @@
   <title>WishAdventure — Région</title>
 
   <link rel="stylesheet" href="/static/styles/app.css">
-  <link rel="stylesheet" href="/static/styles/Region.css">
+  <link rel="stylesheet" href="/static/styles/Region.css?v=3.0">
   <script src="/static/scripts/Region.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@700;900&family=Alex+Brush&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="wrap">
-    <div class="header">
-      <a href="/exploration" title="Retour" style="text-decoration:none; color:#F9F0F7;">← Retour</a>
-      <div style="width:32px;height:32px;"></div>
-    </div>
 
-    <div class="title">
-      <div id="regionName" class="region-name">Région</div>
+  <div class="app-frame">
+      
+      <nav class="top-nav">
+          <div class="nav-logo">
+              <span class="logo-fill">EXP</span><span class="logo-outline">LORA</span>
+          </div>
+          
+          <div class="nav-links">
+              <a href="/">Accueil</a>
+              <a href="/makejourney">Créer mon voyage</a>
+              <a href="/Destinations" class="active">Catalogue d'activités</a>
+              <a href="/topics">Mes voyages</a>
+          </div>
 
-      <div class="search-area">
-        <div class="search-wrap">
-          <div class="search-icon" aria-hidden="true"></div>
-          <input id="search" type="text" placeholder="Recherchez dans cette région..." autocomplete="off" />
-        </div>
+          <div class="nav-actions">
+              <div class="icon-wrapper">
+                  <button id="likesIcon" class="action-btn" type="button" title="Mes Favoris">
+                      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                      <span id="likesCount" class="badge pink" hidden>0</span>
+                  </button>
+                  <div id="floatingLikes" class="floating-panel"></div>
+              </div>
 
-        <div class="actions">
-          <button id="likesIcon" class="like-btn" type="button" title="Mes Favoris">
-            ❤️ <span id="likesCount" hidden>0</span>
-          </button>
-          <div id="floatingLikes" aria-live="polite"></div>
+              <div class="icon-wrapper">
+                  <button id="basketIcon" class="action-btn" type="button" title="Panier">
+                      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
+                      <span id="basketCount" class="badge" hidden>0</span>
+                  </button>
+                  <div id="floatingBasket" class="floating-panel"></div>
+              </div>
+          </div>
+      </nav>
 
-          <button id="basketIcon" class="basket-btn" type="button" title="Panier">
-            🧺 <span id="basketCount" hidden>0</span>
-          </button>
-          <div id="floatingBasket" aria-live="polite"></div>
-        </div>
+      <div class="content-panel">
+          <div class="region-inner">
 
-        <div id="results" class="results" role="listbox" aria-label="Résultats dans la région"></div>
+              <div class="region-header fade-in">
+                  <a href="/Destinations" class="back-link">← Retour au catalogue</a>
+                  <span class="script-decoration">Explorez la région</span>
+                  <h1 id="regionName" class="main-title">Chargement...</h1>
+
+                  <div class="search-area">
+                      <div class="search-wrap">
+                          <svg class="search-icon" viewBox="0 0 24 24" width="22" height="22" fill="#888"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                          <input id="search" type="text" placeholder="Recherchez un lieu, un producteur..." autocomplete="off" />
+                      </div>
+                      <div id="results" class="results" role="listbox"></div>
+                  </div>
+              </div>
+
+              <div class="sections-container">
+                  <section class="section fade-in delay-1">
+                      <h3 class="section-title">Patrimoine culturel</h3>
+                      <div id="row-CulturalSite" class="horizontal-row"></div>
+                  </section>
+
+                  <section class="section fade-in delay-2">
+                      <h3 class="section-title">Restauration & producteurs</h3>
+                      <div id="row-FoodEstablishment" class="horizontal-row"></div>
+                  </section>
+
+                  <section class="section fade-in delay-3">
+                      <h3 class="section-title">Points d’intérêt</h3>
+                      <div id="row-PlaceOfInterest" class="horizontal-row"></div>
+                  </section>
+              </div>
+
+          </div>
       </div>
-    </div>
-
-    <section class="section">
-      <h3>Patrimoine culturel</h3>
-      <div id="row-CulturalSite" class="row"></div>
-    </section>
-
-    <section class="section">
-      <h3>Restauration & producteurs</h3>
-      <div id="row-FoodEstablishment" class="row"></div>
-    </section>
-
-    <section class="section">
-      <h3>Points d’intérêt</h3>
-      <div id="row-PlaceOfInterest" class="row"></div>
-    </section>
   </div>
 
-  <nav class="bottom-nav">
-    <a href="/accueil" class="bouton"><button class="boutonNav"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z"/></svg> Accueil</button></a>
-    <a href="/exploration" class="bouton">
-      <button class="boutonNav active">
-        <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="M20 20l-3.5-3.5" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
-        Exploration
-      </button>
-    </a>
-    <a href="/carnet" class="bouton"><button class="boutonNav">Carnet</button></a>
-    <a href="/creation" class="bouton"><button class="boutonNav">Création</button></a>
-  </nav>
 </body>
 </html>

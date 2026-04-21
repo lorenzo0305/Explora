@@ -215,7 +215,7 @@ def accueil(request: Request):
 @app.get("/exploration")
 @app.get("/Destinations")
 def exploration(request: Request):
-    return templates.TemplateResponse(request=request, name="Exploration.html")
+    return templates.TemplateResponse(request=request, name="Catalogue.html")
 
 
 @app.get("/region/{region_slug}")
