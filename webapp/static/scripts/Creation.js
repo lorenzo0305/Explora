@@ -5,11 +5,33 @@ function updateVal(id) {
 document.getElementById('criteriaForm').addEventListener('submit', async function (e) {
     e.preventDefault();
 
+    const btn = document.getElementById('submitBtn');
+    const originalBtnText = btn.dataset.originalText || btn.textContent;
+    btn.dataset.originalText = originalBtnText;
+
     // ==========================================
-    // DONNÉES DE LOCALISATION (Ville & Zone Géo)
+    // DONNÉES DE LOCALISATION (Ville / Région / Zone Géo)
     // ==========================================
+    const regionSelect = document.getElementById('region');
+    const regionValue = regionSelect ? regionSelect.value : '';
+    const regionLabel = regionSelect ? regionSelect.options[regionSelect.selectedIndex].text : '';
+
+    let ville = document.getElementById('ville').value.trim();
+
+    // Si aucune ville n'a été sélectionnée via la carte,
+    // on utilise la région comme point de recherche (sauf "Toute la France").
+    if (!ville) {
+        if (regionValue && regionValue !== 'all') {
+            ville = regionLabel;
+        } else {
+            alert("Veuillez cliquer sur la carte pour sélectionner un lieu, ou choisir une région précise.");
+            return;
+        }
+    }
+
     const locationData = {
-        ville: document.getElementById('ville').value.trim(),
+        ville: ville,
+        region: regionValue,
         rayon: parseInt(document.getElementById('rayon').value, 10),
         jours: parseInt(document.getElementById('jours').value, 10) || 1
     };
@@ -33,12 +55,11 @@ document.getElementById('criteriaForm').addEventListener('submit', async functio
         ...preferencesData
     };
 
-    console.log("Critères soumis :", formData);
+    console.log("[AVANT SOUMISSION] Critères : ", formData);
 
-    const btn = document.getElementById('submitBtn');
     btn.disabled = true;
     btn.textContent = 'Soumission en cours...';
-    console.log("[AVANT SOUMISSION] Critères : ", formData);
+
     try {
         const res = await fetch('/algorithm', {
             method: 'POST',
@@ -48,24 +69,33 @@ document.getElementById('criteriaForm').addEventListener('submit', async functio
             body: JSON.stringify(formData)
         });
 
+        // Récupération du corps même en cas d'erreur pour afficher un message utile
+        let data = null;
+        try { data = await res.json(); } catch (_) { /* pas de JSON */ }
+
         if (!res.ok) {
-            throw new Error(`Erreur HTTP ${res.status}`);
+            const serverMsg = (data && (data.message || data.detail)) || `Erreur HTTP ${res.status}`;
+            throw new Error(serverMsg);
         }
 
-        const data = await res.json();
         console.log("Réponse reçue :", data);
 
-        // Pour garder les données même après la redirectoin
+        if (data && data.status === 'empty') {
+            alert(data.message || "Aucun itinéraire trouvé avec ces critères. Essayez un autre lieu ou augmentez le rayon.");
+            return;
+        }
+
+        // Pour garder les données même après la redirection
         sessionStorage.setItem('algorithmRes', JSON.stringify(data));
         sessionStorage.setItem('criteriaFormPayload', JSON.stringify(formData));
         window.location.href = '/Voyage.html';
 
     } catch (error) {
         console.error("Erreur lors de la soumission :", error);
-        alert("Une erreur est survenue lors de la soumission. Veuillez réessayer.");
+        alert("Une erreur est survenue lors de la soumission : " + (error.message || "réessayez."));
     } finally {
         btn.disabled = false;
-        btn.textContent = 'Soumettre';
+        btn.textContent = originalBtnText;
     }
 });
 

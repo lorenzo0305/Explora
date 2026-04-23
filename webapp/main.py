@@ -7,11 +7,59 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from bson import ObjectId
 from fastapi import Body, FastAPI, HTTPException, Query, Request
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pymongo import MongoClient
+
+
+def _json_safe(value: Any) -> Any:
+    """Recursively convert Mongo/NumPy/pandas/datetime values into JSON-safe primitives."""
+    if value is None or isinstance(value, (str, bool, int, float)):
+        # Filter out NaN / inf floats which break strict JSON
+        if isinstance(value, float):
+            try:
+                import math
+                if math.isnan(value) or math.isinf(value):
+                    return None
+            except Exception:
+                pass
+        return value
+    if isinstance(value, ObjectId):
+        return str(value)
+    if isinstance(value, datetime):
+        return value.isoformat()
+    if isinstance(value, dict):
+        return {str(k): _json_safe(v) for k, v in value.items() if k != "_id"}
+    if isinstance(value, (list, tuple, set)):
+        return [_json_safe(v) for v in value]
+    # NumPy / pandas scalars
+    try:
+        import numpy as np  # local import to avoid hard dep at module load
+        if isinstance(value, (np.integer,)):
+            return int(value)
+        if isinstance(value, (np.floating,)):
+            f = float(value)
+            import math
+            return None if (math.isnan(f) or math.isinf(f)) else f
+        if isinstance(value, (np.bool_,)):
+            return bool(value)
+        if isinstance(value, (np.ndarray,)):
+            return [_json_safe(v) for v in value.tolist()]
+    except Exception:
+        pass
+    try:
+        import pandas as pd  # local import
+        if isinstance(value, pd.Timestamp):
+            return value.isoformat()
+        if value is pd.NaT:
+            return None
+    except Exception:
+        pass
+    # Fallback: string representation
+    return str(value)
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -195,8 +243,29 @@ def _journey_id(payload: dict[str, Any]) -> str:
     return f"j_{int(time.time() * 1000)}"
 
 
+def _sanitize_mongo_keys(value: Any) -> Any:
+    """
+    Mongo refuse les clés contenant '.' ou commençant par '$'. On les remplace
+    silencieusement pour éviter les 500 lors du stockage d'un plan riche.
+    """
+    if isinstance(value, dict):
+        clean = {}
+        for k, v in value.items():
+            key = str(k).replace('.', '_')
+            if key.startswith('$'):
+                key = '_' + key[1:]
+            clean[key] = _sanitize_mongo_keys(v)
+        return clean
+    if isinstance(value, list):
+        return [_sanitize_mongo_keys(v) for v in value]
+    return value
+
+
 def _journey_doc(payload: dict[str, Any], journey_id: str) -> dict[str, Any]:
-    doc = dict(payload)
+    # On nettoie d'abord les types exotiques (ObjectId, datetime, NumPy...) puis les clés.
+    doc = _sanitize_mongo_keys(_json_safe(payload))
+    if not isinstance(doc, dict):
+        doc = {}
     doc["id"] = journey_id
     doc["updatedAt"] = int(time.time() * 1000)
     return doc
@@ -380,10 +449,19 @@ def get_journey(journey_id: str):
 
 @app.post("/journeys")
 def create_journey(payload: dict[str, Any] = Body(...)):
-    jid = _journey_id(payload)
-    doc = _journey_doc(payload, jid)
-    journeys_col.update_one({"id": jid}, {"$set": doc}, upsert=True)
-    return {"status": "ok", "id": jid}
+    try:
+        jid = _journey_id(payload)
+        doc = _journey_doc(payload, jid)
+        journeys_col.update_one({"id": jid}, {"$set": doc}, upsert=True)
+        return {"status": "ok", "id": jid}
+    except Exception as exc:
+        import traceback
+        print("[BACKEND] Erreur POST /journeys :", repr(exc))
+        traceback.print_exc()
+        return JSONResponse(
+            status_code=500,
+            content={"status": "error", "message": str(exc) or exc.__class__.__name__},
+        )
 
 
 @app.post("/journeys/save")
@@ -466,7 +544,7 @@ async def run_algorithm(request: Request):
             {
                 "status": "success",
                 "message": "Itinéraire généré avec succès",
-                "data": planning,
+                "data": _json_safe(planning),
             }
         )
 
