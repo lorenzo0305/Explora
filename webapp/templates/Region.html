@@ -51,12 +51,12 @@
               <div class="region-header fade-in">
                   <a href="/Destinations" class="back-link">← Retour au catalogue</a>
                   <span class="script-decoration">Plongez dans l'expérience</span>
-                  <h1 id="regionName" class="main-title">Sélectionnez une envie</h1>
+                  <h1 id="regionName" class="main-title">AUVERGNE-RHÔNE-ALPES</h1>
               </div>
 
               <div class="phones-carousel fade-in delay-1">
                   
-                  <div class="phone-mockup" onclick="openPhone('Nature', ['Rando du Lac', 'VTT Électrique', 'Canoë', 'Accrobranche', 'Bivouac', 'Escalade', 'Pêche', 'Via Ferrata', 'Spéléologie', 'Orientation'])">
+                  <div class="phone-mockup" onclick="openPhone('Nature')">
                       <div class="notch"></div>
                       <div class="phone-screen">
                           <div class="fake-video" style="background-image: url('/static/img/montagne_france.jpg');"></div>
@@ -64,7 +64,7 @@
                       </div>
                   </div>
 
-                  <div class="phone-mockup" onclick="openPhone('Gastronomie', ['Cave Historique', 'Marché Local', 'Atelier Fromage', 'Dîner Étoilé'])">
+                  <div class="phone-mockup" onclick="openPhone('Gastronomie')">
                       <div class="notch"></div>
                       <div class="phone-screen">
                           <div class="fake-video" style="background-image: url('/static/img/hospices_beaune.jpg');"></div>
@@ -72,7 +72,7 @@
                       </div>
                   </div>
 
-                  <div class="phone-mockup" onclick="openPhone('Patrimoine', ['Château Fort', 'Musée des Arts', 'Visite Guidée', 'Cathédrale'])">
+                  <div class="phone-mockup" onclick="openPhone('Patrimoine')">
                       <div class="notch"></div>
                       <div class="phone-screen">
                           <div class="fake-video" style="background-image: url('/static/img/alsace.jpg');"></div>
@@ -80,7 +80,7 @@
                       </div>
                   </div>
 
-                  <div class="phone-mockup" onclick="openPhone('Sport', ['Parapente', 'Canyoning', 'Escalade', 'Plongée'])">
+                  <div class="phone-mockup" onclick="openPhone('Sport')">
                       <div class="notch"></div>
                       <div class="phone-screen">
                           <div class="fake-video" style="background-image: url('/static/img/annecy.jpg');"></div>
@@ -88,7 +88,7 @@
                       </div>
                   </div>
 
-                  <div class="phone-mockup" onclick="openPhone('Détente', ['Spa Thermal', 'Massage Solo', 'Yoga Forêt', 'Bains Chauds'])">
+                  <div class="phone-mockup" onclick="openPhone('Détente')">
                       <div class="notch"></div>
                       <div class="phone-screen">
                           <div class="fake-video" style="background-image: url('/static/img/nice.jpg');"></div>
@@ -96,7 +96,7 @@
                       </div>
                   </div>
 
-                  <div class="phone-mockup" onclick="openPhone('Shopping', ['Artisanat', 'Créateurs', 'Souvenirs', 'Boutique Cuir'])">
+                  <div class="phone-mockup" onclick="openPhone('Shopping')">
                       <div class="notch"></div>
                       <div class="phone-screen">
                           <div class="fake-video" style="background-image: url('/static/img/bretagne.jpg');"></div>
@@ -105,7 +105,6 @@
                   </div>
 
               </div>
-
           </div>
       </div>
   </div>
@@ -117,33 +116,57 @@
           
           <div class="giant-screen-landscape">
               <h2 id="giantPhoneTitle" class="app-title">Catégorie</h2>
-              
               <div class="app-grid-landscape" id="appGrid">
-                  </div>
+              </div>
           </div>
       </div>
   </div>
 
   <script>
-      function openPhone(categoryName, activities) {
-          const modal = document.getElementById('giantPhoneModal');
-          const title = document.getElementById('giantPhoneTitle');
-          const grid = document.getElementById('appGrid');
-          
-          title.innerText = categoryName;
-          grid.innerHTML = ''; 
-          
-          activities.forEach(activity => {
-              grid.innerHTML += `
-                  <div class="app-icon">
-                      <div class="app-icon-img" style="background-image: url('/static/img/appareil_photo.png'); background-color: white; background-size: 60%; background-position: center; background-repeat: no-repeat;"></div>
-                      <div class="app-icon-text">${activity}</div>
-                  </div>
-              `;
-          });
+      async function openPhone(categoryName) {
+    const modal = document.getElementById('giantPhoneModal');
+    const title = document.getElementById('giantPhoneTitle');
+    const grid = document.getElementById('appGrid');
+    
+    // 1. Récupérer le nom affiché sur le site (ex: "AUVERGNE-RHÔNE-ALPES")
+    let regionTitre = document.getElementById('regionName').innerText.toUpperCase(); 
+    
+    // 2. Traduction pour la base de données
+    let regionSource = "";
+    if (regionTitre.includes("AUVERGNE")) {
+        regionSource = "Auvergne";
+    } else if (regionTitre.includes("HAUT")) {
+        regionSource = "Haut_de_France";
+    } else {
+        regionSource = regionTitre; // Cas par défaut
+    }
 
-          modal.style.display = 'flex';
-      }
+    title.innerText = categoryName;
+    grid.innerHTML = '<p style="color:white; padding:20px;">Chargement...</p>';
+    modal.style.display = 'flex';
+
+    try {
+        // On appelle l'API avec le nom court (Auvergne ou Haut_de_France)
+        const response = await fetch(`/api/activites/${regionSource}/${categoryName}`);
+        const data = await response.json();
+
+        grid.innerHTML = ''; 
+        if (!data || data.length === 0) {
+            grid.innerHTML = `<p style="color:white; padding:20px;">Aucune activité trouvée pour ${regionSource}.</p>`;
+            return;
+        }
+
+        data.forEach(act => {
+            grid.innerHTML += `
+                <div class="app-icon">
+                    <div class="app-icon-img" style="background-image: url('${act.image || '/static/img/appareil_photo.png'}'); background-color: white; background-size: cover; background-position: center;"></div>
+                    <div class="app-icon-text">${act.name}</div>
+                </div>`;
+        });
+    } catch (err) {
+        grid.innerHTML = '<p style="color:white;">Erreur serveur</p>';
+    }
+}
 
       function closePhone(e) {
           document.getElementById('giantPhoneModal').style.display = 'none';
