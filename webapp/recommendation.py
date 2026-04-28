@@ -101,9 +101,13 @@ def scorer_activites(df, lat_c, lon_c, rayon_max, prefs):
 def generer_planning(df_scored, nb_jours, lat_c, lon_c):
     records = df_scored.drop_duplicates(subset=['nom']).to_dict('records')
     planning, MAX_DIST_KM = [], 40
+    
+    # 1. On initialise la blacklist ICI, pour tout le séjour
+    blacklist = set() 
 
     for jour in range(1, nb_jours + 1):
-        matin, aprem, blacklist = [], [], set()
+        # 2. On ne réinitialise QUE le matin et l'aprem
+        matin, aprem = [], [] 
 
         def sim(nom, bl):
             mots = {m for m in nom.lower().split() if len(m) > 3}
