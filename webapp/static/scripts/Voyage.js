@@ -59,15 +59,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const blocActivite = (act, jourIdx, moment, slotIdx) => {
         if (!act || typeof act !== 'object') return '';
         const nom = escapeHtml(act.nom || act.name || 'Activité');
-        const ville = escapeHtml(act.ville || '');
+        const ville = escapeHtml(act.ville || act.locality || '');
         const cp = act.code_postal ? escapeHtml(act.code_postal) : '';
         const cats = escapeHtml(formatCategories(act.categories));
-        const desc = escapeHtml(act.description || '').trim();
+        const desc = escapeHtml(act.description || act.desc || act.summary || '').trim();
+        const website = escapeHtml(act.website || act.url || act.site || '');
 
         const lignes = [];
         if (ville) lignes.push(`<p><strong>📍 Lieu :</strong> ${ville}${cp ? ` (${cp})` : ''}</p>`);
         if (cats) lignes.push(`<p><em>${cats}</em></p>`);
         lignes.push(`<p>${desc || 'Aucune description disponible.'}</p>`);
+        if (website) {
+            const href = website.startsWith('http') ? website : `https://${website}`;
+            lignes.push(`<p><strong>🌐 Site :</strong> <a href="${href}" target="_blank" rel="noopener noreferrer">${href}</a></p>`);
+        }
 
         return `
             <div class="activite-container" data-jour="${jourIdx}" data-moment="${moment}" data-slot="${slotIdx}">
@@ -184,14 +189,24 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.id = 'replaceModal';
         modal.style.cssText = 'position:fixed;inset:0;background:rgba(28,28,28,0.55);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;';
         modal.innerHTML = `
-            <div class="rm-card" style="background:#FAF8F5;max-width:680px;width:100%;max-height:85vh;overflow:auto;border-radius:8px;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,0.3);font-family:Lora,serif;">
-                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
-                    <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;margin:0;color:#1C1C1C;">Choisir une activité de remplacement</h3>
+            <div class="rm-card" style="background:#FAF8F5;max-width:760px;width:100%;max-height:85vh;overflow:auto;border-radius:16px;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,0.3);font-family:Lora,serif;">
+                <div class="rm-header" style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px;">
+                    <div>
+                        <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;margin:0;color:#1C1C1C;">Choisir une activité de remplacement</h3>
+                        <p class="rm-helper" style="margin:8px 0 0;color:#6b5f57;font-size:14px;line-height:1.6;max-width:620px;">Conservez la barre de recherche et découvrez ci-dessous des activités recommandées dans un style inspiré du catalogue.</p>
+                    </div>
                     <button id="rmClose" type="button" style="background:none;border:none;font-size:26px;cursor:pointer;color:#6b5f57;line-height:1;">×</button>
                 </div>
                 <input id="rmSearch" type="text" placeholder="Rechercher (nom, lieu, catégorie)…"
-                       style="width:100%;padding:10px 14px;border:1px solid #D4C3B3;border-radius:6px;background:#fff;font-family:Lora,serif;font-size:14px;margin-bottom:14px;">
-                <div id="rmResults" style="display:flex;flex-direction:column;gap:8px;"></div>
+                       style="width:100%;padding:12px 16px;border:1px solid #D4C3B3;border-radius:10px;background:#fff;font-family:Lora,serif;font-size:14px;margin-bottom:22px;">
+                <div class="rm-search-results">
+                    <div class="rm-rec-title">Résultats de recherche</div>
+                    <div id="rmResults" class="rm-results"></div>
+                </div>
+                <div class="rm-recommendations">
+                    <div class="rm-rec-title">Suggestions recommandées</div>
+                    <div id="rmCarousel" class="rm-carousel"></div>
+                </div>
             </div>`;
         document.body.appendChild(modal);
         modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
@@ -213,8 +228,18 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.style.display = 'flex';
         const input = modal.querySelector('#rmSearch');
         const results = modal.querySelector('#rmResults');
+        const carousel = modal.querySelector('#rmCarousel');
         input.value = '';
-        results.innerHTML = '<p style="color:#6b5f57;font-style:italic;text-align:center;padding:20px 0;">Chargement des suggestions…</p>';
+        results.innerHTML = '<p style="color:#6b5f57;font-style:italic;text-align:center;padding:20px 0;">Chargement des résultats…</p>';
+        carousel.innerHTML = '<p style="color:#6b5f57;font-style:italic;text-align:center;padding:20px 0;width:100%;">Chargement des recommandations…</p>';
+
+        const currentAct = dataVoyage[target.jourIdx]?.[target.moment]?.[target.slotIdx];
+        const currentName = currentAct?.nom || currentAct?.name || currentAct?.label || '';
+        if (currentName) {
+            loadRecommendations(currentName).then(items => renderRecommendationCards(items, carousel));
+        } else {
+            carousel.innerHTML = '<p style="color:#6b5f57;font-style:italic;text-align:center;padding:20px 0;width:100%;">Aucune activité de référence trouvée.</p>';
+        }
 
         // Charge des suggestions initiales en fonction de la région
         loadSuggestions('').then(items => renderModalResults(items, results));
@@ -258,6 +283,71 @@ document.addEventListener('DOMContentLoaded', function () {
         return [];
     }
 
+    async function loadRecommendations(activityName) {
+        try {
+            const r = await fetch(`/suggestions?activity=${encodeURIComponent(activityName)}`);
+            if (r.ok) {
+                const data = await r.json();
+                return Array.isArray(data) ? data : [];
+            }
+        } catch (_) {}
+        return [];
+    }
+
+    function renderRecommendationCards(items, container) {
+        if (!items || !items.length) {
+            container.innerHTML = '<div class="rm-empty">Aucune recommandation disponible pour cette activité.</div>';
+            return;
+        }
+        container.innerHTML = items.map(item => {
+            const id = escapeHtml(String(item.id || item._id || item.nom || item.name || ''));
+            const name = escapeHtml(item.name || item.nom || item.label || 'Sans nom');
+            const subtitle = escapeHtml(item.locality || item.region || (item.categories && item.categories[0]) || item.ville || '');
+            const img = escapeHtml((item.image && /^https?:/.test(item.image)) ? item.image : (item.cover || item.photo || '/static/img/no-image.jpg'));
+            const match = escapeHtml(item.match || '');
+            const distance = escapeHtml(item.distance || '');
+            const desc = escapeHtml(item.description || item.desc || item.summary || '').trim();
+            const website = escapeHtml(item.website || item.url || item.site || '');
+            const websiteHref = website ? (website.startsWith('http') ? website : `https://${website}`) : '';
+            const hasDetail = desc || websiteHref;
+            return `
+                <div class="rm-card-item${hasDetail ? ' has-detail' : ''}" data-id="${id}">
+                    <div class="rm-card-visual">
+                        <img src="${img}" alt="${name}" onerror="this.src='/static/img/no-image.jpg'" />
+                    </div>
+                    <div class="rm-card-body">
+                        <div class="rm-card-title">${name}</div>
+                        <div class="rm-card-meta">${subtitle}</div>
+                        <div class="rm-card-stats"><span>${match}</span> <span>${distance}</span></div>
+                        ${hasDetail ? `<div class="rm-card-detail">
+                            ${desc ? `<div class="rm-card-desc">${desc}</div>` : ''}
+                            ${websiteHref ? `<a href="${websiteHref}" target="_blank" rel="noopener noreferrer" class="rm-card-link">Voir le site</a>` : ''}
+                        </div>` : ''}
+                    </div>
+                    <div class="rm-card-actions">
+                        <button type="button" class="rm-pick">Choisir</button>
+                    </div>
+                </div>`;
+        }).join('');
+
+        container.querySelectorAll('.rm-card-item').forEach(card => {
+            const pick = () => {
+                const id = card.dataset.id;
+                const item = items.find(x => String(x.id || x._id || x.nom || x.name) === id);
+                if (!item) return;
+                applyReplacement(item);
+            };
+            const detail = card.querySelector('.rm-card-detail');
+            if (detail) {
+                card.addEventListener('click', function (e) {
+                    if (e.target.closest('.rm-pick')) return;
+                    card.classList.toggle('expanded');
+                });
+            }
+            card.querySelector('.rm-pick')?.addEventListener('click', e => { e.stopPropagation(); pick(); });
+        });
+    }
+
     function renderModalResults(items, container) {
         if (!items || !items.length) {
             container.innerHTML = '<p style="color:#6b5f57;font-style:italic;text-align:center;padding:20px 0;">Aucune activité disponible. Essayez un autre terme.</p>';
@@ -270,14 +360,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const img  = (it.image && /^https?:/.test(it.image)) ? it.image : '/static/img/no-image.jpg';
             return `
                 <div class="rm-item" data-id="${escapeHtml(id)}"
-                     style="display:flex;gap:12px;align-items:center;padding:10px;border:1px solid #D4C3B3;border-radius:6px;background:#fff;cursor:pointer;transition:border-color .15s,transform .15s;">
+                     style="display:flex;gap:12px;align-items:center;padding:12px;border:1px solid #D4C3B3;border-radius:10px;background:#fff;cursor:pointer;transition:border-color .15s,transform .15s;">
                     <img src="${escapeHtml(img)}" alt="" onerror="this.src='/static/img/no-image.jpg'"
-                         style="width:60px;height:60px;border-radius:6px;object-fit:cover;flex-shrink:0;">
+                         style="width:60px;height:60px;border-radius:10px;object-fit:cover;flex-shrink:0;">
                     <div style="flex:1;min-width:0;">
                         <div style="font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;color:#1C1C1C;line-height:1.2;">${escapeHtml(name)}</div>
                         <div style="font-size:12px;color:#6b5f57;">${escapeHtml(sub)}</div>
                     </div>
-                    <button type="button" class="rm-pick" style="background:#FF6F61;color:#fff;border:none;padding:8px 14px;border-radius:6px;cursor:pointer;font-weight:600;font-family:Montserrat,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:0.5px;">Choisir</button>
+                    <button type="button" class="rm-pick" style="flex-shrink:0;background:#FF6F61;color:#fff;border:none;padding:10px 16px;border-radius:999px;cursor:pointer;font-weight:600;font-family:Montserrat,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:0.5px;">Choisir</button>
                 </div>`;
         }).join('');
 
@@ -302,7 +392,8 @@ document.addEventListener('DOMContentLoaded', function () {
             ville: item.locality || item.ville || '',
             code_postal: item.code_postal || '',
             categories: item.categories || item.types || [],
-            description: item.description || '',
+            description: item.description || item.desc || item.summary || '',
+            website: item.website || item.url || item.site || '',
             image: item.image || '',
             id: item.id || item._id || ''
         };

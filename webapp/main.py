@@ -150,6 +150,53 @@ def _pick_locality(doc: dict[str, Any]) -> str:
     locality = addr.get("schema:addressLocality")
     return locality if isinstance(locality, str) else ""
 
+
+def _pick_url(doc: dict[str, Any]) -> str:
+    for key in ("url", "website", "site", "site_web", "siteweb", "website_url", "url_site", "link", "homepage"):
+        value = doc.get(key)
+        if isinstance(value, str) and value.strip():
+            if value.startswith("http"):
+                return value
+            return "http://" + value
+    # search inside nested fields:
+    for key in ("contactPoint", "sameAs", "about", "mainEntityOfPage"):
+        value = doc.get(key)
+        if isinstance(value, str) and value.strip() and value.startswith("http"):
+            return value
+    return ""
+
+
+def _pick_description(doc: dict[str, Any]) -> str:
+    candidates = []
+    for key in ("description", "desc", "details", "summary", "shortDescription", "longDescription"):
+        value = doc.get(key)
+        if isinstance(value, str) and value.strip():
+            candidates.append(value.strip())
+        if isinstance(value, dict):
+            for nested in (value.get("fr"), value.get("en"), value.get("text")):
+                if isinstance(nested, str) and nested.strip():
+                    candidates.append(nested.strip())
+    if isinstance(doc.get("rdfs:comment"), dict):
+        fr = doc["rdfs:comment"].get("fr")
+        if isinstance(fr, str) and fr.strip():
+            candidates.append(fr.strip())
+    if isinstance(doc.get("hasDescription"), list):
+        for item in doc["hasDescription"]:
+            if isinstance(item, dict):
+                for key in ("shortDescription", "description", "text"):
+                    nested = item.get(key)
+                    if isinstance(nested, dict):
+                        fr = nested.get("fr")
+                        if isinstance(fr, str) and fr.strip():
+                            candidates.append(fr.strip())
+                    elif isinstance(nested, str) and nested.strip():
+                        candidates.append(nested.strip())
+    for candidate in candidates:
+        if candidate:
+            return candidate
+    return ""
+
+
 def _pick_types(doc: dict[str, Any]) -> list[str]:
     types = doc.get("@type", [])
     if isinstance(types, list): return [str(t) for t in types]
@@ -166,6 +213,8 @@ def _public_object(doc: dict[str, Any]) -> dict[str, Any]:
         "region": doc.get("region", ""),
         "types": _pick_types(doc),
         "categories": doc.get("categories", doc.get("category", [])),
+        "description": _pick_description(doc),
+        "website": _pick_url(doc),
     }
 
 def _get_object_by_id(object_id: str) -> dict[str, Any] | None:
@@ -358,6 +407,46 @@ def region_cards(region_slug: str, type: str | None = None, q: str | None = None
     final_query = and_terms[0] if len(and_terms) == 1 else {"$and": and_terms}
     cursor = target_collection.find(final_query).limit(limit)
     return [_public_object(doc) for doc in cursor]
+
+@app.get("/suggestions")
+def activity_suggestions(activity: str = Query(..., min_length=1), rayon_km: int = Query(40, ge=1, le=200)):
+    try:
+        from .suggestions import charger_donnees_completes, suggerer_top_10_alternatives
+    except ImportError:
+        from suggestions import charger_donnees_completes, suggerer_top_10_alternatives
+
+    df_global = charger_donnees_completes()
+    if df_global is None:
+        raise HTTPException(status_code=500, detail="Impossible de charger les données de suggestions")
+
+    resultats = suggerer_top_10_alternatives(activity.strip(), df_global, rayon_km)
+    if isinstance(resultats, str):
+        raise HTTPException(status_code=404, detail=resultats)
+
+    suggestions = []
+    lookup_query = lambda name: {"$or": [{"nom": name}, {"name": name}, {"label": name}, {"rdfs:label.fr": name}]}
+    for row in resultats.to_dict(orient="records"):
+        name = row.get("Activité") or row.get("activity") or ""
+        item = None
+        if name:
+            query = lookup_query(name)
+            for collection_name in [DEFAULT_COLLECTION] + [c for c in db.list_collection_names() if c not in (DEFAULT_COLLECTION, "journeys")]:
+                try:
+                    target = db[collection_name]
+                    doc = target.find_one(query)
+                except Exception:
+                    doc = None
+                if doc:
+                    item = _public_object(doc)
+                    break
+        if item is None:
+            item = {"name": name, "nom": name, "label": name, "image": "/static/img/no-image.jpg"}
+
+        item["distance"] = row.get("Distance")
+        item["match"] = row.get("Match")
+        suggestions.append(item)
+
+    return suggestions
 
 # =============================================================
 # JOURNEYS (CRUD)
