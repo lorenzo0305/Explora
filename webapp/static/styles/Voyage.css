@@ -267,3 +267,33 @@ body {
     .voyage-actions .btn-secondary,
     .voyage-actions .btn-explorer { text-align: center; }
 }
+
+/* ============ ACTIONS ÉDITION ACTIVITÉ ============ */
+.activite-actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.activite-actions button {
+    border: 1px solid var(--border-light);
+    background: var(--paper);
+    color: var(--text-main);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.activite-actions .btn-act-replace:hover {
+    background: var(--accent-pastel);
+    border-color: var(--accent-pastel);
+    color: #fff;
+}
+.activite-actions .btn-act-remove {
+    color: var(--bordeaux-nav);
+}
+.activite-actions .btn-act-remove:hover {
+    background: var(--bordeaux-nav);
+    border-color: var(--bordeaux-nav);
+    color: #fff;
+}

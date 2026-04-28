@@ -7,7 +7,13 @@ let isBookOpen = false;
 
 document.addEventListener('DOMContentLoaded', () => {
     loadBasketIntoSidebar();
-    
+
+    // Quand le panier change ailleurs (autre page, autre onglet), on recharge la sidebar
+    window.addEventListener('wishbasket:change', () => loadBasketIntoSidebar());
+    window.addEventListener('storage', e => {
+        if (!e.key || e.key === BASKET_KEY) loadBasketIntoSidebar();
+    });
+
     document.getElementById('tripTitle').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') this.blur();
     });
@@ -309,16 +315,21 @@ function updateDayNumbers() {
 /* =========================================
    SAUVEGARDER
 ========================================= */
-document.getElementById('saveJourneyBtn').addEventListener('click', () => {
+document.getElementById('saveJourneyBtn').addEventListener('click', async () => {
+    const btn = document.getElementById('saveJourneyBtn');
+    const originalText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Sauvegarde...';
+
     const title = document.getElementById('tripTitle').value || 'Mon Voyage';
     const spreads = document.querySelectorAll('.day-spread');
-    
+
     let plan = [];
     let firstImage = '/static/img/no-image.jpg';
 
     spreads.forEach((spread, index) => {
         let dayPlan = { day: index + 1, slots: [] };
-        
+
         ['matin', 'midi', 'aprem', 'soir'].forEach(time => {
             const zone = spread.querySelector(`.drop-zone[data-time="${time}"]`);
             if(zone) {
@@ -332,19 +343,52 @@ document.getElementById('saveJourneyBtn').addEventListener('click', () => {
         plan.push(dayPlan);
     });
 
+    const nowIso = new Date().toISOString();
     const newJourney = {
-        id: 'j_' + Date.now().toString(36), name: title, location: 'Mon Carnet Magazine', cover: firstImage,
-        createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), plan: plan
+        id: 'j_' + Date.now().toString(36),
+        name: title,
+        location: 'Mon Carnet Magazine',
+        cover: firstImage,
+        createdAt: nowIso,
+        updatedAt: nowIso,
+        plan: plan,
+        source: 'editor'
     };
 
+    // 1) Sauvegarde côté serveur (Mongo)
+    try {
+        const res = await fetch('/journeys', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(newJourney)
+        });
+        if (res.ok) {
+            const result = await res.json();
+            // Le serveur renvoie un id Mongo qu'on adopte comme id canonique
+            if (result && result.id) newJourney.id = result.id;
+        } else {
+            let detail = '';
+            try { const j = await res.json(); detail = j.detail || j.message || ''; } catch(e){}
+            console.warn('Sauvegarde serveur échouée :', res.status, detail);
+            alert("Sauvegarde côté serveur impossible (HTTP " + res.status + "). Le voyage sera gardé en local.");
+        }
+    } catch (err) {
+        console.warn('Erreur réseau pendant la sauvegarde :', err);
+        alert("Pas de connexion au serveur — le voyage sera gardé en local.");
+    }
+
+    // 2) Cache local (pour rendu instantané sur /topics)
     let allJourneys = [];
     try { allJourneys = JSON.parse(localStorage.getItem(JOURNEYS_KEY) || '[]'); } catch(e){}
     allJourneys.unshift(newJourney);
     localStorage.setItem(JOURNEYS_KEY, JSON.stringify(allJourneys));
 
+    // 3) Vide les éléments déposés du panier (on garde ceux non utilisés)
     const list = document.getElementById('basket-items-list');
     const remainingItems = Array.from(list.querySelectorAll('.draggable-item')).map(item => ({ id: item.dataset.id, name: item.dataset.name, image: item.dataset.image, types: [item.dataset.type] }));
     localStorage.setItem(BASKET_KEY, JSON.stringify(remainingItems));
 
+    btn.textContent = originalText;
+    btn.disabled = false;
     window.location.href = '/topics';
 });

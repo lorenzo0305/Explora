@@ -1,69 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Explora — Détail du voyage</title>
 
-  <link rel="stylesheet" href="/static/styles/app.css">
-  <link rel="stylesheet" href="/static/styles/ViewJourney.css?v=2.0"> 
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@700;900&family=Alex+Brush&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explora — Détail du voyage</title>
+
+    <link rel="stylesheet" href="/static/styles/app.css">
+    <link rel="stylesheet" href="/static/styles/ViewJourney.css?v=3">
+    <link rel="stylesheet" href="/static/styles/wishbasket.css?v=1">
+    <script src="/static/scripts/wishbasket.js?v=1" defer></script>
+    <script src="/static/scripts/ViewJourney.js?v=2" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@700;900&family=Alex+Brush&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <div class="app-frame">
-      
-      <nav class="top-nav">
-          <div class="nav-logo"><span class="logo-fill">EXP</span><span class="logo-outline">LORA</span></div>
-          <div class="nav-links">
-              <a href="/">Accueil</a>
-              <a href="/makejourney">Créer mon voyage</a>
-              <a href="/Destinations">Catalogue d'activités</a>
-              <a href="/topics" class="active">Mes voyages</a>
-          </div>
-      </nav>
+    <div class="app-frame">
 
-      <div class="content-panel">
-          
-          <div class="journey-hero fade-in">
-              <a href="/topics" class="back-link">← Retour au carnet</a>
-              <div class="hero-image" style="background-image: url('/static/img/alsace.jpg');"></div>
-              <div class="hero-content">
-                  <span class="script-decoration">Votre itinéraire</span>
-                  <h1 id="journeyTitle" class="main-title">Voyage en Alsace</h1>
-                  <p class="journey-meta">3 Jours • 12 Activités</p>
-              </div>
-          </div>
+        <nav class="top-nav">
+            <div class="nav-logo"><span class="logo-fill">EXP</span><span class="logo-outline">LORA</span></div>
+            <div class="nav-links">
+                <a href="/">Accueil</a>
+                <a href="/makejourney">Créer mon voyage</a>
+                <a href="/Destinations">Catalogue d'activités</a>
+                <a href="/topics" class="active">Mes voyages</a>
+                <a href="/editeur">éditeur</a>
+            </div>
+            <div class="nav-actions">
+                <div class="icon-wrapper">
+                    <button id="likesIcon" class="action-btn" type="button" title="Mes Favoris">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        <span id="likesCount" class="badge pink" hidden>0</span>
+                    </button>
+                    <div id="floatingLikes" class="floating-panel"></div>
+                </div>
+                <div class="icon-wrapper">
+                    <button id="basketIcon" class="action-btn" type="button" title="Panier">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
+                        <span id="basketCount" class="badge" hidden>0</span>
+                    </button>
+                    <div id="floatingBasket" class="floating-panel"></div>
+                </div>
+                <button id="backBtn" type="button" class="nav-back" title="Retour">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span>Retour</span>
+                </button>
+            </div>
+        </nav>
 
-          <div class="journey-timeline fade-in delay-1">
-              
-              <div class="timeline-day">
-                  <div class="day-marker">Jour 1</div>
-                  
-                  <div class="timeline-card">
-                      <div class="time-slot">09:00</div>
-                      <div class="card-content">
-                          <h4>Visite de la Cathédrale</h4>
-                          <p>Patrimoine Culturel • 2 heures</p>
-                      </div>
-                  </div>
+        <div class="content-panel">
 
-                  <div class="timeline-card">
-                      <div class="time-slot">12:30</div>
-                      <div class="card-content">
-                          <h4>Déjeuner Winstub Traditionnelle</h4>
-                          <p>Gastronomie • Spécialités locales</p>
-                      </div>
-                  </div>
-              </div>
+            <header class="journey-hero fade-in">
+                <img id="cover" class="hero-image" alt="Couverture du voyage" src="/static/img/no-image.jpg">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <span class="script-decoration">Votre carnet</span>
+                    <h1 id="journeyTitle" class="main-title">Voyage</h1>
+                    <p id="journeyLocation" class="journey-location"></p>
+                    <p id="summaryLine" class="journey-meta"></p>
+                </div>
+            </header>
 
-          </div>
+            <main class="journey-body fade-in delay-1">
 
-      </div>
-  </div>
+                <section class="days-section">
+                    <h2 class="section-title">
+                        <span class="script">Itinéraire</span>
+                        <span class="caption">Cliquez sur un jour pour voir le détail</span>
+                    </h2>
+                    <div id="daysList" class="days-list">
+                        <!-- Rempli par ViewJourney.js -->
+                    </div>
+                </section>
+
+                <section class="notes-section">
+                    <h2 class="section-title">
+                        <span class="script">Notes personnelles</span>
+                        <span class="caption">Vos impressions, à garder pour plus tard</span>
+                    </h2>
+                    <textarea id="privateNotes" class="private-notes"
+                        placeholder="Vos pensées sur ce voyage, ce que vous voulez retenir, des choses à essayer la prochaine fois..."></textarea>
+                </section>
+
+            </main>
+
+        </div>
+    </div>
 
 </body>
+
 </html>
