@@ -438,16 +438,82 @@ document.addEventListener('DOMContentLoaded', function () {
         return '/static/img/no-image.jpg';
     };
 
+    function ensureSaveNameModal() {
+        let modal = document.getElementById('saveNameModal');
+        if (modal) return modal;
+        modal = document.createElement('div');
+        modal.id = 'saveNameModal';
+        modal.style.cssText = 'position:fixed;inset:0;background:rgba(28,28,28,0.55);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;';
+        modal.innerHTML = `
+            <div class="save-name-card" style="background:#FAF8F5;max-width:500px;width:100%;border-radius:16px;padding:32px;box-shadow:0 20px 60px rgba(0,0,0,0.3);font-family:Lora,serif;">
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;margin:0 0 12px;color:#1C1C1C;">Nommer ce voyage</h3>
+                <p style="margin:0 0 24px;color:#6b5f57;font-size:14px;line-height:1.6;">Donnez un nom à votre voyage pour mieux le retrouver.</p>
+                <input id="saveNameInput" type="text" placeholder="Ex: Weekend à Paris, Escapade en montagne..."
+                       style="width:100%;padding:12px 16px;border:1px solid #D4C3B3;border-radius:10px;background:#fff;font-family:Lora,serif;font-size:14px;box-sizing:border-box;margin-bottom:24px;">
+                <div style="display:flex;gap:12px;justify-content:flex-end;">
+                    <button id="saveNameCancel" type="button" style="background:none;border:1px solid #D4C3B3;color:#6b5f57;padding:10px 20px;border-radius:6px;cursor:pointer;font-weight:600;font-family:Montserrat,sans-serif;font-size:12px;">Annuler</button>
+                    <button id="saveNameConfirm" type="button" style="background:#FF6F61;border:none;color:#fff;padding:10px 24px;border-radius:6px;cursor:pointer;font-weight:600;font-family:Montserrat,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:0.5px;">Sauvegarder</button>
+                </div>
+            </div>`;
+        document.body.appendChild(modal);
+        return modal;
+    }
+
+    function closeSaveNameModal() {
+        const m = document.getElementById('saveNameModal');
+        if (m) m.style.display = 'none';
+    }
+
+    function openSaveNameModal(defaultName) {
+        return new Promise((resolve) => {
+            const modal = ensureSaveNameModal();
+            const input = modal.querySelector('#saveNameInput');
+            input.value = defaultName || '';
+            modal.style.display = 'flex';
+
+            const onConfirm = () => {
+                const name = (input.value || '').trim();
+                cleanup();
+                resolve(name || defaultName);
+            };
+
+            const onCancel = () => {
+                cleanup();
+                resolve(null);
+            };
+
+            const cleanup = () => {
+                modal.querySelector('#saveNameConfirm').removeEventListener('click', onConfirm);
+                modal.querySelector('#saveNameCancel').removeEventListener('click', onCancel);
+                input.removeEventListener('keypress', onKeypress);
+                closeSaveNameModal();
+            };
+
+            const onKeypress = (e) => {
+                if (e.key === 'Enter') onConfirm();
+                if (e.key === 'Escape') onCancel();
+            };
+
+            modal.querySelector('#saveNameConfirm').addEventListener('click', onConfirm);
+            modal.querySelector('#saveNameCancel').addEventListener('click', onCancel);
+            input.addEventListener('keypress', onKeypress);
+            input.focus();
+        });
+    }
+
     if (saveBtn) {
         saveBtn.addEventListener('click', async () => {
-            const nowIso = new Date().toISOString();
             const locationLabel = criteria?.ville || '';
-            const name = locationLabel
+            const defaultName = locationLabel
                 ? `Voyage à ${locationLabel} — ${new Date().toLocaleDateString('fr-FR')}`
                 : `Voyage du ${new Date().toLocaleDateString('fr-FR')}`;
 
+            const customName = await openSaveNameModal(defaultName);
+            if (customName === null) return; // utilisateur a annulé
+
+            const nowIso = new Date().toISOString();
             const payload = {
-                name,
+                name: customName || defaultName,
                 location: locationLabel,
                 cover: pickCoverFromPlan(dataVoyage),
                 createdAt: nowIso,
