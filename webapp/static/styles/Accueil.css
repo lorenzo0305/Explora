@@ -272,22 +272,43 @@ body {
 .featured-item:hover { opacity: 0.8; }
 
 .featured-item .thumb {
-  width: 100%; height: 250px; border-radius: 8px; background-size: cover;
-  background-position: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  background-color: #EFE6D5; 
+  width: 100%; height: 250px; border-radius: 8px;
+  background-size: cover; background-position: center; background-repeat: no-repeat;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  background-color: #FBF7F1;
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+.featured-item:hover .thumb {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.10);
 }
 
-.featured-item .name { 
-  font-size: 15px; font-weight: 600; color: var(--text-main); margin: 0; 
+.featured-item .name {
+  font-size: 15px; font-weight: 600; color: var(--text-main); margin: 0;
 }
 
-/* Dégradés chic sable/terre */
-.featured-item:nth-child(1) .thumb { background: linear-gradient(135deg, #FDFBF7, #D4C3B3) !important; }
-.featured-item:nth-child(2) .thumb { background: linear-gradient(135deg, #F5F0E6, #C4A484) !important; }
-.featured-item:nth-child(3) .thumb { background: linear-gradient(135deg, #EFE6D5, #B8977E) !important; }
-.featured-item:nth-child(4) .thumb { background: linear-gradient(135deg, #E6DACA, #A68A6D) !important; }
-.featured-item:nth-child(5) .thumb { background: linear-gradient(135deg, #D4C3B3, #8B6E53) !important; }
-.featured-item:nth-child(6) .thumb { background: linear-gradient(135deg, #C4A484, #6E5339) !important; }
+/* Carte vide (placeholder) — style carnet papier */
+.featured-item.placeholder { cursor: default; opacity: .85; }
+.featured-item.placeholder .thumb {
+  background: #FBF7F1;
+  border: 1.5px dashed #D4C3B3;
+  display: flex; align-items: center; justify-content: center;
+  color: #B8977E;
+  font-family: 'Alex Brush', cursive;
+  font-size: 2.6rem;
+  line-height: 1;
+  position: relative;
+}
+.featured-item.placeholder .thumb::before {
+  content: '✈';
+  font-family: inherit;
+  font-size: 2.4rem;
+  color: #D4C3B3;
+  opacity: .8;
+}
+.featured-item.placeholder .name,
+.featured-item.placeholder .comment { color: #B8977E; font-style: italic; }
+.featured-item.placeholder:hover .thumb { transform: none; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
 
 /* Panels flottants */
 .floating-panel {

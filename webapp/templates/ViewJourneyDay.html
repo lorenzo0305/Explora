@@ -6,9 +6,11 @@
   <title>WishAdventure — Détail de la journée</title>
 
   <link rel="stylesheet" href="/static/styles/app.css">
-  <link rel="stylesheet" href="/static/styles/DetailActPerso.css">
-  <script src="/static/scripts/DetailActPerso.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles/ViewJourneyDay.css?v=3">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@700;900&family=Alex+Brush&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="app">
@@ -37,7 +39,18 @@
           </div>
         </div>
 
-        <div class="summary" id="summaryLine"><span>pour <b>…</b> pers.</span><span>• <b>…€</b></span></div>
+        <div class="summary" id="summaryLine">
+          <span class="sum-field">pour
+            <input type="number" id="editPersons" class="inline-edit" min="1" max="999" placeholder="…" />
+            <span class="sum-suffix">pers.</span>
+          </span>
+          <span class="sum-sep">•</span>
+          <span class="sum-field">
+            <input type="number" id="editPrice" class="inline-edit" min="0" step="1" placeholder="…" />
+            <span class="sum-suffix">€</span>
+          </span>
+          <span id="saveBadge" class="save-badge" hidden>✓ Sauvegardé</span>
+        </div>
       </div>
 
       <div id="slotsWrap"></div>
@@ -324,6 +337,65 @@
       return parts.length ? parts.join(" ~ ") : "type ~ lieu ~ prix";
     };
     
+    /* ====== Édition personnes / prix ====== */
+    let _summaryWired = false;
+    let _saveTimer = null;
+    function persistJourneyChanges(j){
+      // 1) localStorage : on remplace l'entrée correspondante
+      try {
+        for (const k of JOURNEY_KEYS){
+          const arr = JSON.parse(localStorage.getItem(k) || "[]");
+          if (!Array.isArray(arr) || !arr.length) continue;
+          const i = arr.findIndex(x => String(x.id) === String(j.id));
+          if (i >= 0){
+            arr[i] = { ...arr[i], persons: j.persons, price: j.price, updatedAt: new Date().toISOString() };
+            localStorage.setItem(k, JSON.stringify(arr));
+          }
+        }
+      } catch {}
+      // 2) Notifie les autres pages
+      try { window.dispatchEvent(new CustomEvent("wishbasket:change")); } catch {}
+      // 3) Tente une sauvegarde serveur (best-effort)
+      try {
+        fetch(`/journeys/${encodeURIComponent(j.id)}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ persons: j.persons, price: j.price })
+        }).catch(()=>{});
+      } catch {}
+      // 4) Petit feedback visuel
+      const badge = document.getElementById("saveBadge");
+      if (badge){
+        badge.hidden = false;
+        badge.classList.remove("show");
+        // reflow pour relancer l'anim
+        void badge.offsetWidth;
+        badge.classList.add("show");
+        clearTimeout(badge._t);
+        badge._t = setTimeout(()=>{ badge.classList.remove("show"); badge.hidden = true; }, 1600);
+      }
+    }
+    function wireSummaryEdits(j){
+      if (_summaryWired) return;
+      _summaryWired = true;
+      const personsInput = document.getElementById("editPersons");
+      const priceInput   = document.getElementById("editPrice");
+      const onChange = () => {
+        const p = personsInput && personsInput.value !== "" ? Math.max(1, parseInt(personsInput.value, 10) || 1) : null;
+        const pr= priceInput   && priceInput.value   !== "" ? Math.max(0, parseInt(priceInput.value, 10) || 0)   : null;
+        j.persons = p;
+        j.price   = pr;
+        clearTimeout(_saveTimer);
+        _saveTimer = setTimeout(() => persistJourneyChanges(j), 320);
+      };
+      if (personsInput) personsInput.addEventListener("input", onChange);
+      if (priceInput)   priceInput.addEventListener("input", onChange);
+      // sécurité : sauvegarde immédiate au blur
+      [personsInput, priceInput].filter(Boolean).forEach(el => {
+        el.addEventListener("blur", () => { clearTimeout(_saveTimer); persistJourneyChanges(j); });
+      });
+    }
+
     /* ====== Rendu ====== */
     function render(j, dayIndex){
       localStorage.setItem(LAST_ID_KEY, String(j.id));
@@ -335,7 +407,13 @@
       document.getElementById("journeyTitle").textContent = j?.name || "Voyage";
       document.getElementById("journeyLocation").textContent = j?.location || "Ville, lieux...";
       document.getElementById("dayTitle").textContent = `Jour ${idx}`;
-      document.getElementById("summaryLine").innerHTML = `pour <b>${j?.persons ?? "…"}</b> pers. • <b>${j?.price ?? "…"}€</b>`;
+
+      // Champs éditables : personnes & prix
+      const personsInput = document.getElementById("editPersons");
+      const priceInput   = document.getElementById("editPrice");
+      if (personsInput) personsInput.value = (j?.persons ?? "") === "" ? "" : String(j.persons);
+      if (priceInput)   priceInput.value   = (j?.price   ?? "") === "" ? "" : String(j.price);
+      wireSummaryEdits(j);
     
       const d = days[idx-1] || days[0];
       const wrap = document.getElementById("slotsWrap");
