@@ -150,8 +150,41 @@ body {
     font-size: 1.4rem; color: var(--text-main); margin-bottom: 4px;
 }
 .day-desc {
-    font-family: 'Lora', serif; font-style: italic;
+    font-family: 'Lora', serif;
     color: var(--text-warm); font-size: 14px; line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.day-desc-empty {
+    font-style: italic;
+    color: var(--text-soft);
+    opacity: .75;
+}
+
+/* Chips de moments (Matinée / Midi / ...) */
+.day-chips {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-top: 8px;
+}
+.day-chip {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 9px;
+    background: var(--paper-dim);
+    color: var(--text-soft);
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    line-height: 1.4;
+}
+.day-chip-count {
+    background: var(--accent-pastel);
+    color: #fff;
+    border-color: var(--accent-pastel);
 }
 
 /* État vide */

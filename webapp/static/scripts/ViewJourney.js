@@ -19,15 +19,38 @@ function getJourneyId() {
 }
 
 const A = (a) => Array.isArray(a) ? a : (a && typeof a === "object") ? Object.values(a) : [];
+
+// Mapping FR ↔ EN. L'algo IA pond des clés françaises (matin/midi/aprem/soir),
+// l'éditeur peut pondre des clés anglaises. On gère les deux.
+const SLOT_FR_EN = { matin: 'morning', midi: 'noon', aprem: 'afternoon', soir: 'evening' };
+
 function slotsArrayToObj(slotsArr) {
     const obj = { morning: [], noon: [], afternoon: [], evening: [] };
-    (Array.isArray(slotsArr) ? slotsArr : []).forEach(s => { const k = String(s?.key || "").toLowerCase(); if (obj[k]) obj[k] = A(s.items); }); return obj;
+    (Array.isArray(slotsArr) ? slotsArr : []).forEach(s => {
+        const raw = String(s?.key || "").toLowerCase();
+        const k = SLOT_FR_EN[raw] || raw;
+        if (obj[k]) obj[k] = A(s.items);
+    });
+    return obj;
 }
-function normalizeSlots(s) { s = s || {}; return { morning: A(s.morning), noon: A(s.noon), afternoon: A(s.afternoon), evening: A(s.evening) }; }
+function normalizeSlots(s) {
+    s = s || {};
+    return {
+        morning:   A(s.morning   ?? s.matin),
+        noon:      A(s.noon      ?? s.midi),
+        afternoon: A(s.afternoon ?? s.aprem),
+        evening:   A(s.evening   ?? s.soir),
+    };
+}
 function normalizeDayAny(d, i) {
     if (!d || typeof d !== "object") return { day: (i || 0) + 1, slots: { morning: [], noon: [], afternoon: [], evening: [] } };
-    const day = (d.day != null) ? Number(d.day) : (i || 0) + 1; if (Array.isArray(d.slots)) return { day, slots: slotsArrayToObj(d.slots) };
-    return { day, slots: normalizeSlots(d.slots || { morning: d.morning, noon: d.noon, afternoon: d.afternoon, evening: d.evening }) };
+    const day = (d.day != null) ? Number(d.day) : (d.jour != null ? Number(d.jour) : (i || 0) + 1);
+    if (Array.isArray(d.slots)) return { day, slots: slotsArrayToObj(d.slots) };
+    // Cas 1 : d.slots = objet ; Cas 2 : les slots sont directement sur d (matin/aprem/...)
+    const src = (d.slots && typeof d.slots === "object" && !Array.isArray(d.slots))
+        ? d.slots
+        : { morning: d.morning ?? d.matin, noon: d.noon ?? d.midi, afternoon: d.afternoon ?? d.aprem, evening: d.evening ?? d.soir };
+    return { day, slots: normalizeSlots(src) };
 }
 function deriveDays(j) {
     if (Array.isArray(j?.plan)) return j.plan.map((d, i) => normalizeDayAny(d, i));
@@ -101,13 +124,52 @@ function render(j) {
 
         const meta = document.createElement('div'); meta.className = 'day-meta';
         const name = document.createElement('div'); name.className = 'day-name'; name.textContent = 'Journée ' + d.day;
+
+        // Collecte des activités (avec nom)
         const labels = [['morning', 'Matinée'], ['noon', 'Midi'], ['afternoon', 'Après-midi'], ['evening', 'Soirée']];
-        const present = []; let count = 0;
-        for (const [k, fr] of labels) { const len = (d.slots?.[k]?.length || 0); if (len) { present.push(fr); count += len; } }
+        const activities = [];
+        const presentSlots = [];
+        for (const [k, fr] of labels) {
+            const arr = d.slots?.[k] || [];
+            if (arr.length) presentSlots.push(fr);
+            for (const a of arr) activities.push(a);
+        }
+        const total = activities.length;
+
+        // Ligne 1 : noms des premières activités
         const desc = document.createElement('div'); desc.className = 'day-desc';
-        desc.textContent = count ? `${count} activités ~ ${present.join(' · ')}` : 'type des activités ~ distance ~ prix';
+        if (total) {
+            const firstNames = activities
+                .slice(0, 3)
+                .map(a => (a?.name || a?.nom || a?.title || 'Activité').toString().trim())
+                .filter(Boolean);
+            const more = total - firstNames.length;
+            desc.textContent = firstNames.join(' · ') + (more > 0 ? ` +${more}` : '');
+        } else {
+            desc.textContent = 'Journée libre — cliquez pour ajouter des activités';
+            desc.classList.add('day-desc-empty');
+        }
 
         meta.appendChild(name); meta.appendChild(desc);
+
+        // Ligne 2 : petits chips moments + total
+        if (total || presentSlots.length) {
+            const chips = document.createElement('div'); chips.className = 'day-chips';
+            if (total) {
+                const cnt = document.createElement('span');
+                cnt.className = 'day-chip day-chip-count';
+                cnt.textContent = `${total} activité${total > 1 ? 's' : ''}`;
+                chips.appendChild(cnt);
+            }
+            presentSlots.forEach(s => {
+                const c = document.createElement('span');
+                c.className = 'day-chip';
+                c.textContent = s;
+                chips.appendChild(c);
+            });
+            meta.appendChild(chips);
+        }
+
         left.appendChild(thumb); left.appendChild(meta);
         item.appendChild(left);
 

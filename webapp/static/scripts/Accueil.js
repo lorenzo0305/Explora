@@ -108,13 +108,15 @@ function firstImageInActivity(a) {
 }
 function firstImageInDay(d) {
     if (!d) return "";
-    // d.slots peut être {morning:[],noon:[],afternoon:[],evening:[]} ou un tableau de slots
+    // d.slots peut être {morning:[],noon:[],afternoon:[],evening:[]} ou {matin,midi,aprem,soir} ou un tableau de slots
     let buckets = [];
     if (d.slots && typeof d.slots === "object") {
         if (Array.isArray(d.slots)) buckets = d.slots.map(s => s.items || []);
-        else buckets = ["morning", "noon", "afternoon", "evening"].map(k => d.slots[k] || []);
+        else ["morning", "noon", "afternoon", "evening", "matin", "midi", "aprem", "soir"].forEach(k => {
+            if (Array.isArray(d.slots[k])) buckets.push(d.slots[k]);
+        });
     }
-    // Compatibilité avec d.matin / d.aprem etc.
+    // Compatibilité quand les slots sont posés directement sur le jour (cas algo IA)
     ["matin", "midi", "aprem", "soir", "morning", "noon", "afternoon", "evening"].forEach(k => {
         if (Array.isArray(d[k])) buckets.push(d[k]);
     });
@@ -250,12 +252,14 @@ function collectActivitiesFromJourneys(journeys, max = 5) {
             const buckets = [];
             if (d?.slots && typeof d.slots === "object") {
                 if (Array.isArray(d.slots)) d.slots.forEach(s => buckets.push(s.items || []));
-                else ["morning", "noon", "afternoon", "evening"].forEach(k => buckets.push(d.slots[k] || []));
+                else ["morning", "noon", "afternoon", "evening", "matin", "midi", "aprem", "soir"]
+                    .forEach(k => { if (Array.isArray(d.slots[k])) buckets.push(d.slots[k]); });
             }
-            ["matin", "midi", "aprem", "soir"].forEach(k => { if (Array.isArray(d[k])) buckets.push(d[k]); });
+            ["matin", "midi", "aprem", "soir", "morning", "noon", "afternoon", "evening"]
+                .forEach(k => { if (Array.isArray(d[k])) buckets.push(d[k]); });
             for (const bucket of buckets) {
                 for (const a of (bucket || [])) {
-                    const id = a?.id || a?.objectId || a?._id;
+                    const id = a?.id || a?.objectId || a?._id || a?.nom || a?.name;
                     const img = firstImageInActivity(a);
                     if (!img || !id || seen.has(String(id))) continue;
                     seen.add(String(id));

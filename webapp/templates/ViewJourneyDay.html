@@ -112,15 +112,34 @@
       return first || "";
     }
     
-    /* ====== Normalisation jours/slots ====== */
-    function slotsArrayToObj(slotsArr){ const obj={morning:[],noon:[],afternoon:[],evening:[]};
-      (Array.isArray(slotsArr)?slotsArr:[]).forEach(s=>{ const k=String(s?.key||"").toLowerCase(); if(obj[k]) obj[k]=A(s.items); }); return obj; }
-    function normalizeSlots(s){ s=s||{}; return { morning:A(s.morning), noon:A(s.noon), afternoon:A(s.afternoon), evening:A(s.evening) }; }
+    /* ====== Normalisation jours/slots (FR + EN) ====== */
+    const SLOT_FR_EN = { matin:'morning', midi:'noon', aprem:'afternoon', soir:'evening' };
+    function slotsArrayToObj(slotsArr){
+      const obj={morning:[],noon:[],afternoon:[],evening:[]};
+      (Array.isArray(slotsArr)?slotsArr:[]).forEach(s=>{
+        const raw=String(s?.key||"").toLowerCase();
+        const k=SLOT_FR_EN[raw]||raw;
+        if(obj[k]) obj[k]=A(s.items);
+      });
+      return obj;
+    }
+    function normalizeSlots(s){
+      s=s||{};
+      return {
+        morning:   A(s.morning   ?? s.matin),
+        noon:      A(s.noon      ?? s.midi),
+        afternoon: A(s.afternoon ?? s.aprem),
+        evening:   A(s.evening   ?? s.soir),
+      };
+    }
     function normalizeDayAny(d,i){
       if(!d||typeof d!=="object") return {day:(i||0)+1,slots:{morning:[],noon:[],afternoon:[],evening:[]}};
-      const day=(d.day!=null)?Number(d.day):(i||0)+1;
+      const day=(d.day!=null)?Number(d.day):(d.jour!=null?Number(d.jour):(i||0)+1);
       if(Array.isArray(d.slots)) return {day,slots:slotsArrayToObj(d.slots)};
-      return {day,slots:normalizeSlots(d.slots||{morning:d.morning,noon:d.noon,afternoon:d.afternoon,evening:d.evening})};
+      const src = (d.slots && typeof d.slots==="object" && !Array.isArray(d.slots))
+        ? d.slots
+        : { morning:d.morning??d.matin, noon:d.noon??d.midi, afternoon:d.afternoon??d.aprem, evening:d.evening??d.soir };
+      return {day,slots:normalizeSlots(src)};
     }
     function deriveDays(j){
       if(Array.isArray(j?.plan)) return j.plan.map((d,i)=>normalizeDayAny(d,i));
@@ -331,10 +350,13 @@
     /* ====== Libellés ====== */
     const SLOT_LABEL = { morning:"Matinée", noon:"Midi", afternoon:"Après-midi", evening:"Soirée" };
     const fmtMeta = (a)=> {
-      const parts=[]; if(a?.type||a?.category) parts.push(a.type||a.category);
-      if(a?.place||a?.location) parts.push(a.place||a.location);
-      if(a?.price) parts.push(`${a.price}€`);
-      return parts.length ? parts.join(" ~ ") : "type ~ lieu ~ prix";
+      const parts=[];
+      const type = a?.type || a?.category || (Array.isArray(a?.categories) ? a.categories[0] : null) || (Array.isArray(a?.types) ? a.types[0] : null);
+      if (type) parts.push(type);
+      const place = a?.place || a?.location || a?.ville || a?.locality || a?.code_postal;
+      if (place) parts.push(place);
+      if (a?.price) parts.push(`${a.price}€`);
+      return parts.length ? parts.join(" ~ ") : "";
     };
     
     /* ====== Édition personnes / prix ====== */
@@ -434,7 +456,7 @@
           if (firstImg === DEFAULT_ACTIVITY_IMG) tryEnrichThumbAsync(th, a);
     
           const meta=document.createElement("div"); meta.className="ameta";
-          const an=document.createElement("div"); an.className="aname"; an.textContent=a?.name||"Activité";
+          const an=document.createElement("div"); an.className="aname"; an.textContent=a?.name||a?.nom||a?.title||"Activité";
           const ad=document.createElement("div"); ad.className="adesc"; ad.textContent=fmtMeta(a);
           meta.appendChild(an); meta.appendChild(ad);
     
