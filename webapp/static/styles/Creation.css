@@ -122,10 +122,10 @@ input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; height: 16px
 .vp-front {
     position: absolute;
     /* Tes coordonnées exactes */
-    left: 18.0%; 
-    top: 39.0%; 
-    width: 47.2%; 
-    height: 35.5%; 
+    left: 7.6%; 
+    top: 20.0%; 
+    width: 54.4%; 
+    height: 67.5%; 
     z-index: 15; 
     overflow: hidden; 
 }
@@ -134,8 +134,8 @@ input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; height: 16px
 .vp-back {
     position: absolute;
     /* Aligné précisément avec vp-front */
-    left: 18.0%; 
-    width: 47.2%; 
+    left: 7.6%; 
+    width: 54.4%; 
     /* S'arrête pile au-dessus de l'écran (100 - 39.0 = 61.0%) */
     bottom: 61.0%; 
     height: 600px; 
