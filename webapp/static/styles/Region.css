@@ -148,10 +148,42 @@ body {
 
 .giant-screen-landscape {
     width: 100%; height: 100%;
-    background-color: var(--pastel-blue);
-    border-radius: 32px; position: relative; overflow: auto;
-    /* Plus de marge à gauche pour éviter l'encoche */
+    /* Utilisation de TON image pure en fond */
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/static/img/pure.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 32px; position: relative; 
+    overflow-y: auto;
     padding: 30px 30px 30px 60px; 
+    box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+    scrollbar-width: none; /* Cache la barre sur Firefox */
+}
+
+/* Cache la barre de défilement sur Chrome/Safari */
+.giant-screen-landscape::-webkit-scrollbar {
+    display: none;
+}
+
+.app-icon {
+    display: flex; flex-direction: column; align-items: center; gap: 8px; 
+    cursor: default; /* Enlève le curseur main sur les icônes */
+}
+
+.app-icon-img {
+    width: 70px; height: 70px; border-radius: 14px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.app-icon:hover .app-icon-img {
+    transform: translateY(-5px);
+}
+
+.app-icon-text {
+    font-family: 'Montserrat', sans-serif; font-size: 11px;
+    color: #FFFFFF; font-weight: 700; text-align: center; line-height: 1.2;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+    max-width: 85px; margin-top: 4px;
 }
 
 .close-phone-btn {

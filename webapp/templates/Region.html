@@ -73,11 +73,11 @@
                       </div>
                   </div>
 
-                  <div class="phone-mockup" onclick="openPhone('Patrimoine')">
+                  <div class="phone-mockup" onclick="openPhone('Culture')">
                       <div class="notch"></div>
                       <div class="phone-screen">
                           <div class="fake-video" style="background-image: url('/static/img/mt_st_michel2.jpg');"></div>
-                          <div class="phone-label">Patrimoine</div>
+                          <div class="phone-label">Culture</div>
                       </div>
                   </div>
 
@@ -123,56 +123,106 @@
       </div>
   </div>
 
-  <script>
-      async function openPhone(categoryName) {
-    const modal = document.getElementById('giantPhoneModal');
-    const title = document.getElementById('giantPhoneTitle');
-    const grid = document.getElementById('appGrid');
-    
-    // 1. Récupérer le nom affiché sur le site (ex: "AUVERGNE-RHÔNE-ALPES")
-    let regionTitre = document.getElementById('regionName').innerText.toUpperCase(); 
-    
-    // 2. Traduction pour la base de données
-    let regionSource = "";
-    if (regionTitre.includes("AUVERGNE")) {
-        regionSource = "Auvergne";
-    } else if (regionTitre.includes("HAUT")) {
-        regionSource = "Haut_de_France";
-    } else {
-        regionSource = regionTitre; // Cas par défaut
-    }
+<script>
+    // 1. LE DICTIONNAIRE DES THÈMES (C'est ici que l'on configure les images par catégorie)
+    const THEMES = {
+        "Nature": {
+            fond: "/static/img/pure.jpg", // Le fond d'écran du téléphone
+            icones: [
+                '/static/img/sauge1.png',
+                '/static/img/sauge2.jpg',
+                '/static/img/sauge3.jpg',
+                '/static/img/sauge4.jpg',
+                '/static/img/sauge5.jpg',
+                '/static/img/sauge6.jpg'
+            ]
+        },
+        "Gastronomie": {
+            fond: "/static/img/pure.jpg", 
+            icones: [
+                '/static/img/food1.jpg', 
+                '/static/img/food2.jpg',
+                '/static/img/food3.jpg',
+                '/static/img/food4.jpg',
+                '/static/img/food5.jpg',
+                '/static/img/food6.jpg'
+            ]
+        },
+        "Culture": {
+            fond: "/static/img/pure.jpg", 
+            icones: [
+                '/static/img/culture1.jpg', 
+                '/static/img/culture2.jpg',
+                '/static/img/culture3.jpg',
+                '/static/img/culture4.jpg',
+                '/static/img/culture5.jpg',
+                '/static/img/culture6.jpg'
+            ]
+        },    };
 
-    title.innerText = categoryName;
-    grid.innerHTML = '<p style="color:white; padding:20px;">Chargement...</p>';
-    modal.style.display = 'flex';
+    // 2. La séquence ultime anti-répétition
+    const MIX = [0, 1, 2, 3, 4, 5, 2, 4, 0, 5, 1, 3, 4, 2, 5, 0, 3, 1, 5, 3, 1, 4, 2];
 
-    try {
-        // On appelle l'API avec le nom court (Auvergne ou Haut_de_France)
-        const response = await fetch(`/api/activites/${regionSource}/${categoryName}`);
-        const data = await response.json();
+    async function openPhone(categoryName) {
+        const modal = document.getElementById('giantPhoneModal');
+        const title = document.getElementById('giantPhoneTitle');
+        const grid = document.getElementById('appGrid');
+        const phoneScreen = document.querySelector('.giant-screen-landscape');
+        
+        let regionTitre = document.getElementById('regionName').innerText.toUpperCase(); 
+        let regionSource = regionTitre.includes("AUVERGNE") ? "Auvergne" : (regionTitre.includes("HAUT") ? "Haut_de_France" : regionTitre);
 
-        grid.innerHTML = ''; 
-        if (!data || data.length === 0) {
-            grid.innerHTML = `<p style="color:white; padding:20px;">Aucune activité trouvée pour ${regionSource}.</p>`;
-            return;
+        // --- CHARGEMENT DU THÈME ---
+        // Si la catégorie existe dans THEMES, on la prend. Sinon, on utilise "Nature" par défaut pour éviter que ça plante.
+        const currentTheme = THEMES[categoryName] || THEMES["Nature"];
+        
+        // On applique le fond d'écran de la catégorie au téléphone
+        phoneScreen.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('${currentTheme.fond}')`;
+
+        title.innerText = categoryName;
+        grid.innerHTML = '<p style="color:white; padding:20px; font-weight:bold;">Chargement...</p>';
+        modal.style.display = 'flex';
+
+        try {
+            const response = await fetch(`/api/activites/${regionSource}/${categoryName}`);
+            const data = await response.json();
+
+            grid.innerHTML = ''; 
+            if (!data || data.length === 0) {
+                grid.innerHTML = `<p style="color:white; padding:20px;">Aucune activité trouvée.</p>`;
+                return;
+            }
+
+            data.forEach((act, index) => {
+                let bgStyle = "";
+
+                if (act.image && !act.image.includes('no-image') && !act.image.includes('appareil_photo')) {
+                    bgStyle = `background-image: url('${act.image}'); background-color: #111; background-size: cover; background-position: center;`;
+                } 
+                else {
+                    // On pioche dans les icônes du thème actuel !
+                    // On rajoute "% currentTheme.icones.length" au cas où tu as mis moins de 6 images dans une catégorie
+                    const variantIndex = MIX[index % MIX.length] % currentTheme.icones.length;
+                    const cardUrl = currentTheme.icones[variantIndex];
+                    
+                    bgStyle = `background-image: url('${cardUrl}'); background-color: #111; background-size: cover; background-position: center;`;
+                }
+
+                grid.innerHTML += `
+                    <div class="app-icon">
+                        <div class="app-icon-img" style="${bgStyle}"></div>
+                        <div class="app-icon-text">${act.name}</div>
+                    </div>`;
+            });
+        } catch (err) {
+            grid.innerHTML = '<p style="color:red; padding:20px;">Erreur de connexion</p>';
         }
-
-        data.forEach(act => {
-            grid.innerHTML += `
-                <div class="app-icon">
-                    <div class="app-icon-img" style="background-image: url('${act.image || '/static/img/appareil_photo.png'}'); background-color: white; background-size: cover; background-position: center;"></div>
-                    <div class="app-icon-text">${act.name}</div>
-                </div>`;
-        });
-    } catch (err) {
-        grid.innerHTML = '<p style="color:white;">Erreur serveur</p>';
     }
-}
 
-      function closePhone(e) {
-          document.getElementById('giantPhoneModal').style.display = 'none';
-      }
-  </script>
+    function closePhone(e) {
+        document.getElementById('giantPhoneModal').style.display = 'none';
+    }
+</script>
 
 </body>
 </html>
