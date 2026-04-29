@@ -234,7 +234,7 @@
             const initialQ = new URLSearchParams(location.search).get('q') || '';
             if (initialQ) { searchInput.value = initialQ; doSearch(initialQ); }
         }
-        wireCategoryCards();
+       // wireCategoryCards();
 
         // Synchro inter-onglet
         window.addEventListener('storage', e => {

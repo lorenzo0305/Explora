@@ -292,6 +292,11 @@ def exploration(request: Request):
 def region_page(request: Request, region_slug: str):
     return templates.TemplateResponse(request=request, name="Region.html", context={"region": region_slug})
 
+# LA NOUVELLE ROUTE
+@app.get("/categorie/{cat_slug}")
+def categorie_page(request: Request, cat_slug: str):
+    return templates.TemplateResponse(request=request, name="Categorie.html", context={"categorie": cat_slug})
+
 @app.get("/carnet", response_class=HTMLResponse)
 @app.get("/topics", response_class=HTMLResponse)
 def carnet(request: Request):

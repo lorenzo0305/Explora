@@ -233,6 +233,9 @@ const S = { q: '', loading: false, offset: 0, limit: 30, reachedEnd: false, next
 
 function clearResults() {
     resultsBox.innerHTML = ''; resultsBox.style.display = 'none';
+    // On réaffiche les régions quand on vide la recherche !
+    const sections = document.querySelector('.sections-container');
+    if (sections) sections.style.display = 'flex';
     S.loading = false; S.offset = 0; S.reachedEnd = false; S.next = null;
 }
 function appendLoader() {
