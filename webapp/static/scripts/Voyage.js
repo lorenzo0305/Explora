@@ -189,25 +189,34 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.id = 'replaceModal';
         modal.style.cssText = 'position:fixed;inset:0;background:rgba(28,28,28,0.55);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;';
         modal.innerHTML = `
-            <div class="rm-card" style="background:#FAF8F5;max-width:760px;width:100%;max-height:85vh;overflow:auto;border-radius:16px;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,0.3);font-family:Lora,serif;">
-                <div class="rm-header" style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px;">
-                    <div>
-                        <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;margin:0;color:#1C1C1C;">Choisir une activité de remplacement</h3>
-                        <p class="rm-helper" style="margin:8px 0 0;color:#6b5f57;font-size:14px;line-height:1.6;max-width:620px;">Conservez la barre de recherche et découvrez ci-dessous des activités recommandées dans un style inspiré du catalogue.</p>
-                    </div>
-                    <button id="rmClose" type="button" style="background:none;border:none;font-size:26px;cursor:pointer;color:#6b5f57;line-height:1;">×</button>
-                </div>
-                <input id="rmSearch" type="text" placeholder="Rechercher (nom, lieu, catégorie)…"
-                       style="width:100%;padding:12px 16px;border:1px solid #D4C3B3;border-radius:10px;background:#fff;font-family:Lora,serif;font-size:14px;margin-bottom:22px;">
-                <div class="rm-search-results">
-                    <div class="rm-rec-title">Résultats de recherche</div>
-                    <div id="rmResults" class="rm-results"></div>
-                </div>
-                <div class="rm-recommendations">
-                    <div class="rm-rec-title">Suggestions recommandées</div>
-                    <div id="rmCarousel" class="rm-carousel"></div>
-                </div>
-            </div>`;
+    <div class="rm-card" style="background:#FAF8F5;max-width:760px;width:100%;max-height:85vh;overflow:auto;border-radius:16px;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,0.3);font-family:Lora,serif;">
+        <div class="rm-header" style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px;">
+            <div>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;margin:0;color:#1C1C1C;">Remplacer l'activité</h3>
+                <p class="rm-helper" style="margin:8px 0 0;color:#6b5f57;font-size:14px;">Choisissez une alternative selon vos envies.</p>
+            </div>
+            <button id="rmClose" type="button" style="background:none;border:none;font-size:26px;cursor:pointer;color:#6b5f57;">×</button>
+        </div>
+
+        <!-- SÉLECTEUR DE MODE -->
+        <div style="display:flex; gap:10px; margin-bottom:20px;">
+            <button id="btnModeSimilaire" style="flex:1; padding:10px; border-radius:8px; border:1px solid #FF6F61; background:#FF6F61; color:white; cursor:pointer; font-weight:600;">Esprit similaire</button>
+            <button id="btnModeDifferent" style="flex:1; padding:10px; border-radius:8px; border:1px solid #D4C3B3; background:white; color:#6b5f57; cursor:pointer; font-weight:600;">Changer de style</button>
+        </div>
+
+        <input id="rmSearch" type="text" placeholder="Rechercher manuellement…"
+               style="width:100%;padding:12px 16px;border:1px solid #D4C3B3;border-radius:10px;margin-bottom:22px;">
+        
+        <div class="rm-recommendations">
+            <div id="rmCarouselTitle" class="rm-rec-title">Suggestions similaires</div>
+            <div id="rmCarousel" class="rm-carousel"></div>
+        </div>
+        
+        <div class="rm-search-results">
+            <div class="rm-rec-title">Tous les résultats</div>
+            <div id="rmResults" class="rm-results"></div>
+        </div>
+    </div>`;
         document.body.appendChild(modal);
         modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
         modal.querySelector('#rmClose').addEventListener('click', closeModal);
@@ -223,25 +232,52 @@ document.addEventListener('DOMContentLoaded', function () {
     let _searchTimer = null;
 
     function openReplaceModal(target) {
-        _currentTarget = target;
-        const modal = ensureModal();
-        modal.style.display = 'flex';
-        const input = modal.querySelector('#rmSearch');
-        const results = modal.querySelector('#rmResults');
-        const carousel = modal.querySelector('#rmCarousel');
-        input.value = '';
-        results.innerHTML = '<p style="color:#6b5f57;font-style:italic;text-align:center;padding:20px 0;">Chargement des résultats…</p>';
-        carousel.innerHTML = '<p style="color:#6b5f57;font-style:italic;text-align:center;padding:20px 0;width:100%;">Chargement des recommandations…</p>';
+    _currentTarget = target;
+    const modal = ensureModal();
+    modal.style.display = 'flex';
+    
+    const input = modal.querySelector('#rmSearch');
+    const results = modal.querySelector('#rmResults');
+    const carousel = modal.querySelector('#rmCarousel');
+    const title = modal.querySelector('#rmCarouselTitle');
+    const btnSim = modal.querySelector('#btnModeSimilaire');
+    const btnDiff = modal.querySelector('#btnModeDifferent');
 
-        const currentAct = dataVoyage[target.jourIdx]?.[target.moment]?.[target.slotIdx];
-        const currentName = currentAct?.nom || currentAct?.name || currentAct?.label || '';
-        if (currentName) {
-            loadRecommendations(currentName).then(items => renderRecommendationCards(items, carousel));
+    input.value = '';
+    results.innerHTML = ''; 
+
+    const currentAct = dataVoyage[target.jourIdx]?.[target.moment]?.[target.slotIdx];
+    const currentName = currentAct?.nom || currentAct?.name || currentAct?.label || '';
+
+    // Logique de rafraîchissement des recommandations
+    const refreshRecommendations = async (mode) => {
+        carousel.innerHTML = '<p style="color:#6b5f57;font-style:italic;text-align:center;padding:20px 0;width:100%;">Analyse de vos préférences…</p>';
+        
+        // Mise à jour visuelle des onglets
+        if (mode === 'similaire') {
+            btnSim.style.background = '#FF6F61'; btnSim.style.color = 'white';
+            btnDiff.style.background = 'transparent'; btnDiff.style.color = '#6b5f57';
+            title.textContent = "Suggestions dans le même esprit";
         } else {
-            carousel.innerHTML = '<p style="color:#6b5f57;font-style:italic;text-align:center;padding:20px 0;width:100%;">Aucune activité de référence trouvée.</p>';
+            btnDiff.style.background = '#FF6F61'; btnDiff.style.color = 'white';
+            btnSim.style.background = 'transparent'; btnSim.style.color = '#6b5f57';
+            title.textContent = "Suggestions différentes";
         }
 
-        // Charge des suggestions initiales en fonction de la région
+        if (currentName) {
+            const items = await loadRecommendations(currentName, mode);
+            renderRecommendationCards(items, carousel);
+        } else {
+            carousel.innerHTML = '<p style="width:100%; text-align:center;">Activité de référence manquante.</p>';
+        }
+    };
+
+    // Events pour les boutons de mode
+        btnSim.onclick = () => refreshRecommendations('similaire');
+        btnDiff.onclick = () => refreshRecommendations('different');
+
+    // Chargement initial
+        refreshRecommendations('similaire');
         loadSuggestions('').then(items => renderModalResults(items, results));
 
         input.oninput = () => {
@@ -283,70 +319,76 @@ document.addEventListener('DOMContentLoaded', function () {
         return [];
     }
 
-    async function loadRecommendations(activityName) {
-        try {
-            const r = await fetch(`/suggestions?activity=${encodeURIComponent(activityName)}`);
-            if (r.ok) {
-                const data = await r.json();
-                return Array.isArray(data) ? data : [];
-            }
-        } catch (_) {}
-        return [];
-    }
-
-    function renderRecommendationCards(items, container) {
-        if (!items || !items.length) {
-            container.innerHTML = '<div class="rm-empty">Aucune recommandation disponible pour cette activité.</div>';
-            return;
+    async function loadRecommendations(activityName, mode = 'similaire') {
+    try {
+        // AJOUT du paramètre &mode= dans l'URL
+        const url = `/suggestions?activity=${encodeURIComponent(activityName)}&mode=${mode}`;
+        const r = await fetch(url);
+        if (r.ok) {
+            const data = await r.json();
+            return Array.isArray(data) ? data : [];
         }
-        container.innerHTML = items.map(item => {
-            const id = escapeHtml(String(item.id || item._id || item.nom || item.name || ''));
-            const name = escapeHtml(item.name || item.nom || item.label || 'Sans nom');
-            const subtitle = escapeHtml(item.locality || item.region || (item.categories && item.categories[0]) || item.ville || '');
-            const img = escapeHtml((item.image && /^https?:/.test(item.image)) ? item.image : (item.cover || item.photo || '/static/img/no-image.jpg'));
-            const match = escapeHtml(item.match || '');
-            const distance = escapeHtml(item.distance || '');
-            const desc = escapeHtml(item.description || item.desc || item.summary || '').trim();
-            const website = escapeHtml(item.website || item.url || item.site || '');
-            const websiteHref = website ? (website.startsWith('http') ? website : `https://${website}`) : '';
-            const hasDetail = desc || websiteHref;
-            return `
-                <div class="rm-card-item${hasDetail ? ' has-detail' : ''}" data-id="${id}">
-                    <div class="rm-card-visual">
-                        <img src="${img}" alt="${name}" onerror="this.src='/static/img/no-image.jpg'" />
-                    </div>
-                    <div class="rm-card-body">
-                        <div class="rm-card-title">${name}</div>
-                        <div class="rm-card-meta">${subtitle}</div>
-                        <div class="rm-card-stats"><span>${match}</span> <span>${distance}</span></div>
-                        ${hasDetail ? `<div class="rm-card-detail">
-                            ${desc ? `<div class="rm-card-desc">${desc}</div>` : ''}
-                            ${websiteHref ? `<a href="${websiteHref}" target="_blank" rel="noopener noreferrer" class="rm-card-link">Voir le site</a>` : ''}
-                        </div>` : ''}
-                    </div>
-                    <div class="rm-card-actions">
-                        <button type="button" class="rm-pick">Choisir</button>
-                    </div>
-                </div>`;
-        }).join('');
-
-        container.querySelectorAll('.rm-card-item').forEach(card => {
-            const pick = () => {
-                const id = card.dataset.id;
-                const item = items.find(x => String(x.id || x._id || x.nom || x.name) === id);
-                if (!item) return;
-                applyReplacement(item);
-            };
-            const detail = card.querySelector('.rm-card-detail');
-            if (detail) {
-                card.addEventListener('click', function (e) {
-                    if (e.target.closest('.rm-pick')) return;
-                    card.classList.toggle('expanded');
-                });
-            }
-            card.querySelector('.rm-pick')?.addEventListener('click', e => { e.stopPropagation(); pick(); });
-        });
+    } catch (err) {
+        console.error("Erreur lors de la récupération des suggestions :", err);
     }
+    return [];
+}
+    function renderRecommendationCards(items, container) {
+    if (!items || !items.length) {
+        container.innerHTML = '<div class="rm-empty" style="padding:20px; text-align:center; width:100%;">Aucune recommandation disponible.</div>';
+        return;
+    }
+
+    container.style.display = 'grid';
+    container.style.gridTemplateColumns = 'repeat(auto-fill, minmax(160px, 1fr))';
+    container.style.gap = '16px';
+    container.style.padding = '10px 0';
+
+    container.innerHTML = items.map(item => {
+        const id = escapeHtml(String(item.id || item._id || item.nom || ''));
+        const name = escapeHtml(item.name || item.nom || 'Sans nom');
+        const subtitle = escapeHtml(item.locality || item.region || (item.categories && item.categories[0]) || '');
+        const img = escapeHtml((item.image && /^https?:/.test(item.image)) ? item.image : '/static/img/no-image.jpg');
+        const stat = escapeHtml(item.match || item.type || '');
+        const distance = escapeHtml(item.distance || '');
+
+        return `
+            <div class="rm-card-item" data-id="${id}" 
+                 style="background:#fff; border:1px solid #D4C3B3; border-radius:12px; overflow:hidden; display:flex; flex-direction:column; transition: all 0.3s ease;">
+                <div class="rm-card-visual" style="height:120px; overflow:hidden;">
+                    <img src="${img}" alt="${name}" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='/static/img/no-image.jpg'" />
+                </div>
+                <div class="rm-card-body" style="padding:12px; flex:1; display:flex; flex-direction:column; gap:4px;">
+                    <div class="rm-card-title" style="font-family:'Cormorant Garamond',serif; font-size:16px; font-weight:700; color:#1C1C1C; line-height:1.2;">${name}</div>
+                    <div class="rm-card-meta" style="font-size:12px; color:#6b5f57;">${subtitle}</div>
+                    <div class="rm-card-stats" style="font-size:11px; font-weight:600; color:#FF6F61; margin-top:4px;">
+                        <span>${stat}</span> <span style="margin-left:8px; color:#6b5f57;">${distance}</span>
+                    </div>
+                </div>
+                <div class="rm-card-actions" style="padding:10px; border-top:1px solid #F0EDE9;">
+                    <button type="button" class="rm-pick" style="width:100%; background:#FF6F61; color:#fff; border:none; padding:8px; border-radius:20px; cursor:pointer; font-weight:700; font-size:11px; text-transform:uppercase;">Choisir</button>
+                </div>
+            </div>`;
+    }).join('');
+
+    // bouton Choisir
+    container.querySelectorAll('.rm-card-item').forEach(card => {
+    card.querySelector('.rm-pick').onclick = (e) => {
+        e.stopPropagation();
+        const id = card.dataset.id;
+        
+        // On retrouve l'objet original dans la liste 'items' reçue de l'API
+        const selectedItem = items.find(x => String(x.id || x._id || x.nom) === id);
+        
+        if (selectedItem) {
+            // console.log("Objet choisi :", selectedItem); // Pour débugger et voir si 'description' est là
+            applyReplacement(selectedItem);
+        }
+    };
+});
+}
+
+        
 
     function renderModalResults(items, container) {
         if (!items || !items.length) {

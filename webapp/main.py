@@ -414,25 +414,43 @@ def region_cards(region_slug: str, type: str | None = None, q: str | None = None
     return [_public_object(doc) for doc in cursor]
 
 @app.get("/suggestions")
-def activity_suggestions(activity: str = Query(..., min_length=1), rayon_km: int = Query(40, ge=1, le=200)):
+def activity_suggestions(
+    activity: str = Query(..., min_length=1), 
+    rayon_km: int = Query(40, ge=1, le=200),
+    mode: str = Query("similaire")
+):
     try:
+        # Import de la fonction SIMILAIRE depuis suggestions.py
         from .suggestions import charger_donnees_completes, suggerer_top_10_alternatives
+        # Import de la fonction DIFFÉRENT depuis remplacer_activites.py
+        from .remplacer_activites import suggerer_top_10_differents
     except ImportError:
+        # Fallback si tu n'es pas dans un module
         from suggestions import charger_donnees_completes, suggerer_top_10_alternatives
-
+        from remplacer_activites import suggerer_top_10_differents
     df_global = charger_donnees_completes()
     if df_global is None:
         raise HTTPException(status_code=500, detail="Impossible de charger les données de suggestions")
 
-    resultats = suggerer_top_10_alternatives(activity.strip(), df_global, rayon_km)
+    # --- LOGIQUE D'AIGUILLAGE SELON LE MODE ---
+    if mode == "different":
+        # Appel de l'algo de diversité
+        resultats = suggerer_top_10_differents(activity.strip(), df_global, rayon_km)
+    else:
+        # Appel de l'algo de similarité (par défaut)
+        resultats = suggerer_top_10_alternatives(activity.strip(), df_global, rayon_km)
+    # ------------------------------------------
+
     if isinstance(resultats, str):
         raise HTTPException(status_code=404, detail=resultats)
 
     suggestions = []
     lookup_query = lambda name: {"$or": [{"nom": name}, {"name": name}, {"label": name}, {"rdfs:label.fr": name}]}
+    
     for row in resultats.to_dict(orient="records"):
         name = row.get("Activité") or row.get("activity") or ""
         item = None
+        
         if name:
             query = lookup_query(name)
             for collection_name in [DEFAULT_COLLECTION] + [c for c in db.list_collection_names() if c not in (DEFAULT_COLLECTION, "journeys")]:
@@ -444,11 +462,22 @@ def activity_suggestions(activity: str = Query(..., min_length=1), rayon_km: int
                 if doc:
                     item = _public_object(doc)
                     break
+        
         if item is None:
             item = {"name": name, "nom": name, "label": name, "image": "/static/img/no-image.jpg"}
+        
+        # On essaie de récupérer la description depuis l'algorithme (row) 
+        # AVANT de l'assigner, pour ne pas écraser une description MongoDB valide
+        desc_algo = row.get("description") or row.get("desc") or row.get("summary") or ""
+        
+        # Si MongoDB (item) n'a pas de description, on met celle de l'algo
+        if not item.get("description"):
+            item["description"] = desc_algo
 
+        # On ajoute les infos calculées par l'algo
         item["distance"] = row.get("Distance")
-        item["match"] = row.get("Match")
+        item["match"] = row.get("Match") if mode == "similaire" else row.get("Type")
+        
         suggestions.append(item)
 
     return suggestions
