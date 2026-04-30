@@ -2,7 +2,6 @@
 const BASKET_KEY = 'wish_basket_v1';
 const LIKES_KEY = 'wish_likes_v1';
 
-// Elements
 const basketIcon = document.getElementById('basketIcon');
 const basketCount = document.getElementById('basketCount');
 const floatingBasket = document.getElementById('floatingBasket');
@@ -10,11 +9,9 @@ const likesIcon = document.getElementById('likesIcon');
 const likesCount = document.getElementById('likesCount');
 const floatingLikes = document.getElementById('floatingLikes');
 
-// Loaders
 const loadData = (k) => { try { return JSON.parse(localStorage.getItem(k) || '[]'); } catch { return []; } };
 const saveData = (k, d) => { localStorage.setItem(k, JSON.stringify(d)); updateCounts(); renderPanels(); };
 
-// Update Counts
 function updateCounts() {
     const b = loadData(BASKET_KEY).length;
     basketCount.textContent = b; basketCount.hidden = b === 0;
@@ -22,7 +19,6 @@ function updateCounts() {
     likesCount.textContent = l; likesCount.hidden = l === 0;
 }
 
-// Render Logic
 function renderPanel(key, container, title, emptyMsg, isLike = false) {
     const items = loadData(key);
     if (!items.length) {
@@ -44,13 +40,11 @@ function renderPanels() {
     renderPanel(LIKES_KEY, floatingLikes, 'Mes Favoris', 'Aucun favori.', true);
 }
 
-// Global remove function
 window.removeItem = function (key, id) {
     const data = loadData(key).filter(x => String(x.id) !== String(id));
     saveData(key, data);
 };
 
-// Toggles
 basketIcon.addEventListener('click', (e) => {
     e.stopPropagation();
     floatingLikes.style.display = 'none';
@@ -68,25 +62,48 @@ document.addEventListener('click', (e) => {
 
 /* ===== Données Voyages ===== */
 const JOURNEYS_KEY = "wish_journeys_v1";
-const DEFAULT_COVER = "/static/img/no-image.jpg";
+
+// --- TA BANQUE D'IMAGES DE "MES VOYAGES" ---
+const FALLBACK_IMAGES = [
+    '/static/img/baie_de_somme2.jpg',
+    '/static/img/auvergne.jpg',
+    '/static/img/montagne_france2.jpg',
+    '/static/img/boeuf_bourguignon.jpg',
+    '/static/img/semur_en_auxois.jpg',
+    '/static/img/vtt.jpg'
+];
+
+function stringToHash(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) { hash = str.charCodeAt(i) + ((hash << 5) - hash); }
+    return Math.abs(hash);
+}
+
+function getShuffledFallbacks(journeyId) {
+    let seed = stringToHash(String(journeyId || "default"));
+    let arr = [...FALLBACK_IMAGES];
+    for (let i = arr.length - 1; i > 0; i--) {
+        seed = (seed * 9301 + 49297) % 233280;
+        let rand = seed / 233280;
+        let j = Math.floor(rand * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+// ----------------------------------------------------------
 
 const lsGetJourneys = () => { try { return JSON.parse(localStorage.getItem(JOURNEYS_KEY) || "[]"); } catch { return []; } };
-const normArrLike = (a) => Array.isArray(a) ? a : (a && typeof a === "object") ? Object.values(a) : [];
 const isHttp = (u) => typeof u === "string" && /^https?:\/\//i.test(u);
 const isPath = (u) => typeof u === "string" && u.startsWith("/");
-const isNonDefaultImg = (u) => !!u && typeof u === "string" && u.indexOf("no-image") === -1;
 
-function deriveDays(j) {
-    if (Array.isArray(j?.plan)) return j.plan.map((d, i) => ({ day: (d?.day != null ? Number(d.day) : i + 1), slots: d?.slots }));
-    return [];
-}
+// On exclut les fausses images
+const isNonDefaultImg = (u) => !!u && typeof u === "string" && !u.includes("no-image") && !u.includes("appareil_photo");
 
 function metaText(j) {
     const d = Array.isArray(j?.plan) ? j.plan.length : 0;
     return (j.location ? j.location + " • " : "") + d + (d > 1 ? " jours" : " jour");
 }
 
-/* ----- Recherche récursive d'image dans le plan ----- */
 function resolveImg(u) {
     if (!u || typeof u !== "string") return "";
     u = u.trim();
@@ -97,6 +114,7 @@ function resolveImg(u) {
     if (/\.(jpe?g|png|webp|gif|tiff?|bmp)$/i.test(u)) return "/static/img/phototheque/" + u.replace(/^\/+/, "");
     return "";
 }
+
 function firstImageInActivity(a) {
     if (!a || typeof a !== "object") return "";
     const candidates = [a.image, a.photo, a.picture, a.thumbnail, a.cover, a.image_url, a.imageUrl];
@@ -106,9 +124,9 @@ function firstImageInActivity(a) {
     }
     return "";
 }
+
 function firstImageInDay(d) {
     if (!d) return "";
-    // d.slots peut être {morning:[],noon:[],afternoon:[],evening:[]} ou {matin,midi,aprem,soir} ou un tableau de slots
     let buckets = [];
     if (d.slots && typeof d.slots === "object") {
         if (Array.isArray(d.slots)) buckets = d.slots.map(s => s.items || []);
@@ -116,7 +134,6 @@ function firstImageInDay(d) {
             if (Array.isArray(d.slots[k])) buckets.push(d.slots[k]);
         });
     }
-    // Compatibilité quand les slots sont posés directement sur le jour (cas algo IA)
     ["matin", "midi", "aprem", "soir", "morning", "noon", "afternoon", "evening"].forEach(k => {
         if (Array.isArray(d[k])) buckets.push(d[k]);
     });
@@ -128,23 +145,21 @@ function firstImageInDay(d) {
     }
     return "";
 }
+
 function pickCover(j) {
-    // 1) cover explicite
     const c = resolveImg(j?.cover);
     if (c && isNonDefaultImg(c)) return c;
-    // 2) image directe sur le voyage
     const direct = firstImageInActivity(j);
     if (direct) return direct;
-    // 3) creuse dans plan / days
     const days = Array.isArray(j?.plan) ? j.plan : (Array.isArray(j?.days) ? j.days : []);
     for (const d of days) {
         const u = firstImageInDay(d);
         if (u) return u;
     }
-    return DEFAULT_COVER;
+    // L'image de remplacement déterministe
+    return getShuffledFallbacks(j?.id)[0];
 }
 
-/* ----- Récupération côté serveur (best-effort) ----- */
 async function fetchServerJourneys() {
     try {
         const r = await fetch("/journeys", { cache: "no-store" });
@@ -153,6 +168,7 @@ async function fetchServerJourneys() {
         return Array.isArray(data) ? data : (Array.isArray(data?.items) ? data.items : []);
     } catch { return []; }
 }
+
 function mergeJourneys(local, server) {
     const map = new Map();
     [...local, ...server].forEach(j => {
@@ -177,12 +193,10 @@ function buildRecentCard(j) {
     const item = document.createElement("div"); item.className = "featured-item";
     item.addEventListener("click", () => window.location.href = `/journeys/view/${encodeURIComponent(j.id)}`);
     const th = document.createElement("div"); th.className = "thumb";
+    
     const cover = pickCover(j);
-    if (cover && cover !== DEFAULT_COVER) {
-        th.style.backgroundImage = `url('${cover}')`;
-    } else {
-        th.classList.add("no-cover");
-    }
+    th.style.backgroundImage = `url('${cover}')`;
+    
     const nm = document.createElement("div"); nm.className = "name";
     nm.textContent = String(j?.name || "Voyage sans titre").replace(/\s*<br\s*\/?>\s*/gi, ' ').trim();
     const com = document.createElement("div"); com.className = "comment"; com.textContent = metaText(j);
@@ -191,7 +205,6 @@ function buildRecentCard(j) {
 }
 
 function buildPlaceholderCard() {
-    // Carte vide stylisée carnet, cliquable pour démarrer un voyage
     const item = document.createElement("a");
     item.className = "featured-item placeholder";
     item.href = "/makejourney";
@@ -208,10 +221,7 @@ async function renderRecent() {
     if (!list) return;
     list.innerHTML = ""; if (empty) empty.style.display = "none";
 
-    // 1) Affichage instantané depuis localStorage
     let journeys = lsGetJourneys().filter(j => j && j.id != null);
-
-    // 2) Fusion avec serveur en tâche de fond
     const server = await fetchServerJourneys();
     journeys = mergeJourneys(journeys, server);
 
@@ -222,16 +232,13 @@ async function renderRecent() {
     list.innerHTML = "";
     if (!journeys.length) {
         if (empty) empty.style.display = "block";
-        // Une seule carte placeholder discrète qui invite à créer
         list.appendChild(buildPlaceholderCard());
         return;
     }
     journeys.forEach(j => list.appendChild(buildRecentCard(j)));
-    // Compléter jusqu'à 5 cartes seulement si on en a déjà au moins 1
     for (let i = journeys.length; i < 5; i++) list.appendChild(buildPlaceholderCard());
 }
 
-/* Activités avec photo (parcourt les voyages pour proposer de vraies images) */
 function buildActivityCard(act) {
     const card = document.createElement("div"); card.className = "proposal-item";
     const th = document.createElement("div"); th.className = "thumb";
@@ -280,7 +287,6 @@ function renderActivities() {
     const journeys = lsGetJourneys();
     const acts = collectActivitiesFromJourneys(journeys, 5);
     acts.forEach(a => grid.appendChild(buildActivityCard(a)));
-    // S'il manque, on remplit avec des placeholders
     for (let i = acts.length; i < 5; i++) {
         const card = document.createElement("div"); card.className = "proposal-item placeholder";
         const th = document.createElement("div"); th.className = "thumb";

@@ -1,4 +1,4 @@
-// 1. Liste des images de secours, disponible pour toutes les fonctions
+// --- TA BANQUE D'IMAGES (Synchronisée avec l'Accueil) ---
 const FALLBACK_IMAGES = [
     '/static/img/baie_de_somme2.jpg',
     '/static/img/auvergne.jpg',
@@ -7,6 +7,25 @@ const FALLBACK_IMAGES = [
     '/static/img/semur_en_auxois.jpg',
     '/static/img/vtt.jpg'
 ];
+
+function stringToHash(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) { hash = str.charCodeAt(i) + ((hash << 5) - hash); }
+    return Math.abs(hash);
+}
+
+function getShuffledFallbacks(journeyId) {
+    let seed = stringToHash(String(journeyId || "default"));
+    let arr = [...FALLBACK_IMAGES];
+    for (let i = arr.length - 1; i > 0; i--) {
+        seed = (seed * 9301 + 49297) % 233280;
+        let rand = seed / 233280;
+        let j = Math.floor(rand * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+// --------------------------------------------------------
 
 /* ===== Logic Panier & Favoris ===== */
 const BASKET_KEY = 'wish_basket_v1';
@@ -36,9 +55,8 @@ function renderPanel(key, container, title, emptyMsg, isLike = false) {
         return;
     }
     
-    // On génère le HTML d'abord avec l'anti "no-image"
     const html = items.map((x, idx) => {
-        const thumb = (x.image && !x.image.includes('no-image')) 
+        const thumb = (x.image && !x.image.includes('no-image') && !x.image.includes('appareil_photo')) 
             ? x.image 
             : FALLBACK_IMAGES[idx % FALLBACK_IMAGES.length];
             
@@ -51,7 +69,6 @@ function renderPanel(key, container, title, emptyMsg, isLike = false) {
         `;
     }).join('');
 
-    // Puis on l'injecte proprement
     container.innerHTML = `<h4>${title}</h4>${html}` + (isLike ? '' : `<div class="panel-footer"><a href="/makejourney">Aller à la création</a></div>`);
 }
 
@@ -90,8 +107,6 @@ const JOURNEYS_KEY = "wish_journeys_v1";
 const lsGetJourneys = () => { try { return JSON.parse(localStorage.getItem(JOURNEYS_KEY) || "[]"); } catch { return []; } };
 const lsSetJourneys = (arr) => { try { localStorage.setItem(JOURNEYS_KEY, JSON.stringify(arr)); } catch { } };
 
-function normalizeSlotsAny(s) { s = s || {}; return { morning: s.morning || [], noon: s.noon || [], afternoon: s.afternoon || [], evening: s.evening || [] }; }
-
 function activitiesCount(j) {
     if (!Array.isArray(j?.plan)) return 0;
     return j.plan.reduce((acc, d) => {
@@ -113,11 +128,9 @@ function metaText(j) {
     return (j.location ? j.location + " • " : "") + d + (d > 1 ? " jours" : " jour") + " • " + a + (a > 1 ? " activités" : " activité");
 }
 
-function pickCover(j, index) {
-    // Si on a déjà une belle couverture, on la garde
-    if (j?.cover && !j.cover.includes('no-image')) return j.cover;
+function pickCover(j) {
+    if (j?.cover && !j.cover.includes('no-image') && !j.cover.includes('appareil_photo')) return j.cover;
 
-    // Sinon, on cherche dans les activités du plan
     if (Array.isArray(j?.plan)) {
         for (const day of j.plan) {
             const slots = day.slots || day;
@@ -125,16 +138,15 @@ function pickCover(j, index) {
             for (let slot of imgs) {
                 if (Array.isArray(slot)) {
                     for (let act of slot) {
-                        if (act?.image && !act.image.includes('no-image')) return act.image;
+                        if (act?.image && !act.image.includes('no-image') && !act.image.includes('appareil_photo')) return act.image;
                     }
                 }
             }
         }
     }
 
-    // LA PIOCHE PARFAITE : On utilise la position de la carte (0, 1, 2, 3...)
-    const safeIndex = typeof index === 'number' ? index : 0;
-    return FALLBACK_IMAGES[safeIndex % FALLBACK_IMAGES.length];
+    // Le même algorithme que pour l'Accueil, avec les mêmes images !
+    return getShuffledFallbacks(j?.id)[0];
 }
 
 function stashEditPayload(j) {
@@ -161,7 +173,6 @@ async function deleteServerJourney(id) {
         const res = await fetch(`/journeys/${encodeURIComponent(id)}`, { method: 'DELETE' });
         return res.ok || res.status === 404;
     } catch (err) {
-        console.warn('[MesVoyages] Suppression serveur échouée :', err.message);
         return false;
     }
 }
@@ -197,19 +208,16 @@ function renderJourneys(journeys) {
         .replace(/&/g, '&amp;').replace(/</g, '&lt;')
         .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-    // On utilise forEach pour récupérer l'index (0, 1, 2...) de chaque voyage
-    journeys.forEach((j, index) => {
+    journeys.forEach((j) => {
         const item = document.createElement("div"); 
         item.className = "item";
         
-        // Nettoie les anciens noms qui contiennent un <br> littéral injecté par l'ancien Voyage.js
-        const cleanName = String(j.name || "Voyage sans titre").replace(/\s*<br\s*\/?>\s*/gi, ' ').trim();
-        const formattedName = esc(cleanName);
+        const safeName = esc(j.name || "Voyage sans titre");
+        const formattedName = safeName.replace(/\s*[—\-]\s*/, '<br>');
         
         item.innerHTML = `
           <div class="left">
-            <!-- On passe l'index à pickCover ici ! -->
-            <div class="thumb" style="background-image:url('${esc(pickCover(j, index))}')"></div>
+            <div class="thumb" style="background-image:url('${esc(pickCover(j))}')"></div>
             <div class="meta">
               <div class="name">${formattedName}</div>
               <div class="desc">${esc(metaText(j))}</div>
