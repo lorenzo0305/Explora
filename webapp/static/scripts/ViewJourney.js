@@ -2,8 +2,7 @@ const DEFAULT_COVER = "/static/img/no-image.jpg";
 const JOURNEY_KEYS = ["wish_journeys_v1", "journeys"];
 const LAST_ID_KEY = "wish_last_journey_id";
 
-// --- TA RÉSERVE DE BELLES IMAGES ---
-// Tu peux en rajouter autant que tu veux ici !
+// --- RÉSERVE D'IMAGES POUR LES JOURS ---
 const DAY_FALLBACKS = [
     '/static/img/roussillon.jpg',
     '/static/img/canoe_occitanie.jpg',
@@ -13,22 +12,39 @@ const DAY_FALLBACKS = [
     '/static/img/autoir.jpg'
 ];
 
-// 1. Outil pour transformer l'ID de ton voyage en un nombre unique
-function stringToHash(str) {
-    let hash = 0;
-    for (let i = 0; i < str.length; i++) {
-        hash = str.charCodeAt(i) + ((hash << 5) - hash);
-    }
-    return Math.abs(hash);
+// --- BIBLIOTHÈQUE PREMIUM POUR LES ACTIVITÉS (DICTIONNAIRES) ---
+const THEMES = {
+    "Nature": { icones: ['/static/img/nature1.jpg', '/static/img/nature2.jpg', '/static/img/nature3.jpg', '/static/img/nature4.jpg', '/static/img/nature5.jpg', '/static/img/nature6.jpg'] },
+    "Gastronomie": { icones: ['/static/img/food1.jpg', '/static/img/food2.jpg', '/static/img/food3.jpg', '/static/img/food4.jpg', '/static/img/food5.jpg', '/static/img/food6.jpg'] },
+    "Culture": { icones: ['/static/img/culture1.jpg', '/static/img/culture2.jpg', '/static/img/culture3.jpg', '/static/img/culture4.jpg', '/static/img/culture5.jpg', '/static/img/culture6.jpg'] },
+    "Sport": { icones: ['/static/img/sport1.jpg', '/static/img/sport2.jpg', '/static/img/sport3.jpg', '/static/img/sport4.jpg', '/static/img/sport5.png', '/static/img/sport6.jpg'] },   
+    "Détente": { icones: ['/static/img/detente1.jpg', '/static/img/detente2.jpg', '/static/img/detente3.jpg', '/static/img/detente4.jpg', '/static/img/detente55.jpg', '/static/img/detente6.jpg'] },
+    "Shopping": { icones: ['/static/img/shopping1.jpg', '/static/img/shopping2.jpg', '/static/img/shopping3.jpg', '/static/img/shopping4.jpg', '/static/img/shopping5.jpg', '/static/img/shopping6.jpg'] }
+};
+const MIX = [0, 1, 2, 3, 4, 5, 2, 4, 0, 5, 1, 3, 4, 2, 5, 0, 3, 1, 5, 3, 1, 4, 2];
+
+function getCategoryFromActivity(activity) {
+    let typeStr = activity?.type || activity?.category || (Array.isArray(activity?.categories) ? activity.categories[0] : null) || (Array.isArray(activity?.types) ? activity.types[0] : null) || "";
+    typeStr = String(typeStr).toLowerCase();
+    if (typeStr.includes('nature') || typeStr.includes('parc') || typeStr.includes('jardin')) return "Nature";
+    if (typeStr.includes('gastronomie') || typeStr.includes('restaurant') || typeStr.includes('food')) return "Gastronomie";
+    if (typeStr.includes('culture') || typeStr.includes('musée') || typeStr.includes('patrimoine')) return "Culture";
+    if (typeStr.includes('sport') || typeStr.includes('loisir') || typeStr.includes('aventure')) return "Sport";
+    if (typeStr.includes('détente') || typeStr.includes('spa') || typeStr.includes('bien-être')) return "Détente";
+    if (typeStr.includes('shopping') || typeStr.includes('boutique') || typeStr.includes('magasin')) return "Shopping";
+    return "Nature"; // Par défaut
 }
 
-// 2. Le mélangeur "Déterministe" : Il mélange les images toujours 
-// de la même façon pour un ID de voyage donné !
+// Outils de hachage et mélange
+function stringToHash(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) { hash = str.charCodeAt(i) + ((hash << 5) - hash); }
+    return Math.abs(hash);
+}
 function getShuffledFallbacks(journeyId) {
     let seed = stringToHash(String(journeyId || "default"));
     let arr = [...DAY_FALLBACKS];
     for (let i = arr.length - 1; i > 0; i--) {
-        // Mathématiques pour générer du faux hasard figé
         seed = (seed * 9301 + 49297) % 233280;
         let rand = seed / 233280;
         let j = Math.floor(rand * (i + 1));
@@ -100,7 +116,6 @@ function activityImage(it) {
     return safeImg(u);
 }
 
-// On passe le voyage (j) pour pouvoir mélanger les images selon l'ID
 function randomDayImage(d, j) {
     const order = ['morning', 'noon', 'afternoon', 'evening']; const pool = [];
     for (const k of order) { 
@@ -109,11 +124,8 @@ function randomDayImage(d, j) {
             if (u && !u.includes('no-image') && !u.includes('appareil_photo')) pool.push(u); 
         } 
     }
-    
-    // S'il y a des vraies images d'activités, on prend toujours la 1ère (pour éviter que ça clignote au rechargement)
     if (pool.length) return pool[0];
     
-    // SINON : on pioche dans notre liste mélangée spécialement pour CE voyage
     const shuffled = getShuffledFallbacks(j?.id);
     const dayNumber = d.day || 1;
     return shuffled[(dayNumber - 1) % shuffled.length];
@@ -128,7 +140,6 @@ function coverFrom(j) {
             if (u && !u.includes('no-image') && !u.includes('appareil_photo')) return u;
         }
     }
-    // C'est ici qu'on force ton image de bannière par défaut
     return '/static/img/travel.jpg';
 }
 
@@ -147,7 +158,6 @@ function mergeJourneys(a = {}, b = {}) {
 }
 
 function setImgWithFallback(imgEl, url, j) {
-    // Et on la force ici aussi au cas où le navigateur n'arrive pas à charger la vraie image
     const fallbackImg = '/static/img/travel.jpg';
     const finalUrl = url || fallbackImg;
     imgEl.onerror = function () { if (imgEl.dataset.fallback !== "1") { imgEl.dataset.fallback = "1"; imgEl.src = fallbackImg; } };
@@ -157,24 +167,61 @@ function setImgWithFallback(imgEl, url, j) {
 function render(j) {
     localStorage.setItem(LAST_ID_KEY, String(j.id));
 
+    // Titre propre
     document.getElementById('journeyTitle').textContent = String(j?.name || 'Voyage').replace(/\s*<br\s*\/?>\s*/gi, ' ').trim();
-    document.getElementById('journeyLocation').textContent = j?.location || 'Ville, lieux...';
-    // On passe j pour récupérer la bonne cover de remplacement si besoin
+    
+    const locText = j?.location || '';
+    const locEl = document.getElementById('journeyLocation');
+    if (!locText || locText === 'Mon Carnet Magazine' || locText === 'Ville, lieux...') {
+        locEl.style.display = 'none';
+    } else {
+        locEl.textContent = locText;
+        locEl.style.display = 'block';
+    }
+    
     setImgWithFallback(document.getElementById('cover'), coverFrom(j), j);
 
     const days = deriveDays(j || {}); const aCount = countActivities(j || {});
+    
     document.getElementById('summaryLine').innerHTML =
-        `<span><b id="daysLabel">${days.length}</b> jours pour <b>${j?.persons ?? '…'}</b> pers.</span>
-         <span>• <b>${j?.price ?? '…'}€</b> • <b>${aCount}</b> activité${aCount > 1 ? 's' : ''}</span>`;
+        `<span><b id="daysLabel">${days.length}</b> jour${days.length > 1 ? 's' : ''}</span>
+         <span style="margin: 0 10px;">•</span>
+         <span><b>${aCount}</b> activité${aCount > 1 ? 's' : ''}</span>`;
+
+    const backBtn = document.getElementById('backBtn');
+    const sectionTitle = document.querySelector('.section-title');
+    if (backBtn && sectionTitle && backBtn.parentNode !== sectionTitle) {
+        sectionTitle.style.display = 'flex';
+        sectionTitle.style.flexDirection = 'row';
+        sectionTitle.style.justifyContent = 'space-between';
+        sectionTitle.style.alignItems = 'flex-end';
+        
+        const titleWrap = document.createElement('div');
+        titleWrap.style.display = 'flex';
+        titleWrap.style.flexDirection = 'column'; 
+        
+        while (sectionTitle.childNodes.length > 0) {
+            titleWrap.appendChild(sectionTitle.childNodes[0]);
+        }
+        sectionTitle.appendChild(titleWrap);
+        sectionTitle.appendChild(backBtn);
+    }
 
     const list = document.getElementById('daysList'); list.innerHTML = '';
+    
+    // Le fameux compteur pour mélanger les images Premium
+    let globalActivityIndex = 0; 
+    
     for (let idx = 0; idx < days.length; idx++) {
         const d = days[idx];
+        
+        const dayContainer = document.createElement('div');
+        dayContainer.className = 'day-column'; // Kanban Layout !
+        
         const item = document.createElement('div'); item.className = 'day-item';
         const left = document.createElement('div'); left.className = 'day-left';
         const thumb = document.createElement('div'); thumb.className = 'day-thumb';
         
-        // On passe 'j' en deuxième paramètre !
         thumb.style.backgroundImage = `url('${randomDayImage(d, j)}')`;
 
         const meta = document.createElement('div'); meta.className = 'day-meta';
@@ -225,18 +272,119 @@ function render(j) {
         left.appendChild(thumb); left.appendChild(meta);
         item.appendChild(left);
 
-        item.addEventListener('click', () => {
-            const id = getJourneyId();
-            window.location.href = `/journeys/view/${encodeURIComponent(id)}/day/${idx + 1}`;
+        const rightWrap = document.createElement('div');
+        rightWrap.style.marginLeft = 'auto'; 
+        rightWrap.style.paddingLeft = '15px';
+        
+        const detailBtn = document.createElement('button');
+        detailBtn.className = 'btn-voir-detail';
+        detailBtn.textContent = 'Voir le détail';
+        
+        rightWrap.appendChild(detailBtn);
+        item.appendChild(rightWrap);
+
+        const detailsInline = document.createElement('div');
+        detailsInline.className = 'day-details-inline';
+        
+        const slotsLabels = { morning: 'Matinée', noon: 'Midi', afternoon: 'Après-midi', evening: 'Soirée' };
+        ['morning', 'noon', 'afternoon', 'evening'].forEach(slotKey => {
+            const slotActivities = d.slots?.[slotKey] || [];
+            if (slotActivities.length > 0) {
+                const sec = document.createElement('div');
+                sec.className = 'inline-slot-sec';
+                sec.innerHTML = `<div class="inline-slot-title">${slotsLabels[slotKey]}</div>`;
+                
+                slotActivities.forEach(act => {
+                    const actCard = document.createElement('div');
+                    actCard.className = 'inline-act-card';
+                    actCard.style.flexDirection = 'column'; 
+                    actCard.style.alignItems = 'flex-start';
+
+                    let img = activityImage(act) || '';
+                    
+                    // --- LA MAGIE DES IMAGES PREMIUM APPLIQUÉE AUX ACTIVITÉS ---
+                    if (!img || img.includes('no-image') || img.includes('appareil_photo')) {
+                        const category = getCategoryFromActivity(act);
+                        const currentTheme = THEMES[category] || THEMES["Nature"];
+                        const variantIndex = MIX[globalActivityIndex % MIX.length] % currentTheme.icones.length;
+                        img = currentTheme.icones[variantIndex];
+                    }
+                    globalActivityIndex++; // On avance dans la séquence
+                    // -----------------------------------------------------------
+
+                    let desc = act?.description || act?.shortDescription || "";
+                    if (typeof desc === 'object') desc = desc.fr || desc.en || Object.values(desc)[0] || "";
+                    if (!desc || desc.trim() === "") desc = "Aucune description détaillée n'est disponible pour cette activité.";
+
+                    actCard.innerHTML = `
+                        <div style="display: flex; align-items: center; gap: 12px; width: 100%;">
+                            <img src="${img}" class="inline-act-thumb" onerror="this.src='/static/img/no-image.jpg'">
+                            <div style="flex: 1;">
+                                <div style="font-weight:700; font-size:14px; color: var(--text-main);">${act.name || act.nom || 'Activité'}</div>
+                                <div style="font-size:12px; color: var(--text-soft);">${act.city || act.ville || act.locality || ''}</div>
+                            </div>
+                        </div>
+                        <p style="font-size: 13px; color: var(--text-soft); line-height: 1.5; margin: 10px 0 0 0; width: 100%;">
+                            ${desc}
+                        </p>
+                    `;
+
+                    sec.appendChild(actCard);
+                });
+                detailsInline.appendChild(sec);
+            }
         });
 
-        list.appendChild(item);
+        // Gestion Indépendante de l'ouverture
+        const toggleAction = () => {
+            if (total === 0) return; 
+            
+            const isOpen = detailsInline.classList.contains('show');
+            
+            if (isOpen) {
+                detailsInline.classList.remove('show');
+                item.classList.remove('is-open');
+                detailBtn.textContent = 'Voir le détail';
+            } else {
+                detailsInline.classList.add('show');
+                item.classList.add('is-open');
+                detailBtn.textContent = 'Fermer';
+            }
+        };
+
+        item.addEventListener('click', toggleAction);
+        
+        dayContainer.appendChild(item);
+        dayContainer.appendChild(detailsInline);
+        list.appendChild(dayContainer);
     }
 
     const notesKey = 'journey_notes_' + j.id;
     const ta = document.getElementById('privateNotes');
     ta.value = localStorage.getItem(notesKey) || '';
-    ta.addEventListener('input', () => localStorage.setItem(notesKey, ta.value));
+
+    ta.addEventListener('input', () => {
+        localStorage.setItem(notesKey, ta.value);
+        const btn = document.getElementById('saveNotesBtn');
+        if (btn && btn.textContent === 'Enregistré') {
+            btn.textContent = 'Sauvegarder les notes';
+        }
+    });
+
+    if (!document.getElementById('saveNotesBtn')) {
+        const btn = document.createElement('button');
+        btn.id = 'saveNotesBtn';
+        btn.className = 'save-notes-btn';
+        btn.textContent = 'Sauvegarder les notes';
+        
+        btn.addEventListener('click', () => {
+            localStorage.setItem(notesKey, ta.value);
+            ta.blur();
+            btn.textContent = 'Enregistré'; 
+        });
+        
+        ta.parentNode.insertBefore(btn, ta.nextSibling);
+    }
 }
 
 document.getElementById('backBtn').addEventListener('click', () => history.back());
