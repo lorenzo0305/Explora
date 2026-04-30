@@ -1,0 +1,723 @@
+{
+  "@id": "https://data.datatourisme.fr/13/858f2f78-6fd5-3f20-a1ac-6757dbae86f9",
+  "dc:identifier": "139037",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Le Refuge"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/a5e00132-373a-3031-800f-d987a3c9f87b",
+    "dc:identifier": "146",
+    "schema:email": [
+      "iarbuz@pilat-tourisme.fr",
+      "lisa.pilat.tourisme@gmail.com",
+      "lperottino@pilat-tourisme.fr",
+      "mtrouiller@pilat-tourisme.fr"
+    ],
+    "schema:legalName": "Office de Tourisme du Pilat",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.parc-naturel-pilat.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/88e36be4-4160-37bc-b3c6-9e931b0f4a14",
+      "schema:email": [
+        "benjamin.miribel@yahoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 77 80 21 39"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    },
+    {
+      "@id": "kb:VegetarianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Vegetarische Küche"
+        ],
+        "pt": [
+          "Cozinha vegetariana"
+        ],
+        "en": [
+          "Vegetarian cuisine"
+        ],
+        "it": [
+          "Cucina vegetariana"
+        ],
+        "fr": [
+          "Cuisine végétarienne"
+        ],
+        "nl": [
+          "Vegetarische keuken"
+        ],
+        "es": [
+          "Cocina vegetariana"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/ee478aa1-3fd1-3b8d-9184-e150dc9a1bcf",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/86eae0ce-5196-3cf5-bff8-0834fb149a09",
+          "schema:addressLocality": "Planfoy",
+          "schema:postalCode": "42660",
+          "schema:streetAddress": [
+            "Le Guizay"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:42172",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Planfoy"
+              ],
+              "pt": [
+                "Planfoy"
+              ],
+              "en": [
+                "Planfoy"
+              ],
+              "it": [
+                "Planfoy"
+              ],
+              "fr": [
+                "Planfoy"
+              ],
+              "nl": [
+                "Planfoy"
+              ],
+              "es": [
+                "Planfoy"
+              ]
+            },
+            "insee": "42172",
+            "isPartOfDepartment": {
+              "@id": "kb:France8442",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Loire"
+                ],
+                "pt": [
+                  "Loire"
+                ],
+                "en": [
+                  "Loire"
+                ],
+                "it": [
+                  "Loire"
+                ],
+                "fr": [
+                  "Loire"
+                ],
+                "nl": [
+                  "Loire"
+                ],
+                "es": [
+                  "Loire"
+                ]
+              },
+              "insee": "42",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/4ae6a0fd-fb13-3b2f-b477-97dad37a5fd3",
+        "schema:elevation": "940",
+        "schema:latitude": "45.39222",
+        "schema:longitude": "4.408977",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/2b2e35aa-6513-3927-8c43-fc8de8039c4c",
+          "schema:validFrom": "2026-05-01T00:00:00",
+          "schema:validThrough": "2026-05-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Geöffnet von Dienstag bis Samstag mittags und Freitagabend/Samstagabend im Mai."
+            ],
+            "en": [
+              "Open Tuesday to Saturday lunchtime and Friday evening/Saturday evening for the month of May."
+            ],
+            "it": [
+              "Aperto dal martedì al sabato a pranzo e il venerdì e il sabato sera a maggio."
+            ],
+            "fr": [
+              "Ouvert du mardi au samedi midi et vendredi soir/samedi soir pour le mois de mai."
+            ],
+            "nl": [
+              "Geopend van dinsdag tot zaterdagmiddag en vrijdag- en zaterdagavond in mei."
+            ],
+            "es": [
+              "Abierto de martes a sábado al mediodía y los viernes y sábados de mayo por la noche."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/03e9bc96-16cf-3ac8-8afc-1205b34586be",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/60d1c50b-eb78-3521-827d-19324bedf5c8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/6843201a-9ae0-3268-bec0-898e3546efd2",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/9cbc3d26-3d8b-33a0-a1c1-38cf0b15d586",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/cd74801f-079b-3b94-a07d-224bdc51e4f4",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/2d7b61f1-ec33-30d8-af57-97a9141b1423",
+          "schema:validFrom": "2026-06-01T00:00:00",
+          "schema:validThrough": "2026-08-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Dienstag bis Samstag mittags und abends für Juni/Juli/August."
+            ],
+            "en": [
+              "Tuesday to Saturday lunch and dinner for June/July/August."
+            ],
+            "it": [
+              "Dal martedì al sabato a pranzo e la sera in giugno/luglio/agosto."
+            ],
+            "fr": [
+              "Du mardi au samedi midi et soir pour juin/juillet/août."
+            ],
+            "nl": [
+              "Van dinsdag tot zaterdag 's middags en 's avonds in juni/juli/augustus."
+            ],
+            "es": [
+              "De martes a sábado al mediodía y por la noche en junio/julio/agosto."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/172147e6-8323-3d8c-8b80-61085defffad",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/6309f808-8774-3318-a2f0-c0c40493adbd",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/ac8b946a-a85e-362d-adfe-6eb435436a94",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/be0390a1-88b5-3833-be47-4425b712e783",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e4f29641-2ee7-331a-ae2f-1cffc5805423",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4f5ea089-97e8-379f-b707-ff98ba78843c",
+          "schema:validFrom": "2026-11-26T00:00:00",
+          "schema:validThrough": "2026-03-17T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Geschlossen wegen Jahresurlaub"
+            ],
+            "en": [
+              "Closed for annual vacations"
+            ],
+            "it": [
+              "Chiuso per ferie annuali"
+            ],
+            "fr": [
+              "Fermé pour congés annuels"
+            ],
+            "nl": [
+              "Gesloten voor jaarlijkse vakantie"
+            ],
+            "es": [
+              "Cerrado por vacaciones anuales"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/247d6946-bb33-359d-8bd7-b1eb020b4a0c",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/268b3468-c6be-3fc0-8d35-327e4cea40b8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/43a01756-fab6-3109-b336-47aacd0e5323",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/50f911fd-00c6-302e-8d0c-4f58a6b6e8b1",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e0cb484b-5168-3c7f-857b-7a0286d96bfb",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e96c292f-07cb-30d1-9911-e1a93bdb94cd",
+          "schema:validFrom": "2026-11-01T00:00:00",
+          "schema:validThrough": "2026-11-25T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Mittags und abends.\r\nAb dem 26.11. bis zum Frühjahr 2024 geschlossen."
+            ],
+            "en": [
+              "Lunch and dinner.\r\nClosed from 26/11 until spring 2024."
+            ],
+            "it": [
+              "Pranzo e cena.\r\nChiuso dal 26/11 alla primavera 2024."
+            ],
+            "fr": [
+              "Midi et soir.\r\nFermeture à compter du 26/11 jusqu'au printemps 2024."
+            ],
+            "nl": [
+              "Lunch en diner.\r\nGesloten van 26/11 tot voorjaar 2024."
+            ],
+            "es": [
+              "Comida y cena.\r\nCerrado del 26/11 hasta la primavera de 2024."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/23be3388-145b-3233-8774-a61af18941af",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/9408b257-f1dc-33ca-8d2f-4b1f45ca89cb",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/bafd0ae5-47fd-34e8-91ae-74400c597065",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/bee1dda7-b124-3b08-96ac-826f092ea867",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d62779b3-b083-32d3-963f-6372898aa25e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/61f75a0f-8ea3-3cc8-9e21-d8f05fbdc172",
+      "schema:email": [
+        "iarbuz@pilat-tourisme.fr",
+        "lisa.pilat.tourisme@gmail.com",
+        "lperottino@pilat-tourisme.fr",
+        "mtrouiller@pilat-tourisme.fr"
+      ],
+      "schema:legalName": "Office de Tourisme du Pilat",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.parc-naturel-pilat.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-05-10",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.734Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    },
+    {
+      "@id": "kb:VegetarianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Vegetarische Küche"
+        ],
+        "pt": [
+          "Cozinha vegetariana"
+        ],
+        "en": [
+          "Vegetarian cuisine"
+        ],
+        "it": [
+          "Cucina vegetariana"
+        ],
+        "fr": [
+          "Cuisine végétarienne"
+        ],
+        "nl": [
+          "Vegetarische keuken"
+        ],
+        "es": [
+          "Cocina vegetariana"
+        ]
+      }
+    }
+  ]
+}

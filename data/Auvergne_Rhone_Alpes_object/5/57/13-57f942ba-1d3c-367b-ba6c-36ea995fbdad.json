@@ -1,0 +1,455 @@
+{
+  "@id": "https://data.datatourisme.fr/13/57f942ba-1d3c-367b-ba6c-36ea995fbdad",
+  "dc:identifier": "4897712",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "O Transmontano"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/812b4ba2-87f5-3e0b-89d4-3bbf5bbe87fb",
+    "dc:identifier": "95",
+    "schema:email": [
+      "cyrille.py@ccpaysroussillonnais.fr",
+      "helene.dasilva@entre-bievreetrhone.fr",
+      "lise.chiffe@entre-bievreetrhone.fr",
+      "mathilde.broliquet@entre-bievreetrhone.fr"
+    ],
+    "schema:legalName": "Office de Tourisme Entre Bièvre et Rhône",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://tourisme.entre-bievreetrhone.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/ac7d401d-34b4-3b9c-bd72-7a0644952642",
+      "schema:telephone": [
+        "+33 4 74 11 72 56",
+        "+33 6 08 62 59 23"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:MediterraneanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Mediterrane Küche"
+        ],
+        "pt": [
+          "Cozinha mediterrânica"
+        ],
+        "en": [
+          "Mediterranean cuisine"
+        ],
+        "it": [
+          "Cucina mediterranea"
+        ],
+        "fr": [
+          "Cuisine méditerranéenne"
+        ],
+        "nl": [
+          "Mediterrane keuken"
+        ],
+        "es": [
+          "Cocina mediterránea"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/3598892c-6a4d-3180-a336-9dee0b863cff",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/ade5d81a-d102-3e69-bf44-d5200a0c95e4",
+          "schema:addressLocality": "Roussillon",
+          "schema:postalCode": "38150",
+          "schema:streetAddress": [
+            "252 montée de Louze RN7"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:38344",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Roussillon"
+              ],
+              "pt": [
+                "Roussillon"
+              ],
+              "en": [
+                "Roussillon"
+              ],
+              "it": [
+                "Roussillon"
+              ],
+              "fr": [
+                "Roussillon"
+              ],
+              "nl": [
+                "Roussillon"
+              ],
+              "es": [
+                "Roussillon"
+              ]
+            },
+            "insee": "38344",
+            "isPartOfDepartment": {
+              "@id": "kb:France8438",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Isère"
+                ],
+                "pt": [
+                  "Isère"
+                ],
+                "en": [
+                  "Isère"
+                ],
+                "it": [
+                  "Isère"
+                ],
+                "fr": [
+                  "Isère"
+                ],
+                "nl": [
+                  "Isère"
+                ],
+                "es": [
+                  "Isère"
+                ]
+              },
+              "insee": "38",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/2b755266-6bb8-3536-bbaa-c7322c5f7cb2",
+        "schema:latitude": "45.390942",
+        "schema:longitude": "4.805669",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/896253e3-ad60-3ec9-99ab-e6815fceff46",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Montag, Dienstag, Donnerstag und Sonntag: mittags\r\nFreitag und Samstag: mittags und abends"
+            ],
+            "en": [
+              "Monday, Tuesday, Thursday and Sunday: lunchtime\r\nFriday and Saturday: lunch and dinner"
+            ],
+            "it": [
+              "Lunedì, martedì, giovedì e domenica: a pranzo\r\nVenerdì e sabato: pranzo e cena"
+            ],
+            "fr": [
+              "Lundi, Mardi, Jeudi, et Dimanche : midi \r\nVendredi et Samedi : midi et soir"
+            ],
+            "nl": [
+              "Maandag, dinsdag, donderdag en zondag: lunchtijd\r\nVrijdag en zaterdag: lunch en diner"
+            ],
+            "es": [
+              "Lunes, martes, jueves y domingo: almuerzo\r\nViernes y sábado: almuerzo y cena"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/0fe2581e-a1ef-3096-8a76-838dac0b9c04",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/2677b6c5-d385-3aaa-a03e-40a4ffd0ec69",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/4093fb1d-13aa-33f1-88fb-925a9ceeed8d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/934a7b11-9488-3a3a-84e0-e5e76d7d44f1",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e2ef06b8-882e-3043-876a-845625a9ea0b",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/03b6fd24-2db6-3d8d-aa8d-513d34087ac7",
+      "schema:email": [
+        "cyrille.py@ccpaysroussillonnais.fr",
+        "helene.dasilva@entre-bievreetrhone.fr",
+        "lise.chiffe@entre-bievreetrhone.fr",
+        "mathilde.broliquet@entre-bievreetrhone.fr"
+      ],
+      "schema:legalName": "Office de Tourisme Entre Bièvre et Rhône",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://tourisme.entre-bievreetrhone.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-07-08",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.692Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/9bf50db4-3545-3b7e-9eaa-7376f723fd3f",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/7e8dc391-f03d-38a7-a878-5fb419356a39",
+          "schema:minPrice": [
+            "9"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/0663ca4b-3470-3171-9053-39aa704e8f56",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2022-12-31",
+              "startDate": "2022-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:AlaCarte",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "A la carte"
+                ],
+                "pt": [
+                  "À escolha"
+                ],
+                "en": [
+                  "A la carte"
+                ],
+                "it": [
+                  "Alla carta"
+                ],
+                "fr": [
+                  "A la carte"
+                ],
+                "nl": [
+                  "À la carte"
+                ],
+                "es": [
+                  "A la carta"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:MediterraneanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Mediterrane Küche"
+        ],
+        "pt": [
+          "Cozinha mediterrânica"
+        ],
+        "en": [
+          "Mediterranean cuisine"
+        ],
+        "it": [
+          "Cucina mediterranea"
+        ],
+        "fr": [
+          "Cuisine méditerranéenne"
+        ],
+        "nl": [
+          "Mediterrane keuken"
+        ],
+        "es": [
+          "Cocina mediterránea"
+        ]
+      }
+    }
+  ]
+}

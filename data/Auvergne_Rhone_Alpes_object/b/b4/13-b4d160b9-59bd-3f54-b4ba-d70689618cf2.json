@@ -1,0 +1,309 @@
+{
+  "@id": "https://data.datatourisme.fr/13/b4d160b9-59bd-3f54-b4ba-d70689618cf2",
+  "dc:identifier": "6720500",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Restaurant L'Atmosphère"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/33e75ff0-9dd6-31bb-a69f-351039152189",
+    "dc:identifier": "28",
+    "schema:email": [
+      "marie.jacques@terrevalserhone.fr",
+      "tourisme@terrevalserhone.fr"
+    ],
+    "schema:legalName": "Terre Valserhône Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.terrevalserhone-tourisme.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/9df170af-7722-3346-a43f-94f8ed259b17",
+      "schema:legalName": "Aintourisme - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/db06f02e-d6e0-361c-9ec1-b5bfb44311b4",
+      "schema:email": [
+        "sabine-roby@live.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 50 56 70 99"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/dd83716b-a2fc-3f6b-b08a-0b744eb1e26f",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/48238d7b-db4c-3951-89b7-061fad171687",
+          "schema:addressLocality": "Valserhône",
+          "schema:postalCode": "01200",
+          "schema:streetAddress": [
+            "6 rue de la Perte du Rhône",
+            "Bellegarde-sur-Valserine"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:01033",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Valserhône"
+              ],
+              "pt": [
+                "Valserhône"
+              ],
+              "en": [
+                "Valserhône"
+              ],
+              "it": [
+                "Valserhône"
+              ],
+              "fr": [
+                "Valserhône"
+              ],
+              "nl": [
+                "Valserhône"
+              ],
+              "es": [
+                "Valserhône"
+              ]
+            },
+            "insee": "01033",
+            "isPartOfDepartment": {
+              "@id": "kb:France8401",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Ain"
+                ],
+                "pt": [
+                  "Ain"
+                ],
+                "en": [
+                  "Ain"
+                ],
+                "it": [
+                  "Ain"
+                ],
+                "fr": [
+                  "Ain"
+                ],
+                "nl": [
+                  "Ain"
+                ],
+                "es": [
+                  "Ain"
+                ]
+              },
+              "insee": "01",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/c1956bad-8545-39c4-a076-ad7f4735ee5b",
+        "schema:latitude": "46.10788",
+        "schema:longitude": "5.830673",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/b79a77f2-8eac-3177-b06c-e433ce879ed6",
+      "schema:email": [
+        "marie.jacques@terrevalserhone.fr",
+        "tourisme@terrevalserhone.fr"
+      ],
+      "schema:legalName": "Terre Valserhône Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.terrevalserhone-tourisme.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-03-19",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.429Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    }
+  ]
+}

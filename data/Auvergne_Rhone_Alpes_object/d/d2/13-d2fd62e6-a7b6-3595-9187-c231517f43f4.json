@@ -1,0 +1,335 @@
+{
+  "@id": "https://data.datatourisme.fr/13/d2fd62e6-a7b6-3595-9187-c231517f43f4",
+  "dc:identifier": "5242476",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Domaine du château Ermenonville"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/03e0704b-5690-32de-a186-1dc3ad3316c9",
+    "dc:identifier": "1019",
+    "schema:email": [
+      "beatrice.geigle@chooseparisregion.org",
+      "herve.caldo@chooseparisregion.org",
+      "marina.tanaskovic@chooseparisregion.org"
+    ],
+    "schema:legalName": "Choose Paris Region",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.visitparisregion.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/07fed5a3-dac4-3824-bfe4-a5f81bc5fb8c",
+      "schema:email": [
+        "reception@domainechateauermenonville.com"
+      ],
+      "schema:telephone": [
+        "+33 3 44 54 00 26"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.domainechateauermenonville.com/"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/5b084804-a957-349c-b374-327ab7691fbd",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/d637ba03-b503-3ce7-a6d2-d4d3279d1dfc",
+          "schema:addressLocality": "Ermenonville",
+          "schema:postalCode": "60950",
+          "schema:streetAddress": [
+            "Rue René de Girardin"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:60213",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Ermenonville"
+              ],
+              "pt": [
+                "Ermenonville"
+              ],
+              "en": [
+                "Ermenonville"
+              ],
+              "it": [
+                "Ermenonville"
+              ],
+              "fr": [
+                "Ermenonville"
+              ],
+              "nl": [
+                "Ermenonville"
+              ],
+              "es": [
+                "Ermenonville"
+              ]
+            },
+            "insee": "60213",
+            "isPartOfDepartment": {
+              "@id": "kb:France3260",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Oise"
+                ],
+                "pt": [
+                  "Oise"
+                ],
+                "en": [
+                  "Oise"
+                ],
+                "it": [
+                  "Oise"
+                ],
+                "fr": [
+                  "Oise"
+                ],
+                "nl": [
+                  "Oise"
+                ],
+                "es": [
+                  "Oise"
+                ]
+              },
+              "insee": "60",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/f0f6e61e-76ac-32e8-b15f-034ff0b02fad",
+        "schema:latitude": "49.126498",
+        "schema:longitude": "2.691129",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/2bb8fa2d-c2a5-3b76-8dfd-2aefe2ace3f8",
+          "schema:closes": "14:00:00",
+          "schema:opens": "12:00:00",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Brunch am Sonntag von 11:30 bis 15:30 Uhr."
+            ],
+            "en": [
+              "Brunch on Sunday from 11:30 to 3:30."
+            ],
+            "it": [
+              "Brunch la domenica dalle 11.30 alle 15.30."
+            ],
+            "fr": [
+              "Brunch le dimanche de 11h30 à 15h30."
+            ],
+            "nl": [
+              "Brunch op zondag van 11.30 tot 15.30 uur."
+            ],
+            "es": [
+              "Brunch los domingos de 11.30 a 15.30."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/160af03e-ea6b-3297-b3d0-49ae3e094b03",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/176695b3-5c2c-3b8b-98e5-a940f36c7fbf",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/1b918a51-74a4-334a-a213-154f4695a02a",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/521115c4-a15b-3032-8480-430a62acf4eb",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/8edf5113-0188-3ba3-bfff-2511e5f5a62e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/008c6c5a-e74c-3b37-94a7-c6dbf8a43084",
+      "schema:email": [
+        "beatrice.geigle@chooseparisregion.org",
+        "herve.caldo@chooseparisregion.org",
+        "marina.tanaskovic@chooseparisregion.org"
+      ],
+      "schema:legalName": "Choose Paris Region",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.visitparisregion.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2019-07-02",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.492Z"
+}

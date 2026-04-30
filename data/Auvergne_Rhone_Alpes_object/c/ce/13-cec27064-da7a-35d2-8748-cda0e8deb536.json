@@ -1,0 +1,853 @@
+{
+  "@id": "https://data.datatourisme.fr/13/cec27064-da7a-35d2-8748-cda0e8deb536",
+  "dc:identifier": "6196101",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Veggie-Spezialitäten und hausgemachte pflanzliche Backwaren, Fingerfood. Teesalon."
+    ],
+    "en": [
+      "Veggie speciality and homemade vegetarian pastries, snacks. Tea room."
+    ],
+    "it": [
+      "Specialità vegetariane e dolci vegetariani fatti in casa, snack. Sala da tè."
+    ],
+    "fr": [
+      "Spécialité veggie et pâtisseries végétales maison, restauration sur le pouce. Salon de Thé."
+    ],
+    "nl": [
+      "Veggie specialiteiten en zelfgemaakt vegetarisch gebak, snacks. Theesalon."
+    ],
+    "es": [
+      "Especialidad vegetariana y repostería vegetariana casera, aperitivos. Salón de té."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Kitschinette"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/d010396c-a8ab-36ea-98ca-cc2c2f2f26c7",
+    "dc:identifier": "1542",
+    "schema:email": [
+      "ebreuil@vdstourisme.com",
+      "gannat@vdstourisme.com",
+      "vds@allier-bourbonnais.fr"
+    ],
+    "schema:legalName": "Office de tourisme Val de Sioule",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.valdesioule.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/c55300f9-494b-38ba-adff-d663c77ad33a",
+      "schema:legalName": "ALLIER BOURBONNAIS ATTRACTIVITÉ - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/fa203a0a-9d9f-312e-8b08-a4e5935a49a7",
+      "schema:email": [
+        "kitschinette03@gmail.com"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/e150ffda-1c54-37ba-9baf-4d09ae0efbc6",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/14272e70-2e6b-3308-8539-5e6ef2f98a35",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/61aac08d-89b4-3b70-9574-9625969b8611",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/b6f36b51-a794-3c9f-82a0-38e3ae19060d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/d4640c1f-e958-30ad-933c-ef88171119d9",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Veggie-Spezialitäten und hausgemachte pflanzliche Backwaren, Fingerfood. Teesalon."
+        ],
+        "en": [
+          "Veggie speciality and homemade vegetarian pastries, snacks. Tea room."
+        ],
+        "it": [
+          "Specialità vegetariane e dolci vegetariani fatti in casa, snack. Sala da tè."
+        ],
+        "fr": [
+          "Spécialité veggie et pâtisseries végétales maison, restauration sur le pouce. Salon de Thé."
+        ],
+        "nl": [
+          "Veggie specialiteiten en zelfgemaakt vegetarisch gebak, snacks. Theesalon."
+        ],
+        "es": [
+          "Especialidad vegetariana y repostería vegetariana casera, aperitivos. Salón de té."
+        ]
+      }
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:OrganicCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Bio-Küche"
+        ],
+        "pt": [
+          "Cozinha orgânica"
+        ],
+        "en": [
+          "Organic cuisine"
+        ],
+        "it": [
+          "Cucina biologica"
+        ],
+        "fr": [
+          "Cuisine bio"
+        ],
+        "es": [
+          "Cocina ecológica"
+        ],
+        "nl": [
+          "Biologische keuken"
+        ]
+      }
+    },
+    {
+      "@id": "kb:VeganCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Vegane Küche"
+        ],
+        "pt": [
+          "Cozinha vegana"
+        ],
+        "en": [
+          "Vegan cuisine"
+        ],
+        "it": [
+          "Cucina vegana"
+        ],
+        "fr": [
+          "Cuisine vegan"
+        ],
+        "nl": [
+          "Veganistische keuken"
+        ],
+        "es": [
+          "Cocina vegana"
+        ]
+      }
+    },
+    {
+      "@id": "kb:VegetarianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Vegetarische Küche"
+        ],
+        "pt": [
+          "Cozinha vegetariana"
+        ],
+        "en": [
+          "Vegetarian cuisine"
+        ],
+        "it": [
+          "Cucina vegetariana"
+        ],
+        "fr": [
+          "Cuisine végétarienne"
+        ],
+        "nl": [
+          "Vegetarische keuken"
+        ],
+        "es": [
+          "Cocina vegetariana"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/74c3f1dd-6561-3c5c-98ff-b45ba87de3b9",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/ae5271e8-d25b-312a-ac49-059673594c09",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/b000564c-c0b5-33ee-92b4-a2ab02b8805a",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/df7f1480-6c7c-3bbc-8fcc-0df14fadfe86",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/8b81156e-8cc2-3ba2-b162-3b1c923ecc3d",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/f90919be-5154-38d4-aa70-33e8fddcaad1",
+          "schema:addressLocality": "Charroux",
+          "schema:postalCode": "03140",
+          "schema:streetAddress": [
+            "3 rue de la Ferraillerie"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:03062",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Charroux"
+              ],
+              "pt": [
+                "Charroux"
+              ],
+              "en": [
+                "Charroux"
+              ],
+              "it": [
+                "Charroux"
+              ],
+              "fr": [
+                "Charroux"
+              ],
+              "nl": [
+                "Charroux"
+              ],
+              "es": [
+                "Charroux"
+              ]
+            },
+            "insee": "03062",
+            "isPartOfDepartment": {
+              "@id": "kb:France8403",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Allier"
+                ],
+                "pt": [
+                  "Allier"
+                ],
+                "en": [
+                  "Allier"
+                ],
+                "it": [
+                  "Allier"
+                ],
+                "fr": [
+                  "Allier"
+                ],
+                "nl": [
+                  "Allier"
+                ],
+                "es": [
+                  "Allier"
+                ]
+              },
+              "insee": "03",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/89073ce1-9bdf-35c3-9ce4-51fe8405210a",
+        "schema:latitude": "46.18577",
+        "schema:longitude": "3.161218",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/2ae9f8c8-10f9-337f-804e-355575bdc7c9",
+          "schema:validFrom": "2026-10-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Dienstags außerhalb der Schulferien geschlossen, unter der Woche von 14:30 bis 18:00 Uhr. Am Wochenende von 11:00 bis 18:00 Uhr."
+            ],
+            "en": [
+              "Closed on Tuesdays outside school vacations, idem on weekdays from 2.30pm to 6pm. Weekends from 11am to 6pm."
+            ],
+            "it": [
+              "Chiuso il martedì, tranne durante le vacanze scolastiche, idem nei giorni feriali dalle 14.30 alle 18.00. Fine settimana dalle 11 alle 18."
+            ],
+            "fr": [
+              "Fermé les Mardis hors periode vacances scolaires, idem en semaine horaire de 14h30 a 18h. Les week end de 11h à 18h."
+            ],
+            "nl": [
+              "Gesloten op dinsdag behalve tijdens schoolvakanties, idem op weekdagen van 14u30 tot 18u. Weekends van 11u tot 18u."
+            ],
+            "es": [
+              "Cerrado los martes excepto durante las vacaciones escolares, idem los días laborables de 14h30 a 18h. Fines de semana de 11h a 18h."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/1843d86d-50d6-3c85-862e-2fda624ac02e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/73ebaf5f-0d04-3f51-b6fd-11a5d8d3ef82",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/80867186-ada4-3926-beb3-eda1a7bf30c2",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/90eab822-b7d1-3b60-8cf8-558b7c8d95cf",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/ed642f18-0629-3b97-8952-c98ed9e55bb3",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7198f6cb-ab90-3785-83de-6b2b03a604ab",
+          "schema:validFrom": "2026-10-01T00:00:00",
+          "schema:validThrough": "2026-03-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Außerhalb der Schulferien dienstags geschlossen"
+            ],
+            "en": [
+              "Closed on Tuesdays except during school vacations"
+            ],
+            "it": [
+              "Chiuso il martedì, tranne durante le vacanze scolastiche"
+            ],
+            "fr": [
+              "Fermé les mardis hors période de vacances scolaires"
+            ],
+            "nl": [
+              "Gesloten op dinsdag behalve tijdens schoolvakanties"
+            ],
+            "es": [
+              "Cerrado los martes no festivos"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/058b76ff-9317-331f-a013-6a35451ca492",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/4ae8395f-c31b-31bd-8794-2194c600439f",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/62c15a26-c1d0-3f1a-b335-4bf63373705d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/80c266ed-19f7-378e-9b6d-401d1f160dac",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f57226ff-94b6-3efa-8218-ce6ce5b2a2f2",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/8d54cebd-e5cc-3c66-b562-b3b422c8c8f0",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Dienstags außerhalb der Schulferien geschlossen, unter der Woche von 14:30 bis 18:00 Uhr. Am Wochenende von 11:00 bis 18:00 Uhr."
+            ],
+            "en": [
+              "Closed on Tuesdays outside school vacations, idem on weekdays from 2.30pm to 6pm. Weekends from 11am to 6pm."
+            ],
+            "it": [
+              "Chiuso il martedì, tranne durante le vacanze scolastiche, idem nei giorni feriali dalle 14.30 alle 18.00. Fine settimana dalle 11 alle 18."
+            ],
+            "fr": [
+              "Fermé les Mardis hors periode vacances scolaires, idem en semaine horaire de 14h30 a 18h. Les week end de 11h à 18h."
+            ],
+            "nl": [
+              "Gesloten op dinsdag behalve tijdens schoolvakanties, idem op weekdagen van 14u30 tot 18u. Weekends van 11u tot 18u."
+            ],
+            "es": [
+              "Cerrado los martes excepto durante las vacaciones escolares, idem los días laborables de 14h30 a 18h. Fines de semana de 11h a 18h."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/2cd53325-a3ed-35f9-9bb1-44d4628f4443",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/50dbdc5c-163c-32b5-8489-531d3c3eb0e9",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/7749b3b9-b144-35b4-8bc9-a3529f466f02",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/830bc2f4-749b-3b7d-833b-681d078967a7",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/afd80f4b-c416-3448-a51f-1f2d007b1083",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e65c57f1-345c-37ad-83da-d7d7ac133c30",
+      "schema:email": [
+        "ebreuil@vdstourisme.com",
+        "gannat@vdstourisme.com",
+        "vds@allier-bourbonnais.fr"
+      ],
+      "schema:legalName": "Office de tourisme Val de Sioule",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.valdesioule.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-10-23",
+  "lastUpdateDatatourisme": "2026-01-09T07:45:16.956Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:OrganicCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Bio-Küche"
+        ],
+        "pt": [
+          "Cozinha orgânica"
+        ],
+        "en": [
+          "Organic cuisine"
+        ],
+        "it": [
+          "Cucina biologica"
+        ],
+        "fr": [
+          "Cuisine bio"
+        ],
+        "es": [
+          "Cocina ecológica"
+        ],
+        "nl": [
+          "Biologische keuken"
+        ]
+      }
+    },
+    {
+      "@id": "kb:VeganCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Vegane Küche"
+        ],
+        "pt": [
+          "Cozinha vegana"
+        ],
+        "en": [
+          "Vegan cuisine"
+        ],
+        "it": [
+          "Cucina vegana"
+        ],
+        "fr": [
+          "Cuisine vegan"
+        ],
+        "nl": [
+          "Veganistische keuken"
+        ],
+        "es": [
+          "Cocina vegana"
+        ]
+      }
+    },
+    {
+      "@id": "kb:VegetarianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Vegetarische Küche"
+        ],
+        "pt": [
+          "Cozinha vegetariana"
+        ],
+        "en": [
+          "Vegetarian cuisine"
+        ],
+        "it": [
+          "Cucina vegetariana"
+        ],
+        "fr": [
+          "Cuisine végétarienne"
+        ],
+        "nl": [
+          "Vegetarische keuken"
+        ],
+        "es": [
+          "Cocina vegetariana"
+        ]
+      }
+    }
+  ]
+}

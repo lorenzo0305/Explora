@@ -1,0 +1,805 @@
+{
+  "@id": "https://data.datatourisme.fr/13/c78a3431-1b11-36cf-8083-297e0e62a164",
+  "dc:identifier": "2812353",
+  "@type": [
+    "schema:Accommodation",
+    "schema:FoodEstablishment",
+    "schema:Hotel",
+    "schema:LodgingBusiness",
+    "schema:Restaurant",
+    "Accommodation",
+    "FoodEstablishment",
+    "Hotel",
+    "HotelRestaurant",
+    "HotelTrade",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Christelle und Eric empfangen Sie in einem wunderschönen, restaurierten Reetdachhaus.\r\nIn der außergewöhnlichen Umgebung eines authentischen Dorfes mit Charakter setzen sie alles daran, dass Sie eine angenehme Zeit mit Freunden, der Familie oder Ihren Kunden verbringen."
+    ],
+    "en": [
+      "Christelle and Eric welcome you to a beautifully restored thatched cottage.\r\nIn the exceptional setting of an authentic village of character, they will do everything in their power to ensure you spend a pleasant moment with friends, family or clients."
+    ],
+    "it": [
+      "Christelle ed Eric vi danno il benvenuto in un cottage di paglia splendidamente ristrutturato.\r\nNella cornice eccezionale di un villaggio autentico e pieno di carattere, faranno di tutto per farvi trascorrere un momento piacevole con gli amici, la famiglia o i clienti."
+    ],
+    "fr": [
+      "Christelle et Eric vous accueillent dans une magnifique chaumière restaurée.\r\nDans le cadre d'exception d'un authentique village de caractère, ils mettent tout en œuvre pour vous faire passer un agréable moment entre amis, en famille ou avec vos clients."
+    ],
+    "es": [
+      "Christelle y Eric le dan la bienvenida a una casa de campo con techo de paja magníficamente restaurada.\r\nEn el marco excepcional de un pueblo auténtico y lleno de carácter, harán todo lo posible para que pase un momento agradable con amigos, familiares o clientes."
+    ],
+    "nl": [
+      "Christelle en Eric heten je welkom in een prachtig gerestaureerd huisje met rieten dak.\r\nIn de uitzonderlijke omgeving van een authentiek karaktervol dorp zullen ze er alles aan doen om je een aangenaam moment te bezorgen met vrienden, familie of klanten."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Hostellerie Le Pré Bossu"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/299fb214-2d7d-3959-b80f-91c01c3a293c",
+    "dc:identifier": "1426",
+    "schema:email": [
+      "camille@mezencloiremeygal.com",
+      "direction@mezencloiremeygal.com",
+      "maria@mezencloiremeygal.com",
+      "sandrine@mezencloiremeygal.com",
+      "sophie@mezencloiremeygal.com"
+    ],
+    "schema:legalName": "Office de tourisme Mézenc Loire Meygal",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.mezencloiremeygal.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/c53534f8-2d08-3844-943f-dfaebbcb67af",
+      "schema:legalName": "Haute-Loire Attractivité - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/d3bc75f4-0dfa-32c1-88ab-1ae5db838e77",
+      "schema:email": [
+        "leprebossu@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 4 71 05 10 70"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.leprebossu.com/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/dd512a4d-1781-3405-943f-f4b12abe3a4a",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/19f2e886-d01b-389e-9c71-c7b4a87c5957",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/4c69c9ef-c1e8-3abe-8efd-d76180df023b",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/65ad4f2a-25a6-34c4-ae9a-3f5dffcde1ec",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/73a8970a-9047-3a08-8587-71fa98dc788d",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f9ede0f8-1cea-395f-92b0-defa95d7cb69",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Christelle und Eric empfangen Sie in einem wunderschönen, restaurierten Reetdachhaus.\r\nIn der außergewöhnlichen Umgebung eines authentischen Dorfes mit Charakter setzen sie alles daran, dass Sie eine angenehme Zeit mit Freunden, der Familie oder Ihren Kunden verbringen."
+        ],
+        "en": [
+          "Christelle and Eric welcome you to a beautifully restored thatched cottage.\r\nIn the exceptional setting of an authentic village of character, they will do everything in their power to ensure you spend a pleasant moment with friends, family or clients."
+        ],
+        "it": [
+          "Christelle ed Eric vi danno il benvenuto in un cottage di paglia splendidamente ristrutturato.\r\nNella cornice eccezionale di un villaggio autentico e pieno di carattere, faranno di tutto per farvi trascorrere un momento piacevole con gli amici, la famiglia o i clienti."
+        ],
+        "fr": [
+          "Christelle et Eric vous accueillent dans une magnifique chaumière restaurée.\r\nDans le cadre d'exception d'un authentique village de caractère, ils mettent tout en œuvre pour vous faire passer un agréable moment entre amis, en famille ou avec vos clients."
+        ],
+        "es": [
+          "Christelle y Eric le dan la bienvenida a una casa de campo con techo de paja magníficamente restaurada.\r\nEn el marco excepcional de un pueblo auténtico y lleno de carácter, harán todo lo posible para que pase un momento agradable con amigos, familiares o clientes."
+        ],
+        "nl": [
+          "Christelle en Eric heten je welkom in een prachtig gerestaureerd huisje met rieten dak.\r\nIn de uitzonderlijke omgeving van een authentiek karaktervol dorp zullen ze er alles aan doen om je een aangenaam moment te bezorgen met vrienden, familie of klanten."
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/5a998853-dc9c-6479-825a-e8fffbbee5ab",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "9b20e014-b031-438b-a6d4-f9f9e867115b",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:AcceslibrePlatform",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Teilen Sie wichtige Reiseinformationen für Menschen mit Behinderungen."
+            ],
+            "pt": [
+              "Compartilhe informações essenciais sobre viagens para pessoas com deficiência."
+            ],
+            "en": [
+              "Share essential travel information for people with disabilities."
+            ],
+            "it": [
+              "Condividi informazioni di viaggio essenziali per le persone con disabilità."
+            ],
+            "fr": [
+              "Partagez les informations indispensables aux déplacements des personnes en situation de handicap."
+            ],
+            "nl": [
+              "Deel essentiële reisinformatie voor mensen met een handicap."
+            ],
+            "es": [
+              "Comparta información de viaje esencial para personas con discapacidades."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Acceslibre-Plattform"
+            ],
+            "pt": [
+              "Plataforma Acceslibre"
+            ],
+            "en": [
+              "Acceslibre platform"
+            ],
+            "it": [
+              "Piattaforma Acceslibre"
+            ],
+            "fr": [
+              "Plateforme Acceslibre"
+            ],
+            "es": [
+              "Plataforma Acceslibre"
+            ],
+            "nl": [
+              "Acceslibre-platform"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://acceslibre.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasReview": [
+    {
+      "@id": "https://data.datatourisme.fr/7724dbf0-7649-358b-be17-1db1b66a240f",
+      "@type": [
+        "Review"
+      ],
+      "hasReviewValue": {
+        "@id": "kb:ScaleRating_3etoiles",
+        "schema:ratingValue": "3.0",
+        "@type": [
+          "ScaleRating"
+        ],
+        "rdfs:label": {
+          "de": [
+            "3 Sterne"
+          ],
+          "pt": [
+            "3 estrelas"
+          ],
+          "en": [
+            "3 Stars"
+          ],
+          "it": [
+            "3 stelle"
+          ],
+          "fr": [
+            "3 étoiles"
+          ],
+          "nl": [
+            "3 sterren"
+          ],
+          "es": [
+            "3 estrellas"
+          ]
+        },
+        "isCompliantWith": [
+          "CampingAndCaravanning",
+          "ClubOrHolidayVillage",
+          "HolidayCentre",
+          "Hotel",
+          "SelfCateringAccommodation"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/077cf839-ee6f-321f-a0c5-315e87bec049",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/35a77479-8bc5-38a5-81fc-a4414a4c2ed7",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/54e759e2-f6d2-38f4-b2df-2b10603c20b4",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/63e61365-4e26-3ee3-885e-0bf1deb47f1d",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/d8d42a02-6c54-30e9-b5f3-fff15e1af9e0",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/51cf3da1-2610-3c8b-ac9b-95973ac9f0ae",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/ef7cd50e-c327-3fc2-b964-f4f4c8fdc3c4",
+          "schema:addressLocality": "Moudeyres",
+          "schema:postalCode": "43150",
+          "schema:streetAddress": [
+            "204, Route des Chaumières"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:43144",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Moudeyres"
+              ],
+              "pt": [
+                "Moudeyres"
+              ],
+              "en": [
+                "Moudeyres"
+              ],
+              "it": [
+                "Moudeyres"
+              ],
+              "fr": [
+                "Moudeyres"
+              ],
+              "nl": [
+                "Moudeyres"
+              ],
+              "es": [
+                "Moudeyres"
+              ]
+            },
+            "insee": "43144",
+            "isPartOfDepartment": {
+              "@id": "kb:France8443",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Loire"
+                ],
+                "pt": [
+                  "Haute-Loire"
+                ],
+                "en": [
+                  "Haute-Loire"
+                ],
+                "it": [
+                  "Haute-Loire"
+                ],
+                "fr": [
+                  "Haute-Loire"
+                ],
+                "nl": [
+                  "Haute-Loire"
+                ],
+                "es": [
+                  "Haute-Loire"
+                ]
+              },
+              "insee": "43",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/151adafc-206b-341a-a9a8-a531d226dc24",
+        "schema:elevation": "1175",
+        "schema:latitude": "44.952918",
+        "schema:longitude": "4.100308",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/f1ad340d-8c46-321f-8868-ef0bb42addbc",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Mit Reservierung."
+            ],
+            "en": [
+              "Reservation required."
+            ],
+            "it": [
+              "Su prenotazione."
+            ],
+            "fr": [
+              "Sur réservation."
+            ],
+            "nl": [
+              "Op reservering."
+            ],
+            "es": [
+              "En la reserva."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/14572758-0878-3c4b-9a26-1f7fd28caaae",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/3071d275-947e-317d-86a5-7c8303a4f0ce",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/78c3f475-34ea-33ca-9967-a675afffceb9",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/aba20c45-14fe-320e-a076-0ba319400032",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/cd199d6d-2a4d-30ce-b209-0cd28d0c394b",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/d2eecff1-07e6-3b48-be20-6a15a870e2a7",
+      "schema:email": [
+        "camille@mezencloiremeygal.com",
+        "direction@mezencloiremeygal.com",
+        "maria@mezencloiremeygal.com",
+        "sandrine@mezencloiremeygal.com",
+        "sophie@mezencloiremeygal.com"
+      ],
+      "schema:legalName": "Office de tourisme Mézenc Loire Meygal",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.mezencloiremeygal.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2026-01-23",
+  "lastUpdateDatatourisme": "2026-01-24T06:53:10.679Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/a08f1121-5650-36d3-971b-a79d26498ed6",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/43d43c54-1f48-3c9e-9ecc-b6e6219af3c1",
+          "schema:maxPrice": [
+            "122"
+          ],
+          "schema:minPrice": [
+            "112"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/7268d7dd-b665-3b45-a8be-b0658f2c58e7",
+          "schema:maxPrice": [
+            "14"
+          ],
+          "schema:minPrice": [
+            "14"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ],
+          "hasEligiblePolicy": [
+            {
+              "@id": "kb:BaseRateFullRate",
+              "@type": [
+                "PricingPolicy"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Basistarif – voller Tarif"
+                ],
+                "pt": [
+                  "Preço de base — preço total"
+                ],
+                "en": [
+                  "Base rate - full rate"
+                ],
+                "it": [
+                  "Tariffa di base — tariffa intera"
+                ],
+                "fr": [
+                  "Tarif de base - plein tarif"
+                ],
+                "es": [
+                  "Tarifa básica - tarifa completa"
+                ],
+                "nl": [
+                  "Basistarief - vol tarief"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/88b115c6-da8d-3e9b-b7be-b45222ed239a",
+          "schema:maxPrice": [
+            "112"
+          ],
+          "schema:minPrice": [
+            "94"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/c2df3b3f-b39d-3a6b-9367-44c9cd5b10fe",
+          "schema:maxPrice": [
+            "122"
+          ],
+          "schema:minPrice": [
+            "94"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ec449784-f41d-3b1f-b155-a2a3428ed1fa",
+          "schema:maxPrice": [
+            "104"
+          ],
+          "schema:minPrice": [
+            "99"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/23b5f65e-04c4-3cac-8947-da7b5cf55bad",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2026-12-31",
+              "startDate": "2026-01-01"
+            }
+          ],
+          "name": {
+            "fr": [
+              "à partir de deux nuitées."
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

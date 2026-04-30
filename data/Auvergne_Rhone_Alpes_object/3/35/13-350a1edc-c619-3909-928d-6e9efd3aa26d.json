@@ -1,0 +1,315 @@
+{
+  "@id": "https://data.datatourisme.fr/13/350a1edc-c619-3909-928d-6e9efd3aa26d",
+  "dc:identifier": "5984991",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "en": [
+      "Baïes Courchevel"
+    ],
+    "fr": [
+      "Baïes Courchevel"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/013d4071-66ec-3fa5-aeb1-e1f8cbe183b9",
+    "dc:identifier": "138",
+    "schema:email": [
+      "chloe.legrand@efap.com",
+      "florien@courchevel.com",
+      "julien@courchevel.com"
+    ],
+    "schema:legalName": "Courchevel Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.ski.worldcupcourchevel.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/f36cba35-b53b-3130-97ee-b1259d8b5bd2",
+      "schema:email": [
+        "baies@vonston.com"
+      ],
+      "schema:telephone": [
+        "+33 6 27 64 64 64"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:HalalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Halal-Küche"
+        ],
+        "pt": [
+          "Cozinha halal"
+        ],
+        "en": [
+          "Halal cuisine"
+        ],
+        "it": [
+          "Cucina halal"
+        ],
+        "fr": [
+          "Cuisine halal"
+        ],
+        "nl": [
+          "Halal keuken"
+        ],
+        "es": [
+          "Cocina halal"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/e3ed515c-a0dd-3304-8234-2e12a01d319a",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/34974183-4684-3a53-989b-e7dac08af52a",
+          "schema:addressLocality": "Courchevel",
+          "schema:postalCode": "73120",
+          "schema:streetAddress": [
+            "540 Rue du Jardin Alpin",
+            "Courchevel 1850"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:73227",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Courchevel"
+              ],
+              "pt": [
+                "Courchevel"
+              ],
+              "en": [
+                "Courchevel"
+              ],
+              "it": [
+                "Courchevel"
+              ],
+              "fr": [
+                "Courchevel"
+              ],
+              "nl": [
+                "Courchevel"
+              ],
+              "es": [
+                "Courchevel"
+              ]
+            },
+            "insee": "73227",
+            "isPartOfDepartment": {
+              "@id": "kb:France8473",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Savoie"
+                ],
+                "pt": [
+                  "Savoie"
+                ],
+                "en": [
+                  "Savoie"
+                ],
+                "it": [
+                  "Savoie"
+                ],
+                "fr": [
+                  "Savoie"
+                ],
+                "nl": [
+                  "Savoie"
+                ],
+                "es": [
+                  "Savoie"
+                ]
+              },
+              "insee": "73",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/a8dccdaf-82b2-3125-b8f2-743904944acc",
+        "schema:latitude": "45.406237",
+        "schema:longitude": "6.628019",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/4b130066-7728-3d72-aeb7-a7692da1ce3f",
+          "schema:closes": "19:00:00",
+          "schema:opens": "12:00:00",
+          "schema:validFrom": "2026-12-06T00:00:00",
+          "schema:validThrough": "2026-04-19T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e4b342e3-7bbd-39cf-b18d-3a1a4e75d20f",
+      "schema:email": [
+        "florien@courchevel.com",
+        "julien@courchevel.com"
+      ],
+      "schema:legalName": "Courchevel Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.ski.worldcupcourchevel.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-12-04",
+  "lastUpdateDatatourisme": "2026-03-03T08:53:46.782Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:HalalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Halal-Küche"
+        ],
+        "pt": [
+          "Cozinha halal"
+        ],
+        "en": [
+          "Halal cuisine"
+        ],
+        "it": [
+          "Cucina halal"
+        ],
+        "fr": [
+          "Cuisine halal"
+        ],
+        "nl": [
+          "Halal keuken"
+        ],
+        "es": [
+          "Cocina halal"
+        ]
+      }
+    }
+  ]
+}

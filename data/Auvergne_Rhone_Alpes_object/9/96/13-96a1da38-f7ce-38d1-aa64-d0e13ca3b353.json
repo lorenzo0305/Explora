@@ -1,0 +1,284 @@
+{
+  "@id": "https://data.datatourisme.fr/13/96a1da38-f7ce-38d1-aa64-d0e13ca3b353",
+  "dc:identifier": "7426899",
+  "@type": [
+    "olo:OrderedList",
+    "CyclingTour",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "SportsAndLeisurePlace",
+    "Tour"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Piste cyclable d'altitude Val Thorens - Les Menuires"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/a6ea8471-c120-3e8c-835a-2954c9b9c595",
+    "dc:identifier": "2410",
+    "schema:email": [
+      "webmaster@valthorens.com"
+    ],
+    "schema:legalName": "Office de Tourisme de Val Thorens",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.valthorens.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/030e6df7-7ed3-3c02-a95c-17abe48144a8",
+      "schema:legalName": "Office de Tourisme de Brides-les-Bains - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:BicycleTouring",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Radtourismus"
+        ],
+        "pt": [
+          "Cicloturismo"
+        ],
+        "en": [
+          "Bicycle touring"
+        ],
+        "it": [
+          "Cicloturismo"
+        ],
+        "fr": [
+          "Cyclotourisme"
+        ],
+        "nl": [
+          "Fietstoerisme"
+        ],
+        "es": [
+          "Cicloturismo"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Bike",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Fahrrad"
+        ],
+        "pt": [
+          "Bicicleta"
+        ],
+        "en": [
+          "Bike"
+        ],
+        "it": [
+          "Bicicletta"
+        ],
+        "fr": [
+          "Vélo"
+        ],
+        "nl": [
+          "Fiets"
+        ],
+        "es": [
+          "Bicicleta"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/1f496d26-0768-37d7-8f90-c93d2075bd9c",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/ab7fc30b-4e65-3c64-a846-11de252af057",
+          "schema:addressLocality": "Les Belleville",
+          "schema:postalCode": "73440",
+          "schema:streetAddress": [
+            "Entrée station, caserne des pompiers"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:73257",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Les Belleville"
+              ],
+              "pt": [
+                "Les Belleville"
+              ],
+              "en": [
+                "Les Belleville"
+              ],
+              "it": [
+                "Les Belleville"
+              ],
+              "fr": [
+                "Les Belleville"
+              ],
+              "nl": [
+                "Les Belleville"
+              ],
+              "es": [
+                "Les Belleville"
+              ]
+            },
+            "insee": "73257",
+            "isPartOfDepartment": {
+              "@id": "kb:France8473",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Savoie"
+                ],
+                "pt": [
+                  "Savoie"
+                ],
+                "en": [
+                  "Savoie"
+                ],
+                "it": [
+                  "Savoie"
+                ],
+                "fr": [
+                  "Savoie"
+                ],
+                "nl": [
+                  "Savoie"
+                ],
+                "es": [
+                  "Savoie"
+                ]
+              },
+              "insee": "73",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/733a149f-2a71-3163-98fb-6365ba569a79",
+        "schema:latitude": "45.298615",
+        "schema:longitude": "6.577271",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "altInsee": [
+        "Val Thorens"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/2ec48c63-5c71-3e27-9ce2-8bf56a08feac",
+      "schema:email": [
+        "webmaster@valthorens.com"
+      ],
+      "schema:legalName": "Office de Tourisme de Val Thorens",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.valthorens.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-09-02",
+  "lastUpdateDatatourisme": "2025-09-03T06:09:24.195Z"
+}

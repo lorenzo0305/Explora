@@ -1,0 +1,275 @@
+{
+  "@id": "https://data.datatourisme.fr/13/3d237e57-a8b1-3846-bc6b-2292f126d4f4",
+  "dc:identifier": "6790329",
+  "@type": [
+    "olo:OrderedList",
+    "FluvialTour",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "SportsAndLeisurePlace",
+    "Tour"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Sortie découverte encadrée en Canoë-Kayak"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/a5bfc9e0-7964-38dd-9eb9-5fc584cd965d",
+    "dc:identifier": "37",
+    "schema:email": [
+      "tourisme-ot1@ccvsc01.org"
+    ],
+    "schema:legalName": "Office de Tourisme Val de Saône Centre",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://tourisme-val-de-saone.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/9df170af-7722-3346-a43f-94f8ed259b17",
+      "schema:legalName": "Aintourisme - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/af28f6e6-46df-3e2d-9cb5-d58a4bd20eb1",
+      "schema:telephone": [
+        "+33 6 86 73 46 81"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:CanoeingKayaking",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kanu-Kajakfahren"
+        ],
+        "pt": [
+          "Canoa caiaque"
+        ],
+        "en": [
+          "Canoeing-kayaking"
+        ],
+        "it": [
+          "Canoismo"
+        ],
+        "fr": [
+          "Canoé kayak"
+        ],
+        "es": [
+          "Piraguas y kayak"
+        ],
+        "nl": [
+          "Kano/kajak"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/d1de00b9-597c-32c5-ad51-5d1a9f5a80b6",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/570539e3-2bd2-3a60-8858-e57ce86b6605",
+          "schema:addressLocality": "Montmerle-sur-Saône",
+          "schema:postalCode": "01090",
+          "schema:streetAddress": [
+            "Parc de la Batellerie",
+            "Quai de Saône"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:01263",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Montmerle-sur-Saône"
+              ],
+              "pt": [
+                "Montmerle-sur-Saône"
+              ],
+              "en": [
+                "Montmerle-sur-Saône"
+              ],
+              "it": [
+                "Montmerle-sur-Saône"
+              ],
+              "fr": [
+                "Montmerle-sur-Saône"
+              ],
+              "nl": [
+                "Montmerle-sur-Saône"
+              ],
+              "es": [
+                "Montmerle-sur-Saône"
+              ]
+            },
+            "insee": "01263",
+            "isPartOfDepartment": {
+              "@id": "kb:France8401",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Ain"
+                ],
+                "pt": [
+                  "Ain"
+                ],
+                "en": [
+                  "Ain"
+                ],
+                "it": [
+                  "Ain"
+                ],
+                "fr": [
+                  "Ain"
+                ],
+                "nl": [
+                  "Ain"
+                ],
+                "es": [
+                  "Ain"
+                ]
+              },
+              "insee": "01",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/c56c6ed4-64bc-38b9-8a1d-9fa4359ec3fe",
+        "schema:latitude": "46.082811",
+        "schema:longitude": "4.753334",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/fc03974b-67cd-3de9-81bd-bdffc6be699f",
+          "schema:validFrom": "2026-06-01T00:00:00",
+          "schema:validThrough": "2026-09-30T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/2fb23b97-ecbb-33b7-9753-6a3e4d9b076a",
+      "schema:email": [
+        "tourisme-ot1@ccvsc01.org"
+      ],
+      "schema:legalName": "Office de Tourisme Val de Saône Centre",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://tourisme-val-de-saone.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-01-26",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.722Z"
+}

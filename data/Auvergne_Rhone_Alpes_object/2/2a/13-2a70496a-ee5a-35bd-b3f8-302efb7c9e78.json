@@ -1,0 +1,243 @@
+{
+  "@id": "https://data.datatourisme.fr/13/2a70496a-ee5a-35bd-b3f8-302efb7c9e78",
+  "dc:identifier": "6769522",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "La Cabane D'Heidi"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/2838023a-778d-3aec-9c21-2708f721b788",
+    "dc:identifier": "51",
+    "schema:email": [
+      "communication@laclusaz.com",
+      "webmaster@laclusaz.com"
+    ],
+    "schema:legalName": "Office de Tourisme de La Clusaz",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.laclusaz.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/98c833aa-4be0-3c5c-a3b6-a03fb7a563ad",
+      "schema:email": [
+        "gallayheidi@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 6 66 45 23 54"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/60f06750-5d80-33fa-ac25-0332a9c651e6",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/3685a0f8-e2b4-3799-9df7-629671af6902",
+          "schema:addressLocality": "La Clusaz",
+          "schema:postalCode": "74220",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:74080",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "La Clusaz"
+              ],
+              "pt": [
+                "La Clusaz"
+              ],
+              "en": [
+                "La Clusaz"
+              ],
+              "it": [
+                "La Clusaz"
+              ],
+              "fr": [
+                "La Clusaz"
+              ],
+              "nl": [
+                "La Clusaz"
+              ],
+              "es": [
+                "La Clusaz"
+              ]
+            },
+            "insee": "74080",
+            "isPartOfDepartment": {
+              "@id": "kb:France8474",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Savoie"
+                ],
+                "pt": [
+                  "Haute-Savoie"
+                ],
+                "en": [
+                  "Haute-Savoie"
+                ],
+                "it": [
+                  "Haute-Savoie"
+                ],
+                "fr": [
+                  "Haute-Savoie"
+                ],
+                "nl": [
+                  "Haute-Savoie"
+                ],
+                "es": [
+                  "Haute-Savoie"
+                ]
+              },
+              "insee": "74",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/b25d7b1f-f94e-33bd-af5d-f53d62225806",
+        "schema:latitude": "45.9106",
+        "schema:longitude": "6.466791",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/404627b7-19e6-36c7-95cc-4f33f64cf34e",
+          "schema:validFrom": "2026-12-07T00:00:00",
+          "schema:validThrough": "2026-04-26T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/6b112818-a5c1-3484-bdf2-739f5fc663bb",
+      "schema:email": [
+        "communication@laclusaz.com",
+        "webmaster@laclusaz.com"
+      ],
+      "schema:legalName": "Office de Tourisme de La Clusaz",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.laclusaz.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-09-22",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.775Z"
+}

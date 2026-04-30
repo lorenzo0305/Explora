@@ -1,0 +1,454 @@
+{
+  "@id": "https://data.datatourisme.fr/13/072db0c6-4ab5-31d4-a8e2-07dc77c17d95",
+  "dc:identifier": "6667913",
+  "@type": [
+    "schema:LocalBusiness",
+    "ActivityProvider",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Store"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Bertrand Goimard - Randonnée ou VTT avec guide à la découverte de la chaîne."
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/731c83db-8d2f-301b-9c00-0083fd3c3740",
+    "dc:identifier": "1080",
+    "schema:email": [
+      "anais.gatignol@puy-de-dome.fr",
+      "etourisme@puy-de-dome.fr",
+      "genevieve.gavioli@puy-de-dome.fr",
+      "ludovic.gerardi@puy-de-dome.fr"
+    ],
+    "schema:legalName": "Conseil départemental du Puy-de-Dôme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.auvergne-destination.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/043c9c3d-cfe7-3c93-b814-5dbd1a717497",
+      "schema:email": [
+        "contact@bureaumontagne.com"
+      ],
+      "schema:telephone": [
+        "+33 6 41 66 90 80"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.bureaumontagne.com/"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:ATV",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "MTB"
+        ],
+        "pt": [
+          "Bicicleta-todo-o-terreno (BTT)"
+        ],
+        "en": [
+          "Atv"
+        ],
+        "it": [
+          "Mountain bike"
+        ],
+        "fr": [
+          "Vtt"
+        ],
+        "nl": [
+          "Mountainbike"
+        ],
+        "es": [
+          "BTT"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Bike",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Fahrrad"
+        ],
+        "pt": [
+          "Bicicleta"
+        ],
+        "en": [
+          "Bike"
+        ],
+        "it": [
+          "Bicicletta"
+        ],
+        "fr": [
+          "Vélo"
+        ],
+        "nl": [
+          "Fiets"
+        ],
+        "es": [
+          "Bicicleta"
+        ]
+      }
+    },
+    {
+      "@id": "kb:ElectricATV",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Elektro-Mountainbike"
+        ],
+        "pt": [
+          "Bicicleta-todo-o-terreno (BTT) elétrica"
+        ],
+        "en": [
+          "Electri atv"
+        ],
+        "it": [
+          "Mountain bike elettrica"
+        ],
+        "fr": [
+          "Vtt électrique"
+        ],
+        "nl": [
+          "Elektrische mountainbike"
+        ],
+        "es": [
+          "Bicicleta eléctrica de montaña"
+        ]
+      }
+    },
+    {
+      "@id": "kb:FaunaFlora",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Fauna – Flora"
+        ],
+        "pt": [
+          "Fauna — flora"
+        ],
+        "en": [
+          "Fauna - flora"
+        ],
+        "it": [
+          "Fauna - Flora"
+        ],
+        "fr": [
+          "Faune - flore"
+        ],
+        "nl": [
+          "Fauna - flora"
+        ],
+        "es": [
+          "Fauna - flora"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Geology",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Geologie"
+        ],
+        "pt": [
+          "Geologia"
+        ],
+        "en": [
+          "Geology"
+        ],
+        "it": [
+          "Geologia"
+        ],
+        "fr": [
+          "Géologie"
+        ],
+        "nl": [
+          "Geologie"
+        ],
+        "es": [
+          "Geología"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Hiking",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Wanderung"
+        ],
+        "pt": [
+          "Caminhada"
+        ],
+        "en": [
+          "Hiking"
+        ],
+        "it": [
+          "Escursione"
+        ],
+        "fr": [
+          "Randonnée"
+        ],
+        "nl": [
+          "Wandelen"
+        ],
+        "es": [
+          "Senderismo"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Trail",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Trail"
+        ],
+        "pt": [
+          "Pista"
+        ],
+        "en": [
+          "Trail"
+        ],
+        "it": [
+          "Trail"
+        ],
+        "fr": [
+          "Trail"
+        ],
+        "nl": [
+          "Trailrunning"
+        ],
+        "es": [
+          "Pista"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/73f513fc-d478-3b54-94c0-ccc379fc303e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/a9c7b998-2d03-3131-8a37-9c9264aa8eed",
+          "schema:addressLocality": "Murol",
+          "schema:postalCode": "63790",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:63247",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Murol"
+              ],
+              "pt": [
+                "Murol"
+              ],
+              "en": [
+                "Murol"
+              ],
+              "it": [
+                "Murol"
+              ],
+              "fr": [
+                "Murol"
+              ],
+              "nl": [
+                "Murol"
+              ],
+              "es": [
+                "Murol"
+              ]
+            },
+            "insee": "63247",
+            "isPartOfDepartment": {
+              "@id": "kb:France8463",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Puy-de-Dôme"
+                ],
+                "pt": [
+                  "Puy-de-Dôme"
+                ],
+                "en": [
+                  "Puy-de-Dôme"
+                ],
+                "it": [
+                  "Puy-de-Dôme"
+                ],
+                "fr": [
+                  "Puy-de-Dôme"
+                ],
+                "nl": [
+                  "Puy-de-Dôme"
+                ],
+                "es": [
+                  "Puy-de-Dôme"
+                ]
+              },
+              "insee": "63",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/d92cf5da-84f9-3598-8475-e6467c881c22",
+        "schema:latitude": "45.575202",
+        "schema:longitude": "2.938514",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/6ed17d64-3b70-3915-992e-c020a5cf7d7c",
+      "schema:email": [
+        "etourisme@puy-de-dome.fr",
+        "genevieve.gavioli@puy-de-dome.fr"
+      ],
+      "schema:legalName": "Conseil départemental du Puy-de-Dôme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.auvergne-destination.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2026-02-06",
+  "lastUpdateDatatourisme": "2026-02-07T09:36:15.202Z"
+}

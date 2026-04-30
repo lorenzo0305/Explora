@@ -1,0 +1,325 @@
+{
+  "@id": "https://data.datatourisme.fr/13/1fffc685-2e6e-3a15-b0ae-d50e84c78702",
+  "dc:identifier": "798849",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Mac Donald's"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/73278a4a-8696-3eeb-976a-8fd4c9ec6997",
+    "dc:identifier": "113",
+    "schema:email": [
+      "d.sanial@dromardeche.fr",
+      "j.bruyere@dromardeche.fr"
+    ],
+    "schema:legalName": "Office de Tourisme Porte de DrômArdèche",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.autour-du-palais-ideal.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/d48f2ccd-2357-3a8e-b949-cb8bf19a361f",
+      "schema:legalName": "Agence d'Attractivité de la Drôme - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/97e67b40-0794-32af-9334-4be8ccc319c9",
+      "schema:telephone": [
+        "+33 4 75 31 79 20"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/4deebc83-1806-37eb-ae83-046836995cb8",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/85232464-a881-3bc4-90a1-eef6e1a32a11",
+          "schema:addressLocality": "Saint-Vallier",
+          "schema:postalCode": "26240",
+          "schema:streetAddress": [
+            "Zac de la Brassiere"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:26333",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Vallier"
+              ],
+              "pt": [
+                "Saint-Vallier"
+              ],
+              "en": [
+                "Saint-Vallier"
+              ],
+              "it": [
+                "Saint-Vallier"
+              ],
+              "fr": [
+                "Saint-Vallier"
+              ],
+              "nl": [
+                "Saint-Vallier"
+              ],
+              "es": [
+                "Saint-Vallier"
+              ]
+            },
+            "insee": "26333",
+            "isPartOfDepartment": {
+              "@id": "kb:France8426",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Drôme"
+                ],
+                "pt": [
+                  "Drôme"
+                ],
+                "en": [
+                  "Drôme"
+                ],
+                "it": [
+                  "Drôme"
+                ],
+                "fr": [
+                  "Drôme"
+                ],
+                "nl": [
+                  "Drôme"
+                ],
+                "es": [
+                  "Drôme"
+                ]
+              },
+              "insee": "26",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/ac912109-adc5-307c-87fb-aaa8bdeafb37",
+        "schema:latitude": "45.171258",
+        "schema:longitude": "4.814725",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/a4857088-dfa8-391a-ac32-8b6f41555784",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Geöffnet Montag bis Donnerstag von 10H bis 23H, Freitag bis Samstag von 10H bis 23H59, Sonntag von 10H bis 23H"
+            ],
+            "en": [
+              "Open Monday to Thursday from 10H to 23H, Friday to Saturday from 10H to 23H59, Sunday from 10H to 23H"
+            ],
+            "it": [
+              "Aperto da lunedì a giovedì dalle 10.00 alle 23.00, da venerdì a sabato dalle 10.00 alle 23.59, domenica dalle 10.00 alle 23.00"
+            ],
+            "fr": [
+              "Ouvert du lundi au jeudi de 10H à 23H, du vendredi au samedi de 10H à 23H59, le dimanche de 10H à 23H"
+            ],
+            "nl": [
+              "Open van maandag tot donderdag van 10 tot 23 uur, vrijdag en zaterdag van 10 tot 23 uur, zondag van 10 tot 23 uur"
+            ],
+            "es": [
+              "Abierto de lunes a jueves de 10:00 a 23:00, de viernes a sábado de 10:00 a 23:59 y los domingos de 10:00 a 23:00"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/0781e08b-1979-3004-b8a6-d46b6f1a2c96",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/17a2f723-f800-3d8d-8385-d932e823cb21",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/2252ce28-d9ed-32ab-99c8-57465535946d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/48613834-1256-3574-9aa6-031994007ba5",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/ce71b8d2-4b0f-332f-a03c-7bd3c8816e98",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/c34130c6-4437-3624-9afb-3511a8692fba",
+      "schema:email": [
+        "d.sanial@dromardeche.fr",
+        "j.bruyere@dromardeche.fr"
+      ],
+      "schema:legalName": "Office de Tourisme Porte de DrômArdèche",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.autour-du-palais-ideal.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2016-04-19",
+  "lastUpdateDatatourisme": "2026-01-15T06:55:29.425Z"
+}
