@@ -420,26 +420,20 @@ def activity_suggestions(
     mode: str = Query("similaire")
 ):
     try:
-        # Import de la fonction SIMILAIRE depuis suggestions.py
         from .suggestions import charger_donnees_completes, suggerer_top_10_alternatives
-        # Import de la fonction DIFFÉRENT depuis remplacer_activites.py
         from .remplacer_activites import suggerer_top_10_differents
     except ImportError:
-        # Fallback si tu n'es pas dans un module
         from suggestions import charger_donnees_completes, suggerer_top_10_alternatives
         from remplacer_activites import suggerer_top_10_differents
+
     df_global = charger_donnees_completes()
     if df_global is None:
         raise HTTPException(status_code=500, detail="Impossible de charger les données de suggestions")
 
-    # --- LOGIQUE D'AIGUILLAGE SELON LE MODE ---
     if mode == "different":
-        # Appel de l'algo de diversité
         resultats = suggerer_top_10_differents(activity.strip(), df_global, rayon_km)
     else:
-        # Appel de l'algo de similarité (par défaut)
         resultats = suggerer_top_10_alternatives(activity.strip(), df_global, rayon_km)
-    # ------------------------------------------
 
     if isinstance(resultats, str):
         raise HTTPException(status_code=404, detail=resultats)
@@ -465,18 +459,17 @@ def activity_suggestions(
         
         if item is None:
             item = {"name": name, "nom": name, "label": name, "image": "/static/img/no-image.jpg"}
-        
-        # On essaie de récupérer la description depuis l'algorithme (row) 
-        # AVANT de l'assigner, pour ne pas écraser une description MongoDB valide
+
         desc_algo = row.get("description") or row.get("desc") or row.get("summary") or ""
-        
-        # Si MongoDB (item) n'a pas de description, on met celle de l'algo
         if not item.get("description"):
             item["description"] = desc_algo
 
-        # On ajoute les infos calculées par l'algo
+        type_algo = row.get("Type") or row.get("type") or ""
+        if type_algo:
+            item["categories"] = [type_algo]
+
         item["distance"] = row.get("Distance")
-        item["match"] = row.get("Match") if mode == "similaire" else row.get("Type")
+        item["match"] = row.get("Score") if mode == "similaire" else row.get("Type")
         
         suggestions.append(item)
 
