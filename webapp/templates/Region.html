@@ -127,18 +127,18 @@
     // 1. LE DICTIONNAIRE DES THÈMES (C'est ici que l'on configure les images par catégorie)
     const THEMES = {
         "Nature": {
-            fond: "/static/img/pure.jpg", // Le fond d'écran du téléphone
+            fond: "/static/img/simple.jpg", // Le fond d'écran du téléphone
             icones: [
-                '/static/img/sauge1.png',
-                '/static/img/sauge2.jpg',
-                '/static/img/sauge3.jpg',
-                '/static/img/sauge4.jpg',
-                '/static/img/sauge5.jpg',
-                '/static/img/sauge6.jpg'
+                '/static/img/nature1.jpg',
+                '/static/img/nature2.jpg',
+                '/static/img/nature3.jpg',
+                '/static/img/nature4.jpg',
+                '/static/img/nature5.jpg',
+                '/static/img/nature6.jpg'
             ]
         },
         "Gastronomie": {
-            fond: "/static/img/pure.jpg", 
+            fond: "/static/img/simple.jpg", 
             icones: [
                 '/static/img/food1.jpg', 
                 '/static/img/food2.jpg',
@@ -149,7 +149,7 @@
             ]
         },
         "Culture": {
-            fond: "/static/img/pure.jpg", 
+            fond: "/static/img/simple.jpg", 
             icones: [
                 '/static/img/culture1.jpg', 
                 '/static/img/culture2.jpg',
@@ -158,7 +158,41 @@
                 '/static/img/culture5.jpg',
                 '/static/img/culture6.jpg'
             ]
-        },    };
+        },
+        "Sport": {
+            fond: "/static/img/simple.jpg", 
+            icones: [
+                '/static/img/sport1.jpg', 
+                '/static/img/sport2.jpg',
+                '/static/img/sport3.jpg',
+                '/static/img/sport4.jpg',
+                '/static/img/sport5.png',
+                '/static/img/sport6.jpg'
+            ]
+        },   
+        "Détente": {
+            fond: "/static/img/simple.jpg", 
+            icones: [
+                '/static/img/detente1.jpg', 
+                '/static/img/detente2.jpg',
+                '/static/img/detente3.jpg',
+                '/static/img/detente4.jpg',
+                '/static/img/detente55.jpg',
+                '/static/img/detente6.jpg'
+            ]
+        },
+        "Shopping": {
+            fond: "/static/img/simple.jpg", 
+            icones: [
+                '/static/img/shopping1.jpg', 
+                '/static/img/shopping2.jpg',
+                '/static/img/shopping3.jpg',
+                '/static/img/shopping4.jpg',
+                '/static/img/shopping5.jpg',
+                '/static/img/shopping6.jpg'
+            ]
+        },
+    };
 
     // 2. La séquence ultime anti-répétition
     const MIX = [0, 1, 2, 3, 4, 5, 2, 4, 0, 5, 1, 3, 4, 2, 5, 0, 3, 1, 5, 3, 1, 4, 2];
@@ -177,7 +211,7 @@
         const currentTheme = THEMES[categoryName] || THEMES["Nature"];
         
         // On applique le fond d'écran de la catégorie au téléphone
-        phoneScreen.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('${currentTheme.fond}')`;
+        phoneScreen.style.backgroundImage = `url('${currentTheme.fond}')`;
 
         title.innerText = categoryName;
         grid.innerHTML = '<p style="color:white; padding:20px; font-weight:bold;">Chargement...</p>';

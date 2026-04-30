@@ -229,6 +229,90 @@ function wireSummaryEdits(j){
     if (priceInput)   priceInput.addEventListener("input", onChange);
 }
 
+// --- SYSTÈME D'IMAGES PREMIUM ---
+const THEMES = {
+    "Nature": {
+        icones: [
+            '/static/img/nature1.jpg',
+            '/static/img/nature2.jpg',
+            '/static/img/nature3.jpg',
+            '/static/img/nature4.jpg',
+            '/static/img/nature5.jpg',
+            '/static/img/nature6.jpg'
+        ]
+    },
+    "Gastronomie": {
+        icones: [
+            '/static/img/food1.jpg', 
+            '/static/img/food2.jpg',
+            '/static/img/food3.jpg',
+            '/static/img/food4.jpg',
+            '/static/img/food5.jpg',
+            '/static/img/food6.jpg'
+        ]
+    },
+    "Culture": {
+        icones: [
+            '/static/img/culture1.jpg', 
+            '/static/img/culture2.jpg',
+            '/static/img/culture3.jpg',
+            '/static/img/culture4.jpg',
+            '/static/img/culture5.jpg',
+            '/static/img/culture6.jpg'
+        ]
+    },
+    "Sport": {
+        icones: [
+            '/static/img/sport1.jpg', 
+            '/static/img/sport2.jpg',
+            '/static/img/sport3.jpg',
+            '/static/img/sport4.jpg',
+            '/static/img/sport5.png',
+            '/static/img/sport6.jpg'
+        ]
+    },   
+    "Détente": {
+        icones: [
+            '/static/img/detente1.jpg', 
+            '/static/img/detente2.jpg',
+            '/static/img/detente3.jpg',
+            '/static/img/detente4.jpg',
+            '/static/img/detente55.jpg',
+            '/static/img/detente6.jpg'
+        ]
+    },
+    "Shopping": {
+        icones: [
+            '/static/img/shopping1.jpg', 
+            '/static/img/shopping2.jpg',
+            '/static/img/shopping3.jpg',
+            '/static/img/shopping4.jpg',
+            '/static/img/shopping5.jpg',
+            '/static/img/shopping6.jpg'
+        ]
+    }
+};
+
+const MIX = [0, 1, 2, 3, 4, 5, 2, 4, 0, 5, 1, 3, 4, 2, 5, 0, 3, 1, 5, 3, 1, 4, 2];
+
+// Fonction utilitaire pour trouver la bonne catégorie
+function getCategoryFromActivity(activity) {
+    let typeStr = activity?.type || activity?.category || (Array.isArray(activity?.categories) ? activity.categories[0] : null) || (Array.isArray(activity?.types) ? activity.types[0] : null) || "";
+    typeStr = String(typeStr).toLowerCase();
+
+    if (typeStr.includes('nature') || typeStr.includes('parc') || typeStr.includes('jardin')) return "Nature";
+    if (typeStr.includes('gastronomie') || typeStr.includes('restaurant') || typeStr.includes('food')) return "Gastronomie";
+    if (typeStr.includes('culture') || typeStr.includes('musée') || typeStr.includes('patrimoine')) return "Culture";
+    if (typeStr.includes('sport') || typeStr.includes('loisir') || typeStr.includes('aventure')) return "Sport";
+    if (typeStr.includes('détente') || typeStr.includes('spa') || typeStr.includes('bien-être')) return "Détente";
+    if (typeStr.includes('shopping') || typeStr.includes('boutique') || typeStr.includes('magasin')) return "Shopping";
+
+    // Si on ne trouve pas de correspondance évidente, on choisit "Nature" par défaut
+    return "Nature";
+}
+// --------------------------------
+
+
 /* ====== Rendu ====== */
 function render(j, dayIndex){
     localStorage.setItem(LAST_ID_KEY, String(j.id));
@@ -251,6 +335,9 @@ function render(j, dayIndex){
     const wrap = document.getElementById("slotsWrap");
     wrap.innerHTML = "";
 
+    // Variable pour continuer la séquence MIX au fil des activités
+    let globalActivityIndex = 0;
+
     ["morning","noon","afternoon","evening"].forEach(key=>{
         const acts=d?.slots?.[key]||[]; if(!acts.length) return;
         
@@ -263,16 +350,25 @@ function render(j, dayIndex){
             row.className = "act";
             row.tabIndex = 0;
 
-            const firstImg = resolveActivityImage(a);
+            let firstImg = resolveActivityImage(a);
             const name = a?.name || a?.nom || a?.title || "Activité";
             const metaText = fmtMeta(a);
             
+            // --- Logique d'application des images premium ---
+            if (firstImg === DEFAULT_ACTIVITY_IMG || firstImg.includes('no-image') || firstImg.includes('appareil_photo')) {
+                const category = getCategoryFromActivity(a);
+                const currentTheme = THEMES[category] || THEMES["Nature"];
+                const variantIndex = MIX[globalActivityIndex % MIX.length] % currentTheme.icones.length;
+                firstImg = currentTheme.icones[variantIndex];
+            }
+            globalActivityIndex++; // On incrémente pour la prochaine activité sans image
+            // ------------------------------------------------
+
             // On récupère la description si elle existe
             let desc = a?.description || a?.shortDescription || "";
             if (typeof desc === 'object') desc = desc.fr || desc.en || Object.values(desc)[0] || "";
             if (!desc || desc.trim() === "") desc = "Aucune description détaillée n'est disponible pour cette activité.";
 
-            // L'ACCORDÉON MAGIQUE EST ICI
             row.innerHTML = `
                 <div class="act-header">
                     <div class="thumb" style="background-image: url('${firstImg}')"></div>
@@ -289,12 +385,12 @@ function render(j, dayIndex){
                 </div>
             `;
 
-            if (firstImg === DEFAULT_ACTIVITY_IMG) {
-                const th = row.querySelector('.thumb');
-                tryEnrichThumbAsync(th, a);
-            }
+            // On désactive tryEnrichThumbAsync car on a déjà géré l'image premium
+            // if (firstImg === DEFAULT_ACTIVITY_IMG) {
+            //     const th = row.querySelector('.thumb');
+            //     tryEnrichThumbAsync(th, a);
+            // }
 
-            // Au lieu d'ouvrir une URL, ça ouvre l'accordéon
             row.addEventListener("click", () => {
                 row.classList.toggle("open");
             });

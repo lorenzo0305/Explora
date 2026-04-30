@@ -34,6 +34,73 @@ function isLiked(id) {
     return loadKey(LIKES_KEY).some(x => String(x.id) === String(id));
 }
 
+// --- SYSTÈME D'IMAGES PREMIUM ---
+const THEMES = {
+    "Nature": {
+        icones: [
+            '/static/img/nature1.jpg',
+            '/static/img/nature2.jpg',
+            '/static/img/nature3.jpg',
+            '/static/img/nature4.jpg',
+            '/static/img/nature5.jpg',
+            '/static/img/nature6.jpg'
+        ]
+    },
+    "Gastronomie": {
+        icones: [
+            '/static/img/food1.jpg', 
+            '/static/img/food2.jpg',
+            '/static/img/food3.jpg',
+            '/static/img/food4.jpg',
+            '/static/img/food5.jpg',
+            '/static/img/food6.jpg'
+        ]
+    },
+    "Culture": {
+        icones: [
+            '/static/img/culture1.jpg', 
+            '/static/img/culture2.jpg',
+            '/static/img/culture3.jpg',
+            '/static/img/culture4.jpg',
+            '/static/img/culture5.jpg',
+            '/static/img/culture6.jpg'
+        ]
+    },
+    "Sport": {
+        icones: [
+            '/static/img/sport1.jpg', 
+            '/static/img/sport2.jpg',
+            '/static/img/sport3.jpg',
+            '/static/img/sport4.jpg',
+            '/static/img/sport5.png',
+            '/static/img/sport6.jpg'
+        ]
+    },   
+    "Détente": {
+        icones: [
+            '/static/img/detente1.jpg', 
+            '/static/img/detente2.jpg',
+            '/static/img/detente3.jpg',
+            '/static/img/detente4.jpg',
+            '/static/img/detente55.jpg',
+            '/static/img/detente6.jpg'
+        ]
+    },
+    "Shopping": {
+        icones: [
+            '/static/img/shopping1.jpg', 
+            '/static/img/shopping2.jpg',
+            '/static/img/shopping3.jpg',
+            '/static/img/shopping4.jpg',
+            '/static/img/shopping5.jpg',
+            '/static/img/shopping6.jpg'
+        ]
+    }
+};
+
+const MIX = [0, 1, 2, 3, 4, 5, 2, 4, 0, 5, 1, 3, 4, 2, 5, 0, 3, 1, 5, 3, 1, 4, 2];
+// --------------------------------
+
 // Initialisation au chargement
 document.addEventListener('DOMContentLoaded', async () => {
     updateBadge('basketCount', loadKey(BASKET_KEY).length);
@@ -41,6 +108,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const query = CATEGORIE_ACTUELLE;
     document.getElementById('pageTitle').textContent = query.toUpperCase();
+
+    // On récupère le bon thème d'images (ou Nature par défaut)
+    const currentTheme = THEMES[query] || THEMES["Nature"];
 
     const listContainer = document.getElementById('activitiesList');
 
@@ -58,14 +128,24 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         listContainer.innerHTML = '';
 
-        items.forEach(item => {
+        items.forEach((item, index) => {
             const id = item.id || item._id || item.url || '#';
             const name = item.name || 'Activité sans nom';
             
-            let imgUrl = '/static/img/no-image.jpg';
-            if (item.image) imgUrl = item.image;
-            else if (item.photo) imgUrl = item.photo;
-            else if (item.thumbnail) imgUrl = item.thumbnail;
+            let imgUrl = "";
+            // Si l'activité a une VRAIE image dans la BDD (et que ce n'est pas l'appareil photo cassé)
+            if (item.image && !item.image.includes('no-image') && !item.image.includes('appareil_photo')) {
+                imgUrl = item.image;
+            } else if (item.photo && !item.photo.includes('no-image') && !item.photo.includes('appareil_photo')) {
+                imgUrl = item.photo;
+            } else if (item.thumbnail && !item.thumbnail.includes('no-image') && !item.thumbnail.includes('appareil_photo')) {
+                imgUrl = item.thumbnail;
+            } 
+            // Sinon, on applique notre séquence premium
+            else {
+                const variantIndex = MIX[index % MIX.length] % currentTheme.icones.length;
+                imgUrl = currentTheme.icones[variantIndex];
+            }
 
             const type = (item.types && item.types[0]) ? item.types[0].toLowerCase() : query.toLowerCase();
             const locality = item.locality || item.region || 'Lieu inconnu';
@@ -100,7 +180,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
             `;
 
-            // 1. Déplier/Enrouler l'accordéon (uniquement si on ne clique pas sur un bouton)
+            // 1. Déplier/Enrouler l'accordéon
             const header = card.querySelector('.activity-header');
             header.addEventListener('click', (e) => {
                 if (!e.target.closest('button')) {
@@ -111,7 +191,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             // 2. Action Cœur
             const btnFav = card.querySelector('.btn-fav');
             btnFav.addEventListener('click', (e) => {
-                e.stopPropagation(); // Empêche l'accordéon de s'ouvrir
+                e.stopPropagation(); 
                 const liked = toggleLike({ id, name, image: imgUrl, types: item.types || [] });
                 btnFav.classList.toggle('active', liked);
             });
@@ -119,7 +199,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             // 3. Action Panier
             const btnPan = card.querySelector('.btn-pan');
             btnPan.addEventListener('click', (e) => {
-                e.stopPropagation(); // Empêche l'accordéon de s'ouvrir
+                e.stopPropagation(); 
                 addBasket({ id, name, image: imgUrl, types: item.types || [] });
             });
 
