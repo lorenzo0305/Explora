@@ -5,8 +5,60 @@
     --accent-vivid: #FF6F61; /* Corail */
 }
 
-body { margin: 0; background-color: #EAE6DF !important; font-family: 'Lora', serif; overflow-x: hidden;}
-.app-frame { display: flex; flex-direction: column; min-height: 100vh; }
+* { box-sizing: border-box; }
+
+/* 1. On annule les 70px de app.css et on interdit à la page globale de scroller */
+html, body {
+    margin: 0; padding-bottom: 0 !important;
+    height: 100vh !important;
+    overflow: hidden !important; 
+    background-color: #EAE6DF !important;
+    color: var(--text-main); font-family: 'Lora', serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 2. On force le cadre de l'application à faire exactement la taille de l'écran */
+.app-frame {
+    display: flex; flex-direction: column;
+    height: 100vh !important; 
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* 3. On ajuste le layout des deux colonnes pour qu'il prenne le bon espace */
+/* LAYOUT EN 2 COLONNES */
+.editor-layout { 
+    display: flex; flex: 1; width: 100%; max-width: 1600px; margin: 0 auto; 
+    align-items: stretch; /* Étire les deux colonnes jusqu'en bas */
+    overflow: hidden; /* Empêche le conteneur global de déborder */
+}
+
+/* =========================================
+   COLONNE GAUCHE (PANIER)
+========================================= */
+.sidebar-photos {
+    width: 260px; padding: 40px 15px; 
+    border-right: 1px solid rgba(0,0,0,0.06);
+    background: #FAF8F5; z-index: 100;
+    height: 100%; /* Prend exactement la hauteur de l'éditeur */
+    overflow-y: auto; /* A sa propre barre de défilement */
+    scrollbar-width: none; 
+}
+
+/* (Garde le reste de tes styles photos ici...) */
+
+/* =========================================
+   COLONNE DROITE : L'ESPACE MAGAZINE
+========================================= */
+.magazine-workspace { 
+    flex: 1; 
+    /* J'ai augmenté le padding du bas à 80px pour que tu puisses 
+       respirer un peu sous le carnet quand tu arrives tout en bas ! */
+    padding: 30px 50px 80px 50px; 
+    display: flex; flex-direction: column; 
+    height: 100%; /* Prend exactement la hauteur de l'éditeur */
+    overflow-y: auto; /* A sa propre barre de défilement */
+}
 
 /* NAVIGATION */
 .top-nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(250, 248, 245, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 2000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
@@ -21,18 +73,6 @@ body { margin: 0; background-color: #EAE6DF !important; font-family: 'Lora', ser
 
 /* LAYOUT EN 2 COLONNES */
 .editor-layout { display: flex; flex: 1; width: 100%; max-width: 1600px; margin: 0 auto; align-items: flex-start;}
-
-/* =========================================
-   COLONNE GAUCHE (PANIER)
-========================================= */
-.sidebar-photos {
-    width: 260px; padding: 40px 15px; 
-    border-right: 1px solid rgba(0,0,0,0.06);
-    position: sticky; top: 85px; 
-    height: calc(100vh - 85px); overflow-y: auto;
-    scrollbar-width: none; background: #FAF8F5; 
-    transition: background 0.2s; z-index: 100;
-}
 
 .photo-stack-header { margin-bottom: 30px; text-align: center; }
 .script-decoration-small { font-family: 'Alex Brush', cursive; font-size: 2.2rem; color: var(--accent-vivid); display: block; margin-bottom: -10px; }
@@ -67,7 +107,6 @@ body { margin: 0; background-color: #EAE6DF !important; font-family: 'Lora', ser
 /* =========================================
    COLONNE DROITE : L'ESPACE MAGAZINE
 ========================================= */
-.magazine-workspace { flex: 1; padding: 30px 50px; display: flex; flex-direction: column; overflow-y: auto; height: calc(100vh - 85px);}
 
 .workspace-header-massive {
     width: 100%; max-width: 1100px; margin: 0 auto 30px auto;

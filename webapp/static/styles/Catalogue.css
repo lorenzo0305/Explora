@@ -10,15 +10,32 @@
 
 * { box-sizing: border-box; }
 
-body {
-    margin: 0; background-color: var(--bg-color) !important;
+/* 1. On annule les conflits de app.css */
+html, body {
+    margin: 0; padding-bottom: 0 !important;
+    height: 100vh !important;
+    overflow: hidden !important; 
+    background-color: var(--bg-color) !important;
     color: var(--text-main); font-family: 'Lora', serif;
-    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
+/* 2. On force le cadre global */
 .app-frame {
     display: flex; flex-direction: column;
-    height: 100vh; width: 100vw; position: relative;
+    height: 100vh !important; width: 100vw; position: relative;
+    overflow: hidden;
+}
+
+/* 3. On laisse UNIQUEMENT le panneau du bas scroller */
+.content-panel { 
+    flex: 1; 
+    overflow-y: auto !important; 
+    overflow-x: hidden;
+    /* 40px en haut, 40px sur les côtés, 20px en bas */
+    padding: 10px 40px 0px 40px; 
+    position: relative; 
+    z-index: 1;
 }
 
 .bg-airplane-line {
@@ -53,12 +70,11 @@ body {
 /* =========================================
    LAYOUT CATALOGUE
 ========================================= */
-.content-panel { flex: 1; overflow-y: auto; padding: 60px 40px; position: relative; z-index: 1;}
-.catalogue-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 50px;}
+.catalogue-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 0px;}
 
-.catalogue-header { text-align: center; margin-bottom: 20px; }
+.catalogue-header { text-align: center; margin-bottom: 0px; }
 .script-decoration { font-family: 'Alex Brush', cursive; font-size: 3rem; color: var(--accent-vivid); display: block; margin-bottom: -15px; }
-.main-title { font-family: 'Montserrat', sans-serif; font-size: 3rem; text-transform: uppercase; font-weight: 900; letter-spacing: -1px; margin: 0 0 40px 0; color: var(--text-main); }
+.main-title { font-family: 'Montserrat', sans-serif; font-size: 3rem; text-transform: uppercase; font-weight: 900; letter-spacing: -1px; margin: 0 0 20px 0; color: var(--text-main); }
 
 /* =========================================
    BARRE DE RECHERCHE CHIC
@@ -102,10 +118,10 @@ body {
 /* =========================================
    SECTIONS & NOUVELLES CARTES
 ========================================= */
-.sections-container { display: flex; flex-direction: column; gap: 80px; padding-bottom: 50px; }
+.sections-container { display: flex; flex-direction: column; gap: 40px; padding-bottom: 50px; }
 .section-title {
     font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; color: var(--text-main);
-    text-align: center; margin-bottom: 40px; position: relative;
+    text-align: center; margin-bottom: 25px; position: relative;
 }
 .section-title::after {
     content: ''; display: block; width: 60px; height: 2px;

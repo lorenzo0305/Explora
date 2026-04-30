@@ -1,3 +1,12 @@
+// 1. Liste des images de secours, disponible pour toutes les fonctions
+const FALLBACK_IMAGES = [
+    '/static/img/baie_de_somme2.jpg',
+    '/static/img/auvergne.jpg',
+    '/static/img/montagne_france2.jpg',
+    '/static/img/boeuf_bourguignon.jpg',
+    '/static/img/semur_en_auxois.jpg',
+    '/static/img/vtt.jpg'
+];
 
 /* ===== Logic Panier & Favoris ===== */
 const BASKET_KEY = 'wish_basket_v1';
@@ -26,13 +35,23 @@ function renderPanel(key, container, title, emptyMsg, isLike = false) {
         container.innerHTML = `<h4>${title}</h4><p class="panel-empty">${emptyMsg}</p>` + (isLike ? '' : `<div class="panel-footer"><a href="/makejourney">Aller à la création</a></div>`);
         return;
     }
-    const html = items.map(x => `
-        <div class="panel-item">
-          <img src="${x.image || '/static/img/no-image.jpg'}" alt="">
-          <div class="pi-name">${x.name || 'Sans nom'}</div>
-          <button class="pi-remove" onclick="removeItem('${key}', '${x.id}')">✕</button>
-        </div>
-      `).join('');
+    
+    // On génère le HTML d'abord avec l'anti "no-image"
+    const html = items.map((x, idx) => {
+        const thumb = (x.image && !x.image.includes('no-image')) 
+            ? x.image 
+            : FALLBACK_IMAGES[idx % FALLBACK_IMAGES.length];
+            
+        return `
+            <div class="panel-item">
+              <img src="${thumb}" alt="">
+              <div class="pi-name">${x.name || 'Sans nom'}</div>
+              <button class="pi-remove" onclick="removeItem('${key}', '${x.id}')">✕</button>
+            </div>
+        `;
+    }).join('');
+
+    // Puis on l'injecte proprement
     container.innerHTML = `<h4>${title}</h4>${html}` + (isLike ? '' : `<div class="panel-footer"><a href="/makejourney">Aller à la création</a></div>`);
 }
 
@@ -65,31 +84,21 @@ window.addEventListener("storage", (e) => {
     if (e.key === BASKET_KEY || e.key === LIKES_KEY) { updateCounts(); renderPanels(); }
 });
 
-/* ===== Logic Carnet (Liste Voyages) =====
- * Source de vérité : le serveur (GET /journeys).
- * localStorage sert de cache pour afficher tout de suite au chargement
- * et de fallback si le backend est injoignable.
- * Les voyages "locaux" (créés dans l'éditeur, jamais poussés) sont fusionnés
- * avec les voyages serveur dans l'affichage.
- */
+/* ===== Logic Carnet (Liste Voyages) ===== */
 const JOURNEYS_KEY = "wish_journeys_v1";
 
 const lsGetJourneys = () => { try { return JSON.parse(localStorage.getItem(JOURNEYS_KEY) || "[]"); } catch { return []; } };
 const lsSetJourneys = (arr) => { try { localStorage.setItem(JOURNEYS_KEY, JSON.stringify(arr)); } catch { } };
 
-// ─── Helpers de parsing ────────────────────────────────────
 function normalizeSlotsAny(s) { s = s || {}; return { morning: s.morning || [], noon: s.noon || [], afternoon: s.afternoon || [], evening: s.evening || [] }; }
 
-/** Nombre d'activités dans un voyage, qu'il soit au format "éditeur" (slots) ou "algo" (matin/aprem). */
 function activitiesCount(j) {
     if (!Array.isArray(j?.plan)) return 0;
     return j.plan.reduce((acc, d) => {
-        // Format algorithme : { matin: [...], aprem: [...] }
         if (Array.isArray(d?.matin) || Array.isArray(d?.aprem)) {
             return acc + (Array.isArray(d.matin) ? d.matin.length : 0)
                       + (Array.isArray(d.aprem) ? d.aprem.length : 0);
         }
-        // Format éditeur : { slots: { morning, noon, afternoon, evening } }
         const s = d?.slots || {};
         const c = (arr) => Array.isArray(arr) ? arr.length : (arr ? Object.values(arr).length : 0);
         return acc + c(s.morning) + c(s.noon) + c(s.afternoon) + c(s.evening);
@@ -104,17 +113,28 @@ function metaText(j) {
     return (j.location ? j.location + " • " : "") + d + (d > 1 ? " jours" : " jour") + " • " + a + (a > 1 ? " activités" : " activité");
 }
 
-function pickCover(j) {
-    if (j?.cover) return j.cover;
-    // Dernier recours : regarder dans le plan
-    for (const day of (j?.plan || [])) {
-        for (const key of ['matin', 'aprem']) {
-            for (const act of (day?.[key] || [])) {
-                if (act?.image) return act.image;
+function pickCover(j, index) {
+    // Si on a déjà une belle couverture, on la garde
+    if (j?.cover && !j.cover.includes('no-image')) return j.cover;
+
+    // Sinon, on cherche dans les activités du plan
+    if (Array.isArray(j?.plan)) {
+        for (const day of j.plan) {
+            const slots = day.slots || day;
+            const imgs = [slots.morning, slots.noon, slots.afternoon, slots.evening, slots.matin, slots.aprem];
+            for (let slot of imgs) {
+                if (Array.isArray(slot)) {
+                    for (let act of slot) {
+                        if (act?.image && !act.image.includes('no-image')) return act.image;
+                    }
+                }
             }
         }
     }
-    return "/static/img/no-image.jpg";
+
+    // LA PIOCHE PARFAITE : On utilise la position de la carte (0, 1, 2, 3...)
+    const safeIndex = typeof index === 'number' ? index : 0;
+    return FALLBACK_IMAGES[safeIndex % FALLBACK_IMAGES.length];
 }
 
 function stashEditPayload(j) {
@@ -124,7 +144,6 @@ function stashEditPayload(j) {
     } catch { }
 }
 
-// ─── Communication serveur ─────────────────────────────────
 async function fetchServerJourneys() {
     try {
         const res = await fetch('/journeys', { headers: { 'Accept': 'application/json' } });
@@ -133,14 +152,13 @@ async function fetchServerJourneys() {
         return Array.isArray(arr) ? arr : [];
     } catch (err) {
         console.warn('[MesVoyages] Serveur indisponible, fallback localStorage :', err.message);
-        return null; // null = on n'a pas pu parler au serveur
+        return null;
     }
 }
 
 async function deleteServerJourney(id) {
     try {
         const res = await fetch(`/journeys/${encodeURIComponent(id)}`, { method: 'DELETE' });
-        // 404 = pas sur le serveur, c'est OK (voyage purement local)
         return res.ok || res.status === 404;
     } catch (err) {
         console.warn('[MesVoyages] Suppression serveur échouée :', err.message);
@@ -148,10 +166,6 @@ async function deleteServerJourney(id) {
     }
 }
 
-/**
- * Fusionne deux listes de voyages (serveur + local) par id.
- * Le plus récent (updatedAt) gagne.
- */
 function mergeJourneys(serverList, localList) {
     const map = new Map();
     const consider = (j) => {
@@ -168,7 +182,6 @@ function mergeJourneys(serverList, localList) {
         .sort((a, b) => new Date(b?.updatedAt || 0) - new Date(a?.updatedAt || 0));
 }
 
-// ─── Rendu ─────────────────────────────────────────────────
 function renderJourneys(journeys) {
     const listEl = document.getElementById("topicsList");
     const emptyEl = document.getElementById("emptyState");
@@ -184,13 +197,21 @@ function renderJourneys(journeys) {
         .replace(/&/g, '&amp;').replace(/</g, '&lt;')
         .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-    for (const j of journeys) {
-        const item = document.createElement("div"); item.className = "item";
+    // On utilise forEach pour récupérer l'index (0, 1, 2...) de chaque voyage
+    journeys.forEach((j, index) => {
+        const item = document.createElement("div"); 
+        item.className = "item";
+        
+        // ASTUCE TITRE : On sécurise d'abord le texte, PUIS on remplace le tiret par la balise HTML
+        const safeName = esc(j.name || "Voyage sans titre");
+        const formattedName = safeName.replace(/\s*[—\-]\s*/, '<br>');
+        
         item.innerHTML = `
           <div class="left">
-            <div class="thumb" style="background-image:url('${esc(pickCover(j))}')"></div>
+            <!-- On passe l'index à pickCover ici ! -->
+            <div class="thumb" style="background-image:url('${esc(pickCover(j, index))}')"></div>
             <div class="meta">
-              <div class="name">${esc(j.name || "Voyage sans titre")}</div>
+              <div class="name">${formattedName}</div>
               <div class="desc">${esc(metaText(j))}</div>
             </div>
           </div>
@@ -213,37 +234,28 @@ function renderJourneys(journeys) {
             e.stopPropagation();
             if (!confirm(`Supprimer « ${j.name || 'Voyage'} » ?`)) return;
 
-            // 1) serveur d'abord
             await deleteServerJourney(j.id);
-            // 2) cache local ensuite
             lsSetJourneys(lsGetJourneys().filter(x => String(x.id) !== String(j.id)));
-            // 3) recharger la liste
             loadJourneys();
         });
 
         item.addEventListener("click", () => window.location.href = `/journeys/view/${encodeURIComponent(j.id)}`);
         listEl.appendChild(item);
-    }
+    });
 }
 
 async function loadJourneys() {
     const emptyEl = document.getElementById("emptyState");
     emptyEl.style.display = "none";
 
-    // 1. Rendu immédiat depuis le cache local (perçu instantané)
     const cached = lsGetJourneys();
     renderJourneys(
         [...cached].sort((a, b) => new Date(b?.updatedAt || 0) - new Date(a?.updatedAt || 0))
     );
 
-    // 2. Fetch serveur en parallèle
     const serverJourneys = await fetchServerJourneys();
-    if (serverJourneys === null) {
-        // Serveur KO : on reste sur le cache
-        return;
-    }
+    if (serverJourneys === null) return;
 
-    // 3. Fusion + rendu + mise à jour du cache
     const merged = mergeJourneys(serverJourneys, cached);
     lsSetJourneys(merged);
     renderJourneys(merged);

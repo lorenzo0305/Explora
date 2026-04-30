@@ -163,7 +163,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 const list = asArray(dataVoyage[j][m]);
                 list.splice(s, 1);
                 dataVoyage[j][m] = list;
-                // On met à jour le sessionStorage pour persistance temporaire
                 sessionStorage.setItem('algorithmRes', JSON.stringify({ data: dataVoyage }));
                 renderItineraire();
             });
@@ -197,21 +196,16 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
             <button id="rmClose" type="button" style="background:none;border:none;font-size:26px;cursor:pointer;color:#6b5f57;">×</button>
         </div>
-
-        <!-- SÉLECTEUR DE MODE -->
         <div style="display:flex; gap:10px; margin-bottom:20px;">
             <button id="btnModeSimilaire" style="flex:1; padding:10px; border-radius:8px; border:1px solid #FF6F61; background:#FF6F61; color:white; cursor:pointer; font-weight:600;">Esprit similaire</button>
             <button id="btnModeDifferent" style="flex:1; padding:10px; border-radius:8px; border:1px solid #D4C3B3; background:white; color:#6b5f57; cursor:pointer; font-weight:600;">Changer de style</button>
         </div>
-
         <input id="rmSearch" type="text" placeholder="Rechercher manuellement…"
                style="width:100%;padding:12px 16px;border:1px solid #D4C3B3;border-radius:10px;margin-bottom:22px;">
-        
         <div class="rm-recommendations">
             <div id="rmCarouselTitle" class="rm-rec-title">Suggestions similaires</div>
             <div id="rmCarousel" class="rm-carousel"></div>
         </div>
-        
         <div class="rm-search-results">
             <div class="rm-rec-title">Tous les résultats</div>
             <div id="rmResults" class="rm-results"></div>
@@ -232,51 +226,47 @@ document.addEventListener('DOMContentLoaded', function () {
     let _searchTimer = null;
 
     function openReplaceModal(target) {
-    _currentTarget = target;
-    const modal = ensureModal();
-    modal.style.display = 'flex';
-    
-    const input = modal.querySelector('#rmSearch');
-    const results = modal.querySelector('#rmResults');
-    const carousel = modal.querySelector('#rmCarousel');
-    const title = modal.querySelector('#rmCarouselTitle');
-    const btnSim = modal.querySelector('#btnModeSimilaire');
-    const btnDiff = modal.querySelector('#btnModeDifferent');
-
-    input.value = '';
-    results.innerHTML = ''; 
-
-    const currentAct = dataVoyage[target.jourIdx]?.[target.moment]?.[target.slotIdx];
-    const currentName = currentAct?.nom || currentAct?.name || currentAct?.label || '';
-
-    // Logique de rafraîchissement des recommandations
-    const refreshRecommendations = async (mode) => {
-        carousel.innerHTML = '<p style="color:#6b5f57;font-style:italic;text-align:center;padding:20px 0;width:100%;">Analyse de vos préférences…</p>';
+        _currentTarget = target;
+        const modal = ensureModal();
+        modal.style.display = 'flex';
         
-        // Mise à jour visuelle des onglets
-        if (mode === 'similaire') {
-            btnSim.style.background = '#FF6F61'; btnSim.style.color = 'white';
-            btnDiff.style.background = 'transparent'; btnDiff.style.color = '#6b5f57';
-            title.textContent = "Suggestions dans le même esprit";
-        } else {
-            btnDiff.style.background = '#FF6F61'; btnDiff.style.color = 'white';
-            btnSim.style.background = 'transparent'; btnSim.style.color = '#6b5f57';
-            title.textContent = "Suggestions différentes";
-        }
+        const input = modal.querySelector('#rmSearch');
+        const results = modal.querySelector('#rmResults');
+        const carousel = modal.querySelector('#rmCarousel');
+        const title = modal.querySelector('#rmCarouselTitle');
+        const btnSim = modal.querySelector('#btnModeSimilaire');
+        const btnDiff = modal.querySelector('#btnModeDifferent');
 
-        if (currentName) {
-            const items = await loadRecommendations(currentName, mode);
-            renderRecommendationCards(items, carousel);
-        } else {
-            carousel.innerHTML = '<p style="width:100%; text-align:center;">Activité de référence manquante.</p>';
-        }
-    };
+        input.value = '';
+        results.innerHTML = ''; 
 
-    // Events pour les boutons de mode
+        const currentAct = dataVoyage[target.jourIdx]?.[target.moment]?.[target.slotIdx];
+        const currentName = currentAct?.nom || currentAct?.name || currentAct?.label || '';
+
+        const refreshRecommendations = async (mode) => {
+            carousel.innerHTML = '<p style="color:#6b5f57;font-style:italic;text-align:center;padding:20px 0;width:100%;">Analyse de vos préférences…</p>';
+            
+            if (mode === 'similaire') {
+                btnSim.style.background = '#FF6F61'; btnSim.style.color = 'white';
+                btnDiff.style.background = 'transparent'; btnDiff.style.color = '#6b5f57';
+                title.textContent = "Suggestions dans le même esprit";
+            } else {
+                btnDiff.style.background = '#FF6F61'; btnDiff.style.color = 'white';
+                btnSim.style.background = 'transparent'; btnSim.style.color = '#6b5f57';
+                title.textContent = "Suggestions différentes";
+            }
+
+            if (currentName) {
+                const items = await loadRecommendations(currentName, mode);
+                renderRecommendationCards(items, carousel);
+            } else {
+                carousel.innerHTML = '<p style="width:100%; text-align:center;">Activité de référence manquante.</p>';
+            }
+        };
+
         btnSim.onclick = () => refreshRecommendations('similaire');
         btnDiff.onclick = () => refreshRecommendations('different');
 
-    // Chargement initial
         refreshRecommendations('similaire');
         loadSuggestions('').then(items => renderModalResults(items, results));
 
@@ -293,7 +283,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const slug = (region && region !== 'all') ? region : '';
         const query = (q || '').trim();
 
-        // 1) si une région est connue, on tape /regions/{slug}/cards
         if (slug) {
             const url = `/regions/${encodeURIComponent(slug)}/cards?limit=24` + (query ? `&q=${encodeURIComponent(query)}` : '');
             try {
@@ -305,7 +294,6 @@ document.addEventListener('DOMContentLoaded', function () {
             } catch (_) {}
         }
 
-        // 2) sinon (ou en complément), on retombe sur /search
         if (query.length >= 2) {
             try {
                 const r = await fetch(`/search?query=${encodeURIComponent(query)}&limit=24`);
@@ -315,80 +303,70 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             } catch (_) {}
         }
-
         return [];
     }
 
     async function loadRecommendations(activityName, mode = 'similaire') {
-    try {
-        // AJOUT du paramètre &mode= dans l'URL
-        const url = `/suggestions?activity=${encodeURIComponent(activityName)}&mode=${mode}`;
-        const r = await fetch(url);
-        if (r.ok) {
-            const data = await r.json();
-            return Array.isArray(data) ? data : [];
+        try {
+            const url = `/suggestions?activity=${encodeURIComponent(activityName)}&mode=${mode}`;
+            const r = await fetch(url);
+            if (r.ok) {
+                const data = await r.json();
+                return Array.isArray(data) ? data : [];
+            }
+        } catch (err) {
+            console.error("Erreur lors de la récupération des suggestions :", err);
         }
-    } catch (err) {
-        console.error("Erreur lors de la récupération des suggestions :", err);
+        return [];
     }
-    return [];
-}
+
     function renderRecommendationCards(items, container) {
-    if (!items || !items.length) {
-        container.innerHTML = '<div class="rm-empty" style="padding:20px; text-align:center; width:100%;">Aucune recommandation disponible.</div>';
-        return;
-    }
-
-    container.style.display = 'grid';
-    container.style.gridTemplateColumns = 'repeat(auto-fill, minmax(160px, 1fr))';
-    container.style.gap = '16px';
-    container.style.padding = '10px 0';
-
-    container.innerHTML = items.map(item => {
-        const id = escapeHtml(String(item.id || item._id || item.nom || ''));
-        const name = escapeHtml(item.name || item.nom || 'Sans nom');
-        const subtitle = escapeHtml(item.locality || item.region || (item.categories && item.categories[0]) || '');
-        const img = escapeHtml((item.image && /^https?:/.test(item.image)) ? item.image : '/static/img/no-image.jpg');
-        const stat = escapeHtml(item.match || item.type || '');
-        const distance = escapeHtml(item.distance || '');
-
-        return `
-            <div class="rm-card-item" data-id="${id}" 
-                 style="background:#fff; border:1px solid #D4C3B3; border-radius:12px; overflow:hidden; display:flex; flex-direction:column; transition: all 0.3s ease;">
-                <div class="rm-card-visual" style="height:120px; overflow:hidden;">
-                    <img src="${img}" alt="${name}" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='/static/img/no-image.jpg'" />
-                </div>
-                <div class="rm-card-body" style="padding:12px; flex:1; display:flex; flex-direction:column; gap:4px;">
-                    <div class="rm-card-title" style="font-family:'Cormorant Garamond',serif; font-size:16px; font-weight:700; color:#1C1C1C; line-height:1.2;">${name}</div>
-                    <div class="rm-card-meta" style="font-size:12px; color:#6b5f57;">${subtitle}</div>
-                    <div class="rm-card-stats" style="font-size:11px; font-weight:600; color:#FF6F61; margin-top:4px;">
-                        <span>${stat}</span> <span style="margin-left:8px; color:#6b5f57;">${distance}</span>
-                    </div>
-                </div>
-                <div class="rm-card-actions" style="padding:10px; border-top:1px solid #F0EDE9;">
-                    <button type="button" class="rm-pick" style="width:100%; background:#FF6F61; color:#fff; border:none; padding:8px; border-radius:20px; cursor:pointer; font-weight:700; font-size:11px; text-transform:uppercase;">Choisir</button>
-                </div>
-            </div>`;
-    }).join('');
-
-    // bouton Choisir
-    container.querySelectorAll('.rm-card-item').forEach(card => {
-    card.querySelector('.rm-pick').onclick = (e) => {
-        e.stopPropagation();
-        const id = card.dataset.id;
-        
-        // On retrouve l'objet original dans la liste 'items' reçue de l'API
-        const selectedItem = items.find(x => String(x.id || x._id || x.nom) === id);
-        
-        if (selectedItem) {
-            // console.log("Objet choisi :", selectedItem); // Pour débugger et voir si 'description' est là
-            applyReplacement(selectedItem);
+        if (!items || !items.length) {
+            container.innerHTML = '<div class="rm-empty" style="padding:20px; text-align:center; width:100%;">Aucune recommandation disponible.</div>';
+            return;
         }
-    };
-});
-}
 
-        
+        container.style.display = 'grid';
+        container.style.gridTemplateColumns = 'repeat(auto-fill, minmax(160px, 1fr))';
+        container.style.gap = '16px';
+        container.style.padding = '10px 0';
+
+        container.innerHTML = items.map(item => {
+            const id = escapeHtml(String(item.id || item._id || item.nom || ''));
+            const name = escapeHtml(item.name || item.nom || 'Sans nom');
+            const subtitle = escapeHtml(item.locality || item.region || (item.categories && item.categories[0]) || '');
+            const img = escapeHtml((item.image && /^https?:/.test(item.image)) ? item.image : '/static/img/no-image.jpg');
+            const stat = escapeHtml(item.match || item.type || '');
+            const distance = escapeHtml(item.distance || '');
+
+            return `
+                <div class="rm-card-item" data-id="${id}" 
+                     style="background:#fff; border:1px solid #D4C3B3; border-radius:12px; overflow:hidden; display:flex; flex-direction:column; transition: all 0.3s ease;">
+                    <div class="rm-card-visual" style="height:120px; overflow:hidden;">
+                        <img src="${img}" alt="${name}" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='/static/img/no-image.jpg'" />
+                    </div>
+                    <div class="rm-card-body" style="padding:12px; flex:1; display:flex; flex-direction:column; gap:4px;">
+                        <div class="rm-card-title" style="font-family:'Cormorant Garamond',serif; font-size:16px; font-weight:700; color:#1C1C1C; line-height:1.2;">${name}</div>
+                        <div class="rm-card-meta" style="font-size:12px; color:#6b5f57;">${subtitle}</div>
+                        <div class="rm-card-stats" style="font-size:11px; font-weight:600; color:#FF6F61; margin-top:4px;">
+                            <span>${stat}</span> <span style="margin-left:8px; color:#6b5f57;">${distance}</span>
+                        </div>
+                    </div>
+                    <div class="rm-card-actions" style="padding:10px; border-top:1px solid #F0EDE9;">
+                        <button type="button" class="rm-pick" style="width:100%; background:#FF6F61; color:#fff; border:none; padding:8px; border-radius:20px; cursor:pointer; font-weight:700; font-size:11px; text-transform:uppercase;">Choisir</button>
+                    </div>
+                </div>`;
+        }).join('');
+
+        container.querySelectorAll('.rm-card-item').forEach(card => {
+            card.querySelector('.rm-pick').onclick = (e) => {
+                e.stopPropagation();
+                const id = card.dataset.id;
+                const selectedItem = items.find(x => String(x.id || x._id || x.nom) === id);
+                if (selectedItem) applyReplacement(selectedItem);
+            };
+        });
+    }
 
     function renderModalResults(items, container) {
         if (!items || !items.length) {
@@ -428,7 +406,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function mongoToActivity(item) {
-        // Reformate un objet "Mongo public" vers le schéma utilisé par l'algo
         return {
             nom: item.name || item.nom || 'Activité',
             ville: item.locality || item.ville || '',
@@ -452,7 +429,6 @@ document.addEventListener('DOMContentLoaded', function () {
         renderItineraire();
     }
 
-    // ─── Render initial ─────────────────────────────────────
     renderItineraire();
 
     // ─── Sauvegarde du voyage ──────────────────────────────────
@@ -472,12 +448,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 for (const act of asArray(day?.[key])) {
                     if (act && typeof act === 'object') {
                         const img = act.image || act.photo || act.cover;
-                        if (img) return img;
+                        if (img && !img.includes('no-image')) return img;
                     }
                 }
             }
         }
-        return '/static/img/no-image.jpg';
+        return ''; 
     };
 
     function ensureSaveNameModal() {
@@ -551,11 +527,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 : `Voyage du ${new Date().toLocaleDateString('fr-FR')}`;
 
             const customName = await openSaveNameModal(defaultName);
-            if (customName === null) return; // utilisateur a annulé
+            if (customName === null) return; 
+
+            const finalName = (customName || defaultName).replace(/\s*[—\-]\s*/, '<br>');
 
             const nowIso = new Date().toISOString();
             const payload = {
-                name: customName || defaultName,
+                name: finalName,
                 location: locationLabel,
                 cover: pickCoverFromPlan(dataVoyage),
                 createdAt: nowIso,
@@ -574,7 +552,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     body: JSON.stringify(payload),
                 });
                 let serverResp = null;
-                try { serverResp = await res.json(); } catch (_) { /* pas de JSON */ }
+                try { serverResp = await res.json(); } catch (_) { }
                 if (!res.ok) {
                     const msg = (serverResp && (serverResp.message || serverResp.detail)) || `HTTP ${res.status}`;
                     throw new Error(msg);

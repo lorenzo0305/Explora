@@ -19,11 +19,30 @@ body {
     -webkit-font-smoothing: antialiased; padding-bottom: 0 !important;
 }
 
-.app-frame {
-    display: flex; flex-direction: column;
-    min-height: 100vh; overflow-x: hidden;
+/* 1. On annule les 70px de app.css et on interdit à la page globale de scroller */
+html, body {
+    margin: 0; padding-bottom: 0 !important;
+    height: 100vh !important;
+    overflow: hidden !important; 
+    background-color: var(--bg-color) !important;
+    color: var(--text-main); font-family: 'Lora', serif;
+    -webkit-font-smoothing: antialiased;
 }
 
+/* 2. On force le cadre de l'application à faire exactement la taille de l'écran */
+.app-frame {
+    display: flex; flex-direction: column;
+    height: 100vh !important; 
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* 3. C'est UNIQUEMENT ce panneau central qui a le droit de scroller ! */
+.content-panel { 
+    flex: 1; 
+    overflow-y: auto !important; 
+    overflow-x: hidden;
+}
 /* ============ NAVIGATION ============ */
 .top-nav {
     display: flex; justify-content: space-between; align-items: center;
@@ -52,8 +71,6 @@ body {
     cursor: pointer; transition: all .25s;
 }
 .nav-back:hover { background: var(--text-main); color: #fff; border-color: var(--text-main); }
-
-.content-panel { flex: 1; }
 
 /* ============ HERO ============ */
 .journey-hero {
