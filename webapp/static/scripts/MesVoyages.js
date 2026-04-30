@@ -202,9 +202,9 @@ function renderJourneys(journeys) {
         const item = document.createElement("div"); 
         item.className = "item";
         
-        // ASTUCE TITRE : On sécurise d'abord le texte, PUIS on remplace le tiret par la balise HTML
-        const safeName = esc(j.name || "Voyage sans titre");
-        const formattedName = safeName.replace(/\s*[—\-]\s*/, '<br>');
+        // Nettoie les anciens noms qui contiennent un <br> littéral injecté par l'ancien Voyage.js
+        const cleanName = String(j.name || "Voyage sans titre").replace(/\s*<br\s*\/?>\s*/gi, ' ').trim();
+        const formattedName = esc(cleanName);
         
         item.innerHTML = `
           <div class="left">

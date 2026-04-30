@@ -157,7 +157,7 @@ function setImgWithFallback(imgEl, url, j) {
 function render(j) {
     localStorage.setItem(LAST_ID_KEY, String(j.id));
 
-    document.getElementById('journeyTitle').textContent = j?.name || 'Voyage';
+    document.getElementById('journeyTitle').textContent = String(j?.name || 'Voyage').replace(/\s*<br\s*\/?>\s*/gi, ' ').trim();
     document.getElementById('journeyLocation').textContent = j?.location || 'Ville, lieux...';
     // On passe j pour récupérer la bonne cover de remplacement si besoin
     setImgWithFallback(document.getElementById('cover'), coverFrom(j), j);

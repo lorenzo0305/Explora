@@ -321,7 +321,7 @@ function render(j, dayIndex){
     const N = Math.max(1, days.length||1);
     const idx = Math.min(Math.max(1, dayIndex||1), N);
 
-    document.getElementById("journeyTitle").textContent = j?.name || "Voyage";
+    document.getElementById("journeyTitle").textContent = String(j?.name || "Voyage").replace(/\s*<br\s*\/?>\s*/gi, ' ').trim();
     document.getElementById("journeyLocation").textContent = j?.location || "Ville, lieux...";
     document.getElementById("dayTitle").textContent = `Jour ${idx}`;
 

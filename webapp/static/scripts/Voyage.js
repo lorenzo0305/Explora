@@ -529,7 +529,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const customName = await openSaveNameModal(defaultName);
             if (customName === null) return; 
 
-            const finalName = (customName || defaultName).replace(/\s*[—\-]\s*/, '<br>');
+            const finalName = (customName || defaultName);
 
             const nowIso = new Date().toISOString();
             const payload = {

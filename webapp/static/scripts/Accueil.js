@@ -183,7 +183,8 @@ function buildRecentCard(j) {
     } else {
         th.classList.add("no-cover");
     }
-    const nm = document.createElement("div"); nm.className = "name"; nm.textContent = j?.name || "Voyage sans titre";
+    const nm = document.createElement("div"); nm.className = "name";
+    nm.textContent = String(j?.name || "Voyage sans titre").replace(/\s*<br\s*\/?>\s*/gi, ' ').trim();
     const com = document.createElement("div"); com.className = "comment"; com.textContent = metaText(j);
     item.append(th, nm, com, buildStars(4));
     return item;
