@@ -15,8 +15,6 @@ function migrateOldBasketIfNeeded(){
     const newStr = localStorage.getItem(SHARED_BASKET_KEY);
     if (oldStr && !newStr){
       localStorage.setItem(SHARED_BASKET_KEY, oldStr);
-      // On peut supprimer l'ancienne clé si tu veux :
-      // localStorage.removeItem("basket");
     }
   }catch{}
 }
@@ -129,7 +127,6 @@ function wireExistingSlots(){
 
 /* ---------- Outils id/cover ---------- */
 function getIdFromURL(){
-  // nouvelle route /creation[/<id>]
   const m = location.pathname.match(/\/creation(?:\/([^\/]+))?$/i);
   return m && m[1] && m[1] !== "nouveau" ? m[1] : "";
 }
@@ -335,7 +332,8 @@ async function saveJourney(e){
     days,
     days_json: JSON.stringify(days),
     slots: slotsCompat,
-    updatedAt: Date.now()
+    updatedAt: Date.now(),
+    source: 'ai' // <---- LE FAMEUX MARQUEUR !
   };
 
   const headers = { "Content-Type": "application/json" };
@@ -391,7 +389,7 @@ async function saveJourney(e){
 
 /* ---------- Init ---------- */
 document.addEventListener("DOMContentLoaded", () => {
-  migrateOldBasketIfNeeded();       // ← unifie la clé du panier
+  migrateOldBasketIfNeeded();       
   ensureDayOneWrapper();
 
   const basketIcon = document.getElementById("basketIcon");
@@ -400,9 +398,8 @@ document.addEventListener("DOMContentLoaded", () => {
     basketIcon.addEventListener("click", () => {
       const shown = floatingBasket.style.display === "block";
       floatingBasket.style.display = shown ? "none" : "block";
-      if (!shown) renderBasket(); // rafraîchit le contenu à l'ouverture
+      if (!shown) renderBasket(); 
     });
-    // fermer en cliquant ailleurs
     document.addEventListener("click", (e)=>{
       if (!floatingBasket.contains(e.target) && e.target !== basketIcon){
         floatingBasket.style.display = "none";
