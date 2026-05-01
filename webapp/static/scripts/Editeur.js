@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* =========================================
-   PANIER (BARRE LATÉRALE)
+   PANIER (BARRE LATÉRALE) ET GESTION QUANTITÉ
 ========================================= */
 function loadBasketIntoSidebar() {
     const list = document.getElementById('basket-items-list');
@@ -52,27 +52,31 @@ function loadBasketIntoSidebar() {
     }
 
     items.forEach(item => {
-        const div = document.createElement('div');
-        div.className = 'draggable-item';
-        div.draggable = true; 
-        div.dataset.id = item.id;
-        div.dataset.name = item.name;
-        div.dataset.image = item.image || '/static/img/no-image.jpg';
-        div.dataset.type = (item.types && item.types[0]) ? item.types[0] : 'Activité';
+        // ON GÉNÈRE AUTANT DE POLAROÏDS QUE LA QUANTITÉ !
+        const qty = item.qty || 1;
+        for (let i = 0; i < qty; i++) {
+            const div = document.createElement('div');
+            div.className = 'draggable-item';
+            div.draggable = true; 
+            div.dataset.id = item.id;
+            div.dataset.name = item.name;
+            div.dataset.image = item.image || '/static/img/no-image.jpg';
+            div.dataset.type = (item.types && item.types[0]) ? item.types[0] : 'Activité';
 
-        div.innerHTML = `
-            <img src="${div.dataset.image}" alt="">
-            <div class="p-name" style="font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; font-style: normal; text-align: center; margin-top: 5px;">${div.dataset.name}</div>
-            <button class="btn-remove-item" title="Remettre dans le panier">✕</button>
-        `;
-        
-        div.addEventListener('dragstart', handleDragStart);
-        div.addEventListener('dragend', handleDragEnd);
-        div.querySelector('.btn-remove-item').addEventListener('click', function(e) {
-            e.stopPropagation(); returnToBasket(div);
-        });
+            div.innerHTML = `
+                <img src="${div.dataset.image}" alt="">
+                <div class="p-name" style="font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; font-style: normal; text-align: center; margin-top: 5px;">${div.dataset.name}</div>
+                <button class="btn-remove-item" title="Remettre dans le panier">✕</button>
+            `;
+            
+            div.addEventListener('dragstart', handleDragStart);
+            div.addEventListener('dragend', handleDragEnd);
+            div.querySelector('.btn-remove-item').addEventListener('click', function(e) {
+                e.stopPropagation(); returnToBasket(div);
+            });
 
-        list.appendChild(div);
+            list.appendChild(div);
+        }
     });
     
     const sideBasket = document.getElementById('sidebarBasket');
@@ -337,7 +341,7 @@ function updateDayNumbers() {
 }
 
 /* =========================================
-   SAUVEGARDER
+   SAUVEGARDER ET RECOMPTER LES QUANTITÉS
 ========================================= */
 document.getElementById('saveJourneyBtn').addEventListener('click', async () => {
     const btn = document.getElementById('saveJourneyBtn');
@@ -404,9 +408,26 @@ document.getElementById('saveJourneyBtn').addEventListener('click', async () => 
     allJourneys.unshift(newJourney);
     localStorage.setItem(JOURNEYS_KEY, JSON.stringify(allJourneys));
 
+    // REGROUPEMENT DES ÉLÉMENTS RESTANTS DANS LA BARRE (Pour restaurer les bonnes quantités)
     const list = document.getElementById('basket-items-list');
-    const remainingItems = Array.from(list.querySelectorAll('.draggable-item')).map(item => ({ id: item.dataset.id, name: item.dataset.name, image: item.dataset.image, types: [item.dataset.type] }));
-    localStorage.setItem(BASKET_KEY, JSON.stringify(remainingItems));
+    const remainingItemsMap = {};
+    Array.from(list.querySelectorAll('.draggable-item')).forEach(item => {
+        const id = item.dataset.id;
+        if (!remainingItemsMap[id]) {
+            remainingItemsMap[id] = { 
+                id: id, 
+                name: item.dataset.name, 
+                image: item.dataset.image, 
+                types: [item.dataset.type],
+                qty: 1 
+            };
+        } else {
+            remainingItemsMap[id].qty++;
+        }
+    });
+    
+    // On sauvegarde ce tableau agrégé
+    localStorage.setItem(BASKET_KEY, JSON.stringify(Object.values(remainingItemsMap)));
 
     btn.textContent = originalText;
     btn.disabled = false;

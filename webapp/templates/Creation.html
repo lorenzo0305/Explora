@@ -7,13 +7,13 @@
     <title>Explora — Créer mon voyage</title>
     <link rel="stylesheet" href="/static/styles/app.css">
     <link rel="stylesheet" href="/static/styles/Creation.css?v=10.0">
-    <link rel="stylesheet" href="/static/styles/wishbasket.css?v=1">
+    <link rel="stylesheet" href="/static/styles/wishbasket.css?v=2">
     <script src="/static/scripts/wishbasket.js?v=1" defer></script>
     <script src="/static/scripts/Creation.js" defer></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@700;900&family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet"></head>
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -66,31 +66,43 @@
                         <span class="script-decoration">Journal de bord</span>
                         <h1 class="main-title">Préparer l'aventure</h1>
                         <p class="intro-text">
-                            <strong>Comment ça marche ?</strong> Sélectionnez votre région de prédilection ou placez une épingle directement sur la carte. Ajustez ensuite les curseurs de vos envies. Notre intelligence artificielle se charge d'organiser votre séjour.
+                            <strong>Comment ça marche ?</strong> Sélectionnez votre région de prédilection ou placez une épingle directement sur la carte. Ajustez ensuite les curseurs selon vos envies. Notre intelligence artificielle se charge d'organiser votre séjour.
                         </p>
                     </div>
 
                     <form class="journal-form taped-paper" id="criteriaForm">
                         <div class="setup-grid">
+                            
+                            <!-- LA CARTE -->
+                            <div class="setup-map">
+                                <label class="label-chic">Ville <span id="selected-ville-name" class="ville-tag">(Cliquez sur la carte)</span></label>
+                                <div id="map" style="height: 220px; width: 100%; border: 1px solid #D4C3B3; z-index: 1;"></div>
+                                <input type="hidden" id="ville" name="ville" value="">
+                            </div>
+
+                            <!-- LES OPTIONS -->
                             <div class="setup-options">
                                 <div class="criteria-item">
-                                    <label class="label-chic">Destination / Région</label>
+                                    <label class="label-chic">Région</label>
                                     <select id="region" name="region" class="input-chic">
-                                        <option value="all">Toute la France</option>
-                                        <option value="auvergne-rhone-alpes">Auvergne-Rhône-Alpes</option>
+                                        <option value="auvergne-rhone-alpes" selected>Auvergne-Rhône-Alpes</option>
                                         <option value="hauts-de-france">Hauts-de-France</option>
                                     </select>
                                 </div>
-
                                 <div class="criteria-item">
                                     <label class="label-chic">Périmètre précis</label>
-                                    <select id="rayon" name="rayon" class="input-chic">
-                                        <option value="5">Rayon de 5 km</option>
-                                        <option value="10">Rayon de 10 km</option>
-                                        <option value="20" selected>Rayon de 20 km</option>
-                                        <option value="50">Rayon de 50 km</option>
-                                        <option value="100">Rayon de 100 km</option>
-                                    </select>
+                                    <!-- La ligne est appliquée au div conteneur -->
+                                    <div class="input-chic inline-select-wrap">
+                                        <span>Rayon de</span>
+                                        <select id="rayon" name="rayon" class="inline-select">
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="20" selected>20</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                        </select>
+                                        <span>km</span>
+                                    </div>
                                 </div>
 
                                 <div class="criteria-item">
@@ -99,11 +111,6 @@
                                 </div>
                             </div>
 
-                            <div class="setup-map">
-                                <label class="label-chic">Localisation <span id="selected-ville-name" class="ville-tag">(En attente de clic...)</span></label>
-                                <div id="map" style="height: 220px; width: 100%; border: 1px solid #D4C3B3; z-index: 1;"></div>
-                                <input type="hidden" id="ville" name="ville" value="">
-                            </div>
                         </div>
 
                         <div class="divider-section">
@@ -153,12 +160,14 @@
                                 <img src="/static/img/nice_plage.jpg" alt="Photo">
                                 <img src="/static/img/menton2.jpg" alt="Photo">
                                 <img src="/static/img/chamonix.jpg" alt="Photo">
-                                <img src="/static/img/mt_st_michel.jpg" alt="Photo">                                <img src="/static/img/autoir.jpg" alt="Photo">
+                                <img src="/static/img/mt_st_michel.jpg" alt="Photo">
+                                <img src="/static/img/autoir.jpg" alt="Photo">
                                 <img src="/static/img/bordeaux.jpg" alt="Photo">
                                 <img src="/static/img/nice_plage.jpg" alt="Photo">
                                 <img src="/static/img/menton2.jpg" alt="Photo">
                                 <img src="/static/img/chamonix.jpg" alt="Photo">
-                                <img src="/static/img/mt_st_michel.jpg" alt="Photo">                            </div>
+                                <img src="/static/img/mt_st_michel.jpg" alt="Photo">
+                            </div>
                         </div>
 
                         <img src="/static/img/appareil_final.png" class="real-camera-img" alt="Appareil photo">
@@ -174,7 +183,8 @@
                                 <img src="/static/img/nice_plage.jpg" alt="Photo">
                                 <img src="/static/img/menton2.jpg" alt="Photo">
                                 <img src="/static/img/chamonix.jpg" alt="Photo">
-                                <img src="/static/img/mt_st_michel.jpg" alt="Photo">                                <img src="/static/img/autoir.jpg" alt="Photo">
+                                <img src="/static/img/mt_st_michel.jpg" alt="Photo">
+                                <img src="/static/img/autoir.jpg" alt="Photo">
                                 <img src="/static/img/bordeaux.jpg" alt="Photo">
                                 <img src="/static/img/nice_plage.jpg" alt="Photo">
                                 <img src="/static/img/menton2.jpg" alt="Photo">

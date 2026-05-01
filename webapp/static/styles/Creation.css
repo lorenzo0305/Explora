@@ -3,7 +3,7 @@
     --text-main: #1C1C1C; 
     --text-warm: #4A403A; 
     --accent-pastel: #FF6F61; /* Le Corail Pastel Validé */
-    --bordeaux-nav: #8B1D2B; /* Bordeaux strictement limité au menu */
+    --bordeaux-nav: #FF6F61; /* Corail strictement limité au menu */
     --nav-bg: rgba(250, 248, 245, 0.90);
     --border-light: #D4C3B3;
 }
@@ -58,12 +58,12 @@ html, body {
     text-decoration: none; color: #505050; font-weight: 500; font-size: 15px; transition: color 0.2s; 
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; 
 }
-.nav-links a:hover, .nav-links a.active { color: var(--bordeaux-nav); font-weight: 600; }
+.nav-links a:hover, .nav-links a.active { color: var(--accent-pastel); font-weight: 600; }
 
 .nav-actions { display: flex; flex-direction: row; gap: 15px; align-items: center; }
 .icon-wrapper { position: relative; display: flex; align-items: center;}
 .action-btn { background: transparent; color: var(--text-main); border: none; padding: 8px; cursor: pointer; transition: transform 0.2s;}
-.action-btn:hover { color: var(--bordeaux-nav); transform: scale(1.1); }
+.action-btn:hover { color: var(--accent-pastel); transform: scale(1.1); }
 
 .badge { position: absolute; top: 0; right: 0; background: var(--text-main); color: #fff; font-size: 10px; padding: 3px 6px; border-radius: 10px; }
 .badge.pink { background: var(--bordeaux-nav); }
@@ -76,7 +76,9 @@ html, body {
 .layout-split { display: flex; gap: 60px; max-width: 1200px; margin: 0 auto; align-items: flex-start; }
 .form-column { flex: 1; }
 .journal-header { margin-bottom: 20px; }
-.script-decoration { font-family: 'Alex Brush', cursive; font-size: 2.5rem; color: var(--text-main); display: block; margin-bottom: -10px; opacity: 0.8; }
+
+.script-decoration { font-family: 'Alex Brush', cursive; font-size: 2.5rem; color: var(--accent-pastel); display: block; margin-bottom: -10px; opacity: 0.9; }
+
 .main-title { font-family: 'Montserrat', sans-serif; font-size: 2.2rem; text-transform: uppercase; font-weight: 900; letter-spacing: -1px; margin: 0 0 15px 0; }
 .intro-text { font-size: 15px; color: var(--text-warm); line-height: 1.6; max-width: 600px; }
 
@@ -92,12 +94,11 @@ html, body {
 /* Le Scotch : Transparent, papier kraft, bords déchirés */
 .taped-paper::before, .taped-paper::after {
     content: ''; position: absolute; width: 100px; height: 28px;
-    background: rgba(222, 197, 161, 0.75); /* Translucide et naturel */
+    background: rgba(222, 197, 161, 0.75); 
     box-shadow: 1px 2px 4px rgba(0,0,0,0.08);
     clip-path: polygon(0% 5%, 4% 20%, 0% 40%, 5% 60%, 0% 80%, 3% 100%, 100% 95%, 96% 80%, 100% 60%, 95% 40%, 100% 20%, 97% 0%);
     z-index: 5; 
 }
-/* Décalé précisément pour laisser le coin pur (tes valeurs exactes) */
 .taped-paper::before { top: 2px; left: -15px; transform: rotate(-15deg); }
 .taped-paper::after { bottom: 2px; right: -15px; transform: rotate(-15deg); }
 
@@ -105,8 +106,36 @@ html, body {
 .label-chic { display: block; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 8px; }
 .input-chic { width: 100%; padding: 10px 0; border: none; border-bottom: 1px solid var(--border-light); font-family: 'Lora', serif; font-size: 16px; background: transparent; margin-bottom: 20px; outline: none; color: var(--text-main); }
 
-/* L'écriture "(En attente de clic)" en cursive pastel */
-.ville-tag { font-family: 'Alex Brush', cursive !important; font-size: 1.8rem; color: var(--accent-pastel); margin-left: 10px; font-style: normal; font-weight: normal; text-transform: none; letter-spacing: 0; }
+/* --- Correction du texte "Cliquez sur la carte" --- */
+.ville-tag { 
+    font-family: 'Montserrat', sans-serif !important; 
+    font-size: 11px; 
+    color: var(--accent-pastel); 
+    margin-left: 10px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+/* --- Phrase à trous (Rayon de X km) ajustée --- */
+.inline-select-wrap {
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Espacement très réduit */
+}
+
+.inline-select {
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--text-main);
+    outline: none;
+    cursor: pointer;
+    padding: 0; /* Enlève l'espacement par défaut de la boîte de sélection */
+    margin: 0;
+    font-weight: inherit; /* Identique au texte autour, plus de gras ! */
+}
 
 .divider-section { text-align: center; margin: 30px 0; border-bottom: 1px solid var(--border-light); line-height: 0.1em; }
 .divider-title { background: white; padding: 0 20px; font-family: 'Lora', serif; font-size: 16px; font-style: italic; color: #888; }
@@ -126,64 +155,30 @@ input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; height: 16px
    APPAREIL PHOTO ET ANIMATION BOUCLE PARFAITE
 ========================================= */
 .camera-column { width: 320px; position: sticky; top: 40px; display: flex; flex-direction: column; align-items: center; }
-
-/* Descendu de 150px comme tu l'as demandé */
 .camera-wrapper { position: relative; width: 320px; margin-top: 150px; }
-
 .real-camera-img { width: 100%; height: auto; position: relative; z-index: 10; pointer-events: none; }
 
-/* CALQUE 1 : Remplace le damier de l'appareil (z-index 15) */
 .vp-front {
-    position: absolute;
-    /* Tes coordonnées exactes */
-    left: 7.6%; 
-    top: 20.0%; 
-    width: 54.4%; 
-    height: 67.5%; 
-    z-index: 15; 
-    overflow: hidden; 
+    position: absolute; left: 7.6%; top: 20.0%; width: 54.4%; height: 67.5%; 
+    z-index: 15; overflow: hidden; 
 }
-
-/* CALQUE 2 : Montre les photos s'envoler derrière l'appareil (z-index 5) */
 .vp-back {
-    position: absolute;
-    /* Aligné précisément avec vp-front */
-    left: 7.6%; 
-    width: 54.4%; 
-    /* S'arrête pile au-dessus de l'écran (100 - 39.0 = 61.0%) */
-    bottom: 61.0%; 
-    height: 600px; 
-    z-index: 5; 
-    overflow: hidden; 
+    position: absolute; left: 7.6%; width: 54.4%; bottom: 61.0%; height: 600px; 
+    z-index: 5; overflow: hidden; 
 }
-
-/* LA PELLICULE COMMUNE (Sans aucun flou !) */
 .vp-front .film-strip {
     position: absolute; top: 0; left: 0; width: 100%;
-    display: flex; flex-direction: column;
-    animation: scrollFilmUp 25s linear infinite; 
+    display: flex; flex-direction: column; animation: scrollFilmUp 25s linear infinite; 
 }
-
 .vp-back .film-strip {
-    position: absolute; 
-    /* Astuce mathématique de la boucle infinie : on pré-remplit le ciel de 655px (5 images de 131px) */
-    top: calc(100% - 655px); 
-    left: 0; width: 100%;
-    display: flex; flex-direction: column;
-    animation: scrollFilmUp 25s linear infinite; 
+    position: absolute; top: calc(100% - 655px); left: 0; width: 100%;
+    display: flex; flex-direction: column; animation: scrollFilmUp 25s linear infinite; 
 }
-
-/* On fige la taille de la photo (125px + 6px de bordure = 131px) */
 .film-strip img {
-    width: 100%; 
-    height: 125px; 
-    object-fit: cover;
-    border-bottom: 6px solid #111; 
-    display: block;
+    width: 100%; height: 125px; object-fit: cover; border-bottom: 6px solid #111; display: block;
 }
 
 @keyframes scrollFilmUp {
     0% { transform: translateY(0); }
-    /* Défile exactement de la hauteur de 5 photos. Le saut est invisible. */
     100% { transform: translateY(-655px); } 
 }

@@ -2,10 +2,8 @@
  * wishbasket.css — Styles partagés du panier & favoris flottants
  * ========================================================= */
 
-/* Wrapper de l'icône (compat avec icon-wrapper et style="position:relative;") */
 .icon-wrapper { position: relative; display: flex; align-items: center; }
 
-/* Bouton */
 .action-btn {
     background: transparent;
     color: #1C1C1C;
@@ -14,9 +12,8 @@
     cursor: pointer;
     transition: transform 0.2s, color 0.2s;
 }
-.action-btn:hover { color: #8B1D2B; transform: scale(1.1); }
+.action-btn:hover { color: #FF0000; transform: scale(1.1); }
 
-/* Pastille de comptage */
 .badge {
     position: absolute;
     top: 0;
@@ -29,15 +26,14 @@
     border-radius: 10px;
     pointer-events: none;
 }
-.badge.pink { background: #8B1D2B; }
+.badge.pink { background: #FF0000; }
 .badge[hidden] { display: none; }
 
-/* Panneau flottant */
 .floating-panel {
     position: absolute;
     top: calc(100% + 12px);
     right: 0;
-    width: 320px;
+    width: 360px; 
     max-height: 420px;
     overflow: auto;
     background: #FFFFFF;
@@ -92,26 +88,72 @@
     flex-shrink: 0;
     background: #ECE3DA;
 }
+
+/* LA CORRECTION EST ICI : Cormorant Garamond, comme le titre ! */
 .floating-panel .wb-name {
     flex: 1;
-    font-size: 13px;
-    line-height: 1.3;
-    color: #1C1C1C;
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 16px !important;
+    font-weight: 700 !important; 
+    text-transform: none !important; 
+    line-height: 1.1;
+    color: #1C1C1C !important;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    padding-right: 5px;
 }
-.floating-panel .wb-remove {
+
+/* Le design des boutons + et - */
+.wb-qty-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     background: transparent;
     border: none;
-    color: #8B1D2B;
-    font-size: 16px;
+    padding: 0;
+}
+.wb-btn-minus, .wb-btn-plus {
+    background: transparent !important;
+    border: none !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 500 !important; /* Le navigateur a maintenant cette épaisseur grâce au nouveau lien Google Fonts ! */
     cursor: pointer;
-    padding: 4px 8px;
+    color: #1C1C1C !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px !important;
+    transition: color 0.2s;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.wb-btn-minus:hover, .wb-btn-plus:hover {
+    color: #FF6F61 !important;
+}
+.wb-qty-val {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 14px;
+    text-align: center;
+    color: #1C1C1C;
+}
+
+/* Bouton croix retrait */
+.floating-panel .wb-remove {
+    background: transparent !important;
+    border: none !important;
+    color: #FF6F61 !important;
+    font-size: 16px !important;
+    cursor: pointer;
+    padding: 4px 6px !important;
     border-radius: 4px;
     flex-shrink: 0;
     transition: background .15s;
+    box-shadow: none !important;
 }
-.floating-panel .wb-remove:hover { background: rgba(139,29,43,0.08); }
+.floating-panel .wb-remove:hover { background: rgba(139,29,43,0.08) !important; }

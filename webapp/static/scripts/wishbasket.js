@@ -11,6 +11,7 @@
         try { return JSON.parse(localStorage.getItem(key) || '[]') || []; }
         catch { return []; }
     }
+    
     function save(key, arr) {
         localStorage.setItem(key, JSON.stringify(arr || []));
         try { window.dispatchEvent(new StorageEvent('storage', { key })); } catch (_) {}
@@ -20,23 +21,53 @@
     function add(key, item) {
         if (!item || item.id == null) return false;
         const list = load(key);
-        if (list.some(x => String(x.id) === String(item.id))) return false;
+        const existing = list.find(x => String(x.id) === String(item.id));
+        
+        if (existing) {
+            // Si c'est le panier, on incrémente la quantité
+            if (key === BASKET_KEY) {
+                existing.qty = (existing.qty || 1) + 1;
+                save(key, list);
+                return true;
+            } else {
+                // Pour les favoris, on ne peut pas liker 2 fois
+                return false; 
+            }
+        }
+        
         list.unshift({
             id: String(item.id),
             name: item.name || '',
             image: item.image || item.photo || '',
-            types: item.types || (item.type ? [item.type] : [])
+            types: item.types || (item.type ? [item.type] : []),
+            qty: 1
         });
         save(key, list);
         return true;
     }
+
+    function decreaseQty(key, id) {
+        const list = load(key);
+        const existing = list.find(x => String(x.id) === String(id));
+        if (existing) {
+            existing.qty = (existing.qty || 1) - 1;
+            if (existing.qty <= 0) {
+                remove(key, id);
+                return;
+            }
+            save(key, list);
+        }
+    }
+
     function remove(key, id) {
         const list = load(key).filter(x => String(x.id) !== String(id));
         save(key, list);
     }
+    
     function has(key, id) {
         return load(key).some(x => String(x.id) === String(id));
     }
+    
     function toggle(key, item) {
         if (has(key, item.id)) { remove(key, item.id); return false; }
         return add(key, item);
@@ -51,8 +82,14 @@
         el.textContent = String(count);
         el.hidden = count === 0;
     }
+    
     function updateCounts() {
-        updateBadge('basketCount', load(BASKET_KEY).length);
+        // Le badge du panier compte la SOMME des quantités
+        const basketList = load(BASKET_KEY);
+        const totalQty = basketList.reduce((acc, item) => acc + (item.qty || 1), 0);
+        updateBadge('basketCount', totalQty);
+        
+        // Le badge des favoris compte juste les éléments uniques
         updateBadge('likesCount',  load(LIKES_KEY).length);
     }
 
@@ -61,7 +98,6 @@
         const items = load(key);
         const isBasket = (key === BASKET_KEY);
         
-        // LE LIEN EN GRAS ET LE DESIGN UNIFIÉ PARTOUT
         const headerHtml = `
             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EFE6DC; padding-bottom: 8px; margin-bottom: 10px;">
                 <h4 class="wb-title" style="margin: 0; border: none; padding: 0; font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 700; color: #1C1C1C;">${esc(title)}</h4>
@@ -74,16 +110,25 @@
             return;
         }
         
-        const rows = items.map(x => (
-            '<div class="wb-item"' + (draggable ? ' draggable="true"' : '') +
+        const rows = items.map(x => {
+            const qtyControls = isBasket ? `
+                <div class="wb-qty-group">
+                    <button class="wb-btn-minus" type="button" data-id="${esc(x.id)}" data-key="${esc(key)}">-</button>
+                    <span class="wb-qty-val">${x.qty || 1}</span>
+                    <button class="wb-btn-plus" type="button" data-id="${esc(x.id)}" data-key="${esc(key)}">+</button>
+                </div>
+            ` : '';
+
+            return '<div class="wb-item"' + (draggable ? ' draggable="true"' : '') +
             '   data-id="' + esc(x.id) + '"' +
             '   data-name="' + esc(x.name) + '"' +
             '   data-image="' + esc(x.image || '') + '">' +
             '   <img src="' + esc(x.image || '/static/img/no-image.jpg') + '" alt="" onerror="this.src=\'/static/img/no-image.jpg\'">' +
             '   <div class="wb-name">' + (esc(x.name) || 'Sans nom') + '</div>' +
+                qtyControls +
             '   <button class="wb-remove" type="button" data-id="' + esc(x.id) + '" data-key="' + esc(key) + '" title="Retirer">✕</button>' +
-            '</div>'
-        )).join('');
+            '</div>';
+        }).join('');
         
         container.innerHTML = headerHtml + rows;
 
@@ -100,6 +145,7 @@
             });
         }
 
+        // Événements pour le retrait total
         container.querySelectorAll('.wb-remove').forEach(btn => {
             btn.addEventListener('click', e => {
                 e.stopPropagation();
@@ -107,6 +153,24 @@
                 refresh();
             });
         });
+
+        // Événements pour gérer les quantités + et -
+        if (isBasket) {
+            container.querySelectorAll('.wb-btn-plus').forEach(btn => {
+                btn.addEventListener('click', e => {
+                    e.stopPropagation();
+                    add(btn.dataset.key, { id: btn.dataset.id });
+                    refresh();
+                });
+            });
+            container.querySelectorAll('.wb-btn-minus').forEach(btn => {
+                btn.addEventListener('click', e => {
+                    e.stopPropagation();
+                    decreaseQty(btn.dataset.key, btn.dataset.id);
+                    refresh();
+                });
+            });
+        }
     }
 
     function refresh() { updateCounts(); renderPanels(); }
@@ -170,6 +234,7 @@
         BASKET_KEY, LIKES_KEY,
         load: () => load(BASKET_KEY),
         add:    (item) => add(BASKET_KEY, item),
+        decreaseQty,
         remove: (id)   => remove(BASKET_KEY, id),
         has:    (id)   => has(BASKET_KEY, id),
         toggle: (item) => toggle(BASKET_KEY, item),

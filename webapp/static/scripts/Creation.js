@@ -1,3 +1,37 @@
+/* ===== LA JOLIE MODALE D'ALERTE ===== */
+function showCustomAlert(title, message) {
+    let modal = document.getElementById('customAlertModal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'customAlertModal';
+        modal.style.cssText = 'position:fixed;inset:0;background:rgba(28,28,28,0.6);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;';
+        modal.innerHTML = `
+            <div style="background:#FAF8F5;max-width:400px;width:100%;border-radius:16px;padding:32px;box-shadow:0 20px 60px rgba(0,0,0,0.3);text-align:center;position:relative;">
+                <button id="caClose" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:#6b5f57;">×</button>
+                <div style="width:50px;height:50px;border-radius:50%;background:rgba(255,111,97,0.1);color:#FF6F61;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                </div>
+                <h3 id="caTitle" style="font-family:'Cormorant Garamond',serif;font-size:24px;margin:0 0 8px;color:#1C1C1C;">Titre</h3>
+                <p id="caMessage" style="margin:0 0 24px;color:#6b5f57;font-size:15px;line-height:1.5;font-family:'Lora',serif;">Message</p>
+                <button id="caOk" type="button" style="background:#FF6F61;border:none;color:#fff;padding:10px 24px;border-radius:8px;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;transition:background 0.2s;">OK</button>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        modal.querySelector('#caOk').addEventListener('mouseover', function() { this.style.background = '#E85A4D'; });
+        modal.querySelector('#caOk').addEventListener('mouseout', function() { this.style.background = '#FF6F61'; });
+    }
+
+    modal.querySelector('#caTitle').textContent = title;
+    modal.querySelector('#caMessage').textContent = message;
+    modal.style.display = 'flex';
+
+    const closeIt = () => { modal.style.display = 'none'; };
+    modal.querySelector('#caClose').onclick = closeIt;
+    modal.querySelector('#caOk').onclick = closeIt;
+}
+
+
 function updateVal(id) {
     document.getElementById('val-' + id).textContent = document.getElementById(id).value;
 }
@@ -18,10 +52,10 @@ if (criteriaForm) {
         let ville = document.getElementById('ville').value.trim();
 
         if (!ville) {
-            if (regionValue && regionValue !== 'all') {
+            if (regionValue) {
                 ville = regionLabel;
             } else {
-                alert("Veuillez cliquer sur la carte pour sélectionner un lieu, ou choisir une région précise.");
+                showCustomAlert("Localisation manquante", "Veuillez cliquer sur la carte pour sélectionner un lieu, ou choisir une région précise.");
                 return;
             }
         }
@@ -63,7 +97,7 @@ if (criteriaForm) {
             }
 
             if (data && data.status === 'empty') {
-                alert(data.message || "Aucun itinéraire trouvé avec ces critères. Essayez un autre lieu ou augmentez le rayon.");
+                showCustomAlert("Aucun résultat", data.message || "Aucun itinéraire trouvé avec ces critères. Essayez un autre lieu ou augmentez le rayon.");
                 return;
             }
 
@@ -73,7 +107,7 @@ if (criteriaForm) {
 
         } catch (error) {
             console.error("Erreur lors de la soumission :", error);
-            alert("Une erreur est survenue lors de la soumission : " + (error.message || "réessayez."));
+            showCustomAlert("Erreur de connexion", "Une erreur est survenue lors de la soumission. Veuillez réessayer.");
         } finally {
             btn.disabled = false;
             btn.textContent = originalBtnText;
@@ -99,15 +133,42 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('selected-ville-name').textContent = "Recherche...";
 
             try {
-                const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`);
+                const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&addressdetails=1`);
                 const data = await response.json();
+
+                if (!data || !data.address) throw new Error("Lieu introuvable");
+
+                // --- VÉRIFICATION DE LA RÉGION ---
+                const state = data.address.state || '';
+                const stateLower = state.toLowerCase();
+                
+                const isHDF = stateLower.includes("hauts-de-france") || stateLower.includes("nord-pas-de-calais") || stateLower.includes("picardie");
+                const isARA = stateLower.includes("auvergne") || stateLower.includes("rhône") || stateLower.includes("rhone") || stateLower.includes("alpes");
+
+                if (!isHDF && !isARA) {
+                    showCustomAlert(
+                        "Zone non couverte", 
+                        "Pour le moment, nous ne proposons des voyages que dans les régions Hauts-de-France et Auvergne-Rhône-Alpes. Veuillez sélectionner une ville dans ces zones !"
+                    );
+                    document.getElementById('selected-ville-name').textContent = "(Cliquez sur la carte)";
+                    document.getElementById('ville').value = "";
+                    if (marker) map.removeLayer(marker);
+                    return; 
+                }
+
+                // --- SI LA RÉGION EST BONNE ---
                 const ville = data.address.city || data.address.town || data.address.village || data.address.municipality || 'Lieu inconnu';
                 document.getElementById('ville').value = ville;
                 document.getElementById('selected-ville-name').textContent = ville;
+
+                if (isHDF) document.getElementById('region').value = "hauts-de-france";
+                if (isARA) document.getElementById('region').value = "auvergne-rhone-alpes";
+
             } catch (err) {
                 console.error(err);
-                document.getElementById('ville').value = `${lat.toFixed(3)}, ${lng.toFixed(3)}`;
-                document.getElementById('selected-ville-name').textContent = "Lieu sélectionné";
+                document.getElementById('ville').value = "";
+                document.getElementById('selected-ville-name').textContent = "Lieu inconnu";
+                if (marker) map.removeLayer(marker);
             }
         });
     }
@@ -228,7 +289,7 @@ function upsertJourney(j) {
     if (idx >= 0) all[idx] = j; else all.unshift(j);
     saveJourneys(all);
     window.dispatchEvent(new StorageEvent('storage', { key: JOURNEYS_KEY }));
-    alert('Voyage sauvegardé ✔️');
+    showCustomAlert('Succès !', 'Voyage sauvegardé ✔️');
 }
 
 /* ========= Normalisation jours (pour édition) ========= */

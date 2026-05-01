@@ -66,10 +66,10 @@ html, body {
 .logo-fill { color: var(--text-main); } .logo-outline { color: transparent; -webkit-text-stroke: 1px var(--text-main); }
 .nav-links { display: flex; gap: 35px; }
 .nav-links a { text-decoration: none; color: #505050; font-weight: 500; font-size: 15px; transition: color 0.2s; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
-.nav-links a:hover, .nav-links a.active { color: #8B1D2B; font-weight: 600; }
+.nav-links a:hover, .nav-links a.active { color: #FF6F61; font-weight: 600; }
 .nav-actions { display: flex; gap: 15px; align-items: center; }
 .action-btn { background: transparent; color: var(--text-main); border: none; padding: 8px; cursor: pointer; transition: transform 0.2s;}
-.action-btn:hover { color: #8B1D2B; transform: scale(1.1); }
+.action-btn:hover { color: #FF0000; transform: scale(1.1); }
 
 /* LAYOUT EN 2 COLONNES */
 .editor-layout { display: flex; flex: 1; width: 100%; max-width: 1600px; margin: 0 auto; align-items: flex-start;}
@@ -135,7 +135,7 @@ html, body {
 .btn-add-page { background: transparent; border: 1px solid var(--border-light); color: var(--text-main); padding: 10px 15px; border-radius: 4px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; cursor: pointer; transition: all 0.2s;}
 .btn-add-page:hover { background: rgba(0,0,0,0.03); }
 .btn-quit { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; text-transform: uppercase; color: #888; text-decoration: none; transition: color 0.2s; border-bottom: 1px solid transparent; margin-left: auto;}
-.btn-quit:hover { color: #8B1D2B; border-bottom: 1px solid #8B1D2B;}
+.btn-quit:hover { color: #FF0000; border-bottom: 1px solid #FF0000;}
 .btn-save-mag { background: #1C1C1C; color: white; border: none; padding: 12px 30px; border-radius: 4px; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; cursor: pointer; transition: all 0.3s; letter-spacing: 1px;}
 .btn-save-mag:hover { background: var(--accent-vivid); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255, 111, 97, 0.3);}
 
@@ -191,7 +191,7 @@ html, body {
 .day-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 700; text-transform: uppercase; margin: 0;}
 .page-number { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: #bbb; font-style: italic;}
 .btn-delete-day { background: transparent; border: none; font-family: 'Montserrat', sans-serif; font-size: 10px; text-transform: uppercase; font-weight: 700; color: #888; cursor: pointer; transition: color 0.2s;}
-.btn-delete-day:hover { color: #8B1D2B; }
+.btn-delete-day:hover { color: #FF0000; }
 
 .time-title { font-family: 'Alex Brush', cursive; font-size: 26px; color: var(--accent-vivid); margin: 0 0 5px 0; font-weight: normal;}
 

@@ -2,7 +2,9 @@
   --bg-color: #FAF8F5; 
   --text-main: #1C1C1C; 
   --text-light: #505050; 
-  --accent-vivid: #8B1D2B; /* Rouge Bordeaux chic */
+  --accent-corail: #FF6F61;   
+  --bordeaux-titre: #8B1D2B;  
+  --rouge-vif: #FF0000;       
   --nav-bg: rgba(250, 248, 245, 0.90);
   --card-bg: #FFFFFF;
 }
@@ -16,7 +18,7 @@ html, body {
 body {
   background: var(--bg-color);
   color: var(--text-main);
-  font-family: 'Lora', serif; /* Police effet roman/voyage pour le texte */
+  font-family: 'Lora', serif;
 }
 
 .app-frame {
@@ -34,7 +36,6 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 }
 
-/* --- LE LOGO MI-PLEIN MI-CONTOUR --- */
 .nav-logo {
   font-family: 'Cormorant Garamond', serif; 
   font-size: 32px;
@@ -51,10 +52,13 @@ body {
 .nav-links { display: flex; gap: 35px; }
 .nav-links a {
   text-decoration: none; color: var(--text-light);
-  font-weight: 500; font-size: 15px; transition: color 0.2s ease;
+  font-weight: 500; font-size: 15px; transition: all 0.2s ease;
 }
+
+/* MODIFICATION : Lien Accueil et survol en Corail Gras */
 .nav-links a:hover, .nav-links a.active {
-  color: var(--accent-vivid); font-weight: 600;
+  color: var(--accent-corail) !important; 
+  font-weight: 700 !important;
 }
 
 .nav-actions { display: flex; gap: 15px; }
@@ -62,14 +66,20 @@ body {
   background: transparent; color: var(--text-main); border: none;
   padding: 8px; cursor: pointer; transition: transform 0.2s ease;
 }
-.action-btn:hover { transform: scale(1.1); color: var(--accent-vivid); }
+
+/* MODIFICATION : Panier Noir, Coeur Rouge */
+#basketIcon:hover { color: var(--text-main) !important; transform: scale(1.1); }
+#likesIcon:hover { color: var(--rouge-vif) !important; transform: scale(1.1); }
 
 .badge {
   position: absolute; top: 0; right: 0;
   background: var(--text-main); color: #fff;
   font-size: 10px; font-weight: bold; padding: 3px 6px; border-radius: 10px;
 }
-.badge.pink { background: var(--accent-vivid); }
+
+/* MODIFICATION : Badges Panier Noir, Coeur Rouge */
+#basketCount { background: var(--text-main) !important; }
+#likesCount { background: var(--rouge-vif) !important; }
 
 /* --- CONTENEUR GLOBAL --- */
 .content-panel {
@@ -79,7 +89,7 @@ body {
 /* --- SECTION HERO --- */
 .hero-split {
   max-width: 1350px;
-  margin: 40px auto 80px auto; /* 🛠️ MODIFIÉ : Remonte tout le bloc sous EXPLORA */
+  margin: 40px auto 80px auto; 
   padding: 0 40px;
   display: flex;
   align-items: center;
@@ -91,14 +101,12 @@ body {
   flex: 1; max-width: 500px;
 }
 
-/* TYPOGRAPHIE ET CARTE DE FRANCE */
 .typography-overlap {
   position: relative; 
-  margin-bottom: 190px; /* 🛠️ MODIFIÉ : Pousse le texte descriptif tout en bas pour ne pas toucher france_bas */
+  margin-bottom: 190px; 
   padding-top: 10px;
 }
 
-/* La carte de France en grand */
 .france-part {
   position: absolute;
   width: 450px; 
@@ -108,14 +116,8 @@ body {
   pointer-events: none;
   left: -40px; 
 }
-.france-top {
-  bottom: 100%; 
-  margin-bottom: 0px; /* 🛠️ MODIFIÉ : Écart d'environ 1cm au-dessus de LE VOYAGE */
-}
-.france-bottom {
-  top: 100%; 
-  margin-top: 10px; /* 🛠️ MODIFIÉ : Écart d'environ 1cm en-dessous de sur-mesure */
-}
+.france-top { bottom: 100%; margin-bottom: 0px; }
+.france-bottom { top: 100%; margin-top: 10px; }
 
 .bold-heading {
   font-family: 'Cormorant Garamond', serif; 
@@ -133,7 +135,7 @@ body {
 .script-heading {
   font-family: 'Alex Brush', cursive; 
   font-size: 5rem;
-  color: var(--accent-vivid);
+  color: var(--bordeaux-titre); 
   position: absolute;
   bottom: -35px;
   right: 10px;
@@ -153,7 +155,7 @@ body {
   background: var(--text-main); color: white; text-decoration: none;
   padding: 14px 24px; border-radius: 8px; font-weight: 600; font-size: 14px; transition: background 0.3s;
 }
-.btn-primary:hover { background: var(--accent-vivid); }
+.btn-primary:hover { background: var(--accent-corail); }
 
 .btn-secondary {
   background: transparent; color: var(--text-main); text-decoration: none;
@@ -205,26 +207,20 @@ body {
   letter-spacing: 1px;
 }
 
-/* Placements pour le chevauchement */
 .p1 { transform: rotate(-5deg); margin-bottom: -60px; z-index: 2; margin-right: -20px;}
 .p1:hover { transform: rotate(0deg) scale(1.08); }
-
 .p2 { transform: translateY(40px) rotate(4deg); margin-left: -20px; z-index: 1; }
 .p2:hover { transform: translateY(40px) rotate(0deg) scale(1.08); }
-
 .p3 { transform: rotate(3deg); margin-bottom: -60px; z-index: 3; }
 .p3:hover { transform: rotate(0deg) scale(1.08); }
-
 .p4 { transform: translateY(20px) rotate(-4deg); margin-left: -30px; z-index: 2; }
 .p4:hover { transform: translateY(20px) rotate(0deg) scale(1.08); }
-
 .p5 { transform: rotate(-3deg); z-index: 4; }
 .p5:hover { transform: rotate(0deg) scale(1.08); }
-
 .p6 { transform: translateY(10px) rotate(5deg); margin-left: -15px; z-index: 3; }
 .p6:hover { transform: translateY(10px) rotate(0deg) scale(1.08); }
 
-/* LIGHTBOX */
+/* --- LE BLOC LIGHTBOX QUI AVAIT DISPARU --- */
 .lightbox {
   display: none; position: fixed; inset: 0;
   background: rgba(28, 28, 28, 0.9); z-index: 1000;
@@ -256,7 +252,7 @@ body {
 }
 .step-number {
   font-family: 'Cormorant Garamond', serif; font-size: 45px; font-weight: 900;
-  color: var(--accent-vivid); margin-bottom: 15px; opacity: 0.3; font-style: italic;
+  color: var(--accent-corail); margin-bottom: 15px; opacity: 0.3; font-style: italic;
 }
 .step-card h4 { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 18px; color: var(--text-main); margin: 0 0 10px 0; }
 .step-card p { font-size: 15px; color: var(--text-light); line-height: 1.6; margin: 0; }
