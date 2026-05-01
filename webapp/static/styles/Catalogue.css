@@ -10,7 +10,6 @@
 
 * { box-sizing: border-box; }
 
-/* 1. On annule les conflits de app.css */
 html, body {
     margin: 0; padding-bottom: 0 !important;
     height: 100vh !important;
@@ -20,19 +19,16 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* 2. On force le cadre global */
 .app-frame {
     display: flex; flex-direction: column;
     height: 100vh !important; width: 100vw; position: relative;
     overflow: hidden;
 }
 
-/* 3. On laisse UNIQUEMENT le panneau du bas scroller */
 .content-panel { 
     flex: 1; 
     overflow-y: auto !important; 
     overflow-x: hidden;
-    /* 40px en haut, 40px sur les côtés, 20px en bas */
     padding: 10px 40px 0px 40px; 
     position: relative; 
     z-index: 1;
@@ -71,7 +67,6 @@ html, body {
    LAYOUT CATALOGUE
 ========================================= */
 .catalogue-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 0px;}
-
 .catalogue-header { text-align: center; margin-bottom: 0px; }
 .script-decoration { font-family: 'Alex Brush', cursive; font-size: 3rem; color: var(--accent-vivid); display: block; margin-bottom: -15px; }
 .main-title { font-family: 'Montserrat', sans-serif; font-size: 3rem; text-transform: uppercase; font-weight: 900; letter-spacing: -1px; margin: 0 0 20px 0; color: var(--text-main); }
@@ -80,6 +75,7 @@ html, body {
    BARRE DE RECHERCHE CHIC
 ========================================= */
 .search-area { max-width: 700px; margin: 0 auto; position: relative; }
+
 .search-wrap {
     display: flex; align-items: center; gap: 15px;
     background: white; padding: 15px 30px; border-radius: 50px;
@@ -88,25 +84,56 @@ html, body {
     transition: all 0.3s ease;
 }
 .search-wrap:focus-within { border-color: var(--accent-vivid); box-shadow: 0 10px 30px rgba(255, 111, 97, 0.15); }
+
 #search {
     flex: 1; border: none; outline: none; background: transparent;
     font-size: 16px; font-family: 'Lora', serif; color: var(--text-main);
 }
 #search::placeholder { color: #aaa; font-style: italic; }
 
+/* --- RÉSULTATS DE RECHERCHE ALIGNÉS & ACCORDÉON --- */
 .results {
     position: absolute; top: calc(100% + 15px); left: 0; right: 0;
     background: white; border: 1px solid var(--border-light); border-radius: 15px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1); overflow: hidden; display: none; z-index: 50;
 }
+
 .result-item {
-    display: flex; align-items: center; gap: 15px; padding: 15px 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.05); cursor: pointer; transition: background 0.2s;
+    display: flex; flex-direction: column;
+    border-bottom: 1px solid rgba(0,0,0,0.05); transition: background 0.2s;
 }
-.result-item:hover { background: #FAF8F5; }
-.result-thumb { width: 50px; height: 50px; border-radius: 8px; object-fit: cover; }
-.result-name { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; flex: 1; color: var(--text-main); }
+
+.result-header {
+    display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; cursor: pointer;
+}
+.result-header:hover { background: #FAF8F5; }
+
+.result-left {
+    display: flex; align-items: center; gap: 15px; flex: 1;
+}
+.result-left > div {
+    display: flex; flex-direction: column; text-align: left; gap: 3px;
+}
+
+.result-thumb { width: 50px; height: 50px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+.result-name { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; color: var(--text-main); }
 .no-res { padding: 15px 20px; color: var(--text-warm); font-style: italic; background: white; }
+
+/* Menu déroulant description */
+.result-details {
+    display: none; padding: 15px 20px; background: #FAF8F5; 
+    border-top: 1px dashed var(--border-light);
+    font-size: 13px; color: var(--text-warm); line-height: 1.6;
+}
+
+/* Boutons Coeur et Ajouter alignés à droite */
+.fav-action {
+    background: #FFF; border: 1px solid var(--border-light);
+    border-radius: 8px; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center;
+    cursor: pointer; color: #ccc; transition: all 0.2s; font-size: 15px; margin-right: 5px;
+}
+.fav-action:hover { border-color: var(--accent-vivid); color: var(--accent-vivid); }
+.fav-action.active { color: var(--accent-vivid); border-color: var(--accent-vivid); }
 
 .result-add-btn {
     background: var(--accent-vivid); color: white; border: none; padding: 8px 16px;
@@ -132,7 +159,6 @@ html, body {
 .destinations-grid {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px;
 }
-
 .dest-card {
     text-decoration: none; display: block;
     border-radius: 12px; overflow: hidden;
@@ -140,65 +166,38 @@ html, body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: white; border: 1px solid var(--border-light);
 }
-.dest-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-}
-
+.dest-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
 .dest-image {
-    height: 140px; width: 100%;
-    background-size: cover; background-position: center;
+    height: 140px; width: 100%; background-size: cover; background-position: center;
     border-bottom: 3px solid var(--accent-vivid);
 }
-
-.dest-content {
-    padding: 15px; text-align: center;
-}
-.dest-content h3 {
-    font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 800;
-    color: var(--text-main); margin: 0 0 8px 0; text-transform: uppercase;
-}
-.dest-link {
-    font-size: 12px; font-weight: 700; color: var(--accent-vivid);
-    font-family: 'Helvetica Neue', Arial, sans-serif; text-transform: uppercase;
-}
+.dest-content { padding: 15px; text-align: center; }
+.dest-content h3 { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 800; color: var(--text-main); margin: 0 0 8px 0; text-transform: uppercase; }
+.dest-link { font-size: 12px; font-weight: 700; color: var(--accent-vivid); font-family: 'Helvetica Neue', Arial, sans-serif; text-transform: uppercase; }
 
 /* --- GRILLE DES CATÉGORIES --- */
 .categories-grid {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px;
 }
-
 .category-card {
     text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center;
-    border-radius: 12px;
-    padding: 40px 20px; text-align: center;
-    transition: all 0.3s ease;
-    background-size: cover; background-position: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-radius: 12px; padding: 40px 20px; text-align: center; transition: all 0.3s ease;
+    background-size: cover; background-position: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
-.category-card:hover {
-    transform: scale(1.03); box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
+.category-card:hover { transform: scale(1.03); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
 .category-card h4 {
     margin: 0; font-family: 'Montserrat', sans-serif; font-size: 15px;
     font-weight: 800; color: white; text-transform: uppercase; letter-spacing: 1px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Fait ressortir le texte sur l'image */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
 }
+
 /* =========================================
    ANIMATIONS FLUIDES
 ========================================= */
-.fade-in {
-    opacity: 0; transform: translateY(30px);
-    animation: fadeInUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
-}
+.fade-in { opacity: 0; transform: translateY(30px); animation: fadeInUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards; }
 .delay-1 { animation-delay: 0.1s; }
 .delay-2 { animation-delay: 0.3s; }
-
-@keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(30px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
+@keyframes fadeInUp { 0% { opacity: 0; transform: translateY(30px); } 100% { opacity: 1; transform: translateY(0); } }
 
 /* =========================================
    PANIER ET FAVORIS DROPDOWNS

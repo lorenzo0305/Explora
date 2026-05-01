@@ -1,52 +1,10 @@
 /* =========================================================
-   makejourney.js — multi-journées (responsive + panier partagé)
-   - Panier partagé avec Exploration/Région via localStorage 'wish_basket_v1'
-   - Migration auto depuis l'ancienne clé 'basket'
-   - Drag & Drop par journée + bouton Retirer dans le panier
+   makejourney.js — multi-journées (responsive)
+   - Branché sur WishBasket (wishbasket.js)
+   - Drag & Drop par journée
    - Sauvegarde → routes /journeys et page /creation
    ========================================================= */
 
-/* ---------- Panier partagé ---------- */
-const SHARED_BASKET_KEY = "wish_basket_v1";
-
-function migrateOldBasketIfNeeded(){
-  try{
-    const oldStr = localStorage.getItem("wish_basket_v1");
-    const newStr = localStorage.getItem(SHARED_BASKET_KEY);
-    if (oldStr && !newStr){
-      localStorage.setItem(SHARED_BASKET_KEY, oldStr);
-    }
-  }catch{}
-}
-
-function getBasket(){
-  try{ return JSON.parse(localStorage.getItem(SHARED_BASKET_KEY) || "[]"); }catch{ return []; }
-}
-function setBasket(arr){
-  localStorage.setItem(SHARED_BASKET_KEY, JSON.stringify(arr));
-  updateBasketCount();
-  renderBasket();
-}
-function addToBasket(item){
-  const b = getBasket();
-  if (!b.some(x => String(x.id) === String(item.id))){
-    b.push({ id:item.id, name:item.name, image:item.image || "/static/img/no-image.jpg", types:item.types || [] });
-    setBasket(b);
-  }
-}
-function removeFromBasket(id){
-  const b = getBasket().filter(x => String(x.id) !== String(id));
-  setBasket(b);
-}
-function updateBasketCount(){
-  const badge = document.getElementById("basketCount");
-  if (!badge) return;
-  const count = getBasket().length;
-  badge.textContent = count;
-  badge.hidden = count === 0;
-}
-
-/* ---------- Carte draggable pour activités ---------- */
 function createActivityElement(act, draggable = true, withRemoveBtn = false){
   const row = document.createElement("div");
   row.className = "activity";
@@ -68,7 +26,7 @@ function createActivityElement(act, draggable = true, withRemoveBtn = false){
     btn.textContent = "Retirer";
     btn.addEventListener("click", (e) => {
       e.stopPropagation();
-      removeFromBasket(act.id);
+      row.remove(); // Retire juste de la zone (pas du panier global)
     });
     row.appendChild(btn);
   }
@@ -83,30 +41,6 @@ function createActivityElement(act, draggable = true, withRemoveBtn = false){
   return row;
 }
 
-/* ---------- Rendu du panier flottant ---------- */
-function renderBasket(){
-  const wrap = document.getElementById("floatingBasket");
-  if (!wrap) return;
-  const basket = getBasket();
-  if (!basket.length){
-    wrap.innerHTML = '<h4 style="margin:6px 0 8px;font-size:14px;opacity:.9">Votre panier</h4><p>Aucune activité ajoutée.</p>';
-    return;
-  }
-  const frag = document.createDocumentFragment();
-
-  const h = document.createElement("h4");
-  h.textContent = "Votre panier";
-  h.style.margin = "6px 0 8px";
-  h.style.fontSize = "14px";
-  h.style.opacity = ".9";
-  frag.appendChild(h);
-
-  basket.forEach(a => frag.appendChild(createActivityElement(a, true, true)));
-  wrap.innerHTML = "";
-  wrap.appendChild(frag);
-}
-
-/* ---------- Drag & Drop slots ---------- */
 function wireSlotsFor(root){
   const slots = root.querySelectorAll(".slot");
   slots.forEach(slot => {
@@ -114,34 +48,36 @@ function wireSlotsFor(root){
     slot.addEventListener("drop", e => {
       e.preventDefault();
       const id = e.dataTransfer.getData("id");
-      const act = getBasket().find(a => String(a.id) === String(id));
+      // ON UTILISE LE VRAI WISHBASKET POUR TROUVER L'ACTIVITÉ
+      const act = window.WishBasket.load().find(a => String(a.id) === String(id));
       if (act){
-        slot.appendChild(createActivityElement(act, false, false));
+        slot.appendChild(createActivityElement(act, false, true));
       }
     });
   });
 }
+
 function wireExistingSlots(){
   document.querySelectorAll(".day-section").forEach(section => wireSlotsFor(section));
 }
 
-/* ---------- Outils id/cover ---------- */
 function getIdFromURL(){
   const m = location.pathname.match(/\/creation(?:\/([^\/]+))?$/i);
   return m && m[1] && m[1] !== "nouveau" ? m[1] : "";
 }
+
 function pickCoverFromDOMOrBasket(){
   const slotImg = document.querySelector(".slot .activity img")?.src;
   if (slotImg) return slotImg;
-  const firstBasket = getBasket()[0]?.image;
+  const firstBasket = window.WishBasket.load()[0]?.image;
   return firstBasket || "/static/img/no-image.jpg";
 }
 
-/* ---------- Gestion des journées ---------- */
 function nextDayIndex(){
   const existing = document.querySelectorAll(".day-section");
   return existing.length + 1;
 }
+
 function createDaySection(day){
   const title = document.createElement("h3");
   title.className = "day-title";
@@ -184,11 +120,13 @@ function createDaySection(day){
   wireSlotsFor(section);
   return section;
 }
+
 function clearActivitiesIn(container){
   container.querySelectorAll(".slot").forEach(s => {
     s.querySelectorAll(".activity").forEach(el => el.remove());
   });
 }
+
 function normalizeSlots(slots){
   return {
     morning: Array.isArray(slots?.morning) ? slots.morning : [],
@@ -197,14 +135,16 @@ function normalizeSlots(slots){
     evening: Array.isArray(slots?.evening) ? slots.evening : []
   };
 }
+
 function hydrateDayInto(section, daySlots){
   const norm = normalizeSlots(daySlots);
   ["morning","noon","afternoon","evening"].forEach(k => {
     const slot = section.querySelector(`.slot[data-key="${k}"]`);
     if (!slot) return;
-    norm[k].forEach(a => slot.appendChild(createActivityElement(a, false, false)));
+    norm[k].forEach(a => slot.appendChild(createActivityElement(a, false, true)));
   });
 }
+
 function ensureDayOneWrapper(){
   const hasSection = !!document.querySelector('.day-section[data-day="1"]');
   const slotsGrid = document.querySelector(".slots");
@@ -235,7 +175,6 @@ function ensureDayOneWrapper(){
   wireSlotsFor(section);
 }
 
-/* ---------- Préchargement si édition ---------- */
 async function preloadIfEditing(){
   const form = document.getElementById("createJourneyForm");
   if (!form) return;
@@ -259,13 +198,16 @@ async function preloadIfEditing(){
   const j = list.find(x => String(x.id) === String(id));
   if (j) hydrateEditorFromJourney(j);
 }
+
 function hydrateEditorFromJourney(j){
   const nameEl = document.getElementById("journeyName");
   if (nameEl) nameEl.value = j.name || "";
   const locEl = document.getElementById("journeyLocation");
   if (locEl) locEl.value = j.location || "";
 
-  setBasket(j.basket || []);
+  // Assigner le panier du voyage dans le global
+  localStorage.setItem(window.WishBasket.BASKET_KEY, JSON.stringify(j.basket || []));
+  window.WishBasket.refresh();
 
   const days = parseMaybeJSON(j.days) ?? j.days;
   if (Array.isArray(days) && days.length){
@@ -282,13 +224,11 @@ function hydrateEditorFromJourney(j){
   }
 }
 
-/* ---------- LocalStorage: voyages (fallback) ---------- */
 const LS_JOURNEYS = "journeys";
 function lsGetJourneys(){ try{ return JSON.parse(localStorage.getItem(LS_JOURNEYS) || "[]"); }catch{ return []; } }
 function lsSetJourneys(arr){ localStorage.setItem(LS_JOURNEYS, JSON.stringify(arr)); }
 function parseMaybeJSON(val){ if (typeof val === "string"){ try{ return JSON.parse(val); }catch{ return null; } } return val; }
 
-/* ---------- Sauvegarde ---------- */
 async function saveJourney(e){
   if (e && typeof e.preventDefault === "function") e.preventDefault();
 
@@ -328,12 +268,12 @@ async function saveJourney(e){
     name,
     location,
     image: pickCoverFromDOMOrBasket(),
-    basket: getBasket(),
+    basket: window.WishBasket.load(),
     days,
     days_json: JSON.stringify(days),
     slots: slotsCompat,
     updatedAt: Date.now(),
-    source: 'ai' // <---- LE FAMEUX MARQUEUR !
+    source: 'ai'
   };
 
   const headers = { "Content-Type": "application/json" };
@@ -341,7 +281,6 @@ async function saveJourney(e){
 
   try{
     let data;
-
     if (id){
       try{
         const r1 = await fetch(`/journeys/${id}`, { method:"PUT", headers, body: JSON.stringify(payload) });
@@ -370,7 +309,7 @@ async function saveJourney(e){
     throw new Error("save endpoints failed");
 
   }catch(err){
-    console.warn("Serveur indisponible ou endpoints non reconnus, fallback LocalStorage.", err);
+    console.warn("Serveur indisponible, fallback LocalStorage.", err);
   }
 
   const list = lsGetJourneys();
@@ -387,29 +326,8 @@ async function saveJourney(e){
   window.location.href = "/creation";
 }
 
-/* ---------- Init ---------- */
 document.addEventListener("DOMContentLoaded", () => {
-  migrateOldBasketIfNeeded();       
   ensureDayOneWrapper();
-
-  const basketIcon = document.getElementById("basketIcon");
-  const floatingBasket = document.getElementById("floatingBasket");
-  if (basketIcon && floatingBasket){
-    basketIcon.addEventListener("click", () => {
-      const shown = floatingBasket.style.display === "block";
-      floatingBasket.style.display = shown ? "none" : "block";
-      if (!shown) renderBasket(); 
-    });
-    document.addEventListener("click", (e)=>{
-      if (!floatingBasket.contains(e.target) && e.target !== basketIcon){
-        floatingBasket.style.display = "none";
-      }
-    });
-  }
-
-  updateBasketCount();
-  renderBasket();
-
   wireExistingSlots();
 
   const addDayBtn = document.getElementById("addDayBtn");
@@ -433,10 +351,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const form = document.getElementById("createJourneyForm");
   if (form) form.addEventListener("submit", saveJourney);
-  window.addEventListener('storage', (e) => {
-    if (e.key === SHARED_BASKET_KEY) {
-      updateBasketCount();
-      renderBasket();
-    }
-  });
 });

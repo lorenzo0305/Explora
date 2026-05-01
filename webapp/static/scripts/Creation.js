@@ -2,138 +2,106 @@ function updateVal(id) {
     document.getElementById('val-' + id).textContent = document.getElementById(id).value;
 }
 
-document.getElementById('criteriaForm').addEventListener('submit', async function (e) {
-    e.preventDefault();
+const criteriaForm = document.getElementById('criteriaForm');
+if (criteriaForm) {
+    criteriaForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
 
-    const btn = document.getElementById('submitBtn');
-    const originalBtnText = btn.dataset.originalText || btn.textContent;
-    btn.dataset.originalText = originalBtnText;
+        const btn = document.getElementById('submitBtn');
+        const originalBtnText = btn.dataset.originalText || btn.textContent;
+        btn.dataset.originalText = originalBtnText;
 
-    // ==========================================
-    // DONNÉES DE LOCALISATION (Ville / Région / Zone Géo)
-    // ==========================================
-    const regionSelect = document.getElementById('region');
-    const regionValue = regionSelect ? regionSelect.value : '';
-    const regionLabel = regionSelect ? regionSelect.options[regionSelect.selectedIndex].text : '';
+        const regionSelect = document.getElementById('region');
+        const regionValue = regionSelect ? regionSelect.value : '';
+        const regionLabel = regionSelect ? regionSelect.options[regionSelect.selectedIndex].text : '';
 
-    let ville = document.getElementById('ville').value.trim();
+        let ville = document.getElementById('ville').value.trim();
 
-    // Si aucune ville n'a été sélectionnée via la carte,
-    // on utilise la région comme point de recherche (sauf "Toute la France").
-    if (!ville) {
-        if (regionValue && regionValue !== 'all') {
-            ville = regionLabel;
-        } else {
-            alert("Veuillez cliquer sur la carte pour sélectionner un lieu, ou choisir une région précise.");
-            return;
-        }
-    }
-
-    const locationData = {
-        ville: ville,
-        region: regionValue,
-        rayon: parseInt(document.getElementById('rayon').value, 10),
-        jours: parseInt(document.getElementById('jours').value, 10) || 1
-    };
-
-    // ==========================================
-    // CRITÈRES DE PRÉFÉRENCES (1 à 10)
-    // ==========================================
-    const preferencesData = {
-        detente: document.getElementById('detente').value,
-        nature: document.getElementById('nature').value,
-        sport: document.getElementById('sport').value,
-        gastronomie: document.getElementById('gastronomie').value,
-        culture: document.getElementById('culture').value
-    };
-
-    // ==========================================
-    // FUSION DES DONNÉES POUR SOUMISSION
-    // ==========================================
-    const formData = {
-        ...locationData,
-        ...preferencesData
-    };
-
-    console.log("[AVANT SOUMISSION] Critères : ", formData);
-
-    btn.disabled = true;
-    btn.textContent = 'Soumission en cours...';
-
-    try {
-        const res = await fetch('/algorithm', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        });
-
-        // Récupération du corps même en cas d'erreur pour afficher un message utile
-        let data = null;
-        try { data = await res.json(); } catch (_) { /* pas de JSON */ }
-
-        if (!res.ok) {
-            const serverMsg = (data && (data.message || data.detail)) || `Erreur HTTP ${res.status}`;
-            throw new Error(serverMsg);
+        if (!ville) {
+            if (regionValue && regionValue !== 'all') {
+                ville = regionLabel;
+            } else {
+                alert("Veuillez cliquer sur la carte pour sélectionner un lieu, ou choisir une région précise.");
+                return;
+            }
         }
 
-        console.log("Réponse reçue :", data);
+        const locationData = {
+            ville: ville,
+            region: regionValue,
+            rayon: parseInt(document.getElementById('rayon').value, 10),
+            jours: parseInt(document.getElementById('jours').value, 10) || 1
+        };
 
-        if (data && data.status === 'empty') {
-            alert(data.message || "Aucun itinéraire trouvé avec ces critères. Essayez un autre lieu ou augmentez le rayon.");
-            return;
+        const preferencesData = {
+            detente: document.getElementById('detente').value,
+            nature: document.getElementById('nature').value,
+            sport: document.getElementById('sport').value,
+            gastronomie: document.getElementById('gastronomie').value,
+            culture: document.getElementById('culture').value
+        };
+
+        const formData = { ...locationData, ...preferencesData };
+        console.log("[AVANT SOUMISSION] Critères : ", formData);
+
+        btn.disabled = true;
+        btn.textContent = 'Soumission en cours...';
+
+        try {
+            const res = await fetch('/algorithm', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+
+            let data = null;
+            try { data = await res.json(); } catch (_) { }
+
+            if (!res.ok) {
+                const serverMsg = (data && (data.message || data.detail)) || `Erreur HTTP ${res.status}`;
+                throw new Error(serverMsg);
+            }
+
+            if (data && data.status === 'empty') {
+                alert(data.message || "Aucun itinéraire trouvé avec ces critères. Essayez un autre lieu ou augmentez le rayon.");
+                return;
+            }
+
+            sessionStorage.setItem('algorithmRes', JSON.stringify(data));
+            sessionStorage.setItem('criteriaFormPayload', JSON.stringify(formData));
+            window.location.href = '/Voyage.html';
+
+        } catch (error) {
+            console.error("Erreur lors de la soumission :", error);
+            alert("Une erreur est survenue lors de la soumission : " + (error.message || "réessayez."));
+        } finally {
+            btn.disabled = false;
+            btn.textContent = originalBtnText;
         }
+    });
+}
 
-        // Pour garder les données même après la redirection
-        sessionStorage.setItem('algorithmRes', JSON.stringify(data));
-        sessionStorage.setItem('criteriaFormPayload', JSON.stringify(formData));
-        window.location.href = '/Voyage.html';
-
-    } catch (error) {
-        console.error("Erreur lors de la soumission :", error);
-        alert("Une erreur est survenue lors de la soumission : " + (error.message || "réessayez."));
-    } finally {
-        btn.disabled = false;
-        btn.textContent = originalBtnText;
-    }
-});
-
-// ==========================================
-// INITIALISATION DE LA CARTE (LEAFLET)
-// ==========================================
 document.addEventListener('DOMContentLoaded', () => {
-    // Si la carte existe sur la page
     if (document.getElementById('map')) {
-        // Coordonnées par défaut (centre de la France)
         const map = L.map('map').setView([46.603354, 1.888334], 5);
-
-        // Ajout du fond de carte OpenStreetMap
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
         }).addTo(map);
 
         let marker;
-
-        // Gérer le clic sur la carte
         map.on('click', async function (e) {
             const lat = e.latlng.lat;
             const lng = e.latlng.lng;
 
-            // Placer le marqueur
             if (marker) map.removeLayer(marker);
             marker = L.marker([lat, lng]).addTo(map);
 
-            // Mettre à jour l'affichage pendant la recherche
             document.getElementById('selected-ville-name').textContent = "Recherche...";
 
-            // Appel API Nominatim pour trouver la ville (Reverse Geocoding)
             try {
                 const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`);
                 const data = await response.json();
-
                 const ville = data.address.city || data.address.town || data.address.village || data.address.municipality || 'Lieu inconnu';
-
                 document.getElementById('ville').value = ville;
                 document.getElementById('selected-ville-name').textContent = ville;
             } catch (err) {
@@ -145,93 +113,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-/* ========= Clés & helpers =========
-const BASKET_KEY = 'wish_basket_v1';
-const LIKES_KEY = 'wish_likes_v1';
+/* ========= Clés & helpers ========= */
 const JOURNEYS_KEY = 'wish_journeys_v1';
-
 const $ = (id) => document.getElementById(id);
 const q = (sel, root = document) => root.querySelector(sel);
 const qa = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
-// Mode
 const urlParams = new URLSearchParams(location.search);
 const IS_EDIT = urlParams.get('edit') === '1';
 const EDIT_ID = IS_EDIT ? (urlParams.get('id') || sessionStorage.getItem('wish_edit_id') || '') : '';
 
-/* ========= Panier & Favoris Logic =========
-const basketIcon = $('basketIcon');
-const basketCount = $('basketCount');
-const floatingBasket = $('floatingBasket');
-const likesIcon = $('likesIcon');
-const likesCount = $('likesCount');
-const floatingLikes = $('floatingLikes');
-
-const loadData = (k) => { try { return JSON.parse(localStorage.getItem(k) || '[]'); } catch { return []; } };
-const saveData = (k, d) => { localStorage.setItem(k, JSON.stringify(d)); updateCounts(); renderPanels(); };
-
-function updateCounts() {
-    const b = loadData(BASKET_KEY).length;
-    basketCount.textContent = b; basketCount.hidden = b === 0;
-    const l = loadData(LIKES_KEY).length;
-    likesCount.textContent = l; likesCount.hidden = l === 0;
-}
-
-function renderPanel(key, container, title, emptyMsg, draggable = false) {
-    const items = loadData(key);
-    if (!items.length) {
-        container.innerHTML = `<h4>${title}</h4><p class="panel-empty">${emptyMsg}</p>`;
-        return;
-    }
-    const esc = (s) => String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
-    container.innerHTML = `<h4>${title}</h4>` + items.map(x => (
-        '<div class="panel-item"' + (draggable ? ' draggable="true"' : '') +
-        ' data-id="' + esc(x.id) + '" data-name="' + esc(x.name) + '" data-image="' + esc(x.image || '') + '">' +
-        '<img src="' + (x.image || '/static/img/no-image.jpg') + '" alt="">' +
-        '<div class="pi-name">' + (esc(x.name) || 'Sans nom') + '</div>' +
-        '<button class="pi-remove" onclick="removeItem(\'' + key + '\', \'' + x.id + '\')">✕</button>' +
-        '</div>'
-    )).join('');
-
-    // Wire drag events for basket
-    if (draggable) {
-        qa('.panel-item', container).forEach(row => {
-            row.addEventListener('dragstart', e => {
-                const data = { id: row.dataset.id, name: row.dataset.name, image: row.dataset.image };
-                try { e.dataTransfer.setData('application/x-basket-item', JSON.stringify(data)); e.dataTransfer.effectAllowed = 'copy'; } catch { }
-            });
-        });
-    }
-}
-
-function renderPanels() {
-    renderPanel(BASKET_KEY, floatingBasket, 'Votre panier', 'Votre panier est vide.', true); // Panier draggable
-    renderPanel(LIKES_KEY, floatingLikes, 'Mes Favoris', 'Aucun favori.', false); // Likes pas draggable (selon besoin)
-}
-
-window.removeItem = function (key, id) {
-    const data = loadData(key).filter(x => String(x.id) !== String(id));
-    saveData(key, data);
-};
-
-basketIcon.addEventListener('click', (e) => {
-    e.stopPropagation();
-    floatingLikes.style.display = 'none';
-    floatingBasket.style.display = floatingBasket.style.display === 'block' ? 'none' : 'block';
-});
-likesIcon.addEventListener('click', (e) => {
-    e.stopPropagation();
-    floatingBasket.style.display = 'none';
-    floatingLikes.style.display = floatingLikes.style.display === 'block' ? 'none' : 'block';
-});
-document.addEventListener('click', (e) => {
-    if (!floatingBasket.contains(e.target) && e.target !== basketIcon) floatingBasket.style.display = 'none';
-    if (!floatingLikes.contains(e.target) && e.target !== likesIcon) floatingLikes.style.display = 'none';
-});
-window.addEventListener('storage', (e) => { if (e.key === BASKET_KEY || e.key === LIKES_KEY) { updateCounts(); renderPanels(); } });
-
-
-/* ========= Editor Logic =========
+/* ========= Editor Logic ========= */
 let draggingEl = null;
 
 function updateDropHints() {
@@ -269,12 +161,11 @@ document.addEventListener('drop', (e) => {
     } catch { }
 });
 
-/* ========= Gestion des Jours (CORRECTION DOUBLON TITRE) =========
+/* ========= Gestion des Jours ========= */
 function createDaySection(dayNumber) {
     const sec = document.createElement('section');
     sec.className = 'day-section';
     sec.dataset.day = String(dayNumber);
-    // CORRECTION: On NE met PAS le <h3> dans le innerHTML, car il est ajouté avant la section par la fonction appelante
     sec.innerHTML = `
         <div class="slots">
           <div class="slot" data-key="morning"><h5>Matinée</h5><div class="drop-hint">Déposez vos activités ici</div></div>
@@ -294,16 +185,20 @@ function clearAllDays() {
 function resetEditorToEmpty() {
     clearAllDays();
     const editor = q('.editor');
+    if (!editor) return;
     const first = createDaySection(1);
     const h = document.createElement('h3'); h.className = 'day-title'; h.textContent = 'Journée 1';
     editor.insertBefore(h, q('#addDayBtn'));
     editor.insertBefore(first, q('#addDayBtn'));
-    $('journeyName').value = ''; $('journeyLocation').value = ''; $('createJourneyForm').dataset.id = '';
+    if($('journeyName')) $('journeyName').value = ''; 
+    if($('journeyLocation')) $('journeyLocation').value = ''; 
+    if($('createJourneyForm')) $('createJourneyForm').dataset.id = '';
     updateDropHints();
 }
 
 function addDay() {
     const editor = q('.editor');
+    if (!editor) return;
     const n = qa('.day-section').length + 1;
     const sec = createDaySection(n);
     const h = document.createElement('h3'); h.className = 'day-title'; h.textContent = 'Journée ' + n;
@@ -312,7 +207,7 @@ function addDay() {
     updateDropHints();
 }
 
-/* ========= Save & Load =========
+/* ========= Save & Load ========= */
 function loadJourneys() { try { return JSON.parse(localStorage.getItem(JOURNEYS_KEY) || '[]'); } catch { return []; } }
 function saveJourneys(arr) { localStorage.setItem(JOURNEYS_KEY, JSON.stringify(arr)); }
 function uid() { return 'j_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 7); }
@@ -336,7 +231,7 @@ function upsertJourney(j) {
     alert('Voyage sauvegardé ✔️');
 }
 
-/* ========= Normalisation jours (pour édition) =========
+/* ========= Normalisation jours (pour édition) ========= */
 function deriveDays(obj) {
     const A = (a) => Array.isArray(a) ? a : (a && typeof a === 'object') ? Object.values(a) : [];
     function slotsArrayToObj(slotsArr) {
@@ -349,10 +244,11 @@ function deriveDays(obj) {
 }
 
 function renderForEdit(j) {
-    $('journeyName').value = j?.name || '';
-    $('journeyLocation').value = j?.location || '';
+    if($('journeyName')) $('journeyName').value = j?.name || '';
+    if($('journeyLocation')) $('journeyLocation').value = j?.location || '';
     clearAllDays();
     const editor = q('.editor');
+    if (!editor) return;
     const days = deriveDays(j);
     if (!days.length) {
         const first = createDaySection(1);
@@ -373,7 +269,7 @@ function renderForEdit(j) {
         });
     }
     updateDropHints();
-    $('createJourneyForm').dataset.id = String(j.id || '');
+    if($('createJourneyForm')) $('createJourneyForm').dataset.id = String(j.id || '');
 }
 
 function loadForEditMaybe() {
@@ -390,8 +286,8 @@ document.addEventListener('click', (e) => {
         const existingId = form?.dataset?.id || null;
         const journey = {
             id: existingId || uid(),
-            name: ($('journeyName').value || '').trim() || 'Sans titre',
-            location: ($('journeyLocation').value || '').trim(),
+            name: ($('journeyName') ? $('journeyName').value : '').trim() || 'Sans titre',
+            location: ($('journeyLocation') ? $('journeyLocation').value : '').trim(),
             cover: q('.activity img') ? q('.activity img').src : '/static/img/no-image.jpg',
             createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(),
             plan: collectPlan()
@@ -402,10 +298,10 @@ document.addEventListener('click', (e) => {
     if (e.target?.id === 'addDayBtn') { addDay(); }
 });
 
-/* ========= Photos démo =========
+/* ========= Photos démo ========= */
 const addPhotos = $('addPhotos'); const photosInput = $('photosInput'); const photosPreview = $('photosPreview');
-addPhotos?.addEventListener('click', () => photosInput?.click());
-photosInput?.addEventListener('change', () => {
+if (addPhotos) addPhotos.addEventListener('click', () => photosInput?.click());
+if (photosInput) photosInput.addEventListener('change', () => {
     photosPreview.innerHTML = '';
     Array.from(photosInput.files || []).slice(0, 12).forEach(f => {
         const url = URL.createObjectURL(f);
@@ -414,7 +310,5 @@ photosInput?.addEventListener('change', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    updateCounts(); renderPanels();
     if (!IS_EDIT) { sessionStorage.removeItem('wish_edit_id'); sessionStorage.removeItem('wish_edit_payload'); resetEditorToEmpty(); } else { loadForEditMaybe(); }
 });
-*/

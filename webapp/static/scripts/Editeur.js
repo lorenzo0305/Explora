@@ -6,9 +6,15 @@ let currentDayIndex = 0;
 let isBookOpen = false;
 
 document.addEventListener('DOMContentLoaded', () => {
+    // 1. ON CACHE LE PANIER DU MENU (SANS DÉCALER LE CŒUR)
+    const basketIconBtn = document.getElementById('basketIcon');
+    if (basketIconBtn) {
+        const wrapper = basketIconBtn.closest('.icon-wrapper');
+        if (wrapper) wrapper.style.visibility = 'hidden'; 
+    }
+    
     loadBasketIntoSidebar();
 
-    // Quand le panier change ailleurs (autre page, autre onglet), on recharge la sidebar
     window.addEventListener('wishbasket:change', () => loadBasketIntoSidebar());
     window.addEventListener('storage', e => {
         if (!e.key || e.key === BASKET_KEY) loadBasketIntoSidebar();
@@ -56,7 +62,7 @@ function loadBasketIntoSidebar() {
 
         div.innerHTML = `
             <img src="${div.dataset.image}" alt="">
-            <div class="p-name">${div.dataset.name}</div>
+            <div class="p-name" style="font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; font-style: normal; text-align: center; margin-top: 5px;">${div.dataset.name}</div>
             <button class="btn-remove-item" title="Remettre dans le panier">✕</button>
         `;
         
@@ -131,20 +137,18 @@ function showPage(index) {
 }
 
 window.turnPage = function(direction) {
-    if(document.querySelector('.page-flipper')) return; // Empêche le spam de clic
+    if(document.querySelector('.page-flipper')) return;
 
     let spreads = document.querySelectorAll('.day-spread');
     let currentSpread = spreads[currentDayIndex];
 
     if (direction === 1) {
-        // Tourne vers la droite (On avance)
         if (currentDayIndex >= spreads.length - 1) { 
-            addDay(true); // Ajoute silencieusement
+            addDay(true);
             spreads = document.querySelectorAll('.day-spread');
         }
         const nextSpread = spreads[currentDayIndex + 1];
 
-        // Créer l'élément 3D
         const flipper = document.createElement('div');
         flipper.className = 'page-flipper flip-forward';
         flipper.innerHTML = `
@@ -164,10 +168,9 @@ window.turnPage = function(direction) {
                 nextSpread.querySelector('.left-page').style.visibility = 'visible';
                 currentDayIndex++;
                 updateDayNumbers();
-            }, 800); // Durée de l'animation CSS
+            }, 800); 
         });
     } else {
-        // Tourne vers la gauche (On recule)
         if (currentDayIndex === 0) { closeBook(); return; }
         const prevSpread = spreads[currentDayIndex - 1];
 
@@ -200,7 +203,7 @@ window.turnPage = function(direction) {
 ========================================= */
 function generateDays(num) {
     const container = document.getElementById('bookSpreadsContainer');
-    container.innerHTML = ''; // Le crash de null venait d'ici, c'est réparé !
+    container.innerHTML = '';
     for(let i=0; i<num; i++) addDayHTML(container, i+1);
     initDropZones();
     if(isBookOpen) showPage(0);
@@ -289,6 +292,9 @@ function initDropZones() {
 
     document.querySelectorAll('.btn-delete-day').forEach(btn => {
         btn.onclick = function() { 
+            const spreads = document.querySelectorAll('.day-spread');
+            if(spreads.length <= 1) return;
+
             const spread = this.closest('.day-spread');
             spread.querySelectorAll('.draggable-item').forEach(item => returnToBasket(item));
             spread.remove(); 
@@ -301,14 +307,32 @@ function initDropZones() {
             showPage(currentDayIndex);
         };
     });
+    
+    updateDayNumbers();
 }
 
 function updateDayNumbers() {
-    document.querySelectorAll('.day-spread').forEach((spread, index) => {
+    const spreads = document.querySelectorAll('.day-spread');
+    const isOnlyOne = spreads.length <= 1;
+
+    spreads.forEach((spread, index) => {
         const dayNum = index + 1;
         spread.querySelector('.day-title').textContent = `Jour ${dayNum}`;
         spread.querySelector('.left-page .page-number').textContent = (dayNum*2)-1 < 10 ? '0'+((dayNum*2)-1) : (dayNum*2)-1;
         spread.querySelector('.right-page .page-number').textContent = (dayNum*2) < 10 ? '0'+(dayNum*2) : (dayNum*2);
+        
+        const delBtn = spread.querySelector('.btn-delete-day');
+        if (delBtn) {
+            if (isOnlyOne) {
+                delBtn.style.opacity = '0.3';
+                delBtn.style.cursor = 'not-allowed';
+                delBtn.style.pointerEvents = 'none';
+            } else {
+                delBtn.style.opacity = '1';
+                delBtn.style.cursor = 'pointer';
+                delBtn.style.pointerEvents = 'auto';
+            }
+        }
     });
 }
 
@@ -355,7 +379,6 @@ document.getElementById('saveJourneyBtn').addEventListener('click', async () => 
         source: 'editor'
     };
 
-    // 1) Sauvegarde côté serveur (Mongo)
     try {
         const res = await fetch('/journeys', {
             method: 'POST',
@@ -364,7 +387,6 @@ document.getElementById('saveJourneyBtn').addEventListener('click', async () => 
         });
         if (res.ok) {
             const result = await res.json();
-            // Le serveur renvoie un id Mongo qu'on adopte comme id canonique
             if (result && result.id) newJourney.id = result.id;
         } else {
             let detail = '';
@@ -377,13 +399,11 @@ document.getElementById('saveJourneyBtn').addEventListener('click', async () => 
         alert("Pas de connexion au serveur — le voyage sera gardé en local.");
     }
 
-    // 2) Cache local (pour rendu instantané sur /topics)
     let allJourneys = [];
     try { allJourneys = JSON.parse(localStorage.getItem(JOURNEYS_KEY) || '[]'); } catch(e){}
     allJourneys.unshift(newJourney);
     localStorage.setItem(JOURNEYS_KEY, JSON.stringify(allJourneys));
 
-    // 3) Vide les éléments déposés du panier (on garde ceux non utilisés)
     const list = document.getElementById('basket-items-list');
     const remainingItems = Array.from(list.querySelectorAll('.draggable-item')).map(item => ({ id: item.dataset.id, name: item.dataset.name, image: item.dataset.image, types: [item.dataset.type] }));
     localStorage.setItem(BASKET_KEY, JSON.stringify(remainingItems));

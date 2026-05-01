@@ -1,69 +1,6 @@
-/* ===== Logic Panier & Favoris ===== */
-const BASKET_KEY = 'wish_basket_v1';
-const LIKES_KEY = 'wish_likes_v1';
-
-const basketIcon = document.getElementById('basketIcon');
-const basketCount = document.getElementById('basketCount');
-const floatingBasket = document.getElementById('floatingBasket');
-const likesIcon = document.getElementById('likesIcon');
-const likesCount = document.getElementById('likesCount');
-const floatingLikes = document.getElementById('floatingLikes');
-
-const loadData = (k) => { try { return JSON.parse(localStorage.getItem(k) || '[]'); } catch { return []; } };
-const saveData = (k, d) => { localStorage.setItem(k, JSON.stringify(d)); updateCounts(); renderPanels(); };
-
-function updateCounts() {
-    const b = loadData(BASKET_KEY).length;
-    basketCount.textContent = b; basketCount.hidden = b === 0;
-    const l = loadData(LIKES_KEY).length;
-    likesCount.textContent = l; likesCount.hidden = l === 0;
-}
-
-function renderPanel(key, container, title, emptyMsg, isLike = false) {
-    const items = loadData(key);
-    if (!items.length) {
-        container.innerHTML = `<h4>${title}</h4><p class="panel-empty">${emptyMsg}</p>` + (isLike ? '' : `<div class="panel-footer"><a href="/makejourney">Aller à la création</a></div>`);
-        return;
-    }
-    const html = items.map(x => `
-        <div class="panel-item">
-          <img src="${x.image || '/static/img/no-image.jpg'}" alt="">
-          <div class="pi-name">${x.name || 'Sans nom'}</div>
-          <button class="pi-remove" onclick="removeItem('${key}', '${x.id}')">✕</button>
-        </div>
-      `).join('');
-    container.innerHTML = `<h4>${title}</h4>${html}` + (isLike ? '' : `<div class="panel-footer"><a href="/makejourney">Aller à la création</a></div>`);
-}
-
-function renderPanels() {
-    renderPanel(BASKET_KEY, floatingBasket, 'Votre panier', 'Votre panier est vide.');
-    renderPanel(LIKES_KEY, floatingLikes, 'Mes Favoris', 'Aucun favori.', true);
-}
-
-window.removeItem = function (key, id) {
-    const data = loadData(key).filter(x => String(x.id) !== String(id));
-    saveData(key, data);
-};
-
-basketIcon.addEventListener('click', (e) => {
-    e.stopPropagation();
-    floatingLikes.style.display = 'none';
-    floatingBasket.style.display = floatingBasket.style.display === 'block' ? 'none' : 'block';
-});
-likesIcon.addEventListener('click', (e) => {
-    e.stopPropagation();
-    floatingBasket.style.display = 'none';
-    floatingLikes.style.display = floatingLikes.style.display === 'block' ? 'none' : 'block';
-});
-document.addEventListener('click', (e) => {
-    if (!floatingBasket.contains(e.target) && e.target !== basketIcon) floatingBasket.style.display = 'none';
-    if (!floatingLikes.contains(e.target) && e.target !== likesIcon) floatingLikes.style.display = 'none';
-});
-
 /* ===== Données Voyages ===== */
 const JOURNEYS_KEY = "wish_journeys_v1";
 
-// --- TA BANQUE D'IMAGES DE "MES VOYAGES" ---
 const FALLBACK_IMAGES = [
     '/static/img/baie_de_somme2.jpg',
     '/static/img/auvergne.jpg',
@@ -90,13 +27,10 @@ function getShuffledFallbacks(journeyId) {
     }
     return arr;
 }
-// ----------------------------------------------------------
 
 const lsGetJourneys = () => { try { return JSON.parse(localStorage.getItem(JOURNEYS_KEY) || "[]"); } catch { return []; } };
 const isHttp = (u) => typeof u === "string" && /^https?:\/\//i.test(u);
 const isPath = (u) => typeof u === "string" && u.startsWith("/");
-
-// On exclut les fausses images
 const isNonDefaultImg = (u) => !!u && typeof u === "string" && !u.includes("no-image") && !u.includes("appareil_photo");
 
 function metaText(j) {
@@ -156,7 +90,6 @@ function pickCover(j) {
         const u = firstImageInDay(d);
         if (u) return u;
     }
-    // L'image de remplacement déterministe
     return getShuffledFallbacks(j?.id)[0];
 }
 
@@ -239,71 +172,13 @@ async function renderRecent() {
     for (let i = journeys.length; i < 5; i++) list.appendChild(buildPlaceholderCard());
 }
 
-function buildActivityCard(act) {
-    const card = document.createElement("div"); card.className = "proposal-item";
-    const th = document.createElement("div"); th.className = "thumb";
-    const img = firstImageInActivity(act);
-    if (img) th.style.backgroundImage = `url('${img}')`;
-    else th.classList.add("no-cover");
-    const nm = document.createElement("div"); nm.className = "name"; nm.textContent = act.name || "Activité";
-    card.append(th, nm);
-    if (act.id) { card.style.cursor = "pointer"; card.addEventListener("click", () => window.location.href = `/detail-act-perso/${encodeURIComponent(act.id)}`); }
-    return card;
-}
-
-function collectActivitiesFromJourneys(journeys, max = 5) {
-    const seen = new Set();
-    const out = [];
-    for (const j of journeys) {
-        const days = Array.isArray(j?.plan) ? j.plan : (Array.isArray(j?.days) ? j.days : []);
-        for (const d of days) {
-            const buckets = [];
-            if (d?.slots && typeof d.slots === "object") {
-                if (Array.isArray(d.slots)) d.slots.forEach(s => buckets.push(s.items || []));
-                else ["morning", "noon", "afternoon", "evening", "matin", "midi", "aprem", "soir"]
-                    .forEach(k => { if (Array.isArray(d.slots[k])) buckets.push(d.slots[k]); });
-            }
-            ["matin", "midi", "aprem", "soir", "morning", "noon", "afternoon", "evening"]
-                .forEach(k => { if (Array.isArray(d[k])) buckets.push(d[k]); });
-            for (const bucket of buckets) {
-                for (const a of (bucket || [])) {
-                    const id = a?.id || a?.objectId || a?._id || a?.nom || a?.name;
-                    const img = firstImageInActivity(a);
-                    if (!img || !id || seen.has(String(id))) continue;
-                    seen.add(String(id));
-                    out.push({ id, name: a.name || a.nom || "Activité", image: img });
-                    if (out.length >= max) return out;
-                }
-            }
-        }
-    }
-    return out;
-}
-
-function renderActivities() {
-    const grid = document.getElementById("activitiesGrid");
-    if (!grid) return;
-    grid.innerHTML = "";
-    const journeys = lsGetJourneys();
-    const acts = collectActivitiesFromJourneys(journeys, 5);
-    acts.forEach(a => grid.appendChild(buildActivityCard(a)));
-    for (let i = acts.length; i < 5; i++) {
-        const card = document.createElement("div"); card.className = "proposal-item placeholder";
-        const th = document.createElement("div"); th.className = "thumb";
-        const nm = document.createElement("div"); nm.className = "name"; nm.textContent = "Suggestion à venir";
-        card.append(th, nm); grid.appendChild(card);
-    }
-}
-
 window.addEventListener("storage", (e) => {
-    if (e.key === JOURNEYS_KEY || e.key === BASKET_KEY || e.key === LIKES_KEY) {
-        renderRecent(); renderActivities(); updateCounts(); renderPanels();
-    }
+    if (e.key === JOURNEYS_KEY) { renderRecent(); }
 });
 window.addEventListener("wishbasket:change", () => {
-    renderRecent(); renderActivities(); updateCounts(); renderPanels();
+    renderRecent(); 
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    renderRecent(); renderActivities(); updateCounts(); renderPanels();
+    renderRecent(); 
 });

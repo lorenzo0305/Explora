@@ -24,141 +24,15 @@ function resolveRegion(slugFromUrl) {
     return { displayName: display, apiSlug };
 }
 
-/* ---------------- FAVORIS (LIKES) ---------------- */
-const LIKES_KEY = 'wish_likes_v1';
-const likesIcon = document.getElementById('likesIcon');
-const likesCount = document.getElementById('likesCount');
-const floatingLikes = document.getElementById('floatingLikes');
-
-function loadLikes() {
-    try { const raw = localStorage.getItem(LIKES_KEY); return raw ? JSON.parse(raw) : []; } catch (e) { return []; }
+/* --- JOLIE NOTIFICATION FLOTTANTE --- */
+function showToast(message) {
+    const toast = document.createElement('div');
+    toast.textContent = message;
+    toast.style.cssText = "position:fixed; bottom:30px; left:50%; transform:translateX(-50%); background:#1C1C1C; color:white; padding:12px 24px; border-radius:30px; z-index:10000; font-family:'Montserrat', sans-serif; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 4px 15px rgba(0,0,0,0.2); opacity:0; transition:opacity 0.3s;";
+    document.body.appendChild(toast);
+    setTimeout(() => toast.style.opacity = '1', 10);
+    setTimeout(() => { toast.style.opacity = '0'; setTimeout(() => toast.remove(), 300); }, 2500);
 }
-function saveLikes(items) {
-    localStorage.setItem(LIKES_KEY, JSON.stringify(items));
-    updateLikesCount(); renderLikesPanel();
-    // Rafraichir les boutons visibles
-    document.querySelectorAll('.fav-action').forEach(btn => {
-        // Pour les cartes (qui ont l'id sur le parent)
-        if (btn.parentElement.dataset.id) {
-            if (isLiked(btn.parentElement.dataset.id)) btn.classList.add('active');
-            else btn.classList.remove('active');
-        }
-        // Pour les résultats de recherche (qui ont l'id sur eux-mêmes)
-        if (btn.dataset.id) {
-            if (isLiked(btn.dataset.id)) btn.classList.add('active');
-            else btn.classList.remove('active');
-        }
-    });
-}
-function updateLikesCount() {
-    const n = loadLikes().length;
-    likesCount.textContent = n; likesCount.hidden = n === 0;
-}
-function isLiked(id) {
-    return loadLikes().some(x => String(x.id) === String(id));
-}
-function toggleLike(item) {
-    let items = loadLikes();
-    const idStr = String(item.id);
-    if (items.some(x => String(x.id) === idStr)) {
-        items = items.filter(x => String(x.id) !== idStr);
-    } else {
-        const img = (item.image && item.image !== '/static/img/no-image.jpg') ? item.image : '/static/img/no-image.jpg';
-        items.push({ id: item.id, name: item.name, image: img, types: item.types || [] });
-    }
-    saveLikes(items);
-    return isLiked(item.id);
-}
-function renderLikesPanel() {
-    const items = loadLikes();
-    if (!items.length) {
-        floatingLikes.innerHTML = '<h4>Mes Favoris</h4><p class="likes-empty">Aucun coup de cœur pour l’instant.</p>';
-        return;
-    }
-    const list = items.map(x => (
-        `<div class="basket-item">
-          <img src="${x.image || '/static/img/no-image.jpg'}" alt="">
-          <div>
-            <div class="bi-name">${x.name || 'Sans nom'}</div>
-            <div class="bi-meta">${(x.types && x.types[0]) ? x.types[0] : ''}</div>
-          </div>
-          <button class="bi-like-remove" onclick="event.stopPropagation(); toggleLike({id:'${x.id}'})">💔</button>
-        </div>`
-    )).join('');
-    floatingLikes.innerHTML = '<h4>Mes Favoris</h4>' + list;
-}
-likesIcon.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const visible = floatingLikes.style.display === 'block';
-    if (floatingBasket) floatingBasket.style.display = 'none';
-    floatingLikes.style.display = visible ? 'none' : 'block';
-    if (!visible) renderLikesPanel();
-});
-document.addEventListener('click', (e) => {
-    if (!floatingLikes.contains(e.target) && e.target !== likesIcon) floatingLikes.style.display = 'none';
-});
-updateLikesCount();
-
-// ---------- Panier ----------
-const BASKET_KEY = 'wish_basket_v1';
-const basketIcon = document.getElementById('basketIcon');
-const basketCount = document.getElementById('basketCount');
-const floatingBasket = document.getElementById('floatingBasket');
-
-function loadBasket() {
-    try { const raw = localStorage.getItem(BASKET_KEY); return raw ? JSON.parse(raw) : []; } catch (e) { return []; }
-}
-function saveBasket(items) {
-    localStorage.setItem(BASKET_KEY, JSON.stringify(items));
-    updateBasketCount(); renderBasketPanel();
-}
-function updateBasketCount() {
-    const n = loadBasket().length;
-    basketCount.textContent = n; basketCount.hidden = n === 0;
-}
-function addToBasket(item) {
-    const items = loadBasket();
-    if (!items.some(x => String(x.id) === String(item.id))) {
-        items.push({ id: item.id, name: item.name, image: item.image || '', types: item.types || [] });
-        saveBasket(items);
-    }
-}
-function removeFromBasket(id) {
-    const items = loadBasket().filter(x => String(x.id) !== String(id));
-    saveBasket(items);
-}
-function renderBasketPanel() {
-    const items = loadBasket();
-    if (!items.length) {
-        floatingBasket.innerHTML = '<h4>Votre panier</h4><p class="basket-empty">Aucun élément pour l\u2019instant.</p><div class="basket-footer"><a href="/creation">Aller à la création</a></div>';
-        return;
-    }
-    const list = items.map(x => (
-        `<div class="basket-item">
-          <img src="${x.image || '/static/img/no-image.jpg'}" alt="">
-          <div>
-            <div class="bi-name">${x.name || 'Sans nom'}</div>
-            <div class="bi-meta">${(x.types && x.types[0]) ? x.types[0] : ''}</div>
-          </div>
-          <button class="bi-remove" data-id="${x.id}">Retirer</button>
-        </div>`
-    )).join('');
-    floatingBasket.innerHTML = '<h4>Votre panier</h4>' + list + '<div class="basket-footer"><a href="/creation">Aller à la création</a></div>';
-    floatingBasket.querySelectorAll('.bi-remove').forEach(btn => {
-        btn.addEventListener('click', (e) => { e.stopPropagation(); removeFromBasket(btn.getAttribute('data-id')); });
-    });
-}
-basketIcon.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const visible = floatingBasket.style.display === 'block';
-    if (floatingLikes) floatingLikes.style.display = 'none';
-    floatingBasket.style.display = visible ? 'none' : 'block';
-    if (!visible) renderBasketPanel();
-});
-document.addEventListener('click', (e) => {
-    if (!floatingBasket.contains(e.target) && e.target !== basketIcon) floatingBasket.style.display = 'none';
-});
-updateBasketCount();
 
 // ------- Cards -------
 function cardHTML(item) {
@@ -166,12 +40,12 @@ function cardHTML(item) {
     const loc = item.locality ? `<div class="meta">${item.locality}</div>` : '';
     const name = item.name || 'Sans nom';
     const types = Array.isArray(item.types) ? item.types.join('|') : '';
-    const likedClass = isLiked(item.id) ? 'active' : '';
+    const isFav = window.WishLikes ? window.WishLikes.has(item.id) : false;
+    const likedClass = isFav ? 'active' : '';
 
     return `<div class="card" data-id="${escAttr(item.id)}" data-name="${escAttr(name)}" data-image="${escAttr(img)}" data-types="${escAttr(types)}">
         <button class="fav-action ${likedClass}" 
                 style="position:absolute; top:8px; left:8px; z-index:2; background:rgba(0,0,0,0.5);"
-                onclick="event.stopPropagation(); var p=this.parentElement; toggleLike({id:p.dataset.id, name:p.dataset.name, image:p.dataset.image, types:p.dataset.types.split('|')});"
                 title="Mettre en favoris">❤</button>
         
         <button class="add-btn" title="Ajouter au panier" aria-label="Ajouter au panier">+</button>
@@ -180,21 +54,43 @@ function cardHTML(item) {
         ${loc}
       </div>`;
 }
+
 function bindCards(container) {
     container.querySelectorAll('.card').forEach(c => {
         c.addEventListener('click', () => {
             const id = c.getAttribute('data-id');
             if (id) location.href = `/object/${encodeURIComponent(id)}`;
         });
+        
+        // Coeur
+        const fav = c.querySelector('.fav-action');
+        if (fav) {
+            fav.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (window.WishLikes) {
+                    const id = c.dataset.id;
+                    const types = (c.dataset.types || '').split('|').filter(Boolean);
+                    window.WishLikes.toggle({ id, name: c.dataset.name, image: c.dataset.image, types });
+                    window.WishLikes.refresh();
+                    fav.classList.toggle('active', window.WishLikes.has(id));
+                }
+            });
+        }
+
+        // Panier
         const add = c.querySelector('.add-btn');
         if (add) {
             add.addEventListener('click', (e) => {
                 e.stopPropagation();
-                const id = c.dataset.id;
-                const name = c.dataset.name || 'Sans nom';
-                const image = c.dataset.image || '';
-                const types = (c.dataset.types || '').split('|').filter(Boolean);
-                addToBasket({ id, name, image, types });
+                if (window.WishBasket) {
+                    const id = c.dataset.id;
+                    const name = c.dataset.name || 'Sans nom';
+                    const image = c.dataset.image || '';
+                    const types = (c.dataset.types || '').split('|').filter(Boolean);
+                    window.WishBasket.add({ id, name, image, types });
+                    window.WishBasket.refresh();
+                    showToast('Ajouté au panier !');
+                }
             });
         }
     });
@@ -218,6 +114,7 @@ async function loadCategory(apiSlug, typ, limit = 24) {
 const resultsBox = document.getElementById('results');
 const searchInput = document.getElementById('search');
 function clearResults() { resultsBox.innerHTML = ''; resultsBox.style.display = 'none'; }
+
 function renderResults(items) {
     resultsBox.innerHTML = '';
     if (!items || !items.length) {
@@ -242,22 +139,34 @@ function renderResults(items) {
 
             // Like
             const heartBtn = document.createElement('button');
-            heartBtn.className = isLiked(item.id) ? 'fav-action active' : 'fav-action';
+            const isFav = window.WishLikes ? window.WishLikes.has(item.id) : false;
+            heartBtn.className = isFav ? 'fav-action active' : 'fav-action';
             heartBtn.textContent = '❤';
             heartBtn.dataset.id = item.id;
             heartBtn.style.background = 'transparent'; heartBtn.style.border = '1px solid #eee';
             heartBtn.style.color = heartBtn.classList.contains('active') ? '#ff4081' : '#ccc';
             heartBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
-                const liked = toggleLike(item);
-                heartBtn.className = liked ? 'fav-action active' : 'fav-action';
-                heartBtn.style.color = liked ? '#ff4081' : '#ccc';
+                if (window.WishLikes) {
+                    window.WishLikes.toggle(item);
+                    window.WishLikes.refresh();
+                    const liked = window.WishLikes.has(item.id);
+                    heartBtn.className = liked ? 'fav-action active' : 'fav-action';
+                    heartBtn.style.color = liked ? '#ff4081' : '#ccc';
+                }
             });
 
             // Add
             const addBtn = document.createElement('button');
             addBtn.className = 'add'; addBtn.textContent = '+';
-            addBtn.addEventListener('click', (e) => { e.stopPropagation(); addToBasket(item); });
+            addBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); 
+                if (window.WishBasket) {
+                    window.WishBasket.add(item); 
+                    window.WishBasket.refresh();
+                    showToast('Ajouté au panier !');
+                }
+            });
 
             right.appendChild(heartBtn);
             right.appendChild(addBtn);
@@ -292,12 +201,14 @@ const doSearch = debounce(async function (q, apiSlug) {
 document.addEventListener('DOMContentLoaded', () => {
     const rawSlug = getSlugFromPath();
     const { displayName, apiSlug } = resolveRegion(rawSlug);
-    document.getElementById('regionName').textContent = displayName || 'Région';
+    if(document.getElementById('regionName')) document.getElementById('regionName').textContent = displayName || 'Région';
+    
     loadCategory(apiSlug, 'CulturalSite', 24);
     loadCategory(apiSlug, 'FoodEstablishment', 24);
     loadCategory(apiSlug, 'PlaceOfInterest', 24);
-    searchInput.addEventListener('input', e => doSearch(e.target.value, apiSlug));
+    
+    if(searchInput) searchInput.addEventListener('input', e => doSearch(e.target.value, apiSlug));
     document.addEventListener('click', (e) => {
-        if (!resultsBox.contains(e.target) && e.target !== searchInput) resultsBox.style.display = 'none';
+        if (resultsBox && !resultsBox.contains(e.target) && e.target !== searchInput) resultsBox.style.display = 'none';
     });
 });

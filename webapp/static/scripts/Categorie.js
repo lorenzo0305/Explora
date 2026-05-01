@@ -1,117 +1,34 @@
-// Outils pour la gestion du panier et des likes
-const BASKET_KEY = 'wish_basket_v1';
-const LIKES_KEY  = 'wish_likes_v1';
-
-function loadKey(k) { try { return JSON.parse(localStorage.getItem(k) || '[]') || []; } catch { return []; } }
-function saveKey(k, v) { localStorage.setItem(k, JSON.stringify(v || [])); }
-
-function updateBadge(badgeId, count) {
-    const el = document.getElementById(badgeId);
-    if (el) { el.textContent = String(count); el.hidden = count === 0; }
-}
-
-function addBasket(item) {
-    const list = loadKey(BASKET_KEY);
-    if (list.some(x => String(x.id) === String(item.id))) return false;
-    list.unshift(item);
-    saveKey(BASKET_KEY, list);
-    updateBadge('basketCount', list.length);
-    alert('Ajouté au panier !'); // Petite confirmation visuelle
-    return true;
-}
-
-function toggleLike(item) {
-    let list = loadKey(LIKES_KEY);
-    const exists = list.some(x => String(x.id) === String(item.id));
-    if (exists) list = list.filter(x => String(x.id) !== String(item.id));
-    else list.unshift(item);
-    saveKey(LIKES_KEY, list);
-    updateBadge('likesCount', list.length);
-    return !exists;
-}
-
-function isLiked(id) {
-    return loadKey(LIKES_KEY).some(x => String(x.id) === String(id));
+// --- JOLIE NOTIFICATION FLOTTANTE ---
+function showToast(message) {
+    const toast = document.createElement('div');
+    toast.textContent = message;
+    toast.style.cssText = "position:fixed; bottom:30px; left:50%; transform:translateX(-50%); background:#1C1C1C; color:white; padding:12px 24px; border-radius:30px; z-index:10000; font-family:'Montserrat', sans-serif; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 4px 15px rgba(0,0,0,0.2); opacity:0; transition:opacity 0.3s;";
+    document.body.appendChild(toast);
+    
+    setTimeout(() => toast.style.opacity = '1', 10);
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+    }, 2500);
 }
 
 // --- SYSTÈME D'IMAGES PREMIUM ---
 const THEMES = {
-    "Nature": {
-        icones: [
-            '/static/img/nature1.jpg',
-            '/static/img/nature2.jpg',
-            '/static/img/nature3.jpg',
-            '/static/img/nature4.jpg',
-            '/static/img/nature5.jpg',
-            '/static/img/nature6.jpg'
-        ]
-    },
-    "Gastronomie": {
-        icones: [
-            '/static/img/food1.jpg', 
-            '/static/img/food2.jpg',
-            '/static/img/food3.jpg',
-            '/static/img/food4.jpg',
-            '/static/img/food5.jpg',
-            '/static/img/food6.jpg'
-        ]
-    },
-    "Culture": {
-        icones: [
-            '/static/img/culture1.jpg', 
-            '/static/img/culture2.jpg',
-            '/static/img/culture3.jpg',
-            '/static/img/culture4.jpg',
-            '/static/img/culture5.jpg',
-            '/static/img/culture6.jpg'
-        ]
-    },
-    "Sport": {
-        icones: [
-            '/static/img/sport1.jpg', 
-            '/static/img/sport2.jpg',
-            '/static/img/sport3.jpg',
-            '/static/img/sport4.jpg',
-            '/static/img/sport5.png',
-            '/static/img/sport6.jpg'
-        ]
-    },   
-    "Détente": {
-        icones: [
-            '/static/img/detente1.jpg', 
-            '/static/img/detente2.jpg',
-            '/static/img/detente3.jpg',
-            '/static/img/detente4.jpg',
-            '/static/img/detente55.jpg',
-            '/static/img/detente6.jpg'
-        ]
-    },
-    "Shopping": {
-        icones: [
-            '/static/img/shopping1.jpg', 
-            '/static/img/shopping2.jpg',
-            '/static/img/shopping3.jpg',
-            '/static/img/shopping4.jpg',
-            '/static/img/shopping5.jpg',
-            '/static/img/shopping6.jpg'
-        ]
-    }
+    "Nature": { icones: ['/static/img/nature1.jpg', '/static/img/nature2.jpg', '/static/img/nature3.jpg', '/static/img/nature4.jpg', '/static/img/nature5.jpg', '/static/img/nature6.jpg'] },
+    "Gastronomie": { icones: ['/static/img/food1.jpg', '/static/img/food2.jpg', '/static/img/food3.jpg', '/static/img/food4.jpg', '/static/img/food5.jpg', '/static/img/food6.jpg'] },
+    "Culture": { icones: ['/static/img/culture1.jpg', '/static/img/culture2.jpg', '/static/img/culture3.jpg', '/static/img/culture4.jpg', '/static/img/culture5.jpg', '/static/img/culture6.jpg'] },
+    "Sport": { icones: ['/static/img/sport1.jpg', '/static/img/sport2.jpg', '/static/img/sport3.jpg', '/static/img/sport4.jpg', '/static/img/sport5.png', '/static/img/sport6.jpg'] },   
+    "Détente": { icones: ['/static/img/detente1.jpg', '/static/img/detente2.jpg', '/static/img/detente3.jpg', '/static/img/detente4.jpg', '/static/img/detente55.jpg', '/static/img/detente6.jpg'] },
+    "Shopping": { icones: ['/static/img/shopping1.jpg', '/static/img/shopping2.jpg', '/static/img/shopping3.jpg', '/static/img/shopping4.jpg', '/static/img/shopping5.jpg', '/static/img/shopping6.jpg'] }
 };
 
 const MIX = [0, 1, 2, 3, 4, 5, 2, 4, 0, 5, 1, 3, 4, 2, 5, 0, 3, 1, 5, 3, 1, 4, 2];
-// --------------------------------
 
 // Initialisation au chargement
 document.addEventListener('DOMContentLoaded', async () => {
-    updateBadge('basketCount', loadKey(BASKET_KEY).length);
-    updateBadge('likesCount', loadKey(LIKES_KEY).length);
-
     const query = CATEGORIE_ACTUELLE;
     document.getElementById('pageTitle').textContent = query.toUpperCase();
-
-    // On récupère le bon thème d'images (ou Nature par défaut)
     const currentTheme = THEMES[query] || THEMES["Nature"];
-
     const listContainer = document.getElementById('activitiesList');
 
     try {
@@ -133,15 +50,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             const name = item.name || 'Activité sans nom';
             
             let imgUrl = "";
-            // Si l'activité a une VRAIE image dans la BDD (et que ce n'est pas l'appareil photo cassé)
-            if (item.image && !item.image.includes('no-image') && !item.image.includes('appareil_photo')) {
-                imgUrl = item.image;
-            } else if (item.photo && !item.photo.includes('no-image') && !item.photo.includes('appareil_photo')) {
-                imgUrl = item.photo;
-            } else if (item.thumbnail && !item.thumbnail.includes('no-image') && !item.thumbnail.includes('appareil_photo')) {
-                imgUrl = item.thumbnail;
-            } 
-            // Sinon, on applique notre séquence premium
+            if (item.image && !item.image.includes('no-image') && !item.image.includes('appareil_photo')) { imgUrl = item.image; } 
+            else if (item.photo && !item.photo.includes('no-image') && !item.photo.includes('appareil_photo')) { imgUrl = item.photo; } 
+            else if (item.thumbnail && !item.thumbnail.includes('no-image') && !item.thumbnail.includes('appareil_photo')) { imgUrl = item.thumbnail; } 
             else {
                 const variantIndex = MIX[index % MIX.length] % currentTheme.icones.length;
                 imgUrl = currentTheme.icones[variantIndex];
@@ -150,13 +61,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             const type = (item.types && item.types[0]) ? item.types[0].toLowerCase() : query.toLowerCase();
             const locality = item.locality || item.region || 'Lieu inconnu';
             const metaText = `${type} ~ ${locality}`;
-            
-            // On récupère la description de la BDD
             const desc = item.description || "Aucune description détaillée n'est disponible pour cette activité. Laissez-vous surprendre sur place !";
 
             const card = document.createElement('div');
             card.className = 'activity-accordion';
-            const isFav = isLiked(id);
+            const isFav = window.WishLikes ? window.WishLikes.has(id) : false;
 
             card.innerHTML = `
                 <div class="activity-header">
@@ -169,45 +78,45 @@ document.addEventListener('DOMContentLoaded', async () => {
                     </div>
                     <div class="alc-right-group">
                         <div class="alc-actions-header">
-                            <button class="btn-fav ${isFav ? 'active' : ''}" title="Ajouter aux favoris">❤</button>
-                            <button class="btn-pan" title="Ajouter au planning">+ Panier</button>
+                            <!-- HOVER SUPPRIMÉ ICI -->
+                            <button class="btn-fav ${isFav ? 'active' : ''}">❤</button>
+                            <button class="btn-pan">+ Panier</button>
                         </div>
                         <div class="alc-chevron">❯</div>
                     </div>
                 </div>
-                <div class="activity-details">
-                    <p class="alc-desc">${desc}</p>
-                </div>
+                <div class="activity-details"><p class="alc-desc">${desc}</p></div>
             `;
 
-            // 1. Déplier/Enrouler l'accordéon
             const header = card.querySelector('.activity-header');
             header.addEventListener('click', (e) => {
-                if (!e.target.closest('button')) {
-                    card.classList.toggle('open');
-                }
+                if (!e.target.closest('button')) card.classList.toggle('open');
             });
 
-            // 2. Action Cœur
             const btnFav = card.querySelector('.btn-fav');
             btnFav.addEventListener('click', (e) => {
                 e.stopPropagation(); 
-                const liked = toggleLike({ id, name, image: imgUrl, types: item.types || [] });
-                btnFav.classList.toggle('active', liked);
+                if(window.WishLikes) {
+                    window.WishLikes.toggle({ id, name, image: imgUrl, types: item.types || [] });
+                    btnFav.classList.toggle('active', window.WishLikes.has(id));
+                    window.WishLikes.refresh();
+                }
             });
 
-            // 3. Action Panier
             const btnPan = card.querySelector('.btn-pan');
             btnPan.addEventListener('click', (e) => {
                 e.stopPropagation(); 
-                addBasket({ id, name, image: imgUrl, types: item.types || [] });
+                if(window.WishBasket) {
+                    window.WishBasket.add({ id, name, image: imgUrl, types: item.types || [] });
+                    window.WishBasket.refresh();
+                    showToast('Ajouté au panier !'); 
+                }
             });
 
             listContainer.appendChild(card);
         });
 
     } catch (error) {
-        console.error(error);
-        listContainer.innerHTML = `<p style="text-align:center; color:red;">Impossible de charger les activités. Veuillez réessayer plus tard.</p>`;
+        listContainer.innerHTML = `<p style="text-align:center; color:red;">Impossible de charger les activités.</p>`;
     }
 });

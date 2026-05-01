@@ -1,8 +1,5 @@
 /* =========================================================
- * wishbasket.js — Panier & Favoris partagés
- * Branché sur localStorage (wish_basket_v1, wish_likes_v1)
- * Synchronisé entre onglets via l'événement "storage"
- * Chargement automatique sur DOMContentLoaded
+ * wishbasket.js — Le Maître Absolu du Panier & Favoris
  * ========================================================= */
 (function (global) {
     'use strict';
@@ -10,16 +7,13 @@
     const BASKET_KEY = 'wish_basket_v1';
     const LIKES_KEY  = 'wish_likes_v1';
 
-    // ---------- Stockage ----------
     function load(key) {
         try { return JSON.parse(localStorage.getItem(key) || '[]') || []; }
         catch { return []; }
     }
     function save(key, arr) {
         localStorage.setItem(key, JSON.stringify(arr || []));
-        // pour les autres onglets
         try { window.dispatchEvent(new StorageEvent('storage', { key })); } catch (_) {}
-        // pour la page actuelle
         try { window.dispatchEvent(new CustomEvent('wishbasket:change', { detail: { key } })); } catch (_) {}
     }
 
@@ -48,11 +42,9 @@
         return add(key, item);
     }
 
-    // ---------- Helpers ----------
     function $(id) { return document.getElementById(id); }
     function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
 
-    // ---------- Rendu ----------
     function updateBadge(badgeId, count) {
         const el = $(badgeId);
         if (!el) return;
@@ -67,12 +59,21 @@
     function renderPanel(container, key, title, emptyMsg, draggable) {
         if (!container) return;
         const items = load(key);
+        const isBasket = (key === BASKET_KEY);
+        
+        // LE LIEN EN GRAS ET LE DESIGN UNIFIÉ PARTOUT
+        const headerHtml = `
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EFE6DC; padding-bottom: 8px; margin-bottom: 10px;">
+                <h4 class="wb-title" style="margin: 0; border: none; padding: 0; font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 700; color: #1C1C1C;">${esc(title)}</h4>
+                ${isBasket ? `<a href="/editeur" title="Ouvrir l'éditeur" style="font-family:'Montserrat', sans-serif; font-size:10px; font-weight:900; color:#FF6F61; text-decoration:none; text-transform:uppercase; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">Aller à l'éditeur ❯</a>` : ''}
+            </div>
+        `;
+
         if (!items.length) {
-            container.innerHTML =
-                '<h4 class="wb-title">' + esc(title) + '</h4>' +
-                '<p class="wb-empty">' + esc(emptyMsg) + '</p>';
+            container.innerHTML = headerHtml + `<p class="wb-empty" style="color: #6b5f57; font-style: italic; text-align: center; margin: 12px 0; font-size: 13px;">${esc(emptyMsg)}</p>`;
             return;
         }
+        
         const rows = items.map(x => (
             '<div class="wb-item"' + (draggable ? ' draggable="true"' : '') +
             '   data-id="' + esc(x.id) + '"' +
@@ -83,7 +84,8 @@
             '   <button class="wb-remove" type="button" data-id="' + esc(x.id) + '" data-key="' + esc(key) + '" title="Retirer">✕</button>' +
             '</div>'
         )).join('');
-        container.innerHTML = '<h4 class="wb-title">' + esc(title) + '</h4>' + rows;
+        
+        container.innerHTML = headerHtml + rows;
 
         if (draggable) {
             container.querySelectorAll('.wb-item').forEach(row => {
@@ -91,7 +93,8 @@
                     const data = { id: row.dataset.id, name: row.dataset.name, image: row.dataset.image };
                     try {
                         e.dataTransfer.setData('application/x-basket-item', JSON.stringify(data));
-                        e.dataTransfer.effectAllowed = 'copy';
+                        e.dataTransfer.setData('id', row.dataset.id); 
+                        e.dataTransfer.effectAllowed = 'copyMove';
                     } catch (_) {}
                 });
             });
@@ -101,66 +104,68 @@
             btn.addEventListener('click', e => {
                 e.stopPropagation();
                 remove(btn.dataset.key, btn.dataset.id);
+                refresh();
             });
         });
     }
 
+    function refresh() { updateCounts(); renderPanels(); }
+
     function renderPanels() {
-        renderPanel($('floatingBasket'), BASKET_KEY, 'Votre panier',  'Votre panier est vide.',          true);
-        renderPanel($('floatingLikes'),  LIKES_KEY,  'Mes favoris',   'Aucun favori pour le moment.',    false);
+        renderPanel($('floatingBasket'), BASKET_KEY, 'Votre panier',  'Votre panier est vide.', true);
+        renderPanel($('floatingLikes'),  LIKES_KEY,  'Mes favoris',   'Aucun favori pour le moment.', false);
     }
 
-    // ---------- Wiring ----------
     function togglePanel(panel, otherPanel) {
         if (!panel) return;
         if (otherPanel) otherPanel.style.display = 'none';
         panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
     }
+
     function wireToggles() {
         const basketIcon = $('basketIcon');
         const likesIcon  = $('likesIcon');
         const floatingBasket = $('floatingBasket');
         const floatingLikes  = $('floatingLikes');
 
-        if (basketIcon && floatingBasket) {
-            basketIcon.addEventListener('click', e => {
+        const newBasketIcon = basketIcon ? basketIcon.cloneNode(true) : null;
+        if (newBasketIcon) basketIcon.parentNode.replaceChild(newBasketIcon, basketIcon);
+        
+        const newLikesIcon = likesIcon ? likesIcon.cloneNode(true) : null;
+        if (newLikesIcon) likesIcon.parentNode.replaceChild(newLikesIcon, likesIcon);
+
+        if (newBasketIcon && floatingBasket) {
+            newBasketIcon.addEventListener('click', e => {
                 e.stopPropagation();
                 togglePanel(floatingBasket, floatingLikes);
             });
         }
-        if (likesIcon && floatingLikes) {
-            likesIcon.addEventListener('click', e => {
+        if (newLikesIcon && floatingLikes) {
+            newLikesIcon.addEventListener('click', e => {
                 e.stopPropagation();
                 togglePanel(floatingLikes, floatingBasket);
             });
         }
         document.addEventListener('click', e => {
-            if (floatingBasket && !floatingBasket.contains(e.target) && e.target !== basketIcon && !basketIcon?.contains(e.target)) {
+            if (floatingBasket && !floatingBasket.contains(e.target) && e.target !== newBasketIcon && !newBasketIcon?.contains(e.target)) {
                 floatingBasket.style.display = 'none';
             }
-            if (floatingLikes && !floatingLikes.contains(e.target) && e.target !== likesIcon && !likesIcon?.contains(e.target)) {
+            if (floatingLikes && !floatingLikes.contains(e.target) && e.target !== newLikesIcon && !newLikesIcon?.contains(e.target)) {
                 floatingLikes.style.display = 'none';
             }
         });
     }
 
-    function refresh() { updateCounts(); renderPanels(); }
-
     function init() {
         wireToggles();
         refresh();
-
-        // Synchronisation inter-onglets et intra-page
         window.addEventListener('storage', e => {
             if (!e.key || e.key === BASKET_KEY || e.key === LIKES_KEY) refresh();
         });
         window.addEventListener('wishbasket:change', refresh);
-
-        // Re-render au retour sur la page (cache navigateur)
         window.addEventListener('pageshow', refresh);
     }
 
-    // ---------- API publique ----------
     global.WishBasket = {
         BASKET_KEY, LIKES_KEY,
         load: () => load(BASKET_KEY),

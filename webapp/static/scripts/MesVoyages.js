@@ -1,4 +1,6 @@
-// --- TA BANQUE D'IMAGES (Synchronisée avec l'Accueil) ---
+/* ===== Données Voyages ===== */
+const JOURNEYS_KEY = "wish_journeys_v1";
+
 const FALLBACK_IMAGES = [
     '/static/img/baie_de_somme2.jpg',
     '/static/img/auvergne.jpg',
@@ -26,74 +28,57 @@ function getShuffledFallbacks(journeyId) {
     return arr;
 }
 
-/* ===== Logic Panier & Favoris ===== */
-const BASKET_KEY = 'wish_basket_v1';
-const LIKES_KEY = 'wish_likes_v1';
+/* ===== LA JOLIE MODALE DE SUPPRESSION ===== */
+function showCustomConfirm(title, message, onConfirm) {
+    let modal = document.getElementById('customConfirmModal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'customConfirmModal';
+        modal.style.cssText = 'position:fixed;inset:0;background:rgba(28,28,28,0.6);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;';
+        modal.innerHTML = `
+            <div style="background:#FAF8F5;max-width:400px;width:100%;border-radius:16px;padding:32px;box-shadow:0 20px 60px rgba(0,0,0,0.3);text-align:center;position:relative;">
+                <button id="ccClose" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:#6b5f57;">×</button>
+                <div style="width:50px;height:50px;border-radius:50%;background:rgba(255,111,97,0.1);color:#FF6F61;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                </div>
+                <h3 id="ccTitle" style="font-family:'Cormorant Garamond',serif;font-size:24px;margin:0 0 8px;color:#1C1C1C;">Titre</h3>
+                <p id="ccMessage" style="margin:0 0 24px;color:#6b5f57;font-size:15px;line-height:1.5;font-family:'Lora',serif;">Message</p>
+                <div style="display:flex;gap:12px;justify-content:center;">
+                    <button id="ccCancel" type="button" style="background:none;border:1px solid #D4C3B3;color:#6b5f57;padding:10px 24px;border-radius:8px;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;transition:background 0.2s;">Annuler</button>
+                    <button id="ccConfirm" type="button" style="background:#FF6F61;border:none;color:#fff;padding:10px 24px;border-radius:8px;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;transition:background 0.2s;">Supprimer</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
 
-const basketIcon = document.getElementById('basketIcon');
-const basketCount = document.getElementById('basketCount');
-const floatingBasket = document.getElementById('floatingBasket');
-const likesIcon = document.getElementById('likesIcon');
-const likesCount = document.getElementById('likesCount');
-const floatingLikes = document.getElementById('floatingLikes');
-
-const loadData = (k) => { try { return JSON.parse(localStorage.getItem(k) || '[]'); } catch { return []; } };
-const saveData = (k, d) => { localStorage.setItem(k, JSON.stringify(d)); updateCounts(); renderPanels(); };
-
-function updateCounts() {
-    const b = loadData(BASKET_KEY).length;
-    basketCount.textContent = b; basketCount.hidden = b === 0;
-    const l = loadData(LIKES_KEY).length;
-    likesCount.textContent = l; likesCount.hidden = l === 0;
-}
-
-function renderPanel(key, container, title, emptyMsg, isLike = false) {
-    const items = loadData(key);
-    if (!items.length) {
-        container.innerHTML = `<h4>${title}</h4><p class="panel-empty">${emptyMsg}</p>` + (isLike ? '' : `<div class="panel-footer"><a href="/makejourney">Aller à la création</a></div>`);
-        return;
+        modal.querySelector('#ccCancel').addEventListener('mouseover', function() { this.style.background = '#F0EDE9'; });
+        modal.querySelector('#ccCancel').addEventListener('mouseout', function() { this.style.background = 'none'; });
+        modal.querySelector('#ccConfirm').addEventListener('mouseover', function() { this.style.background = '#E85A4D'; });
+        modal.querySelector('#ccConfirm').addEventListener('mouseout', function() { this.style.background = '#FF6F61'; });
     }
-    const html = items.map((x, idx) => {
-        const thumb = (x.image && !x.image.includes('no-image') && !x.image.includes('appareil_photo')) 
-            ? x.image 
-            : FALLBACK_IMAGES[idx % FALLBACK_IMAGES.length];
-        return `
-            <div class="panel-item">
-              <img src="${thumb}" alt="">
-              <div class="pi-name">${x.name || 'Sans nom'}</div>
-              <button class="pi-remove" onclick="removeItem('${key}', '${x.id}')">✕</button>
-            </div>`;
-    }).join('');
-    container.innerHTML = `<h4>${title}</h4>${html}` + (isLike ? '' : `<div class="panel-footer"><a href="/makejourney">Aller à la création</a></div>`);
+
+    modal.querySelector('#ccTitle').textContent = title;
+    modal.querySelector('#ccMessage').textContent = message;
+    modal.style.display = 'flex';
+
+    const closeIt = () => { modal.style.display = 'none'; cleanup(); };
+    const confirmIt = () => { closeIt(); if(onConfirm) onConfirm(); };
+
+    const btnClose = modal.querySelector('#ccClose');
+    const btnCancel = modal.querySelector('#ccCancel');
+    const btnConfirm = modal.querySelector('#ccConfirm');
+
+    const cleanup = () => {
+        btnClose.removeEventListener('click', closeIt);
+        btnCancel.removeEventListener('click', closeIt);
+        btnConfirm.removeEventListener('click', confirmIt);
+    };
+
+    btnClose.addEventListener('click', closeIt);
+    btnCancel.addEventListener('click', closeIt);
+    btnConfirm.addEventListener('click', confirmIt);
 }
 
-function renderPanels() {
-    renderPanel(BASKET_KEY, floatingBasket, 'Votre panier', 'Votre panier est vide.');
-    renderPanel(LIKES_KEY, floatingLikes, 'Mes Favoris', 'Aucun favori.', true);
-}
-
-window.removeItem = function (key, id) {
-    const data = loadData(key).filter(x => String(x.id) !== String(id));
-    saveData(key, data);
-};
-
-basketIcon.addEventListener('click', (e) => {
-    e.stopPropagation();
-    floatingLikes.style.display = 'none';
-    floatingBasket.style.display = floatingBasket.style.display === 'block' ? 'none' : 'block';
-});
-likesIcon.addEventListener('click', (e) => {
-    e.stopPropagation();
-    floatingBasket.style.display = 'none';
-    floatingLikes.style.display = floatingLikes.style.display === 'block' ? 'none' : 'block';
-});
-document.addEventListener('click', (e) => {
-    if (!floatingBasket.contains(e.target) && e.target !== basketIcon) floatingBasket.style.display = 'none';
-    if (!floatingLikes.contains(e.target) && e.target !== likesIcon) floatingLikes.style.display = 'none';
-});
-
-/* ===== Logic Liste Voyages ===== */
-const JOURNEYS_KEY = "wish_journeys_v1";
 const lsGetJourneys = () => { try { return JSON.parse(localStorage.getItem(JOURNEYS_KEY) || "[]"); } catch { return []; } };
 const lsSetJourneys = (arr) => { try { localStorage.setItem(JOURNEYS_KEY, JSON.stringify(arr)); } catch { } };
 
@@ -134,8 +119,6 @@ function renderJourneys(journeys) {
     journeys.forEach((j) => {
         const item = document.createElement("div"); 
         item.className = "item";
-        
-        // C'EST ICI : On ajoute le curseur main !
         item.style.cursor = "pointer";
         
         const isEditor = j.source === 'editor' || j.source === 'Editor';
@@ -157,7 +140,6 @@ function renderJourneys(journeys) {
               <svg viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M8 6v-2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
             </button>
           </div>
-          <!-- Le petit texte positionné tout en bas -->
           <div style="position: absolute; bottom: 12px; left: 0; width: 100%; text-align: center; pointer-events: none;">
             <span class="source-label" style="font-family: 'Montserrat', sans-serif; font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; color: #1C1C1C; opacity: 0.5;">
                 ${sourceText}
@@ -166,9 +148,14 @@ function renderJourneys(journeys) {
 
         item.querySelector('.delete-btn').addEventListener('click', async (e) => {
             e.stopPropagation();
-            if (!confirm("Supprimer ce voyage ?")) return;
-            lsSetJourneys(lsGetJourneys().filter(x => String(x.id) !== String(j.id)));
-            loadJourneys();
+            showCustomConfirm(
+                "Supprimer ce voyage ?", 
+                `Êtes-vous sûr de vouloir supprimer définitivement « ${j.name || 'ce carnet'} » ?`, 
+                () => {
+                    lsSetJourneys(lsGetJourneys().filter(x => String(x.id) !== String(j.id)));
+                    loadJourneys();
+                }
+            );
         });
 
         item.addEventListener("click", () => window.location.href = "/journeys/view/" + encodeURIComponent(j.id));
@@ -182,5 +169,5 @@ async function loadJourneys() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    loadJourneys(); updateCounts(); renderPanels();
+    loadJourneys();
 });

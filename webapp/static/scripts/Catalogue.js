@@ -1,14 +1,14 @@
 /* ================================
-    * MODE DIAG
-    * ================================ */
-const DEBUG = new URLSearchParams(location.search).has('debug')
-    || localStorage.getItem('wish_debug') === '1';
+ * MODE DIAG
+ * ================================ */
+const DEBUG = new URLSearchParams(location.search).has('debug') || localStorage.getItem('wish_debug') === '1';
 const NO_IMG = '/static/img/no-image.jpg';
 function dbg(...args) { if (DEBUG) console.log('[EXP-Debug]', ...args); }
 
 /* Horloge */
 (function clock() {
     const el = document.getElementById('clock');
+    if (!el) return;
     const tick = () => { const d = new Date(); el.textContent = d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }); };
     tick(); setInterval(tick, 15000);
 })();
@@ -47,8 +47,6 @@ function _resolveBestImage(obj) {
         });
     if (flatKey) return { url: firstString(obj[flatKey]), how: 'flat', key: flatKey, note: '' };
 
-    // Autres heuristiques omises pour brièveté (conserver la logique d'origine si besoin)
-    // On garde une version simplifiée fonctionnelle ici
     for (const [k, val] of Object.entries(obj || {})) {
         const arr = anyToArray(val);
         for (const it of arr) {
@@ -85,145 +83,20 @@ async function fetchJSONDebug(url, opts = {}) {
         return { ok: false, status: 0, error: e };
     }
 }
-// (Upgrades d'images omis pour clarté, à conserver si besoin)
-function scheduleUpgrade(img, item) { } // Stub
-
+function scheduleUpgrade(img, item) { }
 function debounce(fn, wait = 350) {
     let t; return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), wait); };
 }
 
-/* ---------------- FAVORIS (LIKES) ---------------- */
-const LIKES_KEY = 'wish_likes_v1';
-const likesIcon = document.getElementById('likesIcon');
-const likesCount = document.getElementById('likesCount');
-const floatingLikes = document.getElementById('floatingLikes');
-
-function loadLikes() {
-    try { const raw = localStorage.getItem(LIKES_KEY); return raw ? JSON.parse(raw) : []; } catch (e) { return []; }
+/* --- JOLIE NOTIFICATION FLOTTANTE --- */
+function showToast(message) {
+    const toast = document.createElement('div');
+    toast.textContent = message;
+    toast.style.cssText = "position:fixed; bottom:30px; left:50%; transform:translateX(-50%); background:#1C1C1C; color:white; padding:12px 24px; border-radius:30px; z-index:10000; font-family:'Montserrat', sans-serif; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 4px 15px rgba(0,0,0,0.2); opacity:0; transition:opacity 0.3s;";
+    document.body.appendChild(toast);
+    setTimeout(() => toast.style.opacity = '1', 10);
+    setTimeout(() => { toast.style.opacity = '0'; setTimeout(() => toast.remove(), 300); }, 2500);
 }
-function saveLikes(items) {
-    localStorage.setItem(LIKES_KEY, JSON.stringify(items));
-    updateLikesCount();
-    renderLikesPanel();
-    // Update visible hearts
-    document.querySelectorAll('.fav-action').forEach(btn => {
-        const id = btn.dataset.id;
-        if (id) {
-            if (isLiked(id)) btn.classList.add('active');
-            else btn.classList.remove('active');
-        }
-    });
-}
-function updateLikesCount() {
-    const n = loadLikes().length;
-    likesCount.textContent = n; likesCount.hidden = n === 0;
-}
-function isLiked(id) {
-    return loadLikes().some(x => String(x.id) === String(id));
-}
-function toggleLike(item) {
-    let items = loadLikes();
-    const idStr = String(item.id);
-    if (items.some(x => String(x.id) === idStr)) {
-        items = items.filter(x => String(x.id) !== idStr);
-    } else {
-        const img = (item.image && item.image !== NO_IMG) ? item.image : getBestImage(item);
-        items.push({ id: item.id, name: item.name, image: img, types: item.types || [] });
-    }
-    saveLikes(items);
-    return isLiked(item.id);
-}
-function renderLikesPanel() {
-    const items = loadLikes();
-    if (!items.length) {
-        floatingLikes.innerHTML = '<h4>Mes Favoris</h4><p class="likes-empty">Aucun coup de cœur pour l’instant.</p>';
-        return;
-    }
-    const list = items.map(x => (
-        `<div class="basket-item">
-          <img src="${x.image || NO_IMG}" alt="">
-          <div>
-            <div class="bi-name">${x.name || 'Sans nom'}</div>
-            <div class="bi-meta">${(x.types && x.types[0]) ? x.types[0] : ''}</div>
-          </div>
-          <button class="bi-like-remove" onclick="event.stopPropagation(); toggleLike({id:'${x.id}'})">💔</button>
-        </div>`
-    )).join('');
-    floatingLikes.innerHTML = '<h4>Mes Favoris</h4>' + list;
-}
-likesIcon.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const visible = floatingLikes.style.display === 'block';
-    if (floatingBasket) floatingBasket.style.display = 'none'; // fermer panier
-    floatingLikes.style.display = visible ? 'none' : 'block';
-    if (!visible) renderLikesPanel();
-});
-document.addEventListener('click', (e) => {
-    if (!floatingLikes.contains(e.target) && e.target !== likesIcon) floatingLikes.style.display = 'none';
-});
-updateLikesCount();
-
-/* ---------------- Panier ---------------- */
-const BASKET_KEY = 'wish_basket_v1';
-const basketIcon = document.getElementById('basketIcon');
-const basketCount = document.getElementById('basketCount');
-const floatingBasket = document.getElementById('floatingBasket');
-
-function loadBasket() {
-    try { const raw = localStorage.getItem(BASKET_KEY); return raw ? JSON.parse(raw) : []; } catch (e) { return []; }
-}
-function saveBasket(items) {
-    localStorage.setItem(BASKET_KEY, JSON.stringify(items));
-    updateBasketCount(); renderBasketPanel();
-}
-function updateBasketCount() {
-    const n = loadBasket().length;
-    basketCount.textContent = n; basketCount.hidden = n === 0;
-}
-function addToBasket(item) {
-    const items = loadBasket();
-    if (!items.some(x => String(x.id) === String(item.id))) {
-        const img = (item.image && item.image !== NO_IMG) ? item.image : getBestImage(item);
-        items.push({ id: item.id, name: item.name, image: img, types: item.types || [] });
-        saveBasket(items);
-    }
-}
-function removeFromBasket(id) {
-    const items = loadBasket().filter(x => String(x.id) !== String(id));
-    saveBasket(items);
-}
-function renderBasketPanel() {
-    const items = loadBasket();
-    if (!items.length) {
-        floatingBasket.innerHTML = '<h4>Votre panier</h4><p class="basket-empty">Aucun élément pour l’instant.</p><div class="basket-footer"><a href="/creation">Aller à la création</a></div>';
-        return;
-    }
-    const list = items.map(x => (
-        `<div class="basket-item">
-          <img src="${x.image || NO_IMG}" alt="">
-          <div>
-            <div class="bi-name">${x.name || 'Sans nom'}</div>
-            <div class="bi-meta">${(x.types && x.types[0]) ? x.types[0] : ''}</div>
-          </div>
-          <button class="bi-remove" data-id="${x.id}">Retirer</button>
-        </div>`
-    )).join('');
-    floatingBasket.innerHTML = '<h4>Votre panier</h4>' + list + '<div class="basket-footer"><a href="/creation">Aller à la création</a></div>';
-    floatingBasket.querySelectorAll('.bi-remove').forEach(btn => {
-        btn.addEventListener('click', (e) => { e.stopPropagation(); removeFromBasket(btn.getAttribute('data-id')); });
-    });
-}
-basketIcon.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const visible = floatingBasket.style.display === 'block';
-    if (floatingLikes) floatingLikes.style.display = 'none'; // fermer likes
-    floatingBasket.style.display = visible ? 'none' : 'block';
-    if (!visible) renderBasketPanel();
-});
-document.addEventListener('click', (e) => {
-    if (!floatingBasket.contains(e.target) && e.target !== basketIcon) floatingBasket.style.display = 'none';
-});
-updateBasketCount();
 
 /* -------------- Recherche -------------- */
 const resultsBox = document.getElementById('results');
@@ -232,25 +105,25 @@ const searchInput = document.getElementById('search');
 const S = { q: '', loading: false, offset: 0, limit: 30, reachedEnd: false, next: null, ctrl: null, token: 0 };
 
 function clearResults() {
-    resultsBox.innerHTML = ''; resultsBox.style.display = 'none';
-    // On réaffiche les régions quand on vide la recherche !
+    if(resultsBox) { resultsBox.innerHTML = ''; resultsBox.style.display = 'none'; }
     const sections = document.querySelector('.sections-container');
     if (sections) sections.style.display = 'flex';
     S.loading = false; S.offset = 0; S.reachedEnd = false; S.next = null;
 }
 function appendLoader() {
     const d = document.createElement('div'); d.className = 'results-loader'; d.textContent = 'Chargement...';
-    resultsBox.appendChild(d);
+    if(resultsBox) resultsBox.appendChild(d);
 }
 function removeLoader() {
-    const l = resultsBox.querySelector('.results-loader'); if (l) l.remove();
+    const l = resultsBox?.querySelector('.results-loader'); if (l) l.remove();
 }
 function showEnd() {
     const e = document.createElement('div'); e.className = 'results-end'; e.textContent = 'Fin des résultats';
-    resultsBox.appendChild(e);
+    if(resultsBox) resultsBox.appendChild(e);
 }
 
 function renderResults(items, append = false) {
+    if (!resultsBox) return;
     if (!append) resultsBox.innerHTML = '';
     if (!items || !items.length) {
         if (!append) resultsBox.innerHTML = '<div class="no-res">Aucun résultat</div>';
@@ -264,7 +137,10 @@ function renderResults(items, append = false) {
             const row = document.createElement('div');
             row.className = 'result-item';
             row.setAttribute('data-id', id);
-            row.addEventListener('click', () => { location.href = `/object/${encodeURIComponent(id)}`; });
+
+            // HEADER (la partie toujours visible)
+            const header = document.createElement('div');
+            header.className = 'result-header';
 
             const left = document.createElement('div'); left.className = 'result-left';
             const img = document.createElement('img'); img.className = 'result-thumb';
@@ -279,33 +155,66 @@ function renderResults(items, append = false) {
             meta.appendChild(name); meta.appendChild(type);
             left.appendChild(img); left.appendChild(meta);
 
-            // Conteneur Actions (Coeur + Panier)
             const actionsDiv = document.createElement('div');
             actionsDiv.style.display = 'flex'; actionsDiv.style.gap = '8px'; actionsDiv.style.alignItems = 'center';
 
-            // 1. Coeur
+            // Coeur
             const heartBtn = document.createElement('button');
-            heartBtn.className = isLiked(id) ? 'fav-action active' : 'fav-action';
+            const isLiked = window.WishLikes ? window.WishLikes.has(id) : false;
+            heartBtn.className = isLiked ? 'fav-action active' : 'fav-action';
             heartBtn.textContent = '❤';
             heartBtn.dataset.id = id;
-            heartBtn.title = "Liker";
+            // Hover supprimé !
             heartBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
-                const liked = toggleLike({ ...item, id, image: resolved });
-                heartBtn.className = liked ? 'fav-action active' : 'fav-action';
+                if(window.WishLikes) {
+                    window.WishLikes.toggle({ ...item, id, image: resolved });
+                    window.WishLikes.refresh();
+                    heartBtn.className = window.WishLikes.has(id) ? 'fav-action active' : 'fav-action';
+                }
             });
 
-            // 2. Ajout
+            // Bouton + PANIER
             const addBtn = document.createElement('button');
             addBtn.className = 'result-add-btn';
-            addBtn.textContent = 'Ajouter';
-            addBtn.addEventListener('click', (e) => { e.stopPropagation(); addToBasket({ ...item, id, image: resolved }); });
+            addBtn.textContent = '+ PANIER';
+            addBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); 
+                if(window.WishBasket) {
+                    window.WishBasket.add({ ...item, id, image: resolved }); 
+                    window.WishBasket.refresh();
+                    showToast('Ajouté au panier !');
+                }
+            });
+
+            // Chevron pour ouvrir/fermer la description
+            const chevron = document.createElement('div');
+            chevron.innerHTML = '❯';
+            chevron.style.marginLeft = '10px'; chevron.style.transition = 'transform 0.3s'; chevron.style.color = '#ccc';
 
             actionsDiv.appendChild(heartBtn);
             actionsDiv.appendChild(addBtn);
+            actionsDiv.appendChild(chevron);
 
-            row.appendChild(left);
-            row.appendChild(actionsDiv);
+            header.appendChild(left);
+            header.appendChild(actionsDiv);
+
+            // CORPS (La description cachée)
+            const details = document.createElement('div');
+            details.className = 'result-details';
+            const desc = item.description || "Aucune description détaillée n'est disponible pour cette activité. Laissez-vous surprendre sur place !";
+            details.innerHTML = `<p style="margin:0;">${desc}</p>`;
+
+            // L'accordéon s'ouvre/se ferme quand on clique sur le header
+            header.addEventListener('click', (e) => {
+                if (e.target.closest('button')) return; // Ne s'ouvre pas si on clique sur un bouton
+                const isOpen = details.style.display === 'block';
+                details.style.display = isOpen ? 'none' : 'block';
+                chevron.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(90deg)';
+            });
+
+            row.appendChild(header);
+            row.appendChild(details);
             resultsBox.appendChild(row);
 
             if (!resolved || resolved === NO_IMG) scheduleUpgrade(img, item);
@@ -351,17 +260,35 @@ async function startSearch(q) {
     S.ctrl = new AbortController();
     S.token++; const myToken = S.token;
     S.q = val; S.offset = 0; S.reachedEnd = false; S.next = null;
-    resultsBox.innerHTML = ''; resultsBox.style.display = 'block';
+    if(resultsBox) { resultsBox.innerHTML = ''; resultsBox.style.display = 'block'; }
     await fetchMore(myToken);
 }
 
-resultsBox.addEventListener('scroll', () => {
-    const nearBottom = resultsBox.scrollTop + resultsBox.clientHeight >= resultsBox.scrollHeight - 80;
-    if (nearBottom) fetchMore(S.token);
+// Clics en dehors de la boîte de recherche pour la fermer
+document.addEventListener('click', (e) => {
+    if (resultsBox && !resultsBox.contains(e.target) && e.target !== searchInput) {
+        resultsBox.style.display = 'none';
+    }
 });
 
-const handleInput = debounce(e => startSearch(e.target.value), 350);
-searchInput.addEventListener('input', handleInput);
+if(resultsBox) {
+    resultsBox.addEventListener('scroll', () => {
+        const nearBottom = resultsBox.scrollTop + resultsBox.clientHeight >= resultsBox.scrollHeight - 80;
+        if (nearBottom) fetchMore(S.token);
+    });
+}
+
+if(searchInput) {
+    const handleInput = debounce(e => startSearch(e.target.value), 350);
+    searchInput.addEventListener('input', handleInput);
+
+    // Quand on reclique sur la barre, on réaffiche les résultats sans avoir besoin de retaper
+    searchInput.addEventListener('click', () => {
+        if (searchInput.value.trim().length >= 2 && resultsBox.children.length > 0) {
+            resultsBox.style.display = 'block';
+        }
+    });
+}
 
 /* -------------- Sections statiques -------------- */
 function createRegionCard({ name, href, active, bg }) {
@@ -417,8 +344,18 @@ document.addEventListener('DOMContentLoaded', () => {
     renderPlaceholders('cities-grid', 4);
     const params = new URLSearchParams(location.search);
     const initialQ = params.get('q') || '';
-    if (initialQ) {
+    if (initialQ && searchInput) {
         searchInput.value = initialQ;
         startSearch(initialQ);
     }
+    
+    // Mise à jour de tous les cœurs si on charge la page
+    window.addEventListener('wishbasket:change', () => {
+        document.querySelectorAll('.fav-action').forEach(btn => {
+            const id = btn.dataset.id;
+            if(id && window.WishLikes) {
+                btn.className = window.WishLikes.has(id) ? 'fav-action active' : 'fav-action';
+            }
+        });
+    });
 });
