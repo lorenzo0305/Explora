@@ -19,7 +19,6 @@ body {
     -webkit-font-smoothing: antialiased; padding-bottom: 0 !important;
 }
 
-/* 1. On annule les 70px de app.css et on interdit à la page globale de scroller */
 html, body {
     margin: 0; padding-bottom: 0 !important;
     height: 100vh !important;
@@ -29,22 +28,10 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* 2. On force le cadre de l'application à faire exactement la taille de l'écran */
-.app-frame {
-    display: flex; flex-direction: column;
-    height: 100vh !important; 
-    width: 100vw;
-    overflow: hidden;
-}
+.app-frame { display: flex; flex-direction: column; height: 100vh !important; width: 100vw; overflow: hidden; }
+.content-panel { flex: 1; overflow-y: auto !important; overflow-x: hidden; }
 
-/* 3. C'est UNIQUEMENT ce panneau central qui a le droit de scroller ! */
-.content-panel { 
-    flex: 1; 
-    overflow-y: auto !important; 
-    overflow-x: hidden;
-}
-
-/* ============ NAVIGATION ============ */
+/* NAVIGATION */
 .top-nav {
     display: flex; justify-content: space-between; align-items: center;
     padding: 20px 50px; background: var(--nav-bg); backdrop-filter: blur(12px);
@@ -57,8 +44,7 @@ html, body {
 .nav-links { display: flex; gap: 35px; }
 .nav-links a {
     text-decoration: none; color: #505050; font-weight: 500; font-size: 15px;
-    transition: color 0.2s;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    transition: color 0.2s; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
 .nav-links a:hover, .nav-links a.active { color: var(--bordeaux-nav); font-weight: 600; }
 
@@ -69,255 +55,98 @@ html, body {
     font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700;
     text-transform: uppercase; letter-spacing: 1.5px;
     padding: 8px 14px; border: 1px solid var(--border-light); border-radius: 4px;
-    cursor: pointer; transition: all .25s;
-    margin-bottom: 5px;
-    background: white;
+    cursor: pointer; transition: all .25s; margin-bottom: 5px; background: white;
 }
 .nav-back:hover { background: var(--text-main); color: #fff; border-color: var(--text-main); }
 
-/* ============ HERO ============ */
-.journey-hero {
-    position: relative; width: 100%; height: 280px;
-    display: flex; align-items: center; justify-content: center;
-    text-align: center; overflow: hidden;
+/* HEADER SANS BANNIERE */
+.voyage-header {
+    max-width: 1000px; margin: 40px auto 30px auto; padding: 0 30px; 
+    border-bottom: 1px dashed var(--border-light); padding-bottom: 20px;
+    animation: fadeInUp 0.7s forwards;
 }
-.hero-image {
-    position: absolute; inset: 0; width: 100%; height: 100%;
-    object-fit: cover; object-position: center; z-index: 1;
-}
-.hero-overlay {
-    position: absolute; inset: 0;
-    background: linear-gradient(to bottom, rgba(28,28,28,0.25) 0%, rgba(28,28,28,0.65) 100%);
-    z-index: 2;
-}
-.hero-content { position: relative; z-index: 5; color: white; padding: 0 20px; max-width: 800px; }
-.script-decoration { display: none !important; }
-.main-title {
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 2.2rem;
-    text-transform: uppercase; font-weight: 900; letter-spacing: -1px;
-    margin: 0 0 12px 0; line-height: 1.2;
-    text-shadow: 0 2px 12px rgba(0,0,0,0.4);
-}
-.journey-location {
-    font-family: 'Cormorant Garamond', serif; font-style: italic;
-    font-size: 1.4rem; margin: 0 0 14px 0; color: rgba(255,255,255,0.92);
-}
-.journey-location:empty { display: none; }
-.journey-meta {
-    font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600;
-    letter-spacing: 2px; text-transform: uppercase; margin: 0;
-    display: inline-flex; gap: 14px; flex-wrap: wrap; justify-content: center;
-    color: rgba(255,255,255,0.92);
-}
-.journey-meta:empty { display: none; }
+.script-decoration { font-family: 'Alex Brush', cursive; font-size: 2.8rem; color: var(--accent-pastel); display: block; margin-bottom: -8px; opacity: 0.95; font-weight: normal; }
+.main-title { font-family: 'Montserrat', sans-serif; font-size: 2.4rem; text-transform: uppercase; font-weight: 900; letter-spacing: -1px; margin: 0 0 15px 0; color: var(--text-main); }
+.intro-text { font-size: 15px; color: var(--text-warm); line-height: 1.65; max-width: 650px; margin-bottom: 0; }
 
-/* ============ CORPS ============ */
-.journey-body {
-    max-width: 1000px; /* J'élargis un peu le conteneur principal aussi */
-    margin: 10px auto 0 auto; 
-    padding: 0 30px 30px 30px;
-    position: relative; z-index: 10;
-}
-.section-title {
-    margin: 10px 0 18px 0; 
-    display: flex; flex-direction: column;
-}
-.section-title .script {
-    font-family: 'Alex Brush', cursive; font-size: 2.4rem;
-    color: var(--accent-pastel); line-height: 1;
-}
-.section-title .caption {
-    font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-soft);
-    margin-top: 4px;
-}
+/* CORPS */
+.journey-body { max-width: 1000px; margin: 10px auto 0 auto; padding: 0 30px 30px 30px; position: relative; z-index: 10; }
+.section-title { margin: 10px 0 18px 0; display: flex; flex-direction: column; }
+.section-title .script { font-family: 'Alex Brush', cursive; font-size: 2.4rem; color: var(--accent-pastel); line-height: 1; font-weight: normal; }
+.section-title .caption { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-soft); margin-top: 4px; }
 
-/* ============ LE CARROUSEL HORIZONTAL (KANBAN) ============ */
-.days-list { 
-    display: flex !important; 
-    flex-direction: row !important;
-    gap: 20px; 
-    overflow-x: auto; 
-    padding-bottom: 25px; 
-    align-items: flex-start; 
-    
-    scrollbar-width: thin; 
-    scrollbar-color: var(--border-light) transparent;
-}
+/* LE CARROUSEL HORIZONTAL (KANBAN) */
+.days-list { display: flex !important; flex-direction: row !important; gap: 20px; overflow-x: auto; padding-bottom: 25px; align-items: flex-start; scrollbar-width: thin; scrollbar-color: var(--border-light) transparent; }
 
-/* La Colonne Trello */
-.day-column {
-    flex: 0 0 420px; /* <--- LA NOUVELLE LARGEUR (Avant : 340px) */
-    display: flex;
-    flex-direction: column;
-    background: var(--paper);
-    border: 1px solid var(--border-light);
-    border-radius: 8px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.03);
-    transition: transform 0.2s, box-shadow 0.2s;
-    overflow: hidden;
-}
-.day-column:hover {
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
+.day-column { flex: 0 0 420px; display: flex; flex-direction: column; background: var(--paper); border: 1px solid var(--border-light); border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,0.03); transition: transform 0.2s, box-shadow 0.2s; overflow: hidden; }
+.day-column:hover { box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
 
-/* L'en-tête du jour */
-.day-item {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 18px; /* Un peu plus d'espace */
-    cursor: pointer; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: stretch; 
-    gap: 15px;
-    position: relative;
-}
+.day-item { background: transparent; border: none; box-shadow: none; padding: 18px; cursor: pointer; display: flex; flex-direction: column; align-items: stretch; gap: 15px; position: relative; }
 .day-item:hover { transform: none; }
 .day-item::after { display: none !important; }
 
-.day-left { 
-    display: flex; 
-    align-items: center; 
-    gap: 18px; 
-    width: 100%; 
-}
-.day-thumb {
-    width: 85px; height: 85px; /* <--- NOUVELLE TAILLE D'IMAGE */
-    flex-shrink: 0;
-    border-radius: 8px; /* <--- RETOUR AU FORMAT CARRÉ/ARRONDI */
-    background-size: cover; background-position: center;
-    background-color: var(--paper-dim);
-    border: 1px solid var(--border-light);
-}
+.day-left { display: flex; align-items: center; gap: 18px; width: 100%; }
+.day-thumb { width: 85px; height: 85px; flex-shrink: 0; border-radius: 8px; background-size: cover; background-position: center; background-color: var(--paper-dim); border: 1px solid var(--border-light); }
 
 .day-meta { flex: 1; }
-.day-name {
-    font-family: 'Cormorant Garamond', serif; font-weight: 700;
-    font-size: 1.4rem; color: var(--text-main); margin-bottom: 4px;
-}
-.day-desc {
-    font-family: 'Lora', serif;
-    color: var(--text-warm); font-size: 14px; line-height: 1.5;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
+.day-name { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 1.4rem; color: var(--text-main); margin-bottom: 4px; }
+.day-desc { font-family: 'Lora', serif; color: var(--text-warm); font-size: 14px; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .day-desc-empty { font-style: italic; color: var(--text-soft); opacity: .75; }
 
-/* Les petits badges (Matin, Midi...) */
 .day-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-.day-chip {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
-    padding: 3px 9px; background: var(--paper-dim); color: var(--text-soft);
-    border: 1px solid var(--border-light); border-radius: 999px; line-height: 1.4;
-}
+.day-chip { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; padding: 3px 9px; background: var(--paper-dim); color: var(--text-soft); border: 1px solid var(--border-light); border-radius: 999px; line-height: 1.4; }
 .day-chip-count { background: var(--accent-pastel); color: #fff; border-color: var(--accent-pastel); }
 
-.days-list:empty::after {
-    content: 'Aucune journée à afficher pour ce voyage.';
-    display: block; padding: 30px; text-align: center;
-    color: var(--text-soft); font-style: italic;
-    background: var(--paper); border: 1px dashed var(--border-light); border-radius: 4px;
-}
+.days-list:empty::after { content: 'Aucune journée à afficher pour ce voyage.'; display: block; padding: 30px; text-align: center; color: var(--text-soft); font-style: italic; background: var(--paper); border: 1px dashed var(--border-light); border-radius: 4px; }
 
-/* Bouton "Voir le détail" dans la colonne */
-.day-item > div:last-child {
-    margin: 0 auto !important; 
-    padding: 0 !important;
-    width: 100%;
-}
-.btn-voir-detail {
-    width: 100%;
-    text-align: center;
-    background: transparent;
-    color: var(--accent-pastel);
-    border: 1px solid var(--accent-pastel);
-    padding: 10px 18px;
-    border-radius: 50px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    white-space: nowrap;
-}
-.day-item:hover .btn-voir-detail {
-    background: var(--accent-pastel);
-    color: white;
-    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.3);
-}
+.day-item > div:last-child { margin: 0 auto !important; padding: 0 !important; width: 100%; }
+.btn-voir-detail { width: 100%; text-align: center; background: transparent; color: var(--accent-pastel); border: 1px solid var(--accent-pastel); padding: 10px 18px; border-radius: 50px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; cursor: pointer; transition: all 0.2s ease; white-space: nowrap; }
+.day-item:hover .btn-voir-detail { background: var(--accent-pastel); color: white; box-shadow: 0 4px 12px rgba(255, 111, 97, 0.3); }
 
-/* ============ L'ACCORDÉON (Détails cachés) ============ */
-.day-details-inline {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    background: var(--paper-dim); 
-    border-radius: 0;
-    border: none;
-    border-top: 1px dashed var(--border-light);
-    margin-top: 0;
-}
-
+/* L'ACCORDÉON */
+.day-details-inline { max-height: 0; overflow: hidden; opacity: 0; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); background: var(--paper-dim); border-radius: 0; border: none; border-top: 1px dashed var(--border-light); margin-top: 0; }
 .day-item.is-open { border-bottom: none; }
-
-.day-details-inline.show {
-    max-height: 2500px; 
-    opacity: 1;
-    padding: 20px;
-    margin-bottom: 0px; 
-}
-
-/* Style des sous-sections horaires (ex: "Matinée") */
+.day-details-inline.show { max-height: 2500px; opacity: 1; padding: 20px; margin-bottom: 0px; }
 .inline-slot-sec { margin-bottom: 20px; }
-.inline-slot-title {
-    font-family: 'Alex Brush', cursive; font-size: 1.8rem;
-    color: var(--accent-pastel); margin-bottom: 10px;
-}
+.inline-slot-title { font-family: 'Alex Brush', cursive; font-size: 1.8rem; color: var(--accent-pastel); margin-bottom: 10px; }
+.inline-act-card { background: white; padding: 12px; border: 1px solid #eee; border-radius: 6px; margin-bottom: 8px; display: flex; }
+.inline-act-thumb { width: 55px; height: 55px; border-radius: 4px; object-fit: cover; }
 
-/* Cartes des activités DANS l'accordéon */
-.inline-act-card {
-    background: white; padding: 12px;
-    border: 1px solid #eee; border-radius: 6px;
-    margin-bottom: 8px; display: flex;
-}
-.inline-act-thumb {
-    width: 55px; height: 55px; border-radius: 4px; object-fit: cover;
-}
-
-/* ============ NOTES PRIVÉES ============ */
+/* NOTES PRIVÉES */
 .notes-section { margin-top: 30px; }
-.private-notes {
-    width: 100%; min-height: 140px; background: var(--paper);
-    border: 1px solid var(--border-light); border-radius: 4px;
-    padding: 18px 20px; resize: vertical;
-    font-family: 'Lora', serif; font-size: 15px; line-height: 1.6;
-    color: var(--text-main); transition: box-shadow .2s, border-color .2s;
-}
-.private-notes:focus {
-    outline: none; border-color: var(--accent-pastel);
-    box-shadow: inset 0 0 0 1px rgba(255,111,97,0.15);
-}
+.private-notes { width: 100%; min-height: 140px; background: var(--paper); border: 1px solid var(--border-light); border-radius: 4px; padding: 18px 20px; resize: vertical; font-family: 'Lora', serif; font-size: 15px; line-height: 1.6; color: var(--text-main); transition: box-shadow .2s, border-color .2s; }
+.private-notes:focus { outline: none; border-color: var(--accent-pastel); box-shadow: inset 0 0 0 1px rgba(255,111,97,0.15); }
 .private-notes::placeholder { color: var(--text-soft); font-style: italic; }
 
-.save-notes-btn {
-    background: var(--accent-pastel); color: white; border: none;
-    padding: 10px 20px; border-radius: 4px; font-family: 'Montserrat', sans-serif;
-    font-weight: 700; font-size: 12px; text-transform: uppercase;
-    cursor: pointer; transition: all 0.3s ease;
-    margin-top: 12px; float: right;
-}
+.save-notes-btn { background: var(--accent-pastel); color: white; border: none; padding: 10px 20px; border-radius: 4px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease; margin-top: 12px; float: right; }
 .save-notes-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(255, 111, 97, 0.3); }
 .notes-section::after { content: ""; display: table; clear: both; }
 
-/* ============ ANIMATIONS ET RESPONSIVE ============ */
+/* TOAST NOTIFICATION */
+#toast-notification { position: fixed; top: -100px; left: 50%; transform: translateX(-50%); background: #1C1C1C; color: white; padding: 12px 24px; border-radius: 8px; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); z-index: 10000; transition: top 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+#toast-notification.show { top: 30px; }
+
+/* MODAL REMPLACEMENT */
+@keyframes spin { 100% { transform: rotate(360deg); } }
+.rm-card { max-width: 850px; }
+.rm-header { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:18px; }
+.rm-helper { color: var(--text-warm); font-size:14px; line-height:1.6; margin-top:8px; }
+#rmSearch:focus { outline: none; border-color: var(--accent-pastel) !important; }
+
+/* Grille des résultats IA et Recherche */
+.rm-carousel { display:grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; padding-bottom:10px; }
+.rm-card-item { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.03); cursor: pointer; transition: transform .25s ease; }
+.rm-card-item:hover { transform: translateY(-2px); border-color: var(--accent-pastel); box-shadow: 0 10px 20px rgba(0,0,0,0.06); }
+.rm-card-visual img { width: 100%; height: 140px; object-fit: cover; display:block; }
+.rm-card-body { padding: 14px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.rm-card-title { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 700; color: var(--text-main); line-height: 1.2; }
+.rm-card-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; color: var(--text-soft); font-weight: 600; text-transform: uppercase; margin-bottom: 4px; }
+.rm-card-dist { font-family: 'Montserrat', sans-serif; font-size: 11px; color: var(--text-soft); font-weight: 600; margin-top: 2px;}
+.rm-card-actions { padding: 0 14px 14px; }
+.rm-pick { width:100%; border:none; background: var(--accent-pastel); color:#fff; padding: 10px 14px; border-radius: 999px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: background 0.2s;}
+.rm-pick:hover { background: var(--text-main); }
+
+/* ANIMATIONS ET RESPONSIVE */
 .fade-in { opacity: 0; transform: translateY(20px); animation: fadeInUp 0.7s forwards; }
 .delay-1 { animation-delay: 0.18s; }
 @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
@@ -325,8 +154,8 @@ html, body {
 @media (max-width: 800px) {
     .top-nav { padding: 16px 20px; flex-wrap: wrap; gap: 10px; }
     .nav-links { gap: 20px; font-size: 13px; }
-    .journey-hero { height: 320px; }
+    .voyage-header { margin: 20px auto; }
     .main-title { font-size: 2rem; }
     .journey-body { padding: 0 18px 60px 18px; }
-    .day-column { flex: 0 0 320px; } /* Adapté pour le mobile aussi */
+    .day-column { flex: 0 0 320px; } 
 }

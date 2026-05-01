@@ -1,3 +1,11 @@
+/* ===== INJECTION DES ANIMATIONS CSS (Pour les spinners) ===== */
+if (!document.getElementById('explora-animations')) {
+    const style = document.createElement('style');
+    style.id = 'explora-animations';
+    style.innerHTML = `@keyframes spin { 100% { transform: rotate(360deg); } }`;
+    document.head.appendChild(style);
+}
+
 /* ===== LA JOLIE MODALE D'ALERTE ===== */
 function showCustomAlert(title, message) {
     let modal = document.getElementById('customAlertModal');
@@ -30,7 +38,6 @@ function showCustomAlert(title, message) {
     modal.querySelector('#caClose').onclick = closeIt;
     modal.querySelector('#caOk').onclick = closeIt;
 }
-
 
 function updateVal(id) {
     document.getElementById('val-' + id).textContent = document.getElementById(id).value;
@@ -78,8 +85,10 @@ if (criteriaForm) {
         const formData = { ...locationData, ...preferencesData };
         console.log("[AVANT SOUMISSION] Critères : ", formData);
 
+        /* --- MODIFICATION ICI : Vraie animation de chargement --- */
         btn.disabled = true;
-        btn.textContent = 'Soumission en cours...';
+        btn.style.cursor = 'wait';
+        btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 50 50" style="animation: spin 1s linear infinite; vertical-align: middle; margin-right: 8px; display: inline-block;"><circle cx="25" cy="25" r="20" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="31.4 31.4" stroke-linecap="round"></circle></svg> Création en cours...`;
 
         try {
             const res = await fetch('/algorithm', {
@@ -110,6 +119,7 @@ if (criteriaForm) {
             showCustomAlert("Erreur de connexion", "Une erreur est survenue lors de la soumission. Veuillez réessayer.");
         } finally {
             btn.disabled = false;
+            btn.style.cursor = 'pointer';
             btn.textContent = originalBtnText;
         }
     });
@@ -138,7 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (!data || !data.address) throw new Error("Lieu introuvable");
 
-                // --- VÉRIFICATION DE LA RÉGION ---
                 const state = data.address.state || '';
                 const stateLower = state.toLowerCase();
                 
@@ -156,7 +165,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     return; 
                 }
 
-                // --- SI LA RÉGION EST BONNE ---
                 const ville = data.address.city || data.address.town || data.address.village || data.address.municipality || 'Lieu inconnu';
                 document.getElementById('ville').value = ville;
                 document.getElementById('selected-ville-name').textContent = ville;

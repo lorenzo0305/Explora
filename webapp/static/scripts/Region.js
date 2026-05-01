@@ -1,30 +1,5 @@
-// ------- Helpers -------
-const $ = s => document.querySelector(s);
-function debounce(fn, wait = 250) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), wait); }; }
-function getSlugFromPath() {
-    const parts = location.pathname.split('/').filter(Boolean);
-    return decodeURIComponent(parts[parts.length - 1] || '');
-}
-const escAttr = s => String(s ?? '').replace(/"/g, '&quot;');
+const escapeHtmlStr = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
-// -------- Normalisation région --------
-const REGION_ALIASES = {
-    "hauts-de-france": "Hauts-de-France",
-    "hdf": "Hauts-de-France",
-    "auvergne-rhone-alpes": "Auvergne-Rhône-Alpes",
-    "ara": "Auvergne-Rhône-Alpes",
-};
-function toAsciiSlug(s) {
-    return String(s || "").normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-}
-function resolveRegion(slugFromUrl) {
-    const key = toAsciiSlug(slugFromUrl);
-    const display = REGION_ALIASES[key] || slugFromUrl;
-    const apiSlug = display;
-    return { displayName: display, apiSlug };
-}
-
-/* --- JOLIE NOTIFICATION FLOTTANTE --- */
 function showToast(message) {
     const toast = document.createElement('div');
     toast.textContent = message;
@@ -34,181 +9,194 @@ function showToast(message) {
     setTimeout(() => { toast.style.opacity = '0'; setTimeout(() => toast.remove(), 300); }, 2500);
 }
 
-// ------- Cards -------
-function cardHTML(item) {
-    const img = item.image || '/static/img/no-image.jpg';
-    const loc = item.locality ? `<div class="meta">${item.locality}</div>` : '';
-    const name = item.name || 'Sans nom';
-    const types = Array.isArray(item.types) ? item.types.join('|') : '';
-    const isFav = window.WishLikes ? window.WishLikes.has(item.id) : false;
-    const likedClass = isFav ? 'active' : '';
+// Ici on s'assure que "fond" renvoie systématiquement vers simple.jpg comme tu le souhaitais
+const THEMES_PHONES = {
+    "Nature": {
+        fond: "/static/img/simple.jpg", 
+        icones: ['/static/img/nature1.jpg','/static/img/nature2.jpg','/static/img/nature3.jpg','/static/img/nature4.jpg','/static/img/nature5.jpg','/static/img/nature6.jpg']
+    },
+    "Gastronomie": {
+        fond: "/static/img/simple.jpg", 
+        icones: ['/static/img/food1.jpg','/static/img/food2.jpg','/static/img/food3.jpg','/static/img/food4.jpg','/static/img/food5.jpg','/static/img/food6.jpg']
+    },
+    "Culture": {
+        fond: "/static/img/simple.jpg", 
+        icones: ['/static/img/culture1.jpg','/static/img/culture2.jpg','/static/img/culture3.jpg','/static/img/culture4.jpg','/static/img/culture5.jpg','/static/img/culture6.jpg']
+    },
+    "Sport": {
+        fond: "/static/img/simple.jpg", 
+        icones: ['/static/img/sport1.jpg','/static/img/sport2.jpg','/static/img/sport3.jpg','/static/img/sport4.jpg','/static/img/sport5.png','/static/img/sport6.jpg']
+    },   
+    "Détente": {
+        fond: "/static/img/simple.jpg", 
+        icones: ['/static/img/detente1.jpg','/static/img/detente2.jpg','/static/img/detente3.jpg','/static/img/detente4.jpg','/static/img/detente55.jpg','/static/img/detente6.jpg']
+    },
+    "Shopping": {
+        fond: "/static/img/simple.jpg", 
+        icones: ['/static/img/shopping1.jpg','/static/img/shopping2.jpg','/static/img/shopping3.jpg','/static/img/shopping4.jpg','/static/img/shopping5.jpg','/static/img/shopping6.jpg']
+    },
+};
 
-    return `<div class="card" data-id="${escAttr(item.id)}" data-name="${escAttr(name)}" data-image="${escAttr(img)}" data-types="${escAttr(types)}">
-        <button class="fav-action ${likedClass}" 
-                style="position:absolute; top:8px; left:8px; z-index:2; background:rgba(0,0,0,0.5);"
-                title="Mettre en favoris">❤</button>
-        
-        <button class="add-btn" title="Ajouter au panier" aria-label="Ajouter au panier">+</button>
-        <div class="thumb" style="background-image:url('${img}')"></div>
-        <div class="name">${name}</div>
-        ${loc}
-      </div>`;
-}
+const MIX_SEQ = [0, 1, 2, 3, 4, 5, 2, 4, 0, 5, 1, 3, 4, 2, 5, 0, 3, 1, 5, 3, 1, 4, 2];
+let currentCategoryName = ''; 
 
-function bindCards(container) {
-    container.querySelectorAll('.card').forEach(c => {
-        c.addEventListener('click', () => {
-            const id = c.getAttribute('data-id');
-            if (id) location.href = `/object/${encodeURIComponent(id)}`;
-        });
+window.openPhone = async function(categoryName) {
+    currentCategoryName = categoryName; 
+    const modal = document.getElementById('giantPhoneModal');
+    const grid = document.getElementById('appGrid');
+    const preview = document.getElementById('activityPreview');
+    const phoneScreen = document.querySelector('.giant-screen-landscape');
+    
+    const regionNameEl = document.getElementById('regionName');
+    let regionTitre = regionNameEl ? regionNameEl.textContent.toUpperCase() : ''; 
+    let regionSource = regionTitre.includes("AUVERGNE") ? "Auvergne" : (regionTitre.includes("HAUT") ? "Haut_de_France" : regionTitre);
+
+    const currentTheme = THEMES_PHONES[categoryName] || THEMES_PHONES["Nature"];
+    phoneScreen.style.backgroundImage = `url('${currentTheme.fond}')`;
+
+    // On retire la potentielle classe de fermeture de la dernière fois
+    modal.classList.remove('fade-out');
+
+    grid.classList.remove('hidden');
+    preview.classList.remove('show');
+    preview.innerHTML = ''; 
+
+    // LE TITRE SE FAIT UNE SEULE FOIS ICI (Pas de "Catégorie")
+    grid.innerHTML = `
+        <h2 class="app-title">${categoryName}</h2>
+        <div class="app-grid-icons"><p style="color:#111; font-weight:bold;">Chargement...</p></div>
+    `;
+    
+    // On l'affiche avec display flex pour qu'il soit cliquable
+    modal.style.display = 'flex';
+
+    try {
+        const response = await fetch(`/api/activites/${regionSource}/${categoryName}`);
+        const data = await response.json();
         
-        // Coeur
-        const fav = c.querySelector('.fav-action');
-        if (fav) {
-            fav.addEventListener('click', (e) => {
-                e.stopPropagation();
-                if (window.WishLikes) {
-                    const id = c.dataset.id;
-                    const types = (c.dataset.types || '').split('|').filter(Boolean);
-                    window.WishLikes.toggle({ id, name: c.dataset.name, image: c.dataset.image, types });
-                    window.WishLikes.refresh();
-                    fav.classList.toggle('active', window.WishLikes.has(id));
-                }
-            });
+        const gridIconsContainer = grid.querySelector('.app-grid-icons');
+        gridIconsContainer.innerHTML = ''; 
+
+        if (!data || data.length === 0) {
+            gridIconsContainer.innerHTML = `<p style="color:#111;">Aucune activité trouvée.</p>`;
+            return;
         }
 
-        // Panier
-        const add = c.querySelector('.add-btn');
-        if (add) {
-            add.addEventListener('click', (e) => {
-                e.stopPropagation();
-                if (window.WishBasket) {
-                    const id = c.dataset.id;
-                    const name = c.dataset.name || 'Sans nom';
-                    const image = c.dataset.image || '';
-                    const types = (c.dataset.types || '').split('|').filter(Boolean);
-                    window.WishBasket.add({ id, name, image, types });
-                    window.WishBasket.refresh();
-                    showToast('Ajouté au panier !');
-                }
+        data.forEach((act, index) => {
+            let imgUrl = "";
+
+            if (act.image && !act.image.includes('no-image') && !act.image.includes('appareil_photo')) {
+                imgUrl = act.image;
+            } else {
+                const variantIndex = MIX_SEQ[index % MIX_SEQ.length] % currentTheme.icones.length;
+                imgUrl = currentTheme.icones[variantIndex];
+            }
+
+            const icon = document.createElement('div');
+            icon.className = 'app-icon';
+            icon.innerHTML = `
+                <div class="app-icon-img" style="background-image: url('${imgUrl}');"></div>
+                <div class="app-icon-text">${escapeHtmlStr(act.name)}</div>
+            `;
+
+            icon.addEventListener('click', () => {
+                showActivityDetails(act, imgUrl);
             });
+
+            gridIconsContainer.appendChild(icon);
+        });
+    } catch (err) {
+        const gridIconsContainer = grid.querySelector('.app-grid-icons');
+        if(gridIconsContainer) gridIconsContainer.innerHTML = '<p style="color:red;">Erreur de connexion</p>';
+    }
+};
+
+function showActivityDetails(act, resolvedImgUrl) {
+    const grid = document.getElementById('appGrid');
+    const preview = document.getElementById('activityPreview');
+
+    const activityName = act.name || 'Sans nom';
+
+    // On cache doucement la grille des apps
+    grid.classList.add('hidden');
+
+    const types = Array.isArray(act.types) ? act.types.join(' · ') : act.category || '';
+    const desc = act.description || "Aucune description détaillée n'est disponible pour cette activité. Laissez-vous surprendre sur place !";
+    const id = act.id || act._id || act.url || '';
+    const isFav = window.WishLikes ? window.WishLikes.has(id) : false;
+
+    // Plein écran dans le téléphone !
+    preview.innerHTML = `
+        <div class="preview-header">
+            <button class="back-to-apps-btn" onclick="window.backToAppGrid()">←</button>
+            <div class="header-name">${escapeHtmlStr(activityName)}</div>
+        </div>
+        
+        <div class="preview-body">
+            <div class="preview-visual" style="background-image: url('${resolvedImgUrl}');"></div>
+            
+            <div class="preview-info-pane">
+                <div class="pi-meta">${escapeHtmlStr(types)}</div>
+                <h3 class="pi-title">${escapeHtmlStr(activityName)}</h3>
+                <p class="pi-desc">${escapeHtmlStr(desc)}</p>
+                
+                <div class="pi-actions">
+                    <button class="btn-fav ${isFav ? 'active' : ''}">❤</button>
+                    <button class="btn-pan">+ Panier</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    const btnFav = preview.querySelector('.btn-fav');
+    btnFav.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if(window.WishLikes) {
+            window.WishLikes.toggle({ id, name: activityName, image: resolvedImgUrl, types: act.types || [] });
+            btnFav.classList.toggle('active', window.WishLikes.has(id));
+            window.WishLikes.refresh();
         }
     });
-}
 
-async function loadCategory(apiSlug, typ, limit = 24) {
-    const row = document.getElementById(`row-${typ}`);
-    if (!row) return;
-    row.innerHTML = '';
-    try {
-        const r = await fetch(`/regions/${encodeURIComponent(apiSlug)}/cards?type=${encodeURIComponent(typ)}&limit=${limit}`);
-        const items = r.ok ? await r.json() : [];
-        row.innerHTML = items.map(cardHTML).join('') || '<div style="opacity:.7">Aucun élément</div>';
-        bindCards(row);
-    } catch (e) {
-        row.innerHTML = '<div style="color:#f88">Erreur de chargement</div>';
-    }
-}
-
-// ------- Recherche locale -------
-const resultsBox = document.getElementById('results');
-const searchInput = document.getElementById('search');
-function clearResults() { resultsBox.innerHTML = ''; resultsBox.style.display = 'none'; }
-
-function renderResults(items) {
-    resultsBox.innerHTML = '';
-    if (!items || !items.length) {
-        resultsBox.innerHTML = '<div class="no-res">Aucun résultat</div>';
-    } else {
-        items.forEach(item => {
-            const row = document.createElement('div');
-            row.className = 'result-item';
-            row.addEventListener('click', () => { location.href = `/object/${encodeURIComponent(item.id)}`; });
-
-            const left = document.createElement('div'); left.className = 'result-left';
-            const img = document.createElement('img'); img.className = 'result-thumb'; img.src = item.image || '/static/img/no-image.jpg'; img.alt = item.name || 'Résultat';
-            const meta = document.createElement('div');
-            const name = document.createElement('div'); name.className = 'result-name'; name.textContent = item.name || 'Sans nom';
-            const type = document.createElement('div'); type.style.fontSize = '12px'; type.style.opacity = '.75'; type.textContent = (item.types && item.types[0]) ? item.types[0] : '';
-            meta.append(name, type); left.append(img, meta);
-
-            // Container Actions (Like + Add)
-            const right = document.createElement('div');
-            right.className = 'result-add';
-            right.style.display = 'flex'; right.style.gap = '8px'; right.style.alignItems = 'center';
-
-            // Like
-            const heartBtn = document.createElement('button');
-            const isFav = window.WishLikes ? window.WishLikes.has(item.id) : false;
-            heartBtn.className = isFav ? 'fav-action active' : 'fav-action';
-            heartBtn.textContent = '❤';
-            heartBtn.dataset.id = item.id;
-            heartBtn.style.background = 'transparent'; heartBtn.style.border = '1px solid #eee';
-            heartBtn.style.color = heartBtn.classList.contains('active') ? '#ff4081' : '#ccc';
-            heartBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                if (window.WishLikes) {
-                    window.WishLikes.toggle(item);
-                    window.WishLikes.refresh();
-                    const liked = window.WishLikes.has(item.id);
-                    heartBtn.className = liked ? 'fav-action active' : 'fav-action';
-                    heartBtn.style.color = liked ? '#ff4081' : '#ccc';
-                }
-            });
-
-            // Add
-            const addBtn = document.createElement('button');
-            addBtn.className = 'add'; addBtn.textContent = '+';
-            addBtn.addEventListener('click', (e) => {
-                e.stopPropagation(); 
-                if (window.WishBasket) {
-                    window.WishBasket.add(item); 
-                    window.WishBasket.refresh();
-                    showToast('Ajouté au panier !');
-                }
-            });
-
-            right.appendChild(heartBtn);
-            right.appendChild(addBtn);
-
-            row.append(left, right);
-            resultsBox.append(row);
-        });
-    }
-    resultsBox.style.display = 'block';
-}
-
-let searchSeq = 0;
-const doSearch = debounce(async function (q, apiSlug) {
-    const query = (q || '').trim();
-    if (query.length < 2) { clearResults(); return; }
-    const mySeq = ++searchSeq;
-    resultsBox.innerHTML = '<div class="results-loader">Recherche…</div>';
-    resultsBox.style.display = 'block';
-    try {
-        const r = await fetch(`/regions/${encodeURIComponent(apiSlug)}/cards?q=${encodeURIComponent(query)}&limit=60`, { cache: 'no-store' });
-        if (mySeq !== searchSeq) return;
-        if (!r.ok) { clearResults(); return; }
-        const data = await r.json();
-        renderResults(data);
-    } catch (e) {
-        if (mySeq !== searchSeq) return;
-        clearResults();
-    }
-}, 250);
-
-// ------- Init -------
-document.addEventListener('DOMContentLoaded', () => {
-    const rawSlug = getSlugFromPath();
-    const { displayName, apiSlug } = resolveRegion(rawSlug);
-    if(document.getElementById('regionName')) document.getElementById('regionName').textContent = displayName || 'Région';
-    
-    loadCategory(apiSlug, 'CulturalSite', 24);
-    loadCategory(apiSlug, 'FoodEstablishment', 24);
-    loadCategory(apiSlug, 'PlaceOfInterest', 24);
-    
-    if(searchInput) searchInput.addEventListener('input', e => doSearch(e.target.value, apiSlug));
-    document.addEventListener('click', (e) => {
-        if (resultsBox && !resultsBox.contains(e.target) && e.target !== searchInput) resultsBox.style.display = 'none';
+    const btnPan = preview.querySelector('.btn-pan');
+    btnPan.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if(window.WishBasket) {
+            window.WishBasket.add({ id, name: activityName, image: resolvedImgUrl, types: act.types || [] });
+            window.WishBasket.refresh();
+            showToast('Ajouté au panier !'); 
+        }
     });
-});
+
+    preview.classList.add('show');
+}
+
+window.backToAppGrid = function() {
+    const grid = document.getElementById('appGrid');
+    const preview = document.getElementById('activityPreview');
+
+    preview.classList.remove('show');
+    grid.classList.remove('hidden');
+    
+    setTimeout(() => {
+        if(!preview.classList.contains('show')) preview.innerHTML = ''; 
+    }, 400);
+};
+
+window.closePhone = function(e) {
+    const modal = document.getElementById('giantPhoneModal');
+    const grid = document.getElementById('appGrid');
+    const preview = document.getElementById('activityPreview');
+    
+    // On lance la superbe animation de fermeture (Rotation inverse)
+    modal.classList.add('fade-out');
+    
+    // Une fois l'animation CSS terminée (300ms), on remet display à none pour éviter le bug de la page !
+    setTimeout(() => {
+        modal.style.display = 'none';
+        modal.classList.remove('fade-out');
+        grid.classList.remove('hidden');
+        preview.classList.remove('show');
+        preview.innerHTML = '';
+    }, 300);
+};

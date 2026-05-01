@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Explora — Détail du voyage</title>
-
     <link rel="stylesheet" href="/static/styles/app.css">
-    <link rel="stylesheet" href="/static/styles/ViewJourney.css?v=5">
+    <link rel="stylesheet" href="/static/styles/ViewJourney.css?v=8">
     <link rel="stylesheet" href="/static/styles/wishbasket.css?v=2">
     <script src="/static/scripts/wishbasket.js?v=1" defer></script>
-    <script src="/static/scripts/ViewJourney.js?v=5" defer></script>
-
+    <script src="/static/scripts/ViewJourney.js?v=8" defer></script>
+    <script src="/static/scripts/imageDictionary.js?v=1" defer></script>
+    <script src="/static/scripts/wishbasket.js?v=1" defer></script>
+    <script src="/static/scripts/ViewJourney.js?v=9" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
     <div class="app-frame">
-
         <nav class="top-nav">
             <div class="nav-logo"><span class="logo-fill">EXP</span><span class="logo-outline">LORA</span></div>
             <div class="nav-links">
@@ -45,7 +42,8 @@
                     </button>
                     <div id="floatingBasket" class="floating-panel"></div>
                 </div>
-                <button id="backBtn" type="button" class="nav-back" title="Retour">
+                <!-- Le bouton retour, masqué au début et replacé par le JS -->
+                <button id="backBtn" type="button" class="nav-back" title="Retour" style="display:none;">
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
                     <span>Retour</span>
                 </button>
@@ -53,20 +51,16 @@
         </nav>
 
         <div class="content-panel">
-
-            <header class="journey-hero fade-in">
-                <img id="cover" class="hero-image" alt="Couverture du voyage" src="/static/img/travel.jpg">
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <span class="script-decoration">Votre carnet</span>
-                    <h1 id="journeyTitle" class="main-title">Voyage</h1>
-                    <p id="journeyLocation" class="journey-location"></p>
-                    <p id="summaryLine" class="journey-meta"></p>
+            <!-- NOUVEAU HEADER ÉPURÉ (Sans bannière d'image) -->
+            <header class="voyage-header fade-in">
+                <div>
+                    <span id="journeyLocation" class="script-decoration"></span>
+                    <h1 id="journeyTitle" class="main-title"></h1>
+                    <p id="summaryLine" class="intro-text"></p>
                 </div>
             </header>
 
             <main class="journey-body fade-in delay-1">
-
                 <section class="days-section">
                     <h2 class="section-title">
                         <span class="script">Itinéraire</span>
@@ -82,15 +76,10 @@
                         <span class="script">Notes personnelles</span>
                         <span class="caption">Vos impressions, à garder pour plus tard</span>
                     </h2>
-                    <textarea id="privateNotes" class="private-notes"
-                        placeholder="Vos pensées sur ce voyage, ce que vous voulez retenir, des choses à essayer la prochaine fois..."></textarea>
+                    <textarea id="privateNotes" class="private-notes" placeholder="Vos pensées sur ce voyage, ce que vous voulez retenir, des choses à essayer la prochaine fois..."></textarea>
                 </section>
-
             </main>
-
         </div>
     </div>
-
 </body>
-
 </html>

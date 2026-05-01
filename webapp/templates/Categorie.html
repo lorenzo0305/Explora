@@ -6,17 +6,18 @@
     <title>Explora — {{ categorie }}</title>
 
     <link rel="stylesheet" href="/static/styles/app.css">
-    <link rel="stylesheet" href="/static/styles/Categorie.css?v=5">
-    
+    <link rel="stylesheet" href="/static/styles/Categorie.css?v=6">
     <link rel="stylesheet" href="/static/styles/wishbasket.css?v=6">
     
+    <!-- Ajout du dictionnaire -->
+    <script src="/static/scripts/imageDictionary.js?v=2" defer></script>
     <script src="/static/scripts/wishbasket.js?v=5" defer></script>
     <script>const CATEGORIE_ACTUELLE = "{{ categorie }}";</script>
-    <script src="/static/scripts/Categorie.js?v=5" defer></script>
+    <script src="/static/scripts/Categorie.js?v=6" defer></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -51,18 +52,16 @@
         </nav>
 
         <div class="content-panel">
-            <div class="categorie-inner">
-                
-                <div class="cat-header fade-in">
-                    <a href="/Destinations" class="back-link">← Retour au catalogue</a>
-                    <span class="script-decoration">Votre sélection</span>
-                    <h1 class="main-title" id="pageTitle">{{ categorie }}</h1>
-                </div>
+            <!-- NOUVELLE STRUCTURE SANS PADDING POUR LE BORD-À-BORD -->
+            <div class="cat-header fade-in">
+                <a href="/Destinations" class="back-link">← Retour au catalogue</a>
+                <span class="script-decoration">Votre sélection</span>
+                <h1 class="main-title" id="pageTitle">{{ categorie }}</h1>
+            </div>
 
-                <div class="activities-list fade-in delay-1" id="activitiesList">
-                    <p style="text-align:center; color:#888;">Recherche des meilleures activités en cours...</p>
-                </div>
-
+            <!-- LE CARROUSEL HORIZONTAL EDGE-TO-EDGE -->
+            <div class="activities-list fade-in delay-1" id="activitiesList">
+                <p style="text-align:center; color:#888; width: 100%;">Recherche des meilleures activités en cours...</p>
             </div>
         </div>
     </div>

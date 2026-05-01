@@ -124,8 +124,11 @@ function renderJourneys(journeys) {
         const isEditor = j.source === 'editor' || j.source === 'Editor';
         const sourceText = isEditor ? "Voyage conçu manuellement" : "Voyage généré par IA";
         
-        const safeName = esc(j.name || "Voyage");
-        const formattedName = safeName.replace(/\s*[—\-]\s*/, '<br>');
+        // CORRECTION: Nettoyage total de tous les anciens <br> enregistrés
+        let cleanName = String(j.name || "Voyage").replace(/\s*&lt;br\s*\/?&gt;\s*/gi, ' - ').replace(/\s*<br\s*\/?>\s*/gi, ' - ');
+        
+        // On n'injecte plus rien de bizarre, on échappe juste pour la sécurité HTML
+        const formattedName = esc(cleanName);
 
         item.innerHTML = `
           <div class="left">
@@ -150,7 +153,7 @@ function renderJourneys(journeys) {
             e.stopPropagation();
             showCustomConfirm(
                 "Supprimer ce voyage ?", 
-                `Êtes-vous sûr de vouloir supprimer définitivement « ${j.name || 'ce carnet'} » ?`, 
+                `Êtes-vous sûr de vouloir supprimer définitivement « ${cleanName} » ?`, 
                 () => {
                     lsSetJourneys(lsGetJourneys().filter(x => String(x.id) !== String(j.id)));
                     loadJourneys();

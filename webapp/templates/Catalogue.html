@@ -6,15 +6,17 @@
     <title>Explora — Catalogue d'activités</title>
 
     <link rel="stylesheet" href="/static/styles/app.css">
-    <link rel="stylesheet" href="/static/styles/Catalogue.css?v=15.0">
+    <link rel="stylesheet" href="/static/styles/Catalogue.css?v=16.0">
     <link rel="stylesheet" href="/static/styles/wishbasket.css?v=2">
 
+    <!-- LE VOILÀ : Notre dictionnaire d'images -->
+    <script src="/static/scripts/imageDictionary.js?v=2" defer></script>
     <script src="/static/scripts/wishbasket.js" defer></script>
-    <script src="/static/scripts/Catalogue.js" defer></script>
+    <script src="/static/scripts/Catalogue.js?v=4" defer></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -70,55 +72,58 @@
                     </div>
                 </div>
 
-    <div class="sections-container">
+                <div class="sections-container">
 
-        <div class="section fade-in delay-1">
-            <h2 class="section-title">Parcourir par région</h2>
-            <div class="destinations-grid">
+                    <div class="section fade-in delay-1">
+                        <h2 class="section-title">Parcourir par région</h2>
+                        <div class="destinations-grid">
 
-                <a href="/region/Hauts-de-France" class="dest-card">
-                    <div class="dest-image" style="background-image: url('/static/img/baie_de_somme2.jpg');"></div>
-                    <div class="dest-content">
-                        <h3>Hauts-de-France</h3>
-                        <span class="dest-link">Découvrir ➔</span>
+                            <a href="/region/Hauts-de-France" class="dest-card">
+                                <div class="dest-image" style="background-image: url('/static/img/baie_de_somme2.jpg');"></div>
+                                <div class="dest-content">
+                                    <h3>Hauts-de-France</h3>
+                                    <span class="dest-link">Découvrir ➔</span>
+                                </div>
+                            </a>
+
+                            <a href="/region/Auvergne-Rhone-Alpes" class="dest-card">
+                                <div class="dest-image" style="background-image: url('/static/img/auvergne.jpg');"></div>
+                                <div class="dest-content">
+                                    <h3>Auvergne-Rhône-Alpes</h3>
+                                    <span class="dest-link">Découvrir ➔</span>
+                                </div>
+                            </a>
+
+                        </div>
                     </div>
-                </a>
 
-                <a href="/region/Auvergne-Rhone-Alpes" class="dest-card">
-                    <div class="dest-image" style="background-image: url('/static/img/auvergne.jpg');"></div>
-                    <div class="dest-content">
-                        <h3>Auvergne-Rhône-Alpes</h3>
-                        <span class="dest-link">Découvrir ➔</span>
+                    <div class="section fade-in delay-2">
+                        <h2 class="section-title">Parcourir par envie</h2>
+                        <div class="categories-grid">
+                            <a href="/categorie/Nature" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/static/img/montagne_france2.jpg');">
+                                <h4>Nature & Grand Air</h4>
+                            </a>
+                            <a href="/categorie/Gastronomie" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/static/img/boeuf_bourguignon.jpg');">
+                                <h4>Gastronomie</h4>
+                            </a>
+                            <a href="/categorie/Culture" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/static/img/semur_en_auxois.jpg');">
+                                <h4>Patrimoine Culturel</h4>
+                            </a>
+                            <a href="/categorie/Sport" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/static/img/vtt.jpg');">
+                                <h4>Sport & Aventure</h4>
+                            </a>
+                            <a href="/categorie/Detente" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/static/img/detente.jpg');">
+                                <h4>Détente & Bien-être</h4>
+                            </a>
+                            <a href="/categorie/Shopping" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/static/img/marche_nimes.jpg');">
+                                <h4>Shopping & Boutiques</h4>
+                            </a>
+                        </div>
                     </div>
-                </a>
 
+                </div>
             </div>
         </div>
-
-        <div class="section fade-in delay-2">
-            <h2 class="section-title">Parcourir par envie</h2>
-            <div class="categories-grid">
-                <a href="/categorie/Nature" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/static/img/montagne_france2.jpg');">
-                    <h4>Nature & Grand Air</h4>
-                </a>
-                <a href="/categorie/Gastronomie" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/static/img/boeuf_bourguignon.jpg');">
-                    <h4>Gastronomie</h4>
-                </a>
-                <a href="/categorie/Culture" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/static/img/semur_en_auxois.jpg');">
-                    <h4>Patrimoine Culturel</h4>
-                </a>
-                <a href="/categorie/Sport" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/static/img/vtt.jpg');">
-                    <h4>Sport & Aventure</h4>
-                </a>
-                <a href="/categorie/Detente" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/static/img/detente.jpg');">
-                    <h4>Détente & Bien-être</h4>
-                </a>
-                <a href="/categorie/Shopping" class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/static/img/marche_nimes.jpg');">
-                    <h4>Shopping & Boutiques</h4>
-                </a>
-            </div>
-        </div>
-
     </div>
 
 </body>

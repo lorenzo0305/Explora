@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explora — Votre voyage</title>
     <link rel="stylesheet" href="/static/styles/app.css">
-    <link rel="stylesheet" href="/static/styles/Voyage.css?v=4">
+    <link rel="stylesheet" href="/static/styles/Voyage.css?v=5">
     <link rel="stylesheet" href="/static/styles/wishbasket.css?v=2">
+    
+    <script src="/static/scripts/imageDictionary.js?v=1" defer></script>
     <script src="/static/scripts/wishbasket.js?v=1" defer></script>
-    <script src="/static/scripts/Voyage.js?v=6" defer></script>
+    <script src="/static/scripts/Voyage.js?v=8" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="app-frame">
-
         <nav class="top-nav">
             <div class="nav-logo">
                 <span class="logo-fill">EXP</span><span class="logo-outline">LORA</span>
             </div>
-
+            
             <div class="nav-links">
                 <a href="/">Accueil</a>
                 <a href="/makejourney">Créer mon voyage</a>
@@ -47,10 +48,6 @@
                     </button>
                     <div id="floatingBasket" class="floating-panel"></div>
                 </div>
-                <a href="/makejourney" class="nav-back" title="Retour à la création">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-                    <span>Modifier</span>
-                </a>
             </div>
         </nav>
 
@@ -61,20 +58,29 @@
         <div class="content-panel">
             <div class="content-inner">
 
-                <header class="voyage-header">
-                    <span class="script-decoration">Votre itinéraire</span>
-                    <h1 class="main-title">Carnet de voyage</h1>
-                    <p class="intro-text" id="voyage-subtitle">
-                        Découvrez les étapes imaginées par notre intelligence artificielle selon vos envies. Cliquez sur une activité pour en savoir plus.
-                    </p>
+                <!-- MODIFICATION : Header flexible avec bouton Retour -->
+                <header class="voyage-header" style="display:flex; justify-content:space-between; align-items:flex-end; border-bottom: 1px dashed var(--border-light); padding-bottom: 20px; margin-bottom: 30px;">
+                    <div>
+                        <span class="script-decoration">Votre itinéraire</span>
+                        <h1 class="main-title">Carnet de voyage</h1>
+                        <p class="intro-text" id="voyage-subtitle" style="margin-bottom:0;">
+                            Découvrez les étapes imaginées par notre intelligence artificielle.
+                        </p>
+                    </div>
+                    <a href="/makejourney" class="nav-back" title="Retour aux critères">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        <span>Retour</span>
+                    </a>
                 </header>
 
-                <div id="conteneur-itineraire" class="itineraire">
-                    <!-- Injecté par Voyage.js -->
-                </div>
+                <!-- MODIFICATION : La liste horizontale -->
+                <section class="days-section">
+                    <div id="daysList" class="days-list">
+                        <!-- Rempli par Voyage.js -->
+                    </div>
+                </section>
 
                 <div class="voyage-actions">
-                    <a href="/makejourney" class="btn-secondary">← Modifier mes critères</a>
                     <button type="button" class="btn-explorer" id="saveVoyageBtn">Sauvegarder ce voyage</button>
                 </div>
 

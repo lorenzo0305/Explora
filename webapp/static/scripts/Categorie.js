@@ -12,86 +12,80 @@ function showToast(message) {
     }, 2500);
 }
 
-// --- SYSTÈME D'IMAGES PREMIUM ---
-const THEMES = {
-    "Nature": { icones: ['/static/img/nature1.jpg', '/static/img/nature2.jpg', '/static/img/nature3.jpg', '/static/img/nature4.jpg', '/static/img/nature5.jpg', '/static/img/nature6.jpg'] },
-    "Gastronomie": { icones: ['/static/img/food1.jpg', '/static/img/food2.jpg', '/static/img/food3.jpg', '/static/img/food4.jpg', '/static/img/food5.jpg', '/static/img/food6.jpg'] },
-    "Culture": { icones: ['/static/img/culture1.jpg', '/static/img/culture2.jpg', '/static/img/culture3.jpg', '/static/img/culture4.jpg', '/static/img/culture5.jpg', '/static/img/culture6.jpg'] },
-    "Sport": { icones: ['/static/img/sport1.jpg', '/static/img/sport2.jpg', '/static/img/sport3.jpg', '/static/img/sport4.jpg', '/static/img/sport5.png', '/static/img/sport6.jpg'] },   
-    "Détente": { icones: ['/static/img/detente1.jpg', '/static/img/detente2.jpg', '/static/img/detente3.jpg', '/static/img/detente4.jpg', '/static/img/detente55.jpg', '/static/img/detente6.jpg'] },
-    "Shopping": { icones: ['/static/img/shopping1.jpg', '/static/img/shopping2.jpg', '/static/img/shopping3.jpg', '/static/img/shopping4.jpg', '/static/img/shopping5.jpg', '/static/img/shopping6.jpg'] }
-};
+// Fonction sécurisée pour l'image (si imageDictionary est prêt)
+const NO_IMG = '/static/img/travel.jpg';
+function getSafeImage(item) {
+    if (!item) return NO_IMG;
+    if (typeof window !== 'undefined' && typeof window.getActivityImage === 'function') {
+        try { return window.getActivityImage(item); } catch(e) { }
+    }
+    return item.image || item.photo || item.cover || NO_IMG;
+}
 
-const MIX = [0, 1, 2, 3, 4, 5, 2, 4, 0, 5, 1, 3, 4, 2, 5, 0, 3, 1, 5, 3, 1, 4, 2];
+const escapeHtml = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
-// Initialisation au chargement
 document.addEventListener('DOMContentLoaded', async () => {
     const query = CATEGORIE_ACTUELLE;
     document.getElementById('pageTitle').textContent = query.toUpperCase();
-    const currentTheme = THEMES[query] || THEMES["Nature"];
     const listContainer = document.getElementById('activitiesList');
 
     try {
-        const res = await fetch(`/search?query=${encodeURIComponent(query)}&limit=50`);
+        const res = await fetch(`/search?query=${encodeURIComponent(query)}&limit=30`);
         if (!res.ok) throw new Error("Erreur réseau");
         
         const data = await res.json();
         const items = Array.isArray(data) ? data : (data.items || []);
 
         if (items.length === 0) {
-            listContainer.innerHTML = `<p style="text-align:center; color:#888;">Aucune activité trouvée pour la catégorie ${query}.</p>`;
+            listContainer.innerHTML = `<p style="text-align:center; color:#888; width: 100%;">Aucune activité trouvée pour la catégorie ${escapeHtml(query)}.</p>`;
             return;
         }
 
         listContainer.innerHTML = '';
 
-        items.forEach((item, index) => {
+        items.forEach((item) => {
             const id = item.id || item._id || item.url || '#';
-            const name = item.name || 'Activité sans nom';
-            
-            let imgUrl = "";
-            if (item.image && !item.image.includes('no-image') && !item.image.includes('appareil_photo')) { imgUrl = item.image; } 
-            else if (item.photo && !item.photo.includes('no-image') && !item.photo.includes('appareil_photo')) { imgUrl = item.photo; } 
-            else if (item.thumbnail && !item.thumbnail.includes('no-image') && !item.thumbnail.includes('appareil_photo')) { imgUrl = item.thumbnail; } 
-            else {
-                const variantIndex = MIX[index % MIX.length] % currentTheme.icones.length;
-                imgUrl = currentTheme.icones[variantIndex];
-            }
+            const name = escapeHtml(item.name || 'Activité sans nom');
+            const imgUrl = escapeHtml(getSafeImage(item));
 
-            const type = (item.types && item.types[0]) ? item.types[0].toLowerCase() : query.toLowerCase();
+            const type = (item.types && item.types[0]) ? item.types[0] : query;
             const locality = item.locality || item.region || 'Lieu inconnu';
-            const metaText = `${type} ~ ${locality}`;
-            const desc = item.description || "Aucune description détaillée n'est disponible pour cette activité. Laissez-vous surprendre sur place !";
+            const metaText = escapeHtml(`${type} · ${locality}`);
+            const desc = escapeHtml(item.description || "Aucune description détaillée n'est disponible pour cette activité. Laissez-vous surprendre sur place !");
 
             const card = document.createElement('div');
             card.className = 'activity-accordion';
             const isFav = window.WishLikes ? window.WishLikes.has(id) : false;
 
+            // La magie est ici : activity-details est maintenant en dessous des boutons !
             card.innerHTML = `
-                <div class="activity-header">
-                    <div class="alc-left">
-                        <img src="${imgUrl}" alt="" class="alc-img">
-                        <div class="alc-info">
-                            <h3 class="alc-title">${name}</h3>
-                            <p class="alc-meta">${metaText}</p>
-                        </div>
+                <div class="alc-img-wrapper">
+                    <img src="${imgUrl}" alt="" class="alc-img" onerror="this.src='${NO_IMG}'">
+                </div>
+                <div class="alc-body">
+                    <div class="alc-meta">${metaText}</div>
+                    <h3 class="alc-title">${name}</h3>
+                    
+                    <div class="alc-actions">
+                        <button class="btn-fav ${isFav ? 'active' : ''}" title="Ajouter aux favoris">❤</button>
+                        <button class="btn-pan">+ Panier</button>
+                        <button class="btn-expand" title="Lire la description"><span class="alc-chevron">❯</span></button>
                     </div>
-                    <div class="alc-right-group">
-                        <div class="alc-actions-header">
-                            <!-- HOVER SUPPRIMÉ ICI -->
-                            <button class="btn-fav ${isFav ? 'active' : ''}">❤</button>
-                            <button class="btn-pan">+ Panier</button>
-                        </div>
-                        <div class="alc-chevron">❯</div>
+
+                    <div class="activity-details">
+                        <p class="alc-desc">${desc}</p>
                     </div>
                 </div>
-                <div class="activity-details"><p class="alc-desc">${desc}</p></div>
             `;
 
-            const header = card.querySelector('.activity-header');
-            header.addEventListener('click', (e) => {
-                if (!e.target.closest('button')) card.classList.toggle('open');
-            });
+            // Le clic sur la petite flèche (ou le titre) ouvre la description
+            const btnExpand = card.querySelector('.btn-expand');
+            const titleEl = card.querySelector('.alc-title');
+            
+            const toggleDesc = () => card.classList.toggle('open');
+            btnExpand.addEventListener('click', toggleDesc);
+            titleEl.addEventListener('click', toggleDesc);
+            titleEl.style.cursor = 'pointer';
 
             const btnFav = card.querySelector('.btn-fav');
             btnFav.addEventListener('click', (e) => {
@@ -117,6 +111,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 
     } catch (error) {
-        listContainer.innerHTML = `<p style="text-align:center; color:red;">Impossible de charger les activités.</p>`;
+        listContainer.innerHTML = `<p style="text-align:center; color:red; width: 100%;">Impossible de charger les activités.</p>`;
     }
 });

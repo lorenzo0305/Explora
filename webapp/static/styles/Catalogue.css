@@ -2,7 +2,7 @@
     --bg-color: #FAF8F5; 
     --text-main: #1C1C1C; 
     --text-warm: #4A403A; 
-    --accent-vivid: #FF6F61; /* Corail vif */
+    --accent-vivid: #FF6F61; 
     --bordeaux-nav: #FF6F61; 
     --nav-bg: rgba(250, 248, 245, 0.90);
     --border-light: #D4C3B3;
@@ -96,6 +96,7 @@ html, body {
     position: absolute; top: calc(100% + 15px); left: 0; right: 0;
     background: white; border: 1px solid var(--border-light); border-radius: 15px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1); overflow: hidden; display: none; z-index: 50;
+    max-height: 400px; overflow-y: auto;
 }
 
 .result-item {
@@ -117,7 +118,18 @@ html, body {
 
 .result-thumb { width: 50px; height: 50px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
 .result-name { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; color: var(--text-main); }
-.no-res { padding: 15px 20px; color: var(--text-warm); font-style: italic; background: white; }
+
+/* --- MESSAGES SYSTÈMES (Harmonisés) --- */
+.no-res, .results-end, .results-loader { 
+    padding: 15px 20px; 
+    color: #888; 
+    font-style: italic; 
+    background: white; 
+    text-align: center;
+    font-family: 'Lora', serif !important; 
+    font-size: 14px;
+}
+.results-end { border-top: 1px solid rgba(0,0,0,0.05); }
 
 /* Menu déroulant description */
 .result-details {

@@ -6,14 +6,16 @@
   <title>WishAdventure — Région</title>
 
   <link rel="stylesheet" href="/static/styles/app.css">
-  <link rel="stylesheet" href="/static/styles/Region.css?v=6.0">
+  <link rel="stylesheet" href="/static/styles/Region.css?v=14.0">
   <link rel="stylesheet" href="/static/styles/wishbasket.css?v=2">
-  <script src="/static/scripts/wishbasket.js" defer></script>
-  <script src="/static/scripts/Region.js" defer></script>
+  
+  <script src="/static/scripts/imageDictionary.js?v=2" defer></script>
+  <script src="/static/scripts/wishbasket.js?v=2" defer></script>
+  <script src="/static/scripts/Region.js?v=10" defer></script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -59,8 +61,8 @@
               </div>
 
               <div class="phones-carousel fade-in delay-1">
-                  
-                  <div class="phone-mockup" onclick="openPhone('Nature')">
+                  <!-- Clics pour ouvrir les téléphones (avec tes propres fake videos) -->
+                  <div class="phone-mockup" onclick="window.openPhone('Nature')">
                       <div class="notch"></div>
                       <div class="phone-screen">
                           <div class="fake-video" style="background-image: url('/static/img/grotte_choranche.jpg');"></div>
@@ -68,7 +70,7 @@
                       </div>
                   </div>
 
-                  <div class="phone-mockup" onclick="openPhone('Gastronomie')">
+                  <div class="phone-mockup" onclick="window.openPhone('Gastronomie')">
                       <div class="notch"></div>
                       <div class="phone-screen">
                           <div class="fake-video" style="background-image: url('/static/img/viennoiseries2.jpg');"></div>
@@ -76,7 +78,7 @@
                       </div>
                   </div>
 
-                  <div class="phone-mockup" onclick="openPhone('Culture')">
+                  <div class="phone-mockup" onclick="window.openPhone('Culture')">
                       <div class="notch"></div>
                       <div class="phone-screen">
                           <div class="fake-video" style="background-image: url('/static/img/mt_st_michel2.jpg');"></div>
@@ -84,7 +86,7 @@
                       </div>
                   </div>
 
-                  <div class="phone-mockup" onclick="openPhone('Sport')">
+                  <div class="phone-mockup" onclick="window.openPhone('Sport')">
                       <div class="notch"></div>
                       <div class="phone-screen">
                           <div class="fake-video" style="background-image: url('/static/img/kayak.jpg');"></div>
@@ -92,7 +94,7 @@
                       </div>
                   </div>
 
-                  <div class="phone-mockup" onclick="openPhone('Détente')">
+                  <div class="phone-mockup" onclick="window.openPhone('Détente')">
                       <div class="notch"></div>
                       <div class="phone-screen">
                           <div class="fake-video" style="background-image: url('/static/img/spa3.jpg');"></div>
@@ -100,166 +102,36 @@
                       </div>
                   </div>
 
-                  <div class="phone-mockup" onclick="openPhone('Shopping')">
+                  <div class="phone-mockup" onclick="window.openPhone('Shopping')">
                       <div class="notch"></div>
                       <div class="phone-screen">
                           <div class="fake-video" style="background-image: url('/static/img/shopping.jpg');"></div>
                           <div class="phone-label">Shopping</div>
                       </div>
                   </div>
-
               </div>
           </div>
       </div>
   </div>
 
-  <div id="giantPhoneModal" class="modal-overlay" onclick="closePhone(event)">
+  <!-- LE TÉLÉPHONE GÉANT (Modal) -->
+  <div id="giantPhoneModal" class="modal-overlay" onclick="window.closePhone(event)">
       <div class="giant-phone-landscape" onclick="event.stopPropagation()">
           <div class="giant-notch-landscape"></div>
-          <button class="close-phone-btn" onclick="closePhone(event)">✕</button>
+          
+          <!-- La croix repositionnée et plus visible -->
+          <button class="close-phone-btn" onclick="window.closePhone(event)">✕</button>
           
           <div class="giant-screen-landscape">
-              <h2 id="giantPhoneTitle" class="app-title">Catégorie</h2>
-              <div class="app-grid-landscape" id="appGrid">
-              </div>
+              
+              <!-- ÉTAT 1 : La Grille d'Icônes -->
+              <div class="app-grid-landscape" id="appGrid"></div>
+
+              <!-- ÉTAT 2 : Le Panneau d'Aperçu Détaillé (Plein Écran Edge-to-Edge) -->
+              <div id="activityPreview" class="activity-preview-pane"></div>
           </div>
       </div>
   </div>
-
-<script>
-    // 1. LE DICTIONNAIRE DES THÈMES (C'est ici que l'on configure les images par catégorie)
-    const THEMES = {
-        "Nature": {
-            fond: "/static/img/simple.jpg", // Le fond d'écran du téléphone
-            icones: [
-                '/static/img/nature1.jpg',
-                '/static/img/nature2.jpg',
-                '/static/img/nature3.jpg',
-                '/static/img/nature4.jpg',
-                '/static/img/nature5.jpg',
-                '/static/img/nature6.jpg'
-            ]
-        },
-        "Gastronomie": {
-            fond: "/static/img/simple.jpg", 
-            icones: [
-                '/static/img/food1.jpg', 
-                '/static/img/food2.jpg',
-                '/static/img/food3.jpg',
-                '/static/img/food4.jpg',
-                '/static/img/food5.jpg',
-                '/static/img/food6.jpg'
-            ]
-        },
-        "Culture": {
-            fond: "/static/img/simple.jpg", 
-            icones: [
-                '/static/img/culture1.jpg', 
-                '/static/img/culture2.jpg',
-                '/static/img/culture3.jpg',
-                '/static/img/culture4.jpg',
-                '/static/img/culture5.jpg',
-                '/static/img/culture6.jpg'
-            ]
-        },
-        "Sport": {
-            fond: "/static/img/simple.jpg", 
-            icones: [
-                '/static/img/sport1.jpg', 
-                '/static/img/sport2.jpg',
-                '/static/img/sport3.jpg',
-                '/static/img/sport4.jpg',
-                '/static/img/sport5.png',
-                '/static/img/sport6.jpg'
-            ]
-        },   
-        "Détente": {
-            fond: "/static/img/simple.jpg", 
-            icones: [
-                '/static/img/detente1.jpg', 
-                '/static/img/detente2.jpg',
-                '/static/img/detente3.jpg',
-                '/static/img/detente4.jpg',
-                '/static/img/detente55.jpg',
-                '/static/img/detente6.jpg'
-            ]
-        },
-        "Shopping": {
-            fond: "/static/img/simple.jpg", 
-            icones: [
-                '/static/img/shopping1.jpg', 
-                '/static/img/shopping2.jpg',
-                '/static/img/shopping3.jpg',
-                '/static/img/shopping4.jpg',
-                '/static/img/shopping5.jpg',
-                '/static/img/shopping6.jpg'
-            ]
-        },
-    };
-
-    // 2. La séquence ultime anti-répétition
-    const MIX = [0, 1, 2, 3, 4, 5, 2, 4, 0, 5, 1, 3, 4, 2, 5, 0, 3, 1, 5, 3, 1, 4, 2];
-
-    async function openPhone(categoryName) {
-        const modal = document.getElementById('giantPhoneModal');
-        const title = document.getElementById('giantPhoneTitle');
-        const grid = document.getElementById('appGrid');
-        const phoneScreen = document.querySelector('.giant-screen-landscape');
-        
-        let regionTitre = document.getElementById('regionName').innerText.toUpperCase(); 
-        let regionSource = regionTitre.includes("AUVERGNE") ? "Auvergne" : (regionTitre.includes("HAUT") ? "Haut_de_France" : regionTitre);
-
-        // --- CHARGEMENT DU THÈME ---
-        // Si la catégorie existe dans THEMES, on la prend. Sinon, on utilise "Nature" par défaut pour éviter que ça plante.
-        const currentTheme = THEMES[categoryName] || THEMES["Nature"];
-        
-        // On applique le fond d'écran de la catégorie au téléphone
-        phoneScreen.style.backgroundImage = `url('${currentTheme.fond}')`;
-
-        title.innerText = categoryName;
-        grid.innerHTML = '<p style="color:white; padding:20px; font-weight:bold;">Chargement...</p>';
-        modal.style.display = 'flex';
-
-        try {
-            const response = await fetch(`/api/activites/${regionSource}/${categoryName}`);
-            const data = await response.json();
-
-            grid.innerHTML = ''; 
-            if (!data || data.length === 0) {
-                grid.innerHTML = `<p style="color:white; padding:20px;">Aucune activité trouvée.</p>`;
-                return;
-            }
-
-            data.forEach((act, index) => {
-                let bgStyle = "";
-
-                if (act.image && !act.image.includes('no-image') && !act.image.includes('appareil_photo')) {
-                    bgStyle = `background-image: url('${act.image}'); background-color: #111; background-size: cover; background-position: center;`;
-                } 
-                else {
-                    // On pioche dans les icônes du thème actuel !
-                    // On rajoute "% currentTheme.icones.length" au cas où tu as mis moins de 6 images dans une catégorie
-                    const variantIndex = MIX[index % MIX.length] % currentTheme.icones.length;
-                    const cardUrl = currentTheme.icones[variantIndex];
-                    
-                    bgStyle = `background-image: url('${cardUrl}'); background-color: #111; background-size: cover; background-position: center;`;
-                }
-
-                grid.innerHTML += `
-                    <div class="app-icon">
-                        <div class="app-icon-img" style="${bgStyle}"></div>
-                        <div class="app-icon-text">${act.name}</div>
-                    </div>`;
-            });
-        } catch (err) {
-            grid.innerHTML = '<p style="color:red; padding:20px;">Erreur de connexion</p>';
-        }
-    }
-
-    function closePhone(e) {
-        document.getElementById('giantPhoneModal').style.display = 'none';
-    }
-</script>
 
 </body>
 </html>
