@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Enter') this.blur();
     });
 
-    // Synchronise uniquement la couverture avant
     document.getElementById('tripTitle').addEventListener('input', function() {
         document.getElementById('coverTitleDisplay').textContent = this.value || "Mon Voyage";
     });
@@ -118,7 +117,7 @@ function showToast(message) {
 }
 
 /* =========================================
-   MOTEUR 3D HYPER-RÉALISTE ET CALIBRÉ AU PIXEL
+   MOTEUR 3D (FLUIDITÉ PARFAITE + COVER IMAGE FIXÉE)
 ========================================= */
 window.turnPage = function(direction) {
     if(document.querySelector('.page-flipper')) return;
@@ -136,20 +135,23 @@ window.turnPage = function(direction) {
     const backFace = document.createElement('div');
 
     const coverTitle = document.getElementById('coverTitleDisplay').textContent;
-    // Si la page de couverture a une image "inline", on la récupère. Sinon, la classe .book-cover-bg s'occupe de tout !
-    const inlineBg = document.getElementById('bookCover').style.backgroundImage; 
-    const renderCoverContent = (title) => title ? `<h1>${title}</h1>` : '';
+    
+    const coverEl = document.getElementById('bookCover');
+    const exactBg = window.getComputedStyle(coverEl).backgroundImage.replace(/"/g, "'"); 
+    
+    const renderCoverContent = (title) => {
+        return `<div class="book-cover-bg" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; width:100%; height:100%; padding:40px; background-image:${exactBg}; background-size:cover; background-position:center; background-color:#1C1C1C;">
+            ${title ? `<h1 style="font-family:'Cormorant Garamond',serif; font-size:2.8rem; text-transform:uppercase; margin:0; padding:0 20px; color:white;">${title}</h1>` : ''}
+        </div>`;
+    };
 
     if (direction === 1) { // On avance
         frontFace.className = 'flipper-face flipper-front';
         backFace.className = 'flipper-face flipper-back';
 
         if (currentDayIndex === -1) { // 1. Ouvre la couv avant
-            frontFace.classList.add('book-cover', 'book-cover-bg');
-            if (inlineBg) frontFace.style.backgroundImage = inlineBg;
-            frontFace.style.width = '100%';
-            frontFace.style.borderRadius = '0 15px 15px 0';
             frontFace.innerHTML = renderCoverContent(coverTitle);
+            frontFace.style.borderRadius = '0 15px 15px 0';
             
             backFace.classList.add('book-page', 'left-page');
             backFace.innerHTML = spreads[0].querySelector('.left-page').innerHTML;
@@ -164,23 +166,25 @@ window.turnPage = function(direction) {
             frontFace.classList.add('book-page', 'right-page');
             frontFace.innerHTML = spreads[currentDayIndex].querySelector('.right-page').innerHTML;
 
-            backFace.classList.add('book-cover', 'book-cover-bg');
-            if (inlineBg) backFace.style.backgroundImage = inlineBg;
-            backFace.style.width = '100%';
-            backFace.style.borderRadius = '15px 0 0 15px'; // Arrondi à gauche
-            backFace.innerHTML = renderCoverContent(''); // Pas de texte sur le dos du livre !
+            backFace.innerHTML = renderCoverContent(''); 
+            backFace.style.borderRadius = '15px 0 0 15px';
             
             spreads[currentDayIndex].querySelector('.right-page').style.visibility = 'hidden';
             
-        } else { // 3. Page normale
+        } else { // 3. Page normale (Fluidité interne)
             frontFace.classList.add('book-page', 'right-page');
             frontFace.innerHTML = spreads[currentDayIndex].querySelector('.right-page').innerHTML;
 
             backFace.classList.add('book-page', 'left-page');
             backFace.innerHTML = spreads[newIndex].querySelector('.left-page').innerHTML;
 
-            spreads[currentDayIndex].style.display = 'none';
+            // SUPERPOSITION TEMPORELLE ANTI-TROU
+            spreads[currentDayIndex].style.position = 'absolute';
+            spreads[currentDayIndex].style.zIndex = 2;
+            spreads[currentDayIndex].querySelector('.right-page').style.visibility = 'hidden';
+
             spreads[newIndex].style.display = 'flex';
+            spreads[newIndex].style.zIndex = 1;
             spreads[newIndex].querySelector('.left-page').style.visibility = 'hidden';
         }
     } else { // On recule (-1)
@@ -191,20 +195,14 @@ window.turnPage = function(direction) {
             frontFace.classList.add('book-page', 'left-page');
             frontFace.innerHTML = spreads[0].querySelector('.left-page').innerHTML;
 
-            backFace.classList.add('book-cover', 'book-cover-bg');
-            if (inlineBg) backFace.style.backgroundImage = inlineBg;
-            backFace.style.width = '100%';
-            backFace.style.borderRadius = '0 15px 15px 0';
             backFace.innerHTML = renderCoverContent(coverTitle);
+            backFace.style.borderRadius = '0 15px 15px 0';
             
             spreads[0].querySelector('.left-page').style.visibility = 'hidden';
             
         } else if (currentDayIndex === maxIndex) { // 5. On rouvre depuis le dos du livre
-            frontFace.classList.add('book-cover', 'book-cover-bg');
-            if (inlineBg) frontFace.style.backgroundImage = inlineBg;
-            frontFace.style.width = '100%';
+            frontFace.innerHTML = renderCoverContent('');
             frontFace.style.borderRadius = '15px 0 0 15px';
-            frontFace.innerHTML = renderCoverContent(''); // Pas de texte sur le dos !
 
             backFace.classList.add('book-page', 'right-page');
             backFace.innerHTML = spreads[maxIndex - 1].querySelector('.right-page').innerHTML;
@@ -215,15 +213,20 @@ window.turnPage = function(direction) {
             spreads[maxIndex - 1].style.display = 'flex';
             spreads[maxIndex - 1].querySelector('.right-page').style.visibility = 'hidden';
             
-        } else { // 6. Page normale en arrière
+        } else { // 6. Page normale en arrière (Fluidité interne)
             frontFace.classList.add('book-page', 'left-page');
             frontFace.innerHTML = spreads[currentDayIndex].querySelector('.left-page').innerHTML;
 
             backFace.classList.add('book-page', 'right-page');
             backFace.innerHTML = spreads[newIndex].querySelector('.right-page').innerHTML;
 
-            spreads[currentDayIndex].style.display = 'none';
+            // SUPERPOSITION TEMPORELLE ANTI-TROU
+            spreads[currentDayIndex].style.position = 'absolute';
+            spreads[currentDayIndex].style.zIndex = 2;
+            spreads[currentDayIndex].querySelector('.left-page').style.visibility = 'hidden';
+
             spreads[newIndex].style.display = 'flex';
+            spreads[newIndex].style.zIndex = 1;
             spreads[newIndex].querySelector('.right-page').style.visibility = 'hidden';
         }
     }
@@ -245,7 +248,14 @@ window.turnPage = function(direction) {
                     document.getElementById('bookSpreadsContainer').style.display = 'none';
                     document.getElementById('bookBackCover').style.display = 'flex';
                 } else {
+                    // Nettoyage de la superposition
+                    spreads[currentDayIndex].style.display = 'none';
+                    spreads[currentDayIndex].style.position = '';
+                    spreads[currentDayIndex].style.zIndex = '';
+                    spreads[currentDayIndex].querySelector('.right-page').style.visibility = 'visible';
+
                     spreads[newIndex].querySelector('.left-page').style.visibility = 'visible';
+                    spreads[newIndex].style.zIndex = '';
                 }
             } else {
                 if (currentDayIndex === 0) {
@@ -255,7 +265,14 @@ window.turnPage = function(direction) {
                 } else if (currentDayIndex === maxIndex) {
                     spreads[maxIndex - 1].querySelector('.right-page').style.visibility = 'visible';
                 } else {
+                    // Nettoyage de la superposition
+                    spreads[currentDayIndex].style.display = 'none';
+                    spreads[currentDayIndex].style.position = '';
+                    spreads[currentDayIndex].style.zIndex = '';
+                    spreads[currentDayIndex].querySelector('.left-page').style.visibility = 'visible';
+
                     spreads[newIndex].querySelector('.right-page').style.visibility = 'visible';
+                    spreads[newIndex].style.zIndex = '';
                 }
             }
             
