@@ -1,6 +1,5 @@
 import os
 import pickle
-import urllib.parse
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -9,16 +8,18 @@ import certifi
 from pymongo import MongoClient
 from sklearn.neighbors import NearestNeighbors
 
+try:
+    from webapp.db_config import get_mongo_uri, get_db_name
+except ImportError:
+    from db_config import get_mongo_uri, get_db_name
+
 # ─────────────────────────────────────────────
 #  1. CHARGEMENT COMPLET (MONGODB + PKL)
 # ─────────────────────────────────────────────
 def charger_donnees_completes():
-    user, password = "equipe_explora", "2BqXsiNi8nCCE@W"
-    uri = f"mongodb+srv://{user}:{urllib.parse.quote_plus(password)}@datas.xc1dpyu.mongodb.net/?appName=datas"
-    
     try:
-        client = MongoClient(uri, tlsCAFile=certifi.where())
-        db = client["explora"]
+        client = MongoClient(get_mongo_uri(), tlsCAFile=certifi.where())
+        db = client[get_db_name()]
         
         # Chemin vers tes fichiers PKL (Kaggle ou Local)
         dossier_pkl = "/kaggle/input/datasets/sarahesiee/fichier-pkl"
