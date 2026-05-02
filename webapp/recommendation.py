@@ -1,5 +1,6 @@
 import os
 import pickle
+import urllib.parse
 import numpy as np
 import pandas as pd
 import requests
@@ -8,16 +9,13 @@ from pymongo import MongoClient
 from geopy.geocoders import Nominatim
 from sklearn.neighbors import NearestNeighbors
 
-try:
-    from webapp.db_config import get_mongo_uri
-except ImportError:
-    from db_config import get_mongo_uri
-
 # ─────────────────────────────────────────────
 #  1. CONNEXION MONGODB
 # ─────────────────────────────────────────────
 def connecter_mongodb():
-    client = MongoClient(get_mongo_uri(), tlsCAFile=certifi.where())
+    user, password = "equipe_explora", "2BqXsiNi8nCCE@W"
+    uri = f"mongodb+srv://{user}:{urllib.parse.quote_plus(password)}@datas.xc1dpyu.mongodb.net/?appName=datas"
+    client = MongoClient(uri, tlsCAFile=certifi.where())
     print(" Connexion réussie !\n")
     return client
 

@@ -3,6 +3,7 @@ from __future__ import annotations
 import os
 import re
 import time
+import urllib.parse
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -15,11 +16,6 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pymongo import MongoClient
 
-try:
-    from webapp.db_config import get_mongo_uri, get_db_name, get_default_collection
-except ImportError:
-    from db_config import get_mongo_uri, get_db_name, get_default_collection
-
 # =============================================================
 # CONFIG APP
 # =============================================================
@@ -30,12 +26,20 @@ app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="stat
 templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
 
 # =============================================================
-# MONGODB ATLAS — credentials chargées depuis .env (voir .env.example)
+# MONGODB ATLAS (Fusion de la connexion distante)
 # =============================================================
-mongo_client = MongoClient(get_mongo_uri(), tlsCAFile=certifi.where())
-db = mongo_client[get_db_name()]
+user = "equipe_explora"
+password = "2BqXsiNi8nCCE@W"
+safe_password = urllib.parse.quote_plus(password)
+uri = f"mongodb+srv://{user}:{safe_password}@datas.xc1dpyu.mongodb.net/?appName=datas"
 
-DEFAULT_COLLECTION = get_default_collection()
+mongo_client = MongoClient(uri, tlsCAFile=certifi.where())
+# On utilise la base de données "explora" (issue de votre Snippet 1)
+db = mongo_client["explora"]
+
+# Si vos données sont dispersées par région, la recherche globale tape ici par défaut.
+# J'ai mis "Auvergne" comme collection par défaut comme indiqué dans votre Snippet 1.
+DEFAULT_COLLECTION = os.getenv("MONGO_COLLECTION", "Auvergne")
 objects_col = db[DEFAULT_COLLECTION]
 journeys_col = db["journeys"]
 
