@@ -200,7 +200,6 @@ async function fetchMore(myToken = S.token) {
         
         removeLoader();
         
-        // CORRECTION DU BUG DES DOUBLONS
         if (batch.length === 0 && isFirstFetch) {
             resultsBox.innerHTML = '<div class="no-res">Aucun résultat pour cette recherche.</div>';
             S.reachedEnd = true; 
@@ -251,59 +250,8 @@ if(searchInput) {
     });
 }
 
-/* -------------- Sections statiques -------------- */
-function createRegionCard({ name, href, active, bg }) {
-    const cardBox = document.createElement('div');
-    cardBox.className = 'card-box' + (active ? '' : ' disabled');
-    if (bg) cardBox.style.background = bg;
-
-    const cardName = document.createElement('span');
-    cardName.className = 'card-name';
-    cardName.textContent = name;
-
-    const cardThumb = document.createElement('div');
-    cardThumb.className = 'card-thumb';
-
-    cardBox.appendChild(cardName);
-    cardBox.appendChild(cardThumb);
-
-    if (active && href) {
-        cardBox.addEventListener('click', () => location.href = href);
-    }
-    return cardBox;
-}
-
-function renderRegionsGrid() {
-    const grid = document.getElementById('regions-grid');
-    if (!grid) return;
-    grid.innerHTML = '';
-    const regions = [
-        { name: 'Hauts-de-France', href: '/region/Hauts-de-France', active: true, bg: 'linear-gradient(160deg,#239BB9,#104553)' },
-        { name: 'Auvergne-Rhône-Alpes', href: '/region/Auvergne-Rhône-Alpes', active: true, bg: 'linear-gradient(160deg,#7BC6CC,#264653)' },
-        { name: 'Bientôt…', active: false },
-        { name: 'Bientôt…', active: false },
-    ];
-    regions.forEach(r => grid.appendChild(createRegionCard(r)));
-}
-
-function renderPlaceholders(id, n = 4) {
-    const grid = document.getElementById(id);
-    if (!grid) return;
-    grid.innerHTML = '';
-    for (let i = 0; i < n; i++) {
-        const el = document.createElement('div');
-        el.className = 'card-box disabled';
-        const name = document.createElement('span'); name.className = 'card-name'; name.textContent = 'Bientôt…';
-        const th = document.createElement('div'); th.className = 'card-thumb';
-        el.append(name, th);
-        grid.appendChild(el);
-    }
-}
-
+/* -------------- Boot -------------- */
 document.addEventListener('DOMContentLoaded', () => {
-    renderRegionsGrid();
-    renderPlaceholders('modes-grid', 4);
-    renderPlaceholders('cities-grid', 4);
     const params = new URLSearchParams(location.search);
     const initialQ = params.get('q') || '';
     if (initialQ && searchInput) {

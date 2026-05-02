@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Explora — L'Éditeur</title>
-  
+
   <link rel="stylesheet" href="/static/styles/app.css">
-  <link rel="stylesheet" href="/static/styles/Editeur.css?v=13.0">
+  <link rel="stylesheet" href="/static/styles/Editeur.css?v=17.0">
   <link rel="stylesheet" href="/static/styles/wishbasket.css?v=1">
+  <script src="/static/scripts/imageDictionary.js?v=2" defer></script>
   <script src="/static/scripts/wishbasket.js?v=1" defer></script>
-  <script src="/static/scripts/Editeur.js?v=2" defer></script>
+  <script src="/static/scripts/Editeur.js?v=6" defer></script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,25 +76,34 @@
                           <span class="days-suffix">jours</span>
                           <button id="generateDaysBtn" class="btn-generate" title="Valider">✔</button>
                       </div>
-                      <button id="addDayBtn" class="btn-add-page">+ Ajouter une page</button>
+                      <button id="addDayBtn" class="btn-add-page" title="Insérer une journée manuellement">+ Ajouter une page</button>
                       <a href="/topics" class="btn-quit">Quitter sans sauvegarder</a>
                       <button id="saveJourneyBtn" class="btn-save-mag">Sauvegarder</button>
+                  </div>
+                  
+                  <div style="font-family: 'Lora', serif; font-size: 12px; color: #888; font-style: italic; margin-top: -5px; line-height: 1.5;">
+                      * Saisissez obligatoirement le nombre de jours pour générer la structure de votre carnet. Le bouton <b>"+ Ajouter une page"</b> sert uniquement à insérer une journée imprévue en cours d'édition.
                   </div>
               </div>
 
               <div class="book-wrapper">
                   <div class="book-container">
                       
-                      <div class="book-cover" id="bookCover">
-                          <div class="cover-content">
-                              <h1 id="coverTitleDisplay">Mon Voyage</h1>
-                              <p>Le carnet de bord interactif</p>
-                          </div>
-                          <div class="chevron cover-chevron" onclick="openBook()" title="Ouvrir le magazine">❯</div>
+                      <!-- COUVERTURE AVANT (DROITE) -->
+                      <div class="book-cover book-cover-bg" id="bookCover">
+                          <h1 id="coverTitleDisplay">Mon Voyage</h1>
+                          <div class="chevron cover-chevron" onclick="turnPage(1)" title="Ouvrir le carnet">❯</div>
+                      </div>
+
+                      <!-- DOS DU LIVRE / DERNIÈRE DE COUVERTURE (GAUCHE) -->
+                      <div class="book-cover book-cover-bg" id="bookBackCover" style="display:none;">
+                          <!-- Aucun texte ici pour la couverture arrière ! -->
+                          <div class="chevron cover-chevron" onclick="turnPage(-1)" title="Rouvrir le carnet" style="left: 20px; right: auto;">❮</div>
                       </div>
 
                       <div class="book-spreads-container" id="bookSpreadsContainer" style="display:none;">
-                          </div>
+                          <!-- Pages injectées ici -->
+                      </div>
                       
                   </div>
               </div>
