@@ -12,7 +12,6 @@ function showToast(message) {
     }, 2500);
 }
 
-// Fonction sécurisée pour l'image (si imageDictionary est prêt)
 const NO_IMG = '/static/img/travel.jpg';
 function getSafeImage(item) {
     if (!item) return NO_IMG;
@@ -25,9 +24,13 @@ function getSafeImage(item) {
 const escapeHtml = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const query = CATEGORIE_ACTUELLE;
-    document.getElementById('pageTitle').textContent = query.toUpperCase();
+    const query = typeof CATEGORIE_ACTUELLE !== 'undefined' ? CATEGORIE_ACTUELLE : 'Catégorie';
+    
+    const pageTitleEl = document.getElementById('pageTitle');
+    if (pageTitleEl) pageTitleEl.textContent = query.toUpperCase();
+    
     const listContainer = document.getElementById('activitiesList');
+    if (!listContainer) return;
 
     try {
         const res = await fetch(`/search?query=${encodeURIComponent(query)}&limit=30`);
@@ -46,25 +49,27 @@ document.addEventListener('DOMContentLoaded', async () => {
         items.forEach((item) => {
             const id = item.id || item._id || item.url || '#';
             const name = escapeHtml(item.name || 'Activité sans nom');
-            const imgUrl = escapeHtml(getSafeImage(item));
+            
+            const imgUrl = getSafeImage(item);
+            const safeImgHtml = escapeHtml(imgUrl);
 
+            // On garde le type pour le panier, mais on ne l'affiche plus
             const type = (item.types && item.types[0]) ? item.types[0] : query;
-            const locality = item.locality || item.region || 'Lieu inconnu';
-            const metaText = escapeHtml(`${type} · ${locality}`);
             const desc = escapeHtml(item.description || "Aucune description détaillée n'est disponible pour cette activité. Laissez-vous surprendre sur place !");
 
             const card = document.createElement('div');
             card.className = 'activity-accordion';
             const isFav = window.WishLikes ? window.WishLikes.has(id) : false;
 
-            // La magie est ici : activity-details est maintenant en dessous des boutons !
+            // SUPPRESSION DE .alc-meta ET AJOUT D'UN CONTENEUR POUR LE TITRE
             card.innerHTML = `
                 <div class="alc-img-wrapper">
-                    <img src="${imgUrl}" alt="" class="alc-img" onerror="this.src='${NO_IMG}'">
+                    <img src="${safeImgHtml}" alt="" class="alc-img" onerror="this.src='${NO_IMG}'">
                 </div>
                 <div class="alc-body">
-                    <div class="alc-meta">${metaText}</div>
-                    <h3 class="alc-title">${name}</h3>
+                    <div class="alc-title-container">
+                        <h3 class="alc-title" title="${name}">${name}</h3>
+                    </div>
                     
                     <div class="alc-actions">
                         <button class="btn-fav ${isFav ? 'active' : ''}" title="Ajouter aux favoris">❤</button>
@@ -78,7 +83,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
             `;
 
-            // Le clic sur la petite flèche (ou le titre) ouvre la description
             const btnExpand = card.querySelector('.btn-expand');
             const titleEl = card.querySelector('.alc-title');
             
@@ -91,7 +95,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             btnFav.addEventListener('click', (e) => {
                 e.stopPropagation(); 
                 if(window.WishLikes) {
-                    window.WishLikes.toggle({ id, name, image: imgUrl, types: item.types || [] });
+                    window.WishLikes.toggle({ 
+                        id: id, 
+                        name: item.name, 
+                        image: imgUrl, 
+                        types: item.types || [type] 
+                    });
                     btnFav.classList.toggle('active', window.WishLikes.has(id));
                     window.WishLikes.refresh();
                 }
@@ -101,7 +110,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             btnPan.addEventListener('click', (e) => {
                 e.stopPropagation(); 
                 if(window.WishBasket) {
-                    window.WishBasket.add({ id, name, image: imgUrl, types: item.types || [] });
+                    window.WishBasket.add({ 
+                        id: id, 
+                        name: item.name, 
+                        image: imgUrl, 
+                        types: item.types || [type] 
+                    });
                     window.WishBasket.refresh();
                     showToast('Ajouté au panier !'); 
                 }

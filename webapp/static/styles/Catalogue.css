@@ -91,65 +91,39 @@ html, body {
 }
 #search::placeholder { color: #aaa; font-style: italic; }
 
-/* --- RÉSULTATS DE RECHERCHE ALIGNÉS & ACCORDÉON --- */
 .results {
     position: absolute; top: calc(100% + 15px); left: 0; right: 0;
     background: white; border: 1px solid var(--border-light); border-radius: 15px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1); overflow: hidden; display: none; z-index: 50;
     max-height: 400px; overflow-y: auto;
 }
-
-.result-item {
-    display: flex; flex-direction: column;
-    border-bottom: 1px solid rgba(0,0,0,0.05); transition: background 0.2s;
-}
-
-.result-header {
-    display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; cursor: pointer;
-}
+.result-item { display: flex; flex-direction: column; border-bottom: 1px solid rgba(0,0,0,0.05); transition: background 0.2s; }
+.result-header { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; cursor: pointer; }
 .result-header:hover { background: #FAF8F5; }
-
-.result-left {
-    display: flex; align-items: center; gap: 15px; flex: 1;
-}
-.result-left > div {
-    display: flex; flex-direction: column; text-align: left; gap: 3px;
-}
-
+.result-left { display: flex; align-items: center; gap: 15px; flex: 1; }
+.result-left > div { display: flex; flex-direction: column; text-align: left; gap: 3px; }
 .result-thumb { width: 50px; height: 50px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
 .result-name { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; color: var(--text-main); }
 
-/* --- MESSAGES SYSTÈMES (Harmonisés) --- */
 .no-res, .results-end, .results-loader { 
-    padding: 15px 20px; 
-    color: #888; 
-    font-style: italic; 
-    background: white; 
-    text-align: center;
-    font-family: 'Lora', serif !important; 
-    font-size: 14px;
+    padding: 15px 20px; color: #888; font-style: italic; background: white; 
+    text-align: center; font-family: 'Lora', serif !important; font-size: 14px;
 }
 .results-end { border-top: 1px solid rgba(0,0,0,0.05); }
 
-/* Menu déroulant description */
 .result-details {
-    display: none; padding: 15px 20px; background: #FAF8F5; 
-    border-top: 1px dashed var(--border-light);
+    display: none; padding: 15px 20px; background: #FAF8F5; border-top: 1px dashed var(--border-light);
     font-size: 13px; color: var(--text-warm); line-height: 1.6;
 }
 
-/* Boutons Coeur et Ajouter alignés à droite */
 .fav-action {
-    background: #FFF; border: 1px solid var(--border-light);
-    border-radius: 8px; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center;
+    background: #FFF; border: 1px solid var(--border-light); border-radius: 8px; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center;
     cursor: pointer; color: #ccc; transition: all 0.2s; font-size: 15px; margin-right: 5px;
 }
 .fav-action:hover { border-color: var(--accent-vivid); color: var(--accent-vivid); }
 .fav-action.active { color: var(--accent-vivid); border-color: var(--accent-vivid); }
-
 .result-add-btn {
-    background: var(--accent-vivid); color: white; border: none; padding: 8px 16px;
-    border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 11px;
+    background: var(--accent-vivid); color: white; border: none; padding: 8px 16px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 11px;
     font-weight: 800; text-transform: uppercase; cursor: pointer; transition: transform 0.2s;
 }
 .result-add-btn:hover { background: var(--text-main); transform: scale(1.05); }
@@ -157,40 +131,81 @@ html, body {
 /* =========================================
    SECTIONS & NOUVELLES CARTES
 ========================================= */
-.sections-container { display: flex; flex-direction: column; gap: 40px; padding-bottom: 50px; }
-.section-title {
-    font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; color: var(--text-main);
-    text-align: center; margin-bottom: 25px; position: relative;
-}
-.section-title::after {
-    content: ''; display: block; width: 60px; height: 2px;
-    background: var(--accent-vivid); margin: 15px auto 0 auto;
-}
+.sections-container { display: flex; flex-direction: column; gap: 0px; padding-bottom: 50px; }
+.section-title { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; color: var(--text-main); text-align: center; margin-bottom: 25px; position: relative; }
+.section-title::after { content: ''; display: block; width: 60px; height: 2px; background: var(--accent-vivid); margin: 15px auto 0 auto; }
 
-/* --- GRILLE DES RÉGIONS --- */
-.destinations-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px;
+/* --- NOUVEAU CARROUSEL DES RÉGIONS EDGE-TO-EDGE --- */
+.destinations-carousel { 
+    display: flex; flex-direction: row; gap: 20px; 
+    overflow-x: auto; 
+    padding: 10px 40px 40px 40px; margin: 0 -40px; 
+    scrollbar-width: none; -ms-overflow-style: none;
 }
+.destinations-carousel::-webkit-scrollbar { display: none; }
+
 .dest-card {
-    text-decoration: none; display: block;
+    /* RETOUR AUX DIMENSIONS D'ORIGINE DE LA GRILLE */
+    flex: 0 0 300px; /* Largeur de base de ton ancienne grille */
+    text-decoration: none; display: flex; flex-direction: column; 
     border-radius: 12px; overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: white; border: 1px solid var(--border-light);
 }
 .dest-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+
 .dest-image {
-    height: 140px; width: 100%; background-size: cover; background-position: center;
+    height: 140px; /* HAUTEUR EXACTE D'ORIGINE */
+    width: 100%; background-size: cover; background-position: center;
     border-bottom: 3px solid var(--accent-vivid);
+    position: relative; 
 }
-.dest-content { padding: 15px; text-align: center; }
-.dest-content h3 { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 800; color: var(--text-main); margin: 0 0 8px 0; text-transform: uppercase; }
-.dest-link { font-size: 12px; font-weight: 700; color: var(--accent-vivid); font-family: 'Helvetica Neue', Arial, sans-serif; text-transform: uppercase; }
+.dest-content { 
+    padding: 15px; /* PADDING EXACT D'ORIGINE */
+    text-align: center; 
+    display: flex; flex-direction: column; flex: 1; 
+}
+.dest-content h3 { 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 16px; /* TAILLE DE POLICE EXACTE D'ORIGINE */
+    font-weight: 800; color: var(--text-main); 
+    margin: 0 0 8px 0; text-transform: uppercase; 
+    /* Forcer sur une ligne avec des points de suspension si ça dépasse */
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+.dest-link { 
+    font-size: 12px; font-weight: 700; color: var(--accent-vivid); font-family: 'Helvetica Neue', Arial, sans-serif; text-transform: uppercase; 
+    margin-top: auto; /* Maintient le lien en bas */
+}
+
+/* --- CARTES "BIENTÔT DISPONIBLE" --- */
+.dest-card.disabled-card {
+    cursor: default; 
+}
+.dest-card.disabled-card:hover {
+    transform: none; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.dest-card.disabled-card .dest-image {
+    filter: grayscale(100%) opacity(0.65); 
+    border-bottom: 3px solid #ccc; 
+}
+.dest-card.disabled-card .dest-content h3 { color: #888; }
+.dest-card.disabled-card .dest-link { color: #aaa; margin-top: auto; }
+
+.coming-soon-badge {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    background: rgba(28, 28, 28, 0.85); color: white;
+    padding: 6px 14px; border-radius: 20px;
+    font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1px; z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 
 /* --- GRILLE DES CATÉGORIES --- */
-.categories-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px;
-}
+.categories-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
 .category-card {
     text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center;
     border-radius: 12px; padding: 40px 20px; text-align: center; transition: all 0.3s ease;
@@ -198,9 +213,7 @@ html, body {
 }
 .category-card:hover { transform: scale(1.03); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
 .category-card h4 {
-    margin: 0; font-family: 'Montserrat', sans-serif; font-size: 15px;
-    font-weight: 800; color: white; text-transform: uppercase; letter-spacing: 1px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+    margin: 0; font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 800; color: white; text-transform: uppercase; letter-spacing: 1px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
 }
 
 /* =========================================

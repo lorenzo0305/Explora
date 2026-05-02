@@ -2,12 +2,11 @@
     --bg-color: #FAF8F5; 
     --text-main: #1C1C1C; 
     --border-light: #D4C3B3;
-    --accent-vivid: #FF6F61; /* Corail */
+    --accent-vivid: #FF6F61; 
 }
 
 * { box-sizing: border-box; }
 
-/* 1. On annule les 70px de app.css et on interdit à la page globale de scroller */
 html, body {
     margin: 0; padding-bottom: 0 !important;
     height: 100vh !important;
@@ -17,50 +16,29 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* 2. On force le cadre de l'application à faire exactement la taille de l'écran */
 .app-frame {
     display: flex; flex-direction: column;
-    height: 100vh !important; 
-    width: 100vw;
-    overflow: hidden;
+    height: 100vh !important; width: 100vw; overflow: hidden;
 }
 
-/* 3. On ajuste le layout des deux colonnes pour qu'il prenne le bon espace */
-/* LAYOUT EN 2 COLONNES */
 .editor-layout { 
     display: flex; flex: 1; width: 100%; max-width: 1600px; margin: 0 auto; 
-    align-items: stretch; /* Étire les deux colonnes jusqu'en bas */
-    overflow: hidden; /* Empêche le conteneur global de déborder */
+    align-items: stretch; overflow: hidden; 
 }
 
-/* =========================================
-   COLONNE GAUCHE (PANIER)
-========================================= */
 .sidebar-photos {
     width: 260px; padding: 40px 15px; 
     border-right: 1px solid rgba(0,0,0,0.06);
     background: #FAF8F5; z-index: 100;
-    height: 100%; /* Prend exactement la hauteur de l'éditeur */
-    overflow-y: auto; /* A sa propre barre de défilement */
-    scrollbar-width: none; 
+    height: 100%; overflow-y: auto; scrollbar-width: none; 
 }
 
-/* (Garde le reste de tes styles photos ici...) */
-
-/* =========================================
-   COLONNE DROITE : L'ESPACE MAGAZINE
-========================================= */
 .magazine-workspace { 
-    flex: 1; 
-    /* J'ai augmenté le padding du bas à 80px pour que tu puisses 
-       respirer un peu sous le carnet quand tu arrives tout en bas ! */
-    padding: 30px 50px 80px 50px; 
+    flex: 1; padding: 30px 50px 80px 50px; 
     display: flex; flex-direction: column; 
-    height: 100%; /* Prend exactement la hauteur de l'éditeur */
-    overflow-y: auto; /* A sa propre barre de défilement */
+    height: 100%; overflow-y: auto; 
 }
 
-/* NAVIGATION */
 .top-nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(250, 248, 245, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 2000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
 .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; }
 .logo-fill { color: var(--text-main); } .logo-outline { color: transparent; -webkit-text-stroke: 1px var(--text-main); }
@@ -71,15 +49,11 @@ html, body {
 .action-btn { background: transparent; color: var(--text-main); border: none; padding: 8px; cursor: pointer; transition: transform 0.2s;}
 .action-btn:hover { color: #FF0000; transform: scale(1.1); }
 
-/* LAYOUT EN 2 COLONNES */
-.editor-layout { display: flex; flex: 1; width: 100%; max-width: 1600px; margin: 0 auto; align-items: flex-start;}
-
 .photo-stack-header { margin-bottom: 30px; text-align: center; }
 .script-decoration-small { font-family: 'Alex Brush', cursive; font-size: 2.2rem; color: var(--accent-vivid); display: block; margin-bottom: -10px; }
 .photo-stack-header h3 { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 900; color: var(--text-main); margin: 0; letter-spacing: 2px;}
 
 .polaroid-list { display: flex; flex-direction: column; gap: 15px; align-items: center; min-height: 200px;}
-
 .draggable-item {
     background: white; padding: 8px 8px 25px 8px; border-radius: 2px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.06); width: 100%; max-width: 200px;
@@ -87,14 +61,11 @@ html, body {
 }
 .draggable-item:hover { transform: scale(1.03); z-index: 10; box-shadow: 0 10px 25px rgba(0,0,0,0.12); }
 .draggable-item:active { cursor: grabbing; transform: scale(0.98); }
-
 .draggable-item img { width: 100%; height: 110px; object-fit: cover; background: #eee; }
 .p-name { font-family: 'Alex Brush', cursive; font-size: 18px; color: var(--text-main); text-align: center; margin-top: 5px; line-height: 1.1;}
-
 .btn-remove-item { display: none; position: absolute; right: 10px; top: 10px; background: rgba(0,0,0,0.5); border: none; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; color: white; transition: background 0.2s; backdrop-filter: blur(4px);}
 .btn-remove-item:hover { background: #1C1C1C; }
 
-/* Quand déposé dans le carnet */
 .draggable-item.dropped { 
     width: 100%; max-width: none; cursor: default; padding: 10px; display: flex; gap: 15px; align-items: center; 
     transform: none !important; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -104,27 +75,13 @@ html, body {
 .draggable-item.dropped img { width: 50px; height: 50px; border-radius: 4px; }
 .draggable-item.dropped .p-name { margin-top: 0; font-size: 16px; text-align: left; }
 
-/* =========================================
-   COLONNE DROITE : L'ESPACE MAGAZINE
-========================================= */
-
-.workspace-header-massive {
-    width: 100%; max-width: 1100px; margin: 0 auto 30px auto;
-    display: flex; flex-direction: column; gap: 20px;
-}
+.workspace-header-massive { width: 100%; max-width: 1100px; margin: 0 auto 30px auto; display: flex; flex-direction: column; gap: 20px; }
 .title-row { width: 100%; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 10px;}
 .script-decoration { font-family: 'Alex Brush', cursive; font-size: 2.5rem; color: var(--accent-vivid); display: block; margin-bottom: -15px; }
-
-/* LE TITRE NE SERA PLUS COUPÉ ! */
-.trip-title-input { 
-    border: none; background: transparent; font-family: 'Cormorant Garamond', serif; 
-    font-size: 3.5rem; font-weight: 700; color: var(--text-main); outline: none; 
-    width: 100%; text-transform: uppercase; display: block;
-}
+.trip-title-input { border: none; background: transparent; font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 700; color: var(--text-main); outline: none; width: 100%; text-transform: uppercase; display: block; }
 .trip-title-input::placeholder { color: #bbb; text-transform: none; font-weight: 600;}
 
 .controls-row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;}
-
 .days-generator { display: flex; align-items: center; gap: 8px; background: rgba(0,0,0,0.03); padding: 8px 15px; border-radius: 4px;}
 .days-generator label { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase;}
 .days-generator input { width: 45px; text-align: center; border: 1px solid var(--border-light); border-radius: 4px; font-family: 'Montserrat', sans-serif; font-weight: 700; background: white;}
@@ -140,67 +97,96 @@ html, body {
 .btn-save-mag:hover { background: var(--accent-vivid); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255, 111, 97, 0.3);}
 
 /* =========================================
-   LE LIVRE (MAGAZINE ÉDITORIAL)
+   LE LIVRE ET LA 3D UNIFIÉE (RÉSOLU AU PIXEL PRÈS)
 ========================================= */
-.book-wrapper {
-    width: 100%; display: flex; justify-content: center; margin-top: 10px; perspective: 2500px;
+.book-wrapper { 
+    width: 100%; display: flex; justify-content: center; margin-top: 10px; 
 }
 
+/* LA PERSPECTIVE EST ICI POUR NE DÉFORMER AUCUN ÉLÉMENT */
 .book-container { 
-    width: 1100px; height: 750px; position: relative; perspective: 2500px;
+    width: 1100px; height: 750px; position: relative; 
+    perspective: 3000px; 
 }
 
-.book-cover {
-    width: 550px; height: 750px; background: #1C1C1C; color: white;
-    display: flex; flex-direction: column; justify-content: center; align-items: center;
-    box-shadow: 10px 15px 30px rgba(0,0,0,0.15);
-    position: absolute; right: 0; top: 0;
-    transform-origin: left center; z-index: 50; transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+/* CLASSE PARTAGÉE POUR LA COUVERTURE (STATIC ET ANIMATION) */
+.book-cover-bg {
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/static/img/rando_pyrenees.jpg');
-    background-size: cover; background-position: center; backface-visibility: hidden;
-    border-radius: 0 15px 15px 0;
+    background-size: cover; background-position: center;
 }
-.cover-content { text-align: center; padding: 40px;}
-.book-cover h1 { font-family: 'Cormorant Garamond', serif; font-size: 4rem; text-transform: uppercase; margin: 0;}
-.book-cover p { font-family: 'Montserrat', sans-serif; font-size: 14px; letter-spacing: 4px; text-transform: uppercase; color: var(--accent-vivid);}
-.cover-chevron { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 30px; cursor: pointer; color: white; background: rgba(0,0,0,0.4); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background 0.2s;}
-.cover-chevron:hover { background: var(--accent-vivid); }
-.book-cover.opened { transform: rotateY(-180deg); } 
+
+/* STYLE DES COUVERTURES (Fermées et Flipper) */
+.book-cover {
+    width: 50%; height: 100%; 
+    background-color: #1C1C1C; color: white;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+    box-shadow: 10px 15px 30px rgba(0,0,0,0.15);
+    position: absolute; top: 0;
+    z-index: 50; 
+    padding: 40px;
+    transform: translateZ(0); /* Match parfait avec l'environnement 3D du flipper */
+    backface-visibility: hidden;
+}
+
+#bookCover { right: 0; border-radius: 0 15px 15px 0; }
+#bookBackCover { left: 0; border-radius: 15px 0 0 15px; box-shadow: -10px 15px 30px rgba(0,0,0,0.15); }
+
+.book-cover h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; text-transform: uppercase; margin: 0; padding: 0 20px;}
+
+.cover-chevron { 
+    position: absolute; right: 20px; top: 50%; transform: translateY(-50%); 
+    font-size: 14px; cursor: pointer; color: white; background: rgba(0,0,0,0.4); 
+    width: 28px; height: 28px; border-radius: 50%; 
+    display: flex; align-items: center; justify-content: center; 
+    transition: background 0.2s, transform 0.2s;
+}
+.cover-chevron:hover { background: var(--accent-vivid); transform: translateY(-50%) scale(1.1); }
 
 .book-spreads-container { 
     width: 100%; height: 100%; position: absolute; top: 0; left: 0; 
-    background: white; border-radius: 4px 15px 15px 4px; 
-    box-shadow: 0 25px 50px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.02);
+    background: transparent;
+    transform: translateZ(0);
 }
 
 .day-spread { display: none; width: 100%; height: 100%; position: relative; }
 .day-spread.active { display: flex; }
 
-/* LA SÉPARATION CENTRALE FRANCHE */
-.book-page { flex: 1; padding: 40px; display: flex; flex-direction: column; gap: 20px; background: white; overflow-y: auto; scrollbar-width: none;}
-.left-page { border-right: 1px solid #ddd; border-radius: 4px 0 0 4px;} 
-.right-page { border-radius: 0 15px 15px 0; }
+.book-page { 
+    flex: 1; padding: 40px; display: flex; flex-direction: column; gap: 20px; 
+    background: white; overflow-y: auto; scrollbar-width: none; position: relative;
+    transform: translateZ(0);
+}
+.left-page { 
+    border-right: 1px solid #ddd; border-radius: 4px 0 0 4px;
+    box-shadow: -15px 15px 30px rgba(0,0,0,0.05); 
+} 
+.right-page { 
+    border-radius: 0 15px 15px 0; 
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.05); 
+}
 
 .page-chevron { position: absolute; top: 50%; transform: translateY(-50%); font-size: 28px; color: #ccc; cursor: pointer; transition: color 0.2s; z-index: 30;}
 .page-chevron:hover { color: var(--accent-vivid); }
 .page-chevron.left { left: 15px; }
 .page-chevron.right { right: 15px; }
 
-.page-header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid var(--text-main); padding-bottom: 10px; margin-bottom: 10px; flex: 0 0 auto;}
+/* ALIGNEMENT DES EN-TÊTES */
+.page-header { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--text-main); padding-bottom: 10px; margin-bottom: 10px; height: 50px; flex: 0 0 50px; }
 .page-header.right-align { flex-direction: row-reverse; }
-.day-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 700; text-transform: uppercase; margin: 0;}
-.page-number { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: #bbb; font-style: italic;}
-.btn-delete-day { background: transparent; border: none; font-family: 'Montserrat', sans-serif; font-size: 10px; text-transform: uppercase; font-weight: 700; color: #888; cursor: pointer; transition: color 0.2s;}
+
+.day-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 700; text-transform: uppercase; margin: 0; line-height: 1;}
+.page-number { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: #bbb; font-style: italic; line-height: 1;}
+
+.btn-delete-day { background: transparent; border: none; padding: 0; margin: 0; font-family: 'Montserrat', sans-serif; font-size: 10px; text-transform: uppercase; font-weight: 700; color: #888; cursor: pointer; transition: color 0.2s; line-height: 1; }
 .btn-delete-day:hover { color: #FF0000; }
 
 .time-title { font-family: 'Alex Brush', cursive; font-size: 26px; color: var(--accent-vivid); margin: 0 0 5px 0; font-weight: normal;}
 
-/* Les 4 zones Flexbox identiques (2 à gauche, 2 à droite) */
-.drop-zone-container { flex: 1; display: flex; flex-direction: column; min-height: 120px;}
+.drop-zone-container { display: flex; flex-direction: column;}
+.drop-zone-container.full-height { flex: 1; }
+
 .drop-zone {
-    width: 100%; flex: 1; border: 1px solid #ddd;
-    display: flex; flex-direction: column; align-items: center; padding: 10px;
-    background: #fff; transition: all 0.2s;
+    width: 100%; flex: 1; border: 1px solid #ddd; display: flex; flex-direction: column; align-items: center; padding: 10px; background: #fff; transition: all 0.2s;
 }
 .drop-zone:hover, .drop-zone.dragover { border-color: var(--accent-vivid); box-shadow: 0 5px 15px rgba(0,0,0,0.03);}
 .drop-placeholder { font-family: 'Lora', serif; font-style: italic; color: #bbb; font-size: 13px; text-align: center; margin-top: 30px;}
@@ -208,25 +194,31 @@ html, body {
 .drop-zone.filled .drop-placeholder { display: none; }
 
 /* =========================================
-   LE VRAI MOTEUR 3D DU FLIPPER (MAGIE !)
+   MOTEUR 3D DU FLIPPER (SANS DÉFORMATION NI BUGS DE GUILLEMETS)
 ========================================= */
 .page-flipper {
-    position: absolute; top: 0; height: 100%; 
-    transform-style: preserve-3d; transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); z-index: 100;
+    position: absolute; top: 0; height: 100%; width: 50%;
+    transform-style: preserve-3d; 
+    transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1); 
+    z-index: 100;
 }
-.flip-forward { width: calc(50% - 20px); left: calc(50% + 20px); transform-origin: left center; }
-.flip-backward { width: calc(50% - 20px); left: 0; transform-origin: right center; }
+
+.flipper-face .book-page { margin: 0; width: 100%; height: 100%; flex: none; }
+
+.flip-forward { left: 50%; transform-origin: left center; transform: rotateY(0deg); }
+.flip-forward.flipping { transform: rotateY(-180deg); }
+
+.flip-backward { left: 0; transform-origin: right center; transform: rotateY(0deg); }
+.flip-backward.flipping { transform: rotateY(180deg); }
 
 .flipper-face {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    backface-visibility: hidden; background: white; overflow: hidden;
-    padding: 40px; display: flex; flex-direction: column; gap: 20px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    backface-visibility: hidden; background: transparent; overflow: hidden;
 }
-.flip-forward .flipper-front { transform: rotateY(0deg); border-radius: 0 15px 15px 0;}
-.flip-forward .flipper-back { transform: rotateY(-180deg); border-radius: 4px 0 0 4px; border-right: 1px solid #ddd;}
-.flip-forward.flipping { transform: rotateY(-180deg); }
+.flipper-face > div { width: 100%; height: 100%; }
 
-.flip-backward .flipper-front { transform: rotateY(0deg); border-radius: 4px 0 0 4px;}
-.flip-backward .flipper-back { transform: rotateY(180deg); border-radius: 0 15px 15px 0; border-left: 1px solid #ddd;}
-.flip-backward.flipping { transform: rotateY(180deg); }
+.flip-forward .flipper-front { transform: rotateY(0deg); }
+.flip-forward .flipper-back { transform: rotateY(180deg); }
+
+.flip-backward .flipper-front { transform: rotateY(0deg); }
+.flip-backward .flipper-back { transform: rotateY(-180deg); }

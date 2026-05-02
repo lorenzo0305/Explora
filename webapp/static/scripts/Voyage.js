@@ -402,7 +402,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const cats = escapeHtml(formatCategories(item.categories || item.types || item.category || ''));
             const img = escapeHtml(window.getActivityImage(item));
             
-            // Distance brute en dessous de la catégorie (ex: 11.2 km)
             let distHtml = '';
             if (item.distance) {
                 distHtml = `<div class="rm-card-dist">${escapeHtml(String(item.distance).replace(/km/i, 'km').trim())}</div>`;
@@ -452,10 +451,9 @@ document.addEventListener('DOMContentLoaded', function () {
         sessionStorage.setItem('algorithmRes', JSON.stringify({ data: dataVoyage }));
         closeModal();
         renderItineraire();
-        showToast('Activité remplacée.'); // Petit message discret
+        showToast('Activité remplacée.');
     }
 
-    // ON LANCE LA MACHINE !
     renderItineraire();
 
     // ─── Sauvegarde du voyage ──────────────────────────────────
@@ -529,17 +527,18 @@ document.addEventListener('DOMContentLoaded', function () {
             const finalName = (customName || defaultName);
             const nowIso = new Date().toISOString();
             
-            let coverImg = '/static/img/travel.jpg';
-            outerLoop: for (const day of dataVoyage) {
-                for (const key of ['matin', 'midi', 'aprem', 'soir']) {
-                    for (const act of asArray(day[key])) {
-                        const img = window.getActivityImage(act);
-                        if (img && !img.includes('default')) { coverImg = img; break outerLoop; }
-                    }
-                }
-            }
+            // LA CORRECTION : coverImg reste toujours vide, forçant l'utilisation des Fallbacks 
+            const coverImg = ''; 
 
-            const payload = { name: finalName, location: locationLabel, cover: coverImg, createdAt: nowIso, updatedAt: nowIso, criteria, plan: dataVoyage };
+            const payload = { 
+                name: finalName, 
+                location: locationLabel, 
+                cover: coverImg, 
+                createdAt: nowIso, 
+                updatedAt: nowIso, 
+                criteria, 
+                plan: dataVoyage 
+            };
 
             saveBtn.disabled = true;
             const originalText = saveBtn.textContent;
@@ -553,7 +552,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 upsertCache({ ...payload, id: serverResp.id });
                 saveBtn.textContent = '✔️ Sauvegardé';
-                setTimeout(() => { saveBtn.textContent = originalText; saveBtn.disabled = false; }, 2200);
+                setTimeout(() => { saveBtn.textContent = originalText; saveBtn.disabled = false; window.location.href = '/topics'; }, 1000); 
             } catch (err) {
                 console.error('Erreur sauvegarde :', err);
                 alert("Impossible de sauvegarder ce voyage : " + (err.message || 'réessayez.'));

@@ -24,21 +24,22 @@
         const existing = list.find(x => String(x.id) === String(item.id));
         
         if (existing) {
-            // Si c'est le panier, on incrémente la quantité
             if (key === BASKET_KEY) {
                 existing.qty = (existing.qty || 1) + 1;
                 save(key, list);
                 return true;
             } else {
-                // Pour les favoris, on ne peut pas liker 2 fois
                 return false; 
             }
         }
         
+        // SYNCHRO : Utilisation stricte du dictionnaire pour le panier
+        const finalImage = typeof window !== 'undefined' && window.getActivityImage ? window.getActivityImage(item) : (item.image || item.photo || '');
+
         list.unshift({
             id: String(item.id),
             name: item.name || '',
-            image: item.image || item.photo || '',
+            image: finalImage,
             types: item.types || (item.type ? [item.type] : []),
             qty: 1
         });
@@ -84,12 +85,9 @@
     }
     
     function updateCounts() {
-        // Le badge du panier compte la SOMME des quantités
         const basketList = load(BASKET_KEY);
         const totalQty = basketList.reduce((acc, item) => acc + (item.qty || 1), 0);
         updateBadge('basketCount', totalQty);
-        
-        // Le badge des favoris compte juste les éléments uniques
         updateBadge('likesCount',  load(LIKES_KEY).length);
     }
 
@@ -119,11 +117,14 @@
                 </div>
             ` : '';
 
+            // SYNCHRO : Image actualisée par le dictionnaire au rendu
+            const finalImg = typeof window !== 'undefined' && window.getActivityImage ? window.getActivityImage(x) : (x.image || '/static/img/travel.jpg');
+
             return '<div class="wb-item"' + (draggable ? ' draggable="true"' : '') +
             '   data-id="' + esc(x.id) + '"' +
             '   data-name="' + esc(x.name) + '"' +
-            '   data-image="' + esc(x.image || '') + '">' +
-            '   <img src="' + esc(x.image || '/static/img/no-image.jpg') + '" alt="" onerror="this.src=\'/static/img/no-image.jpg\'">' +
+            '   data-image="' + esc(finalImg) + '">' +
+            '   <img src="' + esc(finalImg) + '" alt="" onerror="this.src=\'/static/img/travel.jpg\'">' +
             '   <div class="wb-name">' + (esc(x.name) || 'Sans nom') + '</div>' +
                 qtyControls +
             '   <button class="wb-remove" type="button" data-id="' + esc(x.id) + '" data-key="' + esc(key) + '" title="Retirer">✕</button>' +
@@ -145,7 +146,6 @@
             });
         }
 
-        // Événements pour le retrait total
         container.querySelectorAll('.wb-remove').forEach(btn => {
             btn.addEventListener('click', e => {
                 e.stopPropagation();
@@ -154,7 +154,6 @@
             });
         });
 
-        // Événements pour gérer les quantités + et -
         if (isBasket) {
             container.querySelectorAll('.wb-btn-plus').forEach(btn => {
                 btn.addEventListener('click', e => {

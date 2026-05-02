@@ -6,13 +6,12 @@
     <title>Explora — Catalogue d'activités</title>
 
     <link rel="stylesheet" href="/static/styles/app.css">
-    <link rel="stylesheet" href="/static/styles/Catalogue.css?v=16.0">
+    <link rel="stylesheet" href="/static/styles/Catalogue.css?v=18.0">
     <link rel="stylesheet" href="/static/styles/wishbasket.css?v=2">
 
-    <!-- LE VOILÀ : Notre dictionnaire d'images -->
     <script src="/static/scripts/imageDictionary.js?v=2" defer></script>
     <script src="/static/scripts/wishbasket.js" defer></script>
-    <script src="/static/scripts/Catalogue.js?v=4" defer></script>
+    <script src="/static/scripts/Catalogue.js?v=5" defer></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,7 +75,18 @@
 
                     <div class="section fade-in delay-1">
                         <h2 class="section-title">Parcourir par région</h2>
-                        <div class="destinations-grid">
+                        
+                        <!-- LE NOUVEAU CARROUSEL EDGE-TO-EDGE -->
+                        <div class="destinations-carousel">
+
+                            <!-- LES 2 RÉGIONS ACTIVES (Cliquables) -->
+                            <a href="/region/Auvergne-Rhone-Alpes" class="dest-card">
+                                <div class="dest-image" style="background-image: url('/static/img/auvergne.jpg');"></div>
+                                <div class="dest-content">
+                                    <h3>Auvergne-Rhône-Alpes</h3>
+                                    <span class="dest-link">Découvrir ➔</span>
+                                </div>
+                            </a>
 
                             <a href="/region/Hauts-de-France" class="dest-card">
                                 <div class="dest-image" style="background-image: url('/static/img/baie_de_somme2.jpg');"></div>
@@ -86,13 +96,61 @@
                                 </div>
                             </a>
 
-                            <a href="/region/Auvergne-Rhone-Alpes" class="dest-card">
-                                <div class="dest-image" style="background-image: url('/static/img/auvergne.jpg');"></div>
-                                <div class="dest-content">
-                                    <h3>Auvergne-Rhône-Alpes</h3>
-                                    <span class="dest-link">Découvrir ➔</span>
-                                </div>
-                            </a>
+                            <!-- LES 11 AUTRES RÉGIONS (Désactivées, non cliquables) -->
+                            <div class="dest-card disabled-card">
+                                <div class="dest-image" style="background-image: url('/static/img/bourgogne.jpg');"><div class="coming-soon-badge">Bientôt</div></div>
+                                <div class="dest-content"><h3>Bourgogne-Franche-Comté</h3><span class="dest-link">En préparation</span></div>
+                            </div>
+                            
+                            <div class="dest-card disabled-card">
+                                <div class="dest-image" style="background-image: url('/static/img/bretagne.jpg');"><div class="coming-soon-badge">Bientôt</div></div>
+                                <div class="dest-content"><h3>Bretagne</h3><span class="dest-link">En préparation</span></div>
+                            </div>
+
+                            <div class="dest-card disabled-card">
+                                <div class="dest-image" style="background-image: url('/static/img/centre.jpg');"><div class="coming-soon-badge">Bientôt</div></div>
+                                <div class="dest-content"><h3>Centre-Val de Loire</h3><span class="dest-link">En préparation</span></div>
+                            </div>
+
+                            <div class="dest-card disabled-card">
+                                <div class="dest-image" style="background-image: url('/static/img/corse.jpg');"><div class="coming-soon-badge">Bientôt</div></div>
+                                <div class="dest-content"><h3>Corse</h3><span class="dest-link">En préparation</span></div>
+                            </div>
+
+                            <div class="dest-card disabled-card">
+                                <div class="dest-image" style="background-image: url('/static/img/grand_est.jpg');"><div class="coming-soon-badge">Bientôt</div></div>
+                                <div class="dest-content"><h3>Grand Est</h3><span class="dest-link">En préparation</span></div>
+                            </div>
+
+                            <div class="dest-card disabled-card">
+                                <div class="dest-image" style="background-image: url('/static/img/idf.jpg');"><div class="coming-soon-badge">Bientôt</div></div>
+                                <div class="dest-content"><h3>Île-de-France</h3><span class="dest-link">En préparation</span></div>
+                            </div>
+
+                            <div class="dest-card disabled-card">
+                                <div class="dest-image" style="background-image: url('/static/img/normandie.jpg');"><div class="coming-soon-badge">Bientôt</div></div>
+                                <div class="dest-content"><h3>Normandie</h3><span class="dest-link">En préparation</span></div>
+                            </div>
+
+                            <div class="dest-card disabled-card">
+                                <div class="dest-image" style="background-image: url('/static/img/nouvelle_aquitaine.jpg');"><div class="coming-soon-badge">Bientôt</div></div>
+                                <div class="dest-content"><h3>Nouvelle-Aquitaine</h3><span class="dest-link">En préparation</span></div>
+                            </div>
+
+                            <div class="dest-card disabled-card">
+                                <div class="dest-image" style="background-image: url('/static/img/occitanie.jpg');"><div class="coming-soon-badge">Bientôt</div></div>
+                                <div class="dest-content"><h3>Occitanie</h3><span class="dest-link">En préparation</span></div>
+                            </div>
+
+                            <div class="dest-card disabled-card">
+                                <div class="dest-image" style="background-image: url('/static/img/pays_loire.jpg');"><div class="coming-soon-badge">Bientôt</div></div>
+                                <div class="dest-content"><h3>Pays de la Loire</h3><span class="dest-link">En préparation</span></div>
+                            </div>
+
+                            <div class="dest-card disabled-card">
+                                <div class="dest-image" style="background-image: url('/static/img/provence.jpg');"><div class="coming-soon-badge">Bientôt</div></div>
+                                <div class="dest-content"><h3>Provence-Alpes-Côte d'Azur</h3><span class="dest-link">En préparation</span></div>
+                            </div>
 
                         </div>
                     </div>

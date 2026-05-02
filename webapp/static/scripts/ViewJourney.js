@@ -1,4 +1,5 @@
-/* ===== INJECTION DES ANIMATIONS CSS ===== */
+// --- /static/scripts/ViewJourney.js ---
+
 if (!document.getElementById('explora-animations')) {
     const style = document.createElement('style');
     style.id = 'explora-animations';
@@ -20,8 +21,7 @@ const DAY_FALLBACKS = [
     '/static/img/menton.jpg', '/static/img/autoir.jpg'
 ];
 
-// --- FONCTION DE SÉCURITÉ POUR LES IMAGES ---
-// Si le dictionnaire imageDictionary.js n'est pas encore chargé, ça met une belle image au lieu d'un gris moche.
+// SYNCHRO : Demande toujours au dictionnaire
 function getSafeImage(item) {
     if (!item) return DEFAULT_COVER;
     if (typeof window !== 'undefined' && typeof window.getActivityImage === 'function') {
@@ -115,7 +115,7 @@ function randomDayImage(d, j) {
     const order = ['morning', 'noon', 'afternoon', 'evening']; const pool = [];
     for (const k of order) { 
         for (const it of (d.slots?.[k] || [])) { 
-            const u = getSafeImage(it); 
+            const u = getSafeImage(it); // SYNCHRO IMPORTANTE ICI
             if (u && !u.includes('no-image') && !u.includes('appareil_photo')) pool.push(u); 
         } 
     }
@@ -140,7 +140,6 @@ function mergeJourneys(a = {}, b = {}) {
     return m;
 }
 
-// ─── SAUVEGARDE MUTATION ────────────────────────────────────
 function saveAndRerender(journey) {
     journey.updatedAt = new Date().toISOString();
     
@@ -160,7 +159,6 @@ function saveAndRerender(journey) {
     render(journey); 
 }
 
-// ─── TOAST NOTIFICATION ────────────────────────────────
 function showToast(message) {
     let toast = document.getElementById('toast-notification');
     if (!toast) {
@@ -173,14 +171,11 @@ function showToast(message) {
     setTimeout(() => toast.classList.remove('show'), 3000);
 }
 
-// ─── RENDU PRINCIPAL ────────────────────────────────────────
 function render(j) {
     localStorage.setItem(LAST_ID_KEY, String(j.id));
     
-    // 1. Titre du voyage
     document.getElementById('journeyTitle').textContent = String(j?.name || 'Mon Voyage').replace(/\s*<br\s*\/?>\s*/gi, ' ').trim();
     
-    // 2. Région (en écriture script au-dessus)
     const locText = j?.location || '';
     const locEl = document.getElementById('journeyLocation');
     if (!locText || locText === 'Mon Carnet Magazine' || locText === 'Ville, lieux...') { 
@@ -189,14 +184,12 @@ function render(j) {
         locEl.textContent = locText; 
     }
     
-    // 3. Infos (Jours / Activités) AVEC LA PUCE
     const days = deriveDays(j || {}); 
     const aCount = countActivities(j || {});
     
     document.getElementById('summaryLine').innerHTML =
         `<span>${days.length} jour${days.length > 1 ? 's' : ''}</span> <span style="margin: 0 10px;">•</span> <span>${aCount} activité${aCount > 1 ? 's' : ''}</span>`;
 
-    // 4. RÉINTÉGRATION DU DÉPLACEMENT DU BOUTON RETOUR
     const backBtn = document.getElementById('backBtn');
     const sectionTitle = document.querySelector('.section-title');
     if (backBtn && sectionTitle && backBtn.parentNode !== sectionTitle) {
@@ -289,6 +282,7 @@ function render(j) {
                     actCard.style.flexDirection = 'column'; 
                     actCard.style.alignItems = 'flex-start';
 
+                    // SYNCHRO IMPORTANTE ICI (Rendu HTML)
                     let img = escapeHtml(getSafeImage(act));
 
                     let actDesc = act?.description || act?.shortDescription || "";
@@ -387,7 +381,6 @@ function render(j) {
     }
 }
 
-// ─── MODAL DE REMPLACEMENT (IA + RECHERCHE EN GRILLE) ───
 function ensureModal() {
     let modal = document.getElementById('replaceModal');
     if (modal) return modal;
@@ -546,6 +539,8 @@ function renderGridCards(items, container) {
         const id = escapeHtml(String(item.id || item._id || item.nom || ''));
         const name = escapeHtml(item.name || item.nom || 'Sans nom');
         const cats = escapeHtml(formatCategoriesString(item.categories || item.types || item.category || ''));
+        
+        // SYNCHRO IMPORTANTE ICI (Remplacement Modale)
         const img = escapeHtml(getSafeImage(item));
         
         let distHtml = '';

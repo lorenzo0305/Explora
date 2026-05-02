@@ -1,4 +1,5 @@
-/* ===== Données Voyages ===== */
+// --- /static/scripts/MesVoyages.js ---
+
 const JOURNEYS_KEY = "wish_journeys_v1";
 
 const FALLBACK_IMAGES = [
@@ -28,7 +29,6 @@ function getShuffledFallbacks(journeyId) {
     return arr;
 }
 
-/* ===== LA JOLIE MODALE DE SUPPRESSION ===== */
 function showCustomConfirm(title, message, onConfirm) {
     let modal = document.getElementById('customConfirmModal');
     if (!modal) {
@@ -101,7 +101,12 @@ function metaText(j) {
 }
 
 function pickCover(j) {
-    if (j?.cover && !j.cover.includes('no-image') && !j.cover.includes('appareil_photo')) return j.cover;
+    // 1. Si le voyage a une VRAIE cover spécifiquement assignée (ex: sauvegardé via l'Éditeur manuel)
+    if (j?.cover && !j.cover.includes('no-image') && !j.cover.includes('appareil_photo') && !j.cover.includes('no-img')) {
+        return j.cover;
+    }
+    
+    // 2. SINON : on n'utilise PAS les activités, on prend nos belles photos de couverture de voyage !
     return getShuffledFallbacks(j?.id)[0];
 }
 
@@ -124,10 +129,7 @@ function renderJourneys(journeys) {
         const isEditor = j.source === 'editor' || j.source === 'Editor';
         const sourceText = isEditor ? "Voyage conçu manuellement" : "Voyage généré par IA";
         
-        // CORRECTION: Nettoyage total de tous les anciens <br> enregistrés
         let cleanName = String(j.name || "Voyage").replace(/\s*&lt;br\s*\/?&gt;\s*/gi, ' - ').replace(/\s*<br\s*\/?>\s*/gi, ' - ');
-        
-        // On n'injecte plus rien de bizarre, on échappe juste pour la sécurité HTML
         const formattedName = esc(cleanName);
 
         item.innerHTML = `
