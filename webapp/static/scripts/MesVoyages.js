@@ -80,7 +80,13 @@ function showCustomConfirm(title, message, onConfirm) {
 }
 
 const lsGetJourneys = () => { try { return JSON.parse(localStorage.getItem(JOURNEYS_KEY) || "[]"); } catch { return []; } };
-const lsSetJourneys = (arr) => { try { localStorage.setItem(JOURNEYS_KEY, JSON.stringify(arr)); } catch { } };
+
+const lsSetJourneys = (arr) => { 
+    try { 
+        localStorage.setItem(JOURNEYS_KEY, JSON.stringify(arr)); 
+        window.dispatchEvent(new CustomEvent('wishbasket:change')); 
+    } catch { } 
+};
 
 function activitiesCount(j) {
     if (!Array.isArray(j?.plan)) return 0;
@@ -101,12 +107,9 @@ function metaText(j) {
 }
 
 function pickCover(j) {
-    // 1. Si le voyage a une VRAIE cover spécifiquement assignée (ex: sauvegardé via l'Éditeur manuel)
     if (j?.cover && !j.cover.includes('no-image') && !j.cover.includes('appareil_photo') && !j.cover.includes('no-img')) {
         return j.cover;
     }
-    
-    // 2. SINON : on n'utilise PAS les activités, on prend nos belles photos de couverture de voyage !
     return getShuffledFallbacks(j?.id)[0];
 }
 
@@ -156,9 +159,17 @@ function renderJourneys(journeys) {
             showCustomConfirm(
                 "Supprimer ce voyage ?", 
                 `Êtes-vous sûr de vouloir supprimer définitivement « ${cleanName} » ?`, 
-                () => {
+                async () => {
+                    // 1. Suppression du cache local
                     lsSetJourneys(lsGetJourneys().filter(x => String(x.id) !== String(j.id)));
                     loadJourneys();
+
+                    // 2. LA CORRECTION : On prévient la BDD (serveur) pour qu'il le supprime définitivement !
+                    try {
+                        await fetch('/journeys/' + encodeURIComponent(j.id), { method: 'DELETE' });
+                    } catch(err) {
+                        console.warn("Le serveur n'a pas pu traiter la suppression:", err);
+                    }
                 }
             );
         });

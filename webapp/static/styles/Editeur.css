@@ -1,3 +1,5 @@
+/* --- Editeur.css --- */
+
 :root {
     --bg-color: #FAF8F5; 
     --text-main: #1C1C1C; 
@@ -53,27 +55,52 @@ html, body {
 .script-decoration-small { font-family: 'Alex Brush', cursive; font-size: 2.2rem; color: var(--accent-vivid); display: block; margin-bottom: -10px; }
 .photo-stack-header h3 { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 900; color: var(--text-main); margin: 0; letter-spacing: 2px;}
 
-.polaroid-list { display: flex; flex-direction: column; gap: 15px; align-items: center; min-height: 200px;}
-.draggable-item {
-    background: white; padding: 8px 8px 25px 8px; border-radius: 2px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06); width: 100%; max-width: 200px;
-    cursor: grab; position: relative; transition: transform 0.3s, box-shadow 0.3s;
-}
-.draggable-item:hover { transform: scale(1.03); z-index: 10; box-shadow: 0 10px 25px rgba(0,0,0,0.12); }
-.draggable-item:active { cursor: grabbing; transform: scale(0.98); }
-.draggable-item img { width: 100%; height: 110px; object-fit: cover; background: #eee; }
-.p-name { font-family: 'Alex Brush', cursive; font-size: 18px; color: var(--text-main); text-align: center; margin-top: 5px; line-height: 1.1;}
-.btn-remove-item { display: none; position: absolute; right: 10px; top: 10px; background: rgba(0,0,0,0.5); border: none; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; color: white; transition: background 0.2s; backdrop-filter: blur(4px);}
-.btn-remove-item:hover { background: #1C1C1C; }
+/* =========================================
+   STYLE DE LA CARTE RECTANGULAIRE (VOYAGE)
+========================================= */
+.polaroid-list { display: flex; flex-direction: column; gap: 12px; align-items: stretch; min-height: 200px; width: 100%;}
 
-.draggable-item.dropped { 
-    width: 100%; max-width: none; cursor: default; padding: 10px; display: flex; gap: 15px; align-items: center; 
-    transform: none !important; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    margin-bottom: 10px; border: 1px solid rgba(0,0,0,0.05);
+.draggable-item {
+    background: white; border: 1px solid var(--border-light); border-radius: 6px;
+    width: 100%; max-width: none;
+    cursor: grab; position: relative; transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    display: flex; flex-direction: column; overflow: hidden;
 }
-.draggable-item.dropped .btn-remove-item { display: block; }
-.draggable-item.dropped img { width: 50px; height: 50px; border-radius: 4px; }
-.draggable-item.dropped .p-name { margin-top: 0; font-size: 16px; text-align: left; }
+.draggable-item:hover { z-index: 10; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-color: var(--accent-vivid); }
+.draggable-item:active { cursor: grabbing; transform: scale(0.98); }
+
+.btn-activite { 
+    width: 100%; text-align: left; padding: 10px; font-family: 'Lora', serif;
+    background: transparent; border: none; cursor: pointer; display: flex; align-items: center; gap: 12px; transition: background 0.2s; 
+}
+.btn-activite:hover { background: rgba(0,0,0,0.02); }
+.inline-act-thumb { width: 45px; height: 45px; border-radius: 4px; object-fit: cover; flex-shrink: 0; }
+.activite-info-header { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.activite-nom { line-height: 1.2; font-size: 14px; font-weight: normal; color: var(--text-main); font-family: 'Lora', serif;}
+.activite-meta-header { font-family: 'Montserrat', sans-serif; font-size: 10px; color: #6b5f57; margin-top: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+.icone-fleche { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; flex-shrink: 0; color: var(--accent-vivid); font-size: 11px; transition: transform .25s ease; }
+.btn-activite.ouvert .icone-fleche { transform: rotate(90deg); }
+
+.details-activite { max-height: 0; overflow: hidden; background: #fff; border-left: 3px solid var(--accent-vivid); margin-left: 15px; transition: max-height .35s ease, padding .25s ease, margin .25s ease; padding: 0 16px; }
+.details-activite.visible { max-height: 800px; padding: 10px 16px; margin-top: 4px; margin-bottom: 10px; }
+.details-activite p { margin: 6px 0; color: #6b5f57; font-size: 12px; line-height: 1.4; font-family: 'Lora', serif;}
+.details-activite p strong { color: var(--text-main); font-weight: 600; }
+.categories-text { color: #C9473A !important; font-style: italic; font-size: 11px; margin-bottom: 8px !important; }
+
+/* Bouton supprimer (caché dans le panier) */
+.draggable-item .btn-remove-item { display: none; position: absolute; right: 8px; top: 12px; background: rgba(255, 111, 97, 0.1); color: var(--accent-vivid); border: 1px solid var(--accent-vivid); width: 22px; height: 22px; border-radius: 50%; cursor: pointer; transition: all 0.2s; z-index: 5; font-size: 10px;}
+.draggable-item .btn-remove-item:hover { background: var(--accent-vivid); color: white; }
+
+/* Comportement quand la carte est glissée sur une page */
+.draggable-item.dropped { 
+    padding: 0; 
+    transform: none !important; box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    margin-bottom: 10px; border: 1px solid rgba(0,0,0,0.08);
+}
+.draggable-item.dropped .btn-remove-item { display: flex; align-items: center; justify-content: center; }
+.draggable-item.dropped .icone-fleche { margin-right: 30px; } /* Laisse de la place pour la croix sans se superposer */
+
+/* ========================================= */
 
 .workspace-header-massive { width: 100%; max-width: 1100px; margin: 0 auto 30px auto; display: flex; flex-direction: column; gap: 20px; }
 .title-row { width: 100%; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 10px;}
@@ -212,7 +239,6 @@ html, body {
     backface-visibility: hidden; background-color: transparent; overflow: hidden;
 }
 
-/* ON RAJOUTE ÇA : On force le blanc uniquement quand c'est une page intérieure qui tourne */
 .flipper-face.book-page {
     background-color: white !important;
 }

@@ -37,6 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
     generateDays(1);
 });
 
+/* =========================================
+   PANIER AVEC ACCORDÉON (STYLE VOYAGE)
+========================================= */
 function loadBasketIntoSidebar() {
     const list = document.getElementById('basket-items-list');
     list.innerHTML = '';
@@ -49,6 +52,16 @@ function loadBasketIntoSidebar() {
         return;
     }
 
+    const formatCategories = (catsRaw) => {
+        let arr = [];
+        if (Array.isArray(catsRaw)) arr = catsRaw.map(c => typeof c === 'string' ? c : (c.name || ""));
+        else if (typeof catsRaw === 'string') arr = catsRaw.split(',').map(s => s.trim());
+        arr = arr.filter(Boolean);
+        return arr.length ? arr.join(' · ') : '';
+    };
+
+    const escapeHtml = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
     items.forEach(item => {
         let resolvedImg = typeof window !== 'undefined' && window.getActivityImage ? window.getActivityImage(item) : (item.image || '/static/img/travel.jpg');
 
@@ -60,17 +73,47 @@ function loadBasketIntoSidebar() {
             div.dataset.id = item.id;
             div.dataset.name = item.name;
             div.dataset.image = resolvedImg; 
+            
+            // On sauvegarde l'item COMPLET dans le HTML pour ne rien perdre au moment de sauvegarder le carnet
+            div.dataset.full = JSON.stringify(item); 
+            
+            // LA CORRECTION : Recherche élargie pour récupérer les infos peu importe comment la BDD les appelle
+            const rawCity = item.ville || item.locality || item.city || item.commune || item.adresse || '';
+            const rawDesc = item.description || item.desc || item.summary || item.comment || item.abstract || "Aucune description détaillée n'est disponible.";
+            
+            const actCity = escapeHtml(rawCity);
+            const cats = escapeHtml(formatCategories(item.categories || item.types || item.category));
+            const actDesc = escapeHtml(rawDesc).trim();
 
             div.innerHTML = `
-                <img src="${resolvedImg}" alt="${item.name || ''}" onerror="this.src='/static/img/travel.jpg'">
-                <div class="p-name" style="font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; text-transform: uppercase; text-align: center; margin-top: 8px; letter-spacing: 0.5px;">${item.name}</div>
-                <button class="btn-remove-item" title="Remettre dans le panier">✕</button>
+                <div class="btn-activite">
+                    <img src="${resolvedImg}" class="inline-act-thumb" alt="${item.name || ''}" onerror="this.src='/static/img/travel.jpg'">
+                    <div class="activite-info-header">
+                        <span class="activite-nom">${item.name}</span>
+                        <span class="activite-meta-header">${actCity}</span>
+                    </div>
+                    <span class="icone-fleche">▶</span>
+                </div>
+                <div class="details-activite">
+                    <p class="categories-text">${cats}</p>
+                    <p><strong>📍 Lieu :</strong> ${actCity}</p>
+                    <p>${actDesc}</p>
+                </div>
+                <button class="btn-remove-item" title="Retirer du carnet">✕</button>
             `;
             
+            // Logique de l'accordéon
+            div.querySelector('.btn-activite').addEventListener('click', function(e) {
+                const detailsDiv = this.nextElementSibling;
+                detailsDiv.classList.toggle('visible');
+                this.classList.toggle('ouvert');
+            });
+
             div.addEventListener('dragstart', handleDragStart);
             div.addEventListener('dragend', handleDragEnd);
             div.querySelector('.btn-remove-item').addEventListener('click', function(e) {
-                e.stopPropagation(); returnToBasket(div);
+                e.stopPropagation(); 
+                returnToBasket(div);
             });
             list.appendChild(div);
         }
@@ -90,6 +133,15 @@ function loadBasketIntoSidebar() {
 function returnToBasket(element) {
     const list = document.getElementById('basket-items-list');
     element.classList.remove('dropped');
+    
+    // Si l'élément était ouvert, on le referme
+    const btnAct = element.querySelector('.btn-activite');
+    const details = element.querySelector('.details-activite');
+    if(btnAct && details) {
+        btnAct.classList.remove('ouvert');
+        details.classList.remove('visible');
+    }
+
     const parentZone = element.parentElement;
     list.appendChild(element);
 
@@ -178,7 +230,6 @@ window.turnPage = function(direction) {
             backFace.classList.add('book-page', 'left-page');
             backFace.innerHTML = spreads[newIndex].querySelector('.left-page').innerHTML;
 
-            // SUPERPOSITION TEMPORELLE ANTI-TROU
             spreads[currentDayIndex].style.position = 'absolute';
             spreads[currentDayIndex].style.zIndex = 2;
             spreads[currentDayIndex].querySelector('.right-page').style.visibility = 'hidden';
@@ -220,7 +271,6 @@ window.turnPage = function(direction) {
             backFace.classList.add('book-page', 'right-page');
             backFace.innerHTML = spreads[newIndex].querySelector('.right-page').innerHTML;
 
-            // SUPERPOSITION TEMPORELLE ANTI-TROU
             spreads[currentDayIndex].style.position = 'absolute';
             spreads[currentDayIndex].style.zIndex = 2;
             spreads[currentDayIndex].querySelector('.left-page').style.visibility = 'hidden';
@@ -248,7 +298,6 @@ window.turnPage = function(direction) {
                     document.getElementById('bookSpreadsContainer').style.display = 'none';
                     document.getElementById('bookBackCover').style.display = 'flex';
                 } else {
-                    // Nettoyage de la superposition
                     spreads[currentDayIndex].style.display = 'none';
                     spreads[currentDayIndex].style.position = '';
                     spreads[currentDayIndex].style.zIndex = '';
@@ -265,7 +314,6 @@ window.turnPage = function(direction) {
                 } else if (currentDayIndex === maxIndex) {
                     spreads[maxIndex - 1].querySelector('.right-page').style.visibility = 'visible';
                 } else {
-                    // Nettoyage de la superposition
                     spreads[currentDayIndex].style.display = 'none';
                     spreads[currentDayIndex].style.position = '';
                     spreads[currentDayIndex].style.zIndex = '';
@@ -361,6 +409,15 @@ function initDropZones() {
 
             this.classList.add('filled');
             draggedElement.classList.add('dropped');
+            
+            // S'assure que la carte est repliée quand elle atterrit
+            const btnAct = draggedElement.querySelector('.btn-activite');
+            const details = draggedElement.querySelector('.details-activite');
+            if(btnAct && details) {
+                btnAct.classList.remove('ouvert');
+                details.classList.remove('visible');
+            }
+
             this.appendChild(draggedElement); 
         });
     });
@@ -430,7 +487,12 @@ document.getElementById('saveJourneyBtn').addEventListener('click', async () => 
             const zone = spread.querySelector(`.drop-zone[data-time="${time}"]`);
             if(zone) {
                 const itemsInZone = Array.from(zone.querySelectorAll('.draggable-item')).map(item => {
-                    return { id: item.dataset.id, name: item.dataset.name, image: item.dataset.image };
+                    // On récupère le JSON complet pour ne rien perdre (descriptions, ville etc)
+                    try {
+                        return JSON.parse(item.dataset.full);
+                    } catch(e) {
+                        return { id: item.dataset.id, name: item.dataset.name, image: item.dataset.image };
+                    }
                 });
                 if(itemsInZone.length > 0) dayPlan.slots.push({ key: time, items: itemsInZone });
             }
@@ -467,8 +529,13 @@ document.getElementById('saveJourneyBtn').addEventListener('click', async () => 
     const remainingItemsMap = {};
     Array.from(list.querySelectorAll('.draggable-item')).forEach(item => {
         const id = item.dataset.id;
+        let fullData = { id: id, name: item.dataset.name, image: item.dataset.image, qty: 1 };
+        try {
+            fullData = { ...JSON.parse(item.dataset.full), qty: 1 };
+        } catch(e) {}
+
         if (!remainingItemsMap[id]) {
-            remainingItemsMap[id] = { id: id, name: item.dataset.name, image: item.dataset.image, types: [item.dataset.type], qty: 1 };
+            remainingItemsMap[id] = fullData;
         } else {
             remainingItemsMap[id].qty++;
         }

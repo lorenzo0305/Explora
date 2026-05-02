@@ -1,4 +1,5 @@
-/* ===== Données Voyages ===== */
+// --- /static/scripts/Accueil.js ---
+
 const JOURNEYS_KEY = "wish_journeys_v1";
 
 const FALLBACK_IMAGES = [
@@ -29,66 +30,16 @@ function getShuffledFallbacks(journeyId) {
 }
 
 const lsGetJourneys = () => { try { return JSON.parse(localStorage.getItem(JOURNEYS_KEY) || "[]"); } catch { return []; } };
-const isHttp = (u) => typeof u === "string" && /^https?:\/\//i.test(u);
-const isPath = (u) => typeof u === "string" && u.startsWith("/");
-const isNonDefaultImg = (u) => !!u && typeof u === "string" && !u.includes("no-image") && !u.includes("appareil_photo");
 
 function metaText(j) {
     const d = Array.isArray(j?.plan) ? j.plan.length : 0;
     return (j.location ? j.location + " • " : "") + d + (d > 1 ? " jours" : " jour");
 }
 
-function resolveImg(u) {
-    if (!u || typeof u !== "string") return "";
-    u = u.trim();
-    if (!u) return "";
-    if (u.startsWith("data:image/")) return u;
-    if (u.startsWith("//")) return "https:" + u;
-    if (isHttp(u) || isPath(u)) return u;
-    if (/\.(jpe?g|png|webp|gif|tiff?|bmp)$/i.test(u)) return "/static/img/phototheque/" + u.replace(/^\/+/, "");
-    return "";
-}
-
-function firstImageInActivity(a) {
-    if (!a || typeof a !== "object") return "";
-    const candidates = [a.image, a.photo, a.picture, a.thumbnail, a.cover, a.image_url, a.imageUrl];
-    for (const c of candidates) {
-        const u = resolveImg(typeof c === "string" ? c : (Array.isArray(c) ? c[0] : ""));
-        if (u && isNonDefaultImg(u)) return u;
-    }
-    return "";
-}
-
-function firstImageInDay(d) {
-    if (!d) return "";
-    let buckets = [];
-    if (d.slots && typeof d.slots === "object") {
-        if (Array.isArray(d.slots)) buckets = d.slots.map(s => s.items || []);
-        else ["morning", "noon", "afternoon", "evening", "matin", "midi", "aprem", "soir"].forEach(k => {
-            if (Array.isArray(d.slots[k])) buckets.push(d.slots[k]);
-        });
-    }
-    ["matin", "midi", "aprem", "soir", "morning", "noon", "afternoon", "evening"].forEach(k => {
-        if (Array.isArray(d[k])) buckets.push(d[k]);
-    });
-    for (const bucket of buckets) {
-        for (const a of (bucket || [])) {
-            const u = firstImageInActivity(a);
-            if (u) return u;
-        }
-    }
-    return "";
-}
-
+// LA CORRECTION : La fonction pickCover est désormais un copié-collé strict de celle de "MesVoyages.js"
 function pickCover(j) {
-    const c = resolveImg(j?.cover);
-    if (c && isNonDefaultImg(c)) return c;
-    const direct = firstImageInActivity(j);
-    if (direct) return direct;
-    const days = Array.isArray(j?.plan) ? j.plan : (Array.isArray(j?.days) ? j.days : []);
-    for (const d of days) {
-        const u = firstImageInDay(d);
-        if (u) return u;
+    if (j?.cover && !j.cover.includes('no-image') && !j.cover.includes('appareil_photo') && !j.cover.includes('no-img')) {
+        return j.cover;
     }
     return getShuffledFallbacks(j?.id)[0];
 }

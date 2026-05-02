@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             const imgUrl = getSafeImage(item);
             const safeImgHtml = escapeHtml(imgUrl);
 
-            // On garde le type pour le panier, mais on ne l'affiche plus
             const type = (item.types && item.types[0]) ? item.types[0] : query;
             const desc = escapeHtml(item.description || "Aucune description détaillée n'est disponible pour cette activité. Laissez-vous surprendre sur place !");
 
@@ -61,7 +60,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             card.className = 'activity-accordion';
             const isFav = window.WishLikes ? window.WishLikes.has(id) : false;
 
-            // SUPPRESSION DE .alc-meta ET AJOUT D'UN CONTENEUR POUR LE TITRE
             card.innerHTML = `
                 <div class="alc-img-wrapper">
                     <img src="${safeImgHtml}" alt="" class="alc-img" onerror="this.src='${NO_IMG}'">
@@ -95,7 +93,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             btnFav.addEventListener('click', (e) => {
                 e.stopPropagation(); 
                 if(window.WishLikes) {
+                    // CORRECTION: ...item pour tout transférer
                     window.WishLikes.toggle({ 
+                        ...item,
                         id: id, 
                         name: item.name, 
                         image: imgUrl, 
@@ -110,7 +110,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             btnPan.addEventListener('click', (e) => {
                 e.stopPropagation(); 
                 if(window.WishBasket) {
+                    // CORRECTION: ...item pour tout transférer
                     window.WishBasket.add({ 
+                        ...item,
                         id: id, 
                         name: item.name, 
                         image: imgUrl, 

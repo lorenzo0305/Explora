@@ -9,7 +9,6 @@ function showToast(message) {
     setTimeout(() => { toast.style.opacity = '0'; setTimeout(() => toast.remove(), 300); }, 2500);
 }
 
-// Ici on s'assure que "fond" renvoie systématiquement vers simple.jpg comme tu le souhaitais
 const THEMES_PHONES = {
     "Nature": {
         fond: "/static/img/simple.jpg", 
@@ -54,20 +53,17 @@ window.openPhone = async function(categoryName) {
     const currentTheme = THEMES_PHONES[categoryName] || THEMES_PHONES["Nature"];
     phoneScreen.style.backgroundImage = `url('${currentTheme.fond}')`;
 
-    // On retire la potentielle classe de fermeture de la dernière fois
     modal.classList.remove('fade-out');
 
     grid.classList.remove('hidden');
     preview.classList.remove('show');
     preview.innerHTML = ''; 
 
-    // LE TITRE SE FAIT UNE SEULE FOIS ICI (Pas de "Catégorie")
     grid.innerHTML = `
         <h2 class="app-title">${categoryName}</h2>
         <div class="app-grid-icons"><p style="color:#111; font-weight:bold;">Chargement...</p></div>
     `;
     
-    // On l'affiche avec display flex pour qu'il soit cliquable
     modal.style.display = 'flex';
 
     try {
@@ -116,8 +112,6 @@ function showActivityDetails(act, resolvedImgUrl) {
     const preview = document.getElementById('activityPreview');
 
     const activityName = act.name || 'Sans nom';
-
-    // On cache doucement la grille des apps
     grid.classList.add('hidden');
 
     const types = Array.isArray(act.types) ? act.types.join(' · ') : act.category || '';
@@ -125,7 +119,6 @@ function showActivityDetails(act, resolvedImgUrl) {
     const id = act.id || act._id || act.url || '';
     const isFav = window.WishLikes ? window.WishLikes.has(id) : false;
 
-    // Plein écran dans le téléphone !
     preview.innerHTML = `
         <div class="preview-header">
             <button class="back-to-apps-btn" onclick="window.backToAppGrid()">←</button>
@@ -152,7 +145,8 @@ function showActivityDetails(act, resolvedImgUrl) {
     btnFav.addEventListener('click', (e) => {
         e.stopPropagation();
         if(window.WishLikes) {
-            window.WishLikes.toggle({ id, name: activityName, image: resolvedImgUrl, types: act.types || [] });
+            // CORRECTION: ...act pour tout transférer
+            window.WishLikes.toggle({ ...act, id, name: activityName, image: resolvedImgUrl, types: act.types || [] });
             btnFav.classList.toggle('active', window.WishLikes.has(id));
             window.WishLikes.refresh();
         }
@@ -162,7 +156,8 @@ function showActivityDetails(act, resolvedImgUrl) {
     btnPan.addEventListener('click', (e) => {
         e.stopPropagation();
         if(window.WishBasket) {
-            window.WishBasket.add({ id, name: activityName, image: resolvedImgUrl, types: act.types || [] });
+            // CORRECTION: ...act pour tout transférer
+            window.WishBasket.add({ ...act, id, name: activityName, image: resolvedImgUrl, types: act.types || [] });
             window.WishBasket.refresh();
             showToast('Ajouté au panier !'); 
         }
@@ -188,10 +183,8 @@ window.closePhone = function(e) {
     const grid = document.getElementById('appGrid');
     const preview = document.getElementById('activityPreview');
     
-    // On lance la superbe animation de fermeture (Rotation inverse)
     modal.classList.add('fade-out');
     
-    // Une fois l'animation CSS terminée (300ms), on remet display à none pour éviter le bug de la page !
     setTimeout(() => {
         modal.style.display = 'none';
         modal.classList.remove('fade-out');

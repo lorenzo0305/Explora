@@ -23,9 +23,16 @@
         const list = load(key);
         const existing = list.find(x => String(x.id) === String(item.id));
         
+        const finalImage = typeof window !== 'undefined' && window.getActivityImage ? window.getActivityImage(item) : (item.image || item.photo || '');
+
         if (existing) {
             if (key === BASKET_KEY) {
                 existing.qty = (existing.qty || 1) + 1;
+                // LA MAGIE EST ICI : Auto-réparation du panier. 
+                // S'il manquait la description ou la ville, on force la mise à jour !
+                Object.assign(existing, item); 
+                existing.image = finalImage;
+                
                 save(key, list);
                 return true;
             } else {
@@ -33,10 +40,9 @@
             }
         }
         
-        // SYNCHRO : Utilisation stricte du dictionnaire pour le panier
-        const finalImage = typeof window !== 'undefined' && window.getActivityImage ? window.getActivityImage(item) : (item.image || item.photo || '');
-
+        // Si c'est un nouvel item, on sauvegarde la TOTALE (...item)
         list.unshift({
+            ...item, 
             id: String(item.id),
             name: item.name || '',
             image: finalImage,
@@ -117,7 +123,6 @@
                 </div>
             ` : '';
 
-            // SYNCHRO : Image actualisée par le dictionnaire au rendu
             const finalImg = typeof window !== 'undefined' && window.getActivityImage ? window.getActivityImage(x) : (x.image || '/static/img/travel.jpg');
 
             return '<div class="wb-item"' + (draggable ? ' draggable="true"' : '') +
