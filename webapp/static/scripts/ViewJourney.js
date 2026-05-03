@@ -115,7 +115,7 @@ function randomDayImage(d, j) {
     const order = ['morning', 'noon', 'afternoon', 'evening']; const pool = [];
     for (const k of order) { 
         for (const it of (d.slots?.[k] || [])) { 
-            const u = getSafeImage(it); // SYNCHRO IMPORTANTE ICI
+            const u = getSafeImage(it); 
             if (u && !u.includes('no-image') && !u.includes('appareil_photo')) pool.push(u); 
         } 
     }
@@ -282,7 +282,6 @@ function render(j) {
                     actCard.style.flexDirection = 'column'; 
                     actCard.style.alignItems = 'flex-start';
 
-                    // SYNCHRO IMPORTANTE ICI (Rendu HTML)
                     let img = escapeHtml(getSafeImage(act));
 
                     let actDesc = act?.description || act?.shortDescription || "";
@@ -387,6 +386,8 @@ function ensureModal() {
     modal = document.createElement('div');
     modal.id = 'replaceModal';
     modal.style.cssText = 'position:fixed;inset:0;background:rgba(28,28,28,0.55);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;';
+    
+    // CORRECTION : autocomplete="off" ajouté pour éviter les suggestions du navigateur
     modal.innerHTML = `
 <div class="rm-card" style="background:#FAF8F5;max-width:850px;width:100%;max-height:85vh;overflow:auto;border-radius:16px;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,0.3);font-family:Lora,serif;">
     <div class="rm-header" style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px;">
@@ -402,7 +403,7 @@ function ensureModal() {
         <button id="btnModeDifferent" style="flex:1; padding:10px; border-radius:8px; border:1px solid #D4C3B3; background:white; color:#6b5f57; cursor:pointer; font-weight:600;">Autre type d'activité</button>
     </div>
     
-    <input id="rmSearch" type="text" placeholder="Rechercher manuellement…" style="width:100%;padding:12px 16px;border:1px solid #D4C3B3;border-radius:10px;margin-bottom:22px;outline:none;">
+    <input id="rmSearch" type="text" autocomplete="off" placeholder="Rechercher manuellement…" style="width:100%;padding:12px 16px;border:1px solid #D4C3B3;border-radius:10px;margin-bottom:22px;outline:none;background-color:white;">
     
     <div class="rm-recommendations">
         <div id="rmCarouselTitle" class="rm-rec-title" style="font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-soft); margin-bottom:10px;">Suggestions dans le même esprit</div>
@@ -411,8 +412,17 @@ function ensureModal() {
 </div>`;
     document.body.appendChild(modal);
 
-    modal.querySelector('#rmSearch').addEventListener('focus', function() { this.style.borderColor = '#FF6F61'; });
-    modal.querySelector('#rmSearch').addEventListener('blur', function() { this.style.borderColor = '#D4C3B3'; });
+    const searchInput = modal.querySelector('#rmSearch');
+    
+    searchInput.addEventListener('focus', function() { this.style.borderColor = '#FF6F61'; });
+    searchInput.addEventListener('blur', function() { this.style.borderColor = '#D4C3B3'; });
+    
+    // CORRECTION : Écouteur pour la touche Entrée (arrête le clignotement)
+    searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+            this.blur();
+        }
+    });
     
     modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
     modal.querySelector('#rmClose').addEventListener('click', closeModal);
@@ -540,7 +550,6 @@ function renderGridCards(items, container) {
         const name = escapeHtml(item.name || item.nom || 'Sans nom');
         const cats = escapeHtml(formatCategoriesString(item.categories || item.types || item.category || ''));
         
-        // SYNCHRO IMPORTANTE ICI (Remplacement Modale)
         const img = escapeHtml(getSafeImage(item));
         
         let distHtml = '';

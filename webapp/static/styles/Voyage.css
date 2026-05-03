@@ -113,3 +113,13 @@ body { margin: 0; background-color: var(--bg-color) !important; color: var(--tex
 .rm-card-actions { padding: 0 14px 14px; }
 .rm-pick { width:100%; border:none; background: var(--accent-pastel); color:#fff; padding: 10px 14px; border-radius: 999px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: background 0.2s;}
 .rm-pick:hover { background: var(--text-main); }
+
+/* SURCHARGE DE L'AUTOCOMPLÉTION DU NAVIGATEUR (FOND BLEU/JAUNE) */
+#rmSearch:-webkit-autofill,
+#rmSearch:-webkit-autofill:hover, 
+#rmSearch:-webkit-autofill:focus, 
+#rmSearch:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: var(--text-main) !important;
+    transition: background-color 5000s ease-in-out 0s;
+}

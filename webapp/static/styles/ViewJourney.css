@@ -159,3 +159,13 @@ html, body {
     .journey-body { padding: 0 18px 60px 18px; }
     .day-column { flex: 0 0 320px; } 
 }
+
+/* SURCHARGE DE L'AUTOCOMPLÉTION DU NAVIGATEUR (FOND BLEU/JAUNE) */
+#rmSearch:-webkit-autofill,
+#rmSearch:-webkit-autofill:hover, 
+#rmSearch:-webkit-autofill:focus, 
+#rmSearch:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: var(--text-main) !important;
+    transition: background-color 5000s ease-in-out 0s;
+}

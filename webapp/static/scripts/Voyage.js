@@ -245,13 +245,15 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => toast.classList.remove('show'), 3000);
     }
 
-    // ─── Modal de remplacement (Avec Changer de Style) ────────────────────────────────
+    // ─── Modal de remplacement (Avec autocomplete="off") ────────────────────────────────
     function ensureModal() {
         let modal = document.getElementById('replaceModal');
         if (modal) return modal;
         modal = document.createElement('div');
         modal.id = 'replaceModal';
         modal.style.cssText = 'position:fixed;inset:0;background:rgba(28,28,28,0.55);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;';
+        
+        // CORRECTION: Ajout de autocomplete="off"
         modal.innerHTML = `
         <div class="rm-card" style="background:#FAF8F5;width:100%;max-width:850px;max-height:85vh;overflow:hidden;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,0.3);font-family:Lora,serif; display:flex; flex-direction:column;">
             <div style="padding: 24px 24px 0 24px;">
@@ -268,7 +270,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <button id="btnModeDifferent" style="flex:1; padding:10px; border-radius:8px; border:1px solid #D4C3B3; background:white; color:#6b5f57; cursor:pointer; font-weight:600;">Autre type d'activité</button>
                 </div>
                 
-                <input id="rmSearch" type="text" placeholder="Rechercher manuellement…" style="width:100%;padding:12px 16px;border:1px solid #D4C3B3;border-radius:10px;margin-bottom:15px;outline:none;">
+                <input id="rmSearch" type="text" autocomplete="off" placeholder="Rechercher manuellement…" style="width:100%;padding:12px 16px;border:1px solid #D4C3B3;border-radius:10px;margin-bottom:15px;outline:none;background-color:white;">
             </div>
             
             <div style="padding: 0 24px 20px 24px; overflow-y:auto; flex:1;">
@@ -278,8 +280,17 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>`;
         document.body.appendChild(modal);
 
-        modal.querySelector('#rmSearch').addEventListener('focus', function() { this.style.borderColor = '#FF6F61'; });
-        modal.querySelector('#rmSearch').addEventListener('blur', function() { this.style.borderColor = '#D4C3B3'; });
+        const searchInput = modal.querySelector('#rmSearch');
+        
+        searchInput.addEventListener('focus', function() { this.style.borderColor = '#FF6F61'; });
+        searchInput.addEventListener('blur', function() { this.style.borderColor = '#D4C3B3'; });
+        
+        // CORRECTION: Ecouteur pour la touche "Entrée"
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                this.blur();
+            }
+        });
         
         modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
         modal.querySelector('#rmClose').addEventListener('click', closeModal);
@@ -527,7 +538,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const finalName = (customName || defaultName);
             const nowIso = new Date().toISOString();
             
-            // LA CORRECTION : coverImg reste toujours vide, forçant l'utilisation des Fallbacks 
             const coverImg = ''; 
 
             const payload = { 
