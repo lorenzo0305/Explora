@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Explora — L'Éditeur</title>
+  <title>Explora — Créer mon voyage</title>
 
   <link rel="stylesheet" href="/static/styles/app.css">
   <link rel="stylesheet" href="/static/styles/Editeur.css?v=17.0">
@@ -25,10 +25,10 @@
           
           <div class="nav-links">
             <a href="/">Accueil</a>
-            <a href="/makejourney">Créer mon voyage</a>
+            <a href="/makejourney">Générer mon voyage</a>
             <a href="/Destinations">Catalogue d'activités</a>
             <a href="/topics">Mes voyages</a>
-            <a href="/editeur" class="active">Editeur</a>
+            <a href="/editeur" class="active">Créer mon voyage</a>
           </div>
 
           <div class="nav-actions">
@@ -69,6 +69,11 @@
                       <input type="text" id="tripTitle" class="trip-title-input" placeholder="Nommez votre voyage..." />
                   </div>
                   
+                  <!-- NOUVEAU TEXTE D'INSTRUCTIONS -->
+                  <p style="font-family: 'Lora', serif; font-size: 15px; color: var(--text-warm, #4A403A); margin: 0 0 25px 0; max-width: 850px; line-height: 1.5;">
+                      Retrouvez ici les activités de votre panier. Saisissez le nombre de jours souhaités, ouvrez le carnet, et glissez-déposez vos activités pour composer votre programme à votre convenance. Vous pouvez à tout moment ajuster la durée avec le bouton <b>"Ajouter une page"</b>. Une fois terminé, sauvegardez votre carnet pour le retrouver dans la page <b>Mes voyages</b> !
+                  </p>
+                  
                   <div class="controls-row">
                       <div class="days-generator">
                           <label>Durée :</label>
@@ -79,10 +84,6 @@
                       <button id="addDayBtn" class="btn-add-page" title="Insérer une journée manuellement">+ Ajouter une page</button>
                       <a href="/topics" class="btn-quit">Quitter sans sauvegarder</a>
                       <button id="saveJourneyBtn" class="btn-save-mag">Sauvegarder</button>
-                  </div>
-                  
-                  <div style="font-family: 'Lora', serif; font-size: 12px; color: #888; font-style: italic; margin-top: -5px; line-height: 1.5;">
-                      * Saisissez obligatoirement le nombre de jours pour générer la structure de votre carnet. Le bouton <b>"+ Ajouter une page"</b> sert uniquement à insérer une journée imprévue en cours d'édition.
                   </div>
               </div>
 

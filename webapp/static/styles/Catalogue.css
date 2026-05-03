@@ -139,14 +139,32 @@ html, body {
 .destinations-carousel { 
     display: flex; flex-direction: row; gap: 20px; 
     overflow-x: auto; 
-    padding: 10px 40px 40px 40px; margin: 0 -40px; 
-    scrollbar-width: none; -ms-overflow-style: none;
+    padding: 10px 40px 30px 40px; /* Padding ajusté pour la barre de défilement */
+    margin: 0 -40px; 
+    
+    /* SCROLLBAR FIREFOX */
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-light) transparent;
 }
-.destinations-carousel::-webkit-scrollbar { display: none; }
+
+/* SCROLLBAR WEBKIT (Chrome, Safari, Edge) */
+.destinations-carousel::-webkit-scrollbar { 
+    height: 8px; 
+}
+.destinations-carousel::-webkit-scrollbar-track { 
+    background: transparent; 
+    margin: 0 40px; /* Aligne la scrollbar avec les bords du carrousel */
+}
+.destinations-carousel::-webkit-scrollbar-thumb { 
+    background: var(--border-light); 
+    border-radius: 10px; 
+}
+.destinations-carousel::-webkit-scrollbar-thumb:hover { 
+    background: var(--accent-vivid); 
+}
 
 .dest-card {
-    /* RETOUR AUX DIMENSIONS D'ORIGINE DE LA GRILLE */
-    flex: 0 0 300px; /* Largeur de base de ton ancienne grille */
+    flex: 0 0 300px; 
     text-decoration: none; display: flex; flex-direction: column; 
     border-radius: 12px; overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -155,29 +173,28 @@ html, body {
 .dest-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
 
 .dest-image {
-    height: 140px; /* HAUTEUR EXACTE D'ORIGINE */
+    height: 140px; 
     width: 100%; background-size: cover; background-position: center;
     border-bottom: 3px solid var(--accent-vivid);
     position: relative; 
 }
 .dest-content { 
-    padding: 15px; /* PADDING EXACT D'ORIGINE */
+    padding: 15px; 
     text-align: center; 
     display: flex; flex-direction: column; flex: 1; 
 }
 .dest-content h3 { 
     font-family: 'Montserrat', sans-serif; 
-    font-size: 16px; /* TAILLE DE POLICE EXACTE D'ORIGINE */
+    font-size: 16px; 
     font-weight: 800; color: var(--text-main); 
     margin: 0 0 8px 0; text-transform: uppercase; 
-    /* Forcer sur une ligne avec des points de suspension si ça dépasse */
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis; 
 }
 .dest-link { 
     font-size: 12px; font-weight: 700; color: var(--accent-vivid); font-family: 'Helvetica Neue', Arial, sans-serif; text-transform: uppercase; 
-    margin-top: auto; /* Maintient le lien en bas */
+    margin-top: auto; 
 }
 
 /* --- CARTES "BIENTÔT DISPONIBLE" --- */

@@ -13,12 +13,7 @@
 
 * { box-sizing: border-box; }
 
-body {
-    margin: 0; background-color: var(--bg-color) !important;
-    color: var(--text-main); font-family: 'Lora', serif;
-    -webkit-font-smoothing: antialiased; padding-bottom: 0 !important;
-}
-
+/* BLOCAGE STRICT DE LA BARRE FANTÔME DU BAS */
 html, body {
     margin: 0; padding-bottom: 0 !important;
     height: 100vh !important;
@@ -28,8 +23,15 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-.app-frame { display: flex; flex-direction: column; height: 100vh !important; width: 100vw; overflow: hidden; }
-.content-panel { flex: 1; overflow-y: auto !important; overflow-x: hidden; }
+.app-frame { 
+    display: flex; flex-direction: column; 
+    height: 100vh !important; width: 100%; /* <-- Remplacé 100vw par 100% pour éviter la barre fantôme */
+    overflow: hidden; 
+}
+
+.content-panel { 
+    flex: 1; overflow-y: auto !important; overflow-x: hidden !important; 
+}
 
 /* NAVIGATION */
 .top-nav {
@@ -76,10 +78,55 @@ html, body {
 .section-title .caption { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-soft); margin-top: 4px; }
 
 /* LE CARROUSEL HORIZONTAL (KANBAN) */
-.days-list { display: flex !important; flex-direction: row !important; gap: 20px; overflow-x: auto; padding-bottom: 25px; align-items: flex-start; scrollbar-width: thin; scrollbar-color: var(--border-light) transparent; }
+.days-list { 
+    display: flex !important; 
+    flex-direction: row !important; 
+    gap: 20px; 
+    overflow-x: auto; 
+    padding-bottom: 15px; /* Modifié pour laisser la place à la scrollbar */
+    
+    /* On aligne tout en haut par défaut (pas de blanc pour les cartes fermées) */
+    align-items: flex-start; 
+    
+    /* SCROLLBAR FIREFOX */
+    scrollbar-width: thin; 
+    scrollbar-color: var(--border-light) transparent; 
+}
 
-.day-column { flex: 0 0 420px; display: flex; flex-direction: column; background: var(--paper); border: 1px solid var(--border-light); border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,0.03); transition: transform 0.2s, box-shadow 0.2s; overflow: hidden; }
+/* SCROLLBAR WEBKIT (Chrome, Safari, Edge) */
+.days-list::-webkit-scrollbar { 
+    height: 8px; 
+}
+.days-list::-webkit-scrollbar-track { 
+    background: transparent; 
+}
+.days-list::-webkit-scrollbar-thumb { 
+    background: var(--border-light); 
+    border-radius: 10px; 
+}
+.days-list::-webkit-scrollbar-thumb:hover { 
+    background: var(--accent-pastel); 
+}
+
+.day-column { 
+    flex: 0 0 420px; 
+    display: flex; 
+    flex-direction: column; 
+    background: var(--paper); 
+    border: 1px solid var(--border-light); 
+    border-radius: 8px; 
+    box-shadow: 0 4px 14px rgba(0,0,0,0.03); 
+    transition: transform 0.2s, box-shadow 0.2s; 
+    overflow: hidden; 
+    align-self: flex-start; /* GARDE LA COLONNE FERMÉE À SA TAILLE NORMALE */
+}
+
 .day-column:hover { box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+
+/* LE SÉLECTEUR MAGIQUE : On autorise l'étirement uniquement si la colonne contient une section ouverte */
+.day-column:has(.is-open) {
+    align-self: stretch;
+}
 
 .day-item { background: transparent; border: none; box-shadow: none; padding: 18px; cursor: pointer; display: flex; flex-direction: column; align-items: stretch; gap: 15px; position: relative; }
 .day-item:hover { transform: none; }
@@ -106,7 +153,13 @@ html, body {
 /* L'ACCORDÉON */
 .day-details-inline { max-height: 0; overflow: hidden; opacity: 0; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); background: var(--paper-dim); border-radius: 0; border: none; border-top: 1px dashed var(--border-light); margin-top: 0; }
 .day-item.is-open { border-bottom: none; }
-.day-details-inline.show { max-height: 2500px; opacity: 1; padding: 20px; margin-bottom: 0px; }
+.day-details-inline.show { 
+    max-height: 2500px; 
+    opacity: 1; 
+    padding: 20px; 
+    margin-bottom: 0px; 
+    flex-grow: 1; /* Le fond beige remplit le vide SI la colonne est ouverte (et donc étirée) */
+}
 .inline-slot-sec { margin-bottom: 20px; }
 .inline-slot-title { font-family: 'Alex Brush', cursive; font-size: 1.8rem; color: var(--accent-pastel); margin-bottom: 10px; }
 .inline-act-card { background: white; padding: 12px; border: 1px solid #eee; border-radius: 6px; margin-bottom: 8px; display: flex; }
