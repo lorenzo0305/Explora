@@ -35,14 +35,17 @@
     top: calc(100% + 12px);
     right: 0;
     width: 360px; 
-    height: 420px !important;     /* Verrouillage strict de la hauteur */
-    min-height: 420px !important; /* Verrouillage strict de la hauteur */
-    display: flex;
+    height: 420px !important;
+    min-height: 420px !important;
+    
+    /* --- CORRECTION ICI : CACHÉ PAR DÉFAUT ! --- */
+    display: none; 
+    
     flex-direction: column;
-    overflow: hidden !important; /* Bloque tout débordement global */
+    overflow: hidden !important; 
     background: #FFFFFF;
     border-radius: 12px;
-    padding: 14px 14px 6px 14px; /* Un peu moins de padding en bas */
+    padding: 14px 14px 6px 14px; 
     box-shadow: 0 10px 40px rgba(0,0,0,0.15);
     border: 1px solid rgba(0,0,0,0.05);
     z-index: 2000;
@@ -52,17 +55,17 @@
 /* LA ZONE QUI SCROLLE À L'INTÉRIEUR */
 .wb-scroll-area {
     flex: 1;
-    overflow-y: scroll !important; /* Force la piste d'ascenseur à être TOUJOURS là */
+    overflow-y: scroll !important; 
     overflow-x: hidden;
-    padding-right: 4px; /* Espace pour ne pas coller à l'ascenseur */
+    padding-right: 4px; 
 }
 
-/* DESIGN DE L'ASCENSEUR (Pour qu'on voie bien la piste même quand elle est vide) */
+/* DESIGN DE L'ASCENSEUR */
 .wb-scroll-area::-webkit-scrollbar {
     width: 6px;
 }
 .wb-scroll-area::-webkit-scrollbar-track {
-    background: #F0EDE9; /* La piste reste légèrement grisée/beige en permanence */
+    background: #F0EDE9; 
     border-radius: 10px;
 }
 .wb-scroll-area::-webkit-scrollbar-thumb {
@@ -70,9 +73,8 @@
     border-radius: 10px;
 }
 
-/* TITRE FIGÉ */
 .floating-panel .wb-title {
-    /* ... le style était géré en inline dans le JS, on le laisse tranquille ... */
+    /* Style inline dans le JS */
 }
 
 .floating-panel .wb-empty {
@@ -94,7 +96,7 @@
     border: 1px solid transparent;
     transition: border-color .15s, background .15s;
     cursor: grab;
-    flex-shrink: 0; /* Empêche les éléments de s'écraser */
+    flex-shrink: 0; 
 }
 .floating-panel .wb-item:hover {
     background: #FFFFFF;

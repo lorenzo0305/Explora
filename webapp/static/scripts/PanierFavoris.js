@@ -99,7 +99,6 @@
         const items = load(key);
         const isBasket = (key === BASKET_KEY);
         
-        // Séparation du Header
         const headerHtml = `
             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EFE6DC; padding-bottom: 8px; margin-bottom: 10px; flex-shrink: 0;">
                 <h4 class="wb-title" style="margin: 0; border: none; padding: 0; font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 700; color: #1C1C1C;">${esc(title)}</h4>
@@ -107,7 +106,6 @@
             </div>
         `;
 
-        // Wrapper scrollable pour les items
         if (!items.length) {
             container.innerHTML = headerHtml + `<div class="wb-scroll-area"><p class="wb-empty" style="color: #6b5f57; font-style: italic; text-align: center; margin: 12px 0; font-size: 13px;">${esc(emptyMsg)}</p></div>`;
             return;
@@ -157,7 +155,6 @@
             '</div>';
         }).join('');
         
-        // Injection du wrapper scrollable
         container.innerHTML = headerHtml + `<div class="wb-scroll-area">` + rows + `</div>`;
 
         if (draggable) {
@@ -224,10 +221,17 @@
         renderPanel($('floatingLikes'),  LIKES_KEY,  'Mes favoris',   'Aucun favori pour le moment.', false);
     }
 
+    // --- CORRECTION ICI : On utilise "flex" pour l'ouverture, et on gère bien la fermeture ---
     function togglePanel(panel, otherPanel) {
         if (!panel) return;
         if (otherPanel) otherPanel.style.display = 'none';
-        panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
+        
+        // Si c'est déjà flex (ouvert), on le ferme. Sinon on l'ouvre en flex.
+        if (panel.style.display === 'flex' || panel.style.display === 'block') {
+            panel.style.display = 'none';
+        } else {
+            panel.style.display = 'flex';
+        }
     }
 
     function wireToggles() {
