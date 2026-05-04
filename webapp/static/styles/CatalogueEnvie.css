@@ -42,6 +42,8 @@ html, body {
 /* NAVIGATION */
 .top-nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(250, 248, 245, 0.95); border-bottom: 1px solid rgba(0,0,0,0.05); }
 .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; letter-spacing: 4px; }
+.logo-fill { color: var(--text-main); }
+.logo-outline { color: transparent; -webkit-text-stroke: 1px var(--text-main); }
 .nav-links a { text-decoration: none; color: #505050; font-weight: 500; font-size: 15px; margin: 0 15px; font-family: sans-serif;}
 .nav-links a.active { color: var(--bordeaux-nav); font-weight: 700; }
 .nav-actions { display: flex; flex-direction: row; gap: 15px; align-items: center; }
