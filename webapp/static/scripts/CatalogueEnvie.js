@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             card.className = 'activity-accordion';
             const isFav = window.WishLikes ? window.WishLikes.has(id) : false;
 
+            // Ajout des data-id sur les boutons
             card.innerHTML = `
                 <div class="alc-img-wrapper">
                     <img src="${safeImgHtml}" alt="" class="alc-img" onerror="this.src='${NO_IMG}'">
@@ -70,8 +71,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                     </div>
                     
                     <div class="alc-actions">
-                        <button class="btn-fav ${isFav ? 'active' : ''}" title="Ajouter aux favoris">❤</button>
-                        <button class="btn-pan">+ Panier</button>
+                        <button class="btn-fav ${isFav ? 'active' : ''}" data-id="${id}" title="Ajouter aux favoris">❤</button>
+                        <button class="btn-pan" data-id="${id}">+ Panier</button>
                         <button class="btn-expand" title="Lire la description"><span class="alc-chevron">❯</span></button>
                     </div>
 
@@ -93,7 +94,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             btnFav.addEventListener('click', (e) => {
                 e.stopPropagation(); 
                 if(window.WishLikes) {
-                    // CORRECTION: ...item pour tout transférer
                     window.WishLikes.toggle({ 
                         ...item,
                         id: id, 
@@ -110,7 +110,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             btnPan.addEventListener('click', (e) => {
                 e.stopPropagation(); 
                 if(window.WishBasket) {
-                    // CORRECTION: ...item pour tout transférer
                     window.WishBasket.add({ 
                         ...item,
                         id: id, 
@@ -128,5 +127,21 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     } catch (error) {
         listContainer.innerHTML = `<p style="text-align:center; color:red; width: 100%;">Impossible de charger les activités.</p>`;
+    }
+});
+
+// --- SYNCHRONISATION DES COEURS EN DIRECT ---
+window.addEventListener('wishbasket:change', (e) => {
+    if (window.WishLikes) {
+        document.querySelectorAll('.btn-fav').forEach(btn => {
+            const id = btn.dataset.id;
+            if (id) {
+                if (window.WishLikes.has(id)) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            }
+        });
     }
 });

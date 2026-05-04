@@ -29,31 +29,50 @@
 .badge.pink { background: #FF0000; }
 .badge[hidden] { display: none; }
 
+/* BOITE GLOBALE VERROUILLÉE */
 .floating-panel {
     position: absolute;
     top: calc(100% + 12px);
     right: 0;
     width: 360px; 
-    max-height: 420px;
-    overflow: auto;
+    height: 420px !important;     /* Verrouillage strict de la hauteur */
+    min-height: 420px !important; /* Verrouillage strict de la hauteur */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden !important; /* Bloque tout débordement global */
     background: #FFFFFF;
     border-radius: 12px;
-    padding: 14px;
-    display: none;
+    padding: 14px 14px 6px 14px; /* Un peu moins de padding en bas */
     box-shadow: 0 10px 40px rgba(0,0,0,0.15);
     border: 1px solid rgba(0,0,0,0.05);
     z-index: 2000;
     font-family: 'Lora', serif;
 }
 
+/* LA ZONE QUI SCROLLE À L'INTÉRIEUR */
+.wb-scroll-area {
+    flex: 1;
+    overflow-y: scroll !important; /* Force la piste d'ascenseur à être TOUJOURS là */
+    overflow-x: hidden;
+    padding-right: 4px; /* Espace pour ne pas coller à l'ascenseur */
+}
+
+/* DESIGN DE L'ASCENSEUR (Pour qu'on voie bien la piste même quand elle est vide) */
+.wb-scroll-area::-webkit-scrollbar {
+    width: 6px;
+}
+.wb-scroll-area::-webkit-scrollbar-track {
+    background: #F0EDE9; /* La piste reste légèrement grisée/beige en permanence */
+    border-radius: 10px;
+}
+.wb-scroll-area::-webkit-scrollbar-thumb {
+    background: #D4C3B3;
+    border-radius: 10px;
+}
+
+/* TITRE FIGÉ */
 .floating-panel .wb-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
-    color: #1C1C1C;
-    border-bottom: 1px solid #EFE6DC;
-    padding-bottom: 8px;
+    /* ... le style était géré en inline dans le JS, on le laisse tranquille ... */
 }
 
 .floating-panel .wb-empty {
@@ -75,6 +94,7 @@
     border: 1px solid transparent;
     transition: border-color .15s, background .15s;
     cursor: grab;
+    flex-shrink: 0; /* Empêche les éléments de s'écraser */
 }
 .floating-panel .wb-item:hover {
     background: #FFFFFF;
@@ -89,7 +109,6 @@
     background: #ECE3DA;
 }
 
-/* LA CORRECTION EST ICI : Cormorant Garamond, comme le titre ! */
 .floating-panel .wb-name {
     flex: 1;
     font-family: 'Cormorant Garamond', serif !important;
@@ -106,7 +125,6 @@
     padding-right: 5px;
 }
 
-/* Le design des boutons + et - */
 .wb-qty-group {
     display: flex;
     align-items: center;
@@ -120,7 +138,7 @@
     border: none !important;
     font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
-    font-weight: 500 !important; /* Le navigateur a maintenant cette épaisseur grâce au nouveau lien Google Fonts ! */
+    font-weight: 500 !important;
     cursor: pointer;
     color: #1C1C1C !important;
     display: flex;
@@ -143,7 +161,6 @@
     color: #1C1C1C;
 }
 
-/* Bouton croix retrait */
 .floating-panel .wb-remove {
     background: transparent !important;
     border: none !important;

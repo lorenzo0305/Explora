@@ -99,15 +99,17 @@
         const items = load(key);
         const isBasket = (key === BASKET_KEY);
         
+        // Séparation du Header
         const headerHtml = `
-            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EFE6DC; padding-bottom: 8px; margin-bottom: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EFE6DC; padding-bottom: 8px; margin-bottom: 10px; flex-shrink: 0;">
                 <h4 class="wb-title" style="margin: 0; border: none; padding: 0; font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 700; color: #1C1C1C;">${esc(title)}</h4>
                 ${(isBasket && items.length > 0) ? `<a href="/creervoyage" title="Créer mon voyage" style="font-family:'Montserrat', sans-serif; font-size:10px; font-weight:900; color:#FF6F61; text-decoration:none; text-transform:uppercase; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">Aller à la création ❯</a>` : ''}
             </div>
         `;
 
+        // Wrapper scrollable pour les items
         if (!items.length) {
-            container.innerHTML = headerHtml + `<p class="wb-empty" style="color: #6b5f57; font-style: italic; text-align: center; margin: 12px 0; font-size: 13px;">${esc(emptyMsg)}</p>`;
+            container.innerHTML = headerHtml + `<div class="wb-scroll-area"><p class="wb-empty" style="color: #6b5f57; font-style: italic; text-align: center; margin: 12px 0; font-size: 13px;">${esc(emptyMsg)}</p></div>`;
             return;
         }
         
@@ -120,42 +122,26 @@
                 </div>
             ` : '';
 
-            // --- NOUVELLES ICÔNES PARFAITES ---
             let transferBtn = '';
             if (isBasket) {
-                // Dans le Panier -> Flèche vers la gauche (vers les favoris)
                 transferBtn = `
                 <button class="wb-transfer" type="button" data-id="${esc(x.id)}" data-target="likes" title="Déplacer vers les favoris" style="background:none; border:none; cursor:pointer; color:#D4C3B3; margin-right:5px; padding:0; display:flex; align-items:center; transition:all 0.2s;" onmouseover="this.style.color='#FF6F61'" onmouseout="this.style.color='#D4C3B3'">
                     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <defs>
-                            <mask id="cut-left-${esc(x.id)}">
-                                <rect width="24" height="24" fill="white" />
-                                <circle cx="4" cy="11" r="8" fill="black" />
-                            </mask>
-                        </defs>
+                        <defs><mask id="cut-left-${esc(x.id)}"><rect width="24" height="24" fill="white" /><circle cx="4" cy="11" r="8" fill="black" /></mask></defs>
                         <path mask="url(#cut-left-${esc(x.id)})" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                        <line x1="14" y1="11" x2="1" y2="11" />
-                        <polyline points="5 7 1 11 5 15" />
+                        <line x1="14" y1="11" x2="1" y2="11" /><polyline points="5 7 1 11 5 15" />
                     </svg>
                 </button>`;
             } else {
-                // Dans les Favoris -> Flèche vers la droite (vers le panier)
                 transferBtn = `
                 <button class="wb-transfer" type="button" data-id="${esc(x.id)}" data-target="basket" title="Déplacer vers le panier" style="background:none; border:none; cursor:pointer; color:#D4C3B3; margin-right:5px; padding:0; display:flex; align-items:center; transition:all 0.2s;" onmouseover="this.style.color='#FF6F61'" onmouseout="this.style.color='#D4C3B3'">
                     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <defs>
-                            <mask id="cut-right-${esc(x.id)}">
-                                <rect width="24" height="24" fill="white" />
-                                <circle cx="20" cy="11" r="8" fill="black" />
-                            </mask>
-                        </defs>
+                        <defs><mask id="cut-right-${esc(x.id)}"><rect width="24" height="24" fill="white" /><circle cx="20" cy="11" r="8" fill="black" /></mask></defs>
                         <path mask="url(#cut-right-${esc(x.id)})" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                        <line x1="10" y1="11" x2="23" y2="11" />
-                        <polyline points="19 7 23 11 19 15" />
+                        <line x1="10" y1="11" x2="23" y2="11" /><polyline points="19 7 23 11 19 15" />
                     </svg>
                 </button>`;
             }
-            // ----------------------------------------------
 
             const finalImg = typeof window !== 'undefined' && window.getActivityImage ? window.getActivityImage(x) : (x.image || '/static/img/travel.jpg');
 
@@ -171,7 +157,8 @@
             '</div>';
         }).join('');
         
-        container.innerHTML = headerHtml + rows;
+        // Injection du wrapper scrollable
+        container.innerHTML = headerHtml + `<div class="wb-scroll-area">` + rows + `</div>`;
 
         if (draggable) {
             container.querySelectorAll('.wb-item').forEach(row => {
@@ -194,7 +181,6 @@
             });
         });
 
-        // Logique de DÉPLACEMENT
         container.querySelectorAll('.wb-transfer').forEach(btn => {
             btn.addEventListener('click', e => {
                 e.stopPropagation();
