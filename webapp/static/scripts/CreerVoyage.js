@@ -29,11 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('coverTitleDisplay').textContent = this.value || "Mon Voyage";
     });
 
+    // CORRECTION : On utilise adjustDays au lieu de generateDays pour ne rien effacer
     document.getElementById('generateDaysBtn').addEventListener('click', () => {
         const num = parseInt(document.getElementById('numDaysInput').value);
-        if (num > 0) generateDays(num);
+        if (num > 0) adjustDays(num);
     });
 
+    // Initialisation de base à 1 jour à l'ouverture de la page
     generateDays(1);
 });
 
@@ -74,10 +76,8 @@ function loadBasketIntoSidebar() {
             div.dataset.name = item.name;
             div.dataset.image = resolvedImg; 
             
-            // On sauvegarde l'item COMPLET dans le HTML pour ne rien perdre au moment de sauvegarder le carnet
             div.dataset.full = JSON.stringify(item); 
             
-            // Recherche élargie pour récupérer les infos peu importe comment la BDD les appelle
             const rawCity = item.ville || item.locality || item.city || item.commune || item.adresse || '';
             const rawDesc = item.description || item.desc || item.summary || item.comment || item.abstract || "Aucune description détaillée n'est disponible.";
             
@@ -102,7 +102,6 @@ function loadBasketIntoSidebar() {
                 <button class="btn-remove-item" title="Retirer du carnet">✕</button>
             `;
             
-            // Logique de l'accordéon
             div.querySelector('.btn-activite').addEventListener('click', function(e) {
                 const detailsDiv = this.nextElementSibling;
                 detailsDiv.classList.toggle('visible');
@@ -134,7 +133,6 @@ function returnToBasket(element) {
     const list = document.getElementById('basket-items-list');
     element.classList.remove('dropped');
     
-    // Si l'élément était ouvert, on le referme
     const btnAct = element.querySelector('.btn-activite');
     const details = element.querySelector('.details-activite');
     if(btnAct && details) {
@@ -169,7 +167,7 @@ function showToast(message) {
 }
 
 /* =========================================
-   MOTEUR 3D (FLUIDITÉ PARFAITE + COVER IMAGE FIXÉE)
+   MOTEUR 3D ET GESTION DES PAGES
 ========================================= */
 window.turnPage = function(direction) {
     if(document.querySelector('.page-flipper')) return;
@@ -187,7 +185,6 @@ window.turnPage = function(direction) {
     const backFace = document.createElement('div');
 
     const coverTitle = document.getElementById('coverTitleDisplay').textContent;
-    
     const coverEl = document.getElementById('bookCover');
     const exactBg = window.getComputedStyle(coverEl).backgroundImage.replace(/"/g, "'"); 
     
@@ -197,46 +194,39 @@ window.turnPage = function(direction) {
         </div>`;
     };
 
-    if (direction === 1) { // On avance
+    if (direction === 1) { 
         frontFace.className = 'flipper-face flipper-front';
         backFace.className = 'flipper-face flipper-back';
 
-        if (currentDayIndex === -1) { // 1. Ouvre la couv avant
+        if (currentDayIndex === -1) { 
             frontFace.innerHTML = renderCoverContent(coverTitle);
             frontFace.style.borderRadius = '0 15px 15px 0';
-            
             backFace.classList.add('book-page', 'left-page');
             backFace.innerHTML = spreads[0].querySelector('.left-page').innerHTML;
-            
             document.getElementById('bookCover').style.display = 'none';
             document.getElementById('bookSpreadsContainer').style.display = 'block';
             spreads.forEach(s => s.style.display = 'none');
             spreads[0].style.display = 'flex';
             spreads[0].querySelector('.left-page').style.visibility = 'hidden';
             
-        } else if (currentDayIndex === maxIndex - 1) { // 2. Ferme sur couv arrière
+        } else if (currentDayIndex === maxIndex - 1) { 
             frontFace.classList.add('book-page', 'right-page');
             frontFace.innerHTML = spreads[currentDayIndex].querySelector('.right-page').innerHTML;
-
             backFace.innerHTML = renderCoverContent(''); 
             backFace.style.borderRadius = '15px 0 0 15px';
-            
             spreads[currentDayIndex].querySelector('.right-page').style.visibility = 'hidden';
             
-        } else { // 3. Page normale (Fluidité interne)
+        } else { 
             frontFace.classList.add('book-page', 'right-page');
             frontFace.innerHTML = spreads[currentDayIndex].querySelector('.right-page').innerHTML;
-
             backFace.classList.add('book-page', 'left-page');
             backFace.innerHTML = spreads[newIndex].querySelector('.left-page').innerHTML;
-
             spreads[currentDayIndex].style.position = 'absolute';
             spreads[currentDayIndex].style.top = '0';
             spreads[currentDayIndex].style.left = '0';
             spreads[currentDayIndex].style.width = '100%';
             spreads[currentDayIndex].style.zIndex = 2;
             spreads[currentDayIndex].querySelector('.right-page').style.visibility = 'hidden';
-
             spreads[newIndex].style.display = 'flex';
             spreads[newIndex].style.position = 'absolute';
             spreads[newIndex].style.top = '0';
@@ -245,46 +235,39 @@ window.turnPage = function(direction) {
             spreads[newIndex].style.zIndex = 1;
             spreads[newIndex].querySelector('.left-page').style.visibility = 'hidden';
         }
-    } else { // On recule (-1)
+    } else { 
         frontFace.className = 'flipper-face flipper-front';
         backFace.className = 'flipper-face flipper-back';
 
-        if (currentDayIndex === 0) { // 4. On referme la couverture avant
+        if (currentDayIndex === 0) { 
             frontFace.classList.add('book-page', 'left-page');
             frontFace.innerHTML = spreads[0].querySelector('.left-page').innerHTML;
-
             backFace.innerHTML = renderCoverContent(coverTitle);
             backFace.style.borderRadius = '0 15px 15px 0';
-            
             spreads[0].querySelector('.left-page').style.visibility = 'hidden';
             
-        } else if (currentDayIndex === maxIndex) { // 5. On rouvre depuis le dos du livre
+        } else if (currentDayIndex === maxIndex) { 
             frontFace.innerHTML = renderCoverContent('');
             frontFace.style.borderRadius = '15px 0 0 15px';
-
             backFace.classList.add('book-page', 'right-page');
             backFace.innerHTML = spreads[maxIndex - 1].querySelector('.right-page').innerHTML;
-
             document.getElementById('bookBackCover').style.display = 'none';
             document.getElementById('bookSpreadsContainer').style.display = 'block';
             spreads.forEach(s => s.style.display = 'none');
             spreads[maxIndex - 1].style.display = 'flex';
             spreads[maxIndex - 1].querySelector('.right-page').style.visibility = 'hidden';
             
-        } else { // 6. Page normale en arrière (Fluidité interne)
+        } else { 
             frontFace.classList.add('book-page', 'left-page');
             frontFace.innerHTML = spreads[currentDayIndex].querySelector('.left-page').innerHTML;
-
             backFace.classList.add('book-page', 'right-page');
             backFace.innerHTML = spreads[newIndex].querySelector('.right-page').innerHTML;
-
             spreads[currentDayIndex].style.position = 'absolute';
             spreads[currentDayIndex].style.top = '0';
             spreads[currentDayIndex].style.left = '0';
             spreads[currentDayIndex].style.width = '100%';
             spreads[currentDayIndex].style.zIndex = 2;
             spreads[currentDayIndex].querySelector('.left-page').style.visibility = 'hidden';
-
             spreads[newIndex].style.display = 'flex';
             spreads[newIndex].style.position = 'absolute';
             spreads[newIndex].style.top = '0';
@@ -317,7 +300,6 @@ window.turnPage = function(direction) {
                     spreads[currentDayIndex].style.zIndex = '';
                     spreads[currentDayIndex].style.width = '';
                     spreads[currentDayIndex].querySelector('.right-page').style.visibility = 'visible';
-
                     spreads[newIndex].querySelector('.left-page').style.visibility = 'visible';
                     spreads[newIndex].style.zIndex = '';
                     spreads[newIndex].style.width = '';
@@ -335,13 +317,11 @@ window.turnPage = function(direction) {
                     spreads[currentDayIndex].style.zIndex = '';
                     spreads[currentDayIndex].style.width = '';
                     spreads[currentDayIndex].querySelector('.left-page').style.visibility = 'visible';
-
                     spreads[newIndex].querySelector('.right-page').style.visibility = 'visible';
                     spreads[newIndex].style.zIndex = '';
                     spreads[newIndex].style.width = '';
                 }
             }
-            
             currentDayIndex = newIndex;
             updateDayNumbers();
         }, 800);
@@ -350,7 +330,7 @@ window.turnPage = function(direction) {
 
 function generateDays(num) {
     const container = document.getElementById('bookSpreadsContainer');
-    container.innerHTML = '';
+    container.innerHTML = ''; // Normal, c'est l'initialisation au chargement de la page
     for(let i=0; i<num; i++) addDayHTML(container, i+1);
     initDropZones();
     
@@ -360,12 +340,55 @@ function generateDays(num) {
     currentDayIndex = -1;
 }
 
+// CORRECTION: AJOUT / SUPPRESSION SANS EFFACER LES DONNÉES EXISTANTES
+function adjustDays(targetNum) {
+    const container = document.getElementById('bookSpreadsContainer');
+    const spreads = document.querySelectorAll('.day-spread');
+    const currentCount = spreads.length;
+
+    if (targetNum === currentCount) return;
+
+    if (targetNum > currentCount) {
+        // Ajouter les pages manquantes
+        for (let i = currentCount; i < targetNum; i++) {
+            addDayHTML(container, i + 1);
+        }
+        initDropZones();
+    } else {
+        // Retirer les pages en trop et renvoyer les activités au panier
+        for (let i = currentCount - 1; i >= targetNum; i--) {
+            const spread = spreads[i];
+            spread.querySelectorAll('.draggable-item').forEach(item => returnToBasket(item));
+            spread.remove();
+        }
+        
+        // Si l'utilisateur était sur une page qui vient d'être supprimée, on le ramène sur la dernière
+        const remainingSpreads = document.querySelectorAll('.day-spread');
+        if (currentDayIndex >= remainingSpreads.length) {
+            currentDayIndex = remainingSpreads.length - 1;
+            if (document.getElementById('bookSpreadsContainer').style.display !== 'none') {
+                remainingSpreads.forEach(s => s.style.display = 'none');
+                if (currentDayIndex >= 0) {
+                    remainingSpreads[currentDayIndex].style.display = 'flex';
+                }
+            }
+        }
+        updateDayNumbers();
+    }
+}
+
 document.getElementById('addDayBtn').addEventListener('click', () => {
     const container = document.getElementById('bookSpreadsContainer');
-    addDayHTML(container, container.children.length + 1);
-    initDropZones();
+    const newCount = container.children.length + 1;
     
-    if (currentDayIndex !== -1 && currentDayIndex !== container.children.length) {
+    // Sync l'input
+    const numInput = document.getElementById('numDaysInput');
+    if (numInput) numInput.value = newCount;
+    
+    addDayHTML(container, newCount);
+    initDropZones(); 
+    
+    if (currentDayIndex !== -1 && currentDayIndex !== container.children.length - 1) { 
         let spreads = document.querySelectorAll('.day-spread');
         spreads.forEach(s => s.style.display = 'none');
         currentDayIndex = spreads.length - 1;
@@ -411,13 +434,14 @@ function handleDragStart(e) { draggedElement = this; setTimeout(() => this.style
 function handleDragEnd(e) { this.style.opacity = '1'; draggedElement = null; document.querySelectorAll('.drop-zone').forEach(z => z.classList.remove('dragover')); }
 
 function initDropZones() {
-    document.querySelectorAll('.drop-zone').forEach(zone => {
-        const newZone = zone.cloneNode(true);
-        zone.parentNode.replaceChild(newZone, zone);
+    // CORRECTION : On initialise uniquement les zones qui n'ont pas encore été initialisées 
+    // (pour ne pas écraser les activités existantes !)
+    document.querySelectorAll('.drop-zone:not(.initialized)').forEach(zone => {
+        zone.classList.add('initialized');
         
-        newZone.addEventListener('dragover', e => { e.preventDefault(); newZone.classList.add('dragover'); });
-        newZone.addEventListener('dragleave', e => { newZone.classList.remove('dragover'); });
-        newZone.addEventListener('drop', function(e) {
+        zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('dragover'); });
+        zone.addEventListener('dragleave', e => { zone.classList.remove('dragover'); });
+        zone.addEventListener('drop', function(e) {
             e.preventDefault();
             this.classList.remove('dragover');
             if (!draggedElement) return;
@@ -428,7 +452,6 @@ function initDropZones() {
             this.classList.add('filled');
             draggedElement.classList.add('dropped');
             
-            // S'assure que la carte est repliée quand elle atterrit
             const btnAct = draggedElement.querySelector('.btn-activite');
             const details = draggedElement.querySelector('.details-activite');
             if(btnAct && details) {
@@ -440,7 +463,8 @@ function initDropZones() {
         });
     });
 
-    document.querySelectorAll('.btn-delete-day').forEach(btn => {
+    document.querySelectorAll('.btn-delete-day:not(.initialized)').forEach(btn => {
+        btn.classList.add('initialized');
         btn.onclick = function() { 
             const spreads = document.querySelectorAll('.day-spread');
             if(spreads.length <= 1) return;
@@ -456,6 +480,10 @@ function initDropZones() {
             remainingSpreads[currentDayIndex].style.display = 'flex';
             
             updateDayNumbers(); 
+            
+            // Sync l'input
+            const numInput = document.getElementById('numDaysInput');
+            if (numInput) numInput.value = remainingSpreads.length;
         };
     });
     
@@ -500,7 +528,7 @@ document.getElementById('saveJourneyBtn').addEventListener('click', async () => 
 
     if (!hasAtLeastOneActivity) {
         showToast("Votre carnet est vide ! Glissez au moins une activité avant de sauvegarder.");
-        return; // Stoppe tout, on ne sauvegarde pas
+        return; 
     }
     // ----------------------------------------------
 
@@ -521,7 +549,6 @@ document.getElementById('saveJourneyBtn').addEventListener('click', async () => 
             const zone = spread.querySelector(`.drop-zone[data-time="${time}"]`);
             if(zone) {
                 const itemsInZone = Array.from(zone.querySelectorAll('.draggable-item')).map(item => {
-                    // On récupère le JSON complet pour ne rien perdre (descriptions, ville etc)
                     try {
                         return JSON.parse(item.dataset.full);
                     } catch(e) {
