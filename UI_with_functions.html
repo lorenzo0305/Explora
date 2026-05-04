@@ -205,7 +205,7 @@
 </div>
 <script>
 
-// === Adapter: map the Figma UI to makejourney.js expected structure, WITHOUT changing the visual ===
+// === Adapter: map the Figma UI to GenererVoyage.js expected structure, WITHOUT changing the visual ===
 document.addEventListener('DOMContentLoaded', () => {
   // 1) Photos: make the orange card clickable (acts as #addPhotos), create hidden input (#photosInput), and hidden preview (#photosPreview).
   const photosCard = Array.from(document.querySelectorAll('div'))
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(fb);
   }
 
-  // 4) Map the first line in each section as a drop target slot (IDs expected by makejourney.js)
+  // 4) Map the first line in each section as a drop target slot (IDs expected by GenererVoyage.js)
   function markFirstRowSlot(sectionLabelText, slotId){
     // find the label
     const label = Array.from(document.querySelectorAll('div')).find(d => d.textContent.trim() === sectionLabelText);
@@ -375,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 /* ===========================
-   makejourney.js — Éditeur + Panier + Sauvegarde
+   GenererVoyage.js — Éditeur + Panier + Sauvegarde
    =========================== */
 
 /* --------- Utils LocalStorage (fallback) --------- */

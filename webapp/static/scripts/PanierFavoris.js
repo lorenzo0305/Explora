@@ -1,5 +1,5 @@
 /* =========================================================
- * wishbasket.js — Le Maître Absolu du Panier & Favoris
+ * PanierFavoris.js — Le Maître Absolu du Panier & Favoris
  * ========================================================= */
 (function (global) {
     'use strict';
@@ -28,8 +28,6 @@
         if (existing) {
             if (key === BASKET_KEY) {
                 existing.qty = (existing.qty || 1) + 1;
-                // LA MAGIE EST ICI : Auto-réparation du panier. 
-                // S'il manquait la description ou la ville, on force la mise à jour !
                 Object.assign(existing, item); 
                 existing.image = finalImage;
                 
@@ -40,7 +38,6 @@
             }
         }
         
-        // Si c'est un nouvel item, on sauvegarde la TOTALE (...item)
         list.unshift({
             ...item, 
             id: String(item.id),
@@ -105,7 +102,7 @@
         const headerHtml = `
             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EFE6DC; padding-bottom: 8px; margin-bottom: 10px;">
                 <h4 class="wb-title" style="margin: 0; border: none; padding: 0; font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 700; color: #1C1C1C;">${esc(title)}</h4>
-                ${isBasket ? `<a href="/editeur" title="Ouvrir l'éditeur" style="font-family:'Montserrat', sans-serif; font-size:10px; font-weight:900; color:#FF6F61; text-decoration:none; text-transform:uppercase; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">Aller à l'éditeur ❯</a>` : ''}
+                ${(isBasket && items.length > 0) ? `<a href="/creervoyage" title="Créer mon voyage" style="font-family:'Montserrat', sans-serif; font-size:10px; font-weight:900; color:#FF6F61; text-decoration:none; text-transform:uppercase; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">Aller à la création ❯</a>` : ''}
             </div>
         `;
 
@@ -123,6 +120,43 @@
                 </div>
             ` : '';
 
+            // --- NOUVELLES ICÔNES PARFAITES ---
+            let transferBtn = '';
+            if (isBasket) {
+                // Dans le Panier -> Flèche vers la gauche (vers les favoris)
+                transferBtn = `
+                <button class="wb-transfer" type="button" data-id="${esc(x.id)}" data-target="likes" title="Déplacer vers les favoris" style="background:none; border:none; cursor:pointer; color:#D4C3B3; margin-right:5px; padding:0; display:flex; align-items:center; transition:all 0.2s;" onmouseover="this.style.color='#FF6F61'" onmouseout="this.style.color='#D4C3B3'">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <defs>
+                            <mask id="cut-left-${esc(x.id)}">
+                                <rect width="24" height="24" fill="white" />
+                                <circle cx="4" cy="11" r="8" fill="black" />
+                            </mask>
+                        </defs>
+                        <path mask="url(#cut-left-${esc(x.id)})" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        <line x1="14" y1="11" x2="1" y2="11" />
+                        <polyline points="5 7 1 11 5 15" />
+                    </svg>
+                </button>`;
+            } else {
+                // Dans les Favoris -> Flèche vers la droite (vers le panier)
+                transferBtn = `
+                <button class="wb-transfer" type="button" data-id="${esc(x.id)}" data-target="basket" title="Déplacer vers le panier" style="background:none; border:none; cursor:pointer; color:#D4C3B3; margin-right:5px; padding:0; display:flex; align-items:center; transition:all 0.2s;" onmouseover="this.style.color='#FF6F61'" onmouseout="this.style.color='#D4C3B3'">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <defs>
+                            <mask id="cut-right-${esc(x.id)}">
+                                <rect width="24" height="24" fill="white" />
+                                <circle cx="20" cy="11" r="8" fill="black" />
+                            </mask>
+                        </defs>
+                        <path mask="url(#cut-right-${esc(x.id)})" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        <line x1="10" y1="11" x2="23" y2="11" />
+                        <polyline points="19 7 23 11 19 15" />
+                    </svg>
+                </button>`;
+            }
+            // ----------------------------------------------
+
             const finalImg = typeof window !== 'undefined' && window.getActivityImage ? window.getActivityImage(x) : (x.image || '/static/img/travel.jpg');
 
             return '<div class="wb-item"' + (draggable ? ' draggable="true"' : '') +
@@ -132,6 +166,7 @@
             '   <img src="' + esc(finalImg) + '" alt="" onerror="this.src=\'/static/img/travel.jpg\'">' +
             '   <div class="wb-name">' + (esc(x.name) || 'Sans nom') + '</div>' +
                 qtyControls +
+                transferBtn +
             '   <button class="wb-remove" type="button" data-id="' + esc(x.id) + '" data-key="' + esc(key) + '" title="Retirer">✕</button>' +
             '</div>';
         }).join('');
@@ -156,6 +191,25 @@
                 e.stopPropagation();
                 remove(btn.dataset.key, btn.dataset.id);
                 refresh();
+            });
+        });
+
+        // Logique de DÉPLACEMENT
+        container.querySelectorAll('.wb-transfer').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.stopPropagation();
+                const id = btn.dataset.id;
+                const target = btn.dataset.target; 
+                
+                const sourceKey = target === 'likes' ? BASKET_KEY : LIKES_KEY;
+                const destKey   = target === 'likes' ? LIKES_KEY : BASKET_KEY;
+                
+                const itemToTransfer = load(sourceKey).find(i => String(i.id) === String(id));
+                if (itemToTransfer) {
+                    add(destKey, itemToTransfer);
+                    remove(sourceKey, itemToTransfer.id);
+                    refresh();
+                }
             });
         });
 

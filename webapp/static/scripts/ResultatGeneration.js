@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const asArray = (v) => Array.isArray(v) ? v : (v && typeof v === 'object' ? Object.values(v) : []);
 
     const renderEmpty = (msg) => {
-        conteneur.innerHTML = `<div class="voyage-empty"><h2>Aucun itinéraire à afficher</h2><p>${escapeHtml(msg || "Nous n'avons pas trouvé de voyage correspondant à vos critères.")}</p><a href="/makejourney" class="btn-explorer" style="display:inline-block; text-decoration:none;">Créer un nouveau voyage</a></div>`;
+        conteneur.innerHTML = `<div class="voyage-empty"><h2>Aucun itinéraire à afficher</h2><p>${escapeHtml(msg || "Nous n'avons pas trouvé de voyage correspondant à vos critères.")}</p><a href="/generervoyage" class="btn-explorer" style="display:inline-block; text-decoration:none;">Créer un nouveau voyage</a></div>`;
     };
 
     const raw = sessionStorage.getItem('algorithmRes');
@@ -114,7 +114,16 @@ document.addEventListener('DOMContentLoaded', function () {
             left.appendChild(thumb); left.appendChild(meta); item.appendChild(left);
 
             const rightWrap = document.createElement('div'); rightWrap.style.marginTop = '10px';
-            const detailBtn = document.createElement('button'); detailBtn.className = 'btn-voir-detail'; detailBtn.textContent = 'Voir le détail';
+            const detailBtn = document.createElement('button'); 
+            detailBtn.className = 'btn-voir-detail'; 
+            detailBtn.textContent = 'Voir le détail';
+            
+            // CORRECTION: Grise le bouton si c'est vide
+            if (activitiesCount === 0) {
+                detailBtn.style.opacity = '0.5';
+                detailBtn.style.cursor = 'default';
+            }
+            
             rightWrap.appendChild(detailBtn); item.appendChild(rightWrap);
 
             // L'ACCORDÉON
@@ -170,13 +179,25 @@ document.addEventListener('DOMContentLoaded', function () {
                         // BOUTONS
                         actCard.querySelector('.btn-act-remove').addEventListener('click', (e) => {
                             e.stopPropagation();
-                            if (!confirm('Retirer cette activité ?')) return;
-                            const currentList = asArray(dataVoyage[idx][slotKey]);
-                            currentList.splice(actIdx, 1);
-                            dataVoyage[idx][slotKey] = currentList;
-                            sessionStorage.setItem('algorithmRes', JSON.stringify({ data: dataVoyage }));
-                            _openDayIndex = idx;
-                            renderItineraire();
+                            
+                            // SÉCURITÉ : Vérifie si c'est la dernière activité de CE jour (et pas du voyage entier)
+                            if (activitiesCount <= 1) {
+                                showToast("Impossible : cette journée doit contenir au moins une activité.");
+                                return;
+                            }
+                            
+                            showCustomConfirm(
+                                "Retirer cette activité ?", 
+                                `Voulez-vous vraiment retirer "${actName}" de votre programme ?`, 
+                                () => {
+                                    const currentList = asArray(dataVoyage[idx][slotKey]);
+                                    currentList.splice(actIdx, 1);
+                                    dataVoyage[idx][slotKey] = currentList;
+                                    sessionStorage.setItem('algorithmRes', JSON.stringify({ data: dataVoyage }));
+                                    _openDayIndex = idx;
+                                    renderItineraire();
+                                }
+                            );
                         });
 
                         actCard.querySelector('.btn-act-replace').addEventListener('click', (e) => {
@@ -204,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             const toggleAction = () => {
-                if (activitiesCount === 0) return;
+                if (activitiesCount === 0) return; // Empêche l'ouverture si c'est vide
                 if (detailsInline.classList.contains('show')) {
                     detailsInline.classList.remove('show');
                     item.classList.remove('is-open');
@@ -245,6 +266,57 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => toast.classList.remove('show'), 3000);
     }
 
+    // ─── Boîte de dialogue de confirmation (Sur mesure) ──────────────────
+    function showCustomConfirm(title, message, onConfirm) {
+        let modal = document.getElementById('customConfirmModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'customConfirmModal';
+            modal.style.cssText = 'position:fixed;inset:0;background:rgba(28,28,28,0.6);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;';
+            modal.innerHTML = `
+                <div style="background:#FAF8F5;max-width:400px;width:100%;border-radius:16px;padding:32px;box-shadow:0 20px 60px rgba(0,0,0,0.3);text-align:center;position:relative;">
+                    <button id="ccClose" type="button" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:#6b5f57;">×</button>
+                    <div style="width:50px;height:50px;border-radius:50%;background:rgba(255,111,97,0.1);color:#FF6F61;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                    </div>
+                    <h3 id="ccTitle" style="font-family:'Cormorant Garamond',serif;font-size:24px;margin:0 0 8px;color:#1C1C1C;">Titre</h3>
+                    <p id="ccMessage" style="margin:0 0 24px;color:#6b5f57;font-size:15px;line-height:1.5;font-family:'Lora',serif;">Message</p>
+                    <div style="display:flex;gap:12px;justify-content:center;">
+                        <button id="ccCancel" type="button" style="background:none;border:1px solid #D4C3B3;color:#6b5f57;padding:10px 24px;border-radius:8px;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;transition:background 0.2s;">Annuler</button>
+                        <button id="ccConfirm" type="button" style="background:#FF6F61;border:none;color:#fff;padding:10px 24px;border-radius:8px;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;transition:background 0.2s;">Retirer</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+
+            modal.querySelector('#ccCancel').addEventListener('mouseover', function() { this.style.background = '#F0EDE9'; });
+            modal.querySelector('#ccCancel').addEventListener('mouseout', function() { this.style.background = 'none'; });
+            modal.querySelector('#ccConfirm').addEventListener('mouseover', function() { this.style.background = '#E85A4D'; });
+            modal.querySelector('#ccConfirm').addEventListener('mouseout', function() { this.style.background = '#FF6F61'; });
+        }
+
+        modal.querySelector('#ccTitle').textContent = title;
+        modal.querySelector('#ccMessage').textContent = message;
+        modal.style.display = 'flex';
+
+        const closeIt = () => { modal.style.display = 'none'; cleanup(); };
+        const confirmIt = () => { closeIt(); if(onConfirm) onConfirm(); };
+
+        const btnClose = modal.querySelector('#ccClose');
+        const btnCancel = modal.querySelector('#ccCancel');
+        const btnConfirm = modal.querySelector('#ccConfirm');
+
+        const cleanup = () => {
+            btnClose.removeEventListener('click', closeIt);
+            btnCancel.removeEventListener('click', closeIt);
+            btnConfirm.removeEventListener('click', confirmIt);
+        };
+
+        btnClose.addEventListener('click', closeIt);
+        btnCancel.addEventListener('click', closeIt);
+        btnConfirm.addEventListener('click', confirmIt);
+    }
+
     // ─── Modal de remplacement (Avec autocomplete="off") ────────────────────────────────
     function ensureModal() {
         let modal = document.getElementById('replaceModal');
@@ -253,7 +325,6 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.id = 'replaceModal';
         modal.style.cssText = 'position:fixed;inset:0;background:rgba(28,28,28,0.55);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;';
         
-        // CORRECTION: Ajout de autocomplete="off"
         modal.innerHTML = `
         <div class="rm-card" style="background:#FAF8F5;width:100%;max-width:850px;max-height:85vh;overflow:hidden;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,0.3);font-family:Lora,serif; display:flex; flex-direction:column;">
             <div style="padding: 24px 24px 0 24px;">
@@ -285,7 +356,6 @@ document.addEventListener('DOMContentLoaded', function () {
         searchInput.addEventListener('focus', function() { this.style.borderColor = '#FF6F61'; });
         searchInput.addEventListener('blur', function() { this.style.borderColor = '#D4C3B3'; });
         
-        // CORRECTION: Ecouteur pour la touche "Entrée"
         searchInput.addEventListener('keydown', function(e) {
             if (e.key === 'Enter') {
                 this.blur();
@@ -529,6 +599,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (saveBtn) {
         saveBtn.addEventListener('click', async () => {
+            
+            // --- NOUVELLE SÉCURITÉ : VÉRIFICATION DU VOYAGE VIDE ---
+            let totalActivities = 0;
+            dataVoyage.forEach(jourData => {
+                for (const key of ['matin', 'midi', 'aprem', 'soir']) {
+                    totalActivities += asArray(jourData[key]).length;
+                }
+            });
+
+            if (totalActivities === 0) {
+                showToast("Votre programme est vide ! Veuillez générer un nouveau voyage ou ajouter des activités.");
+                return; 
+            }
+            // --------------------------------------------------------
+
             const locationLabel = criteria?.ville || '';
             const defaultName = locationLabel ? `Voyage à ${locationLabel} — ${new Date().toLocaleDateString('fr-FR')}` : `Voyage du ${new Date().toLocaleDateString('fr-FR')}`;
 
@@ -562,7 +647,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 upsertCache({ ...payload, id: serverResp.id });
                 saveBtn.textContent = '✔️ Sauvegardé';
-                setTimeout(() => { saveBtn.textContent = originalText; saveBtn.disabled = false; window.location.href = '/topics'; }, 1000); 
+                setTimeout(() => { saveBtn.textContent = originalText; saveBtn.disabled = false; window.location.href = '/mesvoyages'; }, 1000); 
             } catch (err) {
                 console.error('Erreur sauvegarde :', err);
                 alert("Impossible de sauvegarder ce voyage : " + (err.message || 'réessayez.'));

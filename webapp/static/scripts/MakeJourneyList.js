@@ -195,7 +195,7 @@ function removeFromBasket(id) {
 function renderBasketPanel() {
     const items = loadBasket();
     if (!items.length) {
-        floatingBasket.innerHTML = '<h4>Votre panier</h4><p class="basket-empty">Aucun élément pour l’instant.</p><div class="basket-footer"><a href="/creation">Aller à la création</a></div>';
+        floatingBasket.innerHTML = '<h4>Votre panier</h4><p class="basket-empty">Aucun élément pour l’instant.</p><div class="basket-footer"><a href="/generervoyage>Aller à la création</a></div>';
         return;
     }
     const list = items.map(x => (
@@ -208,7 +208,7 @@ function renderBasketPanel() {
           <button class="bi-remove" data-id="${x.id}">Retirer</button>
         </div>`
     )).join('');
-    floatingBasket.innerHTML = '<h4>Votre panier</h4>' + list + '<div class="basket-footer"><a href="/creation">Aller à la création</a></div>';
+    floatingBasket.innerHTML = '<h4>Votre panier</h4>' + list + '<div class="basket-footer"><a href="/generervoyage>Aller à la création</a></div>';
     floatingBasket.querySelectorAll('.bi-remove').forEach(btn => {
         btn.addEventListener('click', (e) => { e.stopPropagation(); removeFromBasket(btn.getAttribute('data-id')); });
     });

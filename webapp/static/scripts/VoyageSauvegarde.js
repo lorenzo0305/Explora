@@ -1,4 +1,4 @@
-// --- /static/scripts/ViewJourney.js ---
+// --- /static/scripts/VoyagesSauvegarde.js ---
 
 if (!document.getElementById('explora-animations')) {
     const style = document.createElement('style');
@@ -11,9 +11,12 @@ const DEFAULT_COVER = "/static/img/travel.jpg";
 const JOURNEY_KEYS = ["wish_journeys_v1", "journeys"];
 const LAST_ID_KEY = "wish_last_journey_id";
 
+// --- Variables globales de l'état du voyage ---
 let _currentTarget = null;
 let _searchTimer = null;
 let _openDayIndex = null; 
+let _hasUnsavedChanges = false;
+let _currentJourney = null;
 
 const DAY_FALLBACKS = [
     '/static/img/roussillon.jpg', '/static/img/canoe_occitanie.jpg', 
@@ -21,15 +24,10 @@ const DAY_FALLBACKS = [
     '/static/img/menton.jpg', '/static/img/autoir.jpg'
 ];
 
-// SYNCHRO : Demande toujours au dictionnaire
 function getSafeImage(item) {
     if (!item) return DEFAULT_COVER;
     if (typeof window !== 'undefined' && typeof window.getActivityImage === 'function') {
-        try {
-            return window.getActivityImage(item);
-        } catch(e) {
-            console.warn("Erreur dictionnaire:", e);
-        }
+        try { return window.getActivityImage(item); } catch(e) { console.warn("Erreur dictionnaire:", e); }
     }
     return item.image || item.photo || item.cover || DEFAULT_COVER;
 }
@@ -99,7 +97,7 @@ function normalizeDayAny(d, i) {
     if (!d || typeof d !== "object") return { day: (i || 0) + 1, slots: { morning: [], noon: [], afternoon: [], evening: [] } };
     const day = (d.day != null) ? Number(d.day) : (d.jour != null ? Number(d.jour) : (i || 0) + 1);
     if (Array.isArray(d.slots)) return { day, slots: slotsArrayToObj(d.slots) };
-    const src = (d.slots && typeof d.slots === "object" && !Array.isArray(d.slots)) ? d.slots : { morning: d.morning ?? d.matin, noon: d.noon ?? d.midi, afternoon: d.afternoon ?? d.aprem, evening: d.evening ?? d.soir };
+    const src = (d.slots && typeof d.slots === "object" && !Array.isArray(d.slots)) ? d.slots : d;
     return { day, slots: normalizeSlots(src) };
 }
 
@@ -140,7 +138,8 @@ function mergeJourneys(a = {}, b = {}) {
     return m;
 }
 
-function saveAndRerender(journey) {
+// ─── GESTION DES SAUVEGARDES MANUELLES ────────────────────────────────
+function saveJourneyToDB(journey) {
     journey.updatedAt = new Date().toISOString();
     
     let localJourneys = loadAllLocalJourneys();
@@ -155,8 +154,35 @@ function saveAndRerender(journey) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(journey)
     }).catch(e => console.warn("Erreur synchro serveur:", e));
+    
+    _hasUnsavedChanges = false;
+    updateFloatingSaveBtn();
+}
 
-    render(journey); 
+function applyLocalChange(journey) {
+    _hasUnsavedChanges = true;
+    _currentJourney = journey;
+    render(journey);
+    updateFloatingSaveBtn();
+}
+
+function updateFloatingSaveBtn() {
+    let fab = document.getElementById('floatingSaveBtn');
+    if (!fab) {
+        fab = document.createElement('button');
+        fab.id = 'floatingSaveBtn';
+        fab.textContent = 'Sauvegarder les modifications';
+        fab.style.cssText = 'position:fixed;bottom:30px;right:30px;background:#1C1C1C;color:#fff;border:none;padding:15px 25px;border-radius:50px;font-family:Montserrat,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;box-shadow:0 10px 30px rgba(0,0,0,0.2);cursor:pointer;z-index:9000;transition:all 0.3s;display:none;letter-spacing:1px;';
+        fab.onmouseover = () => { fab.style.background = '#FF6F61'; fab.style.transform = 'translateY(-3px)'; };
+        fab.onmouseout = () => { fab.style.background = '#1C1C1C'; fab.style.transform = 'translateY(0)'; };
+        
+        fab.addEventListener('click', () => {
+            saveJourneyToDB(_currentJourney);
+            showToast("Modifications sauvegardées avec succès !");
+        });
+        document.body.appendChild(fab);
+    }
+    fab.style.display = _hasUnsavedChanges ? 'block' : 'none';
 }
 
 function showToast(message) {
@@ -168,8 +194,109 @@ function showToast(message) {
     }
     toast.textContent = message;
     toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 3000);
+    setTimeout(() => toast.classList.remove('show'), 3500);
 }
+
+// ─── BOÎTES DE DIALOGUES (Custom) ────────────────────────────────
+function showCustomConfirm(title, message, onConfirm) {
+    let modal = document.getElementById('customConfirmModal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'customConfirmModal';
+        modal.style.cssText = 'position:fixed;inset:0;background:rgba(28,28,28,0.6);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;';
+        modal.innerHTML = `
+            <div style="background:#FAF8F5;max-width:400px;width:100%;border-radius:16px;padding:32px;box-shadow:0 20px 60px rgba(0,0,0,0.3);text-align:center;position:relative;">
+                <button id="ccClose" type="button" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:#6b5f57;">×</button>
+                <div style="width:50px;height:50px;border-radius:50%;background:rgba(255,111,97,0.1);color:#FF6F61;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                </div>
+                <h3 id="ccTitle" style="font-family:'Cormorant Garamond',serif;font-size:24px;margin:0 0 8px;color:#1C1C1C;">Titre</h3>
+                <p id="ccMessage" style="margin:0 0 24px;color:#6b5f57;font-size:15px;line-height:1.5;font-family:'Lora',serif;">Message</p>
+                <div style="display:flex;gap:12px;justify-content:center;">
+                    <button id="ccCancel" type="button" style="background:none;border:1px solid #D4C3B3;color:#6b5f57;padding:10px 24px;border-radius:8px;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;transition:background 0.2s;">Annuler</button>
+                    <button id="ccConfirm" type="button" style="background:#FF6F61;border:none;color:#fff;padding:10px 24px;border-radius:8px;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;transition:background 0.2s;">Retirer</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        modal.querySelector('#ccCancel').addEventListener('mouseover', function() { this.style.background = '#F0EDE9'; });
+        modal.querySelector('#ccCancel').addEventListener('mouseout', function() { this.style.background = 'none'; });
+        modal.querySelector('#ccConfirm').addEventListener('mouseover', function() { this.style.background = '#E85A4D'; });
+        modal.querySelector('#ccConfirm').addEventListener('mouseout', function() { this.style.background = '#FF6F61'; });
+    }
+
+    modal.querySelector('#ccTitle').textContent = title;
+    modal.querySelector('#ccMessage').textContent = message;
+    modal.style.display = 'flex';
+
+    const closeIt = () => { modal.style.display = 'none'; cleanup(); };
+    const confirmIt = () => { closeIt(); if(onConfirm) onConfirm(); };
+
+    const btnClose = modal.querySelector('#ccClose');
+    const btnCancel = modal.querySelector('#ccCancel');
+    const btnConfirm = modal.querySelector('#ccConfirm');
+
+    const cleanup = () => {
+        btnClose.removeEventListener('click', closeIt);
+        btnCancel.removeEventListener('click', closeIt);
+        btnConfirm.removeEventListener('click', confirmIt);
+    };
+
+    btnClose.addEventListener('click', closeIt);
+    btnCancel.addEventListener('click', closeIt);
+    btnConfirm.addEventListener('click', confirmIt);
+}
+
+function showUnsavedConfirm(onSave, onDiscard) {
+    let modal = document.getElementById('unsavedConfirmModal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'unsavedConfirmModal';
+        modal.style.cssText = 'position:fixed;inset:0;background:rgba(28,28,28,0.6);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;';
+        modal.innerHTML = `
+            <div style="background:#FAF8F5;max-width:450px;width:100%;border-radius:16px;padding:32px;box-shadow:0 20px 60px rgba(0,0,0,0.3);text-align:center;position:relative;">
+                <button id="ucClose" type="button" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:#6b5f57;">×</button>
+                <div style="width:50px;height:50px;border-radius:50%;background:rgba(255,111,97,0.1);color:#FF6F61;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+                </div>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;margin:0 0 8px;color:#1C1C1C;">Sauvegarder les modifications ?</h3>
+                <p style="margin:0 0 24px;color:#6b5f57;font-size:15px;line-height:1.5;font-family:'Lora',serif;">Vous avez effectué des changements sur ce voyage. Voulez-vous les conserver avant de quitter ?</p>
+                <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                    <button id="ucDiscard" type="button" style="background:none;border:1px solid #D4C3B3;color:#6b5f57;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;transition:all 0.2s;">Quitter sans sauvegarder</button>
+                    <button id="ucSave" type="button" style="background:#FF6F61;border:none;color:#fff;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;transition:all 0.2s;">Oui, sauvegarder</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        modal.querySelector('#ucDiscard').addEventListener('mouseover', function() { this.style.background = '#F0EDE9'; });
+        modal.querySelector('#ucDiscard').addEventListener('mouseout', function() { this.style.background = 'none'; });
+        modal.querySelector('#ucSave').addEventListener('mouseover', function() { this.style.background = '#E85A4D'; });
+        modal.querySelector('#ucSave').addEventListener('mouseout', function() { this.style.background = '#FF6F61'; });
+    }
+
+    modal.style.display = 'flex';
+
+    const closeIt = () => { modal.style.display = 'none'; cleanup(); };
+    const saveIt = () => { closeIt(); if(onSave) onSave(); };
+    const discardIt = () => { closeIt(); if(onDiscard) onDiscard(); };
+
+    const btnClose = modal.querySelector('#ucClose');
+    const btnSave = modal.querySelector('#ucSave');
+    const btnDiscard = modal.querySelector('#ucDiscard');
+
+    const cleanup = () => {
+        btnClose.removeEventListener('click', closeIt);
+        btnSave.removeEventListener('click', saveIt);
+        btnDiscard.removeEventListener('click', discardIt);
+    };
+
+    btnClose.addEventListener('click', closeIt);
+    btnSave.addEventListener('click', saveIt);
+    btnDiscard.addEventListener('click', discardIt);
+}
+
 
 function render(j) {
     localStorage.setItem(LAST_ID_KEY, String(j.id));
@@ -242,7 +369,7 @@ function render(j) {
             const more = total - firstNames.length;
             desc.textContent = firstNames.join(' · ') + (more > 0 ? ` +${more}` : '');
         } else {
-            desc.textContent = 'Journée libre — cliquez pour ajouter des activités';
+            desc.textContent = 'Journée libre';
             desc.classList.add('day-desc-empty');
         }
 
@@ -262,7 +389,15 @@ function render(j) {
 
         const rightWrap = document.createElement('div');
         rightWrap.style.marginLeft = 'auto'; rightWrap.style.paddingLeft = '15px';
-        const detailBtn = document.createElement('button'); detailBtn.className = 'btn-voir-detail'; detailBtn.textContent = 'Voir le détail';
+        const detailBtn = document.createElement('button'); 
+        detailBtn.className = 'btn-voir-detail'; 
+        detailBtn.textContent = 'Voir le détail';
+        
+        if (total === 0) {
+            detailBtn.style.opacity = '0.5';
+            detailBtn.style.cursor = 'default';
+        }
+
         rightWrap.appendChild(detailBtn); item.appendChild(rightWrap);
 
         const detailsInline = document.createElement('div');
@@ -306,11 +441,23 @@ function render(j) {
 
                     actCard.querySelector('.btn-act-remove').addEventListener('click', (e) => {
                         e.stopPropagation();
-                        if (!confirm('Retirer cette activité du programme ?')) return;
-                        days[idx].slots[slotKey].splice(actIdx, 1);
-                        j.plan = days; 
-                        _openDayIndex = idx;
-                        saveAndRerender(j);
+                        
+                        // --- SÉCURITÉ : Ne pas supprimer si c'est la dernière activité de la journée ---
+                        if (total <= 1) {
+                            showToast("Impossible : votre journée doit contenir au moins une activité.");
+                            return;
+                        }
+
+                        showCustomConfirm(
+                            "Retirer cette activité ?", 
+                            `Voulez-vous vraiment retirer "${act.name || act.nom || 'cette activité'}" de votre programme ?`, 
+                            () => {
+                                days[idx].slots[slotKey].splice(actIdx, 1);
+                                j.plan = days; 
+                                _openDayIndex = idx;
+                                applyLocalChange(j);
+                            }
+                        );
                     });
 
                     actCard.querySelector('.btn-act-replace').addEventListener('click', (e) => {
@@ -326,7 +473,7 @@ function render(j) {
         });
 
         const toggleAction = () => {
-            if (total === 0) return; 
+            if (total === 0) return; // Empêche l'ouverture si le jour est vide
             const isOpen = detailsInline.classList.contains('show');
             if (isOpen) {
                 detailsInline.classList.remove('show');
@@ -387,7 +534,6 @@ function ensureModal() {
     modal.id = 'replaceModal';
     modal.style.cssText = 'position:fixed;inset:0;background:rgba(28,28,28,0.55);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;';
     
-    // CORRECTION : autocomplete="off" ajouté pour éviter les suggestions du navigateur
     modal.innerHTML = `
 <div class="rm-card" style="background:#FAF8F5;max-width:850px;width:100%;max-height:85vh;overflow:auto;border-radius:16px;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,0.3);font-family:Lora,serif;">
     <div class="rm-header" style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px;">
@@ -416,13 +562,7 @@ function ensureModal() {
     
     searchInput.addEventListener('focus', function() { this.style.borderColor = '#FF6F61'; });
     searchInput.addEventListener('blur', function() { this.style.borderColor = '#D4C3B3'; });
-    
-    // CORRECTION : Écouteur pour la touche Entrée (arrête le clignotement)
-    searchInput.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter') {
-            this.blur();
-        }
-    });
+    searchInput.addEventListener('keydown', function(e) { if (e.key === 'Enter') this.blur(); });
     
     modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
     modal.querySelector('#rmClose').addEventListener('click', closeModal);
@@ -489,10 +629,7 @@ function openReplaceModal(target) {
 
     input.oninput = () => {
         clearTimeout(_searchTimer);
-        if (!input.value.trim()) {
-            refreshRecommendations('similaire'); 
-            return;
-        }
+        if (!input.value.trim()) { refreshRecommendations('similaire'); return; }
         
         title.textContent = "Résultats de recherche";
         carousel.innerHTML = getSpinnerHtml("Recherche en cours...");
@@ -549,13 +686,8 @@ function renderGridCards(items, container) {
         const id = escapeHtml(String(item.id || item._id || item.nom || ''));
         const name = escapeHtml(item.name || item.nom || 'Sans nom');
         const cats = escapeHtml(formatCategoriesString(item.categories || item.types || item.category || ''));
-        
         const img = escapeHtml(getSafeImage(item));
-        
-        let distHtml = '';
-        if (item.distance) {
-            distHtml = `<div class="rm-card-dist">${escapeHtml(String(item.distance).replace(/km/i, 'km').trim())}</div>`;
-        }
+        let distHtml = item.distance ? `<div class="rm-card-dist">${escapeHtml(String(item.distance).replace(/km/i, 'km').trim())}</div>` : '';
 
         return `
             <div class="rm-card-item" data-id="${id}">
@@ -595,16 +727,13 @@ function mongoToActivity(item) {
 function applyReplacement(item) {
     if (!_currentTarget) return;
     const { jourIdx, moment, slotIdx, journey, allDays } = _currentTarget;
-    
     allDays[jourIdx].slots[moment][slotIdx] = mongoToActivity(item);
     journey.plan = allDays;
     
     closeModal();
-    saveAndRerender(journey);
-    showToast('Activité remplacée avec succès.');
+    applyLocalChange(journey);
+    showToast("Activité remplacée avec succès !");
 }
-
-document.getElementById('backBtn').addEventListener('click', () => history.back());
 
 (async function init() {
     const id = getJourneyId();
@@ -612,5 +741,24 @@ document.getElementById('backBtn').addEventListener('click', () => history.back(
     const local = byLocalId(id); const server = await fetchServerJourney(id);
     const journey = (local && server) ? mergeJourneys(local, server) : (server || local);
     if (!journey) { document.getElementById('journeyTitle').textContent = 'Voyage introuvable'; return; }
-    render(journey);
+    
+    _currentJourney = journey;
+    render(_currentJourney);
+
+    const mainBackBtn = document.getElementById('backBtn');
+    if (mainBackBtn) {
+        const clonedBtn = mainBackBtn.cloneNode(true);
+        mainBackBtn.parentNode.replaceChild(clonedBtn, mainBackBtn);
+        clonedBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (_hasUnsavedChanges) {
+                showUnsavedConfirm(
+                    () => { saveJourneyToDB(_currentJourney); window.location.href = '/mesvoyages'; },
+                    () => { window.location.href = '/mesvoyages'; }
+                );
+            } else {
+                window.location.href = '/mesvoyages';
+            }
+        });
+    }
 })();

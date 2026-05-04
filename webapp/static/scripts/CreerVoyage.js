@@ -1,4 +1,4 @@
-// --- /static/scripts/Editeur.js ---
+// --- /static/scripts/CreerVoyage.js ---
 
 const BASKET_KEY = 'wish_basket_v1';
 const JOURNEYS_KEY = 'wish_journeys_v1';
@@ -77,7 +77,7 @@ function loadBasketIntoSidebar() {
             // On sauvegarde l'item COMPLET dans le HTML pour ne rien perdre au moment de sauvegarder le carnet
             div.dataset.full = JSON.stringify(item); 
             
-            // LA CORRECTION : Recherche élargie pour récupérer les infos peu importe comment la BDD les appelle
+            // Recherche élargie pour récupérer les infos peu importe comment la BDD les appelle
             const rawCity = item.ville || item.locality || item.city || item.commune || item.adresse || '';
             const rawDesc = item.description || item.desc || item.summary || item.comment || item.abstract || "Aucune description détaillée n'est disponible.";
             
@@ -231,10 +231,17 @@ window.turnPage = function(direction) {
             backFace.innerHTML = spreads[newIndex].querySelector('.left-page').innerHTML;
 
             spreads[currentDayIndex].style.position = 'absolute';
+            spreads[currentDayIndex].style.top = '0';
+            spreads[currentDayIndex].style.left = '0';
+            spreads[currentDayIndex].style.width = '100%';
             spreads[currentDayIndex].style.zIndex = 2;
             spreads[currentDayIndex].querySelector('.right-page').style.visibility = 'hidden';
 
             spreads[newIndex].style.display = 'flex';
+            spreads[newIndex].style.position = 'absolute';
+            spreads[newIndex].style.top = '0';
+            spreads[newIndex].style.left = '0';
+            spreads[newIndex].style.width = '100%';
             spreads[newIndex].style.zIndex = 1;
             spreads[newIndex].querySelector('.left-page').style.visibility = 'hidden';
         }
@@ -272,10 +279,17 @@ window.turnPage = function(direction) {
             backFace.innerHTML = spreads[newIndex].querySelector('.right-page').innerHTML;
 
             spreads[currentDayIndex].style.position = 'absolute';
+            spreads[currentDayIndex].style.top = '0';
+            spreads[currentDayIndex].style.left = '0';
+            spreads[currentDayIndex].style.width = '100%';
             spreads[currentDayIndex].style.zIndex = 2;
             spreads[currentDayIndex].querySelector('.left-page').style.visibility = 'hidden';
 
             spreads[newIndex].style.display = 'flex';
+            spreads[newIndex].style.position = 'absolute';
+            spreads[newIndex].style.top = '0';
+            spreads[newIndex].style.left = '0';
+            spreads[newIndex].style.width = '100%';
             spreads[newIndex].style.zIndex = 1;
             spreads[newIndex].querySelector('.right-page').style.visibility = 'hidden';
         }
@@ -301,10 +315,12 @@ window.turnPage = function(direction) {
                     spreads[currentDayIndex].style.display = 'none';
                     spreads[currentDayIndex].style.position = '';
                     spreads[currentDayIndex].style.zIndex = '';
+                    spreads[currentDayIndex].style.width = '';
                     spreads[currentDayIndex].querySelector('.right-page').style.visibility = 'visible';
 
                     spreads[newIndex].querySelector('.left-page').style.visibility = 'visible';
                     spreads[newIndex].style.zIndex = '';
+                    spreads[newIndex].style.width = '';
                 }
             } else {
                 if (currentDayIndex === 0) {
@@ -317,10 +333,12 @@ window.turnPage = function(direction) {
                     spreads[currentDayIndex].style.display = 'none';
                     spreads[currentDayIndex].style.position = '';
                     spreads[currentDayIndex].style.zIndex = '';
+                    spreads[currentDayIndex].style.width = '';
                     spreads[currentDayIndex].querySelector('.left-page').style.visibility = 'visible';
 
                     spreads[newIndex].querySelector('.right-page').style.visibility = 'visible';
                     spreads[newIndex].style.zIndex = '';
+                    spreads[newIndex].style.width = '';
                 }
             }
             
@@ -469,7 +487,23 @@ function updateDayNumbers() {
     });
 }
 
-document.getElementById('saveJourneyBtn').addEventListener('click', async () => {
+document.getElementById('saveJourneyBtn').addEventListener('click', async () => {    
+    // --- SÉCURITÉ : VÉRIFICATION DU VOYAGE VIDE ---
+    const spreadsForCheck = document.querySelectorAll('.day-spread');
+    let hasAtLeastOneActivity = false;
+    
+    spreadsForCheck.forEach(spread => {
+        if (spread.querySelectorAll('.draggable-item.dropped').length > 0) {
+            hasAtLeastOneActivity = true;
+        }
+    });
+
+    if (!hasAtLeastOneActivity) {
+        showToast("Votre carnet est vide ! Glissez au moins une activité avant de sauvegarder.");
+        return; // Stoppe tout, on ne sauvegarde pas
+    }
+    // ----------------------------------------------
+
     const btn = document.getElementById('saveJourneyBtn');
     const originalText = btn.textContent;
     btn.disabled = true;
@@ -545,5 +579,5 @@ document.getElementById('saveJourneyBtn').addEventListener('click', async () => 
 
     btn.textContent = originalText;
     btn.disabled = false;
-    window.location.href = '/topics';
+    window.location.href = '/mesvoyages'; 
 });

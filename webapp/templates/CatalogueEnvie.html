@@ -6,14 +6,14 @@
     <title>Explora — {{ categorie }}</title>
 
     <link rel="stylesheet" href="/static/styles/app.css">
-    <link rel="stylesheet" href="/static/styles/Categorie.css?v=6">
-    <link rel="stylesheet" href="/static/styles/wishbasket.css?v=6">
+    <link rel="stylesheet" href="/static/styles/CatalogueEnvie.css?v=6">
+    <link rel="stylesheet" href="/static/styles/PanierFavoris.css?v=6">
     
     <!-- Ajout du dictionnaire -->
-    <script src="/static/scripts/imageDictionary.js?v=2" defer></script>
-    <script src="/static/scripts/wishbasket.js?v=5" defer></script>
+    <script src="/static/scripts/DictionnaireImages.js?v=2" defer></script>
+    <script src="/static/scripts/PanierFavoris.js?v=5" defer></script>
     <script>const CATEGORIE_ACTUELLE = "{{ categorie }}";</script>
-    <script src="/static/scripts/Categorie.js?v=6" defer></script>
+    <script src="/static/scripts/CatalogueEnvie.js?v=6" defer></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,10 +26,10 @@
             <div class="nav-logo"><span class="logo-fill">EXP</span><span class="logo-outline">LORA</span></div>
             <div class="nav-links">
                 <a href="/">Accueil</a>
-                <a href="/makejourney">Générer mon voyage</a>
-                <a href="/Destinations" class="active">Catalogue d'activités</a>
-                <a href="/topics">Mes voyages</a>
-                <a href="/editeur">Créer mon voyage</a>
+                <a href="/generervoyage">Générer mon voyage</a>
+                <a href="/catalogue" class="active">Catalogue d'activités</a>
+                <a href="/mesvoyages">Mes voyages</a>
+                <a href="/creervoyage">Créer mon voyage</a>
             </div>
             
             <div class="nav-actions">
@@ -54,7 +54,7 @@
         <div class="content-panel">
             <!-- NOUVELLE STRUCTURE SANS PADDING POUR LE BORD-À-BORD -->
             <div class="cat-header fade-in">
-                <a href="/Destinations" class="back-link">← Retour au catalogue</a>
+                <a href="/catalogue" class="back-link">← Retour au catalogue</a>
                 <span class="script-decoration">Votre sélection</span>
                 <h1 class="main-title" id="pageTitle">{{ categorie }}</h1>
                 <p class="instruction-text">Ajoutez vos coups de cœur à votre panier ou à vos favoris pour pouvoir les utiliser ensuite dans la création de votre voyage !</p>

@@ -276,7 +276,7 @@ def _journey_doc(payload: dict[str, Any], journey_id: str) -> dict[str, Any]:
     return doc
 
 # =============================================================
-# ROUTES FRONT (Toutes les pages de Snippet 2)
+# ROUTES FRONT (Renommées)
 # =============================================================
 @app.get("/", response_class=HTMLResponse)
 @app.get("/accueil", response_class=HTMLResponse)
@@ -285,43 +285,54 @@ def home(request: Request):
 
 @app.get("/exploration", response_class=HTMLResponse)
 @app.get("/Destinations", response_class=HTMLResponse)
+@app.get("/catalogue", response_class=HTMLResponse)
 def exploration(request: Request):
     return templates.TemplateResponse(request=request, name="Catalogue.html")
 
 @app.get("/region/{region_slug}", response_class=HTMLResponse)
 def region_page(request: Request, region_slug: str):
-    return templates.TemplateResponse(request=request, name="Region.html", context={"region": region_slug})
+    return templates.TemplateResponse(request=request, name="CatalogueRegion.html", context={"region": region_slug})
 
-# LA NOUVELLE ROUTE
 @app.get("/categorie/{cat_slug}")
 def categorie_page(request: Request, cat_slug: str):
-    return templates.TemplateResponse(request=request, name="Categorie.html", context={"categorie": cat_slug})
+    return templates.TemplateResponse(request=request, name="CatalogueEnvie.html", context={"categorie": cat_slug})
 
 @app.get("/carnet", response_class=HTMLResponse)
 @app.get("/topics", response_class=HTMLResponse)
+@app.get("/mesvoyages", response_class=HTMLResponse)
 def carnet(request: Request):
     return templates.TemplateResponse(request=request, name="MesVoyages.html")
 
+# Modification de l'Éditeur -> CreerVoyage
 @app.get("/editeur", response_class=HTMLResponse)
+@app.get("/creervoyage", response_class=HTMLResponse)
 def editeur_page(request: Request):
-    return templates.TemplateResponse(request=request, name="Editeur.html")
+    return templates.TemplateResponse(request=request, name="CreerVoyage.html")
 
+# Modification de Creation -> GenererVoyage
 @app.get("/creation", response_class=HTMLResponse)
 @app.get("/makejourney", response_class=HTMLResponse)
 @app.get("/makejourney/new", response_class=HTMLResponse)
 @app.get("/makejourney/{journey_id}", response_class=HTMLResponse)
+@app.get("/generervoyage", response_class=HTMLResponse)
+@app.get("/generervoyage/{journey_id}", response_class=HTMLResponse)
 def creation(request: Request, journey_id: str | None = None):
-    return templates.TemplateResponse(request=request, name="Creation.html", context={"journey_id": journey_id or ""})
+    return templates.TemplateResponse(request=request, name="GenererVoyage.html", context={"journey_id": journey_id or ""})
 
+# Modification de Voyage -> ResultatGeneration
 @app.get("/voyage", response_class=HTMLResponse)
 @app.get("/Voyage.html", response_class=HTMLResponse)
+@app.get("/resultatgeneration", response_class=HTMLResponse)
 def voyage_page(request: Request):
-    return templates.TemplateResponse(request=request, name="Voyage.html")
+    return templates.TemplateResponse(request=request, name="ResultatGeneration.html")
 
+# Modification de ViewJourney -> VoyageSauvegarde
 @app.get("/journeys/view/{journey_id}", response_class=HTMLResponse)
+@app.get("/voyagesauvegarde/{journey_id}", response_class=HTMLResponse)
 def journey_view(request: Request, journey_id: str):
-    return templates.TemplateResponse(request=request, name="ViewJourney.html", context={"journey_id": journey_id})
+    return templates.TemplateResponse(request=request, name="VoyageSauvegarde.html", context={"journey_id": journey_id})
 
+# (Optionnel si tu utilisais cette route, sinon elle pointe vers ViewJourneyDay.html)
 @app.get("/journeys/view/{journey_id}/day/{day_index}", response_class=HTMLResponse)
 def journey_day_view(request: Request, journey_id: str, day_index: int):
     return templates.TemplateResponse(request=request, name="ViewJourneyDay.html", context={"journey_id": journey_id, "day": day_index})

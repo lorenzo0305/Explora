@@ -91,10 +91,19 @@ const lsSetJourneys = (arr) => {
 function activitiesCount(j) {
     if (!Array.isArray(j?.plan)) return 0;
     return j.plan.reduce((acc, d) => {
+        // Ancien format direct
         if (Array.isArray(d?.matin) || Array.isArray(d?.aprem)) {
             return acc + (Array.isArray(d.matin) ? d.matin.length : 0) + (Array.isArray(d.aprem) ? d.aprem.length : 0);
         }
+        
         const s = d?.slots || {};
+        
+        // NOUVEAU FORMAT : l'éditeur génère un tableau de slots
+        if (Array.isArray(s)) {
+            return acc + s.reduce((sum, slot) => sum + (Array.isArray(slot.items) ? slot.items.length : 0), 0);
+        }
+        
+        // FORMAT IA : l'IA génère un objet { morning: [], noon: [] }
         const c = (arr) => Array.isArray(arr) ? arr.length : (arr ? Object.values(arr).length : 0);
         return acc + c(s.morning) + c(s.noon) + c(s.afternoon) + c(s.evening);
     }, 0);

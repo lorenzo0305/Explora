@@ -7,14 +7,15 @@
   <title>Explora — Accueil</title>
   <link rel="stylesheet" href="/static/styles/app.css">
   <link rel="stylesheet" href="/static/styles/Accueil.css?v=2">
-  <link rel="stylesheet" href="/static/styles/wishbasket.css?v=2">
+  <link rel="stylesheet" href="/static/styles/PanierFavoris.css?v=2">
   
-  <script src="/static/scripts/wishbasket.js" defer></script>
+  <script src="/static/scripts/PanierFavoris.js" defer></script>
   <script src="/static/scripts/Accueil.js?v=4" defer></script>
   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet"></head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet">
+</head>
 
 <body>
   <div class="app-frame">
@@ -24,10 +25,10 @@
       
       <div class="nav-links">
         <a href="/" class="active">Accueil</a>
-        <a href="/makejourney">Générer mon voyage</a>
-        <a href="/Destinations">Catalogue d'activités</a>
-        <a href="/topics">Mes voyages</a>
-        <a href="/editeur">Créer mon voyage</a>
+        <a href="/generervoyage">Générer mon voyage</a>
+        <a href="/catalogue">Catalogue d'activités</a>
+        <a href="/mesvoyages">Mes voyages</a>
+        <a href="/creervoyage">Créer mon voyage</a>
       </div>
       <div class="nav-actions">
         <div style="position: relative;">
@@ -69,8 +70,8 @@
           </p>
           
           <div class="hero-buttons">
-            <a href="/makejourney" class="btn-primary">Générer mon voyage</a>
-            <a href="/Destinations" class="btn-secondary">Explorer le catalogue</a>
+            <a href="/generervoyage" class="btn-primary">Générer mon voyage</a>
+            <a href="/catalogue" class="btn-secondary">Explorer le catalogue</a>
           </div>
         </div>
 
@@ -145,7 +146,6 @@
             </div>
           </div>
 
-          <!-- Remplacement COMPLET du bloc "Et pour finir..." pour tuer la ligne et maîtriser l'espacement -->
           <div style="margin-top: 20px; padding-top: 10px;">
             <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; color: var(--text-main); text-align: center; margin: 0 0 10px 0; font-weight: 700;">Et pour finir...</h3>
 
@@ -160,7 +160,6 @@
 
         </div>
 
-        <!-- Margin-top négatif pour rapprocher cette section de celle du haut -->
         <div class="section recent-section" style="margin-top: -30px;">
           <h3 class="section-title">Inspirations récentes</h3>
           <div id="recentList" class="featured-list"></div>

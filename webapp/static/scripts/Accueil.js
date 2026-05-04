@@ -91,7 +91,7 @@ function buildRecentCard(j) {
 function buildPlaceholderCard() {
     const item = document.createElement("a");
     item.className = "featured-item placeholder";
-    item.href = "/makejourney";
+    item.href = "/GenererVoyage";
     const th = document.createElement("div"); th.className = "thumb";
     const nm = document.createElement("div"); nm.className = "name"; nm.textContent = "Votre prochain voyage";
     const com = document.createElement("div"); com.className = "comment"; com.textContent = "Cliquez pour le créer";

@@ -1,6 +1,6 @@
 /* =========================================================
-   makejourney.js — multi-journées (responsive)
-   - Branché sur WishBasket (wishbasket.js)
+   GenererVoyage.js — multi-journées (responsive)
+   - Branché sur WishBasket (PanierFavoris.js)
    - Drag & Drop par journée
    - Sauvegarde → routes /journeys et page /creation
    ========================================================= */
