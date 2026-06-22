@@ -1,0 +1,329 @@
+{
+  "@id": "https://data.datatourisme.fr/13/f86b905d-3bfc-3ae0-bf0d-e33e9fafe7c5",
+  "dc:identifier": "7622308",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Le Repère"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/c042f4db-68f2-3406-86ce-cf84a7ebb0fe",
+    "dc:identifier": "332",
+    "schema:email": [
+      "alice@valloire.net",
+      "communication@valloire.net",
+      "loane@valloire.net",
+      "webmaster@valloire.fr"
+    ],
+    "schema:legalName": "Office de Tourisme de Valloire",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.valloire.net/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/59e2249a-02db-34f9-a6e9-209dc2491197",
+      "schema:email": [
+        "cmn.valloire@gmail.com"
+      ],
+      "schema:telephone": [
+        "+33 4 79 56 63 07"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/ea4430c6-9edb-32e7-b290-bb9141474e0b",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/cf398c92-1805-3866-b037-698092b2ab42",
+          "schema:addressLocality": "Valloire",
+          "schema:postalCode": "73450",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:73306",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Valloire"
+              ],
+              "pt": [
+                "Valloire"
+              ],
+              "en": [
+                "Valloire"
+              ],
+              "it": [
+                "Valloire"
+              ],
+              "fr": [
+                "Valloire"
+              ],
+              "nl": [
+                "Valloire"
+              ],
+              "es": [
+                "Valloire"
+              ]
+            },
+            "insee": "73306",
+            "isPartOfDepartment": {
+              "@id": "kb:France8473",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Savoie"
+                ],
+                "pt": [
+                  "Savoie"
+                ],
+                "en": [
+                  "Savoie"
+                ],
+                "it": [
+                  "Savoie"
+                ],
+                "fr": [
+                  "Savoie"
+                ],
+                "nl": [
+                  "Savoie"
+                ],
+                "es": [
+                  "Savoie"
+                ]
+              },
+              "insee": "73",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/bf86bed1-728b-3ed4-9c8c-4c25a8183aaf",
+        "schema:latitude": "45.15863",
+        "schema:longitude": "6.421587",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/345829f6-b41c-3c03-a847-32a6455ea579",
+          "schema:closes": "21:30:00",
+          "schema:opens": "17:30:00",
+          "schema:validFrom": "2026-12-17T00:00:00",
+          "schema:validThrough": "2026-04-11T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "In den Ferien montags abends, freitags und samstags mittags und abends."
+            ],
+            "en": [
+              "Monday evenings, Friday and Saturday lunchtimes and evenings during the vacations."
+            ],
+            "it": [
+              "Lunedì sera, venerdì e sabato a pranzo e la sera durante le vacanze."
+            ],
+            "fr": [
+              "Les lundis soirs, vendredi et samedis midi et soir pendant les vacances."
+            ],
+            "nl": [
+              "Maandagavond, vrijdag- en zaterdagmiddag en 's avonds tijdens de vakanties."
+            ],
+            "es": [
+              "Lunes por la tarde, viernes y sábados al mediodía y por la noche durante las vacaciones."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/23df71eb-8d8c-3b04-bfd3-3b9a493c91e6",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/31ac3554-4e66-325d-8825-5a7082655a94",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/3da429cf-3ca0-3c2b-a393-5100bcc0b340",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/9e571566-2795-3457-abd1-cff4f60b287e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d5da9002-4ee0-3693-9227-76f8a91854fe",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/3e69d5fd-d75a-3508-b28d-75696c5290b9",
+      "schema:email": [
+        "communication@valloire.net",
+        "webmaster@valloire.fr"
+      ],
+      "schema:legalName": "Office de Tourisme de Valloire",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.valloire.net/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-12-23",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.383Z"
+}

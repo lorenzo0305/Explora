@@ -1,0 +1,253 @@
+{
+  "@id": "https://data.datatourisme.fr/13/c37909df-5691-3886-a59b-fc5fe8420112",
+  "dc:identifier": "5817550",
+  "@type": [
+    "olo:OrderedList",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "RoadTour",
+    "SportsAndLeisurePlace",
+    "Tour"
+  ],
+  "rdfs:label": {
+    "en": [
+      "Circuit around Beaujeu, at the heart of Beaujolais history"
+    ],
+    "fr": [
+      "Circuit autour de Beaujeu, au coeur de l'histoire du Beaujolais"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/c20ad4d7-6fe9-3759-aa27-a0c99bff6710",
+    "dc:identifier": "12",
+    "schema:email": [
+      "f.champavere@beaujolais-tourisme.com",
+      "t.blanchier@beaujolais-tourisme.com",
+      "v.guerin@beaujolais-tourisme.com"
+    ],
+    "schema:legalName": "Beaujolais Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.beaujolais-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/39b5eaa2-3469-3a60-a809-096a430a3443",
+      "schema:email": [
+        "contact@beaujolais-tourisme.com"
+      ],
+      "schema:telephone": [
+        "+33 4 74 07 27 40"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.beaujolais-tourisme.com/"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/ae50ccfb-68e3-3777-bcd5-84f3fe6158c3",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/b7d96398-3a5a-35c8-9bed-bb9c32b678b0",
+          "schema:addressLocality": "Beaujeu",
+          "schema:postalCode": "69430",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:69018",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Beaujeu"
+              ],
+              "pt": [
+                "Beaujeu"
+              ],
+              "en": [
+                "Beaujeu"
+              ],
+              "it": [
+                "Beaujeu"
+              ],
+              "fr": [
+                "Beaujeu"
+              ],
+              "nl": [
+                "Beaujeu"
+              ],
+              "es": [
+                "Beaujeu"
+              ]
+            },
+            "insee": "69018",
+            "isPartOfDepartment": {
+              "@id": "kb:France8469",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Rhône"
+                ],
+                "pt": [
+                  "Rhône"
+                ],
+                "en": [
+                  "Rhône"
+                ],
+                "it": [
+                  "Rhône"
+                ],
+                "fr": [
+                  "Rhône"
+                ],
+                "nl": [
+                  "Rhône"
+                ],
+                "es": [
+                  "Rhône"
+                ]
+              },
+              "insee": "69",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/2cf3f253-2021-33fb-9e24-3d22594dcea7",
+        "schema:latitude": "46.137633",
+        "schema:longitude": "4.641079",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8687b10f-a743-3616-95e8-ea841adb5c78",
+      "schema:email": [
+        "f.champavere@beaujolais-tourisme.com",
+        "t.blanchier@beaujolais-tourisme.com",
+        "v.guerin@beaujolais-tourisme.com"
+      ],
+      "schema:legalName": "Beaujolais Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.beaujolais-tourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-09-12",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.572Z"
+}

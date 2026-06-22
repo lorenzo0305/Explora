@@ -1,0 +1,442 @@
+{
+  "@id": "https://data.datatourisme.fr/13/7477e161-b17b-356f-87f2-e033aa55c0de",
+  "dc:identifier": "6216316",
+  "@type": [
+    "olo:OrderedList",
+    "CyclingTour",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "SportsAndLeisurePlace",
+    "Tour"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "auf 4 markierten Mountainbike-Strecken können Sie die Weiler von Orelle und seine alpine Umgebung erkunden."
+    ],
+    "en": [
+      "4 marked mountain bike trails will allow you to discover the hamlets of Orelle and its alpine environment."
+    ],
+    "it": [
+      "4 percorsi segnalati per mountain bike vi permetteranno di scoprire le frazioni di Orelle e il suo ambiente alpino."
+    ],
+    "fr": [
+      "4 sentiers VTT balisés vous permettront de découvrir les hameaux d'Orelle et son environnement alpin."
+    ],
+    "es": [
+      "4 senderos de bicicleta de montaña señalizados le llevarán por las aldeas de Orelle y su entorno alpino."
+    ],
+    "nl": [
+      "4 bewegwijzerde mountainbikeroutes nemen je mee door de gehuchten van Orelle en de alpine omgeving."
+    ]
+  },
+  "rdfs:label": {
+    "en": [
+      "Mountain bike trails"
+    ],
+    "it": [
+      "Sentieri mountain bike"
+    ],
+    "fr": [
+      "Sentiers VTT balisés"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/310dcbbf-4cce-32f7-a2a2-aaa148d556bd",
+    "dc:identifier": "333",
+    "schema:email": [
+      "contact@orelletourisme.net",
+      "direction@orelletourisme.net"
+    ],
+    "schema:legalName": "Office de tourisme d'Orelle",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.orelle.net/",
+      "https://www.orelle.net/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/030e6df7-7ed3-3c02-a95c-17abe48144a8",
+      "schema:legalName": "Office de Tourisme de Brides-les-Bains - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/eff3f7c3-33e9-3ad5-8dde-3b2f65f2024e",
+      "schema:email": [
+        "contact@orelletourisme.net"
+      ],
+      "schema:telephone": [
+        "+33 4 79 56 87 22"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/80e78548-1853-3a32-b70c-f48d21a9d669",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/4de4f11d-5a05-3807-aad8-01a3824de44c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/53f0a668-4120-3f67-befd-96bfcf36ebb7",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/bc70fdd3-3d3d-3f42-8534-435637bef01c",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "auf 4 markierten Mountainbike-Strecken können Sie die Weiler von Orelle und seine alpine Umgebung erkunden."
+        ],
+        "en": [
+          "4 marked mountain bike trails will allow you to discover the hamlets of Orelle and its alpine environment."
+        ],
+        "it": [
+          "4 percorsi segnalati per mountain bike vi permetteranno di scoprire le frazioni di Orelle e il suo ambiente alpino."
+        ],
+        "fr": [
+          "4 sentiers VTT balisés vous permettront de découvrir les hameaux d'Orelle et son environnement alpin."
+        ],
+        "es": [
+          "4 senderos de bicicleta de montaña señalizados le llevarán por las aldeas de Orelle y su entorno alpino."
+        ],
+        "nl": [
+          "4 bewegwijzerde mountainbikeroutes nemen je mee door de gehuchten van Orelle en de alpine omgeving."
+        ]
+      }
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:ATV",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "MTB"
+        ],
+        "pt": [
+          "Bicicleta-todo-o-terreno (BTT)"
+        ],
+        "en": [
+          "Atv"
+        ],
+        "it": [
+          "Mountain bike"
+        ],
+        "fr": [
+          "Vtt"
+        ],
+        "nl": [
+          "Mountainbike"
+        ],
+        "es": [
+          "BTT"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Bike",
+      "@type": [
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Fahrrad"
+        ],
+        "pt": [
+          "Bicicleta"
+        ],
+        "en": [
+          "Bike"
+        ],
+        "it": [
+          "Bicicletta"
+        ],
+        "fr": [
+          "Vélo"
+        ],
+        "nl": [
+          "Fiets"
+        ],
+        "es": [
+          "Bicicleta"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/0d5789bf-915a-336a-b52f-55faacdbb76d",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/361f6c2d-9f85-3174-8b37-a511f3b7388b",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a3ebc94c-a0be-34eb-84da-3ad1e4cd28f1",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/a40530ce-beb7-3656-8229-c6e02263649e",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/af57e399-3128-3b64-a2e3-972c0aeecb22",
+          "schema:addressLocality": "Orelle",
+          "schema:postalCode": "73140",
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:73194",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Orelle"
+              ],
+              "pt": [
+                "Orelle"
+              ],
+              "en": [
+                "Orelle"
+              ],
+              "it": [
+                "Orelle"
+              ],
+              "fr": [
+                "Orelle"
+              ],
+              "nl": [
+                "Orelle"
+              ],
+              "es": [
+                "Orelle"
+              ]
+            },
+            "insee": "73194",
+            "isPartOfDepartment": {
+              "@id": "kb:France8473",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Savoie"
+                ],
+                "pt": [
+                  "Savoie"
+                ],
+                "en": [
+                  "Savoie"
+                ],
+                "it": [
+                  "Savoie"
+                ],
+                "fr": [
+                  "Savoie"
+                ],
+                "nl": [
+                  "Savoie"
+                ],
+                "es": [
+                  "Savoie"
+                ]
+              },
+              "insee": "73",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/5c6f843e-57eb-3f0f-9889-5f17e7ea5f43",
+        "schema:latitude": "45.208037",
+        "schema:longitude": "6.546814",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/f9c92593-e31a-3dee-b77c-0e3775f72af7",
+          "schema:validFrom": "2026-05-09T00:00:00",
+          "schema:validThrough": "2026-11-19T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/3edf4087-555b-3857-9b04-18bff4e61aa9",
+      "schema:email": [
+        "contact@orelletourisme.net",
+        "direction@orelletourisme.net"
+      ],
+      "schema:legalName": "Office de tourisme d'Orelle",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.orelle.net/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-07-09",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.407Z"
+}

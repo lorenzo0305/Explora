@@ -1,0 +1,385 @@
+{
+  "@id": "https://data.datatourisme.fr/28/5ee2188e-53fb-36c4-9cd2-6402e0cb9b3b",
+  "dc:identifier": "RESPIC000V504Y0H",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Restaurant",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "L'Assiette de Boeuf"
+    ]
+  },
+  "allowedPersons": 72,
+  "availableLanguage": [
+    "en"
+  ],
+  "creationDate": "2019-10-01",
+  "hasAudience": [
+    {
+      "@id": "kb:Regional",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Regional"
+        ],
+        "pt": [
+          "Regional"
+        ],
+        "en": [
+          "Regional"
+        ],
+        "it": [
+          "Regionale"
+        ],
+        "fr": [
+          "Régionale"
+        ],
+        "es": [
+          "Regional"
+        ],
+        "nl": [
+          "Regionaal"
+        ]
+      }
+    }
+  ],
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/28/29201d37-5890-333c-917e-c22820a3a0b9",
+    "dc:identifier": "d078e000-5ccd-4efd-8ad5-ab188b8e57f7",
+    "schema:email": [
+      "contact@hautsdefrancetourisme.com"
+    ],
+    "schema:legalName": "Hauts-de-France Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/28/29201d37-5890-333c-917e-c22820a3a0b9",
+      "dc:identifier": "d078e000-5ccd-4efd-8ad5-ab188b8e57f7",
+      "schema:email": [
+        "contact@hautsdefrancetourisme.com"
+      ],
+      "schema:legalName": "Hauts-de-France Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasBookingContact": [
+    {
+      "@id": "https://data.datatourisme.fr/f937242f-ce24-3c79-a7bc-f2d78bb580d9",
+      "schema:email": [
+        "arras@assietteauboeuf.fr"
+      ],
+      "schema:telephone": [
+        "+33 3 21 15 11 51",
+        "+33 6 89 40 45 53"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.assietteauboeuf.fr/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/f937242f-ce24-3c79-a7bc-f2d78bb580d9",
+      "schema:email": [
+        "arras@assietteauboeuf.fr"
+      ],
+      "schema:telephone": [
+        "+33 3 21 15 11 51",
+        "+33 6 89 40 45 53"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.assietteauboeuf.fr/"
+      ]
+    }
+  ],
+  "hasFeature": [
+    {
+      "@id": "https://data.datatourisme.fr/caf65b4b-312f-3b5c-9c65-7b1d1a8bcbbc",
+      "@type": [
+        "schema:LocationFeatureSpecification",
+        "schema:PropertyValue",
+        "FeatureSpecification",
+        "RoomFeatureSpecification"
+      ],
+      "features": [
+        {
+          "@id": "kb:Wifi",
+          "@type": [
+            "CommonAmenity"
+          ],
+          "rdfs:label": {
+            "de": [
+              "WLAN, Internetzugang"
+            ],
+            "pt": [
+              "Wi-Fi, acesso Internet"
+            ],
+            "en": [
+              "Wifi, internet access"
+            ],
+            "it": [
+              "Wifi, accesso a internet"
+            ],
+            "fr": [
+              "Wifi, accès internet"
+            ],
+            "nl": [
+              "Wifi, internettoegang"
+            ],
+            "es": [
+              "Wifi, acceso a internet"
+            ]
+          }
+        }
+      ],
+      "internetAccess": true,
+      "seatCount": 72
+    }
+  ],
+  "hasGeographicReach": [
+    {
+      "@id": "kb:Regional",
+      "@type": [
+        "GeographicReach"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Regional"
+        ],
+        "pt": [
+          "Regional"
+        ],
+        "en": [
+          "Regional"
+        ],
+        "it": [
+          "Regionale"
+        ],
+        "fr": [
+          "Régionale"
+        ],
+        "es": [
+          "Regional"
+        ],
+        "nl": [
+          "Regionaal"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/dbe1dee1-d564-3efb-a632-d124fe57cc64",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/e3dd4464-4efd-3192-acb1-030f92d45e98",
+          "schema:addressLocality": "Arras",
+          "schema:postalCode": "62000",
+          "schema:streetAddress": [
+            "56 Grand Place"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:62041",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Arras"
+              ],
+              "pt": [
+                "Arras"
+              ],
+              "en": [
+                "Arras"
+              ],
+              "it": [
+                "Arras"
+              ],
+              "fr": [
+                "Arras"
+              ],
+              "nl": [
+                "Arras"
+              ],
+              "es": [
+                "Arras"
+              ]
+            },
+            "insee": "62041",
+            "isPartOfDepartment": {
+              "@id": "kb:France3262",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Pas-de-Calais"
+                ],
+                "pt": [
+                  "Pas-de-Calais"
+                ],
+                "en": [
+                  "Pas-de-Calais"
+                ],
+                "it": [
+                  "Pas-de-Calais"
+                ],
+                "fr": [
+                  "Pas-de-Calais"
+                ],
+                "nl": [
+                  "Pas-de-Calais"
+                ],
+                "es": [
+                  "Pas-de-Calais"
+                ]
+              },
+              "insee": "62",
+              "isPartOfRegion": {
+                "@id": "kb:France32",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Hauts-de-France"
+                  ],
+                  "pt": [
+                    "Hauts-de-France"
+                  ],
+                  "en": [
+                    "Hauts-de-France"
+                  ],
+                  "it": [
+                    "Hauts-de-France"
+                  ],
+                  "fr": [
+                    "Hauts-de-France"
+                  ],
+                  "nl": [
+                    "Hauts-de-France"
+                  ],
+                  "es": [
+                    "Hauts-de-France"
+                  ]
+                },
+                "insee": "32",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/f046b463-ccdc-31f9-9fad-f61f4f3ae107",
+        "schema:latitude": "50.2920581",
+        "schema:longitude": "2.7811716",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "@type": [
+        "schema:Place",
+        "Place"
+      ],
+      "internetAccess": true
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/28/29201d37-5890-333c-917e-c22820a3a0b9",
+      "dc:identifier": "d078e000-5ccd-4efd-8ad5-ab188b8e57f7",
+      "schema:email": [
+        "contact@hautsdefrancetourisme.com"
+      ],
+      "schema:legalName": "Hauts-de-France Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "lastUpdate": "2019-10-01",
+  "lastUpdateDatatourisme": "2025-10-02T15:41:39.74Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/5c32b1ee-3e94-3083-99d8-78f4942e6fec",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/ddc3ce88-2f72-3be8-afe2-1513cc20da13",
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

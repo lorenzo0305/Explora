@@ -1,0 +1,809 @@
+{
+  "@id": "https://data.datatourisme.fr/13/3808c109-7b08-399e-ade5-05be0e0ae0ca",
+  "dc:identifier": "2809853",
+  "@type": [
+    "schema:Accommodation",
+    "schema:FoodEstablishment",
+    "schema:Hotel",
+    "schema:LodgingBusiness",
+    "schema:Restaurant",
+    "Accommodation",
+    "FoodEstablishment",
+    "Hotel",
+    "HotelRestaurant",
+    "HotelTrade",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Restaurant"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Gästehaus in einem kleinen, typischen Weiler mit Reetdachhäusern, solides Steingebäude, das mit Schiefer gedeckt ist. Die Terrasse bietet einen Panoramablick auf den Westen und die Monts du Velay. Empfang von Radfahrern und Mountainbikern (Garage) und Reitern."
+    ],
+    "en": [
+      "Guest house situated in a small typical hamlet of thatched cottages, solid stone building covered with lauzes. The terrace offers a panoramic view on the west and the Velay mountains. Cyclists and mountain bikes (garage) and riders are welcome."
+    ],
+    "it": [
+      "Casa per gli ospiti situata in un piccolo borgo di cottage con tetto di paglia, un solido edificio in pietra ricoperto di ardesia. La terrazza offre una vista panoramica sull'ovest e sulle montagne del Velay. I ciclisti e le mountain bike sono i benvenuti (garage) e i cavalieri."
+    ],
+    "fr": [
+      "Maison d'hôtes située dans un petit hameau typique de chaumières, solide bâtisse en pierres couverte de lauzes. La terrasse offre une vue panoramique sur l'ouest et les monts du Velay. Accueil cyclos et VTT (garage) et cavaliers."
+    ],
+    "nl": [
+      "Gastenverblijf gelegen in een klein gehucht van typische rietgedekte huisjes, massief stenen gebouw bedekt met leisteen. Het terras biedt een panoramisch uitzicht op het westen en de bergen van de Velay. Fietsers en mountainbikers zijn welkom (garage) en ruiters."
+    ],
+    "es": [
+      "Casa de huéspedes situada en una pequeña aldea de casas de campo con techo de paja, un sólido edificio de piedra cubierto de pizarra. La terraza ofrece una vista panorámica del oeste y de las montañas de Velay. Los ciclistas y los ciclistas de montaña son bienvenidos (garaje) y los jinetes."
+    ]
+  },
+  "rdfs:label": {
+    "fr": [
+      "Auberge L'Herminette"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/299fb214-2d7d-3959-b80f-91c01c3a293c",
+    "dc:identifier": "1426",
+    "schema:email": [
+      "camille@mezencloiremeygal.com",
+      "direction@mezencloiremeygal.com",
+      "maria@mezencloiremeygal.com",
+      "sandrine@mezencloiremeygal.com",
+      "sophie@mezencloiremeygal.com"
+    ],
+    "schema:legalName": "Office de tourisme Mézenc Loire Meygal",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.mezencloiremeygal.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/c53534f8-2d08-3844-943f-dfaebbcb67af",
+      "schema:legalName": "Haute-Loire Attractivité - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/6a77cf10-a234-345c-9183-aab62c85cbd7",
+      "schema:email": [
+        "lherminette@wanadoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 71 59 57 58"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.auberge-lherminette.com/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/0427e4f0-6e00-3299-b080-a0bf55073bdf",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/41dc5825-2ed0-3122-a3c1-9b454424591a",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/72dff37a-ab15-3499-9af3-779476b1bbb7",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "en"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/79bd8f9e-eba0-3e8a-b429-b6dd68d62f31",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ee908726-7d21-363c-a237-99329c051cfb",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f4a2b9d6-2b56-32dd-a65f-f49d1d445a96",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "it"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Gästehaus in einem kleinen, typischen Weiler mit Reetdachhäusern, solides Steingebäude, das mit Schiefer gedeckt ist. Die Terrasse bietet einen Panoramablick auf den Westen und die Monts du Velay. Empfang von Radfahrern und Mountainbikern (Garage) und Reitern."
+        ],
+        "en": [
+          "Guest house situated in a small typical hamlet of thatched cottages, solid stone building covered with lauzes. The terrace offers a panoramic view on the west and the Velay mountains. Cyclists and mountain bikes (garage) and riders are welcome."
+        ],
+        "it": [
+          "Casa per gli ospiti situata in un piccolo borgo di cottage con tetto di paglia, un solido edificio in pietra ricoperto di ardesia. La terrazza offre una vista panoramica sull'ovest e sulle montagne del Velay. I ciclisti e le mountain bike sono i benvenuti (garage) e i cavalieri."
+        ],
+        "fr": [
+          "Maison d'hôtes située dans un petit hameau typique de chaumières, solide bâtisse en pierres couverte de lauzes. La terrasse offre une vue panoramique sur l'ouest et les monts du Velay. Accueil cyclos et VTT (garage) et cavaliers."
+        ],
+        "nl": [
+          "Gastenverblijf gelegen in een klein gehucht van typische rietgedekte huisjes, massief stenen gebouw bedekt met leisteen. Het terras biedt een panoramisch uitzicht op het westen en de bergen van de Velay. Fietsers en mountainbikers zijn welkom (garage) en ruiters."
+        ],
+        "es": [
+          "Casa de huéspedes situada en una pequeña aldea de casas de campo con techo de paja, un sólido edificio de piedra cubierto de pizarra. La terraza ofrece una vista panorámica del oeste y de las montañas de Velay. Los ciclistas y los ciclistas de montaña son bienvenidos (garaje) y los jinetes."
+        ]
+      }
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/e5b7f4eb-8012-9682-a12a-66a2266e083c",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "caa2d0eb-1e8a-4631-a587-f1fe88ddb649",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:AcceslibrePlatform",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Teilen Sie wichtige Reiseinformationen für Menschen mit Behinderungen."
+            ],
+            "pt": [
+              "Compartilhe informações essenciais sobre viagens para pessoas com deficiência."
+            ],
+            "en": [
+              "Share essential travel information for people with disabilities."
+            ],
+            "it": [
+              "Condividi informazioni di viaggio essenziali per le persone con disabilità."
+            ],
+            "fr": [
+              "Partagez les informations indispensables aux déplacements des personnes en situation de handicap."
+            ],
+            "nl": [
+              "Deel essentiële reisinformatie voor mensen met een handicap."
+            ],
+            "es": [
+              "Comparta información de viaje esencial para personas con discapacidades."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Acceslibre-Plattform"
+            ],
+            "pt": [
+              "Plataforma Acceslibre"
+            ],
+            "en": [
+              "Acceslibre platform"
+            ],
+            "it": [
+              "Piattaforma Acceslibre"
+            ],
+            "fr": [
+              "Plateforme Acceslibre"
+            ],
+            "es": [
+              "Plataforma Acceslibre"
+            ],
+            "nl": [
+              "Acceslibre-platform"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://acceslibre.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/093eba46-53d5-3f53-a8ba-da4ecd06fbbc",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/144977e8-40f6-3b8c-9ad1-3d55aa302c21",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/2bac1200-2349-3e41-9884-9f42f75a997e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/88663f40-480e-3690-b7ce-b9e89d9356c7",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "en"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/a602908b-4b8a-330e-87dd-711372230415",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "it"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/f27dc991-43b2-347a-a9ca-ec62c2f012c6",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/8a127d91-968e-3b24-a3c1-d20667d92cb2",
+          "schema:addressLocality": "Saint-Front",
+          "schema:postalCode": "43550",
+          "schema:streetAddress": [
+            "38 route des Chaumières",
+            "43550 St Front",
+            "Bigorre - Les Maziaux"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:43186",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Front"
+              ],
+              "pt": [
+                "Saint-Front"
+              ],
+              "en": [
+                "Saint-Front"
+              ],
+              "it": [
+                "Saint-Front"
+              ],
+              "fr": [
+                "Saint-Front"
+              ],
+              "nl": [
+                "Saint-Front"
+              ],
+              "es": [
+                "Saint-Front"
+              ]
+            },
+            "insee": "43186",
+            "isPartOfDepartment": {
+              "@id": "kb:France8443",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Loire"
+                ],
+                "pt": [
+                  "Haute-Loire"
+                ],
+                "en": [
+                  "Haute-Loire"
+                ],
+                "it": [
+                  "Haute-Loire"
+                ],
+                "fr": [
+                  "Haute-Loire"
+                ],
+                "nl": [
+                  "Haute-Loire"
+                ],
+                "es": [
+                  "Haute-Loire"
+                ]
+              },
+              "insee": "43",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/7ea917c4-edf2-3f5f-9570-e844f69358bf",
+        "schema:elevation": "1130",
+        "schema:latitude": "44.9961",
+        "schema:longitude": "4.0961",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/783ca480-435d-393f-9aa2-3b535d45266f",
+          "schema:validFrom": "2026-04-01T00:00:00",
+          "schema:validThrough": "2026-10-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "keine Verpflegung am Sonntag und Montag"
+            ],
+            "en": [
+              "no catering on Sunday and Monday"
+            ],
+            "it": [
+              "domenica e lunedì non c'è ristorazione"
+            ],
+            "fr": [
+              "pas de restauration le dimanche et le lundi"
+            ],
+            "es": [
+              "no hay servicio de comidas el domingo y el lunes"
+            ],
+            "nl": [
+              "geen catering op zondag en maandag"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/47248489-f6ef-3824-9bab-a64aa040edc4",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/6872d000-a063-30db-b2e9-fc5bcab7b820",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/7d95af40-6b43-36a0-9ecd-f24b8721763d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/a0e47a27-85ab-3b9f-b5ab-e372a4680141",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d1751eb0-a47e-3c88-bc25-708b83817952",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/d2eecff1-07e6-3b48-be20-6a15a870e2a7",
+      "schema:email": [
+        "camille@mezencloiremeygal.com",
+        "direction@mezencloiremeygal.com",
+        "maria@mezencloiremeygal.com",
+        "sandrine@mezencloiremeygal.com",
+        "sophie@mezencloiremeygal.com"
+      ],
+      "schema:legalName": "Office de tourisme Mézenc Loire Meygal",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.mezencloiremeygal.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2025-04-07",
+  "lastUpdateDatatourisme": "2026-02-06T06:56:19.548Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/44b88d42-d793-3fbc-97f5-4a0ce7ac5424",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/83f81b13-234f-3c75-9cfc-95e55412ae31",
+          "schema:maxPrice": [
+            "65"
+          ],
+          "schema:minPrice": [
+            "63"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/93f37d2c-e165-3b77-8ba4-22d56259967e",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-11-01",
+              "startDate": "2025-04-01"
+            }
+          ],
+          "name": {
+            "fr": [
+              "en chambre de 4 à 6 personnes\r\nhors boissons"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/882ff5e1-5cdc-3928-bb2b-243ea490b782",
+          "schema:maxPrice": [
+            "70"
+          ],
+          "schema:minPrice": [
+            "70"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/93f37d2c-e165-3b77-8ba4-22d56259967e",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-11-01",
+              "startDate": "2025-04-01"
+            }
+          ],
+          "name": {
+            "fr": [
+              "Avec petit déjeuner."
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/cd4ac943-7952-33e1-a356-a3ab109fa2e2",
+          "schema:maxPrice": [
+            "160"
+          ],
+          "schema:minPrice": [
+            "160"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/93f37d2c-e165-3b77-8ba4-22d56259967e",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-11-01",
+              "startDate": "2025-04-01"
+            }
+          ],
+          "name": {
+            "fr": [
+              "Avec petit déjeuner."
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/e06dd7fe-97ac-37c7-a8a1-a204941fee33",
+          "schema:maxPrice": [
+            "70"
+          ],
+          "schema:minPrice": [
+            "68"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/93f37d2c-e165-3b77-8ba4-22d56259967e",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-11-01",
+              "startDate": "2025-04-01"
+            }
+          ],
+          "name": {
+            "fr": [
+              "hors boissons"
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/ed952557-6c39-3f00-a79d-bca238cd4f77",
+          "schema:maxPrice": [
+            "90"
+          ],
+          "schema:minPrice": [
+            "90"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/93f37d2c-e165-3b77-8ba4-22d56259967e",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-11-01",
+              "startDate": "2025-04-01"
+            }
+          ],
+          "name": {
+            "fr": [
+              "Avec petit déjeuner."
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/f7a1eb1c-3384-3d87-a0a7-674dda770e9f",
+          "schema:maxPrice": [
+            "135"
+          ],
+          "schema:minPrice": [
+            "135"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/93f37d2c-e165-3b77-8ba4-22d56259967e",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-11-01",
+              "startDate": "2025-04-01"
+            }
+          ],
+          "name": {
+            "fr": [
+              "Avec petit déjeuner."
+            ]
+          }
+        },
+        {
+          "@id": "https://data.datatourisme.fr/fbea4680-9231-38ab-97d8-b5fe07488cf0",
+          "schema:maxPrice": [
+            "40"
+          ],
+          "schema:minPrice": [
+            "40"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/93f37d2c-e165-3b77-8ba4-22d56259967e",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2025-11-01",
+              "startDate": "2025-04-01"
+            }
+          ],
+          "name": {
+            "fr": [
+              "en chambre de 4 à 6 personnes"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ]
+}

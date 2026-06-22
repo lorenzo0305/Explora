@@ -1,1008 +1,577 @@
-from pathlib import Path, PurePosixPath
-from typing import Optional, List
-from fastapi import FastAPI, Request, Query, Body, HTTPException
+from __future__ import annotations
+
+import os
+import re
+import time
+import urllib.parse
+from datetime import datetime
+from pathlib import Path
+from typing import Any
+
+import certifi
+from bson import ObjectId
+from fastapi import Body, FastAPI, HTTPException, Query, Request
+from fastapi.responses import JSONResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
 from pymongo import MongoClient
-from bson import ObjectId
-from pydantic import BaseModel
-from elasticsearch import Elasticsearch
-import os
-import time
-import json as _json
-import unicodedata
-import httpx
-from urllib.parse import urlparse, unquote
-from itertools import chain
-import re
-from threading import RLock
 
-app = FastAPI()
-
-#  Panier en mémoire (dev) 
-basket: List[dict] = []
-
-class BasketItem(BaseModel):
-    id: str
-    name: str
-    image: Optional[str] = None
-
-#  MongoDB 
-mongo_uri = os.getenv("MONGO_URI", "mongodb://localhost:27017/LORA_voyage")
-client = MongoClient(mongo_uri)
-db = client["LORA_voyage"]
-objects_collection = db["objects"]
-journeys_collection = db["journeys"]
-print(f"✅ MongoDB: db='{db.name}', collection='{objects_collection.name}'")
-
-#  Elasticsearch 
-es_host = os.getenv("ELASTICSEARCH_URI", "http://elasticsearch:9200")
-es = Elasticsearch(es_host)
-print(f"✅ Elasticsearch: host='{es_host}'")
-
-#  Static & Templates
+# =============================================================
+# CONFIG APP
+# =============================================================
 BASE_DIR = Path(__file__).resolve().parent
-app.mount("/static", StaticFiles(directory=BASE_DIR / "static"), name="static")
-templates = Jinja2Templates(directory=BASE_DIR / "templates")
 
-# data exposé en statique
-DATA_ROOT = Path(os.getenv("DATA_ROOT", r"D:\LORA_Voyage\LORA_bis\data"))
-app.mount("/data", StaticFiles(directory=DATA_ROOT, check_dir=False), name="data")
-print(f"✅ /data → {DATA_ROOT}")
+app = FastAPI(title="Explora API")
+app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="static")
+templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
 
-#  Helpers communs 
+# =============================================================
+# MONGODB ATLAS (Fusion de la connexion distante)
+# =============================================================
+user = "equipe_explora"
+password = "2BqXsiNi8nCCE@W"
+safe_password = urllib.parse.quote_plus(password)
+uri = f"mongodb+srv://{user}:{safe_password}@datas.xc1dpyu.mongodb.net/?appName=datas"
 
-def get_first_image(doc: dict) -> str:
-    # Structures Datatourisme / ebucore
-    for key in ("hasMainRepresentation", "hasRepresentation"):
-        reps = doc.get(key)
-        if isinstance(reps, list):
-            for rep in reps:
-                rels = (rep.get("ebucore:hasRelatedResource") or []) if isinstance(rep, dict) else []
-                for res in rels:
-                    locator = res.get("ebucore:locator")
-                    if isinstance(locator, list) and locator:
-                        url = locator[0]
-                        if isinstance(url, str) and any(url.lower().endswith(ext) for ext in (".jpg", ".jpeg", ".png", ".gif", ".webp")):
-                            return url
-    # Fallbacks simples
-    for k in ("image", "thumbnail", "depiction"):
-        v = doc.get(k)
-        if isinstance(v, str) and v:
-            return v
-    imgs = doc.get("images")
-    if isinstance(imgs, list) and imgs:
-        u = imgs[0].get("url") if isinstance(imgs[0], dict) else None
-        if isinstance(u, str) and u:
-            return u
-    return "/static/img/no-image.jpg"
+mongo_client = MongoClient(uri, tlsCAFile=certifi.where())
+# On utilise la base de données "explora" (issue de votre Snippet 1)
+db = mongo_client["explora"]
 
-def _pick_locality(obj: dict) -> str:
+# Si vos données sont dispersées par région, la recherche globale tape ici par défaut.
+# J'ai mis "Auvergne" comme collection par défaut comme indiqué dans votre Snippet 1.
+DEFAULT_COLLECTION = os.getenv("MONGO_COLLECTION", "Auvergne")
+objects_col = db[DEFAULT_COLLECTION]
+journeys_col = db["journeys"]
+
+# =============================================================
+# UTILS (Les versions robustes de votre site complet)
+# =============================================================
+def _json_safe(value: Any) -> Any:
+    """Convert Mongo/NumPy/pandas/datetime values into JSON-safe primitives."""
+    if value is None or isinstance(value, (str, bool, int, float)):
+        if isinstance(value, float):
+            try:
+                import math
+                if math.isnan(value) or math.isinf(value):
+                    return None
+            except Exception:
+                pass
+        return value
+    if isinstance(value, ObjectId):
+        return str(value)
+    if isinstance(value, datetime):
+        return value.isoformat()
+    if isinstance(value, dict):
+        return {str(k): _json_safe(v) for k, v in value.items() if k != "_id"}
+    if isinstance(value, (list, tuple, set)):
+        return [_json_safe(v) for v in value]
+    
+    # Try parsing NumPy/Pandas if they exist
     try:
-        return obj["isLocatedAt"][0]["schema:address"][0]["schema:addressLocality"]
+        import numpy as np
+        if isinstance(value, (np.integer,)): return int(value)
+        if isinstance(value, (np.floating,)):
+            f = float(value)
+            import math
+            return None if (math.isnan(f) or math.isinf(f)) else f
+        if isinstance(value, (np.bool_,)): return bool(value)
+        if isinstance(value, (np.ndarray,)): return [_json_safe(v) for v in value.tolist()]
     except Exception:
-        return ""
+        pass
+    try:
+        import pandas as pd
+        if isinstance(value, pd.Timestamp): return value.isoformat()
+        if value is pd.NaT: return None
+    except Exception:
+        pass
+    
+    return str(value)
 
-#  Helpers Voyages 
-def normalize_days(payload: dict) -> List[dict]:
-    days = payload.get("days")
-    if isinstance(days, list) and days:
-        return days
-    slots = payload.get("slots", {}) or {}
-    return [{
-        "day": 1,
-        "slots": {
-            "morning": slots.get("morning", []),
-            "noon": slots.get("noon", []),
-            "afternoon": slots.get("afternoon", []),
-            "evening": slots.get("evening", []),
-        }
-    }]
+def _clean_mongo(value: Any) -> Any:
+    if isinstance(value, dict):
+        return {k: _clean_mongo(v) for k, v in value.items() if k != "_id"}
+    if isinstance(value, list):
+        return [_clean_mongo(v) for v in value]
+    if isinstance(value, datetime):
+        return value.isoformat()
+    return value
 
-def pick_cover_from_journey_doc(j: dict) -> str:
-    for day in j.get("days", []):
-        for acts in (day.get("slots") or {}).values():
-            for a in acts or []:
-                if a.get("image"):
-                    return a["image"]
-    for acts in (j.get("slots") or {}).values():
-        for a in acts or []:
-            if a.get("image"):
-                return a["image"]
-    for a in j.get("basket", []):
-        if a.get("image"):
-            return a["image"]
+def _normalize_region(value: str) -> str:
+    s = value.lower()
+    key = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    if key in ("hauts-de-france", "haut-de-france", "hdf"): return "hauts-de-france"
+    if key in ("auvergne-rhone-alpes", "auvergne", "ara"): return "auvergne-rhone-alpes"
+    return key
+
+def _region_variants(region: str) -> list[str]:
+    key = _normalize_region(region)
+    if key == "hauts-de-france": return ["Hauts-de-France", "hauts-de-france", "Hauts de France"]
+    if key == "auvergne-rhone-alpes": return ["Auvergne-Rhone-Alpes", "Auvergne-Rhône-Alpes", "auvergne-rhone-alpes"]
+    return [region]
+
+def _pick_name(doc: dict[str, Any]) -> str:
+    label = doc.get("rdfs:label")
+    if isinstance(label, dict):
+        fr = label.get("fr")
+        if isinstance(fr, list) and fr: return str(fr[0])
+        if isinstance(fr, str): return fr
+    for key in ("label", "nom", "name"):
+        value = doc.get(key)
+        if isinstance(value, str) and value.strip(): return value
+    return "Sans nom"
+
+def _pick_image(doc: dict[str, Any]) -> str:
+    for key in ("image", "photo", "picture", "thumbnail", "cover"):
+        value = doc.get(key)
+        if isinstance(value, str) and value.strip(): return value
+    reps = doc.get("https://www.datatourisme.fr/ontology/core#hasMainRepresentation")
+    if isinstance(reps, list):
+        for rep in reps:
+            if not isinstance(rep, dict): continue
+            resources = rep.get("ebucore:hasRelatedResource")
+            if not isinstance(resources, list): continue
+            for r in resources:
+                if not isinstance(r, dict): continue
+                locators = r.get("ebucore:locator")
+                if isinstance(locators, list):
+                    for loc in locators:
+                        if isinstance(loc, str) and loc.strip(): return loc
     return "/static/img/no-image.jpg"
 
-#  Pages HTML 
-@app.get("/", response_class=HTMLResponse)
-async def home(request: Request):
-    return templates.TemplateResponse("Accueil.html", {"request": request})
+def _pick_locality(doc: dict[str, Any]) -> str:
+    is_located = doc.get("isLocatedAt")
+    if not isinstance(is_located, list) or not is_located: return ""
+    first = is_located[0]
+    if not isinstance(first, dict): return ""
+    addresses = first.get("schema:address")
+    if not isinstance(addresses, list) or not addresses: return ""
+    addr = addresses[0]
+    if not isinstance(addr, dict): return ""
+    locality = addr.get("schema:addressLocality")
+    return locality if isinstance(locality, str) else ""
 
+
+def _pick_url(doc: dict[str, Any]) -> str:
+    for key in ("url", "website", "site", "site_web", "siteweb", "website_url", "url_site", "link", "homepage"):
+        value = doc.get(key)
+        if isinstance(value, str) and value.strip():
+            if value.startswith("http"):
+                return value
+            return "http://" + value
+    # search inside nested fields:
+    for key in ("contactPoint", "sameAs", "about", "mainEntityOfPage"):
+        value = doc.get(key)
+        if isinstance(value, str) and value.strip() and value.startswith("http"):
+            return value
+    return ""
+
+
+def _pick_description(doc: dict[str, Any]) -> str:
+    candidates = []
+    for key in ("description", "desc", "details", "summary", "shortDescription", "longDescription"):
+        value = doc.get(key)
+        if isinstance(value, str) and value.strip():
+            candidates.append(value.strip())
+        if isinstance(value, dict):
+            for nested in (value.get("fr"), value.get("en"), value.get("text")):
+                if isinstance(nested, str) and nested.strip():
+                    candidates.append(nested.strip())
+    if isinstance(doc.get("rdfs:comment"), dict):
+        fr = doc["rdfs:comment"].get("fr")
+        if isinstance(fr, str) and fr.strip():
+            candidates.append(fr.strip())
+    if isinstance(doc.get("hasDescription"), list):
+        for item in doc["hasDescription"]:
+            if isinstance(item, dict):
+                for key in ("shortDescription", "description", "text"):
+                    nested = item.get(key)
+                    if isinstance(nested, dict):
+                        fr = nested.get("fr")
+                        if isinstance(fr, str) and fr.strip():
+                            candidates.append(fr.strip())
+                    elif isinstance(nested, str) and nested.strip():
+                        candidates.append(nested.strip())
+    for candidate in candidates:
+        if candidate:
+            return candidate
+    return ""
+
+
+def _pick_types(doc: dict[str, Any]) -> list[str]:
+    types = doc.get("@type", [])
+    if isinstance(types, list): return [str(t) for t in types]
+    if isinstance(types, str): return [types]
+    return []
+
+def _public_object(doc: dict[str, Any]) -> dict[str, Any]:
+    object_id = str(doc.get("@id") or doc.get("identifier") or doc.get("_id") or "")
+    return {
+        "id": object_id,
+        "name": _pick_name(doc),
+        "image": _pick_image(doc),
+        "locality": _pick_locality(doc),
+        "region": doc.get("region", ""),
+        "types": _pick_types(doc),
+        "categories": doc.get("categories", doc.get("category", [])),
+        "description": _pick_description(doc),
+        "website": _pick_url(doc),
+    }
+
+def _get_object_by_id(object_id: str) -> dict[str, Any] | None:
+    doc = objects_col.find_one({"@id": object_id})
+    if doc: return doc
+    doc = objects_col.find_one({"identifier": object_id})
+    if doc: return doc
+    return None
+
+def _get_descriptions(doc: dict[str, Any]) -> list[str]:
+    descs: list[str] = []
+    comments = doc.get("rdfs:comment")
+    if isinstance(comments, dict):
+        fr = comments.get("fr")
+        if isinstance(fr, list): descs.extend([str(x) for x in fr if isinstance(x, str)])
+        elif isinstance(fr, str): descs.append(fr)
+
+    has_desc = doc.get("hasDescription")
+    if isinstance(has_desc, list):
+        for item in has_desc:
+            if not isinstance(item, dict): continue
+            short_desc = item.get("shortDescription")
+            if isinstance(short_desc, dict):
+                fr = short_desc.get("fr")
+                if isinstance(fr, list): descs.extend([str(x) for x in fr if isinstance(x, str)])
+                elif isinstance(fr, str): descs.append(fr)
+
+    clean = []
+    seen = set()
+    for d in descs:
+        text = d.strip()
+        if text and text not in seen:
+            seen.add(text)
+            clean.append(text)
+    return clean
+
+def _journey_id(payload: dict[str, Any]) -> str:
+    given = payload.get("id")
+    if isinstance(given, str) and given.strip(): return given.strip()
+    return f"j_{int(time.time() * 1000)}"
+
+def _sanitize_mongo_keys(value: Any) -> Any:
+    if isinstance(value, dict):
+        clean = {}
+        for k, v in value.items():
+            key = str(k).replace('.', '_')
+            if key.startswith('$'): key = '_' + key[1:]
+            clean[key] = _sanitize_mongo_keys(v)
+        return clean
+    if isinstance(value, list):
+        return [_sanitize_mongo_keys(v) for v in value]
+    return value
+
+def _journey_doc(payload: dict[str, Any], journey_id: str) -> dict[str, Any]:
+    doc = _sanitize_mongo_keys(_json_safe(payload))
+    if not isinstance(doc, dict): doc = {}
+    doc["id"] = journey_id
+    doc["updatedAt"] = int(time.time() * 1000)
+    return doc
+
+# =============================================================
+# ROUTES FRONT (Renommées)
+# =============================================================
+@app.get("/", response_class=HTMLResponse)
 @app.get("/accueil", response_class=HTMLResponse)
-async def accueil(request: Request):
-    return templates.TemplateResponse("Accueil.html", {"request": request})
+def home(request: Request):
+    return templates.TemplateResponse(request=request, name="Accueil.html")
 
 @app.get("/exploration", response_class=HTMLResponse)
-async def exploration(request: Request):
-    return templates.TemplateResponse("Exploration.html", {"request": request})
+@app.get("/Destinations", response_class=HTMLResponse)
+@app.get("/catalogue", response_class=HTMLResponse)
+def exploration(request: Request):
+    return templates.TemplateResponse(request=request, name="Catalogue.html")
+
+@app.get("/region/{region_slug}", response_class=HTMLResponse)
+def region_page(request: Request, region_slug: str):
+    return templates.TemplateResponse(request=request, name="CatalogueRegion.html", context={"region": region_slug})
+
+@app.get("/categorie/{cat_slug}")
+def categorie_page(request: Request, cat_slug: str):
+    return templates.TemplateResponse(request=request, name="CatalogueEnvie.html", context={"categorie": cat_slug})
 
 @app.get("/carnet", response_class=HTMLResponse)
-async def carnet(request: Request):
-    return templates.TemplateResponse("Carnet.html", {"request": request})
+@app.get("/topics", response_class=HTMLResponse)
+@app.get("/mesvoyages", response_class=HTMLResponse)
+def carnet(request: Request):
+    return templates.TemplateResponse(request=request, name="MesVoyages.html")
 
+# Modification de l'Éditeur -> CreerVoyage
+@app.get("/editeur", response_class=HTMLResponse)
+@app.get("/creervoyage", response_class=HTMLResponse)
+def editeur_page(request: Request):
+    return templates.TemplateResponse(request=request, name="CreerVoyage.html")
+
+# Modification de Creation -> GenererVoyage
 @app.get("/creation", response_class=HTMLResponse)
-async def creation_editor(request: Request, id: str | None = None):
-    """
-    Ouvre l'éditeur Creation.html.
-    - Si 'id' est fourni en query (?id=...), charge l'édition de ce voyage.
-    - Sinon, démarre un nouveau voyage (id=None).
-    """
-    return templates.TemplateResponse("Creation.html", {"request": request, "id": id})
+@app.get("/makejourney", response_class=HTMLResponse)
+@app.get("/makejourney/new", response_class=HTMLResponse)
+@app.get("/makejourney/{journey_id}", response_class=HTMLResponse)
+@app.get("/generervoyage", response_class=HTMLResponse)
+@app.get("/generervoyage/{journey_id}", response_class=HTMLResponse)
+def creation(request: Request, journey_id: str | None = None):
+    return templates.TemplateResponse(request=request, name="GenererVoyage.html", context={"journey_id": journey_id or ""})
 
-#  Détail d’un voyage (vue générale) 
-@app.get("/journeys/view/{id}", response_class=HTMLResponse)
-async def view_journey(request: Request, id: str):
-    """
-    Affiche la page de détail d’un voyage (ViewJourney.html).
-    URL attendue par le front : /journeys/view/{id}
-    """
-    return templates.TemplateResponse("ViewJourney.html", {"request": request, "id": id})
+# Modification de Voyage -> ResultatGeneration
+@app.get("/voyage", response_class=HTMLResponse)
+@app.get("/Voyage.html", response_class=HTMLResponse)
+@app.get("/resultatgeneration", response_class=HTMLResponse)
+def voyage_page(request: Request):
+    return templates.TemplateResponse(request=request, name="ResultatGeneration.html")
 
-#  Détail d’une journée spécifique d’un voyage 
-@app.get("/journeys/view/{id}/day/{day}", response_class=HTMLResponse)
-async def view_journey_day(request: Request, id: str, day: int):
-    """
-    Affiche la page d’une journée précise d’un voyage (ViewJourneyDay.html).
-    URL attendue par le front : /journeys/view/{id}/day/{day}
-    """
-    return templates.TemplateResponse("ViewJourneyDay.html", {"request": request, "id": id, "day": day})
+# Modification de ViewJourney -> VoyageSauvegarde
+@app.get("/journeys/view/{journey_id}", response_class=HTMLResponse)
+@app.get("/voyagesauvegarde/{journey_id}", response_class=HTMLResponse)
+def journey_view(request: Request, journey_id: str):
+    return templates.TemplateResponse(request=request, name="VoyageSauvegarde.html", context={"journey_id": journey_id})
 
-# Détail d’une activité/personnalisation 
-@app.get("/detail-act-perso/{id:path}")
-async def detail_act_perso_redirect(id: str):
-    return RedirectResponse(url=f"/object/{id}", status_code=307)
+# (Optionnel si tu utilisais cette route, sinon elle pointe vers ViewJourneyDay.html)
+@app.get("/journeys/view/{journey_id}/day/{day_index}", response_class=HTMLResponse)
+def journey_day_view(request: Request, journey_id: str, day_index: int):
+    return templates.TemplateResponse(request=request, name="ViewJourneyDay.html", context={"journey_id": journey_id, "day": day_index})
 
-# Edition via /creation/{journey_id}
-@app.get("/creation/{journey_id}", response_class=HTMLResponse)
-async def creation_edit(request: Request, journey_id: str):
-    return templates.TemplateResponse("Creation.html", {"request": request, "id": journey_id})
-
-# Page Région
-@app.get("/region/{slug}", response_class=HTMLResponse)
-async def region_page(request: Request, slug: str):
-    region_slug = unquote(slug)
-    return templates.TemplateResponse("Region.html", {"request": request, "region_slug": region_slug})
-
-# ---------- Redirections anciennes routes ----------
-@app.get("/Destinations")
-async def old_destinations():
-    return RedirectResponse(url="/exploration", status_code=308)
-
-@app.get("/topics")
-async def old_topics():
-    return RedirectResponse(url="/carnet", status_code=308)
-
-@app.get("/makejourney")
-async def old_makejourney():
-    return RedirectResponse(url="/creation", status_code=308)
-
-@app.get("/makejourney/new")
-async def old_makejourney_new():
-    return RedirectResponse(url="/creation/nouveau", status_code=308)
-
-@app.get("/makejourney/{journey_id}")
-async def old_makejourney_edit(journey_id: str):
-    return RedirectResponse(url=f"/creation/{journey_id}", status_code=308)
-
-# Panier (API)
-@app.post("/basket/add")
-async def add_to_basket(item: BasketItem):
-    basket.append(item.dict())
-    return {"status": "ok", "basket": basket}
-
-@app.get("/basket/get")
-async def get_basket():
-    return {"basket": basket}
-
-# cache en mémoire pour la recherche
-_SEARCH_CACHE: dict = {}
-_SEARCH_CACHE_TTL = 30  # secondes
-_SEARCH_CACHE_LOCK = RLock()
-
-def _cache_get(key):
-    now = time.time()
-    with _SEARCH_CACHE_LOCK:
-        v = _SEARCH_CACHE.get(key)
-        if v and v["exp"] > now:
-            return v["data"]
-        if v:
-            _SEARCH_CACHE.pop(key, None)
-    return None
-
-def _cache_set(key, data, ttl=_SEARCH_CACHE_TTL):
-    with _SEARCH_CACHE_LOCK:
-        _SEARCH_CACHE[key] = {"data": data, "exp": time.time() + ttl}
-
-#  Recherche paginée (optimisée)
-@app.get("/search")
-async def search_destinations(
-    query: str = Query(..., min_length=2),
-    offset: int = Query(0, ge=0),
-    limit: int = Query(30, ge=1, le=100),
-    fast: bool = Query(False, description="Mode suggester rapide")
-):
-    """
-    Recherche optimisée :
-     - ES: multi_match + match_bool_prefix (rapide pour autocomplétion)
-     - timeout court, payload réduit, track_total_hits désactivé
-     - fallback Mongo avec regex préfixé (^query)
-     - cache mémoire 30s
-    """
-    q = (query or "").strip()
-    if len(q) < 2:
-        return JSONResponse(content=[])
-
-    cache_key = (q.lower(), offset, limit, bool(fast))
-    cached = _cache_get(cache_key)
-    if cached is not None:
-        return JSONResponse(content=cached)
-
-    # champs utilisés (pondération)
-    fields = [
-        "rdfs:label.fr^5",
-        "isLocatedAt.schema:address.schema:addressLocality^3",
-        "@type^1",
-    ]
-
-    # 1) ESSAI ELASTICSEARCH
-    try:
-        # Requête: un "best_fields" + un "bool_prefix" (auto-complétion sur le dernier terme)
-        es_query = {
-            "bool": {
-                "should": [
-                    {"multi_match": {
-                        "query": q,
-                        "fields": fields,
-                        "type": "best_fields",
-                        "operator": "and"
-                    }},
-                    {"multi_match": {
-                        "query": q,
-                        "fields": fields,
-                        "type": "bool_prefix"
-                    }},
-                ],
-                "minimum_should_match": 1
-            }
-        }
-
-        source_includes = [
-            "@id", "@type", "rdfs:label",
-            "isLocatedAt.schema:address.schema:addressLocality",
-            "hasMainRepresentation", "hasRepresentation",
-            "image", "images", "thumbnail", "depiction"
-        ]
-
-        es_res = es.search(
-            index="objects",
-            query=es_query,
-            from_=offset,
-            size=limit,
-            _source={"includes": source_includes},
-            track_total_hits=False,      # on ne calcule pas le total (gagne du temps)
-            timeout="2s",                # timeout côté cluster
-            request_timeout=5,           # timeout côté client
-            preference="_local"
-        )
-
-        hits = (es_res.get("hits", {}) or {}).get("hits", []) or []
-        results = [h.get("_source", {}) for h in hits]
-
-        # formatage identique à avant
-        formatted_results = []
-        seen_ids = set()
-        for doc in results:
-            item_id = doc.get("@id") or doc.get("_id")
-            if isinstance(item_id, ObjectId):
-                item_id = str(item_id)
-            item_id = str(item_id) if item_id is not None else None
-            if not item_id or item_id in seen_ids:
-                continue
-            seen_ids.add(item_id)
-
-            # Nom
-            name = "Sans nom"
-            lab = doc.get("rdfs:label")
-            if isinstance(lab, dict):
-                name = (lab.get("fr") or lab.get("fr-FR") or lab.get("en") or ["Sans nom"])
-                name = name[0] if isinstance(name, list) else name
-
-            # Types
-            types = doc.get("@type") or []
-            if isinstance(types, str):
-                types = [types]
-
-            # Localité
-            locality = _pick_locality(doc)
-
-            formatted_results.append({
-                "id": item_id,
-                "name": name or "Sans nom",
-                "image": get_first_image(doc),
-                "types": types,
-                "locality": locality,
-            })
-
-        _cache_set(cache_key, formatted_results)
-        return JSONResponse(content=formatted_results)
-
-    except Exception as e:
-        print("⚠️ ES indisponible/timeout, fallback Mongo:", e)
-
-    # 2) FALLBACK MONGO
-    try:
-        # Regex préfixée (plus rapide et comporte mieux pour autocomplétion)
-        rx = {"$regex": f"^{re.escape(q)}", "$options": "i"}
-        mongo_filter = {
-            "$or": [
-                {"rdfs:label.fr": rx},
-                {"isLocatedAt.schema:address.schema:addressLocality": rx},
-                {"@type": rx},
-            ]
-        }
-        cursor = objects_collection.find(
-            mongo_filter,
-            projection={
-                "@id": 1, "@type": 1, "rdfs:label": 1,
-                "isLocatedAt.schema:address.schema:addressLocality": 1,
-                "hasMainRepresentation": 1, "hasRepresentation": 1,
-                "image": 1, "images": 1, "thumbnail": 1, "depiction": 1,
-            }
-        ).skip(offset).limit(limit)
-        results = list(cursor)
-
-        formatted_results = []
-        seen_ids = set()
-        for doc in results:
-            item_id = doc.get("@id") or doc.get("_id")
-            if isinstance(item_id, ObjectId):
-                item_id = str(item_id)
-            item_id = str(item_id) if item_id is not None else None
-            if not item_id or item_id in seen_ids:
-                continue
-            seen_ids.add(item_id)
-
-            name = "Sans nom"
-            lab = doc.get("rdfs:label")
-            if isinstance(lab, dict):
-                name = (lab.get("fr") or lab.get("fr-FR") or lab.get("en") or ["Sans nom"])
-                name = name[0] if isinstance(name, list) else name
-
-            types = doc.get("@type") or []
-            if isinstance(types, str):
-                types = [types]
-
-            locality = _pick_locality(doc)
-
-            formatted_results.append({
-                "id": item_id,
-                "name": name or "Sans nom",
-                "image": get_first_image(doc),
-                "types": types,
-                "locality": locality,
-            })
-
-        _cache_set(cache_key, formatted_results)
-        return JSONResponse(content=formatted_results)
-
-    except Exception as e2:
-        print("❌ Fallback Mongo error:", e2)
-        return JSONResponse(content=[], status_code=200)
-
-#  API Voyages 
-@app.post("/journeys")
-async def create_journey(payload: dict = Body(...)):
-    now = int(time.time() * 1000)
-    doc = {
-        "name": payload.get("name", "Sans nom"),
-        "location": payload.get("location"),
-        "image": payload.get("image"),
-        "basket": payload.get("basket", []),
-        "slots": payload.get("slots", {}),
-        "days": normalize_days(payload),
-        "updatedAt": payload.get("updatedAt", now)
+@app.get("/object/{object_id:path}", response_class=HTMLResponse)
+@app.get("/detail-act-perso/{object_id:path}", response_class=HTMLResponse)
+def object_page(request: Request, object_id: str):
+    doc = _get_object_by_id(object_id)
+    if not doc:
+        raise HTTPException(status_code=404, detail="Objet introuvable")
+    context = {
+        "request": request,
+        "name": _pick_name(doc),
+        "image": _pick_image(doc),
+        "descriptions": _get_descriptions(doc),
     }
-    result = journeys_collection.insert_one(doc)
-    return {"status": "ok", "id": str(result.inserted_id)}
+    return templates.TemplateResponse(request=request, name="DetailActPerso.html", context=context)
 
-@app.post("/journeys/save")
-async def save_journey(payload: dict = Body(...)):
-    now = int(time.time() * 1000)
-    jid = payload.get("id")
-    if jid and ObjectId.is_valid(jid):
-        journeys_collection.update_one(
-            {"_id": ObjectId(jid)},
-            {"$set": {
-                "name": payload.get("name", "Sans nom"),
-                "location": payload.get("location"),
-                "image": payload.get("image"),
-                "basket": payload.get("basket", []),
-                "slots": payload.get("slots", {}),
-                "days": normalize_days(payload),
-                "updatedAt": payload.get("updatedAt", now)
-            }}
-        )
-        return {"status": "updated", "id": jid}
+# =============================================================
+# API ACTIVITÉS (DYNAMIQUE PAR COLLECTION - Snippet 1)
+# =============================================================
+@app.get("/api/activites/{region}/{categorie}")
+def get_activites(region: str, categorie: str):
+    TRADUCTIONS_CATEGORIES = {
+        "patrimoine": "culture",
+        "shopping": "boutique",
+        "détente": "détente",
+        "sport": "sport",
+        "nature": "nature",
+        "gastronomie": "gastronomie"
+    }
+
+    cat_base = TRADUCTIONS_CATEGORIES.get(categorie.lower(), categorie.lower())
+    target_collection = db[region]
+    query_cat = re.compile(f"^{cat_base}$", re.IGNORECASE)
+
+    print(f"--- DEBUG RECHERCHE ---")
+    print(f"Collection : {region} | Catégorie : {cat_base}")
+
+    cursor = target_collection.find({"categories": query_cat}).limit(50)
+    return [_public_object(doc) for doc in cursor]
+
+# =============================================================
+# RECHERCHES & API GLOBALES (Snippet 2)
+# =============================================================
+@app.get("/objects/{object_id:path}")
+@app.get("/api/objects/{object_id:path}")
+@app.get("/api/object/{object_id:path}")
+def object_api(object_id: str):
+    doc = _get_object_by_id(object_id)
+    if not doc: raise HTTPException(status_code=404, detail="Objet introuvable")
+    return JSONResponse(_clean_mongo(doc))
+
+@app.get("/search")
+def search(query: str = Query("", min_length=0), offset: int = Query(0, ge=0), limit: int = Query(30, ge=1, le=100)):
+    q = query.strip()
+    if len(q) < 1: return []
+    regex = re.compile(re.escape(q), re.IGNORECASE)
+    mongo_query = {
+        "$or": [
+            {"label": regex},
+            {"nom": regex},
+            {"name": regex},
+            {"rdfs:label.fr": regex},
+        ]
+    }
+    # Note : Cherche dans la collection par défaut ("Auvergne")
+    cursor = objects_col.find(mongo_query).skip(offset).limit(limit)
+    return [_public_object(doc) for doc in cursor]
+
+@app.get("/regions/{region_slug}/cards")
+def region_cards(region_slug: str, type: str | None = None, q: str | None = None, limit: int = Query(24, ge=1, le=120)):
+    variants = _region_variants(region_slug)
+    # Dans une architecture multi-collections, on tape directement dans la bonne collection :
+    target_collection = db[region_slug.capitalize()] if region_slug.capitalize() in db.list_collection_names() else objects_col
+    
+    mongo_query: dict[str, Any] = {"$or": [{"region": {"$in": variants}}, {"_regions": {"$in": variants}}]}
+    and_terms: list[dict[str, Any]] = [mongo_query]
+
+    if type:
+        regex = re.compile(r"^" + re.escape(type.strip()) + r"$", re.IGNORECASE)
+        and_terms.append({"categories": regex})
+
+    if q and q.strip():
+        regex = re.compile(re.escape(q.strip()), re.IGNORECASE)
+        and_terms.append({"$or": [{"label": regex}, {"nom": regex}, {"name": regex}, {"rdfs:label.fr": regex}]})
+
+    final_query = and_terms[0] if len(and_terms) == 1 else {"$and": and_terms}
+    cursor = target_collection.find(final_query).limit(limit)
+    return [_public_object(doc) for doc in cursor]
+
+@app.get("/suggestions")
+def activity_suggestions(
+    activity: str = Query(..., min_length=1), 
+    rayon_km: int = Query(40, ge=1, le=200),
+    mode: str = Query("similaire")
+):
+    try:
+        from .suggestions import charger_donnees_completes, suggerer_top_10_alternatives
+        from .remplacer_activites import suggerer_top_10_differents
+    except ImportError:
+        from suggestions import charger_donnees_completes, suggerer_top_10_alternatives
+        from remplacer_activites import suggerer_top_10_differents
+
+    df_global = charger_donnees_completes()
+    if df_global is None:
+        raise HTTPException(status_code=500, detail="Impossible de charger les données de suggestions")
+
+    if mode == "different":
+        resultats = suggerer_top_10_differents(activity.strip(), df_global, rayon_km)
     else:
-        doc = {
-            "name": payload.get("name", "Sans nom"),
-            "location": payload.get("location"),
-            "image": payload.get("image"),
-            "basket": payload.get("basket", []),
-            "slots": payload.get("slots", {}),
-            "days": normalize_days(payload),
-            "updatedAt": payload.get("updatedAt", now)
-        }
-        result = journeys_collection.insert_one(doc)
-        return {"status": "ok", "id": str(result.inserted_id)}
+        resultats = suggerer_top_10_alternatives(activity.strip(), df_global, rayon_km)
 
-@app.put("/journeys/{journey_id}")
-async def update_journey(journey_id: str, payload: dict = Body(...)):
-    if not ObjectId.is_valid(journey_id):
-        return {"status": "not_found"}
-    now = int(time.time() * 1000)
-    journeys_collection.update_one(
-        {"_id": ObjectId(journey_id)},
-        {"$set": {
-            "name": payload.get("name", "Sans nom"),
-            "location": payload.get("location"),
-            "image": payload.get("image"),
-            "basket": payload.get("basket", []),
-            "slots": payload.get("slots", {}),
-            "days": normalize_days(payload),
-            "updatedAt": payload.get("updatedAt", now)
-        }}
-    )
-    return {"status": "updated", "id": journey_id}
+    if isinstance(resultats, str):
+        raise HTTPException(status_code=404, detail=resultats)
+
+    suggestions = []
+    lookup_query = lambda name: {"$or": [{"nom": name}, {"name": name}, {"label": name}, {"rdfs:label.fr": name}]}
+    
+    for row in resultats.to_dict(orient="records"):
+        name = row.get("Activité") or row.get("activity") or ""
+        item = None
+        
+        if name:
+            query = lookup_query(name)
+            for collection_name in [DEFAULT_COLLECTION] + [c for c in db.list_collection_names() if c not in (DEFAULT_COLLECTION, "journeys")]:
+                try:
+                    target = db[collection_name]
+                    doc = target.find_one(query)
+                except Exception:
+                    doc = None
+                if doc:
+                    item = _public_object(doc)
+                    break
+        
+        if item is None:
+            item = {"name": name, "nom": name, "label": name, "image": "/static/img/no-image.jpg"}
+
+        desc_algo = row.get("description") or row.get("desc") or row.get("summary") or ""
+        if not item.get("description"):
+            item["description"] = desc_algo
+
+        type_algo = row.get("Type") or row.get("type") or ""
+        if type_algo:
+            item["categories"] = [type_algo]
+
+        item["distance"] = row.get("Distance")
+        item["match"] = row.get("Score") if mode == "similaire" else row.get("Type")
+        
+        suggestions.append(item)
+
+    return suggestions
+
+# =============================================================
+# JOURNEYS (CRUD)
+# =============================================================
+@app.get("/journeys")
+@app.get("/journeys/list")
+def list_journeys():
+    cursor = journeys_col.find({}).sort("updatedAt", -1)
+    return [_clean_mongo(doc) for doc in cursor]
 
 @app.get("/journeys/{journey_id}")
-async def get_journey(journey_id: str):
-    if not ObjectId.is_valid(journey_id):
-        return JSONResponse(status_code=404, content={"error": "not_found"})
-    j = journeys_collection.find_one({"_id": ObjectId(journey_id)})
-    if not j:
-        return JSONResponse(status_code=404, content={"error": "not_found"})
-    return {
-        "id": str(j["_id"]),
-        "name": j.get("name", "Sans nom"),
-        "location": j.get("location"),
-        "image": j.get("image"),
-        "basket": j.get("basket", []),
-        "slots": j.get("slots", {}),
-        "days": j.get("days", []),
-        "updatedAt": j.get("updatedAt")
-    }
+def get_journey(journey_id: str):
+    doc = journeys_col.find_one({"id": journey_id})
+    if not doc: raise HTTPException(status_code=404, detail="Voyage introuvable")
+    return JSONResponse(_clean_mongo(doc))
 
-@app.get("/journeys/list")
-async def list_journeys_alias():
-    journeys = list(journeys_collection.find())
-    formatted = []
-    for j in journeys:
-        image = pick_cover_from_journey_doc(j)
-        formatted.append({
-            "id": str(j["_id"]),
-            "name": j.get("name", "Sans nom"),
-            "location": j.get("location"),
-            "image": image,
-            "updatedAt": j.get("updatedAt", None),
-            "daysCount": len(j.get("days", [])) if isinstance(j.get("days"), list) else 0
-        })
-    return JSONResponse(content=formatted)
+@app.post("/journeys")
+@app.post("/journeys/save")
+def create_journey(payload: dict[str, Any] = Body(...)):
+    try:
+        jid = _journey_id(payload)
+        doc = _journey_doc(payload, jid)
+        journeys_col.update_one({"id": jid}, {"$set": doc}, upsert=True)
+        return {"status": "ok", "id": jid}
+    except Exception as exc:
+        import traceback
+        traceback.print_exc()
+        return JSONResponse(status_code=500, content={"status": "error", "message": str(exc)})
+
+@app.put("/journeys/{journey_id}")
+def update_journey(journey_id: str, payload: dict[str, Any] = Body(...)):
+    doc = _journey_doc(payload, journey_id)
+    res = journeys_col.update_one({"id": journey_id}, {"$set": doc}, upsert=True)
+    return {"status": "updated" if res.matched_count > 0 else "ok", "id": journey_id}
 
 @app.delete("/journeys/{journey_id}")
-async def delete_journey(journey_id: str):
-    if ObjectId.is_valid(journey_id):
-        result = journeys_collection.delete_one({"_id": ObjectId(journey_id)})
-        if result.deleted_count > 0:
-            return {"status": "deleted"}
-    return {"status": "not_found"}
+def delete_journey(journey_id: str):
+    res = journeys_col.delete_one({"id": journey_id})
+    if res.deleted_count == 0: raise HTTPException(status_code=404, detail="Voyage introuvable")
+    return {"status": "deleted", "id": journey_id}
 
 @app.post("/journeys/delete")
-async def delete_journey_legacy(payload: dict = Body(...)):
-    jid = payload.get("id")
-    if jid and ObjectId.is_valid(jid):
-        result = journeys_collection.delete_one({"_id": ObjectId(jid)})
-        if result.deleted_count > 0:
-            return {"status": "deleted"}
-    return {"status": "not_found"}
+def delete_journey_alias(payload: dict[str, Any] = Body(...)):
+    jid = str(payload.get("id", "")).strip()
+    if not jid: raise HTTPException(status_code=400, detail="Champ 'id' requis")
+    return delete_journey(jid)
 
-@app.get("/region/ara", response_class=HTMLResponse)
-async def region_ara_alias(request: Request):
-    return templates.TemplateResponse("Region.html", {"request": request, "region_slug": "Auvergne-Rhône-Alpes"})
-
-#  Régions avec Cards 
-
-REGION_DIRS = [
-    DATA_ROOT,                                          # /app/data/Hauts-de-France.json
-    DATA_ROOT / "regions",
-    DATA_ROOT / "full_france_object" / "regions",
-]
-OBJECTS_BASE = DATA_ROOT / "full_france_object" / "objects"
-
-def _slugify(s: str) -> str:
-    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
-    s = s.replace("_", "-").replace(" ", "-")
-    while "--" in s:
-        s = s.replace("--", "-")
-    return s.lower()
-
-def _find_region_file(name: str) -> Optional[Path]:
-    candidates = [f"{name}.json", f"{_slugify(name)}.json"]
-    for d in REGION_DIRS:
-        p = d / candidates[0]
-        if p.exists():
-            return p
-        p2 = d / candidates[1]
-        if p2.exists():
-            return p2
-    slug = _slugify(name)
-    for d in REGION_DIRS:
-        for p in d.glob("*.json"):
-            if _slugify(p.stem) == slug:
-                return p
-    return None
-
-def _safe_join_objects(rel_path: str) -> Optional[Path]:
-    parts = [seg for seg in PurePosixPath(rel_path).parts if seg not in (".", "..", "")]
-    candidate = (OBJECTS_BASE.joinpath(*parts)).resolve()
-    try:
-        candidate.relative_to(OBJECTS_BASE)
-    except Exception:
-        return None
-    return candidate
-
-def _pick_label(obj: dict, fallback: Optional[str] = None) -> str:
-    lab = obj.get("rdfs:label")
-    if isinstance(lab, dict):
-        for k in ("fr", "fr-FR", "en"):
-            v = lab.get(k)
-            if isinstance(v, list) and v:
-                return v[0]
-            if isinstance(v, str) and v.strip():
-                return v
-    return obj.get("name") or obj.get("title") or (fallback or "Sans nom")
-
-@app.get("/regions/{slug}/cards")
-async def region_cards(
-    slug: str,
-    limit: int = Query(72, ge=1, le=200),
-    offset: int = Query(0, ge=0),
-    q: str | None = None,
-    typ: str | None = Query(default=None, alias="type"),
-    debug: bool = False,
-):
-    def build_es_query(slug: str, typ: str | None, q: str | None):
-        slug_space = slug.replace("-", " ")
-        variants = [slug, slug_space, slug.lower(), slug_space.lower()]
-
-        region_fields = [
-            "hasBeenCreatedBy.schema:address.hasAddressCity.isPartOfDepartment.isPartOfRegion.rdfs:label.fr",
-            "isLocatedAt.schema:address.isPartOfDepartment.isPartOfRegion.rdfs:label.fr",
-            "hasBeenCreatedBy.schema:address.hasAddressCity.isPartOfDepartment.isPartOfRegion.@id",
-            "isLocatedAt.schema:address.isPartOfDepartment.isPartOfRegion.@id",
-            "isLocatedAt.schema:address.schema:addressRegion",
-            "isLocatedAt.schema:address.addressRegion",
-        ]
-
-        region_should = []
-        for f in region_fields:
-            for v in variants:
-                region_should.append({"match": {f: v}})
-            region_should.append({"wildcard": {f: f"*{variants[-1]}*"}})
-
-        region_should.append({
-            "query_string": {
-                "query": f'("{slug}" OR "{slug_space}")',
-                "fields": ["*"],
-                "analyze_wildcard": True,
-                "default_operator": "AND"
-            }
-        })
-
-        must_clauses = [{"bool": {"should": region_should, "minimum_should_match": 1}}]
-
-        if typ:
-            raw_types = [t.strip() for t in typ.split(",") if t.strip()]
-            expanded = []
-            for t in raw_types:
-                expanded.append(t)
-                if not t.startswith("http"):
-                    expanded.append(f"https://www.datatourisme.fr/ontology/core#{t}")
-                    expanded.append(f"https://schema.org/{t}")
-            expanded = list(dict.fromkeys(expanded))
-
-            typ_should = [
-                {"terms": {"@type.keyword": expanded}},
-                {"terms": {"@type": expanded}},
-            ] + list(chain.from_iterable(
-                ({"match": {"@type": t}}, {"wildcard": {"@type": f"*{t.lower()}*"}}) for t in raw_types
-            ))
-            must_clauses.append({"bool": {"should": typ_should, "minimum_should_match": 1}})
-
-        should_clauses = []
-        if q:
-            ql = q.lower()
-            should_clauses += [
-                {"match": {"@type": q}},
-                {"match": {"rdfs:label.fr": q}},
-                {"match": {"isLocatedAt.schema:address.schema:addressLocality": q}},
-                {"wildcard": {"@type": f"*{ql}*"}},
-                {"wildcard": {"rdfs:label.fr": f"*{ql}*"}},
-                {"wildcard": {"isLocatedAt.schema:address.schema:addressLocality": f"*{ql}*"}},
-                {"fuzzy": {"rdfs:label.fr": {"value": q, "fuzziness": "AUTO"}}},
-            ]
-
-        es_query = {"bool": {"must": must_clauses}}
-        if should_clauses:
-            es_query["bool"]["should"] = should_clauses
-        return es_query
-
-    def card_from_source(src: dict) -> dict:
-        name = _pick_label(src)
-        return {
-            "id": src.get("@id") or name or "",
-            "name": name,
-            "image": get_first_image(src),
-            "types": src.get("@type") or [],
-            "locality": _pick_locality(src)
-        }
-
-    def dedupe_cards(cards: list[dict], limit: int) -> tuple[list[dict], int, int]:
-        seen = set()
-        uniq = []
-        for c in cards:
-            key = c.get("id") or f"{c.get('name','')}|{c.get('locality','')}"
-            if not key:
-                key = _json.dumps({"n": c.get("name",""), "l": c.get("locality","")}, ensure_ascii=False)
-            if key in seen:
-                continue
-            seen.add(key)
-            uniq.append(c)
-            if len(uniq) >= limit:
-                break
-        return uniq, len(cards), len(seen)
-
-    try:
-        es_query = build_es_query(slug, typ, q)
-
-        source_includes = [
-            "@id", "@type", "rdfs:label",
-            "isLocatedAt.schema:address.schema:addressLocality",
-            "hasMainRepresentation", "hasRepresentation",
-            "image", "images", "thumbnail", "depiction",
-        ]
-
-        search_size = min(1000, max(limit * 3, limit))
-        es_res = es.search(
-            index="objects",
-            query=es_query,
-            from_=offset,
-            size=search_size,
-            _source={"includes": source_includes},
-            track_total_hits=True
-        )
-        hits = es_res.get("hits", {}).get("hits", [])
-        cards = [card_from_source(h.get("_source", {})) for h in hits]
-        uniq, before_cnt, after_cnt = dedupe_cards(cards, limit)
-
-        retried = False
-        if not uniq and typ:
-            retried = True
-            es_query2 = build_es_query(slug, None, q)
-            es_res = es.search(
-                index="objects",
-                query=es_query2,
-                from_=offset,
-                size=search_size,
-                _source={"includes": source_includes},
-                track_total_hits=True
-            )
-            hits = es_res.get("hits", {}).get("hits", [])
-            cards = [card_from_source(h.get("_source", {})) for h in hits]
-            uniq, before_cnt, after_cnt = dedupe_cards(cards, limit)
-
-        if debug:
-            return JSONResponse(content={
-                "took": es_res.get("took"),
-                "total": es_res.get("hits", {}).get("total"),
-                "returned": len(uniq),
-                "deduped_from": before_cnt,
-                "unique_after_dedupe_pool": after_cnt,
-                "retried_without_type": retried,
-                "query": es_query if not retried else {"first": es_query, "second": build_es_query(slug, None, q)},
-                "sample_ids": [c.get("id") for c in uniq[:8]],
-            })
-
-        return JSONResponse(content=uniq)
-
-    except Exception as e:
-        print("⚠️ ES indisponible, fallback filesystem:", e)
-
-    # ------- Fallback fichier -------
-    try:
-        region_file = _find_region_file(slug)
-        if not region_file:
-            searched = " | ".join(str(d) for d in REGION_DIRS)
-            raise HTTPException(status_code=404, detail=f"Région '{slug}' introuvable. Cherché dans: {searched}")
-
-        data = _json.loads(region_file.read_text(encoding="utf-8"))
-        entries = data if isinstance(data, list) else data.get("items", [])
-        if not isinstance(entries, list):
-            raise HTTPException(status_code=400, detail="Format région non supporté (attendu une liste).")
-
-        wanted_types = {t.strip().lower() for t in typ.split(",")} if typ else None
-        q_norm = q.lower() if q else None
-
-        cards = []
-        for e in entries:
-            if not isinstance(e, dict):
-                continue
-            rel_file = e.get("file") or e.get("path")
-            identifier = e.get("identifier") or e.get("id") or e.get("dc:identifier")
-            label_hint = e.get("label") or e.get("name")
-
-            obj = {}
-            if rel_file:
-                p = _safe_join_objects(rel_file)
-                if p and p.exists():
-                    try:
-                        obj = _json.loads(p.read_text(encoding="utf-8"))
-                    except Exception:
-                        obj = {}
-
-            types = obj.get("@type") or []
-            if isinstance(types, str):
-                types = [types]
-            types_l = [str(t).lower() for t in types] if isinstance(types, list) else []
-
-            name = _pick_label(obj, fallback=label_hint) if obj else (label_hint or "Sans nom")
-            locality = _pick_locality(obj) if obj else ""
-
-            if wanted_types and not any(t in types_l for t in wanted_types):
-                continue
-            if q_norm:
-                hay = " ".join([name or "", locality or "", (label_hint or "")]).lower()
-                if q_norm not in hay and all(q_norm not in str(t).lower() for t in types_l):
-                    continue
-
-            cards.append({
-                "id": (obj.get("@id") if obj else None) or identifier or name or "",
-                "name": name or "Sans nom",
-                "image": get_first_image(obj) if obj else None,
-                "types": types or [],
-                "locality": locality
-            })
-
-        uniq, _, _ = dedupe_cards(cards, limit)
-        return JSONResponse(content=uniq)
-
-    except HTTPException:
-        raise
-    except Exception as e2:
-        raise HTTPException(status_code=500, detail=f"Erreur fallback région: {e2}")
-
-# ----- /api/object & /proxy : fetch tolérant -----
-@app.get("/api/object")
-async def api_object(url: str):
-    """
-    Proxy JSON/JSON-LD tolérant.
-    - Essaye l'URL telle quelle, puis la variante ?format=jsonld
-    - Tolère un 'content-type' mal déclaré (parse via .text)
-    - Donne un diagnostic clair (status, content-type, extrait du body si HTML)
-    """
-    # 0) support fichier local
-    p = urlparse(url)
-    if p.scheme in ("", "file"):
-        fp = Path(p.path)
-        if fp.exists():
-            try:
-                return JSONResponse(_json.loads(fp.read_text(encoding="utf-8")))
-            except Exception as e:
-                return JSONResponse({"error":"local_file_not_json", "detail":str(e)}, status_code=415)
-
-    # 1) HTTP(S)
-    headers = {
-        "Accept": "application/ld+json, application/json;q=0.9, */*;q=0.1",
-        "User-Agent": "Mozilla/5.0 (compatible; LoraVoyage/1.0; +http://localhost:8080)"
-    }
-    candidates = [url]
-    if "format=" not in url:
-        candidates.append(url + ("&" if "?" in url else "?") + "format=jsonld")
-
-    async with httpx.AsyncClient(follow_redirects=True, timeout=20) as client:
-        last_detail = None
-        for u in candidates:
-            try:
-                r = await client.get(u, headers=headers)
-                ct = r.headers.get("content-type", "")
-                if r.status_code != 200:
-                    last_detail = f"HTTP {r.status_code} ({ct})"
-                    continue
-
-                txt = r.text
-                try:
-                    data = _json.loads(txt)
-                    return JSONResponse(data)
-                except Exception as e:
-                    if "<html" in txt[:200].lower():
-                        last_detail = f"Upstream returned HTML (content-type: {ct})"
-                    else:
-                        last_detail = f"JSON parse failed (content-type: {ct}): {e}"
-            except Exception as e:
-                last_detail = f"request error: {e!r}"
-
-    return JSONResponse(
-        {"error": "upstream_fetch_failed", "detail": last_detail, "tried": candidates},
-        status_code=502
-    )
-
-@app.get("/proxy")
-async def proxy(url: str):
-    return await api_object(url)
-
-#  Check Health 
+# =============================================================
+# ALGORITHME & AUTRES
+# =============================================================
 @app.get("/health")
 def health():
-    ok_es = False
     try:
-        ok_es = bool(es.ping())
-    except Exception:
-        ok_es = False
+        mongo_client.admin.command("ping")
+        return {"ok": True, "mongo": "up"}
+    except Exception as exc:
+        return JSONResponse(status_code=500, content={"ok": False, "error": str(exc)})
+
+@app.post("/algorithm")
+async def run_algorithm(request: Request):
     try:
-        client.admin.command("ping")
-        ok_mongo = True
-    except Exception:
-        ok_mongo = False
-    return {
-        "mongo": ok_mongo,
-        "elasticsearch": ok_es,
-        "data_root_exists": DATA_ROOT.exists()
-    }
-
-def _pick_lang_text(langmap, langs=('fr','fr-FR','en','es','it','de','nl','pt')):
-    if isinstance(langmap, dict):
-        for L in langs:
-            v = langmap.get(L)
-            if isinstance(v, list) and v:
-                return v[0]
-            if isinstance(v, str) and v.strip():
-                return v
-        for v in langmap.values():
-            if isinstance(v, list) and v:
-                return v[0]
-            if isinstance(v, str) and v.strip():
-                return v
-    elif isinstance(langmap, list):
-        for x in langmap:
-            if isinstance(x, str) and x.strip():
-                return x
-    elif isinstance(langmap, str):
-        return langmap
-    return None
-
-def extract_descriptions(doc: dict) -> list[str]:
-    KEYS = (
-        "dc:description",
-        "schema:description",
-        "rdfs:comment",
-        "http://www.w3.org/2000/01/rdf-schema#comment",
-        "shortDescription",
-        "longDescription",
-        "https://www.datatourisme.fr/ontology/core#shortDescription",
-        "https://www.datatourisme.fr/ontology/core#longDescription",
-    )
-    out: list[str] = []
-
-    def pick(v):
-        t = _pick_lang_text(v)
-        return t.strip() if isinstance(t, str) else None
-
-    for hd_key in ("hasDescription", "https://www.datatourisme.fr/ontology/core#hasDescription"):
-        hd = doc.get(hd_key)
-        if isinstance(hd, list):
-            for d in hd:
-                if isinstance(d, dict):
-                    for k in KEYS:
-                        if k in d:
-                            t = pick(d.get(k))
-                            if t:
-                                out.append(t)
-
-    for k in KEYS:
-        if k in doc:
-            t = pick(doc.get(k))
-            if t:
-                out.append(t)
-
-    seen, uniq = set(), []
-    for s in out:
-        if s and s not in seen:
-            seen.add(s)
-            uniq.append(s)
-    return uniq
-
-@app.get("/object/{item_id:path}", response_class=HTMLResponse)
-async def object_detail(request: Request, item_id: str):
-    decoded_id = unquote(item_id)
-    doc = None
-
-    # 1) ES par _id
-    try:
-        es_res = es.get(index="objects", id=decoded_id, ignore=[404])
-        if es_res and "_source" in es_res:
-            doc = es_res["_source"]
-    except Exception as e:
-        print(f"⚠️ ES get error: {e}")
-
-    # 2) ES par @id
-    if not doc:
+        data = await request.json()
         try:
-            q = {"term": {"@id.keyword": decoded_id}}
-            es_s = es.search(index="objects", query=q, size=1, _source_includes=["*"])
-            hits = es_s.get("hits", {}).get("hits", [])
-            if hits:
-                doc = hits[0].get("_source", {})
-        except Exception as e:
-            print(f"⚠️ ES search by @id error: {e}")
+            from .recommendation import lancer_explora
+        except ImportError:
+            from recommendation import lancer_explora
 
-    # 3) Mongo par @id
-    if not doc:
-        for coll_name in ("objects", "index"):
-            coll = db[coll_name]
-            m = coll.find_one({"@id": decoded_id})
-            if m:
-                doc = m
-                break
+        ville = str(data.get("ville", "")).strip()
+        if not ville: raise HTTPException(status_code=400, detail="Le champ 'ville' est requis")
 
-    # 4) Mongo par _id
-    if not doc and ObjectId.is_valid(decoded_id):
-        for coll_name in ("objects", "index"):
-            coll = db[coll_name]
-            m = coll.find_one({"_id": ObjectId(decoded_id)})
-            if m:
-                doc = m
-                break
+        planning = lancer_explora(
+            ville=ville,
+            rayon=int(data.get("rayon", 30)),
+            jours=int(data.get("jours", 3)),
+            nature=int(data.get("nature", 0)),
+            gastronomie=int(data.get("gastronomie", 0)),
+            sport=int(data.get("sport", 0)),
+            culture=int(data.get("culture", 0)),
+            detente=int(data.get("détente", 0)),
+            boutique=int(data.get("boutique", 0)),
+        )
 
-    if not doc:
-        return templates.TemplateResponse("DetailActPerso.html", {
-            "request": request,
-            "name": "Objet introuvable",
-            "image": "/static/img/no-image.jpg",
-            "contacts": [],
-            "descriptions": []
-        })
+        if not planning:
+            return JSONResponse(status_code=404, content={"status": "empty", "message": "Aucun itinéraire trouvé", "data": []})
 
-    name = (doc.get("rdfs:label", {}) or {}).get("fr", ["Sans nom"])[0]
-    image = get_first_image(doc)
-    descriptions = extract_descriptions(doc)
-    contacts = []
-    if "hasContact" in doc and isinstance(doc["hasContact"], list):
-        for contact in doc["hasContact"]:
-            contacts.append({
-                "email": (contact.get("schema:email", [None]) or [None])[0],
-                "telephone": (contact.get("schema:telephone", [None]) or [None])[0],
-                "homepage": (contact.get("foaf:homepage", [None]) or [None])[0]
-            })
+        return JSONResponse({"status": "success", "message": "Itinéraire généré avec succès", "data": _json_safe(planning)})
 
-    return templates.TemplateResponse("DetailActPerso.html", {
-        "request": request,
-        "id": decoded_id,
-        "name": name,
-        "image": image,
-        "descriptions": descriptions,
-        "contacts": contacts,
-        "types": doc.get("@type", []),
-        "imageAttribution": doc.get("image_attribution")
-    })
+    except Exception as e:
+        print("[BACKEND] Erreur : ", e)
+        return JSONResponse({"status": "error", "message": str(e)}, status_code=500)

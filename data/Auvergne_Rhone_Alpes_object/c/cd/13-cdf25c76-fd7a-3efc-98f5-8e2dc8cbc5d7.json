@@ -1,0 +1,707 @@
+{
+  "@id": "https://data.datatourisme.fr/13/cdf25c76-fd7a-3efc-98f5-8e2dc8cbc5d7",
+  "dc:identifier": "5959843",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:comment": {
+    "de": [
+      "Von Ramatuelle nach Megeve."
+    ],
+    "en": [
+      "From Ramatuelle to Megève."
+    ],
+    "it": [
+      "Da Ramatuelle a Megève."
+    ],
+    "fr": [
+      "From Ramatuelle to Megeve."
+    ],
+    "nl": [
+      "Van Ramatuelle naar Megeve."
+    ],
+    "es": [
+      "De Ramatuelle a Megeve."
+    ]
+  },
+  "rdfs:label": {
+    "en": [
+      "La Sauvageonne"
+    ],
+    "it": [
+      "La Sauvageonne"
+    ],
+    "fr": [
+      "La Sauvageonne"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/8e98d81f-8217-3049-b5cc-b23337bb5761",
+    "dc:identifier": "307",
+    "schema:email": [
+      "florence.karp@megeve.fr",
+      "loic.jullien@megeve.fr",
+      "malourene.cordier@megeve.fr"
+    ],
+    "schema:legalName": "Mairie de Megève",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://mairie.megeve.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/4c44446d-006b-3130-8597-b909926283ec",
+      "schema:email": [
+        "oceane@indiegroup.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 50 78 44 59"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.indiegroup.fr/"
+      ]
+    }
+  ],
+  "hasDescription": [
+    {
+      "@id": "https://data.datatourisme.fr/32d7d646-ba75-376a-93d5-c152bbf85284",
+      "@type": [
+        "Description"
+      ],
+      "hasTranslatedProperty": [
+        {
+          "@id": "https://data.datatourisme.fr/6f0015f6-dd61-396e-84c8-c4616f9f05c3",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "es"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/c8efa9d0-07bf-3427-a06c-3fd975023716",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "nl"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/cb6b225d-bd06-3f5b-9bf4-337eba93feb0",
+          "dc:contributor": [
+            "https://api.deepl.com/v2/translate"
+          ],
+          "rdf:language": [
+            "de"
+          ],
+          "rdf:predicate": [
+            "shortDescription"
+          ]
+        }
+      ],
+      "shortDescription": {
+        "de": [
+          "Von Ramatuelle nach Megeve."
+        ],
+        "en": [
+          "From Ramatuelle to Megève."
+        ],
+        "it": [
+          "Da Ramatuelle a Megève."
+        ],
+        "fr": [
+          "From Ramatuelle to Megeve."
+        ],
+        "nl": [
+          "Van Ramatuelle naar Megeve."
+        ],
+        "es": [
+          "De Ramatuelle a Megeve."
+        ]
+      }
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:AsianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Asiatische Küche"
+        ],
+        "pt": [
+          "Cozinha asiática"
+        ],
+        "en": [
+          "Asian cuisine"
+        ],
+        "it": [
+          "Cucina asiatica"
+        ],
+        "fr": [
+          "Cuisine asiatique"
+        ],
+        "es": [
+          "Cocina asiática"
+        ],
+        "nl": [
+          "Aziatische keuken"
+        ]
+      }
+    },
+    {
+      "@id": "kb:GourmetCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gourmet-Küche"
+        ],
+        "pt": [
+          "Cozinha gastronómica"
+        ],
+        "en": [
+          "Gourmet cuisine"
+        ],
+        "it": [
+          "Cucina gastronomica"
+        ],
+        "fr": [
+          "Cuisine gastronomique"
+        ],
+        "nl": [
+          "Gastronomische keuken"
+        ],
+        "es": [
+          "Cocina gastronómica"
+        ]
+      }
+    },
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    },
+    {
+      "@id": "kb:VegetarianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Vegetarische Küche"
+        ],
+        "pt": [
+          "Cozinha vegetariana"
+        ],
+        "en": [
+          "Vegetarian cuisine"
+        ],
+        "it": [
+          "Cucina vegetariana"
+        ],
+        "fr": [
+          "Cuisine végétarienne"
+        ],
+        "nl": [
+          "Vegetarische keuken"
+        ],
+        "es": [
+          "Cocina vegetariana"
+        ]
+      }
+    }
+  ],
+  "hasTranslatedProperty": [
+    {
+      "@id": "https://data.datatourisme.fr/5ada39be-3707-315f-91d7-16dfbf22ab52",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "nl"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/8e8b1f0a-5a3b-3236-95e4-818a0beded5e",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "es"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.datatourisme.fr/edbb5e94-6b9c-36f8-b338-bc4edf821a82",
+      "dc:contributor": [
+        "https://api.deepl.com/v2/translate"
+      ],
+      "rdf:language": [
+        "de"
+      ],
+      "rdf:predicate": [
+        {
+          "@id": "rdfs:comment"
+        }
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/c45f4090-39cd-335d-bc17-810e1bd1f2ce",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/9f2ed797-b8ac-3e29-a808-2297c296fe61",
+          "schema:addressLocality": "Megève",
+          "schema:postalCode": "74120",
+          "schema:streetAddress": [
+            "170 route Edmond de Rothschild",
+            "Le Village"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:74173",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Megève"
+              ],
+              "pt": [
+                "Megève"
+              ],
+              "en": [
+                "Megève"
+              ],
+              "it": [
+                "Megève"
+              ],
+              "fr": [
+                "Megève"
+              ],
+              "nl": [
+                "Megève"
+              ],
+              "es": [
+                "Megève"
+              ]
+            },
+            "insee": "74173",
+            "isPartOfDepartment": {
+              "@id": "kb:France8474",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Haute-Savoie"
+                ],
+                "pt": [
+                  "Haute-Savoie"
+                ],
+                "en": [
+                  "Haute-Savoie"
+                ],
+                "it": [
+                  "Haute-Savoie"
+                ],
+                "fr": [
+                  "Haute-Savoie"
+                ],
+                "nl": [
+                  "Haute-Savoie"
+                ],
+                "es": [
+                  "Haute-Savoie"
+                ]
+              },
+              "insee": "74",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/e70cf6c5-8cc1-3f4d-8db7-fb6575a77359",
+        "schema:elevation": "1113",
+        "schema:latitude": "45.857692",
+        "schema:longitude": "6.621872",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/2760ca75-3c3f-37ff-a0df-992dfa9b3e35",
+          "schema:validFrom": "2026-12-12T00:00:00",
+          "schema:validThrough": "2026-03-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Im Januar montags geschlossen"
+            ],
+            "en": [
+              "Closed on Mondays in January"
+            ],
+            "it": [
+              "Chiuso il lunedì a gennaio"
+            ],
+            "fr": [
+              "Fermé les lundis au mois de janvier"
+            ],
+            "nl": [
+              "Gesloten op maandag in januari"
+            ],
+            "es": [
+              "Cerrado los lunes de enero"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/0101527e-1798-3441-a542-bc2d6c44d789",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/640a7a05-2f6b-3900-89ae-fa45823c712b",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/8736b744-6481-30d5-98b6-16716503662f",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e53da92e-8746-3dbe-85ba-24b3792ea844",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/e83053e2-5a9f-37f1-b7ab-07eb5e660e33",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/b787f195-66c6-3021-a2f7-d2f5096c56d7",
+      "schema:email": [
+        "florence.karp@megeve.fr",
+        "loic.jullien@megeve.fr",
+        "malourene.cordier@megeve.fr"
+      ],
+      "schema:legalName": "Mairie de Megève",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://mairie.megeve.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2026-02-27",
+  "lastUpdateDatatourisme": "2026-02-28T06:53:27.509Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:AsianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Asiatische Küche"
+        ],
+        "pt": [
+          "Cozinha asiática"
+        ],
+        "en": [
+          "Asian cuisine"
+        ],
+        "it": [
+          "Cucina asiatica"
+        ],
+        "fr": [
+          "Cuisine asiatique"
+        ],
+        "es": [
+          "Cocina asiática"
+        ],
+        "nl": [
+          "Aziatische keuken"
+        ]
+      }
+    },
+    {
+      "@id": "kb:GourmetCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gourmet-Küche"
+        ],
+        "pt": [
+          "Cozinha gastronómica"
+        ],
+        "en": [
+          "Gourmet cuisine"
+        ],
+        "it": [
+          "Cucina gastronomica"
+        ],
+        "fr": [
+          "Cuisine gastronomique"
+        ],
+        "nl": [
+          "Gastronomische keuken"
+        ],
+        "es": [
+          "Cocina gastronómica"
+        ]
+      }
+    },
+    {
+      "@id": "kb:TraditionalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Traditionelle französische Küche"
+        ],
+        "pt": [
+          "Cozinha tradicional francesa"
+        ],
+        "en": [
+          "French traditional cuisine"
+        ],
+        "it": [
+          "Cucina tradizionale francese"
+        ],
+        "fr": [
+          "Cuisine traditionnelle française"
+        ],
+        "nl": [
+          "Traditionele Franse keuken"
+        ],
+        "es": [
+          "Cocina francesa tradicional"
+        ]
+      }
+    },
+    {
+      "@id": "kb:VegetarianCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Vegetarische Küche"
+        ],
+        "pt": [
+          "Cozinha vegetariana"
+        ],
+        "en": [
+          "Vegetarian cuisine"
+        ],
+        "it": [
+          "Cucina vegetariana"
+        ],
+        "fr": [
+          "Cuisine végétarienne"
+        ],
+        "nl": [
+          "Vegetarische keuken"
+        ],
+        "es": [
+          "Cocina vegetariana"
+        ]
+      }
+    }
+  ]
+}

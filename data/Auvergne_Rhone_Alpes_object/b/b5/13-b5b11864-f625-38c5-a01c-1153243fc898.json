@@ -1,0 +1,579 @@
+{
+  "@id": "https://data.datatourisme.fr/13/b5b11864-f625-38c5-a01c-1153243fc898",
+  "dc:identifier": "185746",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Restaurant de l'hôtel l'Orée du Château"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/812b4ba2-87f5-3e0b-89d4-3bbf5bbe87fb",
+    "dc:identifier": "95",
+    "schema:email": [
+      "cyrille.py@ccpaysroussillonnais.fr",
+      "helene.dasilva@entre-bievreetrhone.fr",
+      "lise.chiffe@entre-bievreetrhone.fr",
+      "mathilde.broliquet@entre-bievreetrhone.fr"
+    ],
+    "schema:legalName": "Office de Tourisme Entre Bièvre et Rhône",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://tourisme.entre-bievreetrhone.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/6bc7eb7d-0a7a-3d6b-88ba-24f8fac6d7b7",
+      "schema:email": [
+        "oree-du-chateau@wanadoo.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 74 11 12 50"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.hotel-oree-du-chateau.com/"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:GourmetCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gourmet-Küche"
+        ],
+        "pt": [
+          "Cozinha gastronómica"
+        ],
+        "en": [
+          "Gourmet cuisine"
+        ],
+        "it": [
+          "Cucina gastronomica"
+        ],
+        "fr": [
+          "Cuisine gastronomique"
+        ],
+        "nl": [
+          "Gastronomische keuken"
+        ],
+        "es": [
+          "Cocina gastronómica"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/4014fa5d-21b4-3355-a922-3b9681900359",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/55efe27b-6a68-3fe1-bd61-2d368d186e6f",
+          "schema:addressLocality": "Roussillon",
+          "schema:postalCode": "38150",
+          "schema:streetAddress": [
+            "62, Grande Rue"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:38344",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Roussillon"
+              ],
+              "pt": [
+                "Roussillon"
+              ],
+              "en": [
+                "Roussillon"
+              ],
+              "it": [
+                "Roussillon"
+              ],
+              "fr": [
+                "Roussillon"
+              ],
+              "nl": [
+                "Roussillon"
+              ],
+              "es": [
+                "Roussillon"
+              ]
+            },
+            "insee": "38344",
+            "isPartOfDepartment": {
+              "@id": "kb:France8438",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Isère"
+                ],
+                "pt": [
+                  "Isère"
+                ],
+                "en": [
+                  "Isère"
+                ],
+                "it": [
+                  "Isère"
+                ],
+                "fr": [
+                  "Isère"
+                ],
+                "nl": [
+                  "Isère"
+                ],
+                "es": [
+                  "Isère"
+                ]
+              },
+              "insee": "38",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/1307b968-1140-3931-98a0-7d29e737ee84",
+        "schema:elevation": "182",
+        "schema:latitude": "45.36915",
+        "schema:longitude": "4.809411",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/ad8e92bb-00ee-3ba6-bfd8-9f3c35e14aed",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Montag, Dienstag, Donnerstag und Freitag: mittags und abends\r\nMittwochs und samstags: abends\r\nSonntags: mittags\r\n\r\nSamstagmittag und Sonntagabend : Nur für Gruppen von mehr als 15 Personen geöffnet."
+            ],
+            "en": [
+              "Mondays, Tuesdays, Thursdays and Fridays: lunch and dinner\r\nWednesdays and Saturdays: evening\r\nSundays: lunch\r\n\r\nSaturday lunch and Sunday evening: Open only to groups of 15 or more."
+            ],
+            "it": [
+              "Lunedì, martedì, giovedì e venerdì: pranzo e cena\r\nMercoledì e sabato: sera\r\nDomenica: pranzo\r\n\r\nSabato a pranzo e domenica sera: Aperto solo a gruppi di oltre 15 persone."
+            ],
+            "fr": [
+              "Lundis, mardis, jeudis et vendredis : midi et soir \r\nMercredis et samedis : soir \r\nDimanches : midi \r\n\r\nLes samedis midi et dimanches soir : Ouverture uniquement pour les groupes de plus de 15 personnes."
+            ],
+            "nl": [
+              "Maandag, dinsdag, donderdag en vrijdag: lunch en diner\r\nWoensdag en zaterdag: 's avonds\r\nZondag: lunch\r\n\r\nZaterdag lunch en zondag avond: Alleen toegankelijk voor groepen van meer dan 15 personen."
+            ],
+            "es": [
+              "Lunes, martes, jueves y viernes: almuerzo y cena\r\nMiércoles y sábados: noche\r\nDomingos: almuerzo\r\n\r\nSábados: comida y domingos: noche: Abierto sólo a grupos de más de 15 personas."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/1d27b31f-836e-3ed0-950f-4cab98154158",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/1e2b1e9c-4c19-3977-bf43-2f93fde6fe4d",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/48624384-2716-3124-a057-394cae1e7de6",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/7df725ee-9c3f-3a61-bc42-de27ae59da00",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/cb1caf8c-3e15-3aa0-82ce-2eed0bee9c20",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/03b6fd24-2db6-3d8d-aa8d-513d34087ac7",
+      "schema:email": [
+        "cyrille.py@ccpaysroussillonnais.fr",
+        "helene.dasilva@entre-bievreetrhone.fr",
+        "lise.chiffe@entre-bievreetrhone.fr",
+        "mathilde.broliquet@entre-bievreetrhone.fr"
+      ],
+      "schema:legalName": "Office de Tourisme Entre Bièvre et Rhône",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://tourisme.entre-bievreetrhone.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2026-01-22",
+  "lastUpdateDatatourisme": "2026-01-23T06:54:32.153Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/e43dbf1c-aaf8-3935-9487-8596cdcd6f58",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/8ef128f0-12b9-34fe-b158-befc6eb8383e",
+          "schema:maxPrice": [
+            "50"
+          ],
+          "schema:minPrice": [
+            "15"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/0663ca4b-3470-3171-9053-39aa704e8f56",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2022-12-31",
+              "startDate": "2022-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:AlaCarte",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "A la carte"
+                ],
+                "pt": [
+                  "À escolha"
+                ],
+                "en": [
+                  "A la carte"
+                ],
+                "it": [
+                  "Alla carta"
+                ],
+                "fr": [
+                  "A la carte"
+                ],
+                "nl": [
+                  "À la carte"
+                ],
+                "es": [
+                  "A la carta"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/a8df625f-baf2-32c2-ba7c-3f443744555b",
+          "schema:maxPrice": [
+            "55"
+          ],
+          "schema:minPrice": [
+            "30"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/0663ca4b-3470-3171-9053-39aa704e8f56",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2022-12-31",
+              "startDate": "2022-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:AdultMenu",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Menü für Erwachsene"
+                ],
+                "pt": [
+                  "Menu para adultos"
+                ],
+                "en": [
+                  "Adult menu"
+                ],
+                "it": [
+                  "Menù per adulti"
+                ],
+                "fr": [
+                  "Menu adulte"
+                ],
+                "nl": [
+                  "Volwassenenmenu"
+                ],
+                "es": [
+                  "Menú para adultos"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "@id": "https://data.datatourisme.fr/cd76b356-33c2-3806-8549-703741ec1121",
+          "schema:maxPrice": [
+            "45"
+          ],
+          "schema:minPrice": [
+            "30"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/0663ca4b-3470-3171-9053-39aa704e8f56",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2022-12-31",
+              "startDate": "2022-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:GroupMenu",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Gruppenmenü"
+                ],
+                "pt": [
+                  "Menu de grupo"
+                ],
+                "en": [
+                  "Group menu"
+                ],
+                "it": [
+                  "Menù per gruppi"
+                ],
+                "fr": [
+                  "Menu groupe"
+                ],
+                "es": [
+                  "Menú de grupo"
+                ],
+                "nl": [
+                  "Groepsmenu"
+                ]
+              }
+            }
+          ],
+          "name": {
+            "fr": [
+              "A partir de 10personnes"
+            ]
+          }
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:GourmetCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gourmet-Küche"
+        ],
+        "pt": [
+          "Cozinha gastronómica"
+        ],
+        "en": [
+          "Gourmet cuisine"
+        ],
+        "it": [
+          "Cucina gastronomica"
+        ],
+        "fr": [
+          "Cuisine gastronomique"
+        ],
+        "nl": [
+          "Gastronomische keuken"
+        ],
+        "es": [
+          "Cocina gastronómica"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "@id": "https://data.datatourisme.fr/13/5e4a5a5a-5478-3306-9434-bcdc9aa68f9f",
+  "dc:identifier": "5057622",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Burger King"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/812b4ba2-87f5-3e0b-89d4-3bbf5bbe87fb",
+    "dc:identifier": "95",
+    "schema:email": [
+      "cyrille.py@ccpaysroussillonnais.fr",
+      "helene.dasilva@entre-bievreetrhone.fr",
+      "lise.chiffe@entre-bievreetrhone.fr",
+      "mathilde.broliquet@entre-bievreetrhone.fr"
+    ],
+    "schema:legalName": "Office de Tourisme Entre Bièvre et Rhône",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://tourisme.entre-bievreetrhone.fr/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/2bb0d66d-6b21-30e8-a12f-34a55896bc63",
+      "schema:telephone": [
+        "+33 4 74 78 01 10"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.burgerking.fr/"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:NorthAmericanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Nordamerikanische Küche"
+        ],
+        "pt": [
+          "Cozinha norte-americana"
+        ],
+        "en": [
+          "North american cuisine"
+        ],
+        "it": [
+          "Cucina nordamericana"
+        ],
+        "fr": [
+          "Cuisine nord-américaine"
+        ],
+        "nl": [
+          "Noord-Amerikaanse keuken"
+        ],
+        "es": [
+          "Cocina norteamericana"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/9e384091-3393-321f-b155-4c862bfdb5f8",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/b2e57988-91d4-39d6-92f9-f70a5a412534",
+          "schema:addressLocality": "Salaise-sur-Sanne",
+          "schema:postalCode": "38150",
+          "schema:streetAddress": [
+            "Centre commerical green 7",
+            "Lieu dit la Fontanaise",
+            "N7"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:38468",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Salaise-sur-Sanne"
+              ],
+              "pt": [
+                "Salaise-sur-Sanne"
+              ],
+              "en": [
+                "Salaise-sur-Sanne"
+              ],
+              "it": [
+                "Salaise-sur-Sanne"
+              ],
+              "fr": [
+                "Salaise-sur-Sanne"
+              ],
+              "nl": [
+                "Salaise-sur-Sanne"
+              ],
+              "es": [
+                "Salaise-sur-Sanne"
+              ]
+            },
+            "insee": "38468",
+            "isPartOfDepartment": {
+              "@id": "kb:France8438",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Isère"
+                ],
+                "pt": [
+                  "Isère"
+                ],
+                "en": [
+                  "Isère"
+                ],
+                "it": [
+                  "Isère"
+                ],
+                "fr": [
+                  "Isère"
+                ],
+                "nl": [
+                  "Isère"
+                ],
+                "es": [
+                  "Isère"
+                ]
+              },
+              "insee": "38",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/71e117bb-4f91-321e-b224-8868678dc61b",
+        "schema:latitude": "45.326679",
+        "schema:longitude": "4.806188",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/34b6d90c-53ee-3421-a58c-7c07b663738b",
+          "schema:closes": "23:00:00",
+          "schema:opens": "11:00:00",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Freitags und samstags bis Mitternacht nur für den Drive."
+            ],
+            "en": [
+              "Friday and Saturday until midnight for the Drive only."
+            ],
+            "it": [
+              "Venerdì e sabato fino a mezzanotte solo per il Drive."
+            ],
+            "fr": [
+              "Le vendredi et le samedi jusqu'à minuit pour le Drive uniquement."
+            ],
+            "nl": [
+              "Vrijdag en zaterdag tot middernacht alleen voor de Drive."
+            ],
+            "es": [
+              "Viernes y sábado hasta la medianoche sólo para el Drive."
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/0c840b8c-ca79-3f7e-94d8-b0434e10980e",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/2e26cc84-4b26-3701-8678-11c19800c1a6",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/33ddf63e-7dea-3bcb-b4ca-d6efabb348af",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/77aa4f07-ab56-38f2-b780-419c6902f2c5",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/d0e39db4-971c-3775-beee-0da1ce5cd2bc",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/03b6fd24-2db6-3d8d-aa8d-513d34087ac7",
+      "schema:email": [
+        "cyrille.py@ccpaysroussillonnais.fr",
+        "helene.dasilva@entre-bievreetrhone.fr",
+        "lise.chiffe@entre-bievreetrhone.fr",
+        "mathilde.broliquet@entre-bievreetrhone.fr"
+      ],
+      "schema:legalName": "Office de Tourisme Entre Bièvre et Rhône",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://tourisme.entre-bievreetrhone.fr/"
+      ]
+    }
+  ],
+  "lastUpdate": "2022-10-18",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.567Z",
+  "offers": [
+    {
+      "@id": "https://data.datatourisme.fr/0d175b9d-8484-3710-88f4-c468ce8c7e98",
+      "schema:priceSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/a7a7e0c9-9d68-3967-ba04-2e670d7680a6",
+          "schema:maxPrice": [
+            "13"
+          ],
+          "schema:minPrice": [
+            "5"
+          ],
+          "schema:priceCurrency": "EUR",
+          "@type": [
+            "schema:PriceSpecification",
+            "PriceSpecification"
+          ],
+          "appliesOnPeriod": [
+            {
+              "@id": "https://data.datatourisme.fr/0663ca4b-3470-3171-9053-39aa704e8f56",
+              "@type": [
+                "Period"
+              ],
+              "endDate": "2022-12-31",
+              "startDate": "2022-01-01"
+            }
+          ],
+          "hasPricingOffer": [
+            {
+              "@id": "kb:AlaCarte",
+              "@type": [
+                "CateringPricingOffer"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "A la carte"
+                ],
+                "pt": [
+                  "À escolha"
+                ],
+                "en": [
+                  "A la carte"
+                ],
+                "it": [
+                  "Alla carta"
+                ],
+                "fr": [
+                  "A la carte"
+                ],
+                "nl": [
+                  "À la carte"
+                ],
+                "es": [
+                  "A la carta"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Offer",
+        "Offer"
+      ]
+    }
+  ],
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:NorthAmericanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Nordamerikanische Küche"
+        ],
+        "pt": [
+          "Cozinha norte-americana"
+        ],
+        "en": [
+          "North american cuisine"
+        ],
+        "it": [
+          "Cucina nordamericana"
+        ],
+        "fr": [
+          "Cuisine nord-américaine"
+        ],
+        "nl": [
+          "Noord-Amerikaanse keuken"
+        ],
+        "es": [
+          "Cocina norteamericana"
+        ]
+      }
+    }
+  ]
+}

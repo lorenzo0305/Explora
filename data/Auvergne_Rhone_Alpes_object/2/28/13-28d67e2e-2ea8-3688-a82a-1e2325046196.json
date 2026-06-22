@@ -1,0 +1,309 @@
+{
+  "@id": "https://data.datatourisme.fr/13/28d67e2e-2ea8-3688-a82a-1e2325046196",
+  "dc:identifier": "6607244",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Au Grand Faitout"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/bf822969-6f7a-3bb4-b00c-fddef19fa23f",
+    "dc:identifier": "174",
+    "schema:email": [
+      "buis@baronnies-tourisme.com",
+      "montbrun@baronnies-tourisme.com",
+      "nathalie@baronnies-tourisme.com"
+    ],
+    "schema:legalName": "Office de Tourisme des Baronnies en Drôme Provençale",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://baronnies-tourisme.com/",
+      "https://www.dromeprovencale.fr/baronnies/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/d48f2ccd-2357-3a8e-b949-cb8bf19a361f",
+      "schema:legalName": "Agence d'Attractivité de la Drôme - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/7c43451b-b286-35aa-adf4-6bc9d0c967da",
+      "schema:telephone": [
+        "+33 4 26 66 90 53",
+        "+33 6 18 85 10 34"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:HalalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Halal-Küche"
+        ],
+        "pt": [
+          "Cozinha halal"
+        ],
+        "en": [
+          "Halal cuisine"
+        ],
+        "it": [
+          "Cucina halal"
+        ],
+        "fr": [
+          "Cuisine halal"
+        ],
+        "nl": [
+          "Halal keuken"
+        ],
+        "es": [
+          "Cocina halal"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/d1c8d057-9dff-37c2-8b30-96b4299a4275",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/a344f6a8-4b15-3af9-af9a-2dd17409e41c",
+          "schema:addressLocality": "Buis-les-Baronnies",
+          "schema:postalCode": "26170",
+          "schema:streetAddress": [
+            "16 place du marché"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:26063",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Buis-les-Baronnies"
+              ],
+              "pt": [
+                "Buis-les-Baronnies"
+              ],
+              "en": [
+                "Buis-les-Baronnies"
+              ],
+              "it": [
+                "Buis-les-Baronnies"
+              ],
+              "fr": [
+                "Buis-les-Baronnies"
+              ],
+              "nl": [
+                "Buis-les-Baronnies"
+              ],
+              "es": [
+                "Buis-les-Baronnies"
+              ]
+            },
+            "insee": "26063",
+            "isPartOfDepartment": {
+              "@id": "kb:France8426",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Drôme"
+                ],
+                "pt": [
+                  "Drôme"
+                ],
+                "en": [
+                  "Drôme"
+                ],
+                "it": [
+                  "Drôme"
+                ],
+                "fr": [
+                  "Drôme"
+                ],
+                "nl": [
+                  "Drôme"
+                ],
+                "es": [
+                  "Drôme"
+                ]
+              },
+              "insee": "26",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/07010e83-5f55-3523-b392-ddfc2849236d",
+        "schema:latitude": "44.275362",
+        "schema:longitude": "5.274913",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/d2b64464-34c3-3677-b04b-02cd1f051332",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/78583035-cb5c-3b84-827a-682113b2f1f4",
+      "schema:email": [
+        "buis@baronnies-tourisme.com",
+        "montbrun@baronnies-tourisme.com",
+        "nathalie@baronnies-tourisme.com"
+      ],
+      "schema:legalName": "Office de Tourisme des Baronnies en Drôme Provençale",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.dromeprovencale.fr/baronnies/"
+      ]
+    }
+  ],
+  "lastUpdate": "2024-08-07",
+  "lastUpdateDatatourisme": "2026-01-15T06:55:29.433Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:HalalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Halal-Küche"
+        ],
+        "pt": [
+          "Cozinha halal"
+        ],
+        "en": [
+          "Halal cuisine"
+        ],
+        "it": [
+          "Cucina halal"
+        ],
+        "fr": [
+          "Cuisine halal"
+        ],
+        "nl": [
+          "Halal keuken"
+        ],
+        "es": [
+          "Cocina halal"
+        ]
+      }
+    }
+  ]
+}

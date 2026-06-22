@@ -1,0 +1,252 @@
+/* --- CreerVoyage.css --- */
+
+:root {
+    --bg-color: #FAF8F5; 
+    --text-main: #1C1C1C; 
+    --border-light: #D4C3B3;
+    --accent-vivid: #FF6F61; 
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0; padding-bottom: 0 !important;
+    height: 100vh !important;
+    overflow: hidden !important; 
+    background-color: #EAE6DF !important;
+    color: var(--text-main); font-family: 'Lora', serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-frame {
+    display: flex; flex-direction: column;
+    height: 100vh !important; width: 100vw; overflow: hidden;
+}
+
+.editor-layout { 
+    display: flex; flex: 1; width: 100%; max-width: 1600px; margin: 0 auto; 
+    align-items: stretch; overflow: hidden; 
+}
+
+.sidebar-photos {
+    width: 260px; padding: 40px 15px; 
+    border-right: 1px solid rgba(0,0,0,0.06);
+    background: #FAF8F5; z-index: 100;
+    height: 100%; overflow-y: auto; scrollbar-width: none; 
+}
+
+.magazine-workspace { 
+    flex: 1; padding: 30px 50px 80px 50px; 
+    display: flex; flex-direction: column; 
+    height: 100%; overflow-y: auto; 
+}
+
+.top-nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(250, 248, 245, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 2000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; }
+.logo-fill { color: var(--text-main); } .logo-outline { color: transparent; -webkit-text-stroke: 1px var(--text-main); }
+.nav-links { display: flex; gap: 35px; }
+.nav-links a { text-decoration: none; color: #505050; font-weight: 500; font-size: 15px; transition: color 0.2s; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
+.nav-links a:hover, .nav-links a.active { color: #FF6F61; font-weight: 600; }
+.nav-actions { display: flex; gap: 15px; align-items: center; }
+.action-btn { background: transparent; color: var(--text-main); border: none; padding: 8px; cursor: pointer; transition: transform 0.2s;}
+.action-btn:hover { color: #FF0000; transform: scale(1.1); }
+
+.photo-stack-header { margin-bottom: 30px; text-align: center; }
+.script-decoration-small { font-family: 'Alex Brush', cursive; font-size: 2.2rem; color: var(--accent-vivid); display: block; margin-bottom: -10px; }
+.photo-stack-header h3 { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 900; color: var(--text-main); margin: 0; letter-spacing: 2px;}
+
+/* =========================================
+   STYLE DE LA CARTE RECTANGULAIRE (VOYAGE)
+========================================= */
+.polaroid-list { display: flex; flex-direction: column; gap: 12px; align-items: stretch; min-height: 200px; width: 100%;}
+
+.draggable-item {
+    background: white; border: 1px solid var(--border-light); border-radius: 6px;
+    width: 100%; max-width: none;
+    cursor: grab; position: relative; transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    display: flex; flex-direction: column; overflow: hidden;
+}
+.draggable-item:hover { z-index: 10; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-color: var(--accent-vivid); }
+.draggable-item:active { cursor: grabbing; transform: scale(0.98); }
+
+.btn-activite { 
+    width: 100%; text-align: left; padding: 10px; font-family: 'Lora', serif;
+    background: transparent; border: none; cursor: pointer; display: flex; align-items: center; gap: 12px; transition: background 0.2s; 
+}
+.btn-activite:hover { background: rgba(0,0,0,0.02); }
+.inline-act-thumb { width: 45px; height: 45px; border-radius: 4px; object-fit: cover; flex-shrink: 0; }
+.activite-info-header { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.activite-nom { line-height: 1.2; font-size: 14px; font-weight: normal; color: var(--text-main); font-family: 'Lora', serif;}
+.activite-meta-header { font-family: 'Montserrat', sans-serif; font-size: 10px; color: #6b5f57; margin-top: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+.icone-fleche { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; flex-shrink: 0; color: var(--accent-vivid); font-size: 11px; transition: transform .25s ease; }
+.btn-activite.ouvert .icone-fleche { transform: rotate(90deg); }
+
+.details-activite { max-height: 0; overflow: hidden; background: #fff; border-left: 3px solid var(--accent-vivid); margin-left: 15px; transition: max-height .35s ease, padding .25s ease, margin .25s ease; padding: 0 16px; }
+.details-activite.visible { max-height: 800px; padding: 10px 16px; margin-top: 4px; margin-bottom: 10px; }
+.details-activite p { margin: 6px 0; color: #6b5f57; font-size: 12px; line-height: 1.4; font-family: 'Lora', serif;}
+.details-activite p strong { color: var(--text-main); font-weight: 600; }
+.categories-text { color: #C9473A !important; font-style: italic; font-size: 11px; margin-bottom: 8px !important; }
+
+/* Bouton supprimer (caché dans le panier) */
+.draggable-item .btn-remove-item { display: none; position: absolute; right: 8px; top: 12px; background: rgba(255, 111, 97, 0.1); color: var(--accent-vivid); border: 1px solid var(--accent-vivid); width: 22px; height: 22px; border-radius: 50%; cursor: pointer; transition: all 0.2s; z-index: 5; font-size: 10px;}
+.draggable-item .btn-remove-item:hover { background: var(--accent-vivid); color: white; }
+
+/* Comportement quand la carte est glissée sur une page */
+.draggable-item.dropped { 
+    padding: 0; 
+    transform: none !important; box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    margin-bottom: 10px; border: 1px solid rgba(0,0,0,0.08);
+}
+.draggable-item.dropped .btn-remove-item { display: flex; align-items: center; justify-content: center; }
+.draggable-item.dropped .icone-fleche { margin-right: 30px; } /* Laisse de la place pour la croix sans se superposer */
+
+/* ========================================= */
+
+.workspace-header-massive { width: 100%; max-width: 1100px; margin: 0 auto 30px auto; display: flex; flex-direction: column; gap: 20px; }
+.title-row { width: 100%; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 10px;}
+.script-decoration { font-family: 'Alex Brush', cursive; font-size: 2.5rem; color: var(--accent-vivid); display: block; margin-bottom: -15px; }
+.trip-title-input { border: none; background: transparent; font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 700; color: var(--text-main); outline: none; width: 100%; text-transform: uppercase; display: block; }
+.trip-title-input::placeholder { color: #bbb; text-transform: none; font-weight: 600;}
+
+.controls-row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;}
+.days-generator { display: flex; align-items: center; gap: 8px; background: rgba(0,0,0,0.03); padding: 8px 15px; border-radius: 4px;}
+.days-generator label { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase;}
+.days-generator input { width: 45px; text-align: center; border: 1px solid var(--border-light); border-radius: 4px; font-family: 'Montserrat', sans-serif; font-weight: 700; background: white;}
+.days-suffix { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600;}
+.btn-generate { background: var(--text-main); color: white; border: none; width: 24px; height: 24px; border-radius: 50%; font-size: 12px; cursor: pointer;}
+.btn-generate:hover { background: var(--accent-vivid); }
+
+.btn-add-page { background: transparent; border: 1px solid var(--border-light); color: var(--text-main); padding: 10px 15px; border-radius: 4px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; cursor: pointer; transition: all 0.2s;}
+.btn-add-page:hover { background: rgba(0,0,0,0.03); }
+.btn-quit { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; text-transform: uppercase; color: #888; text-decoration: none; transition: color 0.2s; border-bottom: 1px solid transparent; margin-left: auto;}
+.btn-quit:hover { color: #FF0000; border-bottom: 1px solid #FF0000;}
+.btn-save-mag { background: #1C1C1C; color: white; border: none; padding: 12px 30px; border-radius: 4px; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; cursor: pointer; transition: all 0.3s; letter-spacing: 1px;}
+.btn-save-mag:hover { background: var(--accent-vivid); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255, 111, 97, 0.3);}
+
+/* =========================================
+   LE LIVRE ET LA 3D UNIFIÉE
+========================================= */
+.book-wrapper { 
+    width: 100%; display: flex; justify-content: center; margin-top: 10px; 
+}
+
+.book-container { 
+    width: 1100px; height: 750px; position: relative; 
+    perspective: 3000px; 
+}
+
+.book-cover-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/static/img/rando_pyrenees.jpg');
+    background-size: cover; background-position: center;
+}
+
+.book-cover {
+    width: 50%; height: 100%; 
+    background-color: #1C1C1C; color: white;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+    box-shadow: 10px 15px 30px rgba(0,0,0,0.15);
+    position: absolute; top: 0;
+    z-index: 50; 
+    padding: 40px;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+#bookCover { right: 0; border-radius: 0 15px 15px 0; }
+#bookBackCover { left: 0; border-radius: 15px 0 0 15px; box-shadow: -10px 15px 30px rgba(0,0,0,0.15); }
+
+.book-cover h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; text-transform: uppercase; margin: 0; padding: 0 20px;}
+
+.cover-chevron { 
+    position: absolute; right: 20px; top: 50%; transform: translateY(-50%); 
+    font-size: 14px; cursor: pointer; color: white; background: rgba(0,0,0,0.4); 
+    width: 28px; height: 28px; border-radius: 50%; 
+    display: flex; align-items: center; justify-content: center; 
+    transition: background 0.2s, transform 0.2s;
+}
+.cover-chevron:hover { background: var(--accent-vivid); transform: translateY(-50%) scale(1.1); }
+
+.book-spreads-container { 
+    width: 100%; height: 100%; position: absolute; top: 0; left: 0; 
+    background: transparent;
+    transform: translateZ(0);
+}
+
+.day-spread { display: none; width: 100%; height: 100%; position: relative; }
+.day-spread.active { display: flex; }
+
+.book-page { 
+    flex: 1; padding: 40px; display: flex; flex-direction: column; gap: 20px; 
+    background: white; overflow-y: auto; scrollbar-width: none; position: relative;
+    transform: translateZ(0);
+}
+.left-page { 
+    border-right: 1px solid #ddd; border-radius: 4px 0 0 4px;
+    box-shadow: -15px 15px 30px rgba(0,0,0,0.05); 
+} 
+.right-page { 
+    border-radius: 0 15px 15px 0; 
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.05); 
+}
+
+.page-chevron { position: absolute; top: 50%; transform: translateY(-50%); font-size: 28px; color: #ccc; cursor: pointer; transition: color 0.2s; z-index: 30;}
+.page-chevron:hover { color: var(--accent-vivid); }
+.page-chevron.left { left: 15px; }
+.page-chevron.right { right: 15px; }
+
+.page-header { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--text-main); padding-bottom: 10px; margin-bottom: 10px; height: 50px; flex: 0 0 50px; }
+.page-header.right-align { flex-direction: row-reverse; }
+
+.day-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 700; text-transform: uppercase; margin: 0; line-height: 1;}
+.page-number { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: #bbb; font-style: italic; line-height: 1;}
+
+.btn-delete-day { background: transparent; border: none; padding: 0; margin: 0; font-family: 'Montserrat', sans-serif; font-size: 10px; text-transform: uppercase; font-weight: 700; color: #888; cursor: pointer; transition: color 0.2s; line-height: 1; }
+.btn-delete-day:hover { color: #FF0000; }
+
+.time-title { font-family: 'Alex Brush', cursive; font-size: 26px; color: var(--accent-vivid); margin: 0 0 5px 0; font-weight: normal;}
+
+.drop-zone-container { display: flex; flex-direction: column;}
+.drop-zone-container.full-height { flex: 1; }
+
+.drop-zone {
+    width: 100%; flex: 1; border: 1px solid #ddd; display: flex; flex-direction: column; align-items: center; padding: 10px; background: #fff; transition: all 0.2s;
+}
+.drop-zone:hover, .drop-zone.dragover { border-color: var(--accent-vivid); box-shadow: 0 5px 15px rgba(0,0,0,0.03);}
+.drop-placeholder { font-family: 'Lora', serif; font-style: italic; color: #bbb; font-size: 13px; text-align: center; margin-top: 30px;}
+.drop-zone.filled { border: 1px solid transparent; background: transparent; padding: 0;}
+.drop-zone.filled .drop-placeholder { display: none; }
+
+/* =========================================
+   MOTEUR 3D DU FLIPPER
+========================================= */
+.page-flipper {
+    position: absolute; top: 0; height: 100%; width: 50%;
+    transform-style: preserve-3d; 
+    transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1); 
+    z-index: 100;
+}
+
+.flipper-face .book-page { margin: 0; width: 100%; height: 100%; flex: none; }
+
+.flip-forward { left: 50%; transform-origin: left center; transform: rotateY(0deg); }
+.flip-forward.flipping { transform: rotateY(-180deg); }
+
+.flip-backward { left: 0; transform-origin: right center; transform: rotateY(0deg); }
+.flip-backward.flipping { transform: rotateY(180deg); }
+
+.flipper-face {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    backface-visibility: hidden; background-color: transparent; overflow: hidden;
+}
+
+.flipper-face.book-page {
+    background-color: white !important;
+}
+
+.flipper-face > div { width: 100%; height: 100%; }
+
+.flip-forward .flipper-front { transform: rotateY(0deg); }
+.flip-forward .flipper-back { transform: rotateY(180deg); }
+
+.flip-backward .flipper-front { transform: rotateY(0deg); }
+.flip-backward .flipper-back { transform: rotateY(-180deg); }

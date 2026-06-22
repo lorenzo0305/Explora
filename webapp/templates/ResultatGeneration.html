@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora — Votre voyage</title>
+    <link rel="stylesheet" href="/static/styles/app.css">
+    <link rel="stylesheet" href="/static/styles/ResultatGeneration.css?v=5">
+    <link rel="stylesheet" href="/static/styles/PanierFavoris.css?v=2">
+    
+    <script src="/static/scripts/DictionnaireImages.js?v=1" defer></script>
+    <script src="/static/scripts/PanierFavoris.js?v=1" defer></script>
+    <script src="/static/scripts/ResultatGeneration.js?v=10" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800;900&family=Alex+Brush&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-frame">
+        <nav class="top-nav">
+            <div class="nav-logo">
+                <span class="logo-fill">EXP</span><span class="logo-outline">LORA</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="/">Accueil</a>
+                <a href="/generervoyage">Générer mon voyage</a>
+                <a href="/catalogue">Catalogue d'activités</a>
+                <a href="/mesvoyages">Mes voyages</a>
+                <a href="/creervoyage">Créer mon voyage</a>
+            </div>
+
+            <div class="nav-actions">
+                <div class="icon-wrapper">
+                    <button id="likesIcon" class="action-btn" type="button" title="Mes Favoris">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        <span id="likesCount" class="badge pink" hidden>0</span>
+                    </button>
+                    <div id="floatingLikes" class="floating-panel"></div>
+                </div>
+                <div class="icon-wrapper">
+                    <button id="basketIcon" class="action-btn" type="button" title="Panier">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
+                        <span id="basketCount" class="badge" hidden>0</span>
+                    </button>
+                    <div id="floatingBasket" class="floating-panel"></div>
+                </div>
+            </div>
+        </nav>
+
+        <svg class="bg-airplane-line" viewBox="0 0 1000 500" preserveAspectRatio="none">
+            <path d="M 0 400 Q 300 100 600 250 T 1000 50" fill="none" stroke="#D4C3B3" stroke-width="2" stroke-dasharray="10 15"/>
+        </svg>
+
+        <div class="content-panel">
+            <div class="content-inner">
+
+                <!-- MODIFICATION : Header flexible avec bouton Retour -->
+                <header class="voyage-header" style="display:flex; justify-content:space-between; align-items:flex-end; border-bottom: 1px dashed var(--border-light); padding-bottom: 20px; margin-bottom: 30px;">
+                    <div>
+                        <span class="script-decoration">Votre itinéraire</span>
+                        <h1 class="main-title">Carnet de voyage</h1>
+                        <p class="intro-text" id="voyage-subtitle" style="margin-bottom:0;">
+                            Découvrez les étapes imaginées par notre intelligence artificielle.
+                        </p>
+                    </div>
+                    <a href="/generervoyage" class="nav-back" title="Retour aux critères">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        <span>Retour</span>
+                    </a>
+                </header>
+
+                <!-- MODIFICATION : La liste horizontale -->
+                <section class="days-section">
+                    <div id="daysList" class="days-list">
+                        <!-- Rempli par Voyage.js -->
+                    </div>
+                </section>
+
+                <div class="voyage-actions">
+                    <button type="button" class="btn-explorer" id="saveVoyageBtn">Sauvegarder ce voyage</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,410 @@
+{
+  "@id": "https://data.datatourisme.fr/13/8228154b-7ce4-3599-a760-ea7e2a417670",
+  "dc:identifier": "278806",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "de": [
+      "Délice Kebab"
+    ],
+    "ru": [
+      "Délice Kebab"
+    ],
+    "en": [
+      "Délice Kebab"
+    ],
+    "it": [
+      "Délice Kebab"
+    ],
+    "fr": [
+      "Délice Kebab"
+    ],
+    "zh": [
+      "Délice Kebab"
+    ],
+    "nl": [
+      "Délice Kebab"
+    ],
+    "es": [
+      "Délice Kebab"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/c20ad4d7-6fe9-3759-aa27-a0c99bff6710",
+    "dc:identifier": "12",
+    "schema:email": [
+      "f.champavere@beaujolais-tourisme.com",
+      "t.blanchier@beaujolais-tourisme.com",
+      "v.guerin@beaujolais-tourisme.com"
+    ],
+    "schema:legalName": "Beaujolais Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.beaujolais-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/73374ec9-ae64-3ee1-bfb6-bcd4fa1ce6ac",
+      "schema:telephone": [
+        "+33 9 51 84 94 32"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:OrientalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Orientalische Küche"
+        ],
+        "pt": [
+          "Cozinha oriental"
+        ],
+        "en": [
+          "Oriental Cuisine"
+        ],
+        "it": [
+          "Cucina orientale"
+        ],
+        "fr": [
+          "Cuisine orientale"
+        ],
+        "nl": [
+          "Oosterse keuken"
+        ],
+        "es": [
+          "Cocina oriental"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/0db76f30-8f19-3eec-a99d-252213b0be23",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/eeb9da1e-a036-3fb9-8b7b-fa8ce2321d20",
+          "schema:addressLocality": "Saint-Étienne-des-Oullières",
+          "schema:postalCode": "69460",
+          "schema:streetAddress": [
+            "360 route du beaujolais"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:69197",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Saint-Étienne-des-Oullières"
+              ],
+              "pt": [
+                "Saint-Étienne-des-Oullières"
+              ],
+              "en": [
+                "Saint-Étienne-des-Oullières"
+              ],
+              "it": [
+                "Saint-Étienne-des-Oullières"
+              ],
+              "fr": [
+                "Saint-Étienne-des-Oullières"
+              ],
+              "nl": [
+                "Saint-Étienne-des-Oullières"
+              ],
+              "es": [
+                "Saint-Étienne-des-Oullières"
+              ]
+            },
+            "insee": "69197",
+            "isPartOfDepartment": {
+              "@id": "kb:France8469",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Rhône"
+                ],
+                "pt": [
+                  "Rhône"
+                ],
+                "en": [
+                  "Rhône"
+                ],
+                "it": [
+                  "Rhône"
+                ],
+                "fr": [
+                  "Rhône"
+                ],
+                "nl": [
+                  "Rhône"
+                ],
+                "es": [
+                  "Rhône"
+                ]
+              },
+              "insee": "69",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/c2bcca91-a307-3f41-a278-c3db280e93e4",
+        "schema:latitude": "46.067901",
+        "schema:longitude": "4.64962",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/f76aff5d-f4a1-3772-82df-39644e2c71da",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "mittags und abends"
+            ],
+            "en": [
+              "noon and evening"
+            ],
+            "it": [
+              "mezzogiorno e sera"
+            ],
+            "fr": [
+              "midi et soir"
+            ],
+            "nl": [
+              "middag en avond"
+            ],
+            "es": [
+              "mediodía y noche"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/245a2bba-2c85-3486-b644-66093dc0daf7",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/24ec54d7-fee8-3b8e-996b-080992405f23",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/4468dba3-9364-3b06-ae75-e53571bc27e8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/4662fed5-8374-39bb-8c04-ce9e491d9eab",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/65ef8313-4bd0-3389-a691-ef8cc1a15031",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8687b10f-a743-3616-95e8-ea841adb5c78",
+      "schema:email": [
+        "f.champavere@beaujolais-tourisme.com",
+        "t.blanchier@beaujolais-tourisme.com",
+        "v.guerin@beaujolais-tourisme.com"
+      ],
+      "schema:legalName": "Beaujolais Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.beaujolais-tourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2018-05-03",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.372Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:OrientalCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Orientalische Küche"
+        ],
+        "pt": [
+          "Cozinha oriental"
+        ],
+        "en": [
+          "Oriental Cuisine"
+        ],
+        "it": [
+          "Cucina orientale"
+        ],
+        "fr": [
+          "Cuisine orientale"
+        ],
+        "nl": [
+          "Oosterse keuken"
+        ],
+        "es": [
+          "Cocina oriental"
+        ]
+      }
+    }
+  ]
+}

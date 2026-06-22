@@ -1,0 +1,195 @@
+:root {
+    --bg-color: #FAF8F5; 
+    --text-main: #1C1C1C; 
+    --text-warm: #4A403A; 
+    --accent-vivid: #FF6F61; 
+    --bordeaux-nav: #FF6F61; 
+    --nav-bg: rgba(250, 248, 245, 0.90);
+    --border-light: #D4C3B3;
+}
+
+* { box-sizing: border-box; }
+
+/* 1. Blocage strict des marges fantômes et du scroll global */
+html, body {
+    margin: 0; padding-bottom: 0 !important;
+    height: 100vh !important;
+    overflow: hidden !important; 
+    background-color: var(--bg-color) !important;
+    color: var(--text-main); font-family: 'Lora', serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 2. Le cadre principal fixe */
+.app-frame { 
+    display: flex; flex-direction: column; 
+    height: 100vh !important; width: 100vw; 
+    position: relative; overflow: hidden; 
+}
+
+/* 3. La zone centrale qui scroll verticalement */
+.content-panel { 
+    flex: 1; 
+    overflow-y: auto !important; 
+    overflow-x: hidden;
+    padding: 10px 0px 0px 0px; position: relative; z-index: 1;
+}
+
+/* Cache la barre de défilement verticale de la page tout en gardant le scroll actif */
+.content-panel::-webkit-scrollbar { 
+    display: none; 
+}
+.content-panel {
+    -ms-overflow-style: none;  /* Pour Internet Explorer et Edge */
+    scrollbar-width: none;  /* Pour Firefox */
+}
+
+/* NAVIGATION */
+.top-nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 50px; background: var(--nav-bg); backdrop-filter: blur(12px); 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04); z-index: 1000; position: relative;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; 
+}
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; }
+.logo-fill { color: var(--text-main); }
+.logo-outline { color: transparent; -webkit-text-stroke: 1px var(--text-main); }
+.nav-links { display: flex; gap: 35px; }
+.nav-links a { text-decoration: none; color: #505050; font-weight: 500; font-size: 15px; transition: color 0.2s; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
+.nav-links a:hover, .nav-links a.active { color: var(--bordeaux-nav); font-weight: 600; }
+.nav-actions { display: flex; gap: 15px; align-items: center; }
+.icon-wrapper { position: relative; display: flex; align-items: center;}
+.action-btn { background: transparent; color: var(--text-main); border: none; padding: 8px; cursor: pointer; transition: transform 0.2s;}
+.action-btn:hover { color: var(--bordeaux-nav); transform: scale(1.1); }
+.badge { position: absolute; top: 0; right: 0; background: var(--text-main); color: #fff; font-size: 10px; padding: 3px 6px; border-radius: 10px; }
+.badge.pink { background: var(--bordeaux-nav); }
+
+/* LAYOUT EN-TÊTE DES VOYAGES */
+.voyages-inner { max-width: 100%; margin: 0 auto; display: flex; flex-direction: column; gap: 0px;}
+.voyages-header { text-align: center; margin-bottom: 20px; }
+.script-decoration { font-family: 'Alex Brush', cursive; font-size: 3.5rem; color: var(--accent-vivid); display: block; margin-bottom: -15px; }
+.main-title { font-family: 'Montserrat', sans-serif; font-size: 3.2rem; text-transform: uppercase; font-weight: 900; letter-spacing: -1px; margin: 0; color: var(--text-main); }
+
+/* --- LE CAROUSEL HORIZONTAL ALIGNÉ (Finis les Polaroïds en vrac) --- */
+.voyages-list {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 30px;
+    padding: 35px 20px 30px 20px;
+    background-image: linear-gradient(to bottom, transparent 25px, #a89f91 25px, #a89f91 27px, transparent 27px);
+    overflow-x: auto !important;
+    scroll-behavior: smooth;
+    
+    /* MODIFICATION : Ajout de la barre de défilement pour Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-light) transparent;
+}
+
+/* MODIFICATION : Ajout de la barre de défilement pour Webkit (Chrome, Safari, Edge) */
+.voyages-list::-webkit-scrollbar { 
+    height: 8px; 
+}
+.voyages-list::-webkit-scrollbar-track { 
+    background: transparent; 
+}
+.voyages-list::-webkit-scrollbar-thumb { 
+    background: var(--border-light); 
+    border-radius: 10px; 
+}
+.voyages-list::-webkit-scrollbar-thumb:hover { 
+    background: var(--accent-vivid); 
+}
+
+.item {
+    flex: 0 0 240px !important; /* Force la taille pour l'alignement */
+    background: white; 
+    padding: 12px 12px 60px 12px; 
+    border-radius: 4px; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    display: flex; 
+    flex-direction: column; 
+    position: relative;
+    transform: rotate(0deg) !important; /* Force l'alignement droit */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover { transform: translateY(-10px) !important; box-shadow: 0 15px 30px rgba(0,0,0,0.1); z-index: 10; }
+
+.item .left { display: flex; flex-direction: column; width: 100%; gap: 15px; }
+
+.thumb {
+    width: 100%; height: 160px; 
+    background-color: #eee;
+    background-size: cover; background-position: center; border-radius: 2px;
+}
+
+.meta { display: flex; flex-direction: column; align-items: center; gap: 5px; margin-top: 10px; }
+
+.name { 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 16px; 
+    font-weight: 800; 
+    color: var(--text-main); 
+    line-height: 1.2; 
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.desc { font-family: 'Montserrat', sans-serif; font-size: 11px; text-transform: uppercase; color: var(--text-warm); letter-spacing: 1px; }
+
+.actions-right {
+    position: absolute; bottom: 25px; left: 0; width: 100%;
+    display: flex; justify-content: center; gap: 20px;
+}
+.icon-btn { background: transparent; border: none; cursor: pointer; padding: 5px; transition: transform 0.2s; }
+.icon-btn:hover { transform: scale(1.2); }
+.icon-btn svg { width: 22px; height: 22px; fill: none; stroke: var(--text-main); stroke-width: 2; }
+.delete-btn svg { stroke: var(--accent-vivid); } 
+
+/* LA PINCE À LINGE */
+.item::before {
+    content: '';
+    position: absolute;
+    top: -35px; /* Fait dépasser la pince au-dessus de la photo pour mordre le fil */
+    left: 50%;
+    width: 24px;  /* Ajuste selon la vraie largeur de ton image */
+    height: 45px; /* Ajuste selon la vraie hauteur de ton image */
+    
+    /* Ton image de pince ! */
+    background: url('/static/img/pince.jpeg') center/contain no-repeat;
+    
+    /* On nettoie tous les anciens effets du scotch */
+    box-shadow: none;
+    backdrop-filter: none;
+    border-radius: 0;
+    
+    transform: translateX(-50%) rotate(0deg) !important;
+    z-index: 20;
+}
+
+/* EMPTY STATE */
+.empty { text-align: center; margin-top: 60px; }
+.empty-icon { font-size: 70px; display: block; margin-bottom: 20px; }
+.empty p { font-family: 'Lora', serif; font-size: 22px; color: var(--text-warm); margin-bottom: 40px; }
+.explore-btn {
+    display: inline-block; background: var(--accent-vivid); color: white;
+    text-decoration: none; padding: 18px 40px; border-radius: 50px;
+    font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 800; text-transform: uppercase;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.explore-btn:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(255, 111, 97, 0.3); }
+
+/* ANIMATIONS */
+.fade-in { opacity: 0; transform: translateY(30px); animation: fadeInUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards; }
+.delay-1 { animation-delay: 0.2s; }
+@keyframes fadeInUp { 0% { opacity: 0; transform: translateY(30px); } 100% { opacity: 1; transform: translateY(0); } }
+
+/* DROPDOWNS DU MENU */
+.floating-panel { position: absolute; top: calc(100% + 15px); right: 0; width: 300px; max-height: 400px; overflow: auto; background: #FFF; border-radius: 12px; padding: 15px; display: none; box-shadow: 0 10px 40px rgba(0,0,0,0.15); border: 1px solid rgba(0,0,0,0.05); z-index: 2000;}
+.panel-item { display: flex; align-items: center; gap: 10px; padding: 10px; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.panel-item img { width: 40px; height: 40px; border-radius: 6px; object-fit: cover; }
+.panel-item .pi-name { font-weight: 600; font-size: 13px; font-family: 'Montserrat', sans-serif; color: var(--text-main);}
+.panel-item .pi-remove { margin-left: auto; background: transparent; color: #888; border: 1px solid var(--border-light); padding: 4px 8px; border-radius: 4px; font-size: 11px; cursor: pointer; transition: all 0.2s;}
+.panel-footer a { display: block; text-align: center; background: var(--accent-vivid); color: white; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: 700; font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 12px; margin-top: 10px; transition: background 0.3s;}
+.panel-footer a:hover { background: var(--text-main); }

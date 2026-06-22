@@ -1,0 +1,178 @@
+/* =========================================================
+ * PanierFavoris.css — Styles partagés du panier & favoris flottants
+ * ========================================================= */
+
+.icon-wrapper { position: relative; display: flex; align-items: center; }
+
+.action-btn {
+    background: transparent;
+    color: #1C1C1C;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+}
+.action-btn:hover { color: #FF0000; transform: scale(1.1); }
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #1C1C1C;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 10px;
+    pointer-events: none;
+}
+.badge.pink { background: #FF0000; }
+.badge[hidden] { display: none; }
+
+/* BOITE GLOBALE VERROUILLÉE */
+.floating-panel {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    width: 360px; 
+    height: 420px !important;
+    min-height: 420px !important;
+    
+    /* --- CORRECTION ICI : CACHÉ PAR DÉFAUT ! --- */
+    display: none; 
+    
+    flex-direction: column;
+    overflow: hidden !important; 
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 14px 14px 6px 14px; 
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0,0.05);
+    z-index: 2000;
+    font-family: 'Lora', serif;
+}
+
+/* LA ZONE QUI SCROLLE À L'INTÉRIEUR */
+.wb-scroll-area {
+    flex: 1;
+    overflow-y: scroll !important; 
+    overflow-x: hidden;
+    padding-right: 4px; 
+}
+
+/* DESIGN DE L'ASCENSEUR */
+.wb-scroll-area::-webkit-scrollbar {
+    width: 6px;
+}
+.wb-scroll-area::-webkit-scrollbar-track {
+    background: #F0EDE9; 
+    border-radius: 10px;
+}
+.wb-scroll-area::-webkit-scrollbar-thumb {
+    background: #D4C3B3;
+    border-radius: 10px;
+}
+
+.floating-panel .wb-title {
+    /* Style inline dans le JS */
+}
+
+.floating-panel .wb-empty {
+    color: #6b5f57;
+    font-style: italic;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 13px;
+}
+
+.floating-panel .wb-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    background: #FBF7F1;
+    border: 1px solid transparent;
+    transition: border-color .15s, background .15s;
+    cursor: grab;
+    flex-shrink: 0; 
+}
+.floating-panel .wb-item:hover {
+    background: #FFFFFF;
+    border-color: #FF6F61;
+}
+.floating-panel .wb-item img {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+    background: #ECE3DA;
+}
+
+.floating-panel .wb-name {
+    flex: 1;
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 16px !important;
+    font-weight: 700 !important; 
+    text-transform: none !important; 
+    line-height: 1.1;
+    color: #1C1C1C !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-right: 5px;
+}
+
+.wb-qty-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.wb-btn-minus, .wb-btn-plus {
+    background: transparent !important;
+    border: none !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+    color: #1C1C1C !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px !important;
+    transition: color 0.2s;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.wb-btn-minus:hover, .wb-btn-plus:hover {
+    color: #FF6F61 !important;
+}
+.wb-qty-val {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 14px;
+    text-align: center;
+    color: #1C1C1C;
+}
+
+.floating-panel .wb-remove {
+    background: transparent !important;
+    border: none !important;
+    color: #FF6F61 !important;
+    font-size: 16px !important;
+    cursor: pointer;
+    padding: 4px 6px !important;
+    border-radius: 4px;
+    flex-shrink: 0;
+    transition: background .15s;
+    box-shadow: none !important;
+}
+.floating-panel .wb-remove:hover { background: rgba(139,29,43,0.08) !important; }

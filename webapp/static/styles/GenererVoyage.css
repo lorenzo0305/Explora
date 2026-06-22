@@ -1,0 +1,184 @@
+:root {
+    --bg-color: #FAF8F5; 
+    --text-main: #1C1C1C; 
+    --text-warm: #4A403A; 
+    --accent-pastel: #FF6F61; /* Le Corail Pastel Validé */
+    --bordeaux-nav: #FF6F61; /* Corail strictement limité au menu */
+    --nav-bg: rgba(250, 248, 245, 0.90);
+    --border-light: #D4C3B3;
+}
+
+* { box-sizing: border-box; }
+
+/* 1. On annule les conflits de app.css et on bloque le fond */
+html, body {
+    margin: 0; padding-bottom: 0 !important;
+    height: 100vh !important;
+    overflow: hidden !important; 
+    background-color: var(--bg-color) !important;
+    color: var(--text-main); font-family: 'Lora', serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 2. On force le cadre global à faire la taille de l'écran */
+.app-frame {
+    display: flex; flex-direction: column;
+    height: 100vh !important; width: 100vw; 
+    position: relative; overflow: hidden;
+}
+
+/* 3. On laisse UNIQUEMENT le panneau contenant le formulaire scroller */
+.content-panel { 
+    flex: 1; 
+    overflow-y: auto !important; 
+    overflow-x: hidden;
+    padding: 40px 40px 20px 40px; position: relative; z-index: 1;
+}
+
+.bg-airplane-line {
+    position: absolute; top: 15%; left: 0; width: 100%; height: 60%;
+    z-index: 0; opacity: 0.6; pointer-events: none;
+}
+
+/* =========================================
+   NAVIGATION (Polices & Alignements)
+========================================= */
+.top-nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 50px; background: var(--nav-bg); backdrop-filter: blur(12px); 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04); z-index: 1000; position: relative;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; 
+}
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; letter-spacing: 4px; }
+.logo-fill { color: var(--text-main); }
+.logo-outline { color: transparent; -webkit-text-stroke: 1px var(--text-main); }
+
+.nav-links { display: flex; gap: 35px; }
+.nav-links a { 
+    text-decoration: none; color: #505050; font-weight: 500; font-size: 15px; transition: color 0.2s; 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; 
+}
+.nav-links a:hover, .nav-links a.active { color: var(--accent-pastel); font-weight: 600; }
+
+.nav-actions { display: flex; flex-direction: row; gap: 15px; align-items: center; }
+.icon-wrapper { position: relative; display: flex; align-items: center;}
+.action-btn { background: transparent; color: var(--text-main); border: none; padding: 8px; cursor: pointer; transition: transform 0.2s;}
+.action-btn:hover { color: var(--accent-pastel); transform: scale(1.1); }
+
+.badge { position: absolute; top: 0; right: 0; background: var(--text-main); color: #fff; font-size: 10px; padding: 3px 6px; border-radius: 10px; }
+.badge.pink { background: var(--bordeaux-nav); }
+.floating-panel { position: absolute; top: calc(100% + 15px); right: 0; width: 300px; max-height: 400px; overflow: auto; background: #FFF; border-radius: 12px; padding: 15px; display: none; box-shadow: 0 10px 40px rgba(0,0,0,0.15); border: 1px solid rgba(0,0,0,0.05); z-index: 2000;}
+
+/* =========================================
+   LAYOUT DU CORPS
+========================================= */
+.content-panel { flex: 1; overflow-y: auto; padding: 40px 40px 20px 40px; position: relative; z-index: 1;}
+.layout-split { display: flex; gap: 60px; max-width: 1200px; margin: 0 auto; align-items: flex-start; }
+.form-column { flex: 1; }
+.journal-header { margin-bottom: 20px; }
+
+.script-decoration { font-family: 'Alex Brush', cursive; font-size: 2.5rem; color: var(--accent-pastel); display: block; margin-bottom: -10px; opacity: 0.9; }
+
+.main-title { font-family: 'Montserrat', sans-serif; font-size: 2.2rem; text-transform: uppercase; font-weight: 900; letter-spacing: -1px; margin: 0 0 15px 0; }
+.intro-text { font-size: 15px; color: var(--text-warm); line-height: 1.6; max-width: 600px; }
+
+/* =========================================
+   FORMULAIRE ET SCOTCH DÉCHIRÉ
+========================================= */
+.taped-paper {
+    background: white; padding: 35px; border: 1px solid var(--border-light);
+    position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+.setup-grid, .divider-section, .preferences-grid, .action-zone { position: relative; z-index: 10; }
+
+/* Le Scotch : Transparent, papier kraft, bords déchirés */
+.taped-paper::before, .taped-paper::after {
+    content: ''; position: absolute; width: 100px; height: 28px;
+    background: rgba(222, 197, 161, 0.75); 
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.08);
+    clip-path: polygon(0% 5%, 4% 20%, 0% 40%, 5% 60%, 0% 80%, 3% 100%, 100% 95%, 96% 80%, 100% 60%, 95% 40%, 100% 20%, 97% 0%);
+    z-index: 5; 
+}
+.taped-paper::before { top: 2px; left: -15px; transform: rotate(-15deg); }
+.taped-paper::after { bottom: 2px; right: -15px; transform: rotate(-15deg); }
+
+.setup-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 20px; }
+.label-chic { display: block; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 8px; }
+.input-chic { width: 100%; padding: 10px 0; border: none; border-bottom: 1px solid var(--border-light); font-family: 'Lora', serif; font-size: 16px; background: transparent; margin-bottom: 20px; outline: none; color: var(--text-main); }
+
+/* --- Correction du texte "Cliquez sur la carte" --- */
+.ville-tag { 
+    font-family: 'Montserrat', sans-serif !important; 
+    font-size: 11px; 
+    color: var(--accent-pastel); 
+    margin-left: 10px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+/* --- Phrase à trous (Rayon de X km) ajustée --- */
+.inline-select-wrap {
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Espacement très réduit */
+}
+
+.inline-select {
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--text-main);
+    outline: none;
+    cursor: pointer;
+    padding: 0; /* Enlève l'espacement par défaut de la boîte de sélection */
+    margin: 0;
+    font-weight: inherit; /* Identique au texte autour, plus de gras ! */
+}
+
+.divider-section { text-align: center; margin: 30px 0; border-bottom: 1px solid var(--border-light); line-height: 0.1em; }
+.divider-title { background: white; padding: 0 20px; font-family: 'Lora', serif; font-size: 16px; font-style: italic; color: #888; }
+.preferences-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.pref-card label { display: flex; justify-content: space-between; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+.val-num { color: var(--text-main); font-size: 14px; font-weight: 900; }
+
+input[type=range] { -webkit-appearance: none; width: 100%; background: transparent; margin: 15px 0; }
+input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 2px; background: #EEE; }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; height: 16px; width: 16px; border-radius: 50%; background: var(--accent-pastel); margin-top: -7px; cursor: pointer; border: 2px solid white; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+
+.action-zone { text-align: center; margin-top: 40px; }
+.btn-explorer { background: var(--accent-pastel); color: white; border: none; padding: 16px 40px; font-family: 'Montserrat', sans-serif; font-weight: 800; text-transform: uppercase; font-size: 13px; letter-spacing: 2px; cursor: pointer; transition: all 0.3s; border-radius: 4px; }
+.btn-explorer:hover { background: var(--text-main); transform: translateY(-3px); }
+
+/* =========================================
+   APPAREIL PHOTO ET ANIMATION BOUCLE PARFAITE
+========================================= */
+.camera-column { width: 320px; position: sticky; top: 40px; display: flex; flex-direction: column; align-items: center; }
+.camera-wrapper { position: relative; width: 320px; margin-top: 150px; }
+.real-camera-img { width: 100%; height: auto; position: relative; z-index: 10; pointer-events: none; }
+
+.vp-front {
+    position: absolute; left: 7.6%; top: 20.0%; width: 54.4%; height: 67.5%; 
+    z-index: 15; overflow: hidden; 
+}
+.vp-back {
+    position: absolute; left: 7.6%; width: 54.4%; bottom: 61.0%; height: 600px; 
+    z-index: 5; overflow: hidden; 
+}
+.vp-front .film-strip {
+    position: absolute; top: 0; left: 0; width: 100%;
+    display: flex; flex-direction: column; animation: scrollFilmUp 25s linear infinite; 
+}
+.vp-back .film-strip {
+    position: absolute; top: calc(100% - 655px); left: 0; width: 100%;
+    display: flex; flex-direction: column; animation: scrollFilmUp 25s linear infinite; 
+}
+.film-strip img {
+    width: 100%; height: 125px; object-fit: cover; border-bottom: 6px solid #111; display: block;
+}
+
+@keyframes scrollFilmUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-655px); } 
+}

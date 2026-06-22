@@ -1,0 +1,255 @@
+{
+  "@id": "https://data.datatourisme.fr/13/10052e39-f786-313f-9406-3932184d4cf9",
+  "dc:identifier": "6450620",
+  "@type": [
+    "schema:FoodEstablishment",
+    "schema:Winery",
+    "BistroOrWineBar",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "SportsAndLeisurePlace"
+  ],
+  "rdfs:label": {
+    "en": [
+      "The Gatekeeper"
+    ],
+    "fr": [
+      "The Gatekeeper"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/013d4071-66ec-3fa5-aeb1-e1f8cbe183b9",
+    "dc:identifier": "138",
+    "schema:email": [
+      "chloe.legrand@efap.com",
+      "florien@courchevel.com",
+      "julien@courchevel.com"
+    ],
+    "schema:legalName": "Courchevel Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.ski.worldcupcourchevel.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/3447f2a8-a2dd-3819-b0ed-2d445157c134",
+      "schema:email": [
+        "thegatekeeper@vonston.com"
+      ],
+      "schema:telephone": [
+        "+33 6 72 82 09 64"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/bb8e6ffa-3caa-3a24-9ebe-6cfa84bdc0f7",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/83d80be6-0ec4-386a-8277-05557b79b2bc",
+          "schema:addressLocality": "Courchevel",
+          "schema:postalCode": "73120",
+          "schema:streetAddress": [
+            "18 rue Park City",
+            "Courchevel 1850"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:73227",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Courchevel"
+              ],
+              "pt": [
+                "Courchevel"
+              ],
+              "en": [
+                "Courchevel"
+              ],
+              "it": [
+                "Courchevel"
+              ],
+              "fr": [
+                "Courchevel"
+              ],
+              "nl": [
+                "Courchevel"
+              ],
+              "es": [
+                "Courchevel"
+              ]
+            },
+            "insee": "73227",
+            "isPartOfDepartment": {
+              "@id": "kb:France8473",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Savoie"
+                ],
+                "pt": [
+                  "Savoie"
+                ],
+                "en": [
+                  "Savoie"
+                ],
+                "it": [
+                  "Savoie"
+                ],
+                "fr": [
+                  "Savoie"
+                ],
+                "nl": [
+                  "Savoie"
+                ],
+                "es": [
+                  "Savoie"
+                ]
+              },
+              "insee": "73",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/29817582-2b6d-3a8c-9085-7ccc6ab82cbd",
+        "schema:elevation": "1850",
+        "schema:latitude": "45.415027",
+        "schema:longitude": "6.632144",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/db25c089-d598-37d7-b061-814d490e869b",
+          "schema:validFrom": "2026-11-20T00:00:00",
+          "schema:validThrough": "2026-04-19T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/e4b342e3-7bbd-39cf-b18d-3a1a4e75d20f",
+      "schema:email": [
+        "florien@courchevel.com",
+        "julien@courchevel.com"
+      ],
+      "schema:legalName": "Courchevel Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.ski.worldcupcourchevel.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2026-02-16",
+  "lastUpdateDatatourisme": "2026-03-03T08:53:46.769Z"
+}

@@ -1,0 +1,396 @@
+{
+  "@id": "https://data.datatourisme.fr/13/b2ab9929-e772-345e-ac5c-3406dda51f75",
+  "dc:identifier": "113571",
+  "@type": [
+    "schema:FoodEstablishment",
+    "FoodEstablishment",
+    "PlaceOfInterest",
+    "PointOfInterest"
+  ],
+  "rdfs:label": {
+    "en": [
+      "Mc Donald's"
+    ],
+    "fr": [
+      "Mc Donald's Béligny"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/c20ad4d7-6fe9-3759-aa27-a0c99bff6710",
+    "dc:identifier": "12",
+    "schema:email": [
+      "f.champavere@beaujolais-tourisme.com",
+      "t.blanchier@beaujolais-tourisme.com",
+      "v.guerin@beaujolais-tourisme.com"
+    ],
+    "schema:legalName": "Beaujolais Tourisme",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "https://www.beaujolais-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8a9feb4b-2cbd-3d2c-b507-bd6c6776b23b",
+      "schema:legalName": "Apidae Tourisme Scic SA - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/94d32059-915a-3fea-ad8d-e173c21cc4f5",
+      "schema:telephone": [
+        "+33 4 74 68 17 70"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.restaurants.mcdonalds.fr/mcdonalds-villefranche-sur-saone-(ferry)"
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:NorthAmericanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Nordamerikanische Küche"
+        ],
+        "pt": [
+          "Cozinha norte-americana"
+        ],
+        "en": [
+          "North american cuisine"
+        ],
+        "it": [
+          "Cucina nordamericana"
+        ],
+        "fr": [
+          "Cuisine nord-américaine"
+        ],
+        "nl": [
+          "Noord-Amerikaanse keuken"
+        ],
+        "es": [
+          "Cocina norteamericana"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/7efb005a-283e-3ae0-b9dc-3fef6c1e8858",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/96af4eed-29cd-3aeb-be36-853e7e11508c",
+          "schema:addressLocality": "Villefranche-sur-Saône",
+          "schema:postalCode": "69400",
+          "schema:streetAddress": [
+            "477 rue Jules Ferry"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:69264",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Villefranche-sur-Saône"
+              ],
+              "pt": [
+                "Villefranche-sur-Saône"
+              ],
+              "en": [
+                "Villefranche-sur-Saône"
+              ],
+              "it": [
+                "Villefranche-sur-Saône"
+              ],
+              "fr": [
+                "Villefranche-sur-Saône"
+              ],
+              "nl": [
+                "Villefranche-sur-Saône"
+              ],
+              "es": [
+                "Villefranche-sur-Saône"
+              ]
+            },
+            "insee": "69264",
+            "isPartOfDepartment": {
+              "@id": "kb:France8469",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Rhône"
+                ],
+                "pt": [
+                  "Rhône"
+                ],
+                "en": [
+                  "Rhône"
+                ],
+                "it": [
+                  "Rhône"
+                ],
+                "fr": [
+                  "Rhône"
+                ],
+                "nl": [
+                  "Rhône"
+                ],
+                "es": [
+                  "Rhône"
+                ]
+              },
+              "insee": "69",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/8fd8daed-3098-33d0-8351-120444156432",
+        "schema:elevation": "174",
+        "schema:latitude": "45.97925",
+        "schema:longitude": "4.735365",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/afca8a19-d25d-3ecf-a6dd-2b1da0699da1",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "von 10 Uhr bis 23 Uhr"
+            ],
+            "en": [
+              "from 10 am to 11 pm"
+            ],
+            "it": [
+              "dalle 10.00 alle 23.00"
+            ],
+            "fr": [
+              "de 10h à 23h"
+            ],
+            "nl": [
+              "van 10 tot 23 uur"
+            ],
+            "es": [
+              "de 10 a 23 horas"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/2a364e19-35d4-3521-8363-9dcfdeea4fb8",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/49abf153-f174-3648-bdc9-c882e36e8a32",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/9074f0ce-3482-3154-8907-a8582c6745bf",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/f04349ce-b833-3a72-96ed-1fc874f563d9",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/fb6a73ac-040c-31b1-96dc-b83441717fda",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/8687b10f-a743-3616-95e8-ea841adb5c78",
+      "schema:email": [
+        "f.champavere@beaujolais-tourisme.com",
+        "t.blanchier@beaujolais-tourisme.com",
+        "v.guerin@beaujolais-tourisme.com"
+      ],
+      "schema:legalName": "Beaujolais Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.beaujolais-tourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2021-01-12",
+  "lastUpdateDatatourisme": "2026-02-12T10:08:37.791Z",
+  "providesCuisineOfType": [
+    {
+      "@id": "kb:NorthAmericanCuisine",
+      "@type": [
+        "CuisineCategory"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Nordamerikanische Küche"
+        ],
+        "pt": [
+          "Cozinha norte-americana"
+        ],
+        "en": [
+          "North american cuisine"
+        ],
+        "it": [
+          "Cucina nordamericana"
+        ],
+        "fr": [
+          "Cuisine nord-américaine"
+        ],
+        "nl": [
+          "Noord-Amerikaanse keuken"
+        ],
+        "es": [
+          "Cocina norteamericana"
+        ]
+      }
+    }
+  ]
+}

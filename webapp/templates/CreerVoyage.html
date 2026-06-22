@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explora — Créer mon voyage</title>
+
+  <link rel="stylesheet" href="/static/styles/app.css">
+  <link rel="stylesheet" href="/static/styles/CreerVoyage.css?v=18.0">
+  <link rel="stylesheet" href="/static/styles/PanierFavoris.css?v=1">
+  <script src="/static/scripts/DictionnaireImages.js?v=2" defer></script>
+  <script src="/static/scripts/PanierFavoris.js?v=1" defer></script>
+  <script src="/static/scripts/CreerVoyage.js?v=7" defer></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@500;700;900&family=Alex+Brush&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="app-frame">
+      
+      <nav class="top-nav">
+          <div class="nav-logo"><span class="logo-fill">EXP</span><span class="logo-outline">LORA</span></div>
+          
+          <div class="nav-links">
+            <a href="/">Accueil</a>
+            <a href="/generervoyage">Générer mon voyage</a>
+            <a href="/catalogue">Catalogue d'activités</a>
+            <a href="/mesvoyages">Mes voyages</a>
+            <a href="/creervoyage" class="active">Créer mon voyage</a>
+          </div>
+
+          <div class="nav-actions">
+            <div class="icon-wrapper">
+              <button id="likesIcon" class="action-btn" type="button" title="Mes Favoris">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                <span id="likesCount" class="badge pink" hidden>0</span>
+              </button>
+              <div id="floatingLikes" class="floating-panel"></div>
+            </div>
+            <div class="icon-wrapper">
+              <button id="basketIcon" class="action-btn" type="button" title="Panier">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
+                <span id="basketCount" class="badge" hidden>0</span>
+              </button>
+              <div id="floatingBasket" class="floating-panel"></div>
+            </div>
+          </div>
+      </nav>
+
+      <div class="editor-layout">
+          
+          <aside class="sidebar-photos" id="sidebarBasket">
+              <div class="photo-stack-header">
+                  <span class="script-decoration-small">Mes activités</span>
+                  <h3>PANIER</h3>
+              </div>
+              <div class="polaroid-list" id="basket-items-list">
+                  <p style="text-align: center; color: #888; font-style: italic; font-size: 13px;">Chargement...</p>
+              </div>
+          </aside>
+
+          <main class="magazine-workspace">
+              
+              <div class="workspace-header-massive">
+                  <div class="title-row">
+                      <span class="script-decoration">Mon voyage</span>
+                      <input type="text" id="tripTitle" class="trip-title-input" placeholder="Nommez votre voyage..." />
+                  </div>
+                  
+                  <!-- NOUVEAU TEXTE D'INSTRUCTIONS -->
+                  <p style="font-family: 'Lora', serif; font-size: 15px; color: var(--text-warm, #4A403A); margin: 0 0 25px 0; max-width: 850px; line-height: 1.5;">
+                      Retrouvez ici les activités de votre panier. Saisissez le nombre de jours souhaités, ouvrez le carnet, et glissez-déposez vos activités pour composer votre programme à votre convenance. Vous pouvez à tout moment ajuster la durée avec le bouton <b>"Ajouter une page"</b>. Une fois terminé, sauvegardez votre carnet pour le retrouver dans la page <b>Mes voyages</b> !
+                  </p>
+                  
+                  <div class="controls-row">
+                      <div class="days-generator">
+                          <label>Durée :</label>
+                          <input type="number" id="numDaysInput" value="1" min="1" max="15">
+                          <span class="days-suffix">jours</span>
+                          <button id="generateDaysBtn" class="btn-generate" title="Valider">✔</button>
+                      </div>
+                      <button id="addDayBtn" class="btn-add-page" title="Insérer une journée manuellement">+ Ajouter une page</button>
+                      <a href="/mesvoyages" class="btn-quit">Quitter sans sauvegarder</a>
+                      <button id="saveJourneyBtn" class="btn-save-mag">Sauvegarder</button>
+                  </div>
+              </div>
+
+              <div class="book-wrapper">
+                  <div class="book-container">
+                      
+                      <!-- COUVERTURE AVANT (DROITE) -->
+                      <div class="book-cover book-cover-bg" id="bookCover">
+                          <h1 id="coverTitleDisplay">Mon Voyage</h1>
+                          <div class="chevron cover-chevron" onclick="turnPage(1)" title="Ouvrir le carnet">❯</div>
+                      </div>
+
+                      <!-- DOS DU LIVRE / DERNIÈRE DE COUVERTURE (GAUCHE) -->
+                      <div class="book-cover book-cover-bg" id="bookBackCover" style="display:none;">
+                          <!-- Aucun texte ici pour la couverture arrière ! -->
+                          <div class="chevron cover-chevron" onclick="turnPage(-1)" title="Rouvrir le carnet" style="left: 20px; right: auto;">❮</div>
+                      </div>
+
+                      <div class="book-spreads-container" id="bookSpreadsContainer" style="display:none;">
+                          <!-- Pages injectées ici -->
+                      </div>
+                      
+                  </div>
+              </div>
+
+          </main>
+      </div>
+  </div>
+
+</body>
+</html>

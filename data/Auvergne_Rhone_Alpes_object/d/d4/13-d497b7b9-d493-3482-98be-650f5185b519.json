@@ -1,0 +1,777 @@
+{
+  "@id": "https://data.datatourisme.fr/13/d497b7b9-d493-3482-98be-650f5185b519",
+  "dc:identifier": "651317",
+  "@type": [
+    "schema:LocalBusiness",
+    "PlaceOfInterest",
+    "PointOfInterest",
+    "Store"
+  ],
+  "rdfs:label": {
+    "fr": [
+      "Médiathèque Départementale Diois-Vercors"
+    ]
+  },
+  "hasBeenCreatedBy": {
+    "@id": "https://data.datatourisme.fr/13/d09bf415-44a3-365a-86c9-077ebb5e35c3",
+    "dc:identifier": "75",
+    "schema:email": [
+      "caroline.ligouy@diois-tourisme.com",
+      "contact@diois-tourisme.com",
+      "joris.prat@diois-tourisme.com",
+      "sylvie.chagnard@diois-tourisme.com"
+    ],
+    "schema:legalName": "Office de Tourisme du Pays Diois",
+    "@type": [
+      "schema:Organization",
+      "foaf:Agent",
+      "Agent"
+    ],
+    "foaf:homepage": [
+      "http://www.diois-tourisme.com/"
+    ]
+  },
+  "hasBeenPublishedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/d48f2ccd-2357-3a8e-b949-cb8bf19a361f",
+      "schema:legalName": "Agence d'Attractivité de la Drôme - source : Apidae Tourisme",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "https://www.apidae-tourisme.com/"
+      ]
+    }
+  ],
+  "hasContact": [
+    {
+      "@id": "https://data.datatourisme.fr/c362e13f-66f2-326c-a2d0-11b33c7d9421",
+      "schema:email": [
+        "mddv-die@ladrome.fr"
+      ],
+      "schema:telephone": [
+        "+33 4 75 22 22 32"
+      ],
+      "@type": [
+        "foaf:Agent",
+        "Agent"
+      ]
+    }
+  ],
+  "hasExternalReference": [
+    {
+      "@id": "https://data.datatourisme.fr/a930f6ad-48f7-9783-f263-88923b481908",
+      "@type": [
+        "ExternalReference"
+      ],
+      "hasExternalIdentifier": "c7817d16-aa59-46fe-b27f-efa6e28bc92a",
+      "hasExternalPlatform": [
+        {
+          "@id": "kb:AcceslibrePlatform",
+          "@type": [
+            "ExternalPlatform"
+          ],
+          "rdfs:comment": {
+            "de": [
+              "Teilen Sie wichtige Reiseinformationen für Menschen mit Behinderungen."
+            ],
+            "pt": [
+              "Compartilhe informações essenciais sobre viagens para pessoas com deficiência."
+            ],
+            "en": [
+              "Share essential travel information for people with disabilities."
+            ],
+            "it": [
+              "Condividi informazioni di viaggio essenziali per le persone con disabilità."
+            ],
+            "fr": [
+              "Partagez les informations indispensables aux déplacements des personnes en situation de handicap."
+            ],
+            "nl": [
+              "Deel essentiële reisinformatie voor mensen met een handicap."
+            ],
+            "es": [
+              "Comparta información de viaje esencial para personas con discapacidades."
+            ]
+          },
+          "rdfs:label": {
+            "de": [
+              "Acceslibre-Plattform"
+            ],
+            "pt": [
+              "Plataforma Acceslibre"
+            ],
+            "en": [
+              "Acceslibre platform"
+            ],
+            "it": [
+              "Piattaforma Acceslibre"
+            ],
+            "fr": [
+              "Plateforme Acceslibre"
+            ],
+            "es": [
+              "Plataforma Acceslibre"
+            ],
+            "nl": [
+              "Acceslibre-platform"
+            ]
+          },
+          "hasExternalPlatformUrl": "https://acceslibre.beta.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "hasTheme": [
+    {
+      "@id": "kb:BindingAndFrames",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Buchbinden und Einrahmen"
+        ],
+        "pt": [
+          "Encadernação e molduras"
+        ],
+        "en": [
+          "Binding and frames"
+        ],
+        "it": [
+          "Rilegatura e incorniciatura"
+        ],
+        "fr": [
+          "Reliure et encadrement"
+        ],
+        "nl": [
+          "Inbinden en inlijsten"
+        ],
+        "es": [
+          "Encuadernación y enmarcado"
+        ]
+      }
+    },
+    {
+      "@id": "kb:BoardGames",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Gesellschaftsspiele"
+        ],
+        "pt": [
+          "Jogo de sociedade"
+        ],
+        "en": [
+          "Board games"
+        ],
+        "it": [
+          "Gioco di società"
+        ],
+        "fr": [
+          "Jeux de société"
+        ],
+        "es": [
+          "Juegos de mesa"
+        ],
+        "nl": [
+          "Gezelschapsspelen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Calligraphy",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kalligraphie"
+        ],
+        "pt": [
+          "Caligrafia"
+        ],
+        "en": [
+          "Calligraphy"
+        ],
+        "it": [
+          "Calligrafia"
+        ],
+        "fr": [
+          "Calligraphie"
+        ],
+        "nl": [
+          "Kalligrafie"
+        ],
+        "es": [
+          "Caligrafía"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Cinema",
+      "@type": [
+        "AccommodationAmenity",
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kino"
+        ],
+        "pt": [
+          "Cinema"
+        ],
+        "en": [
+          "Cinema"
+        ],
+        "it": [
+          "Cinema"
+        ],
+        "fr": [
+          "Cinéma"
+        ],
+        "es": [
+          "Cine"
+        ],
+        "nl": [
+          "Bioscoop"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Computing",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Informatik/Informationstechnik"
+        ],
+        "pt": [
+          "Informática"
+        ],
+        "en": [
+          "Computing"
+        ],
+        "it": [
+          "Informatica"
+        ],
+        "fr": [
+          "Informatique"
+        ],
+        "nl": [
+          "Informatica"
+        ],
+        "es": [
+          "Informática"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Cosmetics",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kosmetik"
+        ],
+        "pt": [
+          "Cosmética"
+        ],
+        "en": [
+          "Cosmetics"
+        ],
+        "it": [
+          "Prodotti cosmetici"
+        ],
+        "fr": [
+          "Cosmétique"
+        ],
+        "nl": [
+          "Cosmetica"
+        ],
+        "es": [
+          "Cosmético"
+        ]
+      }
+    },
+    {
+      "@id": "kb:CreativeArts",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Kreative Künste"
+        ],
+        "pt": [
+          "Artes criativas"
+        ],
+        "en": [
+          "Creative arts"
+        ],
+        "it": [
+          "Arti creative"
+        ],
+        "fr": [
+          "Arts créatifs"
+        ],
+        "nl": [
+          "Scheppende kunsten"
+        ],
+        "es": [
+          "Artes creativas"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Dance",
+      "@type": [
+        "CulturalTheme",
+        "SportsTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Tanz"
+        ],
+        "pt": [
+          "Dança"
+        ],
+        "en": [
+          "Dance"
+        ],
+        "it": [
+          "Danza"
+        ],
+        "fr": [
+          "Danse"
+        ],
+        "es": [
+          "Danza"
+        ],
+        "nl": [
+          "Dansen"
+        ]
+      }
+    },
+    {
+      "@id": "kb:History",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Geschichte"
+        ],
+        "pt": [
+          "História"
+        ],
+        "en": [
+          "History"
+        ],
+        "it": [
+          "Storia"
+        ],
+        "fr": [
+          "Histoire"
+        ],
+        "es": [
+          "Historia"
+        ],
+        "nl": [
+          "Geschiedenis"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Literature",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Literatur"
+        ],
+        "pt": [
+          "Literatura"
+        ],
+        "en": [
+          "Literature"
+        ],
+        "it": [
+          "Letteratura"
+        ],
+        "fr": [
+          "Littérature"
+        ],
+        "nl": [
+          "Literatuur"
+        ],
+        "es": [
+          "Literatura"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Photography",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Foto"
+        ],
+        "pt": [
+          "Fotografia"
+        ],
+        "en": [
+          "Photography"
+        ],
+        "it": [
+          "Fotografia"
+        ],
+        "fr": [
+          "Photographie"
+        ],
+        "nl": [
+          "Fotografie"
+        ],
+        "es": [
+          "Fotografía"
+        ]
+      }
+    },
+    {
+      "@id": "kb:Theatre",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Theater"
+        ],
+        "pt": [
+          "Teatro"
+        ],
+        "en": [
+          "Theatre"
+        ],
+        "it": [
+          "Teatro"
+        ],
+        "fr": [
+          "Théâtre"
+        ],
+        "nl": [
+          "Theater"
+        ],
+        "es": [
+          "Teatro"
+        ]
+      }
+    },
+    {
+      "@id": "kb:VisualArts",
+      "@type": [
+        "CulturalTheme"
+      ],
+      "rdfs:label": {
+        "de": [
+          "Plastische Kunst"
+        ],
+        "pt": [
+          "Artes plásticas"
+        ],
+        "en": [
+          "Visual arts"
+        ],
+        "it": [
+          "Arte plastica"
+        ],
+        "fr": [
+          "Art plastique"
+        ],
+        "nl": [
+          "Beeldende kunst"
+        ],
+        "es": [
+          "Artes plásticas"
+        ]
+      }
+    }
+  ],
+  "isLocatedAt": [
+    {
+      "@id": "https://data.datatourisme.fr/6985e78d-439c-3de3-be40-cf52311d5771",
+      "schema:address": [
+        {
+          "@id": "https://data.datatourisme.fr/15b1274d-edc0-30ef-9b17-0b28b72e5d4b",
+          "schema:addressLocality": "Die",
+          "schema:postalCode": "26150",
+          "schema:streetAddress": [
+            "20 avenue Division du Texas"
+          ],
+          "@type": [
+            "schema:PostalAddress",
+            "PostalAddress"
+          ],
+          "hasAddressCity": {
+            "@id": "kb:26113",
+            "@type": [
+              "City"
+            ],
+            "rdfs:label": {
+              "de": [
+                "Die"
+              ],
+              "pt": [
+                "Die"
+              ],
+              "en": [
+                "Die"
+              ],
+              "it": [
+                "Die"
+              ],
+              "fr": [
+                "Die"
+              ],
+              "nl": [
+                "Die"
+              ],
+              "es": [
+                "Die"
+              ]
+            },
+            "insee": "26113",
+            "isPartOfDepartment": {
+              "@id": "kb:France8426",
+              "@type": [
+                "Department"
+              ],
+              "rdfs:label": {
+                "de": [
+                  "Drôme"
+                ],
+                "pt": [
+                  "Drôme"
+                ],
+                "en": [
+                  "Drôme"
+                ],
+                "it": [
+                  "Drôme"
+                ],
+                "fr": [
+                  "Drôme"
+                ],
+                "nl": [
+                  "Drôme"
+                ],
+                "es": [
+                  "Drôme"
+                ]
+              },
+              "insee": "26",
+              "isPartOfRegion": {
+                "@id": "kb:France84",
+                "@type": [
+                  "Region"
+                ],
+                "rdfs:label": {
+                  "de": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "pt": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "en": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "it": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "fr": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "nl": [
+                    "Auvergne-Rhône-Alpes"
+                  ],
+                  "es": [
+                    "Auvergne-Rhône-Alpes"
+                  ]
+                },
+                "insee": "84",
+                "isPartOfCountry": {
+                  "@id": "kb:France",
+                  "@type": [
+                    "schema:Country"
+                  ],
+                  "rdfs:label": {
+                    "de": [
+                      "France",
+                      "Frankreich"
+                    ],
+                    "pt": [
+                      "França",
+                      "France"
+                    ],
+                    "en": [
+                      "France"
+                    ],
+                    "it": [
+                      "France",
+                      "Francia"
+                    ],
+                    "fr": [
+                      "France"
+                    ],
+                    "nl": [
+                      "France",
+                      "Frankrijk"
+                    ],
+                    "es": [
+                      "France",
+                      "Francia"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "schema:geo": {
+        "@id": "https://data.datatourisme.fr/a12baaca-eb3c-323c-8a20-d9f8f4fcee29",
+        "schema:latitude": "44.751677",
+        "schema:longitude": "5.375297",
+        "@type": [
+          "schema:GeoCoordinates"
+        ]
+      },
+      "schema:openingHoursSpecification": [
+        {
+          "@id": "https://data.datatourisme.fr/5a45149e-de69-3af1-a172-3b1097dc735c",
+          "schema:validFrom": "2026-01-01T00:00:00",
+          "schema:validThrough": "2026-12-31T23:59:59",
+          "@type": [
+            "schema:OpeningHoursSpecification"
+          ],
+          "additionalInformation": {
+            "de": [
+              "Dienstag: 13-19 Uhr\r\nMittwoch: 10-13 Uhr und 14-18 Uhr\r\nFreitag: 13-18 Uhr\r\nSamstag: 10-13 Uhr und 14-18 Uhr\r\nVom 6. Juli bis zum 28. August :\r\nDienstag bis Samstag: 9:00-13:00 Uhr / 16:00-19:00 Uhr"
+            ],
+            "en": [
+              "Tuesday: 1pm-7pm\r\nWednesday: 10am-1pm and 2-6pm\r\nFriday: 1-6pm\r\nSaturday: 10am-1pm and 2-6pm\r\nFrom July 6th to August 28th :\r\nTuesday to Saturday: 9am-1pm / 4pm-7pm"
+            ],
+            "it": [
+              "Martedì: 13-19\r\nMercoledì: 10-13 e 14-18\r\nVenerdì: 13-18\r\nSabato: 10.00-13.00 e 14.00-18.00\r\nDal 6 luglio al 28 agosto :\r\nDa martedì a sabato: 9.00-13.00 / 16.00-19.00"
+            ],
+            "fr": [
+              "Mardi: 13h-19h\r\nMercredi: 10-13h et 14-18h\r\nVendredi: 13-18h\r\nSamedi: 10-13h et 14-18h\r\nDu 6 juillet au 28 août :\r\nDu Mardi au Samedi : 9h-13h / 16h-19h"
+            ],
+            "es": [
+              "Martes: 1-7pm\r\nMiércoles: 10-13h y 14-18h\r\nViernes: 1-6pm\r\nSábado: de 10 a 13 horas y de 14 a 18 horas\r\nDel 6 de julio al 28 de agosto:\r\nDe martes a sábado: de 9:00 a 13:00 / de 16:00 a 19:00"
+            ],
+            "nl": [
+              "Dinsdag: 13.00-19.00 uur\r\nWoensdag: 10-13u en 14-18u\r\nVrijdag: 13-18 uur\r\nZaterdag: 10u tot 13u en 14u tot 18u\r\nVan 6 juli tot 28 augustus:\r\nDinsdag tot zaterdag: 9u-1u / 16u-19u"
+            ]
+          },
+          "hasTranslatedProperty": [
+            {
+              "@id": "https://data.datatourisme.fr/44fb4cdc-6811-3be9-b22f-28b0f16950c2",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "nl"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/8da537aa-164e-35eb-a83a-a7615da939e4",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "es"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/acc4d972-2049-3f37-9555-1b2a87f2aaf0",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "it"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/c9cce4d9-98ee-3c79-940c-64088572cbab",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "en"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            },
+            {
+              "@id": "https://data.datatourisme.fr/dda68962-e9fc-3cf6-900e-caeec65c2521",
+              "dc:contributor": [
+                "https://api.deepl.com/v2/translate"
+              ],
+              "rdf:language": [
+                "de"
+              ],
+              "rdf:predicate": [
+                "additionalInformation"
+              ]
+            }
+          ]
+        }
+      ],
+      "@type": [
+        "schema:Place",
+        "Place"
+      ]
+    }
+  ],
+  "isOwnedBy": [
+    {
+      "@id": "https://data.datatourisme.fr/adee4829-4026-3310-9212-fc502d3b6cb4",
+      "schema:email": [
+        "caroline.ligouy@diois-tourisme.com",
+        "contact@diois-tourisme.com",
+        "joris.prat@diois-tourisme.com",
+        "sylvie.chagnard@diois-tourisme.com"
+      ],
+      "schema:legalName": "Office de Tourisme du Pays Diois",
+      "@type": [
+        "schema:Organization",
+        "foaf:Agent",
+        "Agent"
+      ],
+      "foaf:homepage": [
+        "http://www.diois-tourisme.com/"
+      ]
+    }
+  ],
+  "lastUpdate": "2026-02-17",
+  "lastUpdateDatatourisme": "2026-02-18T06:54:11.625Z"
+}

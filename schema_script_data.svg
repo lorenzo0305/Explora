@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 900" font-family="'Comic Sans MS','Segoe Print','Bradley Hand',cursive">
+  <defs>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" scale="2"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222"/>
+    </marker>
+  </defs>
+
+  <!-- cadre -->
+  <rect x="10" y="10" width="760" height="880" fill="#fffdf5" stroke="#222" stroke-width="2" rx="6" ry="6" filter="url(#rough)"/>
+
+  <!-- Titre -->
+  <text x="390" y="45" text-anchor="middle" font-size="20" fill="#222" font-weight="bold">Fonctionnement du script Data — étape par étape</text>
+  <text x="390" y="68" text-anchor="middle" font-size="13" fill="#555" font-style="italic">(ce qui se passe entre le fichier JSON brut et MongoDB Atlas)</text>
+
+  <!-- ÉTAPE 1 : Lecture fichier JSON -->
+  <g filter="url(#rough)">
+    <circle cx="90" cy="120" r="22" fill="#fde8f0" stroke="#222" stroke-width="2"/>
+    <rect x="140" y="95" width="540" height="55" fill="#fff5e1" stroke="#222" stroke-width="2" rx="4" ry="4"/>
+  </g>
+  <text x="90" y="127" text-anchor="middle" font-size="18" fill="#222" font-weight="bold">1</text>
+  <text x="160" y="120" font-size="15" fill="#222" font-weight="bold">Lecture du fichier JSON brut</text>
+  <text x="160" y="140" font-size="12" fill="#333">open(fichier_region.json) → on charge tout le flux DATAtourisme en mémoire</text>
+
+  <!-- flèche -->
+  <path d="M390 150 L 390 185" fill="none" stroke="#222" stroke-width="2" marker-end="url(#arrow)" filter="url(#rough)"/>
+
+  <!-- ÉTAPE 2 : Récupération des objets activités -->
+  <g filter="url(#rough)">
+    <circle cx="90" cy="215" r="22" fill="#fde8f0" stroke="#222" stroke-width="2"/>
+    <rect x="140" y="185" width="540" height="65" fill="#fff5e1" stroke="#222" stroke-width="2" rx="4" ry="4"/>
+  </g>
+  <text x="90" y="222" text-anchor="middle" font-size="18" fill="#222" font-weight="bold">2</text>
+  <text x="160" y="210" font-size="15" fill="#222" font-weight="bold">Récupération des objets « activité »</text>
+  <text x="160" y="230" font-size="12" fill="#333">on parcourt la liste @graph : chaque élément = 1 fiche activité</text>
+  <text x="160" y="246" font-size="12" fill="#333">(on ignore les métadonnées techniques du flux)</text>
+
+  <path d="M390 250 L 390 285" fill="none" stroke="#222" stroke-width="2" marker-end="url(#arrow)" filter="url(#rough)"/>
+
+  <!-- ÉTAPE 3 : Filtrage par @type -->
+  <g filter="url(#rough)">
+    <circle cx="90" cy="315" r="22" fill="#fde8f0" stroke="#222" stroke-width="2"/>
+    <rect x="140" y="285" width="540" height="70" fill="#e6f2ff" stroke="#222" stroke-width="2" rx="4" ry="4"/>
+  </g>
+  <text x="90" y="322" text-anchor="middle" font-size="18" fill="#222" font-weight="bold">3</text>
+  <text x="160" y="310" font-size="15" fill="#222" font-weight="bold">Filtrage : on lit les balises @type</text>
+  <text x="160" y="330" font-size="12" fill="#333">on récupère la liste des @type de chaque activité</text>
+  <text x="160" y="346" font-size="12" fill="#333">ex. ['PlaceOfInterest', 'CyclingTour', 'NaturalHeritage']</text>
+
+  <path d="M390 355 L 390 390" fill="none" stroke="#222" stroke-width="2" marker-end="url(#arrow)" filter="url(#rough)"/>
+
+  <!-- ÉTAPE 4 : Mapping vers 6 catégories -->
+  <g filter="url(#rough)">
+    <circle cx="90" cy="420" r="22" fill="#fde8f0" stroke="#222" stroke-width="2"/>
+    <rect x="140" y="390" width="540" height="75" fill="#eaf7e6" stroke="#222" stroke-width="2" rx="4" ry="4"/>
+  </g>
+  <text x="90" y="427" text-anchor="middle" font-size="18" fill="#222" font-weight="bold">4</text>
+  <text x="160" y="415" font-size="15" fill="#222" font-weight="bold">Mapping @type → 6 catégories (multi-classe)</text>
+  <text x="160" y="435" font-size="12" fill="#333">on consulte la table de correspondance (~300 types → Nature, Culture,</text>
+  <text x="160" y="451" font-size="12" fill="#333">Gastronomie, Sport, Détente, Boutique). Une activité peut avoir 1 ou N catégories.</text>
+
+  <path d="M390 465 L 390 500" fill="none" stroke="#222" stroke-width="2" marker-end="url(#arrow)" filter="url(#rough)"/>
+
+  <!-- ÉTAPE 5 : Extraction des champs utiles -->
+  <g filter="url(#rough)">
+    <circle cx="90" cy="530" r="22" fill="#fde8f0" stroke="#222" stroke-width="2"/>
+    <rect x="140" y="500" width="540" height="80" fill="#fff5e1" stroke="#222" stroke-width="2" rx="4" ry="4"/>
+  </g>
+  <text x="90" y="537" text-anchor="middle" font-size="18" fill="#222" font-weight="bold">5</text>
+  <text x="160" y="520" font-size="15" fill="#222" font-weight="bold">Extraction des champs utiles</text>
+  <text x="160" y="540" font-size="12" fill="#333">• identité : nom, description</text>
+  <text x="160" y="556" font-size="12" fill="#333">• logistique : coordonnées GPS, adresse, contact</text>
+  <text x="160" y="572" font-size="12" fill="#333">• site internet (si présent) — tout le reste est ignoré</text>
+
+  <path d="M390 580 L 390 615" fill="none" stroke="#222" stroke-width="2" marker-end="url(#arrow)" filter="url(#rough)"/>
+
+  <!-- ÉTAPE 6 : Nettoyage / validation -->
+  <g filter="url(#rough)">
+    <circle cx="90" cy="645" r="22" fill="#fde8f0" stroke="#222" stroke-width="2"/>
+    <rect x="140" y="615" width="540" height="80" fill="#e6f2ff" stroke="#222" stroke-width="2" rx="4" ry="4"/>
+  </g>
+  <text x="90" y="652" text-anchor="middle" font-size="18" fill="#222" font-weight="bold">6</text>
+  <text x="160" y="635" font-size="15" fill="#222" font-weight="bold">Nettoyage &amp; validation</text>
+  <text x="160" y="655" font-size="12" fill="#333">• uniformisation (accents, casse, formats de chaînes)</text>
+  <text x="160" y="671" font-size="12" fill="#333">• vérification GPS (latitude / longitude valides)</text>
+  <text x="160" y="687" font-size="12" fill="#333">• suppression des doublons et des fiches incomplètes</text>
+
+  <path d="M390 695 L 390 730" fill="none" stroke="#222" stroke-width="2" marker-end="url(#arrow)" filter="url(#rough)"/>
+
+  <!-- ÉTAPE 7 : Construction du JSON épuré -->
+  <g filter="url(#rough)">
+    <circle cx="90" cy="760" r="22" fill="#fde8f0" stroke="#222" stroke-width="2"/>
+    <rect x="140" y="730" width="540" height="65" fill="#fff5e1" stroke="#222" stroke-width="2" rx="4" ry="4"/>
+  </g>
+  <text x="90" y="767" text-anchor="middle" font-size="18" fill="#222" font-weight="bold">7</text>
+  <text x="160" y="755" font-size="15" fill="#222" font-weight="bold">Construction du JSON épuré</text>
+  <text x="160" y="775" font-size="12" fill="#333">on crée un nouvel objet light : { nom, description, catégories, GPS, contact, site }</text>
+  <text x="160" y="791" font-size="12" fill="#333">→ format unique, prêt à être inséré en base</text>
+
+  <path d="M390 795 L 390 830" fill="none" stroke="#222" stroke-width="2" marker-end="url(#arrow)" filter="url(#rough)"/>
+
+  <!-- ÉTAPE 8 : Envoi vers MongoDB Atlas -->
+  <g filter="url(#rough)">
+    <circle cx="90" cy="860" r="22" fill="#fde8f0" stroke="#222" stroke-width="2"/>
+    <rect x="140" y="830" width="540" height="45" fill="#ffe7c7" stroke="#222" stroke-width="2" rx="4" ry="4"/>
+  </g>
+  <text x="90" y="867" text-anchor="middle" font-size="18" fill="#222" font-weight="bold">8</text>
+  <text x="160" y="848" font-size="15" fill="#222" font-weight="bold">Envoi vers MongoDB Atlas</text>
+  <text x="160" y="867" font-size="12" fill="#333">insert_many() dans la collection : la base est mise à jour dans le Cloud</text>
+
+  <!-- bloc latéral : boucle -->
+  <g filter="url(#rough)">
+    <rect x="485" y="185" width="195" height="280" fill="none" stroke="#aa6" stroke-width="1.5" stroke-dasharray="6,4" rx="8" ry="8"/>
+  </g>
+  <text x="582" y="178" text-anchor="middle" font-size="12" fill="#aa6" font-style="italic">boucle : pour chaque activité</text>
+
+  <!-- flèche retour (boucle) -->
+  <path d="M700 430 C 740 430, 740 220, 700 220" fill="none" stroke="#aa6" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrow)" filter="url(#rough)"/>
+  <text x="730" y="330" text-anchor="middle" font-size="11" fill="#aa6" font-style="italic" transform="rotate(90,730,330)">suivante</text>
+</svg>
